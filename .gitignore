@@ -1,3 +1,5 @@
 *.hi
 *.ho
 *.o
+*.bin
+*.exe
