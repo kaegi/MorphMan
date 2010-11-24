@@ -1,0 +1,44 @@
+-- VocabRecognition
+
+Question:
+%(SentenceImage)s
+<span style="font-size: larger;">
+%(Expression)s<br>
+%(SentenceExpression)s
+</span>
+
+Answer:
+<span style="font-size: larger;"><!--fon-->
+%(VocabFurigana)s<br>
+%(SentenceFurigana)s
+<!--foff-->
+</span>
+%(VocabMeaning)s : %(VocabPOS)s<br>
+%(SentenceMeaning)s<br>
+<span style="font-size: smaller;">
+%(SentenceLookup)s
+</span>
+%(VocabSoundLocal)s
+
+-- VocabDictation
+
+Question:
+%(SentenceImage)s
+<span style="font-size: larger;">
+%(VocabReading)s<br>
+%(SentenceReading)s
+</span>
+%(VocabSoundLocal)s
+
+Answer:
+<span style="font-size: larger;"><!--fon-->
+%(VocabFurigana)s<br>
+%(SentenceFurigana)s
+<!--foff-->
+</span>
+%(VocabMeaning)s : %(VocabPOS)s<br>
+%(SentenceMeaning)s<br>
+<span style="font-size: smaller;">
+%(SentenceLookup)s
+</span>
+%(VocabSoundLocal)s
