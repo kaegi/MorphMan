@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/python2
 import anki, re
 
 deckPath = '/home/roark/.anki/decks/RtK.anki' # loads anki deck from here
