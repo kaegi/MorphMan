@@ -1,0 +1,3 @@
+#!/bin/bash
+./getStories
+python2 revtkStoryUpdater.py
