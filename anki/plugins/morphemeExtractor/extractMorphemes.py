@@ -16,9 +16,7 @@ def export( fids ):
         f = mw.deck.s.query( Fact ).get( fid )
         ms.extend( m.getMorphemes( mp, f[ 'Expression' ] ) )
 
-    m.saveDb( m.ms2db( ms ), r'c:\jmr.morphdb' )
-    #mw.deck.refresh()
-    #mw.deck.updateCardQACacheFromIds( fids, type='facts' )
+    m.saveDb( m.ms2db( ms ), r'anki.morphdb' )
     mw.deck.finishProgress()
 
 def onExport( ed ):

@@ -59,9 +59,6 @@ def diffDb( da, db ):
     s = len( sa.symmetric_difference( sb ) )
     return (sa,sb,i,d1,d2,s)
 
-kd = loadDb( r'm:\src\kore.morphdb' )
-sd = loadDb( r'm:\src\subs2srs.morphdb' )
-
 ################################################################################
 ## Standalone program
 ################################################################################
