@@ -30,3 +30,9 @@ Haskell Mecab library
 ---------------------
 
 Library for interfacing with mecab
+
+J Sensei Vocab Extraction
+-------------------------
+
+Given the J Sensei app's file, extract vocab with audio and example sentences.
+Outputs the audio files and a .tsv for easy import into anki.
