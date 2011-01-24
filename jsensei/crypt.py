@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-# fork of code for exploring possible encryption of .res.dict files
-
 import codecs, re, subprocess
 # type StarDict = Map Order IdxEntry
 
@@ -198,6 +196,7 @@ def starts( bs ):
       while i < len(b):
          if a.find( b[:i] ) == -1: break
          i += 1
+      i -= 1
       d[ b[0] ] = (i,b[:i])
    return d
 dae = starts( blobsAE )
