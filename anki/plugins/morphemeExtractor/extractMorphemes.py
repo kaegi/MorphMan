@@ -16,8 +16,9 @@ def export( fids ):
         f = mw.deck.s.query( Fact ).get( fid )
         ms.extend( m.getMorphemes( mp, f[ 'Expression' ] ) )
 
-    m.saveDb( m.ms2db( ms ), r'anki.morphdb' )
+    m.saveDb( m.ms2db( ms ), r'selection.morphdb' )
     mw.deck.finishProgress()
+    mp.kill()
 
 def onExport( ed ):
     txt = 'Analyzing and exporting morphemes'
