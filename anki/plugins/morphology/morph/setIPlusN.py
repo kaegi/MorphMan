@@ -17,4 +17,4 @@ def per( st, f ):
 def post( st ):
    st['mp'].kill()
 
-util.addDoOnSelectionBtn( 'Generate i+N', 'Finding N', 'Analyzing...', pre, per, post )
+util.addDoOnSelectionBtn( 'Set iPlusN', 'iPlusN set', 'Analyzing...', pre, per, post )

@@ -47,10 +47,18 @@ def doOnSelection( ed, overviewMsg, progMsg, preF, perF, postF ):
    postF( st )
    ed.updateSearch()
 
+parentMenu = None
+
 def addDoOnSelectionBtn( btnTxt, overviewMsg, progMsg, preF, perF, postF, shortcut=None ):
    def setupMenu( ed ):
       a = QAction( btnTxt, ed )
       if shortcut: a.setShortcut( shortcut )
       ed.connect( a, SIGNAL('triggered()'), lambda e=ed: doOnSelection( e, overviewMsg, progMsg, preF, perF, postF ) )
-      ed.dialog.menuActions.addAction( a )
+      if not parentMenu: setupParentMenu( ed )
+      parentMenu.addAction( a )
    addHook( 'editor.setupMenus', setupMenu )
+
+def setupParentMenu( ed ):
+    global parentMenu
+    parentMenu = ed.dialog.menuActions.addMenu( "It's morphin time" )
+addHook( 'editor.setupMenus', setupParentMenu )

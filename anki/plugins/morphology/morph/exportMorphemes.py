@@ -23,4 +23,4 @@ def post( st ):
    if wantMerge == QMessageBox.Yes:
       m.mergeFiles( st['filePath'], util.knownDbPath, util.knownDbPath )
 
-util.addDoOnSelectionBtn( 'Extract Morphemes', 'Analyzing and extracting morphemes', 'Exporting...', pre, per, post )
+util.addDoOnSelectionBtn( 'Export Morphemes', 'Morpheme export', 'Exporting...', pre, per, post )

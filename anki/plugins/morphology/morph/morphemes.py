@@ -28,12 +28,13 @@ def interact( p, expr ): # MecabProc -> Str -> IO Str
 # MecabProc -> Str -> Maybe PosWhiteList -> Maybe PosBlackList -> IO [Morpheme]
 def getMorphemes( p, e, ws=None, bs=None ):
     ms = [ tuple( m.split('\t') ) for m in interact( p, e ).split('\r') ] # morphemes
+    ms = [ m for m in ms if len( m ) == 4 ]
     if ws: ms = [ m for m in ms if m[1] in ws ]
     if bs: ms = [ m for m in ms if not m[1] in bs ]
     return ms
 
 # Str -> Maybe PosWhiteList -> Maybe PosBlackList -> IO [Morpheme]
-def getMorphemes1( e, ws=None, bs=None ): return getMorphemes( mecab(), e, ws, bs )
+def getMorphemes1( e, ws=None, bs=None ): return getMorphemes( mecab(None), e, ws, bs )
 
 ################################################################################
 ## Morpheme db manipulation
@@ -82,6 +83,18 @@ def countByType( ms ):
         except KeyError: d[ m[1] ] = 1
     return d
 
+def analyze( ms ):
+    d = {}
+    d['posBreakdown'] = countByType( ms )
+    d['count'] = len( ms )
+    return d
+def analyze2str( ms ):
+    d = analyze( ms )
+    posStr = u'\n'.join( [ '%d\t%d%%\t%s' % ( v, 100.*v/d['count'], k ) for k,v in d['posBreakdown'].iteritems() ] )
+    return '''Total morphemes: %d
+By part of spech:
+%s
+''' % ( d['count'], posStr )
 
 def file2ms( path, ws=None, bs=[u'記号'] ): # bs filters punctuation
     inp = unicode( open( path, 'r' ).read(), 'utf-8' )
@@ -136,7 +149,7 @@ def main(): # :: IO ()
         print 'Usage: %s srcFile destFile' % sys.argv[0]
         return
     ms = file2ms( sys.argv[1] )
-    open( sys.argv[2]+'.morphemes', 'w' ).write( ms2str( ms ) ) # save .morphemes
+    #open( sys.argv[2]+'.morphemes', 'w' ).write( ms2str( ms ) ) # save .morphemes
     saveDb( ms2db( ms ), sys.argv[2]+'.db' ) # save .db
 
 if __name__ == '__main__': main()
