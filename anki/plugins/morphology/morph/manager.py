@@ -124,7 +124,7 @@ class MorphMan( QDialog ):
         if self.col4Mode.isChecked():
             self.morphDisplay.setText( self.db.showMs() )
         else:
-            self.morphDisplay.setText( u'\n'.join( [ m.expr for m in self.db.db ] ) )
+            self.morphDisplay.setText( u'\n'.join( [ m.base for m in self.db.db ] ) )
         self.analysisDisplay.setText( self.db.analyze2str() )
 
 def onMorphMan():
