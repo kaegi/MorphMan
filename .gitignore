@@ -3,3 +3,5 @@
 *.o
 *.bin
 *.exe
+*.swp
+*.testTmp
