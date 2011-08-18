@@ -1,47 +1,70 @@
 # -*- coding: utf-8 -*-
 import os, subprocess, sys, bz2, codecs, pickle, gzip
 
+def printf( s ):
+    if sys.platform == 'win32':
+        import win32console as W
+        W.SetConsoleOutputCP( 65001 )
+        W.SetConsoleCP( 65001 )
+    try: print s
+    except: pass
+
 ################################################################################
 ## Lexical analysis
 ################################################################################
 
-MECAB_NODE_PARTS = ['%f[6]','%f[0]','%f[1]','%f[7]']
-MECAB_NODE_READING_INDEX = 3
+MECAB_NODE_PARTS = ['%f[6]','%m','%f[0]','%f[1]','%f[7]']
+MECAB_NODE_READING_INDEX = 4
 MECAB_NODE_LENGTH = len( MECAB_NODE_PARTS )
 
 class Morpheme:
-    def __init__( self, expr, pos, subPos, read ):
+    def __init__( self, base, inflected, pos, subPos, read ):
         self.pos    = pos
         self.subPos = subPos
-        self.expr   = expr
         self.read   = read
+        self.base   = base
+        self.inflected = inflected
 
     def __eq__( self, o ):
         if not isinstance( o, Morpheme ): return False
         if self.pos != o.pos: return False
         if self.subPos != o.subPos: return False
-        if self.expr != o.expr: return False
         if self.read != o.read: return False
+        if self.base != o.base: return False
+        #if self.inflected != o.inflected: return False
         return True
 
     def __hash__( self ):
-        return hash( (self.pos, self.subPos, self.expr, self.read) )
+        return hash( (self.pos, self.subPos, self.read, self.base, self.inflected) )
 
     def show( self ): # Str
-        return u'\t'.join([ self.expr, self.pos, self.subPos, self.read ])
+        return u'\t'.join([ self.base, self.pos, self.subPos, self.read ])
 
 def ms2str( ms ): # [Morpheme] -> Str
     return u'\n'.join( m.show() for m in ms )
 
+def which( app ): # PartialAppPath -> [FullAppPath]
+    def isExe( path ):
+        return os.path.exists( path ) and os.access( path, os.X_OK )
+    apath, aname = os.path.split( app )
+    if apath and isExe( app ):  # full path was provided
+        return [ app ]
+    else:                       # search $PATH for matches
+        ps = [ os.path.join( p, aname ) for p in os.environ['PATH'].split( os.pathsep ) ]
+        return [ p for p in ps if isExe( p ) ]
+
 # Creates an instance of mecab process
-def mecab( fixPath=r'C:\Program Files\Anki\mecab' ): # :: Maybe Path -> IO MecabProc
+def mecab( customPath=None ): # Maybe Path -> IO MecabProc
     try: from japanese.reading import si
     except: si = None
-    if fixPath:
-        os.environ['PATH'] += ';%s\\bin' % fixPath
-        os.environ['MECABRC'] = '%s\\etc\\mecabrc' % fixPath
+
+    path = customPath or 'mecab'
+    if not which( 'mecab' ): # probably on windows and only has mecab via Anki
+        amPath = r'C:\Program Files\Anki\mecab'
+        os.environ['PATH'] += ';%s\\bin' % amPath
+        os.environ['MECABRC'] = '%s\\etc\\mecabrc' % amPath
     nodeFmt = '\t'.join( MECAB_NODE_PARTS )+'\r'
-    mecabCmd = ['mecab', '--node-format=%s' % nodeFmt, '--eos-format=\n', '--unk-format=%m\tUnknown\tUnknown\tUnknown\r']
+    mecabCmd = [ path, '--node-format=%s' % nodeFmt, '--eos-format=\n', '--unk-format=%m\tUnknown\tUnknown\tUnknown\r']
     return subprocess.Popen( mecabCmd, bufsize=-1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, startupinfo=si )
 
 # Send mecab 1 input and receive 1 output
@@ -53,7 +76,7 @@ def interact( p, expr ): # MecabProc -> Str -> IO Str
 
 def fixReading( p, m ): # MecabProc -> Morpheme -> Morpheme
     if m.pos in [u'動詞', u'助動詞', u'形容詞']: # verb, aux verb, i-adj
-        n = interact( p, m.expr ).split('\t')
+        n = interact( p, m.base ).split('\t')
         if len(n) == MECAB_NODE_LENGTH:
             m.read = n[ MECAB_NODE_READING_INDEX ].strip()
     return m
@@ -69,7 +92,7 @@ def getMorphemes( p, e, ws=None, bs=None ):
 
 # Str -> Maybe PosWhiteList -> Maybe PosBlackList -> IO [Morpheme]
 def getMorphemes1( e, ws=None, bs=None ):
-    return getMorphemes( mecab(None), e, ws, bs )
+    return getMorphemes( mecab(), e, ws, bs )
 
 ################################################################################
 ## Morpheme db manipulation
@@ -91,13 +114,15 @@ class TextFile( Location ):
         return '%s:%d' % ( self.filePath, self.lineNo )
 
 class AnkiDeck( Location ):
-    def __init__( self, factId, field, deckPath, deckName ):
+    def __init__( self, factId, field, deckPath, deckName, maturities ):
         self.factId     = factId
         self.field      = field
         self.deckPath   = deckPath
         self.deckName   = deckName
+        self.maturities = maturities
+        self.maturity   = max( maturities )
     def show( self ):
-        return '%s.%d[%s]' % ( self.deckName, self.factId, self.field )
+        return '%s.%d[%s]@%d' % ( self.deckName, self.factId, self.field, self.maturity )
 
 class MorphDb:
     @staticmethod
@@ -113,7 +138,7 @@ class MorphDb:
         return d
 
     def __init__( self, path=None ): # Maybe Filepath -> m ()
-        self.db = {} # Map Morpheme -> {Location}
+        self.db     = {} # Map Morpheme -> {Location}
         if path:
             self.load( path )
         self.analyze()
@@ -127,17 +152,28 @@ class MorphDb:
                 s += u'  %s\n' % l.show()
         return s
 
+    def showLDb( self ):
+        self.recalcLDb()
+        s = u''
+        for l,ms in self.ldb.iteritems():
+            s += u'%s\n' % l.show()
+            for m in ms:
+                s += u'  %s\n' % m.show()
+        return s
+
     def showMs( self ):
         return ms2str( self.db.keys() )
 
     def save( self, path ): # FilePath -> IO ()
-        with gzip.open( path, 'wb' ) as f:
-            pickle.dump( self, f )
+        f = gzip.open( path, 'wb' )
+        pickle.dump( self.db, f )
+        f.close()
 
     def load( self, path ): # FilePath -> m ()
-        with gzip.open( path, 'rb' ) as f:
-            self.db = pickle.load( f ).db
-    
+        f = gzip.open( path, 'rb' )
+        self.db = pickle.load( f )
+        f.close()
+
     # Adding
     def addMLs( self, mls ): # [ (Morpheme,Location) ] -> m ()
         for m,loc in mls:
@@ -154,7 +190,7 @@ class MorphDb:
 
     def addMsL( self, ms, loc ): # [Morpheme] -> Location -> m ()
         self.addMLs( (m,loc) for m in ms )
-    
+
     def merge( self, md ): # Db -> m ()
         for m,locs in md.db.iteritems():
             try:
@@ -166,7 +202,7 @@ class MorphDb:
         f = codecs.open( path, 'r', 'utf-8' )
         inp = f.readlines()
         f.close()
-        mp = mecab( None )
+        mp = mecab()
 
         for i,line in enumerate(inp):
             ms = getMorphemes( mp, line.strip(), ws, bs )
@@ -175,6 +211,14 @@ class MorphDb:
         mp.terminate()
 
     # Analysis
+    def recalcLDb( self ): # m Map Location -> {Morpheme}
+        self.ldb = {}
+        for m,ls in self.db.iteritems():
+            for l in ls:
+                try: self.ldb[ l ].add( m )
+                except: self.ldb[ l ] = set([ m ])
+        return self.ldb
+
     def countByType( self ): # Map Pos Int
         d = {}
         for m in self.db:
@@ -196,15 +240,27 @@ class MorphDb:
 ################################################################################
 
 def test():
-    a = MorphDb.mkFromFile( 'tests/test.txt' )
-    a.save( 'tests/test.db.testTmp' )
+    a = MorphDb.mkFromFile( 'tests'+ os.sep +'test.txt' )
+    a.save( 'tests'+ os.sep +'test.db.testTmp' )
     d = MorphDb( path='tests/test.db.testTmp' )
-    assert d.count == 81, 'wrong number of morphemes'
-    print d.analyze2str()
+    print 'Found %d. Should be %d with v0.98, %d with v0.98pre3' % ( d.count, 81, 71 )
+    printf( d.analyze2str() )
+
+def printKnown():
+    k = MorphDb( path='morph'+ os.sep +'dbs'+ os.sep +'known.db' )
+    printf( k.show() )
+
+def printKnownLDb():
+    k = MorphDb( path='morph'+ os.sep +'dbs'+ os.sep +'known.db' )
+    printf( k.showLDb() )
 
 def main(): # :: IO ()
     if '--test' in sys.argv:
         return test()
+    elif '--known' in sys.argv:
+        return printKnown()
+    elif '--knownLDb' in sys.argv:
+        return printKnownLDb()
     elif len( sys.argv ) != 3:
         print 'Usage: %s srcTxtFile destDbFile' % sys.argv[0]
         return
