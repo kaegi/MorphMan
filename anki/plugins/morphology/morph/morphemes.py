@@ -234,37 +234,3 @@ class MorphDb:
         self.analyze()
         posStr = u'\n'.join( '%d\t%d%%\t%s' % ( v, 100.*v/self.count, k ) for k,v in self.posBreakdown.iteritems() )
         return 'Total morphemes: %d\nBy part of spech:\n%s' % ( self.count, posStr )
-
-################################################################################
-## Standalone program
-################################################################################
-
-def test():
-    a = MorphDb.mkFromFile( 'tests'+ os.sep +'test.txt' )
-    a.save( 'tests'+ os.sep +'test.db.testTmp' )
-    d = MorphDb( path='tests/test.db.testTmp' )
-    print 'Found %d. Should be %d with v0.98, %d with v0.98pre3' % ( d.count, 81, 71 )
-    printf( d.analyze2str() )
-
-def printKnown():
-    k = MorphDb( path='morph'+ os.sep +'dbs'+ os.sep +'known.db' )
-    printf( k.show() )
-
-def printKnownLDb():
-    k = MorphDb( path='morph'+ os.sep +'dbs'+ os.sep +'known.db' )
-    printf( k.showLDb() )
-
-def main(): # :: IO ()
-    if '--test' in sys.argv:
-        return test()
-    elif '--known' in sys.argv:
-        return printKnown()
-    elif '--knownLDb' in sys.argv:
-        return printKnownLDb()
-    elif len( sys.argv ) != 3:
-        print 'Usage: %s srcTxtFile destDbFile' % sys.argv[0]
-        return
-    d = MorphDb.mkFromFile( sys.argv[1] )
-    d.save( sys.argv[2] )
-
-if __name__ == '__main__': main()
