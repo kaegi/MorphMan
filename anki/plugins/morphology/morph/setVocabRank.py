@@ -15,6 +15,6 @@ def per( st, f ):
     return st
 
 def post( st ):
-    st['mp'].kill()
+    util.killMecab( st )
 
 util.addDoOnSelectionBtn( 'Set vocabRank', 'vocabRank set', 'Ranking...', pre, per, post )

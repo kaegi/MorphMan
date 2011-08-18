@@ -17,8 +17,8 @@ def per( st, f ):
    return st
 
 def post( st ):
+   util.killMecab( st )
    m.saveDb( m.ms2db( st['ms'], srcName=st['srcName'] ), st['filePath'] )
-   st['mp'].kill()
    wantMerge = QMessageBox.question( st['ed'], 'Query', 'Would you like to merge with known db?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No )
    if wantMerge == QMessageBox.Yes:
       m.mergeFiles( st['filePath'], util.knownDbPath, util.knownDbPath )

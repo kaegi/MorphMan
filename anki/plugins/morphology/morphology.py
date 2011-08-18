@@ -2,7 +2,6 @@ from anki.hooks import addHook
 from ankiqt import mw
 
 def morphInit():
-   print 'morphInit'
    import morph.util
    import morph.exportMorphemes
    import morph.setIPlusN
@@ -11,6 +10,7 @@ def morphInit():
    import morph.viewMorphemes
    import morph.manager
    import morph.massTagger
+   import morph.setMatch
 
-mw.registerPlugin( 'Morphology', 20110505213517 )
+mw.registerPlugin( 'Morphology', 17201108172228 )
 addHook( 'init', morphInit )

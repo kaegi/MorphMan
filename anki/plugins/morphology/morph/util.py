@@ -11,10 +11,17 @@ import morphemes
 dbPath = mw.pluginsFolder() + os.sep + 'morph' + os.sep + 'dbs' + os.sep
 knownDbPath = dbPath + 'known.db'
 
+def killMecab( st ):
+   try: st['mp'].kill()
+   except: pass
+
 def getBlacklist( ed, default=u'記号,助詞' ):
    bs, ok = QInputDialog.getText( ed, 'Comma delimited', 'Blacklist parts of speech', QLineEdit.Normal, default )
    if not ok: bs = default
    return bs.split(',')
+
+def errorMsg( txt, cap='Error', p=mw ): return QMessageBox.critical( p, cap, txt )
+def infoMsg( txt, cap='Note', p=mw ): return QMessageBox.information( p, cap, txt )
 
 def requireKnownDb(): # returns false if failed
    global knownDbPath

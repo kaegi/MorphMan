@@ -9,11 +9,13 @@ import os, subprocess, sys, bz2
 
 # Creates an instance of mecab process
 def mecab( fixPath=r'C:\Program Files\Anki\mecab' ): # :: Maybe Path -> IO MecabProc
+    try: from japanese.reading import si
+    except: si = None
     if fixPath:
         os.environ['PATH'] += ';%s\\bin' % fixPath
         os.environ['MECABRC'] = '%s\\etc\\mecabrc' % fixPath
-    mecabCmd = ['mecab', '--node-format=%m\t%f[0]\t%f[1]\t%f[8]\r', '--eos-format=\n', '--unk-format=%m\tUnknown\tUnknown\tUnknown\r']
-    return subprocess.Popen( mecabCmd, bufsize=-1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT )
+    mecabCmd = ['mecab', '--node-format=%f[6]\t%f[0]\t%f[1]\t%f[7]\r', '--eos-format=\n', '--unk-format=%m\tUnknown\tUnknown\tUnknown\r']
+    return subprocess.Popen( mecabCmd, bufsize=-1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, startupinfo=si )
 
 # Used to escape all strings interacting with mecab (useful for hooking)
 def escape( s ): return s # Str -> Str
@@ -25,16 +27,25 @@ def interact( p, expr ): # MecabProc -> Str -> IO Str
     p.stdin.flush()
     return u'\r'.join( [ unicode( p.stdout.readline().rstrip( '\r\n' ), 'euc-jp' ) for l in expr.split('\n') ] )
 
+def fixReading( p, m ):
+    if m[1] in [u'動詞', u'助動詞', u'形容詞']:
+        n = interact(p, m[0]).split('\t')
+        if len(n) == 4:
+            m = (m[0], m[1], m[2], n[3].strip())
+    return m
+
 # MecabProc -> Str -> Maybe PosWhiteList -> Maybe PosBlackList -> IO [Morpheme]
 def getMorphemes( p, e, ws=None, bs=None ):
     ms = [ tuple( m.split('\t') ) for m in interact( p, e ).split('\r') ] # morphemes
     ms = [ m for m in ms if len( m ) == 4 ]
     if ws: ms = [ m for m in ms if m[1] in ws ]
     if bs: ms = [ m for m in ms if not m[1] in bs ]
+    ms = [fixReading(p, m) for m in ms]
     return ms
 
 # Str -> Maybe PosWhiteList -> Maybe PosBlackList -> IO [Morpheme]
-def getMorphemes1( e, ws=None, bs=None ): return getMorphemes( mecab(None), e, ws, bs )
+def getMorphemes1( e, ws=None, bs=None ):
+    return getMorphemes( mecab(None), e, ws, bs )
 
 ################################################################################
 ## Morpheme db manipulation
@@ -96,9 +107,29 @@ By part of spech:
 %s
 ''' % ( d['count'], posStr )
 
+import codecs
+
 def file2ms( path, ws=None, bs=[u'記号'] ): # bs filters punctuation
-    inp = unicode( open( path, 'r' ).read(), 'utf-8' )
-    return getMorphemes1( inp, ws, bs)
+    #inp = unicode( open( path, 'r' ).read(), 'utf-8' )
+    #return getMorphemes1( inp, ws, bs)
+    f = codecs.open( path, 'r', 'utf-8' )
+    inp = f.readlines()
+    f.close()
+
+    #return getMorphemes( mecab(None), e, ws, bs )
+    mcb = mecab(None)
+
+    s = set()
+    for i in inp:
+        ms = getMorphemes( mcb, i.strip(), ws, bs)
+        for m in ms:
+            s.add(m)
+
+    mcb.terminate()
+
+    return list(s)
+    
+    #return getMorphemes1( inp, ws, bs)
 
 def file2db( path, ws=None, bs=[u'記号'] ): # bs filters punctuation
     ms = file2ms( path, ws, bs )

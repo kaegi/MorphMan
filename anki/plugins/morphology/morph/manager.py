@@ -7,6 +7,7 @@ import os
 
 import morphemes as M
 import util
+from util import errorMsg, infoMsg
 
 def getPath( le ):
     path = QFileDialog.getOpenFileName( caption='Open db', directory=util.knownDbPath )
@@ -18,8 +19,6 @@ def mkBtn( txt, f, conn, parent ):
     parent.addWidget( b )
     return b
 
-def errorMsg( txt ): return QMessageBox.critical( mw, 'Error', txt )
-
 class MorphMan( QDialog ):
     def __init__( self, parent=None ):
         super( MorphMan, self ).__init__( parent )
@@ -28,29 +27,26 @@ class MorphMan( QDialog ):
         grid = QGridLayout( self )
         vbox = QVBoxLayout()
 
-        # Extract from txt file
-        self.exportTxtFileBtn = mkBtn( 'Export morphemes from file', self.onExportTxtFile, self, vbox )
-
         # DB Paths
-        #self.aPathLbl = QLabel( 'db A: ')
         self.aPathLEdit = QLineEdit()
-        #vbox.addWidget( self.aPathLbl )
         vbox.addWidget( self.aPathLEdit )
         self.aPathBtn = mkBtn( 'Browse for DB A', lambda le=self.aPathLEdit: getPath( le ), self, vbox )
 
-        #self.bPathLbl = QLabel( 'db B: ')
         self.bPathLEdit = QLineEdit()
-        #vbox.addWidget( self.bPathLbl )
         vbox.addWidget( self.bPathLEdit )
         self.bPathBtn = mkBtn( 'Browse for DB B', lambda le=self.bPathLEdit: getPath( le ), self, vbox )
 
-        # Actions
+        # Comparisons
         self.showABtn = mkBtn( 'A', self.onShowA, self, vbox )
         self.AmBBtn = mkBtn( 'A-B', lambda x='A-B': self.onDiff(x), self, vbox )
         self.BmABtn = mkBtn( 'B-A', lambda x='B-A': self.onDiff(x), self, vbox )
         self.symBtn = mkBtn( 'Symmetric Difference', lambda x='sym': self.onDiff(x), self, vbox )
         self.interBtn = mkBtn( 'Intersection', lambda x='inter': self.onDiff(x), self, vbox )
         self.unionBtn = mkBtn( 'Union', lambda x='union': self.onDiff(x), self, vbox )
+
+        # Creation
+        self.extractTxtFileBtn = mkBtn( 'Extract morphemes from file', self.onExtractTxtFile, self, vbox )
+        self.saveResultsBtn = mkBtn( 'Save results to db', self.onSaveResults, self, vbox )
 
         # Display
         self.col4Mode = QRadioButton( 'Results as 4col morpheme' )
@@ -67,15 +63,6 @@ class MorphMan( QDialog ):
         grid.addLayout( vbox, 0, 0 )
         grid.addWidget( self.morphDisplay, 0, 1 )
         grid.addWidget( self.analysisDisplay, 0, 2 )
-
-    def onExportTxtFile( self ):
-        srcPath = QFileDialog.getOpenFileName( caption='Text file to export from?', directory=util.dbPath )
-        if not srcPath: return
-        destPath = QFileDialog.getSaveFileName( caption='Save morpheme db to?', directory=util.dbPath + 'textFile.db' )
-        if not destPath: return
-        ms = M.file2ms( srcPath )
-        M.saveDb( M.ms2db( ms ), destPath )
-        QMessageBox.information( mw, 'Txt Export', 'Success' )
 
     def loadA( self ):
         self.aPath = self.aPathLEdit.text()
@@ -105,6 +92,22 @@ class MorphMan( QDialog ):
         elif type == 'inter': self.morphemes = self.aSet.intersection( self.bSet )
         elif type == 'union': self.morphemes = self.aSet.union( self.bSet )
         self.updateDisplay()
+
+    def onExtractTxtFile( self ):
+        srcPath = QFileDialog.getOpenFileName( caption='Text file to extract from?', directory=util.dbPath )
+        if not srcPath: return
+        destPath = QFileDialog.getSaveFileName( caption='Save morpheme db to?', directory=util.dbPath + 'textFile.db' )
+        if not destPath: return
+        ms = M.file2ms( srcPath )
+        M.saveDb( M.ms2db( ms ), destPath )
+        infoMsg( 'Success', 'Txt Extract' )
+
+    def onSaveResults( self ):
+        db = M.ms2db( self.morphemes )
+        destPath = QFileDialog.getSaveFileName( caption='Save results to?', directory=util.dbPath + 'results.db' )
+        if not destPath: return
+        M.saveDb( db, destPath )
+        infoMsg( 'Success', 'Save db' )
 
     def updateDisplay( self ):
         bs = self.blacklist.text().split(',')
