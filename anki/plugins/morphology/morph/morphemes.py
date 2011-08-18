@@ -1,11 +1,26 @@
 # -*- coding: utf-8 -*-
-import os, subprocess, sys, bz2
-
-#TODO: update db format to know about sources
+import os, subprocess, sys, bz2, codecs, pickle, gzip
 
 ################################################################################
 ## Lexical analysis
 ################################################################################
+
+MECAB_NODE_PARTS = ['%f[6]','%f[0]','%f[1]','%f[7]']
+MECAB_NODE_READING_INDEX = 3
+MECAB_NODE_LENGTH = len( MECAB_NODE_PARTS )
+
+class Morpheme:
+    def __init__( self, expr, pos, subPos, read ):
+        self.pos    = pos
+        self.subPos = subPos
+        self.expr   = expr
+        self.read   = read
+
+    def show( self ): # Str
+        return u'\t'.join([ self.expr, self.pos, self.subPos, self.read ])
+
+def ms2str( ms ): # [Morpheme] -> Str
+    return u'\n'.join( m.show() for m in ms )
 
 # Creates an instance of mecab process
 def mecab( fixPath=r'C:\Program Files\Anki\mecab' ): # :: Maybe Path -> IO MecabProc
@@ -14,33 +29,31 @@ def mecab( fixPath=r'C:\Program Files\Anki\mecab' ): # :: Maybe Path -> IO Mecab
     if fixPath:
         os.environ['PATH'] += ';%s\\bin' % fixPath
         os.environ['MECABRC'] = '%s\\etc\\mecabrc' % fixPath
-    mecabCmd = ['mecab', '--node-format=%f[6]\t%f[0]\t%f[1]\t%f[7]\r', '--eos-format=\n', '--unk-format=%m\tUnknown\tUnknown\tUnknown\r']
+    nodeFmt = '\t'.join( MECAB_NODE_PARTS )+'\r'
+    mecabCmd = ['mecab', '--node-format=%s' % nodeFmt, '--eos-format=\n', '--unk-format=%m\tUnknown\tUnknown\tUnknown\r']
     return subprocess.Popen( mecabCmd, bufsize=-1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, startupinfo=si )
-
-# Used to escape all strings interacting with mecab (useful for hooking)
-def escape( s ): return s # Str -> Str
 
 # Send mecab 1 input and receive 1 output
 def interact( p, expr ): # MecabProc -> Str -> IO Str
-    expr = escape( expr ).encode( 'euc-jp', 'ignore' )
+    expr = expr.encode( 'euc-jp', 'ignore' )
     p.stdin.write( expr + '\n' )
     p.stdin.flush()
     return u'\r'.join( [ unicode( p.stdout.readline().rstrip( '\r\n' ), 'euc-jp' ) for l in expr.split('\n') ] )
 
-def fixReading( p, m ):
-    if m[1] in [u'動詞', u'助動詞', u'形容詞']:
-        n = interact(p, m[0]).split('\t')
-        if len(n) == 4:
-            m = (m[0], m[1], m[2], n[3].strip())
+def fixReading( p, m ): # MecabProc -> Morpheme -> Morpheme
+    if m.pos in [u'動詞', u'助動詞', u'形容詞']: # verb, aux verb, i-adj
+        n = interact( p, m.expr ).split('\t')
+        if len(n) == MECAB_NODE_LENGTH:
+            m.read = n[ MECAB_NODE_READING_INDEX ].strip()
     return m
 
 # MecabProc -> Str -> Maybe PosWhiteList -> Maybe PosBlackList -> IO [Morpheme]
 def getMorphemes( p, e, ws=None, bs=None ):
     ms = [ tuple( m.split('\t') ) for m in interact( p, e ).split('\r') ] # morphemes
-    ms = [ m for m in ms if len( m ) == 4 ]
-    if ws: ms = [ m for m in ms if m[1] in ws ]
-    if bs: ms = [ m for m in ms if not m[1] in bs ]
-    ms = [fixReading(p, m) for m in ms]
+    ms = [ Morpheme( *m ) for m in ms if len( m ) == MECAB_NODE_LENGTH ] # filter garbage
+    if ws: ms = [ m for m in ms if m.pos in ws ]
+    if bs: ms = [ m for m in ms if m.pos not in bs ]
+    ms = [ fixReading( p, m ) for m in ms ]
     return ms
 
 # Str -> Maybe PosWhiteList -> Maybe PosBlackList -> IO [Morpheme]
@@ -51,136 +64,126 @@ def getMorphemes1( e, ws=None, bs=None ):
 ## Morpheme db manipulation
 ################################################################################
 
-def ms2db( ms, srcName='unknown' ): # :: [Morpheme] -> Maybe SrcName -> Map Morpheme Int
-    d = {}
-    for m in ms:
-        if m in d: d[m] += 1
-        else: d[m] = 1
-    return d
+class Location:
+    pass
+class TextFile( Location ):
+    def __init__( self, filePath, lineNo ):
+        self.filePath   = filePath
+        self.lineNo     = lineNo
+    def show( self ):
+        return '%s:%d' % ( self.filePath, self.lineNo )
 
-def saveDbC( db, path ): open( path, 'wb' ).write( bz2.compress( db2str( db ) ) ) # :: Map Morpheme Int -> Path -> IO ()
-def loadDbC( path ):
-    buf = bz2.decompress( open( path, 'rb' ).read() ).decode('utf-8')
-    return dict([ ((a,b,c,d),int(i)) for (a,b,c,d,i) in [ row.split('\t') for row in buf.split('\n') ]])
+class AnkiDeck( Location ):
+    def __init__( self, factId, field, deckPath ):
+        self.factId     = factId
+        self.field      = field
+        self.deckPath   = deckPath
+        self.deckName   = deckName
+    def show( self ):
+        return '%s.%d[%s]' % ( self.deckName, self.factId, self.field )
 
-# uncompressed/human readable versions
-def saveDbU( db, path ): open( path, 'wb' ).write( db2str( db ) ) # :: Map Morpheme Int -> Path -> IO ()
-def loadDbU( path ): # :: Path -> IO Map Morpheme Int
-    buf = open( path, 'rb' ).read().decode('utf-8')
-    return dict([ ((a,b,c,d),int(i)) for (a,b,c,d,i) in [ row.split('\t') for row in buf.split('\n') ]])
+class MorphDb:
+    @staticmethod
+    def mergeFiles( aPath, bPath, destPath ): # FilePath -> FilePath -> FilePath -> IO ()
+        a, b = MorphDb( path=aPath ), MorphDb( path=bPath )
+        a.merge( b )
+        a.save( destPath )
 
-loadDb = loadDbU
-saveDb = saveDbU
+    @staticmethod
+    def mkFromFile( path ): # FilePath -> IO Db
+        d = MorphDb()
+        d.importFile( path )
+        return d
 
-# :: [Morpheme] -> Str
-def ms2str( ms ): return u'\n'.join( [ u'\t'.join(m) for m in ms ] ).encode('utf-8')
-# :: Map Morpheme Int -> Str
-def db2str( db ): return u'\n'.join( [ u'\t'.join(m) + u'\t%d' % i for (m, i) in db.iteritems() ] ).encode('utf-8')
+    def __init__( self, path=None ): # Maybe Filepath -> m ()
+        self.db = {} # Map Morpheme -> {Location}
+        if path:
+            self.load( path )
+        self.analyze()
 
-def diffDb( da, db ):
-    def f( xs, bs=[u'記号',u'助詞'] ): return [ x for x in xs if not x[1] in bs ]
+    # Serialization
+    def show( self ):
+        s = u''
+        for m,ls in self.db.iteritems():
+            s += u'%s\n' % m.show()
+            for l in ls:
+                s += u'  %s\n' % l.show()
+        return s
 
-    sa, sb = set( f(da.keys()) ), set( f(db.keys()) )
-    i = sa.intersection( sb )
-    AmB = sa.difference( sb )
-    BmA = sb.difference( sa )
-    sd = sa.symmetric_difference( sb )
-    return (sa,sb,i,AmB,BmA,sd)
+    def save( self, path ): # FilePath -> IO ()
+        with gzip.open( path, 'wb' ) as f:
+            pickle.dump( self, f )
 
-def countByType( ms ):
-    d = {}
-    for m in ms:
-        try: d[ m[1] ] += 1
-        except KeyError: d[ m[1] ] = 1
-    return d
-
-def analyze( ms ):
-    d = {}
-    d['posBreakdown'] = countByType( ms )
-    d['count'] = len( ms )
-    return d
-def analyze2str( ms ):
-    d = analyze( ms )
-    posStr = u'\n'.join( [ '%d\t%d%%\t%s' % ( v, 100.*v/d['count'], k ) for k,v in d['posBreakdown'].iteritems() ] )
-    return '''Total morphemes: %d
-By part of spech:
-%s
-''' % ( d['count'], posStr )
-
-import codecs
-
-def file2ms( path, ws=None, bs=[u'記号'] ): # bs filters punctuation
-    #inp = unicode( open( path, 'r' ).read(), 'utf-8' )
-    #return getMorphemes1( inp, ws, bs)
-    f = codecs.open( path, 'r', 'utf-8' )
-    inp = f.readlines()
-    f.close()
-
-    #return getMorphemes( mecab(None), e, ws, bs )
-    mcb = mecab(None)
-
-    s = set()
-    for i in inp:
-        ms = getMorphemes( mcb, i.strip(), ws, bs)
-        for m in ms:
-            s.add(m)
-
-    mcb.terminate()
-
-    return list(s)
+    def load( self, path ): # FilePath -> m ()
+        with gzip.open( path, 'rb' ) as f:
+            self.db = pickle.load( f ).db
     
-    #return getMorphemes1( inp, ws, bs)
+    # Adding
+    def addMLs( self, mls ): # [ (Morpheme,Location) ] -> m ()
+        for m,loc in mls:
+            try:
+                self.db[m].add( loc )
+            except KeyError:
+                self.db[m] = set([ loc ])
 
-def file2db( path, ws=None, bs=[u'記号'] ): # bs filters punctuation
-    ms = file2ms( path, ws, bs )
-    return ms2db( ms )
+    def addMsL( self, ms, loc ): # [Morpheme] -> Location -> m ()
+        self.addMLs( (m,loc) for m in ms )
+    
+    def merge( self, md ): # Db -> m ()
+        for m,locs in md.db.iteritems():
+            try:
+                self.db[m].update( locs )
+            except KeyError:
+                self.db[m] = locs
 
-def mergeDbs( a, b ): # :: Map Morpheme Int -> Map Morpheme Int -> Map Morpheme Int
-   D = {}
-   for (m,i) in a.iteritems():
-      try: D[m] += i
-      except KeyError: D[m] = 1
-   for (m,i) in b.iteritems():
-      try: D[m] += i
-      except KeyError: D[m] = 1
-   return D
+    def importFile( self, path, ws=None, bs=[u'記号'] ): # FilePath -> PosWhitelist? -> PosBlacklist? -> IO ()
+        f = codecs.open( path, 'r', 'utf-8' )
+        inp = f.readlines()
+        f.close()
+        mp = mecab( None )
 
-def mergeFiles( aPath, bPath, destPath ):
-   a, b = loadDb( aPath ), loadDb( bPath )
-   c = mergeDbs( a, b )
-   saveDb( c, destPath )
+        for i,line in enumerate(inp):
+            ms = getMorphemes( mp, line.strip(), ws, bs )
+            self.addMLs( ( m, TextFile( path, i+1 ) ) for m in ms )
+
+        mp.terminate()
+
+    # Analysis
+    def countByType( self ): # Map Pos Int
+        d = {}
+        for m in self.db:
+            try: d[ m.pos ] += 1
+            except KeyError: d[ m.pos ] = 1
+        return d
+
+    def analyze( self ): # m ()
+        self.posBreakdown = self.countByType()
+        self.count = len( self.db )
+
+    def analyze2str( self ): # m Str
+        self.analyze()
+        posStr = u'\n'.join( '%d\t%d%%\t%s' % ( v, 100.*v/self.count, k ) for k,v in self.posBreakdown.iteritems() )
+        return 'Total morphemes: %d\nBy part of spech:\n%s' % ( self.count, posStr )
 
 ################################################################################
 ## Standalone program
 ################################################################################
 
 def test():
-    def f( xs ):
-        N = len(xs)
-        return u'\n'.join( [ '%s: %d/%d = %d%%' % (t,n,N,100*n/N) for t,n in countByType( xs ).items() ] ).encode('utf-8')
-    k = loadDb('known.morphdb')
-    fsn = loadDb('fsnE01.morphdb')
-    sa,sb,i,AmB,BmA,sd = diffDb( k, fsn )
-    open('inter.txt','wb').write( ms2str(list( i ) ) + f(i) )
-    open('B-A.txt','wb').write( ms2str(list( BmA ) ) + f(BmA) )
-
-def test2():
-   k = loadDb('dbs/known.db')
-   ks = loadDb('dbs/koreSentences.db')
-   kw = loadDb('dbs/koreWords.db')
-   kall = mergeDbs( ks, kw )
-   sa,sb,i,AmB,BmA,sd = diffDb( k, kall )
-   print '# missing from either:', len(sd)
-   print 'Same morphemes?', set(k.keys()) == set(kall.keys())
-   print 'Same # occurances?', sum(k.values()) == sum(kall.values())
-   saveDb( kall, 'dbs/koreAll.db' )
+    a = MorphDb.mkFromFile( 'tests/test.txt' )
+    a.save( 'tests/test.db.testTmp' )
+    d = MorphDb( path='tests/test.db.testTmp' )
+    assert d.count == 115, 'wrong number of morphemes'
+    print d.show()
+    print d.analyze2str()
 
 def main(): # :: IO ()
-    if len( sys.argv ) != 3:
-        print 'Usage: %s srcFile destFile' % sys.argv[0]
+    if '--test' in sys.argv:
+        return test()
+    elif len( sys.argv ) != 3:
+        print 'Usage: %s srcTxtFile destDbFile' % sys.argv[0]
         return
-    ms = file2ms( sys.argv[1] )
-    #open( sys.argv[2]+'.morphemes', 'w' ).write( ms2str( ms ) ) # save .morphemes
-    saveDb( ms2db( ms ), sys.argv[2]+'.db' ) # save .db
+    d = MorphDb.mkFromFile( sys.argv[1] )
+    d.save( sys.argv[2] )
 
 if __name__ == '__main__': main()
