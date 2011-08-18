@@ -16,6 +16,17 @@ class Morpheme:
         self.expr   = expr
         self.read   = read
 
+    def __eq__( self, o ):
+        if not isinstance( o, Morpheme ): return False
+        if self.pos != o.pos: return False
+        if self.subPos != o.subPos: return False
+        if self.expr != o.expr: return False
+        if self.read != o.read: return False
+        return True
+
+    def __hash__( self ):
+        return hash( (self.pos, self.subPos, self.expr, self.read) )
+
     def show( self ): # Str
         return u'\t'.join([ self.expr, self.pos, self.subPos, self.read ])
 
@@ -66,6 +77,12 @@ def getMorphemes1( e, ws=None, bs=None ):
 
 class Location:
     pass
+class Nowhere( Location ):
+    def __init__( self, tag ):
+        self.tag
+    def show( self ):
+        return '%s' % self.tag
+
 class TextFile( Location ):
     def __init__( self, filePath, lineNo ):
         self.filePath   = filePath
@@ -110,6 +127,9 @@ class MorphDb:
                 s += u'  %s\n' % l.show()
         return s
 
+    def showMs( self ):
+        return ms2str( self.db.keys() )
+
     def save( self, path ): # FilePath -> IO ()
         with gzip.open( path, 'wb' ) as f:
             pickle.dump( self, f )
@@ -125,6 +145,12 @@ class MorphDb:
                 self.db[m].add( loc )
             except KeyError:
                 self.db[m] = set([ loc ])
+
+    def addMLs1( self, m, locs ): # Morpheme -> {Location} -> m ()
+        if m not in self.db:
+            self.db[m] = locs
+        else:
+            self.db[m].update( locs )
 
     def addMsL( self, ms, loc ): # [Morpheme] -> Location -> m ()
         self.addMLs( (m,loc) for m in ms )
@@ -173,8 +199,7 @@ def test():
     a = MorphDb.mkFromFile( 'tests/test.txt' )
     a.save( 'tests/test.db.testTmp' )
     d = MorphDb( path='tests/test.db.testTmp' )
-    assert d.count == 115, 'wrong number of morphemes'
-    print d.show()
+    assert d.count == 81, 'wrong number of morphemes'
     print d.analyze2str()
 
 def main(): # :: IO ()
