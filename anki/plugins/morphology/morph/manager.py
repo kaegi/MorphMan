@@ -23,7 +23,6 @@ class MorphMan( QDialog ):
     def __init__( self, parent=None ):
         super( MorphMan, self ).__init__( parent )
         self.setWindowTitle( 'Morph Man Title' )
-        #self.resize( 640,480 )
         grid = QGridLayout( self )
         vbox = QVBoxLayout()
 
@@ -66,10 +65,10 @@ class MorphMan( QDialog ):
 
     def loadA( self ):
         self.aPath = self.aPathLEdit.text()
-        self.aDb = M.loadDb ( self.aPath )
+        self.aDb = M.MorphDb( path=self.aPath )
     def loadB( self ):
         self.bPath = self.bPathLEdit.text()
-        self.bDb = M.loadDb ( self.bPath )
+        self.bDb = M.MorphDb( path=self.bPath )
     def loadAB( self ):
         self.loadA()
         self.loadB()
@@ -77,20 +76,29 @@ class MorphMan( QDialog ):
     def onShowA( self ):
         try: self.loadA()
         except: return errorMsg( 'Can\'t load db' )
-        self.aSet = set( self.aDb.keys() )
-        self.morphemes = self.aSet
+        self.db = self.aDb
         self.updateDisplay()
 
     def onDiff( self, type='sym' ):
         try: self.loadAB()
         except: return errorMsg( 'Can\'t load dbs' )
-        self.aSet = set( self.aDb.keys() )
-        self.bSet = set( self.bDb.keys() )
-        if type == 'sym': self.morphemes = self.aSet.symmetric_difference( self.bSet )
-        elif type == 'A-B': self.morphemes = self.aSet.difference( self.bSet )
-        elif type == 'B-A': self.morphemes = self.bSet.difference( self.aSet )
-        elif type == 'inter': self.morphemes = self.aSet.intersection( self.bSet )
-        elif type == 'union': self.morphemes = self.aSet.union( self.bSet )
+
+        aSet = set( self.aDb.db.keys() )
+        bSet = set( self.bDb.db.keys() )
+        if type == 'sym':       ms = aSet.symmetric_difference( bSet )
+        elif type == 'A-B':     ms = aSet.difference( bSet )
+        elif type == 'B-A':     ms = bSet.difference( aSet )
+        elif type == 'inter':   ms = aSet.intersection( bSet )
+        elif type == 'union':   ms = aSet.union( bSet )
+        print type,len(ms)
+
+        self.db.db = {}
+        for m in ms:
+            locs = set()
+            if m in self.aDb.db: locs.update( self.aDb.db[m] )
+            if m in self.bDb.db: locs.update( self.bDb.db[m] )
+            self.db.addMLs1( m, locs )
+
         self.updateDisplay()
 
     def onExtractTxtFile( self ):
@@ -98,26 +106,26 @@ class MorphMan( QDialog ):
         if not srcPath: return
         destPath = QFileDialog.getSaveFileName( caption='Save morpheme db to?', directory=util.dbPath + 'textFile.db' )
         if not destPath: return
-        ms = M.file2ms( srcPath )
-        M.saveDb( M.ms2db( ms ), destPath )
+        db = M.MorphDb.mkFromFile( str(srcPath) )
+        db.save( str(destPath) )
         infoMsg( 'Success', 'Txt Extract' )
 
     def onSaveResults( self ):
-        db = M.ms2db( self.morphemes )
         destPath = QFileDialog.getSaveFileName( caption='Save results to?', directory=util.dbPath + 'results.db' )
         if not destPath: return
-        M.saveDb( db, destPath )
+        self.db.save( destPath )
         infoMsg( 'Success', 'Save db' )
 
     def updateDisplay( self ):
         bs = self.blacklist.text().split(',')
-        ms = [ m for m in self.morphemes if m[1] not in bs ]
+        for m in self.db.db.keys():
+            if m.pos in bs:
+                self.db.db.pop( m )
         if self.col4Mode.isChecked():
-            self.morphDisplay.setText( M.ms2str( ms ).decode('utf-8') )
+            self.morphDisplay.setText( self.db.showMs() )
         else:
-            self.morphDisplay.setText( u'\n'.join( [ e for (e,p,sp,r) in ms ] ) )
-        self.analysisDisplay.setText( M.analyze2str( self.morphemes ) )
-
+            self.morphDisplay.setText( u'\n'.join( [ m.expr for m in self.db.db ] ) )
+        self.analysisDisplay.setText( self.db.analyze2str() )
 
 def onMorphMan():
     mw.mainWin.mm = MorphMan( mw )
