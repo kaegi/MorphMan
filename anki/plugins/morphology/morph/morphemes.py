@@ -91,7 +91,7 @@ class TextFile( Location ):
         return '%s:%d' % ( self.filePath, self.lineNo )
 
 class AnkiDeck( Location ):
-    def __init__( self, factId, field, deckPath ):
+    def __init__( self, factId, field, deckPath, deckName ):
         self.factId     = factId
         self.field      = field
         self.deckPath   = deckPath
