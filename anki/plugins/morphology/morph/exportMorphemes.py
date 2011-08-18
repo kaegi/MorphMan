@@ -10,17 +10,19 @@ def pre( ed ):
     defPath = util.dbPath + name + '.db'
     path = QFileDialog.getSaveFileName( caption='Save morpheme db to?', directory=defPath )
     if not path: return 'BAIL'
-    return { 'ed':ed, 'srcName':name, 'filePath':path, 'ms':[], 'mp':m.mecab(None) }
+    return { 'ed':ed, 'srcName':name, 'filePath':path, 'db':m.MorphDb(), 'mp':m.mecab(None) }
 
 def per( st, f ):
-   st['ms'].extend( m.getMorphemes( st['mp'], f[ 'Expression' ] ) )
-   return st
+    ms = m.getMorphemes( st['mp'], f[ 'Expression' ] )
+    loc = m.AnkiDeck( f.id, 'Expression', st['ed'].deck.path, st['ed'].deck.name )
+    st['db'].addMsL( ms, loc )
+    return st
 
 def post( st ):
-   util.killMecab( st )
-   m.saveDb( m.ms2db( st['ms'], srcName=st['srcName'] ), st['filePath'] )
-   wantMerge = QMessageBox.question( st['ed'], 'Query', 'Would you like to merge with known db?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No )
-   if wantMerge == QMessageBox.Yes:
-      m.mergeFiles( st['filePath'], util.knownDbPath, util.knownDbPath )
+    util.killMecab( st )
+    st['db'].save( st['filePath'] )
+    wantMerge = QMessageBox.question( st['ed'], 'Query', 'Would you like to merge with known db?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No )
+    if wantMerge == QMessageBox.Yes:
+        m.MorphDb.mergeFiles( st['filePath'], util.knownDbPath, util.knownDbPath )
 
 util.addDoOnSelectionBtn( 'Export Morphemes', 'Morpheme export', 'Exporting...', pre, per, post )
