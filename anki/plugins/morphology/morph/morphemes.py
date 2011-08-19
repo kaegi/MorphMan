@@ -153,9 +153,8 @@ class MorphDb:
         return s
 
     def showLDb( self ):
-        self.recalcLDb()
         s = u''
-        for l,ms in self.ldb.iteritems():
+        for l,ms in self.ldb().iteritems():
             s += u'%s\n' % l.show()
             for m in ms:
                 s += u'  %s\n' % m.show()
@@ -165,6 +164,9 @@ class MorphDb:
         return ms2str( self.db.keys() )
 
     def save( self, path ): # FilePath -> IO ()
+        par = os.path.split( path )[0]
+        if not os.path.exists( par ):
+            os.makedirs( par )
         f = gzip.open( path, 'wb' )
         pickle.dump( self.db, f )
         f.close()
@@ -211,13 +213,15 @@ class MorphDb:
         mp.terminate()
 
     # Analysis
-    def recalcLDb( self ): # m Map Location -> {Morpheme}
-        self.ldb = {}
+    def ldb( self, recalc=True ): # Maybe Bool -> m Map Location {Morpheme}
+        if hasattr( self, '_ldb' ) and not recalc:
+            return self._ldb
+        self._ldb = d = {}
         for m,ls in self.db.iteritems():
             for l in ls:
-                try: self.ldb[ l ].add( m )
-                except: self.ldb[ l ] = set([ m ])
-        return self.ldb
+                try: d[ l ].add( m )
+                except: d[ l ] = set([ m ])
+        return d
 
     def countByType( self ): # Map Pos Int
         d = {}
