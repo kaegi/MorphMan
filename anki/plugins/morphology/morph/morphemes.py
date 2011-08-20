@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 import os, subprocess, sys, bz2, codecs, pickle, gzip
 
 def printf( s ):
@@ -60,9 +60,15 @@ def mecab( customPath=None ): # Maybe Path -> IO MecabProc
 
     path = customPath or 'mecab'
     if not which( 'mecab' ): # probably on windows and only has mecab via Anki
-        amPath = r'C:\Program Files\Anki\mecab'
-        os.environ['PATH'] += ';%s\\bin' % amPath
-        os.environ['MECABRC'] = '%s\\etc\\mecabrc' % amPath
+        # maybe we're running from anki?
+        aPath = os.path.dirname( os.path.abspath( sys.argv[0] ) )
+        amPath = os.path.join( aPath, 'mecab', 'bin', 'mecab.exe' )
+
+        # otherwise check default anki install loc
+        if not which( amPath ):
+            aPath = r'C:\Program Files\Anki'
+        os.environ['PATH'] += ';%s\\mecab\\bin' % aPath
+        os.environ['MECABRC'] = '%s\\mecab\\etc\\mecabrc' % aPath
     nodeFmt = '\t'.join( MECAB_NODE_PARTS )+'\r'
     mecabCmd = [ path, '--node-format=%s' % nodeFmt, '--eos-format=\n', '--unk-format=%m\tUnknown\tUnknown\tUnknown\r']
     return subprocess.Popen( mecabCmd, bufsize=-1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, startupinfo=si )
