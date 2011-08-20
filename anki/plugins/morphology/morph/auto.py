@@ -23,7 +23,7 @@ def printf( msg, parent=None, type="text" ):
     showText( msg, parent, type )
 def log( msg ):
     txt = '%s: %s' % ( datetime.datetime.now(), msg )
-    f = open( logPath, 'a' ):
+    f = open( logPath, 'a' )
     f.write( txt+'\n' )
     f.close()
     print txt
