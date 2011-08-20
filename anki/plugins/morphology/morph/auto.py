@@ -22,8 +22,11 @@ def printf( msg, parent=None, type="text" ):
     print msg
     showText( msg, parent, type )
 def log( msg ):
-    with open( logPath, 'a' ) as f:
-        f.write( '%s: %s\n' % (datetime.datetime.now(), msg) )
+    txt = '%s: %s' % ( datetime.datetime.now(), msg )
+    f = open( logPath, 'a' ):
+    f.write( txt+'\n' )
+    f.close()
+    print txt
 
 # Deck load
 def getDeck( dpath ):
@@ -57,7 +60,6 @@ class DeckMgr:
 
     # Config
     def loadCfg( self ):
-        log( 'loading cfg' )
         try:
             f = gzip.open( self.cfgPath, 'rb' )
             d = pickle.load( f )
@@ -65,10 +67,9 @@ class DeckMgr:
             f.close()
             self.saveCfg()
         except IOError:
-            log( 'cfg load failed' )
+            log( 'cfg load failed. using defaults' )
 
     def saveCfg( self ):
-        log( 'saving cfg' )
         if not os.path.exists( self.dbsPath ):
             os.makedirs( self.dbsPath )
         f = gzip.open( self.cfgPath, 'wb' )
@@ -127,12 +128,19 @@ class DeckMgr:
             return False
         return True
 
+    def updateEverything( self ):
+        log( 'Updating Everything...' )
+        aDb = self.getAll()
+        log( '  - updated all.db [%d]' % len(aDb.db) )
+        mDb = self.getMature()
+        log( '  - updated mature.db [%d]' % len(mDb.db)  )
+        log( '...done' )
+
 def doDeck( dPath ):
     deck = getDeck( dPath )
     if not deck: return
     d = DeckMgr( deck )
-    m = d.getMature()
-    log(' mature has len %d' % len(m.db) )
+    d.updateEverything()
     d.close()
 
 # main
