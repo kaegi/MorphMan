@@ -120,15 +120,16 @@ class TextFile( Location ):
         return '%s:%d' % ( self.filePath, self.lineNo )
 
 class AnkiDeck( Location ):
-    def __init__( self, factId, field, deckPath, deckName, maturities ):
+    def __init__( self, factId, fieldName, fieldValue, deckPath, deckName, maturities ):
         self.factId     = factId
-        self.field      = field
+        self.fieldName  = fieldName
+        self.fieldValue = fieldValue
         self.deckPath   = deckPath
         self.deckName   = deckName
         self.maturities = maturities
-        self.maturity   = max( maturities )
+        self.maturity   = max( maturities ) if maturities else 0
     def show( self ):
-        return '%s.%d[%s]@%d' % ( self.deckName, self.factId, self.field, self.maturity )
+        return '%s.%d[%s]@%d' % ( self.deckName, self.factId, self.fieldName, self.maturity )
 
 class MorphDb:
     @staticmethod
@@ -158,9 +159,9 @@ class MorphDb:
                 s += u'  %s\n' % l.show()
         return s
 
-    def showLDb( self ):
+    def showLocDb( self ):
         s = u''
-        for l,ms in self.ldb().iteritems():
+        for l,ms in self.locDb().iteritems():
             s += u'%s\n' % l.show()
             for m in ms:
                 s += u'  %s\n' % m.show()
@@ -183,6 +184,9 @@ class MorphDb:
         f.close()
 
     # Adding
+    def clear( self ): # m ()
+        self.db = {}
+
     def addMLs( self, mls ): # [ (Morpheme,Location) ] -> m ()
         for m,loc in mls:
             try:
@@ -198,6 +202,14 @@ class MorphDb:
 
     def addMsL( self, ms, loc ): # [Morpheme] -> Location -> m ()
         self.addMLs( (m,loc) for m in ms )
+
+    def addFromLocDb( self, ldb ): # Map Location {Morpheme} -> m ()
+        for l,ms in ldb.iteritems():
+            for m in ms:
+                try:
+                    self.db[ m ].add( l )
+                except KeyError:
+                    self.db[ m ] = set([ l ])
 
     def merge( self, md ): # Db -> m ()
         for m,locs in md.db.iteritems():
@@ -219,14 +231,22 @@ class MorphDb:
         mp.terminate()
 
     # Analysis
-    def ldb( self, recalc=True ): # Maybe Bool -> m Map Location {Morpheme}
-        if hasattr( self, '_ldb' ) and not recalc:
-            return self._ldb
-        self._ldb = d = {}
+    def locDb( self, recalc=True ): # Maybe Bool -> m Map Location {Morpheme}
+        if hasattr( self, '_locDb' ) and not recalc:
+            return self._locDb
+        self._locDb = d = {}
         for m,ls in self.db.iteritems():
             for l in ls:
                 try: d[ l ].add( m )
                 except: d[ l ] = set([ m ])
+        return d
+
+    def fidDb( self, recalc=True ): # Maybe Bool -> m Map FactId Location
+        if hasattr( self, '_fidDb' ) and not recalc:
+            return self._fidDb
+        self._fidDb = d = {}
+        for loc in self.locDb():
+            d[ (loc.factId, loc.fieldName) ] = loc
         return d
 
     def countByType( self ): # Map Pos Int
