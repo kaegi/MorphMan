@@ -27,9 +27,6 @@ class MorphMan( QDialog ):
         grid = QGridLayout( self )
         vbox = QVBoxLayout()
 
-        # Mass updater
-        self.autoBtn    = mkBtn( 'Update', self.doUpdate, self, vbox )
-
         # DB Paths
         self.aPathLEdit = QLineEdit()
         vbox.addWidget( self.aPathLEdit )
@@ -66,10 +63,6 @@ class MorphMan( QDialog ):
         grid.addLayout( vbox, 0, 0 )
         grid.addWidget( self.morphDisplay, 0, 1 )
         grid.addWidget( self.analysisDisplay, 0, 2 )
-
-    def doUpdate( self ):
-        auto.run()
-        infoMsg( 'Complete', 'Updater' )
 
     def loadA( self ):
         self.aPath = self.aPathLEdit.text()
