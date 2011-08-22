@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
 
-import os, time, datetime, gzip, pickle, traceback
+import os, time, datetime, gzip, pickle, traceback, threading
 from anki.deck import DeckStorage
 from anki.facts import Fact
 from anki.cards import Card
@@ -11,12 +11,12 @@ import morphemes as M
 knownDbPath = os.path.join( mw.pluginsFolder(),'morph','dbs','known.db' )
 rootDeckDbPath = os.path.join( mw.pluginsFolder(),'morph','dbs','deck' )
 logPath = os.path.join( mw.pluginsFolder(),'morph','tests','auto.log' )
+REPEAT_INTERVAL = 10 # sec
 VERBOSE = False
 
 #TODOS:
 # vocab rank
-# more error handling - always close deck handle too
-# run in background
+# more error handling
 # gui for configuration and checking last sync
 
 # Debugging
@@ -38,7 +38,7 @@ def getDeck( dpath ):
         return DeckStorage.Deck( dpath )
     except Exception, e:
         if hasattr( e, 'data' ) and e.data.get('type') == 'inuse':
-            log( 'deck already open @ %s. skipping' % dpath )
+            log( '! deck already open @ %s. skipping' % dpath )
         else:
             log( '!!! deck is corrupted: %s\nException was: %s' % (dpath, e) )
 
@@ -63,8 +63,10 @@ class DeckMgr:
             'vocab rank field':'vocabRank',
 
             # internal
-            'last deck update':0,
-            'last db update':{}, # Map dbPath modTime
+            'last deck update':0, # TimeStamp
+            'last deck update took':0, # Seconds
+            'last all.db update took':0, # Seconds
+            'last db update':{}, # Map DbPath TimeStamp
         }
         self.loadCfg()
         debug( 'Loaded DeckMgr for %s' % self.deckName )
@@ -147,7 +149,7 @@ class DeckMgr:
 
         i, lfs = 0, len( fs )
         start = time.time()
-        fstart = time.time()
+        last = time.time()
         for f in fs:
             mats = [ c.interval for c in fid2cardsDb[ f.id ] ]
             for fieldName in fieldNames:
@@ -165,7 +167,7 @@ class DeckMgr:
                         locDb[ newLoc ] = ms
                     # new loc and new morphemes
                     elif loc.fieldValue != fieldValue:
-                        debug('        !morphs for %d[%s]' % ( f.id, fieldName ) )
+                        debug('        .morphs for %d[%s]' % ( f.id, fieldName ) )
                         newLoc = M.AnkiDeck( f.id, fieldName, fieldValue, self.deckPath, self.deckName, mats )
                         ms = M.getMorphemes( mp, fieldValue )
                         locDb.pop( loc )
@@ -174,19 +176,18 @@ class DeckMgr:
                     loc = M.AnkiDeck( f.id, fieldName, fieldValue, self.deckPath, self.deckName, mats )
                     ms = M.getMorphemes( mp, fieldValue )
                     if ms:
-                        debug('        !loc for %d[%s]' % ( f.id, fieldName ) )
+                        debug('        .loc for %d[%s]' % ( f.id, fieldName ) )
                         locDb[ loc ] = ms
             i += 1
             if i % 100 == 0:
-                fend = time.time()
-                log('    %d / %d = %d%% in %f sec' % ( i, lfs, 100.*i/lfs, fend-fstart ) )
-                fstart = time.time()
-        end = time.time()
-        log( 'Proccessed all facts in %f sec. Now saving...' % ( end-start ) )
+                log('    %d / %d = %d%% in %f sec' % ( i, lfs, 100.*i/lfs, time.time()-last ) )
+                last = time.time()
+        log( 'Proccessed all facts in %f sec. Now saving...' % ( time.time()-start ) )
         allDb.clear()
         allDb.addFromLocDb( locDb )
         allDb.save( self.allPath )
         self.cfg['last db update'][ self.allPath ] = time.time()
+        self.cfg['last all.db update took'] = time.time() - start
         log( '...done' )
         return self._allDb
 
@@ -241,6 +242,7 @@ class DeckMgr:
                 debug( '  * Created new known.db' )
         return self._knownDb
 
+    # update our dbs via the deck
     def updateDbs( self ):
         #NOTE: we (dangerously?) assume that if all.db wasn't updated then known.db doesn't need to be
         log( 'Updating dbs for %s' % self.deckName )
@@ -257,6 +259,7 @@ class DeckMgr:
             self.intervalDb( i, doLoad=False )
         log( '  - updated interval dbs' )
 
+    # update our deck via the dbs
     def updateDeck( self ):
         log( 'Updating deck for %s' % self.deckName )
         self.allDb( doLoad=False ) # force update for timestamp below to be correct
@@ -315,9 +318,13 @@ class DeckMgr:
         end = time.time()
         log( 'Proccessed all facts in %f sec' % ( end-start ) )
         self.cfg['last deck update'] = time.time()
+        self.cfg['last deck update took'] = end-start
 
 
-# main
+################################################################################
+## Main
+################################################################################
+
 def run():
     start = time.time()
     deckPaths = mw.config['recentDeckPaths']
@@ -325,22 +332,46 @@ def run():
     for dPath in deckPaths:
         deck = getDeck( dPath )
         if not deck: continue
-        dm = DeckMgr( deck )
-        dm.updateDbs()
-        dm.close()
+        try:
+            dm = DeckMgr( deck )
+            dm.updateDbs()
+            dm.close()
+        finally:
+            deck.close()
     upDbTime = time.time()
     log( 'Dbs updated in %f' % (upDbTime-start) )
 
     # update decks
     for dPath in deckPaths:
-        #if 'JSPfEC' not in dPath: continue #REM
         deck = getDeck( dPath )
         if not deck: continue
-        dm = DeckMgr( deck )
-        dm.updateDeck()
-        dm.close()
+        try:
+            dm = DeckMgr( deck )
+            dm.updateDeck()
+            dm.close()
+        finally:
+            deck.close()
     upDeckTime = time.time()
     log( 'Decks updated in %f' % (upDeckTime-upDbTime) )
     log( 'Full update completed in %d sec' % (upDeckTime-start) )
 
-addHook( 'init', run )
+class Updater( threading.Thread ):
+    def __init__( self ):
+        threading.Thread.__init__( self )
+        self.daemon = True
+
+    def run( self ):
+        while True:
+            time.sleep( REPEAT_INTERVAL )
+            run()
+
+def main():
+    # purge log file
+    f = open( logPath, 'w' )
+    f.close()
+
+    # run forever in background daemon thread
+    u = Updater()
+    u.start()
+
+addHook( 'init', main )
