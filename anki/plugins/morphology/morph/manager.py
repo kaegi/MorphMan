@@ -7,6 +7,7 @@ import os
 
 import morphemes as M
 import util
+import auto
 from util import errorMsg, infoMsg
 
 def getPath( le ):
@@ -25,6 +26,9 @@ class MorphMan( QDialog ):
         self.setWindowTitle( 'Morph Man Title' )
         grid = QGridLayout( self )
         vbox = QVBoxLayout()
+
+        # Mass updater
+        self.autoBtn    = mkBtn( 'Update', self.doUpdate, self, vbox )
 
         # DB Paths
         self.aPathLEdit = QLineEdit()
@@ -62,6 +66,10 @@ class MorphMan( QDialog ):
         grid.addLayout( vbox, 0, 0 )
         grid.addWidget( self.morphDisplay, 0, 1 )
         grid.addWidget( self.analysisDisplay, 0, 2 )
+
+    def doUpdate( self ):
+        auto.run()
+        infoMsg( 'Complete', 'Updater' )
 
     def loadA( self ):
         self.aPath = self.aPathLEdit.text()

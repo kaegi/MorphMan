@@ -1,13 +1,11 @@
 #-*- coding: utf-8 -*-
 
-import os, time, datetime, gzip, pickle, stat
-from ankiqt import mw
+import os, time, datetime, gzip, pickle, traceback
 from anki.deck import DeckStorage
 from anki.facts import Fact
 from anki.cards import Card
+from ankiqt import mw
 from anki.hooks import addHook
-from anki.utils import ids2str
-from ankiqt.ui.utils import askUser, showText
 import morphemes as M
 
 knownDbPath = os.path.join( mw.pluginsFolder(),'morph','dbs','known.db' )
@@ -15,11 +13,13 @@ rootDeckDbPath = os.path.join( mw.pluginsFolder(),'morph','dbs','deck' )
 logPath = os.path.join( mw.pluginsFolder(),'morph','tests','auto.log' )
 VERBOSE = False
 
-# Debugging
-def printf( msg, parent=None, type="text" ):
-    log( msg )
-    showText( msg )
+#TODOS:
+# vocab rank
+# more error handling - always close deck handle too
+# run in background
+# gui for configuration and checking last sync
 
+# Debugging
 def debug( msg ):
     if VERBOSE: log( msg )
 
@@ -33,14 +33,14 @@ def log( msg ):
 # Deck load
 def getDeck( dpath ):
     if not os.path.exists( dpath ):
-        return log( 'deck file not found @ %s' % dpath )
+        return log( '! deck file not found @ %s' % dpath )
     try:
         return DeckStorage.Deck( dpath )
     except Exception, e:
         if hasattr( e, 'data' ) and e.data.get('type') == 'inuse':
             log( 'deck already open @ %s. skipping' % dpath )
         else:
-            printf( '!! deck is corrupted: %s\nException was: %s' % (dpath, e) )
+            log( '!!! deck is corrupted: %s\nException was: %s' % (dpath, e) )
 
 class DeckMgr:
     def __init__( self, deck ):
@@ -52,15 +52,22 @@ class DeckMgr:
         self.allPath  = self.dbsPath + os.sep + 'all.db'
 
         self.cfg = {
+            # user configurable
             'mature threshold':21,
             'learnt threshold':3,
             'known threshold':3,
             'interval dbs to make':range(1,21)+[30,100,365],
             'morph fields':['Expression'],
-            'last update':{}, # Map dbPath modTime
+            'i+N field':'iPlusN',
+            'unknowns field':'unknowns',
+            'vocab rank field':'vocabRank',
+
+            # internal
+            'last deck update':0,
+            'last db update':{}, # Map dbPath modTime
         }
         self.loadCfg()
-        log( 'Loaded DeckMgr for %s' % self.deckName )
+        debug( 'Loaded DeckMgr for %s' % self.deckName )
 
     # Clean
     def close( self ):
@@ -75,8 +82,9 @@ class DeckMgr:
         try:
             f = gzip.open( self.cfgPath, 'rb' )
             d = pickle.load( f )
-            self.cfg.update( d )
             f.close()
+
+            self.cfg.update( d )
             self.saveCfg()
         except IOError:
             log( 'cfg load failed. using defaults' )
@@ -93,10 +101,10 @@ class DeckMgr:
     ###########################################################################
 
     # Update check
-    def isUpToDate( self, dbPath ):
+    def isDbUpToDate( self, dbPath ):
         if not os.path.exists( dbPath ):
             return False
-        lastUpdate = self.cfg['last update'].get( dbPath, 0 )
+        lastUpdate = self.cfg['last db update'].get( dbPath, 0 )
         if self.deck.modified > lastUpdate:
             return False
         return True
@@ -105,33 +113,34 @@ class DeckMgr:
     def getFacts( self ):
         return self.deck.s.query(Fact).all()
 
-    def mkFid2CardsDb( self ):
-        d = self.fid2cardsDb = {}
-        for c in self.deck.s.query(Card).all():
-            try:
-                d[ c.factId ].append( c )
-            except KeyError:
-                d[ c.factId ] = [c]
+    def fid2cardsDb( self ):
+        if not hasattr( self, '_fid2cardsDb' ):
+            d = self._fid2cardsDb = {}
+            for c in self.deck.s.query(Card).all():
+                try:
+                    d[ c.factId ].append( c )
+                except KeyError:
+                    d[ c.factId ] = [c]
+        return self._fid2cardsDb
 
     # DB that stores all facts in deck
     def mkAll( self ): # uses cache, constructs by making a loc->morphs db
         log( 'Getting initial all.db...' )
-        if not hasattr( self, 'allDb' ):
+        if not hasattr( self, '_allDb' ):
             try:
-                self.allDb = M.MorphDb( self.allPath )
+                self._allDb = M.MorphDb( self.allPath )
                 debug( '  * Updating existing all.db' )
             except IOError:
-                self.allDb = M.MorphDb()
+                self._allDb = M.MorphDb()
                 debug( '  * Creating new all.db from scratch' )
-        allDb = self.allDb
+        allDb = self._allDb
         log( '...done' )
 
-        self.mkFid2CardsDb()
         mp = M.mecab()
 
         # pre-cache lookups
         fieldNames = self.cfg['morph fields']
-        fid2cardsDb = self.fid2cardsDb
+        fid2cardsDb = self.fid2cardsDb()
         fidDb = allDb.fidDb()
         locDb = allDb.locDb()
         fs = self.getFacts()
@@ -142,7 +151,10 @@ class DeckMgr:
         for f in fs:
             mats = [ c.interval for c in fid2cardsDb[ f.id ] ]
             for fieldName in fieldNames:
-                fieldValue = f[ fieldName ]
+                try:
+                    fieldValue = f[ fieldName ]
+                except KeyError: # if fact doesn't have the field just skip it
+                    continue
                 try: # existing location
                     loc = fidDb[ (f.id, fieldName) ]
                     # new loc only; no morpheme change
@@ -159,10 +171,11 @@ class DeckMgr:
                         locDb.pop( loc )
                         locDb[ newLoc ] = ms
                 except KeyError: # new location
-                    debug('        !loc for %d[%s]' % ( f.id, fieldName ) )
                     loc = M.AnkiDeck( f.id, fieldName, fieldValue, self.deckPath, self.deckName, mats )
                     ms = M.getMorphemes( mp, fieldValue )
-                    locDb[ loc ] = ms
+                    if ms:
+                        debug('        !loc for %d[%s]' % ( f.id, fieldName ) )
+                        locDb[ loc ] = ms
             i += 1
             if i % 100 == 0:
                 fend = time.time()
@@ -173,83 +186,161 @@ class DeckMgr:
         allDb.clear()
         allDb.addFromLocDb( locDb )
         allDb.save( self.allPath )
-        self.cfg['last update'][ self.allPath ] = time.time()
+        self.cfg['last db update'][ self.allPath ] = time.time()
         log( '...done' )
-        return self.allDb
+        return self._allDb
 
-    def getAll( self ):
-        if not self.isUpToDate( self.allPath ):
+    def allDb( self, doLoad=True ): # Maybe Bool -> m Maybe Db
+        if not self.isDbUpToDate( self.allPath ):
             return self.mkAll()
-        if not hasattr( self, 'allDb' ):
-            self.allDb = M.MorphDb( self.allPath )
-        return self.allDb
+        if doLoad:
+            if not hasattr( self, '_allDb' ):
+                self._allDb = M.MorphDb( self.allPath )
+            return self._allDb
 
     # DBs filtered to only morphemes in facts of at least maturity N
     def intervalPath( self, n ):
         return self.dbsPath + os.sep + 'interval.%d.db' % n
-    def mkInterval( self, n ):
+    def mkIntervalDb( self, n ):
         db = M.MorphDb()
-        for l,ms in self.getAll().locDb().iteritems():
+        for l,ms in self.allDb().locDb().iteritems():
             if l.maturity > n:
                 db.addMsL( ms, l )
         db.save( self.intervalPath(n) )
-        self.cfg['last update'][ self.intervalPath(n) ] = time.time()
+        self.cfg['last db update'][ self.intervalPath(n) ] = time.time()
         return db
-    def getInterval( self, n ):
-        if not self.isUpToDate( self.intervalPath(n) ):
-            return self.mkInterval( n )
-        return M.MorphDb( self.intervalPath(n) )
-    def getMature( self ):
-        return self.getInterval( self.cfg['mature threshold'] )
-    def getLearnt( self ):
-        return self.getInterval( self.cfg['learnt threshold'] )
-    def getKnown( self ):
-        return self.getInterval( self.cfg['known threshold'] )
+    def intervalDb( self, n, doLoad=True ): # Int -> Maybe Bool -> m Maybe Db
+        if not self.isDbUpToDate( self.intervalPath(n) ):
+            return self.mkIntervalDb( n )
+        if doLoad:
+            return M.MorphDb( self.intervalPath(n) )
+    def deckMatureDb( self, doLoad=True ):
+        return self.intervalDb( self.cfg['mature threshold'], doLoad )
+    def deckLearntDb( self, doLoad=True ):
+        return self.intervalDb( self.cfg['learnt threshold'], doLoad )
+    def deckKnownDb( self, doLoad=True ):
+        return self.intervalDb( self.cfg['known threshold'], doLoad )
 
     ###########################################################################
     ## Update deck with DBs
     ###########################################################################
 
-    def updateKnown( self ):
-        if not hasattr( self, 'knownDb' ):
+    # known.db
+    def addToKnownDb( self ):
+        self.knownDb().merge( self.deckKnownDb() )
+        self.knownDb().save( knownDbPath )
+
+    def knownDb( self ):
+        if not hasattr( self, '_knownDb' ):
             try:
-                self.knownDb = M.MorphDb( knownDbPath )
-                debug( '  * Loading existing known.db' )
+                self._knownDb = M.MorphDb( knownDbPath )
+                debug( '  * Loaded existing known.db' )
             except IOError:
-                self.knownDb = M.MorphDb()
-                debug( '  * Creating new known.db' )
-        self.knownDb.merge( self.getKnown() )
-        self.knownDb.save( knownDbPath )
+                self._knownDb = M.MorphDb()
+                self._knownDb.save( knownDbPath )
+                debug( '  * Created new known.db' )
+        return self._knownDb
 
-    def updateEverything( self ):
-        log( 'Updating everything for %s' % self.deckName )
-        aDb = self.getAll()
-        log( '  - updated all.db [%d]' % len(aDb.db) )
-
-        self.updateKnown()
-        log( '  - updated known.db [%d]' % len(self.knownDb.db) )
+    def updateDbs( self ):
+        #NOTE: we (dangerously?) assume that if all.db wasn't updated then known.db doesn't need to be
+        log( 'Updating dbs for %s' % self.deckName )
+        aDb = self.allDb( doLoad=False )
+        if aDb:
+            log( '  - updated all.db [%d]' % len(aDb.db) )
+            self.addToKnownDb()
+            log( '  - updated known.db [%d]' % len(self.knownDb().db) )
+        else:
+            log( '  - updated all.db [no-op]' )
+            log( '  - updated known.db [no-op]' )
 
         for i in self.cfg['interval dbs to make']:
-            self.getInterval( i )
+            self.intervalDb( i, doLoad=False )
         log( '  - updated interval dbs' )
-        log( 'DONE' )
 
-def doDeck( dPath ):
-    deck = getDeck( dPath )
-    if not deck: return
-    d = DeckMgr( deck )
-    log('is all.db up to date? %s' % d.isUpToDate( d.allPath ) )
-    d.updateEverything()
-    d.close()
+    def updateDeck( self ):
+        log( 'Updating deck for %s' % self.deckName )
+        self.allDb( doLoad=False ) # force update for timestamp below to be correct
+        if self.cfg['last db update'][ self.allPath ] > self.cfg['last deck update']:
+            try:
+                self.doDeckUpdate()
+                log( '  - updated morph metadata fields' )
+            finally:
+                self.cfg['last db update'][ self.allPath ] = self.cfg['last deck update']
+        else:
+            log( '  - updated morph metadata fields [no-op]' )
+
+    def doDeckUpdate( self ):
+        fieldNames = self.cfg['morph fields']
+        fidDb = self.allDb().fidDb()
+        locDb = self.allDb().locDb()
+        knownDb = self.knownDb()
+        fs = self.getFacts()
+        ipnField = self.cfg['i+N field']
+        unknownsField = self.cfg['unknowns field']
+        vrField = self.cfg['vocab rank field']
+
+        i, lfs = 0, len(fs)
+        start = time.time()
+        fstart = time.time()
+        for f in fs:
+            # first get all morphems for this fact
+            ms = set()
+            for fieldName in fieldNames:
+                try:
+                    loc = fidDb[ (f.id, fieldName) ]
+                    ms.update( locDb[ loc ] )
+                except KeyError:
+                    continue
+            # now determine unknowns and iPlusN
+            unknowns, N = set(), 0
+            for m in ms:
+                if m not in knownDb.db:
+                    N += 1
+                    unknowns.add( m )
+            try:
+                f[ ipnField ] = u'%d' % N
+                f[ vrField ] = u'2113' #TODO
+                f[ unknownsField ] = u','.join( u.inflected for u in unknowns )
+            except KeyError: pass
+
+            # now display progress
+            i += 1
+            if i % 100 == 0:
+                fend = time.time()
+                log('    %d / %d = %d%% in %f sec' % ( i, lfs, 100.*i/lfs, fend-fstart ) )
+                fstart = time.time()
+
+        # save deck and timestamps
+        self.deck.save()
+        end = time.time()
+        log( 'Proccessed all facts in %f sec' % ( end-start ) )
+        self.cfg['last deck update'] = time.time()
+
 
 # main
-def main():
+def run():
     start = time.time()
     deckPaths = mw.config['recentDeckPaths']
-    for dpath in deckPaths:
-        doDeck( dpath )
-    end = time.time()
-    dur = end - start
-    log( 'completed in %d sec' % dur )
+    # update DBs
+    for dPath in deckPaths:
+        deck = getDeck( dPath )
+        if not deck: continue
+        dm = DeckMgr( deck )
+        dm.updateDbs()
+        dm.close()
+    upDbTime = time.time()
+    log( 'Dbs updated in %f' % (upDbTime-start) )
 
-addHook( 'init', main )
+    # update decks
+    for dPath in deckPaths:
+        #if 'JSPfEC' not in dPath: continue #REM
+        deck = getDeck( dPath )
+        if not deck: continue
+        dm = DeckMgr( deck )
+        dm.updateDeck()
+        dm.close()
+    upDeckTime = time.time()
+    log( 'Decks updated in %f' % (upDeckTime-upDbTime) )
+    log( 'Full update completed in %d sec' % (upDeckTime-start) )
+
+addHook( 'init', run )
