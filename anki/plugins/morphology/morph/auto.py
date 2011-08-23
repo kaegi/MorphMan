@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
 
-import os, time, gzip, pickle, threading, ctypes
+import os, time, gzip, pickle, threading, ctypes, stat
 from anki.deck import DeckStorage
 from anki.facts import Fact
 from anki.cards import Card
@@ -225,9 +225,12 @@ class DeckMgr:
     ###########################################################################
 
     # known.db
-    def addToKnownDb( self ): # IO ()
-        self.knownDb().merge( self.deckKnownDb() )
-        self.knownDb().save( knownDbPath )
+    def addToKnownDb( self ): # IO Int
+        new = self.knownDb().merge( self.deckKnownDb() )
+        if new:
+            debug( '  Saving %d modifications to known.db' % new )
+            self.knownDb().save( knownDbPath )
+        return new
 
     def knownDb( self ): # IO Db
         if not hasattr( self, '_knownDb' ):
@@ -247,8 +250,8 @@ class DeckMgr:
         aDb = self.allDb( doLoad=False )
         if aDb:
             log( '  - updated all.db [%d]' % len(aDb.db) )
-            self.addToKnownDb()
-            log( '  - updated known.db [%d]' % len(self.knownDb().db) )
+            new = self.addToKnownDb()
+            log( '  - updated known.db [%d, +%d]' % ( len(self.knownDb().db), new ) )
         else:
             log( '  - updated all.db [no-op]' )
             log( '  - updated known.db [no-op]' )
@@ -261,7 +264,8 @@ class DeckMgr:
     def updateDeck( self ): # IO ()
         log( 'Updating deck for %s' % self.deckName )
         self.allDb( doLoad=False ) # force update for timestamp below to be correct
-        if self.cfg['last db update'][ self.allPath ] > self.cfg['last deck update']:
+        knownDbMod = os.stat( knownDbPath )[ stat.ST_MTIME ]
+        if max( knownDbMod, self.cfg['last db update'][ self.allPath ] ) > self.cfg['last deck update']:
             try:
                 self.doDeckUpdate()
                 log( '  - updated morph metadata fields' )
