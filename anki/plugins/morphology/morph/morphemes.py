@@ -205,12 +205,17 @@ class MorphDb:
                 except KeyError:
                     self.db[ m ] = set([ l ])
 
-    def merge( self, md ): # Db -> m ()
+    # returns number of added entries
+    def merge( self, md ): # Db -> m Int
+        new = 0
         for m,locs in md.db.iteritems():
             try:
+                new += len( locs - self.db[m] )
                 self.db[m].update( locs )
             except KeyError:
                 self.db[m] = locs
+                new += len( locs )
+        return new
 
     def importFile( self, path, ws=None, bs=[u'記号'] ): # FilePath -> PosWhitelist? -> PosBlacklist? -> IO ()
         f = codecs.open( path, 'r', 'utf-8' )
