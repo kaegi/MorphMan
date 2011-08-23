@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
 
-import os, time, datetime, gzip, pickle, threading, ctypes
+import os, time, gzip, pickle, threading, ctypes
 from anki.deck import DeckStorage
 from anki.facts import Fact
 from anki.cards import Card
@@ -8,31 +8,14 @@ from ankiqt import mw
 from anki.hooks import addHook
 import morphemes as M
 import rankVocab as R
-import util
+from util import log, debug, knownDbPath, deckDbPath, deckPaths, sigterm, updater, clearLog
 
-knownDbPath = os.path.join( mw.pluginsFolder(),'morph','dbs','known.db' )
-rootDeckDbPath = os.path.join( mw.pluginsFolder(),'morph','dbs','deck' )
-logPath = os.path.join( mw.pluginsFolder(),'morph','tests','auto.log' )
-deckPaths = mw.config['recentDeckPaths']
-REPEAT_INTERVAL = 30 # sec
+REPEAT_INTERVAL = 5 # sec
 CARD_CREATION_TIME_INC = 10
-VERBOSE = False
 
 #TODOS:
 # gui for configuration and checking last sync
 # more morphs before schema freeze?
-# matched morpheme, mass tagger
-
-# Debugging
-def debug( msg ):
-    if VERBOSE: log( msg )
-
-def log( msg ):
-    txt = '%s: %s' % ( datetime.datetime.now(), msg )
-    f = open( logPath, 'a' )
-    f.write( txt+'\n' )
-    f.close()
-    print txt
 
 # Deck load
 def getDeck( dpath ): # AnkiDeckPath -> Maybe Deck
@@ -60,7 +43,7 @@ class DeckMgr:
         self.deck     = deck
         self.deckName = str( deck.name() )
         self.deckPath = str( deck.path )
-        self.dbsPath  = rootDeckDbPath + os.sep + self.deckName
+        self.dbsPath  = deckDbPath + os.sep + self.deckName
         self.cfgPath  = self.dbsPath + os.sep + 'config'
         self.allPath  = self.dbsPath + os.sep + 'all.db'
 
@@ -203,7 +186,7 @@ class DeckMgr:
         self.cfg['last db update'][ self.allPath ] = time.time()
         self.cfg['last all.db update took'] = time.time() - start
         log( '...done' )
-        util.sigterm( mp )
+        sigterm( mp )
         return self._allDb
 
     def allDb( self, doLoad=True ): # Maybe Bool -> m Maybe Db
@@ -330,7 +313,7 @@ class DeckMgr:
             except KeyError: pass
             try: f[ vrField ] = u'%d' % vr
             except KeyError: pass
-            try: f[ unknownsField ] = u','.join( u.inflected for u in unknowns )
+            try: f[ unknownsField ] = u','.join( u.base for u in unknowns )
             except KeyError: pass
 
             # now display progress
@@ -415,13 +398,12 @@ class Updater( threading.Thread ):
             run()
 
 def main():
-    # purge log file
-    f = open( logPath, 'w' )
-    f.close()
+    clearLog()
 
     # run forever in background daemon thread
     u = Updater()
-    util.updater = u
+    global updater
+    updater = u
     u.start()
 
 addHook( 'init', main )

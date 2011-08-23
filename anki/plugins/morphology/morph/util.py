@@ -5,11 +5,17 @@ from anki.hooks import addHook
 from anki.facts import Fact
 from ankiqt import mw
 
-import os
+import datetime, os
 import morphemes
 
+VERBOSE = False
+
+logPath = os.path.join( mw.pluginsFolder(),'morph','tests','auto.log' )
 dbPath = mw.pluginsFolder() + os.sep + 'morph' + os.sep + 'dbs' + os.sep
-knownDbPath = dbPath + 'known.db'
+knownDbPath = os.path.join( mw.pluginsFolder(),'morph','dbs','known.db' )
+deckDbPath = os.path.join( mw.pluginsFolder(),'morph','dbs','deck' )
+deckPaths = mw.config['recentDeckPaths']
+updater = None # updater thread
 
 def sigterm( p ):
    try: p.terminate()
@@ -21,9 +27,6 @@ def getBlacklist( ed, default=u'記号,助詞' ):
    if not ok: bs = default
    return bs.split(',')
 
-def errorMsg( txt, cap='Error', p=mw ): return QMessageBox.critical( p, cap, txt )
-def infoMsg( txt, cap='Note', p=mw ): return QMessageBox.information( p, cap, txt )
-
 def requireKnownDb(): # returns false if failed
    global knownDbPath
    if os.path.exists( knownDbPath ): return True
@@ -33,6 +36,29 @@ def requireKnownDb(): # returns false if failed
       return False
    return True
 
+################################################################################
+## Log / inform system
+################################################################################
+def errorMsg( txt, cap='Error', p=mw ): return QMessageBox.critical( p, cap, txt )
+def infoMsg( txt, cap='Note', p=mw ): return QMessageBox.information( p, cap, txt )
+
+def debug( msg ):
+    if VERBOSE: log( msg )
+
+def log( msg ):
+    txt = '%s: %s' % ( datetime.datetime.now(), msg )
+    f = open( logPath, 'a' )
+    f.write( txt+'\n' )
+    f.close()
+    print txt
+
+def clearLog():
+   f = open( logPath, 'w' )
+   f.close()
+
+################################################################################
+## GUI helpers
+################################################################################
 def doOnSelection( ed, overviewMsg, progMsg, preF, perF, postF ):
    # init
    st = preF( ed )
