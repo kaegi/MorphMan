@@ -1,14 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
 import os, subprocess, sys, bz2, codecs, pickle, gzip
 
-def printf( s ):
-    if sys.platform == 'win32':
-        import win32console as W
-        W.SetConsoleOutputCP( 65001 )
-        W.SetConsoleCP( 65001 )
-    try: print s
-    except: pass
-
 ################################################################################
 ## Lexical analysis
 ################################################################################
@@ -80,14 +72,14 @@ def interact( p, expr ): # MecabProc -> Str -> IO Str
     p.stdin.flush()
     return u'\r'.join( [ unicode( p.stdout.readline().rstrip( '\r\n' ), 'euc-jp' ) for l in expr.split('\n') ] )
 
-def fixReading( p, m ): # MecabProc -> Morpheme -> Morpheme
+def fixReading( p, m ): # MecabProc -> Morpheme -> IO Morpheme
     if m.pos in [u'動詞', u'助動詞', u'形容詞']: # verb, aux verb, i-adj
         n = interact( p, m.base ).split('\t')
         if len(n) == MECAB_NODE_LENGTH:
             m.read = n[ MECAB_NODE_READING_INDEX ].strip()
     return m
 
-# MecabProc -> Str -> Maybe PosWhiteList -> Maybe PosBlackList -> IO [Morpheme]
+# MecabProc -> Str -> PosWhiteList? -> PosBlackList? -> IO [Morpheme]
 def getMorphemes( p, e, ws=None, bs=None ):
     ms = [ tuple( m.split('\t') ) for m in interact( p, e ).split('\r') ] # morphemes
     ms = [ Morpheme( *m ) for m in ms if len( m ) == MECAB_NODE_LENGTH ] # filter garbage
@@ -96,7 +88,7 @@ def getMorphemes( p, e, ws=None, bs=None ):
     ms = [ fixReading( p, m ) for m in ms ]
     return ms
 
-# Str -> Maybe PosWhiteList -> Maybe PosBlackList -> IO [Morpheme]
+# Str -> PosWhiteList? -> PosBlackList? -> IO [Morpheme]
 def getMorphemes1( e, ws=None, bs=None ):
     return getMorphemes( mecab(), e, ws, bs )
 
@@ -104,6 +96,7 @@ def getMorphemes1( e, ws=None, bs=None ):
 ## Morpheme db manipulation
 ################################################################################
 
+### Locations
 class Location:
     pass
 class Nowhere( Location ):
@@ -131,6 +124,7 @@ class AnkiDeck( Location ):
     def show( self ):
         return '%s.%d[%s]@%d' % ( self.deckName, self.factId, self.fieldName, self.maturity )
 
+### Morpheme DB
 class MorphDb:
     @staticmethod
     def mergeFiles( aPath, bPath, destPath ): # FilePath -> FilePath -> FilePath -> IO ()
@@ -145,13 +139,13 @@ class MorphDb:
         return d
 
     def __init__( self, path=None ): # Maybe Filepath -> m ()
-        self.db     = {} # Map Morpheme -> {Location}
+        self.db     = {} # Map Morpheme {Location}
         if path:
             self.load( path )
         self.analyze()
 
     # Serialization
-    def show( self ):
+    def show( self ): # Str
         s = u''
         for m,ls in self.db.iteritems():
             s += u'%s\n' % m.show()
@@ -159,7 +153,7 @@ class MorphDb:
                 s += u'  %s\n' % l.show()
         return s
 
-    def showLocDb( self ):
+    def showLocDb( self ): # m Str
         s = u''
         for l,ms in self.locDb().iteritems():
             s += u'%s\n' % l.show()
@@ -167,7 +161,7 @@ class MorphDb:
                 s += u'  %s\n' % m.show()
         return s
 
-    def showMs( self ):
+    def showMs( self ): # Str
         return ms2str( self.db.keys() )
 
     def save( self, path ): # FilePath -> IO ()
@@ -228,7 +222,8 @@ class MorphDb:
             ms = getMorphemes( mp, line.strip(), ws, bs )
             self.addMLs( ( m, TextFile( path, i+1 ) ) for m in ms )
 
-        mp.terminate()
+        try: mp.terminate()
+        except AttributeError: pass
 
     # Analysis
     def locDb( self, recalc=True ): # Maybe Bool -> m Map Location {Morpheme}

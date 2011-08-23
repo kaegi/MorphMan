@@ -6,7 +6,6 @@ from anki.facts import Fact
 from ankiqt import mw
 
 import datetime, os
-import morphemes
 
 VERBOSE = False
 

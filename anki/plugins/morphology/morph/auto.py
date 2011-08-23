@@ -29,9 +29,9 @@ def getDeck( dpath ): # AnkiDeckPath -> Maybe Deck
         else:
             log( '!!! deck is corrupted: %s\nException was: %s' % (dpath, e) )
 
-# custom version that doesn't run deckClosed hook since that has erroneous effects
-# in the main thread (like facteditor sets self.fact = None)
-def closeDeck( deck ):
+# custom version that doesn't run deckClosed hook since that has erroneous
+# effects in the main thread (like facteditor sets self.fact = None)
+def closeDeck( deck ): # Deck -> IO ()
    if deck.s:
       deck.s.rollback()
       deck.s.clear()
@@ -69,7 +69,7 @@ class DeckMgr:
         debug( 'Loaded DeckMgr for %s' % self.deckName )
 
     # Clean
-    def close( self ):
+    def close( self ): # m ()
         self.saveCfg()
         deck.close()
 
@@ -77,7 +77,7 @@ class DeckMgr:
     ## Config
     ###########################################################################
 
-    def loadCfg( self ):
+    def loadCfg( self ): # m ()
         try:
             f = gzip.open( self.cfgPath, 'rb' )
             d = pickle.load( f )
@@ -88,7 +88,7 @@ class DeckMgr:
         except IOError:
             log( 'cfg load failed. using defaults' )
 
-    def saveCfg( self ):
+    def saveCfg( self ): # m ()
         if not os.path.exists( self.dbsPath ):
             os.makedirs( self.dbsPath )
         f = gzip.open( self.cfgPath, 'wb' )
@@ -100,7 +100,7 @@ class DeckMgr:
     ###########################################################################
 
     # Update check
-    def isDbUpToDate( self, dbPath ):
+    def isDbUpToDate( self, dbPath ): # DbPath -> IO Bool
         if not os.path.exists( dbPath ):
             return False
         lastUpdate = self.cfg['last db update'].get( dbPath, 0 )
@@ -109,10 +109,10 @@ class DeckMgr:
         return True
 
     # Analysis utils
-    def getFacts( self ):
+    def getFacts( self ): # m LazyList Fact
         return self.deck.s.query(Fact).all()
 
-    def fid2cardsDb( self ):
+    def fid2cardsDb( self ): # m Map FactId {Card}
         if not hasattr( self, '_fid2cardsDb' ):
             d = self._fid2cardsDb = {}
             for c in self.deck.s.query(Card).all():
@@ -122,8 +122,8 @@ class DeckMgr:
                     d[ c.factId ] = [c]
         return self._fid2cardsDb
 
-    # DB that stores all facts in deck
-    def mkAll( self ): # uses cache, constructs by making a loc->morphs db
+    # DB that stores all facts in deck; constructs by making loc->morphs db
+    def mkAll( self ): # IO ()
         log( 'Getting initial all.db...' )
         if not hasattr( self, '_allDb' ):
             try:
@@ -189,7 +189,7 @@ class DeckMgr:
         sigterm( mp )
         return self._allDb
 
-    def allDb( self, doLoad=True ): # Maybe Bool -> m Maybe Db
+    def allDb( self, doLoad=True ): # Maybe Bool -> IO Maybe Db
         if not self.isDbUpToDate( self.allPath ):
             return self.mkAll()
         if doLoad:
@@ -198,9 +198,9 @@ class DeckMgr:
             return self._allDb
 
     # DBs filtered to only morphemes in facts of at least maturity N
-    def intervalPath( self, n ):
+    def intervalPath( self, n ): # Interval -> IO Db
         return self.dbsPath + os.sep + 'interval.%d.db' % n
-    def mkIntervalDb( self, n ):
+    def mkIntervalDb( self, n ): # Interval -> IO Db
         db = M.MorphDb()
         for l,ms in self.allDb().locDb().iteritems():
             if l.maturity > n:
@@ -208,16 +208,16 @@ class DeckMgr:
         db.save( self.intervalPath(n) )
         self.cfg['last db update'][ self.intervalPath(n) ] = time.time()
         return db
-    def intervalDb( self, n, doLoad=True ): # Int -> Maybe Bool -> m Maybe Db
+    def intervalDb( self, n, doLoad=True ): # Int -> Maybe Bool -> IO Maybe Db
         if not self.isDbUpToDate( self.intervalPath(n) ):
             return self.mkIntervalDb( n )
         if doLoad:
             return M.MorphDb( self.intervalPath(n) )
-    def deckMatureDb( self, doLoad=True ):
+    def deckMatureDb( self, doLoad=True ): # Maybe Bool -> IO Maybe Db
         return self.intervalDb( self.cfg['mature threshold'], doLoad )
-    def deckLearntDb( self, doLoad=True ):
+    def deckLearntDb( self, doLoad=True ): # Maybe Bool -> IO Maybe Db
         return self.intervalDb( self.cfg['learnt threshold'], doLoad )
-    def deckKnownDb( self, doLoad=True ):
+    def deckKnownDb( self, doLoad=True ): # Maybe Bool -> IO Maybe Db
         return self.intervalDb( self.cfg['known threshold'], doLoad )
 
     ###########################################################################
@@ -225,11 +225,11 @@ class DeckMgr:
     ###########################################################################
 
     # known.db
-    def addToKnownDb( self ):
+    def addToKnownDb( self ): # IO ()
         self.knownDb().merge( self.deckKnownDb() )
         self.knownDb().save( knownDbPath )
 
-    def knownDb( self ):
+    def knownDb( self ): # IO Db
         if not hasattr( self, '_knownDb' ):
             try:
                 self._knownDb = M.MorphDb( knownDbPath )
@@ -241,7 +241,7 @@ class DeckMgr:
         return self._knownDb
 
     # update our dbs via the deck
-    def updateDbs( self ):
+    def updateDbs( self ): # IO ()
         #NOTE: we (dangerously?) assume that if all.db wasn't updated then known.db doesn't need to be
         log( 'Updating dbs for %s' % self.deckName )
         aDb = self.allDb( doLoad=False )
@@ -258,7 +258,7 @@ class DeckMgr:
         log( '  - updated interval dbs' )
 
     # update our deck via the dbs
-    def updateDeck( self ):
+    def updateDeck( self ): # IO ()
         log( 'Updating deck for %s' % self.deckName )
         self.allDb( doLoad=False ) # force update for timestamp below to be correct
         if self.cfg['last db update'][ self.allPath ] > self.cfg['last deck update']:
@@ -270,7 +270,7 @@ class DeckMgr:
         else:
             log( '  - updated morph metadata fields [no-op]' )
 
-    def doDeckUpdate( self ):
+    def doDeckUpdate( self ): # IO ()
         fidDb = self.allDb().fidDb()
         fid2cardsDb = self.fid2cardsDb()
         locDb = self.allDb().locDb()
@@ -374,7 +374,7 @@ def run():
     log( 'Decks updated in %f' % (upDeckTime-upDbTime) )
     log( 'Full update completed in %d sec' % (upDeckTime-start) )
 
-def asyncRaise( tid, excObjType ): # ThreadId -> ExceptionObjType
+def asyncRaise( tid, excObjType ): # ThreadId -> ExceptionObjType -> IO ()
    res = ctypes.pythonapi.PyThreadState_SetAsyncExc( tid, ctypes.py_object( excObjType ) )
    if res == 0:
       raise ValueError( 'Non-existent thread id' )
@@ -399,7 +399,6 @@ class Updater( threading.Thread ):
 
 def main():
     clearLog()
-
     # run forever in background daemon thread
     u = Updater()
     global updater

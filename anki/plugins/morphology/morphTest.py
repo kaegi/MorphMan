@@ -1,6 +1,14 @@
 # -*- coding: utf-8 -*-
 from morph.morphemes import *
 
+def printf( s ):
+    if sys.platform == 'win32':
+        import win32console as W
+        W.SetConsoleOutputCP( 65001 )
+        W.SetConsoleCP( 65001 )
+    try: print s
+    except: pass
+
 def test():
     ppath = 'morph'+ os.sep +'tests'+ os.sep
     a = MorphDb.mkFromFile( ppath +'test.txt' )
