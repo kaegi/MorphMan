@@ -1,23 +1,27 @@
 #-*- coding: utf-8 -*-
 
-import os, time, datetime, gzip, pickle, traceback, threading
+import os, time, datetime, gzip, pickle, threading, ctypes
 from anki.deck import DeckStorage
 from anki.facts import Fact
 from anki.cards import Card
 from ankiqt import mw
 from anki.hooks import addHook
 import morphemes as M
+import rankVocab as R
+import util
 
 knownDbPath = os.path.join( mw.pluginsFolder(),'morph','dbs','known.db' )
 rootDeckDbPath = os.path.join( mw.pluginsFolder(),'morph','dbs','deck' )
 logPath = os.path.join( mw.pluginsFolder(),'morph','tests','auto.log' )
-REPEAT_INTERVAL = 10 # sec
+deckPaths = mw.config['recentDeckPaths']
+REPEAT_INTERVAL = 30 # sec
+CARD_CREATION_TIME_INC = 10
 VERBOSE = False
 
 #TODOS:
-# vocab rank
-# more error handling
 # gui for configuration and checking last sync
+# more morphs before schema freeze?
+# matched morpheme, mass tagger
 
 # Debugging
 def debug( msg ):
@@ -31,7 +35,7 @@ def log( msg ):
     print txt
 
 # Deck load
-def getDeck( dpath ):
+def getDeck( dpath ): # AnkiDeckPath -> Maybe Deck
     if not os.path.exists( dpath ):
         return log( '! deck file not found @ %s' % dpath )
     try:
@@ -41,6 +45,15 @@ def getDeck( dpath ):
             log( '! deck already open @ %s. skipping' % dpath )
         else:
             log( '!!! deck is corrupted: %s\nException was: %s' % (dpath, e) )
+
+# custom version that doesn't run deckClosed hook since that has erroneous effects
+# in the main thread (like facteditor sets self.fact = None)
+def closeDeck( deck ):
+   if deck.s:
+      deck.s.rollback()
+      deck.s.clear()
+      deck.s.close()
+   deck.engine.dispose()
 
 class DeckMgr:
     def __init__( self, deck ):
@@ -61,6 +74,7 @@ class DeckMgr:
             'i+N field':'iPlusN',
             'unknowns field':'unknowns',
             'vocab rank field':'vocabRank',
+            'morph man index field':'morphManIndex',
 
             # internal
             'last deck update':0, # TimeStamp
@@ -74,7 +88,7 @@ class DeckMgr:
     # Clean
     def close( self ):
         self.saveCfg()
-        self.deck.close()
+        deck.close()
 
     ###########################################################################
     ## Config
@@ -189,6 +203,7 @@ class DeckMgr:
         self.cfg['last db update'][ self.allPath ] = time.time()
         self.cfg['last all.db update took'] = time.time() - start
         log( '...done' )
+        util.sigterm( mp )
         return self._allDb
 
     def allDb( self, doLoad=True ): # Maybe Bool -> m Maybe Db
@@ -273,14 +288,19 @@ class DeckMgr:
             log( '  - updated morph metadata fields [no-op]' )
 
     def doDeckUpdate( self ):
-        fieldNames = self.cfg['morph fields']
         fidDb = self.allDb().fidDb()
+        fid2cardsDb = self.fid2cardsDb()
         locDb = self.allDb().locDb()
-        knownDb = self.knownDb()
+        rankDb = R.mkRankDb( self.knownDb() )
+        knownDbDb = self.knownDb().db
         fs = self.getFacts()
+
+        # cache lookups
+        fieldNames = self.cfg['morph fields']
         ipnField = self.cfg['i+N field']
         unknownsField = self.cfg['unknowns field']
         vrField = self.cfg['vocab rank field']
+        mmiField = self.cfg['morph man index field']
 
         i, lfs = 0, len(fs)
         start = time.time()
@@ -297,13 +317,20 @@ class DeckMgr:
             # now determine unknowns and iPlusN
             unknowns, N = set(), 0
             for m in ms:
-                if m not in knownDb.db:
+                if m not in knownDbDb:
                     N += 1
                     unknowns.add( m )
-            try:
-                f[ ipnField ] = u'%d' % N
-                f[ vrField ] = u'2113' #TODO
-                f[ unknownsField ] = u','.join( u.inflected for u in unknowns )
+            # determine vocab rank and morph man overall difficulty index
+            vr = R.rankMorphemes( rankDb, ms )
+            mmi = N*10000 + len(ms)*1000 + vr
+
+            try: f[ ipnField ] = u'%d' % N
+            except KeyError: pass
+            try: f[ mmiField ] = u'%d' % mmi
+            except KeyError: pass
+            try: f[ vrField ] = u'%d' % vr
+            except KeyError: pass
+            try: f[ unknownsField ] = u','.join( u.inflected for u in unknowns )
             except KeyError: pass
 
             # now display progress
@@ -312,6 +339,16 @@ class DeckMgr:
                 fend = time.time()
                 log('    %d / %d = %d%% in %f sec' % ( i, lfs, 100.*i/lfs, fend-fstart ) )
                 fstart = time.time()
+
+        debug( 'Set fact fields, now changing card creation times for ordering' )
+        newtime = 0.0
+        try:
+            for f in sorted( fs, key=lambda x: int(x[ mmiField ]) ):
+                for c in fid2cardsDb[ f.id ]:
+                    c.created = newtime
+                    newtime += CARD_CREATION_TIME_INC
+        except KeyError:
+            log( '! no morph man index field for sorting' )
 
         # save deck and timestamps
         self.deck.save()
@@ -327,7 +364,6 @@ class DeckMgr:
 
 def run():
     start = time.time()
-    deckPaths = mw.config['recentDeckPaths']
     # update DBs
     for dPath in deckPaths:
         deck = getDeck( dPath )
@@ -335,9 +371,9 @@ def run():
         try:
             dm = DeckMgr( deck )
             dm.updateDbs()
-            dm.close()
+            dm.saveCfg()
         finally:
-            deck.close()
+            closeDeck( deck )
     upDbTime = time.time()
     log( 'Dbs updated in %f' % (upDbTime-start) )
 
@@ -348,17 +384,30 @@ def run():
         try:
             dm = DeckMgr( deck )
             dm.updateDeck()
-            dm.close()
+            dm.saveCfg()
         finally:
-            deck.close()
+            closeDeck( deck )
     upDeckTime = time.time()
     log( 'Decks updated in %f' % (upDeckTime-upDbTime) )
     log( 'Full update completed in %d sec' % (upDeckTime-start) )
+
+def asyncRaise( tid, excObjType ): # ThreadId -> ExceptionObjType
+   res = ctypes.pythonapi.PyThreadState_SetAsyncExc( tid, ctypes.py_object( excObjType ) )
+   if res == 0:
+      raise ValueError( 'Non-existent thread id' )
+   elif res > 1:
+      ctypes.pythonapi.PyThreadState_SetAsyncExc( tid, 0 )
+      raise SystemError( 'PyThreadState_SetAsyncExc failed' )
 
 class Updater( threading.Thread ):
     def __init__( self ):
         threading.Thread.__init__( self )
         self.daemon = True
+
+    def term( self ):
+        if not self.isAlive():
+            raise threading.ThreadError( 'Thread not active' )
+        asyncRaise( self.ident, SystemExit )
 
     def run( self ):
         while True:
@@ -372,6 +421,7 @@ def main():
 
     # run forever in background daemon thread
     u = Updater()
+    util.updater = u
     u.start()
 
 addHook( 'init', main )

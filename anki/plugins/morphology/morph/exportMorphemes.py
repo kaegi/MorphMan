@@ -14,7 +14,7 @@ def getCards( deck, fids ):
 def pre( ed ):
     field, ok = QInputDialog.getText( ed, 'Enter name of field to extract from', 'Field Name', QLineEdit.Normal, 'Expression' )
     if not ok: return 'BAIL'
-    defPath = util.dbPath + 'mySelection' + '.db'
+    defPath = util.dbPath + 'mySelection.db'
     path = QFileDialog.getSaveFileName( caption='Save morpheme db to?', directory=defPath )
     if not path: return 'BAIL'
     return { 'ed':ed, 'fieldName':field, 'filePath':str(path), 'db':M.MorphDb(), 'mp':M.mecab() }
@@ -23,7 +23,7 @@ def per( st, f ):
     d, fname = st['ed'].deck, st['fieldName']
     mats = [ c.interval for c in getCards( d, [f.id] ) ]
     ms = M.getMorphemes( st['mp'], f[ fname ] )
-    loc = M.AnkiDeck( f.id, str(fname), str(d.path), str(d.name()), mats )
+    loc = M.AnkiDeck( f.id, fname, f[ fname ], d.path, d.name(), mats )
     st['db'].addMsL( ms, loc )
     return st
 

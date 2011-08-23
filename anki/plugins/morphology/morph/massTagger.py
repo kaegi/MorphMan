@@ -12,15 +12,13 @@ def pre( ed ):
    if not path: return 'BAIL'
    bs = util.getBlacklist( ed )
 
-   db = M.loadDb( path )
-   return { 'mp':M.mecab(None), 'db':db, 'tags':unicode(tags), 'bs':bs, 'ed':ed }
+   db = M.MorphDb( path )
+   return { 'mp':M.mecab(), 'db':db, 'tags':unicode(tags), 'bs':bs, 'ed':ed }
 
 def per( st, f ):
    ms = M.getMorphemes( st['mp'], f['Expression'], bs=st['bs'] )
    for m in ms:
-      if m in st['db']:
-         #tags = addTags( st['tags'], f.tags )
-         #f.tags = canonifyTags( tags )
+      if m in st['db'].db:
          st['ed'].deck.addTags( [f.id], st['tags'] )
          return st
    return st

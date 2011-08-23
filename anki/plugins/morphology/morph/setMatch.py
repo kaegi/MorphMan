@@ -10,7 +10,7 @@ def pre( ed ):
    if not path: return 'BAIL'
    bs = util.getBlacklist( ed )
 
-   db = M.loadDb( path )
+   db = M.MorphDb( path ).db
    return { 'mp':M.mecab(None), 'fmmap':{}, 'mfmap':{}, 'db':db, 'bs':bs, 'ed':ed }
 
 def per( st, f ):
@@ -47,7 +47,8 @@ def post( st ):
    allF = uniqueFlatten( st['mfmap'].values() ) # facts to learn from
    ps = getMatches( st, allM, allF )
 
-   for m,f in ps: f['matchedMorpheme'] = u'%s' % m[0]
    infoMsg( 'Successfully matched %d pairs.' % len(ps), p=st['ed'] )
+   for m,f in ps: f['matchedMorpheme'] = u'%s' % m.base
+   infoMsg( 'Saved' )
 
 util.addDoOnSelectionBtn( 'Morph match', 'Match morphs', 'Generating match db...', pre, per, post )

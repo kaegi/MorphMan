@@ -3,11 +3,13 @@ from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from anki.hooks import addHook
 from ankiqt import mw
-import os
+import os, ctypes
 
-import morphemes as M
-import util
 import auto
+import morphemes as M
+import threading
+from threading import ThreadError
+import util
 from util import errorMsg, infoMsg
 
 def getPath( le ):
@@ -27,6 +29,9 @@ class MorphMan( QDialog ):
         grid = QGridLayout( self )
         vbox = QVBoxLayout()
 
+        # Automatic updater
+        self.restartAuto = mkBtn( 'Restart auto', self.restartAuto, self, vbox )
+        self.stopAuto = mkBtn( 'Stop auto', self.stopAuto, self, vbox )
         # DB Paths
         self.aPathLEdit = QLineEdit()
         vbox.addWidget( self.aPathLEdit )
@@ -63,6 +68,27 @@ class MorphMan( QDialog ):
         grid.addLayout( vbox, 0, 0 )
         grid.addWidget( self.morphDisplay, 0, 1 )
         grid.addWidget( self.analysisDisplay, 0, 2 )
+
+    def restartAuto( self ):
+        try:
+            util.updater.term()
+        except ValueError: pass # bad tid => already stopped
+        except ThreadError: pass # not active
+        except SystemError: # async exc failed
+            errorMsg( 'Unable to stop auto' )
+        auto.main()
+        infoMsg( 'Restarted' )
+
+    def stopAuto( self ):
+        try:
+            util.updater.term()
+            infoMsg( 'Auto stopping' )
+        except ValueError: # bad tid
+            infoMsg( 'Auto already stopped' )
+        except ThreadError: # not active
+            infoMsg( 'Auto already stopped' )
+        except SystemError: # async exc failed
+            errorMsg( 'Unable to stop auto' )
 
     def loadA( self ):
         self.aPath = self.aPathLEdit.text()

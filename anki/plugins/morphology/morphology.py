@@ -3,12 +3,9 @@ from ankiqt import mw
 
 def morphInit():
    import morph.util
-   import morph.exportMorphemes
-   import morph.setIPlusN
-   import morph.setVocabRank
-   import morph.setUnknowns
-   import morph.viewMorphemes
    import morph.manager
+   import morph.exportMorphemes
+   import morph.viewMorphemes
    import morph.massTagger
    import morph.setMatch
    import morph.auto
