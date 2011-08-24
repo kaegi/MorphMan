@@ -40,6 +40,9 @@ class MorphManAuto( QDialog ):
         # Start/stop
         self.restartAuto = mkBtn( 'Restart auto', self.restartAuto, self, vbox )
         self.stopAuto = mkBtn( 'Stop auto', self.stopAuto, self, vbox )
+        lastUpMsg = "Updater hasn't finished since starting Anki" if not util.lastUpdate else \
+            "Last update @ %s" % datetime.datetime.fromtimestamp( util.lastUpdate )
+        self.vbox.addWidget( QLabel( lastUpMsg ) )
 
         # layout
         grid.addLayout( vbox, 0, 0 )

@@ -375,7 +375,7 @@ def run():
             dm.saveCfg()
         finally:
             closeDeck( deck )
-    upDeckTime = time.time()
+    util.lastUpdate = upDeckTime = time.time()
     log( 'Decks updated in %f' % (upDeckTime-upDbTime) )
     log( 'Full update completed in %d sec' % (upDeckTime-start) )
 

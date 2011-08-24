@@ -15,6 +15,7 @@ knownDbPath = os.path.join( mw.pluginsFolder(),'morph','dbs','known.db' )
 deckDbPath = os.path.join( mw.pluginsFolder(),'morph','dbs','deck' )
 deckPaths = mw.config['recentDeckPaths']
 updater = None # updater thread
+lastUpdate = None # last time full update finished in this anki instance
 
 def sigterm( p ):
    try: p.terminate()
