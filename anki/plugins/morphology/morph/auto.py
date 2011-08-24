@@ -9,6 +9,7 @@ from anki.hooks import addHook
 import morphemes as M
 import rankVocab as R
 from util import log, debug, knownDbPath, deckDbPath, deckPaths, sigterm, updater, clearLog
+import util
 
 REPEAT_INTERVAL = 5 # sec
 CARD_CREATION_TIME_INC = 10
@@ -404,9 +405,7 @@ class Updater( threading.Thread ):
 def main():
     clearLog()
     # run forever in background daemon thread
-    u = Updater()
-    global updater
-    updater = u
-    u.start()
+    util.updater = Updater()
+    util.updater.start()
 
 addHook( 'init', main )
