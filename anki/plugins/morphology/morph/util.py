@@ -8,6 +8,7 @@ from ankiqt import mw
 import datetime, os
 
 VERBOSE = False
+NO_LOG = False
 
 logPath = os.path.join( mw.pluginsFolder(),'morph','tests','auto.log' )
 dbPath = mw.pluginsFolder() + os.sep + 'morph' + os.sep + 'dbs' + os.sep
@@ -46,6 +47,7 @@ def debug( msg ):
     if VERBOSE: log( msg )
 
 def log( msg ):
+    if NO_LOG: return
     txt = '%s: %s' % ( datetime.datetime.now(), msg )
     f = open( logPath, 'a' )
     f.write( txt+'\n' )
