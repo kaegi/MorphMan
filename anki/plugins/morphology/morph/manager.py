@@ -3,14 +3,13 @@ from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from anki.hooks import addHook
 from ankiqt import mw
-import os, ctypes
+import datetime, glob, gzip, pickle, os
+from threading import ThreadError
 
 import auto
 import morphemes as M
-import threading
-from threading import ThreadError
 import util
-from util import errorMsg, infoMsg
+from util import errorMsg, infoMsg, deckDbPath
 
 def getPath( le ):
     path = QFileDialog.getOpenFileName( caption='Open db', directory=util.knownDbPath )
@@ -22,16 +21,149 @@ def mkBtn( txt, f, conn, parent ):
     parent.addWidget( b )
     return b
 
+class MorphManAuto( QDialog ):
+    def __init__( self, parent=None ):
+        super( MorphManAuto, self ).__init__( parent )
+        self.setWindowTitle( 'Morph Man 2 - Auto' )
+        self.grid = grid = QGridLayout( self )
+        self.vbox = vbox = QVBoxLayout()
+        self.keyBox = keyBox = QVBoxLayout()
+        self.valueBox = valBox = QVBoxLayout()
+
+        # Config
+        self.cfgWidgets = []
+        self.cfg = {}
+        self.cfgPath = None
+        self.mkDeckChooserBox( vbox )
+        self.saveCfgBtn = mkBtn( 'Save cfg', self.saveCfg, self, vbox )
+
+        # Start/stop
+        self.restartAuto = mkBtn( 'Restart auto', self.restartAuto, self, vbox )
+        self.stopAuto = mkBtn( 'Stop auto', self.stopAuto, self, vbox )
+
+        # layout
+        grid.addLayout( vbox, 0, 0 )
+        grid.addLayout( keyBox, 0, 1 )
+        grid.addLayout( valBox, 0, 2 )
+
+    def saveCfg( self ):
+        try:
+            morphFields = eval(str( self.fieldsV.text() ))
+            ints = eval(str( self.intsV.text() ))
+        except SyntaxError:
+            raise Exception('Invalid intervals or fields list')
+        assert type(morphFields) == list, "Fields to check must be a python list of strings. eg ['Expression','Context()1']"
+        assert type(ints) == list, "Intervals must be a python list of integers. eg [1, 4, 28, 3, 18, 402]"
+        d = {
+            'mature threshold': int(self.matV.text()),
+            'learnt threshold': int(self.learntV.text()),
+            'known threshold': int(self.knownV.text()),
+
+            'vocab rank field': str(self.vrV.text()),
+            'i+N field': str(self.ipnV.text()),
+            'unknowns field': str(self.unkV.text()),
+            'morph man index field': str(self.mmiV.text()),
+
+            'morph fields': morphFields,
+            'interval dbs to make': ints,
+        }
+        self.cfg.update( d )
+        f = gzip.open( self.cfgPath, 'wb' )
+        pickle.dump( self.cfg, f )
+        f.close()
+
+    def loadCfg( self, dcbIndex ):
+        def mkKey( txt ):
+            l = QLabel( txt )
+            self.keyBox.addWidget( l )
+            return l
+        def mkLE():
+            le = QLineEdit( '' )
+            self.valueBox.addWidget( le )
+            return le
+
+        # Load
+        self.cfgPath = str( self.dcb.itemData( dcbIndex ).toPyObject() )
+        f = gzip.open( self.cfgPath, 'rb' )
+        self.cfg = d = pickle.load( f )
+        f.close()
+
+        # if first load, create the widgets
+        if not hasattr( self, 'vrK' ):
+            self.vrK, self.vrV = mkKey( 'Vocab Rank field' ), mkLE()
+            self.ipnK, self.ipnV = mkKey( 'i+N field' ), mkLE()
+            self.unkK, self.unkV = mkKey( 'Unknowns field' ), mkLE()
+            self.mmiK, self.mmiV = mkKey( 'Morph Man Index field' ), mkLE()
+
+            self.matK, self.matV = mkKey( 'Mature threshold' ), mkLE()
+            self.knownK, self.knownV = mkKey( 'Known threshold' ), mkLE()
+            self.learntK, self.learntV = mkKey( 'Learnt threshold' ), mkLE()
+            self.fieldsK, self.fieldsV = mkKey( 'Fields to check' ), mkLE()
+            self.intsK, self.intsV = mkKey( 'Intervals to make dbs for' ), mkLE()
+
+            self.deckUp, self.dbUp = QLabel(), QLabel()
+            self.vbox.addWidget( self.deckUp )
+            self.vbox.addWidget( self.dbUp )
+
+        # now set data
+        self.vrV.setText( d['vocab rank field'] )
+        self.ipnV.setText( d['i+N field'] )
+        self.unkV.setText( d['unknowns field'] )
+        self.mmiV.setText( d['morph man index field'] )
+
+        self.matV.setText( str(d['mature threshold']) )
+        self.knownV.setText( str(d['known threshold']) )
+        self.learntV.setText( str(d['learnt threshold']) )
+
+        self.fieldsV.setText( str(d['morph fields']) )
+        self.intsV.setText( str(d['interval dbs to make']) )
+
+        f = datetime.datetime.fromtimestamp
+        self.deckUp.setText( 'Deck last updated @\n%s\nin %0.2f sec' % ( f( d['last deck update'] ), d['last deck update took'] ) )
+        self.dbUp.setText( 'Db last updated in %0.2f sec' % ( d['last all.db update took'] ) )
+
+    def mkDeckChooserBox( self, parent ):
+        self.dcb = QComboBox()
+        parent.addWidget( self.dcb )
+        self.connect( self.dcb, SIGNAL('currentIndexChanged(int)'), self.loadCfg )
+
+        ps = glob.glob( deckDbPath + os.sep + '*' + os.sep + 'config' )
+        for p in ps:
+            x, _ = os.path.split( p )
+            _, deckName = os.path.split( x )
+            self.dcb.addItem( deckName, p )
+
+    def restartAuto( self ):
+        try:
+            util.updater.term()
+        except ValueError: pass # bad tid => already stopped
+        except ThreadError: pass # not active
+        except SystemError: # async exc failed
+            errorMsg( 'Unable to stop auto' )
+        auto.main()
+        infoMsg( 'Restarted' )
+
+    def stopAuto( self ):
+        try:
+            util.updater.term()
+            infoMsg( 'Auto stopping' )
+        except ValueError: # bad tid
+            infoMsg( 'Auto already stopped' )
+        except ThreadError: # not active
+            infoMsg( 'Auto already stopped' )
+        except SystemError: # async exc failed
+            errorMsg( 'Unable to stop auto' )
+
 class MorphMan( QDialog ):
     def __init__( self, parent=None ):
         super( MorphMan, self ).__init__( parent )
-        self.setWindowTitle( 'Morph Man Title' )
-        grid = QGridLayout( self )
-        vbox = QVBoxLayout()
+        self.mw = parent
+        self.setWindowTitle( 'Morph Man 2' )
+        self.grid = grid = QGridLayout( self )
+        self.vbox = vbox = QVBoxLayout()
 
         # Automatic updater
-        self.restartAuto = mkBtn( 'Restart auto', self.restartAuto, self, vbox )
-        self.stopAuto = mkBtn( 'Stop auto', self.stopAuto, self, vbox )
+        self.controlAuto = mkBtn( 'Control auto', self.controlAuto, self, vbox )
         # DB Paths
         self.aPathLEdit = QLineEdit()
         vbox.addWidget( self.aPathLEdit )
@@ -69,26 +201,10 @@ class MorphMan( QDialog ):
         grid.addWidget( self.morphDisplay, 0, 1 )
         grid.addWidget( self.analysisDisplay, 0, 2 )
 
-    def restartAuto( self ):
-        try:
-            util.updater.term()
-        except ValueError: pass # bad tid => already stopped
-        except ThreadError: pass # not active
-        except SystemError: # async exc failed
-            errorMsg( 'Unable to stop auto' )
-        auto.main()
-        infoMsg( 'Restarted' )
-
-    def stopAuto( self ):
-        try:
-            util.updater.term()
-            infoMsg( 'Auto stopping' )
-        except ValueError: # bad tid
-            infoMsg( 'Auto already stopped' )
-        except ThreadError: # not active
-            infoMsg( 'Auto already stopped' )
-        except SystemError: # async exc failed
-            errorMsg( 'Unable to stop auto' )
+    def controlAuto( self ):
+        self.hide()
+        mma = MorphManAuto( self.mw )
+        mma.show()
 
     def loadA( self ):
         self.aPath = self.aPathLEdit.text()
