@@ -59,6 +59,7 @@ class DeckMgr:
             'unknowns field':'unknowns',
             'vocab rank field':'vocabRank',
             'morph man index field':'morphManIndex',
+            'enabled':'yes',
 
             # internal
             'last deck update':0, # TimeStamp
@@ -358,8 +359,9 @@ def run():
         if not deck: continue
         try:
             dm = DeckMgr( deck )
-            dm.updateDbs()
-            dm.saveCfg()
+            if dm.cfg['enabled'] == 'yes':
+               dm.updateDbs()
+               dm.saveCfg()
         finally:
             closeDeck( deck )
     upDbTime = time.time()
@@ -371,8 +373,9 @@ def run():
         if not deck: continue
         try:
             dm = DeckMgr( deck )
-            dm.updateDeck()
-            dm.saveCfg()
+            if dm.cfg['enabled'] == 'yes':
+               dm.updateDeck()
+               dm.saveCfg()
         finally:
             closeDeck( deck )
     util.lastUpdate = upDeckTime = time.time()

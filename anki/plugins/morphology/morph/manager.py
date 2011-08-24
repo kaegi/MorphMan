@@ -66,6 +66,7 @@ class MorphManAuto( QDialog ):
             'i+N field': str(self.ipnV.text()),
             'unknowns field': str(self.unkV.text()),
             'morph man index field': str(self.mmiV.text()),
+            'enabled': str(self.enabledV.text()),
 
             'morph fields': morphFields,
             'interval dbs to make': ints,
@@ -103,6 +104,7 @@ class MorphManAuto( QDialog ):
             self.learntK, self.learntV = mkKey( 'Learnt threshold' ), mkLE()
             self.fieldsK, self.fieldsV = mkKey( 'Fields to check' ), mkLE()
             self.intsK, self.intsV = mkKey( 'Intervals to make dbs for' ), mkLE()
+            self.enabledK, self.enabledV = mkKey( 'Enabled?' ), mkLE()
 
             self.deckUp, self.dbUp = QLabel(), QLabel()
             self.vbox.addWidget( self.deckUp )
@@ -117,6 +119,7 @@ class MorphManAuto( QDialog ):
         self.matV.setText( str(d['mature threshold']) )
         self.knownV.setText( str(d['known threshold']) )
         self.learntV.setText( str(d['learnt threshold']) )
+        self.enabledV.setText( str(d['enabled']) )
 
         self.fieldsV.setText( str(d['morph fields']) )
         self.intsV.setText( str(d['interval dbs to make']) )
