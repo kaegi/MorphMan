@@ -13,6 +13,7 @@ NO_LOG = False
 logPath = os.path.join( mw.pluginsFolder(),'morph','tests','auto.log' )
 dbPath = mw.pluginsFolder() + os.sep + 'morph' + os.sep + 'dbs' + os.sep
 knownDbPath = os.path.join( mw.pluginsFolder(),'morph','dbs','known.db' )
+matureDbPath = os.path.join( mw.pluginsFolder(),'morph','dbs','mature.db' )
 deckDbPath = os.path.join( mw.pluginsFolder(),'morph','dbs','deck' )
 deckPaths = mw.config['recentDeckPaths']
 updater = None # updater thread

@@ -65,8 +65,11 @@ class MorphManAuto( QDialog ):
             'vocab rank field': str(self.vrV.text()),
             'i+N field': str(self.ipnV.text()),
             'unknowns field': str(self.unkV.text()),
+            'unmatures field': str(self.unmV.text()),
             'morph man index field': str(self.mmiV.text()),
             'enabled': str(self.enabledV.text()),
+            'copy i+0 mature to': str(self.ip0matV.text()),
+            'copy i+1 known to': str(self.ip1knownV.text()),
 
             'morph fields': morphFields,
             'interval dbs to make': ints,
@@ -94,10 +97,13 @@ class MorphManAuto( QDialog ):
 
         # if first load, create the widgets
         if not hasattr( self, 'vrK' ):
-            self.vrK, self.vrV = mkKey( 'Vocab Rank field' ), mkLE()
-            self.ipnK, self.ipnV = mkKey( 'i+N field' ), mkLE()
-            self.unkK, self.unkV = mkKey( 'Unknowns field' ), mkLE()
             self.mmiK, self.mmiV = mkKey( 'Morph Man Index field' ), mkLE()
+            self.ipnK, self.ipnV = mkKey( 'i+N field' ), mkLE()
+            self.vrK, self.vrV = mkKey( 'Vocab Rank field' ), mkLE()
+            self.unkK, self.unkV = mkKey( 'Unknowns field' ), mkLE()
+            self.unmK, self.unmV = mkKey( 'Unmatures field' ), mkLE()
+            self.ip1knownK, self.ip1knownV = mkKey( 'Copy i+1 known to' ), mkLE()
+            self.ip0matK, self.ip0matV = mkKey( 'Copy i+0 mature to' ), mkLE()
 
             self.matK, self.matV = mkKey( 'Mature threshold' ), mkLE()
             self.knownK, self.knownV = mkKey( 'Known threshold' ), mkLE()
@@ -114,7 +120,10 @@ class MorphManAuto( QDialog ):
         self.vrV.setText( d['vocab rank field'] )
         self.ipnV.setText( d['i+N field'] )
         self.unkV.setText( d['unknowns field'] )
+        self.unmV.setText( d['unmatures field'] )
         self.mmiV.setText( d['morph man index field'] )
+        self.ip0matV.setText( d['copy i+0 mature to'] )
+        self.ip1knownV.setText( d['copy i+1 known to'] )
 
         self.matV.setText( str(d['mature threshold']) )
         self.knownV.setText( str(d['known threshold']) )
@@ -142,6 +151,7 @@ class MorphManAuto( QDialog ):
     def restartAuto( self ):
         try:
             util.updater.term()
+        except AttributeError: pass # no updater instance yet
         except ValueError: pass # bad tid => already stopped
         except ThreadError: pass # not active
         except SystemError: # async exc failed
@@ -153,6 +163,8 @@ class MorphManAuto( QDialog ):
         try:
             util.updater.term()
             infoMsg( 'Auto stopping' )
+        except AttributeError: # no updater instance yet
+            infoMsg( 'Auto never started' )
         except ValueError: # bad tid
             infoMsg( 'Auto already stopped' )
         except ThreadError: # not active

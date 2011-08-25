@@ -6,12 +6,13 @@ from anki.facts import Fact
 from anki.cards import Card
 from ankiqt import mw
 from anki.hooks import addHook
+from anki.utils import deleteTags, addTags, canonifyTags
 import morphemes as M
 import rankVocab as R
-from util import log, debug, knownDbPath, deckDbPath, deckPaths, sigterm, updater, clearLog
+from util import log, debug, matureDbPath, knownDbPath, deckDbPath, deckPaths, sigterm, updater, clearLog
 import util
 
-REPEAT_INTERVAL = 5 # sec
+REPEAT_INTERVAL = 10 # sec
 CARD_CREATION_TIME_INC = 10
 
 #TODOS:
@@ -57,9 +58,12 @@ class DeckMgr:
             'morph fields':['Expression'],
             'i+N field':'iPlusN',
             'unknowns field':'unknowns',
+            'unmatures field':'unmatures',
             'vocab rank field':'vocabRank',
             'morph man index field':'morphManIndex',
-            'enabled':'yes',
+            'copy i+1 known to':'vocabExpression',
+            'copy i+0 mature to':'sentenceExpression',
+            'enabled':'no',
 
             # internal
             'last deck update':0, # TimeStamp
@@ -84,11 +88,11 @@ class DeckMgr:
             f = gzip.open( self.cfgPath, 'rb' )
             d = pickle.load( f )
             f.close()
-
             self.cfg.update( d )
-            self.saveCfg()
         except IOError:
             log( 'cfg load failed. using defaults' )
+        finally:
+            self.saveCfg()
 
     def saveCfg( self ): # m ()
         if not os.path.exists( self.dbsPath ):
@@ -226,12 +230,19 @@ class DeckMgr:
     ## Update deck with DBs
     ###########################################################################
 
-    # known.db
-    def addToKnownDb( self ): # IO Int
-        new = self.knownDb().merge( self.deckKnownDb() )
+    # known.db and mature.db
+    def updateKnownDb( self ): # IO Int
+        new = self.delLocsInDb( self.knownDb() ).merge( self.deckKnownDb() )
         if new:
             debug( '  Saving %d modifications to known.db' % new )
             self.knownDb().save( knownDbPath )
+        return new
+
+    def updateMatureDb( self ): # IO Int
+        new = self.delLocsInDb( self.matureDb() ).merge( self.deckMatureDb() )
+        if new:
+            debug( ' Saving %d modifications to mature.db' % new )
+            self.matureDb().save( matureDbPath )
         return new
 
     def knownDb( self ): # IO Db
@@ -245,6 +256,23 @@ class DeckMgr:
                 debug( '  * Created new known.db' )
         return self._knownDb
 
+    def matureDb( self ): # IO Db
+        if not hasattr( self, '_matureDb' ):
+            try:
+                self._matureDb = M.MorphDb( matureDbPath )
+                debug( '  * Loaded existing mature.db' )
+            except IOError:
+                self._matureDb = M.MorphDb()
+                self._matureDb.save( matureDbPath )
+                debug( '   * Created new mature.db' )
+        return self._matureDb
+
+    def delLocsInDb( self, morphDb ): # Db -> Db
+        locDb_ = dict( (loc,ms) for loc,ms in morphDb.locDb().iteritems() if loc.deckName != self.deckName )
+        morphDb.clear()
+        morphDb.addFromLocDb( locDb_ )
+        return morphDb
+
     # update our dbs via the deck
     def updateDbs( self ): # IO ()
         #NOTE: we (dangerously?) assume that if all.db wasn't updated then known.db doesn't need to be
@@ -252,11 +280,14 @@ class DeckMgr:
         aDb = self.allDb( doLoad=False )
         if aDb:
             log( '  - updated all.db [%d]' % len(aDb.db) )
-            new = self.addToKnownDb()
-            log( '  - updated known.db [%d, +%d]' % ( len(self.knownDb().db), new ) )
+            newK = self.updateKnownDb()
+            log( '  - updated known.db [%d, +%d]' % ( len(self.knownDb().db), newK ) )
+            newM = self.updateMatureDb()
+            log( '  - updated mature.db [%d, +%d]' % ( len(self.matureDb().db), newM ) )
         else:
             log( '  - updated all.db [no-op]' )
             log( '  - updated known.db [no-op]' )
+            log( '  - updated mature.db [no-op]' )
 
         for i in self.cfg['interval dbs to make']:
             self.intervalDb( i, doLoad=False )
@@ -267,7 +298,10 @@ class DeckMgr:
         log( 'Updating deck for %s' % self.deckName )
         self.allDb( doLoad=False ) # force update for timestamp below to be correct
         knownDbMod = os.stat( knownDbPath )[ stat.ST_MTIME ]
-        if max( knownDbMod, self.cfg['last db update'][ self.allPath ] ) > self.cfg['last deck update']:
+        matureDbMod = os.stat( matureDbPath )[ stat.ST_MTIME ]
+        allDbMod = self.cfg['last db update'][ self.allPath ]
+        lastMod = max( knownDbMod, matureDbMod, allDbMod )
+        if lastMod > self.cfg['last deck update']:
             try:
                 self.doDeckUpdate()
                 log( '  - updated morph metadata fields' )
@@ -282,14 +316,18 @@ class DeckMgr:
         locDb = self.allDb().locDb()
         rankDb = R.mkRankDb( self.knownDb() )
         knownDbDb = self.knownDb().db
+        matureDbDb = self.matureDb().db
         fs = self.getFacts()
 
         # cache lookups
         fieldNames = self.cfg['morph fields']
         ipnField = self.cfg['i+N field']
         unknownsField = self.cfg['unknowns field']
+        unmaturesField = self.cfg['unmatures field']
         vrField = self.cfg['vocab rank field']
         mmiField = self.cfg['morph man index field']
+        ip1knownField = self.cfg['copy i+1 known to']
+        ip0matField = self.cfg['copy i+0 mature to']
 
         i, lfs = 0, len(fs)
         start = time.time()
@@ -303,17 +341,24 @@ class DeckMgr:
                     ms.update( locDb[ loc ] )
                 except KeyError:
                     continue
-            # now determine unknowns and iPlusN
-            unknowns, N = set(), 0
+            # now determine unknowns and iPlusN - don't count multiple instances
+            # of a morpheme as an increase in difficulty, so use a set
+            unknowns = set()
             for m in ms:
                 if m not in knownDbDb:
-                    N += 1
                     unknowns.add( m )
+            N_k = len( unknowns )
+
+            unmatures = set()
+            for m in ms:
+                if m not in matureDbDb:
+                    unmatures.add( m )
+            N_m = len( unmatures )
             # determine vocab rank and morph man overall difficulty index
             vr = R.rankMorphemes( rankDb, ms )
-            mmi = N*10000 + len(ms)*1000 + vr
+            mmi = N_k*10000 + len(ms)*1000 + vr
 
-            try: f[ ipnField ] = u'%d' % N
+            try: f[ ipnField ] = u'%d' % N_k
             except KeyError: pass
             try: f[ mmiField ] = u'%d' % mmi
             except KeyError: pass
@@ -321,6 +366,28 @@ class DeckMgr:
             except KeyError: pass
             try: f[ unknownsField ] = u','.join( u.base for u in unknowns )
             except KeyError: pass
+            try: f[ unmaturesField ] = u','.join( u.base for u in unmatures )
+            except KeyError: pass
+
+            # Help automate vocab card -> sentence card promotion
+            try: f[ ip0matField ] = u''
+            except KeyError: pass
+            try: f[ ip1knownField ] = u''
+            except KeyError: pass
+            f.tags = canonifyTags( deleteTags( u'ip0mature ip1known notReady', f.tags ) )
+
+            if N_m == 0: # is i+0 mature, make it a sentence card
+                f.tags = canonifyTags( addTags( u'ip0mature', f.tags ) )
+                try: f[ ip0matField ] = u' '.join( f[ name ] for name in fieldNames )
+                except KeyError: pass
+            elif N_k == 1: # is i+1 known, make it a vocab card
+                f.tags = canonifyTags( addTags( u'ip1known', f.tags ) )
+                try: f[ ip1knownField ] = u'%s' % unknowns.pop().base
+                except KeyError: pass
+            else: # is neither, make it a neither card
+                f.tags = canonifyTags( addTags( u'notReady', f.tags ) )
+
+            #f.setModified( textChanged=True, deck=self.deck )
 
             # now display progress
             i += 1
@@ -329,6 +396,10 @@ class DeckMgr:
                 log('    %d / %d = %d%% in %f sec' % ( i, lfs, 100.*i/lfs, fend-fstart ) )
                 fstart = time.time()
 
+        # rebuild tags
+        self.deck.updateFactTags( ( f.id for f in fs ) )
+
+        # sort new cards by Morph Man Index
         debug( 'Set fact fields, now changing card creation times for ordering' )
         newtime = 0.0
         try:
