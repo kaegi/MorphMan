@@ -287,7 +287,7 @@ class MorphMan( QDialog ):
     def onSaveResults( self ):
         destPath = QFileDialog.getSaveFileName( caption='Save results to?', directory=util.dbPath + 'results.db' )
         if not destPath: return
-        self.db.save( destPath )
+        self.db.save( str(destPath) )
         infoMsg( 'Success', 'Save db' )
 
     def updateDisplay( self ):
