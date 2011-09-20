@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from anki.hooks import addHook
@@ -63,7 +63,8 @@ class MorphManAuto( QDialog ):
             'known threshold': int(self.knownV.text()),
 
             'vocab rank field': str(self.vrV.text()),
-            'i+N field': str(self.ipnV.text()),
+            'i+N known field': str(self.ipnkV.text()),
+            'i+N mature field': str(self.ipnmV.text()),
             'unknowns field': str(self.unkV.text()),
             'unmatures field': str(self.unmV.text()),
             'morph man index field': str(self.mmiV.text()),
@@ -73,6 +74,8 @@ class MorphManAuto( QDialog ):
 
             'morph fields': morphFields,
             'interval dbs to make': ints,
+            'whitelist': unicode( self.whitelistV.text() ),
+            'blacklist': unicode( self.blacklistV.text() ),
         }
         self.cfg.update( d )
         f = gzip.open( self.cfgPath, 'wb' )
@@ -98,7 +101,8 @@ class MorphManAuto( QDialog ):
         # if first load, create the widgets
         if not hasattr( self, 'vrK' ):
             self.mmiK, self.mmiV = mkKey( 'Morph Man Index field' ), mkLE()
-            self.ipnK, self.ipnV = mkKey( 'i+N field' ), mkLE()
+            self.ipnkK, self.ipnkV = mkKey( 'i+N known field' ), mkLE()
+            self.ipnmK, self.ipnmV = mkKey( 'i+N mature field' ), mkLE()
             self.vrK, self.vrV = mkKey( 'Vocab Rank field' ), mkLE()
             self.unkK, self.unkV = mkKey( 'Unknowns field' ), mkLE()
             self.unmK, self.unmV = mkKey( 'Unmatures field' ), mkLE()
@@ -109,6 +113,8 @@ class MorphManAuto( QDialog ):
             self.knownK, self.knownV = mkKey( 'Known threshold' ), mkLE()
             self.learntK, self.learntV = mkKey( 'Learnt threshold' ), mkLE()
             self.fieldsK, self.fieldsV = mkKey( 'Fields to check' ), mkLE()
+            self.whitelistK, self.whitelistV = mkKey( 'Morpheme Whitelist' ), mkLE()
+            self.blacklistK, self.blacklistV = mkKey( 'Morpheme Blacklist' ), mkLE()
             self.intsK, self.intsV = mkKey( 'Intervals to make dbs for' ), mkLE()
             self.enabledK, self.enabledV = mkKey( 'Enabled?' ), mkLE()
 
@@ -118,7 +124,8 @@ class MorphManAuto( QDialog ):
 
         # now set data
         self.vrV.setText( d['vocab rank field'] )
-        self.ipnV.setText( d['i+N field'] )
+        self.ipnkV.setText( d['i+N known field'] )
+        self.ipnmV.setText( d['i+N mature field'] )
         self.unkV.setText( d['unknowns field'] )
         self.unmV.setText( d['unmatures field'] )
         self.mmiV.setText( d['morph man index field'] )
@@ -131,6 +138,8 @@ class MorphManAuto( QDialog ):
         self.enabledV.setText( str(d['enabled']) )
 
         self.fieldsV.setText( str(d['morph fields']) )
+        self.whitelistV.setText( unicode(d['whitelist']) )
+        self.blacklistV.setText( unicode(d['blacklist']) )
         self.intsV.setText( str(d['interval dbs to make']) )
 
         f = datetime.datetime.fromtimestamp
@@ -208,9 +217,13 @@ class MorphMan( QDialog ):
         self.col4Mode.setChecked( True )
         self.col1Mode = QRadioButton( 'Results as 1col morpheme' )
         self.blacklist = QLineEdit( u'記号,助詞' )
+        self.whitelist = QLineEdit( u'' )
         vbox.addWidget( self.col4Mode )
         vbox.addWidget( self.col1Mode )
+        vbox.addWidget( QLabel( 'POS Blacklist' ) )
         vbox.addWidget( self.blacklist )
+        vbox.addWidget( QLabel( 'POS Whitelist' ) )
+        vbox.addWidget( self.whitelist )
         self.morphDisplay = QTextEdit()
         self.analysisDisplay = QTextEdit()
 
@@ -279,8 +292,11 @@ class MorphMan( QDialog ):
 
     def updateDisplay( self ):
         bs = self.blacklist.text().split(',')
+        ws = self.whitelist.text().split(',') if self.whitelist.text() else []
         for m in self.db.db.keys():
             if m.pos in bs:
+                self.db.db.pop( m )
+            elif ws and m.pos not in ws:
                 self.db.db.pop( m )
         if self.col4Mode.isChecked():
             self.morphDisplay.setText( self.db.showMs() )

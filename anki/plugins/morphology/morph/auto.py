@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+﻿#-*- coding: utf-8 -*-
 
 import os, time, gzip, pickle, threading, ctypes, stat
 from anki.deck import DeckStorage
@@ -6,7 +6,7 @@ from anki.facts import Fact
 from anki.cards import Card
 from ankiqt import mw
 from anki.hooks import addHook
-from anki.utils import deleteTags, addTags, canonifyTags
+from anki.utils import deleteTags, addTags, canonifyTags, stripHTML
 import morphemes as M
 import rankVocab as R
 from util import log, debug, matureDbPath, knownDbPath, deckDbPath, deckPaths, sigterm, updater, clearLog
@@ -40,6 +40,11 @@ def closeDeck( deck ): # Deck -> IO ()
       deck.s.close()
    deck.engine.dispose()
 
+# strip html and stuff like that
+def normalizeFieldValue( s ):
+    s = stripHTML( s )
+    return s
+
 class DeckMgr:
     def __init__( self, deck ):
         self.deck     = deck
@@ -56,13 +61,16 @@ class DeckMgr:
             'known threshold':3,
             'interval dbs to make':range(1,21)+[30,100,365],
             'morph fields':['Expression'],
-            'i+N field':'iPlusN',
+            'i+N known field':'iPlusN',
+            'i+N mature field':'iPlusNmature',
             'unknowns field':'unknowns',
             'unmatures field':'unmatures',
             'vocab rank field':'vocabRank',
             'morph man index field':'morphManIndex',
             'copy i+1 known to':'vocabExpression',
             'copy i+0 mature to':'sentenceExpression',
+            'whitelist':u'',
+            'blacklist':u'記号,UNKNOWN',
             'enabled':'no',
 
             # internal
@@ -145,6 +153,7 @@ class DeckMgr:
 
         # pre-cache lookups
         fieldNames = self.cfg['morph fields']
+        whitelist, blacklist = self.cfg['whitelist'], self.cfg['blacklist']
         fid2cardsDb = self.fid2cardsDb()
         fidDb = allDb.fidDb()
         locDb = allDb.locDb()
@@ -157,7 +166,7 @@ class DeckMgr:
             mats = [ c.interval for c in fid2cardsDb[ f.id ] ]
             for fieldName in fieldNames:
                 try:
-                    fieldValue = f[ fieldName ]
+                    fieldValue = normalizeFieldValue( f[ fieldName ] )
                 except KeyError: # if fact doesn't have the field just skip it
                     continue
                 try: # existing location
@@ -172,12 +181,12 @@ class DeckMgr:
                     elif loc.fieldValue != fieldValue:
                         debug('        .morphs for %d[%s]' % ( f.id, fieldName ) )
                         newLoc = M.AnkiDeck( f.id, fieldName, fieldValue, self.deckPath, self.deckName, mats )
-                        ms = M.getMorphemes( mp, fieldValue )
+                        ms = M.getMorphemes( mp, fieldValue, ws=whitelist, bs=blacklist )
                         locDb.pop( loc )
                         locDb[ newLoc ] = ms
                 except KeyError: # new location
                     loc = M.AnkiDeck( f.id, fieldName, fieldValue, self.deckPath, self.deckName, mats )
-                    ms = M.getMorphemes( mp, fieldValue )
+                    ms = M.getMorphemes( mp, fieldValue, ws=whitelist, bs=blacklist )
                     if ms:
                         debug('        .loc for %d[%s]' % ( f.id, fieldName ) )
                         locDb[ loc ] = ms
@@ -321,7 +330,8 @@ class DeckMgr:
 
         # cache lookups
         fieldNames = self.cfg['morph fields']
-        ipnField = self.cfg['i+N field']
+        ipnKnownField = self.cfg['i+N known field']
+        ipnMatureField = self.cfg['i+N mature field']
         unknownsField = self.cfg['unknowns field']
         unmaturesField = self.cfg['unmatures field']
         vrField = self.cfg['vocab rank field']
@@ -332,6 +342,7 @@ class DeckMgr:
         i, lfs = 0, len(fs)
         start = time.time()
         fstart = time.time()
+        mmiDict = {} # Map Fact -> MorphManIndex
         for f in fs:
             # first get all morphems for this fact
             ms = set()
@@ -357,8 +368,11 @@ class DeckMgr:
             # determine vocab rank and morph man overall difficulty index
             vr = R.rankMorphemes( rankDb, ms )
             mmi = N_k*10000 + len(ms)*1000 + vr
+	    mmiDict[ f ] = mmi
 
-            try: f[ ipnField ] = u'%d' % N_k
+            try: f[ ipnKnownField ] = u'%d' % N_k
+            except KeyError: pass
+            try: f[ ipnMatureField ] = u'%d' % N_m
             except KeyError: pass
             try: f[ mmiField ] = u'%d' % mmi
             except KeyError: pass
@@ -369,6 +383,9 @@ class DeckMgr:
             try: f[ unmaturesField ] = u','.join( u.base for u in unmatures )
             except KeyError: pass
 
+            if len(ms) == 0:
+                f.tags = canonifyTags( addTags( u'noMorphemes', f.tags ) )
+
             # Help automate vocab card -> sentence card promotion
             try: f[ ip0matField ] = u''
             except KeyError: pass
@@ -377,11 +394,11 @@ class DeckMgr:
             f.tags = canonifyTags( deleteTags( u'ip0mature ip1known notReady', f.tags ) )
 
             if N_m == 0: # is i+0 mature, make it a sentence card
-                f.tags = canonifyTags( addTags( u'ip0mature', f.tags ) )
+                f.tags = canonifyTags( addTags( u'ip0mature ip0matureEver', f.tags ) )
                 try: f[ ip0matField ] = u' '.join( f[ name ] for name in fieldNames )
                 except KeyError: pass
             elif N_k == 1: # is i+1 known, make it a vocab card
-                f.tags = canonifyTags( addTags( u'ip1known', f.tags ) )
+                f.tags = canonifyTags( addTags( u'ip1known ip1knownEver', f.tags ) )
                 try: f[ ip1knownField ] = u'%s' % unknowns.pop().base
                 except KeyError: pass
             else: # is neither, make it a neither card
@@ -402,8 +419,8 @@ class DeckMgr:
         # sort new cards by Morph Man Index
         debug( 'Set fact fields, now changing card creation times for ordering' )
         newtime = 0.0
-        try:
-            for f in sorted( fs, key=lambda x: int(x[ mmiField ]) ):
+	try:
+            for f in sorted( fs, key=lambda x: mmiDict[ x ] ):
                 for c in fid2cardsDb[ f.id ]:
                     c.created = newtime
                     newtime += CARD_CREATION_TIME_INC
