@@ -42,6 +42,35 @@ def parseWhitelist( wstr ):
     return ustr.split( u',' ) if ustr else []
 
 ###############################################################################
+## Fact browser utils
+###############################################################################
+
+def doOnSelection( b, preF, perF, postF, progLabel ):
+    st = preF( b )
+    if not st: return
+
+    nids = b.selectedNotes()
+    mw.progress.start( label=progLabel, max=len( nids ) )
+    for i,nid in enumerate( nids ):
+        mw.progress.update( value=i )
+        n = mw.col.getNote( nid )
+        st = perF( st, n )
+    mw.progress.finish()
+
+    postF( st )
+    mw.col.updateFieldCache( nids )
+    mw.reset()
+
+def addBrowserSelectionCmd( menuLabel, preF, perF, postF, tooltip=None, shortcut=None, progLabel='Working...' ):
+    def setupMenu( b ):
+        a = QAction( menuLabel, b )
+        if tooltip:     a.setStatusTip( tooltip )
+        if shortcut:    a.setShortcut( shortcut )
+        b.connect( a, SIGNAL('triggered()'), lambda b=b: doOnSelection( b, preF, perF, postF, progLabel ) )
+        b.form.menuEdit.addAction( a )
+    addHook( 'browser.setupMenus', setupMenu )
+
+###############################################################################
 ## Logging and MsgBoxes
 ###############################################################################
 def errorMsg( msg ):
