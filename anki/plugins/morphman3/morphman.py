@@ -24,4 +24,8 @@ def main():
     mw.connect( a, SIGNAL('triggered()'), onMorphManManager )
     mw.form.menuTools.addAction( a )
 
+
+    import morph.viewMorphemes
+    import morph.extractMorphemes
+
 main()
