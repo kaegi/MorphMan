@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import codecs, cPickle as pickle, gzip, os, subproceess
+import codecs, cPickle as pickle, gzip, os, subprocess
 from morph.util import memoize, errorMsg
 
 ################################################################################
