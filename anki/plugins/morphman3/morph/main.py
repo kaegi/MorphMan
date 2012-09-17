@@ -6,7 +6,6 @@ from morphemes import MorphDb, AnkiDeck, getMorphemes
 from util import printf, mw, memoize, cfg, cfg1
 
 '''TODO:
-* port over old lesser features: extract/view in card browser, adaptive
 * documentation + videos
 
 * config option to disable memoization
@@ -174,11 +173,13 @@ def updateNotes( allDb ):
             ds.append( { 'now':now, 'due':nid2mmi[ nid ], 'usn':mw.col.usn(), 'cid':cid } )
     mw.col.db.executemany( 'update cards set due=:due, mod=:now, usn=:usn where id=:cid', ds )
     mw.col.updateFieldCache( nid2mmi.keys() )
+    mw.reset()
 
     printf( 'Updated notes in %f sec' % ( time.time() - t_0 ) )
     mw.progress.finish()
 
 def main():
+    # Load existing all.db + merge external.db
     mw.progress.start( label='Loading existing all.db+external.db' )
     t_0 = time.time()
     if cfg1('loadAllDb'):
@@ -189,6 +190,8 @@ def main():
         printf( 'Loaded external.db in %f sec' % ( time.time() - t_0 ) )
     mw.progress.finish()
 
+    # update all.db
     allDb = mkAllDb( cur )
+
+    # update notes
     updateNotes( allDb )
-    mw.reset()
