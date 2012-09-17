@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-import os, subprocess, sys, bz2, codecs, pickle, gzip
+import codecs, cPickle as pickle, gzip, os, subproceess
+from morph.util import memoize, errorMsg
 
 ################################################################################
 ## Lexical analysis
@@ -37,73 +38,53 @@ class Morpheme:
 def ms2str( ms ): # [Morpheme] -> Str
     return u'\n'.join( m.show() for m in ms )
 
-def which( app ): # PartialAppPath -> [FullAppPath]
-    def isExe( path ):
-        return os.path.exists( path ) and os.access( path, os.X_OK )
-    apath, aname = os.path.split( app )
-    if apath and isExe( app ):  # full path was provided
-        return [ app ]
-    else:                       # search $PATH for matches
-        ps = [ os.path.join( p, aname ) for p in os.environ['PATH'].split( os.pathsep ) ]
-        return [ ( isExe(p), p ) for p in ps ]
-        return [ p for p in ps if isExe( p ) ]
+def runMecabCmd( args ): # [Str] -> IO MecabProc
+    try:
+        from japanese.reading import si, MecabController
+        m = MecabController()
+        m.setup()
+        cmd = m.mecabCmd[:1] + m.mecabCmd[4:]
+    except ImportError:
+        si = None
+        cmd = ['mecab']
+    s = subprocess.Popen( cmd + args, bufsize=-1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, startupinfo=si )
+    return s
 
-# Creates an instance of mecab process
-def mecab( customPath=None ): # Maybe Path -> IO MecabProc
-    global encoding
-    try: from japanese.reading import si
-    except: si = None
+def getMecabEncoding(): # IO CharacterEncoding
+    return runMecabCmd( [ '-D' ] ).stdout.readlines()[2].lstrip( 'charset:' ).lstrip()
 
-    path = customPath or 'mecab'
-    if 1 or not which( 'mecab' ): # probably on windows and only has mecab via Anki
-        # maybe we're running from anki?
-        aPath = os.path.dirname( os.path.abspath( sys.argv[0] ) )
-        amPath = os.path.join( aPath, 'mecab', 'bin', 'mecab.exe' )
-
-        # otherwise check default anki install loc
-        if not which( amPath ):
-            aPath = r'C:\Program Files\Anki'
-        os.environ['PATH'] += ';%s\\mecab\\bin' % aPath
-        os.environ['MECABRC'] = '%s\\mecab\\etc\\mecabrc' % aPath
-
-    # Get mecab encoding
-    mecabCmd = [ path, '-D' ]
-    s = subprocess.Popen( mecabCmd, bufsize=-1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT )
-    charset_line = s.stdout.readlines()[2]
-    encoding = charset_line.lstrip( 'charset:' ).lstrip()
-    # Run mecab
+@memoize
+def mecab(): # IO MecabProc
+    global MECAB_ENCODING
+    if not MECAB_ENCODING: MECAB_ENCODING = getMecabEncoding()
     nodeFmt = '\t'.join( MECAB_NODE_PARTS )+'\r'
-    mecabCmd = [ path, '--node-format=%s' % nodeFmt, '--eos-format=\n', '--unk-format=%m\tUnknown\tUnknown\tUnknown\r']
-    return subprocess.Popen( mecabCmd, bufsize=-1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, startupinfo=si )
+    args = [ '--node-format=%s' % nodeFmt, '--eos-format=\n', '--unk-format=%m\tUnknown\tUnknown\tUnknown\r' ]
+    return runMecabCmd( args )
 
-# Send mecab 1 input and receive 1 output
-def interact( p, expr ): # MecabProc -> Str -> IO Str
-    expr = expr.encode( encoding, 'ignore' )
-    #expr = expr.encode( 'euc-jp', 'ignore' )
+@memoize
+def interact( expr ): # Str -> IO Str
+    p = mecab()
+    expr = expr.encode( MECAB_ENCODING, 'ignore' )
     p.stdin.write( expr + '\n' )
     p.stdin.flush()
-    return u'\r'.join( [ unicode( p.stdout.readline().rstrip( '\r\n' ), encoding ) for l in expr.split('\n') ] )
-    #return u'\r'.join( [ unicode( p.stdout.readline().rstrip( '\r\n' ), 'euc-jp' ) for l in expr.split('\n') ] )
+    return u'\r'.join( [ unicode( p.stdout.readline().rstrip( '\r\n' ), MECAB_ENCODING ) for l in expr.split('\n') ] )
 
-def fixReading( p, m ): # MecabProc -> Morpheme -> IO Morpheme
+@memoize
+def fixReading( m ): # Morpheme -> IO Morpheme
     if m.pos in [u'動詞', u'助動詞', u'形容詞']: # verb, aux verb, i-adj
-        n = interact( p, m.base ).split('\t')
+        n = interact( m.base ).split('\t')
         if len(n) == MECAB_NODE_LENGTH:
             m.read = n[ MECAB_NODE_READING_INDEX ].strip()
     return m
 
-# MecabProc -> Str -> PosWhiteList? -> PosBlackList? -> IO [Morpheme]
-def getMorphemes( p, e, ws=None, bs=None ):
-    ms = [ tuple( m.split('\t') ) for m in interact( p, e ).split('\r') ] # morphemes
+@memoize
+def getMorphemes( e, ws=None, bs=None ): # Str -> PosWhiteList? -> PosBlackList? -> IO [Morpheme]
+    ms = [ tuple( m.split('\t') ) for m in interact( e ).split('\r') ] # morphemes
     ms = [ Morpheme( *m ) for m in ms if len( m ) == MECAB_NODE_LENGTH ] # filter garbage
     if ws: ms = [ m for m in ms if m.pos in ws ]
     if bs: ms = [ m for m in ms if m.pos not in bs ]
-    ms = [ fixReading( p, m ) for m in ms ]
+    ms = [ fixReading( m ) for m in ms ]
     return ms
-
-# Str -> PosWhiteList? -> PosBlackList? -> IO [Morpheme]
-def getMorphemes1( e, ws=None, bs=None ):
-    return getMorphemes( mecab(), e, ws, bs )
 
 ################################################################################
 ## Morpheme db manipulation
@@ -140,15 +121,20 @@ class AnkiDeck( Location ):
 ### Morpheme DB
 class MorphDb:
     @staticmethod
-    def mergeFiles( aPath, bPath, destPath ): # FilePath -> FilePath -> FilePath -> IO ()
-        a, b = MorphDb( path=aPath ), MorphDb( path=bPath )
+    def mergeFiles( aPath, bPath, destPath=None, ignoreErrors=False ): # FilePath -> FilePath -> Maybe FilePath -> Maybe Book -> IO MorphDb
+        a, b = MorphDb( aPath, ignoreErrors ), MorphDb( bPath, ignoreErrors )
         a.merge( b )
-        a.save( destPath )
+        if destPath:
+            a.save( destPath )
+        return a
 
     @staticmethod
     def mkFromFile( path ): # FilePath -> IO Db
+        '''Returns None and shows error dialog if failed'''
         d = MorphDb()
-        d.importFile( path )
+        try:    d.importFile( path )
+        except (UnicodeDecodeError, IOError), e:
+            return errorMsg( 'Unable to import file. Please verify it is a UTF-8 text file and you have permissions.\nFull error:\n%s' % e )
         return d
 
     def __init__( self, path=None, ignoreErrors=False ): # Maybe Filepath -> m ()
@@ -184,7 +170,7 @@ class MorphDb:
         if not os.path.exists( par ):
             os.makedirs( par )
         f = gzip.open( path, 'wb' )
-        pickle.dump( self.db, f )
+        pickle.dump( self.db, f, -1 )
         f.close()
 
     def load( self, path ): # FilePath -> m ()
@@ -236,14 +222,10 @@ class MorphDb:
         f = codecs.open( path, 'r', 'utf-8' )
         inp = f.readlines()
         f.close()
-        mp = mecab()
 
         for i,line in enumerate(inp):
-            ms = getMorphemes( mp, line.strip(), ws, bs )
+            ms = getMorphemes( line.strip(), ws, bs )
             self.addMLs( ( m, TextFile( path, i+1 ) ) for m in ms )
-
-        try: mp.terminate()
-        except AttributeError: pass
 
     # Analysis
     def locDb( self, recalc=True ): # Maybe Bool -> m Map Location {Morpheme}

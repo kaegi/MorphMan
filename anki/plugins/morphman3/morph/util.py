@@ -1,42 +1,70 @@
 # -*- coding: utf-8 -*-
+import codecs, datetime
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
-from aqt import mw
-from aqt.utils import showWarning as info
-from anki.hooks import addHook, wrap
-import datetime, os, codecs
 
-cfg = None
-def loadCfg():
-    global cfg
-    cfg = {
-        'path_ext': os.path.join( mw.pm.profileFolder(), 'dbs', 'external.db' ),
-        'path_all': os.path.join( mw.pm.profileFolder(), 'dbs', 'all.db' ),
-        'path_known': os.path.join( mw.pm.profileFolder(), 'dbs', 'known.db' ),
-        'path_mature': os.path.join( mw.pm.profileFolder(), 'dbs', 'mature.db' ),
-        'path_log': os.path.join( mw.pm.profileFolder(), 'morphman.log' ),
-        'threshold_mature': 21,
-        'threshold_known': 3,
-        'threshold_seen': 1,
-        'morph_fields': ['Expression'],
-        'morph_whitelist': u''.split(','),
-        'morph_blacklist': [ u'記号', u'UNKNOWN'],
-    }
-    #cfg.update( mw.pm.profile.get( 'morphMan', {} ) )
-    mw.pm.profile[ 'morphMan' ] = cfg
-addHook( 'profileLoaded', loadCfg )
+from aqt import mw
+from aqt.utils import showCritical, showInfo, showWarning
+from anki.hooks import addHook
+
+###############################################################################
+## Config
+###############################################################################
+cfgMod = None
+def initCfg():
+    global cfgMod, dbsPath
+    import config
+    cfgMod = config
+    dbsPath = config.default['path_dbs']
+
+addHook( 'profileLoaded', initCfg )
+
+def cfg1( key, mid=None, did=None ): return cfg( mid, did, key )
+def cfg( modelId, deckId, key ):
+    assert cfgMod, 'Tried to use cfgMods before profile loaded'
+    profile = mw.pm.name
+    model = mw.col.models.get( modelId )[ 'name' ] if modelId else None
+    deck = mw.col.decks.get( deckId )[ 'name' ] if deckId else None
+    if key in cfgMod.deck_overrides.get( deck, [] ):
+        return cfgMod.deck_overrides[ deck ][ key ]
+    elif key in cfgMod.model_overrides.get( model, [] ):
+        return cfgMod.model_overrides[ model ][ key ]
+    elif key in cfgMod.profile_overrides.get( profile, [] ):
+        return cfgMod.profile_overrides[ profile ][ key ]
+    else:
+        return cfgMod.default[ key ]
+
+###############################################################################
+## Parsing
+###############################################################################
+def parseWhitelist( wstr ):
+    ustr = unicode( wstr )
+    return ustr.split( u',' ) if ustr else []
+
+###############################################################################
+## Logging and MsgBoxes
+###############################################################################
+def errorMsg( msg ):
+    showCritical( msg )
+    printf( msg )
+def infoMsg( msg ):
+    showInfo( msg )
+    printf( msg )
 
 def printf( msg ):
     txt = '%s: %s' % ( datetime.datetime.now(), msg )
-    f = codecs.open( cfg['path_log'], 'a', 'utf-8' )
+    f = codecs.open( cfg1('path_log'), 'a', 'utf-8' )
     f.write( txt+'\r\n' )
     f.close()
     print txt
 
 def clearLog():
-    f = codecs.open( cfg['path_log'], 'w', 'utf-8' )
+    f = codecs.open( cfg1('path_log'), 'w', 'utf-8' )
     f.close()
 
+###############################################################################
+## Functional tools
+###############################################################################
 class memoize(object):
    '''Decorator that memoizes a function'''
    def __init__(self, func):
