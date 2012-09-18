@@ -6,11 +6,9 @@ from morphemes import MorphDb, AnkiDeck, getMorphemes
 from util import printf, mw, memoize, cfg, cfg1
 
 '''TODO:
-* documentation + videos
-
 * config option to disable memoization
 * config deck overrides
-* button to save seen.db, known.db, mature.db
+* button to save interval dbs like seen.db, known.db, mature.db
 '''
 
 @memoize
@@ -135,7 +133,7 @@ def updateNotes( allDb ):
         mmi = 10000*N_k + 1000*lenDiff + freq
         nid2mmi[ nid ] = mmi
 
-        # Fill in various fields/tags on the note based on cfg #TODO: make based on cfg
+        # Fill in various fields/tags on the note based on cfg
         ts, fs = TAG.split( tags ), splitFields( flds )
             # determine card type
         compTag, vocabTag, notReadyTag, focusMorphTag = tagNames = C('tagNames')

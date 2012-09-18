@@ -16,17 +16,17 @@ default = {
     # speed tests show its faster to 100% recalc all.db rather than load the
     # existing one for 9000 fact collections
     'loadAllDb':False,
-    'saveAllDb':False,
+    'saveAllDb':True,
 
     # only these can have model/deck overrides
     'enabled':True,
         # field names to store various information
-    'k+N':'k+N',
-    'm+N':'m+N',
-    'morphManIndex':'morphManIndex',
-    'unknowns':'unknowns',
-    'unmatures':'unmatures',
-    'unknownFreq':'unknownFreq',
+    'k+N':u'k+N',
+    'm+N':u'm+N',
+    'morphManIndex':u'morphManIndex',
+    'unknowns':u'unknowns',
+    'unmatures':u'unmatures',
+    'unknownFreq':u'unknownFreq',
         # analyze notes based on the morphemes in these fields
     'morph_fields': [u'Expression'],
         # tag names for marking the state of notes
@@ -37,12 +37,9 @@ default = {
 # Can override anything
 profile_overrides = {
 }
-# Model and deck overrides can only override:
-    # enabled, morph_fields, morph_blacklist
+
+# Models and decks can only override 'enabled' and later entries
 model_overrides = {
-    'subs2srs (Hayate no Gotoku)': {
-        'enabled':False,
-        },
 }
 
 # Currently this is unimplemented
