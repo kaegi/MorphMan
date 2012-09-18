@@ -179,19 +179,21 @@ def updateNotes( allDb ):
     mw.progress.finish()
 
 def main():
-    # Load existing all.db + merge external.db
-    mw.progress.start( label='Loading existing all.db+external.db' )
+    # load existing all.db
+    mw.progress.start( label='Loading existing all.db' )
     t_0 = time.time()
-    if cfg1('loadAllDb'):
-        cur = MorphDb.mergeFiles( cfg1('path_all'), cfg1('path_ext'), ignoreErrors=True )
-        printf( 'Loaded and merged all.db + external.db in %f sec' % ( time.time() - t_0 ) )
-    else:
-        cur = MorphDb( cfg1('path_ext'), ignoreErrors=True )
-        printf( 'Loaded external.db in %f sec' % ( time.time() - t_0 ) )
+    cur = MorphDb( cfg1('path_all') ) if cfg1('loadAllDb') else None
+    printf( 'Loaded all.db in %f sec' % ( time.time() - t_0 ) )
     mw.progress.finish()
 
     # update all.db
     allDb = mkAllDb( cur )
+
+    # merge in external.db
+    mw.progress.start( label='Merging ext.db' )
+    ext = MorphDb( cfg1('path_ext'), ignoreErrors=True )
+    allDb.merge( ext )
+    mw.progress.finish()
 
     # update notes
     updateNotes( allDb )
