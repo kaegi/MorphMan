@@ -80,11 +80,11 @@ def mkAllDb( allDb=None ):
     return allDb
 
 def filterDbByMat( db, mat ):
-    db = MorphDb()
+    newDb = MorphDb()
     for loc, ms in db.locDb().iteritems():
         if loc.maturity > mat:
-            db.addMsL( ms, loc )
-    return db
+            newDb.addMsL( ms, loc )
+    return newDb
 
 def updateNotes( allDb ):
     t_0, now, db, TAG   = time.time(), intTime(), mw.col.db, mw.col.tags
