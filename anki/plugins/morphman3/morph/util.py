@@ -2,10 +2,22 @@
 import codecs, datetime
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
+from aqt.qt import *
 
 from aqt import mw
-from aqt.utils import showCritical, showInfo, showWarning
-from anki.hooks import addHook
+from aqt.utils import showCritical, showInfo, showWarning, tooltip
+from anki.hooks import addHook, wrap
+
+###############################################################################
+## Global data
+###############################################################################
+_allDb = None
+def allDb():
+    global _allDb
+    if not _allDb:
+        from morphemes import MorphDb
+        _allDb = MorphDb( cfg1('path_all'), ignoreErrors=True )
+    return _allDb
 
 ###############################################################################
 ## Config
@@ -44,7 +56,6 @@ def parseWhitelist( wstr ):
 ###############################################################################
 ## Fact browser utils
 ###############################################################################
-
 def doOnSelection( b, preF, perF, postF, progLabel ):
     st = preF( b )
     if not st: return
@@ -57,15 +68,16 @@ def doOnSelection( b, preF, perF, postF, progLabel ):
         st = perF( st, n )
     mw.progress.finish()
 
-    postF( st )
+    st = postF( st )
     mw.col.updateFieldCache( nids )
-    mw.reset()
+    if not st or st.get( '__reset', True ):
+        mw.reset()
 
 def addBrowserSelectionCmd( menuLabel, preF, perF, postF, tooltip=None, shortcut=None, progLabel='Working...' ):
     def setupMenu( b ):
         a = QAction( menuLabel, b )
         if tooltip:     a.setStatusTip( tooltip )
-        if shortcut:    a.setShortcut( shortcut )
+        if shortcut:    a.setShortcut( QKeySequence( *shortcut ) )
         b.connect( a, SIGNAL('triggered()'), lambda b=b: doOnSelection( b, preF, perF, postF, progLabel ) )
         b.form.menuEdit.addAction( a )
     addHook( 'browser.setupMenus', setupMenu )
@@ -114,3 +126,9 @@ class memoize(object):
    def __get__(self, obj, objtype):
       """Support instance methods"""
       return functools.partial(self.__call__, obj)
+
+###############################################################################
+## Mplayer settings
+###############################################################################
+from anki import sound
+sound.mplayerCmd += [ '-fs' ]

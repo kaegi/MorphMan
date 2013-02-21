@@ -19,20 +19,25 @@ default = {
     'saveAllDb':True,
 
     # only these can have model/deck overrides
-    'enabled':True,
+    'enabled':False,
         # field names to store various information
     'k+N':u'k+N',
     'm+N':u'm+N',
     'morphManIndex':u'morphManIndex',
+    'focusMorph':u'focusMorph', # holds the unknown for k+0 sentences but goes away once m+0
     'unknowns':u'unknowns',
     'unmatures':u'unmatures',
     'unknownFreq':u'unknownFreq',
         # analyze notes based on the morphemes in these fields
     'morph_fields': [u'Expression'],
         # tag names for marking the state of notes
-    'tagNames':[u'comprehension', u'vocab', u'notReady', u'focusMorph'],
+    'tag_comprehension':u'comprehension',
+    'tag_vocab':u'vocab',
+    'tag_notReady':u'notReady',
+    'tag_alreadyKnown':u'alreadyKnown',
         # controls for morpheme analysis
     'morph_blacklist': [ u'記号', u'UNKNOWN'],
+    'batchMediaFields': [ u'Video', u'Sound' ],
 }
 # Can override anything
 profile_overrides = {
@@ -40,6 +45,8 @@ profile_overrides = {
 
 # Models and decks can only override 'enabled' and later entries
 model_overrides = {
+        'subs2srs': { 'enabled':True },
+        'subs2srs (no video)': { 'enabled':True },
 }
 
 # Currently this is unimplemented

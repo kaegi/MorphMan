@@ -3,7 +3,8 @@ import time
 
 from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksum
 from morphemes import MorphDb, AnkiDeck, getMorphemes
-from util import printf, mw, memoize, cfg, cfg1
+from util import printf, mw, memoize, cfg, cfg1, infoMsg
+import util
 
 '''TODO:
 * config option to disable memoization
@@ -38,11 +39,15 @@ def mkAllDb( allDb=None ):
     if not allDb: allDb = MorphDb()
     fidDb, locDb = allDb.fidDb(), allDb.locDb()
 
-    for i,( nid, mid, flds, guid ) in enumerate( db.execute( 'select id, mid, flds, guid from notes' ) ):
+    for i,( nid, mid, flds, guid, tags ) in enumerate( db.execute( 'select id, mid, flds, guid, tags from notes' ) ):
         if i % 500 == 0:    mw.progress.update( value=i )
         C = partial( cfg, mid, None ) #TODO: get correct did
         if not C('enabled'): continue
         mats = db.list( 'select ivl from cards where nid = :nid', nid=nid )
+        ts, alreadyKnownTag = TAG.split( tags ), C('tag_alreadyKnown')
+        if alreadyKnownTag in ts:
+            mats += [ C('threshold_mature')+1 ]
+
         for fieldName in C('morph_fields'):
             try: # if doesn't have field, continue
                 #fieldValue = normalizeFieldValue( getField( fieldName, flds, mid ) )
@@ -82,7 +87,7 @@ def mkAllDb( allDb=None ):
 def filterDbByMat( db, mat ):
     newDb = MorphDb()
     for loc, ms in db.locDb().iteritems():
-        if loc.maturity > mat:
+        if loc.maturity > mat: #FIXME: getattr( loc, 'maturity', cfg1('external_maturity') )
             newDb.addMsL( ms, loc )
     return newDb
 
@@ -136,14 +141,14 @@ def updateNotes( allDb ):
         # Fill in various fields/tags on the note based on cfg
         ts, fs = TAG.split( tags ), splitFields( flds )
             # determine card type
-        compTag, vocabTag, notReadyTag, focusMorphTag = tagNames = C('tagNames')
-        if N_m == 0:    # sentence comprehension card
+        compTag, vocabTag, notReadyTag, alreadyKnownTag = tagNames = C('tag_comprehension'), C('tag_vocab'), C('tag_notReady'), C('tag_alreadyKnown')
+        if N_m == 0:    # sentence comprehension card, m+0
             ts = [ compTag ] + [ t for t in ts if t not in [ vocabTag, notReadyTag ] ]
-            setField( mid, fs, focusMorphTag, u'' )
-        elif N_k == 1:  # new vocab card
-            ts = [ vocabTag ] + [ t for t in ts if t not in [ notReadyTag ] ]
-            setField( mid, fs, focusMorphTag, u'%s' % focusMorph.base )
-        elif N_k > 1:   # M+1+ K+2+
+            setField( mid, fs, C('focusMorph'), u'' )
+        elif N_k == 1:  # new vocab card, k+1
+            ts = [ vocabTag ] + [ t for t in ts if t not in [ notReadyTag ] ] #TODO: should this remove compTag?
+            setField( mid, fs, C('focusMorph'), u'%s' % focusMorph.base )
+        elif N_k > 1:   # M+1+ and K+2+
             ts.append( notReadyTag )
             # set type agnostic fields
         setField( mid, fs, C('k+N'), u'%d' % N_k )
@@ -195,3 +200,6 @@ def main():
 
     # update notes
     updateNotes( allDb )
+
+    # set global allDb
+    util._allDb = allDb

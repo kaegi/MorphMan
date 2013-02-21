@@ -30,7 +30,7 @@ class Morpheme:
 
     def __hash__( self ):
         #return hash( (self.pos, self.subPos, self.read, self.base, self.inflected) )
-        return hash( (self.pos, self.subPos, self.read, self.base, self.inflected) )
+        return hash( (self.pos, self.subPos, self.read, self.base) )
 
     def show( self ): # Str
         return u'\t'.join([ self.base, self.pos, self.subPos, self.read ])

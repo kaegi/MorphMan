@@ -27,5 +27,7 @@ def main():
 
     import morph.viewMorphemes
     import morph.extractMorphemes
+    import morph.batchPlay
+    import morph.newMorphHelper
 
 main()
