@@ -46,7 +46,6 @@ profile_overrides = {
 # Models and decks can only override 'enabled' and later entries
 model_overrides = {
         'subs2srs': { 'enabled':True },
-        'subs2srs (no video)': { 'enabled':True },
 }
 
 # Currently this is unimplemented

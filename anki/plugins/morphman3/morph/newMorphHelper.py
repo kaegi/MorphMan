@@ -29,7 +29,8 @@ def buryNotesWithSameFocus( self, n, alsoBurySelf=True ):
     for nid in nids:
         if alsoBurySelf or nid != n.id:
             self.mw.col.sched.buryNote( nid )
-    self.mw.col.sched._resetLrn()
+    #self.mw.col.sched._resetLrn() # bury removes from learning queue, but I don't think we need that and thus don't need to reset the learn queue (which is potentially bad anyways)
+    #self.mw.col.sched._resetNew()
     tooltip( _( 'Buried %d notes with same focus morph' % (len(nids)-1) ) )
 
 def setKnownAndSkip( self ): #2
@@ -78,6 +79,7 @@ def post( st ):
             mw.reviewer.cardQueue.append( c )
             i += 1
     st['browser'].close()
+    st['__reset'] = False
     tooltip( _( 'Immediately reviewing %d cards' % i ) )
 
 addBrowserSelectionCmd( 'Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=('Ctrl+Shift+N',) )
