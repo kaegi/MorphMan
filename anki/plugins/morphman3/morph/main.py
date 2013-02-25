@@ -133,7 +133,7 @@ def updateNotes( allDb ):
         F_k_avg = F_k / N_k if N_k > 0 else F_k
         freq = 999 - min( 999, F_k_avg )
             # difference from optimal length (too little context vs long sentence)
-        lenDiff = min( 9, abs( 4 - N ) )
+        lenDiff = min( 9, abs( C('optimal sentence length') - N ) )
             # calculate mmi
         mmi = 10000*N_k + 1000*lenDiff + freq
         nid2mmi[ nid ] = mmi
@@ -146,10 +146,10 @@ def updateNotes( allDb ):
             ts = [ compTag ] + [ t for t in ts if t not in [ vocabTag, notReadyTag ] ]
             setField( mid, fs, C('focusMorph'), u'' )
         elif N_k == 1:  # new vocab card, k+1
-            ts = [ vocabTag ] + [ t for t in ts if t not in [ notReadyTag ] ] #TODO: should this remove compTag?
+            ts = [ vocabTag ] + [ t for t in ts if t not in [ compTag, notReadyTag ] ]
             setField( mid, fs, C('focusMorph'), u'%s' % focusMorph.base )
         elif N_k > 1:   # M+1+ and K+2+
-            ts.append( notReadyTag )
+            ts = [ notReadyTag ] + [ t for t in ts if t not in [ compTag, vocabTag ] ]
             # set type agnostic fields
         setField( mid, fs, C('k+N'), u'%d' % N_k )
         setField( mid, fs, C('m+N'), u'%d' % N_m )

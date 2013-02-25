@@ -2,6 +2,7 @@
 import os
 from aqt import mw # this script isn't imported until profile is loaded
 
+# 4th (lowest) priority
 default = {
     'path_dbs': os.path.join( mw.pm.profileFolder(), 'dbs' ),
     'path_ext': os.path.join( mw.pm.profileFolder(), 'dbs', 'external.db' ),
@@ -10,15 +11,18 @@ default = {
     'path_mature': os.path.join( mw.pm.profileFolder(), 'dbs', 'mature.db' ),
     'path_log': os.path.join( mw.pm.profileFolder(), 'morphman.log' ),
     'threshold_mature': 21,
-    'threshold_known': 3,
-    'threshold_seen': 1,
+    'threshold_known': 10/86400.,
+    'threshold_seen': 1/86400.,
+    'browse same focus key': 'l',
+    'set known and skip key': 'k',
+    'print number of alternatives skipped': True,
 
     # speed tests show its faster to 100% recalc all.db rather than load the
     # existing one for 9000 fact collections
     'loadAllDb':False,
     'saveAllDb':True,
 
-    # only these can have model/deck overrides
+    # only these can have model overrides
     'enabled':False,
         # field names to store various information
     'k+N':u'k+N',
@@ -38,16 +42,21 @@ default = {
         # controls for morpheme analysis
     'morph_blacklist': [ u'記号', u'UNKNOWN'],
     'batchMediaFields': [ u'Video', u'Sound' ],
+    'optimal sentence length': 4,
+
+    # only these can have deck overrides
+    'new card merged fill':False,
 }
-# Can override anything
+# Can override anything. 3rd priority
 profile_overrides = {
 }
 
-# Models and decks can only override 'enabled' and later entries
+# Model overrides can only override 'enabled' and later entries. 2nd priority
 model_overrides = {
-        'subs2srs': { 'enabled':True },
+    'subs2srs': { 'enabled':True },
 }
 
-# Currently this is unimplemented
+# Deck overrides can only override 'new card merged fill'. 1st priority
 deck_overrides = {
+    'subs2srs': { 'new card merged fill':True },
 }
