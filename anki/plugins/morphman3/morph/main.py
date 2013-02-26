@@ -134,6 +134,7 @@ def updateNotes( allDb ):
         freq = 999 - min( 999, F_k_avg )
             # difference from optimal length (too little context vs long sentence)
         lenDiff = min( 9, abs( C('optimal sentence length') - N ) )
+        lenDiff = 1 #FIXME hack
             # calculate mmi
         mmi = 10000*N_k + 1000*lenDiff + freq
         nid2mmi[ nid ] = mmi

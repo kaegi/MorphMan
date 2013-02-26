@@ -45,13 +45,13 @@ default = {
     'optimal sentence length': 4,
 
     # only these can have deck overrides
-    'new card merged fill':False,
+    'new card merged fill':True,
 }
 # Can override anything. 3rd priority
 profile_overrides = {
 }
 
-# Model overrides can only override 'enabled' and later entries. 2nd priority
+# Model overrides can only override the entries marked above. 2nd priority
 model_overrides = {
     'subs2srs': { 'enabled':True },
 }

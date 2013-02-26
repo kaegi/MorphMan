@@ -131,4 +131,4 @@ class memoize(object):
 ## Mplayer settings
 ###############################################################################
 from anki import sound
-sound.mplayerCmd += [ '-fs' ]
+#sound.mplayerCmd += [ '-fs' ]

@@ -132,7 +132,7 @@ def post( st ):
             mw.reviewer.cardQueue.append( c )
             i += 1
     st['browser'].close()
-    st['__reset'] = False
+    #st['__reset'] = False
     tooltip( _( 'Immediately reviewing %d cards' % i ) )
 
 addBrowserSelectionCmd( 'Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=('Ctrl+Shift+N',) )
