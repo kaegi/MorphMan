@@ -1,5 +1,5 @@
 ﻿import codecs
-from morphemes import MorphDb
+from morphemes import MorphDb, getMorphemes
 from util import cfg1
 
 # utils
@@ -23,8 +23,8 @@ def getPreText( line ):
 
 def run( duelingSubsPath, outputSubsPath, whitelist, blacklist, matureFmt, knownFmt, unknownFmt ):
     # Load files
-    kdb = MorphDb( cfg1['path_known'] )
-    mdb = MorphDb( cfg1['path_mature'] )
+    kdb = MorphDb( cfg1('path_known') )
+    mdb = MorphDb( cfg1('path_mature') )
     subFileLines = codecs.open( duelingSubsPath, 'r', 'utf-8' ).readlines()
 
     # Get dueling subs
@@ -38,7 +38,7 @@ def run( duelingSubsPath, outputSubsPath, whitelist, blacklist, matureFmt, known
         jpn, eng, pre = getText( jpn ), getText( eng ), getPreText( jpn )
 
         # get unknowns
-        ms = getMorphemes( jpn, ws=whitelist, bs=blacklist )
+        ms = getMorphemes( jpn, whitelist, blacklist )
         unknowns, N_k = getNotInDb( ms, kdb.db )
         unmatures, N_m = getNotInDb( ms, mdb.db )
         d = { 'jpn':jpn, 'eng':eng, 'N_k':N_k, 'N_m':N_m, 'unknowns':unknowns, 'unmatures':unmatures }
