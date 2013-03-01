@@ -1,16 +1,9 @@
-from functools import partial
 import time
 
 from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksum
 from morphemes import MorphDb, AnkiDeck, getMorphemes
-from util import printf, mw, memoize, cfg, cfg1, infoMsg
+from util import printf, mw, memoize, cfg, cfg1, infoMsg, partial
 import util
-
-'''TODO:
-* config option to disable memoization
-* config deck overrides
-* button to save interval dbs like seen.db, known.db, mature.db
-'''
 
 @memoize
 def getFieldIndex( fieldName, mid ):
@@ -41,9 +34,9 @@ def mkAllDb( allDb=None ):
 
     for i,( nid, mid, flds, guid, tags ) in enumerate( db.execute( 'select id, mid, flds, guid, tags from notes' ) ):
         if i % 500 == 0:    mw.progress.update( value=i )
-        C = partial( cfg, mid, None ) #TODO: get correct did
+        C = partial( cfg, mid, None )
         if not C('enabled'): continue
-        mats = db.list( 'select ivl from cards where nid = :nid', nid=nid )
+        mats = [ ( 0.5 if ivl == 0 and ctype == 1 else ivl ) for ivl, ctype in db.execute( 'select ivl, type from cards where nid = :nid', nid=nid ) ]
         ts, alreadyKnownTag = TAG.split( tags ), C('tag_alreadyKnown')
         if alreadyKnownTag in ts:
             mats += [ C('threshold_mature')+1 ]
@@ -78,7 +71,7 @@ def mkAllDb( allDb=None ):
     mw.progress.update( value=i, label='Saving all.db...' )
     allDb.clear()
     allDb.addFromLocDb( locDb )
-    if cfg1('saveAllDb'):
+    if cfg1('saveDbs'):
         allDb.save( cfg1('path_all') )
         printf( 'Processed all %d notes + saved all.db in %f sec' % ( N_notes, time.time() - t_0 ) )
     mw.progress.finish()
@@ -87,26 +80,31 @@ def mkAllDb( allDb=None ):
 def filterDbByMat( db, mat ):
     newDb = MorphDb()
     for loc, ms in db.locDb().iteritems():
-        if loc.maturity > mat: #FIXME: getattr( loc, 'maturity', cfg1('external_maturity') )
+        if loc.maturity > mat:
             newDb.addMsL( ms, loc )
     return newDb
 
 def updateNotes( allDb ):
     t_0, now, db, TAG   = time.time(), intTime(), mw.col.db, mw.col.tags
     N_notes = db.scalar( 'select count() from notes' )
-    mw.progress.start( label='Updating notes from all.db', max=N_notes )
+    mw.progress.start( label='Updating notes and maturity dbs from all.db', max=N_notes )
     ds, nid2mmi         = [], {}
     fidDb, locDb, popDb = allDb.fidDb(), allDb.locDb(), allDb.popDb()
     seenDb      = filterDbByMat( allDb, cfg1('threshold_seen') )
     knownDb     = filterDbByMat( allDb, cfg1('threshold_known') )
     matureDb    = filterDbByMat( allDb, cfg1('threshold_mature') )
 
+    if cfg1('saveDbs'):
+        knownDb.save( cfg1('path_known') )
+        matureDb.save( cfg1('path_mature') )
+        seenDb.save( cfg1('path_seen') )
+
     pops = [ len( locs ) for locs in allDb.db.values() ]
     pops = [ n for n in pops if n > 1 ]
 
     for i,( nid, mid, flds, guid, tags ) in enumerate( db.execute( 'select id, mid, flds, guid, tags from notes' ) ):
         if i % 500 == 0:    mw.progress.update( value=i )
-        C = partial( cfg, mid, None ) #TODO: get correct did
+        C = partial( cfg, mid, None )
         if not C('enabled'): continue
         # Get all morphemes for note
         ms = set()
@@ -126,6 +124,10 @@ def updateNotes( allDb ):
 
         # Determine MMI - Morph Man Index
         N, N_s, N_k, N_m = len( ms ), len( unseens ), len( unknowns ), len( unmatures )
+
+        # Bail early for lite update
+        if N_k > 2 and C('only update k+2 and below'): continue
+
             # average frequency of unknowns (how common and thus useful to learn)
         F_k = 0
         for focusMorph in unknowns: # focusMorph used outside loop
@@ -133,8 +135,7 @@ def updateNotes( allDb ):
         F_k_avg = F_k / N_k if N_k > 0 else F_k
         freq = 999 - min( 999, F_k_avg )
             # difference from optimal length (too little context vs long sentence)
-        lenDiff = min( 9, abs( C('optimal sentence length') - N ) )
-        lenDiff = 1 #FIXME hack
+        lenDiff = max( 0, min( 9, abs( C('optimal sentence length') - N ) -2 ) )
             # calculate mmi
         mmi = 10000*N_k + 1000*lenDiff + freq
         nid2mmi[ nid ] = mmi
@@ -186,7 +187,7 @@ def main():
     # load existing all.db
     mw.progress.start( label='Loading existing all.db' )
     t_0 = time.time()
-    cur = MorphDb( cfg1('path_all') ) if cfg1('loadAllDb') else None
+    cur = util.allDb() if cfg1('loadAllDb') else None
     printf( 'Loaded all.db in %f sec' % ( time.time() - t_0 ) )
     mw.progress.finish()
 

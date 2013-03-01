@@ -7,45 +7,57 @@ default = {
     'path_dbs': os.path.join( mw.pm.profileFolder(), 'dbs' ),
     'path_ext': os.path.join( mw.pm.profileFolder(), 'dbs', 'external.db' ),
     'path_all': os.path.join( mw.pm.profileFolder(), 'dbs', 'all.db' ),
-    'path_known': os.path.join( mw.pm.profileFolder(), 'dbs', 'known.db' ),
     'path_mature': os.path.join( mw.pm.profileFolder(), 'dbs', 'mature.db' ),
+    'path_known': os.path.join( mw.pm.profileFolder(), 'dbs', 'known.db' ),
+    'path_seen': os.path.join( mw.pm.profileFolder(), 'dbs', 'seen.db' ),
     'path_log': os.path.join( mw.pm.profileFolder(), 'morphman.log' ),
-    'threshold_mature': 21,
-    'threshold_known': 10/86400.,
-    'threshold_seen': 1/86400.,
+        # change the thresholds for various stages of maturity, in days
+    'threshold_mature': 21,         # 21 days is what Anki uses
+    'threshold_known': 10/86400.,   # recommend a few seconds if you want to count things in learning queue or ~3 days otherwise
+    'threshold_seen': 1/86400.,     # this currently isn't used outside of create seen.db for your personal usage
+    'text file import maturity':22, # when you import a file via Extract Morphemes from file, they are all given this maturity
+        # reviewer mode keybindings
     'browse same focus key': 'l',
     'set known and skip key': 'k',
-    'print number of alternatives skipped': True,
+    'print number of alternatives skipped': True,   # after answering or skipping a card in reviewer
 
-    # speed tests show its faster to 100% recalc all.db rather than load the
-    # existing one for 9000 fact collections
-    'loadAllDb':False,
-    'saveAllDb':True,
+    # database saving/loading. you can disable these for performance reasons but their semantics are uninitutive
+        # for example: features like morphHighlight always try to load all.db and expect it to be up to date
+        # so not saving all.db and having it load an out of date copy many produce strange behavior
+    'loadAllDb':True,   # whether to load existing all.db when recalculating or create one from scratch
+    'saveDbs':True,     # whether to save all.db, known.db, mature.db, and seen.db
 
     # only these can have model overrides
-    'enabled':False,
+    'enabled':False,    # whether to analyze notes of a given model, modify their fields, and manipulate due time by Morph Man Index
         # field names to store various information
-    'k+N':u'k+N',
-    'm+N':u'm+N',
-    'morphManIndex':u'morphManIndex',
-    'focusMorph':u'focusMorph', # holds the unknown for k+0 sentences but goes away once m+0
-    'unknowns':u'unknowns',
-    'unmatures':u'unmatures',
-    'unknownFreq':u'unknownFreq',
+    'k+N':u'k+N',       # stores how many unknowns
+    'm+N':u'm+N',       # stores how many unmatures
+    'morphManIndex':u'morphManIndex',   # created an ordering to learn cards in. this is the value new card 'due' times are set to
+    'focusMorph':u'focusMorph',         # holds the unknown for k+0 sentences but goes away once m+0
+    'unknowns':u'unknowns',             # comma seperated list of morphemes that are unknown
+    'unmatures':u'unmatures',               # likewise for unmatures
+    'unknownFreq':u'unknownFreq',       # average of how many times the unknowns appear in your collection
         # analyze notes based on the morphemes in these fields
     'morph_fields': [u'Expression'],
         # tag names for marking the state of notes
-    'tag_comprehension':u'comprehension',
-    'tag_vocab':u'vocab',
-    'tag_notReady':u'notReady',
-    'tag_alreadyKnown':u'alreadyKnown',
+            # the following three are mutually exclusive and erase eachother upon promotion/demotion
+    'tag_comprehension':u'comprehension',   # set once all morphs for note are mature
+    'tag_vocab':u'vocab',                   # set once all but 1 morph for note is known
+    'tag_notReady':u'notReady',             # set for k+2 and above cards
+    'tag_alreadyKnown':u'alreadyKnown',     # you can add this tag to a note to make anki treat it as if mature
         # controls for morpheme analysis
-    'morph_blacklist': [ u'記号', u'UNKNOWN'],
-    'batchMediaFields': [ u'Video', u'Sound' ],
+    'morph_blacklist': [ u'記号', u'UNKNOWN'],      # you probably don't care about punctuation and things mecab couldn't parse
+        # try playing fields in this order when using batch media player
+    'batch media fields': [ u'Video', u'Sound' ],
+        # configure morph man index algorithm
     'optimal sentence length': 4,
+        # lite update
+    'only update k+2 and below': False,     # this reduces how many notes are changed and thus sync burden by not updating notes that aren't as important
 
     # only these can have deck overrides
-    'new card merged fill':True,
+    'next new card feature':True,   # skip cards with focusMorph that was already seen or aren't k+1
+    'new card merged fill':False,   # fill new card queue with cards from all child decks instead of sequentially. also enforce a minimum due value
+    'new card merged fill min due':10000,   # k+1 by default. this mostly is to boost performance of 'next new card feature'
 }
 # Can override anything. 3rd priority
 profile_overrides = {
@@ -54,9 +66,10 @@ profile_overrides = {
 # Model overrides can only override the entries marked above. 2nd priority
 model_overrides = {
     'subs2srs': { 'enabled':True },
+    'JtMW': { 'enabled':True },
 }
 
-# Deck overrides can only override 'new card merged fill'. 1st priority
+# Deck overrides can only override 'new card merged fill' options. 1st priority
 deck_overrides = {
     'subs2srs': { 'new card merged fill':True },
 }

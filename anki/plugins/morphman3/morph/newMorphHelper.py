@@ -2,8 +2,7 @@
 from aqt import reviewer, dialogs
 from aqt.qt import *
 from anki import sched
-from util import addBrowserSelectionCmd, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, infoMsg
-from operator import itemgetter
+from util import addBrowserSelectionCmd, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial, infoMsg
 
 #1 after answering -> skip all cards with same focus as one just answered
 #2 hotkey -> set card as already known, skip it, and all others with same focus
@@ -23,12 +22,13 @@ def my_fillNew( self, _old ):
     '''If 'new card merged fill' is enabled for the current deck, when we refill we
     pull from all child decks, sort combined pool of cards, then limit.
     If disabled, do the standard sequential fill method'''
-    if not cfg( None, self.col.decks.active()[0], 'new card merged fill' ): return _old( self )
+    C = partial( cfg, None, self.col.decks.active()[0] )
+    if not C('new card merged fill'): return _old( self )
 
     if self._newQueue:      return True
     if not self.newCount:   return False
 
-    self._newQueue = self.col.db.all('''select id, due from cards where did in %s and queue = 0 and due >= 10000 order by due limit ?''' % self._deckLimit(), self.queueLimit )
+    self._newQueue = self.col.db.all('''select id, due from cards where did in %s and queue = 0 and due >= ? order by due limit ?''' % self._deckLimit(), C('new card merged fill min due'), self.queueLimit )
     if self._newQueue:      return True
 
 sched.Scheduler._fillNew = wrap( sched.Scheduler._fillNew, my_fillNew, 'around' )
@@ -53,13 +53,15 @@ def my_getNewCard( self, _old ):
     '''Continually call _getNewCard until we get one with a focusMorph we haven't
     seen before. Also skip bad vocab cards'''
     while True:
-        if not cfg( None, self.col.decks.active()[0], 'new card merged fill' ):
-            c = _old( self ) #TODO: might want to skip the sibling spacing stuff here too?
-        else:
+        C = partial( cfg, None, self.col.decks.active()[0] )
+        if not C('next new card feature'):
+            return _old( self )
+        if not C('new card merged fill'):
+            c = _old( self )
+        else:   # pop from opposite direction and skip sibling spacing
             if not self._fillNew(): return
-            ( id, due ) = self._newQueue.pop( 0 ) # pop from front since our custom fill stores in order
+            ( id, due ) = self._newQueue.pop( 0 )
             c = self.col.getCard( id )
-            # skip sibling spacing because it causes problems
 
         if not c: return
         try: fm = focus( c.note() )
@@ -132,7 +134,7 @@ def post( st ):
             mw.reviewer.cardQueue.append( c )
             i += 1
     st['browser'].close()
-    #st['__reset'] = False
+    st['__reset'] = False
     tooltip( _( 'Immediately reviewing %d cards' % i ) )
 
 addBrowserSelectionCmd( 'Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=('Ctrl+Shift+N',) )
@@ -150,7 +152,7 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
     ms = getMorphemes( txt )
     for m in sorted( ms, key=lambda x: len(x.inflected), reverse=True ): # largest subs first
         locs = allDb().db.get( m, set() )
-        mat = max( getattr( loc, 'maturity', cfg1('threshold_mature') ) for loc in locs ) if locs else 0
+        mat = max( loc.maturity for loc in locs ) if locs else 0
 
         if   mat >= cfg1( 'threshold_mature' ):  mtype = 'mature'
         elif mat >= cfg1( 'threshold_known' ):   mtype = 'known'

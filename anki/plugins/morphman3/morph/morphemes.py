@@ -97,15 +97,17 @@ class Location:
 class Nowhere( Location ):
     def __init__( self, tag ):
         self.tag
+        self.maturity = 0
     def show( self ):
-        return '%s' % self.tag
+        return '%s@%d' % ( self.tag, self.maturity )
 
 class TextFile( Location ):
-    def __init__( self, filePath, lineNo ):
+    def __init__( self, filePath, lineNo, maturity ):
         self.filePath   = filePath
         self.lineNo     = lineNo
+        self.maturity   = maturity
     def show( self ):
-        return '%s:%d' % ( self.filePath, self.lineNo )
+        return '%s:%d@%d' % ( self.filePath, self.lineNo, self.maturity )
 
 class AnkiDeck( Location ):
     def __init__( self, noteId, fieldName, fieldValue, guid, maturities ):
@@ -129,10 +131,10 @@ class MorphDb:
         return a
 
     @staticmethod
-    def mkFromFile( path ): # FilePath -> IO Db
+    def mkFromFile( path, maturity=0 ): # FilePath -> Maturity? -> IO Db
         '''Returns None and shows error dialog if failed'''
         d = MorphDb()
-        try:    d.importFile( path )
+        try:    d.importFile( path, maturity=maturity )
         except (UnicodeDecodeError, IOError), e:
             return errorMsg( 'Unable to import file. Please verify it is a UTF-8 text file and you have permissions.\nFull error:\n%s' % e )
         return d
@@ -218,14 +220,14 @@ class MorphDb:
                 new += len( locs )
         return new
 
-    def importFile( self, path, ws=None, bs=[u'記号'] ): # FilePath -> PosWhitelist? -> PosBlacklist? -> IO ()
+    def importFile( self, path, ws=None, bs=[u'記号'], maturity=0 ): # FilePath -> PosWhitelist? -> PosBlacklist? -> Maturity? -> IO ()
         f = codecs.open( path, 'r', 'utf-8' )
         inp = f.readlines()
         f.close()
 
         for i,line in enumerate(inp):
             ms = getMorphemes( line.strip(), ws, bs )
-            self.addMLs( ( m, TextFile( path, i+1 ) ) for m in ms )
+            self.addMLs( ( m, TextFile( path, i+1, maturity ) ) for m in ms )
 
     # Analysis
     def locDb( self, recalc=True ): # Maybe Bool -> m Map Location {Morpheme}
@@ -235,7 +237,7 @@ class MorphDb:
         for m,ls in self.db.iteritems():
             for l in ls:
                 try: d[ l ].add( m )
-                except: d[ l ] = set([ m ])
+                except KeyError: d[ l ] = set([ m ])
         return d
 
     def fidDb( self, recalc=True ): # Maybe Bool -> m Map FactId Location
@@ -243,7 +245,9 @@ class MorphDb:
             return self._fidDb
         self._fidDb = d = {}
         for loc in self.locDb():
-            d[ ( loc.noteId, loc.guid, loc.fieldName ) ] = loc
+            try:
+                d[ ( loc.noteId, loc.guid, loc.fieldName ) ] = loc
+            except AttributeError: pass # location isn't an anki fact
         return d
 
     def popDb( self ): # Map BaseForm Int

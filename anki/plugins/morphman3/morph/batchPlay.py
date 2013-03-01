@@ -6,7 +6,7 @@ import re
 def pre( b ): return { 'vid2nid':{} }
 
 def per( st, n ):
-    for f in cfg( n.mid, None, 'batchMediaFields' ):
+    for f in cfg( n.mid, None, 'batch media fields' ):
         try:
             r = re.search( anki.sound._soundReg, n[ f ] )
             if r:

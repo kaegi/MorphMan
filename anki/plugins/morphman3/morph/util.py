@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import codecs, datetime
+from functools import partial
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from aqt.qt import *
