@@ -2,7 +2,7 @@ import time
 
 from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksum
 from morphemes import MorphDb, AnkiDeck, getMorphemes
-from util import printf, mw, memoize, cfg, cfg1, infoMsg, partial
+from util import printf, mw, memoize, cfg, cfg1, partial, errorMsg
 import util
 
 @memoize
@@ -46,6 +46,10 @@ def mkAllDb( allDb=None ):
                 #fieldValue = normalizeFieldValue( getField( fieldName, flds, mid ) )
                 fieldValue = getMecabField( fieldName, flds, mid )
             except KeyError: continue
+            except TypeError:
+                mname = mw.col.models.get( mid )[ 'name' ]
+                errorMsg( u'Failed to get field "{field}" from a note of model "{model}". Please fix your config.py file to match your collection appropriately and ignore the following error.'.format( model=mname, field=fieldName ) )
+                raise
 
             loc = fidDb.get( ( nid, guid, fieldName ), None )
             if not loc:

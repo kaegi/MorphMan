@@ -2,7 +2,7 @@
 from aqt import reviewer, dialogs
 from aqt.qt import *
 from anki import sched
-from util import addBrowserSelectionCmd, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial, infoMsg
+from util import addBrowserSelectionCmd, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
 
 #1 after answering -> skip all cards with same focus as one just answered
 #2 hotkey -> set card as already known, skip it, and all others with same focus
