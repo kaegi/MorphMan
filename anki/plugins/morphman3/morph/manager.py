@@ -5,7 +5,7 @@ import os
 
 import adaptiveSubs
 from morphemes import MorphDb
-from util import dbsPath, errorMsg, infoMsg, mw, parseWhitelist
+from util import dbsPath, errorMsg, infoMsg, mw, parseWhitelist, cfg1
 
 def getPath( le ): # LineEdit -> GUI ()
     path = QFileDialog.getOpenFileName( caption='Open db', directory=dbsPath )
@@ -86,6 +86,7 @@ class MorphMan( QDialog ):
         self.unionBtn = mkBtn( 'Union', lambda x='union': self.onDiff(x), self, vbox )
 
         # Creation
+        self.db = None
         self.extractTxtFileBtn = mkBtn( 'Extract morphemes from file', self.onExtractTxtFile, self, vbox )
         self.saveResultsBtn = mkBtn( 'Save results to db', self.onSaveResults, self, vbox )
 
@@ -120,6 +121,8 @@ class MorphMan( QDialog ):
     def loadA( self ):
         self.aPath = self.aPathLEdit.text()
         self.aDb = MorphDb( path=self.aPath )
+        if not self.db:
+            self.db = self.aDb
     def loadB( self ):
         self.bPath = self.bPathLEdit.text()
         self.bDb = MorphDb( path=self.bPath )
@@ -159,7 +162,8 @@ class MorphMan( QDialog ):
         if not srcPath: return
         destPath = QFileDialog.getSaveFileName( caption='Save morpheme db to?', directory=dbsPath + os.sep + 'textFile.db' )
         if not destPath: return
-        db = MorphDb.mkFromFile( str(srcPath) )
+        mat = cfg1('text file import maturity')
+        db = MorphDb.mkFromFile( str(srcPath), mat )
         if db:
             db.save( str(destPath) )
             infoMsg( 'Extracted successfully' )
