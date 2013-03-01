@@ -9,13 +9,15 @@ import win32clipboard
 import win32ui, win32gui, win32con, win32api
 import sys, os, time
 
-#TODO: take screenshot
-
 class AudioRecorder:
     def __init__( self ):
         self.pyaudio = p = pyaudio.PyAudio()
         self.waveFile = None
         self.stream = None
+
+        # t.wav is audio data from txt[n].time to txt[n+1].time
+        self.frames = []
+        self.lastTextTime = None
 
         # settings
         self.device = p.get_default_input_device_info()[ 'index' ]
@@ -24,11 +26,21 @@ class AudioRecorder:
         self.channels = 2
         self.format = pyaudio.paInt16
 
+    def saveAudio( self, path ):
+        'Save all current self.frames to wave file then clear'
+        wf = wave.open( path, 'wb' )
+        wf.setnchannels( self.channels )
+        wf.setsampwidth( self.pyaudio.get_sample_size( self.format ) )
+        wf.setframerate( self.rate )
+        wf.writeframes( b''.join( self.frames ) )
+        wf.close()
+        self.frames = []
+
     def start( self ):
         self.running = True
 
         # wave file to write audio to
-        self.waveFile = wf = wave.open( 'output.wav', 'wb' )
+        self.waveFile = wf = wave.open( 'all.wav', 'wb' )
         wf.setnchannels( self.channels )
         wf.setsampwidth( self.pyaudio.get_sample_size( self.format ) )
         wf.setframerate( self.rate )
@@ -76,6 +88,7 @@ class AudioRecorder:
 
     def onAudioInput( self, in_data, frame_count, time_info, status_flags ):
         self.waveFile.writeframes( in_data )
+        self.frames.append( in_data )
         if not self.running:
             return  ( None, pyaudio.paComplete )
         return ( None, pyaudio.paContinue )
@@ -90,9 +103,16 @@ class AudioRecorder:
         txt = win32clipboard.GetClipboardData( win32clipboard.CF_UNICODETEXT )
         win32clipboard.CloseClipboard()
 
+        # iteratives
         self.timeData[ t ] = txt
         takeScreenshot( '%f.bmp' % t )
+        codecs.open( '%f.txt' % t, 'wb', encoding='utf-16' ).write( txt )
+        # save audio for previous text
+        if self.lastTextTime:
+            self.saveAudio( '%f.wav' % self.lastTextTime )
+            self.lastTextTime = t
 
+        # big time & txt log
         print t
         line = u'%f %s\r\n' % ( t, txt )
         self.timingFile.write( line )
