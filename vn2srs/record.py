@@ -9,6 +9,8 @@ import win32clipboard
 import win32ui, win32gui, win32con, win32api
 import sys, os, time
 
+#TODO: take screenshot
+
 class AudioRecorder:
     def __init__( self ):
         self.pyaudio = p = pyaudio.PyAudio()
@@ -89,6 +91,7 @@ class AudioRecorder:
         win32clipboard.CloseClipboard()
 
         self.timeData[ t ] = txt
+        takeScreenshot( '%f.bmp' % t )
 
         print t
         line = u'%f %s\r\n' % ( t, txt )
@@ -115,6 +118,22 @@ class AudioRecorder:
             self.hPrev = win32clipboard.SetClipboardViewer( win.GetSafeHwnd() )
         except win32api.error, err:
             if err.args[0]: raise
+
+def takeScreenshot( path='screenshot.bmp' ):
+    hwnd = win32gui.GetForegroundWindow()
+    l, t, r, b = win32gui.GetWindowRect( hwnd )
+    w = r - l
+    h = b - t
+
+    hwndDC = win32gui.GetWindowDC( hwnd )
+    mfcDC = win32ui.CreateDCFromHandle( hwndDC )
+    saveDC = mfcDC.CreateCompatibleDC()
+
+    bmp = win32ui.CreateBitmap()
+    bmp.CreateCompatibleBitmap( mfcDC, w, h )
+    saveDC.SelectObject( bmp )
+    saveDC.BitBlt( (0,0), (w,h), mfcDC, (0,0), win32con.SRCCOPY )
+    bmp.SaveBitmapFile( saveDC, path )
 
 def main():
     ar = AudioRecorder()
