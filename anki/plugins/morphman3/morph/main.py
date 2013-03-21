@@ -2,7 +2,7 @@ import time
 
 from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksum
 from morphemes import MorphDb, AnkiDeck, getMorphemes
-from util import printf, mw, memoize, cfg, cfg1, partial, errorMsg
+from util import printf, mw, memoize, cfg, cfg1, partial, errorMsg, infoMsg
 import util
 
 @memoize
@@ -120,11 +120,13 @@ def updateNotes( allDb ):
         ms = [ m for m in ms if m.pos not in C('morph_blacklist') ]
 
         # Determine un-seen/known/mature and i+N
-        unseens, unknowns, unmatures = set(), set(), set()
+        unseens, unknowns, unmatures, newKnowns = set(), set(), set(), set()
         for m in ms:
             if m not in seenDb.db:      unseens.add( m )
             if m not in knownDb.db:     unknowns.add( m )
             if m not in matureDb.db:    unmatures.add( m )
+            if m not in matureDb.db and m in knownDb.db:
+                newKnowns.add( m )
 
         # Determine MMI - Morph Man Index
         N, N_s, N_k, N_m = len( ms ), len( unseens ), len( unknowns ), len( unmatures )
@@ -132,17 +134,32 @@ def updateNotes( allDb ):
         # Bail early for lite update
         if N_k > 2 and C('only update k+2 and below'): continue
 
-            # average frequency of unknowns (how common and thus useful to learn)
+            # average frequency of unknowns (ie. how common the word is within your collection)
         F_k = 0
         for focusMorph in unknowns: # focusMorph used outside loop
             F_k += len( allDb.db[ focusMorph ] )
         F_k_avg = F_k / N_k if N_k > 0 else F_k
-        freq = 999 - min( 999, F_k_avg )
+        usefulness = F_k_avg
+
+            # add bonus for studying recent learned knowns (reinforce)
+        for m in newKnowns:
+            locs = allDb.db[ m ]
+            if locs:
+                ivl = min( 1, max( loc.maturity for loc in locs ) )
+                usefulness += C('reinforce new vocab weight') / ivl #TODO: maybe average this so it doesnt favor long sentences
+
+        if any( m.pos == u'動詞' for m in unknowns ): #FIXME: this isn't working???
+            usefulness += C('verb bonus')
+
+        usefulness = 999 - min( 999, usefulness )
+
             # difference from optimal length (too little context vs long sentence)
         lenDiff = max( 0, min( 9, abs( C('optimal sentence length') - N ) -2 ) )
+
             # calculate mmi
-        mmi = 10000*N_k + 1000*lenDiff + freq
-        nid2mmi[ nid ] = mmi
+        mmi = 10000*N_k + 1000*lenDiff + usefulness
+        if C('set due based on mmi'):
+            nid2mmi[ nid ] = mmi
 
         # Fill in various fields/tags on the note based on cfg
         ts, fs = TAG.split( tags ), splitFields( flds )

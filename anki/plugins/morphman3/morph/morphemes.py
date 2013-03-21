@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 import codecs, cPickle as pickle, gzip, os, subprocess
-from morph.util import memoize, errorMsg
+
+# need some fallbacks if not running from anki and thus morph.util isn't available
+try:
+    from morph.util import memoize, errorMsg
+except ImportError:
+    from util_external import memoize
+    def errorMsg( msg ): pass
 
 ################################################################################
 ## Lexical analysis

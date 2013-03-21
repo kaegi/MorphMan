@@ -29,6 +29,7 @@ default = {
 
     # only these can have model overrides
     'enabled':False,    # whether to analyze notes of a given model, modify their fields, and manipulate due time by Morph Man Index
+    'set due based on mmi':True,    # whether to modify card Due times based on MorphManIndex. does nothing if relevant notes aren't enabled
         # field names to store various information
     'k+N':u'k+N',       # stores how many unknowns
     'm+N':u'm+N',       # stores how many unmatures
@@ -50,7 +51,9 @@ default = {
         # try playing fields in this order when using batch media player
     'batch media fields': [ u'Video', u'Sound' ],
         # configure morph man index algorithm
-    'optimal sentence length': 4,
+    'optimal sentence length': 4,           # +1000 MMI per morpheme more/less than this after the first 2
+    'reinforce new vocab weight': 5.0,      # -reinforce_weight / maturity MMI per known that is not yet mature
+    'verb bonus': 100,                      # -verb_bonus if at least one unknown is a verb
         # lite update
     'only update k+2 and below': False,     # this reduces how many notes are changed and thus sync burden by not updating notes that aren't as important
 
@@ -67,6 +70,12 @@ profile_overrides = {
 model_overrides = {
     'subs2srs': { 'enabled':True },
     'JtMW': { 'enabled':True },
+    'JSfEC': { 'enabled':True },
+    'Tae Kim Cloze': { 'enabled':True },
+    'Yotsubato': { 'enabled':True },
+    'Rikaisama': { 'enabled':True },
+    #'Kore': { 'enabled':True, 'set due based on mmi': False, 'morph_fields':[u'SentenceExpression'] },
+    'Kore': { 'enabled':True, 'set due based on mmi': False },
 }
 
 # Deck overrides can only override 'new card merged fill' options. 1st priority
