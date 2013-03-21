@@ -259,7 +259,7 @@ class MorphDb:
     def popDb( self ): # Map BaseForm Int
         d = {}
         for m,ls in self.db.iteritems():
-            d[ m.base ] = len( ls ) + d.get( m.base, 0 )
+            d[ m.base ] = len( ls ) + d.get( m.base, 0 ) #TODO: is this 2nd part needed? untested either way
         return d
 
     def countByType( self ): # Map Pos Int

@@ -27,11 +27,13 @@ def setField( mid, fs, k, v ): # nop if field DNE
 def mkAllDb( allDb=None ):
     t_0, db, TAG = time.time(), mw.col.db, mw.col.tags
     N_notes = db.scalar( 'select count() from notes' )
-    mw.progress.start( label='Generating all.db', max=N_notes )
+    mw.progress.start( label='Prep work for all.db creation', max=N_notes, immediate=True )
 
     if not allDb: allDb = MorphDb()
-    fidDb, locDb = allDb.fidDb(), allDb.locDb()
+    fidDb   = allDb.fidDb()
+    locDb   = allDb.locDb( recalc=False )   # fidDb() already forces locDb recalc
 
+    mw.progress.update( label='Generating all.db data' )
     for i,( nid, mid, flds, guid, tags ) in enumerate( db.execute( 'select id, mid, flds, guid, tags from notes' ) ):
         if i % 500 == 0:    mw.progress.update( value=i )
         C = partial( cfg, mid, None )
@@ -72,40 +74,51 @@ def mkAllDb( allDb=None ):
                     locDb.pop( loc )
                     locDb[ newLoc ] = ms
     printf( 'Processed all %d notes in %f sec' % ( N_notes, time.time() - t_0 ) )
-    mw.progress.update( value=i, label='Saving all.db...' )
+    mw.progress.update( value=i, label='Creating all.db object' )
     allDb.clear()
     allDb.addFromLocDb( locDb )
     if cfg1('saveDbs'):
+        mw.progress.update( value=i, label='Saving all.db to disk' )
         allDb.save( cfg1('path_all') )
         printf( 'Processed all %d notes + saved all.db in %f sec' % ( N_notes, time.time() - t_0 ) )
     mw.progress.finish()
     return allDb
 
 def filterDbByMat( db, mat ):
+    '''Assumes safe to use cached locDb'''
     newDb = MorphDb()
-    for loc, ms in db.locDb().iteritems():
+    for loc, ms in db.locDb( recalc=False ).iteritems():
         if loc.maturity > mat:
             newDb.addMsL( ms, loc )
     return newDb
 
 def updateNotes( allDb ):
     t_0, now, db, TAG   = time.time(), intTime(), mw.col.db, mw.col.tags
-    N_notes = db.scalar( 'select count() from notes' )
-    mw.progress.start( label='Updating notes and maturity dbs from all.db', max=N_notes )
     ds, nid2mmi         = [], {}
-    fidDb, locDb, popDb = allDb.fidDb(), allDb.locDb(), allDb.popDb()
+    N_notes             = db.scalar( 'select count() from notes' )
+    mw.progress.start( label='Updating data', max=N_notes, immediate=True )
+    fidDb   = allDb.fidDb()
+    locDb   = allDb.locDb( recalc=False ) # fidDb() already forces locDb recalc
+
+    # handle secondary databases
+    mw.progress.update( label='Creating seen/known/mature from all.db' )
     seenDb      = filterDbByMat( allDb, cfg1('threshold_seen') )
     knownDb     = filterDbByMat( allDb, cfg1('threshold_known') )
     matureDb    = filterDbByMat( allDb, cfg1('threshold_mature') )
+    mw.progress.update( label='Loading priority.db' )
+    priorityDb  = MorphDb( cfg1('path_priority'), ignoreErrors=True ).db
 
     if cfg1('saveDbs'):
+        mw.progress.update( label='Saving seen/known/mature dbs' )
+        seenDb.save( cfg1('path_seen') )
         knownDb.save( cfg1('path_known') )
         matureDb.save( cfg1('path_mature') )
-        seenDb.save( cfg1('path_seen') )
 
+    mw.progress.update( label='Calculating frequency information' )
     pops = [ len( locs ) for locs in allDb.db.values() ]
     pops = [ n for n in pops if n > 1 ]
 
+    mw.progress.update( label='Updating notes' )
     for i,( nid, mid, flds, guid, tags ) in enumerate( db.execute( 'select id, mid, flds, guid, tags from notes' ) ):
         if i % 500 == 0:    mw.progress.update( value=i )
         C = partial( cfg, mid, None )
@@ -141,6 +154,13 @@ def updateNotes( allDb ):
         F_k_avg = F_k / N_k if N_k > 0 else F_k
         usefulness = F_k_avg
 
+            # add bonus for morphs in priority.db
+        isPriority = False
+        for focusMorph in unknowns:
+            if focusMorph in priorityDb:
+                isPriority = True
+                usefulness += C('priority.db weight')
+
             # add bonus for studying recent learned knowns (reinforce)
         for m in newKnowns:
             locs = allDb.db[ m ]
@@ -164,7 +184,7 @@ def updateNotes( allDb ):
         # Fill in various fields/tags on the note based on cfg
         ts, fs = TAG.split( tags ), splitFields( flds )
             # determine card type
-        compTag, vocabTag, notReadyTag, alreadyKnownTag = tagNames = C('tag_comprehension'), C('tag_vocab'), C('tag_notReady'), C('tag_alreadyKnown')
+        compTag, vocabTag, notReadyTag, alreadyKnownTag, priorityTag = tagNames = C('tag_comprehension'), C('tag_vocab'), C('tag_notReady'), C('tag_alreadyKnown'), C('tag_priority')
         if N_m == 0:    # sentence comprehension card, m+0
             ts = [ compTag ] + [ t for t in ts if t not in [ vocabTag, notReadyTag ] ]
             setField( mid, fs, C('focusMorph'), u'' )
@@ -173,6 +193,7 @@ def updateNotes( allDb ):
             setField( mid, fs, C('focusMorph'), u'%s' % focusMorph.base )
         elif N_k > 1:   # M+1+ and K+2+
             ts = [ notReadyTag ] + [ t for t in ts if t not in [ compTag, vocabTag ] ]
+
             # set type agnostic fields
         setField( mid, fs, C('k+N'), u'%d' % N_k )
         setField( mid, fs, C('m+N'), u'%d' % N_m )
@@ -180,12 +201,18 @@ def updateNotes( allDb ):
         setField( mid, fs, C('unknowns'), u', '.join( u.base for u in unknowns ) )
         setField( mid, fs, C('unmatures'), u', '.join( u.base for u in unmatures ) )
         setField( mid, fs, C('unknownFreq'), u'%d' % F_k_avg )
+
+            # other tags
+        if priorityTag in ts:   ts.remove( priorityTag )
+        if isPriority:          ts.append( priorityTag )
+
             # update sql db
         tags_ = TAG.join( TAG.canonify( ts ) )
         flds_ = joinFields( fs )
-        csum = fieldChecksum( fs[0] )
-        sfld = stripHTML( fs[ getSortFieldIndex( mid ) ] )
-        ds.append( { 'now':now, 'tags':tags_, 'flds':flds_, 'sfld':sfld, 'csum':csum, 'usn':mw.col.usn(), 'nid':nid } )
+        if flds != flds_ or tags != tags_:  # only update notes that have changed
+            csum = fieldChecksum( fs[0] )
+            sfld = stripHTML( fs[ getSortFieldIndex( mid ) ] )
+            ds.append( { 'now':now, 'tags':tags_, 'flds':flds_, 'sfld':sfld, 'csum':csum, 'usn':mw.col.usn(), 'nid':nid } )
 
     mw.progress.update( value=i, label='Updating anki database...' )
     mw.col.db.executemany( 'update notes set tags=:tags, flds=:flds, sfld=:sfld, csum=:csum, mod=:now, usn=:usn where id=:nid', ds )
@@ -194,11 +221,12 @@ def updateNotes( allDb ):
     # Now reorder new cards based on MMI
     mw.progress.update( value=i, label='Updating new card ordering...' )
     ds = []
-    for ( cid, nid ) in db.execute( 'select id, nid from cards where type = 0' ):
+    for ( cid, nid, due ) in db.execute( 'select id, nid, due from cards where type = 0' ):
         if nid in nid2mmi: # owise it was disabled
-            ds.append( { 'now':now, 'due':nid2mmi[ nid ], 'usn':mw.col.usn(), 'cid':cid } )
+            due_ = nid2mmi[ nid ]
+            if due != due_: # only update cards that have changed
+                ds.append( { 'now':now, 'due':due_, 'usn':mw.col.usn(), 'cid':cid } )
     mw.col.db.executemany( 'update cards set due=:due, mod=:now, usn=:usn where id=:cid', ds )
-    mw.col.updateFieldCache( nid2mmi.keys() )
     mw.reset()
 
     printf( 'Updated notes in %f sec' % ( time.time() - t_0 ) )
@@ -206,7 +234,7 @@ def updateNotes( allDb ):
 
 def main():
     # load existing all.db
-    mw.progress.start( label='Loading existing all.db' )
+    mw.progress.start( label='Loading existing all.db', immediate=True )
     t_0 = time.time()
     cur = util.allDb() if cfg1('loadAllDb') else None
     printf( 'Loaded all.db in %f sec' % ( time.time() - t_0 ) )
@@ -216,7 +244,7 @@ def main():
     allDb = mkAllDb( cur )
 
     # merge in external.db
-    mw.progress.start( label='Merging ext.db' )
+    mw.progress.start( label='Merging ext.db', immediate=True )
     ext = MorphDb( cfg1('path_ext'), ignoreErrors=True )
     allDb.merge( ext )
     mw.progress.finish()

@@ -5,6 +5,7 @@ from aqt import mw # this script isn't imported until profile is loaded
 # 4th (lowest) priority
 default = {
     'path_dbs': os.path.join( mw.pm.profileFolder(), 'dbs' ),
+    'path_priority': os.path.join( mw.pm.profileFolder(), 'dbs', 'priority.db' ),
     'path_ext': os.path.join( mw.pm.profileFolder(), 'dbs', 'external.db' ),
     'path_all': os.path.join( mw.pm.profileFolder(), 'dbs', 'all.db' ),
     'path_mature': os.path.join( mw.pm.profileFolder(), 'dbs', 'mature.db' ),
@@ -46,6 +47,7 @@ default = {
     'tag_vocab':u'vocab',                   # set once all but 1 morph for note is known
     'tag_notReady':u'notReady',             # set for k+2 and above cards
     'tag_alreadyKnown':u'alreadyKnown',     # you can add this tag to a note to make anki treat it as if mature
+    'tag_priority':u'priority',             # set if note contains an unknown that exists in priority.db
         # controls for morpheme analysis
     'morph_blacklist': [ u'記号', u'UNKNOWN'],      # you probably don't care about punctuation and things mecab couldn't parse
         # try playing fields in this order when using batch media player
@@ -54,8 +56,9 @@ default = {
     'optimal sentence length': 4,           # +1000 MMI per morpheme more/less than this after the first 2
     'reinforce new vocab weight': 5.0,      # -reinforce_weight / maturity MMI per known that is not yet mature
     'verb bonus': 100,                      # -verb_bonus if at least one unknown is a verb
+    'priority.db weight': 200,              # -priority_weight per unknown that exists in priority.db
         # lite update
-    'only update k+2 and below': False,     # this reduces how many notes are changed and thus sync burden by not updating notes that aren't as important
+    'only update k+2 and below': True,     # this reduces how many notes are changed and thus sync burden by not updating notes that aren't as important
 
     # only these can have deck overrides
     'next new card feature':True,   # skip cards with focusMorph that was already seen or aren't k+1
