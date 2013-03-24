@@ -111,25 +111,8 @@ class AudioRecorder:
     def onDrawClipboard( self, *args ):
         t = time.time() - self.time0    # time since start of audio file
         win32clipboard.OpenClipboard()
-        txt = win32clipboard.GetClipboardData( win32clipboard.CF_UNICODETEXT )
-        '''
-        # ideas for cleaning up garbage at end
-        print repr(raw)
-        txt = raw.split( u'\x00\x00' )[0]
-        if txt == raw:
-            txt = txt.split( u'\x00' )[0]
-        
-        # TODO remove everything after string terminator
-        #try:    txt = txt.split( u'\x00\x00' )[0]
-        #except: pass
-        try:
-            txt = win32clipboard.GetClipboardData( win32clipboard.CF_UNICODETEXT )
-            win32clipboard.EmptyClipboard()
-        except TypeError: # no unicode data, probably notification that it was cleared
-            h = self.hPrev
-            if h:   return win32api.SendMessage( h, *args[-1][1:4] )
-            else:   return 1
-        '''
+        rawtxt = win32clipboard.GetClipboardData( win32clipboard.CF_UNICODETEXT )
+        txt = txt.split( u'\0' )[0] # ITH leaves in garbage from previous lines
         win32clipboard.CloseClipboard()
 
         # iteratives
@@ -142,7 +125,7 @@ class AudioRecorder:
         self.count += 1
 
         # big time & txt log
-        print t
+        print '#%d @ %f' % ( self.count, t )
         line = u'{n} {t} {txt}\r\n'.format( n=self.count, t=t, txt=txt )
         self.timingFile.write( line )
 
@@ -169,23 +152,27 @@ class AudioRecorder:
             if err.args[0]: raise
 
 def takeScreenshot( path='screenshot.bmp', hwnd=None ):
-    if hwnd is None:
-        time.sleep(3)
-        hwnd = win32gui.GetForegroundWindow()
-        return hwnd
-    l, t, r, b = win32gui.GetWindowRect( hwnd )
-    w = r - l
-    h = b - t
+    try:
+        if hwnd is None:
+            time.sleep(3)
+            hwnd = win32gui.GetForegroundWindow()
+            return hwnd
+        l, t, r, b = win32gui.GetWindowRect( hwnd )
+        w = r - l
+        h = b - t
 
-    hwndDC = win32gui.GetWindowDC( hwnd )
-    mfcDC = win32ui.CreateDCFromHandle( hwndDC )
-    saveDC = mfcDC.CreateCompatibleDC()
+        hwndDC = win32gui.GetWindowDC( hwnd )
+        mfcDC = win32ui.CreateDCFromHandle( hwndDC )
+        saveDC = mfcDC.CreateCompatibleDC()
 
-    bmp = win32ui.CreateBitmap()
-    bmp.CreateCompatibleBitmap( mfcDC, w, h )
-    saveDC.SelectObject( bmp )
-    saveDC.BitBlt( (0,0), (w,h), mfcDC, (0,0), win32con.SRCCOPY )
-    bmp.SaveBitmapFile( saveDC, path )
+        bmp = win32ui.CreateBitmap()
+        bmp.CreateCompatibleBitmap( mfcDC, w, h )
+        saveDC.SelectObject( bmp )
+        saveDC.BitBlt( (0,0), (w,h), mfcDC, (0,0), win32con.SRCCOPY )
+        bmp.SaveBitmapFile( saveDC, path )
+    except KeyboardInterrupt: raise
+    except Exception:
+        print 'Failed to capture screen. Likely invalid CreateCompatibleDC result'
 
 def main():
     if len( sys.argv ) < 2:
