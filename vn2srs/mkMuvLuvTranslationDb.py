@@ -6,6 +6,11 @@ import glob
 import os
 import re
 
+def norm( txt ):
+    for c in [ '\\c', '\\d', '\\l', '\\e', '\\f', '\\n', '\\p' ]:
+        txt = txt.replace( c, '' )
+    return txt
+
 ps = glob.glob( 'mla_scripts/MLA_*' )
 jap2eng = {}
 dupes = []
@@ -19,11 +24,11 @@ for p in ps:
     for lineno,line in d.items():
         r = re.match( '//<(.*?)> (.*)', line )
         if r:
-            japLine = r.group(2)
+            japLine = norm( r.group(2) )
 
         r = re.match( '<(.*?)> (.*)', line )
         if r:
-            engLine = r.group(2)
+            engLine = norm( r.group(2) )
 
         if japLine and engLine:
             if japLine in jap2eng:
@@ -31,4 +36,4 @@ for p in ps:
             jap2eng[ japLine ] = engLine
             japLine, engLine = None, None
 
-pickle.dump( jap2eng, open( 'muvluv_mla.db', 'wb' ) )
+pickle.dump( jap2eng, open( 'muvluv_mla.db', 'wb' ), -1 )
