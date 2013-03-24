@@ -21,4 +21,35 @@ mash.py - creates .tsv for show (and each part) based on timing .dat files. uses
 mkMuvluvTranslationDb.py - creates muvluv.db, an object that provides a mapping between jap and eng lines (used with mash)
 
 == Instructions ==
-?
+1) start VN and setup ITH so that it's capturing game text to the clipboard
+
+2) capture txt/img/audio with `python record.py prefix` where "prefix" is a name
+   used for all media files captured. recommended to use it to denote the section
+   of the game and/or choices being made.
+   do not use the same name with multiple runs
+
+3) convert all media with `python convery.py [mediaPath]`. runs as daemon
+   constantly looking for files in mediaPath (defaults to 'media') as they
+   become available and converting as neccessary.
+   specify a 2nd argument to enable converting the "misc" directory, but this
+   should only be done after record.py is no longer running
+
+4) [optional] create a database of translations for lines of the script.
+   see mkMuvLuvTranslationDb.py for an example, but effectively it's just a
+   pickled dictionary of Japanese->English.
+   Not only does this provide a Meaning field, but it helps detect+correct
+   various errors in the Expression field due to ITH capturing improperly.
+
+5) use `python mash.py showName mediaPath` to create a .tsv file ready for Anki
+   import based on all the lines in the timing .dat files and corresponding
+   resource files.
+   * also links context sentences -2,-1,+1, and +2 by default, but can modify
+     "contexts" list at top of script to change.
+   * can also change "transDbPath" at top of script to change where Meaning
+     field translations are looked for if you did step #4.
+   * it may be neccessary to modify parseLine or getMeaning depending on the vn
+     for better results (ie. Speaker & Meaning field, fix ITH issues)
+
+6) copy the mediaPath dir to your collections.media directory and import the
+   tsv file into an Anki deck.
+   most likely you'll want the 'decks/showName - total.tsv' file.

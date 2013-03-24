@@ -1,23 +1,28 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
-# 1) flag lines that are missing img or sound
-# 2) add english lines
-
 import codecs
 import cPickle as pickle
 import glob
 import os
 import re
+import sys
 
 base_fields = ( 'Id', 'Show', 'Prefix', 'Index', 'Time', )
 context_fields = ( 'Sound', 'Image', 'Speaker', 'Expression', 'Meaning', )
 contexts = [-2,-1,+1,+2]
-baseMediaDir = 'muvluv.10-22to11-30'
 transDbPath = 'muvluv_mla.db'
-transDb = pickle.load( open( transDbPath, 'rb' ) )
 
-N = 0
+if len( sys.argv ) < 3:
+    print 'Usage: ./mash show name pathToBaseMediaDirectory'
+    sys.exit(1)
+showName = sys.argv[1] # ex: 'Muv-Luv Alternative'
+baseMediaDir = sys.argv[2] # ex: 'muvluv.10-22to11-30'
+
+try: transDb = pickle.load( open( transDbPath, 'rb' ) )
+except Exception: transDb = {}
+numUnableToMatch = 0
+
 def getMeaning( txt ):
     try:
         return transDb[ txt ], txt
@@ -27,17 +32,6 @@ def getMeaning( txt ):
         # progress = lines with progressively more info. presumably because
         # the line was long or had delays of some sort and so ITH was confused
 
-        '''
-        # 1) progress dialogue
-        # ex: [Speaker] txt [Speaker] more txt [Speaker] even more txt
-        # ex: 【夕呼】「…………こんなもの構えることになるなんて【夕呼】「…………こんなもの構えることになるなんて……思わなかったわ」
-        ps = re.split( u'(\u3010.*?\u3011)', txt )
-        if len( ps ) > 4:
-            last = ps[-2]+ps[-1]
-            if last in transDb:
-                print 1
-                return transDb[ last ], last
-        '''
         # try largest valid dialogue (in case of garbage or progressive dialogue)
         # ex: 【夕呼】「…………こんなもの構えることになるなんて【夕呼】「…………こんなもの構えることになるなんて……思わなかったわ」
             # first, do findall on regex for full dialogue lines
@@ -53,7 +47,7 @@ def getMeaning( txt ):
         if ds:
             best = max( ds, key=lambda x: len(x) )
             if best in transDb:
-                print 1
+                #print 1
                 return transDb[ best ], best
             else:
                 # there might be junk after closing quote
@@ -62,7 +56,7 @@ def getMeaning( txt ):
                 if r:
                     newtxt = r.group(1)
                     if newtxt in transDb:
-                        print 2
+                        #print 2
                         return transDb[ newtxt ], newtxt
 
         # 3) check for repeat line (exact 2x repeat)
@@ -72,16 +66,29 @@ def getMeaning( txt ):
             mid = len( txt ) / 2
             a, b = txt[:mid], txt[mid:]
             if a == b and a in transDb:
-                print 3, txt
+                #print 3
                 return transDb[ a ], a
 
-        print '!!!', txt
-        global N
-        N += 1
+        #print '!!!', txt
+        global numUnableToMatch
+        numUnableToMatch += 1
         return '',txt
 
 def getResourcePath( rtype, rext, idx, prefix ):
-    return u'{mediaDir}/{rtype}/{prefix}.{idx}.{rext}'.format( mediaDir=baseMediaDir, rtype=rtype, prefix=prefix, idx=idx, rext=rext )
+    p = u'{mediaDir}/{rtype}/{prefix}.{idx}.{rext}'.format( mediaDir=baseMediaDir, rtype=rtype, prefix=prefix, idx=idx, rext=rext )
+
+    # if DNE, supply placeholder or nothing
+    if not os.path.exists( p ):
+        if rtype == 'audio': return ''
+        if rtype == 'img':
+            p = u'{mediaDir}/{rtype}/default.png'.format( mediaDir=baseMediaDir, rtype=rtype, prefix=prefix, idx=idx, rext=rext )
+
+    if rtype == 'audio':
+        html = u'[sound:%s]' % p
+    if rtype == 'img':
+        html = u'<img src="%s" />' % p
+    return html
+
 def getImgPath( idx, prefix ): return getResourcePath( 'img', 'png', idx, prefix )
 def getSoundPath( idx, prefix ): return getResourcePath( 'audio', 'mp3', idx, prefix )
 
@@ -122,7 +129,7 @@ def parseLine( show, prefix, idx, time, txt ):
     return { 'Id':u'%s-%s-%d' % ( show, prefix, int(idx) ), 'Show':show, 'Prefix':prefix, 'Index':idx, 'Time':time, 'Expression':txt, 'Image':getImgPath( idx, prefix ), 'Sound':getSoundPath( idx, prefix ), 'Speaker':speaker, 'Meaning':meaning }
 
 def mkContextFieldName( f, i ):
-    return u'%s %s' % ( f, '+%d' % i if i >= 0 else '%d' % i )
+    return u'%s%s' % ( f, '+%d' % i if i >= 0 else '%d' % i )
 
 def addContext( d ):
     D = {}
@@ -142,10 +149,11 @@ def toTSV( d ):
     return tsv
 
 def processPart( show, prefix ):
+    N = numUnableToMatch
     print u'Processing %s - %s' % ( show, prefix )
     d = parse( show, prefix )
-    print 'Unable to match', N, len(d)
-    assert False
+    if numUnableToMatch-N:
+        print '\tUnable to match %d of %d (total of %d unmatched)' % ( numUnableToMatch-N, len(d), numUnableToMatch )
     d = addContext( d )
     tsv = toTSV( d )
 
@@ -155,7 +163,7 @@ def processPart( show, prefix ):
 
     return d, tsv
 
-def getAllPrefixes(): return [ os.path.basename( p )[7:-4] for p in glob.glob( u'%s/misc/timing.*.txt' % baseMediaDir ) ]
+def getAllPrefixes(): return [ os.path.basename( p )[7:-4] for p in glob.glob( u'%s/misc/timing.*.dat' % baseMediaDir ) ]
 
 def processShow( show ):
     tsvs = [ processPart( show, pre )[1] for pre in getAllPrefixes() ]

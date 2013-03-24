@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
+#TODO:
+# * .dat file not created once
+# * eventually CreateCompatibleDC() starts constantly failing and script
+#   must be restarted
+
 import cPickle as pickle
 import codecs
 import pyaudio

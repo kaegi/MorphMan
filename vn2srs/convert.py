@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+#-*- coding: utf-8 -*-
+
 import glob, os, subprocess, time, sys
 
 def mkPath( path, ext ):
@@ -21,14 +24,17 @@ def wav2mp3( path ):
         os.remove( path )
 
 def loop():
-    paths = glob.glob( 'media/audio/*.wav' )
-    if len( sys.argv ) > 1 and sys.argv[1] == 'misc':
-        paths += glob.glob( 'media/misc/*.wav' )
-    [ wav2mp3( p ) for p in paths ]
+    baseMediaDir = sys.argv[1] if len( sys.argv ) > 1 else 'media'
 
-    [ bmp2png( p ) for p in glob.glob( 'media/img/*.bmp' ) ]
+    paths = glob.glob( baseMediaDir+'/audio/*.wav' )
+    if len( sys.argv ) > 2 and sys.argv[2]:
+        paths += glob.glob( baseMediaDir+'/misc/*.wav' )
+
+    [ wav2mp3( p ) for p in paths ]
+    [ bmp2png( p ) for p in glob.glob( baseMediaDir+'/img/*.bmp' ) ]
 
 def main():
+    print 'Usage: ./convert.py [baseMediaDir] [alsoProcessMisc]'
     print 'Starting daemon'
     try:
         while True:
