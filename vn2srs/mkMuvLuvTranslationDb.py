@@ -30,12 +30,5 @@ for p in ps:
                 dupes.append( ( japLine, engLine ) )
             jap2eng[ japLine ] = engLine
             japLine, engLine = None, None
+
 pickle.dump( jap2eng, open( 'muvluv_mla.db', 'wb' ) )
-'''
-i = 0
-for j,e in dupes:
-    if j == u'\\r': continue
-    print j, e
-    i += 1
-print len( jap2eng ), len( dupes ), i
-'''
