@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ITH_Profile>
+    <Game Title="WEDDING　BLUE">
+        <File Name="wedding_blue.exe">
+            <Hash SHA256="A715A194F581BF246629F2F53D811698411F8DC892792A37603D63C328D4E40C" />
+        </File>
+        <Profile>
+            <Hooks>
+                <Hook Type="H" Code="/HA4@F330!E395232D" Name="UserHook0" />
+            </Hooks>
+            <Threads>
+                <Thread HookName="UserHook0" Mask="3" SubContext="0" Context="12cf245" />
+            </Threads>
+            <Select ThreadIndex="0" />
+        </Profile>
+    </Game>
+    <Game Title="エロティ課　誘惑研修はじまるよ～">
+        <File Name="start.exe">
+            <Hash SHA256="95BE3B9C96072FA522BEAA339F2E30CAC7591696D98FAFAECC2C998A6E2B62E7" />
+        </File>
+        <Profile>
+            <Hooks>
+                <Hook Type="H" Code="/HB8@1C630!4A0FEAB4" Name="UserHook0" />
+            </Hooks>
+            <Threads>
+                <Thread HookName="UserHook0" Mask="3" SubContext="0" Context="41c45a" />
+            </Threads>
+            <Select ThreadIndex="0" />
+        </Profile>
+    </Game>
+</ITH_Profile>

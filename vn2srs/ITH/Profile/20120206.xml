@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ITH_Profile>
+  <Game Title="WHITE ALBUM2">
+    <File Name="WA2.exe">
+      <Hash SHA256="005E71107ED70E662C41CB526879CDCF0B9486E067C0E5A306308688C17409ED" />
+    </File>
+    <Profile>
+      <Hooks>
+        <Hook Type="H" Code="/HS-4:-14@4383C0" Name="UserHook0" />
+      </Hooks>
+      <Threads>
+        <Thread HookName="UserHook0" Context="4492c1" SubContext="18fb58" Mask="3" Comment="名前" />
+        <Thread HookName="UserHook0" Context="4492c1" SubContext="18fb6c" Mask="3" Comment="会話" />
+      </Threads>
+      <Links>
+        <Link From="0" To="1" />
+      </Links>
+      <Select ThreadIndex="1" />
+    </Profile>
+  </Game>
+</ITH_Profile>

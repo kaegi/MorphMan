@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ITH_Profile>
+    <Game Title="処女と魔王とタクティクス 魔王争奪戦">
+        <File Name="tactics2.exe">
+            <Hash SHA256="1557069E97B62F3F7C9502B5907E427C810AF7F2CA4D1B2B4C10DEA738C6B666" />
+        </File>
+        <Profile>
+            <Hooks>
+                <Hook Type="H" Code="/HW4*0@16C20!F22A685B" Name="UserHook0" />
+            </Hooks>
+            <Threads>
+                <Thread HookName="UserHook0" Mask="3" SubContext="0" Context="d96920" />
+            </Threads>
+            <Select ThreadIndex="0" />
+        </Profile>
+    </Game>
+</ITH_Profile>

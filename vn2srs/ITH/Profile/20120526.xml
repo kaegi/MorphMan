@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ITH_Profile>
+    <Game Title="ベロちゅー！～コスプレメイドをエロメロしちゃう魔法の舌戯～">
+        <File Name="ai6win.exe">
+            <Hash SHA256="857235840381C39DA6D51F3E18D65B301E20DAF8CC687BD3AE399107BA080105" />
+        </File>
+        <Profile>
+            <Hooks>
+                <Hook Type="H" Code="/HB4*0:-14@A72B0!2F70E115" Name="UserHook0" />
+            </Hooks>
+            <Threads>
+                <Thread HookName="UserHook0" Mask="3" SubContext="18fce8" Context="49fb02" />
+            </Threads>
+            <Select ThreadIndex="0" />
+        </Profile>
+    </Game>
+</ITH_Profile>

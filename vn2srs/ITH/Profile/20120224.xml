@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ITH_Profile>
+    <Game Title="ランス・クエスト">
+        <File Name="RanceQuest.exe">
+            <Hash SHA256="337A22CCDCCC8F87A026A7D9253DABFEAAF6155BC5D0C6B6D5CF211B35AF6DAF" />
+        </File>
+        <Profile>
+            <Hooks>
+                <Hook Type="H" Code="/HS4@402C70" Name="UserHook0" />
+            </Hooks>
+            <Threads>
+                <Thread HookName="UserHook0" Context="4fd1aa" SubContext="0" Mask="3" Comment="名前と会話とそのほか" />
+                <Thread HookName="UserHook0" Context="494674" SubContext="0" Mask="3" Comment="名前と会話" />
+                <Thread HookName="UserHook0" Context="4fe33c" SubContext="0" Mask="3" Comment="会話のみ" />
+                <Thread HookName="UserHook0" Context="528b34" SubContext="0" Mask="3" Comment="名前のみ" />
+            </Threads>
+            <Select ThreadIndex="0" />
+        </Profile>
+    </Game>
+</ITH_Profile>

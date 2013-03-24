@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ITH_Profile>
+    <Game Title="DEMONION">
+        <File Name="demonion.exe">
+            <Hash SHA256="72E478A4C0DEFD8A5E2FD153039B74F82C5CEF3F2FC399DD94548BCD34DDEF0B" />
+        </File>
+        <Profile>
+            <Hooks>
+                <Hook Type="H" Code="/HQ-4*C@A7470!832CE72F" Name="UserHook0" />
+            </Hooks>
+            <Threads>
+                <Thread HookName="UserHook0" Mask="3" SubContext="0" Context="106c761" />
+            </Threads>
+            <Select ThreadIndex="0" />
+        </Profile>
+    </Game>
+</ITH_Profile>
