@@ -1,0 +1,867 @@
+#FILENAME 475e75e2
+#TYPE 3
+
+//<00001721> 【オペレーター１】「滑走路閉鎖に伴い、\p第１から第３航空隊は帝国軍厚木基地、\p第４から第７航空隊は同、\p羽田基地に司令部を移設」\e
+<00001721> 【Operator 1】「Due to the runway closure,\p the 1st through 3rd air corps will move to Imperial Army Atsugi Base,\p and the 4th through 7th will move to Haneda Base.」\e
+
+//<00000f6a> 【オペレーター２】「Ａゲートの充填封鎖確認。\n第５大隊は第２滑走路への移動を完了。\n演習場は完全に敵の支配下となりました」\e
+<00000f6a> 【Operator 2】「A gate hardened seal confirmed.\n5th Battalion has moved to the No. 2 Runway.\nThe training grounds are completely under enemy control.」\e
+
+//<00000f6c> 【オペレーター３】「帝国陸海軍による演習場及び第１滑走路への砲撃、\p依然継続中！　電磁カタパルトは第１第２共に機能停止！」\e
+<00000f6c> 【Operator 3】「The Imperial Navy is continuing to bombard the training grounds and No. 1 Runway! Both electromagnetic catapults are offline!」\e
+
+//<00000f6d> 【オペレーター１】「第２滑走路メインゲート及び第１から第４シャトルゲートは未だ健在！」\e
+<00000f6d> 【Operator 1】「No. 2 Runway's main gate and shuttle gates one through four remain intact!」\e
+
+//<00000f6e> 【オペレーター２】「工兵部隊によるＢＥＴＡ坑への硬化剤注入作業は難航中！」\e
+<00000f6e> 【Operator 2】「The mechanics are having difficulty injecting the anti-BETA hardening agent!」\e
+
+//<00000f70> 【オペレーター３】「――第１滑走路Ｂゲートです！　現在ＢＥＴＡは第３隔壁を突破、\p第４隔壁に取り付いています！」\e
+<00000f70> 【Operator 3】「――No. 1 Runway B gate!\bThe BETA have currently broken through the third barrier and are approaching the fourth!」\e
+
+//<00000f72> 【オペレーター１】「――基地地下施設通路の隔壁を全て閉鎖！　全機械化歩兵部隊は即時戦闘態勢！」\e
+<00000f72> 【Operator 1】「――All barriers in the base's underground corridors are sealed! All mechanized infantry are ready for combat!」\e
+
+//<00000f74> 【オペレーター２】「第七戦術機甲大隊は、\p第２層中央集積場Ｂゲートリフト前に集結――迎撃態勢を整えています」\e
+<00000f74> 【Operator 2】「The 7th TSF Battalion is gathering in front of the B gate lift in the second stratum's central gathering area――They're preparing an ambush.」\e
+
+//<00000f77> 【涼宮中尉】「――Ａ－０１及び第１９警備小隊、\p所定の位置に着きました。\n弾薬と推進剤の補給を要請しています」\e
+<00000f77> 【1st Lt. Suzumiya】「――A-01 and the 19th Guard Unit have reached their designated locations.\nRequesting more ammunition and propellant.」\e
+
+//<00001706> 【ピアティフ中尉】「――現在、\p９０番格納庫リフト発着場に補給コンテナ１８基を移送中」\e
+<00001706> 【1st Lt. Piatif】「――Currently moving eighteen resupply containers to the Hangar 90 lift.」\e
+
+//<00000f7e> 【ラダビノッド司令】「メインゲートを守りに行ってＢゲートが突破されるか…\p…\p思うようにはやらせてくれんな」\e
+<00000f7e> 【Gen. Radhabinod】「We go to protect the main gate and they break through B gate...\p...\pthey won't let us do anything the way we want.」\e
+
+//<00000f7f> 【夕呼】「全くですわね」\e
+<00000f7f> 【Yuuko】「No they won't.」\e
+
+//<00000f80> 【ラダビノッド司令】「まさかこの横浜基地が、\p短時間でここまで追いつめられようとは…\p…\p」\e
+<00000f80> 【Gen. Radhabinod】「I cannot believe Yokohama Base has been pushed back this far in such a short time...\p...\p」\e
+
+//<00000f81> 【夕呼】「人類はレーザー属種にばかり目を奪われがちですが、\pやはり物量こそがＢＥＴＡ最大の脅威であるという証明ですわ」\e
+<00000f81> 【Yuuko】「Humanity's been focusing on the laser species this whole time,\p but this proves numbers really are the BETA's greatest weapon.」\e
+
+//<00000f82> 【夕呼】「こうして制空権を確保しても、\p有効な戦術対地兵器を準備していない以上、\p結局彼等の土俵で戦うしかありません」\e
+<00000f82> 【Yuuko】「Even with total air superiority,\p since we don't have any effective tactical anti-surface weapons,\p it all comes down to our ground forces.」\e
+
+//<00000f83> 【ラダビノッド司令】「ＸＭ３、\p００ユニット、\pそしてＸＧ－７０が実戦配備された事で慢心していたとは思いたくないが…\p…\p」\e
+<00000f83> 【Gen. Radhabinod】「I do not believe the successful completion of the XM3,\p the 00 Unit,\p and the XG-70 made us overconfident, but...\p...\p」\e
+
+//<00000f85> 【夕呼】「第１１軍総司令部は間違いなくそこを指摘して来るでしょう。\nこちらが駐留国連軍の戦術見直しを再三要請していた事実は無視して」\e
+<00000f85> 【Yuuko】「The 11th Army HQ would jump on that right away.\nIgnoring the fact that we've repeatedly petitioned the UN to reevaluate those tactics.」\e
+
+//<0000162a> 【ラダビノッド司令】「うむ。\n…\p…\pだがそれも、\pこの危機を乗り越えた後の話だな」\e
+<0000162a> 【Gen. Radhabinod】「Yes.\n...\p...\pbut that is yet another issue that must wait until we survive this.」\e
+
+//<00000f87> 【夕呼】「そうでしたわね」\e
+<00000f87> 【Yuuko】「You're right.」\e
+
+//<00000f88> 【ラダビノッド司令】「ところで博士、\p００ユニットとＸＧ－７０は現状どうかね」\e
+<00000f88> 【Gen. Radhabinod】「By the way, Professor,\p what are the conditions of the 00 Unit and the XG-70?」\e
+
+//<00000f8a> 【夕呼】「００ユニットはＯＤＬの浄化処置を継続中です。\n意志レベルも未だ覚醒にはほど遠い状態です」\e
+<00000f8a> 【Yuuko】「The 00 Unit is still undergoing ODL purification.\nShe's a long way from waking up.」\e
+
+//<00000f8c> 【夕呼】「完全浄化に最低でもあと数時間はかかりますので、\p地下１９階の処置施設周囲は機械化強化歩兵１個中隊で小型種の侵入に備えています」\e
+<00000f8c> 【Yuuko】「It takes at least a few hours to do a complete purification,\p so I've assigned a company of mechanized infantry to the area around her on the 19th underground floor to deal with any tiny ones that get in.」\e
+
+//<00000f8d> 【ラダビノッド司令】「うむ」\e
+<00000f8d> 【Gen. Radhabinod】「Hmm.」\e
+
+//<0000162c> 【夕呼】「ＸＧ－７０は弐型四型共に４チームフル稼働で作業を継続させていますが…\p…\p。\n動かすとなると最低２０時間は必要です」\e
+<0000162c> 【Yuuko】「Four teams are hard at work to get the XG-70 Type 2 and Type 4 activated...\p...\p\nBut it'll take at least twenty hours before those can move.」\e
+
+//<00000f8f> 【ラダビノッド司令】「そうか。\nせめて基地から遠ざけられればと思ったが…\p…\p。\n作業は継続させ――」\e
+<00000f8f> 【Gen. Radhabinod】「I see.\nI was hoping we could at least move them away from the base...\p...\p\nHave them contin――」\e
+
+//<00000f92> 【ラダビノッド司令】「――！」\n
+<00000f92> 【Gen. Radhabinod】「――!」\n
+
+//<00000f93> 【夕呼】「――！？」\e
+<00000f93> 【Yuuko】「――!?」\e
+
+//<00000f95> 【オペレーター３】「――第１滑走路Ｂゲート！　ＢＥＴＡの攻撃により第４隔壁一部破損っ！」\e
+<00000f95> 【Operator 3】「――No. 1 Runway B gate!\bThe BETA have destroyed part of the fourth barrier!」\e
+
+//<00000f97> 【オペレーター１】「――第七大隊接敵！　戦車級を中心に小型種で構成される１群が中央集積場に侵入！　数は――測定不能です！」\e
+<00000f97> 【Operator 1】「――7th Battalion engaged! A herd of small species with a core of Tank-Class has infiltrated the central gathering area! Their number is――Off the charts!」\e
+
+//<00000fa9> 【ホーク１】「――照準はいらんぞ！　とにかく撃ちまくれッ！　奴らをここで食い止めるんだッ！」\e
+<00000fa9> 【Hawk 1】「――Don't bother aiming! Just shoot everything!\bWe've gotta stop them here!」\e
+
+//<00000fab> 【ホーク３】「――この野郎ォォォォ！！」\e
+<00000fab> 【Hawk 3】「――You bastaaaaaaaaards!!」\e
+
+//<00000faf> 【ホーク２】「――クソがッ！！　かかって来いやっ！！」\e
+<00000faf> 【Hawk 2】「――Fuckers!! Come at me!!」\e
+
+//<00000fb1> 【ホーク４】「――おらおらおらぁ！！　狭い入り口ひとつじゃお得意の集団戦もできねえなぁ！？」\e
+<00000fb1> 【Hawk 4】「――Come on, come on, come ooon!!\bCan't use your swarm tactics in a narrow entrance like this!?」\e
+
+//<00000fb5> 【グリズリー２】「――ぎゃははははッ！！　見ろよッ――あいつらバカだぜッ！　次々に突っ込んで来やがるッ！」\e
+<00000fb5> 【Grizzly 2】「――Gyahahahaha!! Look! ――They're all idiots!\bThey just keep charging in one after the other!」\e
+
+//<00000fb7> 【グリズリー３】「――てめえら本当は弱ぇんだよッ！！　勘違いしてんじゃねえッ！！」\e
+<00000fb7> 【Grizzly 3】「――I thought you guys were strong!\bBoy was I wrong!!」\e
+
+//<00000fbd> 【ホーク１】「――隔壁が破られるぞッ！！　突撃級や要撃級のお出ましだッ！」\e
+<00000fbd> 【Hawk 1】「――They're breaking through the barrier!!\bThe Destroyer- and Grappler-Classes will be here soon!」\e
+
+//<00000fbf> 【グリズリー１】「――施設破壊の許可は出ている！　派手に歓迎してやれ！」\e
+<00000fbf> 【Grizzly 1】「――We have permission to damage the base!\bGive them one hell of a welcome!」\e
+
+//<00000fc1> 【国連軍衛士達】「――了解ッ！！」\e
+<00000fc1> 【UN Eishi】「――Copy that!!」\e
+
+//<00000fc7> 【ホーク３】「――喰らいやがれバケモノめッ！！」\e
+<00000fc7> 【Hawk 3】「――Take this you monsters!!」\e
+
+//<00000fc9> 【ホーク２】「――弾は腐るほどあるんだッ！！　残念だったなっ！！」\e
+<00000fc9> 【Hawk 2】「――We've got more bullets than we know what to do with!! Sucks to be you!!」\e//lit. "so many they're rotting" (implying many aren't getting used)
+
+//<00000fcb> 【グリズリー１】「――でかい奴に気をとられすぎるな！　戦車級を取りこぼしてるぞ！！」\e
+<00000fcb> 【Grizzly 1】「――Don't focus too much on the big guys!\bYou'll get engulfed by Tank-Class!!」\e
+
+//<00000fcd> 【グリズリー４】「――了解ッ！」\e
+<00000fcd> 【Grizzly 4】「――Copy that!」\e
+
+//<00000fcf> 【ホーク１】「――ドラゴン１！　そっちに回り込んだぞッ！　奴らメインシャフトに向かってるッ！」\e
+<00000fcf> 【Hawk 1】「――Dragon 1! They're going around you!\bThey're headed for the main shaft!」\e
+
+//<00000fd1> 【ドラゴン１】「――了解ッ！！　ジョーカー１、\pお客さんだぞッ！」\e
+<00000fd1> 【Dragon 1】「――Copy that!! Joker 1,\p we've got customers!」\e
+
+//<00000fd3> 【ジョーカー１】「――待ちくたびれたぜッ！！」\e
+<00000fd3> 【Joker 1】「――About fucking time they showed up!!」\e
+
+//<00000fd5> 【グリズリー３】「――くそッ死骸が邪魔だッ！！　どんどん抜けていっちまうぞッ！！」\e
+<00000fd5> 【Grizzly 3】「――Dammit! The dead ones are in the way!!\bTons of them keep sneaking through!!」\e
+
+//<00000fd7> 【グリズリー１】「――サーカス１！　Ｂゲート隔壁前の死骸の山をロケットで吹っ飛ばしてくれッ！」\e
+<00000fd7> 【Grizzly 1】「――Circus 1! Use a rocket to blow away the bodies in front of the B gate wall!」\e
+
+//<00000fd9> 【サーカス１】「――了解！　サーカス４――２発で掃除しろッ！」\e
+<00000fd9> 【Circus 1】「――Copy that!\bCircus 4――Use two rockets to clean them up!」\e
+
+//<0000172a> 【サーカス４】「――了解！」\e
+<0000172a> 【Circus 4】「――Copy that!」\e
+
+//<00000fdd> 【ホーク１】「――全機爆風に備えろッ！」\e
+<00000fdd> 【Hawk 1】「――All units brace yourselves!」\e
+
+//<00000fe0> 【グリズリー３】「――アリガトよサーカス４！　これで少しは――って余計広がっちまったじゃねえかッ！」\e
+<00000fe0> 【Grizzly 3】「――Thanks, Circus 4! This should make it a little――Wait, you just spread them out more!」\e
+
+//<00000fe2> 【グリズリー２】「――ちくしょう！　突撃級の死骸があちこちにあって――！！」\e
+<00000fe2> 【Grizzly 2】「――God dammit!\bThere's Destroyer-Class bodies everywhere――!!」\e
+
+//<00000fe4> 【グリズリー１】「――サーカス１もう一度だッ！　散在してる突撃級の甲羅が邪魔なんだッ！」\e
+<00000fe4> 【Grizzly 1】「――Circus 1, do it again!\bThe Destroyer-Class shells are in the way!」\e
+
+//<00000fe6> 【サーカス１】「――ダメだッ！　閉鎖空間で２発以上は危険だ！　基地もオレ達も保たないぞ！」\e
+<00000fe6> 【Circus 1】「――No good! Any more than two in a sealed area is dangerous! Neither the base nor us would survive it!」\e
+
+//<00000fe8> 【ホーク１】「――取りこぼしは後に任せるしかないッ！　とにかく撃ちまくれッ！」\e
+<00000fe8> 【Hawk 1】「――We'll have to get the stragglers later!\bJust keep shooting!」\e
+
+//<00000fea> 【ホーク４】「――だいたい帝国の連中は何やってんだ――全然数が減ってねえじゃねえかッ！？」\e
+<00000fea> 【Hawk 4】「――What the hell's the Empire doing anyway――Their numbers aren't falling at all!!」\e
+
+//<00000fec> 【グリズリー１】「――フレイム１、\pライガー１――そっちに結構抜けちまってるッ！　すまねえが頼むッ！」\e
+<00000fec> 【Grizzly 1】「――Flame 1,\p Liger 1――There's a bunch headed your way! Sorry about that!」\e
+
+//<00000fee> 【フレイム１】「――フレイム１了解！」\e
+<00000fee> 【Flame 1】「――Flame 1, copy that!」\e
+
+//<00000ff0> 【ライガー１】「――ライガー１了解！　全機準備は良いな――地下格納庫にはいかせるなッ！」\e
+<00000ff0> 【Liger 1】「――Liger 1, copy that! All units, you ready?\b――Don't let 'em get to the hangar!」\e
+
+//<00000ff2> 【ライガー隊全員】「――了解！」\e
+<00000ff2> 【All Ligers】「――Copy that!」\e
+
+//<00001729> 【ホーク２】「――くそッ！！　奴ら死骸を盾にジリジリ迫って来やがるっ！！」\e
+<00001729> 【Hawk 2】「――Dammit!! They're using the bodies as shields to get closer!!」\e
+
+//<00000ff6> 【ホーク３】「――でかいのはともかく、\p小型種はもう殆ど素通しになっちまってるぞッ！！」\e
+<00000ff6> 【Hawk 3】「――We can still get the big ones but almost all the little species are getting past us!!」\e
+
+//<00000ff8> 【ドラゴン１】「――ホーク１！　そっちの撃ち漏らしが多すぎる！　何とかならないか！？」\e
+<00000ff8> 【Dragon 1】「――Hawk 1! You're letting too many of them through! Can't you do something about it!?」\e
+
+//<0000171d> 【ホーク１】「――無理だ、\p死骸に邪魔されて殆ど対処できない！　それどころかこっちももう目と鼻の先まで奴らが躙り寄ってきているんだ！」\e
+<0000171d> 【Hawk 1】「――No,\p there's too many bodies for us to do anything! And they're already right under our noses!」\e
+
+//<00000ffc> 【サーカス１】「――ホーク１、\pロケットは遮蔽物を広げるだけだ！　オレ達はランチャーを排除してドラゴン隊のカバーに入る！」\e
+<00000ffc> 【Circus 1】「――Hawk 1,\p rockets will just spread out their cover! Let's drop the launchers and go cover Dragon Unit!」\e
+
+//<00000ffe> 【ホーク１】「――メインシャフトを頼んだぞッ！」\e
+<00000ffe> 【Hawk 1】「――Take care of the main shaft for me!」\e
+
+//<00001000> 【ホーク４】「――うわあぁ！！　機体に戦車級が飛び付きやがったッ！」\e
+<00001000> 【Hawk 4】「――Uwaaaaa!!\bTank-Class are grabbing onto my TSF!」\e
+
+//<00001002> 【ホーク２】「――待ってろ、\p今ナイフで落としてやる！　腕で払うな――マニピュレーターを壊すぞッ！」\e
+<00001002> 【Hawk 2】「――Hold still,\p I'll use my knife on them!\bDon't move your arms――You'll lose your manipulators!」\e
+
+//<00001004> 【ホーク４】「――くそおッ！！　早くッ！　コイツ装甲を囓ってやがるッ！」\e
+<00001004> 【Hawk 4】「――Damn iiit!! Hurry up!\bThey're biting through my armor!」\e
+
+//<00001006> 【ホーク２】「――待てッ！　動くなッ！」\e
+<00001006> 【Hawk 2】「――Wait! Don't move!」\e
+
+//<00001008> 【ホーク１】「――ホーク３！　カバーだ――撃ちまくれ！！」\e
+<00001008> 【Hawk 1】「――Hawk 3! Cover me――Shoot everything!!」\e
+
+//<0000100a> 【ホーク３】「――了解ッ！！」\e
+<0000100a> 【Hawk 3】「――Copy that!!」\e
+
+//<0000100d> 【ホーク４】「――うわあああッ！　――こッ、\pこの野郎ォォォッ！！！」\e
+<0000100d> 【Hawk 4】「――Uwaaaaaaa!! ――Y-\pyou bastaaaaaaards!!!」\e
+
+//<0000100f> 【ホーク２】「――隊長ッ！　隊長ォーーーーッ！　戦車級が――戦車級がッ！」\e
+<0000100f> 【Hawk 2】「――Captain! Captaaaaaaaaain!\bTank-Class――The Tank-Class are――!」\e
+
+//<00001011> 【ホーク１】「――ホーク２！　ホーク４！？　――今いくぞッ！！　――グリズリー１カバーを頼むッ！！」\e
+<00001011> 【Hawk 1】「――Hawk 2! Hawk 4!?\b――I'm heading your way!!\b――Grizzly 1, cover me!!」\e
+
+//<00001013> 【グリズリー１】「――グリズリー４ッ！　ホーク１のポジションをカバーしろッ！」\e
+<00001013> 【Grizzly 1】「――Grizzly 4! Cover Hawk 1's position!」\e
+
+//<00001015> 【グリズリー４】「――了解ッ！」\e
+<00001015> 【Grizzly 4】「――Copy that!」\e
+
+//<00001017> 【ホーク４】「――うわあああッ！　――やッやめろこの野郎ォォォッ！！！　うわああああッ！」\e
+<00001017> 【Hawk 4】「――Uwaaaaaaa! ――S-stop it, nooooooo!! Uwaaaaaaaaa!!」\e
+
+//<00001019> 【ホーク２】「――ひいいッ！　喰われるッ喰われるッ…\p…\pやめッ――がああああッ！　痛てえええッ！」\e
+<00001019> 【Hawk 2】「――Hiiii! I'm being eaten! I'm being eaten!\b...\p...\psto――Gaaaaaaaaa! It huuuuuuurts!」\e
+
+//<0000101c> 【ホーク１】「――やめろホーク２ッ！　射撃をやめ――」\e
+<0000101c> 【Hawk 1】「――Stop it, Hawk 2! Don't shoo――」\e
+
+//<0000101f> 【グリズリー１】「――ホーク１ッ！？」\e
+<0000101f> 【Grizzly 1】「――Hawk 1!?」\e
+
+//<00001021> 【ホーク２】「――うぎゃあああーーーー痛てえええよぉぉぉッ！」\e
+<00001021> 【Hawk 2】「――Ugyaaaaaaaaaaaaaaa, it huuuuuuuuuuuuurts!」\e
+
+//<00001025> 【ホーク４】「――ひぎィィィィィッ…\p…\p！」\e
+<00001025> 【Hawk 4】「――Higiiiiiiiiiiiii...\p...\p!」\e
+
+//<00001027> 【グリズリー１】「――グリズリー４！　ホーク２の腕を撃てッ！！　このままじゃ味方にやられる！」\e
+<00001027> 【Grizzly 1】「――Grizzly 4! Shoot Hawk 2's arm!!\bHe's gonna kill us at this rate!」\e
+
+//<00001029> 【グリズリー４】「りょ、\pりょうか――ああっ！！」\e
+<00001029> 【Grizzly 4】「C-\pcopy tha――Aaaah!!」\e
+
+//<0000102c> 【グリズリー３】「――グリズリー４ッ！　てめえら離れろッ！！　――この野郎ォッ！」\e
+<0000102c> 【Grizzly 3】「――Grizzly 4! Get out of here!!\b――You bastaaards!」\e
+
+//<0000102e> 【グリズリー２】「――バカ野郎ッ！　勝手にポジション外すなッ！！」\e
+<0000102e> 【Grizzly 2】「――You dumbass!\bDon't leave your position!!」\e
+
+//<00001030> 【グリズリー４】「――グリズリー３ッ！　こいつらをッ！　お願いッ！」\e
+<00001030> 【Grizzly 4】「――Grizzly 3! Take care of these guys for me!」\e
+
+//<00001032> 【グリズリー１】「――グリズリー３！　まずホーク２の腕を撃てッ！！」\e
+<00001032> 【Grizzly 1】「――Grizzly 3! Shoot Hawk 2's arm first!!」\e
+
+//<00001034> 【ホーク２】「――いでぇぇぇーーーー痛てえええよぉぉぉッ！　脚があぁぁぁッ！！」\e
+<00001034> 【Hawk 2】「――Owwwwwwwwwwwwww, it huuuuuuuuuuuuurts! My leeeeeeeeegs!!」\e
+
+//<00001036> 【グリズリー３】「――てめえはうるせえぞッ！」\e
+<00001036> 【Grizzly 3】「――Would you shut up!?」\e//lol - Sheeta
+
+//<00001039> 【ホーク３】「――オイ！！　てめえなにしやがったッ！！」\e
+<00001039> 【Hawk 3】「――Hey!! What the hell did you do!?」\e
+
+//<0000103b> 【グリズリー３】「――てめえは前見て撃って――オイ！　避け――」\e
+<0000103b> 【Grizzly 3】「――You turn around and keep shooting――Hey! Look ou――」\e
+
+//<0000103d> 【ホーク３】「――ぐああああああッ！！」\e
+<0000103d> 【Hawk 3】「――Guwaaaaaaaaaaaaa!!」\e
+
+//<00001040> 【グリズリー３】「――くそおおおおおッ！！　どけぇッ！！　離れろ下等生物共ッ！！」\e
+<00001040> 【Grizzly 3】「――Damn iiiiiiiiiit!! Mooove!!\bGet back you lower life forms!!」\e//shi suggested "inferior creatures" ~IX
+
+//<00001042> 【グリズリー１】「――全機後退ッ！　後退だッ！　リフトターミナルまで下がれッ！！」\e
+<00001042> 【Grizzly 1】「――All units, retreat! Retreat!\bFall back to the lift terminal!!」\e
+
+//<00001044> 【グリズリー３】「――待てッ！！　待ってくれぇッ！！　うわああああッ！！」\e
+<00001044> 【Grizzly 3】「――Wait!! Please, waiiit!! Uwaaaaaaaaa!!」\e
+
+//<00001046> 【グリズリー４】「――いひいいッ！　たす…\p…\p助けてぇぇぇッ！！」\e
+<00001046> 【Grizzly 4】「――Hiiiiiii! Save...\p...\psave meeeeeee!!」\e
+
+//<0000104a> 【グリズリー３】「――ぃぎゃああああああッ！！」\e
+<0000104a> 【Grizzly 3】「――Igyaaaaaaaaaaaaa!!」\e
+
+//<0000104f> 【涼宮中尉】「現在第２滑走路に敵影なし。\n演習場の残敵も含め、\p全て第１滑走路に向かっている模様です」\e
+<0000104f> 【1st Lt. Suzumiya】「No enemies on the No. 2 Runway.\nAll surviving enemies, including those in the training ground,\p are moving to the No. 1 Runway.」\e
+
+//<00001715> 【涼宮中尉】「これを受けて帝国軍の支援砲撃は第１滑走路に集中しています」\e
+<00001715> 【1st Lt. Suzumiya】「The Imperial Army artillery support is now concentrating on the No. 1 Runway.」\e
+
+//<00001716> 【涼宮中尉】「ＢＥＴＡのＢゲート到達率はおよそ３０％――その多くが小型種です」\e
+<00001716> 【1st Lt. Suzumiya】「About thirty percent of the BETA have reached B gate――Most of them are small species.」\e
+
+//<00001053> 【涼宮中尉】「多数の要塞級と突撃級の死骸が砲撃の阻止効果を著しく減じている影響と考えられます」\e
+<00001053> 【1st Lt. Suzumiya】「The large numbers of Grappler-Class and Destroyer-Class bodies may be diluting the effect of the bombardment.」\e
+
+//<0000171b> 奴らが１個所に集まるのはいいが…\p…\p支援砲撃の雨を３割も突破しているなんて…\p…\p。\e
+<0000171b> It's nice that they're gathering in one place...\p...\pbut thirty percent made it through all that artillery...\p...\p?\e
+
+//<00001056> 集積場がいくら広いとはいえ、\p何百匹ものＢＥＴＡが次々に流れ込んできているんじゃ…\p…\pどうにもならない！\e
+<00001056> The gathering area is huge,\p but if hundreds and hundreds of BETA pour into it...\p...\pthere's nothing we can do!\e
+
+//<00001057> だいたい…\p…\pＢＥＴＡのマーカーで味方のマーカーの殆どが見えないじゃないか…\p…\p。\e
+<00001057> Besides...\p...\pthere's so many BETA markers I can't even see most of the friendly ones...\p...\p\e
+
+//<0000162e> 【涼宮中尉】「Ｂゲートから侵入したＢＥＴＡ群は中央集積場にて第７大隊と交戦中」\e
+<0000162e> 【1st Lt. Suzumiya】「The BETA herd which infiltrated through B gate is engaging the 7th Battalion in the central gathering area.」\e
+
+//<0000105a> 【涼宮中尉】「第１滑走路同様、\p多数の突撃級の死骸が遮蔽物となっているため、\p砲撃の効果が著しく低下」\e
+<0000105a> 【1st Lt. Suzumiya】「As on the No. 1 Runway,\p the large number of Destroyer-Class bodies are providing cover for the enemy, weakening their effectiveness.」\e
+
+//<0000105c> 【涼宮中尉】「現在近接戦にて対処中。\n第２滑走路の守備部隊の半数を集積場に投入していますが、\p戦況は思わしくありません」\e
+<0000105c> 【1st Lt. Suzumiya】「They are currently fighting in close quarters.\nHalf of the units defending No. 2 Runway have been sent to the gathering area,\p but it's not looking good.」\e
+
+//<0000105e> 【涼宮中尉】「敵の攻撃はメインシャフトに続くリフト発着場に集中しています。\nそれ以外のリフトターミナルは無視しています」\e
+<0000105e> 【1st Lt. Suzumiya】「The enemies' attacks are concentrating on the lift leading to the main shaft.\nThey're ignoring all other lift terminals.」\e
+
+//<00001060> 【涼宮中尉】「９０番ハンガーに続くターミナルの隔壁は全て無傷です。\n今のうちに補給を完了してください」\e
+<00001060> 【1st Lt. Suzumiya】「All barrier walls leading to the Hangar 90 lift terminal are unharmed.\nPlease resupply now while you can.」\e
+
+//<00001062> 【武】「…\p…\p…\p…\p」\e
+<00001062> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001063> 先生の予想通り、\p奴らの狙いは反応炉だ…\p…\p。\nやっぱりＢＥＴＡはエネルギーを求めているんだ。\e
+<00001063> Just as Sensei predicted,\p they're after the reactor...\p...\p\nSo the BETA do need that energy.\e
+
+//<00001064> その意味では反応炉以外の場所は今は安全だ。\nだけどもし、\p基地に侵入したＢＥＴＡが反応炉でエネルギーを補給しちまったら…\p…\p！\e
+<00001064> So in a sense everywhere other than the reactor is safe.\nBut if the BETA inside the base do manage to replenish their energy, then...\p...\p!\e
+
+//<00001065> ＢＥＴＡはここをハイヴに戻すために、\p基地の設備をことごとく破壊するだろう。\e
+<00001065> In order to turn this place back into a hive,\p they'll need to destroy all the facilities we've built.\e
+
+//<00001066> 【武】「…\p…\p…\p…\p」\e
+<00001066> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001067> ――その時…\p…\p地下の中枢フロアに小型種が侵入したら――純夏は…\p…\p霞や先生達は――！！\e
+<00001067> ――When that happens...\p...\pif smaller species infiltrate the core underground floors――Sumika...\p...\pKasumi and Sensei――!!\e
+
+//<0000106c> クソッ…\p…\p奴らにエネルギー補給させたら――完全に勝ち目が無くなっちまうぞ…\p…\p！\e
+<0000106c> Dammit...\p...\pif those guys replenish their energy――We'll have no chance of winning...\p...\p!\e
+
+//<00001718> 【涼宮中尉】「司令部は対策を協議中です。\n現在、\p命令に変更はありません」\e
+<00001718> 【1st Lt. Suzumiya】「HQ is currently discussing countermeasures.\nYour orders have not yet changed.」\e
+
+//<00001723> 【速瀬中尉】「――ヴァルキリー１了解。\n警戒態勢を維持する」\e
+<00001723> 【1st Lt. Hayase】「――Valkyrie 1, copy that.\nWe'll stay on guard here.」\e
+
+//<00001073> 【涼宮少尉】「――速瀬中尉！」\e
+<00001073> 【2nd Lt. Suzumiya】「――1st Lt. Hayase!」\e
+
+//<00001075> 【速瀬中尉】「――どうした、\p補給は終わったの！？」\e
+<00001075> 【1st Lt. Hayase】「――What?\p Did you finish resupplying!?」\e
+
+//<00001077> 【涼宮少尉】「私達もメインシャフトを守りに行きましょう！　隔壁が突破されるのも時間の問題です！」\e
+<00001077> 【2nd Lt. Suzumiya】「Let's go defend the main shaft too!\bIt's only a matter of time before they break the barriers!」\e
+
+//<00001079> 【速瀬中尉】「気持ちはわかるけどそれは命令違反よ」\e
+<00001079> 【1st Lt. Hayase】「I know how you feel but that's insubordination.」\e//lit. "disobeying orders"
+
+//<0000107b> 【涼宮少尉】「――今は緊急事態です！　副司令に進言してください！　このままじゃ基地が奪い返されて――」\e
+<0000107b> 【2nd Lt. Suzumiya】「――This is an emergency! Ask the XO for permission! The base is gonna get taken over if we――」\e
+
+//<0000107d> 【速瀬中尉】「――私達が守るのは凄乃皇と鑑よ！」\e
+<0000107d> 【1st Lt. Hayase】「――We're here to protect Kagami and the Susano'o!」\e
+
+//<0000107f> 【涼宮少尉】「敵の狙いは明らかに反応炉です――凄乃皇じゃありません！」\e
+<0000107f> 【2nd Lt. Suzumiya】「The enemies are obviously after the reactor――Not the Susano'o!」\e
+
+//<00001082> 【宗像中尉】「――涼宮ッ！　いい加減にしろ！！」\e
+<00001082> 【1st Lt. Munakata】「――Suzumiya! Pipe down!!」\e
+
+//<00001084> 【涼宮少尉】「――宗像中尉…\p…\p！」\e
+<00001084> 【2nd Lt. Suzumiya】「――1st Lt. Munakata...\p...\p!」\e
+
+//<00001086> 【宗像中尉】「このリフト発着場は９０番ハンガーだけじゃなく、\p副司令達や鑑がいる中枢フロアにも繋がってるんだぞ？」\e
+<00001086> 【1st Lt. Munakata】「This lift connects to the core underground floor where Kagami and the XO are,\p not just to Hangar 90.」\e
+
+//<00001088> 【涼宮少尉】「――わかっています」\e
+<00001088> 【2nd Lt. Suzumiya】「――I know that.」\e
+
+//<00001633> 【宗像中尉】「だったらここが反応炉以上に重要な場所だって事ぐらい、\p貴様にも理解できるな！？」\e
+<00001633> 【1st Lt. Munakata】「Then can you understand that this place is even more important than the reactor!?」\e
+
+//<0000108c> 【涼宮少尉】「――私達の役割も命令も重要さもわかっています！」\e
+<0000108c> 【2nd Lt. Suzumiya】「――I know how important our position and orders are!」\e
+
+//<0000108e> 【涼宮少尉】「――だけど今はＢＥＴＡに押されっぱなしで、\p作戦なんてまともに機能していないじゃないですか！」\e
+<0000108e> 【2nd Lt. Suzumiya】「――But we're being completely wiped out by the BETA right now.\p The plan's a wreck!」\e
+
+//<00001090> 【涼宮少尉】「それなのに…\p…\pみんなが死にもの狂いで戦っているのに――何もしないでここにいるなんて私は――」\e
+<00001090> 【2nd Lt. Suzumiya】「And yet...\p...\pwhile everyone else is fighting and dying――We're sitting here doing nothing――」\e
+
+//<00001092> 【武】「――もうよせ涼宮っ！」\e
+<00001092> 【Takeru】「――That's enough, Suzumiya!」\e
+
+//<00001093> 【涼宮少尉】「白銀…\p…\p！」\e
+<00001093> 【2nd Lt. Suzumiya】「Shirogane...\p...\p!」\e
+
+//<00001095> 【武】「みんなだっておまえと同じ気持ちなんだよ――特に速瀬中尉はな！」\e
+<00001095> 【Takeru】「Everyone feels the same way, you know――Especially 1st Lt. Hayase!」\e
+
+//<00001096> 【涼宮少尉】「わかった風なこといわないでよ！」\e
+<00001096> 【2nd Lt. Suzumiya】「Don't put words in her mouth!」\e
+
+//<00001725> 【武】「ああそうだろうよ。\n速瀬中尉の事はおまえが一番よくわかってる筈だよな？！」\e
+<00001725> 【Takeru】「You're right, I shouldn't do that.\nYou're the one who knows 1st Lt. Hayase better than any of us, aren't you!?」\e
+
+//<00001099> 【涼宮少尉】「だから私は――」\e
+<00001099> 【2nd Lt. Suzumiya】「I wasn't――」\e
+
+//<00001727> 【武】「苦戦している味方を助けに行きたいって、\p今一番強く思ってるのは速瀬中尉なんじゃねえのか？」\e
+<00001727> 【Takeru】「Don't you think 1st Lt. Hayase wants to go help our allies more than anyone right now?」\e
+
+//<0000109c> 【速瀬中尉】「――白銀も涼宮もいい加減にしろッ！　補給は終わっているんだろうなッ？！」\e
+<0000109c> 【1st Lt. Hayase】「――Shirogane, Suzumiya, both of you cut it out! You'd better be done resupplying by now!!」\e
+
+//<0000109f> 【涼宮少尉】「…\p…\p…\p…\p」\n
+<0000109f> 【2nd Lt. Suzumiya】「...\p...\p...\p...\p」\n
+
+//<000010a1> 【武】「すみません」\e
+<000010a1> 【Takeru】「Sorry.」\e
+
+//<000010a3> 【速瀬中尉】「あんた達も珠瀬と一緒に腕立て２００回よ。\nこの戦いを乗り切ったらね」\e
+<000010a3> 【1st Lt. Hayase】「Now you guys owe me two hundred push-ups too.\nOnce we survive this.」\e
+
+//<000010a6> 【涼宮少尉】「…\p…\p了解」\n
+<000010a6> 【2nd Lt. Suzumiya】「...\p...\pcopy that.」\n
+
+//<000010a8> 【武】「――了解」\e
+<000010a8> 【Takeru】「――Copy that.」\e
+
+//<000010ab> 【武】「…\p…\p…\p…\p」\e
+<000010ab> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000010ac> 涼宮の奴…\p…\p柏木の事もあって、\p仲間を見殺してるみたいな気持ちに苛まれてるんだろうな。\e
+<000010ac> Suzumiya...\p...\pafter what happened to Kashiwagi,\p she must be tortured by the feeling that we're letting our comrades die.\e
+
+//<000010ad> しかもＢＥＴＡの奇襲を受けた上に、\pここまで追い込まれて、\p作戦すらまともに機能してない状況だ。\nピリピリするのも当然だろう。\e
+<000010ad> And not only did the BETA catch us by surprise,\p but they've pushed us so far back the plan isn't even working.\nOf course she'd be restless.\e
+
+//<000010ae> でも、\p中尉達はそれ以上にキツイ筈だ。\e
+<000010ae> But it should be even worse for the First Lieutenants.\e
+
+//<000010af> Ａ－０１は味方の死闘を横目に、\pオルタネイティヴ計画のために黙々と特殊任務をこなしてきた部隊だ。\e
+<000010af> A-01 is a special unit which performs secret missions for the Alternative Plan without giving their allies' deaths a second glance.\e
+
+//<000010b0> 従事するのは『攻め』の任務ばかりだったから、\pこの一方的な『守り』は相当不安だろう。\e
+<000010b0> All the missions up until now have had us on the attack,\p so being on the defense now must bother everyone.\e//Add comma after "Before"? - Raide//rewrote a little ~IX
+
+//<000010b1> 速瀬中尉は性格的にも『攻め』だし、\p部隊長になったばかりでこんな状況に置かれれば、\p精神的には相当きつい筈なんだ。\e
+<000010b1> 1st Lt. Hayase's personality is better suited to attacking after all,\p so ending up in this position right after becoming the unit leader must be tough on her.\e
+
+//<000010b2> 【武】「…\p…\p！」\e
+<000010b2> 【Takeru】「...\p...\p!」\e
+
+//<000010b3> なるほど…\p…\p涼宮はそこまでを察して上に進言するように言ったって事なのか…\p…\p？\n部隊長になって自制している速瀬中尉を気遣ってああいう風に言ったのか…\p…\p？\e
+<000010b3> I see...\p...\pdid Suzumiya know all that when she made the suggestion...\p...\p?\nDid she say it like that in order to make 1st Lt. Hayase feel better as the unit leader...\p...\p?\e
+
+//<000010b4> 【武】「…\p…\p…\p…\p」\e
+<000010b4> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000010b5> あいつの言うとおり…\p…\pわかった風な事言っちまったのかも知れないな。\e
+<000010b5> Like she said...\p...\pI may have been putting words in her mouth.\e
+
+//<000010b6> クソ…\p…\pオレも不安で頭が回ってない…\p…\p！！\e
+<000010b6> Dammit...\p...\pI can't think straight either...\p...\p!!\e
+
+//<000010b7> いつも何か解決策を用意して超然としていた夕呼先生が、\p状況に追われて後手後手に回っているのを目の当たりにして不安なんだ…\p…\p！\e
+<000010b7> Yuuko-sensei's always had plans and counterplans prepared for everything,\p but seeing her get caught off guard over and over again is making me nervous...\p...\p!\e
+
+//<000010b8> 最後はいつも夕呼先生に頼りっぱなしだったからこうなっているんだ！\e
+<000010b8> This is what happens when I always rely on Yuuko-sensei to solve things!\e
+
+//<000010b9> こういう時こそ状況を打開するために何かをしなきゃいけないのに――何をすればいいのかわからない！\e
+<000010b9> This is exactly the kind of situation where I need to step up and do something myself――But I have no idea what!!\e
+
+//<000010ba> 何なんだこの手詰まり感は！　ここで…\p…\p終わっちまうのか！？　終わっちまっていいのか！？\e
+<000010ba> Why do I feel like we have no options!?\bAre we going...\p...\pto lose everything here?\bIs it all over already!?\e
+
+//<000010bc> 【冥夜】「――タケル、\p補給が完了したぞ」\e
+<000010bc> 【Meiya】「――Takeru,\p I have finished resupplying.」\e
+
+//<000010be> 【武】「――あ、\pああ。\nわかった」\e
+<000010be> 【Takeru】「――Ah,\p yeah.\nGot it.」\e
+
+//<000010bf> 【武】「――ヴァルキリー２よりヴァルキリー１。\nＢ小隊補給完了」\e
+<000010bf> 【Takeru】「――Valkyrie 2 to Valkyrie 1.\nB Platoon has finished resupplying.」\e
+
+//<000010c1> 【速瀬中尉】「――よし。\n指示あるまで待機」\e
+<000010c1> 【1st Lt. Hayase】「――Good.\nStand by for further instructions.」\e
+
+//<000010c3> 【武】「――了解」\e
+<000010c3> 【Takeru】「――Copy that.」\e
+
+//<000010c5> 【冥夜】「――顔色が悪いぞ。\n大丈夫か？」\e
+<000010c5> 【Meiya】「――You look unwell.\nIs everything all right?」\e
+
+//<000010c7> 【武】「――ああ、\p問題ない。\nだいたいこの状況で血色がよかったら相当な無神経だろ」\e
+<000010c7> 【Takeru】「――Yeah,\p I'm fine.\nIf I wasn't scared in this situation it'd be a bad sign.」\e
+
+//<000010c8> 【冥夜】「それもそうだ。\n仮に体調が悪かろうが、\p今は戦うしかないのだからな」\e
+<000010c8> 【Meiya】「That is true.\nNo matter what state we are in,\p we have no choice but to fight.」\e
+
+//<000010ca> 【武】「ああ」\e
+<000010ca> 【Takeru】「Yeah.」\e
+
+//<000010cb> さすが冥夜だぜ。この状況でも全く動じていない…\p…\pように見える。\n今は大丈夫な帝都だって、\pこの後どうなるかわからない状況なのに…\p…\p。\e
+<000010cb> As usual, Meiya's not disturbed by the situation at all...\p...\por so it seems.\nEven though we have no way of knowing what might happen to the capital...\p...\p\e
+
+//<000010cc> 【冥夜】「鑑の具合…\p…\p心配だな。\nせめて他の場所に移送してやれれば良かったのだが…\p…\p」\e
+<000010cc> 【Meiya】「I am concerned...\p...\pfor Kagami's well-being.\nIf only we could have moved her to some other location...\p...\p」\e
+
+//<000010ce> 【武】「ああ。だけどどこにいても同じだ。\nオレ達がここで負けたら…\p…\p安全な所なんて地球から無くなっちまう」\e
+<000010ce> 【Takeru】「Yeah, but it doesn't matter where we move her.\nIf we lose now...\p...\pthere won't be any safe places left on Earth.」\e
+
+//<000010cf> 【冥夜】「そうだな」\e
+<000010cf> 【Meiya】「Indeed.」\e
+
+//<000010d1> 【武】「これは絶対負けられない戦いなんだ。\n絶対に…\p…\p」\e
+<000010d1> 【Takeru】「This is one battle we can't afford to lose.\nWe just can't...\p...\p」\e
+
+//<00001636> くそ…\p…\pこんな分かり切った言葉だけしか出てこない…\p…\p！\nこんな言葉だけで勝てるような戦いじゃないんだ！\e
+<00001636> Dammit...\p...\pall I'm doing is stating the obvious...\p...\p!\nThese words aren't gonna help us win this!\e
+
+//<000010d5> 【武】「――！？」\n
+<000010d5> 【Takeru】「――!?」\n
+
+//<000010d6> 【冥夜】「――！！」\e
+<000010d6> 【Meiya】「――!!」\e
+
+//<000010da> 【涼宮中尉】「――隔壁が突破されましたっ！　敵がメインシャフトになだれこんでいますっ！」\e
+<000010da> 【1st Lt. Suzumiya】「――The barrier's been breached!\bEnemies are pouring down into the main shaft!」\e
+
+//<000010e4> 【オペレーター１】「――第７大隊壊滅！！　残存機は集積場に突入した第５大隊に合流！」\e
+<000010e4> 【Operator 1】「――7th Battalion destroyed!!\bAll surviving units, join the 5th Battalion now that they've entered the gathering area!」\e
+
+//<000010e5> 【ラダビノッド司令】「――第２滑走路の兵力を全て集積場に投入！　これ以上メインシャフトへの侵入を許すな！」\e
+<000010e5> 【Gen. Radhabinod】「――Send all forces on the No. 2 Runway to the gathering area! Don't let any more of them reach the main shaft!」\e
+
+//<000010e6> 【オペレーター２】「――メインシャフト第１隔壁にて１０１機械化歩兵連隊接敵！！」\e
+<000010e6> 【Operator 2】「――101st Mechanized Infantry Regiment engaging on the main shaft's first barrier!!」\e
+
+//<000010e8> 【オペレーター１】「――ブリザード中隊がメインシャフトへの追撃許可を要請しています！」\e
+<000010e8> 【Operator 1】「――Blizzard Company requesting permission to pursue the enemy down the main shaft!」\e
+
+//<000010e9> 【ラダビノッド司令】「いかん――機械化歩兵に任せろ！　縦坑での小型種相手の戦闘は戦術機に向かない！」\e
+<000010e9> 【Gen. Radhabinod】「Denied――Leave them to the mechanized infantry! TSFs aren't made to fight the smaller species in a vertical shaft!」\e
+
+//<000010eb> 【ラダビノッド司令】「――第２、\p第３隔壁に展開中の機械化歩兵連隊に通達！　即時移動命令に備えよ！」\e
+<000010eb> 【Gen. Radhabinod】「――Tell all mechanized infantry regiments on the 2nd and 3rd barrier walls to prepare to relocate immediately!」\e
+
+//<000010ec> 【オペレーター３】「――了解！」\e
+<000010ec> 【Operator 3】「――Copy that!」\e
+
+//<00001638> 【オペレーター２】「――反応炉ブロックに続く最終リフトの第１、\p第４隔壁にトラブル発生！　遠隔閉鎖できませんッ！」\e
+<00001638> 【Operator 2】「――Technical difficulties with the 1st and 4th barrier walls in the final lift to the hangar block!\bWe can't close them remotely!」\e
+
+//<00001639> 【ラダビノッド司令】「――誰でも良い！　手動で閉鎖させたまえ！」\e
+<00001639> 【Gen. Radhabinod】「――Get someone to close them manually! I don't care who!」\e
+
+//<0000163a> 【オペレーター２】「――司令、\p現状その作業に回せる余剰部隊は在りません…\p…\p！！」\e
+<0000163a> 【Operator 2】「――General,\p we don't have any units left to send down there...\p...\p!!」\e
+
+//<0000163b> 【ラダビノッド司令】「――むうッ…\p…\p！」\e
+<0000163b> 【Gen. Radhabinod】「――Mmm...\p...\p!」\e
+
+//<000010ed> 【夕呼】「司令…\p…\p」\e
+<000010ed> 【Yuuko】「General...\p...\p」\e
+
+//<000010ee> 【ラダビノッド司令】「ここまで押し込まれては…\p…\pメインシャフト第２、\p第３区画の充填封鎖もやむを得まい」\e
+<000010ee> 【Gen. Radhabinod】「After being pushed back this far...\p...\pwe have no choice but to seal off the second and third blocks of the main shaft.」\e
+
+//<000010f0> 【夕呼】「時間を稼ぐのであれば…\p…\pもうそれしか手はありません」\e
+<000010f0> 【Yuuko】「If we want to buy more time...\p...\pthat is our only option.」\e
+
+//<000010f1> 【ラダビノッド司令】「反応炉が無事であれば如何様にもできる。\n奴らの活動エネルギーが切れるのを待つしかあるまい」\e
+<000010f1> 【Gen. Radhabinod】「If they can't reach the reactor, we can win this.\nWe will simply have to wait for them to run out of energy.」\e
+
+//<000010f3> 【オペレーター１】「――第２滑走路に要塞級出現ッ！\n６体ですッ！」\e
+<000010f3> 【Operator 1】「――Fort-Class appeared on the No. 2 Runway!\nSix of them!」\e
+
+//<000010f5> 【ラダビノッド司令】「まだ残っていたのか…\p…\p！　――守備隊の移動状況はどうなっている！？」\e
+<000010f5> 【Gen. Radhabinod】「More of them...\p...\p!?\b――How many of the defending units have moved inside!?」\e
+
+//<000010f6> 【オペレーター２】「――第２滑走路守備隊は全機集積場に移動済みです！」\e
+<000010f6> 【Operator 2】「――All No. 2 Runway defending units have finished moving into the gathering area!」\e
+
+//<00001719> 【ラダビノッド司令】「ぬうう…\p…\p第２滑走路は砲撃できないというのに…\p…\p！！」\e
+<00001719> 【Gen. Radhabinod】「Uuuuu...\p...\pand we can't risk artillery on the No. 2 Runway...\p...\p!!」\e
+
+//<000010f8> 【夕呼】「…\p…\p…\p…\p」\e
+<000010f8> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<000010fa> 【オペレーター３】「――第２滑走路に光線級出現ッ！！　要塞級から吐き出されていますッ！！」\e
+<000010fa> 【Operator 3】「――Laser-Class have appeared on the No. 2 Runway!! They're coming out of the Fort-Class!!」\e
+
+//<000010fd> 【ラダビノッド司令】「――バッ…\p…\pバカなッ！」\e
+<000010fd> 【Gen. Radhabinod】「――Im-...\p...\pimpossible!」\e
+
+//<000010fe> 【オペレーター３】「――その数７…\p…\p８…\p…\p要塞級から次々に吐き出されていますッ！！」\e
+<000010fe> 【Operator 3】「――Seven of them...\p...\peight...\p...\pmore of them still coming out of the Fort-Class!」\e
+
+//<00001100> 【ラダビノッド司令】「――なッ…\p…\p何だとッ！」\e
+<00001100> 【Gen. Radhabinod】「――H-...\p...\phow could they――!?」\e
+
+//<00001101> 【夕呼】「要塞級が６体ということは…\p…\p最大で３６体の光線級がいる可能性があります」\e
+<00001101> 【Yuuko】「Six Fort-Class means...\p...\pat most they have thirty-six Laser-Class.」\e
+
+//<00001103> 【ラダビノッド司令】「ＢＥＴＡが…\p…\pＢＥＴＡが切り札を温存していたとでも言うのか…\p…\p！？」\e
+<00001103> 【Gen. Radhabinod】「Did the BETA...\p...\psave them until they wouldn't be killed by artillery...\p...\p!?」\e
+
+//<00001105> 【オペレーター１】「――メインゲート第１隔壁溶解ッ！　第２隔壁も照射を受けています！！」\e
+<00001105> 【Operator 1】「――Main gate 1st barrier melted!\b2nd barrier also receiving exposure!!」\e
+
+//<00001106> 【ラダビノッド司令】「――集積場で戦闘中の全ての部隊に警告！\nメインゲート周辺より待避！」\e
+<00001106> 【Gen. Radhabinod】「――Warn all units currently fighting in the gathering area!\nKeep them away from the main gate!」\e
+
+//<00001107> 【ラダビノッド司令】「――光線級侵入と同時に、\p敵の遮蔽物を逆手にとり接近戦にて仕留めろ！\n最優先だ！」\e
+<00001107> 【Gen. Radhabinod】「――When the Laser Class enter,\p use the enemies' bodies as cover to get up close to them!\nThat's their top priority!」\e
+
+//<00001109> 【オペレーター２】「――了解！」\e
+<00001109> 【Operator 2】「――Copy that!」\e
+
+//<0000110a> 【夕呼】「光線級による航空部隊の被害は？」\e
+<0000110a> 【Yuuko】「Have any aerial units taken damage yet?」\e
+
+//<00001708> 【ピアティフ中尉】「――１機も墜とされていません。\n光線級は全てメインゲートを攻撃しています」\e
+<00001708> 【1st Lt. Piatif】「――Not one has been shot down.\nThe Laser Class are only attacking the main gate.」\e
+
+//<0000163e> 【夕呼】「――あはははッ！　そう…\p…\pそういう事だったの！」\e
+<0000163e> 【Yuuko】「――Ahahaha! I see...\p...\pit all makes sense now!」\e
+
+//<0000110e> 【ラダビノッド司令】「博士…\p…\p？！」\e
+<0000110e> 【Gen. Radhabinod】「Professor...\p...\p!?」\e
+
+//<00001640> 【夕呼】「失礼しました。\nここまで現実を見せられないと何も確信できない、\p自分の学者癖に呆れてしまったものですから…\p…\p」\e
+<00001640> 【Yuuko】「I'm sorry.\nI was laughing at my academic need to see absolute proof of something before believing in it...\p...\p」\e
+
+//<00001111> 【ラダビノッド司令】「何かわかったのかね？」\e
+<00001111> 【Gen. Radhabinod】「Did you learn something?」\e
+
+//<00001112> 【夕呼】「今更何の役にも立ちませんが…\p…\pＢＥＴＡに戦術という概念が存在する事を今、\p確信しました」\e
+<00001112> 【Yuuko】「It's not of any use to us now...\p...\pbut this confirms that the BETA actually can think tactically.」\e
+
+//<00001113> 【夕呼】「そしてそれ以外にも、\p予てより疑問に思っていた事を解決する考えが浮かんだのです。\nそれがあまりにもおかしくて…\p…\pつい」\e
+<00001113> 【Yuuko】「And on top of that, I had a thought which answers a question we've had for a very long time.\nIt was just so weird that I...\p...\pexcuse me.」\e
+
+//<00001115> 【ラダビノッド司令】「…\p…\pむ。\nどういう事かね？」\e
+<00001115> 【Gen. Radhabinod】「...\p...\pmm.\nWhat was it?」\e
+
+//<00001644> 【夕呼】「彼等がこの襲撃の初手で見せた２回の陽動。\nこれは明らかに人類の対ＢＥＴＡ作戦を逆手に取ったものです」\e
+<00001644> 【Yuuko】「The two diversions they've shown for the first time ever during this attack are clearly them using humanity's anti-BETA tactics against us.」\e
+
+//<00001645> 【夕呼】「そして、\p打ち上げ施設や多数あるリフトには見向きもせず、\p真っ直ぐメインシャフトから反応炉を目指しています」\e
+<00001645> 【Yuuko】「And they're heading straight for the main shaft to the reactor without so much as a passing glance at all the other lifts and facilities we've built up.」\e
+
+//<00001646> 【夕呼】「これまでの闇雲な集団突撃戦術ではなく、\p明確な目的を持った用兵。\n――これは、\p帰巣本能や生存本能だけでは説明が付きません」\e
+<00001646> 【Yuuko】「This is a group of soldiers with a clear objective,\p not another disorganized group charge.\n――It can't be explained solely by their instincts to survive and return to the hive.」\e
+
+//<00001119> 【ラダビノッド司令】「うむ…\p…\p」\e
+<00001119> 【Gen. Radhabinod】「Mmm...\p...\p」\e
+
+//<0000111a> 【夕呼】「光線級が航空機よりも隔壁を優先して攻撃する事など、\pこれまでのＢＥＴＡ研究の成果を全てひっくり返すものですわ」\e
+<0000111a> 【Yuuko】「The Laser Class prioritizing barriers over aircraft invalidates all of the research we've ever done on the BETA.」\e
+
+//<0000111c> 【夕呼】「光線級の温存と投入のタイミングもまた然り。\nこれらを全て偶然と考える方に無理があります」\e
+<0000111c> 【Yuuko】「As does the timing for their deployment.\nIt's impossible to call any of that coincidental.」\e
+
+//<0000164a> 【夕呼】「ここまで来ると、\p死骸の利用すら計算していたのではないかとすら思えます。\n――いえ、\p実際そうなのでしょう」\e
+<0000164a> 【Yuuko】「At this point I have to wonder whether they were planning on using their comrades' corpses to get further inside.\n――No,\p that's exactly what's happening.」\e
+
+//<0000164b> 【ラダビノッド司令】「…\p…\p…\p…\p」\e
+<0000164b> 【Gen. Radhabinod】「...\p...\p...\p...\p」\e
+
+//<0000170c> 【夕呼】「町田の陽動に投入された突撃級は、\p恐らく全体の半数以下。\nこれまでであれば、\p全て第１陣に投入されている筈です」\e
+<0000170c> 【Yuuko】「The Destroyer Class in the Machida diversion were probably less than half their total number.\nUp until now they've always put everything into the first wave.」\e
+
+//<0000164e> 【夕呼】「使い物にならなくなっていた可能性が高いとはいえ、\p重光線級を囮にしてまで、\p要塞級や突撃級を温存しているんです」\e
+<0000164e> 【Yuuko】「Even though they were probably becoming useless,\p the fact remains they used the Heavy Laser Class as bait to save the Fort- and Destroyer-Classes.」\e
+
+//<00001650> 【夕呼】「小型種の生存率を高めるために、\p死骸の装甲殻を――特に基地内部で遮蔽物として利用する。\n最初からそのつもりだったのでしょう」\e
+<00001650> 【Yuuko】「Then those armored shells kept the smaller species alive――Especially indoors where they acted as cover.\nThat might have been their intent all along.」\e
+
+//<00001124> 【ラダビノッド司令】「しかし…\p…\pそれを戦術として成立させるには…\p…\p」\e
+<00001124> 【Gen. Radhabinod】「But...\p...\pin order to make such a tactic work...\p...\p」\e
+
+//<00001125> 【夕呼】「そうです。\n恐らく彼等はこの基地の構造を知っていたんです」\e
+<00001125> 【Yuuko】「That's right.\nThey probably knew the layout of our base.」\e
+
+//<00001127> 【ラダビノッド司令】「――ッ！」\e
+<00001127> 【Gen. Radhabinod】「――!」\e
+
+//<00001653> 【夕呼】「私達がハイヴの情報を手に入れた事で有効な戦術を組み立てられたように、\p彼等も人類に対して同じ事をした…\p…\p」\e
+<00001653> 【Yuuko】「We were able to put together effective tactics using information from the hives,\p and now they're doing the same to us...\p...\p」\e
+
+//<00001129> 【ラダビノッド司令】「――ではまさか…\p…\p『甲２１号作戦』のリーディングが逆に…\p…\p！？」\e
+<00001129> 【Gen. Radhabinod】「――Then does that mean...\p...\pthe readings from the Objective 21 Operation worked both ways...\p...\p!?」\e
+
+//<00001656> 【夕呼】「さあ。そうであればまだマシでしょう…\p…\p」\e
+<00001656> 【Yuuko】「Beats me. I hope that's all there is to it...\p...\p」\e
+
+//<0000112b> 【ラダビノッド司令】「な、\pなんだと？」\e
+<0000112b> 【Gen. Radhabinod】「Wh-\pwhat do you mean?」\e
+
+//<0000112c> 【夕呼】「ここ数年、\p彼等が人間に興味を持って何某かの研究をしている事はわかっています。\nそして、\pハイヴは相互に情報を交換しているのです」\e
+<0000112c> 【Yuuko】「We know they gained an interest in humans and have been researching them for the past few years.\nAnd the hives exchange information with each other.」\e
+
+//<0000112e> 【ラダビノッド司令】「――あり得んッ…\p…\pそんな事は絶対にあり得んッ！！」\e
+<0000112e> 【Gen. Radhabinod】「――Inconceivable!\b...\p...\pthat simply cannot be!!」\e
+
+//<0000112f> 【夕呼】「…\p…\p私の考えが間違いであって欲しいと、\p私自身思います」\e
+<0000112f> 【Yuuko】「...\p...\pI also hope I'm wrong about this.」\e
+
+//<00001130> 【ラダビノッド司令】「…\p…\p…\p…\p！」\e
+<00001130> 【Gen. Radhabinod】「...\p...\p...\p...\p!」\e
+
+//<00001131> 【夕呼】「彼等が人類を調査するために意図的に横浜を取らせたなどとは…\p…\p考えたくもありません」\e
+<00001131> 【Yuuko】「I don't want to think about the possibility...\p...\pthat they let us have Yokohama in order to perform that research.」\e
+
+//<00001132> 【ラダビノッド司令】「…\p…\p…\p…\p」\e
+<00001132> 【Gen. Radhabinod】「...\p...\p...\p...\p」\e
+
+//<00001133> 【夕呼】「日本が持ち堪えて来られたのも、\p佐渡島の結果も、\p全て彼等の実験だった可能性など…\p…\p考えたくもありません」\e
+<00001133> 【Yuuko】「I don't want to think about...\p...\pwhat our chances are if Japan lasting this long and our success at Sadogashima were all part of their experiment.」\e
+
+//<00001134> 【ラダビノッド司令】「…\p…\p…\pくッ」\e
+<00001134> 【Gen. Radhabinod】「...\p...\p...\puu!」\e
+
+//<0000171f> 【夕呼】「ただそう考えると、\p横浜ハイヴの地表構造物がフェイズ２レベルであるのに対し、\pフェイズ４規模の地下構造を持っていた事を始め――」\e
+<0000171f> 【Yuuko】「But if that is true,\p then the fact that Yokohama Hive had a phase 2 monument but phase 4 stab――」\e
+
+//<0000165a> 【夕呼】「本州侵攻最大の謎と言われる多摩川手前での南進など、\p多くの事象や現象に一定の説明が付いてしまうのも事実です」\e
+<0000165a> 【Yuuko】「As well as the "great mystery" of why they turned South at Tamagawa when invading Japan...\p...lots of things like that could be explained all at once.」\e
+
+//<00001137> 【ラダビノッド司令】「…\p…\p…\p…\p」\e
+<00001137> 【Gen. Radhabinod】「...\p...\p...\p...\p」\e
+
+//<0000165e> 【夕呼】「彼等にとって、\p『甲２１号作戦』が、\p人類調査の総決算だったのかもしれません」\e
+<0000165e> 【Yuuko】「Maybe the Objective 21 Operation was their final test of humanity.」\e
+
+//<0000165f> 【ラダビノッド司令】「最早調査が不要と判断したから…\p…\p取り返しに来たというのか…\p…\p？」\e
+<0000165f> 【Gen. Radhabinod】「So they decided there's no point in further research...\p...\pand came to retake Yokohama...\p...\p?」\e
+
+//<00001660> 【夕呼】「わかりません。\nですがこの襲撃でさえ、\p彼等の戦術テストに過ぎないのかも知れません」\e
+<00001660> 【Yuuko】「I don't know.\nFor all we know this attack is just them experimenting with new tactics.」\e
+
+//<0000113b> 【ラダビノッド司令】「…\p…\p…\p…\p」\e
+<0000113b> 【Gen. Radhabinod】「...\p...\p...\p...\p」\e
+
+//<00001662> 【夕呼】「…\p…\p…\p…\p今の話はあくまで私の推測――いえ、\pただの思いつきですわ」\e
+<00001662> 【Yuuko】「...\p...\p...\p...\pthat was all my personal hypothesis――No,\p mere speculation.」\e
+
+//<00001663> 【ラダビノッド司令】「…\p…\p…\p…\pもし、\p博士の言う通りだったとしても――」\e
+<00001663> 【Gen. Radhabinod】「...\p...\p...\p...\pProfessor,\p even if what you say is true――」\e
+
+//<0000113e> 【ラダビノッド司令】「――それでも我々は勝たなければならない！」\e
+<0000113e> 【Gen. Radhabinod】「――We must still win!」\e
+
+//<0000113f> 【夕呼】「司令…\p…\p」\e
+<0000113f> 【Yuuko】「General...\p...\p」\e
+
+//<00001140> 【ラダビノッド司令】「違うかね…\p…\p香月博士？」\e
+<00001140> 【Gen. Radhabinod】「Am I wrong...\p...\pProfessor Kouzuki?」\e
+
+//<00001141> 【夕呼】「…\p…\pその通りですわ、\p司令」\e
+<00001141> 【Yuuko】「...\p...\pnot at all,\p General.」\e
+
+//<00001665> 【ラダビノッド司令】「我々人類に、\pハイヴと猶予を与えた事を後悔させてやろうじゃないか」\e
+<00001665> 【Gen. Radhabinod】「Let's make them regret giving humanity a whole hive and years to learn from it.」\e
+
+//<00001144> 【夕呼】「はい」\e
+<00001144> 【Yuuko】「Yes.」\e
+
+//<0000170a> 【ラダビノッド司令】「――メインシャフト第２、\p第３区画を充填封鎖するッ！　機械化歩兵連隊を至急待避させろ！」\e
+<0000170a> 【Gen. Radhabinod】「――Seal the 2nd and 3rd blocks of the main shaft! Have the mechanized infantry regiments retreat immediately!」\e
+
+//<00001147> 【オペレーター１】「――了解！」\e
+<00001147> 【Operator 1】「――Copy that!」\e
+
+//<00001148> 【ラダビノッド司令】「――閉鎖区画を迂回する小型種の侵入に備え、\p基地の全要員に武器を支給しろ！」\e
+<00001148> 【Gen. Radhabinod】「――Distribute weapons to all base personnel for when the small species attempt to work their way around!」\e
+
+//<00001149> 【声】「――まって…\p…\p下さい…\p…\p！！」\e
+<00001149> 【Voice】「――Wait...\p...\pplease...\p...\p!!」\e
+
+//<00001152> 【夕呼】「――鑑ッ！？」\n
+<00001152> 【Yuuko】「――Kagami!?」\n
+
+//<00001153> 【ラダビノッド司令】「――？！」\e
+<00001153> 【Gen. Radhabinod】「――!?」\e
+
+//<00001155> 【涼宮中尉】「か…\p…\p鑑少尉…\p…\p！？」\e
+<00001155> 【1st Lt. Suzumiya】「2-...\p...\p2nd Lt. Kagami...\p...\p!?」\e
+
+//<00001157> 【夕呼】「――何やってるの！？　まだ浄化処置は終わってないはずよっ！？」\e
+<00001157> 【Yuuko】「――What're you doing here!?\bYou haven't finished purifying already, have you!?」\e
+
+//<00001158> 【純夏】「…\p…\p…\p…\pお話が…\p…\pあります」\e
+<00001158> 【Sumika】「...\p...\p...\p...\pI need...\p...\pto tell you something.」\e
+
+//<00001159> 【夕呼】「――ピアティフ！　彼女を処置室に連れて行きなさい！」\e
+<00001159> 【Yuuko】「――Piatif! Take her back to the treatment room!」\e
+
+//<0000115a> 【ピアティフ中尉】「――は！」\e
+<0000115a> 【1st Lt. Piatif】「――Ma'am!」\e
+
+//<0000115b> 【オペレーター１】「――メインシャフト第１隔壁溶解ッ！！　光線級１７体の侵入を確認ッ！！」\e
+<0000115b> 【Operator 1】「――1st main shaft barrier melted!!\bConfirmed infiltration of seventeen Laser Class!!」\e
+
+//<0000115d> 【霞】「話を聞いてあげてください…\p…\p！」\e
+<0000115d> 【Kasumi】「Please listen to her...\p...\p!」\e
+
+//<0000115f> 【夕呼】「まったく…\p…\pあんたが付いていながら…\p…\p」\e
+<0000115f> 【Yuuko】「I can't believe this...\p...\pwhy are you...\p...\p」\e
+
+//<00001160> 【ピアティフ中尉】「さあ鑑少尉、\p行きましょう…\p…\p」\e
+<00001160> 【1st Lt. Piatif】「Come, 2nd Lt. Kagami,\p let's go...\p...\p」\e
+
+//<00001162> 【純夏】「お願いです…\p…\p全部わかったんです…\p…\p話を聞いてください…\p…\p！」\e
+<00001162> 【Sumika】「Please...\p...\pI know everything now...\p...\pplease listen to me...\p...\p!」\e
+
+//<00001163> 【夕呼】「――全部…\p…\pわかった？」\e
+<00001163> 【Yuuko】「――You know...\p...\peverything?」\e
+
+//<00001164> 【オペレーター２】「――１１６機械化歩兵連隊、\p第２隔壁にて接敵！」\e
+<00001164> 【Operator 2】「――The 116th Mechanized Infantry Regiment is engaging the enemy on the 2nd barrier!」\e
+
+//<00001166> 【純夏】「今何が起こっているのか…\p…\pどうしてこうなったのか…\p…\pとにかく封鎖しちゃだめなんです…\p…\p！」\e
+<00001166> 【Sumika】「I know what's happening now...\p...\pwhy it came to this...\p...\panyway, you can't seal those walls...\p...\p!」\e
+
+//<00001167> 【ラダビノッド司令】「反応炉を充填封鎖するなというのか…\p…\pどういう事だ？！」\e
+<00001167> 【Gen. Radhabinod】「Don't seal the barriers to the reactor? ...\p...\pwhy not!?」\e
+
+//<00001169> 【夕呼】「…\p…\pわかったわ。\nピアティフ、\pもういいわ。\n席に戻りなさい」\e
+<00001169> 【Yuuko】「...\p...\pfine.\nPiatif,\p don't bother.\nReturn to your seat.」\e
+
+//<0000116a> 【ピアティフ中尉】「は！」\e
+<0000116a> 【1st Lt. Piatif】「Ma'am!」\e
+
+//<0000116b> 【純夏】「ありがとう…\p…\pございます…\p…\p」\e
+<0000116b> 【Sumika】「Thank...\p...\pyou...\p...\p」\e
+
+//<0000116c> 【オペレーター３】「――第２隔壁へのレーザー照射確認ッ！」\e
+<0000116c> 【Operator 3】「――The 2nd barrier is receiving laser exposure!」\e
+
+//<0000116e> 【夕呼】「いい？　５分だけよ？　そうしたら処置室に戻るって約束してちょうだい」\e
+<0000116e> 【Yuuko】「Okay, only five minutes now.\bPromise me you'll go back to the treatment room after that.」\e
+
+//<0000116f> 【純夏】「…\p…\pわかりました」\e
+<0000116f> 【Sumika】「...\p...\pI will.」\e//see, you thought you'd been cockblocked bad before, but no, this right here is (probably) the biggest cockblock in VN history ~IX//JESUS CHRIST if it weren't for the awesome flashy battle afterwards I would've raged so hard. - Sheeta
+

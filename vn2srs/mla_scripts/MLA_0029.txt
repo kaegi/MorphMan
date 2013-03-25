@@ -1,0 +1,1444 @@
+// Title: 望蜀の下界 12月6日（木）
+#FILENAME 462dd976
+#TYPE 1
+
+//<00000628> …\p…\p。\e
+<00000628> ...\p...\p\e
+
+//<00000629> …\p…\p…\p…\p。\e
+<00000629> ...\p...\p...\p...\p\e
+
+//<0000062a> 【声】「…\p…\pける…\p…\pん…\p…\p」\e
+<0000062a> 【Voice】「...\p...\pkeru...\p...\pan...\p...\p」\e
+
+//<0000062b> …\p…\pん…\p…\p…\p…\p\e
+<0000062b> ...\p...\pmm...\p...\p...\p...\p\e
+
+//<0000062c> 【声】「時間…\p…\pす…\pけるさ…\p…\p」\e
+<0000062c> 【Voice】「Time...\p...\pd-...\p...\pkeru-sa...\p...\p」\e
+
+//<0000062d> 【武】「…\p…\p…\p…\pん？」\e
+<0000062d> 【Takeru】「...\p...\p...\p...\pmm?」\e
+
+//<0000062e> 【壬姫】「起きて下さい…\p…\pたけるさん？」\e
+<0000062e> 【Miki】「Please wake up...\p...\pTakeru-san?」\e
+
+//<0000062f> 【武】「ああ、\pもう大丈夫だ…\p…\p起きたよ」\e
+<0000062f> 【Takeru】「Aaah,\p I'm fine now...\p...\pI'm awake.」\e
+
+//<00000630> 【壬姫】「交代１５分前です」\e
+<00000630> 【Miki】「Your shift's in fifteen minutes.」\e
+
+//<00000631> 【武】「ああ、\pありがとう。\nたまも遠慮無く仮眠取ってくれ」\e
+<00000631> 【Takeru】「Aaah,\p thank you.\nYou go take a nap too, Tama.」\e
+
+//<00000632> 【壬姫】「ホントに目さめましたか～？」\e
+<00000632> 【Miki】「Are you sure you're awake～?」\e
+
+//<00000633> 【武】「大丈夫だって」\e
+<00000633> 【Takeru】「I am, I am.」\e
+
+//<000071e6> 【壬姫】「じゃあ…\p…\p０５珠瀬、\p２時２分より待機に入ります」\e
+<000071e6> 【Miki】「Okay...\p...\p05, Tamase,\p entering standby at 02:02 hours.」\e
+
+//<00000635> 【武】「了解」\e
+<00000635> 【Takeru】「Copy that.」\e
+
+//<00000636> 【武】「…\p…\pあ゛～～～」\e
+<00000636> 【Takeru】「...\p...\pAAAAAAAAAH.」\e
+
+//<0000171f> とは言ったものの…\p…\p全身だるいな…\p…\p。\e
+<0000171f> I'm awake...\p...\pbut I feel so heavy...\p...\p\e
+
+//<00000638> …\p…\p…\p…\p。\e
+<00000638> ...\p...\p...\p...\p\e
+
+//<00000639> …\p…\pあと１５分ある。\e
+<00000639> ...\p...\pfifteen more minutes.\e
+
+//<0000063a> 外の冷気に当たって目を醒まそう…\p…\p。\e
+<0000063a> Maybe the cold air will help me wake up...\p...\p\e
+
+//<0000063b> 【武】「冥夜、\pたま」\e
+<0000063b> 【Takeru】「Meiya,\p Tama.」\e
+
+//<0000063c> 【冥夜】「どうした？」\e
+<0000063c> 【Meiya】「What is it?」\e
+
+//<0000063d> 【壬姫】「――はい」\e
+<0000063d> 【Miki】「――Yes?」\e
+
+//<0000063e> 【武】「眠気覚ましに、\pちょっと機体を離れる。\nバックアップ宜しく」\e
+<0000063e> 【Takeru】「I'm gonna get out for a minute to try and wake myself up.\p Watch my back.」\e
+
+//<0000063f> 【冥夜】「わかった…\p…\pあまり離れるな。\n珠瀬の休憩に影響が出る」\e
+<0000063f> 【Meiya】「Understood...\p...\pdo not stray too far.\nIt will disturb Tamase's break.」\e
+
+//<00000640> 【武】「ああ、\pわかってる。\nちょっとスッキリしたいんだ」\e
+<00000640> 【Takeru】「Yeah,\p I know.\nI just wanna get some fresh air.」\e
+
+//<00000641> 【壬姫】「あ、\pちょっとくらいなら、\p私、\p大丈夫ですよ」\e
+<00000641> 【Miki】「Ah,\p I'm fine if it's just for a few minutes.」\e
+
+//<00000642> 【武】「いや、\pすぐ戻るよ。\n遠隔制御の二次優先は冥夜にしておく」\e
+<00000642> 【Takeru】「No,\p I'll be right back.\nI'll set the remote controls to give Meiya second priority.」\e//intent appears to be Takeru gets first priority since its his TSF and Meiya second in case something happens to him, is that clear? ~IX //yes - Sheeta
+
+//<00000643> 【冥夜】「了解」\e
+<00000643> 【Meiya】「Copy that.」\e
+
+//<00000644> 【壬姫】「行ってらっしゃい」\e
+<00000644> 【Miki】「See you later.」\e
+
+//<000015e0> 強化装備のおかげで寒くはないが、\p頭と顔にはビシビシ冷気が来てる。\nおかげでスッキリした。\e
+<000015e0> The Armored Suit's keeping me nice and warm,\p but I can still feel the cold air on my face.\nThis really is waking me up.\e
+
+//<00005513> …\p…\p…\p…\pん？\n…\p…\pていうか、\p冷気でスッキリしたいなら、\p強化装備の温度調整をすれば良かったって事か。\n頭回ってねえな。\e
+<00005513> ...\p...\p...\p...\phm?\n...\p...\pactually,\p if I really wanted to wake myself up,\p I should've just disabled my suit's temperature control.\p Duh...\p...\p\e
+
+//<00000648> 【武】「…\p…\p…\p…\p」\e
+<00000648> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000649> 箱根か…\p…\p。\e
+<00000649> Hakone...\p...\p\e
+
+//<0000064a> 夏休みの林間学校で小学校の時に来て以来かな…\p…\p。\e
+<0000064a> I haven't been here since that summer camp in elementary school...\p...\p\e
+
+//<0000064b> 土産と称して買ったお菓子を宿舎で食って…\p…\p\e
+<0000064b> I remember buying some snacks here, saying they were for a friend back home...\p...\p\e
+
+//<000055d7> それが先生にばれて、\p全員廊下に正座させられたっけ…\p…\p。\e
+<000055d7> Then Sensei caught me eating them,\p and we all had to prostrate ourselves in the corridor...\p...\p\e
+
+//<000055de> 【武】「…\p…\pふ…\p…\pふふふ」\e
+<000055de> 【Takeru】「...\p...\phu...\p...\phuhuhu.」\e
+
+//<0000064e> そういえば富士山に登る前、\pその場のノリで木の杖買ったっけな。\nでも家に帰って我に返って…\p…\p。\n結局あの杖、\pどうしたっけなぁ…\p…\p。\e
+<0000064e> Oh yeah,\p I randomly bought that wooden staff before we climbed Mt. Fuji.\nAnd I didn't realize how dumb that was until I got home...\p...\p\nI wonder what happened to it...\p...\p\e
+//"dumb" to buy it, or dumb that he forgot it or something?-Spin //buy it ~IX
+
+//<0000064f> 【武】「…\p…\p…\p…\p」\e
+<0000064f> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000650> …\p…\p純夏。\e
+<00000650> ...\p...\pSumika.\e
+
+//<000015e2> オレ、\pこんな形で…\p…\pもう１度箱根に来ることになるなんて…\p…\p思いもしなかったよ。\e
+<000015e2> I never thought...\p...\pI'd come back to Hakone...\p...\plike this.\e
+
+//<00000652> 【武】「…\p…\p…\p…\p」\e
+<00000652> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000653> あと１０分ぐらいあるな…\p…\p。\e
+<00000653> I should have ten more minutes left...\p...\p\e
+
+//<00007223> せっかくだ…\p…\p離城を近くで見ておくか。\e
+<00007223> While I'm out here...\p...\pI may as well take a closer look at the fortress.\e
+//Just remember that "may" is present/future tense while "might" is past for stuff like this.-Spin
+
+//<000015e3> 昔見た記憶はないし…\p…\pっていうか、\pそもそも『元の世界』にこんなものがあったかどうかも怪しいけど。\e
+<000015e3> I don't remember looking at it back then...\p...\pwell,\p I doubt it was in my world to begin with.\e
+
+//<00007225> 斯衛連隊が命がけで守った場所…\p…\p。\e
+<00007225> The place that Honor Guard battalion risked their lives to protect...\p...\p\e
+
+//<00000657> 【武】「…\p…\p…\p…\p」\e
+<00000657> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000753c> オレには無いものを…\p…\p『この世界』の日本人の『立脚点』のひとつを見ておくことは――\e
+<0000753c> It might be nice...\p...\pto see the kind of thing Japanese people in this world depend on――\e
+
+//<00000659> 【武】「――ッ！！」\e
+<00000659> 【Takeru】「――!!」\e
+
+//<0000065a> ――明らかに枯れ枝を踏み折った音だ！！\e
+<0000065a> ――I heard someone step on a dry leaf just now.\e//lit. "That was clearly the sound of stepping on a dry leaf!!" felt narmy as an exclamation
+
+//<0000065b> 敵か――？\e
+<0000065b> An enemy――?\e
+
+//<0000065c> 咄嗟に伏せはしたが――オレは見つかっている？\e
+<0000065c> I fell to the ground the moment I heard it――But they might've already seen me...\p...\p\e
+
+//<0000065d> …\p…\pホルスターのスナップが…\p…\p重い…\p…\p！！\e
+<0000065d> ...\p...\pcome on...\p...\pgotta unhook...\p...\pmy holster!!\e
+
+//<0000065e> オレは拳銃で人を撃つのか…\p…\p？\e
+<0000065e> Am I gonna have to shoot someone with this...\p...\p?\e
+
+//<0000065f> ――！！\e
+<0000065f> ――!!\e
+
+//<00000660> クソッ――しまった！！　初弾装填してねえ！\e
+<00000660> Dammit――Crap!! This thing isn't cocked!\e
+
+//<00000661> 機体から離れる時やっておけば！！\e
+<00000661> I should've done that when I left my TSF!!\e
+
+//<00000662> ここでやったら…\p…\p位置がばれる…\p…\p！？\e
+<00000662> If I do it now...\p...\pwill I give myself away...\p...\p!?\e
+
+//<00000663> ――あそこまで走るか？\e
+<00000663> ――Can I run that far?\e
+
+//<000015e4> 強化装備の上からなら小銃弾の直撃でも骨折ぐらいで済む…\p…\p。\e
+<000015e4> Since I'm in my Armored Suit, even a point-blank shot shouldn't do more than break a few bones...\p...\p\e
+
+//<0000479d> でも…\p…\pもしそれが頭に当たったら…\p…\p？\nもっと口径の大きな火器を持っていたら…\p…\p？\e
+<0000479d> But...\p...\pif they hit my head...\p...\por if they have a large-caliber weapon...\p...\p\e
+
+//<00000667> ――どうする？\e
+<00000667> ――What should I do?\e
+
+//<00000668> 移動している。\e
+<00000668> He's moving.\e
+
+//<00000669> こっちには気付いてないのか…\p…\p？\e
+<00000669> So he didn't see me...\p...\p?\e
+
+//<0000066a> そうだ…\p…\p！\e
+<0000066a> I know...\p...\p!\e
+
+//<0000066b> 遠隔制御で吹雪の暗視モニターにリンクすれば…\p…\p\e
+<0000066b> If I remotely link up with my Fubuki's night vision monitor...\p...\p\e
+
+//<0000066c> …\p…\p…\p…\p！？\e
+<0000066c> ...\p...\p...\p...\p!?\e
+
+//<0000066d> あれは…\p…\pふたりいるのか？\e
+<0000066d> There's...\p...\ptwo of them?\e
+
+//<0000479f> …\p…\p武装はしていない…\p…\p民間人か！？\n――こんな所に？\e
+<0000479f> ...\p...\pthey're unarmed...\p...\pcivilians!?\n――Way out here?\e
+
+//<0000066f> …\p…\p不法帰還民か？\e
+<0000066f> ...\p...\psquatters maybe?\e
+
+//<00000670> 【武】「…\p…\p…\p…\pふぅ」\e
+<00000670> 【Takeru】「...\p...\p...\p...\phuu...\p...\p」\e
+
+//<00000671> 驚かすなよ…\p…\p。\e
+<00000671> Don't scare me like that...\p...\p\e
+
+//<00000672> …\p…\p…\p…\p。\e
+<00000672> ...\p...\p...\p...\p\e
+
+//<00000673> とにかく、\p避難させないと…\p…\p。\e
+<00000673> Anyway,\p I've gotta get them out of here...\p...\p\e
+
+//<00000674> 【武】「０６白銀より０２――」\e
+<00000674> 【Takeru】「06, Shirogane to 02――」\e
+
+//<00000675> ――あ！\e
+<00000675> ――Ah!\e
+
+//<00000676> …\p…\p何で最初から無線連絡しないんだよオレ！？\e
+<00000676> ...\p...\pwhy didn't I call them in the first place!?\e
+
+//<00000677> くっそ…\p…\pパニクってたんだ！！\e
+<00000677> Dammit...\p...\pI wasn't thinking straight!!\e
+
+//<00000678> これが…\p…\p実戦経験のない弱みか…\p…\p！！\e
+<00000678> So this is...\p...\pthe weakness of having no combat experience...\p...\p\e
+
+//<00000679> 【武】「――止まれッ！！」\e
+<00000679> 【Takeru】「――Freeze!!」\e//Ha, HAHAHAAHHAA. I GET IT. CAUSE IT'S SNOWING. YOU SO FUNNY.
+
+//<0000067a> 【武】「両手を頭の後ろにつけて…\p…\pゆっくりこっちを向いて…\p…\p」\e
+<0000067a> 【Takeru】「Put your hands behind your head...\p...\pand turn slowly toward me...\p...\p」\e
+//I feel bad that I know this.-Spin
+
+//<0000067b> 【女】「なッ！　――銃を向けるとは何事です！」\e
+<0000067b> 【Woman】「Wha―!?\b――How dare you point a gun at us!?」\e
+
+//<000015e7> 【武】「ご存じだと思いますが、\pここは民間人の立ち入りが禁じられている第１種危険地帯です。\nあなた方は日本国民ですね？」\e
+<000015e7> 【Takeru】「This is a highly unsafe area.\bCivilian trespassing is prohibited.\nYou are Japanese civilians, yes?」\e
+
+//<0000067d> 【女】「ひかえなさい無礼者！」\e
+<0000067d> 【Woman】「Step back, you insolent man!」\e
+
+//<0000067e> 何だよさっきから…\p…\p！\e
+<0000067e> What's her problem...\p...\p?\e
+
+//<000015e8> 【武】「とにかく、\pここから退去して頂かなければなりません。\n日本政府の担当官庁が引き受けに来るまで、\pあなた方の身柄は我々が保護します」\e
+<000015e8> 【Takeru】「Anyway,\p I need you to both leave this place.\nUntil the appropriate government authorities can be contacted,\p I'll take custody of you.」\e
+//we'll take custody of you - Makoto //I *knew* I was missing a good formal word for this ~IX
+
+//<000015e9> 【女】「おまえは帝国軍ではないのですね？　答えなさい！」\e
+<000015e9> 【Woman】「You are not in the Imperial Army, are you?\bAnswer me!」\e
+
+//<00000681> おいおい、\p逆に尋問かよ。\n気の強いことで…\p…\p。\e
+<00000681> Hey now,\p you're asking me questions?\nYou've got some nerve...\p...\p\e
+
+//<00000682> 【武】「０６白銀よりバックアップ各機――不法帰還民と思わしき２名を確保…\p…\p」\e
+<00000682> 【Takeru】「06, Shirogane to rest of Bravo team――I've secured what appear to be two squatters...\p...\p」\e//lit. "all backup units" which has to mean Meiya and Tamase
+
+//<0000753d> 【冥夜】「０２了解…\p…\p０５狙撃態勢を維持」\e
+<0000753d> 【Meiya】「02, copy that...\p...\p05, maintain sniping position.」\e
+
+//<00000684> 【壬姫】「０５了解」\e
+<00000684> 【Miki】「05, copy that.」\e
+
+//<000015ea> 【武】「護送車輌の手配はまだか？」\e
+<000015ea> 【Takeru】「Do we have any vehicles for them?」\e
+
+//<000015eb> 【冥夜】「戦況に変化があったらしい。\nＣＰは現在、\p対応を最優先処理中。\n指示を待て」\e
+<000015eb> 【Meiya】「The situation seems to have changed.\nThe command post will only take top priority transmissions.\nWe must wait for further orders.」\e
+
+//<00000687> 戦況に変化…\p…\p？\e
+<00000687> The situation changed...\p...\p?\e
+
+//<00000688> 帝都でまた動きがあったのか？\e
+<00000688> Did something happen in the capital again?\e
+
+//<000015ec> 【冥夜】「榊と私は今からＣＰに出頭する。\nバックアップは０５に一任」\e
+<000015ec> 【Meiya】「Sakaki and I will fall back to the command post.\n05 will remain as support.」\e
+
+//<0000068a> 【壬姫】「０５了解」\e
+<0000068a> 【Miki】「05, copy that.」\e
+
+//<0000068b> 【冥夜】「タケル…\p…\p気を緩めるな？」\e
+<0000068b> 【Meiya】「Takeru...\p...\pdo not let your guard down.」\e
+
+//<0000068c> 【武】「０６了解」\e
+<0000068c> 【Takeru】「06, copy that.」\e
+
+//<0000068d> 【女】「答えなさいと言っているでしょう！」\e
+<0000068d> 【Woman】「Answer me already!」\e
+
+//<0000068e> うへえ…\p…\p。\e
+<0000068e> Geez...\p...\p\e
+
+//<0000068f> 当分この人達のおもりかよ…\p…\p。\e
+<0000068f> Now I have to watch her...\p...\p?\e
+
+//<00000690> 【女】「――！　あれはっ…\p…\p！」\e
+<00000690> 【Woman】「――! That is...\p...\p!」\e
+
+//<00000691> 【武】「あれは国連軍機です。\nあなた達に危害は加えません」\e
+<00000691> 【Takeru】「A UN Army TSF.\nIt won't harm you.」\e
+
+//<00000692> 【女】「国連…\p…\p？」\e
+<00000692> 【Woman】「The UN...\p...\p?」\e
+
+//<000015ed> 【武】「そうです、\p国連軍所属の戦術機です。\n作戦行動中ですのでこれ以上は教えられませんが…\p…\p」\e
+<000015ed> 【Takeru】「That's right,\p we're from the United Nations.\nWe're on an operation, so I can't tell you anything more...\p...\p」\e
+
+//<00000694> 【女】「――無礼者！　なんですかその――ッ」\e
+<00000694> 【Woman】「――Such insolence! Why are you――!」\e
+
+//<000015ee> 【女の子】「――おやめなさい」\e
+<000015ee> 【Girl】「――Please be silent.」\e
+
+//<00000696> ――！？\e
+<00000696> ――!?\e
+
+//<000015ef> 【女の子】「黒い強化装備は国連軍衛士の証…\p…\p恐らくこの者は――」\e
+<000015ef> 【Girl】「The black Armored Suit proves that this man is a UN Army Eishi...\p...\phe is most likely――」\e
+
+//<00000697> 【武】「――め、\p冥夜ッ！？」\e
+<00000697> 【Takeru】「――M-\pMeiya!?」\e
+
+//<00000698> 【女の子】「…\p…\p…\p…\pめい…\p…\pや？」\e
+<00000698> 【Girl】「...\p...\p...\p...\pMei...\p...\pya?」\e
+
+//<00005519> 【女】「――は、\p畏れながらこの者の…\p…\p」\e
+<00005519> 【Woman】「――We cannot allow this man to...\p...\p」\e//"yes" feels off for the は, and "Her Highness" would make it way too obvious ~IX
+
+//<0000069a> 冥夜…\p…\pのわけがない…\p…\pいま交信したばっかりだ！\e
+<0000069a> It can't be...\p...\pMeiya...\p...\pI was just talking to her!\e
+
+//<0000069b> 【女の子】「よい、\p下がりなさい」\e
+<0000069b> 【Girl】「It is all right,\p step back.」\e
+
+//<0000069c> 【武】「え…\p…\p？」\e
+<0000069c> 【Takeru】「Eh...\p...\p?」\e
+
+//<0000069d> その口調…\p…\p\e
+<0000069d> But she's talking the same way...\p...\p\e
+
+//<0000069e> …\p…\pなんだよ…\p…\p何がどうなってんだよ…\p…\p…\p？\e
+<0000069e> ...\p...\pwhat the hell...\p...\pwhat's going on...\p...\p...\p?\e
+
+//<0000069f> 【壬姫】「――たけるさん気をつけてッ！」\e
+<0000069f> 【Miki】「――Takeru-san, watch out!」\e
+
+//<000006a0> 【武】「――え？」\e
+<000006a0> 【Takeru】「――Eh?」\e
+
+//<000006a1> 【声】「――誰かと思えば、\p白銀武」\e
+<000006a1> 【Voice】「――So it's you,\p Shirogane Takeru.」\e
+
+//<000006a2> 【武】「――鎧衣課長！？」\e
+<000006a2> 【Takeru】「――Section Chief Yoroi!?」\e
+
+//<000006a3> …\p…\pなぜここに！？\e
+<000006a3> ...\p...\pwhat're you doing here!?\e
+
+//<000006a4> 【武】「何やってんですかこんなところで…\p…\p！？」\e
+<000006a4> 【Takeru】「What are you doing all the way out here...\p...\p!?」\e
+
+//<000006a5> ていうか…\p…\pどうやってギリギリまで近づいてきたんだこの人…\p…\p？\e
+<000006a5> And...\p...\phow did you get that close to me...\p...\p?\e
+
+//<000015f0> 【鎧衣】「この場所に君たちがいるとは…\p…\pいやはや、\pさすがは香月博士だと言うべきか…\p…\p」\e
+<000015f0> 【Yoroi】「For you of all people to be waiting here...\p...\pwell,\bI suppose I should thank Professor Kouzuki...\p...\p」\e
+
+//<000006a7> 【武】「いったい何がさすがなんですか！？」\e
+<000006a7> 【Takeru】「Thank her for what!?」\e
+
+//<000006a8> 【鎧衣】「その前に…\p…\pこれを何とかしてもらえると有り難いのだが」\e
+<000006a8> 【Yoroi】「Before I answer...\p...\pI'd be much obliged if you could point that thing somewhere else.」\e
+
+//<000006a9> 【武】「白銀より０５…\p…\p心配ない。\nこの人は大丈夫だ」\e
+<000006a9> 【Takeru】「Shirogane to 05...\p...\pdon't worry,\p these three are safe.」\e
+
+//<000006aa> 【壬姫】「…\p…\p０５了解」\e
+<000006aa> 【Miki】「...\p...\p05, copy that.」\e
+
+//<000006ab> 【鎧衣】「はっはっはっ…\p…\p３６ミリチェーンガンで照準されると、\pさすがに生きた心地がしないねぇ…\p…\p」\e
+<000006ab> 【Yoroi】「Ha! Ha! Ha! ...\p...\phaving a 36mm chain gun pointed at me really makes me feel alive...\p...\p」\e
+
+//<000006ac> 【女の子】「鎧衣…\p…\pこの者、\pそなたの知り合いですか？」\e
+<000006ac> 【Girl】「Yoroi...\p...\pare you acquainted with this one?」\e
+
+//<000015f1> 【鎧衣】「はい。白銀と申しまして…\p…\p無礼な変わり者ですが、\p平にご容赦を」\e
+<000015f1> 【Yoroi】「Yes. He's called Shirogane...\p...\phe may be rude and strange,\p but treat him fairly.」\e
+
+//<000006ae> 【武】「鎧衣課長…\p…\p質問に答えて下さい！　あなた達はこんなところで何をやってるんですかッ！？\e
+<000006ae> 【Takeru】「Section Chief Yoroi...\p...\panswer my question!\bWhat are you three doing out here!?」\e//lol the closing bracket was missing ~IX
+
+//<000006af> 【鎧衣】「ほう…\p…\p君はこの御方を知らないと言うのかね…\p…\p？」\e
+<000006af> 【Yoroi】「Oooh...\p...\pI take it you don't know who this is...\p...\p?」\e//"this" sounds kinda unrespectful. -Shikiller //not imo - Sheeta //I see what you mean, but all the workarounds would make him sound like Yuuhi's uncle so not messing with it ~IX
+
+//<000006b0> 【武】「え…\p…\p」\e
+<000006b0> 【Takeru】「Eh...\p...\p?」\e
+
+//<000006b1> 冥夜にそっくりで…\p…\pこの物腰…\p…\p\e
+<000006b1> Her mannerisms...\p...\pare just like Meiya's...\p...\p\e
+
+//<000006b2> まさか…\p…\p！？\e
+<000006b2> She can't be...\p...\p!!\e
+
+//<00007229> 【女】「煌武院悠陽殿下に在らせられるぞ！　無礼者！！」\e
+<00007229> 【Woman】「You are in the presence of Her Highness Koubuin Yuuhi! Ignorant man!」\e
+
+//<0000722c> 【武】「――こうぶいんゆうひ…\p…\p？」\e
+<0000722c> 【Takeru】「――Koubuin Yuuhi...\p...\p?」\e
+
+//<0000722e> 【鎧衣】「日本帝国国務全権代行である政威大将軍殿下を呼び捨てかね…\p…\pシロガネタケル？」\e
+<0000722e> 【Yoroi】「Did you just address the Grand Shogun, the woman who has full authority over all affairs in the Japanese Empire, with no honorific whatsoever...\p...\pShirogane Takeru?」\e
+
+//<00007231> ――せっ…\p…\p政威大将軍ッ！？　うそだろう！？\nだいたい将軍って…\p…\pこんな普通の格好してるのか？\e
+<00007231> ――Th-...\p...\pthe Grand Shogun!? No way!?\nWhy would the Shogun...\p...\pbe walking around in such an ordinary outfit?\e
+
+//<000006b8> 日本人だったら知らないのはまずいよな…\p…\pごまかさなきゃ。\e
+<000006b8> Wait, a Japanese man who doesn't know her is just too suspicious...\p...\p\b...\p...\pI've gotta make up an excuse.\e
+
+//<00007233> 【武】「いや…\p…\pあまりに普通の格好なんで…\p…\p」\e
+<00007233> 【Takeru】「Sorry...\p...\pshe was dressed normally, so...\p...\p」\e
+
+//<000006b9> 【女】「カモフラージュのためです！　そんなこともわからないのですかッ！」\e
+<000006b9> 【Woman】「As camouflage of course!\bYou could not even figure that out!?」\e
+
+//<000006ba> 【武】「なるほど…\p…\p」\e
+<000006ba> 【Takeru】「That makes sense...\p...\p」\e
+
+//<000006bb> 【悠陽】「やはり…\p…\pおかしいでしょうか…\p…\p？」\e
+<000006bb> 【Yuuhi】「Is it truly...\p...\pso strange...\p...\p?」\e
+
+//<00007235> 【女】「いえ、\p良くお似合いです殿下」\e
+<00007235> 【Woman】「Not at all,\p it suits Your Highness wonderfully.」\e
+
+//<000006bd> 【鎧衣】「ははは…\p…\pこの者、\pなにぶん国連軍所属です故、\pお許しを」\e
+<000006bd> 【Yoroi】「Hahaha...\p...\pthis man is in the UN Army after all,\p forgive him.」\e
+
+//<000006be> 【悠陽】「よい。…\p…\pそれより鎧衣」\e
+<000006be> 【Yuuhi】「It is all right...\p...\pnow, Yoroi.」\e
+
+//<000015f2> 【鎧衣】「そうでした…\p…\p白銀武、\pＨＱはどこだね？」\e
+<000015f2> 【Yoroi】「That's right...\p...\pShirogane Takeru,\p where's your HQ?」\e
+
+//<000006c0> 【武】「え…\p…\p小田原西インター跡ですけど…\p…\p」\e
+<000006c0> 【Takeru】「Eh? ...\p...\pit's in the Odawara West Interchange ruins...\p...\pbut why?」\e//crap, this road name hasn't come up before ~IX
+
+//<000015f3> 【鎧衣】「まずいな…\p…\pＣＰは？」\e
+<000015f3> 【Yoroi】「Not good...\p...\pyour command post?」\e
+
+//<000006c2> 【武】「…\p…\p旧関所跡です」\e
+<000006c2> 【Takeru】「...\p...\pthe old checking station.」\e
+
+//<000006c3> 【鎧衣】「…\p…\p…\p…\pふうむ」\e
+<000006c3> 【Yoroi】「...\p...\p...\p...\phmmmm...\p...\p」\e
+
+//<00007238> 将軍がここにいて、\p鎧衣課長がいて…\p…\p何がいったいどうなっているんだよ！？\e
+<00007238> The Shogun's here,\p with Section Chief Yoroi...\p...\pwhat the hell's going on!?\e
+
+//<0000723a> しかも将軍って…\p…\p女の子で…\p…\p冥夜ソックリで…\p…\p！！\e
+<0000723a> But why does the Shogun...\p...\plook so young...\p...\pand exactly like Meiya!?\e//lit. "a girl, and looks like Meiya" but because "Her Highness" is gendered in English we'll be wiping out references to his surprise at her gender (and maybe add one the first time someone says "Her Highness") ~IX//you could add surprise at her being such a young woman, it would be reasonable for him to know the Shogun was a woman, but he would be surprised to learn she's a girl his age. -Shikiller //now there's an idea ~IX
+
+//<000072d8> 【鎧衣】「畏れながら殿下、\pどうかこの者と御一緒下さい。\n多少窮屈ではございましょうが、\p緊急事態故ご容赦の程を…\p…\p」\e
+<000072d8> 【Yoroi】「My apologies, Your Highness,\p but please go with this man.\p He may not be the best escort,\p but since this is an emergency...\p...\p」\e
+
+//<000006c7> 【悠陽】「わかりました…\p…\p白銀とやら、\p面倒をかけます」\e
+<000006c7> 【Yuuhi】「I understand...\p...\pI shall impose upon this 'Shirogane.'」\e
+
+//<000006c8> 【武】「――は？　オ、\pオレですかッ！？」\n
+<000006c8> 【Takeru】「――Huh? M-\pme!?」\n
+
+//<000006c9> 【女】「――鎧衣課長！　何をお考えです！？」\e
+<000006c9> 【Woman】「――Section Chief Yoroi! What are you thinking!?」\e
+
+//<0000723f> 【鎧衣】「戦術機のコクピットなら、\p殿下をお乗せすることは可能だろう？」\e
+<0000723f> 【Yoroi】「Is it not possible to have Her Highness join you in your TSF cockpit?」\e
+
+//<000006cb> 【武】「いや、\pだからって…\p…\p危険じゃないですか！」\e
+<000006cb> 【Takeru】「Well,\p probably...\p...\pbut isn't it dangerous!?」\e
+
+//<00007242> そんなあっさり決めて良いのかよ？　将軍もやけにあっさりだし…\p…\pいいのかよ！？\e
+<00007242> Can you make a decision like that on the fly?\bThe Shogun seems alright with it, but...\p...\pare you sure you can do that!?\e
+
+//<000006cd> 【鎧衣】「この状況で、\p戦術機のコクピット以上に安全な場所はないと思うがね、\p白銀武？」\e
+<000006cd> 【Yoroi】「In this situation,\p I think a TSF cockpit is about the safest place imaginable.\p Wouldn't you agree, Shirogane Takeru?」\e
+
+//<000006ce> た、\p確かにそうだけど…\p…\p。\e
+<000006ce> H-\phe's got a point...\p...\p\e
+
+//<000015f5> 【女】「致し方ありません」\e
+<000015f5> 【Woman】「If you insist.」\e
+
+//<000006d0> 【武】「…\p…\pわ、\pわかりましたよ」\e
+<000006d0> 【Takeru】「...\p...\po-\pokay then.」\e
+
+//<00007244> 【鎧衣】「殿下、\p宜しいですか？」\e
+<00007244> 【Yoroi】「Your Highness,\p is that alright?」\e
+
+//<000015f7> 【悠陽】「はい、\pそなたに任せます」\e
+<000015f7> 【Yuuhi】「Yes,\p I trust your decision.」\e
+
+//<000015f8> 【鎧衣】「そのまま横浜基地まで、\p行かれるのが宜しいかと…\p…\p侍従長、\pあなたは指揮戦闘車に」\e
+<000015f8> 【Yoroi】「It would be best to take her with you to Yokohama Base...\p...\pGrand Chamberlain,\p you should go to the command vehicle.」\e
+
+//<00007247> 【侍従長】「わかりました。\n白銀とやら…\p…\p殿下をしっかりとお守りするのですよ！？」\e
+<00007247> 【Grand Chamberlain】「I understand.\nShirogane...\p...\pprotect Her Highness, understand?」\e
+
+//<000006d5> 【武】「はい…\p…\p」\e
+<000006d5> 【Takeru】「Yes...\p...\p」\e
+
+//<000006d6> 【悠陽】「鎧衣、\pそなたはどうするのですか？」\e
+<000006d6> 【Yuuhi】「Yoroi,\p what will you do?」\e
+
+//<0000724a> 【鎧衣】「殿下、\p私にはもうひと仕事残っていますので…\p…\pしばらくしたら、\p失礼させていただきます。\n白銀武、\p殿下を頼んだぞ」\e
+<0000724a> 【Yoroi】「Your Highness,\p I have one other job left to perform...\p...\pso I will be taking my leave for a while.\nShirogane Takeru,\p take care of Her Highness.」\e
+
+//<00007524> 【武】「――鎧衣課長ッ！？」\e
+<00007524> 【Takeru】「――Section Chief!?」\e//honorific felt like overkill here ~IX//too casual.-Shikiller //good compromise, leaving it ~IX
+
+//<0000724d> なんだよ…\p…\p人に将軍を押しつけておいて無責任だろそれ！？\e
+<0000724d> What the hell...\p...\pyou're gonna throw the Shogun at me and just run off!?\e
+
+//<000006da> しかも、\p何の説明も無しかよ！\e
+<000006da> And without explaining anything!?\e
+
+//<000006db> 【悠陽】「鎧衣、\pここまで本当に大儀でした…\p…\pそなたの武運を祈っています」\e
+<000006db> 【Yuuhi】「Yoroi,\p I am greatly indebted to you...\p...\pmay fortune favor your mission.」\e//"blade" is probably inaccurate, so... ~IX
+
+//<000006dc> 【鎧衣】「ありがとうございます」\e
+<000006dc> 【Yoroi】「Thank you very much.」\e
+
+//<000006dd> 【悠陽】「我が臣を失ったという知らせは…\p…\pこれ以上聞きたくないのです。\nどうか気をつけて」\e
+<000006dd> 【Yuuhi】「I do not wish...\p...\pfor any more of my retainers to perish.\p Please, take care.」\e//if it wasn't clear she meant Yoroi specifically, change "retainers" to something else ~IX
+
+//<00007252> 【鎧衣】「…\p…\p斬った者斬られた者、\p共に臣下であります故、\p殿下の悲しみは如何ばかりかと存じますが…\p…\p」\e
+<00007252> 【Yoroi】「...\p...\pthose who fell and those who cut them down are all loyal servants of yours,\p so Your Highness must no doubt be in great pain...\p...\p」\e
+
+//<000015fb> 【鎧衣】「国の乱れを憂う若者達が、\pそれを正すべく、\p止むにやまれず立ち上がったと言うのが、\p此度の仕儀の真相」\e
+<000015fb> 【Yoroi】「This affair is nothing more than young men and women who lamented the nation's troubles,\p but were unable to remain still and rose up to fix them.」\e
+
+//<000006e5> 【悠陽】「…\p…\p…\p…\p」\e
+<000006e5> 【Yuuhi】「...\p...\p...\p...\p」\e
+
+//<000015fc> 【鎧衣】「誤った道を選んだにせよ、\pそのような若者達がいる限り…\p…\pまだまだ日本も捨てたものではございません」\e
+<000015fc> 【Yoroi】「Even if they chose the wrong path,\p as long as young people like them exist...\p...\pJapan has not yet been abandoned.」\e
+
+//<000015fd> 【悠陽】「…\p…\p…\p…\p」\e
+<000015fd> 【Yuuhi】「...\p...\p...\p...\p」\e
+
+//<000015fe> 【鎧衣】「ここで膿を出しきることで、\p日本は再び目覚める。\n私はそう信じております」\e
+<000015fe> 【Yoroi】「Their effort to eradicate the parasites will allow Japan to reawaken.\p That's what I believe.」\e//lit. "bring out pus" but English doesn't treat "pus" idiomatically so I reworked it with "parasites"
+
+//<000006e7> 【悠陽】「本当に…\p…\pそうなのでしょうか…\p…\p」\e
+<000006e7> 【Yuuhi】「Will that truly...\p...\pcome to pass...\p...\p?」\e
+
+//<00007255> 【鎧衣】「ご安心下さい殿下、\p帝国の精神は必ずや民の心に蘇りましょう」\e
+<00007255> 【Yoroi】「Rest easy, Your Highness.\p The Empire will surely be reawakened in the hearts of the people.」\e
+
+//<000006e9> 【悠陽】「…\p…\p」\e
+<000006e9> 【Yuuhi】「...\p...\p...\p...\p」\e
+
+//<000006ea> 【鎧衣】「しかしながらこれ以上の争乱は、\p望ましくありません」\e
+<000006ea> 【Yoroi】「However,\p further conflict would not be desirable.」\e
+
+//<000006eb> 【悠陽】「はい」\e
+<000006eb> 【Yuuhi】「Yes.」\e
+
+//<000006ec> 【鎧衣】「直ちに帝都に舞い戻り、\p微力ながら事態の収拾に努めます」\e
+<000006ec> 【Yoroi】「I will return to the capital at once,\p and do what little I can to bring the situation under control.」\e
+//He wasn't using any contractions while talking to her earlier.-Spin
+
+//<000006ed> 【悠陽】「頼みましたよ」\e
+<000006ed> 【Yuuhi】「I would be grateful.」\e
+
+//<0000753f> 【まりも】「ＣＰより２０７各機。\n警戒態勢解除。\nこれより準戦闘態勢に移行する」\e
+<0000753f> 【Marimo】「Command post to all units.\nOur patrol assignment has ended.\nEveryone, prepare for battle.」\e//there's a lot in this line that just sounds awful in English, rephrasing very welcome ~IX //thought of a much better but also much more liberal option on second pass, let's see how this goes ~IX
+
+//<000006ef> 【武】「――え！？」\e
+<000006ef> 【Takeru】「――Eh!?」\e
+
+//<00007258> 【まりも】「１０分程前、\p国連第１１方面司令部に帝国城内省から直々に情報が入った」\e
+<00007258> 【Marimo】「Ten minutes ago,\p the UN 11th Field HQ received information directly from the Imperial Household Department.」\e
+
+//<0000725b> 城内省から直々に？　臨時政府は？　斯衛軍司令部は？\e
+<0000725b> Directly from the Household Department? Why not go through the provisional government? Or the Honor Guard HQ?\e
+
+//<0000725d> 【まりも】「帝都及び帝都城周辺での戦闘が激化した事態を受け、\p城内省は昨夜、\p将軍殿下の帝都脱出を決定した」\e
+<0000725d> 【Marimo】「After hostilities flared up in and around the capital,\p the Household Department decided last night to evacuate Her Highness, the Shogun, from the capital.」\e//*now* someone says Her Highness and Shogun at the same time ~IX
+
+//<00007260> 【まりも】「殿下は帝都城地下に極秘建造された地下鉄道を使い、\p帝都を脱出した。\nそれが約９０分前だ」\e
+<00007260> 【Marimo】「Her Highness escaped via a top-secret underground railroad built underneath the Imperial Palace.\nThis occurred approximately ninety minutes ago.」\e
+
+//<00007263> 地下鉄道…\p…\p？\e
+<00007263> Underground railroad...\p...\p?\e
+
+//<00007265> 【まりも】「目的地は関東圏の鎮守府及び城郭。\n攪乱のための囮も、\p同時に何組か脱出したらしい」\e
+<00007265> 【Marimo】「Her destination was an old army base and castle in the Kantou area.\nSeveral other groups were also evacuated at the same time to act as decoys.」\e
+
+//<00007268> 帝都城と各地の離城は…\p…\p直結しているのか！？\e
+<00007268> How many fortresses is the Imperial Palace connected to!?\e
+
+//<00001604> …\p…\pそうか。\e
+<00001604> ...\p...\pI see.\e
+
+//<00005788> 【冥夜】「…\p…\pタケル…\p…\pこんな話を知っているか？」\e
+<00005788> 【Meiya】「...\p...\pTakeru...\p...\phave you heard this story?」\e//CP_S MLA_0028
+
+//<0000726a> 【冥夜】「…\p…\pＢＥＴＡの本州侵攻の際、\p帝国軍が多摩川より東に撤退した後も、\pこの搭ヶ島城には斯衛軍第２４連隊が踏みとどまったのだ」\e
+<0000726a> 【Meiya】「...\p...\pwhen the BETA invaded the mainland,\p after the Imperial Army retreated east over the Tamagawa,\p the Honor Guard 24th Battalion held their ground here at Tougashima.」\e
+
+//<0000578a> 【冥夜】「本州が奪回されるまでの数ヶ月間、\p幸いにも小規模な戦闘が数回発生したのみだったそうだ」\e
+<0000578a> 【Meiya】「It seems they were fortunate enough to survive a number of small-scale battles here during the months before the mainland was retaken.」\e
+
+//<0000726c> 【冥夜】「だが…\p…\pいかに斯衛軍が、\p将軍の守護をその任としているとは言え、\p離城を護るためだけに踏み止まるとは…\p…\pいささか度が過ぎていよう」\e
+<0000726c> 【Meiya】「However...\p...\pno matter how much the Honor Guard wishes to protect the Shogun,\p choosing to stay for the sole purpose of protecting this building...\p...\pis hard to believe.」\e//CP_E
+
+//<0000726e> …\p…\pだから斯衛部隊はここを死守したのか…\p…\p帝都城に繋がっているこの離城を。\n…\p…\p補給は地下から受けていたんだ！\e
+<0000726e> ...\p...\pso that's why the Honor Guard fought so hard here...\p...\pthis castle is connected to the Imperial Palace.\n...\p...\pand they must've gotten supplies through there!\e
+
+//<000006f9> 変な愛国心に振り回されただけじゃなかったのか！\e
+<000006f9> There was more to it than just patriotism!\e
+
+//<000006fa> 【まりも】「しかし３０分程前、\p何者かによってこの情報がリークされた」\e
+<000006fa> 【Marimo】「However, thirty minutes ago,\p someone leaked this information.」\e
+
+//<000006fb> ――えッ？！\e
+<000006fb> ――Eh!?\e
+
+//<00007270> 【まりも】「現在クーデター側は、\p各地の城へと部隊を移動させつつある。\nその結果、\p帝都での戦闘はほぼ終息した模様だ。\n帝国軍、\p斯衛軍及び国連軍が、\p移動中の敵部隊を追撃している」\e
+<00007270> 【Marimo】「The coup d'etat forces are currently sending units out to every nearby fortification.\nAs a result,\p fighting within the capital has virtually ceased.\nThe Imperial Army,\p Honor Guard and UN Army are all pursuing the enemy units.」\e
+
+//<000006fd> ――！！\e
+<000006fd> ――!!\e
+
+//<00007537> 【まりも】「ここも戦場となる可能性が高い。\n全機準戦闘態勢のまま待機、\p次の指示を待て――以上」\e
+<00007537> 【Marimo】「It's very likely fighting will break out here as well.\nAll units should prepare for combat and stand by until further orders――00 out.」\e
+
+//<000006ff> ――ここが…\p…\p戦場になるんだ！！\e
+<000006ff> ――This place...\p...\pis gonna be a battlefield too!?\e
+
+//<00007273> 【武】「――あなた方の情報がリークされたらしい！　クーデター部隊も帝国も斯衛も国連も、\p鎮守府や城を目指して移動してるって――」\e
+<00007273> 【Takeru】「――Someone leaked your escape! The coup d'etat, Imperial, Honor Guard and UN forces are all moving to various abandoned bases and fortifications in the area――」\e
+
+//<00007275> 【鎧衣】「…\p…\p計算通りだ。\n決起部隊が帝都城で戦闘を始めなければ完璧だったんだがね」\e
+<00007275> 【Yoroi】「...\p...\pjust as we planned.\nThough it would've been perfect if the rebels hadn't started fighting at the Imperial Palace.」\e//I know it's a meme, but it just fits him so well ~IX //sorry~ *adds 'we'* - Sheeta //I'm not convinced he's referring to both of them at once, but it's not worth reverting ~IX
+
+//<00000702> 【武】「どういう事ですかッ！？」\e
+<00000702> 【Takeru】「What does that mean!?」\e
+
+//<00007278> 【鎧衣】「殿下の脱出情報は私がリークした」\e
+<00007278> 【Yoroi】「I leaked the information about Her Highness' escape.」\e
+
+//<00000704> 【武】「なんだってッ！？　なんでそんな事を――」\e
+<00000704> 【Takeru】「What did you say!? Why would you――」\e
+
+//<00000705> 【悠陽】「よいのです白銀…\p…\p私が命じました」\e
+<00000705> 【Yuuhi】「It is all right, Shirogane...\p...\pI gave him the order.」\e
+
+//<00000706> 【武】「――えっ」\e
+<00000706> 【Takeru】「――Eh!?」\e
+
+//<0000727b> 【鎧衣】「殿下は、\p帝都の民をこれ以上戦火に晒さぬ為に、\p自ら囮役を買って出られたのだ」\e
+<0000727b> 【Yoroi】「Her Highness used herself as bait to prevent the people in the capital from being further exposed to the fires of war.」\e
+
+//<00000708> 【武】「――囮？」\e
+<00000708> 【Takeru】「――Bait?」\e
+
+//<0000727e> 【鎧衣】「全軍が殿下を追っているんだろう？　帝都での戦闘も終わった…\p…\pちがうかね？」\e
+<0000727e> 【Yoroi】「Everyone's after her now, so the fighting in the capital has ended...\p...\pam I wrong?」\e
+
+//<0000070a> ――！\e
+<0000070a> ――!\e
+
+//<00007281> 【鎧衣】「殿下は数名の側近と斯衛の司令官にだけ真意を伝え、\pご自身で脱出の御決断をなさったのだ」\e
+<00007281> 【Yoroi】「Her Highness informed only her closest associates and the Honor Guard Captain of her intent.\p She made the decision to escape all on her own.」\e
+
+//<00007284> …\p…\pえ？　数名の側近と斯衛の司令官にだけ…\p…\p？　城内省上層部は何も知らないって事か？\e
+<00007284> ...\p...\peh? Closest associates and the Captain of the Honor Guard...\p...\p? So the Household Department didn't know about it?\e
+
+//<00007286> 【武】「でも…\p…\p城内省が直接国連司令部にって…\p…\p」\e
+<00007286> 【Takeru】「But...\p...\pthe Household Department could've told the UN HQ that...\p...\p」\e
+
+//<0000752b> 【鎧衣】「殿下の脱出を知って、\p城内省上層部の連中が大慌てで体面を取り繕ったんだろう」\e
+<0000752b> 【Yoroi】「When they learned of Her Highness' escape,\p the Household Department leaders were in an uproar, all trying to save face.」\e
+
+//<0000160f> 【武】「…\p…\p体面？」\e
+<0000160f> 【Takeru】「...\p...\psave face?」\e
+
+//<0000728a> 【鎧衣】「護衛も付けずに殿下を帝都城から脱出させるなど、\p役人連中が許すと思うかね？」\e
+<0000728a> 【Yoroi】「Do you think those government officials would allow Her Highness to flee the capital without an armed escort?」\e
+
+//<00001611> なるほど…\p…\p確かに言われてみればその通りだ。\e
+<00001611> I see...\p...\pnow that you mention it, that's exactly right.\e
+
+//<0000728d> この人は本当に帝都民の事を考えて…\p…\p城内省の上層部にも黙ってここまで来たんだ。\e
+<0000728d> She really is thinking about the people in the capital...\p...\pshe came all the way here without telling the Household Department.\e
+
+//<00000710> …\p…\pでも\e
+<00000710> ...\p...\pbut...\p...\p\e
+
+//<00000711> だったら…\p…\p\e
+<00000711> In that case...\p...\p\e
+
+//<0000728f> 【武】「なぜ…\p…\p殿下は全軍に戦闘をやめるように命令しなかったんですか？」\e
+<0000728f> 【Takeru】「Why...\p...\pdidn't Her Highness simply order them to stop fighting?」\e
+
+//<00000713> 【悠陽】「…\p…\p…\p…\p」\e
+<00000713> 【Yuuhi】「...\p...\p...\p...\p」\e
+
+//<00000714> 【鎧衣】「もちろんしたとも」\e
+<00000714> 【Yoroi】「But of course she did.」\e
+
+//<00000715> 【武】「えッ…\p…\pだったらなぜ…\p…\p」\e
+<00000715> 【Takeru】「Eh? ...\p...\pthen why...\p...\p?」\e
+
+//<00007291> …\p…\p将軍なんだろう？\e
+<00007291> ...\p...\paren't you the Shogun?\e
+
+//<00000717> 【鎧衣】「悪い癖が直っていないな白銀武…\p…\pそういう現状を嘆いた連中が決起したんじゃないのかね？」\e
+<00000717> 【Yoroi】「You still haven't learned, Shirogane Takeru...\p...\pdidn't they rebel because they couldn't stand politicians like that?」\e//lit. "that sort of reality/situation" which I assume refers to the Dpt. leaders covering their asses //the part of 0033 where this is quoted effectively proves I guessed right ~IX
+
+//<00000718> ――――！\e
+<00000718> ――――!\e
+
+//<00000719> 【悠陽】「…\p…\p…\p…\p」\e
+<00000719> 【Yuuhi】「...\p...\p...\p...\p」\e
+
+//<0000071a> …\p…\p…\p…\pなんだよ\e
+<0000071a> ...\p...\p...\p...\pwhat the hell.\e
+
+//<0000071b> クーデター部隊の方が…\p…\p正しいっていうのか…\p…\p？\e
+<0000071b> Are you saying...\p...\pthe coup d'etat forces are...\p...\pdoing the right thing?\e
+
+//<0000071c> だったら…\p…\pなぜ…\p…\pそういう悪いシステムを正せないんだ？\e
+<0000071c> If the system's that bad...\p...\pthen why...\p...\pcan't you fix it?\e
+
+//<00007293> 【鎧衣】「首相暗殺直後から、\p叛徒討伐の直命を求める声が、\p臨時政府や城内省から相次いだ…\p…\p」\e
+<00007293> 【Yoroi】「Ever since the Prime Minister's assassination,\p numerous voices calling for the suppression of the insurgents came from the provisional government and the Household Department...\p...\p」\e
+
+//<00007296> 【鎧衣】「殿下は最後まで、\p戦闘は避けよと下知なさっていたのだが…\p…\p臨時政府と軍は討伐部隊を組織し、\p国連軍を呼び込んだのだ」\e
+<00007296> 【Yoroi】「Her Highness repeatedly ordered them to avoid open conflict, up until the very end...\p...\pbut the provisional government and the army still planned a counterattack,\p and brought in the UN Army to help.」\e
+
+//<00000720> 【武】「…\p…\p…\p…\p」\e
+<00000720> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00007299> 【鎧衣】「そこで殿下は、\p帝都での戦闘が激化する前に、\p御身を囮とし全軍を無人の地に誘い出される事を御決断されたのだ」\e
+<00007299> 【Yoroi】「So,\p Her Highness decided to use herself as bait to get all the armies into unpopulated areas before the fighting in the capital got any worse.」\e
+
+//<00001616> 【鎧衣】「しかし、\pどうしても日本で内戦を起こしたい連中がいるようでね…\p…\p」\e
+<00001616> 【Yoroi】「However,\p some people seem to really want a Japanese civil war...\p...\p」\e
+
+//<000072db> …\p…\p米国…\p…\pか？\e
+<000072db> ...\p...\pAmerica...\p...\p?\e
+
+//<00001617> 【鎧衣】「その意を汲む者が、\p決起部隊の中に紛れ込んでいたらしい」\e
+<00001617> 【Yoroi】「It seems some of their sympathizers worked their way into the rebel forces.」\e
+
+//<00000725> 【武】「――！？」\e
+<00000725> 【Takeru】「――!?」\e
+
+//<0000729c> …\p…\p最初に発砲した歩兵部隊…\p…\p斯衛軍と戦闘を始めたヤツらか…\p…\p？\e
+<0000729c> ...\p...\pthat foot soldier who fired the first shot...\p...\pthe guy who started the fight with the Honor Guard...\p...\p?\e
+
+//<00000727> 【鎧衣】「…\p…\pわかったかね、\p白銀武？」\e
+<00000727> 【Yoroi】「...\p...\pdo you understand now,\p Shirogane Takeru?」\e
+
+//<00000728> 【悠陽】「…\p…\p…\p…\p」\e
+<00000728> 【Yuuhi】「...\p...\p...\p...\p」\e
+
+//<00000729> 【武】「…\p…\p…\p…\pはい」\e
+<00000729> 【Takeru】「...\p...\p...\p...\pyes.」\e
+
+//<0000729e> とにかく…\p…\p将軍と、\pオレ達自身が一刻も早くここを離れないとまずい。\e
+<0000729e> Anyway...\p...\pthe Shogun and I need to get ourselves out of here as soon as possible.\e
+
+//<000072a0> 【鎧衣】「では行きたまえ…\p…\p殿下を横浜基地にお連れするのだ」\e
+<000072a0> 【Yoroi】「Then go...\p...\ptake Her Highness to Yokohama Base.」\e
+
+//<0000072c> 【武】「鎧衣課長」\e
+<0000072c> 【Takeru】「Section Chief Yoroi.」\e
+
+//<0000072d> 【鎧衣】「なんだね」\e
+<0000072d> 【Yoroi】「What is it?」\e
+
+//<000072dd> 【武】「横浜基地には米軍がいます。\n…\p…\p大丈夫なんですね？」\e
+<000072dd> 【Takeru】「The American Army is occupying Yokohama Base.\n...\p...\pare you sure it's safe?」\e
+
+//<0000072f> 【鎧衣】「そのために私は行くのだ」\e
+<0000072f> 【Yoroi】「That's why I'll be going.」\e
+
+//<00000730> …\p…\pなるほど…\p…\pそういうことか。\e
+<00000730> ...\p...\pI see...\p...\pthat explains that.\e
+
+//<00001619> 【鎧衣】「私と侍従長はまず旧関所のＣＰへ行く…\p…\p早く連絡を」\e
+<00001619> 【Yoroi】「The chamberlain and I will go to the command post in the old checking station...\p...\ptell them we're coming.」\e
+
+//<00000732> 【武】「わかりました」\e
+<00000732> 【Takeru】「Understood.」\e
+
+//<000072a3> 【鎧衣】「それでは殿下…\p…\p」\e
+<000072a3> 【Yoroi】「Now then, Your Highness...\p...\p」\e
+
+//<00000734> 【侍従長】「どうかご無事で」\e
+<00000734> 【Grand Chamberlain】「Take care of yourself.」\e
+
+//<00000735> 【悠陽】「そなたたちも気をつけて…\p…\p」\e
+<00000735> 【Yuuhi】「You take care as well, both of you...\p...\p」\e
+
+//<0000161a> 【武】「０６白銀からＣＰ…\p…\p０６白銀からＣＰ――最優先処理の必要を認む！」\e
+<0000161a> 【Takeru】「06, Shirogane to command post...\p...\p06, Shirogane to command post――Requesting top priority connection!」\e
+
+//<0000161b> 【まりも】「ＣＰより０６――秘匿回線の使用を許可する。\n報告せよ」\e
+<0000161b> 【Marimo】「Command post to 06――You've been allowed usage of an encrypted channel.\nGive your report.」\e
+
+//<00000738> 【武】「先程確保した３名について身元判明――」\e
+<00000738> 【Takeru】「About the three unidentified persons I secured earlier――」\e
+
+//<00000739> 【まりも】「――身元判明？　どういう事だ？！」\e
+<00000739> 【Marimo】「――Unidentified persons? What do you mean!?」\e
+
+//<000072a6> 【武】「煌武院悠陽殿下以下――帝国情報省の鎧衣課長と侍従の女性と判明」\e
+<000072a6> 【Takeru】「They turned out to be――Her Highness Koubuin Yuuhi, her Grand Chamberlain, and the Imperial Ministry of Information's Section Chief Yoroi.」\e
+
+//<000072a8> 【まりも】「――な、\p何だって？！　殿下が…\p…\pたったそれだけの警護で！？」\e
+<000072a8> 【Marimo】「――Wh-\pwhat did you say!?\bHer Highness came...\p...\pwith so little protection!?」\e
+
+//<000072ab> 不法帰還民保護の報告を受けていて、\p将軍の帝都脱出という情報を聞いていても…\p…\pその２つが結び付いてない。\e
+<000072ab> She knew I'd found some trespassers,\p and that the Shogun had fled the capital...\p...\pbut that wasn't enough to make the connection.\e
+
+//<000072ad> そうだよ。普通、\p将軍がたった２人の警護でこんな所うろつくわけない。\n…\p…\pその先入観が最大のカモフラージュなんだ。\e
+<000072ad> Of course it wasn't.\p Who'd expect the Shogun to wander around here with only two people escorting her?\n...\p...\pthat preconception turned out to be the ideal camouflage.\e
+
+//<0000073f> 【武】「鎧衣課長と侍従の女性が、\p今そちらに向かいました。\n詳細はそちらで確認して下さい」\e
+<0000073f> 【Takeru】「Section Chief Yoroi and the Grand Chamberlain are heading to your position now.\nAsk them for details when they arrive.」\e
+
+//<000072af> 【まりも】「――了解。\n殿下はどうされたのだ？」\e
+<000072af> 【Marimo】「――Roger.\nWhat about Her Highness?」\e
+//Just leave it for now, I'll check all the other stuff once I'm done with the arc. Also, the reason for it is because "willco" is more like "will do" as in receiving an order. I doubt Shirogane has the power to order her around.-Spin
+
+//<00007543> 【武】「戦術機のコクピットが一番安全という鎧衣課長の提案で、\p０６に乗っていただきます」\e
+<00007543> 【Takeru】「Section Chief Yoroi suggested that a TSF cockpit would be the safest place available,\p so I'll take her with me in 06.」\e
+
+//<0000161e> 【まりも】「…\p…\pなるほど…\p…\p操縦技術に優れる貴様が操る機体であれば…\p…\p尚更だな」\e
+<0000161e> 【Marimo】「...\p...\pI see...\p...\pthat's especially true...\p...\pgiven your superb piloting skills.」\e
+
+//<00000743> 【まりも】「――よし、\pあくまで緊急措置だ――秘匿回線の使用を終わる」\e
+<00000743> 【Marimo】「――Very well,\p this is an emergency measure after all――Closing the encrypted channel.」\e
+
+//<00000744> 【武】「…\p…\p０６了解」\e
+<00000744> 【Takeru】「...\p...\p06, copy that.」\e
+
+//<00000745> 【まりも】「ＣＰから２０７各機…\p…\p０６を中心に円壱型陣形で全周警戒――別命をまて」\e
+<00000745> 【Marimo】「Command post to all units in 207...\p...\pform a Circle-1 formation around 06 and keep a lookout in all directions――Then await further orders.」\e
+
+//<00000746> なんか…\p…\pとんでもないことになって来ちまったな…\p…\p。\e
+<00000746> It feels like...\p...\psomething really big's about to happen now...\p...\p\e
+
+//<00000747> 【悠陽】「…\p…\p…\p…\p」\e
+<00000747> 【Yuuhi】「...\p...\p...\p...\p」\e
+
+//<000072b2> 【武】「…\p…\pじゃあ、\p殿下。\nこちらへどうぞ…\p…\p」\e
+<000072b2> 【Takeru】「...\p...\pokay,\p Your Highness.\nPlease come this way...\p...\p」\e
+
+//<00000749> 【悠陽】「はい…\p…\p世話になります」\e
+<00000749> 【Yuuhi】「Yes...\p...\pI shall be in your care.」\e//with her a literal tl of sewa ni naru actually works ~IX
+
+//<0000074a> 言葉遣い…\p…\p絶対間違ってるよな、\pオレ。\e
+<0000074a> The way she talks...\p...\pshe really does sound like...\p...\p\e//uh? shouldn't be "I can't be wrong about that?" -Shikiller //adapted by me - Sheeta
+
+//<00007395> 【帝国軍衛士１】「――こちら６０４Ｃ！　現在交戦中！　至急増援を――」\e
+<00007395> 【Imperial Eishi 1】「――This is 604C! Currently engaged!\bRequesting immediate reinforcements――」\e
+
+//<000073c3> 【帝国軍衛士２】「くそがぁ！！　同じ機体なのに…\p…\pどういう事だぁ！！」\e
+<000073c3> 【Imperial Eishi 2】「Damn iiit!!\bThey're using the same models...\p...\phow is this even possible!?」\e
+
+//<0000745f> 【クーデター軍衛士１】「帝都の護りを預る我ら精鋭の力…\p…\p見くびるな！」\e
+<0000745f> 【Rebel Eishi 1】「Do not underestimate the elite strength of we who protect the capital!」\e
+
+//<0000074f> この音は…\p…\p近いぞ…\p…\p！\e
+<0000074f> Those sounds...\p...\pthey're close...\p...\p!\e
+
+//<00000750> すぐそこまで迫ってきている…\p…\p！！\e
+<00000750> They're right next to us...\p...\p!!\e
+
+//<00000751> 【悠陽】「…\p…\p…\p…\p」\e
+<00000751> 【Yuuhi】「...\p...\p...\p...\p」\e
+
+//<00000752> 【武】「ど、\pどうぞ…\p…\p…\pこちらに」\e
+<00000752> 【Takeru】「C-\pcome...\p...\p...\pthis way.」\e
+
+//<000054f3> 【武】「すみません。\n他に方法なくて…\p…\p」\e
+<000054f3> 【Takeru】「Sorry,\p there's no other way to...\p...\p」\e
+
+//<00001621> 【悠陽】「無理を強いているのは私…\p…\pそなたが気を遣う必要はありません」\e
+<00001621> 【Yuuhi】「I am the one asking too much...\p...\pyou need not worry yourself so.」\e
+
+//<00000755> 【武】「はあ…\p…\p」\e
+<00000755> 【Takeru】「Haa...\p...\p」\e
+
+//<000072b4> …\p…\pしかし意外だったな。\nあの月詠さんまで殿下をオレの機に乗せることに賛成したなんて。\e
+<000072b4> ...\p...\pthat was unexpected though.\nEven Tsukuyomi-san agreed with putting Her Highness in my TSF.\e
+
+//<000072b6> まあ、\pその方が、\p遠慮なく動き回れる分、\p殿下を守りやすいって考えたんだろうけど…\p…\p。\nそれにしても、\p心中穏やかじゃないだろうな。\e
+<000072b6> Well,\p she probably figured I wouldn't try as hard to keep her comfortable,\p which would make it easier for me to focus on maneuvering and keeping her safe...\p...\p\nEven so,\p there's no way she isn't nervous.\e
+
+//<000072b8> あれだけ日本の主権にこだわってたんだ。\n殿下を斯衛軍に引き渡して国連は撤退しろ…\p…\pと言いたいだろうな、\pホントのところは。\e
+<000072b8> I remember how much she cared about Japanese sovereignty.\nShe'd probably prefer it if...\p...\pwe entrusted Her Highness with the Honor Guard and the UN simply left.\e
+
+//<00001624> もっとも、\p冥夜の事をあれだけ大事にしている月詠さんが、\p冥夜の立場や心情を無視して、\pそんなこと言うはずないと思うが。\e
+<00001624> Although,\p considering how much she cares about Meiya,\bI doubt Tsukuyomi would be able to say something so inconsiderate.\e
+
+//<00001625> …\p…\p冥夜も今、\pかなり複雑な心境だろう。\e
+<00001625> ...\p...\pMeiya's probably conflicted about it too.\e
+
+//<000072ba> あれだけ殿下のことを気遣っていたんだ。\nその将軍がすぐ側にいる今、\pその気持ちはことさら強いはずで…\p…\pそういう想いってのは、\pもう理屈じゃないからな。\e
+<000072ba> She was so concerned about Her Highness.\nAnd now that the Shogun is right next to her,\p she must feel it all the more...\p...\pit's not a logical feeling,\p after all.\e
+
+//<00001627> …\p…\p出会っていたのがオレじゃなくて自分だったらと…\p…\pって思わずにはいられないだろう。\e
+<00001627> ...\p...\pshe probably can't help but wonder...\p...\pwhat would've happened if she'd been the one out there to bump into her instead of me.\e
+
+//<00001628> 【武】「…\p…\p…\p…\p」\e
+<00001628> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001629> それにしてもまったく…\p…\p今回の任務が夕呼先生の差し金じゃないかってオレの予想は、\p大当たりだよ。\e
+<00001629> But still...\p...\pI can't believe that hunch of mine was right.\bThis really was part of Yuuko-sensei's plan.\e
+
+//<0000162a> オレ達がここに配置されたのは、\p重要度が低い場所だったからじゃない。\nむしろ、\p全く逆じゃないか。\e
+<0000162a> We weren't deployed here because it's unimportant.\nIf anything,\p it was the exact opposite.\e
+
+//<0000162b> 鎧衣課長が言っていたように、\p先生はこうなることを予測してたんだろう。\e
+<0000162b> Like Section Chief Yoroi was saying,\p Sensei must've predicted this.\e
+
+//<000072bc> もちろん、\p斯衛軍が、\pここで何ヶ月も粘れた理由も知っていた筈だ。\e
+<000072bc> Of course,\p she probably knows why the Honor Guard managed to survive here for months too.\e
+
+//<000072be> その上で、\p殿下がここに来る確率が高いと踏んでたんだ。\e
+<000072be> And she worked out that the odds of Her Highness coming here were quite high.\e
+
+//<00001630> 確かに２０７小隊のメンバーは、\p今回の一件とは因縁が深いメンツばかりだ。\e
+<00001630> Squad 207 certainly does have a lot of connections to this incident.\e
+
+//<00001631> ある意味、\pおあつらえ向きかもしれないけど…\p…\pそれでもオレ達は訓練兵だぞ？\e
+<00001631> In a sense,\p it couldn't be more ideal...\p...\pbut we're still just cadets.\e
+
+//<00001632> 無茶するよ、\pまったく。\e
+<00001632> She really is reckless...\p...\p\e
+
+//<00001633> …\p…\p…\p…\pでもまさか、\p彩峰のことまで感づいてるってことは…\p…\pないよな？\e
+<00001633> ...\p...\p...\p...\pbut there's no way she knows...\p...\pAyamine's relation to it, right?\e
+
+//<00001634> せいぜい、\p彩峰の親父さんと沙霧ってヤツの関係までだよな？\e
+<00001634> All she knows is that her dad was a friend of Sagiri, right?\e
+
+//<00001635> それ以上は...\p...\e
+<00001635> The rest should...\p...\e
+
+//<00001636> 【悠陽】「…\p…\pどうかしたのですか？」\e
+<00001636> 【Yuuhi】「...\p...\pis something the matter?」\e
+
+//<00001637> 【武】「あ…\p…\pいえ、\pすみません」\e
+<00001637> 【Takeru】「Ah...\p...\pno,\p sorry.」\e
+
+//<00001638> …\p…\pまずいまずい、\p今は考え事なんてしてる場合じゃない。\e
+<00001638> ...\p...\pnot good, not good,\p this is no time to get lost in thought.\e
+
+//<00001639> みんながオレを信頼して任せてくれてんだ。\n気を引き締めてかからないと…\p…\p。\e
+<00001639> Everyone's trusting me to take care of her.\nI've gotta stay alert...\p...\p\e
+
+//<00000758> 【武】「あの、\pそれ…\p…\p簡易固定ジャケットなんですが、\p安全のためなんで装着して下さい」\e
+<00000758> 【Takeru】「Umm,\p here's...\p...\pyour safety jacket.\p Please attach all these belts to it.」\e
+
+//<00000759> 【悠陽】「この４点式ハーネスをつかうのですね」\e
+<00000759> 【Yuuhi】「I take it you mean this four point harness?」\e
+
+//<0000075a> 【武】「はい。あとこの錠剤を飲んで下さい」\e
+<0000075a> 【Takeru】「Yes. And please swallow this.」\e
+
+//<0000075b> 【悠陽】「…\p…\pこれは？」\e
+<0000075b> 【Yuuhi】「...\p...\pwhat is it?」\e
+
+//<0000075c> 【武】「酔い止めです。\n物凄く揺れますから…\p…\p」\e
+<0000075c> 【Takeru】「It'll keep you from getting sick.\nThis thing moves pretty fast...\p...\p」\e
+
+//<0000163a> 強化装備のフィードバックデータ蓄積が少ない時期に飲む補助薬だけど、\p実戦の機動加速で効果があるかどうか…\p…\p。\e
+<0000163a> This pill's meant for rookies who don't have much feedback data accumulated,\p so I'm not sure how useful it'll be in combat...\p...\p\e
+
+//<0000075e> それでも飲まないよりマシなはずだ。\n委員長達は結構効くって言ってたし。\e
+<0000075e> But it's gotta be better than nothing.\nClass Rep and the others said it was pretty strong.\e
+
+//<0000075f> 【悠陽】「スコポラミン…\p…\p加速度病対策ですね。\n揺れは覚悟します」\e
+<0000075f> 【Yuuhi】「Scopolamine...\p...\pan anti-motion sickness pill.\nI am prepared for the shaking.」\e//http://en.wikipedia.org/wiki/Scopolamine ; don't forget 0031 - Raide
+
+//<00000760> スコポラミン…\p…\pって、\pけっこう専門的だな。\e
+<00000760> Scopolamine? ...\p...\pdamn,\p she knows a lot about this.\e
+
+//<0000163b> 【まりも】「――ＣＰより２０７各機。\n状況を説明する」\e
+<0000163b> 【Marimo】「――Command post to all units in 207.\nListen up.」\e//lit. "I'll explain the situation"
+
+//<00000762> 【武】「あ…\p…\pスイマセン、\pブリーフィングなので、\pしばらく黙ります」\e
+<00000762> 【Takeru】「Ah...\p...\psorry,\p we're about to be briefed,\p so I'll have to be quiet.」\e
+
+//<00000763> 【悠陽】「白銀、\p私にも聞こえるようにして下さい」\e
+<00000763> 【Yuuhi】「Shirogane,\p please set it so I may hear as well.」\e
+
+//<00000764> …\p…\pいいのか…\p…\pそれって…\p…\p？\e
+<00000764> ...\p...\pare you...\p...\psure...\p...\p?\e
+
+//<0000163d> 【悠陽】「状況の推移を知っておきたいのです…\p…\pお願いします」\e
+<0000163d> 【Yuuhi】「I would like to know what is happening...\p...\pplease.」\e
+
+//<000072c0> まあ…\p…\p事実上、\p帝国軍の最高司令官の命令だしな。\e
+<000072c0> Well...\p...\pshe can command the whole Imperial Army,\p so I probably have to obey.\e
+
+//<0000163e> 作戦が開始されたら、\p切ればいいだろう。\e
+<0000163e> I can just turn it back off once the battle starts.\e
+
+//<00000768> 【武】「…\p…\pわかりました。\nヘッドセットがないと音声だけになってしまいますが…\p…\p」\e
+<00000768> 【Takeru】「...\p...\punderstood.\nWithout a headset you'll only get voice though...\p...\p」\e
+
+//<00000769> 【悠陽】「かまいません」\e
+<00000769> 【Yuuhi】「That is all right.」\e
+
+//<0000163f> 【まりも】「１０分程前、\p帝国厚木基地からの通信が途絶。\n続いて小田原西インターチェンジ跡のＨＱも沈黙した」\e
+<0000163f> 【Marimo】「Ten minutes ago,\p we lost contact with the Imperial Army Atsugi Base.\nOur HQ at the Odawara Interchange ruins has also fallen silent.」\e
+
+//<0000076b> ――！？\e
+<0000076b> ――!?\e
+
+//<0000166e> 【まりも】「既に明神ヶ岳山中では、\p帝国軍部隊が敵と交戦中」\e
+<0000166e> 【Marimo】「Imperial Army units have already engaged the enemy at Mt. Myoujingatake.」\e//awesome name ~IX
+
+//<0000076d> 明神ヶ岳…\p…\p？\e
+<0000076d> Myoujingatake...\p...\p?\e
+
+//<0000076e> ふた山向こうじゃないか！\e
+<0000076e> That's only two mountains away!\e//I love this line - Sheeta //I'm still paranoid it's a mistl ~IX
+
+//<0000076f> 【まりも】「敵主力は現在、\p東名高速自動車道跡と小田原厚木道路跡の２手に分かれ進撃中だ」\e
+<0000076f> 【Marimo】「The main enemy force has split into two groups,\p one advancing along the Tokyo-Nagoya Expressway ruins and the other along the Odawara-Atsugi Highway ruins.」\e
+
+//<00000770> 【まりも】「以降東名を進撃中の敵部隊をＥ１、\p小田原厚木道路跡の敵部隊をＥ２と呼称する」\e
+<00000770> 【Marimo】「From now on I will refer to the former group as E1,\p and the latter as E2.」\e//I am not writing out "the enemy units advancing along the Tokoy-Nagoya as E1" ~IX
+
+//<00001640> 【まりも】「では脱出経路の説明に入る。\n我々は先ず、\p熱海新道跡から伊豆スカイライン跡に入り南下する」\e
+<00001640> 【Marimo】「And now our escape route.\nWe will move south through the New Atami Road ruins and then the Izu Skyline ruins.」\e
+
+//<00000772> ――それしかないだろう。\nバカ正直に横浜基地に向かえば…\p…\p真正面から敵の主力にぶつかることになる。\e
+<00000772> ――That's our only real option.\nIf we went straight toward Yokohama Base...\p...\pwe'd run right into the enemy's main force.\e
+
+//<00000773> しかし…\p…\pどうするつもりなんだ？\e
+<00000773> Still...\p...\phow do we plan on getting away?\e
+
+//<00001641> 【まりも】「恐らくＥ１は我々の西進を阻むため、\p芦ノ湖スカイライン跡から旧三島市に抜け併走してくるだろう」\e
+<00001641> 【Marimo】「E1 is most likely going to block us from the West,\p by taking the Ashinoko Skyline ruins through Old Mishima City.」\e
+
+//<00001642> 【まりも】「それと同時に我々の転進を阻むための部隊がＥ２から分離し、\p伊豆スカイライン跡に沿って追撃してくることが予想される。\nこれをＥ３とする」\e
+<00001642> 【Marimo】「At the same time,\p we should expect a third unit to break off from E2 in order to prevent our retreat by pursuing further along Izu Skyline.\nWe will call this E3.」\e
+
+//<00001643> 【まりも】「Ｅ２は国道１３５号線跡を南下、\pそのまま海岸線に向かい、\pその確保を図る可能性が高いだろう」\e
+<00001643> 【Marimo】「It's likely that E2 will continue south down National Highway 135 in order to secure the coastline.」\e
+
+//<00001644> これで左右、\p後ろとふさがれた格好だ…\p…\p。\nでも、\p制海権は国連側にある。\nそれなのに海岸線を押さえに来るのか！？\e
+<00001644> So they'll have units to our left and right as well as behind...\p...\p\nBut...\p...\pthe UN controls the sea right now.\nThey're gonna try and control the shoreline despite that!?\e
+
+//<00001645> 海から攻撃される危険も厭わずに…\p…\pいや、\p対策が万全ということなのか？\e
+<00001645> They know they're gonna get bombarded...\p...\por have they already planned for that?\e
+
+//<00000780> 【まりも】「我々はさらに南下を続けるが、\pこの段階で想定通りＥ３が存在する場合――」\e
+<00000780> 【Marimo】「We will continue to head south,\p but if E3 appears according to our predictions――」\e
+
+//<00000781> 【まりも】「途中合流する米軍第１０８戦術機甲大隊が陽動をかねて各個迎撃する」\e
+<00000781> 【Marimo】「The American 108th TSF Armored Battalion, which we plan to meet with on the way, will create a diversion for us.」\e
+
+//<00000782> 【まりも】「これによりＥ１は、\p旧三島市から旧中伊豆町に抜け、\pＥ２と連携、\p我々を包囲、\p挟撃しようとするはずだ」\e
+<00000782> 【Marimo】「At this point E1 should leave Old Mishima City,\p head through Old Nakaizu City,\p and work with E2 in an attempt to surround us.」\e
+
+//<00001646> 多少遠回りになったとしても、\p市街地を進む分、\pクーデター側が速さでは有利なはずだ。\e
+<00001646> Those are pretty long detours,\p but all the cities along the way will let the coup d'etat forces move a lot faster.\e
+
+//<00000784> 追いつかれちまうんじゃねえか…\p…\p！？\e
+<00000784> Aren't they gonna catch up to us...\p...\p!?\e
+
+//<00007545> 【まりも】「冷川料金所跡が敵にとっての最重要ポイントになる。\n見ろ。\nここは山間部が一番狭くなっている」\e
+<00007545> 【Marimo】「The Hiyakawa Toll Booth ruins will be the choke point.\nLook on your maps.\nThe mountains are narrowest here.」\e
+
+//<00001648> 【まりも】「敵が、\p我々の頭を押さえられるのは、\pこのポイント以外にない」\e
+<00001648> 【Marimo】「If the enemy wants to obstruct us,\p this is their best chance at doing so.」\e
+
+//<00001649> 【まりも】「ここを我々が先に抜ければ、\pこの作戦は成功したも同然だ」\e
+<00001649> 【Marimo】「But if we can get through first,\p the operation is a sure success.」\e
+
+//<0000164a> 【まりも】「我々は遠笠山付近で山間部に入り、\pそのまま旧下田市に抜ける予定だ。\n敵も山岳部に入って速度が落ちれば良し、\p入らずに併走するならば、\pそれも良し」\e
+<0000164a> 【Marimo】「We'll enter the mountains near Mt. Tougasa,\p and hopefully come out in Old Shimoda City.\nIt doesn't matter whether they enter the mountains and slow down,\p or follow us some other way.」\e
+
+//<00000789> 【まりも】「この頃には国連横須賀基地の第２０９戦術機甲大隊が旧下田市内に上陸し、\p敵を待ちかまえている、\pという寸法だ」\e
+<00000789> 【Marimo】「By this time, we plan to have the 209th TSF Armored Battalion from UN Yokosuka Base already inside Old Shimoda City,\p and waiting for the enemy.」\e
+
+//<0000078a> 急ごしらえの作戦だからしょうがないにしろ、\p楽観的すぎないか？\e
+<0000078a> I know we're making this all up on the spot,\p but isn't that a bit optimistic?\e
+
+//<0000078b> オレ達が先に突破できなければ、\p完全に包囲されるってことじゃないか…\p…\p。\e
+<0000078b> If we can't break through,\p we'll be completely surrounded...\p...\p\e
+
+//<0000164b> 【まりも】「我々は白浜海岸で横浜基地所属の第１１艦隊と合流、\p海路にて横浜基地へ帰還する」\e
+<0000164b> 【Marimo】「We'll rendezvous with the 11th Fleet from Yokohama Base at the Shirahama coast,\p then return home via sea.」\e
+
+//<0000164c> 【まりも】「尚、\p本作戦においては、\p支援砲撃や航空支援は一切期待できない。\n小規模ながらも各地の戦闘は未だ継続中だ。\n帝都でも睨み合いが続いているらしい」\e
+<0000164c> 【Marimo】「However,\p we cannot expect any naval bombardments or aircraft support during the operation.\nThere are numerous small-scale battles still in progress throughout the area. Even in the capital, the remaining forces continue to stand off.」\e
+
+//<000072c2> 将軍がいる限り、\p無茶な攻撃はしてこないはずだが…\p…\p鎧衣課長のさっきの話を聞くと、\pそんなのもあてにならない気がする。\e
+<000072c2> As long as the Shogun's here,\p they can't go all out on us...\p...\pbut from what Section Chief Yoroi said,\p I can't be so sure about that.\e
+
+//<0000078f> 【悠陽】「厳しい状況ですね…\p…\p私が不甲斐ないばかりに」\e
+<0000078f> 【Yuuhi】「Such a difficult situation...\p...\pand yet, I am powerless to aid you.」\e
+
+//<00000790> 【武】「何言ってるんですか。\n大丈夫ですよ」\e
+<00000790> 【Takeru】「What're you talking about?\nIt's fine.」\e
+
+//<000072c4> 【まりも】「進撃隊形は０６を中心に楔参型だ。\n両側面と後方を厚く取る。\nさらに斯衛第１９独立小隊が鎚壱型隊形で後方を固めてくれる」\e
+<000072c4> 【Marimo】「We'll move forward in an Arrowhead-3 formation with 06 at the center,\p guarding his sides and rear.\nThe Honor Guard 19th Independent Unit will further reinforce our rear with a Hammerhead-1 formation.」\e
+
+//<00000798> 【悠陽】「…\p…\p第１９独立小隊…\p…\p？」\e
+<00000798> 【Yuuhi】「...\p...\pthe 19th Independent Unit...\p...\p?」\e
+
+//<000072c7> 【まりも】「臨時政府が国連軍受け入れに際し提示した絶対条件は、\p殿下の安全な保護だ」\e
+<000072c7> 【Marimo】「The provisional government has accepted UN Army help under the condition that Her Highness' safety takes full priority.」\e
+
+//<000072ca> 【まりも】「つまり本作戦の最優先目標は、\p煌武院殿下を無事に横浜基地にお連れすることである」\e
+<000072ca> 【Marimo】「In other words,\p our primary objective is to bring Her Highness Koubuin safely to Yokohama Base.」\e
+
+//<0000164f> 【まりも】「――従って０６の安全を最優先とする。\nなお、\p支援車輌部隊は攪乱任務のため、\p熱海峠から１３５号線に向かう」\e
+<0000164f> 【Marimo】「――Therefore, 06's safety is our top priority.\nAlso,\p our support vehicles will be heading toward Atami Pass along Road 135 to disrupt the enemy.」\e//maybe confuse? ~IX
+
+//<0000079b> ――！\e
+<0000079b> ――!\e
+
+//<0000079c> 攪乱って…\p…\p\e
+<0000079c> Disrupt...\p...\p?\e
+
+//<0000079d> 確かに車輌は山道より市街地の方が有利だけど…\p…\pつまり囮って事だろう…\p…\p？\e
+<0000079d> They're certainly better off in the cities than the mountains, but...\p...\pdoesn't that mean they're just bait...\p...\p?\e
+
+//<0000079e> 【悠陽】「…\p…\p…\p」\e
+<0000079e> 【Yuuhi】「...\p...\p...\p」\e
+
+//<0000079f> 【まりも】「白銀」\e
+<0000079f> 【Marimo】「Shirogane.」\e
+
+//<000007a0> 【武】「――はい」\e
+<000007a0> 【Takeru】「――Ma'am.」\e
+
+//<00007529> 【まりも】「…\p…\p貴様は、\pどんな犠牲を払ってでも、\p必ず殿下を横浜基地へお送りするのだ。\nいいな！」\e
+<00007529> 【Marimo】「...\p...\pno matter what sacrifices must be made,\p you are to bring Her Highness to Yokohama Base at all costs.\nUnderstood!?」\e
+
+//<000007a2> 【悠陽】「…\p…\p…\p」\e
+<000007a2> 【Yuuhi】「...\p...\p...\p...\p」\e
+
+//<000007a3> 【武】「…\p…\p了解」\e
+<000007a3> 【Takeru】「...\p...\paffirmative.」\e
+
+//<000007a4> 【まりも】「この任務に携わる事は、\p国連軍の兵士であり日本人でもある我々にとって、\pこの上ない名誉である」\e
+<000007a4> 【Marimo】「As UN Army soldiers and Japanese citizens,\p taking part in this mission is an unparalleled honor for all of us.」\e//lit. "there is no greater honor than taking part in this mission" just did not feel right (and alt. "incredible honor")
+
+//<000007a5> 【まりも】「――各自の奮闘に期待する。\n以上！」\e
+<000007a5> 【Marimo】「――I expect nothing but the best from all of you.\n00 out!」\e
+
+//<000007a6> 【悠陽】「…\p…\p…\p…\p」\e
+<000007a6> 【Yuuhi】「...\p...\p...\p...\p」\e
+
+//<000007a7> 【武】「…\p…\p…\p…\p」\e
+<000007a7> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000007a8> …\p…\p…\p…\pオレが未来を変えたからこうなったのかも知れない。\e
+<000007a8> ...\p...\p...\p...\pthis might be all because I changed the future.\e
+
+//<000007a9> …\p…\pでも、\pこれだけは止めるつもりはない！\e
+<000007a9> ...\p...\pbut,\p I'm not gonna stop just because of this!\e
+
+//<000007aa> 止められないんだ！！\e
+<000007aa> I can't stop now!!\e
+
+//<000007ab> 【武】「…\p…\p…\p…\p」\e
+<000007ab> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000007ac> みんな…\p…\pこんなところで死ぬはずない…\p…\p！\e
+<000007ac> There's no way...\p...\pwe're all gonna die out here...\p...\p!\e
+
+//<000007ad> 大丈夫だ…\p…\p絶対…\p…\p大丈夫だ！\e
+<000007ad> It's fine...\p...\pI'm sure...\p...\pit'll be just fine!\e
+
+//<000007ae> 【悠陽】「本当に…\p…\p面倒をかけます…\p…\p」\e
+<000007ae> 【Yuuhi】「I am truly sorry...\p...\pfor causing you all such trouble...\p...\p」\e
+
+//<000007af> 【武】「絶対に横浜基地にお連れします。\n任せてください」\e
+<000007af> 【Takeru】「I'll bring you to Yokohama Base no matter what.\nLeave it to me.」\e
+
+//<000007b0> …\p…\p絶対に生き残るんだ！\e
+<000007b0> ...\p...\pwe will live through this!\e
+
+//<00007520> 生き残って、\p数式を取りに行って、\p『この世界』を救う！\e
+<00007520> We'll survive this,\p then I'll retrieve those equations and save this world!\e
+
+//<00007541> そして『元の世界』に帰るんだ…\p…\p絶対に！！\e
+<00007541> And then I'll go back to my world...\p...\p!!\e
+
+//<000007b3> 【まりも】「――２０７戦術機甲小隊…\p…\p全機発進ッ！！」\e
+<000007b3> 【Marimo】「――207th TSF Armored Platoon...\p...\pall units, move out!!」\e
+
+//<000007b4> 【千鶴】「０５珠瀬！　離れ過ぎよ！」\e
+<000007b4> 【Chizuru】「05, Tamase! You're going too far away!」\e
+
+//<000007b5> 【壬姫】「やってます！」\e
+<000007b5> 【Miki】「Working on it!」\e
+
+//<000007b6> 【美琴】「帝国軍が突破されたよ！」\e
+<000007b6> 【Mikoto】「They broke through the Imperial Army!」\e
+
+//<000007b7> 【冥夜】「狼狽えるな！　後方は斯衛が固めている！」\e
+<000007b7> 【Meiya】「Remain focused!\bThe Honor Guard is defending our rear!」\e//alt. "Retain your composure!"
+
+//<000007b8> 【まりも】「００から各機！　落ち着いて隊形を維持しろッ！」\e
+<000007b8> 【Marimo】「00 to all units! Stay calm and maintain formation!」\e
+
+//<000007b9> ――くっそ！\e
+<000007b9> ――Damn it!\e
+
+//<000007ba> あれだけいた帝国軍部隊があっという間に――！！\e
+<000007ba> There were so many Imperial Army units, but they lost in no time at all――!!\e
+
+//<00001652> 【千鶴】「――０６！　速度をもっと上げられないのッ！？」\e
+<00001652> 【Chizuru】「――06! Can't you go any faster!?」\e
+
+//<000072d3> 【武】「バカ言うな！　殿下は簡易ベルトなんだぞ！？　これ以上は体力的にも無理だッ！」\e
+<000072d3> 【Takeru】「Are you nuts!? Her Highness is in a simple harness!! Any faster would hurt her!」\e
+
+//<000007bd> 【悠陽】「――構いません白銀、\p速度をお上げなさい」\e
+<000007bd> 【Yuuhi】「――I do not mind, Shirogane.\p Increase your speed.」\e
+
+//<000007be> 【武】「しかしッ！」\e
+<000007be> 【Takeru】「But!」\e
+
+//<00007528> ――もう３０分以上、\p実戦機動で揺られっぱなしなんだぞ？！\e
+<00007528> ――You've been thrown around by this TSF for over thirty minutes now!!\e
+
+//<000007c0> いくら薬を飲んだからって無茶だ！\e
+<000007c0> Even with the medicine, that's just nuts!\e
+
+//<000007c1> 【悠陽】「――早くなさい」\e
+<000007c1> 【Yuuhi】「――Do it now.」\e
+
+//<000007c2> 【武】「…\p…\p…\p…\pわかりました！　０６より各機、\p次の谷を噴射跳躍でショートカット」\e
+<000007c2> 【Takeru】「...\p...\p...\p...\punderstood! 06 to all units,\p I'll take a shortcut by boost jumping over this next valley.」\e
+
+//<00001653> 【美琴】「――４時方向より機影多数接近！　稜線の向こうからいきなり――！！」\e
+<00001653> 【Mikoto】「――Multiple TSFs sighted at 4 o'clock!\bThey're coming over the ridge――!!」\e//lit. "TSF silhouettes"
+
+//<000007c4> ――――何だとォッ！？\e
+<000007c4> ――――What did you say!?\e
+
+//<000007c5> いつの間に入り込まれたッ！？\e
+<000007c5> Where the hell did they come from!?\e
+
+//<000007c6> 【まりも】「――全機兵器使用自由ッ！　各個の判断で応戦！　０６の生存を最優先せよッ！！」\e
+<000007c6> 【Marimo】「――You are cleared to engage!\bAll units return fire at will! Keep 06 alive!!」\e//first part I originally had as "All weapons authorized" but face it, this is much cooler ~IX
+//all units return fire at will (see next line) - Makoto //and it got even cooler! Arguably. ~IX
+
+//<000007c7> 【まりも】「――ただし！！　無闇にこちらから仕掛けるな！　向こうは迂闊に手出しできないはずだ」\e
+<000007c7> 【Marimo】「――But do not attack them first!\bThey can't afford the risk of attacking us directly.」\e
+
+/<000007c8> 【千鶴・冥夜・壬姫・慧・美琴】「――了解ッ！！」\n
+<000007c8> 【Chizuru & Meiya & Miki & Kei & Mikoto】「――Roger!!」\n
+
+//<000007c9> 【武】「了解ッ！！」\e
+<000007c9> 【Takeru】「Roger!!」\e
+
+//<000007ca> ――――とうとう殺し合いかよッ！！　クッソォォォッ！\e
+<000007ca> ――――We're gonna start killing each other now!?\bDamn iiiiiit!!\e//dude get over it already ~IX
+
+//<000007cb> オレは絶対に生き残る！　絶対に生き残ってやるんだッ！！\e
+<000007cb> I'm gonna live through this!\bI'll survive everything you throw at me!!\e
+
+//<000007cc> 【通信】「――国連軍及び斯衛部隊の指揮官に告ぐ」\e
+<000007cc> 【Transmission】「――To the UN Army and Honor Guard commanders.」\e//transmission 1
+
+//<000007cd> ――！？\e
+<000007cd> ――!?\e
+
+//<00001654> 【通信】「――我に攻撃の意図非ず。\n繰り返す――攻撃の意図非ず」\e
+<00001654> 【Transmission】「――We mean you no harm.\nRepeat――We mean you no harm.」\e//transmission 1
+
+//<000007cf> 併走している敵からだ――！！　オープンチャンネルでコールして来てやがる！\e
+<000007cf> It's from the enemies following us――!!\bThey're calling us on an open channel!\e
+
+//<00001655> 【通信】「――直ちに停止されたし」\e
+<00001655> 【Transmission】「――You must halt immediately.」\e//transmission 1
+
+//<000007d1> 機影は――！？\e
+<000007d1> Where'd they go――!?\e
+
+//<00001656> 【通信】「――貴官らの行為は、\p我が日本国主権の重大なる侵害である」\e
+<00001656> 【Transmission】「――Your actions are a grave violation of Japan's national sovereignty.」\e//I have to assume two different sources are transmitting during this scene ~IX//transmission 1
+
+//<000007d3> ――見えないッ！\e
+<000007d3> ――I can't see them!\e
+
+//<000007d4> ――――どこだッ！？\e
+<000007d4> ――――Where are they!?\e
+
+//<000007d5> ――なにッ！？　――正面ッ！？\e
+<000007d5> ――What!? ――In front of us!?\e
+
+//<000007d6> ――この距離までどうやってッ！？\e
+<000007d6> ――How'd they get this close!?\e
+
+//<000007d7> ――撃ってきたッ！？\e
+<000007d7> ――They're shooting!?\e
+
+//<000007d8> ――――ッ！！\e
+<000007d8> ――――!!\e
+
+//<000007d9> 【通信】「バカヤロウ――ロックオンするな！　殺されたいのか！」\e
+<000007d9> 【Transmission】「You idiots――Don't lock on to us!\bDo you wanna get killed!?」\e//transmission 2
+
+//<000007da> ――！？\e
+<000007da> ――!?\e
+
+//<000072df> 【通信】「こちらは米国陸軍第６６戦術機甲大隊――」\e
+<000072df> 【Transmission】「This is the American Army 66th TSF Armored Battalion――」\e//transmission 2 duh
+
+//<000007dc> ――米軍機！？\e
+<000007dc> ――They're American!?\e
+
+//<000007dd> 【米軍衛士１】「――速度を落とすんじゃない！　早く行け！」\e
+<000007dd> 【American Eishi 1】「――Don't slow down! Hurry it up!」\e
+
+//<000007de> 【米軍衛士２】「ここは任せろッ」\e
+<000007de> 【American Eishi 2】「Let us handle this!」\e
+
+//<000007df> 助かった…\p…\p！？\e
+<000007df> We're saved...\p...\p!?\e
+
+//<000007e0> 【まりも】「――２０７リーダー了解！」\e
+<000007e0> 【Marimo】「――This is 207's commander, copy that!」\e
+
+//<000007e1> 【米軍衛士１】「作戦に変更はない。\n安心して行け」\e
+<000007e1> 【American Eishi 1】「The plan hasn't changed.\nKeep going.」\e
+
+//<000007e2> 【まりも】「２０７各機――隊形を維持し最大戦闘速度！」\e
+<000007e2> 【Marimo】「All units in 207――Maintain formation at maximum combat speed!」\e
+
+//<000007e3> 【千鶴・冥夜・壬姫・慧・美琴】「――了解ッ！！」\n
+<000007e3> 【Chizuru & Meiya & Miki & Kei & Mikoto】「――Copy that!!」\n
+//This is where "Wilco" would be used, but out of the rule of cool, I'll leave it since it sounds fine.-Spin
+
+//<000007e4> 【武】「了解ッ！」\e
+<000007e4> 【Takeru】「Copy that!!」\e
+
+//<000007ed> 【クーデター軍衛士２】「――来ました！　機影８！　米軍のＦ－１５Ｅです」\e
+<000007ed> 【Rebel Eishi 2】「――They're here!\bEight hostiles! American F-15E Strike Eagles.」\e//F-15E is always voiced as Strike Eagle, but the text showing their unit number instead is quite intentional, so I'm not sure whether we want to try preserving this in the tl or just change it all ~IX //Raide suggested using both names at once, so that's what we'll do for now ~IX
+
+//<00001657> 【クーデター軍衛士３】「――米軍機に告ぐ。\n直ちに戦闘行為を停止せよ。\n繰り返す――直ちに戦闘行為を停止せよ」\e
+<00001657> 【Rebel Eishi 3】「――American Army:\nCease all combat operations immediately.\nRepeat――Cease all combat operations immediately.」\e
+
+//<00001b8a> 【米軍衛士３】「――所属不明機に告ぐ。\n即時自動翻訳を有効にせよ、\pまたは、\p国連軍事規約に従い、\p国際公用語である英語にて通信せよ」\e
+<00001b8a> 【American Eishi 3】「――Attention, unidentified TSFs:\nActivate your automatic translator or follow UN Army protocol by transmitting in English,\p the international language.」\e//shi said the voice here was "Attention unidentified craft. Enable your real time interpreter or follow the UN mandate proceedure and identify yourself in English the international official language." //I like 'mandate proceedure' - Sheeta// I like it like that, maybe Spin will come out with something better. -Shikiller //nah ~IX
+
+//<0000165a> 【クーデター軍衛士３】「諸君の行為は重大な内政干渉である。\n直ちに戦闘行為を中止せよ」\e
+<0000165a> 【Rebel Eishi 3】「You are interfering in Japanese national affairs.\p Cease all combat operations immediately.」\e
+
+//<0000165b> 【米軍衛士３】「――繰り返す。\n国際公用語である英語にて通信せよ。\n何を言っているのかわからない」\e
+<0000165b> 【American Eishi 3】「――Repeat.\nTransmit in English, the international language.\nWe can't understand what you're saying.」\e
+
+//<0000165c> 【クーデター軍衛士３】「米軍機に告ぐ。\n英語などクソ食らえ。\n繰り返す――英語などクソ食らえ」\e
+<0000165c> 【Rebel Eishi 3】「American Army:\nEnglish can eat shit.\nRepeat――English can eat shit.」\e//wwwww - kViN /heh, wanted to try this. -Shikiller //reverted with the force of a thousand suns ~IX
+
+//<0000165d> 【米軍衛士３】「――なに？」\e
+<0000165d> 【American Eishi 3】「――What?」\e
+
+//<0000165e> 【クーデター軍衛士３】「尻尾を巻いて逃げ帰った貴様らが今更日本に何の用だ。\n忘れ物でもしたのか、\p間抜けめ！」\e
+<0000165e> 【Rebel Eishi 3】「How dare you come back to Japan after fleeing with your tails between your legs.\nDid you cowards leave something behind!?」\e
+
+//<0000165f> 【クーデター軍衛士４】「――撃ってきました！」\e
+<0000165f> 【Rebel Eishi 4】「――They're firing!」\e
+
+//<00001660> 【クーデター軍衛士３】「Ｆ－１５Ｅ８機…\p…\p手強いぞ！　鶴翼参陣で包囲殲滅！　兵器使用自由！！」\e
+<00001660> 【Rebel Eishi 3】「Eight F-15E Strike Eagles...\p...\pthey're gonna be tough! Surround and destroy them with a Wing-3 formation! Weapons free, cleared to engage!!」\e
+
+//<00001661> 【米軍衛士４】「このやろォォォォッ！！」\e
+<00001661> 【American Eishi 4】「You asshoooooooooles!!」\e
+
+//<00001662> 【クーデター軍衛士５】「ぐあぁぁぁッ！！」\e
+<00001662> 【Rebel Eishi 5】「Guwaaaaaaaaa!!」\e
+
+//<00001663> 【クーデター軍衛士６】「撃震でＦ－１５Ｅと近接戦闘は無茶だ！　２機連携を崩すな！」\e
+<00001663> 【Rebel Eishi 6】「Gekishin can't take on Strike Eagles in close quarters! Make sure you attack them in pairs!」\e//close quarters bit voiced as "dogfighting" and the pairs thing as "elements" though google turns up no hits for that usage ~IX
+//elements is definitely better. it would also be better to choose F-15s or Strike Eagles now - Makoto //Found it in the DOD dict this time, but none of the "elements" listed seem likely to refer to two-man units, if anything they seem to imply at least a full squad. What am I missing? ~IX
+
+//<00001664> 【クーデター軍衛士４】「――７時方向より砲撃！！　――いきなり機影がッ！」\e
+<00001664> 【Rebel Eishi 4】「――We're being hit from 7 o'clock!!\b――I see more hostiles!」\e
+
+//<00001665> 【クーデター軍衛士３】「――バカなッ！　レーダーに反応は――」\e
+<00001665> 【Rebel Eishi 3】「――Impossible! The radar showed no――」\e
+
+//<00001666> 【クーデター軍衛士４】「――識別該当データ無しッ！　米軍の新鋭…\p…\pＦ－２２Ａだッ！」\e
+<00001666> 【Rebel Eishi 4】「――No IFF signal!\bIt's the new American model...\p...\pF-22A Raptors!」\e//voiced as "Raptors" I think ~IX
+
+//<00001667> 【クーデター軍衛士６】「全機散開ッ！　平面機動挟撃ッ！！」\e
+<00001667> 【Rebel Eishi 6】「All units, retreat!\bWe'll be caught in a pincer movement!!」\e
+
+//<00001668> 【クーデター軍衛士６】「ば…\p…\pかな…\p…\p」\e
+<00001668> 【Rebel Eishi 6】「Im...\p...\ppossible...\p...\p」\e
+
+//<00001669> 【米軍衛士５】「――各機損害報告」\e
+<00001669> 【American Eishi 5】「――All units, damage report.」\e
+
+//<0000166a> 【米軍衛士６】「スパイク２、\pありません」\e
+<0000166a> 【American Eishi 6】「Spike 2,\p alright.」\e
+
+//<0000166b> 【米軍衛士７】「スパイク３、\pありません」\e
+<0000166b> 【American Eishi 7】「Spike 3,\p no damage.」\e//voiced as 'quite well'. Dunno whether to change it or not though since it's kinda engrishy - Sheeta //there really is no good way to handle this stuff ~IX
+
+//<0000166c> 【米軍衛士８】「スパイク４、\pありません」\e
+<0000166c> 【American Eishi 8】「Spike 4,\p everything's A-OK.」\e//https://secure.wikimedia.org/wikipedia/en/wiki/A-ok - Raide
+
+//<0000166d> 【米軍衛士５】「――上出来だ。\n味方を包囲中の敵部隊を端から狩るぞ。\nついてこい」\e
+<0000166d> 【American Eishi 5】「――Well done.\nNow let's hunt down the ones trying to flank our friendlies.\nFollow me.」\e
+

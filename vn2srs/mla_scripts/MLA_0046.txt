@@ -1,0 +1,3388 @@
+// Title: 涙落ちる果て 12月19日（水）
+#FILENAME 01799f56
+#TYPE 3
+
+//<00000197> …\p…\p…\p…\p。\e
+<00000197> ...\p...\p...\p...\p\e
+
+//<00000198> ――ゆさゆさ\e
+<00000198> ――*shake* *shake*\e
+
+//<00000199> …\p…\p…\p…\p。\e
+<00000199> ...\p...\p...\p...\p\e
+
+//<0000019a> ――ゆさゆさ\e
+<0000019a> ――*shake* *shake*\e
+
+//<0000019b> 【武】「う、\pう～ん…\p…\p」\e
+<0000019b> 【Takeru】「Mm,\p mmmmm...\p...\p」\e
+
+//<0000019e> 【武】「…\p…\p…\p…\p」\e
+<0000019e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000019f> 【霞】「…\p…\p…\p…\p」\e
+<0000019f> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000001a0> 【武】「か…\pす…\p…\pみ…\p…\p」\e
+<000001a0> 【Takeru】「Ka...\psu...\p...\pmi...\p...\p」\e
+
+//<000001a1> 【霞】「…\p…\pおはようございます」\e
+<000001a1> 【Kasumi】「...\p...\pgood morning.」\e
+
+//<000001a3> 【武】「おはよう…\p…\p霞」\e
+<000001a3> 【Takeru】「Morning...\p...\pKasumi.」\e
+
+//<000001a4> 昨日は結局…\p…\p徹夜みたいなもんだったな…\p…\p。\e
+<000001a4> In the end...\p...\pwe nearly stayed up all night...\p...\p\e
+
+//<000001a5> あの後…\p…\p純夏の記録に目を通してたからな…\p…\p。\e
+<000001a5> Since I looked through Sumika's records...\p...\pafterward...\p...\p\e
+
+//<000001a6> 【武】「霞…\p…\p眠くないか」\e
+<000001a6> 【Takeru】「Kasumi...\p...\paren't you tired?」\e
+
+//<000001a7> 【霞】「はい…\p…\p眠くありません」\e
+<000001a7> 【Kasumi】「No...\p...\pI'm not tired.」\e
+
+//<000001a8> 【武】「そうか…\p…\p」\e
+<000001a8> 【Takeru】「I see...\p...\p」\e
+
+//<000001a9> 【霞】「ばいばい」\e
+<000001a9> 【Kasumi】「Bye-bye.」\e
+
+//<000001aa> 【武】「…\p…\p…\p…\pあ、\pちょっと待った」\e
+<000001aa> 【Takeru】「...\p...\pah,\p wait a minute.」\e
+
+//<000001ab> 【霞】「なんですか」\e
+<000001ab> 【Kasumi】「What is it?」\e
+
+//<000001ac> 【武】「昨日は言えなかったけど…\p…\p」\e
+<000001ac> 【Takeru】「I didn't get to say this yesterday...\p...\pbut...\p...\p」\e
+
+//<000001ad> 【霞】「…\p…\p…\p…\p」\e
+<000001ad> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000001ae> 【武】「逃げ出してすまなかった」\e
+<000001ae> 【Takeru】「I'm sorry for running away.」\e//woops...maybe he did mean apologizing in 0045 ~IX
+
+//<000001af> 【霞】「…\p…\p…\p…\p」\e
+<000001af> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000001b0> 【武】「おまえの言うとおり、\pオレは弱虫だった…\p…\p」\e
+<000001b0> 【Takeru】「You were right,\p I was a weakling...\p...\p」\e
+
+//<000001b1> 【武】「部隊の人たちには、\pそういうのを押しつけっていうんだって怒られたけど…\p…\p」\e
+<000001b1> 【Takeru】「The guys in my unit got mad when I tried to say the same to them...\p...\p」\e
+
+//<000001b2> 【武】「おまえには隠し事はできないから、\p謝っておきたかった」\e
+<000001b2> 【Takeru】「But I can't hide it from you,\p so I want to apologize.」\e
+
+//<000001b3> 【霞】「…\p…\p…\p…\p」\e
+<000001b3> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000001b4> 【武】「オレはもう逃げない…\p…\pオレのせいで、\pいっぱい迷惑かけた人たちに報いるまで戦う」\e
+<000001b4> 【Takeru】「I won't run away anymore...\p...\pI'll keep fighting until I've made it up to everyone.」\e
+
+//<000001b5> 【武】「だから…\p…\p許してくれ」\e
+<000001b5> 【Takeru】「So...\p...\pplease forgive me.」\e
+
+//<000001b6> 【霞】「…\p…\p…\p…\p」\e
+<000001b6> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000001b7> 【武】「本当に…\p…\pごめんな」\e
+<000001b7> 【Takeru】「I'm really...\p...\psorry.」\e
+
+//<000001b8> 【霞】「…\p…\pいっぱい…\p…\p辛かったですね」\e
+<000001b8> 【Kasumi】「...\p...\pit hurt a lot...\p...\pdidn't it?」\e
+
+//<000001b9> 【武】「…\p…\p…\p…\p…\p…\p」\e
+<000001b9> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000001ba> 【霞】「もう大丈夫です…\p…\pよわむしじゃないです」\e
+<000001ba> 【Kasumi】「It's okay now...\p...\pyou're not a weakling.」\e
+
+//<000001bb> 【武】「霞…\p…\p」\e
+<000001bb> 【Takeru】「Kasumi...\p...\p」\e
+
+//<00000d75> おまえにそう言われると…\p…\p自信が持てるよ…\p…\p。\e
+<00000d75> Hearing you say that...\p...\pmakes me feel more confident...\p...\p\e
+
+//<00000d77> おまえには嘘は通じないから…\p…\p。\e
+<00000d77> I can't fool you after all...\p...\p\e
+
+//<000001be> 【武】「あと…\p…\p」\e
+<000001be> 【Takeru】「Also...\p...\p」\e
+
+//<000001bf> 【霞】「…\p…\p」\e
+<000001bf> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000001c0> 【武】「純夏の友達になってくれて…\p…\pありがとう…\p…\p」\e
+<000001c0> 【Takeru】「Thank you...\p...\pfor being Sumika's friend...\p...\p」\e//okay...maybe it was both? ~IX
+
+//<000001c1> 【霞】「…\p…\p」\e
+<000001c1> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000001c2> 【武】「オレに言われたくないかも知れないけど…\p…\p本当にありがとう…\p…\p」\e
+<000001c2> 【Takeru】「Maybe you don't want me to say this...\p...\pbut I mean it, thank you...\p...\p」\e
+
+//<000001c3> 【霞】「…\p…\pあり…\p…\pがと…\p…\p」\e
+<000001c3> 【Kasumi】「...\p...\pthank...\p...\pyou...\p...\p」\e
+
+//<000001c4> 【武】「…\p…\pえ…\p…\p？」\e
+<000001c4> 【Takeru】「...\p...\peh...\p...\p?」\e
+
+//<000010a2> 【霞】「戻って来てくれて…\p…\pありがと…\p…\p」\e
+<000010a2> 【Kasumi】「Thank you...\p...\pfor coming back...\p...\p」\e
+
+//<000001c6> 【武】「霞…\p…\p…\p…\p」\e
+<000001c6> 【Takeru】「Kasumi...\p...\p...\p...\p」\e
+
+//<000001c7> 【霞】「…\p…\p」\e
+<000001c7> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000001c8> 【武】「…\p…\p…\p…\p」\e
+<000001c8> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000001c9> 【霞】「…\p…\pいつ来ますか…\p…\p？」\e
+<000001c9> 【Kasumi】「...\p...\pwhen will you come...\p...\p?」\e
+
+//<000001ca> 【武】「え…\p…\p」\e
+<000001ca> 【Takeru】「Eh...\p...\p?」\e
+
+//<000001cb> 【霞】「純夏さんの所にいつ来ますか…\p…\p？」\e
+<000001cb> 【Kasumi】「When will you come visit Sumika-san...\p...\p?」\e
+
+//<000001cc> 【武】「ああ、\p午前の座学が終わったらすぐに行く。\n悪いけど、\p午前中は頼むよ」\e
+<000001cc> 【Takeru】「Aaah,\p right after my morning classes end.\nSorry,\p but you're on your own until then.」\e
+
+//<000001cd> 【霞】「わかりました」\e
+<000001cd> 【Kasumi】「I understand.」\e
+
+//<000001ce> 【武】「急いで交代しに行くから…\p…\p」\e
+<000001ce> 【Takeru】「I'll hurry down there as soon as I can...\p...\p」\e
+
+//<000001cf> 【霞】「…\p…\pその方が純夏さん喜びます」\e
+<000001cf> 【Kasumi】「...\p...\pthat would make Sumika-san happy.」\e
+
+//<000001d0> 【武】「…\p…\pえ？」\e
+<000001d0> 【Takeru】「...\p...\peh?」\e
+
+//<000001d1> 【霞】「ばいばい…\p…\p」\e
+<000001d1> 【Kasumi】「Bye-bye...\p...\p」\e
+
+//<000001d4> 霞…\p…\p…\p…\p\e
+<000001d4> Kasumi...\p...\p...\p...\p\e
+
+//<000006e6> 【伊隅大尉】「――これらの事例から、\p対ＢＥＴＡ戦術に於いて陽動は非常に有効である事がわかる」\e
+<000006e6> 【Capt. Isumi】「――These examples demonstrate that diversionary tactics are extremely effective against the BETA.」\e
+
+//<000006e8> 【伊隅大尉】「それを裏付けたのが１９７７年、\pオルタネイティヴ３によって実施された陽動効果の実証実験だ」\e
+<000006e8> 【Capt. Isumi】「This was proven in 1977 by the Alternative III operation, which made extensive use of diversions.」\e
+
+//<0000152d> 【伊隅大尉】「この実験は世界数個所のハイヴに、\p同一パターンの陽動を、\p開始時期をずらしながら仕掛けるという内容だった」\e
+<0000152d> 【Capt. Isumi】「They attacked a number of hives around the world at different times in order to distract the enemy.」\e
+
+//<000006ec> 意外だな…\p…\pオルタネイティヴ３がそんな実験をやったのか。\e
+<000006ec> That's surprising...\p...\pI had no idea Alternative III did experiments like that too.\e
+
+//<000006ed> 人工ＥＳＰ発現体の開発とか、\pリーディングなんていう事からは想像できない地味な実験だな。\e
+<000006ed> It sounds so much more mundane than researching test tube babies with ESP.\e
+
+//<00001793> 【伊隅大尉】「その結果は、\p子供だましレベルから複雑なものまで、\p１パターンあたり最短で１９日間も効果があった、\pという驚くべきものだった」\e
+<00001793> 【Capt. Isumi】「To our surprise,\p we learned that both childishly simple and highly elaborate diversions would work on them for exactly nineteen days.」\e
+
+//<000006f0> 【武】「…\p…\p…\p…\p」\e
+<000006f0> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000006f1> 一体何なんだよ、\pＢＥＴＡって…\p…\p。\e
+<000006f1> Intelligent life forms with the technology for interstellar travel can be fooled that easily?\e
+
+//<000006f2> 恒星間航行技術を持つ知的生命体が、\p子供だましレベルの陽動に引っかかり続けるっていうのか？\e
+<000006f2> What the hell are the BETA...\p...\p?\e//in case anyone's wondering, I swapped this line with the line above - Sheeta
+
+//<000006f3> ＢＥＴＡの強さは…\p…\p身に染みてる。\n決して舐めてるわけじゃないけど…\p…\p人類はそんなバカみたいな連中に滅ぼされようとしているのか…\p…\p！？\e
+<000006f3> I've learned firsthand...\p...\phow tough the BETA are.\nI'm very sure I'm not underestimating them...\p...\pbut is humanity seriously getting wiped out by morons like that...\p...\p!?\e//dude, read more sci-fi, it's obviously a hive mind that takes 19 days to...get all its users to update to the new version? Hmm... ~IX
+
+//<00001537> 【伊隅大尉】「だが興味深い事に、\pひとつの陽動パターンが、\pとあるハイヴに属するＢＥＴＡ群に通用しなくなると――」\e
+<00001537> 【Capt. Isumi】「But interestingly enough,\p whenever each diversionary tactic stopped working on the BETA of a particular hive――」\e
+
+//<00001539> 【伊隅大尉】「ほぼ同時期に、\p遠隔地にある別のハイヴに属するＢＥＴＡ群にも、\pそのパターンは通用しなくなった」\e
+<00001539> 【Capt. Isumi】「It also stopped working on BETA from far away hives at almost the same exact time.」\e
+
+//<0000153b> 【伊隅大尉】「しかもその後、\p実験対象外だったハイヴで同じ陽動パターンを試すと、\p最初から全く通じないという結果が出たんだ」\e
+<0000153b> 【Capt. Isumi】「And afterward,\p when they tried the same tactic on hives they hadn't been experimenting on, it never worked at all.」\e
+
+//<000006fa> つまり、\p遅いだけで何らかの情報伝達はされている…\p…\pという事か。\e
+<000006fa> Which means they're sending information to each other...\p...\pvery slowly.\e//but in few lines before, the information transfers "at almost the same exact time". - Raide //yes, its weird, the implication is the hives communicate quickly but the individuals slowly ~IX
+
+//<000006fb> …\p…\p何か、\p『元の世界』のテレビで似たようなのを見た事があるな。\e
+<000006fb> ...\p...\pI think I saw something like that on TV back in my world.\e
+
+//<000006fc> ある島の海岸で芋を洗って喰う猿が一定数以上に増えると、\p別の島の猿が急に同じ事を始めるって奴だ。\e
+<000006fc> When a lot of monkeys on one island started washing potatoes before eating them,\p the monkeys on another island suddenly started doing the same thing.\e
+
+//<00001540> 【伊隅大尉】「だが、\pその何れのハイヴでも、\p多少アレンジを加えれば、\pほぼ同じ内容の陽動であっても、\p効果が認められたらしい」\e
+<00001540> 【Capt. Isumi】「However,\p if they mixed up the tactics a bit,\p then all of the hives started falling for them again,\p even if the new diversions were almost identical to the old ones.」\e
+
+//<000006ff> 【武】「…\p…\p…\p…\p」\e
+<000006ff> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000700> 【伊隅大尉】「このように、\p奴らの戦術的対処は非常に緩慢だ。\n愚鈍といっても良い」\e
+<00000700> 【Capt. Isumi】「Their strategic response capabilities are sluggish.\nThey could almost be called stupid.」\e
+
+//<00001545> 【伊隅大尉】「まあ、\p考えようによっては、\p圧倒的な物量を持つ故の余裕、\pなのかも知れないな」\e
+<00001545> 【Capt. Isumi】「Another way to think of it would be that their overwhelming numerical superiority means they don't need to bother.」\e
+
+//<00000704> 【武】「余裕…\p…\pですか？」\e
+<00000704> 【Takeru】「Don't...\p...\pbother?」\e
+
+//<0000154b> 【伊隅大尉】「ああそうだ。\n陽動が成功したといっても、\pその度に戦闘に勝った訳ではないしな」\e
+<0000154b> 【Capt. Isumi】「Yes, that's right.\nWe say some of the diversions succeeded,\p but that doesn't mean we won those battles.」\e
+
+//<0000154d> ――え？\e
+<0000154d> ――Eh?\e
+
+//<0000154e> 【伊隅大尉】「実際、\p実験期間中の戦闘は８割方負けている」\e
+<0000154e> 【Capt. Isumi】「We actually lost over eighty percent of them.」\e
+
+//<00001550> 【武】「…\p…\p…\p…\p」\e
+<00001550> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001551> 結果的に勝ってるから、\pＢＥＴＡは細かい事を気にしていないっていうのか？　…\p…\p凄いな、\pそれ。\e
+<00001551> So the BETA don't bother with strategy much because they always win in the end? ...\p...\pthat's kind of amazing.\e
+
+//<00000709> 【伊隅大尉】「この実験自体は、\pオルタネイティヴ３の主目的に対し、\p有効な支援策を検討する目的で行われたが…\p…\p」\e
+<00000709> 【Capt. Isumi】「These experiments were performed in order to help Alternative III's primary objective, but...\p...\p」\e
+
+//<0000070b> なるほど…\p…\p。リーディング任務の成功率を高めるためにＢＥＴＡを誘き出して、\pハイヴを手薄にさせようって作戦か。\e
+<0000070b> I see...\p...\pthey lured the BETA elsewhere to improve the chances of a successful reading.\e
+
+//<0000070c> 【伊隅大尉】「実験実施の切っ掛けになったのが、\p１９７３年から翌年にかけて確認された事例だった」\e
+<0000070c> 【Capt. Isumi】「The decision to perform them was made as a result of the incidents in 1973 and 4.」\e
+
+//<0000070e> ７３年から７４年…\p…\p地球でのＢＥＴＡ大戦が始まった頃だな…\p…\p。\e
+<0000070e> '73 and 4...\p...\pthat's when the war with the BETA started...\p...\p\e
+
+//<00001952> 【伊隅大尉】「１９７３年４月１９日、\p喀什にＢＥＴＡの着陸ユニットが落下した事は知っての通りだ」\e
+<00001952> 【Capt. Isumi】「On April 19th, 1973,\p the BETA landed in Kashgar, as you may recall.」\e
+
+//<00000711> 【伊隅大尉】「その着陸ユニットから出現したＢＥＴＡに対し、\p中国軍が行った航空作戦は、\p開戦から約２週間は有効に機能していた」\e
+<00000711> 【Capt. Isumi】「The Chinese Army's aerial operations against the BETA were effective for about two weeks after hostilities opened.」\e
+
+//<00001555> ――えっ？　そうだったのか…\p…\p！？　航空機は最初から役に立たなかったのかと思ってた。\e
+<00001555> ――Eh? They were...\p...\p!?\bI thought aircraft were useless right from the start.\e
+
+//<00001556> 【伊隅大尉】「だがその後、\p７７年の実験結果と同様に、\p喀什のＢＥＴＡには一切の航空作戦が通用しなくなった」\e
+<00001556> 【Capt. Isumi】「But after that,\p all aerial attacks ceased to be effective on the BETA in Kashgar,\p following the same pattern as the experiments in '77.」\e//I like how in Japanese you don't need the ' or anything ~IX
+
+//<00001955> 【伊隅大尉】「そして７４年の７月６日、\pアサバスカに落下したユニットに対し、\p米軍は着陸とほぼ同時に核攻撃を行った」\e
+<00001955> 【Capt. Isumi】「Then on July 6th, 1974,\p the American Army commenced a nuclear attack on the BETA in Athabasca immediately after they landed.」\e
+
+//<0000155a> 【伊隅大尉】「この時使用されたのは巡航ミサイルや地対地戦術核だ」\e
+<0000155a> 【Capt. Isumi】「They used cruise missiles and surface-to-surface tactical nukes.」\e
+
+//<0000155c> 【伊隅大尉】「何れも航空兵器だが、\pＢＥＴＡの出現前に着陸ユニットを殲滅する事に成功している」\e
+<0000155c> 【Capt. Isumi】「All of them were flying warheads,\p but they successfully annihilated the BETA landing unit before any of them emerged.」\e
+
+//<0000155e> 【武】「…\p…\p…\p…\p」\e
+<0000155e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001958> 【伊隅大尉】「おかしいだろう？　１９日以上の間をおいて落下したユニットに、\p航空兵器の情報が伝わっていないんだ」\e
+<00001958> 【Capt. Isumi】「Isn't that strange? That unit landed over nineteen days after the first,\p but it had no information on aerial weapons.」\e
+
+//<0000071c> そういえばそうだ。今までの説明通りだったら、\p対空戦術情報が伝わっている筈だ。\e
+<0000071c> That's a good point.\bFrom what you've said so far,\p they ought to have shared that information.\e
+
+//<00001563> 【伊隅大尉】「この単純な矛盾は、\p月面戦争以降の戦闘記録を洗っていた、\pオルタネイティヴ３の戦略情報局が指摘するまで、\p誰も気付かなかったんだ」\e
+<00001563> 【Capt. Isumi】「No one noticed this contradiction until Alternative III's strategic information division pointed it out,\p since all war records after the moon was abandoned were erased.」\e//unsure about last clause ~IX
+
+//<00001565> え…\p…\p？\e
+<00001565> Eh...\p...\p?\e
+
+//<00001566> 【伊隅大尉】「開戦当初の国連軍は、\p今以上に寄せ集め軍隊である弊害が顕著だったからな」\e
+<00001566> 【Capt. Isumi】「Back when hostilities opened,\p the UN was much more of a mish-mash and had more red tape than it does now.」\e
+
+//<00001568> 【伊隅大尉】「それに地球が戦場になった事での混乱も、\p矛盾見落としの大きな原因だったに違いない」\e
+<00001568> 【Capt. Isumi】「That, plus the mass confusion caused by the entire world becoming a war zone,\p must have been a big reason why everyone missed it.」\e
+
+//<00000721> 確か、\p中国やソ連は自力制圧を主張して、\p国連の介入を断ったって夕呼先生が言ってたよな。\e
+<00000721> I remember Yuuko-sensei saying the Chinese and Soviets wanted to deal with it themselves,\p so they refused UN aid.\e
+
+//<00000722> オルタネイティヴ３ぐらいの時期まで追いつめられてやっと気付くなんて、\p結局人間だって情報共有がうまくいかなかったって事だ。\e
+<00000722> If it took them until Alternative III to notice that,\p humanity must've had serious problems with information sharing.\e
+
+//<0000156d> 【伊隅大尉】「開戦当初のこの事例と７７年の実験の結果、\pＢＥＴＡの戦術情報伝播モデルが推定された」\e
+<0000156d> 【Capt. Isumi】「Based on these events and the experiments in '77,\p a model has been hypothesized for the BETA's tactical information circulation.」\e
+
+//<0000156f> 【武】「戦術情報伝播モデル…\p…\p？」\e
+<0000156f> 【Takeru】「An information circulation model...\p...\p?」\e
+
+//<00001570> 【伊隅大尉】「まず、\p新たな戦術的情報を得たＢＥＴＡがハイヴに生還し、\pそれに属する個体間で優先的に情報が共有される」\e
+<00001570> 【Capt. Isumi】「First,\p if a BETA gains new tactical information and returns to the hive alive,\p it shares it as top priority information with all other individuals.」\e
+
+//<00001572> 【伊隅大尉】「そして、\p約１９日間でそのハイヴに属する全個体に情報が行き渡ると、\p即時、\p他の全ハイヴに情報が伝達される――というものだ」\e
+<00001572> 【Capt. Isumi】「That information makes it through the entire hive after about nineteen days,\p at which point it is immediately transmitted to all other hives――Or so says the theory.」\e
+
+//<00001574> 【伊隅大尉】「だが、\p即時伝達が可能なのは、\p同じオリジナルハイヴから派生した同系のハイヴ間に限られているようだ」\e
+<00001574> 【Capt. Isumi】「However,\p immediate transfers only seem to be possible between hives derived by the same original hive.」\e
+
+//<00001576> 【伊隅大尉】「そして、\p一度着陸ユニットという惑星間航行形態を取ると、\pそれまで属していた派生系からは独立するらしい」\e
+<00001576> 【Capt. Isumi】「It also seems that any hives derived from it before it began its interstellar flight become cut off.」\e
+
+//<00001578> 【伊隅大尉】「これは、\p共に月から飛来した喀什とアサバスカの着陸ユニットに、\p対空戦術の情報共有が無かった事からの推測だ」\e
+<00001578> 【Capt. Isumi】「We infer this from the fact that the Athabasca landing unit did not seem to have the Kashgar unit's information on aerial weaponry,\p despite them both coming from the moon.」\e
+
+//<0000157a> 【武】「なるほど…\p…\p」\e
+<0000157a> 【Takeru】「I see...\p...\p」\e
+
+//<00001979> 【伊隅大尉】「以上の事から、\pＢＥＴＡは戦術情報を統合的に運用していない、\pという予測が導き出される」\e
+<00001979> 【Capt. Isumi】「All of the above lead us to the conclusion that the BETA do not make efficient use of their tactical information.」\e//lit. "unified use" or something, that puzzled me ~IX
+
+//<0000157d> 人間で言えば、\p各前線司令部がそれぞれ好き勝手に戦って、\pたまに情報交換するみたいな事だろ？　何でそんな悠長に構えているんだ…\p…\p？　人類が弱いからなのか？\e
+<0000157d> In human terms,\p all of the front line HQs fight any way they want,\p and every so often share all their information at once.\bWhy would they be so laid back about this...\p...\p?\bBecause humans are so weak?\e
+
+//<0000157e> いくら物量に勝るからって…\p…\pそんな非効率的な戦いをする意味がわからない。\nだけど、\p人類が今まで生き長らえているのは、\p明らかにそのおかげだな…\p…\p。\e
+<0000157e> Sure, they can win by sheer numbers...\p...\pbut why bother fighting so inefficiently?\p That's clearly the biggest reason humanity has lasted this long...\p...\p\e
+
+//<0000157f> 【伊隅大尉】「この様にＢＥＴＡは、\pその戦術や戦略のみならず、\p情報運用も非常に低レベルであり、\p知的生命体である事すら疑わしいが…\p…\p」\e
+<0000157f> 【Capt. Isumi】「The BETA's ability to apply their tactical information is just as low,\p to the point where we doubt they're even intelligent life forms...\p...\p」\e
+
+//<00001581> 【伊隅大尉】「ここ数年に見られるレーザー属種の戦術パターンの変化は、\p我々を更に困惑させる」\e
+<00001581> 【Capt. Isumi】「But changes in the tactics of laser species over the past few years have bewildered us even further.」\e
+
+//<00000739> 戦術パターンの変化…\p…\p？\e
+<00000739> Laser species tactics...\p...\p?\e
+
+//<00000dc3> 【伊隅大尉】「繰り返しになるが、\p地球に到達して以来、\pレーザー属種は航空兵器の撃破を最優先している。\nこれは今でも変わっていない」\e
+<00000dc3> 【Capt. Isumi】「To repeat myself,\p the laser species have prioritized aerial weaponry ever since landing on Earth.\nThat has not changed.」\e
+
+//<00000dc5> 【伊隅大尉】「そして、\p次にレーザー属種が優先撃破の対象としたのが、\p高性能コンピューターを搭載した兵器だ。\nこれは他のＢＥＴＡ種も同様だ」\e
+<00000dc5> 【Capt. Isumi】「The laser species' second priority targets are weapons carrying powerful computers.\nThis applies to other BETA species as well.」\e
+
+//<00000dc7> 【伊隅大尉】「大戦中期までの統計データでは、\p歩兵より高機動車、\p装甲車よりも戦車を優先して攻撃する傾向が見て取れる」\e
+<00000dc7> 【Capt. Isumi】「Statistical analysis of combat data partway through the World War shows a tendency for them to attack tanks before armored cars,\p and scout cars before infantry.」\e//not sure which war taisen is here ~IX
+
+//<00000dc9> 【伊隅大尉】「また、\p偵察や拠点防衛用の無人兵器についても、\p搭載コンピューターの能力が高ければ高いほど、\p優先的に攻撃している」\e
+<00000dc9> 【Capt. Isumi】「Also,\p as for reconnaissance and point defense drones,\p the more powerful the onboard computer,\p the higher priority it is.」\e
+
+//<00000742> 【伊隅大尉】「その識別方法は依然不明だが、\pそれこそが、\pミサイルより砲弾が迎撃されにくい大きな要因だと推測されている」\e
+<00000742> 【Capt. Isumi】「How they determine this is unknown,\p but it is thought to be a big reason as to why shelling is more effective than a missile barrage.」\e
+
+//<00001978> なるほど…\p…\p爆弾や砲弾ですらコンピューターが入ってるとは言っても、\pそれは小さなものだからな。\e
+<00001978> I see...\p...\pbombs and shells can have computers in them,\p but always small ones.\e
+
+//<00000745> 【伊隅大尉】「航空兵力を持たないＢＥＴＡが、\p人類の空軍力を真っ先に無力化した事」\e
+<00000745> 【Capt. Isumi】「The BETA have no airborne weaponry,\p so they immediately rendered all of humanity's air forces useless.」\e
+
+//<00000747> 【伊隅大尉】「そして、\p兵器の性能を左右するコンピューターを基準に脅威度の格付けをしている事」\e
+<00000747> 【Capt. Isumi】「And,\p they seem to measure threat levels of weapons based on the sophistication of their electronics.」\e
+
+//<00001588> 【伊隅大尉】「この２つの事実は、\p軍の上層部や研究者達を、\pある意味かなり安心させる材料となっていた」\e
+<00001588> 【Capt. Isumi】「In a way,\p these facts were a great relief to researchers and high-ranking officers.」\e
+
+//<0000074b> 【武】「安心…\p…\p？　どういう事ですか？」\e
+<0000074b> 【Takeru】「Relief...\p...\p? What do you mean?」\e
+
+//<0000158d> 【伊隅大尉】「脅威度の高い兵器を優先的に無力化する行動は、\p人類の戦術戦略概念との共通性を垣間見る事ができるからだ」\e
+<0000158d> 【Capt. Isumi】「The act of neutralizing more threatening weapons first seems to be a sign that their concept of warfare isn't completely unrelated to humanity's.」\e
+
+//<0000074e> 【武】「なるほど…\p…\p」\e
+<0000074e> 【Takeru】「I see...\p...\p」\e
+
+//<0000074f> 全く異質で理解不可能なＢＥＴＡに、\p唯一同じ様な考えをする所があったって事だもんな。\e
+<0000074f> So they're glad to see they have at least one thing in common with the otherwise incomprehensible BETA.\e
+
+//<00000750> そうであれば戦い方も予測しやすいって思ったんだろう。\e
+<00000750> They probably thought that'd make them easier to predict.\e
+
+//<00001592> 【伊隅大尉】「だが最近、\pその脅威度の格付けに変化があったらしい」\e
+<00001592> 【Capt. Isumi】「But recently,\p they seem to be measuring threats differently.」\e
+
+//<00001594> 【伊隅大尉】「ここ数年、\pＢＥＴＡは明らかに人間が搭乗している兵器を識別し、\p優先的に攻撃している」\e
+<00001594> 【Capt. Isumi】「Over the last few years,\p the BETA have clearly been targeting and attacking weapons carrying humans.」\e
+
+//<00000753> 【武】「えっ…\p…\p？」\e
+<00000753> 【Takeru】「Eh...\p...\p?」\e
+
+//<00000754> さっきの話だと人間…\p…\pていうか、\p歩兵は一番下だったじゃないか…\p…\p？！\e
+<00000754> Didn't you say a second ago that humans...\p...\pI mean, infantrymen were the lowest priority...\p...\p!?\e
+
+//<00001599> 【伊隅大尉】「脅威度のランキングそのものに変化はないようだ。\nだが、\p有人兵器をより上位に設定している」\e
+<00001599> 【Capt. Isumi】「The ranking itself doesn't seem to have changed,\bbut manned weapons are now higher priority than unmanned.」\e
+
+//<00000757> 【武】「…\p…\p…\p…\p」\e
+<00000757> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000159e> …\p…\pつまり搭載コンピューターの性能や、\pその他の条件が同じなら、\p人間が搭乗している兵器を真っ先に叩くって事か。\e
+<0000159e> ...\p...\pso if the onboard computers are the same,\p they'll go for the one with a human in it first.\e
+
+//<0000159f> 【伊隅大尉】「人類を生命体と認識していないＢＥＴＡが、\pどうやって有人兵器を識別し、\pなぜそれを優先するようになったのか…\p…\p」\e
+<0000159f> 【Capt. Isumi】「The BETA don't recognize humans as life forms,\bso how do they recognize human pilots,\band why do they prioritize them...\p...\p?」\e
+
+//<000015a1> 【伊隅大尉】「例によって、\pその理由は全くわかっていない」\e
+<000015a1> 【Capt. Isumi】「As usual,\p we have absolutely no idea.」\e
+
+//<0000075a> 【武】「…\p…\p…\p…\p」\e
+<0000075a> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000075c> …\p…\pそれは…\p…\p…\p…\pもしかして…\p…\p。\e
+<0000075c> ...\p...\pmight that...\p...\p...\p...\phave something to do with...\p...\p\e
+
+//<00000762> ＢＥＴＡが人間を捕まえている事に関係しているのか…\p…\p？\e
+<00000762> The reason the BETA are taking humans prisoner...\p...\p?\e
+
+//<00000763> その結果、\p有人兵器を狙うようになったのか…\p…\p？　それとも…\p…\pその逆なのか…\p…\p？\e
+<00000763> Did they start targeting manned weapons after their experiments...\p...\p? Or...\p...\pwas it the other way around...\p...\p?\e
+
+//<000015a6> 【伊隅大尉】「唯一はっきりしているのは、\p戦場に於いて、\p最も高性能なコンピューターを搭載した有人兵器――」\e
+<000015a6> 【Capt. Isumi】「The one thing we know for sure is that manned weapons with advanced computer systems――」\e
+
+//<00000766> 【伊隅大尉】「つまり戦術機が真っ先にＢＥＴＡに狙われるという事だ」\e
+<00000766> 【Capt. Isumi】「Namely, TSFs, are targeted by the BETA before anything else.」\e
+
+//<00000768> 【武】「…\p…\p…\p…\p」\e
+<00000768> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000769> …\p…\pそれは、\p戦術機が最も有効な対ＢＥＴＡ兵器である以上、\p当然だろう。\nだからといって、\p戦車や歩兵が安全だってわけじゃないんだ。\e
+<00000769> ...\p...\pwhich is only natural,\p since TSFs are the most effective anti-BETA weapon.\nStill,\p that doesn't mean tanks and infantry are harmless.\e
+
+//<000015ab> 兵器であれなんであれ、\p人工物だろうが自然だろうが…\p…\p、\p人間だろうが…\p…\pＢＥＴＡは全てを破壊するんだ。\e
+<000015ab> No matter what kind of weapon it is,\p whether it's artificial or natural...\p...\por human...\p...\pthe BETA destroy everything.\e
+
+//<000015ac> 【伊隅大尉】「――これまでの話からもわかるように、\pＢＥＴＡという生命体は、\p我々人類には全く理解できない異質な存在だ」\e
+<000015ac> 【Capt. Isumi】「――As you have probably noticed,\p the true nature of the life forms known as "BETA" is beyond human comprehension.」\e
+
+//<000015ae> 【伊隅大尉】「我々は未だに、\pＢＥＴＡが知的生命体なのか、\p単なる異星起源の生物に過ぎないのかすら特定できていない」\e
+<000015ae> 【Capt. Isumi】「We still cannot be certain whether or not the BETA are intelligent life forms or simply extraterrestrial animals.」\e
+
+//<00000770> 【武】「…\p…\p…\p…\p」\e
+<00000770> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000771> 【伊隅大尉】「だからこそ人類は、\pその存在や行動に理解可能な意味を持たせようと必死になっている」\e
+<00000771> 【Capt. Isumi】「Which is why humanity is desperate to find out the rationale behind their bizarre behaviors.」\e
+
+//<000015b5> 【伊隅大尉】「シロアリの社会構造をモデルにした旧来の説をベースに、\pＢＥＴＡ全体をひとつの生物に見立てるのが、\p学説の最新流行だ」\e
+<000015b5> 【Capt. Isumi】「The most recent approach is to view all the BETA as a single creature based on an old model of termite social structure.」\e
+
+//<000017a1> 【伊隅大尉】「これは、\p人類で言うところのコンピューターに相当する装置が、\p横浜ハイヴの調査で発見できなかった事実からも、\p有力視されている」\e
+<000017a1> 【Capt. Isumi】「This was supported by the failure to discover anything we might call a computer inside the Yokohama hive.」\e
+
+//<000017a2> つまり、\p人類のような知的生命体ではなく、\p宇宙を渡る習性のあるただの異星生物だと考えているのか。\e
+<000017a2> So they might not be intelligent life forms,\bbut simply extraterrestrials with an inborn ability for space travel.\e
+
+//<000017a3> 数学や構造力学を知らない昆虫が、\pハニカム構造や巨大な蟻塚を作ったりするのと同じ様に、\pＢＥＴＡが宇宙船やハイヴを作ったっていうのか…\p…\p？\e
+<000017a3> So the BETA build spaceships and hives without any knowledge of math or engineering, the same way insects build honeycombs and anthills...\p...\p?\e
+
+//<000015b7> 【伊隅大尉】「たとえば、\p大きな謎である各ＢＥＴＡ種の生物学的な差異――」\e
+<000015b7> 【Capt. Isumi】「For instance,\p the mystery of why the BETA species are so biologically distinct――」\e
+
+//<000015b9> 【伊隅大尉】「これは、\pＥＳ細胞から分化した人体各部が全く違う形をしているのと同じだとする説」\e
+<000015b9> 【Capt. Isumi】「It's been theorized that such divisions are no different from how an embryonic stem cell can become many different types of cells in different body parts.」\e
+
+//<000015bb> 【伊隅大尉】「むしろハイヴが本体であり、\p各種ＢＥＴＡは、\p細胞内のミトコンドリアのように、\p段階的に取り込まれた別々の生物であるとする説」\e
+<000015bb> 【Capt. Isumi】「There's even a theory that the hive is the actual BETA,\p and it captured all the other species for its own use,\p just like mitochondria inside our own cells.」\e//everyone knows mitochondria were originally monocellular organisms that bigger cells absorbed to create the first animal cells, RIGHT? ~IX//...yeah...yeah sure I do... - Sheeta
+
+//<000015bd> 【伊隅大尉】「今年の春、\p米国の学者が発表した説では、\pハイヴが脳に当たる働きをし、\pＢＥＴＡは手足に過ぎないとしている」\e
+<000015bd> 【Capt. Isumi】「And last spring,\p an American scientist published yet another theory that the hive acts as the brain and the BETA are merely its appendages.」\e
+
+//<0000077b> 【武】「…\p…\p…\p…\p」\e
+<0000077b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000077c> 話を聞けば聞くほど、\pＢＥＴＡが異星起源種なんだって痛感する。\nオルタネイティヴ計画に携わった科学者達の苦悩がよくわかるな…\p…\p。\e
+<0000077c> The more I hear about them,\p the more the BETA feel extraterrestrial.\nI can see why the scientists in the Alternative Plans made so little progress...\p...\p\e
+
+//<000017a7> でも今までの話からすると、\p確かにＢＥＴＡはただの野生動物のようなモノなんじゃないかって思えてくる。\e
+<000017a7> But from what she's said so far,\p it's entirely plausible that the BETA are no different from wild animals.\e
+
+//<0000077e> 動物だってパターン学習はするし、\p人間を識別して利用する場合だってある。\e
+<0000077e> Animals can learn after all,\p and they're even capable of using humans for their own needs.\e
+
+//<0000077f> 『元の世界』では、\p道路に固い木の実を置いて、\p車に轢かせて中身を喰うカラスの話があったぐらいだし。\e
+<0000077f> Back in my world,\p I remember hearing about crows that would leave nuts on the street and wait for cars to run them over so they could get at the insides.\e//I've seen footage of this, they'll even wait to use the crosswalk until the WALK sign lights up ~IX
+
+//<00000780> 人間の身体にだって、\p何種類もの細菌や寄生虫が共生しているんだ。\n数種類のＢＥＴＡが共生していたっておかしくないだろ。\e
+<00000780> Even inside the human body,\p hundreds of different bacteria and parasites coexist.\nThere's nothing weird about multiple species of BETA coexisting.\e//anyone happen to know if "hundreds" is accurate? It feels too small. ~IX
+
+//<000017a9> 宇宙船は持っていても…\p…\pとても知的生命体だとは思えない。\nある意味バカ過ぎる。\e
+<000017a9> They may have spaceships...\p...\pbut they don't seem very intelligent.\nIt's almost moronic.\e
+
+//<000015c2> 【伊隅大尉】「――では次に、\pＢＥＴＡどもの要塞、\pハイヴについて触れてゆく。\nまずはその概要からだ」\e
+<000015c2> 【Capt. Isumi】「――Next,\p let's go over BETA fortresses,\p or hives.\p We'll start with the definition.」\e
+
+//<000015c7> 【伊隅大尉】「知ってのようにハイヴは、\p着陸ユニットと呼ばれる、\p宇宙船の着陸地点に建設される前線基地だ」\e
+<000015c7> 【Capt. Isumi】「As you know,\p a hive is a forward base established at the point where a BETA spaceship,\p or landing unit,\p impacted.」\e
+
+//<00000788> 【伊隅大尉】「『モニュメント』と呼ばれる地表構造と『スタブ』と呼ばれる広大な地下茎構造を持ち、\pＢＥＴＡによって常に拡大拡張され続けている」\e
+<00000788> 【Capt. Isumi】「The aboveground portion is called the Monument, and the underground portion the Stab.\bBoth are being constantly expanded by the BETA.」\e
+
+//<0000195b> 【伊隅大尉】「ハイヴの規模を段階的に表す言葉は『フェイズ』だ」\e
+<0000195b> 【Capt. Isumi】「The scale of the hive can be divided into a number of phases.」\e
+
+//<0000195c> 【伊隅大尉】「地球最大のハイヴは喀什のオリジナルハイヴ――これはフェイズ６」\e
+<0000195c> 【Capt. Isumi】「The original hive in Kashgar, the largest on Earth――This is Phase 6.」\e
+
+//<0000078c> 【伊隅大尉】「現在確認されている最大のハイヴは、\p火星のエリシウム平原にある『マーズゼロ』――フェイズ９だ」\e
+<0000078c> 【Capt. Isumi】「The largest hive we've been able to confirm is "Mars Zero" on the Elysium Fields of Mars――This is Phase 9.」\e
+
+//<0000078e> 【伊隅大尉】「ちなみに火星にはフェイズ６以下のハイヴは存在しない」\e
+<0000078e> 【Capt. Isumi】「Incidentally, every hive on Mars is at least a Phase 6.」\e
+
+//<00000790> それってやっぱり、\p重力の大きさも関係してるのかな…\p…\p？\e
+<00000790> Does that have anything to do with the difference in gravity...\p...\p?\e
+
+//<00000791> どちらにしても、\p邪魔をする人類がいない火星ならどんどんハイヴをでかくできるんだろう。\e
+<00000791> Either way,\p not having humans in the way must make it a lot easier to build them on Mars.\e
+
+//<00000792> 【伊隅大尉】「火星や月、\pユーラシア大陸を見てもわかるように、\pハイヴは一定の間隔をおいて建設されている」\e
+<00000792> 【Capt. Isumi】「From looking at Mars, the Moon,\p and the continent of Eurasia,\p we know that hives are built a fixed distance apart.」\e
+
+//<00000794> 【伊隅大尉】「つい最近まで、\p新ハイヴの建設開始は、\p既存ハイヴの規模によって決定されると考えられてきたが――」\e
+<00000794> 【Capt. Isumi】「Until recently,\p we also thought that new hives were constructed after nearby hives reached a certain scale――」\e
+
+//<0000195e> 【伊隅大尉】「既存ハイヴ周辺の個体数飽和が、\pその直接のトリガーになるという事が、\p観測の結果明らかになった」\e
+<0000195e> 【Capt. Isumi】「But observation has made it clear that this occurs whenever the area around a preexisting hive is fully saturated.」\e//with other hives or little BETA??? ~IX//chibi BETA kawaii~ - Sheeta
+
+//<00000798> 【伊隅大尉】「従って最前線では、\p個体数を間引きする作戦を定期的に実行し、\p新ハイヴの建設を阻止している」\e
+<00000798> 【Capt. Isumi】「As a result,\p on the front lines there are periodic operations to thin out the enemies and prevent the construction of new hives.」\e
+
+//<0000079a> なるほど…\p…\pそうやって人類は時間を稼いでいるのか。\e
+<0000079a> I see...\p...\pso that's how humanity's been buying time.\e
+
+//<0000079b> 【伊隅大尉】「だが…\p…\p必ずしもそれがうまく機能しているわけではない」\e
+<0000079b> 【Capt. Isumi】「However...\p...\pthat doesn't always work.」\e
+
+//<000015d1> 【武】「…\p…\pえ？」\e
+<000015d1> 【Takeru】「...\p...\peh?」\e
+
+//<000015d3> 【伊隅大尉】「ハイヴの進出は阻止できても、\p定期的な消耗を強いられる以上、\p大規模な反攻作戦を準備する事が困難になってしまうからだ」\e
+<000015d3> 【Capt. Isumi】「We may be preventing the hives from advancing,\p but since this forces us to lose manpower periodically,\p it's becoming difficult to prepare any large-scale counter-attack.」\e
+
+//<000015d5> なるほど…\p…\p。\e
+<000015d5> I see...\p...\e
+
+//<000007a1> 【伊隅大尉】「では次に、\pハイヴの各段階について説明する」\e
+<000007a1> 【Capt. Isumi】「Next,\p we'll go over the phases of a hive.」\e
+
+//<000007a6> 【伊隅大尉】「まずこれがフェイズ１といわれる状態だ。\nユニットの落着後２０時間以内にこの段階に到る」\e
+<000007a6> 【Capt. Isumi】「First, this is what we'd call phase one.\nLanding units reach this phase within twenty hours.」\e
+
+//<00000dce> 【伊隅大尉】「この段階では、\p地下の『縦坑』とＢＥＴＡの出入り口である『門』が作られ、\pハイヴの基礎が形成される」\e
+<00000dce> 【Capt. Isumi】「This is when entrances called "gates" are made for the BETA to get in and out of the underground Shaft,\p completing the basic structure of a hive.」\e
+
+//<000007aa> 【伊隅大尉】「それと同時にユニット内のＢＥＴＡが活性化し、\p周辺地域に侵攻を開始――」\e
+<000007aa> 【Capt. Isumi】「At the same time, the BETA inside the unit become active,\p and start invading the surrounding area――」\e
+
+//<000007ac> 【伊隅大尉】「その後、\p着陸ユニットの反応炉がＢＥＴＡによって『縦坑』伝いに最深部まで下ろされ、\pハイヴの主動力源となるのだ」\e
+<000007ac> 【Capt. Isumi】「Afterward, the reactor in the landing unit is lowered by the BETA to the deepest part of the Shaft,\p where it becomes the main power source.」\e
+
+//<000007ae> 【武】「…\p…\p…\p…\p」\e
+<000007ae> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000007af> やっぱり野生動物的ではないような…\p…\p。\n聞けば聞くほどわからなくなってくる。\e
+<000007af> Now they don't sound like wild animals at all...\p...\p\nIt's just getting more and more confusing.\e
+
+//<000007b0> 【伊隅大尉】「反応炉とはハイヴ突入作戦に於いて、\p最優先破壊目標となるものだ」\e
+<000007b0> 【Capt. Isumi】「When infiltrating a hive,\p destroying the reactor is always the top priority.」\e
+
+//<00001960> 【伊隅大尉】「最初こそこうして浅い場所にあるが、\p段階を経て成長する『縦坑』に合わせ、\p常に最深部に移設され、\p厳重に守られる」\e
+<00001960> 【Capt. Isumi】「At first it's in a relatively shallow place like this,\p but at higher phases it lowers as the Shaft extends downward,\p so that it's always heavily guarded at the deepest part.」\e
+
+//<00000dd4> 【伊隅大尉】「この最初に作られ、\p成長し続ける『縦坑』を『主縦坑』と呼ぶ。\nハイヴ攻略でここに辿り着く事ができれば、\p反応炉はいただいたも同然だ」\e
+<00000dd4> 【Capt. Isumi】「This first Shaft is called the Main Shaft.\nIf we can reach it when assaulting a hive,\p the reactor is as good as ours.」\e
+
+//<000007b6> 【武】「…\p…\p…\p…\p」\e
+<000007b6> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000014e6> 【伊隅大尉】「尚、\pこれ以降の段階では、\p個々のハイヴによって地下茎構造の成長速度はバラバラだ。\n例によって、\pその原因はわかっていない」\e
+<000014e6> 【Capt. Isumi】「Also,\p in later phases,\p the growth rates of the underground portions vary wildly depending on the hive.\nAs usual,\p we don't know why.」\e
+
+//<000014e8> 【伊隅大尉】「従ってハイヴの成長段階は、\p地表構造物の高さを基準に設定されている」\e
+<000014e8> 【Capt. Isumi】「Therefore, hive growth phases are based on the height of the aboveground Monument.」\e
+
+//<000015e0> 【伊隅大尉】「地下茎構造に関する数値は全て平均値だ。\nそれらはあくまで基準に過ぎない事に留意しておけ」\e
+<000015e0> 【Capt. Isumi】「The numbers I'm going to show you for the Stab are all averages.\nKeep in mind that these are only statistics.」\e
+
+//<000015e2> 【武】「はい」\e
+<000015e2> 【Takeru】「Okay.」\e
+
+//<00000deb> 【伊隅大尉】「地表構造物が建設され始め、\pその高さが５０ｍに達するものはフェイズ２に分類される」\e
+<00000deb> 【Capt. Isumi】「Once the Monument reaches a height of 50 meters,\p it becomes Phase 2.」\e//just gonna keep tling "aboveground construct" as "Monument" for now, though I can't remember if the voices actually do this or not ~IX
+
+//<00000ded> 【伊隅大尉】「ハイヴの拡張に伴いＢＥＴＡの個体数が爆発的に増加し、\pこの段階で周囲３０ｋｍ圏内の植物は５割方やられてしまう」\e
+<00000ded> 【Capt. Isumi】「The number of BETA skyrockets along with the width of the hive.\p At this phase, over half of the plant life within thirty kilometers is destroyed.」\e
+
+//<0000118a> 【伊隅大尉】「この時の『主縦坑』の最大直径は約１００ｍ、\p最大深度は約３５０ｍ」\e
+<0000118a> 【Capt. Isumi】「The maximum radius of the Main Shaft is about 100 meters,\p and its maximum depth 350 meters.」\e
+
+//<00000df1> 【伊隅大尉】「また、\p『横坑』や『広間』が発達し始め、\p地下茎構造の水平到達半径は約２ｋｍに達する」\e
+<00000df1> 【Capt. Isumi】「Also,\p they begin to construct Drifts and Halls,\p giving the Stab a horizontal radius of 2 kilometers.」\e//same for "underground construct" and "Stab". Also gonna try using digits for all the numbers here, since so many numbers are getting thrown around in this lecture I think it'd be confusing to keep switching. ~IX
+
+//<000007c7> これがハイヴの内部構造か…\p…\p複雑な構造してるんだな。\nなんか、\p規則正しく作られた昆虫の巣って感じだな。\e
+<000007c7> So that's what hives are like on the inside...\p...\pthey look pretty complicated.\nKinda feels like how insects build things.\e
+
+//<00001197> 【伊隅大尉】「横浜ハイヴは分類こそフェイズ２だが、\p『主縦坑』の直径と最大深度はフェイズ４並という特異例だ」\e
+<00001197> 【Capt. Isumi】「Yokohama Hive is at Phase 2,\p but its Main Shaft had an abnormally large radius and depth more like that of a Phase 4.」\e
+
+//<00001199> なるほど、\p地表構造物の高さで決めたから、\p色々矛盾があるんだな…\p…\p。\e
+<00001199> That's right,\p basing this solely on the Monument is gonna cause a lot of contradictions...\p...\p\e
+
+//<0000119a> 【伊隅大尉】「横浜基地が、\p研究と占領施設の防衛を目的に、\pハイヴの上に建設された事は既に知っていると思うが――」\e
+<0000119a> 【Capt. Isumi】「You should already know that Yokohama Base was built on top of that hive for research and defense purposes――」\e
+
+//<000015e4> 【伊隅大尉】「基地の地下施設に、\p航空宇宙、\p陸海空四軍の大部隊が収容可能であるという事実からも、\pハイヴの規模が想像できるだろう」\e
+<000015e4> 【Capt. Isumi】「The fact that this base's underground can accommodate spaceships,\p along with multiple battalions of land, sea and air forces should give you an idea of the hive's size.」\e
+
+//<00000dff> 【伊隅大尉】「地表構造物が１００ｍを越えるとフェイズ３に分類される」\e
+<00000dff> 【Capt. Isumi】「When the Monument hits 100 meters, it becomes Phase 3.」\e
+
+//<000007c8> 【伊隅大尉】「この段階での地下茎構造の水平到達半径は約４ｋｍ、\p最大深度は約７００ｍ」\e
+<000007c8> 【Capt. Isumi】「At this phase the Stab has a horizontal radius of about 4 kilometers,\p and a maximum depth of 700 meters.」\e
+
+//<000017ab> 【伊隅大尉】「また、\p地表構造物の頂上部に『孔』と呼ばれる穴があけられ、\p『主縦坑』が露天状態となる」\e
+<000017ab> 【Capt. Isumi】「Also,\p a hole called a "Vent" appears at the top of the Monument,\p making the Main Shaft open to the atmosphere.」\e
+
+//<00000e08> 【伊隅大尉】「『横坑』の成長に伴い、\p数多く存在する『門』も常に最外縁部に移設されてゆく」\e
+<00000e08> 【Capt. Isumi】「And the numerous Gates are constantly being rebuilt on the outskirts of the Drift as it expands.」\e
+
+//<00000e0a> 【伊隅大尉】「突入作戦の際、\p入り口になるのがこれらの『門』だ。\n従って、\pハイヴの規模が大きくなればなる程攻略が困難になる」\e
+<00000e0a> 【Capt. Isumi】「When infiltrating a hive,\p these Gates will be our entrance.\p Therefore,\p the larger the hive, the harder it is to get all the way in.」\e
+
+//<00000e0c> 【伊隅大尉】「複雑で立体的な地下茎構造の中を延々進軍すれば、\pそれだけ大量のＢＥＴＡと戦う事になるわけだ」\e
+<00000e0c> 【Capt. Isumi】「The farther you go along the complex\bmulti-dimensional pathways of the Stab,\p the more hordes of BETA you'll encounter.」\e
+
+//<000017b0> 【伊隅大尉】「その状況を打破するために、\p大戦中期には『孔』から直接『主縦坑』に突入し、\p直下の反応炉を強襲するという戦術が何度も試された」\e
+<000017b0> 【Capt. Isumi】「We tried several times during the World War to bypass this difficulty by going straight through the Vent into the Main Shaft.」\e//lit. "the tactic of going ... Main Shaft, and attacking the reactor directly below" last part's just redundant in any English phrasing
+
+//<000017b2> 【伊隅大尉】「だが結果は惨憺たるもので、\p突入どころか、\p『孔』に辿り着く事すらできなかったケースが殆どだった」\e
+<000017b2> 【Capt. Isumi】「But the results were tragic.\bMost of the time we were unable to even reach the vent,\p much less go through it.」\e
+
+//<000017b4> 【伊隅大尉】「突入に到った場合でも、\p降下中に直下からのレーザー照射を受け、\p全滅している」\e
+<000017b4> 【Capt. Isumi】「Even when we did get in,\p we were immediately wiped out by laser attacks from below.」\e
+
+//<000017b6> なるほど…\p…\p\nいくらなんでもそう甘くはないか。\e
+<000017b6> I see...\p...\p\nOf course they wouldn't make it that easy.\e
+
+//<000017b7> 【伊隅大尉】「この問題へのひとつの回答が、\p現在のハイヴ攻略で採用されている軌道降下戦術だ。\n脇道にそれるが、\p話のついでに触れておこう」\e
+<000017b7> 【Capt. Isumi】「One answer to this problem is the orbital drop tactic used in current hive operations.\nThis is a bit of a tangent,\p but let's go over that too.」\e
+
+//<00000e10> 【伊隅大尉】「軌道降下とは、\p再突入型駆逐艦に搭載した戦術機を、\p地球低軌道から直接ハイヴに展開する戦術だ」\e
+<00000e10> 【Capt. Isumi】「An orbital drop is when TSFs on a shuttle are deployed to a hive directly from low Earth orbit.」\e
+
+//<00000e13> 【伊隅大尉】「その際、\p戦術機は再突入殻と呼ばれる耐熱装甲カプセルで再突入する」\e
+<00000e13> 【Capt. Isumi】「To accomplish this,\p the TSF reenters in a heat-resistant armored capsule called a reentry shell.」\e
+
+//<00000e15> 【伊隅大尉】「再突入殻の装甲は、\p表層が耐熱対弾装甲、\pその下に対レーザー弾と同様の構造を持っている」\e
+<00000e15> 【Capt. Isumi】「The reentry shell's armor is heat- and bullet-resistant on the surface,\p while the lower layers resemble an anti-laser round.」\e//huh, they haven't told you about anti-laser rounds yet ~IX
+
+//<00000e17> 【伊隅大尉】「これは、\p極超音速で再突入の際に発生する大気との摩擦熱と、\p光線級による迎撃への対策である」\e
+<00000e17> 【Capt. Isumi】「These are meant to protect you from the heat generated from friction with the atmosphere during a supersonic reentry,\p as well as attacks from laser species.」\e
+
+//<00000e19> 【伊隅大尉】「そして降下の最終段階では、\p突入口を確保するための運動エネルギー兵器としても使用されるのだ」\e
+<00000e19> 【Capt. Isumi】「During the final stage of the drop,\p the shell is used as a kinetic energy weapon in order to secure the entrance.」\e
+
+//<00000e1b> 運動エネルギー兵器…\p…\p？\e
+<00000e1b> Kinetic energy weapon...\p...\p?\e
+
+//<00000e1c> 【伊隅大尉】「大気圏突入後、\p再突入殻は再突入減速をせず、\pロケットブースターにて加速する」\e
+<00000e1c> 【Capt. Isumi】「After atmospheric reentry,\p the shell won't decelerate.\p Instead it uses rocket boosters to accelerate.」\e
+
+//<00000e1e> これは…\p…\p『前のこの世界』でたまに撃ち落とされたＨＳＳＴの落ち方に似てるな。\e
+<00000e1e> That reminds me...\p...\pof how the HSST Tama shot fell during its reentry.\e
+
+//<00000e1f> 【伊隅大尉】「通常の作戦では、\p軌道降下前に地表の光線級の７割以上が掃討されている想定だが――」\e
+<00000e1f> 【Capt. Isumi】「In normal operations,\p we expect over seventy percent of the laser species on the surface to be cleared out before dropping――」\e
+
+//<00000e21> 【伊隅大尉】「高高度でレーザー照射された場合は即座に、\p何もなければ高度２０００ｍ付近で戦術機を分離」\e
+<00000e21> 【Capt. Isumi】「If hit with too many lasers this will happen immediately,\p but normally the shell separates from the TSF at around 2000 meters.」\e
+
+//<00000e23> 【伊隅大尉】「再突入殻は、\p降下軌道を先行して戦術機の盾となり、\pその後はそのまま地表に激突、\pハイヴそのものや展開中のＢＥＴＡ群に損害を与えるのだ」\e
+<00000e23> 【Capt. Isumi】「The reentry shell will then continue to fall, acting as a shield for the TSF and impacting the Earth's surface in order to damage the hive and its BETA.」\e
+
+//<00000e25> 【伊隅大尉】「その際、\p地表構造物や地下茎構造の一部を破壊する事で、\pより『主縦坑』に近い突入口を多数確保できるというわけだ」\e
+<00000e25> 【Capt. Isumi】「The idea is to destroy part of the Monument or Stab,\p thereby securing a number of entrances closer to the Main Shaft.」\e
+
+//<00000e27> 益々あの事件に似ているな。\nまあ首謀者が誰だったにせよ、\p結局、\p既存戦術の応用をしただけって事か。\e
+<00000e27> This really does sound similar.\nWell, no matter who was responsible for it,\p this just means they used a preexisting tactic.\e
+
+//<00000e28> それにしても、\pハイヴだった横浜基地にそんな手を使うなんて…\p…\p何かの皮肉なのか？\e
+<00000e28> Actually,\p using that tactic on Yokohama Base, which used to be a hive...\p...\pseems kind of ironic.\e
+
+//<00000e29> 【伊隅大尉】「８０年代後半にこの戦術が確立されたことで、\pハイヴの最高到達深度記録は飛躍的な伸びを見せた」\e
+<00000e29> 【Capt. Isumi】「The tactic was established in the late eighties,\p at which point records for deepest penetration into enemy hives rose dramatically.」\e
+
+//<000017bc> 【伊隅大尉】「だが、\pこの戦術を以てしても、\p未だ攻略できたハイヴは存在しないのが現実だ」\e
+<000017bc> 【Capt. Isumi】「However,\p the fact remains that even with this tactic,\p we have yet to capture a single hive.」\e
+
+//<00000e2d> それでも良く考えられた戦略だと思う。\e
+<00000e2d> And that was a pretty clever idea.\e
+
+//<00000e2e> 照射を受けた場合は、\p先行する再突入殻から発生する重金属雲で戦術機を守り、\p迎撃されなければ激突して突入口を開ける…\p…\p。\e
+<00000e2e> If there are too many lasers,\p the shell will fall ahead of the TSF, protecting it with a cloud of heavy metal,\p and if not it'll crash into the ground and make a new entrance...\p...\p\e
+
+//<000015e9> ハイヴの攻略に長年苦労しているだけあって、\pかなり力押しだけどうまい手だ。\e
+<000015e9> It's a bit forceful,\p but after all the years of struggling to capture hives it's a good trick.\e
+
+//<00000e30> 【伊隅大尉】「軌道降下戦術の確立により最高到達記録は伸びたが、\pフェイズ３以降になると、\p深度に関しての実測データは存在しない」\e
+<00000e30> 【Capt. Isumi】「The penetration records rose because of orbital drops,\p but no depth measurements exist for hives beyond Phase 3.」\e
+
+//<000015ec> 【伊隅大尉】「これ以降の数字は、\p資源観測衛星や地質探査機のデータを基にした推測値だ。\nいいな？」\e
+<000015ec> 【Capt. Isumi】「So the following numbers are inferences based on resource observation satellites and geological surveys.\nUnderstood?」\e
+
+//<00000e34> 【武】「はい」\e
+<00000e34> 【Takeru】「Yes.」\e
+
+//<000015f2> 【伊隅大尉】「地表構造物が高度３００ｍに達すると分類はフェイズ４となる。\n佐渡島ハイヴがこの段階だ」\e
+<000015f2> 【Capt. Isumi】「When the Monument passes 300 meters it becomes a Phase 4.\nSadogashima Hive is at this stage.」\e
+
+//<000007d1> 【伊隅大尉】「地下茎構造の水平到達半径約１０ｋｍ、\p最大深度は１２００ｍ――」\e
+<000007d1> 【Capt. Isumi】「The horizontal radius of the Stab is about 10 kilometers,\p and the maximum depth 1200 meters――」\e
+
+//<00000e38> 【伊隅大尉】「『主縦坑』の最大直径２００ｍ、\p『横坑』の最大直径１００ｍ――」\e
+<00000e38> 【Capt. Isumi】「The Main Shaft's maximum radius is 200 meters,\p and the Drifts' are 100 meters――」\e
+
+//<000007d5> 戦術機が突入できるぐらいだから、\p規模がでかいとは想像していたけど…\p…\pひとつひとつの横坑や広間がここまででかいなんて…\p…\p。\e
+<000007d5> Since TSFs can get inside,\p I figured they had to be huge...\p...\pbut to think every Drift and Hall was this massive...\p...\p\e
+
+//<000007d6> 【伊隅大尉】「この規模まで来ると、\pハイヴを中心に半径４０ｋｍ圏内の地表は、\p火山以外ほぼ平らに均されてしまう」\e
+<000007d6> 【Capt. Isumi】「At this scale,\p the Earth is mostly flattened within a 40 kilometer radius of the hive,\p with the exception of volcanoes.」\e
+
+//<000007d7> 火山以外…\p…\p？　さすがのＢＥＴＡも、\pマグマだけは苦手なのか…\p…\p？\e
+<000007d7> Volcanoes...\p...\p?\bI guess even BETA can't handle magma...\p...\p\e
+
+//<000007d8> もしかしたら箱根や天元山一帯の自然が残っていたのは、\p火山のおかげだったのか？\e
+<000007d8> Maybe that's the reason Hakone and Mt. Tengen were left intact?\e
+
+//<000007dc> 【伊隅大尉】「地表構造物が高度６００ｍに達するとフェイズ５に分類される」\e
+<000007dc> 【Capt. Isumi】「Once the Monument reaches 600 meters, it becomes Phase 5.」\e
+
+//<000007de> 【伊隅大尉】「地下茎構造の水平到達半径約３０ｋｍ、\p最大深度は２０００ｍ以上だ」\e
+<000007de> 【Capt. Isumi】「The Stab's horizontal radius is 30 kilometers,\p with a maximum depth of over 2000 meters.」\e
+
+//<000007e0> 【伊隅大尉】「フェイズ５以後のハイヴは、\pこれまでのものとは明らかに違う機能を持つようになる」\e
+<000007e0> 【Capt. Isumi】「After reaching Phase 5,\p the hive gains a brand new ability.」\e
+
+//<000007e2> 【伊隅大尉】「簡単に言うと宇宙船の打ち上げ基地だ。\nハイヴの地表構造物が東に傾斜しているのはそのためらしい」\e
+<000007e2> 【Capt. Isumi】「In simple terms, it becomes a spaceship launcher.\nThis is probably why hive Monuments face East.」\e//since someone doesn't know: the Earth rotates East, so launching your spaceships in that direction means you get a bunch of free momentum to work with. For obvious reasons, this effect is stronger the closer you are to the Equator, hence NASA likes launches shuttles from places like Cape Canaveral. ~IX
+
+//<000007e4> 【武】「う、\p宇宙船の打ち上げ…\p…\pですか！？」\e
+<000007e4> 【Takeru】「S-\pspaceship...\p...\plauncher!?」\e
+
+//<000007e5> 【伊隅大尉】「本当に宇宙船かどうかはわからないが、\p不定期に何かを打ち上げている事は確かだ」\e
+<000007e5> 【Capt. Isumi】「We don't know for sure if they're spaceships,\p but they're definitely launching something at irregular intervals.」\e
+
+//<000007e7> 【武】「何か…\p…\pって…\p…\p」\e
+<000007e7> 【Takeru】「Something...\p...\p...\p...\p?」\e
+
+//<000007e8> 【伊隅大尉】「今の所、\pそれが何であるかはわかっていない。\n母星への連絡便か、\pあるいは他の星に向けた着陸ユニットなのか…\p…\p」\e
+<000007e8> 【Capt. Isumi】「We don't know what it is at the moment.\nIt might be a message to their home planet,\p or a landing unit meant for somewhere else...\p...\p」\e
+
+//<000007ea> 【武】「え…\p…\p？」\e
+<000007ea> 【Takeru】「Eh...\p...\p?」\e
+
+//<000007eb> 【伊隅大尉】「確かなのは、\pそれが太陽系を脱出する軌道に投入されている事だけだ」\e
+<000007eb> 【Capt. Isumi】「All we know for sure is that they're launched on a trajectory that allows them to escape the solar system.」\e
+
+//<000007ed> 太陽系を脱出…\p…\p！？\e
+<000007ed> Escape the solar system...\p...\p!?\e
+
+//<000007ee> 【武】「国連や米国の宇宙総軍はそれを捕捉できないんですか！？」\e
+<000007ee> 【Takeru】「The UN and Soviet space fleets can't capture them!?」\e
+
+//<000007ef> ――月面基地を作れるぐらいなんだろ！？\e
+<000007ef> ――You guys can make a freaking moon base!\bHow hard could that be!?\e
+
+//<000015f7> 【伊隅大尉】「それは過去に何度か試みられた。\nだが、\pいずれも失敗している」\e
+<000015f7> 【Capt. Isumi】「It's been tried a number of times.\nBut it always fails.」\e
+
+//<000007f2> 【武】「失敗…\p…\p攻撃されたんですか？！」\e
+<000007f2> 【Takeru】「So...\p...\pthey get attacked!?」\e
+
+//<000015fc> 【伊隅大尉】「いや、\pそうではない」\e
+<000015fc> 【Capt. Isumi】「No,\p no that.」\e
+
+//<000007f5> 【武】「だったらどうして…\p…\p」\e
+<000007f5> 【Takeru】「Then why...\p...\p」\e
+
+//<00001601> 【伊隅大尉】「私は専門外なのだが…\p…\p」\e
+<00001601> 【Capt. Isumi】「It's not my area of expertise, but...\p...\p」\e
+
+//<00001603> 【伊隅大尉】「いつ打ち上げられるのかもわからない高速移動体――しかもそれを、\p低軌道で捕捉する事は、\p想像する程簡単ではない筈だ」\e
+<00001603> 【Capt. Isumi】「No one knows when the next one will be launched, it's moving at high speed――And we'd have to capture it in low orbit.\p That's not as easy as it sounds.」\e
+
+//<000007f8> 【武】「…\p…\p…\p…\p」\e
+<000007f8> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000007f9> 【伊隅大尉】「まして今の人類に、\pそのために力を割く余裕はない」\e
+<000007f9> 【Capt. Isumi】「Not to mention humanity doesn't have the resources to spare on that.」\e
+
+//<000007fb> 【伊隅大尉】「やるとすれば全地球規模の…\p…\pそうだな、\pオルタネイティヴ計画以上の力を注がねばならないだろう」\e
+<000007fb> 【Capt. Isumi】「If we wanted to capture them...\p...\pyes,\p we'd need even more resources than the Alternative Plan.」\e
+
+//<000007fd> ――何言ってるんだ…\p…\p！　オルタネイティヴ５を影で進める余裕は何処へ行ったんだよ！\e
+<000007fd> ――What're you saying...\p...\p!?\bWe have the resources to get Alternative V started in the background!!\e
+
+//<000007fe> この前までラグランジュ点で宇宙船を建造してたんじゃないのかよ！？　そんなもの作る余力があるなら…\p…\p！\e
+<000007fe> They've been building spaceships at the Lagrange points for years!! If we have the time to do stuff like that, then...\p...\p!\e
+
+//<000007ff> 【武】「…\p…\p…\p…\p」\e
+<000007ff> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000800> いや…\p…\pちがう。\e
+<00000800> No...\p...\pthat's wrong.\e
+
+//<00000801> 人類の生き残りを懸けた宇宙船建造と、\pＢＥＴＡの宇宙船捕獲だったら、\p前者を取るべきだ…\p…\p。\e
+<00000801> If we have to choose between making an escape fleet for the last of humanity,\p or capturing a BETA spacecraft,\p we should pick the former...\p...\p\e
+
+//<00000802> どう考えたってそっちが優先だろ…\p…\p。\e
+<00000802> Obviously that's more important...\p...\p\e
+
+//<00001609> 【伊隅大尉】「残念だが、\p宇宙空間でもＢＥＴＡのやりたい放題だ。\n月や火星と同様にな」\e
+<00001609> 【Capt. Isumi】「Unfortunately,\p the BETA have total control over outer space.\p Just like the Moon and Mars.」\e
+
+//<00001796> 【伊隅大尉】「今の人類にできるのは、\p月から来る着陸船を核ミサイルで迎撃し、\pこれ以上オリジナルハイヴが増えないようにする事ぐらいだ」\e
+<00001796> 【Capt. Isumi】「All humanity can do for now is shoot down landing units from the Moon with nuclear missiles,\p in order to prevent another original hive from forming.」\e
+
+//<00000805> 【武】「…\p…\p…\p…\p」\e
+<00000805> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000806> …\p…\pまてよ。\e
+<00000806> ...\p...\pwait.\e
+
+//<00000807> 今まで気付かなかったけど…\p…\p『前のこの世界』では、\pどうしてオルタネイティヴ５の宇宙船はＢＥＴＡに破壊されなかったんだ？\e
+<00000807> I never noticed it before...\p...\pbut why didn't the BETA destroy Alternative V's space fleet in the previous world?\e
+
+//<00000808> 不定期だとしても、\pＢＥＴＡは地球から宇宙船をとばしてる。\n…\p…\pいや、\pそもそも宇宙を渡って来ているのに。\e
+<00000808> Sure it's irregular,\p but the BETA are shooting things into space.\n...\p...\pactually,\p they came here in spaceships in the first place.\e
+
+//<00000809> 戦術機なんて比較にならない高性能コンピューターを積んでたんだろうし、\p人間だって沢山乗ってたんだぞ？\e
+<00000809> Our spaceships must have far better computers than any TSF,\p not to mention we crammed them full of humans.\e
+
+//<0000080a> ＢＥＴＡはそれを識別して攻撃しているんだろ…\p…\p？！\e
+<0000080a> Why wouldn't the BETA attack them...\p...\p?\e//oh duh, it finally hit me: the BETA can't fly, and they can't move around space outside of their spaceships, so they're only interested in the surfaces of planets ~IX
+
+//<0000080b> 【武】「…\p…\p…\p…\p」\e
+<0000080b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000080c> いや…\p…\pそれ以前に、\p宇宙でもやりたい放題なら、\p何で人類の人工衛星を生かしたままにしておくんだ？\e
+<0000080c> Actually...\p...\pif they have total control over space,\p why are our satellites still intact?\e
+
+//<0000080d> 国連や米国の宇宙総軍が使っている、\p低軌道大型基地衛星は…\p…\pなぜ攻撃されないんだ？\e
+<0000080d> The UN and American space fleets use low Earth orbit space stations...\p...\pso why aren't they getting attacked?\e//lit. "large base satellites" assuming that means space station ~IX
+
+//<0000080e> 【武】「…\p…\p…\p…\p」\e
+<0000080e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000160e> …\p…\pそんなこと、\p大尉に訊いたってわかるわけが無い。\n理由がわかっているなら、\pとっくに説明されているはずだ。\e
+<0000160e> ...\p...\pthere's no way the Captain would know that.\nIf she did,\p she'd have explained it already.\e
+
+//<0000160f> ＢＥＴＡ以外に…\p…\pその理由がわかる奴なんていないんだ。\e
+<0000160f> Only the BETA...\p...\pknow the answer to that.\e
+
+//<00000810> 【伊隅大尉】「…\p…\p話がそれたな。\nハイヴの解説を続けるぞ」\e
+<00000810> 【Capt. Isumi】「...\p...\pwe're off-topic.\nLet's get back to the hives.」\e
+
+//<00000812> 【武】「はい」\e
+<00000812> 【Takeru】「Okay.」\e
+
+//<000011a5> 【伊隅大尉】「フェイズ６…\p…\p地表構造物の高度１０００ｍ以上、\p地下茎構造の水平到達半径約１００ｋｍ、\p最大深度は４０００ｍ以上だ」\e
+<000011a5> 【Capt. Isumi】「Phase 6...\p...\pwhen the Monument is over 1000 meters tall,\p the horizontal Stab radius is about 100 kilometers,\p and the maximum depth is over 4000 meters.」\e
+
+//<00000818> 【伊隅大尉】「佐渡島ハイヴが将来この規模になれば、\pさっきの間引き作戦も無駄になる」\e
+<00000818> 【Capt. Isumi】「If the Sadogashima Hive reaches this size,\p all our stalling for time will be for nothing.」\e
+
+//<0000081a> 【武】「…\p…\p…\p…\p」\e
+<0000081a> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000081b> 【伊隅大尉】「地下茎構造の先端が、\p新潟を越えて福島県まで到達してしまうからだ」\e
+<0000081b> 【Capt. Isumi】「Because at that size the Stab would extend through Niigata and into Fukushima Prefecture.」\e
+
+//<0000081d> 【伊隅大尉】「そうなれば、\p絶対防衛線内に無数のＢＥＴＡが直接侵攻してくる」\e
+<0000081d> 【Capt. Isumi】「If that happened,\p countless BETA could simply walk out behind the Final Defensive Line.」\e
+
+//<0000081f> もしそうなったら…\p…\p日本は時間の問題だな…\p…\p。\e
+<0000081f> If that happens...\p...\pJapan's done for...\p...\p\e//lit. "Japan is only a matter of time"
+
+//<00001613> 【伊隅大尉】「帝国軍が、\p佐渡島ハイヴの排除を最重要課題としている理由――よくわかっただろう？」\e
+<00001613> 【Capt. Isumi】「Now you understand why the Imperial Army sees destroying the Sadogashima Hive as their top priority.」\e
+
+//<00000822> 【武】「はい」\e
+<00000822> 【Takeru】「Yes.」\e
+
+//<00000823> でも、\p少なくともあと３年は大丈夫なはずだ。\e
+<00000823> But at the very least they should be okay for another three years.\e
+
+//<00000824> あまり当てにならないけど、\p『前のこの世界』でＢＥＴＡが本州に上陸した記憶はない。\e
+<00000824> I know my memories don't apply to this world,\p but the BETA never overran the mainland in the previous world.\e
+
+//<00000825> ただ…\p…\pＢＥＴＡは確実にハイヴを拡張し、\p地下茎構造は刻々と本州に向かって延びてきている。\e
+<00000825> But...\p...\pthe BETA are expanding their hives,\p so that Stab is growing towards us.\e
+
+//<0000197d> いきなり成長が早まる可能性だってゼロじゃない…\p…\p。\e
+<0000197d> It's not inconceivable that they'll suddenly speed up...\p...\p\e
+
+//<00000827> 絶対防衛圏内へのＢＥＴＡの直接侵攻が、\pいつ現実になるのかわからない以上、\p日本人はみんな戦々恐々としているはずだ。\e
+<00000827> We have no way of knowing when the BETA will be able to pop up behind the Final Defense Line,\p so all of Japan must be scared stiff.\e
+
+//<00000828> そっちに目が行ってれば、\pクーデター騒ぎをけしかけられる隙ができるのも頷ける。\e
+<00000828> That even helps explain why those guys were able to pull off a coup d'etat.\e
+
+//<00000829> 【伊隅大尉】「地球には存在していないフェイズ７以降の説明は割愛する。\n知りたければテキストに目を通しておけ」\e
+<00000829> 【Capt. Isumi】「I'll leave out Phases 7 and up since those don't exist on Earth.\nYou can look them up in the book later.」\e//I kinda want this textbook ~IX//It's called Muv Luv Alternative Integral Works. -Shikiller
+
+//<0000082b> 【武】「はい」\e
+<0000082b> 【Takeru】「Okay.」\e
+
+//<0000082c> 【伊隅大尉】「ではここで１０分休憩だ。\n次の時間は地下茎構造の詳細から始める」\e
+<0000082c> 【Capt. Isumi】「Now we'll take a ten minute break.\nIn the next hour we'll cover the detailed structure of the Stab.」\e
+
+//<0000082e> 【武】「了解。ＢＥＴＡ関連だけあって…\p…\pまだまだ先は長そうですね」\e
+<0000082e> 【Takeru】「Understood. Seems like there's a lot to learn...\p...\pabout the BETA.」\e
+
+//<0000082f> 【伊隅大尉】「退屈か？」\e
+<0000082f> 【Capt. Isumi】「Bored?」\e
+
+//<00000831> 【武】「いえ、\pそういうわけじゃありません」\e
+<00000831> 【Takeru】「No,\p it's not that.」\e
+
+//<00000832> 【伊隅大尉】「済まないな。\n貴様にはこの数日で半年分を詰め込まなければならないだけに、\pどうしても話が散漫になってしまう」\e
+<00000832> 【Capt. Isumi】「Sorry.\nWe have to cram half a year's worth of information into you in a few days,\p so it must all sound pretty vague.」\e
+
+//<00001617> 【武】「いえ。バラバラに説明されるより、\p色々関連付けて解説してもらう方が、\p総合的に理解できて良いです」\e
+<00001617> 【Takeru】「Not at all. Explaining how all these different topics relate to each other at once is much easier to understand than one at a time.」\e
+
+//<00001618> 【伊隅大尉】「そうか。\nハイヴ関連は午前中に駆け足で片付けて、\p午後は各種ＢＥＴＡの解説に充てるからそのつもりでな」\e
+<00001618> 【Capt. Isumi】「I see.\nWe're gonna rush through the rest of the hive stuff before noon,\p then spend all afternoon on BETA species. Be ready.」\e
+
+//<00000837> 【武】「了解しました」\e
+<00000837> 【Takeru】「Understood.」\e
+
+//<00000840> 【伊隅大尉】「――オルタネイティヴ２の成果によって、\p現在までに７種のＢＥＴＡが確認され、\p分類、\p識別されている」\e
+<00000840> 【Capt. Isumi】「――Because of Alternative II,\p we've found,\p categorized and described seven different species of BETA.」\e
+
+//<00000842> 【伊隅大尉】「だが、\pＢＥＴＡの社会がこの７種を含む、\p多くの未確認種によって構成されているのは明らかだ」\e
+<00000842> 【Capt. Isumi】「However,\p it's also clear that the BETA's society is made up of many unknown species as well as these seven.」\e
+
+//<0000161e> 【伊隅大尉】「月やユーラシアの各戦線から回収され、\p未だ同定に到っていない、\p数多くの断片標本の存在がそれを示唆している」\e
+<0000161e> 【Capt. Isumi】「The numerous unidentifiable alien corpses found on the Moon and in Eurasia tell us that.」\e
+
+//<00001620> 【伊隅大尉】「また、\pそれらがＢＥＴＡの社会に於いて、\pどのような役割を担っているのか――」\e
+<00001620> 【Capt. Isumi】「As to what sort of role they play in BETA society――」\e
+
+//<00001962> 【伊隅大尉】「――どのようにして、\pそれらの共生関係が成立しているのか等、\p一切解明できていない」\e
+<00001962> 【Capt. Isumi】「――Or how they are able to coexist with the other species,\p we have absolutely no explanation.」\e
+
+//<00001624> 【伊隅大尉】「だが、\p奴らの生態が不明であれ、\p人類は戦い続けてきた」\e
+<00001624> 【Capt. Isumi】「However,\p even without understanding their ecology,\p humanity has to keep fighting.」\e
+
+//<00001626> 【伊隅大尉】「戦場での苦い経験を元に、\p各種ＢＥＴＡへの対処法を探って来たのだ」\e
+<00001626> 【Capt. Isumi】「Thanks to the experience of past Eishi,\p we've found ways of dealing with each of the seven BETA species.」\e//lit. "based on bitter battlefield experience"
+
+//<0000084a> 【伊隅大尉】「では、\p現在確認されている７種のＢＥＴＡについて触れながら、\p個別の対処法について解説していく」\e
+<0000084a> 【Capt. Isumi】「Now then,\p I'll touch on each of the seven known species while explaining how we fight each one.」\e
+
+//<0000084c> 個別の対処法か…\p…\p。\nそれを知っておいた方が良いのはわかる。\e
+<0000084c> Different methods for each one...\p...\p?\nThat'd definitely be useful information.\e
+
+//<0000084d> だけど、\pＢＥＴＡとの戦いは常に物量戦だ。\n実戦でその知識をどこまで活かせるのか…\p…\p。\e
+<0000084d> But battles with the BETA always boil down to numbers.\nHow much will I really be able to do with these tactics...\p...\p?\e
+
+//<0000084e> それも自分次第という事なんだろうけど…\p…\p。\e
+<0000084e> I know that depends a lot on me, but...\p...\p\e
+
+//<0000084f> 【伊隅大尉】「まずは、\p人類の戦術戦略概念を塗り替えてしまった、\p悪名高き光線級からだ」\e
+<0000084f> 【Capt. Isumi】「First,\p the infamous laser species which blotted out humanity's previous conception of war.」\e//lit. "repainted humanity's tactical and strategic concepts"
+
+//<00000854> 【伊隅大尉】「これが光線級ＢＥＴＡ『ルクス』だ。\n現在２種類確認さているレーザー属の小型種だ」\e
+<00000854> 【Capt. Isumi】「This is the Laser Class BETA "Lux",\nthe smaller of the two known laser species.」\e//better make this clear now: "laser species" will be the only technically correct term for referring collectively to "Lux" and "Magnux Lux". It's fine if people (especially Takeru) say "laser classes" colloquially, but we should try to minimize that from now on (maybe in past scripts too, but there are no harmful instances back there). Also, technically they're saying "laser genus" but that'd sound too weird to those of you unfamiliar to taxonomy (not to mention they clearly don't have a rigorously defined taxonomy for the BETA so it has no real meaning). ~IX
+
+//<00000856> 確か…\p…\pトライアルで障害に想定されていたのもこいつだったな。\nその後本物が出てきたけど…\p…\p。\e
+<00000856> These were the guys...\p...\pwe pretended to evade during the trial.\p Though real ones showed up later...\p...\p\e
+
+//<00000e4a> しかし…\p…\p何なんだこのでたらめな生き物は。\nまるで昔の人が想像した宇宙人の想像図みたいじゃないか。\nどうやったらこんな形に進化するんだ？\e
+<00000e4a> Still...\p...\pthis thing looks like a mess.\nIt's like a sketch someone drew ages ago of what they thought aliens might look like.\nHow would something even evolve into this shape?\e
+
+//<0000085d> ＢＥＴＡの姿が機密扱いなのは…\p…\pまさかとは思うけど、\pこの外見のせいなのか？\e
+<0000085d> The appearance of the BETA is treated as a secret, but...\p...\pthat's not because they look like this,\p right?\e
+
+//<0000085e> 総戦技評価演習に合格しなければ、\p衛士候補生ですら見ることができないのはどうしてなんだろう…\p…\p。\e
+<0000085e> Even Eishi candidates aren't allowed to see pictures of them without passing the Comprehensive Combat Evaluation...\p...\pbut why?\e
+
+//<0000162a> 【伊隅大尉】「体高３ｍ。\n小型軽量だけに俊敏さが特長だが、\p防御力は大した事はない。\n３６ｍｍで十分対抗できる」\e
+<0000162a> 【Capt. Isumi】「Height, 3 meters.\nBeing small and light makes them rather nimble,\p but they aren't very tough.\nThe 36mm will do fine.」\e
+
+//<00000861> 【伊隅大尉】「だが、\pそのレーザー出力は航空機のみならず、\p戦術機や戦車にとっても十分な脅威だ」\e
+<00000861> 【Capt. Isumi】「However,\p its laser is just as much of a threat to TSFs and tanks as it is to aircraft.」\e
+
+//<0000162e> 【伊隅大尉】「戦術機や戦車に採用されている最新の装甲材は、\p『ルクス』の最大出力照射を約５秒間無効にできる」\e
+<0000162e> 【Capt. Isumi】「The latest armor used on TSFs and tanks can withstand the full power of a Lux beam for five seconds.」\e
+
+//<00001631> 【伊隅大尉】「装甲表面の対レーザー蒸散塗膜が３秒、\p耐熱対弾装甲材が２秒稼いでくれるというわけだ」\e
+<00001631> 【Capt. Isumi】「The anti-laser evaporating membrane on the armor's surface lasts three seconds,\p and the heat- and\bbullet-resistant armor lasts another two.」\e
+
+//<00001636> 【伊隅大尉】「照射を受けた場合、\p警報から数秒以内に照射源を特定し、\p撃破する――効果的な対処法はこれしかない」\e
+<00001636> 【Capt. Isumi】「If you're hit by one,\p locate and destroy the source within a few seconds of hearing the alarm――That's the only way to survive.」\e
+
+//<00000e57> 【武】「…\p…\p…\p…\p」\e
+<00000e57> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000163a> 【伊隅大尉】「照射を受けた場合の対処方法は、\p戦艦から戦車まで全て同じだが、\p１度でも最大照射を受けて劣化した装甲は使い物にならなくなる」\e
+<0000163a> 【Capt. Isumi】「This is just as true for warships and tanks as it is for TSFs,\p but any armor which receives its maximum exposure once can no longer be trusted.」\e//"exposure" is meant to draw a parallel between exposing camera film to light and TSF armor to lasers, is it clear enough? ~IX//yeah - Sheeta
+
+//<0000163d> 【伊隅大尉】「同一個所に照射を受けた場合、\pレーザーの直射と、\p融除材を失った事で発生するプラズマ爆風で、\p機体は致命的な損害を被るだろう」\e
+<0000163d> 【Capt. Isumi】「If another laser hits you in the same place afterward,\p the plasma explosion it'll create without its ablative coating will cause fatal damage to your TSF.」\e
+
+//<0000086d> 【武】「…\p…\p…\p…\p」\e
+<0000086d> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001642> 【伊隅大尉】「従って一度でも最大照射を受けた装甲は死重量だ。\nいっそ強制排除して機体を軽くした方が遥かにマシだ」\e
+<00001642> 【Capt. Isumi】「Therefore, armor which has received its maximum exposure is just dead weight.\nYou're better off removing it and gaining some speed.」\e
+
+//<00001644> 【伊隅大尉】「装甲を過信する事は命取りになる。\n戦術機の設計思想が、\p重装甲から機動力重視に変わった理由を良く肝に銘じておけ」\e
+<00001644> 【Capt. Isumi】「Trusting your armor too much will get you killed.\p Make sure you understand why TSF design emphasizes maneuverability now instead of armor.」\e
+
+//<00000e62> 【武】「はい」\e
+<00000e62> 【Takeru】「Yes.」\e
+
+//<00001649> 【伊隅大尉】「本来なら戦術論で教える内容だが、\pついでにレーザー属種への事前対応について、\p少し触れておく」\e
+<00001649> 【Capt. Isumi】「Normally we'd cover this in a strategy lecture,\p but while we're here I'll go over preemptive measures against laser species.」\e
+
+//<00000e65> 【伊隅大尉】「特定地域にレーザー属種の存在が確認されている場合、\pその危険度に応じた等級で警報が発せられる」\e
+<00000e65> 【Capt. Isumi】「When the existence of laser species is confirmed in a particular area,\p a warning is issued at an appropriate level.」\e
+
+//<00000e67> 【伊隅大尉】「偵察衛星の情報など、\p事前の観測でその存在や位置が判明している場合は、\pおなじみの『ＢＥＴＡ予報』という形で発表される」\e
+<00000e67> 【Capt. Isumi】「If satellite intelligence or prior observation can confirm their location,\p it'll be announced via the usual BETA Warning.」\e
+
+//<0000164f> 【伊隅大尉】「これは航空機の運用や、\p噴射跳躍高度の制限を決定する戦略情報だが、\p知っての通り、\p民間向けにも毎時発表されている」\e
+<0000164f> 【Capt. Isumi】「Those warnings are strategic information allowing TSFs to set a maximum boost jump height and keep aircraft from flying too low,\p but as you know they're also given to civilians.」\e
+
+//<00000e6b> 【伊隅大尉】「反対に、\p戦場でのみ運用される戦術情報が、\p『被照射危険地帯警報』と『レーザー照射警報』のふたつだ」\e
+<00000e6b> 【Capt. Isumi】「On the other hand,\p Laser Hazard Region Warnings and Laser Exposure Warnings are tactical information for the battlefield only.」\e//these terms are exclusive to these files, so do whatever you want with them ~IX
+
+//<00000e6d> 【伊隅大尉】「『被照射危険地帯警報』は、\p自機が存在する作戦域で、\pレーザー照射を受けるリスクがどの程度あるのかを等級で知らせてくれる」\e
+<00000e6d> 【Capt. Isumi】「A Laser Hazard Region Warning tells you how high the risk of being hit by laser species is in your specific area of operation.」\e
+
+//<0000193a> 【伊隅大尉】「等級は危険度に応じた５段階に分けられている。\n即時離脱勧告である第一級から、\pＮＯＥが可能な第五級までだ」\e
+<0000193a> 【Capt. Isumi】「The degree of risk is split into five levels.\nLevel one means you're advised to leave the area immediately,\p while level five means nap-of-the-earth flight is possible.」\e//wait, so is five the worst? - Sheeta //five is the best; it says you can fly safely at low altitudes. If there are lasers at all, you have to walk everywhere. ~IX
+
+//<00000e71> 【伊隅大尉】「等級の危険度は、\p確認されているレーザー属種と自機の位置関係、\pその２点間に存在する遮蔽物とその耐久予想値、\p敵優先目標の有無等によって導き出される」\e
+<00000e71> 【Capt. Isumi】「The level is chosen based on the locations of yourself and known lasers,\p the presence and strength of any cover between you and them,\p and whether the enemies have other priority targets.」\e
+
+//<00000e73> 【伊隅大尉】「つまりそれは、\p敵の個体数の変化や彼我の移動等、\p状況変化に応じて等級は刻々と変化する事を意味する」\e
+<00000e73> 【Capt. Isumi】「Which means it will constantly change whenever the situation changes,\p such as when more enemies appear or they move elsewhere.」\e
+
+//<00000e75> 【伊隅大尉】「従って通常、\p即時照射の可能性を示唆する第三級に達するまで、\p警報は鳴らないように設定されている」\e
+<00000e75> 【Capt. Isumi】「As a result,\p the alarm will not sound until you reach level three,\p which indicates an immediate risk of exposure.」\e//it's this or "getting lasered" ~IX
+
+//<00000e77> 【伊隅大尉】「だが、\pこれはあくまで警報である事を忘れてはならない。\n未確認の個体が存在する可能性を常に考慮する必要がある」\e
+<00000e77> 【Capt. Isumi】「However,\p keep in mind that this is only a warning.\nYou must always consider the possibility that there are more enemies no one's noticed.」\e
+
+//<00000e79> 【伊隅大尉】「その最低限の保証となるのが『レーザー照射警報』だ」\e
+<00000e79> 【Capt. Isumi】「The Laser Exposure Warning provides a minimal insurance against that.」\e
+
+//<00000e7b> 【伊隅大尉】「敵のレーザーは、\p照射開始から最高出力に達するまでに数秒のタイムラグがある」\e
+<00000e7b> 【Capt. Isumi】「Enemy lasers take a few seconds to reach full power after they begin firing.」\e
+
+//<00001654> 【伊隅大尉】「その初期低出力照射を装甲のセンサーが感知すると、\p『レーザー照射警報』が発せられ、\p機体が自律制御で回避行動を取る」\e
+<00001654> 【Capt. Isumi】「When your armor's sensors detect that initial low-energy laser,\p it will produce a Laser Exposure Warning,\p and your TSF will automatically evade it.」\e
+
+//<00000e7f> 【伊隅大尉】「回避を自動で行う理由は先程も説明した通り、\p照射源への反撃に衛士を集中させるためだ」\e
+<00000e7f> 【Capt. Isumi】「This evasion is done automatically in order to let the pilot concentrate on destroying the enemies.」\e
+
+//<00001659> 【伊隅大尉】「別の言い方をすると、\pひとりの人間が数秒間に、\p回避と識別、\p攻撃を、\p迅速かつ正確にこなすのは非常に困難だ、\pという事でもある」\e
+<00001659> 【Capt. Isumi】「To say it another way,\p it's extremely difficult for a human to evade,\p identify a target,\p and attack it in a rapid and precise manner.」\e
+
+//<0000165b> 【伊隅大尉】「戦術機の編成が、\pお互いをカバーし合う二機連携である理由がこれだ」\e
+<0000165b> 【Capt. Isumi】「This is also why TSFs operate in two-man elements,\p so that each one can cover the other.」\e
+
+//<0000165d> 【武】「はい」\e
+<0000165d> 【Takeru】「Okay.」\e
+
+//<00000e86> 【伊隅大尉】「この時部隊行動を取っていれば、\pデータリンクで統合処理された標的の優先撃破指定に従い、\p別のポジションの者が照射源を排除してくれる」\e
+<00000e86> 【Capt. Isumi】「If you're operating in a team,\p then your data link will give everyone priority targets,\p allowing people in other positions to destroy the lasers firing at you.」\e
+
+//<00000e88> 【伊隅大尉】「仮に貴様が突撃前衛だったとして――」\e
+<00000e88> 【Capt. Isumi】「For instance, if you were a Storm Vanguard――」\e
+
+//<00000e8a> 【伊隅大尉】「状況が近接混戦なら強襲掃討や迎撃後衛が、\p長距離対峙なら打撃支援や砲撃支援、\p制圧支援がそれを受け持つ」\e
+<00000e8a> 【Capt. Isumi】「Then in close quarters the Gun Sweeper or Gun Interceptor would support you,\p and at long distance the Flash Guard, Impact Guard or Blast Guard would.」\e
+
+//<00000e8c> 突撃前衛に対して中盤の強襲掃討と迎撃後衛が、\pさらに全体を後衛の打撃支援、\p砲撃支援、\p制圧支援がカバーするのか。\e
+<00000e8c> So Storm Vanguards in front, Gun Sweepers and Interceptors in the middle,\p then Flash, Impact and Blast Guards cover everyone from the rear.\e
+
+//<00000e8d> オレはどのポジションに配属されるんだろう。\e
+<00000e8d> I wonder what position I'll be assigned.\e
+
+//<00000e8e> 【伊隅大尉】「逆に言えば、\pこの基本連係が、\p突撃前衛や強襲前衛の高機動近接戦闘を保証するんだ」\e
+<00000e8e> 【Capt. Isumi】「In another sense,\p this relationship is secure because of the high maneuverability and close quarters combat of the Storm and Strike Vanguards.」\e
+
+//<00000e90> なるほど。前衛はレーザー照射を気に懸けないで思う存分戦えるってことか。\e
+<00000e90> I see.\bSo the Vanguards can fight as much as they want without focusing entirely on the lasers.\e
+
+//<00001964> 【伊隅大尉】「同じ部隊に属する衛士の信頼関係が、\p作戦の成否に於いて重要な要素である理由がここにある」\e
+<00001964> 【Capt. Isumi】「Here lies a major reason why trust between the Eishi in a given unit can determine the fate of a battle.」\e
+
+//<00000e93> 【武】「…\p…\p…\p…\p」\e
+<00000e93> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000e94> 全くその通りだ…\p…\p。\n今オレは、\p純夏にかかりっきりになっているから、\p部隊の連中とそういう関係を作れていない。\e
+<00000e94> She's dead right about that...\p...\pif I start worrying about nothing but Sumika,\p I won't be able to make friends with my squadmates.\e
+
+//<00000e95> 早くなんとかしなきゃな…\p…\p。\e
+<00000e95> Gotta do something about that...\p...\p\e
+
+//<00000e96> 【伊隅大尉】「――では本題に戻る」\e
+<00000e96> 【Capt. Isumi】「――Now, on to the next species.」\e
+
+//<00000876> 【伊隅大尉】「これが大型種、\p重光線級ＢＥＴＡ『マグヌスルクス』だ」\e
+<00000876> 【Capt. Isumi】「This is the larger version,\p the Heavy Laser Class BETA "Magnus Lux".」\e
+
+//<00000878> またこんなのか…\p…\p。\e
+<00000878> Another one of these...\p...\p?\e
+
+//<00001665> 【伊隅大尉】「同じレーザー属に分類されてはいるが、\pこの２種間に、\pレーザー発振器官や照射粘膜の組織構造以外、\p共通する生物的特徴は全くない」\e
+<00001665> 【Capt. Isumi】「It's also classified as a laser species,\p but other than laser generating organs and firing membranes,\p the two have absolutely nothing in common.」\e//lit. "laser oscillation organs" doubt anyone will contest this and "exposure/shining/radiating membrane" no idea what the right move there was ~IX
+
+//<00000e9b> 【伊隅大尉】「また、\p一般的に光線級と言った場合には、\p大型種を含めたレーザー属を指している場合が多いので注意しろ」\e
+<00000e9b> 【Capt. Isumi】「Also,\p when people say Laser Class,\p they're often referring to both sizes,\p so be careful.」\e
+
+//<0000087d> …\p…\p光線級の話を聞いていると神宮司軍曹の座学を思い出すな。\e
+<0000087d> ...\p...\preminds me of Sgt. Jinguuji's lecture on the laser species.\e
+
+//<00001992> 【まりも】「全高３ｍ程の小型のヤツですら、\p３８０ｋｍ離れた高度１万ｍの飛翔体を的確に捕捉し、\p３０ｋｍ以内の侵入を許さない」\e
+<00001992> 【Marimo】「Even the smaller BETA, which measure 3 meters in height,\p can accurately track flying objects at an altitude of 10,000 meters from 380 kilometers away,\p\p and will shoot down anything within a 30 kilometer radius.」\e//CP_S MLU_0016 lol back in MLU they wrote out units in katakana instead of using roman letter abbreviations ~IX
+
+//<00001508> 【まりも】「２０ｍクラスのヤツはさらに脅威だ。\n高度５００ｍで低空侵入する飛翔体を、\p約１００ｋｍ手前で撃墜してしまう程の高出力レーザーを放つ」\e
+<00001508> 【Marimo】「The larger ones, at 20 meters tall, are even more threatening.\p They output a high energy laser which can destroy any object flying below 500 meters within a 100 kilometer radius.」\e
+
+//<00000881> 【まりも】「…\p…\pつまり水平線から顔を出した瞬間、\p装甲を持たない航空機は撃ち落とされてしまう、\pということだ」\e
+<00000881> 【Marimo】「...\p...\pin other words,\p any unarmored aircraft that sticks its neck out over the horizon will be shot down instantly.」\e
+
+//<00000882> 【まりも】「しかも光学兵器である以上、\p回避はほぼ不可能。\n大気や気象条件による減衰も期待できない高出力。\n現時点でもっとも完成された対空迎撃システムだ」\e
+<00000882> 【Marimo】「And because they happen to be optical weapons,\p they are almost impossible to evade.\p\p We cannot rely on the atmosphere or meteorological phenomena to dampen the effects.\p It is the most thorough anti-air defense system currently known.」\e
+
+//<0000193d> 【まりも】「これによって、\pＮＯＥと、\p超高高度を極超音速飛行できない航空機は最前線から駆逐されてしまったのだ」\e
+<0000193d> 【Marimo】「As a result,\p\p aircraft incapable of NOE―nap-of-the-earth―or extreme high altitude supersonic flight have been decommissioned from the front lines.」\e//PCP_E they changed "stealth (flight)" to "nap-of-the-earth (flight)", lol ~IX
+
+//<00000887> 神宮司軍曹…\p…\p\e
+<00000887> Sgt. Jinguuji...\p...\p\e
+
+//<00000888> 【伊隅大尉】「――全高は約２１ｍ。\n動作は緩慢だが防御力は意外に高い」\e
+<00000888> 【Capt. Isumi】「――Their height is about 21 meters.\nThey move slow but they're surprisingly robust.」\e//lol Marimo said 20, Isumi said 21 ~IX
+
+//<0000088a> 【伊隅大尉】「３６ｍｍが通用しないわけではないが、\p弾を節約する意味でも１２０ｍｍ砲が最良の選択だ」\e
+<0000088a> 【Capt. Isumi】「The 36mm will damage them,\p but it's more economical to use the 120mm on them.」\e
+
+//<0000166a> 【伊隅大尉】「１２０ｍｍが弾切れ、\pまたは近接戦闘をせざるを得ない場合は、\p迷わず照射粘膜を狙え」\e
+<0000166a> 【Capt. Isumi】「If you run out of 120mm ammo,\p or are forced to fight in close quarters,\p always aim for the firing membrane.」\e
+
+//<0000088e> 【伊隅大尉】「そこが比較的柔らかい上に、\p照射粘膜さえ破壊すればコイツは無力化できる。\nだが、\p『瞼』のような保護膜は相当な強度だ。\n閉じられると厄介だぞ」\e
+<0000088e> 【Capt. Isumi】「Not only is that part relatively soft,\p but destroying it renders them harmless.\p However,\p its protective "eyelid"-like membrane is very tough.\p You'll be in trouble if it closes.」\e
+
+//<00000890> 【武】「…\p…\p…\p…\p」\e
+<00000890> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001966> 【伊隅大尉】「更にコイツのレーザーは、\p戦艦級の耐熱対弾装甲でさえ、\p十数秒で蒸発させてしまう程の出力だ」\e
+<00001966> 【Capt. Isumi】「In addition,\p this one's laser is powerful enough to evaporate even a warship's heat- and bullet-resistant armor in only a dozen seconds.」\e
+
+//<00001671> 【伊隅大尉】「戦術機であれ戦車であれ、\pまともに照射されたらひとたまりもないぞ？」\e
+<00001671> 【Capt. Isumi】「If a TSF or tank gets hit with that directly,\p there won't even be shrapnel left.」\e
+
+//<00000895> 【武】「…\p…\p…\p…\p」\e
+<00000895> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000ea1> そんな奴と近接戦闘なんて…\p…\pナイフや刀であの『目』の様な部分を狙うっていうのか…\p…\p？\e
+<00000ea1> Close quarters combat with those guys?\b...\p...\pwe're supposed to aim for that "eye" with knives and swords...\p...\p?\e
+
+//<00000ea2> 部隊の連携や支援があれば良いんだろうけど…\p…\pもしそれが他の対処に手一杯で、\p単独で対峙せざるを得ない場合はどうなんだろう。\e
+<00000ea2> It'd certainly help to fight in pairs...\p...\pbut what if my partner has to do something else and I end up alone?\e
+
+//<00000897> 相手だって動いてるんだし、\pこっちだって回避しながらだ。\e
+<00000897> Those guys move too,\p and I have to be evading them constantly.\e
+
+//<00000ea7> データ共有したところで、\pそこまでやれるのは冥夜と彩峰…\p…\pあとは速瀬中尉ぐらいじゃないのか？\e
+<00000ea7> Even with data sharing,\p it feels like only Meiya or Ayamine...\p...\pand probably 1st Lt. Hayase could do that.\e
+
+//<00000ea8> そもそも今の人類の対ＢＥＴＡ戦術を考えると、\p前の基地襲撃の様に、\p意図的にそういう状況を作り出さない限り、\p単独で重光線級と戦うような局面は想像しづらいよな…\p…\p。\e
+<00000ea8> Although, given humanity's current anti-BETA tactics,\p it's hard to imagine having to fight Magnus Lux alone...\p...unless the situation was designed to force me to,\p like when they attacked this base before.\e//odds are good I missed the point here completely ~IX
+
+//<00000ea9> もしかして…\p…\p部隊が壊滅したり、\p孤立してしまった時に、\p１匹でも多くＢＥＴＡを道連れにしろっていう事なんだろうか。\e
+<00000ea9> But maybe...\p...\pshe's trying to say I should take out every last BETA I can,\p even after my unit is destroyed or I've been cut off.\e
+
+//<00000eaa> あり得ない話じゃないよな。\e
+<00000eaa> It's definitely possible.\e
+
+//<00001674> 【伊隅大尉】「この様に、\p強力な長距離攻撃能力を持っているレーザー属であるが、\p弱点がない訳ではない」\e
+<00001674> 【Capt. Isumi】「These laser species do have powerful long-range attacks,\p but they also have weaknesses.」\e
+
+//<00001677> 【伊隅大尉】「この２種に共通する行動特性。\nそれを知っていれば選択の幅は広まり、\p生存の可能性も高まるだろう」\e
+<00001677> 【Capt. Isumi】「Both species share a number of specific behaviors when attacking.\p Knowing them will expand your options and increase your chances of survival.」\e//oh boy I love lead-ins! ~IX
+
+//<0000167a> レーザー属種特有の行動特性が弱点、\pってことなのか？\e
+<0000167a> The way they attack is their weakness?\e
+
+//<00000eb4> 【伊隅大尉】「まず始めに、\pレーザー属種は絶対に味方誤射をしないという事を覚えておけ」\e
+<00000eb4> 【Capt. Isumi】「First,\p the laser species will absolutely never commit friendly fire.」\e
+
+//<00000eb6> ――え…\p…\p？\e
+<00000eb6> ――Eh...\p...\p?\e
+
+//<00001968> 【伊隅大尉】「レーザー属種は照射線軸上に他のＢＥＴＡが存在する場合、\p絶対に照射を開始しない」\e
+<00001968> 【Capt. Isumi】「If other BETA exist in the laser species' line of fire,\p it will never attempt to shoot.」\e
+
+//<0000167f> 【武】「あの…\p…\pどうしてそれが弱点なんですか？　味方誤射がないのは利点なのでは…\p…\p？」\e
+<0000167f> 【Takeru】「Umm...\p...\phow is that a weakness?\bIsn't not shooting friendlies good for them...\p...\p?」\e
+
+//<00000eba> 【伊隅大尉】「確かにそうだが、\p時と場合による」\e
+<00000eba> 【Capt. Isumi】「Yes,\p but you can make use of it.」\e//lit. "You're certainly right, but it depends on the time and place."
+
+//<00000ebc> まさか…\p…\p味方を犠牲にして、\p敵を叩くみたいな戦術を言っているのか…\p…\p？\e
+<00000ebc> She's not referring to...\p...\pthe option of shooting through a friendly to hit the enemy, right...\p...\p?\e
+
+//<00001683> 【伊隅大尉】「では白銀、\p対ＢＥＴＡ基本戦術を言ってみろ。\n訓練校で教えられているはずだな？」\e
+<00001683> 【Capt. Isumi】「Now then, Shirogane,\p explain the basic anti-BETA strategy.\p You should know this from Training School.」\e
+
+//<00000ebf> 【武】「まず間接飽和攻撃から入って、\pその後戦術機甲部隊が投入され…\p…\p地上を制圧してから、\pハイヴに突入するという流れです」\e
+<00000ebf> 【Takeru】「You start with heavy artillery fire,\p then deploy a TSF Armored Unit...\p...\pget control of the surface and then infiltrate the hive.」\e//lit. "indirect saturation bombardment"
+
+//<00000ec0> 【伊隅大尉】「戦術機甲部隊が投入される際の最優先任務は何だ？」\e
+<00000ec0> 【Capt. Isumi】「What is the top priority when the TSF Armored Unit is deployed?」\e
+
+//<00000ec2> 【武】「間接飽和攻撃で討ち漏らしたレーザー属種の排除です」\e
+<00000ec2> 【Takeru】「Destroy any laser species who survived the bombardment.」\e
+
+//<00000ec3> 【伊隅大尉】「我々戦術機甲部隊の戦闘では、\p間接飽和攻撃の後とはいえ、\pＢＥＴＡの物量と対峙する事になる」\e
+<00000ec3> 【Capt. Isumi】「Although TSF Armored Units fight after an artillery bombardment,\p we are still essentially fighting battles of attrition.」\e//lit. "we end up facing off against the amount of BETA"
+
+//<00000ec6> 【伊隅大尉】「そしてレーザー属種は多くの場合その奥に引っ込んでいる。\n任務を達成するには、\p結局多くのＢＥＴＡ種と戦う事になる」\e
+<00000ec6> 【Capt. Isumi】「And in most cases the laser species stay in the rear.\p Destroying them inevitably involves fighting many other species.」\e
+
+//<00000ec8> 【伊隅大尉】「その際は混戦状態となり、\p部隊の連携機能が必ず低下する。\nだがその代わりに、\p多くのＢＥＴＡ種が貴様の盾になってくれるというわけだ」\e
+<00000ec8> 【Capt. Isumi】「When this happens the battle will become chaotic,\p and the unit's cohesion will suffer.\p On the other hand,\p all the other BETA species act as shields for you.」\e
+
+//<00001990> 【武】「なるほど…\p…\pそういうことですか」\e
+<00001990> 【Takeru】「I see...\p...\pthat does help.」\e
+
+//<00000ecb> だからってそれはそれで簡単な話じゃないよなあ…\p…\p。\e
+<00000ecb> It's definitely not that simple though...\p...\p\e
+
+//<00000ecd> 【伊隅大尉】「だが奴らも、\p盾になったままでいてくれる程甘くはない。\n驚くべき連携でカバーしてくる」\e
+<00000ecd> 【Capt. Isumi】「But they're also smart enough to get out of the way when they can.\nTheir teamwork can be incredible.」\e
+
+//<00000ecf> 【伊隅大尉】「戦場で周囲のＢＥＴＡが一斉に道を空けたらすかさず回避行動を取れ。\n照射開始に伴う予備行動だ」\e
+<00000ecf> 【Capt. Isumi】「If you see the BETA around you open up a path, take evasive action.\p That's always a sign of incoming lasers.」\e
+
+//<00000ed1> 【伊隅大尉】「その行動は照射警報よりコンマ数秒早い上、\p照射源の方向をわかりやすく教えてくれる。\n我々にとっても非常に有益だ」\e
+<00000ed1> 【Capt. Isumi】「That behavior can warn you about it a fraction of a second earlier than the Exposure Warning,\p and it'll help you work out the direction.\p It's extremely beneficial for us.」\e
+
+//<0000168a> 【伊隅大尉】「生き残りたかったらこのサインを見逃すな。\n目の前の敵だけではなく、\p常に周囲の状況にも気を配ることだ」\e
+<0000168a> 【Capt. Isumi】「If you want to live, do not miss that cue.\nAlways pay attention to your surroundings as well as the enemies in front of you.」\e
+
+//<0000168c> 【武】「わかりました」\e
+<0000168c> 【Takeru】「Understood.」\e
+
+//<0000168d> 【伊隅大尉】「――では、\p２番目の行動特性について説明しよう。\nこれは弱点そのものといえるものだから、\pしっかり憶えておけ」\e
+<0000168d> 【Capt. Isumi】「――Now then,\p the second attack behavior we can use.\p You could say this is their only real weakness,\p so do not forget it.」\e
+
+//<0000168f> 【武】「はい」\e
+<0000168f> 【Takeru】「Okay.」\e
+
+//<00001690> 【伊隅大尉】「レーザー属種は共に、\p照射準備に入ると足が止まり、\p照射中は標的追尾以外の動きをしなくなる」\e
+<00001690> 【Capt. Isumi】「When laser species prepare to fire,\p they stand still,\p and while firing they will not move except to track their target.」\e
+
+//<00001692> 【伊隅大尉】「そして照射から再照射までにインターバルが発生するんだ」\e
+<00001692> 【Capt. Isumi】「And after firing there's a pause before they can fire again.」\e
+
+//<00001694> 【武】「…\p…\p」\e
+<00001694> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001695> 【伊隅大尉】「この特性は先程言ったように、\p大きさの差こそあれ、\pレーザー発振器官の基本構造が同じである事が原因だと考えられている」\e
+<00001695> 【Capt. Isumi】「As I said before,\p the species only have their laser generating organs in common,\p so those are likely the reason they have to stay still.」\e
+
+//<000008a4> 【伊隅大尉】「照射から再照射までの時間は、\p『ルクス』で約１２秒、\p『マグヌスルクス』で約３６秒だ」\e
+<000008a4> 【Capt. Isumi】「The pause between shots is about 12 seconds for Lux,\p and about 36 seconds for Magnus Lux.」\e
+
+//<0000169a> 結構、\p間隔があるんだな…\p…\p。\nまあ、\pあれだけの高出力レーザーを発生させるエネルギーだ。\nすぐに充填するのは幾らなんでも無理だろうな。\e
+<0000169a> That's...\p...quite a while...\p...\p\nWell,\p those are some incredibly powerful lasers.\nOf course they can't recharge instantly.\e
+
+//<0000169b> 【伊隅大尉】「これらの行動特性から考えられる、\p最も有効な攻撃タイミングは、\pレーザー照射後から再照射の間だ」\e
+<0000169b> 【Capt. Isumi】「Given these behaviors,\p the best time to attack them is during the pause between shots.」\e
+
+//<0000169d> 【伊隅大尉】「だが、\pそのタイミングを得るには、\p第一撃を如何に回避するかにかかって来る」\e
+<0000169d> 【Capt. Isumi】「However,\p you have to evade their first shot in order to get that chance.」\e
+
+//<0000169f> 【武】「ですが大尉、\p複数の光線級が、\p大昔の鉄砲隊のように発射タイミングをずらせば、\pその隙は無くなるんじゃないですか？」\e
+<0000169f> 【Takeru】「But Captain,\p if there are a lot of them,\p can't they just fire at different times and eliminate that opening?」\e//cut out the "like rifleman from forever ago" part since the image of musket reloading is so not relevant ~IX
+
+//<000016a0> 【伊隅大尉】「その通りだ。\n実際にＢＥＴＡは貴様が指摘した戦術をとっている。\nしかも、\p大型種に小型種が連携しているので、\p更に厄介だ」\e
+<000016a0> 【Capt. Isumi】「That's right.\nThe BETA actually do just that.\nAnd the big ones tend to work with the small ones,\p making it even worse.」\e
+
+//<000016a2> 同じ数の集団なら、\p大型種だけより小型種が混ざっている方が、\p再照射の間隔が詰まる分、\p隙がなくなるって事か。\e
+<000016a2> Between groups of the same size,\p having more small ones than big ones keeps the pauses short overall.\e
+
+//<00000ee6> じゃあ、\p間接飽和攻撃はどうやって効果をあげているんだ？\e
+<00000ee6> So how does the artillery bombardment hurt them in the first place?\e
+
+//<00000ee7> 【伊隅大尉】「その戦術を打開するために開発されたのが、\p現在の対ＢＥＴＡ基本戦術を根底から支えるＡＬ砲弾やＡＬＭ、\pいわゆる対レーザー砲弾と対レーザー弾頭弾だ」\e
+<00000ee7> 【Capt. Isumi】「The AL Shell and ALM were developed to break through that tactic,\p and are the backbone of current anti-BETA operations.\p They stand for Anti-Laser Shell and Anti-Laser Missile.」\e//oh good, I was waiting for these to get explained. But why is that ALM in Japanese? I see nothing the M could be standing for except maybe "munition". ~IX//Missile? - Raide //I am retarded, thank you ~IX
+
+//<000016a9> 【伊隅大尉】「これらは共に光線級による迎撃を受けて蒸発、\p発生した重金属蒸気でレーザーを大幅に減衰させるという、\p防御的特性を持つ対ＢＥＴＡ兵器だ」\e
+<000016a9> 【Capt. Isumi】「Both of them are designed to evaporate when attacked by a laser species,\p releasing a cloud of heavy metal which disperses and weakens the lasers,\p thereby breaking through the BETA's defense.」\e
+
+//<000016ab> 【伊隅大尉】「この戦術を確立できた事が、\p人類を今日まで生き長らえさせたといっても過言ではない」\e
+<000016ab> 【Capt. Isumi】「The establishment of this tactic may literally be the reason humanity has survived until today.」\e
+
+//<00000eed> なるほど再突入殻と同じ原理か。\n光線級の高出力レーザーを逆手に取っているんだな。\e
+<00000eed> I see, they're just like reentry shells.\nThey use the incredible power of those lasers to their advantage.\e
+
+//<00000eee> もし仮にこれが囮だとＢＥＴＡが学習しても、\p砲弾自体が運動エネルギー兵器でもあるわけだから、\p撃ち落とさない訳には行かない筈だ。\e
+<00000eee> Even if the BETA figure out that we want those shells to get shot,\p they'd still do serious damage just as kinetic energy weapons,\p so they don't have a choice but to shoot them.\e
+
+//<00000eef> 再突入殻にしろ対レーザー砲弾にしろ…\p…\pうまい事を考えたもんだな。\e
+<00000eef> Reentry shells and Anti-Laser Shells...\p...\pthese are really clever tricks.\e
+
+//<000016b0> 【伊隅大尉】「重金属蒸気の有効範囲が狭く、\p継続時間も短くなるが、\p戦術機のミサイルコンテナに装填できる小型の弾頭も開発されている」\e
+<000016b0> 【Capt. Isumi】「The heavy metal cloud's effective area is small,\p and it doesn't last long,\p but small versions are still loaded into TSF missile launches.」\e
+
+//<000008ac> 【武】「…\p…\p…\p…\p」\e
+<000008ac> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000016b4> なるほど、\p地上戦で支援攻撃が有効なのはわかった。\nでも…\p…\pハイヴ突入後はどうなるんだ？\e
+<000016b4> Yeah,\p that way we can support each other on the ground.\nBut...\p...\pwhat about after we're in the hive?\e
+
+//<000016b5> いくら戦術機に対レーザー弾頭弾を積めるからっていっても、\p飽和なんてレベルの物量支援はできないだろう？\e
+<000016b5> TSFs can try to carry a bunch of Anti-Laser Rounds,\p but they're never gonna reach the level of a real artillery bombardment.\e
+
+//<00000efa> 【武】「間接飽和攻撃の有効性は理解できました。\nですが、\p突入したハイヴ坑内でレーザー属種と戦闘になった場合はどうするんですか？」\e
+<00000efa> 【Takeru】「I understand the effectiveness of the artillery.\nBut what do we do about laser species encountered inside the hive?」\e
+
+//<000008c0> 【伊隅大尉】「無視しろ。\n無駄弾は使うな」\e
+<000008c0> 【Capt. Isumi】「Ignore them.\nDon't waste your ammo.」\e
+
+//<00000f00> 【武】「えっ…\p…\p勝ち目がないから交戦は避けろって事ですか？　それとも他のＢＥＴＡが楯になるからですか？」\e
+<00000f00> 【Takeru】「Eh? ...\p...\pso you mean avoid them because we can't beat them? Or should we try using other BETA as shields?」\e
+
+//<00000f01> 予備行動で照射を察知しても、\p狭いハイヴ内では逃げ場はないような気がするんだけど…\p…\p。\e
+<00000f01> Even if you can tell when they're about to fire,\p there might not be room to avoid it inside the hive...\p...\p\e
+
+//<00000f02> 【伊隅大尉】「ちがう。\n理由はわからないが、\p奴らはハイヴ内では決してレーザーを照射しないんだ」\e
+<00000f02> 【Capt. Isumi】「Neither.\p We don't know why,\p but they'll never fire their lasers inside the hive.」\e
+
+//<000017c2> 【武】「――えっ！？\nでも、\p前の時間には、\p『孔』に突入した部隊がレーザーで全滅って…\p…\p」\e
+<000017c2> 【Takeru】「――Eh!?\p But didn't you say earlier that everyone who tried going in through the Vent got lasered...\p...\p?」\e//okay, fine, I give up, I finally said "lasered" ~IX
+
+//<000017c3> 【伊隅大尉】「良く考えろ。\n『主縦坑』の底から『孔』の外、\pつまり空に目がけて照射しているんだぞ？」\e
+<000017c3> 【Capt. Isumi】「Think about it.\p If they're firing from the bottom of the Main Shaft and out through the Vent,\p aren't they effectively shooting at open air?」\e
+
+//<000017c5> 【武】「あ…\p…\pそうだ…\p…\p！」\e
+<000017c5> 【Takeru】「Ah...\p...\pyou're right...\p...\p!」\e
+
+//<000017c6> 【伊隅大尉】「これは、\p味方を撃たない事と同じ行動原理なのだと考えられている」\e
+<000017c6> 【Capt. Isumi】「This may be for the same reason that they don't shoot friendlies.」\e
+
+//<000017c8> 【伊隅大尉】「…\p…\pだが、\p人類相手に、\pそれを使うまでもない、\pという事なのかも知れんな」\e
+<000017c8> 【Capt. Isumi】「...\p...\pbut it may also be a way of saying humans aren't that much of a threat.」\e
+
+//<000016b9> 【武】「…\p…\p…\p…\p」\e
+<000016b9> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000016ba> 【伊隅大尉】「冗談はさておき、\p少なくとも、\pこれまでのハイヴ突入作戦の記録にその事実はないんだ」\e
+<000016ba> 【Capt. Isumi】「Jokes aside,\p we've never seen them do that in any past operation inside a hive.」\e
+
+//<00000f0d> そうか…\p…\p。威力のあり過ぎる兵器を自分達の基地の中で使うなんて、\p相当追いつめられない限りやらないだろうしな。\e
+<00000f0d> I see...\p...\pthey wouldn't want to use an overpowered weapon like that inside their own base unless we had them completely cornered.\e
+
+//<000008cb> 【武】「じゃあ突入後は光線級がいない分、\pほんの少しだけ気が楽ですね」\e
+<000008cb> 【Takeru】「Then I guess it gets a little easier on the inside without any laser class.」\e
+
+//<000016c0> 【伊隅大尉】「ほう…\p…\pそれはどういう意味だ？」\e
+<000016c0> 【Capt. Isumi】「Oh? ...\p...\pwhat makes you say that?」\e
+
+//<000016c2> 【武】「少なくとも、\pレーザー属種を気にしながら戦わなくて済むので、\p精神的な負担が軽いという意味です」\e
+<000016c2> 【Takeru】「If we don't have to worry about laser species while we fight,\p there'll be less mental strain.」\e
+
+//<000016c3> 【伊隅大尉】「…\p…\pレーザー属種がいないと、\pなぜ気が楽なんだ？」\e
+<000016c3> 【Capt. Isumi】「...\p...\phow does removing laser species make things so easy?」\e
+
+//<00000f21> う…\p…\pなんかしつこいな。\e
+<00000f21> Uu...\p...\pthat felt kinda forceful.\e
+
+//<000016c9> 【武】「高出力レーザーの破壊力…\p…\pいえ、\pレーザー属種そのものが、\p人類にとって最大の脅威だからです」\e
+<000016c9> 【Takeru】「Because the destructive power of the lasers...\p...\pno,\p the laser species are the biggest threat to humanity.」\e
+
+//<000016ca> 【伊隅大尉】「…\p…\pそうか」\e
+<000016ca> 【Capt. Isumi】「...\p...\pI see.」\e
+
+//<00000f25> な、\pなんなんだ…\p…\p？　何でこんな基本的な事ばかり聞いてくるんだ？\e
+<00000f25> Wh-\pwhat is it...\p...\p?\bWhy are you asking me such basic questions?\e
+
+//<000016cd> なんか、\pここまで質問責めされると、\p自信なくなってくるな…\p…\p。\e
+<000016cd> Being asked multiple times makes me not feel confident about it anymore...\p...\p\e
+
+//<00000f27> 【伊隅大尉】「白銀、\pひとつ覚えておけ」\e
+<00000f27> 【Capt. Isumi】「Shirogane,\p remember this.」\e
+
+//<00000f29> 【武】「…\p…\p？」\e
+<00000f29> 【Takeru】「...\p...\p?」\e
+
+//<000016d3> 【伊隅大尉】「ＢＥＴＡ最大の脅威は数だ」\e
+<000016d3> 【Capt. Isumi】「The BETA's greatest weapon is numbers.」\e
+
+//<000016d5> 【伊隅大尉】「人類にとって、\p実質的な脅威になっているのは、\pその圧倒的な物量なんだ」\e
+<000016d5> 【Capt. Isumi】「As far as humanity's concerned,\p the sheer number of them is by far the most real danger.」\e
+
+//<00000f2c> 【武】「物量…\p…\pですか」\e
+<00000f2c> 【Takeru】「Number...\p...\p?」\e
+
+//<000016da> 【伊隅大尉】「冷戦下のヨーロッパで、\pワルシャワ条約機構軍の圧倒的な陸軍兵力に、\pＮＡＴＯはいかにして対抗したか…\p…\p」\e
+<000016da> 【Capt. Isumi】「How did NATO oppose the armies united under the Warsaw Pact in Europe during the Cold War...\p...\p?」\e
+
+//<000016dc> ＮＡＴＯの対抗策は…\p…\p航空機や戦闘ヘリによる圧倒的な航空優勢で戦車の数に対抗…\p…\p。\e
+<000016dc> NATO dealt with their air superiority...\p...\pthrough sheer numbers of tanks...\p...\p\e
+
+//<000016dd> 【武】「――ッ！？」\e
+<000016dd> 【Takeru】「――!?」\e
+
+//<00000f30> 【伊隅大尉】「ＢＥＴＡ大戦以前の戦争で、\p防空システムが真っ先に叩かれたのはなぜか…\p…\p何れも戦史の座学でやっている筈だな？」\e
+<00000f30> 【Capt. Isumi】「Before the war with the BETA,\p air defense systems were always the top priority target...\p...\pyou should remember all of this from history lectures.」\e
+
+//<00000f32> 【武】「すみません…\p…\pやっと何を言われているのか理解できました」\e
+<00000f32> 【Takeru】「I'm sorry...\p...\pit just took me a while to understand that.」\e
+
+//<00000f33> 戦術的にはバカに等しいＢＥＴＡの物量戦がここまで人類を追いつめた理由…\p…\p。\e
+<00000f33> The BETA are practically idiots at strategy, but their sheer numbers have pushed humanity this far back...\p...\p\e
+
+//<00000f34> それは航空戦力を持たないＢＥＴＡに対して、\p最大のアドバンテージになるはずだった空軍力を封じられている事だ。\e
+<00000f34> And they were able to do that because they neutralized our aerial weaponry,\p taking away our biggest advantage.\e
+
+//<000016e0> 【武】「レーザー属種のせいで空軍力が無力化された事…\p…\pそこばっかりに気を取られて…\p…\p」\e
+<000016e0> 【Takeru】「I'd been focusing on...\p...\phow the laser species rendered aircraft useless...\p...\p」\e
+
+//<000016e1> 【伊隅大尉】「…\p…\p」\e
+<000016e1> 【Capt. Isumi】「...\p...\p...\p...\p」\e
+
+//<000016e3> 【武】「いつの間にか自分の中で、\pレーザー属種が敵の全ての様な印象になっていました」\e
+<000016e3> 【Takeru】「Somehow it got to the point where the laser species felt like the only real enemy.」\e
+
+//<00000f3b> …\p…\p…\p…\pおかしいな…\p…\pオレ自身、\pあんな経験をしたって言うのに…\p…\p。\nなんですっぽり抜けちまったんだろう…\p…\p。\e
+<00000f3b> ...\p...\p...\p...\pthat's weird...\p...\pI've experienced all this myself...\p...\p\nWhy'd I forget it...\p...\p?\e
+
+//<000016e7> 【伊隅大尉】「白銀…\p…\pその勘違いは、\p誰もが一度は経験するんだ」\e
+<000016e7> 【Capt. Isumi】「Shirogane...\p...\peveryone makes that mistake.」\e
+
+//<000016e9> 【武】「――え？」\e
+<000016e9> 【Takeru】「――Eh?」\e
+
+//<000016ea> 【伊隅大尉】「確かにレーザー属種は、\p戦術的にも戦略的にも、\pとんでもない脅威だからな」\e
+<000016ea> 【Capt. Isumi】「The laser species certainly are an incredible threat at the tactical and strategic level.」\e
+
+//<00000f3f> 【伊隅大尉】「だが、\pレーザー属種だけが我々の敵なのではない。\nその他のＢＥＴＡ種も人類にとっては絶望的に危険な生物なんだ」\e
+<00000f3f> 【Capt. Isumi】「But they are not our only enemy.\nThe other BETA species are also dangerous creatures capable of plunging humanity into despair.」\e//lit. "the other BETA species are, to humanity, despairingly dangerous creatures" once in a long while you have to cram in that one word *somehow* to keep the entire line from sounding hollow ~IX
+
+//<000016ef> 【伊隅大尉】「ではなぜ、\p単体であれば対処不可能ではない生物が、\pここまで人類を追いつめたのか…\p…\p」\e
+<000016ef> 【Capt. Isumi】「But since each one of them can be dealt with,\p why have they pushed humanity back so far...\p...\p?」\e
+
+//<000016f1> 【武】「…\p…\p…\p…\p」\e
+<000016f1> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000f43> 【伊隅大尉】「核で焼き尽くそうが、\p気化爆弾で吹き飛ばそうが、\p次から次へと湧いて出てくる。\nそうやって大挙して押し寄せてくる事が問題なんだ」\e
+<00000f43> 【Capt. Isumi】「We may try to wipe them out with nukes or blow them away with fuel-air bombs,\p but they never stop coming.\p The incredible size of their armies are the real problem.」\e//The Japanese for "fuel air bomb" parses to "bomb which changes fuel to air", allowing them to shorten the term from "fuel air-change bomb" to "air-change bomb". You never get to assume verbatim jargon. Never. ~IX
+
+//<000016f4> 【伊隅大尉】「その恐ろしさは、\p貴様自身が嫌と言うほど味わったはずだ」\e
+<000016f4> 【Capt. Isumi】「You should have learned this all too well firsthand.」\e
+
+//<00000f52> 【武】「…\p…\p…\p…\p」\e
+<00000f52> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000f53> 【伊隅大尉】「…\p…\p…\p…\p」\e
+<00000f53> 【Capt. Isumi】「...\p...\p...\p...\p」\e
+
+//<00000f55> 【武】「…\p…\p…\p…\p」\e
+<00000f55> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000f56> 【伊隅大尉】「白銀？」\e
+<00000f56> 【Capt. Isumi】「Shirogane?」\e
+
+//<00000f58> 【武】「――え？　あ、\pすみません」\e
+<00000f58> 【Takeru】「――Eh? Ah,\p sorry.」\e
+
+//<00000f59> 【伊隅大尉】「どうした。\n気分でも悪いのか？」\e
+<00000f59> 【Capt. Isumi】「What is it?\p Do you feel bad?」\e
+
+//<000016f9> 【武】「ああ、\pいえ…\p…\pなんで、\p気が楽だなんて思ったのか…\p…\p考えてました」\e
+<000016f9> 【Takeru】「Aaah,\p no...\p...\pI'm just wondering...\p...\pwhy I reacted that way earlier.」\e
+
+//<00000f5c> 【伊隅大尉】「そうか。\nでは続けるぞ」\e
+<00000f5c> 【Capt. Isumi】「I see.\nThen I'll continue.」\e
+
+//<000016ff> 【武】「はい。すみません…\p…\p」\e
+<000016ff> 【Takeru】「Yeah, sorry...\p...\p」\e
+
+//<00001700> 【伊隅大尉】「戦場に於いて、\p我々がレーザー属種を最優先撃破目標としている理由――」\e
+<00001700> 【Capt. Isumi】「The laser species are our top priority on the battlefield because――」\e
+
+//<00001702> 【伊隅大尉】「それはレーザー属種の排除によって、\p一時的であれ航空優性が回復し、\p敵の物量に現実的に対抗する事が可能になるからだ」\e
+<00001702> 【Capt. Isumi】「Eradicating them allows us to temporarily restore air superiority,\p after which we have a much more realistic chance of dealing with their numbers.」\e
+
+//<00000f63> 元々ＢＥＴＡは航空兵器を持っていないから、\pレーザー属種がいなくなった瞬間にそうなるのは当然だよな。\e
+<00000f63> The BETA never had any airborne weapons to begin with,\p so the moment the laser species are dead we rule the skies again.\e
+
+//<00000f64> 【伊隅大尉】「効果的な長距離攻撃、\p前線への補給物資や兵器の空輸が可能になって初めて、\p人類はＢＥＴＡとまともに戦う事ができる」\e
+<00000f64> 【Capt. Isumi】「Humanity can fight the BETA properly only when effective long range attacks,\p front line resupplies,\p and aerial transport of weapons become possible.」\e
+
+//<00000f66> 【伊隅大尉】「従って、\pレーザー属種が無力化されているからといって、\pハイヴ坑内が地表と比較して気が楽などという事は絶対にない」\e
+<00000f66> 【Capt. Isumi】「Therefore,\p even if the laser species won't fire inside the hive,\p it's definitely not easier in there than it is on the surface.」\e
+
+//<00001709> 【伊隅大尉】「補給や支援が地上戦以上に困難なハイヴ坑内の戦闘で、\p敵の物量に効果的な対処をする事は非常に難しい」\e
+<00001709> 【Capt. Isumi】「It's difficult to resupply or support units on the inside,\p and extremely hard to do anything about their numbers on the inside.」\e
+
+//<0000170b> 【伊隅大尉】「ささやかな対抗策のひとつが、\p突入部隊の戦術機――制圧支援が多弾頭ミサイルを装備する事だ」\e
+<0000170b> 【Capt. Isumi】「One of our few countermeasures are the\bmulti-warhead missiles given to Blast Guards in the infiltration units.」\e
+
+//<00000f6c> 【伊隅大尉】「先程触れたように、\p地上戦でのミサイル運用は主に防御目的だが、\pハイヴ内では純粋に攻撃兵器として使用される」\e
+<00000f6c> 【Capt. Isumi】「As I hinted at earlier,\p on the surface missiles are mainly for defense,\p but inside the hive they're simply used to attack.」\e
+
+//<00000f6e> なるほど…\p…\pレーザー照射がないハイヴ内での戦闘なら、\pミサイル攻撃も十分効果があるんだな。\e
+<00000f6e> That makes sense...\p...\pwithout lasers to worry about in there,\p missiles should work perfectly fine.\e
+
+//<0000170f> 【伊隅大尉】「だが、\p装弾数に限りがある以上、\pこれも万全な策ではない」\e
+<0000170f> 【Capt. Isumi】「However,\p since there's a limit to how many one can carry,\p this isn't a perfect solution.」\e
+
+//<00001711> 【伊隅大尉】「補給線さえ確保できれば非常に有効な手だが、\pこれまでの作戦で、\p継続的な補給に成功した例はない」\e
+<00001711> 【Capt. Isumi】「It'd be extremely effective if we could hold a supply line,\p but no operations to date have succeeded at that.」\e
+
+//<00001713> 【伊隅大尉】「坑内のあらゆる所からＢＥＴＡが湧き出て来て、\p補給線をズタズタにしてしまうからな」\e
+<00001713> 【Capt. Isumi】「At some point BETA reinforcements appear from everywhere,\p sending the supply line into chaos.」\e
+
+//<000008d8> 【武】「…\p…\p…\p…\p」\e
+<000008d8> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000171a> 【伊隅大尉】「そして突入から約４時間後には、\p地上の支配権も奪回されてしまう事が殆どだ」\e
+<0000171a> 【Capt. Isumi】「And most of the time,\p they also retake the surface about four hours after infiltration.」\e
+
+//<0000171c> たとえレーザー属種が無力化されていても、\p今までの突入作戦は、\p横浜ハイヴ以外は全て失敗している。\nその唯一の成功例だって、\pＧ弾を使った上での事だろ。\n純粋に突入部隊が作戦を成功させたわけじゃない。\e
+<0000171c> So except for Yokohama,\p we've always failed to fully infiltrate a hive even after all the laser species get wiped out.\nAnd that exception is only because of the G-Bombs.\nThe infiltration units didn't win it at all.\e
+
+//<0000171d> オルタネイティヴ４の目的を考えれば、\pそれを成功といってはいけない筈だ。\e
+<0000171d> Considering Alternative IV's objective,\bI can't call that a success.\e//namely, since he has to get Sumika deep into a hive and come back alive without G-bombing it first ~IX//at this point, I don't think we're told about that mission; he only got told of fine-tuning Sumika, and details of such mission is still later. - Raide //he's been told Sumika has to be taken inside (or at least very close to) a hive to do the reading, so yes he knows enough to make these logic leaps ~IX
+
+//<0000171e> 【伊隅大尉】「気が楽な戦闘など、\pＢＥＴＡとの戦いには存在しない」\e
+<0000171e> 【Capt. Isumi】「There are no easy battles when it comes to the BETA.」\e
+
+//<00001720> 【伊隅大尉】「軽口を叩くのは構わない――だが、\p気はゆるめるな」\e
+<00001720> 【Capt. Isumi】「You can talk about them lightly――But do not let your guard down.」\e
+
+//<00001722> 【武】「はい」\e
+<00001722> 【Takeru】「Okay.」\e
+
+//<00001723> 【伊隅大尉】「レーザー属種を最優先撃破と言われ、\p無思考で機械的に対処する事は、\p貴様だけではなく、\p部隊にとっても危険な行為だぞ？」\e
+<00001723> 【Capt. Isumi】「Fighting like a thoughtless machine just because you were told the laser species are top priority puts your entire unit in danger.」\e
+
+//<00001725> 【武】「わかりました」\e
+<00001725> 【Takeru】「I understand.」\e
+
+//<00000f83> なんか…\p…\p自分ではそんなつもりはないんだけど、\pこれも慣れなのかな。\e
+<00000f83> I didn't mean to sound like that at all...\p...\pmaybe this is just part of getting used to things.\e
+
+//<00000f84> それとも、\p純夏の事や…\p…\pオレが滅茶苦茶にした世界の修復とか…\p…\pそっちに気が行ってるのかな。\e
+<00000f84> Or maybe I'm preoccupied with...\p...\pwhat happened to Sumika...\p...\por fixing all the worlds I messed up.\e
+
+//<00000f85> まさかオレ…\p…\p無意識に『この世界』を救う事を、\pついでみたいに軽く考えているんじゃないだろうな…\p…\p。\e
+<00000f85> I'm not taking this world lightly without realizing it...\p...\pright...\p...\p?\e
+
+//<00000f86> 【伊隅大尉】「――レーザー属種に時間を割きすぎたな…\p…\p少し急ごう」\e
+<00000f86> 【Capt. Isumi】「――We've taken too long on the laser species...\p...\plet's try to speed up.」\e
+
+//<00001729> 【武】「…\p…\p？」\e
+<00001729> 【Takeru】「...\p...\p?」\e
+
+//<0000172a> …\p…\p時間はまだ十分あるのに。\n大尉、\pこの後なんか用事があるのかな。\e
+<0000172a> ...\p...\pthere should be plenty of time left.\nDoes the Captain have something to do after this?\e
+
+//<0000172b> 【伊隅大尉】「――次は地上であれ坑内であれ、\p最も多く顔を合わせる事になるお友達を紹介する」\e
+<0000172b> 【Capt. Isumi】「――Next, I'll introduce you to a species you'll become well acquainted with,\p both on the surface and in the hive.」\e//lit. "I'll introduce the friend who you will end up seeing most often" most of which I compressed to "best friend" or tacked onto the next line//'best friends' makes it sound like Takeru can exploit these BETA like he can with the laser classes, so changing - Sheeta //hmm, this works ~IX
+
+//<000008e4> 【伊隅大尉】「要撃級ＢＥＴＡ『メデューム』。\n敵戦力の中核を成す種属だ」\e
+<000008e4> 【Capt. Isumi】「The Grappler Class BETA "Medium".\nThis species is the mainstay of the enemy forces, the one you'll see more often than any other.」\e
+
+//<000008e7> コイツは…\p…\p！\e
+<000008e7> This guy...\p...\p!\e
+
+//<00000f8e> 【伊隅大尉】「こいつの近接格闘戦能力は非常に高く、\p防御力もかなりのものだ。\n対人探知能力もかなり高い」\e
+<00000f8e> 【Capt. Isumi】「It's extremely strong in close quarters,\p and pretty tough too.\p It's also good at sensing humans.」\e
+
+//<000008f4> 【伊隅大尉】「――というように、\p頑強な二対の前腕が最大の武器となっている」\e
+<000008f4> 【Capt. Isumi】「――Obviously,\p its primary weapons are those two durable arms.」\e
+
+//<00001730> 【伊隅大尉】「前腕を広げた最大全幅は約３９ｍ。\nしかもこの図体でも動きは速く、\p定常円旋回能力も高い」\e
+<00001730> 【Capt. Isumi】「With the arms spread out, its width can reach 39 meters.\p And despite its shape, it can move and turn around quickly.」\e
+
+//<000008f9> 【武】「…\p…\p…\p…\p」\e
+<000008f9> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001734> 【伊隅大尉】「貴様も思い知ったように、\pこの前腕で殴られれば、\p戦術機といえどタダでは済まない」\e
+<00001734> 【Capt. Isumi】「As you've learned firsthand,\p those arms can destroy a TSF.」\e
+
+//<00001737> 【武】「…\p…\pは…\pい…\p…\p」\e
+<00001737> 【Takeru】「...\p...\py-...\pes...\p...\p」\e
+
+//<000008fe> 【伊隅大尉】「…\p…\p…\p…\pでは次にいく」\e
+<000008fe> 【Capt. Isumi】「...\p...\pokay, next.」\e
+
+//<0000173b> 【伊隅大尉】「頑強な装甲殻を持つ突撃級ＢＥＴＡ『ルイタウラ』だ」\e
+<0000173b> 【Capt. Isumi】「This is the Destroyer Class BETA "Ruitare" with its hard armored shell.」\e
+
+//<00000907> 【伊隅大尉】「面制圧の生存率が最も高く、\p敵の先頭には必ずコイツらがいる」\e
+<00000907> 【Capt. Isumi】「They survive artillery better than other species,\p and they'll always be at the front of enemy formations.」\e
+
+//<0000173e> 【伊隅大尉】「コイツの衝角突撃戦術の破壊力は、\p先の『メデューム』の一撃など比較にならない」\e
+<0000173e> 【Capt. Isumi】「Their ramming attacks are far more destructive than anything the Mediums can do.」\e
+
+//<0000090b> 【武】「…\p…\p…\p…\p」\e
+<0000090b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001743> 【伊隅大尉】「機動制御能力、\p特に旋回能力は低く、\p対人探知能力も全ＢＥＴＡ中最低――」\e
+<00001743> 【Capt. Isumi】「They're not very maneuverable,\p especially when it comes to turning,\p and they're the worst of all BETA at sensing humans――」\e
+
+//<0000196a> 【伊隅大尉】「だがそれは、\pコイツの特長である直線的機動のせいで、\p急激な方向転換が効かないだけだとする説もある」\e
+<0000196a> 【Capt. Isumi】「But that's assumed to be because they're best at charging in straight lines,\p and simply don't need to make sudden turns.」\e
+
+//<00000fa6> 【伊隅大尉】「直線移動の最高速は時速約１７０ｋｍ。\nＢＥＴＡ最強の防御力を誇る、\p強力な衝角と装甲が一体化した…\p…\p」\e
+<00000fa6> 【Capt. Isumi】「Their top speed when moving straight is 170 kilometers per hour.\p They boast the best defense of any BETA,\p being completely fused with their hardened battering ram...\p...\p」\e//used "km/h" originally but after seeing the line in game it'd actually look better written all the way out ~IX
+
+//<00001748> 【伊隅大尉】「――この装甲殻には１２０ｍｍでも歯が立たない。\nだが、\p後ろに回れば３６ｍｍでも十分効果がある」\e
+<00001748> 【Capt. Isumi】「――The 120mm won't even dent their armored shell.\p But if you can get behind them,\p even the 36mm will be plenty effective.」\e
+
+//<0000091f> 【武】「…\p…\p…\p…\p」\e
+<0000091f> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000174e> 【伊隅大尉】「しかし状況が変われば、\p後ろを取る事は容易ではなくなる。\nハイヴ坑内での戦闘がそうだ」\e
+<0000174e> 【Capt. Isumi】「However, depending on the situation,\p you may not be able to get behind them easily.\p Battles inside the hive are often like that.」\e
+
+//<00000922> …\p…\pっ…\p…\p！\e
+<00000922> ...\p...\p...\p...\p!\e
+
+//<00001753> 【伊隅大尉】「回避スペースが限定されたハイヴ坑内では、\pコイツの直線的で単純な攻撃が、\pとてつもなく恐ろしいものになるのだ」\e
+<00001753> 【Capt. Isumi】「Their simple attack of running in a straight line is quite fearsome inside a hive with limited space to evade them.」\e
+
+//<00000925> …\p…\pったく…\p…\p何ぼーっとしちまってるんだ…\p…\p！\e
+<00000925> ...\p...\pgeez...\p...\pwhy am I spacing out...\p...\p!?\e
+
+//<00000926> しっかりしろ…\p…\p！\e
+<00000926> Get it together...\p...\p!\e
+
+//<00001758> 【伊隅大尉】「地形や状況の変化によって敵の戦力評価は刻々と変わる。\n衛士は常にそれを忘れてはならない」\e
+<00001758> 【Capt. Isumi】「The enemy's strength is constantly changing based on the terrain and the situation.\nEishi must never forget this.」\e
+
+//<0000092d> 【伊隅大尉】「これが現在確認されている最大種、\p要塞級ＢＥＴＡ『グラヴィス』だ」\e
+<0000092d> 【Capt. Isumi】「This is the largest known species,\p the Fort Class BETA "Gravis".」\e
+
+//<0000175b> まったく…\p…\p！　あの時の事は…\p…\p大丈夫なはずだろ。\e
+<0000175b> Dammit...\p...\p! I should be over that...\p...\pby now.\e
+
+//<00000930> 無理矢理受けさせられた催眠暗示で、\pブロックされている筈だろう…\p…\p！？\e
+<00000930> The hypnotic therapy they forced on me must've been suppressing it until now...\p...\p\e
+
+//<0000175e> 【伊隅大尉】「コイツは的も大きく、\p動作も敏捷とは言い難い。\n対人探知能力も比較的低いので、\p脅威度は低く設定されている」\e
+<0000175e> 【Capt. Isumi】「These are huge targets,\p and it's hard to call them quick.\p They're bad at sensing humans,\p and are considered a low threat.」\e
+
+//<00000fb3> 【伊隅大尉】「だが、\p防御力と耐久力は侮れない。\n３６ｍｍでの攻撃は無駄だ。\n１２０ｍｍでもねらい所を絞らなければ効果は薄い」\e
+<00000fb3> 【Capt. Isumi】「However,\p you must not underestimate their durability and stamina.\nDon't even try using the 36mm on them.\nEven with the 120mm, you have to aim at the right parts to do much damage.」\e
+
+//<00000fb5> 【武】「…\p…\p…\p…\p」\e
+<00000fb5> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001763> 【伊隅大尉】「射撃であれ近接戦闘であれ、\p三胴構造各部の接合部分を狙うのが最も有効だろう」\e
+<00001763> 【Capt. Isumi】「Whether at range or in close quarters,\p your best choice is to aim for the connections between the three major body parts.」\e//reminds me of insect anatomy ~IX
+
+//<00001765> 【伊隅大尉】「だが注意しろ。\n迂闊に近付くのはかなり危険だ」\e
+<00001765> 【Capt. Isumi】「But be careful.\nIt's dangerous to get close to them.」\e
+
+//<0000196c> 【伊隅大尉】「コイツの太い脚による打撃は要撃級のそれに勝るとも劣らない」\e
+<0000196c> 【Capt. Isumi】「These thick legs are no less powerful than the arms of a Grappler Class.」\e
+
+//<0000196d> 【伊隅大尉】「そして万が一その鋭い先端で踏みつけられれば、\p戦術機といえど串刺しだ」\e
+<0000196d> 【Capt. Isumi】「And in the event you get stepped on,\p the sharp tips will skewer your TSF whole.」\e
+
+//<00000fba> 【伊隅大尉】「また、\p尾節には全長約５０ｍの触手が収められている。\n露出しているカギ爪状の衝角はその先端部だ」\e
+<00000fba> 【Capt. Isumi】「Also,\p its tail contains a tentacle 50 meters long.\p You can see its exposed claw-like tip.」\e//doesn't look like a tentacle imo, more like the lower body of a wasp, so found a name on wikipedia that looks kinda right. Someone correct me if I'm wrong~ - Sheeta //*contains* means it's hidden inside usually so you can't see more than the spiky tip in the slide. Once they fight these guys and you see the animations you'll believe me that it's meant to be a separate prehensile organ, since no abdomen can move that fast (though you're right that the tail itself is also an ovipositor) ~IX
+
+//<0000196f> 【伊隅大尉】「コイツはこの触手を振り回す事で、\p後方や側方の死角をカバーする。\nしかも１０本の脚や身体には絶対に激突させないという、\p信じ難い器用さだ」\e
+<0000196f> 【Capt. Isumi】「It can cover all of its blind spots behind and on the sides by swinging it around.\nIt can even avoid hitting its own body or legs in the process.」\e
+
+//<00000fbe> 【伊隅大尉】「こいつの衝角は、\p突撃級の甲殻や要撃級の前腕同様、\pモース硬度１５以上、\pつまりダイヤモンド以上の堅さがある」\e
+<00000fbe> 【Capt. Isumi】「These legs,\p like the Destroyer Class' shell or the Grappler Class' arms,\p are over 15 Mohs,\p meaning they're harder than diamond.」\e//I like how moosu koudo sounds more like Morse Code than Moh Hardness ~IX
+
+//<00000fc0> 【伊隅大尉】「また、\pこの衝角が何かに激突すると、\pその先端から強酸性溶解液が分泌されるので注意しておけ。\n強化装備でも１０秒もつかどうかだ」\e
+<00000fc0> 【Capt. Isumi】「Also,\p keep in mind that whenever they hit something,\p their tips secrete a strong acid.\nYour Armored Suits won't last ten seconds in it.」\e
+
+//<00000fc2> コクピット直撃か…\p…\pそんな状況になったら、\pそれ以前に激突の衝撃で死んでいるだろうけどな。\e
+<00000fc2> A direct hit to the cockpit would...\p...\pactually,\p I'd die immediately from the impact.\e
+
+//<00000fc3> 【伊隅大尉】「その他には、\p小型種が要塞級の胎内から出現したという報告が数多くあり、\p戦闘終了後の安全確認にも十分配慮しなければならない」\e
+<00000fc3> 【Capt. Isumi】「There are also a number of reports of smaller species emerging from the Fort Class' womb,\p so they must be destroyed before an area can be declared secure.」\e
+
+//<00000fc5> 【伊隅大尉】「次に説明する小型の３属種がそれにあたる――」\e
+<00000fc5> 【Capt. Isumi】「Specifically, the three small species I'm about to go over――」\e
+
+//<00000fca> 【伊隅大尉】「戦車級ＢＥＴＡ『エクウスペディス』。\n小型種全般に言える事だが、\p対人探知能力は極めて高い」\e
+<00000fca> 【Capt. Isumi】「Tank Class BETA "Equus pedis".\nAs with all of the small species,\p it's incredibly good at sensing humans.」\e
+
+//<00000fcc> 【伊隅大尉】「丁度軍用トラックぐらいの大きさで、\p最大速度も８０ｋｍぐらいだ」\e
+<00000fcc> 【Capt. Isumi】「They're about the size of a military truck,\p and their maximum speed is 80 kilometers.」\e
+
+//<00000933> 【武】「…\p…\p…\p…\p」\e
+<00000933> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000176e> 【伊隅大尉】「３６ｍｍも十分有効で、\p歩兵の重機関銃でも対処できるが、\p機動力が高く油断ならない」\e
+<0000176e> 【Capt. Isumi】「The 36mm works perfectly well on them,\p and even an infantry machine gun can fend them off,\p but they are very agile, so be careful.」\e
+
+//<00001770> 【伊隅大尉】「しかもコイツの顎は、\p戦術機の装甲でも噛み砕く程だ。\n集団で機体に取り付かれたら、\pそれこそ致命的だ」\e
+<00001770> 【Capt. Isumi】「Not to mention their jaws are capable of eating through even TSF armor.\nIf a group of them gets hold of you,\p you're done for.」\e
+
+//<00001772> 【伊隅大尉】「ついでに教えておくが、\pコイツが最も多くの衛士を喰っているＢＥＴＡ種だ。\n――勿論、\p戦術機ごとな」\e
+<00001772> 【Capt. Isumi】「I should also mention that this species kills more Eishi than any other.\n――Along with destroying their TSFs,\p of course.」\e//lit. "eats more Eishi" but the others don't literally eat you so...lol ~IX
+
+//<0000095b> …\p…\pクソ…\p…\p！\e
+<0000095b> ...\p...\pdammit...\p...\p!\e
+
+//<00000fdd> 【伊隅大尉】「ハイヴ坑内では特に気をつけろ。\nありとあらゆる所からこいつ等が湧いて来る」\e
+<00000fdd> 【Capt. Isumi】「Be especially careful inside hives.\nThese guys have a habit of coming out of the woodwork.」\e
+
+//<0000095e> …\p…\pこのままいけば…\p…\pいつかあいつが出てくる筈だ…\p…\p。\e
+<0000095e> ...\p...\psooner or later...\p...\pthat species will show up...\p...\p\e
+
+//<00000960> オレは…\p…\pその時…\p…\pまともでいられるんだろうか…\p…\p！？\e
+<00000960> When she...\p...\pgets to it...\p...\pwill I be able to stay sane...\p...\p!?\e//age just found a way to make lectures on alien morphology dramatique ~IX
+
+//<00000964> 【伊隅大尉】「闘士級ＢＥＴＡ『バルルスナリス』だ」\e
+<00000964> 【Capt. Isumi】「This is the Warrior Class BETA "Barrus naris".」\e
+
+//<00000966> …\p…\pまだだった。\nあいつじゃない…\p…\p。\e
+<00000966> ...\p...\pnot yet.\nThis isn't it...\p...\p\e
+
+//<00001777> 【伊隅大尉】「幸いな事に、\pコイツは戦術機の敵ではない。\n歩兵部隊の援護任務でも無ければ、\p無視して構わない」\e
+<00001777> 【Capt. Isumi】「Fortunately,\p this species won't attack you.\nUnless you're escorting an infantry unit,\p you can safely ignore them.」\e
+
+//<00000969> 【武】「…\p…\p…\p…\p」\e
+<00000969> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000096a> 【伊隅大尉】「だが、\p貴様が緊急脱出し、\p機械化歩兵装甲で戦うハメになった時、\pコイツの本当の恐ろしさを知る事になるだろう」\e
+<0000096a> 【Capt. Isumi】「However,\p if you have to eject,\p and fight using your Mechanized Infantry-Armor Connection Seat,\p you'll find out how fearsome they are.」\e
+
+//<0000096c> 【伊隅大尉】「拳銃やライフルでの攻撃も十分効果があるが、\p当てることができればの話だ。\nコイツはかなり俊敏だからな」\e
+<0000096c> 【Capt. Isumi】「Even handguns and rifles are effective against them,\p but that's only if you can hit them.\nThey're very agile.」\e
+
+//<00000fe2> 【伊隅大尉】「しかも、\pこの象の鼻のような腕は、\p人間の頭ぐらいなら簡単に引き抜いてしまう程の力を持っているから、\p十分警戒しろよ？」\e
+<00000fe2> 【Capt. Isumi】「And this arm,\p which looks like an elephant's trunk,\p is capable of pulling a human head clean off its body,\p so watch out for it.」\e
+
+//<00000974> ――ッ！\e
+<00000974> ――!\e
+
+//<00000975> 【伊隅大尉】「最後に、\p兵士級ＢＥＴＡ『ヴェナトル』だ」\e
+<00000975> 【Capt. Isumi】「Finally,\p the Soldier Class BETA "Venator".」\e
+
+//<0000177b> 【伊隅大尉】「兵士級は、\p１９９５年に初めて確認されたＢＥＴＡ最小の新種だ。\n対人探知能力が最も高いＢＥＴＡだと言われている」\e
+<0000177b> 【Capt. Isumi】「The Soldier Class is the smallest known BETA species, first discovered in 1995.\p It is said to be the best at sensing humans.」\e
+
+//<0000177d> 【伊隅大尉】「闘士級程ではないが、\pやはり動きは意外に素早い。\n腕力等も人間の数倍はある。\nだが、\p機械化歩兵装甲の敵ではないから安心しろ」\e
+<0000177d> 【Capt. Isumi】「While not as nimble as the Warrior Class,\p their movements are also surprisingly quick.\nTheir arm strength is several times that of a human.\nHowever,\p rest assured that they will not attack Mechanized Infantry-Armor Connection Seats.」\e
+
+//<0000097f> 【武】「…\p…\p…\p…\pぅ…\p…\p」\e
+<0000097f> 【Takeru】「...\p...\p...\p...\puu...\p...\p」\e
+
+//<00000987> ――く…\p…\pくそぉ…\p…\p！！\e
+<00000987> ――D-...\p...\pdamn iiit...\p...\p!!\e
+
+//<00000989> …\p…\pこ…\p…\pこんな事で…\p…\pこんな事ぐらいで動揺していて…\p…\p戦術機に乗れるのかよ！\e
+<00000989> ...\p...\pi-...\p...\pif this is all it takes...\p...\pto make me lose it...\p...\phow can I fly a TSF!?\e
+
+//<0000098a> ――実戦でＢＥＴＡと戦えるのかよッ！！\e
+<0000098a> ――How can I fight real BETA like this!!?\e
+
+//<0000098b> オレは…\p…\p大丈夫だ！\e
+<0000098b> I'm...\p...\pall right!\e
+
+//<0000098c> ――絶対に大丈夫だ！！\e
+<0000098c> ――I am perfectly fine!!\e
+
+//<00001782> 【伊隅大尉】「…\p…\pというのが統計的な結論だ。\n戦術機の脅威にはまず成り得ない」\e
+<00001782> 【Capt. Isumi】「...\p...\pis the statistical conclusion.\nThey're essentially no threat to TSFs.」\e
+
+//<00000990> …\p…\pオレは平気だ。\e
+<00000990> ...\p...\pI'm okay.\e
+
+//<00000991> オレは…\p…\pオレが逃げ込んだせいで、\p滅茶苦茶にしてしまった世界の人達に償いをするんだ！\e
+<00000991> I'm going to atone...\p...\pfor running away and messing up those other worlds!\e
+
+//<00000992> この程度で…\p…\pこの程度の事で狼狽えていられない。\e
+<00000992> I can't hesitate...\p...\pover something this small.\e
+
+//<00000993> 【伊隅大尉】「この様に、\p兵士級はＢＥＴＡ最弱ではあるが…\p…\p」\e
+<00000993> 【Capt. Isumi】「The Soldier Class is also the weakest BETA...\p...\p」\e
+
+//<00000995> 【武】「…\p…\p…\p…\p…\p…\p」\e
+<00000995> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000996> 【伊隅大尉】「貴様にとっては、\p特別な存在になってしまっているようだな」\e
+<00000996> 【Capt. Isumi】「But it seems to have a special significance for you.」\e//and hat lovers everywhere ~IX
+
+//<00000998> 【武】「…\p…\p…\p…\p」\e
+<00000998> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000999> それはオレだけじゃなく、\p大尉や中隊の連中だって同じだろう…\p…\p。\e
+<00000999> Isn't that the case for everyone in the unit,\p not just me...\p...\p?\e
+
+//<00001785> 【伊隅大尉】「――いいか白銀。\n兵士級を特別視するな」\e
+<00001785> 【Capt. Isumi】「――Shirogane, listen.\nDo not give the Soldier Class special treatment.」\e
+
+//<00001787> 【武】「…\p…\p…\p…\p」\e
+<00001787> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001788> 【伊隅大尉】「下手をすればそれが命取りになる。\nそして、\pそれが部隊の危機に直結する事も十分あり得るんだ」\e
+<00001788> 【Capt. Isumi】「That's another thing that could get you killed.\nAnd it could easily get your whole unit destroyed.」\e
+
+//<0000099c> 【武】「…\p…\p…\p…\p」\e
+<0000099c> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000178b> 【伊隅大尉】「今日説明した順番は、\p脅威度の高い順でもある。\n兵士級は最後に対処すべき相手だ…\p…\pわかっているな？」\e
+<0000178b> 【Capt. Isumi】「I've gone over the species in the order of highest to lowest threat level.\p The Soldier Class should be defeated last...\p...\punderstand?」\e
+
+//<0000099f> 【武】「はい」\e
+<0000099f> 【Takeru】「Yes.」\e
+
+//<00000ff9> 【伊隅大尉】「さっきの貴様ではないが、\p逆に私のように、\pその脅威度判断を漫然と…\p…\p…\p…\p」\e
+<00000ff9> 【Capt. Isumi】「Unlike your previous mistake,\p that threat assessment is much like what I...\p...\p...\p...\p」\e//even with Takeru's interp below, I can't really tell what the rest of this sentence should be, so making it as deliberately vague as I can ~IX//Back then she declared the area where Marimo attacked safe based on this priority list, even when there's still Soldier class around. - Raide //ooooh, I like that idea, but since that doesn't suggest a specific thing for her to be saying I'll leave it vague ~IX
+
+//<000009a2> 【武】「…\p…\p…\p…\p」\e
+<000009a2> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000009a3> 【伊隅大尉】「…\p…\p…\p…\pいや…\p…\p何でもない」\e
+<000009a3> 【Capt. Isumi】「...\p...\pnever mind...\p...\pit's nothing.」\e
+
+//<000009a5> 【武】「…\p…\p…\p…\p」\e
+<000009a5> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000009a6> 大尉…\p…\p。神宮司軍曹が死んだ時の事を言おうとしたんだな…\p…\p。\e
+<000009a6> Captain...\p...\pyou were trying to bring up Sgt. Jinguuji's death, weren't you...\p...\p?\e
+
+//<0000178e> 【伊隅大尉】「ＢＥＴＡ全滅の報を過信せず、\pもっと警戒を促していれば、\pあのような事にはならなかったはずだ」\e
+<0000178e> 【Capt. Isumi】「If I hadn't blindly believed the announcement that all BETA were destroyed and kept a closer lookout,\p that wouldn't have happened.」\e
+
+//<000009ab> 【速瀬中尉】「大尉だって…\p…\pもっと警戒を促していればあんな事にはならなかったって悔やんでいるんだ！」\e
+<000009ab> 【1st Lt. Hayase】「Even the Captain...\p...\pis furious with herself, convinced it wouldn't have happened if she'd been more careful!」\e//CP MLA_0045
+
+//<00000ffe> 速瀬中尉が言ってたように…\p…\p大尉も辛いんだろうな…\p…\p。\e
+<00000ffe> Just like 1st Lt. Hayase said...\p...\pthe Captain's in pain too...\p...\p\e
+
+//<000009af> でも…\p…\p大尉はあの日起きた事の真相を知っているんだろうか…\p…\p。\e
+<000009af> But...\p...\pdoes the Captain know what really happened that day...\p...\p?\e
+
+//<000009b0> 大尉達が捕まえてきたＢＥＴＡが…\p…\p基地の衛士や神宮司軍曹を殺した事を、\p知っているんだろうか…\p…\p？\e
+<000009b0> Does she know...\p...\pthat the BETA she helped capture killed Sgt. Jinguuji...\p...\p?\e
+
+//<000009b1> いや、\p普通に考えれば知っていたっておかしくない。\n大尉は夕呼先生の右腕じゃないか。\e
+<000009b1> Wait,\p if she thought about it at all she'd work that much out.\p She's Yuuko-sensei's right hand Eishi, after all.\e//"right hand woman" doesn't work so... ~IX
+
+//<000009b2> オレ程じゃないにしても、\pオルタネイティヴ計画の突っ込んだ内容も知り得る立場だ。\e
+<000009b2> She may not be as deep in the Alternative Plan as I am,\p but she's in far enough to know things like that.\e
+
+//<000009b3> 夕呼先生が真相を話していたとしてもおかしくない。\e
+<000009b3> I wouldn't be surprised if Yuuko-sensei told her.\e
+
+//<000009b7> 【速瀬中尉】「おまえだけじゃない！　全員、\p自分がもっとやれていれば、\p軍曹があんな事にならなくて済んだんだって思ってるのよ！？」\e
+<000009b7> 【1st Lt. Hayase】「It's not just you! Everyone thinks the Sergeant wouldn't have died like that if they'd done something differently!!」\e//CP
+
+//<000009ba> それどころか…\p…\p全員が責任を感じる理由がその真相を知っているからだとしたら…\p…\p。\e
+<000009ba> Not only that...\p...\pbut what if they all feel responsible because they know that was the cause...\p...\p?\e
+
+//<000009bb> 【伊隅大尉】「…\p…\pここまでの所で何か質問はあるか」\e
+<000009bb> 【Capt. Isumi】「...\p...\pany questions about any of this?」\e
+
+//<000009bd> もし仮に、\p大尉や部隊の連中が真相を知っているとしたら…\p…\p。\e
+<000009bd> If the Captain and the rest of the unit know what really happened...\p...\pthen...\p...\e
+
+//<000009be> 【武】「…\p…\p…\p…\p」\e
+<000009be> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000009bf> いや…\p…\pそんなことを知ってどうするっていうんだ…\p…\p。\e
+<000009bf> No...\p...\pwhat would I do if they did know...\p...\p?\e
+
+//<000009c0> もし仮に大尉やみんなが真実を知っていたとして、\p何だって言うんだ。\e
+<000009c0> What does it matter if they all know what was going on behind the scenes?\e
+
+//<000009c1> オレだって…\p…\pみんなに秘密にしていることは沢山ある。\e
+<000009c1> I'm keeping a ton of secrets from them myself...\p...\p\e
+
+//<000009c2> 純夏の事やオルタネイティヴ４の事…\p…\pそもそも、\p『この世界』にオレがいる理由…\p…\p。\n他の連中に話していない事の方が多い。\e
+<000009c2> About Sumika and Alternative IV...\p...\pnot to mention why I'm in this world to begin with...\p...\p\nThere's so much I'm not telling anyone.\e
+
+//<000009c3> だからってオレは、\pみんなを陥れてやろうとしているわけじゃない。\nバカにしているわけでも、\p嫌っているわけでもない。\e
+<000009c3> But that doesn't mean I'm trying to manipulate them.\nNor am I laughing at them, or hating them on the inside.\e
+
+//<000009c4> 昨日、\p先生にあれだけの話を聞かされて、\pそれでもやるって決めたのに、\p今更そんなことを訊く事に何の意味があるって言うんだ…\p…\p？\e
+<000009c4> After hearing all that from Sensei yesterday,\p and deciding to go through with it anyway,\p what's the point in asking such a thing now...\p...\p?\e
+
+//<000009c5> オレがやるべき事は…\p…\pそんな事じゃない。\e
+<000009c5> That's not...\p...\pwhat I'm supposed to do.\e
+
+//<000009c6> 【武】「…\p…\p何もありません」\e
+<000009c6> 【Takeru】「...\p...\pit's nothing.」\e
+
+//<000009c7> 【伊隅大尉】「よし、\pでは少し早いが、\p午後の座学を終了する」\e
+<000009c7> 【Capt. Isumi】「Okay,\p then we'll end afternoon class a little early.」\e
+
+//<00001791> 【武】「――え？　あ…\p…\pありがとうございました」\e
+<00001791> 【Takeru】「――Eh? Th-...\p...\pthank you.」\e
+
+//<00001002> …\p…\pいつもならあと２時間はやるのに、\p今日は随分早いな。\nやっぱりこの後、\p何か用事があるんだろう。\e
+<00001002> ...\p...\pnormally we spend two hours on this.\nSo she does have something to do afterward.\e
+
+//<000009cb> まあいい、\pその分純夏の側にいることができるのは好都合だ。\n今のオレがやるべき事は、\pまさにそれなんだから。\e
+<000009cb> Oh well,\p that works for me since I get to spend more time with Sumika.\nThat's what I really have to do right now.\e
+
+//<000009cc> 【伊隅大尉】「白銀、\pちょっと顔を貸せ。\n付き合ってもらいたい所がある」\e
+<000009cc> 【Capt. Isumi】「Shirogane,\p come with me for a bit.\nThere's something I'd like you to do.」\e//lit. "a place I would like you to accompany me to"
+
+//<000009ce> 【武】「えっ？　あ…\p…\pはい。\nわかりました」\e
+<000009ce> 【Takeru】「Eh? Ah...\p...\pokay then.」\e
+
+//<0000109f> …\p…\p付き合ってもらいたい所…\p…\p？　なんだろう…\p…\p。\n大尉は用事があるんじゃないのか？\e
+<0000109f> ...\p...\psomething she wants me to do...\p...\p?\bWhat could that be...\p...\p?\nDoesn't she have something else to do?\e
+
+//<00001972> 【伊隅大尉】「…\p…\p…\p…\p」\e
+<00001972> 【Capt. Isumi】「...\p...\p...\p...\p」\e
+
+//<00001974> 【武】「…\p…\p…\p…\p」\e
+<00001974> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001975> この地下フロアまで来たって事は…\p…\p医療センターに向かってるのか…\p…\p？\e
+<00001975> If we're on this floor...\p...\pthe medical center maybe...\p...\p?\e
+
+//<000009d9> とにかく言われるままに付いていってるけど…\p…\pさっきから大尉は黙ったままだ。\e
+<000009d9> I've been following her like she asked...\p...\pbut she hasn't said a word since.\e
+
+//<000009da> ここに何があるって言うんだ…\p…\p？\e
+<000009da> What're we doing down here...\p...\p?\e
+
+//<000009db> 【武】「…\p…\pあの大尉、\pどこへいくんですか？」\e
+<000009db> 【Takeru】「...\p...\pumm, Captain,\p where are we going?」\e
+
+//<000009dc> 【伊隅大尉】「医療ブロックの催眠暗示処置室だ」\e
+<000009dc> 【Capt. Isumi】「The hypnotic therapy room in the medical block.」\e//I tled this as "therapy" before but in this script I waffled quite a bit since I didn't like the sound of Takeru going "No! Not more therapy!". Up to editors. ~IX//considering how bitter he is about having it ("it's what's causing me to not get over anything ANNNGGSSSTTT") I'd say it's justified - Sheeta
+
+//<000009de> 【武】「――えっ！？」\e
+<000009de> 【Takeru】「――Eh!?」\e
+
+//<000009df> ――催眠暗示処置室…\p…\p！？\e
+<000009df> ――Hypnotic therapy room...\p...\p!?\e
+
+//<000009e0> 【武】「あの…\p…\pそこで一体何を？」\e
+<000009e0> 【Takeru】「Umm...\p...\pwhat are we going to do there?」\e
+
+//<000009e1> 【伊隅大尉】「貴様に催眠暗示処置を施すんだ」\e
+<000009e1> 【Capt. Isumi】「Give you a hypnotic suggestion.」\e
+
+//<000009e3> ――！？\e
+<000009e3> ――!?\e
+
+//<000009e4> 【武】「――ちょ、\pちょっと待ってください！　なんでオレが催眠暗示を！？」\e
+<000009e4> 【Takeru】「――W-\pwait a minute! Why hypnotize me!?」\e
+
+//<000009e5> 【伊隅大尉】「貴様は、\p私の目が節穴だと思っているようだな」\e
+<000009e5> 【Capt. Isumi】「You don't think I'm blind,\p do you?」\e//lit. "you seem to think my eyes are knotholes"
+
+//<000009e7> 【武】「…\p…\pえ？　なにがですか？」\e
+<000009e7> 【Takeru】「...\p...\peh? What do you mean?」\e
+
+//<0000100a> 【伊隅大尉】「とぼけるな。\n座学の最中、\p貴様は明らかに動揺していたぞ。\n兵士級の説明をしている時は特にな」\e
+<0000100a> 【Capt. Isumi】「Don't play dumb.\nYou freaked out during class today.\nEspecially when I talked about the Soldier Class.」\e
+
+//<000009ea> 【武】「…\p…\p！！」\e
+<000009ea> 【Takeru】「...\p...\p!!」\e
+
+//<00001010> 顔には出さないようにしていたのに…\p…\pばれてたのか。\e
+<00001010> I was trying not to let it show...\p...\pso she could tell after all.\e
+
+//<00001011> 【伊隅大尉】「それに貴様の経験を考えれば、\p戦ってもいないレーザー属種に偏重し、\pその有無を基準にして安堵を感じるのは明らかにおかしい」\e
+<00001011> 【Capt. Isumi】「And considering your experience,\p focusing on the laser species you've never fought against so much that their absence makes you feel relief is clearly strange.」\e
+
+//<00001013> 【武】「う…\p…\p」\e
+<00001013> 【Takeru】「Uu...\p...\p」\e
+
+//<000009ec> 【伊隅大尉】「私はこれでも部隊長だぞ。\n部下の精神面や体調面の管理も仕事のうちなんだ」\e
+<000009ec> 【Capt. Isumi】「I am your commanding officer.\nKeeping my subordinates in good mental and physical condition is part of my job.」\e
+
+//<000009ee> 【武】「…\p…\p…\p…\p」\e
+<000009ee> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000009ef> この人は…\p…\p凄いな…\p…\p。\nよく見ている。\e
+<000009ef> She's...\p...\pamazing...\p...\p\nShe really is paying attention.\e
+
+//<00001018> だけど…\p…\p催眠暗示は…\p…\pもういい。\nできれば…\p…\pやりたくない。\e
+<00001018> But...\p...\pI'm sick...\p...\pof hypnotic therapy.\nI don't want any more of it...\p...\pif I can avoid it.\e
+
+//<00001019> 【武】「いや…\p…\pレーザー属種は、\pやはりＢＥＴＡの象徴ですし…\p…\p今まで散々脅かされてますから」\e
+<00001019> 【Takeru】「Well...\p...\pthe laser species do kinda symbolize the BETA as a whole...\p...\pand it's been pounded into me how threatening they are.」\e
+
+//<0000101a> 【伊隅大尉】「…\p…\p…\p…\p」\e
+<0000101a> 【Capt. Isumi】「...\p...\p...\p...\p」\e
+
+//<0000101c> 【武】「兵士級は…\p…\p確かに少しドキッとしましたけど、\p大丈夫です。\nそんな事で動揺はしません」\e
+<0000101c> 【Takeru】「As for the Soldier Class...\p...\pI know it made me jump a little,\p but I'm fine.\nI won't lose my cool that easily.」\e
+
+//<0000101d> 【伊隅大尉】「ドキッとしている段階でだめなんだ」\e
+<0000101d> 【Capt. Isumi】「Jumping a little is already unacceptable.」\e
+
+//<000009f5> 【武】「でも大尉、\p催眠暗示は大げさですよ。\n神宮司軍曹の事件の後に一度やってますし…\p…\p」\e
+<000009f5> 【Takeru】「But Captain,\p hypnosis is overkill.\nI already had some after what happened to Sgt. Jinguuji...\p...\p」\e
+
+//<000009f6> 【伊隅大尉】「――それを判断するのは貴様ではない」\e
+<000009f6> 【Capt. Isumi】「――That's not for you to decide.」\e
+
+//<000009f8> ――！\e
+<000009f8> ――!\e
+
+//<000009f9> 【武】「…\p…\p失礼しました」\e
+<000009f9> 【Takeru】「...\p...\pI'm sorry.」\e
+
+//<00001022> 【伊隅大尉】「私には、\p部隊員の安全を可能な限り確保する責任がある。\nそのために事前にやれる事は必ずやっておく。\n絶対に後回しにはしない」\e
+<00001022> 【Capt. Isumi】「I have a responsibility to ensure the safety of my unit.\nAny preemptive measures I can take, I will.\nI am not going to put this off for later.」\e
+
+//<000009fc> 【武】「…\p…\p…\p…\p」\e
+<000009fc> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000009fd> そういえば…\p…\pウォーケン少佐も似たようなことを言っていたな。\nどこの軍隊であれ、\p指揮官というのはそういうものなんだろう…\p…\p。\e
+<000009fd> Come to think of it...\p...\pMaj. Walken said something like that.\nI guess commanders are like this in all militaries...\p...\p\e
+
+//<000009fe> 【伊隅大尉】「Ａ－０１部隊に課せられた使命を鑑みれば、\p貴様も、\pそれ以外の連中も簡単に死なせるわけにはいかないんだ」\e
+<000009fe> 【Capt. Isumi】「Given the duty entrusted to Unit A-01,\p I cannot allow you or anyone else to die so easily.」\e
+
+//<00000a00> 【武】「…\p…\p」\e
+<00000a00> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001027> 【伊隅大尉】「貴様が根性や気合いで克服するのを待つわけにはいかない。\n歪なやり方ではあるが、\p催眠暗示が今やれる最良の方法なんだ」\e
+<00001027> 【Capt. Isumi】「We can't afford to wait for you to conquer this with willpower.\p It is a twisted way of doing things,\p but hypnotic therapy is the best choice available to us.」\e
+
+//<00000a03> 【伊隅大尉】「自分の置かれた立場を良く考えてみろ」\e
+<00000a03> 【Capt. Isumi】「Think hard about the position you're in.」\e
+
+//<00000a06> 【武】「…\p…\p！」\e
+<00000a06> 【Takeru】「...\p...\p!」\e
+
+//<00000a07> オレは…\p…\p『この世界』を救うだけじゃない。\nその後に必ずやらなければならない事がある。\e
+<00000a07> I'm not just...\p...\pgoing to save this world.\nI have something I absolutely need to do after that.\e
+
+//<00000a08> 【伊隅大尉】「貴様の後ろには常に中隊がいる。\n貴様ひとりで戦う必要はない」\e
+<00000a08> 【Capt. Isumi】「The rest of the company is always behind you.\p You don't need to fight alone.」\e
+
+//<00000a0a> 【武】「はい」\e
+<00000a0a> 【Takeru】「Yes.」\e
+
+//<00000a0b> 【伊隅大尉】「貴様に背中を預ける仲間のために、\p自らの憂いは取り除いておけ。\nそして、\pそれを後回しにするな」\e
+<00000a0b> 【Capt. Isumi】「Get rid of your grief for the sake of everyone who'll be trusting their backs to you.\nAnd do it right now.」\e
+
+//<00000a0d> …\p…\pそうだ。\e
+<00000a0d> ...\p...\pshe's right.\e
+
+//<0000102c> もう、\pオレの甘えのせいで誰かの命が失われる事は…\p…\p絶対に許されない。\e
+<0000102c> There's no way...\p...\pI can let anyone else die because of my own weakness or selfishness.\e
+
+//<00000a0f> 【伊隅大尉】「でなければ万が一の時に後悔する。\n自分を責め続ける事になるぞ」\e
+<00000a0f> 【Capt. Isumi】「Or else you will regret it when the unthinkable happens.\nAnd that will only make you blame yourself more.」\e
+
+//<00000a11> 【武】「わかりました。\n催眠暗示処置をもう一度お願いします」\e
+<00000a11> 【Takeru】「I understand.\nPlease give me another round of hypnotic therapy.」\e
+
+//<00000a12> 【伊隅大尉】「頼まれるまでもなく、\p元より強制するつもりだ。\n安心しろ」\e
+<00000a12> 【Capt. Isumi】「I was planning on doing it by force,\p so no need to ask.\p It'll happen.」\e
+
+//<00000a14> 【武】「はい…\p…\p」\e
+<00000a14> 【Takeru】「Okay...\p...\p」\e
+
+//<00000a15> 【伊隅大尉】「だが、\p自らそれを望むことは決してマイナスではない筈だ」\e
+<00000a15> 【Capt. Isumi】「However,\p you being willing doesn't hurt at all.」\e
+
+//<00001030> 前回は自白剤でおかしくなっていたせいもあって、\p催眠暗示処置自体が嫌な事だったっていう印象が強い。\e
+<00001030> The truth serum they used before messed me up,\p which was part of the reason why I felt like the hypnotic therapy itself was so terrible.\e
+
+//<00001031> だから、\pできればもう処置は受けたくないって思うんだろう。\e
+<00001031> That's why I didn't want to go through it again if I could avoid it.\e
+
+//<00001032> 仮に前回の暗示が弱かったのだとすれば、\pラリったまま半ば強制的に処置された事が原因なのかも知れない。\e
+<00001032> If the previous suggestion was weak,\p then that might be because they did it by force while I was high.\e
+
+//<00001033> 催眠暗示の事はよくわからないけど、\pトラウマを克服したいっていうオレの意志の有る無しは、\p効果に影響あるのかもな。\e
+<00001033> I don't really understand it,\p but maybe it would be more effective if I felt the desire to conquer my trauma.\e
+
+//<00000a20> …\p…\pやっと終わったか。\e
+<00000a20> ...\p...\pit's finally over.\e
+
+//<00000a21> 詳しく覚えてないけど…\p…\p前回は頭痛が酷かったのに、\p今回はそうでもないな。\e
+<00000a21> I don't remember much of it...\p...\pbut I don't feel any headaches like I did last time.\e
+
+//<00000a22> やっぱりあれは薬のせいだったのかな？\e
+<00000a22> Maybe that was the drug's fault after all.\e
+
+//<00000a23> 【伊隅大尉】「――気分はどうだ、\p白銀？」\e
+<00000a23> 【Capt. Isumi】「――How do you feel,\p Shirogane?」\e
+
+//<00000a26> …\p…\p大尉！？\e
+<00000a26> ...\p...\pCaptain!?\e
+
+//<00000a27> 【武】「あれからずっと待っていてくれたんですか？」\e
+<00000a27> 【Takeru】「You've been waiting this whole time?」\e
+
+//<00000a28> 処置が始まってから、\pもう１時間半は経っているじゃないか…\p…\p？！\e
+<00000a28> Hasn't it been an hour and a half since they started...\p...\p!?\e
+
+//<00000a29> 【伊隅大尉】「いや、\p一度詰め所に戻って書類整理をしてから、\p時間を見て戻ってきたんだ」\e
+<00000a29> 【Capt. Isumi】「No,\p I went to my office to do some paperwork,\p then came back when I thought it'd be over.」\e//lit. "document arranging" lol
+
+//<00000a2b> 【武】「そうだったんですか。\nわざわざ済みません」\e
+<00000a2b> 【Takeru】「I see.\nSorry for the trouble.」\e
+
+//<00000a2c> 【伊隅大尉】「貴様に詫びられる事ではない。\n自分であれこれ指示した結果を見届けるのも部隊長の責任だ」\e
+<00000a2c> 【Capt. Isumi】「There's no need for you to apologize.\nIt's part of my responsibility as your Captain to see the results of the therapy.」\e
+
+//<00000a2e> …\p…\pそうか。処置が始まる前、\p催眠暗示の先生と何やらずっと喋ってたもんな。\n多分あの時、\p大尉が把握しているオレの状態なんかを説明していたんだろう。\e
+<00000a2e> ...\p...\pI see. She did talk with the hypnosis doctor a lot before they started.\nShe was probably explaining my condition.\e
+
+//<00000a2f> 【伊隅大尉】「で、\pどうなんだ。\n何か変わったか？」\e
+<00000a2f> 【Capt. Isumi】「So how do you feel?\nAnything changed?」\e
+
+//<00000a31> 【武】「そんなことわかりませんよ。\nそんな急に効果が自覚できるようなものでもないでしょう」\e
+<00000a31> 【Takeru】「I don't know.\nIt's probably not something I can recognize that quickly.」\e
+
+//<00000a32> 【伊隅大尉】「そうだな。\nまあ、\pどの程度の効果があったかは明日にでもわかる」\e
+<00000a32> 【Capt. Isumi】「That's true.\nWell,\p we'll know by tomorrow how effective it was.」\e
+
+//<00000a34> 【武】「明日ですか？」\e
+<00000a34> 【Takeru】「Tomorrow?」\e
+
+//<00000a35> 【伊隅大尉】「なんだ、\p副司令から聞いていないのか？」\e
+<00000a35> 【Capt. Isumi】「What?\p The XO didn't tell you?」\e
+
+//<00000a37> 【武】「…\p…\p何の事をですか？」\e
+<00000a37> 【Takeru】「...\p...\ptell me what?」\e
+
+//<00000a38> 【伊隅大尉】「明日の午後、\pハイヴ突入戦を想定したシミュレーター実習を行うんだ。\nこれには貴様も参加する事になっている」\e
+<00000a38> 【Capt. Isumi】「Tomorrow afternoon we're doing a simulated hive infiltration.\nAnd you'll be joining us.」\e//lit. "a simulator exercise conceived as a hive infiltration" maybe? 想定 is one of those words that makes perfect sense to me but I have no idea how to explain it literally
+
+//<00000a3a> 【武】「了解しました」\e
+<00000a3a> 【Takeru】「Understood.」\e
+
+//<00000a3b> …\p…\pまあ、\p夕呼先生のことだ。\nどうせ大尉が伝えるだろうって高をくくってたんだろうな。\e
+<00000a3b> ...\p...\pwell,\p this is Yuuko-sensei.\nShe probably just assumed the Captain would tell me about it.\e
+
+//<00000a3c> 【伊隅大尉】「とにかく明日の実習に備えて今日はもう休め。\n自覚は無くても催眠療法は精神的にも相当疲れる筈だからな」\e
+<00000a3c> 【Capt. Isumi】「Anyway, get some rest so you're ready for tomorrow's exercise.\nYou may not be aware of it, but hypnotic therapy causes a lot of mental exhaustion.」\e//oh now she uses a different word for it ~IX
+
+//<00000a3e> 【武】「はい」\e
+<00000a3e> 【Takeru】「Okay.」\e
+
+//<00000a3f> とは言っても、\p純夏のことがあるからそういうわけにもいかないんだよな…\p…\p。\e
+<00000a3f> Unfortunately I can't do that since I still have to go see Sumika...\p...\p\e
+
+//<0000199e> 【伊隅大尉】「寝る前にこれを飲め。\nうまい上に、\p回復を早めてくれる優れものだ」\e
+<0000199e> 【Capt. Isumi】「Drink this before going to bed.\nIt's delicious,\p and it'll help speed up your recovery.」\e
+
+//<0000197f> …\p…\p衛士用のスポーツドリンクみたいなものか？　ＰＸでも見たこと無いけど…\p…\p。\e
+<0000197f> ...\p...\pis this a sports drink for Eishi or something?\bI've never seen it in the PX...\p...\p\e
+
+//<00000a44> 【武】「ありがとうございます。\nいただきます」\e
+<00000a44> 【Takeru】「Thank you.\nI'll have it later.」\e
+
+//<00000a46> 【伊隅大尉】「さて、\pそろそろ戻るか。\n夜間演習の準備があるしな」\e
+<00000a46> 【Capt. Isumi】「I should probably head back now.\nGotta get ready for the nighttime practice.」\e
+
+//<00000a48> 【武】「色々…\p…\pありがとうございました」\e
+<00000a48> 【Takeru】「Thank you...\p...\pfor everything.」\e
+
+//<00000a49> 【伊隅大尉】「なるべく早く休めよ」\e
+<00000a49> 【Capt. Isumi】「Make sure you get plenty of rest.」\e
+
+//<00000a4b> 【武】「はい」\e
+<00000a4b> 【Takeru】「Okay.」\e
+
+//<00000a4e> 【武】「…\p…\p…\p…\p」\e
+<00000a4e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000a4f> 何か…\p…\pやっぱりオルタネイティヴ計画の特殊部隊を任されるだけあって、\pしっかりしてる人だな。\e
+<00000a4f> She feels...\p...\pvery on top of things.\p No wonder she was trusted to lead the Alternative Plan's special unit.\e
+
+//<00000a50> 今だって、\pオレの報告を待っていればいいのに、\p自分の指示した事の結果を見届けるために、\p事務処理した後にわざわざ戻って来たりしてさ。\e
+<00000a50> She could've waited for me to tell her about it tomorrow,\p but she came to see the results immediately since she suggested it,\p then went right back to work.\e
+
+//<00000a51> その上オレの体調管理のためなのか、\pこんなドリンクまで持ってきてくれて…\p…\p。\e
+<00000a51> And she even brought this drink to help me recover...\p...\p\e
+
+//<00000a52> あの人は無駄が無いっていうか真面目っていうか…\p…\p。\nいや、\p今までの印象から言って、\p完璧主義って言った方が似合ってるな。\e
+<00000a52> Is she good at not wasting time, or does she take her job seriously...\p...\p?\nNo,\p from what I've seen so far, it'd be better to call her a perfectionist.\e
+
+//<00000a53> 一応『前のこの世界』でオレも隊長だったみたいだけど…\p…\p格が違い過ぎる。\e
+<00000a53> I remember being a squad leader in the previous world...\p...\pbut I was nothing like this.\e
+
+//<00000a54> ああいうのが本当の隊長の器って言うんだろうな…\p…\p。\e
+<00000a54> So that's a real leader...\p...\p\e
+
+//<00000a55> 【武】「…\p…\p…\p…\pさてと」\e
+<00000a55> 【Takeru】「...\p...\p...\p...\pnow then.」\e
+
+//<00000a56> オレが今やらなければならないのは、\p純夏を正常な状態にすることだ。\e
+<00000a56> What I have to do now is bring Sumika back to normal.\e
+
+//<00000a57> 食堂が空いてるうちにさっさと飯を食って、\p純夏の所に行かなきゃな。\e
+<00000a57> I should eat quickly while the cafeteria's open,\p and hurry over to Sumika.\e
+
+//<00000a58> ――おっと、\pその前に！\e
+<00000a58> ――Wait,\p before that!\e
+
+//<00000a59> 大尉にもらった栄養ドリンクを飲んでおこう。\n今日も遅くなりそうだし…\p…\p少しでも回復させておきたいからな。\e
+<00000a59> I should try this drink the Captain gave me.\nIt's gonna be a long night...\p...\pso if this'll help me recover I should have it now.\e
+
+//<00000a5f> 【武】「…\p…\p…\p…\p…\p…\p」\e
+<00000a5f> 【Takeru】「...\p...\p...\p...\p...\p...\p」\e
+
+//<00000a61> ――――ッ！！\e
+<00000a61> ――――!!\e
+
+//<00000a62> 【武】「――ブフゥゥ――ッ！！！」\e
+<00000a62> 【Takeru】「――Pffffffff!!!」\e
+
+//<00000a63> ――ゲロマズッ！！！！！\e
+<00000a63> ――Yuuuuuuck!!!!\e
+
+//<00000a65> 【武】「…\p…\p…\p…\p…\p…\p」\e
+<00000a65> 【Takeru】「...\p...\p...\p...\p...\p...\p」\e
+
+//<00000a66> …\p…\pな…\p…\pなんなんだこの味ッ…\p…\p！！？\e
+<00000a66> ...\p...\pwh-...\p...\pwhat the hell is this flavor...\p...\p!!?\e
+
+//<00000a67> 大尉…\p…\pこれ…\p…\pうまいって言って…\p…\pなかったっけ…\p…\p？\e
+<00000a67> Didn't...\p...\pthe Captain...\p...\psay this was...\p...\pdelicious...\p...\p?\e
+
+//<00000a68> 【武】「…\p…\p…\p…\p…\p…\p」\e
+<00000a68> 【Takeru】「...\p...\p...\p...\p...\p...\p」\e
+
+//<00000a69> そ…\p…\p底の見えぬお方よ…\p…\p。\e
+<00000a69> This drink...\p...\pit's beyond my comprehension...\p...\p\e//it sounds loldeep in Japanese but I can't tell what he's actually trying to say so failed ~IX//let's see what Makoto comes up with... - Sheeta
+
+//<000001fe> 【武】「…\p…\pそろそろ、\pクリスマスだな」\e
+<000001fe> 【Takeru】「...\p...\pit's almost Christmas.」\e//もうすぐクリスマスだよね！- Sheeta
+
+//<000001ff> 【純夏】「…\p…\p…\p…\p」\e
+<000001ff> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000201> 【武】「なあ、\p覚えてるか？」\e
+<00000201> 【Takeru】「Hey,\p do you still remember?」\e
+
+//<00000202> 【純夏】「…\p…\p…\p…\p」\e
+<00000202> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000204> 【武】「忘れたなんて、\p言わせねぇぞ」\e
+<00000204> 【Takeru】「You'd better not tell me you forgot.」\e
+
+//<00000205> 【純夏】「…\p…\p…\p…\p」\e
+<00000205> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000207> …\p…\pこんなこと、\pこっちの世界の純夏に言っても仕方ないんだけどさ。\e
+<00000207> ...\p...\pnot that there's much point in talking to this Sumika about it.\e
+
+//<00000208> 【武】「約束しただろ？」\e
+<00000208> 【Takeru】「Didn't we make a promise?」\e
+
+//<00000209> 【純夏】「…\p…\pヤクソク」\e
+<00000209> 【Sumika】「...\p...\ppromise.」\e
+
+//<0000020a> 【武】「そう、\p約束だ」\e
+<0000020a> 【Takeru】「Yes,\p a promise.」\e
+
+//<0000020b> 純夏がわんわん泣いて、\p泣きやんでほしくて…\p…\p…\p…\p他に思い付かなかったんだよな。\e
+<0000020b> Way back when Sumika started bawling,\p and I wanted her to stop...\p...\pI couldn't think of anything else.\e
+
+//<0000020c> オレが毎年プレゼントをあげ続ければ、\pサンタの代わりになれるって、\pそんな風に思ってた。\e
+<0000020c> I thought if I gave her presents every year I could be Santa for her.\e
+
+//<0000020d> あの頃は、\p疑いもせずに…\p…\pそれができるんだって本気で思ってたんだ。\e
+<0000020d> At the time I seriously thought...\p...\pI could do that.\e
+
+//<0000020e> 【武】「今年は、\pちゃんと何かやるよ」\e
+<0000020e> 【Takeru】「I'll give you something this year.」\e
+
+//<0000020f> 【純夏】「…\p…\p…\p…\p」\e
+<0000020f> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000211> 【武】「１回、\p失敗しちまってるしさ」\e
+<00000211> 【Takeru】「I missed my chance last time, after all.」\e
+
+//<00000212> 【純夏】「…\p…\p…\p…\p」\e
+<00000212> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000214> 【武】「おまえもさ、\pデートだからって舞い上がって、\p肝心なもの忘れんなよ？」\e
+<00000214> 【Takeru】「Don't forget things like this just because you're nervous about our date.」\e
+
+//<00000215> 【純夏】「…\p…\p…\p…\p」\e
+<00000215> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00001981> 【武】「ツッコミこいよ～～～。\nそれはオマエだろって言ってみ？」\e
+<00001981> 【Takeru】「Say something baaack～\nLike "Aren't you the one who always forgets?"」\e//lit. "tsukkomi" no explanation needed
+
+//<00000218> 【純夏】「…\p…\p…\p…\p」\e
+<00000218> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000021a> …\p…\pこれじゃあ人形に話し掛けてるみたいだ。\e
+<0000021a> ...\p...\pit's like I'm talking to a brick wall.\e//lit. "to a doll"
+
+//<0000021b> 純夏…\p…\pなんでもいい…\p…\pなんか反応してくれよ…\p…\p。\e
+<0000021b> Sumika...\p...\pplease, I don't care how...\p...\pjust react somehow...\p...\p\e
+
+//<0000021c> 【武】「だいじょうぶだ…\p…\pオレは、\pちゃんとおまえのそばにいる」\e
+<0000021c> 【Takeru】「It's okay...\p...\pI'll be with you.」\e
+
+//<0000021d> 【純夏】「…\p…\p…\p…\p」\e
+<0000021d> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000021e> 【武】「おまえが元に戻るまで…\p…\p絶対にな」\e
+<0000021e> 【Takeru】「I'll stay by your side...\p...\puntil you're back to normal.」\e
+
+//<0000021f> いや…\p…\p…\p…\p違うな。\e
+<0000021f> No...\p...\p...\p...\pthat's not quite right.\e
+
+//<00000220> 【武】「これからずっとずっと…\p…\p純夏がいやになって逃げ出すくらい、\p一緒にいるぞ」\e
+<00000220> 【Takeru】「And forever from now on...\p...\pI'll be with you so much you'll want to chase me away.」\e
+
+//<00000221> 【純夏】「…\p…\p…\p…\p」\e
+<00000221> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000222> 【武】「だから、\p覚悟しとけよ」\e
+<00000222> 【Takeru】「So prepare yourself.」\e
+
+//<00000223> 【純夏】「…\p…\p…\p…\p」\e
+<00000223> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000225> 【武】「それがうざったいなら、\pさっさと元に戻っちまえ」\e
+<00000225> 【Takeru】「If you don't like it,\p then get back to normal.」\e
+
+//<00000226> 【純夏】「…\p…\p…\p…\p」\e
+<00000226> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000228> 【武】「覚悟しろよ？　腐るほど、\p思い出話するぞ…\p…\p…\p…\p」\e
+<00000228> 【Takeru】「Prepare yourself.\bI won't stop talking about our memories...\p...\p」\e
+
+//<00000229> 『この世界』のオレと『この世界』の純夏に、\p同じ様な経験があるとは限らない。\e
+<00000229> I can't be sure that Sumika and I had these same experiences in this world.\e
+
+//<0000022a> だけど、\p何かの切っ掛けぐらいにはなるはずなんだ。\e
+<0000022a> But it's as good a place as any to start.\e
+
+//<0000022b> 選んでいる場合じゃない。\nありったけの思い出を話すしかないだろう。\e
+<0000022b> There's no point trying to pick specific ones.\nI have to just throw out random ones.\e
+
+//<0000022c> 【武】「こっちのおまえを見ていると、\pどうしてもあっちの純夏が重なっちまうんだよな」\e
+<0000022c> 【Takeru】「Every time I look at you I can't help but think of the other Sumika.」\e
+
+//<0000022d> 【純夏】「…\p…\p…\p…\p」\e
+<0000022d> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00001987> 【武】「おまえが正気に戻った時、\p『この世界』にオレが初めてきた時の冥夜達と、\p同じになっちまうのはわかってるよ」\e
+<00001987> 【Takeru】「Once you're back to normal I'll end up treating you like my world's Sumika,\p just like what I did to Meiya and the others when I first came to this world.」\e
+
+//<00000230> 【武】「だっておまえはこっちの世界の純夏だから、\p当然だよな」\e
+<00000230> 【Takeru】「You are this world's Sumika after all,\p how can't I?」\e
+
+//<00000231> 【純夏】「…\p…\p…\p…\p」\e
+<00000231> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000014e4> 【武】「冥夜達と唯一違うのは、\p『この世界』のオレを知っているらしいって事だ」\e
+<000014e4> 【Takeru】「The one difference between you and them is that you knew this world's me.」\e
+
+//<00000234> 【純夏】「…\p…\p…\p…\p」\e
+<00000234> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000236> 【武】「その時、\pおまえは喜ぶのかなあ…\p…\p。\n死んだはずのオレが目の前にいて、\pおまえは喜んでくれるんだろうか？」\e
+<00000236> 【Takeru】「I wonder if you were happy when you first saw me...\p...\pI'm supposed to be dead, but I came back before your eyes.\p Did that make you happy?」\e
+
+//<00000237> 【純夏】「…\p…\p…\p…\p」\e
+<00000237> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000239> 【武】「『この世界』でもオレとおまえが幼なじみだったとしたら、\pちょっとぐらいは喜んでくれるかな…\p…\p」\e
+<00000239> 【Takeru】「If we were childhood friends in this world too,\p I figured it might...\p...\p」\e
+
+//<0000023a> 【武】「だから…\p…\p早く、\p正気に戻ってくれよ。\n頼むから、\p戻ってくれ」\e
+<0000023a> 【Takeru】「So...\p...\pplease get back to normal soon.\nI'm begging you,\p come back.」\e
+
+//<0000023b> 【純夏】「…\p…\p…\p…\p」\e
+<0000023b> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000023d> 【武】「そして、\p霞とおまえとオレの思い出を作ろう」\e
+<0000023d> 【Takeru】「And,\p let's make memories together.\bYou, me and Kasumi.」\e
+
+//<0000023e> 【純夏】「…\p…\p…\p…\p」\e
+<0000023e> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000240> 【武】「今度はオレとおまえで、\p霞に沢山の思い出をプレゼントしようぜ？」\e
+<00000240> 【Takeru】「Let's give Kasumi lots of memories.」\e
+
+//<00000241> 【純夏】「…\p…\p…\p…\p」\e
+<00000241> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000243> 【武】「無視は酷いだろ、\p無視は～～」\e
+<00000243> 【Takeru】「Don't ignore me,\p that's mean～」\e//only slightly gratuitous ~IX
+
+//<00000244> 【純夏】「…\p…\p…\p…\p」\e
+<00000244> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000248> ――！？\e
+<00000248> ――!?\e//CP_S MLA_0042
+
+//<00000249> 【純夏】「忘れるわけないよっ！！」\e
+<00000249> 【Sumika】「I can't forget you!!」\e
+
+//<0000024b> 【武】「…\p…\p…\p…\p」\e
+<0000024b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000024c> 【純夏】「わたしとタケルちゃんが一緒にいなかったときなんて、\pほとんどないんだよ」\e
+<0000024c> 【Sumika】「We've hardly ever been apart,\p Takeru-chan.」\e
+
+//<0000024d> 【武】「…\p…\pそんなのわかってる」\e
+<0000024d> 【Takeru】「...\p...\pI know that.」\e
+
+//<0000024e> 【純夏】「タケルちゃんのこと忘れたら、\p半分はわたしじゃなくなっちゃうよ…\p…\p」\e
+<0000024e> 【Sumika】「If I forgot you, Takeru-chan,\p half of me would be gone...\p...\p」\e
+
+//<0000024f> 【武】「だけど…\p…\p！」\e
+<0000024f> 【Takeru】「But...\p...\p!」\e
+
+//<00000250> 【純夏】「タケルちゃんといて、\pタケルちゃんとの思い出があって、\pはじめてわたしなんだから」\e
+<00000250> 【Sumika】「I'm only me when I'm with you and have memories of you,\p Takeru-chan.」\e
+
+//<00000251> 【武】「…\p…\pオレだって」\e
+<00000251> 【Takeru】「...\p...\pso am I.」\e
+
+//<00000252> 【純夏】「だから、\p忘れないよ」\e
+<00000252> 【Sumika】「So I can't forget you.」\e
+
+//<00000253> 【武】「…\p…\p…\p…\p」\e
+<00000253> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000254> 【純夏】「忘れるわけないよ」\e
+<00000254> 【Sumika】「I can't forget.」\e
+
+//<00000255> 【武】「…\p…\p…\p…\p」\e
+<00000255> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000256> 【純夏】「タケルちゃんのこと、\pタケルちゃんとの思い出全部…\p…\p絶対になくさないんだから」\e
+<00000256> 【Sumika】「I'll never lose...\p...\pall my memories with you,\p Takeru-chan.」\e
+
+//<00000257> 【武】「純夏…\p…\p…\p…\pダメなんだって言ってるだろ！」\e
+<00000257> 【Takeru】「Sumika...\p...\p...\p...\pI'm telling you you can't!」\e
+
+//<00000258> 【純夏】「放さないっ！　ダメッ！　絶対放さないんだからっ！！」\e
+<00000258> 【Sumika】「I'm not letting go! Never!\bI'm never letting go of you!!」\e
+
+//<00000259> 【武】「すみ…\p…\pか…\p…\p」\e
+<00000259> 【Takeru】「Sumi...\p...\pka...\p...\p」\e
+
+//<0000025a> 【純夏】「タケルちゃんがいなくちゃ嫌だよ！　あっち行けなんて言わないでよぉ…\p…\p」\e
+<0000025a> 【Sumika】「I don't want you to go, Takeru-chan!\bDon't tell me to go away...\p...\p」\e
+
+//<0000025b> 【武】「純夏…\p…\p…\p…\p」\e
+<0000025b> 【Takeru】「Sumika...\p...\p...\p...\p」\e
+
+//<0000025c> 【純夏】「忘れないよ…\p…\p絶対に、\p絶対に…\p…\p…\p…\p忘れないんだからっ！」\e
+<0000025c> 【Sumika】「I won't forget you...\p...\pnot now,\p not ever...\p...\p...\p...\pI won't!!」\e
+
+//<0000025d> 【武】「バカ…\p…\p…\p…\pバカだ、\pホントに…\p…\p」\e
+<0000025d> 【Takeru】「You idiot...\p...\p...\p...\pyou really are...\p...\p」\e
+
+//<0000025e> 【純夏】「それはタケルちゃんだよぉ…\p…\p」\e
+<0000025e> 【Sumika】「No you, Takeru-chan...\p...\p」\e
+
+//<0000025f> 【武】「…\p…\p…\p…\p」\e
+<0000025f> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000260> 【純夏】「タケルちゃんといて、\pわたしはわたしになれるんだから！」\e
+<00000260> 【Sumika】「I can only be me because you're here,\p Takeru-chan!」\e
+
+//<00000261> …\p…\p純夏なら…\p…\p…\p…\p純夏だけは…\p…\p…\p…\p。\e
+<00000261> ...\p...\pSumika...\p...\p...\p...\pmaybe you're the only one...\p...\p...\p...\p\e
+
+//<00000262> 【純夏】「それがわたしなんだから！」\e
+<00000262> 【Sumika】「That's who I am!」\e
+
+//<00000263> オレのことを覚えていてくれるかもしれない…\p…\p。\e
+<00000263> Who can remember me...\p...\p\e
+
+//<00000264> 【純夏】「それがタケルちゃんなんだから！！」\e
+<00000264> 【Sumika】「That's what you are to me, Takeru-chan!!」\e
+
+//<00000265> 純夏なら…\p…\p…\p…\p。\e
+<00000265> Sumika might just...\p...\p...\p...\p\e
+
+//<00000266> 【純夏】「わたしから…\p…\p離れていかないでよぉぉ…\p…\pうわああああああああん…\p…\p…\p…\p」\e
+<00000266> 【Sumika】「Don't leave me...\p...\pdon't go anywheeeeere...\p...\p\b...\p...\puwaaaaaaaaaaaaaaaaa...\p...\p...\p...\p」\e
+
+//<00000267> 【武】「…\p…\p純…\p…\p夏…\p…\p…\p…\p…\p…\p純夏ぁ！！」\e
+<00000267> 【Takeru】「...\p...\pSumi...\p...\pka...\p...\p...\p...\p...\p...\pSumikaaa!!」\e//CP_E
+
+//<0000026a> おまえは、\p自分の半分はオレだと言ってくれた…\p…\p。\e
+<0000026a> You said I was your other half...\p...\p\e
+
+//<00000d79> オレの半分もおまえだよ。\nそして『この世界』のおまえも...\p...\e
+<00000d79> And you're half of me too.\nAnd so's this world's you...\p...\e
+
+//<0000026c> 【純夏】「…\p…\p…\p…\p」\e
+<0000026c> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000026e> 過去がどうでも、\pここがどこでも、\pオレにとっておまえは純夏なんだ。\e
+<0000026e> No matter what happened in the past or where we are now,\p you're Sumika to me.\e
+
+//<0000026f> どの世界に居ようが…\p…\p擬似生体の身体であろうが、\pおまえは純夏以外の何者でもないんだ。\e
+<0000026f> No matter what world this is...\p...\por how artificial your body is,\p you're Sumika and no one else.\e
+
+//<00000270> だから…\p…\p。\e
+<00000270> So...\p...\p...\p...\p\e
+
+//<00000271> ちゃんと笑って、\p元気だって声を聞かせてくれ…\p…\p。\e
+<00000271> Please smile,\p and let me hear your voice...\p...\p\e
+
+//<00000272> そのために、\pオレ…\p…\pちゃんとがんばるから。\e
+<00000272> I'll do the best I can...\p...\pso please.\e
+
+//<00000273> 【武】「オレ、\pちゃんとがんばるぞ」\e
+<00000273> 【Takeru】「I'll do everything I can.」\e
+
+//<00000274> 【純夏】「…\p…\p…\p…\p」\e
+<00000274> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000276> 【武】「純夏に言われた通り、\pがんばってやる。\n純夏が待ってよ～って言うくらいにがんばってやるから」\e
+<00000276> 【Takeru】「Like the other Sumika told me to,\p I'll try my best.\nI'll try so hard you'll be begging me to hold back.」\e
+
+//<00000277> 【純夏】「…\p…\pがんばる」\e
+<00000277> 【Sumika】「...\p...\ptry hard.」\e
+
+//<00000279> 【武】「だから、\p早いところ文句言っとかねぇと、\p取り返しつかなくなるぞ」\e
+<00000279> 【Takeru】「So if you don't complain soon,\p it might be too late.」\e
+
+//<0000027a> 【純夏】「…\p…\p…\p…\p」\e
+<0000027a> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000027c> 【武】「わかってんのか？　イメージ見えてるんだろ？」\e
+<0000027c> 【Takeru】「Can you understand me?\bYou can read my thoughts, right?」\e
+
+//<0000027d> 【純夏】「…\p…\p…\p…\p」\e
+<0000027d> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000027f> 【武】「せめて、\p返事くらいしやがれ」\e
+<0000027f> 【Takeru】「At least gimme an answer.」\e
+
+//<00000280> 【純夏】「…\p…\p…\p…\p」\e
+<00000280> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000282> 【武】「どりるみるきぃ～ぱんちって殴ってこいよ」\e
+<00000282> 【Takeru】「Hit me with a Drill Milky Punch.」\e
+
+//<00000283> 【純夏】「…\p…\p…\p…\p」\e
+<00000283> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000285> 【武】「遠慮してんじゃねぇよ。\nオレと純夏にそんなの似合わねぇって」\e
+<00000285> 【Takeru】「Don't hold back.\nThat's not like us at all.」\e
+
+//<00000286> 【純夏】「…\p…\p…\p…\p」\e
+<00000286> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000287> 【武】「なんなら、\pふぁんとむの方でもいいんだぜ？　今のオレなら何とか耐えられると思う」\e
+<00000287> 【Takeru】「You can use the Phantom instead if you want.\bI think I could even survive that now.」\e//well, thank goodness shikiller told me about the Drill Milky Phantom from Altered Fable (seriously age, stop with all the minute cross-referencing) ~IX
+
+//<00000288> 【純夏】「…\p…\p…\p…\p」\e
+<00000288> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000028a> 【武】「オレとおまえは、\pこんなんじゃねぇだろ…\p…\pやっぱりさ」\e
+<0000028a> 【Takeru】「We're not like this...\p...\pyou know that.」\e
+
+//<0000028b> 【純夏】「…\p…\p…\p…\p」\e
+<0000028b> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000028c> 【武】「バカなこといっぱいやろうぜ？」\e
+<0000028c> 【Takeru】「Let's do a lot of stupid things.」\e
+
+//<0000028d> 【純夏】「…\p…\p…\p…\pこと」\e
+<0000028d> 【Sumika】「...\p...\pthings.」\e
+
+//<0000028f> 【武】「やること、\pやりたいこと、\p全部…\p…\p…\p…\pまだやってねぇだろ？」\e
+<0000028f> 【Takeru】「Things to do,\p things we want to do,\p everything...\p...\p...\p...\pwe still haven't done.」\e
+
+//<00000290> 【純夏】「…\p…\p…\p…\pやること」\e
+<00000290> 【Sumika】「...\p...\p...\p...\pthings to do.」\e
+
+//<00000291> 【武】「純夏とやろうって言ったこと、\pまだ全然じゃねぇか」\e
+<00000291> 【Takeru】「I've hardly done any of the things I said I'd do with you.」\e
+
+//<00000292> 【純夏】「…\p…\pやくそく」\e
+<00000292> 【Sumika】「...\p...\ppromises.」\e//this time it's plural! Or so I think. ~IX
+
+//<00000293> 【武】「オレと純夏なら、\p何やってもいけてるぞ」\e
+<00000293> 【Takeru】「If you're with me Sumika,\p we could do anything.」\e
+
+//<00000294> 【純夏】「…\p…\pうぅ…\p…\p…\p…\p頭…\p…\pいたい…\p…\p」\e
+<00000294> 【Sumika】「...\p...\puuu...\p...\p...\p...\pmy head...\p...\phurts...\p...\p」\e
+
+//<00000295> 【武】「…\p…\p」\e
+<00000295> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000296> …\p…\pまたか。\e
+<00000296> ...\p...\pagain?\e
+
+//<00000297> 【純夏】「…\p…\pうあぁぁ…\p…\p…\p…\pいや…\p…\p…\p…\p」\e
+<00000297> 【Sumika】「...\p...\puwaaa...\p...\p...\p...\pno...\p...\p...\p...\p」\e
+
+//<00000298> これって…\p…\p一体なんなんだよ…\p…\p…\p…\p！？\e
+<00000298> What the hell...\p...\pis this...\p...\p...\p...\p!?\e
+
+//<00000299> 【純夏】「――やだッ！　いやあっ！！　――取らないでっ！！」\e
+<00000299> 【Sumika】「――No! Nooo!! ――Don't tak――!!」\e
+
+//<0000029a> 【武】「安心しろ、\p誰も取らないから平気だ」\e
+<0000029a> 【Takeru】「It's okay,\p no one's taking anything, you're fine.」\e
+
+//<0000029b> 【純夏】「うああぁぁ…\p…\p…\pああぁぁ…\p…\p…\p…\p痛い…\p…\p…\p…\p」\e
+<0000029b> 【Sumika】「Uuaaaaa...\p...\p...\paaaaaa...\p...\p...\p...\poww...\p...\p...\p...\p」\e
+
+//<0000029c> ――バイタルデータのモニターしてるんだろ？\e
+<0000029c> ――You're monitoring her vital signs, right?\e
+
+//<0000029d> ――先生何やってるんだよ！\e
+<0000029d> ――Sensei, do something!\e
+
+//<0000029e> 【武】「ちょっと、\p待ってな、\p先生呼んでくるから！」\e
+<0000029e> 【Takeru】「Wait a minute,\p I'll go get Sensei!」\e
+
+//<000002a0> 【武】「お、\pおい…\p…\p」\e
+<000002a0> 【Takeru】「H-\phey...\p...\p」\e
+
+//<000002a1> 【純夏】「…\p…\p取らないで」\e
+<000002a1> 【Sumika】「...\p...\pdon't take...\p...」\e
+
+//<000002a2> 【武】「大丈夫。取らないから」\e
+<000002a2> 【Takeru】「It's okay. I won't take anything.」\e
+
+//<000002a3> 【純夏】「わたしから…\p…\p…\p…\pわたしから…\p…\p…\p…\p…\p…\p取らないで…\p…\p…\p…\p…\p…\p」\e
+<000002a3> 【Sumika】「Don't take...\p...\p...\p...\phim...\p...\p...\p...\p...\p...\paway from me...\p...\p...\p...\p...\p...\p」\e
+
+//<000002a4> 【武】「だから大丈夫だから――」\e
+<000002a4> 【Takeru】「I keep telling you it's fi――」\e
+
+//<000002a5> 【純夏】「――タケルちゃんを取らないでよォォォッ！！」\e
+<000002a5> 【Sumika】「――Don't take Takeru-chan awaaaaaay!!」\e//I felt sad tling that ;_; ~IX
+
+//<000002a7> ――えっ！？\e
+<000002a7> ――Eh!?\e
+
+//<000002a8> 【純夏】「――殺すッ！　――絶対に殺してやるぅッ！！」\e
+<000002a8> 【Sumika】「――I'll kill them! ――I will!!」\e
+
+//<000002a9> 【純夏】「――全部――全部――おまえもおまえもおまえも――――ぶっ殺してやるんだからあァァァッッ！！」\e
+<000002a9> 【Sumika】「――All of them――All of them――You and you and you and you――――I'll tear you all to shreeeeeeeds!!!」\e//okay "bukkorosu" is just "kill"+ EMPHASIS but I wanted to do something cooler ~IX
+
+//<000002aa> 【武】「――純夏やめろ！　お、\pおい、\p暴れるな！」\e
+<000002aa> 【Takeru】「――Sumika, stop it!\bH-\phey,\p stay still!」\e
+
+//<000002af> ってえ…\p…\p…\p…\p！\e
+<000002af> Owww...\p...\p...\p...\p!\e
+
+//<000002b0> …\p…\pいったい…\p…\p何が起きたんだ！？…\p…\p純夏とオレに何があったっていうんだ！？\e
+<000002b0> ...\p...\pwhat the hell...\p...\pjust happened!?\b...\p...\pwhat happened to me and Sumika!?\e
+
+//<000002b1> 何もわからねぇのか！？　こんなときに何もできねぇのかよ…\p…\p！！\e
+<000002b1> I don't understand this at all!\bIsn't there something I can do for her...\p...\p!?\e
+
+//<000002b2> 霞がいてくれたら…\p…\p何か掴めたかも知れないのにッ！\e
+<000002b2> If Kasumi was here...\p...\pthen maybe I'd know something!\e
+
+//<000002b4> 【武】「――純夏！」\e
+<000002b4> 【Takeru】「――Sumika!」\e
+
+//<000002b6> 【武】「――大丈夫だ純夏ッ！！　オレはここにいるから！」\e
+<000002b6> 【Takeru】「――It's okay, Sumika!! I'm right here!」\e
+
+//<000002b7> 【純夏】「――いやぁっ！　――いやっ！！　いやあァァァァッッ！！！」\e
+<000002b7> 【Sumika】「――Nooo! ――Nooo!! Nooooooooooo!!!」\e
+
+//<000002b8> 【武】「――ずっと純夏のそばにいるから！！」\e
+<000002b8> 【Takeru】「――I'll be with you forever, Sumika!!」\e
+
+//<000002b9> ――頼むから届いてくれッ！！\e
+<000002b9> ――Please hear me!!\e
+
+//<000002ba> オレが、\pこんなにもそばにいることを…\p…\p！\e
+<000002ba> Please notice I'm right here next to you...\p...\p!\e
+
+//<000002bb> 【武】「絶対にそばにいるから！」\e
+<000002bb> 【Takeru】「I will stay with you!」\e
+
+//<000002bc> 【純夏】「――いやあァァァァッッ！！！　むちゃくちゃにしないでよおォォッ！！」\e
+<000002bc> 【Sumika】「――Nooooooooooo!!! Don't tear me apaaaaart!!」\e//no way to know whether she means don't tear her up or don't tear Takeru up (not a spoiler), but since it hasn't been explicitly stated what happened to Takeru yet I'll go with the former ~IX// I think she's talking about Takeru, she's been talking about him this whole time. -Shikiller
+
+//<000002bd> 【純夏】「――やめて！　やめてやめてやめてやめてやめてえェェェェェッっ！！！」\e
+<000002bd> 【Sumika】「――Stop it!\bStop it stop it stop it stop it stop iiiiiiiiiit!!!」\e
+
+//<000002be> くぅぅッ…\p…\pただ、\pこうして抱きしめてやることしかないのかッ！！\e
+<000002be> Uuuu...\p...\pisn't there something I can do besides just hugging!?\e
+
+//<000002bf> 【純夏】「あ゛ああ゛ぁっぁぁっぁッ！！――全部、\pイヤ！　いやああああぁぁっ！！」\e
+<000002bf> 【Sumika】「AAAAAA! Ah...a-ah...ah!!\b――No,\p none of that! Nooooooooooooo!!」\e
+
+//<000002c1> ――力が…\p…\p抜けた…\p…\p！？\e
+<000002c1> ――She...\p...\pwent limp...\p...\p!?\e
+
+//<000002c2> 【武】「純夏っ！？」\e
+<000002c2> 【Takeru】「Sumika!?」\e
+
+//<000002c3> 【純夏】「…\p…\p殺す…\p…\p…\p…\p」\e
+<000002c3> 【Sumika】「...\p...\p...\p...\pkill...\p...\p」\e
+
+//<000002c4> おまえの中で何が起こってんだ…\p…\p？\e
+<000002c4> What's going on inside you...\p...\p?\e
+
+//<000002c5> くそっ…\p…\pなにも、\pできないなんて…\p…\p！！\e
+<000002c5> Dammit!\b...\p...\pwhy can't I do anything...\p...\p!?\e
+
+//<000002c6> 【武】「純夏…\p…\p…\p…\p」\e
+<000002c6> 【Takeru】「Sumika...\p...\p...\p...\p」\e
+
+//<000002c7> 【純夏】「…\p…\p殺してやる…\p…\p…\p…\p」\e
+<000002c7> 【Sumika】「...\p...\pI'll kill them...\p...\p...\p...\p」\e
+
+//<000002c8> 【武】「もう大丈夫だ。\nな？　オレ、\p側にいるだろ？」\e
+<000002c8> 【Takeru】「You're fine now.\nOkay? I'm right here.」\e
+
+//<000002c9> 【純夏】「…\p…\p」\e
+<000002c9> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000002ca> 【武】「もうちょっと落ち着いたら、\pもっといろんな話してやるからな」\e
+<000002ca> 【Takeru】「Once you calm down a bit I'll tell you a lot more.」\e
+
+//<000002cb> 【純夏】「…\p…\p」\e
+<000002cb> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000002cc> 【武】「日記のおかげで、\pたくさん思い出したからさ。\n話はいくらでもあるんだ」\e
+<000002cc> 【Takeru】「Your diaries helped me remember a lot.\nThere's so much I could tell you.」\e
+
+//<000002cd> 【純夏】「…\p…\p…\p…\p」\e
+<000002cd> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000002ce> 【武】「『この世界』のおまえじゃないかも知れないけど…\p…\p聞いて欲しいんだ」\e
+<000002ce> 【Takeru】「You might not have done the same things in this world...\p...\pbut I'd like you to hear them.」\e
+
+//<000002cf> 【純夏】「…\p…\p…\p…\p」\e
+<000002cf> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000002d0> 【武】「まだまだ、\p聞いて欲しい事…\p…\p…\p…\pいっぱいあるんだよ」\e
+<000002d0> 【Takeru】「There's still a ton of stuff...\p...\p...\p...\pI want you to hear.」\e
+
+//<000002d1> 【純夏】「…\p…\p…\p…\p」\e
+<000002d1> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000002d3> 【武】「たくさん、\pあるんだからさ」\e
+<000002d3> 【Takeru】「There really is a lot.」\e
+
+//<000002d4> 【純夏】「…\p…\p…\p…\p」\e
+<000002d4> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000002d6> 【武】「だからオレ、\p諦めねぇからな」\e
+<000002d6> 【Takeru】「So I'm not going to give up.」\e
+
+//<000002d7> 【純夏】「…\p…\p…\p…\p」\e
+<000002d7> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000002d9> 絶対に諦めねぇぞ…\p…\p。\e
+<000002d9> I'm not giving up...\p...\p\e
+
+//<000013a8> 【夕呼】「――で、\p今はどうなってるの？　バイタルは安定しているみたいだけど」\e
+<000013a8> 【Yuuko】「――So how is she now?\bHer vitals seem stable at least.」\e
+
+//<000013aa> 【武】「霞が付いてくれています。\n交代で見てますから」\e
+<000013aa> 【Takeru】「Kasumi's watching her in my place for now.」\e
+
+//<000013ac> 【夕呼】「だけど…\p…\pずいぶんと、\p人間性を取り戻してきたじゃない？」\e
+<000013ac> 【Yuuko】「Still...\p...\pshe seems to be getting a lot more human.」\e
+
+//<00001985> 【武】「…\p…\p皮肉はやめてください。\nとてもそうは見えません」\e
+<00001985> 【Takeru】「...\p...\pplease don't joke about this.\nShe's not acting human at all.」\e
+
+//<000013af> 【夕呼】「極めて本気なんだけど？」\e
+<000013af> 【Yuuko】「I'm entirely serious.」\e
+
+//<000013b0> 【武】「…\p…\p…\p…\p」\e
+<000013b0> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000013b2> 【夕呼】「不満そうね？　１日の成果にしてはものすごい進歩よ？　過去の記録は目を通したんでしょ？」\e
+<000013b2> 【Yuuko】「Unsatisfied?\bThis is amazing progress for just one day.\bYou looked through her past records, right?」\e
+
+//<000013b3> 【武】「進歩って言われても、\pオレはただ側にいて話しかけているだけですから実感がありません」\e
+<000013b3> 【Takeru】「I know it's progress,\p but all I'm doing is talking at her, so it doesn't feel like it.」\e
+
+//<000013b5> 【夕呼】「彼女があんな風に取り乱すのは、\pあんたの前でだけなのよ？」\e
+<000013b5> 【Yuuko】「She only throws tantrums like that in front of you.」\e
+
+//<000013b6> 【武】「霞もそう言ってました」\e
+<000013b6> 【Takeru】「Kasumi said that too.」\e
+
+//<000013b7> 【夕呼】「そう」\e
+<000013b7> 【Yuuko】「I see.」\e
+
+//<000013b8> 【武】「オレは、\pとにかく早く落ち着かせて、\p心のハレーションを取り除きたいんです。\nあんな風になるのはマイナスなんじゃないかって思います」\e
+<000013b8> 【Takeru】「Right now I just want her to calm down and start thinking clearly.\nIt can't possibly hurt to get her to that point.」\e
+
+//<000013ba> 【夕呼】「それでも、\p００ユニット起動からのこの数日間で、\pもっとも人間らしい反応を示したじゃない？」\e
+<000013ba> 【Yuuko】「But still,\p the 00 Unit's been acting more human the past few days than ever before.」\e
+
+//<000013bb> 【武】「あれが…\p…\p…\p…\pそうだって言うんですか？」\e
+<000013bb> 【Takeru】「That's...\p...\p...\p...\pmore human?」\e
+
+//<000013bd> 【夕呼】「ええ、\pそうよ」\e
+<000013bd> 【Yuuko】「Yes,\p it is.」\e
+
+//<000013be> 【武】「まるで何かに怯えているような…\p…\pものすごく悲しんでいるようなそんな感じでしたけど」\e
+<000013be> 【Takeru】「It's like she's afraid of something...\p...\pand incredibly sad about something else.」\e
+
+//<000013c0> 【夕呼】「レポート見たでしょう？　殺すだの何だのって物騒な事しか言ってなかったのよ？」\e
+<000013c0> 【Yuuko】「Didn't you see the reports?\bShe used to never say anything other than kill, kill, kill.」\e//lit. "kill and other dangerous things"
+
+//<000013c1> 【武】「…\p…\p」\e
+<000013c1> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000013c3> 【夕呼】「元々あった強い怒りや憎しみ…\p…\pそれに加えて恐怖や悲しみが蘇った…\p…\pとんでもない進歩じゃない！？」\e
+<000013c3> 【Yuuko】「She had that rage and hatred to begin with...\p...\pbut now her fear and sadness have come back on top of it...\p...\pisn't that amazing progress?」\e
+
+//<000013c4> 【武】「…\p…\p確かにそういう言い方はできます」\e
+<000013c4> 【Takeru】「...\p...\pyou could call it that.」\e
+
+//<000013c5> 【武】「でも、\p純夏の境遇を考えれば、\pそういう感情が強く出てくる事は当たり前だと思います」\e
+<000013c5> 【Takeru】「But given Sumika's environment,\p I think it's only natural for her to feel that way.」\e
+
+//<000013c6> 【武】「そういった感情を取り除けない限り、\pそれに覆われている、\p嬉しいとか、\p楽しいとかいうプラスの感情が甦らないんじゃないですか」\e
+<000013c6> 【Takeru】「If I can't get rid of those emotions,\p she'll be swallowed up by them,\p unable to feel happiness or pleasure or any other positive emotions.」\e
+
+//<000013c8> 【夕呼】「つまり、\pＢＥＴＡとの接触がトラウマになって一種のＰＴＳＤになっているってこと？」\e
+<000013c8> 【Yuuko】「So you're saying her experience with the BETA was traumatic enough to give her some kind of PTSD?」\e//duh? ~IX
+
+//<000013c9> 【武】「間違いなくそうです」\e
+<000013c9> 【Takeru】「There's no doubt about that.」\e
+
+//<000019a2> 【夕呼】「なるほど…\p…\p経験者は語るってやつね。\nところで、\pあんたのそれは治ったの？」\e
+<000019a2> 【Yuuko】「I see...\p...\pand you're speaking from experience.\nBy the way,\p did you get past yours yet?」\e
+
+//<000013cc> 【武】「オレの話は後回しです。\nまず、\p純夏が優先なんじゃないんですか？」\e
+<000013cc> 【Takeru】「My problems are for later.\nShouldn't we put Sumika first?」\e
+
+//<000013ce> 【夕呼】「そりゃごもっとも。\nあんたの経験が参考になるかもって思っただけよ」\e
+<000013ce> 【Yuuko】「But of course.\p I was just wondering if your experience might give us some ideas.」\e
+
+//<000013cf> 【武】「オレの場合を参考になんてできないですよ。\nある意味ショック療法っていうか、\p無理矢理ですよ」\e
+<000013cf> 【Takeru】「No, what I went through isn't even close.\nThe progress I made was due to being shocked by further trauma.\p It's not something we can use.」\e
+
+//<000013d0> 【武】「今の純夏にそんなことをしたら…\p…\pいや、\pそんなことやりようがないですよ」\e
+<000013d0> 【Takeru】「If we put Sumika through something similar...\p...\pno,\p it wouldn't even be possible to do that.」\e
+
+//<000013d2> 【夕呼】「まあ、\pまだ１日目だし、\pあんたの影響が出るにしてもすぐには無理でしょう？」\e
+<000013d2> 【Yuuko】「Well,\p this is just day one,\p so of course you can't break through everything right away.」\e
+
+//<000013d3> 【武】「それはそうですけど…\p…\p」\e
+<000013d3> 【Takeru】「That's true, but...\p...\p」\e
+
+//<000013d5> 【夕呼】「運用評価試験までに求められるのは最低限の安定性よ。\nそこにあるのが怒りや憎しみの感情だけだとしても、\p確実に制御出来るようになればそれでいいわ」\e
+<000013d5> 【Yuuko】「We only need minimal stability for the practical evaluation.\p Even if rage and hate are her only emotions,\p as long as she can control them that's all we need.」\e
+
+//<000013d6> 【武】「わかっています」\e
+<000013d6> 【Takeru】「I know.」\e
+
+//<000013d8> 【夕呼】「とにかくその日１日、\pとりあえず最低限の安定性が保証されれば、\pまた時間は稼げるわ」\e
+<000013d8> 【Yuuko】「In any event,\p if we can ensure she's stable for that whole day,\p we can buy more time for her.」\e
+
+//<000013d9> 【武】「はい」\e
+<000013d9> 【Takeru】「Yes.」\e
+
+//<000013db> 【夕呼】「彼女の心に、\pＢＥＴＡを滅ぼそうという強い意思は確かに存在しているんだから、\pそれをなくす必要はない」\e
+<000013db> 【Yuuko】「She definitely has a strong desire to annihilate the BETA,\p which we don't need to get rid off.」\e
+
+//<000013dd> 【夕呼】「彼女が好きだった絵を見せるとか、\p歌を聴かせておくみたいな案でも、\p戦闘中に安定するならなんでも良いのよ」\e
+<000013dd> 【Yuuko】「If showing her pictures she likes or playing her favorite songs or something would keep her stable during combat,\p we can do that.」\e
+
+//<000013de> 【武】「今、\pありったけの思い出話をして、\p何かそういうものの切っ掛けが掴めればと思っています」\e
+<000013de> 【Takeru】「For now I'm just telling her everything I remember about her until I find something she reacts to.」\e
+
+//<000013e0> 【夕呼】「それは結構」\e
+<000013e0> 【Yuuko】「Not a bad idea.」\e
+
+//<000013e2> 【武】「その上で、\p調べて欲しいことがあります」\e
+<000013e2> 【Takeru】「Because of that,\p there's something I'd like you to look into.」\e
+
+//<000013e3> 【夕呼】「なにかしら」\e
+<000013e3> 【Yuuko】「And what might that be?」\e
+
+//<000013e5> 【武】「『この世界』のオレと純夏の関係がどうだったか知りたいんです」\e
+<000013e5> 【Takeru】「How close were Sumika and I in this world?」\e
+
+//<000013e6> 【夕呼】「でしょうね…\p…\p」\e
+<000013e6> 【Yuuko】「Thought so...\p...\p」\e
+
+//<000013e7> 【武】「え…\p…\p調べてあるんですか？」\e
+<000013e7> 【Takeru】「Eh...\p...\phave you done it already?」\e
+
+//<000013e9> 【夕呼】「当たり前でしょう？　あの脳が『鑑純夏』だってわかった時に調べてるわよ」\e
+<000013e9> 【Yuuko】「Why wouldn't I? I looked that stuff up as soon as I knew the brain was Kagami Sumika.」\e
+
+//<000013ea> 【武】「まあ…\p…\pそうですよね。\nじゃあその情報を下さい」\e
+<000013ea> 【Takeru】「Well...\p...\pthat makes sense.\nThen please tell me what you know.」\e
+
+//<000013eb> 【夕呼】「無理よ」\e
+<000013eb> 【Yuuko】「Can't.」\e
+
+//<000013ec> 【武】「機密レベルの問題ですか？」\e
+<000013ec> 【Takeru】「It's all classified?」\e
+
+//<00001940> 【夕呼】「違うわ。この辺一帯の民間人は、\pひとりも生き残ってなかったのよ。\nその意味では京塚曹長が唯一の生存者といっていいわ」\e
+<00001940> 【Yuuko】「Not that. Not one person who lived in that area is still alive.\p Sergeant Major Kyozuka is effectively the only survivor.」\e
+
+//<000013ef> ――ッ！？\e
+<000013ef> ――!?\e
+
+//<000013f0> …\p…\p…\p…\pやっぱり…\p…\pオヤジやお袋も…\p…\pとっくに…\p…\p。\e
+<000013f0> ...\p...\p...\p...\pso...\p...\pmy parents...\p...\phave been...\p...\p\e
+
+//<000013f1> 【武】「そうですか…\p…\p」\e
+<000013f1> 【Takeru】「I see...\p...\p」\e
+
+//<00001948> 【夕呼】「『鑑純夏』の記録を抹消する時に調べたけど…\p…\p戸籍謄本に他人との人間関係は書いてないから追跡のしようがないわ」\e
+<00001948> 【Yuuko】「I did look at Kagami Sumika's records before erasing them...\p...\pbut her family register said nothing about friends or other relationships, so I had nothing to go on.」\e
+
+//<0000194a> 【武】「…\p…\p…\p…\p」\e
+<0000194a> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000194b> 【夕呼】「地元出身の榊、\p珠瀬、\p鎧衣、\p柏木…\p…\pそれに伊隅、\p速瀬に涼宮達…\p…\p」\e
+<0000194b> 【Yuuko】「Sakaki,\p Tamase,\p Yoroi,\p Kashiwagi...\p...\pIsumi,\p Hayase, both Suzumiyas...\p...\p」\e
+
+//<0000194c> 【夕呼】「Ａ－０１の地元出身者や京塚曹長を含め、\p軍人、\p軍属全てに調査した結果、\p誰も鑑純夏との接点はなかった」\e
+<0000194c> 【Yuuko】「I've been through all the military records of everyone in A-01 plus Sergeant Major Kyozuka,\p and none of them had any interaction with Kagami Sumika.」\e
+
+//<0000194d> 【夕呼】「当然、\pこちらの意図が察知できないよう、\p婉曲的に調査された結果だから、\p精度を疑うなら本人達に聞いてみれば？」\e
+<0000194d> 【Yuuko】「Of course I had to snoop in roundabout ways to learn this,\p so if you don't believe me you could ask them yourself.」\e
+
+//<0000194e> 【武】「そんな事しても意味ありません」\e
+<0000194e> 【Takeru】「There'd be no point.」\e
+
+//<0000194f> 委員長達には『前のこの世界』でとっくに確認済みだ。\nそれに、\p隠すつもりならとっくに手を回しているはずだ。\e
+<0000194f> I already asked my squad in the previous world.\nAnd if Sensei wants to hide something, then she's already made sure they won't talk.\e
+
+//<00001950> だけど、\p今、\pその情報をオレに伏せるメリットはないだろう。\n純夏の調律は最優先事項だからな…\p…\p。\e
+<00001950> But she should have no reason to hide that from me now.\nTuning Sumika is her top priority...\p...\p\e
+
+//<000013fb> 【武】「霞のリーディングの記録に、\pその辺の事は無いんですか？」\e
+<000013fb> 【Takeru】「We don't know anything from Kasumi's readings?」\e
+
+//<000013fd> 【夕呼】「調べさせるけど…\p…\p大した物はなかったはずよ？」\e
+<000013fd> 【Yuuko】「I had her try...\p...\pbut she didn't find much.」\e
+
+//<000013fe> 【武】「それでも、\p多少はあるんですね？」\e
+<000013fe> 【Takeru】「But she did find something?」\e
+
+//<00001400> 【夕呼】「あるにはあるけど…\p…\p断片的な物しかなかったわよ」\e
+<00001400> 【Yuuko】「Yes and no...\p...\pit's all very fragmentary.」\e
+
+//<00001401> 【武】「霞は、\pあのシリンダーの頃から会話しているんですよね？」\e
+<00001401> 【Takeru】「Kasumi's been talking to her the whole time she was in that cylinder, right?」\e
+
+//<00001402> 【夕呼】「今よりは多少マシだったっていう程度よ。\nなんて言っても精神崩壊寸前だったんだから」\e
+<00001402> 【Yuuko】「It was barely any better back then than it is now.\nHer mind was on the verge of collapse, after all.」\e
+
+//<00001404> 【夕呼】「安定してからも、\p会いたいとか、\p起こしに行くとかそのレベル…\p…\pまあ、\p直接見てちょうだい」\e
+<00001404> 【Yuuko】「Even after we stabilized her,\p all we got was "I wanna see him,"\p or "I'm gonna go wake him up"...\p...\pwell,\p just go talk to her yourself.」\e
+
+//<00001405> 【武】「わかりました…\p…\p」\e
+<00001405> 【Takeru】「Understood...\p...\p」\e
+
+//<00001406> 決定的な事実は期待できそうもないな…\p…\p夕呼先生に聞くより、\p霞に直接聞くか…\p…\p。\e
+<00001406> So I can't expect any meaningful information...\p...\pmight as well ask Kasumi directly...\p...\p\e
+
+//<00001408> 【夕呼】「とにかく、\p運用評価試験までに何とか体裁を整えてちょうだい。\nバックアップはするわ」\e
+<00001408> 【Yuuko】「Anyway,\p just make sure she's presentable by the practical evaluation.\nI'll be backing you up.」\e
+
+//<00001409> 【武】「はい」\e
+<00001409> 【Takeru】「Okay.」\e
+
+//<00000325> ――あっ！霞だ…\p…\p。\nちょうど良い！\e
+<00000325> ――Ah! Kasumi...\p...\p\nPerfect timing!\e
+
+//<00000326> 【武】「お～い、\p霞！」\e
+<00000326> 【Takeru】「Heeey,\p Kasumi!」\e
+
+//<0000032a> 【武】「お疲れ…\p…\p純夏…\p…\pどうだった？」\e
+<0000032a> 【Takeru】「So...\p...\phow was...\p...\pSumika?」\e
+
+//<0000032b> 【霞】「…\p…\p何も反応がありません」\e
+<0000032b> 【Kasumi】「...\p...\pshe wouldn't react to anything.」\e
+
+//<0000032c> 【武】「そうか…\p…\p」\e
+<0000032c> 【Takeru】「I see...\p...\p」\e
+
+//<00001994> やっぱりオレと一緒の時が一番反応あるんだな…\p…\p。\n反応って言うほど控えめなものじゃないけど…\p…\p。\e
+<00001994> So it is just when I'm with her...\p...\p\nThough it's a bit too violent to call a "reaction"...\p...\p\e
+
+//<0000032e> 【霞】「…\p…\p…\p…\p今は眠っています」\e
+<0000032e> 【Kasumi】「...\p...\pshe's sleeping now.」\e
+
+//<0000032f> 【武】「そうか…\p…\p」\e
+<0000032f> 【Takeru】「I see...\p...\p」\e
+
+//<00000330> そういうところまで…\p…\p人間と同じなんだな…\p…\p。\nなにがしかの機能的な理由があるんだとは思うけど…\p…\p。\e
+<00000330> She even sleeps...\p...\plike a human...\p...\p\nSensei probably has her usual reasons for adding that function...\p...\p\e
+
+//<00000331> これで人間と同じメシを喰えたら、\p見た目で判別なんてできないよな…\p…\p。\e
+<00000331> But if she can eat like a human too,\p how would anyone ever know she wasn't...\p...\p?\e
+
+//<00000332> 【霞】「…\p…\p…\p…\p」\e
+<00000332> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000334> なのに…\p…\p人間と同じなのに…\p…\p今の純夏の心は…\p…\p\e
+<00000334> And yet...\p...\pSumika's heart...\p...\pis still a human's...\p...\p\e//literally a humans, or does he mean her soul? - Sheeta //probably soul ~IX
+
+//<00000335> 【霞】「…\p…\p…\p…\p」\e
+<00000335> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000336> そうだ、\p『この世界』のオレと純夏の事、\p確認しなきゃ…\p…\p。\n直接調べられる範囲のことぐらい裏を取るって決めたんだ。\e
+<00000336> That's right,\p I've gotta ask her about this world's me...\p...\p\nI told myself I'd at least try asking directly.\e
+
+//<00000337> 【武】「あのさ、\p今後の純夏との関わり方で参考にしたいんだけど」\e
+<00000337> 【Takeru】「Hey,\p since it might help me tune Sumika...\p...」\e
+
+//<00000338> 【霞】「…\p…\p…\p…\p」\e
+<00000338> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000033a> 【武】「『この世界』のオレと、\p純夏の思い出とか、\p印象的な出来事とかって読んだことないか？」\e
+<0000033a> 【Takeru】「Did you read any notable events about this world's me from Sumika's memories?」\e
+
+//<0000033b> 【霞】「…\p…\p…\p…\p」\e
+<0000033b> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000033d> 【武】「純夏が００ユニットになる前に、\p一緒にいた霞なら心当たりがあるんじゃないかって思ってさ」\e
+<0000033d> 【Takeru】「You were with her before she became the 00 Unit,\p so I figured you might.」\e
+
+//<0000033e> 『前のこの世界』や霞の行動からすれば、\p何かしらあるはずだろう？\e
+<0000033e> Considering how Kasumi acted in the previous world,\p she must know something, right?\e
+
+//<0000033f> 【霞】「私が見たのは…\p…\p」\e
+<0000033f> 【Kasumi】「What I saw was...\p...\p」\e
+
+//<00000340> 【武】「うん」\e
+<00000340> 【Takeru】「Yes?」\e
+
+//<00000341> 【霞】「あなたの寝起き…\p…\p」\e
+<00000341> 【Kasumi】「You waking up...\p...\p」\e
+
+//<00000342> 【武】「それから？」\e
+<00000342> 【Takeru】「What else?」\e
+
+//<00000343> 【霞】「あなたが口を開けているところ…\p…\p」\e
+<00000343> 【Kasumi】「You opening your mouth...\p...\p」\e
+
+//<00000344> 何となく同じ様な感じではあるらしい。\n寝起きなんて関係が遠かったら殆ど見ないはずだ。\e
+<00000344> It does sound like we had a similar relationship in this world.\nShe wouldn't have seen me waking up much if we weren't as close.\e
+
+//<00000345> 【武】「それから？」\e
+<00000345> 【Takeru】「What else?」\e
+
+//<00000346> 【霞】「あなたが笑っているところ…\p…\p」\e
+<00000346> 【Kasumi】「You laughing...\p...\p」\e
+
+//<00001092> 【武】「うん」\e
+<00001092> 【Takeru】「Okay.」\e
+
+//<00000348> 【霞】「あなたがご飯を食べているところ…\p…\p」\e
+<00000348> 【Kasumi】「You eating...\p...\p」\e
+
+//<00000349> 【武】「ちょっとまって。\nもっとこう…\p…\p流れというか、\p断片的じゃないものは無いの？」\e
+<00000349> 【Takeru】「Wait a minute.\nDo you have anything less...\p...\pvague?\p Fragmentary?」\e
+
+//<0000034a> 【霞】「…\p…\pありません」\e
+<0000034a> 【Kasumi】「...\p...\pI don't.」\e
+
+//<0000034b> 【武】「――えッ！　無いって…\p…\pどういう…\p…\p」\e
+<0000034b> 【Takeru】「――Eh!? How could you...\p...\pnot...\p...\p?」\e
+
+//<0000034c> 【霞】「…\p…\p…\p…\p」\e
+<0000034c> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000352> そんなバカな…\p…\pじゃあ霞が…\p…\pああいう行動をしたのは…\p…\pどうしてなんだ？\e
+<00000352> No way...\p...\pso how...\p...\pcould Kasumi...\p...\pdo all that?\e
+
+//<00000357> 明らかにそれに類似する物があるからなんじゃないのか？\e
+<00000357> She was clearly trying to mimic Sumika's memories, right?\e
+
+//<00000358> 【霞】「…\p…\pそれはちがいます」\e
+<00000358> 【Kasumi】「...\p...\pthat's not true.」\e
+
+//<0000035a> 【武】「――えッ！？　ああ…\p…\p心を読んだのか。\nで、\p何が違うんだ？」\e
+<0000035a> 【Takeru】「――Eh!? Oh...\p...\pyou read my mind.\nSo what did I get wrong?」\e
+
+//<0000035c> 【霞】「…\p…\p…\p…\p」\e
+<0000035c> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000360> ――！？　なんだ！？\e
+<00000360> ――!? What!?\e
+
+//<00000361> 【霞】「…\p…\pこれはあなたから読みとった純夏さんの思い出」\e
+<00000361> 【Kasumi】「...\p...\pthese are memories of Sumika-san I read from you.」\e
+
+//<00000362> 【武】「――えっ！？　それじゃあ…\p…\p」\e
+<00000362> 【Takeru】「――Eh!? Then...\p...\p」\e
+
+//<00000363> 【霞】「…\p…\p…\p…\p」\e
+<00000363> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000365> 【武】「それじゃあ、\pおまえは…\p…\p『この世界』の純夏とオレの両方から…\p…\p」\e
+<00000365> 【Takeru】「So that means you...\p...\pgot them from both of us...\p...\p?」\e
+
+//<00000366> ということは…\p…\pオレの『この世界』の純夏に対する接し方は…\p…\p根本から間違っているのか？\e
+<00000366> In that case...\p...\pis there something fundamentally wrong...\p...\pwith how I'm interacting with this world's Sumika?\e
+
+//<00000367> オレの思い出なんか話しても…\p…\pやっぱり…\p…\p無駄なのか？\e
+<00000367> Maybe it is...\p...\puseless...\p...\pto talk about my memories.\e
+
+//<00000368> 【霞】「…\p…\pごめんなさい」\e
+<00000368> 【Kasumi】「...\p...\pI'm sorry.」\e
+
+//<00000369> 【武】「…\p…\pえ？」\e
+<00000369> 【Takeru】「...\p...\peh?」\e
+
+//<0000036a> 【霞】「…\p…\p勝手にみてしまいました」\e
+<0000036a> 【Kasumi】「...\p...\pI shouldn't have read them.」\e
+
+//<0000036b> 【武】「…\p…\p…\p…\p」\e
+<0000036b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000036c> 【霞】「…\p…\pゆるしてください」\e
+<0000036c> 【Kasumi】「...\p...\pplease forgive me.」\e
+
+//<0000036e> 【霞】「…\p…\pごめんなさい」\e
+<0000036e> 【Kasumi】「...\p...\pI'm sorry.」\e
+
+//<0000036f> 【武】「いや…\p…\pそれ自体はいいんだ、\p気にしないでくれ…\p…\p」\e
+<0000036f> 【Takeru】「No...\p...\pit's fine,\p that doesn't bug me at all...\p...\p」\e
+
+//<00000370> 【霞】「…\p…\p…\p…\p」\e
+<00000370> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000103e> 【武】「オレはおまえに見られて恥ずかしいような事はないから…\p…\p」\e
+<0000103e> 【Takeru】「There's nothing I don't want you to see in here...\p...\p」\e
+
+//<00000373> 【霞】「…\p…\p私は…\p…\p純夏さんの思い出がいっぱい欲しかったんです」\e
+<00000373> 【Kasumi】「...\p...\pI wanted...\p...\pmore memories of Sumika-san.」\e
+
+//<00000374> 【武】「霞…\p…\p…\p…\p」\e
+<00000374> 【Takeru】「Kasumi...\p...\p...\p...\p」\e
+
+//<00000375> 【霞】「…\p…\p私の心にいっぱいある純夏さんの思い出は…\p…\pみんなバラバラです」\e
+<00000375> 【Kasumi】「...\p...\pall the memories I have of Sumika-san...\p...\pare jumbled up.」\e
+
+//<00000376> 【武】「バラバラ…\p…\p」\e
+<00000376> 【Takeru】「Jumbled...\p...\p」\e
+
+//<00000377> 夕呼先生は…\p…\p嘘を付いていなかったのか…\p…\p。\e
+<00000377> So Yuuko-sensei...\p...\pwasn't lying about that...\p...\p\e
+
+//<00000378> 【霞】「…\p…\pあなたの心にいっぱいある純夏さんは…\p…\p楽しい思い出がいっぱい」\e
+<00000378> 【Kasumi】「...\p...\pthe memories you have of Sumika-san...\p...\pthey're so fun.」\e
+
+//<00000379> 【霞】「だから…\p…\pどうしてもそれが欲しかったんです…\p…\p」\e
+<00000379> 【Kasumi】「I just...\p...\pwanted them so badly...\p...\p」\e
+
+//<0000037a> 【武】「そうか…\p…\p」\e
+<0000037a> 【Takeru】「I see...\p...\p」\e
+
+//<0000037b> 【霞】「…\p…\pゆるしてください」\e
+<0000037b> 【Kasumi】「...\p...\pplease forgive me.」\e
+
+//<0000037d> ――人らしい思い出が…\p…\p自分のオリジナルが全くない社は、\pいつしかそれを本当の思い出だと信じ込んでいるんじゃないかしらね\e
+<0000037d> ――Without any human-like memories...\p...\pwithout an identity to call her own,\p I think Yashiro started to believe those were her real memories.\e//CP_S MLA_0045
+
+//<00000d7f> ――だから恐らく…\p…\p社にとって『鑑純夏』は…\p…\pもうひとりの自分なのね\e
+<00000d7f> ――So to Yashiro...\p...\pKagami Sumika is probably...\p...\p\b...\p...\pher other self.\e//CP_E
+
+//<00000382> 【武】「いいんだ霞…\p…\pもうあやまらなくていいんだ」\e
+<00000382> 【Takeru】「It's okay, Kasumi...\p...\pyou don't need to apologize.」\e
+
+//<00000383> 霞にとって純夏の思い出は自分の思い出みたいな物だろうからな…\p…\p。\e
+<00000383> To Kasumi, Sumika's memories are almost like her own...\p...\p\e
+
+//<00000384> 【武】「…\p…\p…\p…\p」\e
+<00000384> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000385> しかし…\p…\p霞が純夏から読み取った思い出だけじゃなく、\pオレからも読みとった情報を合成していたとなると…\p…\p。\e
+<00000385> But...\p...\pif Kasumi read them not just from Sumika,\p but from me as well...\p...\p\e
+
+//<00000386> オレの思い出を純夏に話すことは…\p…\pやっぱり意味がない気がする。\e
+<00000386> Then telling Sumika about my memories...\p...\pmight be meaningless after all.\e
+
+//<00000387> 純夏には、\p今すぐにでも人間らしくなってほしい…\p…\p。\e
+<00000387> I want Sumika to become more human as soon as possible...\p...\p\e
+
+//<00000388> でも…\p…\p共通の何かがないなら…\p…\p今のやり方は意味がない…\p…\p。\e
+<00000388> But...\p...\pif we don't share any memories...\p...\pthen this approach won't get me anywhere...\p...\p\e
+
+//<00000389> もしかしたら、\p実は逆効果で、\p傷ついた心を揺さぶり続けることで、\p最悪の結果が訪れる、\pということもあるかもしれない…\p…\p。\e
+<00000389> I might actually be making it worse by disturbing her in her wounded state...\p...\p\e
+
+//<0000038a> 【霞】「…\p…\p迷ったらだめです」\e
+<0000038a> 【Kasumi】「...\p...\pyou mustn't hesitate.」\e
+
+//<0000038c> 【武】「…\p…\pえ？」\e
+<0000038c> 【Takeru】「...\p...\peh?」\e
+
+//<0000038d> 【霞】「あなたはなぜ『この世界』にいるんですか？」\e
+<0000038d> 【Kasumi】「Why are you in this world?」\e
+
+//<0000038e> 【武】「オレは…\p…\p自分の意志で戻ってきたんだ…\p…\p」\e
+<0000038e> 【Takeru】「I came back...\p...\pof my own free will...\p...\p」\e
+
+//<0000038f> オレが逃げ込んで台無しにしてしまった世界を…\p…\pまりもちゃんや純夏を救うために…\p…\p。\e
+<0000038f> In order to save the worlds I ruined by running away...\p...\pand Marimo-chan and Sumika...\p...\p\e
+
+//<00000390> 純夏を…\p…\p純夏を助けるために…\p…\p。\e
+<00000390> I've gotta...\p...\psave the other Sumika...\p...\p\e
+
+//<00000391> 【霞】「…\p…\pそれを信じてください」\e
+<00000391> 【Kasumi】「...\p...\pplease believe that.」\e
+
+//<00000392> 【武】「そうだな」\e
+<00000392> 【Takeru】「You're right.」\e
+
+//<00000393> 【霞】「それだけ想える人は、\p他にいません」\e
+<00000393> 【Kasumi】「No one else can feel that way.」\e
+
+//<00000394> 【武】「ああ」\e
+<00000394> 【Takeru】「Yeah.」\e
+
+//<00000395> 【霞】「…\p…\p…\p…\pますよ」\e
+<00000395> 【Kasumi】「...\p...\pthere...\p...」\e
+
+//<00000397> 【武】「ん？」\e
+<00000397> 【Takeru】「Hm?」\e
+
+//<00000398> 【霞】「…\p…\pあります」\e
+<00000398> 【Kasumi】「...\p...\pthere is.」\e
+
+//<00000399> …\p…\pあるって…\p…\p…\p…\p何が？\e
+<00000399> ...\p...\pthere is...\p...\p...\p...\pwhat?\e
+
+//<0000039a> 【霞】「あなたにしかできないこと」\e
+<0000039a> 【Kasumi】「Something only you can do.」\e
+
+//<0000039b> 【武】「…\p…\p…\p…\p」\e
+<0000039b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000039c> オレにしかできないこと…\p…\pか。\e
+<0000039c> Something only I can do...\p...\p?\e
+
+//<0000039d> 【霞】「…\p…\pあります」\e
+<0000039d> 【Kasumi】「...\p...\pthere is.」\e
+
+//<0000039e> 【武】「…\p…\pありがとう、\p霞」\e
+<0000039e> 【Takeru】「...\p...\pthank you,\p Kasumi.」\e
+
+//<0000039f> 【霞】「たくさん話してください」\e
+<0000039f> 【Kasumi】「Please talk to her a lot.」\e
+
+//<000003a0> 【武】「ああ」\e
+<000003a0> 【Takeru】「Okay.」\e
+
+//<000003a1> 【霞】「あなたの持っている純夏さんの思い出は…\p…\p楽しいものがいっぱい」\e
+<000003a1> 【Kasumi】「You have lots of fun memories...\p...\pof Sumika-san.」\e
+
+//<000003a2> 【武】「そうだな…\p…\p」\e
+<000003a2> 【Takeru】「You're right...\p...\p」\e
+
+//<000003a3> 【霞】「…\p…\pだから…\p…\p話してあげて…\p…\p」\e
+<000003a3> 【Kasumi】「...\p...\pso...\p...\ptalk to her...\p...\p」\e
+
+//<000003a4> 霞だってわかってるわけじゃない…\p…\p\e
+<000003a4> You know this as well as I do, Kasumi...\p...\p\e
+
+//<000003a5> だけど…\p…\pもうひとりの純夏にお墨付きをもらったんだ…\p…\p。\n何より心強いぜ…\p…\p。\e
+<000003a5> But...\p...\phaving the other Sumika approve of my idea...\p...\pmakes me feel a lot more confident...\p...\p\e
+
+//<000003a6> 話しかけていれば、\p喜んでくれる…\p…\pそれを信じる。\e
+<000003a6> She'll be happy if I talk to her...\p...\pI'll believe that.\e
+
+//<000003a7> 【霞】「大切ですか？」\e
+<000003a7> 【Kasumi】「Is she important to you?」\e
+
+//<000003a8> 【武】「ん？」\e
+<000003a8> 【Takeru】「Hm?」\e
+
+//<000003a9> 【霞】「…\p…\p…\p…\p」\e
+<000003a9> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000003ab> 【武】「ああ、\p大切だよ」\e
+<000003ab> 【Takeru】「Yeah,\p she is.」\e
+
+//<000003ac> 【霞】「…\p…\p…\p…\p」\e
+<000003ac> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000003ae> 【武】「オレにとっては、\pどの世界の純夏であっても…\p…\p大切なんだ…\p…\p」\e
+<000003ae> 【Takeru】「No matter which world's Sumika she is...\p...\pshe's important to me...\p...\p」\e
+
+//<000003af> 【武】「純夏がいて、\pはじめてオレは、\p自分になれる気がするんだ…\p…\p」\e
+<000003af> 【Takeru】「I don't feel like myself without her...\p...\p」\e
+
+//<000003b0> 【霞】「…\p…\p…\p…\p」\e
+<000003b0> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000003b2> 【武】「そう思えるぐらい、\pずっと一緒にいたんだ」\e
+<000003b2> 【Takeru】「That's how much I've been with her.」\e
+
+//<000003b3> 【霞】「…\p…\p…\p…\p」\e
+<000003b3> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000003b5> 【武】「それが当たり前なんだ」\e
+<000003b5> 【Takeru】「It feels so natural.」\e
+
+//<000003b6> さんざん傷つけて、\p傷ついて、\pやっとそのことの意味がわかった…\p…\p。\e
+<000003b6> I had to hurt and be hurt so much before I finally understood what that meant...\p...\p\e
+
+//<000003b7> 【武】「たとえそれが一方的な想いでも…\p…\p『この世界』の純夏とオレに、\pそういう縁が無かったとしても」\e
+<000003b7> 【Takeru】「Even if she doesn't feel the same way about me...\p...\peven if this world's Sumika never had that relationship with me.」\e
+
+//<000003b8> 【霞】「…\p…\p…\p…\p」\e
+<000003b8> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000003ba> 【武】「できる限りの事、\pあいつにしてやりたいんだ…\p…\p」\e
+<000003ba> 【Takeru】「I wanna do everything I can for her...\p...\p」\e
+
+//<000003bb> 【霞】「がんばりましょう」\e
+<000003bb> 【Kasumi】「Let's do our best.」\e
+
+//<000003bc> 【武】「ああ、\pがんばろう」\e
+<000003bc> 【Takeru】「Yeah,\p let's.」\e
+
+//<000003bd> 【霞】「…\p…\pはい」\e
+<000003bd> 【Kasumi】「...\p...\pyes.」\e
+
+//<000003be> 【武】「霞も明日に備えて、\pゆっくり寝てくれ。\n明日は訓練もあるから、\pちょっと長くなるんだ」\e
+<000003be> 【Takeru】「Get some rest for tomorrow,\p Kasumi.\nI've got training tomorrow,\p so I'll be a while.」\e//shi: "to be a while" means "to be busy doing something else for a while before I can go do _" ~IX
+
+//<000003bf> 【霞】「…\p…\pはい」\e
+<000003bf> 【Kasumi】「...\p...\pokay.」\e
+
+//<000003c0> 【武】「終わったらすぐに来る。\n頼むな」\e
+<000003c0> 【Takeru】「I'll come as soon as it's over.\nGood luck without me.」\e
+
+//<000003c1> 【霞】「…\p…\pだいじょうぶです」\e
+<000003c1> 【Kasumi】「...\p...\pI'll be okay.」\e
+
+//<000003c2> 【武】「じゃあ、\pおやすみ」\e
+<000003c2> 【Takeru】「Good night then.」\e
+
+//<000003c3> 【霞】「おやすみなさい」\e
+<000003c3> 【Kasumi】「Good night.」\e
+

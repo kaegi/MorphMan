@@ -1,0 +1,2427 @@
+// Title: 家路 11月30日（金）
+#FILENAME 36ae299e
+#TYPE 1
+
+//<00001b54> 【声】「ね、\pねえ…\p…\pタケルちゃん…\p…\p」\e
+<00001b54> 【Voice】「H-\phey...\p...\pTakeru-chan...\p...\p」\e//CP_S MLU_0026
+
+//<00001b55> 【武】「なんだ？」\e
+<00001b55> 【Takeru】「What?」\e
+
+//<00001b5f> 【声】「ちょっと…\p…\pおちつかないね…\p…\p」\e
+<00001b5f> 【Voice】「It's a little...\p...\pdisturbing...\p...\p」\e
+
+//<00001b63> 【武】「おまえ度胸あるな…\p…\p」\e
+<00001b63> 【Takeru】「You're pretty brave...\p...\p」\e
+
+//<00001b6d> 【声】「なんで？」\e
+<00001b6d> 【Voice】「Why do you say that?」\e
+
+//<00001b71> 【武】「オレ、\pかなり落ち着かないもんよ」\e
+<00001b71> 【Takeru】「I'm finding it very disturbing.」\e
+
+//<00001b7b> 【声】「あはは…\p…\pそゆこと」\e
+<00001b7b> 【Voice】「Ahaha...\p...\pyep.」\e
+
+//<00001b88> 【支配人】「メニューでございます」\e
+<00001b88> 【Waiter】「Here is the menu.」\e
+
+//<00001b92> 【武】「おわっ！」\e
+<00001b92> 【Takeru】「Owa!」\e
+
+//<00001b97> 【支配人】「何なりとお申し付け下さい」\e
+<00001b97> 【Waiter】「You may ask for anything.」\e
+
+//<00001b98> と、\pとりあえずメニューでも見てみるか…\p…\p。\e
+<00001b98> F-\pfor now, let's just look at the menu...\p...\p\e
+
+//<00001b9d> 【支配人】「お飲物はいかが致しましょうか？」\e
+<00001b9d> 【Waiter】「Would you like a drink perhaps?」\e
+
+//<00001ba2> 【武】「え！？」\e
+<00001ba2> 【Takeru】「Eh!?」\e
+
+//<00001ba7> 【支配人】「ワインなどはいかがでございますか？」\e
+<00001ba7> 【Waiter】「How do you feel about wine?」\e
+
+//<00001bac> 【武】「え、\pえーっと…\p…\p」\e
+<00001bac> 【Takeru】「U-\pummm...\p...\p」\e
+
+//<00001bb5> 【支配人】「銘柄のご指定などございましたら…\p…\p」\e
+<00001bb5> 【Waiter】「You may even specify a brand...\p...\p」\e
+
+//<00001bba> 【武】「…\p…\p純夏クン、\p君の好きな物を頼みなさい」\e
+<00001bba> 【Takeru】「...\p...\pSumika-kun,\p ask the nice man for something you'd like.」\e
+
+//<00001bc4> 【声】「えっ！？　ずるいっ！！」\e
+<00001bc4> 【Voice】「Eh!? That's no fair!!」\e
+
+//<00001bca> 【支配人】「何かご希望はございますか？」\e
+<00001bca> 【Waiter】「What would you like to have?」\e
+
+//<00001bcf> 【声】「え、\pえ～っと…\p…\pえ～～～～っと…\p…\p…\p…\p」\e
+<00001bcf> 【Voice】「U-\pummm...\p...\pummmmmmmmmmm...\p...\p...\p...\p」\e
+
+//<00001bd9> 【支配人】「…\p…\pそれでは、\pこちらでお選びしてもよろしいですか？」\e
+<00001bd9> 【Waiter】「...\p...\pwhy not select something from this part of the menu?」\e
+
+//<00001bde> 【声】「は、\pは、\pは、\pはひ～～」\e
+<00001bde> 【Voice】「Ha-\pha-\pha-\pha-hi～～」\e
+
+//<00001be4> 【支配人】「前菜の方はいかが致しましょう？」\e
+<00001be4> 【Waiter】「Would you like an hors d'oeuvre?」\e//see in Japanese that word is just "prior vegetables," so much easier than this French gobbledygook ~IX
+
+//<00001be9> 【声】「え、\pえ、\pえ～～～っと…\p…\p…\p…\p」\e
+<00001be9> 【Voice】「U-\pu-\pummmmmmmmm...\p...\p...\p...\p」\e
+
+//<00001bef> 【武】「すみませ～ん」\e
+<00001bef> 【Takeru】「Excuse meee.」\e
+
+//<00001bf8> 【支配人】「はい、\pただ今」\e
+<00001bf8> 【Waiter】「Yes,\p what is it?」\e
+
+//<00001bf9> 【武】「何頼んでもいいんですよね？」\e
+<00001bf9> 【Takeru】「We can ask for anything, right?」\e
+
+//<00001bfe> 【支配人】「はい、\pお申し付けください」\e
+<00001bfe> 【Waiter】「Yes,\p you need only say it.」\e
+
+//<00001bff> 【武】「じゃ、\p牛丼特盛りふたつでよろしく」\e
+<00001bff> 【Takeru】「Then we'll have two super-sized beef bowls.」\e
+
+//<00001c06> 【支配人】「…\p…\p」\e
+<00001c06> 【Waiter】「...\p...\p...\p...\p」\e
+
+//<00001c09> 【武】「牛丼特盛り。\nつゆだくで」\e
+<00001c09> 【Takeru】「Super-sized beef bowls.\p With extra sauce.」\e
+
+//<00001c0e> 【声】「ち、\pちょっとタケルちゃん！！」\e
+<00001c0e> 【Voice】「W-\pwait, Takeru-chan!!」\e
+
+//<00001c14> 【武】「あ、\pギョクもね、\pギョクも！」\e
+<00001c14> 【Takeru】「Ah,\p and some fried eggs!」\e
+
+//<00001c19> 【声】「あわわわわ！！」\e
+<00001c19> 【Voice】「Awawawawa!」\e
+
+//<00001c1f> 【武】「おい純夏、\p超高級レストランの牛丼だぞ？　吉にも松にも負けないすンげ～のが来そうだな？」\e
+<00001c1f> 【Takeru】「Hey, Sumika,\p we're talking about a super high-class restaurant's beef bowl. It's gotta be something unbelievably delicious, right?」\e
+
+//<00001c24> 【声】「す、\pすみませんっ！　タケルちゃん！！」\e
+<00001c24> 【Voice】「I-\pI'm sorry!\bTakeru-chan!!」\e
+
+//<00001c27> 【武】「なんだよ？　冥夜には冥夜のやり方があって、\pオレらにはオレらのやり方がある。\nだろ？」\e
+<00001c27> 【Takeru】「What? Meiya has her way of doing things,\p and we have ours.\p Right?」\e
+
+//<00001c2c> 【声】「で、\pでも…\p…\p」\e
+<00001c2c> 【Voice】「B-\pbut...\p...\p」\e
+
+//<00001c2e> 【武】「それが上手く噛み合わないんじゃ、\pオレ達は一緒に暮らしてねーよ。\nけど、\p何とかやってんじゃん」\e
+<00001c2e> 【Takeru】「If those couldn't get along,\p then we wouldn't be living together.\p But it's worked out so far, hasn't it?」\e
+
+//<00001c2f> 【声】「…\p…\p…\p…\p」\e
+<00001c2f> 【Voice】「...\p...\p...\p...\p」\e
+
+//<00001c35> 【武】「このクルージングイベントはありがたく頂いてだな…\p…\pあとは夜景でも見ながらこっちのペースで飯でも食うべ」\e
+<00001c35> 【Takeru】「Let's just enjoy the cruise she gave us...\p...\pwatch the night sky while eating dinner the way we like to.」\e
+
+//<00001c3a> 【声】「…\p…\pでも」\e
+<00001c3a> 【Voice】「...\p...\pbut...\p...\p」\e
+
+//<00001c3c> 【武】「牛丼特盛りふたつ、\pつゆだくギョク！　これ以外にはまからん！！　嫌なら今すぐ引き返してくれ」\e
+<00001c3c> 【Takeru】「Two huge beef bowls with extra sauce and eggs! That's my final offer!! If you don't like it, just walk away right now.」\e
+
+//<00001c41> 【声】「タケルちゃん！」\e
+<00001c41> 【Voice】「Takeru-chan!」\e
+
+//<00001c47> 【支配人】「鑑様、\pご心配なく。\n私どもはお客様のご要望にお応えする事が、\p至上の喜びでございます」\e
+<00001c47> 【Waiter】「Kagami-sama,\p do not worry.\nOur greatest joy is to grant the wishes of the customers.」\e
+
+//<00001c4c> 【声】「…\p…\pえっ！」\e
+<00001c4c> 【Voice】「...\p...\peh!?」\e
+
+//<00001c52> 【支配人】「恐れながら、\p私どもも御剣の端くれにございます。\n不可能はございません」\e
+<00001c52> 【Waiter】「We are servants of Mitsurugi.\nNothing is impossible for us.」\e
+
+//<00001c57> 【武】「支配人さん、\p話せるぅ～！」\e
+<00001c57> 【Takeru】「The waiter sure can talk～!」\e
+
+//<00001c5c> 【支配人】「恐れ入ります。\nそれでは、\pお飲物は『お茶』でよろしいでしょうか？」\e
+<00001c5c> 【Waiter】「Indeed I can.\nNow then,\p would you like tea to drink?」\e
+
+//<00001c5d> 【武】「さすが！　じゃあ、\p前菜は白菜の漬け物、\pスープはみそ汁で！」\e
+<00001c5d> 【Takeru】「That's more like it! Then for appetizers, we'll have pickled cabbage,\p and the soup will be miso!」\e
+
+//<00001c62> 【支配人】「かしこまりました。\n少々お待ちください…\p…\p」\e
+<00001c62> 【Waiter】「Understood.\nPlease wait a moment...\p...\p」\e
+
+//<00001c70> 支配人さんいい人だなあ…\p…\p無理言って悪いことしちまったな。\e
+<00001c70> That waiter's a good guy...\p...\peven after I made that unreasonable request.\e
+
+//<00001c71> でもな、\pしょうがねぇんだって…\p…\p字、\p読めないんだもんよぉ。\e
+<00001c71> But...\p...\pI didn't really have a choice...\p...\pI can't even read this menu.\e
+
+//<00001c72> 【武】「飯来るまで、\p甲板で夜景でも見ようぜ？」\e
+<00001c72> 【Takeru】「Why don't we go up on deck and watch the night sky until our food gets here?」\e
+
+//<00001c77> 【声】「え？　あ…\p…\pう、\pうん…\p…\p」\e
+<00001c77> 【Voice】「Eh? Ah...\p...\ps-\psure...\p...\p」\e//CP_E
+
+//<0000001f> 【武】「…\p…\p…\p…\p」\e
+<0000001f> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000021> 【武】「…\p…\p…\p…\p」\e
+<00000021> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000022> …\p…\p…\p…\pだりい。\e
+<00000022> ...\p...\p...\p...\pI feel heavy...\p...\p\e
+
+//<00000023> 柔らかいソファで寝たせいか…\p…\p。\e
+<00000023> Guess it's my fault for sleeping on a soft sofa...\p...\p\e
+
+//<00000024> 固いベッドで寝るのに馴れちまってるからなあ…\p…\p。\e
+<00000024> I'm so used to the hard bed back in my room...\p...\p\e
+
+//<00000025> 【武】「…\p…\pふぁ…\p…\pあ…\p…\p」\e
+<00000025> 【Takeru】「...\p...\p*yawn*...\p...\paah...\p...\p」\e
+
+//<00000026> …\p…\pしかし。\e
+<00000026> ...\p...\pstill...\p...\p\e
+
+//<00000027> 今日のは、\pまた、\pずいぶんとハッキリしてたな。\e
+<00000027> Today's dream was really clear.\e
+
+//<00000028> 感覚までリアルに…\p…\p…\p…\p。\e
+<00000028> It even felt real...\p...\p...\p...\p\e
+
+//<00000029> だんだんハッキリして来ている感じだな…\p…\p。\e
+<00000029> It feels like they're getting clearer every day...\p...\p\e
+
+//<0000002a> 【霞】「…\p…\p…\p…\p」\e
+<0000002a> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000002b> 【武】「おはよ」\e
+<0000002b> 【Takeru】「Morning.」\e
+
+//<0000002c> 【霞】「おやすみなさい」\e
+<0000002c> 【Kasumi】「Good night.」\e
+
+//<0000002d> へ？\e
+<0000002d> Eh?\e
+
+//<00000b53> 【武】「あっ、\pあぶな――」\e
+<00000b53> 【Takeru】「Ah!\p Watch out for――」\e
+
+//<00000031> 【霞】「…\p…\p…\p…\p」\e
+<00000031> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000032> 【霞】――ごしごし\e
+<00000032> 【Kasumi】――*rub* *rub*\e
+
+//<00000033> 【霞】「…\p…\p…\p…\p」\e
+<00000033> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000034> 【霞】――ごし…\p…\p…\p…\p\e
+<00000034> 【Kasumi】――*rub*...\p...\p...\p...\p\e
+
+//<00000035> 【霞】「あが～～～」\e
+<00000035> 【Kasumi】「Agaaaaaaa!」\e//PCP MLA_0014 yes I bothered
+
+//<00000036> 【武】「…\p…\p気をつけて帰れよ」\e
+<00000036> 【Takeru】「...\p...\pcareful on your way back.」\e
+
+//<00000037> …\p…\pもしかして、\p徹夜だったのか？\e
+<00000037> ...\p...\pwas she up all night or something?\e
+
+//<00000038> 【霞】「おやすみなさい」\e
+<00000038> 【Kasumi】「Good night.」\e
+
+//<00000039> 【武】「おう、\pおやすみ」\e
+<00000039> 【Takeru】「Yeah,\p good night.」\e
+
+//<0000003a> 【霞】「…\p…\p…\p…\p」\e
+<0000003a> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000003b> 【武】「…\p…\p…\p…\p」\e
+<0000003b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000003c> 大丈夫かな。\e
+<0000003c> Is she okay?\e
+
+//<0000003d> ちゃんと部屋まで戻れなかったりして…\p…\p…\p…\p。\e
+<0000003d> I hope she makes it back to her room...\p...\p...\p...\p\e
+
+//<0000003e> 【武】「…\p…\pがんばれ、\p霞」\e
+<0000003e> 【Takeru】「...\p...\pgood luck,\p Kasumi.」\e
+
+//<0000003f> オレは応援してるぞ。\e
+<0000003f> I'm cheering you on.\e
+
+//<00000040> 【夕呼】「おはよ…\p…\p…\p…\pふぁ…\p…\pぁ」\e
+<00000040> 【Yuuko】「Morning...\p...\p...\p...\p*yawn*...\p...\pah...\p...\p」\e
+
+//<00000041> 【武】「お、\pおはようございます」\e
+<00000041> 【Takeru】「G-\pgood morning.」\e
+
+//<00000042> 【夕呼】「…\p…\pで、\pどうだった？」\e
+<00000042> 【Yuuko】「...\p...\pso how'd it go?」\e
+
+//<00000043> 【武】「オレの台詞です。\nまあ、\p夢なら見ましたよ」\e
+<00000043> 【Takeru】「Shouldn't I ask you that?\nWell,\p I did have a dream.」\e
+
+//<00000044> 【夕呼】「夢、\pねぇ…\p…\p」\e
+<00000044> 【Yuuko】「A dream,\p hmm...\p...\p」\e
+
+//<00000045> 【武】「…\p…\p…\p…\p」\e
+<00000045> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000046> 【夕呼】「本当に夢だと思ってる？」\e
+<00000046> 【Yuuko】「Do you really think those are dreams?」\e//DUN DUN DUUUUUN ~IX
+
+//<00000047> 【武】「え？」\e
+<00000047> 【Takeru】「Eh?」\e
+
+//<00000048> …\p…\pなんだ？\e
+<00000048> ...\p...\pwhat?\e
+
+//<00000049> どういう意味だ？\e
+<00000049> What does that mean?\e//padding ~IX
+
+//<0000118a> 【夕呼】「結論を言うわ…\p…\pあんたの見ていたものは、\p夢じゃない」\e
+<0000118a> 【Yuuko】「I've concluded that...\p...\pwhat you're seeing at night aren't dreams.」\e
+
+//<0000004b> 【武】「…\p…\p…\p…\pは？」\e
+<0000004b> 【Takeru】「...\p...\p...\p...\phuh?」\e
+
+//<0000004c> 夢じゃない？\e
+<0000004c> They're not?\e
+
+//<0000004d> じゃあ、\p何なんだよ。\e
+<0000004d> Then what are they?\e
+
+//<00000e06> 【夕呼】「あんたが夢を見ていたその瞬間、\p白銀…\p…\pあんたは、\pあんたがいう『元の世界』に存在していたのよ」\e
+<00000e06> 【Yuuko】「Shirogane,\p the moment you started dreaming...\p...\pyou were back in your world.」\e
+
+//<0000004f> 【武】「はあッ！？　――んなバカなッ！」\e
+<0000004f> 【Takeru】「Huuuh!!?\b――How's that even possible!?」\e
+
+//<00000050> ――何を言い出すんだこの人はッ！！\e
+<00000050> ――What the hell is she saying!?\e
+
+//<00000051> 【夕呼】「バカとは失礼ね。\n未来から来たから信じろって話と大差ないと思うけど？」\e
+<00000051> 【Yuuko】「You're awfully rude.\nIs this really any harder to believe than you coming from the future?」\e
+
+//<00000052> 【武】「う…\p…\p」\e
+<00000052> 【Takeru】「Uu...\p...\p」\e
+
+//<00000e07> そ…\p…\pそれはそうかも知れないけど…\p…\p。\e
+<00000e07> Th-...\p...\pthat might be true, but...\p...\p\e
+
+//<00000f2c> 【夕呼】「…\p…\pずっと前に話したでしょ？　意思の力の話」\e
+<00000f2c> 【Yuuko】「...\p...\pdidn't we talk about this before? What your willpower can do?」\e
+
+//<00000f2f> 【武】「意思の力でオレがここにいるっていう？」\e
+<00000f2f> 【Takeru】「You mean how I'm here because I willed myself to be?」\e
+
+//<00000056> 【夕呼】「そうよ。言ったでしょ？　あんたは不安定な存在なんだって」\e
+<00000056> 【Yuuko】「That's right.\bAnd I also said you're an unstable existence.」\e
+
+//<00000057> 【武】「じゃあ、\pオレの姿が一時的にここから消えたって言うんですか？」\e
+<00000057> 【Takeru】「So you're saying I disappeared while I was dreaming?」\e
+
+//<00000058> 【夕呼】「それはなかったわね」\e
+<00000058> 【Yuuko】「No, you didn't vanish.」\e
+
+//<000017fa> 【武】「そりゃそうでしょう！　大体オレは、\pちゃんとこっちの世界に意思を留めてるつもりですよ？　『この世界』の…\p…\p人類の敗北を回避するために」\e
+<000017fa> 【Takeru】「Of course I didn't! Besides,\p I want to be right here, in this world. I want to prevent...\p...\phumanity's defeat.」\e
+
+//<00000e09> 【夕呼】「じゃあ聞くけど、\pあんたは無意識までコントロールできるの？　睡眠中も意識をコントロールしてる？」\e
+<00000e09> 【Yuuko】「Then I have to ask:\p Can you control your subconscious?\bCan you control what your mind does when you're asleep?」\e
+
+//<00000e0a> 【武】「それは…\p…\p」\e
+<00000e0a> 【Takeru】「Well...\p...\p」\e
+
+//<00000e02> 【夕呼】「あんたの脳波、\p途中でロストしたわ」\e
+<00000e02> 【Yuuko】「We lost your brain waves.」\e
+
+//<0000005d> 【武】「え…\p…\p？」\e
+<0000005d> 【Takeru】「Eh...\p...\p?」\e
+
+//<0000132f> 【夕呼】「姿は消えなかった。\nでもある時点から、\p脳波が観測できなくなってしまったのよ」\e
+<0000132f> 【Yuuko】「You didn't vanish.\nBut after a certain point,\p we could no longer observe your brain waves.」\e
+
+//<0000005f> 【武】「ち、\pちょっと！　脳波が無くなるって…\p…\pそれ死んでるってことじゃ…\p…\p」\e
+<0000005f> 【Takeru】「W-\pwait! My brain waves stopped? ...\p...\pdoesn't that mean...\p...\pI died?」\e
+
+//<00000e04> 【夕呼】「でも生きているじゃない？　もちろんその時生体反応もあった」\e
+<00000e04> 【Yuuko】「But you're still alive, aren't you?\bAll your vital signs were normal at the time.」\e
+
+//<00000061> 【武】「…\p…\p…\p…\p」\e
+<00000061> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000e0d> ここんとこずっと、\pオレそんなに怪しい状態になってたってことか？\e
+<00000e0d> That's what's been happening to me this entire time?\e
+
+//<00000e0e> 毎朝目を覚ましてたのが奇跡に思えてくるな。\e
+<00000e0e> Now it feels like a miracle I kept waking up every morning.\e
+
+//<00000e0f> 【夕呼】「状況を推測するに、\p脳波は観測できなくなっただけで存在はしていたのかもしれないけどね」\e
+<00000e0f> 【Yuuko】「It's also possible that your brain waves were still here, but we couldn't observe them for some reason.」\e
+
+//<00000e10> 【武】「どういうことですか？」\e
+<00000e10> 【Takeru】「What do you mean?」\e
+
+//<00000e11> 【夕呼】「知りたい？」\e
+<00000e11> 【Yuuko】「You wanna know?」\e
+
+//<00000e12> 【武】「もちろんですよ！」\e
+<00000e12> 【Takeru】「Of course I do!」\e
+
+//<00001184> 【夕呼】「いい？　脳波ってのは、\p膨大な数の神経細胞に発生する非常に微弱な電位変動のことなのよ。\nだから通常は、\p分散性が高すぎて観測することは難しいんだけど、\p安静閉眼時にはその同期性が高まって観測することが可能になるわけ」\e
+<00001184> 【Yuuko】「Then listen. 'Brain waves' are actually extremely minute bioelectric fluctuations produced by an incredibly large number of nerve cells.\p So normally,\p they're too scattered to observe easily,\p but when someone's asleep,\p they become more synchronized and it's possible to observe them.」\e
+
+//<00000e14> 【武】「うげっ！」\e
+<00000e14> 【Takeru】「Ugeh!」\e
+
+//<00000e15> うわ…\p…\pやべぇ…\p…\p始まった！\e
+<00000e15> Uwa...\p...\pcrap...\p...\pI set her off!\e
+
+//<00000e16> 【夕呼】「ひと言で言えば…\p…\p脳の電位変動の観測は極めて難しいから、\p仮にそれを捉えられなくなったとしても、\p脳波が無くなったとは言えないのよ。\nわかる？」\e
+<00000e16> 【Yuuko】「To summarize it...\p...\pobserving bioelectric fluctuations in the brain is extremely hard,\p so just because we failed to do that doesn't mean the brain waves actually went away.\nUnderstand?」\e
+
+//<00000e17> 【武】「は、\pはい…\p…\pなんとか」\e
+<00000e17> 【Takeru】「Y-\pyes...\p...\pkind of.」\e
+
+//<00000e18> そこだけは。\e
+<00000e18> Only that last part though.\e//seriously? She hasn't even said anything complicated yet. ~IX //says you - Sheeta//And me. This should all be standard knowledge if you know anything about how the brain works, namely the different waves..-Spin
+
+//<00000e19> 【夕呼】「つまり今回の現象は…\p…\p通常は、\pその同期性が高まって、\p脳波が観測しやすくなるはずの睡眠時に、\pなんらかの原因でニューロンネットワークが活性化し脳波の分散性が高まって…\p…\p」\e
+<00000e19> 【Yuuko】「So the phenomenon we observed is...\p...\pwhile asleep,\p when that synchronicity would normally be high enough that we could easily observe your brain waves,\p your neuron net became more active for some reason and the brain waves scattered...\p...\p」\e
+
+//<00000e1a> 【夕呼】「その結果、\pあんたの脳波を捉えられなくなったと言うわけ。\nその原因と言うのが…\p…\p」\e
+<00000e1a> 【Yuuko】「And as a result, we could not longer pinpoint them.\nThe cause of that would be...\p...\p」\e
+
+//<00000e1b> 【武】「脳の活動が高まって…\p…\pオレの精神が、\p『元の世界』に戻っていた…\p…\pから？」\e
+<00000e1b> 【Takeru】「So my brain got more active...\p...\pbecause my mind...\p...\pwent back to...\p...\pmy world?」\e
+
+//<00000e1c> 【夕呼】「その可能性は高いわね。\nあんたの『リアルな夢』が『元の世界』の現実で、\p眠っている間、\pあんたの精神が『この世界』から『向こうの世界』にシフトしていたんだとすれば、\p睡眠時なのに脳波が全く観測できない状態を説明できるわ」\e
+<00000e1c> 【Yuuko】「That's very likely.\nIf your "realistic dreams" are the reality of your world,\p meaning your mind shifts from this world to the other world while you're asleep,\p then it'd explain why we can't observe your brain waves even though you're asleep.」\e
+
+//<00000e1d> 【武】「あの…\p…\pでも、\pそれじゃあアレですよね？」\e
+<00000e1d> 【Takeru】「Umm...\p...\pdoes that mean what I think it does?」\e
+
+//<00000e1e> 【夕呼】「なに？」\e
+<00000e1e> 【Yuuko】「Which is?」\e
+
+//<00000e1f> 【武】「それってあくまでも先生の推測だから、\pその原因ってやつが、\p単なる病気とか、\pそういう可能性も否定できないんじゃ…\p…\p」\e
+<00000e1f> 【Takeru】「That's just your hypothesis, Sensei,\p so is it possible the cause is actually some kind of illness...\p...\p?」\e
+
+//<00000e20> 【夕呼】「おバカさんねぇ…\p…\p」\e
+<00000e20> 【Yuuko】「You're such an idiot...\p...\p」\e
+
+//<00000e21> 【武】「は？」\e
+<00000e21> 【Takeru】「Huh?」\e
+
+//<000018ba> 【夕呼】「並行世界を移動してきたとか、\p時間を遡ったとか、\p最初にとんでもない事を言ってきたのは、\p誰だったかしら？」\e
+<000018ba> 【Yuuko】「Who was the first one to bring up ridiculous things like going back in time and moving between parallel worlds?」\e
+
+//<00000e23> 【武】「…\p…\p…\p…\p」\e
+<00000e23> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000117d> 【夕呼】「…\p…\pそして、\pあんたはあたしを納得させた。\n自分が持つ記憶で、\p未来を言い当てることによってね」\e
+<0000117d> 【Yuuko】「...\p...\pon top of that,\p you've made me believe it,\nnow that I know your memories match the future.」\e
+
+//<00000e25> 【武】「…\p…\pそうでした」\e
+<00000e25> 【Takeru】「...\p...\pI see.」\e
+
+//<00001c82> 【夕呼】「あんたが証明した『タイムスリップ』という事実、\p最近あんたが見る『リアルな夢』、\pそしてあたしの時空理論…\p…\pその全てを考慮すると…\p…\p『精神だけが”元の世界”に戻った』と考えるのが一番合理的なのよ。\n以上！」\e
+<00001c82> 【Yuuko】「The fact that you've traveled back in time,\p these realistic dreams you've had lately,\p and my spacetime theory...\p...\pwhen you put all of them together...\p...\pthe most logical conclusion is that your mind is going back to your world.」\e
+
+//<00000e27> 【武】「…\p…\pし、\p信じられない話…\p…\pですね」\e
+<00000e27> 【Takeru】「...\p...\pi-\pit's really...\p...\phard to believe.」\e
+
+//<00000e28> 何が信じられないかと言えば、\pそりゃ最初から最後までなんだけど。\e
+<00000e28> If you asked me which part...\p...\pI'd have to say the whole thing.\e
+
+//<00000e29> …\p…\pう～ん。\e
+<00000e29> ...\p...\phmmmm...\p...\p\e
+
+//<00000e2a> でも、\p現にオレは確かに時間を遡ったわけだし、\pこの際それについては納得するとしよう。\e
+<00000e2a> But it's true that I've gone back in time,\p so for now, I'll just have to agree with her.\e
+
+//<00000e2b> けど、\pそうだとすると、\pオレは『元の世界』に戻ってたってことを認めなくちゃいけない。\e
+<00000e2b> Still,\p if she's right,\p then I'll have to admit to myself that I actually have been going back to my world.\e
+
+//<00000e2c> それは…\p…\pそれは今のオレにとっては信じ難いことだ。\e
+<00000e2c> That's...\p...\pvery hard for me to believe right now.\e
+
+//<00000e2d> 【武】「…\p…\pでも、\pどうしてオレは、\p『元の世界』に戻ったりしたんでしょうか？」\e
+<00000e2d> 【Takeru】「...\p...\pbut why would I be going back to my world in the first place?」\e
+
+//<00000e2e> 【夕呼】「あんたは、\p意思が揺らいだ時点で世界を移動してしまうかもしれない、\p特殊な人間だっていう話はしたわよね？」\e
+<00000e2e> 【Yuuko】「We talked about how you might be a special kind of human who changes worlds whenever your will wavers,\p right?」\e
+
+//<00000e2f> 【武】「はい！　だから余計に信じられないんですっ！　今のオレには、\p向こうに戻る理由がありませんっ！」\e
+<00000e2f> 【Takeru】「Yes! That's why it's even harder to believe!\bI have no reason to go back there now!」\e
+
+//<00000068> 【夕呼】「本当に？」\e
+<00000068> 【Yuuko】「Really?」\e
+
+//<00000069> 【武】「本当です！」\e
+<00000069> 【Takeru】「Really!」\e
+
+//<000017fc> オレは…\p…\p今、\p自分が『元の世界』に戻るより、\p『この世界』を…\p…\pみんなを救いたいと思っているんだ！！\e
+<000017fc> Right now...\p...\pI want to save everyone in this world...\p...\pnot go back to my world!!\e
+
+//<0000006b> 【夕呼】「…\p…\p本当に？」\e
+<0000006b> 【Yuuko】「...\p...\preally?」\e
+
+//<0000006c> 【武】「…\p…\p…\p…\p」\e
+<0000006c> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000006d> な、\p何が言いたいんだよ…\p…\p。\e
+<0000006d> Wh-\pwhat are you trying to...\p...\p\e
+
+//<0000006e> ――！？\e
+<0000006e> ――!?\e
+
+//<0000006f> 霞…\p…\pのこと…\p…\pか？\e
+<0000006f> Is it...\p...\pbecause of...\p...\pKasumi?\e
+
+//<00000070> 霞と純夏が似てる部分があるって事が気になって…\p…\p？\e
+<00000070> Was I wondering why Kasumi resembled Sumika...\p...\p?\e
+
+//<00000071> 【武】「…\p…\p…\p…\p」\e
+<00000071> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000072> あり得ない…\p…\p。\e
+<00000072> It's not possible...\p...\p\e
+
+//<00000073> だって…\p…\pそんなの、\pそれほど気にしちゃいないしッ…\p…\p！\e
+<00000073> I mean...\p...\pI'm not...\p...\panywhere near that bothered by it...\p...\p!\e//liar~ - Sheeta
+
+//<00000074> …\p…\pありえねえよ。\e
+<00000074> ...\p...\pit's not possible.\e
+
+//<00000075> 【夕呼】「…\p…\pまあいいわ。\nじゃあ原因は、\pあんたを引き戻そうとする世界の力にあるというわけね」\e
+<00000075> 【Yuuko】「...\p...\pwhatever.\nThen let's say that world is trying to pull you back.」\e
+
+//<00000076> 【武】「え？」\e
+<00000076> 【Takeru】「Eh?」\e
+
+//<00000f34> 【夕呼】「あんたは、\pその意思が揺らぐと『世界』を移動してしまうかもしれない人間…\p…\pでも、\p今その意思は揺らいでいない…\p…\p」\e
+<00000f34> 【Yuuko】「You're a person who can travel to other worlds whenever your will wavers...\p...\pbut right now,\p it isn't wavering...\p...\p」\e
+
+//<00000078> 【武】「は、\pはい」\e
+<00000078> 【Takeru】「T-\pthat's right.」\e
+
+//<00000079> 【夕呼】「でも残念ながら睡眠中の無意識域までは確証がない…\p…\pここまではいいわね？」\e
+<00000079> 【Yuuko】「Unfortunately, we can't say the same for your subconscious while you're asleep...\p...\pwith me so far?」\e
+
+//<0000007a> 【武】「…\p…\pはい」\e
+<0000007a> 【Takeru】「...\p...\pyes.」\e
+
+//<00000f36> 【夕呼】「これは、\pあんたの周りの人間についても言えるのよ。\n今の白銀武は、\p白銀武だけの意思でここに存在してるわけじゃない」\e
+<00000f36> 【Yuuko】「We could also say something about those around you.\p Right now, you, Shirogane Takeru,\p aren't being kept here by your will alone.」\e
+
+//<0000007c> 【武】「どういうことですか？」\e
+<0000007c> 【Takeru】「What do you mean?」\e
+
+//<000017fe> 【夕呼】「あんたが『この世界』に関わればそれだけ、\pあんたに対する他人の認識は深まっていく…\p…\pそれはわかるわね？」\e
+<000017fe> 【Yuuko】「The more you involve yourself with this world,\p the more everyone else is aware of your existence...\p...\punderstand?」\e
+
+//<0000007e> 【武】「はい」\e
+<0000007e> 【Takeru】「Yes.」\e
+
+//<00000e34> 【夕呼】「そうなれば、\p『白銀武はここにいる』ってみんなが思う様になるでしょう？　そんなやついないって言っても、\p誰も信じなくなるでしょ？」\e
+<00000e34> 【Yuuko】「That means everyone is going to start thinking "Shirogane is here." If someone said you weren't,\p no one would believe them.」\e
+
+//<00000080> 【武】「なるほど…\p…\p」\e
+<00000080> 【Takeru】「I see...\p...\p」\e
+
+//<00001800> 【夕呼】「あんたの自身の意思と他人の認識…\p…\pこの２つによってあんたは『この世界』に存在している…\p…\pということは？」\e
+<00001800> 【Yuuko】「Your personal will, coupled with the awareness of others...\p...\pyou exist in this world as a result of both of those influences...\p...\phow's that?」\e
+
+//<00000f3a> 【武】「寝ている時は、\pみんなのオレに対する認識も、\pオレの意思も薄まっているから…\p…\p」\e
+<00000f3a> 【Takeru】「But when we're asleep,\p my will and their consciousness all weaken...\p...\p」\e
+//I feel like this would make more sense since they'd have to be asleep as well for the other half to happen. The part about them knowing that he's "here."-Spin //agreed, good call ~IX
+
+//<00001802> 【夕呼】「そう…\p…\pその結果、\p『この世界』とあんたを結びつける力が弱まっていって…\p…\p『元の世界』があんたを欲する力を下回った瞬間…\p…\pシフトが起きる」\e
+<00001802> 【Yuuko】「Yep...\p...\pas a result,\p the forces tying you to this world weaken...\p...\pand the moment they fall below the power of your world...\p...\pyou shift.」\e
+
+//<00000084> 【武】「ち、\pちょっと待った！」\e
+<00000084> 【Takeru】「W-\pwait a second!」\e
+
+//<00000085> 【夕呼】「なに？」\e
+<00000085> 【Yuuko】「What?」\e
+
+//<00000086> 【武】「だからそれですって！　なんですか、\pさっきから世界がオレを引き戻そうとするだの、\p欲しがるだのって…\p…\p」\e
+<00000086> 【Takeru】「Where'd you get that from!? You keep saying the world's trying to pull me back,\p or that it wants me...\p...\p」\e
+
+//<00000087> 【夕呼】「見当つかないの？」\e
+<00000087> 【Yuuko】「You have no idea why?」\e
+
+//<00000088> 【武】「つきませんっ！！」\e
+<00000088> 【Takeru】「No I don't!!」\e
+
+//<00000089> オレは先生じゃねーんだって！\e
+<00000089> I'm not you, Sensei!\e
+
+//<0000008a> 【夕呼】「仕方ないわねぇ…\p…\pえっと、\p物質から人の心まで、\pこの世のすべては安定した状態を好むのよ」\e
+<0000008a> 【Yuuko】「So I do have to explain this...\p...\pummmm...\p...\peverything,\bfrom actual matter to people's souls,\p desires a stable existence in their world.」\e
+
+//<0000008b> 【武】「はあ…\p…\p安定ってなんですか？」\e
+<0000008b> 【Takeru】「Haa...\p...\pwhat do you mean by 'stable?'」\e
+
+//<00000e38> 【夕呼】「変化が起きない。\nもしくは、\p極めて起きにくい状態のことよ」\e
+<00000e38> 【Yuuko】「Not changing at all.\nThat can be an exceptionally rare state.」\e
+
+//<00000e39> 【武】「そう…\p…\pなんですか…\p…\p？」\e
+<00000e39> 【Takeru】「...\p...\preally...\p...\p?」\e
+
+//<00000e3a> 【夕呼】「単純にいきましょう…\p…\p例えば、\p同じ種類の原子の中に、\p電子を３つ持つ原子と、\pひとつしか持たない原子があったと考えて」\e
+<00000e3a> 【Yuuko】「Let's keep this simple...\p...\pfor example,\p out of all atoms of the same type,\p let's say one has three electrons and another has only one electron.」\e
+
+//<00000e3b> 【武】「はい」\e
+<00000e3b> 【Takeru】「Okay.」\e
+
+//<00000e3d> 【夕呼】「コイツが基本的には２つの電子しか必要としない原子だとすると…\p…\p片方の原子は電子をひとつ放り出したいし、\pもう片方は、\p電子をひとつ欲しがるって事になるでしょ？」\e
+<00000e3d> 【Yuuko】「Assuming that these atoms only require two electrons each...\p...\pone of them will want to release an electron,\p and the other will want to gain an electron.」\e
+
+//<00000093> 【武】「はあ…\p…\p」\e
+<00000093> 【Takeru】「Haa...\p...\p」\e
+
+//<00000094> 【夕呼】「そうすることで安定するわけ」\e
+<00000094> 【Yuuko】「And that will make them stable.」\e
+
+//<00000e3f> 【武】「…\p…\pそうなんですか？」\e
+<00000e3f> 【Takeru】「...\p...\pit will?」\e
+
+//<00000096> 【夕呼】「１足す１は２でしょ？　これはそれと同じぐらい当然のことなんだから、\pそういうものだと思ってよ」\e
+<00000096> 【Yuuko】「One plus one is two, right? My example just now is an equally obvious situation,\p so think of it as such.」\e
+
+//<00000097> 【武】「…\p…\pうーん」\e
+<00000097> 【Takeru】「...\p...\phmmmm...\p...\p」\e
+
+//<00000e40> 【夕呼】「わからない？　じゃあ、\p原子を世界、\p電子をその世界に存在するありとあらゆるものと言い換えたら…\p…\pどう？」\e
+<00000e40> 【Yuuko】「You don't get it?\bFine,\p the atoms are worlds,\p and the electrons are things which happen to exist in those worlds...\p...\phow's that?」\e
+
+//<0000009b> 【武】「ああ…\p…\pうん、\p何となくわかってきました…\p…\p…\p…\pもしかして、\pオレは放り出された電子だってことですか？」\e
+<0000009b> 【Takeru】「Aaah...\p...\pokay,\p now I kinda get it...\p...\p...\p...\pam I the electron being released?」\e
+
+//<00001804> 【夕呼】「掴んで来たわね。\nあんたは『元の世界』を構成する電子のひとつで、\p何らかの原因で、\p『この世界』にシフトしてきた」\e
+<00001804> 【Yuuko】「That's more like it.\nYou're one of the electrons from your world,\p\bbut for some reason, you shifted to this world.」\e//lit. "You've grasped it" for the first part
+
+//<0000009d> 【武】「はい」\e
+<0000009d> 【Takeru】「Yes.」\e
+
+//<00000e43> 【夕呼】「でもそれは、\p恐らく正当な取引ではなかったと思うわ」\e
+<00000e43> 【Yuuko】「But I don't think it was a fair exchange.」\e
+
+//<0000009f> 【武】「どういうことですか？」\e
+<0000009f> 【Takeru】「What do you mean?」\e
+
+//<00000e44> 【夕呼】「あたしの推測では、\p『元の世界』はあんたを放り出したことで逆に不安定になってしまった…\p…\p」\e
+<00000e44> 【Yuuko】「From what I can tell,\p your world became unstable as a result of releasing you...\p...\p」\e
+
+//<00000d4f> 【武】「そうか、\pこっちの世界はこっちで、\p受け取ったことで不安定になってしまった…\p…\p」\e
+<00000d4f> 【Takeru】「I see,\p and this world also became unstable when it accepted me...\p...\p?」\e
+
+//<00000d50> 【夕呼】「この世の全ては？」\e
+<00000d50> 【Yuuko】「And what do all worlds do?」\e
+
+//<00000d51> 【武】「安定した状態を好む…\p…\pあ…\p…\pだから、\p向こうの世界はオレを呼び戻したいんだ！？」\e
+<00000d51> 【Takeru】「They want to be stable...\p...\pah...\p...\pso that's why the other world's trying to bring me back!!」\e
+
+//<00000d52> こっちの世界はオレを放り出したい！\e
+<00000d52> And this world wants to release me back!\e
+
+//<00001806> 【夕呼】「そう。でも、\pあんたは『この世界』でやることがある…\p…\pここに留まる意思を強く持っている」\e
+<00001806> 【Yuuko】「Right.\p But you have something you want to do in this world...\p...\pand that strong will keeps you here.」\e
+
+//<00000e45> 【武】「２０７小隊のみんなや先生達も、\pオレがここにいることを認めてくれている…\p…\p認識してくれてる」\e
+<00000e45> 【Takeru】「In addition, my squadmates, and you, and Marimo,\p and everyone acknowledges my existence...\p...\pthey're conscious of it.」\e
+
+//<00001808> 【夕呼】「だから、\p普段は『この世界』に留まり続ける。\nでも――」\e
+<00001808> 【Yuuko】「Which is why you'd normally stay in this world.\p But――」\e
+
+//<00001c84> 【夕呼】「みんなの『認識』と、\pあんたの『意思』が一番希薄になる深夜…\p…\p『元の世界』があんたを呼び戻す力が相対的に強くなって、\pあんたの精神が『元の世界』に戻っている可能性が高いと推測される…\p…\pわかった？」\e
+<00001c84> 【Yuuko】「Late at night,\p when your will and everyone's awareness are at their weakest...\p...\pyour world has enough power to try and pull you back,\p so the probability of your mind going back is quite high...\p...\punderstand?」\e
+
+//<00000e48> 【武】「はい…\p…\pじゃあ逆にオレが『元の世界』に戻りたいって強く思ったらどうなるんですか？」\e
+<00000e48> 【Takeru】「Yes...\p...\pso, if I wanted to go back to my world instead, what would happen?」\e
+
+//<0000180a> 【夕呼】「『元の世界』にいるという認識が、\p『この世界』にいるという認識をより簡単に上回るでしょうね。\n要するに今より帰りやすい」\e
+<0000180a> 【Yuuko】「The awareness of your existence in your world would easily surpass that of your existence in this one.\nIn other words, it'd become even easier to go back.」\e
+
+//<000000a9> 【武】「…\p…\pじ、\pじゃあ…\p…\pオレ…\p…\p…\p…\p帰れるんですかっ！！？」\e
+<000000a9> 【Takeru】「...\p...\pth-\pthen...\p...\pthat means...\p...\p...\p...\pI can go home!!?」\e
+
+//<000000aa> 【夕呼】「多分ね」\e
+<000000aa> 【Yuuko】「Probably.」\e
+
+//<000000ab> ――！？\e
+<000000ab> ――!?\e
+
+//<000000ac> 帰れる！？　オレが…\p…\pあの世界に…\p…\p帰れる！？\e
+<000000ac> I can go home!?\bI can...\p...\pgo back...\p...\pto that world!?\e
+
+//<000000ad> 【武】「…\p…\p…\p…\p」\e
+<000000ad> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000000ae> 【夕呼】「それ以上考えるのはやめておきなさい。\nそれでどうなっても知らないわよ？」\e
+<000000ae> 【Yuuko】「Stop thinking about it.\nWe don't know what'll happen if you get funny ideas.」\e
+//Translation from Yuuko to Plain Tsundere: It's...it's not like I want you here or anything....
+//Translation from Plaint Tsundere to English: I may still need you and your knowledge, particularly regarding the subject of Alternative IV and the future.
+
+//<000000af> 【武】「…\p…\pえ？」\e
+<000000af> 【Takeru】「...\p...\peh?」\e
+
+//<00001181> 【夕呼】「今あたしが話したのは、\pあくまで推論よ。\nあんたの状態を正しく説明出来ているとは限らないわ」\e
+<00001181> 【Yuuko】「Everything I just told you is a hypothesis.\nWe don't know if it's accurate yet.」\e
+
+//<00000e4b> 【武】「…\p…\pえ？」\e
+<00000e4b> 【Takeru】「...\p...\peh?」\e
+
+//<00000e4c> 【夕呼】「あんたが今帰ったとして、\pあんたがどんな形で『帰る』ことになるのか…\p…\p」\e
+<00000e4c> 【Yuuko】「Much less what shape you'd be in if you tried going back now...\p...\p」\e
+
+//<0000180c> 【夕呼】「それが、\p『この世界』と向こうの世界にどんな影響を与えるのか…\p…\p今の段階では、\pあたしにも分からないし、\pわかってもどうしようもないって事よ」\e
+<0000180c> 【Yuuko】「Or what sort of influence it might have on both worlds...\p...\pat this point I simply don't know,\p nor could I do anything about it if I did.」\e
+
+//<00000d56> 【武】「んが！」\e
+<00000d56> 【Takeru】「Ngah!」\e
+
+//<00000d57> 【夕呼】「もしかして精神だけが戻ってそれきり、\pなんてことも…\p…\p」\e
+<00000d57> 【Yuuko】「For instance,\p what if only your mind returned home...\p...\p」\e
+
+//<00000d58> 【武】「そ、\pそれは困りますっ！」\e
+<00000d58> 【Takeru】「I-\pI don't want that!」\e
+
+//<00000e4e> 【夕呼】「でしょ？　だから今は、\p帰ろうなんて考えない方がいいわ」\e
+<00000e4e> 【Yuuko】「Of course not.\bSo don't think about going home just yet.」\e
+
+//<00000d5a> 【武】「は、\pはい…\p…\p」\e
+<00000d5a> 【Takeru】「O-\pokay...\p...\p」\e
+
+//<00000d5b> 【夕呼】「…\p…\p…\p…\p」\e
+<00000d5b> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<000000b3> 【武】「だ、\p大丈夫ですよ！　オレにはやることがあるんだから！！」\e
+<000000b3> 【Takeru】「I-\pI'm okay!\bI still have something to do here!!」\e
+
+//<000000b4> 【夕呼】「そう、\pよかったわ」\e
+<000000b4> 【Yuuko】「Glad to hear it.」\e
+
+//<000000b5> 【武】「でも…\p…\p困りましたよね…\p…\p寝てる間のことなんか、\pどうしようもない」\e
+<000000b5> 【Takeru】「But...\p...\pthat's troubling...\p...\pand I can't do anything about what happens when I sleep.」\e
+
+//<000000b6> 【夕呼】「そうね…\p…\pまあ、\pあまり心配しないで。\n色々と考えがあるから」\e
+<000000b6> 【Yuuko】「True...\p...\pwell,\p don't worry too much.\nI've got plenty of ideas.」\e
+
+//<000000b7> 【武】「ホントですかっ！？」\e
+<000000b7> 【Takeru】「Really!?」\e
+
+//<000000b8> 【夕呼】「ええ。今あんたにいなくなられると、\p正直こっちも困るから、\pまあ必要な間だけは面倒見てあげるわ」\e
+<000000b8> 【Yuuko】「Yes. And you disappearing now would cause trouble for me too,\p so I'll keep taking care of you for now.」\e
+
+//<000000b9> 【武】「…\p…\p…\p…\p」\e
+<000000b9> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000e05> 【夕呼】「ま、\pいいわ…\p…\pとにかくいったん部屋に戻りなさい。\n訓練でしょ？」\e
+<00000e05> 【Yuuko】「Oh well...\p...\pfor now, go back to your room.\nDon't you have training?」\e
+
+//<000000bb> 【武】「あ…\p…\pはい」\e
+<000000bb> 【Takeru】「Ah...\p...\pyes.」\e
+
+//<000000bc> 【夕呼】「精出して、\pせいぜい周りの認識強めておいてちょうだい」\e
+<000000bc> 【Yuuko】「Exert yourself,\p and make everyone feel your presence even more.」\e
+
+//<000000bd> 【武】「わかりました」\e
+<000000bd> 【Takeru】「Got it.」\e
+
+//<000000be> 【武】「…\p…\p…\p…\p」\e
+<000000be> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000000bf> ひとつわかった事がある…\p…\p。\e
+<000000bf> I did learn one thing from all that...\p...\p\e
+
+//<00000e50> もしかしたら『元の世界』なんて、\pオレの妄想かも知れない…\p…\p最近じゃそう思う事も多かった。\e
+<00000e50> Lately,\p I've been wondering a lot...\p...\pabout whether or not my world was really just a delusion.\e
+
+//<0000180e> 『この世界』で生きていく覚悟を決めていたはずだった。\e
+<0000180e> I've already made up my mind to keep living in this world.\e
+
+//<00000e52> …\p…\pそれなのに、\pオレは…\p…\pやっぱり、\p『元の世界』に帰りたいと思っている…\p…\p今、\pそれが分かった。\e
+<00000e52> ...\p...\pand yet...\p...\pI do still want to go back to my world...\p...\pthat's what I just found out.\e
+
+//<00000e53> 『元の世界』に帰れるかもって聞いて…\p…\p正直、\pぐらっと来た。\e
+<00000e53> When she told me I might be able to return home...\p...\phonestly,\p that shook me.\e
+
+//<00000e54> 絶対に帰れないと思って、\p諦めてたはずなのに…\p…\p。\e
+<00000e54> Even though I'd given up,\p and convinced myself I'd never be able to go back...\p...\p\e
+
+//<000000c5> 【武】「…\p…\p帰れる…\p…\pかもしれない…\p…\pか」\e
+<000000c5> 【Takeru】「...\p...\pI might...\p...\pbe able...\p...\pto go home.」\e
+
+//<000000c6> …\p…\p…\p…\p。\e
+<000000c6> ...\p...\p...\p...\p\e
+
+//<000000c7> でも、\pもうひとつわかった事がある。\e
+<000000c7> But there's one other thing I learned.\e//so... cheesy... ~IX
+
+//<00001810> それでもオレは、\p『この世界』を救いたいと強く思ってるって事だ。\e
+<00001810> Despite that,\p I still want to save this world.\e
+
+//<00001811> 曖昧な所が多い『前のこの世界』の記憶だけど…\p…\p人類の地球放棄・オルタネイティヴ５の発動を目の当たりにしたことだけは、\pハッキリ覚えている。\e
+<00001811> My memories of the previous world may be vague...\p...\pbut I clearly remember Alternative V being activated, and humanity abandoning Earth.\e
+
+//<00000e57> そして、\pそれ以上に鮮明な記憶がある。\e
+<00000e57> And there's something even clearer than that.\e
+
+//<00000e58> 大切なものを守れなかった、\pという喪失感…\p…\p。\e
+<00000e58> A sense of loss,\p of being unable to protect something precious to me...\p...\p\e
+
+//<00000e59> あんな気持ちは、\p２度と味わいたくない。\e
+<00000e59> I never want to feel that again.\e
+
+//<00000e5a> それを取り返せるかもしれないチャンスが巡ってきたんだ…\p…\p。\e
+<00000e5a> And I've been given a chance to take back what I lost...\p...\p\e
+
+//<00000e5b> 【武】「…\p…\p…\p…\p」\e
+<00000e5b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000e5c> 『元の世界』に帰りたいという思いも否定できないし、\pＢＥＴＡから人類を守りたいという気持ちも嘘じゃない。\e
+<00000e5c> I can't deny the fact that I want to go home,\p but it'd also be a lie to say that I don't want to protect humanity from the BETA.\e
+
+//<00001813> 今まで帰れるわけがないと思ってたから、\p『この世界』を救うことしか考えてなかったけど、\p『元の世界』に帰れる可能性があるんなら…\p…\p。\e
+<00001813> Until now, I was convinced I couldn't go back,\p so I've only been thinking about how to save this world,\p but now that there's a chance I could go home...\p...\p\e
+
+//<00000e5e> オレは…\p…\p一体どうしたらいい？\e
+<00000e5e> What...\p...\pshould I do?\e
+
+//<00001815> …\p…\pそうだよ…\p…\p先ず『この世界』を救って…\p…\pその後、\p堂々と胸を張って『元の世界』に帰れば良いんじゃないのか？\e
+<00001815> ...\p...\pthat's right...\p...\psave this world first...\p...\pI can just go home with my head held high after that.\e
+
+//<00000d5d> そうさ！　帰るのは全てが終わってからだ！\e
+<00000d5d> That's right!\bI'll go home once everything's done here!\e
+
+//<000000d8> 【美琴】「タケルの発案した姿勢制御概念はすごいよね！」\e
+<000000d8> 【Mikoto】「Takeru's posture control ideas are incredible!」\e
+//I'd like to keep the original "attitude control" since that's what pilots use. It just means how high one wing, or side, is in comparison to normal and the other side. It's most likely where we got the "You have a positive/negative attitude" idiom/words from.-Spin //since TSFs are "multi-dimensional," that term would be grossly inaccurate ~IX
+
+//<000000d9> 【武】「え？　あ、\pおまえ等の機体にも新ＯＳ入ったんだ…\p…\p」\e
+<000000d9> 【Takeru】「Eh? Ah,\p so they gave you guys the new OS too...\p...\p」\e
+
+//<000000da> 【美琴】「うん、\p言ってなかったっけ？」\e
+<000000da> 【Mikoto】「Yeah,\p did we forget to tell you?」\e
+//Isn't this kinda a contradiction since Takeru was there when Yuuko said she was giving it to everyone?-Spin //no, this part's about the installation finishing ~IX
+
+//<000000db> 【千鶴】「昨日の夜、\p白銀いなかったじゃない」\e
+<000000db> 【Chizuru】「Shirogane wasn't even here last night.」\e
+
+//<000000dc> 【美琴】「あ、\pそか…\p…\pねえ、\pどこ行ってたのー？」\e
+<000000dc> 【Mikoto】「Ah,\p that's right...\p...\phey,\p where were you?」\e
+
+//<000000dd> 【武】「ん…\p…\p？　ああ…\p…\p」\e
+<000000dd> 【Takeru】「Hm...\p...\p? Aaah...\p...\p」\e//talking to your dad about dodos ~IX
+
+//<000000de> 昨日はいろんな事がいっぺんにありすぎた…\p…\p。\e
+<000000de> Too many things happened at the same time yesterday...\p...\p\e
+
+//<000000df> そういやあ美琴のオヤジさんに会ったんだっけ。\n言っといたほうがいいのかなあ？\e
+<000000df> Come to think of it, I met Mikoto's old man that day.\nShould I tell her about that?\e
+
+//<000000e0> 【武】「そういえば、\pちょっと気になったんだけど…\p…\p」\e
+<000000e0> 【Takeru】「Speaking of which,\p I've been wondering...\p...\p」\e
+
+//<000000e1> 【美琴】「なに？」\e
+<000000e1> 【Mikoto】「What?」\e
+
+//<000000e2> 【武】「おまえのオヤジさんって…\p…\pどういう人？」\e
+<000000e2> 【Takeru】「What kind of person...\p...\pis your dad like?」\e
+
+//<000000e3> 【美琴】「え？　どうしたの？」\e
+<000000e3> 【Mikoto】「Eh? What do you mean?」\e
+
+//<000000e4> 【武】「あ、\pいやその…\p…\pほら、\pおまえのことだから、\pオヤジさんとうまくコミュニケーションとれてるのかなあと思って」\e
+<000000e4> 【Takeru】「Ah,\p well...\p...\pyou know how you are,\p so I was just wondering whether you guys have any communication problems.」\e
+
+//<00000e60> 【美琴】「ボクのことだから？　あははは…\p…\p変なの～。\nこんなボクだからこそ、\p父さんと仲よくやれてるんだよ」\e
+<00000e60> 【Mikoto】「I know how I am? Ahahaha...\p...\pso weird～\nWe get along great because I'm me.」\e
+
+//<000000e6> 【慧】「…\p…\p…\p…\p」\e
+<000000e6> 【Kei】「...\p...\p...\p...\p」\e
+
+//<000000e7> 【美琴】「どうしたの？」\e
+<000000e7> 【Mikoto】「What?」\e
+
+//<000000e8> 【慧】「…\p…\pなんでもないよ」\e
+<000000e8> 【Kei】「...\p...\pnothing.」\e
+
+//<000000e9> 【美琴】「父さん、\p世界のあちこち飛び回ってるからさ、\pなかなかワイルドなんだよ。\nボクもほら、\pこの通り元気だしねっ！」\e
+<000000e9> 【Mikoto】「Dad's the wild type who flies around to every corner of the world.\nAnd as you can see, I'm just as energetic!」\e
+
+//<000000ea> まあ…\p…\pそれに関しては否定しない。\nただ、\pコミュニケーションに関しては…\p…\p\e
+<000000ea> Well...\p...\pI can't deny that part.\nBut as for communication...\p...\p\e
+
+//<000000eb> 【美琴】「そういや、\p父さん今頃どこにいるのかな～～」\e
+<000000eb> 【Mikoto】「Come to think of it,\p I wonder where he is now～」\e
+
+//<000000ec> …\p…\pあのオッさん、\p娘ほったらかして帰りやがったよ。\e
+<000000ec> ...\p...\pthat guy really did leave without seeing his daughter.\e
+
+//<000000ed> 【美琴】「ん…\p…\p？　どうしたの？」\e
+<000000ed> 【Mikoto】「Hm...\p...\p? What's wrong?」\e
+
+//<000000ee> 【武】「いや～…\p…\p何でもない」\e
+<000000ee> 【Takeru】「No...\p...\pit's nothing.」\e
+
+//<000000ef> 【美琴】「変なタケル…\p…\p」\e
+<000000ef> 【Mikoto】「You're being weird, Takeru...\p...\p」\e
+
+//<000000f0> 【壬姫】「そうだ、\pたけるさん！」\e
+<000000f0> 【Miki】「That's right,\p Takeru-san!」\e
+
+//<000000f1> 【武】「どうした？」\e
+<000000f1> 【Takeru】「What is it?」\e
+
+//<00000d4d> 【壬姫】「基本動作の拡張パターンって、\pたけるさんの蓄積データが基になってるんでしょ？」\e
+<00000d4d> 【Miki】「The expanded patterns for basic movements are based on Takeru-san's accumulated data, right?」\e
+
+//<000000f3> 【武】「あ？　…\p…\pああ、\p簡単に言えばそうだけど、\pなんだよ？」\e
+<000000f3> 【Takeru】「Ah? ...\p...\pyeah,\p you could say that,\p but why do you ask?」\e
+
+//<000000f4> 【壬姫】「あ、\pううん…\p…\p大したことじゃないんだけど、\pライフルの構えとか、\pたけるさんに似てるよね？」\e
+<000000f4> 【Miki】「Ah,\p nothing...\p...\pit's nothing really,\p but the way they hold rifles now reminds me of you,\p Takeru-san.」\e
+
+//<000000f5> 【武】「は？」\e
+<000000f5> 【Takeru】「Huh?」\e
+
+//<000000f6> 【冥夜】「ああ…\p…\pそれには同感だな」\e
+<000000f6> 【Meiya】「Yes...\p...\pI would have to agree.」\e
+
+//<000000f7> 【慧】「近接戦闘もそんな感じ」\e
+<000000f7> 【Kei】「The close-quarters moves too.」\e
+
+//<000000f8> 【武】「はあ？」\e
+<000000f8> 【Takeru】「Huuuh?」\e
+
+//<000000f9> 【千鶴】「戦術機特性の時、\p教官に聞いたでしょう？　機体のクセは衛士に似るってこと」\e
+<000000f9> 【Chizuru】「Didn't the Instructor tell us about this?\bTSFs tend to share their Eishi's habits.」\e
+
+//<000000fa> 【武】「ああ、\pそういうこと…\p…\p」\e
+<000000fa> 【Takeru】「Aaah,\p that's what you mean...\p...\p」\e
+
+//<000000fb> 【美琴】「なんだか、\p機体そのものがタケルみたいだよね」\e
+<000000fb> 【Mikoto】「It kinda feels like my TSF is Takeru now.」\e
+
+//<000000fc> 【千鶴】「本人の蓄積データが拡張パターンのベースなんだから、\p白銀の中にいる感じがするのは当然ね」\e
+<000000fc> 【Chizuru】「His data was used to expand the patterns,\p\bso of course it'd start to feel like we were inside him.」\e
+
+//<000000fd> 【慧】「…\p…\pま！」\e
+<000000fd> 【Kei】「...\p...\poh my!」\e
+//lol, I just can't imagine her saying "Oh my" like some southern belle.-Spin //that's why it's funny ~IX
+
+//<000000fe> 【千鶴】「…\p…\pまた何か変な想像してない？」\e
+<000000fe> 【Chizuru】「...\p...\pare you imagining something weird?」\e
+
+//<000000ff> 【慧】「…\p…\pぶんぶんぶん」\e
+<000000ff> 【Kei】「...\p...\pno, no, no.」\e//I think that's actually the sound of shaking your head to indicate a no, but oh well ~IX
+
+//<00000100> 【武】「そういうときは直接首を振れ。\nでもそうか…\p…\pそんなにクセが出てるのか？」\e
+<00000100> 【Takeru】「Interesting...\p...\pdo my habits really show up?」\e//and the "Just shake your head" part of this line must be chopped ~IX
+
+//<00000101> 【慧】「うん」\e
+<00000101> 【Kei】「Yes.」\e
+
+//<00000102> 【千鶴】「まあ、\p最初のうちはしょうがないわよ。\n個々のデータが蓄積すれば気にならなくなるでしょ」\e
+<00000102> 【Chizuru】「Well,\p of course it'll be like that at first.\nBut once our individual data builds on top of it, it'll go away.」\e//didn't feel like saying accumulate yet again ~IX
+
+//<00000e62> 【武】「余計な要素を除いてからパターン化してるはずなのに…\p…\p残るんだな、\pそういうの」\e
+<00000e62> 【Takeru】「The patterns should be changing after needless stuff like that goes away...\p...\pbut I guess it does persist.」\e
+
+//<00000e63> 【冥夜】「人間同士ですら、\p長く接しているとクセが移ったりするからな」\e
+<00000e63> 【Meiya】「It may be no different from how humans acquire each other's habits over time.」\e
+
+//<00000105> 【美琴】「さすがにそれは関係ないんじゃない？」\e
+<00000105> 【Mikoto】「I don't think that's what's happening.」\e
+
+//<00000106> 【冥夜】「…\p…\pそうか？」\e
+<00000106> 【Meiya】「...\p...\pare you sure?」\e
+
+//<00000107> …\p…\p…\p…\p接してるとクセが移ったりもする？\e
+<00000107> ...\p...\p...\p...\pwe take on each other's habits?\e//lit. "if contacting, habits move/transfer/spread"
+
+//<00000108> …\p…\p…\p…\p。\e
+<00000108> ...\p...\p...\p...\p\e
+
+//<00000109> クセが移る…\p…\pねぇ…\p…\p。\e
+<00000109> Each other's habits...\p...\phmm...\p...\p\e
+
+//<0000010a> 【冥夜】「…\p…\pどうしたタケル？　急に黙って」\e
+<0000010a> 【Meiya】「...\p...\pwhat is it, Takeru?\bWhy did you stop talking?」\e
+
+//<0000010b> 霞がどことなく純夏と重なるのは…\p…\p。\e
+<0000010b> Kasumi overlaps with Sumika because...\p...\p\e
+
+//<0000010c> 【武】「…\p…\p…\p…\p」\e
+<0000010c> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000010d> …\p…\pいや、\pアレはそういう問題じゃねぇよな。\e
+<0000010d> ...\p...\pno,\p that has nothing to do with it.\e
+
+//<0000010e> 仮にオレが無意識のうちに、\p純夏の影響を霞に与えていたとしても…\p…\pゲームガイは伝わらねえだろ、\pゲームガイは…\p…\p。\e
+<0000010e> Even if I'm subconsciously influencing Kasumi somehow...\p...\pthat wouldn't be enough for her to draw my Game Guy...\p...\p\e
+//even if I'm somehow (without being aware of it) transferring Sumika's mannerisms to Kasumi (the way it is sounds too much like he knows that she can read his mind) - Makoto //good point, tweaked ~IX
+
+//<0000010f> 【冥夜】「タケル…\p…\p？」\e
+<0000010f> 【Meiya】「Takeru...\p...\p?」\e
+
+//<00000110> 【武】「え？　あ、\pああ…\p…\pどうした冥夜？」\e
+<00000110> 【Takeru】「Eh? Ah,\p yeah...\p...\pwhat's wrong, Meiya?」\e
+
+//<00000111> 【冥夜】「それは私のセリフだ」\e
+<00000111> 【Meiya】「I am asking you that.」\e
+
+//<00000112> 【千鶴】「今日それで何度目よ？　最近多いわよ…\p…\p遠く見ちゃってさ」\e
+<00000112> 【Chizuru】「How many times has this happened today?\bYou've been staring into space...\p...\pa lot lately.」\e
+
+//<00000113> 【武】「…\p…\pああ、\p悪い」\e
+<00000113> 【Takeru】「...\p...\pyeah,\p sorry.」\e
+
+//<00000e64> ここ数日、\p新展開が多かったからなあ...\p...\e
+<00000e64> Too much has been going on these past few days...\p...\e
+
+//<00000115> 特に今日のは…\p…\pデカかったしな…\p…\p。\e
+<00000115> Especially this morning...\p...\pthat was a big shock...\p...\p\e
+
+//<00000116> 【慧】「…\p…\p…\p…\p何か見えるの？」\e
+<00000116> 【Kei】「...\p...\pcan you see something?」\e
+
+//<00000117> 【美琴】「うわっ…\p…\pタケルって、\p見える人だったんだ」\e
+<00000117> 【Mikoto】「Uwa! ...\p...\pso Takeru can see ghosts.」\e//she's pretty much saying this, tried to make it clearer. -Shikiller
+
+//<00000118> 【千鶴】「本当に大丈夫？」\e
+<00000118> 【Chizuru】「Are you really okay?」\e//she's talking to Takeru. -Shikiller
+
+//<00000119> 【慧】「…\p…\p…\p…\p夜な夜な出かけてるし」\e
+<00000119> 【Kei】「...\p...\phe goes out a lot at night.」\e
+
+//<0000011a> 【武】「…\p…\p…\p…\pん？　おい、\pなんで知ってんだよ？」\e
+<0000011a> 【Takeru】「...\p...\phm? Hey,\p how do you know that?」\e
+
+//<00001842> 【冥夜】「あまり感心せぬな」\e
+<00001842> 【Meiya】「It is hard to condone.」\e
+
+//<0000011c> 【武】「別に。やましいことやってるわけじゃないさ」\e
+<0000011c> 【Takeru】「No, I'm not doing anything wrong.」\e
+
+//<0000011d> 【千鶴】「部屋に戻らない日もあるわよね」\e
+<0000011d> 【Chizuru】「Some days he never comes back.」\e
+
+//<0000011e> 【冥夜】「…\p…\p聞き捨てならぬな」\e
+<0000011e> 【Meiya】「...\p...\pI cannot ignore that.」\e
+
+//<0000011f> 【慧】「…\p…\p…\p…\pなんで、\p知ってるの？」\e
+<0000011f> 【Kei】「...\p...\phow do you know that?」\e
+
+//<00000120> 【美琴】「そういえば、\pそうだね…\p…\p…\p…\pよく出かけてるのはボクも知ってたけど」\e
+<00000120> 【Mikoto】「Come to think of it,\p she's right...\p...\p\b...\p...\pI knew he was going out a lot, but...\p...\p」\e
+
+//<00000121> 【千鶴】「…\p…\pべ、\p別にいいじゃない！」\e
+<00000121> 【Chizuru】「...\p...\pwh-\pwhy does that matter!?」\e
+
+//<00000122> 【壬姫】「あれぇ～、\p顔赤いですよ～」\e
+<00000122> 【Miki】「Oooh～?\p Your face is red～」\e
+
+//<00000123> 【千鶴】「な、\pなに言ってるのよ！？　た、\pたまたま兵舎の見回りをしてるときに気がついただけよ！」\e
+<00000123> 【Chizuru】「Wh-\pwhat are you saying!? I-\pI just happened to notice it when I was guarding the barracks the other night!」\e
+
+//<00000124> 【慧】「…\p…\p…\p…\pウソばっか」\e
+<00000124> 【Kei】「...\p...\plies.」\e
+
+//<00000125> 【千鶴】「なんですって！　さっきからいちいち…\p…\p」\e
+<00000125> 【Chizuru】「What did you say!?\bYou just will not...\p...\p」\e
+
+//<00000126> 【武】「おいおい」\e
+<00000126> 【Takeru】「Hey now.」\e
+
+//<00000127> 【慧】「…\p…\p表出る？」\e
+<00000127> 【Kei】「...\p...\pwanna take this outside?」\e
+
+//<00000128> 【千鶴】「…\p…\pいいわ、\p今日という今日は！」\e
+<00000128> 【Chizuru】「...\p...\psure,\p this is a perfect time!」\e
+
+//<00000129> 【慧】「…\p…\p…\p…\pハッキリさせる」\e
+<00000129> 【Kei】「...\p...\plet's settle this.」\e
+
+//<0000012a> 【武】「冥夜、\p止めてくれ」\e
+<0000012a> 【Takeru】「Meiya,\p please stop them.」\e
+
+//<0000012b> 【冥夜】「…\p…\pそなたの役目であろう？」\e
+<0000012b> 【Meiya】「...\p...\pare you not the one to do that?」\e
+
+//<0000012c> 【武】「このままだと連帯責任で走らされる。\n美琴！」\e
+<0000012c> 【Takeru】「At this rate,\p we'll all be doing laps because of them.\p Mikoto!」\e
+
+//<00000e65> 【美琴】「消灯後にあんまり出歩いてると…\p…\pそのうち、\p営倉送りになっちゃうかもよ」\e
+<00000e65> 【Mikoto】「Wandering around after lights out...\p...\pyou might end up in the detention barracks someday.」\e
+
+//<0000012e> 【武】「流れを読め――っていうか、\p状況を見ろ！」\e
+<0000012e> 【Takeru】「Pay attention!\b――Actually,\p at least look in their direction!」\e
+
+//<0000012f> 【美琴】「朝の点呼に間に合ってるから、\pボクは文句言わないけどね」\e
+<0000012f> 【Mikoto】「Though I'm fine with it since you're always on time for morning roll call.」\e
+
+//<00000130> 【武】「だからぁ、\pそうじゃなくて！」\e
+<00000130> 【Takeru】「That's not what we're talking about!」\e
+
+//<00000131> 【千鶴】「…\p…\pで、\pどうするの？」\e
+<00000131> 【Chizuru】「...\p...\pso what are we going to do?」\e//lotta guesses as to the intent/implied subjects/objects of these lines ~IX
+
+//<00000132> 【武】「なんでオレに聞くんだよ！」\e
+<00000132> 【Takeru】「Why're you asking me!?」\e
+
+//<00000133> 【慧】「…\p…\pごめんなさいと言わせる」\e
+<00000133> 【Kei】「...\p...\pmake her say sorry.」\e
+
+//<00000134> 【武】「ごめんなさい！　これで満足か？」\e
+<00000134> 【Takeru】「I'm sorry!\bAre you satisfied now?」\e
+
+//<00000135> 【慧】「…\p…\pはあ？」\e
+<00000135> 【Kei】「...\p...\phuuuh?」\e
+
+//<00000136> 【武】「たま、\p止めろ」\e
+<00000136> 【Takeru】「Tama,\p stop them.」\e
+
+//<00000137> 【壬姫】「はいッ！　だだだだめですよ～！　ケンカはだめです～～～」\e
+<00000137> 【Miki】「Okay! D-d-d-don't do it～!\bYou mustn't fiiight～」\e
+
+//<00000138> 【武】「ほらほら、\pやめないとたまが泣くぞ？」\e
+<00000138> 【Takeru】「See?\p If you don't stop, Tama's gonna cry.」\e
+
+//<00000139> 【壬姫】「う゛～～～～」\e
+<00000139> 【Miki】「UUUUUUUuuuuu...\p...\p」\e
+
+//<0000013a> 【千鶴】「…\p…\p…\p…\p」\e
+<0000013a> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<0000013b> 【慧】「…\p…\p…\p…\p」\e
+<0000013b> 【Kei】「...\p...\p...\p...\p」\e
+
+//<0000013c> 【千鶴】「模擬戦では背中に注意しなさい」\e
+<0000013c> 【Chizuru】「Watch your back during the mock battle.」\e
+
+//<0000013d> 【慧】「…\p…\p…\p…\pやられる前にやるから平気」\e
+<0000013d> 【Kei】「...\p...\pdon't worry, I'll get you before they do.」\e//lit. "it's fine since _ will get them before _ is gotten" yay passive voice
+
+//<0000013e> 【武】「やめろって！　おまえらいい加減にしろよ！」\e
+<0000013e> 【Takeru】「Stop it already!\bBoth of you, cut it out!」\e
+
+//<0000013f> 【千鶴】「！」\e
+<0000013f> 【Chizuru】「!」\e//these lines annoy me ~IX
+
+//<00000140> 【慧】「…\p…\p」\e
+<00000140> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00000141> 【武】「ったく…\p…\pそんなことやってる場合かよッ！」\e
+<00000141> 【Takeru】「Geez...\p...\pdo we really have time for this!?」\e
+
+//<00000142> 【壬姫】「たけるさん…\p…\p」\e
+<00000142> 【Miki】「Takeru-san...\p...\p」\e
+
+//<00000143> 【武】「くっだらねえ…\p…\pいいか、\pおまえらに言っておくぞ？」\e
+<00000143> 【Takeru】「This is so stupid...\p...\pokay,\p listen to me for one second here.」\e
+
+//<00000144> 【武】「委員長と彩峰がお互いソリが合わないのは知ってるがなぁ」\e
+<00000144> 【Takeru】「Class Rep, Ayamine, I know you two don't fit well together, but...\p...\p」\e
+
+//<00000145> 【武】「訓練中に…\p…\pそんな事で揉めやがったら…\p…\p絶対許さねえからな！」\e
+<00000145> 【Takeru】「If you waste our training time...\p...\pbeating each other up...\p...\pI'll never forgive either of you!」\e//added the "waste time" bit ~IX
+
+//<00000146> 【千鶴】「…\p…\p」\e
+<00000146> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00000147> 【慧】「…\p…\p…\p…\p」\e
+<00000147> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00000148> 【武】「オレは…\p…\pそんな事させるためにあのＯＳを用意したんじゃないんだ」\e
+<00000148> 【Takeru】「This isn't...\p...\pwhy I made that OS.」\e
+
+//<00000149> …\p…\pまったく。\e
+<00000149> ...\p...\punbelievable.\e
+
+//<0000014a> いがみ合ってる場合じゃねえだろう…\p…\p。\e
+<0000014a> This is no time to be picking fights...\p...\p\e
+
+//<0000014b> 【武】「…\p…\p悪い、\p冥夜、\p後を頼む」\e
+<0000014b> 【Takeru】「...\p...\psorry Meiya,\p please handle the rest.」\e
+
+//<0000014c> 【冥夜】「あっ…\p…\pタケル？」\e
+<0000014c> 【Meiya】「Ah! ...\p...\pTakeru?」\e
+
+//<0000014d> くだらねえよ…\p…\p。\e
+<0000014d> So stupid...\p...\p\e
+
+//<0000014e> 【冥夜】「タケル、\p待つがよい！」\e
+<0000014e> 【Meiya】「Takeru,\p do not leave!」\e//lit. "you should wait"
+
+//<0000014f> 【武】「…\p…\pなんだ？」\e
+<0000014f> 【Takeru】「...\p...\pwhat?」\e
+
+//<00000150> 【冥夜】「…\p…\pどうした？　そなたらしくない物言いだったな」\e
+<00000150> 【Meiya】「...\p...\pwhat is it?\bThat did not sound like you at all.」\e
+
+//<00000151> 【武】「…\p…\p悪い」\e
+<00000151> 【Takeru】「...\p...\psorry.」\e
+
+//<00000152> 国連だ、\p帝国情報省だ、\p反オルタネイティヴだって…\p…\p人類の敗北が迫っているって言うのに、\pいがみ合って…\p…\p足を引っ張り合って…\p…\p。\e
+<00000152> The UN,\p the Imperial Ministry of Information,\p and the anti-Alternative people...\p...\phumanity's defeat is approaching,\p and yet...\p...\pthey're both just picking fights...\p...\pholding everyone back...\p...\p\e
+
+//<00000153> そんな現実突きつけられて、\pとにかく現場で何とかしようって時に…\p…\pあんなくだらねえ言い争い…\p…\p見たくねえよ。\e
+<00000153> After having that reality thrust in my face,\p and now that I want to do something about it...\p...\pI don't wanna see...\p...\pany stupid infighting.\e
+
+//<00000154> 【冥夜】「謝るでない。\nそなたの言い分は至極尤もだった。\nあの者達にも良い薬だったであろう」\e
+<00000154> 【Meiya】「Do not apologize.\nWhat you said was absolutely correct.\nPerhaps it will put those two in their place.」\e
+
+//<00000155> 【武】「…\p…\pああ、\pそう言ってもらえると助かるよ」\e
+<00000155> 【Takeru】「...\p...\pyeah,\p thanks for saying that.」\e
+
+//<00000156> いったいどうやったら、\p個人感情がどうこう言ってる場合じゃない事をわかってもらえるんだろう…\p…\p。\e
+<00000156> What would it take for them to understand that this is no time to whine about their personal feelings...\p...\p\e
+
+//<00000157> 【冥夜】「あの者達には私からも言っておく…\p…\pだからそなたも機嫌を直すがよい」\e
+<00000157> 【Meiya】「I shall also give them a piece of my mind...\p...\pso you must cheer up.」\e
+
+//<00000158> 【武】「…\p…\p別に、\p機嫌が悪いわけじゃあ…\p…\p」\e
+<00000158> 【Takeru】「...\p...\pI'm not upset or anything...\p...\p」\e
+
+//<00000159> 【冥夜】「ふふふ…\p…\pウソつきめ」\e
+<00000159> 【Meiya】「Huhuhu...\p...\pyou liar.」\e
+
+//<0000015a> 【武】「…\p…\pん、\pなんだよ」\e
+<0000015a> 【Takeru】「...\p...\phm?\p What?」\e
+
+//<0000015b> 【冥夜】「まあいい…\p…\pそなたも訓練中はくれぐれも平静にな？」\e
+<0000015b> 【Meiya】「It matters not...\p...\pmake sure you also remain calm during training.」\e
+
+//<0000015c> 【武】「…\p…\p…\p…\pふっ」\e
+<0000015c> 【Takeru】「...\p...\p...\p...\phu!」\e
+
+//<0000015d> …\p…\pまいったな。\e
+<0000015d> ...\p...\pshe's absolutely right.\e
+
+//<000018c1> 【冥夜】「食器の片付けは貸しにしておくぞ？　ではな…\p…\p」\e
+<000018c1> 【Meiya】「You owe me for returning your dishes.\bSee you...\p...\p」\e
+
+//<0000015f> …\p…\p確かにオレもイラついてる。\e
+<0000015f> ...\p...\pI was getting overly frustrated.\e
+
+//<00000160> 夕呼先生と同じだ…\p…\p。\e
+<00000160> Just like Yuuko-sensei...\p...\p\e
+
+//<00000161> …\p…\p…\p…\p。\e
+<00000161> ...\p...\p...\p...\p\e
+
+//<00000162> …\p…\p…\p…\p…\p…\p。\e
+<00000162> ...\p...\p...\p...\p...\p...\p\e
+
+//<00000e66> 段々とわからないことが増えてきている。\nオレの記憶に無いことが起こり始めている。\e
+<00000e66> There are so many things going on that I don't understand.\nThings I have no memory of are starting to occur.\e
+
+//<00000e67> 新しいＯＳ…\p…\p。\n美琴のオヤジ…\p…\p。\n政治的な陰謀…\p…\p。\e
+<00000e67> The new OS...\p...\p\nMikoto's dad...\p...\p\nThat political conspiracy...\p...\p\e
+
+//<00000e68> オレを引き戻そうとする『元の世界』…\p…\p。\e
+<00000e68> My world trying to pull me back...\p...\p\e
+
+//<00000e69> そして、\p霞の描いたゲームガイの絵…\p…\p。\e
+<00000e69> And Kasumi's picture of my Game Guy...\p...\p\e
+
+//<0000016a> 【武】「…\p…\p…\p…\p」\e
+<0000016a> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000e6a> 今までは、\p答えがわかっていたから上手く立ち回れた。\nでも、\pこれから先は答えなんかない…\p…\pここからが本番だ。\e
+<00000e6a> Up until now, I've done well because I knew all the answers in advance.\p But from now on,\p I know nothing...\p...\pthis is gonna be the hard part.\e
+
+//<00000e6b> いままで変えてきた『未来』、\pこれからの展開…\p…\p。\nそれがオルタネイティヴ４の完成に、\pちゃんと結びつくのか…\p…\p。\e
+<00000e6b> Everything I've changed so far,\p and all the new events they're causing...\p...\p\nI have to make them result in Alternative IV's completion...\p...\p\e
+
+//<0000016f> そしてそれが間に合うか…\p…\p。\e
+<0000016f> But will I pull it off in time...\p...\p?\e
+
+//<00000170> …\p…\p…\p…\p。\e
+<00000170> ...\p...\p...\p...\p\e
+
+//<00000171> …\p…\p。\e
+<00000171> ...\p...\p\e
+
+//<00000172> 【声】「白銀、\pいるなら降りてこい！」\e
+<00000172> 【Voice】「Shirogane,\p if you're in there, get out!」\e
+
+//<00000173> …\p…\pん？\e
+<00000173> ...\p...\phm?\e
+
+//<00000174> 【武】「はーい、\p今行きまーす」\e
+<00000174> 【Takeru】「Okaaay,\p comiiing.」\e
+
+//<00000175> 【武】「はい、\pなんでしょう？」\e
+<00000175> 【Takeru】「Yes,\p what is it?」\e
+
+//<00000176> 【まりも】「捜したぞ…\p…\pお迎えだ」\e
+<00000176> 【Marimo】「I've been looking for you...\p...\pshe came to pick you up.」\e
+
+//<00000177> 【武】「お迎え？」\e
+<00000177> 【Takeru】「Pick me up?」\e
+
+//<00000178> あれ？\e
+<00000178> Huh?\e
+
+//<00000179> 【霞】「…\p…\p…\p…\p」\e
+<00000179> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000017a> 【武】「霞…\p…\pおまえ、\pなんで？」\e
+<0000017a> 【Takeru】「Kasumi...\p...\pwhy are you...\p...\p?」\e
+
+//<0000017b> わざわざここまで出てくるなんて、\p珍しい。\e
+<0000017b> It's rare for you to come all the way out here.\e
+
+//<0000017c> 【まりも】「香月博士から呼び出しが掛かっている」\e
+<0000017c> 【Marimo】「Professor Kouzuki wants to see you.」\e
+
+//<0000017d> 【武】「あ、\pはい」\e
+<0000017d> 【Takeru】「Ah,\p understood.」\e
+
+//<0000017e> それでわざわざ霞を？\e
+<0000017e> So she sent Kasumi?\e
+
+//<0000017f> 【霞】「…\p…\p…\p…\p」\e
+<0000017f> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000180> 【武】「んじゃ、\p行くか」\e
+<00000180> 【Takeru】「Okay,\p let's go.」\e
+
+//<00000181> 【霞】「…\p…\p…\p…\p」\e
+<00000181> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000182> 【まりも】「白銀」\e
+<00000182> 【Marimo】「Shirogane.」\e
+
+//<00000183> 【武】「はい？」\e
+<00000183> 【Takeru】「Yes?」\e
+
+//<00000e6c> 【まりも】「…\p…\p最近、\p消灯時間になっても、\p部屋に戻ってないそうだな？」\e
+<00000e6c> 【Marimo】「...\p...\pI heard you aren't in your room much after lights out recently.」\e
+
+//<00000f4b> 【武】「え…\p…\p誰がそんなことを！？」\e
+<00000f4b> 【Takeru】「Eh...\p...\pwho told you!?」\e
+
+//<00000f4c> 【まりも】「誰でも良い。\n誤解するな、\p責めてるワケじゃない。\n貴様の身を案じているのだ」\e
+<00000f4c> 【Marimo】「It doesn't matter.\nAnd don't misunderstand me,\p I'm not criticizing you.\nI just want to know you're okay.」\e
+
+//<00000e6e> 【武】「…\p…\pはい」\e
+<00000e6e> 【Takeru】「...\p...\pyes.」\e
+
+//<00000188> 【まりも】「香月博士に呼ばれているのか？」\e
+<00000188> 【Marimo】「Is Professor Kouzuki calling you out late at night?」\e
+
+//<00000189> 【武】「そうです」\e
+<00000189> 【Takeru】「That's right.」\e
+
+//<0000018a> 【まりも】「…\p…\p…\p…\pはぁ」\e
+<0000018a> 【Marimo】「...\p...\p...\p...\phaa...\p...\p」\e
+
+//<0000018b> 【武】「…\p…\p何か？」\e
+<0000018b> 【Takeru】「...\p...\pwhat?」\e
+
+//<0000018c> 【まりも】「仕方ないか…\p…\p」\e
+<0000018c> 【Marimo】「Nothing I can do about it...\p...\p」\e
+
+//<0000018d> 【武】「え？」\e
+<0000018d> 【Takeru】「Eh?」\e
+
+//<0000018e> 【まりも】「夕呼が関わったら、\p軍規も何もないから…\p…\p」\e
+<0000018e> 【Marimo】「Once Yuuko's involved, military regulations go out the window...\p...\p」\e
+
+//<0000018f> 【武】「あはは…\p…\pそうですね」\e
+<0000018f> 【Takeru】「Ahaha...\p...\pthat's true.」\e
+
+//<00000190> 優しい時のまりもちゃんだ…\p…\p久しぶりだな、\pこういうの。\e
+<00000190> Marimo-chan's gentle side...\p...\pI haven't seen her like this in ages.\e
+
+//<00000e6f> 【まりも】「白銀が特別な任務に就いている事はわかっている…\p…\p」\e
+<00000e6f> 【Marimo】「I know you have a special mission with her, Shirogane...\p...\p」\e
+
+//<00000192> 【武】「はい」\e
+<00000192> 【Takeru】「Ma'am.」\e
+
+//<00000e70> 【まりも】「ただ、\pみんなも心配してるわ」\e
+<00000e70> 【Marimo】「But you are worrying everyone.」\e
+
+//<00000194> 【武】「…\p…\pはい」\e
+<00000194> 【Takeru】「...\p...\pma'am.」\e
+
+//<00000e71> 【まりも】「体調には充分気をつけて、\p頑張りなさい」\e
+<00000e71> 【Marimo】「Make sure your body doesn't suffer for it.」\e
+
+//<00000196> 【武】「…\p…\pはい。\nありがとうございます」\e
+<00000196> 【Takeru】「...\p...\pyes, ma'am.\nThank you very much.」\e
+
+//<00000197> 【まりも】「以上よ…\p…\p敬礼はいいわ」\e
+<00000197> 【Marimo】「That's all...\p...\pdon't bother saluting.」\e
+
+//<00000198> すみませんまりもちゃん…\p…\p心配かけます。\e
+<00000198> Sorry, Marimo-chan...\p...\pfor worrying you.\e
+
+//<00000199> 【霞】「…\p…\p…\p…\p」\e
+<00000199> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000019a> 【武】「じゃ、\p行こうか…\p…\p」\e
+<0000019a> 【Takeru】「Okay,\p let's go...\p...\p」\e
+
+//<0000019b> 【武】「…\p…\p今日は何するんだろう？　知ってるか？」\e
+<0000019b> 【Takeru】「...\p...\pdo you know what we'll be doing today?」\e
+
+//<0000019c> 【霞】「…\p…\p…\p…\p」\e
+<0000019c> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000019d> 【武】「昨日みたいにまた眠れ、\pとか言われるのかな？」\e
+<0000019d> 【Takeru】「Think she'll want me to sleep on her couch again?」\e
+
+//<0000019e> 【霞】「…\p…\p…\p…\p」\e
+<0000019e> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000019f> 【武】「そういや、\p霞は何を手伝ってたんだ？」\e
+<0000019f> 【Takeru】「Come to think of it,\p what have you been helping her with?」\e
+
+//<000001a0> 【霞】「…\p…\p…\p…\p」\e
+<000001a0> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000001a1> 【武】「昨日の夢の調査の時もそうだったし、\pＯＳの時もいただろ？」\e
+<000001a1> 【Takeru】「Weren't you doing something with the OS,\p and with my dream the other night?」\e
+
+//<000001a2> 【霞】「…\p…\pいけませんか？」\e
+<000001a2> 【Kasumi】「...\p...\pis that bad?」\e
+
+//<000001a3> 【武】「え？　い、\pいや、\pそういうわけじゃないんだけど」\e
+<000001a3> 【Takeru】「Eh? N-\pno,\p that's not what I'm saying at all.」\e
+
+//<000001a4> 【霞】「…\p…\p…\p…\p」\e
+<000001a4> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000001a5> 【武】「い、\pいていいぞ。\nどんどんいてくれ」\e
+<000001a5> 【Takeru】「Y-\pyou can come with me.\nIt's fine, really.」\e
+
+//<000001a6> 【霞】「…\p…\p…\p…\p」\e
+<000001a6> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000001a7> 【武】「…\p…\pどうしたんだ？」\e
+<000001a7> 【Takeru】「...\p...\pwhat's wrong?」\e
+
+//<000001a8> なんか…\p…\p機嫌悪いのか？\e
+<000001a8> She seems...\p...\pupset maybe?\e
+
+//<000001a9> 【霞】「…\p…\p…\p…\p」\e
+<000001a9> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000001aa> 【武】「…\p…\pな、\pなあ…\p…\p」\e
+<000001aa> 【Takeru】「...\p...\ph-\phey...\p...\p」\e
+
+//<000001ab> 【霞】「…\p…\p…\p…\p」\e
+<000001ab> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000001ac> 【武】「…\p…\p…\p…\p」\e
+<000001ac> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000001ad> 【霞】「…\p…\p怒っていません」\e
+<000001ad> 【Kasumi】「...\p...\pI'm not mad.」\e
+
+//<000001ae> 【武】「…\p…\pそうか。\nなら…\p…\pいいや。\nほら、\p行こうか」\e
+<000001ae> 【Takeru】「...\p...\pokay.\p Then...\p...\pnever mind.\nCome on,\p let's go.」\e
+
+//<000001af> 【夕呼】「遅かったわね、\pこっちに来て」\e
+<000001af> 【Yuuko】「You're late.\bCome over here.」\e
+
+//<000001b0> 【武】「え…\p…\pあ…\p…\p」\e
+<000001b0> 【Takeru】「Eh...\p...\pah...\p...\p」\e
+
+//<000001b1> な、\pなんだ、\pここ…\p…\p？\e
+<000001b1> Wh-\pwhere...\p...\pam I...\p...\p?\e
+
+//<000001b2> 【武】「…\p…\p…\p…\p」\e
+<000001b2> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000001b3> 【夕呼】「社、\p用意して」\e
+<000001b3> 【Yuuko】「Yashiro,\p get ready.」\e
+
+//<000001b4> 【霞】「はい」\e
+<000001b4> 【Kasumi】「Okay.」\e
+
+//<000001b5> なにを始めようっていうんだ？\e
+<000001b5> What're they starting up?\e
+
+//<000001b6> 【夕呼】「あんたは、\pいつ自分が白銀武になったか…\p…\p知ってる？」\e
+<000001b6> 【Yuuko】「Do you know...\p...\pwhen you became Shirogane Takeru?」\e
+
+//<000001b7> 【武】「はい？」\e
+<000001b7> 【Takeru】「What?」\e
+
+//<000001b9> 知ってる知らない以前に、\p言ってる意味が全然理解できませんが？\e
+<000001b9> Do I know...\p...\p?\bI don't even know what you're asking.\e
+
+//<00000e72> 【夕呼】「学問は…\p…\p考え抜かれた大胆な仮説を、\p実験によって検証することで進歩していくわ」\e
+<00000e72> 【Yuuko】「Science progresses...\p...\pwhen a bold, never-before-thought-of hypothesis gets proven correct through experimentation.」\e
+
+//<00000e73> 【武】「…\p…\p…\p…\p？」\e
+<00000e73> 【Takeru】「...\p...\p...\p...\p?」\e
+
+//<00000e74> 【夕呼】「確定された存在を、\p『確率の霧』の状態に戻す…\p…\pこの実験が成功すれば、\p世界もあんたも救われるのよ」\e
+<00000e74> 【Yuuko】「Returning a fixed existence to its state within the "mists of probability"...\p...\pif this experiment is successful,\p you and the world will both be saved.」\e
+//returning a fixed existence to a "mist of probability" (he becomes the mist) - Makoto //same thing (being in the mists while not being mist yourself makes no sense to me), and I felt this flowed more naturally since "a mist" and other workarounds doesn't sound good in English ~IX
+
+//<000001c2> 【武】「…\p…\p…\p…\pはああ？」\e
+<000001c2> 【Takeru】「...\p...\p...\p...\phuuuuh?」\e
+
+//<000001c3> 【夕呼】「わからないの？」\e
+<000001c3> 【Yuuko】「You don't understand?」\e
+
+//<000001c4> 【武】「ちっともサッパリ全然」\e
+<000001c4> 【Takeru】「I don't have the slightest fragment of a clue what you just said.」\e
+
+//<000001c5> 【夕呼】「じゃあ今朝の話を簡潔にまとめて説明しなさい」\e
+<000001c5> 【Yuuko】「Then summarize what we talked about this morning.」\e
+
+//<000001c6> 【武】「はあ…\p…\pえっと、\pオレは意思の力で世界を移動してしまうかもしれない人間です」\e
+<000001c6> 【Takeru】「Haa...\p...\pummm...\p...\pI'm someone who might change worlds based on my willpower.」\e
+
+//<00001817> 【武】「で、\pそれが移動しないで済んでいるのは、\pオレが『この世界』にいたいと思うからです」\e
+<00001817> 【Takeru】「And the reason I'm not moving right now is because I want to stay in this world.」\e
+
+//<000001c8> 【武】「また、\p周囲の人たちがオレと関わることでオレの存在を強く認識してくれるからでもあります」\e
+<000001c8> 【Takeru】「And because everyone I interact with acknowledges and is conscious of my existence.」\e
+
+//<000001c9> 【武】「でも、\p眠っている時だけはどうにもなりません。\n認識が曖昧になります」\e
+<000001c9> 【Takeru】「But none of that is as strong when I'm asleep.」\e
+
+//<000001ca> えっとそれから…\p…\p\e
+<000001ca> Ummm, what was the rest of it...\p...\p\e
+
+//<000001cb> 【夕呼】「ようやく半分ね。\n残りは？」\e
+<000001cb> 【Yuuko】「You've made it halfway.\nKeep going.」\e
+
+//<00000e76> 【武】「世界は安定した状態を好みます。\nオレが元いた世界は、\pオレがいなくなったせいで不安定になってしまい…\p…\p安定を取り戻すためにオレを引き戻そうとしています」\e
+<00000e76> 【Takeru】「Worlds like to be stable.\nThe world I used to be in became unstable when I left...\p...\pand is trying to pull me back to regain stability.」\e
+
+//<00000f3e> 【武】「その引き戻そうとする力は、\p他のみんなやオレが眠って、\p意思や認識が希薄になった時に相対的に強くなって…\p…\p意識だけ『元の世界』にシフトしてしまう…\p…\p」\e
+<00000f3e> 【Takeru】「When we're all asleep,\p and our wills and consciousness are weaker,\p that's when it actually can pull me back...\p...\pand my mind shifts over to my world...\p...\p」\e
+
+//<00000e78> 【夕呼】「じゃあ、\pあんたが『元の世界』に帰るために必要なことは何？」\e
+<00000e78> 【Yuuko】「So what needs to be done to return you to your world?」\e
+
+//<00000e79> 【武】「自分が帰りたいと強く願うこと、\p周囲の認識がゼロになること…\p…\pあとは『元の世界』がオレを引き戻そうとする力を大きくすることですか？」\e
+<00000e79> 【Takeru】「I have to want to go back,\p and everyone needs to stop being conscious of me...\p...\pand maybe we need to strengthen whatever my world is using to pull me back?」\e
+
+//<00000f45> 【夕呼】「上出来上出来。\nその３つの中で、\p自分の意思はある程度コントロールできるでしょ？　逆に世界が引き戻そうとする力はどうにもできない…\p…\p」\e
+<00000f45> 【Yuuko】「Well done, well done.\nOut of those three,\p you can control your own will to a certain extent, right? However, we can't do anything about the other world's power...\p...\p」\e
+
+//<00000e7b> 【武】「そうですね…\p…\pじゃあ、\p残った『周囲の認識』をどうにかしようっていうんですか？」\e
+<00000e7b> 【Takeru】「Yeah...\p...\pso are we gonna try messing with everyone's awareness too?」\e
+
+//<000001d5> 【夕呼】「さっきからその話をしていたのよ？」\e
+<000001d5> 【Yuuko】「That's what I've been trying to tell you.」\e
+
+//<000001d6> 【武】「わかりませんよそんなこと…\p…\p確定がどうしたとかって話でしたっけ？」\e
+<000001d6> 【Takeru】「How was I supposed to know...\p...\pyou just said something about a fixed existence.」\e
+
+//<000001d7> 【夕呼】「そう…\p…\p仕方ないからもう１度言い直してあげる」\e
+<000001d7> 【Yuuko】「Yes...\p...\pand apparently I need to say it again.」\e
+
+//<000001d8> 【武】「ぜひお願いします」\e
+<000001d8> 【Takeru】「Please do.」\e
+
+//<00000e7c> 【夕呼】「あんたに対する周囲の認識をゼロにするには…\p…\pどうすればいいか？」\e
+<00000e7c> 【Yuuko】「In order to reduce everyone's awareness of you to zero...\p...\pwhat should we do?」\e
+
+//<000001da> 【武】「オレがいなくなる…\p…\pじゃ、\pダメですよね？」\e
+<000001da> 【Takeru】「Making me disappear...\p...\pwouldn't work, would it?」\e
+
+//<00000e7d> 【夕呼】「ダメね。たとえ死んだって、\p誰かの記憶の中には、\pあんたの存在の痕跡が残るでしょ？」\e
+<00000e7d> 【Yuuko】「Nope. Even if you died,\p you'd still leave traces in someone's memories.」\e
+
+//<00000e7e> 【武】「そうか…\p…\pだったら、\pどうすればいいんですか？」\e
+<00000e7e> 【Takeru】「I see...\p...\pso what can we do about it?」\e
+
+//<00001819> 【夕呼】「『この世界』を…\p…\pあんたの存在が認識される前の状態に戻せばいいのよ」\e
+<00001819> 【Yuuko】「We simply need to return your existence...\p...\pback to what it was before this world acknowledged it.」\e
+
+//<000001de> 【武】「つまり、\p全員の記憶を消すってことですか？」\e
+<000001de> 【Takeru】「You mean wiping everyone's memories?」\e
+
+//<00000e80> 【夕呼】「結果的にはそうなるけど…\p…\pもっと根本的な話をしてるのよ」\e
+<00000e80> 【Yuuko】「That'll be one of the side effects...\p...\pbut I'm talking about something more fundamental.」\e
+
+//<000001e0> 【武】「あ…\p…\pわかった！　リセット！？」\e
+<000001e0> 【Takeru】「Ah...\p...\pI know!\bResetting the world!?」\e
+
+//<000001e1> 【夕呼】「おしい。コンピューターはリセットしてもデータを保存しているわね？」\e
+<000001e1> 【Yuuko】「Close. Computers still retain all their data after being reset, right?」\e
+
+//<000001e2> 【武】「そうじゃなくて…\p…\pえっと…\p…\pなんつったらいいのかな…\p…\p」\e
+<000001e2> 【Takeru】「That's not what I meant...\p...\pummm...\p...\phow should I put this...\p...\p」\e
+
+//<00001227> 例えば家庭用ゲーム機のドリコス。\e
+<00001227> Like that family game console, the Dreamcast.\e
+
+//<000001e3> バルジャーノンをやってて、\p結果が気に入らなければリセット。\nこれ１発ではじめの状態に戻る。\e
+<000001e3> When I play Valgernon, and I don't like what happens,\p I just hit Reset.\nThat takes me all the way back to where I started.\e
+
+//<000001e4> オレが頑張った結果は、\pバルジャーノンというＲＯＭのどこにも保存されてない。\nきれいさっぱり出荷時のままだ。\e
+<000001e4> The fruits of my labors aren't saved anywhere in Valgernon's ROM.\nThey end up completely and utterly erased.\e
+
+//<000001e5> バルジャーノンはデータをロードすればいいけど、\p現実のオレ達にはそもそも、\p今この場のこの行為をセーブしておくことができない。\e
+<000001e5> I can load data into Valgernon, of course,\p but in reality,\p we won't be able to save what we're doing right now.\e
+
+//<000001e6> だからデータロード機能はないって寸法だろ？　消したらそれで終わりなんだ。\e
+<000001e6> So there won't be any option to load our data back in afterward.\bIf I disappear, it's all over.\e
+
+//<000001e7> 【武】「…\p…\p大丈夫です！　自分なりにちゃんと理解しました」\e
+<000001e7> 【Takeru】「...\p...\pit's okay!\bI made some sense out of it.」\e
+
+//<000001e8> 【夕呼】「そう？　なら手間が省けて助かるわ」\e
+<000001e8> 【Yuuko】「You did?\bThen that'll save me some time.」\e
+
+//<000001e9> 【武】「…\p…\pでも…\p…\p認識される前に戻すって言いますけど、\pそれってどういう状態なんですか？」\e
+<000001e9> 【Takeru】「...\p...\pbut...\p...\pwhat does it mean to return me to before I was acknowledged?」\e
+
+//<000001ea> 【夕呼】「あんたの頭のレベルに合わせて言うなら、\p霧の状態になっていると言ったところかしら。\n目に見えない霧」\e
+<000001ea> 【Yuuko】「To reduce it to your level,\p it'd be something like mist.\p Invisible mist of course.」\e
+
+//<000001eb> 【武】「…\p…\pはあ」\e
+<000001eb> 【Takeru】「...\p...\phaa...\p...\p」\e
+
+//<000001ec> 【夕呼】「箱の中に、\pリンゴが入っているとするわよ」\e
+<000001ec> 【Yuuko】「Let's say there's an apple in a box.」\e
+
+//<000001ed> 【武】「はい」\e
+<000001ed> 【Takeru】「Okay.」\e
+
+//<000001ee> 【夕呼】「けど、\pあんたは箱の中にリンゴが入っているのを知らないとする。\n外から見て、\p中身がリンゴだってわかる？」\e
+<000001ee> 【Yuuko】「But you don't know there's an apple in the box.\nCan you tell it's in there just by looking at it?」\e
+
+//<000001ef> 【武】「知らなければ、\pわかりません」\e
+<000001ef> 【Takeru】「Not without knowing in advance.」\e
+
+//<00000e81> 【夕呼】「なら、\pそれがリンゴだとわかるのはいつ？」\e
+<00000e81> 【Yuuko】「Then when do you know it's an apple?」\e
+
+//<000001f1> 【武】「蓋を開けて中を見た時じゃないですか？」\e
+<000001f1> 【Takeru】「Wouldn't that be when I take the lid off?」\e
+
+//<00000e82> 【夕呼】「それこそがまさに観測するという行為なわけ。\n箱を開けて見てみるまでは、\p何が入っているのかを決定することが出来ない」\e
+<00000e82> 【Yuuko】「And that's what we'd call 'observation.'\nUntil you open the lid and look inside,\p there's no way to be sure what's in there.」\e
+
+//<00000e83> 【武】「？　…\p…\pそんなことって！？」\e
+<00000e83> 【Takeru】「Wait...\p...\pdoes that mean――!?」\e
+
+//<00000e84> 【夕呼】「あくまで確率の話よ。\nけど、\p蓋を開けて観測するまでは、\p全ての確率が存在しうるの。\n箱の中身が何なのか決められない」\e
+<00000e84> 【Yuuko】「I'm only talking about probability.\nBut until you open the lid and observe it,\p all sorts of possibilities exist.\nYou can't be sure what exists inside the box.」\e//I'm sorry, but Quantum Suicide says the opposite.-Spin
+
+//<00000e85> 【武】「…\p…\pそうか。\nプレゼントもらって何が入ってるかドキドキしてるときってのは、\pそういうもんですよね？」\e
+<00000e85> 【Takeru】「...\p...\pI see.\nIs it like when you get a present and get all excited because you don't know what's inside?」\e
+
+//<00000e86> 【夕呼】「…\p…\p…\p…\pまあ、\pいいわ。\nつまり、\p観測されることで事象の状態は、\pひとつの確率に収斂し確定される。\nそれ以前は『確率』上の存在でしかない」\e
+<00000e86> 【Yuuko】「...\p...\p...\p...\pgood enough.\nThe point is,\p the state of any particular phenomenon converges to and becomes fixed on a single possibility only after it's observed.\p Until then, it's nothing but a potential existence.」\e//I wanna use "existence in potentia" for some reason ~IX
+
+//<000001f7> 【武】「そうですね」\e
+<000001f7> 【Takeru】「That makes sense.」\e
+
+//<00000e87> 【夕呼】「だから、\p見えない箱の中身は、\p様々な存在確率が平等に存在する霧みたいなモノって見なせるわけ」\e
+<00000e87> 【Yuuko】「So we can treat the various possible existences within the box as a sort of mist where all possibilities are equal.」\e
+
+//<00001865> 【武】「…\p…\pなるほど。\nとにかく実体のない『何か』だってわけですよね？」\e
+<00001865> 【Takeru】「...\p...\pI get it.\nWhatever it is, it doesn't have a concrete form, right?」\e
+
+//<00000e89> 【夕呼】「ええ。今あたしがやろうとしてるのは、\p観測され、\p確定された箱の中身を、\p蓋を開ける前の状態に戻すってこと」\e
+<00000e89> 【Yuuko】「Right. What I'm trying to do right now is return the observed interior of the box to what it was before anyone observed it.」\e
+
+//<00000e8a> 【武】「…\p…\pそれって…\p…\pオレという確定した存在を、\pまた確率の状態に戻すってことですか？」\e
+<00000e8a> 【Takeru】「...\p...\pwhich means...\p...\pI, this fixed existence,\p will go back to being a possibility?」\e
+
+//<00000e8b> 【夕呼】「正解。じゃあ始めるわよ」\e
+<00000e8b> 【Yuuko】「That's right.\bNow let's get started.」\e
+
+//<000001fd> 【武】「始めるって？」\e
+<000001fd> 【Takeru】「Started on what?」\e
+
+//<0000181b> 【夕呼】「『この世界』と、\pあんたが元いた世界…\p…\p２つの世界の間を移動するために、\pあんたを確率の状態に戻す実験よ。\n何のために長々説明してあげたと思ってるの？」\e
+<0000181b> 【Yuuko】「The purpose of this experiment is to make you move between two worlds...\p...\pthis world and your old world,\p by returning you to a mere possibility.\p Why do you think I've spent this much time explaining it to you?」\e
+
+//<00000203> 【武】「ち、\pちょっと！！　そんなコトしたら、\pオレどうなるんですか！！」\e
+<00000203> 【Takeru】「W-\pwait a minute!!\bWhat'll happen to me when you do that!?」\e
+
+//<00000204> 【夕呼】「おかしな事言うのね？　それは今話した通りでしょ？」\e
+<00000204> 【Yuuko】「What a weird question.\bDidn't we just go over that?」\e
+
+//<00000205> 【武】「オレ、\pみんなに忘れられちゃうじゃないですかっっ！！」\e
+<00000205> 【Takeru】「Doesn't that mean everyone will forget about me!!?」\e
+
+//<00000206> 【夕呼】「そうね」\e
+<00000206> 【Yuuko】「Yep.」\e
+
+//<00000207> 【武】「簡単に言わないで下さいっ！　大体、\pそんな実験してどうするんですか！」\e
+<00000207> 【Takeru】「Don't shrug that off so easily!\bWhy're we doing this experiment anyway!?」\e
+
+//<00001c80> 【夕呼】「だからぁ、\p『元の世界』に帰るためよ」\e
+<00001c80> 【Yuuko】「Like I saaaid,\p to get you back to your world.」\e
+
+//<00000209> 【武】「…\p…\p…\p…\pえ？」\e
+<00000209> 【Takeru】「...\p...\p...\p...\peh?」\e
+
+//<00000e8e> 【夕呼】「今頃驚かないでよ…\p…\pあたしが、\p何のために苦労してたと思ってるの？」\e
+<00000e8e> 【Yuuko】「Don't be surprised now...\p...\pwhat do you think I've been working on all this time?」\e
+
+//<0000020b> 【武】「オレがあちこちに行ってしまわない方法を考えてるんだと思ってましたよ」\e
+<0000020b> 【Takeru】「I thought you were working on a way to keep me from slipping into some other world.」\e
+
+//<0000020c> 【夕呼】「ああ…\p…\p結果的にはそこに繋がるんだってば」\e
+<0000020c> 【Yuuko】「Aaah...\p...\pwell, that'll be one of the perks.」\e
+
+//<0000020d> 【武】「どうしてですか？」\e
+<0000020d> 【Takeru】「What do you mean?」\e
+
+//<00000e8f> 【夕呼】「…\p…\pまだ説明が足りない？」\e
+<00000e8f> 【Yuuko】「...\p...\pI haven't explained enough?」\e
+
+//<00000e90> 【武】「あたりまえです！」\e
+<00000e90> 【Takeru】「Of course not!」\e
+
+//<00000210> 【夕呼】「００ユニットの話はしたっけ？」\e
+<00000210> 【Yuuko】「Did I tell you about the 00 Unit?」\e
+
+//<00000211> 【武】「…\p…\pゼロゼロユニット？　いえ？」\e
+<00000211> 【Takeru】「...\p...\pthe zero zero unit?\bI don't think so.」\e
+
+//<00000212> なんだそりゃ？\e
+<00000212> What the hell is that?\e
+
+//<00000e91> 【夕呼】「あんたには、\p『元の世界』に戻って、\p向こうのあたしが発見した理論を回収してきて欲しいの」\e
+<00000e91> 【Yuuko】「I want you to go back to your world and retrieve the theory my other self discovered.」\e
+
+//<00000214> 【武】「…\p…\pはあッ！？」\e
+<00000214> 【Takeru】「...\p...\phuuuh!!?」\e
+
+//<00000215> …\p…\pやっぱり裏があったのか。\e
+<00000215> ...\p...\pso you did have a reason for doing this!\e
+
+//<00000216> 【夕呼】「その結果完成するものが、\p００ユニット」\e
+<00000216> 【Yuuko】「And with it, I'll complete the 00 Unit.」\e
+
+//<00000217> 【武】「何ですか、\pそれ？」\e
+<00000217> 【Takeru】「Which is...\p...\p?」\e
+
+//<00000e92> 【夕呼】「今はまだ知る必要はないわ。\nひとつだけ言えるのは…\p…\pそれが完成すれば、\pあんたは、\pその不安定な状態から解放される可能性が極めて高いって事」\e
+<00000e92> 【Yuuko】「You don't need to know that yet.\nThe one thing I can say is...\p...\ponce it's complete,\p it's very likely we can make you a more stable existence.」\e
+
+//<00000219> 【武】「――ええッ？！　本当ですかッ！？」\e
+<00000219> 【Takeru】「――Eeeh!? You mean it!?」\e
+
+//<00000e93> 【夕呼】「ええ。それが主な目的ではないけど…\p…\p結果的にそうなる事は、\pほぼ間違いないわ」\e
+<00000e93> 【Yuuko】「Yes. That's not the main objective of it...\p...\pbut it's almost a certainty that'll be one of the results.」\e
+
+//<0000021b> …\p…\pそういうことか。\e
+<0000021b> ...\p...\pso that's why.\e
+
+//<0000181d> 『この世界』を救う役に立って、\pオレが『元の世界』に帰るためにもなる…\p…\pまさに一石二鳥の実験だ。\e
+<0000181d> In order to save this world,\p I'll have to go back to my world...\p...\ptalk about killing two birds with one stone.\e
+
+//<00000e95> そんな実験であれば、\p協力するに決まっている。\e
+<00000e95> If that's what this experiment is for,\p then you bet I'll cooperate.\e
+
+//<0000021e> 元々オレにしかできない事なんだ。\e
+<0000021e> This is something only I can do.\e
+
+//<0000181f> 『この世界』を救うのは…\p…\pくだらない争いを続けて、\p権力をオモチャにしている連中じゃない。\e
+<0000181f> The people who continue their pointless squabbles, or wield power for personal gain...\p...\pthey're not gonna save this world.\e
+
+//<00000220> オレの使命なんだ。\e
+<00000220> But I will.\e
+
+//<00000221> 【武】「…\p…\p理解しました」\e
+<00000221> 【Takeru】「...\p...\pI understand.」\e
+
+//<00000eb1> 【夕呼】「あんたには何としても１度、\p『元の世界』に戻ってもらわなきゃいけない。\nそのためにはこの実験が不可欠…\p…\pいいわね？」\e
+<00000eb1> 【Yuuko】「We need you to visit your world no matter what.\bAnd we need to experiment to make it happen...\p...\pokay?」\e
+
+//<00000223> 【武】「はい」\e
+<00000223> 【Takeru】「Okay.」\e
+
+//<00000224> 【夕呼】「じゃあ、\pさっそくとりかかりましょう」\e
+<00000224> 【Yuuko】「Then let's get started.」\e
+
+//<00000225> 【武】「…\p…\pその装置大丈夫なんですか？」\e
+<00000225> 【Takeru】「...\p...\pis that thing safe?」\e
+
+//<00000226> 【夕呼】「理論は完璧よ」\e
+<00000226> 【Yuuko】「The theory's perfect.」\e
+
+//<00000227> 【武】「実績のほどは？」\e
+<00000227> 【Takeru】「Have you used it before?」\e
+
+//<00000eb2> 【夕呼】「まあ、\p成功率は４割を見込んでるけど？」\e
+<00000eb2> 【Yuuko】「Well,\p I'd say it has a 40% chance of success.」\e
+
+//<00000229> 【武】「気休めでもいいです。\n装置の説明を切に希望します」\e
+<00000229> 【Takeru】「I'd like you to explain how it works,\nwhether I understand it or not.」\e
+
+//<0000022a> 【夕呼】「…\p…\p本当に聞く？」\e
+<0000022a> 【Yuuko】「...\p...\pyou sure you want to hear it?」\e
+
+//<0000022b> 【武】「ぜひ」\e
+<0000022b> 【Takeru】「Yes.」\e
+
+//<00000eb3> 【夕呼】「超伝導物質で作ったコイルに莫大な電流を流した時、\p未来から過去へ流れるという特異な性質を持つ特殊な電波が発生するんだけれど、\pその電波は微弱なためにすぐに消滅してしまうのよ。\nけれど、\p複数の電波を同時発生させて共鳴現象を起こせば、\pそれを増幅させることも可能で、\pこれに触れた物質は波動関…\p…\p…\p…\p」\e
+<00000eb3> 【Yuuko】「When current flows through these enormous\bsuperconductive coils,\p it'll produce a special kind of electromagnetic wave with the property of moving from the future to the past,\p but because those waves are so faint, they disappear right away.\nHowever,\p producing enough of them at once allows for a resonance phenomenon which can be amplified to the point where any material in contact with it will experience a surge of...\p...\p...\p...\p」\e
+//from the future to the past - Makoto //I just had to get two simple words backwards between all the genuinely challenging constructs ~IX
+
+//<0000022d> 【武】「もういいです！」\e
+<0000022d> 【Takeru】「That's enough!」\e
+
+//<00000eb4> 【夕呼】「なによ、\pまだまだこれからなのに…\p…\p」\e
+<00000eb4> 【Yuuko】「Really?\p I haven't even gotten started yet...\p...\p」\e
+
+//<00000eb5> 【武】「十分気は、\p休まりましたから」\e
+<00000eb5> 【Takeru】「That was still enough to make me feel better about it.」\e
+
+//<00000eb6> 【夕呼】「そう？　ま、\p好都合ね。\nあたしも説明するのは、\pちょっとイヤだったのよ。\n朝までかかるからね」\e
+<00000eb6> 【Yuuko】「It was? Well,\p if you say so.\nI didn't really want to explain it all anyway.\nWe'd be here until morning.」\e
+
+//<00000231> そんなに長いのか…\p…\p。\e
+<00000231> It'd take that long...\p...\p?\e
+
+//<00000eb7> 【夕呼】「とにかく、\p学問は、\p考え抜かれた大胆な仮説を、\p実験によって検証することで進歩していくのよ」\e
+<00000eb7> 【Yuuko】「Anyway,\p science progresses when a bold,\bnever-before-thought-of hypothesis gets proven correct through experimentation.」\e
+
+//<00000233> 【武】「さっき聞きました…\p…\pそれ」\e
+<00000233> 【Takeru】「You said that already...\p...\p」\e
+
+//<00000234> …\p…\pオレとしては、\p大胆な仮説より、\p堅実な仮説の方が嬉しいなあ…\p…\p。\e
+<00000234> ...\p...\pI'd prefer a correct hypothesis to a bold one anyway...\p...\p\e
+
+//<00000235> 【武】「あとひとつ、\pこれは素朴な疑問なんですが…\p…\p」\e
+<00000235> 【Takeru】「Also,\p this might be a dumb question, but...\p...\p」\e
+
+//<00000236> 【夕呼】「なによ」\e
+<00000236> 【Yuuko】「What now?」\e
+//To make her sound more annoyed.-Spin
+
+//<00001821> 【武】「別の世界の任意の時間に認識力でシフトできるなら、\p『この世界』の過去に戻ることもできるワケですよね？」\e
+<00001821> 【Takeru】「If I can shift to any point in time within another world simply by being conscious of it,\p could I go back to the past of this world too?」\e
+
+//<00000eb9> 【夕呼】「理論上は可能よ。\nただ、\pこの装置では不可能なの」\e
+<00000eb9> 【Yuuko】「Theoretically, yes.\nBut we can't do that with this device.」\e
+
+//<00000239> 【武】「え？」\e
+<00000239> 【Takeru】「Eh?」\e
+
+//<00000eba> 【夕呼】「現在いる世界の時間軸を遡ることと、\p別の世界の任意の点に行くことは全く別の事なの」\e
+<00000eba> 【Yuuko】「Traveling along the spacetime of one world and going to a desired point in another world are completely different things.」\e
+
+//<0000023b> 【武】「…\p…\pそうなんですか」\e
+<0000023b> 【Takeru】「...\p...\pthey are?」\e
+
+//<00000ebb> 【夕呼】「同じ電車の別の車両に移動するのと、\p併走している隣の電車に飛び移るのは、\p全く違う事でしょ？」\e
+<00000ebb> 【Yuuko】「Isn't moving to a different passenger car on a train completely different from leaping into an adjacent train?」\e
+
+//<0000023d> 【武】「なるほど」\e
+<0000023d> 【Takeru】「I see.」\e
+
+//<00000ebc> 【夕呼】「この装置は、\pあんたを確定されていない『確率の存在』にすることで、\p『世界』の間を移動出来るようにする為のモノなの」\e
+<00000ebc> 【Yuuko】「This device was made for the purpose of moving you between worlds by turning you into an unfixed potential existence.」\e
+
+//<0000023f> 【武】「はあ」\e
+<0000023f> 【Takeru】「Haa...\p...\p」\e
+
+//<00001823> 【夕呼】「大雑把に言うと…\p…\p『この世界』から時空間を引き延ばして向こうの世界に差し込む、\pって言ったらいいのかしら。\n分かる？」\e
+<00001823> 【Yuuko】「In layman's terms...\p...\pit plucks out some of this world's spacetime and jams it into the other world.\p\bThat sounds about right.\p Does it make sense now?」\e
+//it's like taking part of this world's spacetime (making a spear/straw/tunnel/corridor/whatever out of it) and sticking it into the other world (see later explanation of Sumika and G-bomb) - Makoto //for some reason I felt this was equivalent the first time, not sure why I did that ~IX
+
+//<00000241> 【武】「ああ、\pはい。\n何となく」\e
+<00000241> 【Takeru】「Aaah,\p yes.\nI think so.」\e
+
+//<0000132c> 【夕呼】「ちなみに…\p…\p最初は、\p短い時間しか繋げないから、\pある程度の修正は効くけど…\p…\p」\e
+<0000132c> 【Yuuko】「By the way...\p...\pit'll only connect for a short time at first,\p so we'll be able to change our minds a little...\p...\p」\e
+
+//<00000ebf> 【夕呼】「実験を続ける過程で、\p別の世界の１点と強固な繋がりが出来てしまったら、\pその時間軸の過去には移動出来なくなるから」\e
+<00000ebf> 【Yuuko】「But if we keep this up,\p and we manage to get a firm connection to a certain point in the other world,\p we won't be able to move back in that world's time.」\e
+
+//<00000244> 【武】「はい」\e
+<00000244> 【Takeru】「Okay.」\e
+
+//<00000d62> それってつまり、\pあの日がいつだったかをちゃんと思い出せってことだよな？\e
+<00000d62> In other words,\p I have to remember which day that happened.\e
+
+//<00000d63> あの、\p夕呼先生のワケわからん理論が飛び出したあの日…\p…\p\e
+<00000d63> The day that Yuuko-sensei rambled about some new theory and ran off...\p...\p\e
+
+//<00000d64> 間違ってそれより未来に戻っちまったらアウト。\n理論の回収は不可能。\e
+<00000d64> If I mess up and get there after it happened, we're screwed.\nIt won't be possible to retrieve the theory anymore.\e
+//Uhm, yes you can? I can't imagine that world's Yuuko would finish the theory, then throw it away, so that no one else could ever see it ever.-Spin
+
+//<00000d65> けどなあ、\pそんなこと言われても...\p...\e
+<00000d65> But still,\p even if I know that...\p...\e
+
+//<00000246> わかっちゃいるけど、\pいきなり責任重大だよ…\p…\pくそっ！\e
+<00000246> I do know all that,\p but that's such a huge responsibility...\p...\pdamn it!\e
+
+//<00000247> とりあえずアレは…\p…\p…\p…\p試験前だったはずだから…\p…\p。\e
+<00000247> Still, I'm sure...\p...\pit was before the exams...\p...\p\e
+
+//<00000248> 【夕呼】「とにかく始めるわ。\n社、\p例の物を用意して」\e
+<00000248> 【Yuuko】「Anyway, let's get started.\nYashiro,\p make sure it's ready.」\e
+
+//<00000249> 【霞】「はい」\e
+<00000249> 【Kasumi】「Okay.」\e
+
+//<000011d8> 【霞】――ごそごそ\e
+<000011d8> 【Kasumi】――*rustle* *rustle*\e
+
+//<0000024b> 何やら取り出してるけど…\p…\p…\p…\pおっ。\e
+<0000024b> She's taking something out...\p...\p...\p...\poh?\e
+
+//<0000024c> スケッチブックと色鉛筆か。\e
+<0000024c> A sketchbook and colored pencils?\e//staff theories go right here please ~IX
+
+//<0000024d> 【霞】「…\p…\p…\p…\p」\e
+<0000024d> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000024e> 【武】「…\p…\p…\p…\p」\e
+<0000024e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000024f> 【霞】「…\p…\p…\p…\p…\p…\p」\e
+<0000024f> 【Kasumi】「...\p...\p...\p...\p...\p...\p」\e
+
+//<00000250> 【武】「…\p…\p…\p…\p…\p…\p…\p…\p」\e
+<00000250> 【Takeru】「...\p...\p...\p...\p...\p...\p...\p...\p」\e
+
+//<00000251> なんか、\pすごい見られてるぞ。\e
+<00000251> She's staring at me really hard...\p...\p\e
+
+//<000011da> 【霞】――かきかき\e
+<000011da> 【Kasumi】――*scritch* *scratch*\e
+
+//<00000253> うお、\p霞が動き出した。\e
+<00000253> Oh,\p off she goes.\e
+
+//<000011dd> 【霞】――じぃ～～\e
+<000011dd> 【Kasumi】――*staaaaare*\e
+
+//<00000255> やっぱりすごく見られてるけど、\p何？\e
+<00000255> She really is staring at me,\p but why?\e
+
+//<0000122e> 【霞】――かきかき\e
+<0000122e> 【Kasumi】――*scratch* *scritch*\e
+
+//<00000257> 【武】「…\p…\p先生、\pこれは？」\e
+<00000257> 【Takeru】「...\p...\pSensei,\p why is she...\p...\p?」\e
+
+//<00000258> 【霞】「…\p…\p動かないでください」\e
+<00000258> 【Kasumi】「...\p...\pplease don't move.」\e
+
+//<00000259> 【武】「は、\pはい」\e
+<00000259> 【Takeru】「O-\pokay.」\e
+
+//<0000025a> 【霞】「…\p…\p…\p…\p」\e
+<0000025a> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000025b> 【武】「…\p…\p…\p…\p…\p…\p」\e
+<0000025b> 【Takeru】「...\p...\p...\p...\p...\p...\p」\e
+
+//<0000025c> 【霞】「…\p…\pできました」\e
+<0000025c> 【Kasumi】「...\p...\pfinished.」\e
+
+//<0000025d> あれ？　先生もなんか持ってるな。\e
+<0000025d> Huh?\bSensei has something too...\p...\p\e
+
+//<0000025e> 【武】「それ、\pなんですか？」\e
+<0000025e> 【Takeru】「What was that about?」\e
+
+//<0000025f> 【夕呼】「ん？　あたしの趣味よ」\e
+<0000025f> 【Yuuko】「Hm? Just something I wanted.」\e
+
+//<00000260> 【武】「趣味？」\e
+<00000260> 【Takeru】「It had nothing to do with the experiment?」\e//shumi is such an awesome word but such a pain in the ass to adapt ~IX
+
+//<00000261> 【夕呼】「…\p…\p見たい？」\e
+<00000261> 【Yuuko】「...\p...\pwanna see it?」\e
+
+//<00000262> 【武】「…\p…\pはあ」\e
+<00000262> 【Takeru】「...\p...\phaa...\p...\p」\e
+
+//<00000263> …\p…\pって、\pこれ、\pオレの写真じゃねぇか！！　しかも隠し撮りっぽい！！\e
+<00000263> ...\p...\pwait,\p isn't this a picture of me!?\bWhen did she take that!?\e
+
+//<00000264> 書き殴られたメモもいっぱい。\e
+<00000264> There's also a bunch of hastily scrawled notes...\p...\p\e
+
+//<00000265> 何々…\p…\p『モルモット実験中なのを、\p忘れたらだめ』\e
+<00000265> Hmm?\b...\p...\p"We must not forget that we are experimenting on guinea pigs."\e
+
+//<00000266> んが！　なんかすげぇ適当だ！\e
+<00000266> Ngah!\bWhat's that got to do with anything!?\e
+
+//<00000267> 【武】「何スか、\pこりゃあ！？」\e
+<00000267> 【Takeru】「What the hell are these!?」\e
+
+//<00000268> 【夕呼】「それじゃ、\p始めましょうか？」\e
+<00000268> 【Yuuko】「Anyway,\p shall we start?」\e//have we said this enough times yet? ~IX
+
+//<00000269> 【武】「ちょっとちょっと、\p２人して！！」\e
+<00000269> 【Takeru】「Wait, wait,\p both of you!!」\e
+
+//<0000026a> 【夕呼】「社、\p準備はいい？」\e
+<0000026a> 【Yuuko】「Yashiro,\p you ready?」\e
+
+//<0000026b> 【霞】「はい」\e
+<0000026b> 【Kasumi】「Yes.」\e
+
+//<0000026c> 【夕呼】「はい、\pそこに立って」\e
+<0000026c> 【Yuuko】「Okay,\p stand there.」\e
+
+//<0000026d> 勝手に話が進んでいく。\n置き去りだな、\pオレ。\e
+<0000026d> They're ignoring me...\p...\p\nI'm being left out...\p...\p\e
+
+//<0000026e> 【武】「…\p…\pここで、\pいいんですね」\e
+<0000026e> 【Takeru】「...\p...\pso I should stand here?」\e
+
+//<0000026f> 【夕呼】「目、\p瞑ったほうがいいと思うわよ」\e
+<0000026f> 【Yuuko】「I think it'd be better if you close your eyes.」\e
+
+//<00000ec0> 【夕呼】「『元の世界』のことを強くイメージしなさい」\e
+<00000ec0> 【Yuuko】「Imagine your world as hard as you can.」\e
+
+//<00000271> 【武】「が、\p頑張ります！」\e
+<00000271> 【Takeru】「I-\pI'll do my best!」\e
+
+//<00000272> 【夕呼】「行くわ」\e
+<00000272> 【Yuuko】「Here we go.」\e
+
+//<00000273> 【霞】「はい」\e
+<00000273> 【Kasumi】「Okay.」\e
+
+//<00000274> オレはあんまよくないけど！！\e
+<00000274> I'm not sure I'm ready for this!!\e
+
+//<00000ec1> 『元の世界』の試験前...\p...\e
+<00000ec1> Anyway, my world, before the exams...\p...\e
+
+//<00000ec2> …\p…\p…\p…\p『元の世界』の試験前...\p...\e
+<00000ec2> ...\p...\p...\p...\pbefore the exams...\p...\e
+
+//<00000eab> …\p…\p…\p…\p…\p…\p元の…\p…\p…\p試験...\p...\e
+<00000eab> ...\p...\p...\p...\p...\p...\pmy...\p...\p...\pbefore...\p...\e
+
+//<00000278> …\p…\p…\p…\p\e
+<00000278> ...\p...\p...\p...\p\e
+
+//<0000027a> …\p…\p…\p…\p。\e
+<0000027a> ...\p...\p...\p...\p\e
+
+//<0000027b> …\p…\p…\p…\p…\p…\p。\e
+<0000027b> ...\p...\p...\p...\p...\p...\p\e
+
+//<0000027d> やべぇっ！　階段を軽快に駆け上る音がっっ！！\e
+<0000027d> Craaap!\bI can hear it getting louder and louder!!\e
+//Just can't imagine him saying that.-Spin
+
+//<0000027e> 【純夏】「タケルちゃん、\p遅刻しちゃうよっ！！」\e
+<0000027e> 【Sumika】「Takeru-chan,\p we're gonna be late!!!」\e//CP MLE_0003
+
+//<0000027f> …\p…\p。\e
+<0000027f> ...\p...\p...\p...\p\e
+
+//<00000280> 【武】「…\p…\pあれ？」\e
+<00000280> 【Takeru】「...\p...\phuh?」\e
+
+//<00000281> 【霞】「…\p…\p…\p…\p」\e
+<00000281> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000283> え？\e
+<00000283> Eh?\e
+
+//<00000284> 【武】「お、\pおい、\p霞！！」\e
+<00000284> 【Takeru】「H-\phey,\p Kasumi!!」\e
+
+//<00000285> なんで急に倒れるんだ？\e
+<00000285> Why's she collapsing!?\e
+
+//<00000286> 【武】「先生！」\e
+<00000286> 【Takeru】「Sensei!」\e
+
+//<00000287> 【夕呼】「え？　ああ、\p白銀ね」\e
+<00000287> 【Yuuko】「Eh? Aaah,\p it's you, Shirogane.」\e
+
+//<00000288> 【武】「霞が！」\e
+<00000288> 【Takeru】「Kasumi just――!」\e
+
+//<00000289> 【夕呼】「ん？　…\p…\pちょっと無理をさせたかしら…\p…\p…\p…\p」\e
+<00000289> 【Yuuko】「Hm? ...\p...\pmaybe that was a bit much...\p...\p...\p...\p」\e
+
+//<0000028a> 【武】「先生？」\e
+<0000028a> 【Takeru】「Sensei?」\e
+
+//<0000028b> 【夕呼】「理論的には、\pそうね…\p…\p…\p…\p当然のことだけど…\p…\p…\p…\p」\e
+<0000028b> 【Yuuko】「Theoretically speaking,\p yes...\p...\p...\p...\p\bI should've expected this, but...\p...\p...\p...\p」\e
+
+//<0000028c> 【武】「ちょ、\pちょっと大丈夫ですか？」\e
+<0000028c> 【Takeru】「W-\pwait, is she okay?」\e
+
+//<0000028d> 【夕呼】「こんな気分の悪いものだったなんてね…\p…\p」\e
+<0000028d> 【Yuuko】「I didn't think it'd feel so weird...\p...\p」\e
+
+//<0000028e> 【武】「先生？」\e
+<0000028e> 【Takeru】「Sensei?」\e
+
+//<0000028f> 【夕呼】「なにぼさっとしてるのよ。\n社をそこに横にしてあげてちょうだい」\e
+<0000028f> 【Yuuko】「Why're you just standing there?\nLay Yashiro down on the floor.」\e
+
+//<00000290> 【武】「――あっ、\pはい…\p…\p霞、\p大丈夫か～～？」\e
+<00000290> 【Takeru】「――Ah!\p Yes...\p...\pKasumi,\p you okaaay～?」\e
+
+//<00000292> うわっ軽っ！\e
+<00000292> Uwa! She's so light!\e
+
+//<00000293> ん？　何か落ちてる。\e
+<00000293> Hm? She dropped something.\e
+
+//<00000294> あ、\pこれ実験前に霞が書いてたやつか。\e
+<00000294> Ah,\p Kasumi was drawing this before we started.\e
+
+//<00000295> へたくそな絵だな。誰だ、\pこいつは？\e
+<00000295> She's really bad at it though.\bWho is this guy?\e
+
+//<00000ec4> なにやら人間らしきものが描かれてはいるけど、\p識別不能だ。\e
+<00000ec4> It looks like she's trying to draw something human-shaped,\p but I can't tell who.\e
+
+//<00000297> 【夕呼】「ほら、\p早く社を休ませてあげて」\e
+<00000297> 【Yuuko】「Come on,\p let her lie down already.」\e
+
+//<00000298> 【武】「あ、\pはい」\e
+<00000298> 【Takeru】「Ah,\p right.」\e
+
+//<00000299> 霞…\p…\p\e
+<00000299> Kasumi...\p...\p\e
+
+//<0000029a> …\p…\pどうして急に倒れたんだろう。\e
+<0000029a> ...\p...\pwhy'd you collapse?\e
+
+//<0000029b> 【夕呼】「…\p…\pで、\pどうだったのかしら？」\e
+<0000029b> 【Yuuko】「...\p...\pso what happened?」\e
+
+//<00000ec5> 【武】「…\p…\pよくわからないんですけど、\p一応、\p『元の世界』だったと思います」\e
+<00000ec5> 【Takeru】「...\p...\pI'm not really sure,\p but I think I was technically in my world for a moment there.」\e
+
+//<0000029d> 【夕呼】「一応？」\e
+<0000029d> 【Yuuko】「Technically?」\e
+
+//<0000029e> 【武】「なんていうか…\p…\p感覚がハッキリしてなくて、\pすごくぼやけた感じでした。\n上手く体も動かせてなかったような…\p…\p」\e
+<0000029e> 【Takeru】「How do I describe it...\p...\pnothing felt very clear,\p kinda hazy I guess.\nI don't think I could move around that well either...\p...\p」\e
+
+//<00000ec6> 純夏の声も確かに聞こえたけど…\p…\pあれなら、\p最近見てた『夢』の方が、\pずっと現実感に溢れていた。\e
+<00000ec6> I definitely heard Sumika's voice, but...\p...\pthat didn't feel half as real as the dreams I've been having lately.\e
+
+//<000002a0> 【夕呼】「制限時間以内ではそれが限界か…\p…\p」\e
+<000002a0> 【Yuuko】「So that's the best we can do within the restricted time...\p...\p」\e
+
+//<000002a1> 【武】「制限時間？」\e
+<000002a1> 【Takeru】「Restricted time?」\e
+
+//<00000ec7> 【夕呼】「これはね、\p膨大な電力を消費する装置なのよ。\n今のところ、\p長時間稼働させることはできないの」\e
+<00000ec7> 【Yuuko】「This device requires an enormous amount of power.\nWe can't operate it for long periods of time yet.」\e
+
+//<000002a3> 【武】「でも、\pあれじゃ向こうで先生から何かを聞いてくるなんて絶対無理ですよ」\e
+<000002a3> 【Takeru】「But there's no way I can ask the other you anything in that state.」\e
+
+//<00000ec8> 【夕呼】「そうね…\p…\pそれじゃ動きようがないのは確かね…\p…\pこっちで何とかするわ」\e
+<00000ec8> 【Yuuko】「True...\p...\pyou can't do much of anything like that...\p...\pI'll see what I can do.」\e
+
+//<000002a5> 【武】「お願いします」\e
+<000002a5> 【Takeru】「Thank you.」\e
+
+//<000002a6> 【夕呼】「じゃあ今日は終わりにしましょう…\p…\p部屋に戻りなさい」\e
+<000002a6> 【Yuuko】「That's enough for today...\p...\pgo back to your room.」\e
+
+//<000002a7> 【武】「あ…\p…\pはい、\pじゃあ後よろしくです…\p…\p」\e
+<000002a7> 【Takeru】「Ah...\p...\pokay,\p see you later then...\p...\p」\e
+
+//<000002a8> 【夕呼】「待ちなさい」\e
+<000002a8> 【Yuuko】「Wait.」\e
+
+//<000002a9> 【武】「え？」\e
+<000002a9> 【Takeru】「Eh?」\e
+
+//<000002aa> 【夕呼】「社忘れてるわよ？」\e
+<000002aa> 【Yuuko】「You're forgetting Yashiro.」\e
+
+//<000002ab> 【武】「あ…\p…\pでも、\pもう少しこのままの方が良いんじゃ…\p…\p」\e
+<000002ab> 【Takeru】「Ah...\p...\pbut,\p I thought it'd be better to let her...\p...\p」\e
+
+//<000002ac> 【夕呼】「どうせ同じ部屋に帰るんだから、\p連れてってあげなさいよ、\p薄情ねえ…\p…\p」\e
+<000002ac> 【Yuuko】「You're going back to the same room anyway,\p so take her with you.\p You're awfully cold...\p...\p」\e
+
+//<000002ad> 【武】「…\p…\p…\p…\pは？」\e
+<000002ad> 【Takeru】「...\p...\p...\p...\phuh?」\e
+
+//<000002ae> 【夕呼】「あら？　言ってなかった？」\e
+<000002ae> 【Yuuko】「Oh? Didn't I tell you?」\e
+
+//<000002af> 【武】「…\p…\p…\p…\p聞いてませんが？」\e
+<000002af> 【Takeru】「...\p...\p...\p...\pno...\p...\p?」\e
+
+//<000002b0> 【夕呼】「今日からあんたと社は、\p同じ部屋で暮らしてもらうから」\e
+<000002b0> 【Yuuko】「You and Yashiro are going to share a room from now on.」\e
+
+//<000002b1> …\p…\p…\p…\pはああぁ？\e
+<000002b1> ...\p...\p...\p...\phuuuuuuh?\e
+
+//<000002b2> 【夕呼】「００ユニットが完成するまで、\pあんたの不安定な状態は続くわけ。\nだからそれを留める存在が必要よね？」\e
+<000002b2> 【Yuuko】「Until the 00 Unit is complete,\p you'll remain unstable.\nSo you need something to stabilize you.」\e
+
+//<000002b3> 【武】「そ、\pそ、\pそれが霞だって言うんですか！？」\e
+<000002b3> 【Takeru】「A-\pa-\pand Kasumi can do that!?」\e
+
+//<000002b4> 【夕呼】「そうよ」\e
+<000002b4> 【Yuuko】「Yes.」\e
+
+//<000002b5> 【武】「いや…\p…\pしかしですねッ…\p…\p！？」\e
+<000002b5> 【Takeru】「Okay...\p...\pbut still...\p...\p!!」\e
+
+//<000002b6> 【夕呼】「何よ？　社が相手じゃ不満だって言うの？　欲情したくせに贅沢言ってるわねぇ…\p…\p」\e
+<000002b6> 【Yuuko】「What? Yashiro isn't good enough for you?\bAfter what you did to her, that's awfully demanding...\p...\p」\e
+
+//<000002b7> 【武】「そ、\pそうじゃないですよっ！　仮にもオレはお、\pお、\pお、\p男ですよっ！？」\e
+<000002b7> 【Takeru】「Th-\pthat's not it!\bI happen to be a m-\pm-\pm-\pman, you know!!」\e//very convincing ~IX //*is reminded of Ken'ichi from Sharin* - Sheeta//Man, you know. - Moogy
+
+//<000002b8> 【夕呼】「なら好都合じゃないの」\e
+<000002b8> 【Yuuko】「Then isn't this a good thing?」\e
+
+//<000002b9> 【武】「なにがですかっ！！」\e
+<000002b9> 【Takeru】「How!?」\e
+
+//<000002ba> 【夕呼】「男のクセに女に興味ないの？　あ、\pそれともあんた、\p誰かもう気になる女がいるわけ？」\e
+<000002ba> 【Yuuko】「You're a man that has no interest in girls?\bAh,\p or is there some other girl you've already taken a fancy to?」\e
+
+//<000002bb> 【武】「――はあ？！」\e
+<000002bb> 【Takeru】「――Huuuh!?」\e
+
+//<00000f49> 【夕呼】「世話女房タイプの榊、\p育ちの良い御剣…\p…\pこの２人が有力候補として…\p…\p対抗が珠瀬、\p大穴は彩峰…\p…\p鎧衣もその部類かしら…\p…\p」\e
+<00000f49> 【Yuuko】「The hard-working, dedicated Sakaki,\p and\nthe well-mannered and well-raised Mitsurugi...\p...\p\nThose two are the prime candidates...\p...\p\nWith Tamase as the rival,\p and Ayamine the\nunderdog...\p...\p I guess Yoroi's another underdog...\p...\p」\e
+
+//<000002bd> 【武】「勝手に話を進めないで下さいよー」\e
+<000002bd> 【Takeru】「Please stop making all these assumptions...」\e
+
+//<00000eca> 【夕呼】「その中から誰かひとりを選ぶとなると…\p…\p２０７小隊崩壊の危機ね。\nだから社で我慢しときなさい」\e
+<00000eca> 【Yuuko】「If you had to choose one of them...\p...\pSquad 207 might just fall apart.\nSo satisfy yourself with Yashiro for now.」\e//I added a double entendre into the English, heh ~IX
+
+//<000002bf> 【武】「意地でも誰かとくっつけたいんですかー？」\e
+<000002bf> 【Takeru】「Why do you want me paired up with someone so badly?」\e
+
+//<000002c0> 【夕呼】「何が不満なのよ？」\e
+<000002c0> 【Yuuko】「You don't like it?」\e
+
+//<000002c1> 【武】「いや…\p…\p不満っていうわけじゃないんですけど…\p…\pその…\p…\p」\e
+<000002c1> 【Takeru】「Well...\p...\pit's not that I dislike it, but...\p...\pwell...\p...\p」\e
+
+//<000002c2> 【夕呼】「間違い起こす気あるわけ？」\e
+<000002c2> 【Yuuko】「You plan on making a mistake?」\e//huh? ~IX
+//with your cock - Makoto //lol yes, but it sounded really forced for some reason so I wasn't sure I got the right implication ~IX//Okay, yea, that stuck out a lot in game. I still don't *entirely* get why she would even be asking it, the way it is now.-Spin//Read the below comment first. Alt: You're not planning on any "accidents" in bed are you? or You're not planning on any "accidents" while alone with her are you? Just something, since that "mistake" thing was horrible.-Spin //no comment ~IX
+
+//<000002c5> 【武】「ありません！！　違いますよっ！　だいたい霞はＯＫしたんですか？」\e
+<000002c5> 【Takeru】「No I do not!! I definitely don't!\bBesides, is Kasumi even okay with this?」\e
+
+//<000002c6> 【夕呼】「ええ、\pこともなげに」\e
+<000002c6> 【Yuuko】「Yeah,\p she's fine with it.」\e
+
+//<000002c7> ――ガボーン！\e
+<000002c7> ――Gabooon!\e//not sure what if anything we should do here ~IX
+
+//<000002c8> それは…\p…\p霞が大胆なのか、\pオレが男と認識されてないのか…\p…\p。\e
+<000002c8> Does that mean...\p...\pKasumi's really bold?\p\bOr does she just not see me as a man...\p...\p?\e
+
+//<000002c9> 【夕呼】「荷物はもう運び込まれてるから、\p上手くやりなさい」\e
+<000002c9> 【Yuuko】「Her stuff's all there already,\p so make sure you get along.」\e//was tempted to use "have fun with her" but I already added one entendre ~IX
+
+//<000002ca> 【武】「有無を言わさずですか…\p…\p心の準備が…\p…\p」\e
+<000002ca> 【Takeru】「Do I get a say in this?\b...\p...\pI'm not exactly prepared to...\p...\p」\e
+
+//<000002cb> 【夕呼】「全ての準備を整えてからでも間に合う事象なんかに、\pロクなものはないわよ？」\e
+<000002cb> 【Yuuko】「Your instability isn't going to wait until you're ready.」\e
+//anything that you can afford to get 100% prepared for and still make it in time isn't going to be worth anything - Makoto //was much closer to that originally, but an editor took a chainsaw to it ~IX
+
+//<000002cc> う…\p…\p…\p…\p。\e
+<000002cc> Uu...\p...\p...\p...\p\e
+
+//<00000ecb> 【夕呼】「わかったら、\p社を連れて部屋に戻りなさい」\e
+<00000ecb> 【Yuuko】「If you're done,\p head back to your room, and take Yashiro with you.」\e
+
+//<000002ce> 【武】「わ、\pわかりました…\p…\p」\e
+<000002ce> 【Takeru】「U-\punderstood...\p...\p」\e
+
+//<00000ecc> 【夕呼】「ま、\p間違いが起きたら起きたで、\pその時また考えましょう」\e
+<00000ecc> 【Yuuko】「Well,\p if you make a mistake, you make one.\p\bWe'll think about it when it does.」\e//ok still don't know what mistake she's referring to ~IX //I think mistake = sex - Sheeta
+
+//<000002d0> 【武】「起きませんよ！」\e
+<000002d0> 【Takeru】「I'm not gonna make one!」\e
+//I await all your reverts for all three lines.-Spin //done ~IX
+
+//<000002d1> 【夕呼】「じゃあお疲れ～」\e
+<000002d1> 【Yuuko】「Then good night～」\e
+
+//<000002d2> …\p…\p…\p…\p。\e
+<000002d2> ...\p...\p...\p...\p\e
+
+//<000002d3> な、\pなんだってんだ！？\e
+<000002d3> Wh-\pwhat was that about!?\e
+
+//<000002d4> 【霞】「…\p…\p…\p…\p」\e
+<000002d4> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000002d5> 霞と…\p…\p同じ部屋で…\p…\p暮らすぅ？\e
+<000002d5> I'm gonna live...\p...\pin the same room...\p...\pas Kasumiii?\e
+
+//<000002d6> そ、\pそんなことが…\p…\p許されて良いのだろうか？\e
+<000002d6> I-\pis that something...\p...\pI should really be allowed to do?\e
+
+//<000002d7> 非っ常～～～に不吉な予感がする…\p…\p。\e
+<000002d7> This feels like an extreeeeeeemely bad omen...\p...\p\e
+
+//<000002d8> …\p…\p。\e
+<000002d8> ...\p...\p\e
+
+//<000002d9> …\p…\p…\p…\p。\e
+<000002d9> ...\p...\p...\p...\p\e
+
+//<000002da> 誰も…\p…\pいないな？\e
+<000002da> No one's here...\p...\pright?\e
+
+//<000002db> …\p…\pっと！\e
+<000002db> ...\p...\pwhoa!\e
+
+//<000002de> …\p…\pどうしたんだ？　たまのやつ、\pノートなんか抱えて…\p…\p\e
+<000002de> ...\p...\pwhat happened?\bTama's clutching a notebook and...\p...\p\e
+
+//<000002e0> 【壬姫】「ぎゃふーー！！」\e
+<000002e0> 【Miki】「Gyafuuuuu!!」\e
+
+//<000002e1> うわっ！　すっころびやがった！\e
+<000002e1> Uwa!\bShe slipped and fell!\e
+
+//<000002e2> 痛そう…\p…\p顔面強打！？\e
+<000002e2> Facial impact!?\b...\p...\pthat looked painful.\e
+
+//<000002e3> 【壬姫】「いたっいたっいたっいたっいたっ…\p…\p」\e
+<000002e3> 【Miki】「Ow! Ow! Ow! Ow! Ow! ...\p...\p」\e
+
+//<000002e5> 行っちまった…\p…\p。\n委員長の部屋の方に走ってったな…\p…\p勉強でもしてたのか？\e
+<000002e5> Off she goes...\p...\p\nClass Rep's room is in that direction...\p...\pmaybe they're studying together?\e
+
+//<000002e6> まあいい。とにかく今の内だっ！！\e
+<000002e6> Doesn't matter.\bThis is my chance!!\e
+
+//<000002e7> …\p…\p…\p…\p。\e
+<000002e7> ...\p...\p...\p...\p\e
+
+//<000002e8> 何だよ…\p…\p夕呼先生…\p…\p。\e
+<000002e8> Yuuko-sensei...\p...\pwhat the heck...\p...\p?\e
+
+//<000002e9> 荷物なんか、\p殆どないじゃんかよう。\nベッドもひとつじゃんかよう。\e
+<000002e9> Practically nothing new's here.\nAnd there's only one bed still.\e
+
+//<000002ea> オレに何しろっていうんだ！\e
+<000002ea> What do you want me to do!?\e
+
+//<000002eb> ったくぅ…\p…\p。\e
+<000002eb> Geeeez...\p...\p\e
+
+//<000002ec> 【武】「霞、\pついたぞ～～」\e
+<000002ec> 【Takeru】「Kasumi,\p we're heeere～」\e
+
+//<000002ed> 【霞】「…\p…\p…\p…\p」\e
+<000002ed> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000002ee> 何か知らないけど、\p霞も先生に振り回されて大変だな。\e
+<000002ee> I can't be sure,\p but Kasumi's probably just as inconvenienced by this.\e
+
+//<000002ef> 【武】「ゆっくり休みな…\p…\p」\e
+<000002ef> 【Takeru】「Get some sleep...\p...\p」\e
+
+//<000002f1> 【霞】「…\p…\p…\p…\p」\e
+<000002f1> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000002f2> この飾りとか取らなくていいのかな…\p…\p。\e
+<000002f2> Should I take off those ears...\p...\p?\e
+
+//<000002f3> さすがに制服のまま寝るのもどうかと…\p…\p。\e
+<000002f3> Letting her go to bed in that uniform seems rather...\p...\p\e
+
+//<000002f4> 【武】「…\p…\p…\p…\p！」\e
+<000002f4> 【Takeru】「...\p...\p...\p...\p!」\e
+
+//<000002f5> いや、\pそれはならん！\e
+<000002f5> No!\bI mustn't!\e
+
+//<000002f6> 今オレが脱がせたら…\p…\pそれこそ犯罪だ！\e
+<000002f6> If I undressed her now...\p...\pthat'd be a crime all on its own!\e
+
+//<000002f7> 【霞】「…\p…\p…\p…\p」\e
+<000002f7> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000002f8> さて、\pオレはどうするか…\p…\p…\p…\p\e
+<000002f8> Okay,\p what should I do...\p...\p...\p...\p\e
+
+//<000002fa> 【武】「お？」\e
+<000002fa> 【Takeru】「Oh?」\e
+
+//<000002fb> 袖を鷲掴みですか。\e
+<000002fb> She grabbed my sleeve?\e
+
+//<000002fc> 恐い夢でも見てるのかな？\e
+<000002fc> Is she having a bad dream?\e
+
+//<000002fd> しょうがねえなあ…\p…\p。\e
+<000002fd> Not much I can do about...\p...\p\e
+//more like "she's hopeless" - Makoto //yeah, that sounded cheesy as hell to me ~IX
+
+//<000002ff> …\p…\pあれ？\e
+<000002ff> ...\p...\phuh?\e
+
+//<00000301> …\p…\pは、\pはなしてくれねえ。\e
+<00000301> ...\p...\psh-\pshe won't let go.\e
+
+//<00000303> 【武】「…\p…\p…\p…\p」\e
+<00000303> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000304> 【霞】「…\p…\p…\p…\p」\e
+<00000304> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000305> オ、\pオレに隣で眠れと！？　一緒に眠れと！？\e
+<00000305> D-\pdoes she want me to sleep with her!?\bIn the same bed!?\e
+
+//<00000307> …\p…\p…\p…\pとっ、\pとれねえっ！！\e
+<00000307> ...\p...\p...\p...\psh-\pshe won't let go!!\e
+
+//<00000308> 【武】「…\p…\p…\p…\p」\e
+<00000308> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000309> 【霞】「…\p…\p…\p…\p」\e
+<00000309> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000030a> これ以上強くやったら、\p起きちまうよなあ…\p…\p。\e
+<0000030a> If I pull any harder,\p she might wake up...\p...\p\e
+
+//<0000030b> 【霞】「…\p…\p…\p…\p」\e
+<0000030b> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000030c> …\p…\p…\p…\pわざと？\e
+<0000030c> ...\p...\p...\p...\pare you doing that on purpose?\e
+

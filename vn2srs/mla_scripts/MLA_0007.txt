@@ -1,0 +1,557 @@
+// Title: 兵士よ問うなかれ 11月8日（木）
+#FILENAME 1d83c77a
+#TYPE 1
+
+//<00000001> 【武】「佐渡島からＢＥＴＡが本土に上陸します」\e
+<00000001> 【Takeru】「BETA from Sadogashima are going to invade the mainland.」\e
+//If you change that last thing from that other script. Here too then.-Spin
+
+//<00000002> 【夕呼】「突然…\p…\pなに？」\e
+<00000002> 【Yuuko】「That was...\p...\psudden.」\e
+
+//<00000003> 【武】「この間言いかけた、\pとてつもなく世界に影響力のある事件ですよっ！！」\e
+<00000003> 【Takeru】「This is the incident I said would have a huge impact on the world!!」\e
+
+//<00000178> 【夕呼】「ああ…\p…\p佐渡島ハイヴのＢＥＴＡが本土に上陸するってわけ？」\e
+<00000178> 【Yuuko】「Oh that...\p...\pso BETA from Sadogashima will invade mainland Japan?」\e
+
+//<00000005> 【武】「はい、\p１１月１１日です。\n昼頃に非常呼集がかかって、\pブリーフィングルームに集められました」\e
+<00000005> 【Takeru】「Yes,\p on November 11th.\nThere'll be an emergency summons during lunch,\p and we'll all end up in the briefing room.」\e
+
+//<00000006> 【夕呼】「１１日…\p…\p日曜日か」\e
+<00000006> 【Yuuko】「The 11th...\p...\pso Sunday?」\e
+
+//<00000007> 【武】「もしかしたら前後するかもしれません。\nでも前はそうでした。\n休日だったんです。\nちなみに今、\pこの世界でも１１日は休日です」\e
+<00000007> 【Takeru】「It might happen some other day.\nBut that's when it was last time.\nIt was a day off for us.\nAnd we have the same day off in this world.」\e
+
+//<00000008> 【夕呼】「とりあえず詳細を聞きましょうか…\p…\p」\e
+<00000008> 【Yuuko】「Anyway, let's hear the details...\p...\p」\e
+
+//<00000009> 【武】「正直、\p覚えていないことも多いんですけど…\p…\p」\e
+<00000009> 【Takeru】「To be honest,\p there's a lot I don't remember, but...\p...\p」\e
+
+//<0000000a> 【夕呼】「構わないわ」\e
+<0000000a> 【Yuuko】「I don't mind.」\e
+
+//<0000000b> 【武】「本土に上陸したＢＥＴＡと帝国軍が交戦しますが、\pその一部に戦線を突破されて一時ロストします」\e
+<0000000b> 【Takeru】「The Imperial Army engaged the BETA after they surfaced,\p but some of the enemy broke through and were temporarily lost.」\e//I might be able to scrounge some phrasing off the MLU script this happened in, but I'd prefer to do it by memory, as that'd introduce about the right number of human errors ~IX
+
+//<0000000c> 【夕呼】「…\p…\pそれで？」\e
+<0000000c> 【Yuuko】「...\p...\pand then?」\e
+
+//<0000000d> 【武】「しばらくして分散していたＢＥＴＡが再集結して、\p第２次防衛線を突破しました」\e
+<0000000d> 【Takeru】「The scattered BETA regrouped and broke through the Secondary Defense Line.」\e//psst, they regrouped near Mt. Hakkai! ~IX
+
+//<00000179> 【武】「それからＢＥＴＡは北関東絶対防衛線沿いを南下し、\p確か長野と群馬と新潟の県境で進路を変えて――」\e
+<00000179> 【Takeru】「Then the BETA moved South along the Northern Kantou Final Defense Line,\p and I'm pretty sure they changed course at the border between Nagano, Gunma and Niigata――」\e
+
+//<0000017a> 【武】「帝国軍は敵の絶対防衛線突破を阻止しようと奮戦しましたが…\p…\p戦況は不利だったと思います」\e
+<0000017a> 【Takeru】「The Imperial Army fought hard to keep them from breaking the Final Defense Line...\p...\pbut I think the odds were against them.」\e
+
+//<0000017b> ここに来る前に、\p継ぎ接ぎだらけの記憶を必死で整理したからな。\n間違いないはずだ。\e
+<0000017b> Before coming here,\p I did my best to recall everything I could and get it in the right order.\nI shouldn't make any careless mistakes.\e
+
+//<0000017c> 【武】「付近の帝国軍基地からの増援部隊も、\p間に合いそうもない状況でした」\e
+<0000017c> 【Takeru】「Reinforcements were sent from a nearby Imperial Army base,\p but it seemed unlikely they'd make it in time either.」\e
+
+//<00000013> 【夕呼】「…\p…\p…\p…\p」\e
+<00000013> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<00000014> 【武】「ちなみに、\p厚木基地から出撃した国連の支援部隊が群馬の前橋付近にいたはずですが、\pこれも手遅れ」\e
+<00000014> 【Takeru】「By the way,\p the UN support units deployed from Atsugi base were near Maebashi in Gunma,\p but they were also late.」\e
+
+//<00000015> 【夕呼】「…\p…\pで？」\e
+<00000015> 【Yuuko】「...\p...\pand?」\e
+
+//<0000017e> 【武】「交戦中の帝国軍部隊が破れたら、\pＢＥＴＡの絶対防衛圏への侵入を許す状況になっていたはずです」\e
+<0000017e> 【Takeru】「When the BETA broke through the Imperial units,\p they came close to crossing the line.」\e
+
+//<00000017> 【夕呼】「…\p…\p…\p…\p」\e
+<00000017> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<00000018> 【武】「このあたりで、\pＢＥＴＡの目的地が判明します…\p…\p…\p…\pここ、\p横浜基地です」\e
+<00000018> 【Takeru】「It was determined that this was their objective...\p...\pYokohama Base.」\e
+
+//<00000019> 【夕呼】「…\p…\pなるほど。\nそれから？」\e
+<00000019> 【Yuuko】「...\p...\pI see.\nAnd after that?」\e
+
+//<0000001a> 【武】「結果的には交戦中の帝国軍が、\p何とかＢＥＴＡを撃破して、\p事なきを得ました」\e
+<0000001a> 【Takeru】「In the end, the Imperial Army managed to destroy the BETA somehow,\p so nothing terrible happened.」\e
+
+//<0000001b> 【夕呼】「…\p…\p終わり？」\e
+<0000001b> 【Yuuko】「...\p...\pthat's it?」\e
+//Keeps the feel.-Spin
+
+//<0000001c> 【武】「はい」\e
+<0000001c> 【Takeru】「Yes.」\e
+
+//<0000001d> 【夕呼】「なるほど…\p…\p佐渡島…\p…\pか。\nで？　何をどうして欲しいわけ？」\e
+<0000001d> 【Yuuko】「I see...\p...\pfrom Sadogashima...\p...\p\nSo, what would you like me to do about it?」\e
+
+//<0000017f> 【武】「この前先生は、\pこういう大きな事象に手を加えようって言いました」\e
+<0000017f> 【Takeru】「You said you'd try to manipulate big events like this last time.」\e
+
+//<0000001f> 【夕呼】「だからその内容よ」\e
+<0000001f> 【Yuuko】「Which is why I'm asking you what to do.」\e
+
+//<00000246> 【武】「一番確実なのは、\p上陸した瞬間を狙って水際で殲滅することです」\e
+<00000246> 【Takeru】「The best option seems to be waiting at the shoreline and annihilating them as they surface.」\e
+
+//<00000182> 【夕呼】「なるほど。\n洋上迎撃が非現実的だってことは知ってるわけね？」\e
+<00000182> 【Yuuko】「Makes sense.\nYou know how unrealistic it is to fight them on the ocean's surface, right?」\e
+
+//<00000183> 【武】「はい。ＢＥＴＡは海底を移動しますから」\e
+<00000183> 【Takeru】「Yes, since the BETA move along the ocean floor.」\e
+
+//<00000184> 【夕呼】「それを実行するには上陸地点に戦力を集中する必要があるわ…\p…\pもう少し具体的に、\pどの辺に上陸するかはわからないわけ？」\e
+<00000184> 【Yuuko】「So we'd need to concentrate forces  at the point where they surface...\p...\pcould you tell me exactly where it happened?」\e
+
+//<00000024> 【武】「新潟であることはたしかですが、\pそれ以上は…\p…\pすみません」\e
+<00000024> 【Takeru】「I know for sure it was in Niigata,\p but...\p...\psorry, that's all I remember.」\e
+
+//<00000025> 【夕呼】「…\p…\p…\p…\p」\e
+<00000025> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<00000026> 【武】「先生、\p何考えてるんですか？　やるしかないでしょ！？」\e
+<00000026> 【Takeru】「Sensei,\p why are you still thinking about this?\bDon't we have to do something!?」\e
+
+//<00000027> 【夕呼】「白銀…\p…\pひとつ確認するけど…\p…\p」\e
+<00000027> 【Yuuko】「Shirogane...\p...\pjust one question...\p...\p」\e
+
+//<00000028> 【武】「はい！」\e
+<00000028> 【Takeru】「Yes!?」\e
+
+//<00000029> 【夕呼】「今の話が事実だって言う証拠はあるの？」\e
+<00000029> 【Yuuko】「Is there any proof that what you said will happen?」\e
+
+//<0000002a> 【武】「え…\p…\p？」\e
+<0000002a> 【Takeru】「Eh...\p...\p?」\e
+
+//<00000185> 【夕呼】「そっちがどういうつもりだったか知らないけど、\pあたしは、\pあくまでもあなたの情報が信じられるものと仮定して接してきたつもり」\e
+<00000185> 【Yuuko】「I don't know what you were thinking,\p but I'm still trying to find out how trustworthy your information is.」\e
+//Oh no. I totally didn't see this coming, especially not from a ten miles away. Nice music change though.-Spin
+
+//<0000002c> 【武】「…\p…\p…\p…\p」\e
+<0000002c> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000186> 【夕呼】「けど、\pそこまで話が大きくなると…\p…\pちゃんとした証拠なしには動けないわね」\e
+<00000186> 【Yuuko】「And now that we're talking about something big...\p...\p\bI'm going to need real proof to make a move.」\e
+
+//<0000002e> 【武】「な…\p…\p何言ってんですか！？　だって、\pやるべきことやれって…\p…\p大きな事象には手を加えてみようって…\p…\pそう言ったの先生でしょ！？」\e
+<0000002e> 【Takeru】「Wh...\p...\pwhat are you saying!?\bWeren't you going to do what you had to do?\b...\p...\pweren't you going to try to influence the next big event?\b...\p...\pisn't that what you said, Sensei!?」\e
+
+//<0000002f> 【夕呼】「だから、\p証拠をちょうだい」\e
+<0000002f> 【Yuuko】「Then give me some proof.」\e
+
+//<00000030> 【武】「…\p…\p…\p…\p」\e
+<00000030> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000187> 【夕呼】「やらないなんて言ってないわ。\nあなたの話が、\p事実だという証拠さえあれば今すぐやるわよ」\e
+<00000187> 【Yuuko】「I'm not saying I won't do it.\nIf you can prove it'll happen,\p then I'll go work on it right away.」\e
+
+//<00000188> 【武】「そんなこと言われたって…\p…\p今までのオレの話を聞いてそれが証拠にならないって言うんじゃ…\p…\p何も出せませんよ！」\e
+<00000188> 【Takeru】「But...\p...\pif everything I've told you already isn't convincing enough...\p...\pthen what can I do!?」\e
+
+//<00000189> 【夕呼】「…\p…\pそれを確かな証拠にする方法がひとつあるわ」\e
+<00000189> 【Yuuko】「...\p...\pthere is one surefire way to prove your credibility.」\e
+
+//<00000034> 【武】「何ですか！」\e
+<00000034> 【Takeru】「What is that!?」\e
+
+//<00000035> 【夕呼】「今回は放っておきなさい」\e
+<00000035> 【Yuuko】「Do nothing this time.」\e
+
+//<00000036> 【武】「え！？」\e
+<00000036> 【Takeru】「Eh!?」\e
+
+//<0000018a> 【夕呼】「今のあなたの話…\p…\p色々と思い当たることが多くて、\pただの妄想と切って捨てられないわ。\nだから、\p現実に起こるかどうか…\p…\p様子をみましょう」\e
+<0000018a> 【Yuuko】「What you just told me...\p...\phas a lot of nice details,\p\bso I can't simply call it a delusion.\p So let's watch and find out...\p...\pwhether it really happens or not.」\e
+
+//<0000018b> 【武】「んなバカな！　大勢の命を危険にさらして、\pオレの正しさを証明しろっていうんですか！？」\e
+<0000018b> 【Takeru】「You've gotta be kidding me!\bYou're gonna put all those lives at risk just to prove my credibility!?」\e
+
+//<00000039> 【夕呼】「そうよ」\e
+<00000039> 【Yuuko】「That's right.」\e
+
+//<0000003a> 【武】「いったい何人死ぬと思ってんですか！！」\e
+<0000003a> 【Takeru】「How many people do you think are gonna die from this!?」\e
+
+//<0000003b> 【夕呼】「最低ゼロ人、\p最高１０億人」\e
+<0000003b> 【Yuuko】「Anywhere from zero to a billion.」\e//lit. "At least zero, at most a billion."
+
+//<0000003c> 【武】「ふざけんのもいい加減にしてくださいッ！！！」\e
+<0000003c> 【Takeru】「This isn't the time for dark humor!!!」\e
+
+//<0000003d> 【夕呼】「その言葉、\pそっくりお返しするわ。\nいつまで妄想呼ばわりに甘んじるつもり？」\e
+<0000003d> 【Yuuko】「And I'm saying the exact same thing to you.\nHow long are you gonna keep deluding yourself?」\e
+//how long are you going to let me doubt you? - Makoto //an intentional adaptation that looked incredibly like a tl mistake, lol ~IX
+
+//<0000003e> 【武】「…\p…\p…\p…\p」\e
+<0000003e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000018c> 【夕呼】「可哀想だからわかりやすく言ってあげる。\nあなたはまだ、\p未来を予言したことはないのよ」\e
+<0000018c> 【Yuuko】「I feel sorry for you, so I'll make this a bit simpler.\nYou have yet to predict the future even once.」\e
+
+//<00000040> 【武】「それはオルタネイティヴ…\p…\p」\e
+<00000040> 【Takeru】「But the Alternative...\p...\p」\e
+
+//<00000041> 【夕呼】「既に発動中の計画だもの、\p何らかの方法で知った可能性は否定できないわ」\e
+<00000041> 【Yuuko】「They're already underway.\bThere's still the possibility you learned through espionage.」\e
+
+//<00000042> 【武】「…\p…\p…\p…\p」\e
+<00000042> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000018d> 【夕呼】「わかる？　今のあなたは、\p多世界解釈もその世界間の移動も関係ない、\p妄想と調査と話術だけでどうにでもなることしか話していないの」\e
+<0000018d> 【Yuuko】「Understand?\bEverything you've said and done so far can be explained using delusions, investigations and good acting.\p\bNo many-worlds interpretation or moving between worlds.」\e
+
+//<00000044> 【武】「…\p…\p…\p…\p」\e
+<00000044> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000045> 【夕呼】「どうせほっといてもここは助かるんでしょ？」\e
+<00000045> 【Yuuko】「Besides, you said it'd turn out fine on its own.」\e
+
+//<00000046> 【武】「け、\pけど…\p…\p」\e
+<00000046> 【Takeru】「Y-\pyes, but...\p...\p」\e
+
+//<00000227> 【夕呼】「１０億人を救うっていう人間が、\pそのために必要な、\pたかが数十、\p数百の犠牲を厭うなんて、\p理解不能だわ」\e
+<00000227> 【Yuuko】「You plan on saving a billion lives,\p and yet you cringe at the thought of sacrificing a few dozen or hundred lives to pull it off?」\e
+
+//<00000048> 【武】「けど死んじまったら…\p…\p」\e
+<00000048> 【Takeru】「But if they die...\p...\p」\e
+
+//<00000240> 【夕呼】「人間の薬を開発するために、\p一体どれだけのラットが犠牲になっているか知ってる？　普段それを意識してる？」\e
+<00000240> 【Yuuko】「Do you know how many rats have died in the name of medical research? Do you think about it on a daily basis?」\e
+
+//<0000004a> 【武】「ラットと人間は違いますよ！」\e
+<0000004a> 【Takeru】「Rats and humans are different!」\e
+
+//<00000190> 【夕呼】「あたしにとってはどっちも同じ。\n違うのは種としての区分のみ…\p…\pこれは客観的事実だから認めるわ」\e
+<00000190> 【Yuuko】「They're the same to me,\p except that we consider them a different species...\p...\p\nSince that's an objective truth, I accept it.」\e
+
+//<0000004c> 【武】「…\p…\p…\p…\p先生、\pあんた…\p…\p」\e
+<0000004c> 【Takeru】「...\p...\p...\p...\pSensei,\p you...\p...\p」\e
+
+//<00000191> 【夕呼】「あたしがこういう科学者だってこと、\p忘れてた？　それとも、\pあなたの世界のあたしは、\p違う性格だったのかしら？」\e
+<00000191> 【Yuuko】「Did you forget I was a scientist?\bOr was my personality different in your world?」\e
+
+//<0000004e> 【武】「…\p…\p…\p…\p」\e
+<0000004e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000004f> 確かに先生の言うことは正しい…\p…\pああ、\p正しいよ！！　\e
+<0000004f> Sensei's definitely right about this...\p...\pyes,\p I know she's right!!\e
+
+//<00000193> けど…\p…\pオレの話の真偽を確かめるために、\p数十、\p数百の衛士を見殺しにするのか！？\e
+<00000193> But...\p...\pwe're gonna let dozens,\p hundreds of Eishi die to prove if I'm telling the truth!?\e
+
+//<00000051> 民間人だって巻き込まれるかもしれないんだぞ？！\e
+<00000051> There might be civilian casualties too, you know!!\e
+
+//<00000052> 【夕呼】「まさかとは思うけど…\p…\p何の犠牲もなく、\p何かを得る事ができるなんて考えていないでしょうね？」\e
+<00000052> 【Yuuko】「I seriously doubt this, but I'd better ask...\p...\pdo you think you can accomplish anything with no sacrifices?」\e
+
+//<00000053> 【武】「…\p…\p考えていません」\e
+<00000053> 【Takeru】「...\p...\pno, I don't.」\e
+
+//<00000054> 【夕呼】「じゃあ、\p自分が関与することで人が助かるのはいいけど、\pひとりでも死人が出るのはごめんだって事？」\e
+<00000054> 【Yuuko】「So you'd like it if stuff you did saved people's lives,\p but you don't wanna let a single person die, ever?」\e
+
+//<00000055> 【武】「…\p…\pち、\p違います」\e
+<00000055> 【Takeru】「...\p...\pi-\pit's not like that.」\e
+
+//<00000056> 【夕呼】「この瞬間にも、\p世界の色々な場所でＢＥＴＡと戦って死んでいる兵士がいるって、\p想像できる？」\e
+<00000056> 【Yuuko】「Think about the fact that right now,\p at this very moment,\p there are Eishi fighting and dying all over the world.」\e
+
+//<00000057> ――！？\e
+<00000057> ――!?\e
+
+//<00000194> 【夕呼】「あなたが世界を救いたいなら、\pひとりでも多くの人間を救いたいなら、\p一刻も早く自分が正しいことを証明しなきゃ駄目でしょ？」\e
+<00000194> 【Yuuko】「If you want to save the world,\p if you want to save even a single human life,\p then don't you need to prove yourself as soon as possible?」\e
+
+//<00000059> わかっている…\p…\p。\e
+<00000059> I know that...\p...\p\e
+
+//<0000005a> わかっちゃいるんだ！\e
+<0000005a> I do understand this!\e
+
+//<00000195> …\p…\pそうしなければ…\p…\pいつまでたってもオレは信用されない。\e
+<00000195> ...\p...\pif we don't do this...\p...\pI'll never be trusted.\e
+
+//<000001f4> オレの言葉が信用してもらえなければ…\p…\pオルタネイティヴ４は、\pきっと失敗する。\e
+<000001f4> And if I can't get her to trust me...\p...\p\bAlternative IV won't have a chance.\e
+
+//<00000242> 【夕呼】「それともなに？　知らないところで死んでいる人はどうでも良くて、\p自分の知ってる範囲で人が死ぬのが嫌ッてこと？」\e
+<00000242> 【Yuuko】「What is it then?\bYou don't mind people dying without your knowledge,\p but once you know about it, suddenly it's bad?」\e
+
+//<0000005e> …\p…\pくそっっ！！\e
+<0000005e> ...\p...\pdamn iiit!!\e
+
+// Selection: 今回は見送る
+// Selection: でもダメだ！！
+//<00000062> 【武】「…\p…\p…\p…\p…\p…\pわかりました」\e
+<00000062> 【Takeru】「...\p...\p...\p...\p...\p...\pI understand.」\e//BR_1
+
+//<00000063> 【夕呼】「…\p…\p…\p…\p」\e
+<00000063> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<00000064> 【武】「オレの言葉が本当かどうか…\p…\p確かめてください」\e
+<00000064> 【Takeru】「Please, prove to yourself...\p...\pwhether my words are true or not.」\e//lit. "please confirm"
+
+//<00000065> 【夕呼】「…\p…\pわかったわ」\e
+<00000065> 【Yuuko】「...\p...\pgot it.」\e
+
+//<00000066> 【武】「…\p…\p…\p…\p」\e
+<00000066> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000067> 【夕呼】「白銀」\e
+<00000067> 【Yuuko】「Shirogane.」\e
+
+//<00000068> 【武】「…\p…\pはい」\e
+<00000068> 【Takeru】「...\p...\pyes?」\e
+
+//<00000069> 【夕呼】「あなた、\p早く卒業して、\p任官して、\p発言力を高めていくんだ…\p…\pそんなこと言ってたわよね？」\e
+<00000069> 【Yuuko】「You're going to graduate,\p get commissioned,\p and get people to listen to you as soon as possible...\p...\pthat's what you said?」\e
+
+//<0000006a> 【武】「…\p…\pはい」\e
+<0000006a> 【Takeru】「...\p...\pyes.」\e
+
+//<00000198> 【夕呼】「あなたみたいに、\p目先のことしか分からない人には、\p到底無理ね」\e
+<00000198> 【Yuuko】「For someone like you,\p who can only see what's right in front of him,\p that'll be impossible.」\e
+
+//<0000006c> 【武】「え？」\e
+<0000006c> 【Takeru】「Eh?」\e
+
+//<00000199> 【夕呼】「かわいそうだからひとつ教えておいてあげる」\e
+<00000199> 【Yuuko】「I still feel sorry for you, so I'll give you another tip.」\e
+
+//<0000006e> 【武】「…\p…\pなんですか？」\e
+<0000006e> 【Takeru】「...\p...\pwhat is it?」\e
+
+//<0000021f> 【夕呼】「ある１点を突破口に、\pあなたはあたしを納得させることもできたのよ？」\e
+<0000021f> 【Yuuko】「You could've persuaded me if you'd brought up a certain point.」\e
+
+//<00000070> 【武】「え？」\e
+<00000070> 【Takeru】「Eh?」\e
+
+//<0000019b> ある１点…\p…\p？\e
+<0000019b> A certain point...\p...\p?\e
+
+//<0000019c> 【夕呼】「あなたの話の中に、\p調査も予測も不可能な、\pどうにもならない要素があったでしょ？」\e
+<0000019c> 【Yuuko】「Isn't there something in your story which we can't possibly investigate or predict?」\e
+
+//<0000019d> 【武】「どうにもならない要素…\p…\p？」\e
+<0000019d> 【Takeru】「In my story...\p...\p?」\e
+
+//<0000021b> 【夕呼】「ＢＥＴＡは、\p人間の都合で動いているわけじゃないでしょ？　彼らの行動は予測不能よ」\e
+<0000021b> 【Yuuko】「The BETA don't behave the way we'd like them to. We can't predict anything they do.」\e
+
+//<0000019f> ――！\e
+<0000019f> ――!\e
+
+//<000001a0> なるほど…\p…\pそうか…\p…\pそういうことか！\e
+<000001a0> I get it...\p...\pthat's right...\p...\pthat's exactly right!\e
+
+//<000001a1> オレが言った日にＢＥＴＡが本土上陸を企てたら…\p…\pその時点でオレは人間が予測不可能なことを知っていたことに…\p…\p。\e
+<000001a1> If the BETA were planning to invade the mainland on the date I gave...\p...\pthat would mean I knew something no human could possibly have predicted...\p...\p\e
+
+//<000001a3> 【夕呼】「…\p…\pそこに気づかなかったことは特に大きなマイナスではないわ。\nでもプラスにもならない」\e
+<000001a3> 【Yuuko】「...\p...\pyou missing that wasn't a particularly huge minus.\nBut it wasn't a plus either.」\e
+
+//<00000074> 【武】「…\p…\p…\p…\p」\e
+<00000074> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000001a5> 【夕呼】「そこでプラスをモノにできる人間だけが、\p上にいけるのよ？」\e
+<000001a5> 【Yuuko】「Only the people who can make it a plus get to be on top.」\e
+
+//<000001a6> 【武】「…\p…\p…\p…\p」\e
+<000001a6> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000001a7> 【夕呼】「あなたは、\p放っておけば人が死ぬと言ったわね…\p…\pでも、\p人は必ず死ぬのよ。\nそれがＢＥＴＡによってもたらされるか、\pそうでないかの違いはあるけどね」\e
+<000001a7> 【Yuuko】「You said people would die if we don't do anything...\p...\pbut they'll die no matter what.\p Though it might be for some reason other than the BETA.」\e
+//the only difference is whether it's by the BETA or not - Makoto //adapted ~IX
+
+//<00000076> 【武】「…\p…\p…\p…\p」\e
+<00000076> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000001a8> 【夕呼】「あなたにとって重要なのは、\pＢＥＴＡが上陸して殲滅されるまでの間に、\p民間人や兵士がいつ、\pどうやって死ぬかということなの？」\e
+<000001a8> 【Yuuko】「You're talking as if what's important for you is how many civilians and soldiers die in what way during the time the BETA are still alive on the surface.」\e
+
+//<00000078> 【武】「そ、\pそれは…\p…\p」\e
+<00000078> 【Takeru】「Th-\pthat's not...\p...\p」\e
+
+//<000001a9> 【夕呼】「あなたの言うとおりにしたとして…\p…\p」\e
+<000001a9> 【Yuuko】「And even if we did do what you said...\p...\p」\e
+
+//<000001aa> 【夕呼】「ＢＥＴＡの侵攻を阻もうとして戦う衛士達の命は…\p…\pあなたのいう命の勘定に入らないの？」\e
+<000001aa> 【Yuuko】「Did you forget to count the lives...\p...\pof all the Eishi who'd intercept the invading BETA?」\e
+
+//<0000007b> 【武】「そんなことは…\p…\pないです」\e
+<0000007b> 【Takeru】「I didn't...\p...\pthink of that.」\e
+
+//<000001ac> 【夕呼】「最低でも数十、\p数百という人が死ぬでしょう…\p…\pどちらにしても死ぬのよ。\nＢＥＴＡ相手の戦いである限り」\e
+<000001ac> 【Yuuko】「At least a couple dozen,\p but probably a few hundred will die...\p...\pno matter what we do.\nAs long as we're fighting the BETA.」\e
+
+//<000001ad> 【武】「…\p…\p」\e
+<000001ad> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000007e> 【夕呼】「話は理解できた？」\e
+<0000007e> 【Yuuko】「Get what I'm saying?」\e
+
+//<0000007f> 【武】「…\p…\p…\p…\p…\p…\pはい」\e
+<0000007f> 【Takeru】「...\p...\p...\p...\p...\p...\pyes.」\e
+
+//<00000083> …\p…\p。\e
+<00000083> ...\p...\p\e//BR_2
+
+//<00000084> …\p…\p…\p…\p。\e
+<00000084> ...\p...\p...\p...\p\e
+
+//<00000085> ――でも！\e
+<00000085> ――But!\e
+
+//<00000086> 【武】「でもダメだっ！　そんな計算…\p…\pオレにはできませんッ！！」\e
+<00000086> 【Takeru】「But I can't do that!\bI'm not capable of...\p...\pcalculating which lives are worth losing!!」\e
+
+//<00000087> 【夕呼】「…\p…\p…\p…\p」\e
+<00000087> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<00000088> 【武】「青臭いって言われようが何でもいいんです！　理屈もスジ論もわかっています…\p…\pでも」\e
+<00000088> 【Takeru】「Call me naive or foolhardy or whatever!\bI know it's logical and pragmatic and all...\p...\pbut...\p...\p」\e
+
+//<00000089> 【夕呼】「…\p…\pでも？」\e
+<00000089> 【Yuuko】「...\p...\pbut...\p...\p?」\e
+
+//<0000008a> 【武】「感覚的にダメなんです！　――気持ち悪いんですよッ！」\e
+<0000008a> 【Takeru】「It's unacceptable!\b――I wouldn't feel right letting it happen!」\e
+
+//<0000008b> 【夕呼】「…\p…\pじゃあ、\pあくまでも対策を講じろ、\pと？」\e
+<0000008b> 【Yuuko】「...\p...\pso you want me to come up with some kind of countermeasure anyway?」\e
+
+//<0000008c> 【武】「お願いします！！」\e
+<0000008c> 【Takeru】「Yes, please!!」\e
+
+//<000001ae> 【夕呼】「あなたの根拠のない言葉を信じて？」\e
+<000001ae> 【Yuuko】「On the basis of your unproven words?」\e
+
+//<0000008e> 【武】「お願いしますッ！」\e
+<0000008e> 【Takeru】「Please!!」\e
+
+//<0000008f> 【夕呼】「…\p…\p…\p…\p」\e
+<0000008f> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<00000090> 【武】「…\p…\p…\p…\p」\e
+<00000090> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000091> 【夕呼】「…\p…\pわかったわ、\p言う通りにしましょう」\e
+<00000091> 【Yuuko】「...\p...\pfine,\p I'll do what you want.」\e
+
+//<00000092> 【武】「えっ！？」\e
+<00000092> 【Takeru】「Eh!?」\e
+
+//<000001af> 【夕呼】「あまり論理的ではないけど、\p信念は本物のようね…\p…\p」\e
+<000001af> 【Yuuko】「It's not logical at all,\p but your conviction is real...\p...\p」\e
+
+//<00000094> 【武】「そりゃあ当然じゃないですかッ！」\e
+<00000094> 【Takeru】「Of course it is!」\e
+
+//<00000095> 【夕呼】「だから、\p言う通りにしてあげる」\e
+<00000095> 【Yuuko】「Which is why I'll do as you ask.」\e
+
+//<00000096> 【武】「え！？」\e
+<00000096> 【Takeru】「Eh!?」\e
+
+//<00000097> 【夕呼】「あなたの言うことを信じるって言ったのよ、\pよかったじゃない」\e
+<00000097> 【Yuuko】「I said I'll believe what you say.\p\bIsn't that a good thing?」\e
+
+//<00000098> 【武】「だ、\pだってオレ…\p…\p今…\p…\pそれとは逆のことを…\p…\p」\e
+<00000098> 【Takeru】「B-\pbut I...\p...\pjust now...\p...\pyou said the opposite...\p...\p」\e
+
+//<00000099> 【夕呼】「なに？　不満なの？」\e
+<00000099> 【Yuuko】「What? You don't want me to?」\e
+
+//<0000009a> 【武】「いや…\p…\pそういうわけじゃ…\p…\p」\e
+<0000009a> 【Takeru】「No...\p...\pnot that...\p...\p」\e
+
+//<0000009b> 【夕呼】「あなた、\p頭がいいのか悪いのかわからないわねえ…\p…\p」\e
+<0000009b> 【Yuuko】「I can't tell if you're smart or stupid...\p...\p」\e
+
+//<0000009c> 【武】「え？」\e
+<0000009c> 【Takeru】「Eh?」\e
+
+//<0000009d> 【夕呼】「１１日付近に佐渡島からＢＥＴＡが本土上陸を企てたら、\pその時点であなたの言ったことは真実になるじゃない」\e
+<0000009d> 【Yuuko】「If BETA even try to invade the mainland from Sadogashima around the 11th,\p then that makes everything you say true.」\e
+
+//<0000009e> 【武】「え…\p…\pでも、\pさっきは…\p…\p？」\e
+<0000009e> 【Takeru】「Eh...\p...\pbut,\p just now you said...\p...\p?」\e
+
+//<000001b0> 【夕呼】「あなたの話の中に、\p調査も予測も不可能な、\pどうにもならない要素があったでしょ？」\e
+<000001b0> 【Yuuko】「Isn't there something in your story which we can't possibly investigate or predict?」\e//BCP_S
+
+//<000000a0> 【武】「どうにもならない要素…\p…\p？」\e
+<000000a0> 【Takeru】「In my story...\p...\p?」\e
+
+//<000001b1> 【夕呼】「ＢＥＴＡは、\p人間の都合で動いているわけじゃないでしょ？　彼らの行動は予測不能よ」\e
+<000001b1> 【Yuuko】「The BETA don't take action for the same reasons humans do. We can't predict anything they do.」\e//CP_E
+
+//<000000a2> 【武】「あ！　…\p…\pじゃあ、\pＢＥＴＡが佐渡島から本土上陸を企てたら、\pその時点でオレの言ったことは真実って認めてもらえるんですか？！」\e
+<000000a2> 【Takeru】「Ah! ...\p...\pso,\p if the BETA are planning to invade the mainland from Sadogashima,\p then you'll accept what I say as true!?」\e
+
+//<000000a3> 【夕呼】「そういうこと…\p…\p普通なら確定要素が足りないと言いたいところだけど、\pあなたのミステリーはそれだけじゃないから…\p…\pまあ合格ってところかしらね」\e
+<000000a3> 【Yuuko】「That's right...\p...\pnormally I'd say we need more evidence,\p but there are other mysteries surrounding you...\p...\pwhich means you kinda passed.」\e
+
+//<000000a4> 【武】「せ、\p先生！！　酷すぎるっ！！　オレを騙して…\p…\p」\e
+<000000a4> 【Takeru】「S-\pSensei!! That's not fair!! Trying to trick me...\p...\p」\e
+
+//<000001b2> 【夕呼】「あなたねぇ…\p…\pもう少し想像力を働かせなきゃ駄目よ」\e
+<000001b2> 【Yuuko】「Come on...\p...\puse your imagination a little.」\e
+
+//<000000a6> 【武】「え？」\e
+<000000a6> 【Takeru】「Eh?」\e
+
+//<000001c6> 【夕呼】「あなたの話を信じるとして、\pあたしは何をどう指示したらいいわけ？　もし何かのきっかけで、\p時期や場所がずれたらどうするのよ？」\e
+<000001c6> 【Yuuko】「If I believe your story,\p then what orders should I give out?\bWhat if, for some reason,\p the time and place don't match up?」\e
+
+//<000000a8> 【武】「…\p…\p…\p…\p国連軍と帝国軍を巻き込んで、\pとんでもないことになりますね」\e
+<000000a8> 【Takeru】「...\p...\pthen the UN and Imperial Armies would be devastated.」\e
+
+//<000000a9> 【夕呼】「そのせいでオルタネイティヴ４が取りつぶされる可能性も、\pゼロじゃないのよ？」\e
+<000000a9> 【Yuuko】「And there's a nonzero chance that Alternative IV would be halted as a result.」\e
+
+//<000000aa> 【武】「…\p…\pそうか…\p…\pオレの言葉は責任重大なんですね」\e
+<000000aa> 【Takeru】「...\p...\pI see...\p...\pmy words have a lot of power, and I'm responsible for them.」\e
+
+//<000001b4> 【夕呼】「何をしたらいいのか、\pどんな影響があるのか分からない…\p…\pそんな漠然とした状態よりはいいでしょ？」\e
+<000001b4> 【Yuuko】「But that's still better than having no idea what to do or what effects it might have...\p...\pisn't it?」\e
+
+//<000000ac> 【武】「…\p…\pそうですね。\nその方が意思を強く持っていられますし」\e
+<000000ac> 【Takeru】「...\p...\pgood point.\nThinking about it that way makes me feel much more confident.」\e
+
+//<00000244> 【夕呼】「さて…\p…\p越中と下越新潟地域の帝国軍には、\p１０日付けで防衛基準態勢２あたりでも出しておこうかしらね…\p…\p」\e
+<00000244> 【Yuuko】「Now then...\p...\plet's have the Imperial units in the Etchu and Kaetsu provinces of Niigata go to DEFCON 2 on the 10th...\p...\p」\e
+
+//<000000ae> 【武】「横浜基地からの支援部隊もどうにか…\p…\p」\e
+<000000ae> 【Takeru】「Can't we get someone from Yokohama base to...\p...\p」\e
+
+//<000000af> 【夕呼】「だめよ。国連軍は日本政府の要請がなければ動けないわ」\e
+<000000af> 【Yuuko】「No we can't. The UN Army can't move unless the Japanese government asks it to.」\e
+
+//<000000b0> 【武】「…\p…\p」\e
+<000000b0> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000000b1> 【夕呼】「軍隊ってのはね、\p腰が重いけど動き出したら止まらないんだから…\p…\p覚悟決めてやりなさい」\e
+<000000b1> 【Yuuko】「Armies are slow to act, but once they get going they don't stop...\p...\pprepare yourself for that.」\e
+
+//<000000b2> 【武】「わかりました」\e
+<000000b2> 【Takeru】「Understood.」\e
+
+//<000000b3> …\p…\pったく。\e
+<000000b3> ...\p...\pgeez.\e
+
+//<000000b4> ２年の経験を積んできても、\pこの人には歯が立たないのか…\p…\pやれやれ。\e
+<000000b4> I have two whole years of experience,\p but I still can't even come close to competing with this woman...\p...\pcome on.\e
+
+//<000000b6> 【夕呼】「いずれにしろこの事件は、\p白銀にとって意義深いものになるでしょうね」\e
+<000000b6> 【Yuuko】「Whatever happens,\p this incident will be extremely important for you, Shirogane.」\e//BR_E
+
+//<000000b7> 【武】「…\p…\p…\p…\pはい」\e
+<000000b7> 【Takeru】「...\p...\p...\p...\pyes.」\e
+

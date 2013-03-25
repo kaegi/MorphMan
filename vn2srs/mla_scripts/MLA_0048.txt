@@ -1,0 +1,3320 @@
+// Title: 涙落ちる果て 12月21日（金）
+#FILENAME 07ada0ac
+#TYPE 3
+
+//<00002020> 【涼宮中尉】「――３１７飛行隊をレーダーに捕捉。\n定刻通りです」\e
+<00002020> 【1st Lt. Suzumiya】「――317th Flying Corps located on radar.\nThey're on time.」\e
+
+//<00002023> 【伊隅大尉】「Ｃ－５輸送機が６機…\p…\p数はあっている。\n各機気を抜くなよ」\e
+<00002023> 【Capt. Isumi】「Six C-5 transport planes...\p...\pthat's the right number.\p Everyone, stay alert.」\e
+
+//<0000066c> 【武】「…\p…\p」\e
+<0000066c> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000022f6> 熱源探知…\p…\p異常なし。\nコクピットに３つ…\p…\p主翼に４つの熱源。\nこれはエンジンだな。\e
+<000022f6> Thermal scan...\p...\pnothing suspicious.\nThree heat sources in the cockpit...\p...\pfour in the wings.\nThose would be the engines.\e
+
+//<0000066f> 各機体７つずつの熱源で、\pカーゴベイには熱源無し。\e
+<0000066f> Each plane has the same seven heat sources,\p and none are in the cargo bays.\e
+
+//<00000670> 問題なし…\p…\pか。\e
+<00000670> Nothing wrong...\p...\p\e
+
+//<000027b4> これだけ警戒してれば、\p不測の事態があってもすぐに対応できる。\e
+<000027b4> Given how wary we are,\p we'll be able to deal with anything that does happen pretty quickly.\e
+
+//<00000672> 予定にないコンテナや『何かの手違いで』ＢＥＴＡが出て来たとしても、\p前のような惨状にはならない。\e
+<00000672> Even if there is a "mistake" and BETA pop out of those containers,\p we're ready for them this time.\e
+
+//<00000673> 輸送機６機分のカーゴに収容可能なＢＥＴＡの最大戦力を凌駕する、\p完全武装の戦術機甲部隊１個大隊が目を光らせているんだ。\e
+<00000673> We've got a fully armed TSF Armored Battalion, which can handle anything six transport containers worth of BETA can throw at us.\e
+
+//<00000674> …\p…\pオレは吹雪を潰してるから、\pこうやって装甲車でバックアップしかできないけど。\e
+<00000674> ...\p...\pthough I broke my Fubuki, so I have to back them up with an Armored Car instead.\e
+
+//<00000675> 【武】「…\p…\p…\p…\p」\e
+<00000675> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000676> 夕呼先生は横浜基地にこういう空気を作りたかったって事なんだろうな。\e
+<00000676> This is probably the kind of twitchy attitude Yuuko-sensei wanted on Yokohama Base.\e
+
+//<0000238c> 先生のやった事に１００％の賛同はできないが…\p…\p結果的には正しかったとも言える。\e
+<0000238c> I can't agree a hundred percent with what Sensei did...\p...\pbut I can't argue with the results either.\e//lit. "I could say she was effectively right"
+
+//<00000678> 基地全体の志気は更に上がったし、\p「ＢＥＴＡと基地の間にはまず帝国軍がいるから」みたいな後方意識も吹っ飛んだ。\e
+<00000678> Everyone on the base is much more determined now.\bThe attitude that "the Imperial Army lies between us and the BETA" has been utterly wiped out.\e
+
+//<0000067a> そして…\p…\p先生の思惑通り、\pこの基地の上層部にもいた、\p親米追随派や楽観論者達は完全に更迭された。\e
+<0000067a> And...\p...\pjust like Sensei wanted,\p the pro-Americans and optimists in this base's upper echelons have been shaken up.\e
+
+//<0000067b> その空いたポストに、\p国連軍の各戦線にいた現場たたき上げの将軍達が着任したんだ。\e
+<0000067b> Now their positions are being taken by war-hardened UN Army generals from every front.\e
+
+//<0000067c> それは、\p００ユニット完成を受けて、\pたぶん近いうちに大きな作戦がある事…\p…\pそして更に激しくなる妨害工作を予想しての人事だろう。\e
+<0000067c> And with the 00 Unit completed,\p and some kind of huge operation on the horizon...\p...\pthey're probably worried about sabotage too.\e
+
+//<00002026> 【伊隅大尉】「――白銀ぇ…\p…\p不知火の到着が、\pボーっとするほど嬉しいのか？」\e
+<00002026> 【Capt. Isumi】「――Shiroganeee...\p...\pare you so happy to see these Shiranui you're passing out?」\e//"spacing out" is probably more accurate but it doesn't feel obvious how that could connect to being too happy ~IX
+
+//<0000067f> ――やべっ…\p…\p！\e
+<0000067f> ――Crap...\p...\p!\e
+
+//<00000680> 【武】「――はい。嬉しいです大尉！」\e
+<00000680> 【Takeru】「――Yes, Captain, I am happy!」\e//that was so not the right answer ~IX
+
+//<00002029> 【伊隅大尉】「――だったらしっかり警戒することだな！　装甲車の重機関銃でも、\p兵士級や闘士級の相手ぐらいはできるぞ！？」\e
+<00002029> 【Capt. Isumi】「――Then pay close attention! Even an Armored Car's machine gun can deal with Soldier and Warrior Classes.」\e
+
+//<00000683> 【武】「――了解っ！」\e
+<00000683> 【Takeru】「――Roger!」\e
+
+//<0000202c> あの６機の輸送機に…\p…\pオレ達が乗る不知火が積まれている…\p…\p。\e
+<0000202c> Those six containers...\p...\phave the Shiranui we'll be using...\p...\p\e
+
+//<00000685> …\p…\p本当の戦いをするための主力戦術機だ。\e
+<00000685> ...\p...\pTSFs meant for real combat.\e
+
+//<00000686> 【武】「…\p…\p…\p…\p」\e
+<00000686> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000687> 神宮司軍曹…\p…\p見ていてください…\p…\p\e
+<00000687> Sgt. Jinguuji...\p...\pwatch me...\p...\p\e
+
+//<00000688> オレは…\p…\p必ずやります…\p…\p。\n…\p…\p必ず。\e
+<00000688> I will...\p...\pdo it...\p...\p\n...\p...\pI will.\e
+
+//<00000689> 【涼宮中尉】「――３１７飛行隊１番機、\p着陸態勢に移行…\p…\p」\e
+<00000689> 【1st Lt. Suzumiya】「――The lead plane of the 317th Flying Corps is preparing to land...\p...\p」\e
+
+//<000027b6> 【伊隅大尉】「ヴァルキリー１より各機――ＩＦＦ解除。\n自動照準で標的を追尾。\n安全装置はまだ外すなよ？」\e
+<000027b6> 【Capt. Isumi】「Valkyrie 1 to all units――IFF deactivated.\nFollow the target with automatic sighting.\nDon't disable your safeties yet.」\e
+
+//<00000695> これがオレ達の不知火か…\p…\p。\e
+<00000695> These are our Shiranui...\p...\p\e
+
+//<00000696> 機体自体は部隊の連中のを見ているからもう珍しくない。\nだけど…\p…\p吹雪を失ったオレにとっては感慨深いものがあるな…\p…\p。\e
+<00000696> I've seen tons of other Shiranui before in other units.\nBut...\p...\pafter losing my Fubuki, this is pretty emotional for me...\p...\p\e
+
+//<00000697> そういえば、\p『前のこの世界』で吹雪が搬入されてきた時…\p…\p眠れないぐらい興奮したっけ。\e
+<00000697> Come to think of it,\p I remember not being able to sleep...\p...\pthe night our Fubuki came in the previous world.\e
+
+//<00000698> 今のオレには、\pそんな無邪気な気持ちはない。\e
+<00000698> I don't have the same innocent feelings as back then.\e
+
+//<00000699> コイツはオレの色々な感情に訴えてくる。\nある種の達成感と高揚感…\p…\pそして無力感と虚無感…\p…\p。\e
+<00000699> This thing brings back a lot of emotions for me.\nThere's a sense of achievement...\p...\pas well as one of powerlessness and futility...\p...\p\e//he loves big words today ~IX
+
+//<00002032> 【冥夜】「――タケル！」\e
+<00002032> 【Meiya】「――Takeru!」\e
+
+//<00002033> 【武】「おっ…\p…\p来たな？」\e
+<00002033> 【Takeru】「Oh! ...\p...\pthey're here now?」\e
+
+//<0000069c> 【冥夜】「装甲車での警戒任務ご苦労であったな…\p…\pどうだ、\p警戒中に惚けるほど待ちこがれた機体は？」\e
+<0000069c> 【Meiya】「My condolences on your having to use an Armored Car...\p...\pnow how are the TSFs which nearly made you pass out?」\e//this line is bugging me, but... - Sheeta //the transition felt a bit awkward in JP too so I gave up pretty fast ~IX
+
+//<00002035> 【武】「なんだよ、\pおまえだって嬉しいくせに」\e
+<00002035> 【Takeru】「What?\p You're happy too and you know it.」\e
+
+//<0000069e> 【冥夜】「そうだな…\p…\pようやくこれで、\p本当に部隊の一員となれた気がする」\e
+<0000069e> 【Meiya】「That is true...\p...\pit feels as though we are finally true members of the unit.」\e
+
+//<0000069f> コイツの納品が遅れたせいで、\pおまえらは吹雪で訓練していたんだもんな…\p…\p。\e
+<0000069f> The Shiranui got delayed, so you guys had to train in your Fubuki for a while...\p...\p\e
+
+//<000006a0> ただでさえ新入りなのに、\p主機の出力が違うから、\p連携訓練なんて苦労しただろうな。\e
+<000006a0> Not only were you the newbies,\p but your TSFs had different power levels from the rest of the group's,\p so it must've been a huge pain.\e
+
+//<000006a1> 【武】「吹雪の引渡しは済んだのか？」\e
+<000006a1> 【Takeru】「Did you guys finish handing over your Fubuki?」\e
+
+//<000006a2> 【冥夜】「うん」\e
+<000006a2> 【Meiya】「Yes.」\e
+
+//<000006a3> 【武】「そうか…\p…\pどんな気分だ？」\e
+<000006a3> 【Takeru】「I see...\p...\phow's it feel?」\e
+
+//<000006a4> 【冥夜】「今まで共に歩んできたのだ。\n思うところはある」\e
+<000006a4> 【Meiya】「I have come this far with that TSF.\nI do feel for it.」\e
+
+//<000006a5> 【武】「そうだよな…\p…\p」\e
+<000006a5> 【Takeru】「Yeah...\p...\p」\e
+
+//<000006a6> 【冥夜】「良い機体であった…\p…\p」\e
+<000006a6> 【Meiya】「It was a good machine...\p...\p」\e//editors may have fun finding better words than "good" ~IX
+
+//<0000191a> そうなんだよな…\p…\p。\n『前のこの世界』で撃震に馴染んでから、\p吹雪に戻ったオレは余計そう思っているよ。\e
+<0000191a> That's true...\p...\p\nAnd I'm familiar with Gekishin from the previous world,\p so after going back to Fubuki I feel that even more.\e
+
+//<000006a8> 【武】「整備実習に基礎動作実習…\p…\p市街地訓練。\nクーデター事件にトライアルか…\p…\p世話になったもんな」\e
+<000006a8> 【Takeru】「Mechanical training, basic movement training...\p...\pmock battles in the town.\nThe coup d'etat, and the XM3 trials...\p...\pwe've done a lot with them.」\e//the lit. uses "sewa ni naru," see my guide for an attempt at explaining that (this is a rather interesting usage of it) ~IX
+
+//<000006a9> オレにはさらにたまのＨＳＳＴ狙撃や天元山災害出動とかもあったからなあ…\p…\p。\e
+<000006a9> And to me, they also helped during Tama's HSST sniping and the volcano evacuation...\p...\p\e
+
+//<000006aa> 【冥夜】「そなたに…\p…\pこれを渡そうと思ってな…\p…\p」\e
+<000006aa> 【Meiya】「I wanted...\p...\pto give this to you...\p...\p」\e
+
+//<000006ab> 【武】「…\p…\pん？」\e
+<000006ab> 【Takeru】「...\p...\phm?」\e
+
+//<000006ac> 【冥夜】「そなたは帰って来るなり特殊任務であったのでな…\p…\p渡しそびれていたのだ」\e
+<000006ac> 【Meiya】「You had a special mission shortly after returning...\p...\pso I had no opportunity.」\e
+
+//<000006ad> 【武】「これって…\p…\p９２式戦術機管制ユニットの操縦桿じゃねえか…\p…\p」\e
+<000006ad> 【Takeru】「This is...\p...\pthe control stick from a Type-92 TSF Control Unit...\p...\p?」\e
+
+//<000006ae> 【冥夜】「そなたの吹雪が解体されたときに、\p整備班長に外しておいていただいたのだ」\e
+<000006ae> 【Meiya】「I asked the mechanics for it when they were disassembling your Fubuki.」\e//lit. "mechanic team leader" so head mechanic maybe ~IX 
+
+//<000006af> 【武】「…\p…\pえ？　だってそれ…\p…\p軍の備品…\p…\p結構マズイだろ…\p…\p？」\e
+<000006af> 【Takeru】「...\p...\peh? But this...\p...\pis military property...\p...\pcan you do this...\p...\p?」\e
+
+//<000006b0> おまえがそんなルール無視みたいなことするなんて…\p…\pしかも整備班長まで？\e
+<000006b0> I can't believe you'd break a rule like that...\p...\pand the mechanics helped you?\e
+
+//<000006b1> 【冥夜】「私達は、\pユニットを丸ごと不知火に換装するから、\pコクピット自体は何も変わらんが、\pそなたの機体の管制ユニットは新品なのであろう？」\e
+<000006b1> 【Meiya】「Our entire Control Units will be transferred to the Shiranui,\p so the cockpits will be the same,\p but you will be receiving a new one, will you not?」\e
+
+//<000006b2> 【武】「ああ、\pそうだな」\e
+<000006b2> 【Takeru】「Yeah,\p that's right.」\e
+
+//<000006b3> 【冥夜】「持っているがよい…\p…\p。\n御守りとするか戒めとするかはそなた次第だ」\e
+<000006b3> 【Meiya】「Keep it...\p...\p\nIt is up to you whether to use it as a good-luck charm or a reminder of past mistakes.」\e
+
+//<000006b4> 【武】「ありがとう…\p…\p」\e
+<000006b4> 【Takeru】「Thank you...\p...\p」\e
+
+//<000006b5> 【冥夜】「…\p…\p整備班長も、\p二度とそなたが機体を壊さないのであればと、\p喜んで共犯者となって下さったぞ」\e
+<000006b5> 【Meiya】「...\p...\pand the mechanic said he would gladly be my partner in crime so long as you did not destroy your next TSF.」\e
+
+//<000006b6> 【武】「そうか…\p…\p」\e
+<000006b6> 【Takeru】「I see...\p...\p」\e
+
+//<000006b7> 【冥夜】「後で礼を言うが良いぞ。\nこっそりとな」\e
+<000006b7> 【Meiya】「Thank him later.\nSurreptitiously, of course.」\e
+
+//<000006b8> 【武】「ああ、\pそうする。\n不知火は壊さないって約束してくるよ」\e
+<000006b8> 【Takeru】「Yeah,\p I will.\nI'll promise him not to break the Shiranui.」\e
+
+//<000006b9> 【夕呼】「――そう願いたいわね～」\e
+<000006b9> 【Yuuko】「――I hope you don't break it～」\e
+
+//<000006ba> ――！？\e
+<000006ba> ――!?\e
+
+//<000006be> 【武】「先生…\p…\p」\e
+<000006be> 【Takeru】「Sensei...\p...\p」\e
+
+//<000006bf> 【夕呼】「御剣ぃ～、\p敬礼はやめてって言ってるでしょう？」\e
+<000006bf> 【Yuuko】「Mitsurugi～\p Didn't I tell you not to salute?」\e
+
+//<000006c0> 【冥夜】「――は…\p…\pし、\p失礼しました…\p…\p！」\e
+<000006c0> 【Meiya】「――Ma'am...\p...\pm-\pmy apologies...\p...\p!」\e
+
+//<000006c1> 【武】「珍しいですねハンガーまで出てくるなんて」\e
+<000006c1> 【Takeru】「Don't see you all the way out here much.」\e
+
+//<000027c8> 【夕呼】「今日の搬入の警備態勢を視察するために第２管制塔にいたからね…\p…\p帰りがてら寄ったのよ」\e
+<000027c8> 【Yuuko】「I had to go to the No. 2 Control Tower to observe today's shipment...\p...\pso I'm stopping by on the way back.」\e
+
+//<000006c3> 【武】「え…\p…\p何のために？」\e
+<000006c3> 【Takeru】「Eh...\p...\pbut why?」\e
+
+//<000006c4> 【夕呼】「決まってるでしょう！？　保護用のビニールを破くためよ」\e
+<000006c4> 【Yuuko】「Isn't it obvious!?\bI'm gonna tear off the protective vinyl.」\e
+
+//<000006c5> 【武】「――はあ？」\e
+<000006c5> 【Takeru】「――Huuuh?」\e
+
+//<000006c6> 【夕呼】「あんたの機体だけ管制ユニットが新品でしょ？　あたしに破かせなさい」\e
+<000006c6> 【Yuuko】「Your TSF has a brand new control unit, right? Let me open it.」\e
+
+//<0000191e> …\p…\pそういえば…\p…\p前にそんな趣味があるって話を聞いたような…\p…\p？\e
+<0000191e> ...\p...\pcome to think of it...\p...\pI kinda remember hearing that she liked peeling the vinyl off new TSF parts...\p...\p\e//iirc Marimo told him sometime in MLU ~IX
+
+//<00001920> 【夕呼】「ここのところ帝国軍のお偉方の接待攻勢やら、\p会議やらばっかりでね～。\nストレス貯まってるのよ」\e
+<00001920> 【Yuuko】「I've been so busy lately meeting with Imperial Army leaders～\nI've got a lot of stress to blow off.」\e//lit. "and meetings and such" but in English I already said meeting so whoops
+
+//<00001922> 【武】「はあ…\p…\p大変ですね」\e
+<00001922> 【Takeru】「Haa...\p...\psounds rough.」\e
+
+//<00001924> 前に言ってた野暮用ってこのことだな。\nまあ、\p額面通り接待なわけ無いだろうけど。\e
+<00001924> She did mention having lots of work to do lately.\nWell,\p I'm sure there's more going on than she's trying to imply.\e
+
+//<00001926> 【夕呼】「あ、\pそうそう。\nあんたは今日、\pこのまま訓練に参加しなさいね。\nこっちは夜で大丈夫だから」\e
+<00001926> 【Yuuko】「Ah,\p right, right.\nJoin the rest of your unit for training today.\nYou can come to me at night.」\e
+
+//<000006c9> …\p…\pえ？\e
+<000006c9> ...\p...\peh?\e
+
+//<00001928> 【武】「参加しようにもオレは機体がないですよ。\n不知火だってそんな急に整備が終わるわけじゃないし」\e
+<00001928> 【Takeru】「I can't join them without a TSF.\nThere's no way they can get my Shiranui ready that fast.」\e
+
+//<0000192a> 【夕呼】「甘く見てもらっちゃ困るわね…\p…\p何で搬入が今日まで掛かったと思ってるの？」\e
+<0000192a> 【Yuuko】「Please don't underestimate me...\p...\pwhy do you think it took so long to ship them?」\e
+
+//<000006cc> 【武】「え…\p…\p基地がＢＥＴＡに奇襲されたからとかじゃ…\p…\p」\e
+<000006cc> 【Takeru】「Eh...\p...\pit wasn't because of the BETA attack...\p...\p?」\e
+
+//<0000192c> 【夕呼】「横浜基地の混乱を予想して、\p向こうで整備を終わらせてから搬入させたのよ。\nだから時間が掛かったの」\e
+<0000192c> 【Yuuko】「Since I expected Yokohama Base to be shaken up for a while,\p I had them do all the tuning over there before shipping.\p That's what took so long.」\e
+
+//<000006ce> …\p…\pああ、\pそういう事か…\p…\p。\nＢＥＴＡの奇襲は先生が計画したんだから、\pそれを理由に搬入が遅れるなんてあり得ないよな…\p…\p。\e
+<000006ce> ...\p...\paaah,\p that's what it was...\p...\p\nSince Sensei planned the BETA attack,\p there's no way this delay was unintentional...\p...\p\e
+
+//<000006cf> でも、\pいくら軍人は勘ぐらないって言っても…\p…\pオレと先生以外の人間がいるところで出して良い話題じゃないよな…\p…\p今の…\p…\p。\e
+<000006cf> Still,\p even if no one here is gonna suspect her...\p...\pis that something she can say when other people are around...\p...\p?\e//@makoto: here's an example of one of those lines where I actually do delete some of the ellipses ~IX
+
+//<000006d0> 【夕呼】「管制ユニットの換装がない分、\pあんたの機体は午後には使えるわよ。\nＸＭ３も搭載されてるわ」\e
+<000006d0> 【Yuuko】「Since your Control Unit's already installed,\p you'll be able to use it this afternoon.\nIt's got the XM3 installed too.」\e
+
+//<000006d1> 【武】「――え？」\e
+<000006d1> 【Takeru】「――Eh?」\e
+
+//<000006d2> 【夕呼】「強化装備に残っていない制御ログは、\pあんたの練習機から移しておいたから。\n感謝しなさい」\e
+<000006d2> 【Yuuko】「I also transferred all the control logs which weren't in your Armored Suit to it.\p Be grateful.」\e//lit. "from your Training TSF" and without "to it"
+
+//<000006d3> 【武】「――本当ですか！？　あ、\pありがとうございます！」\e
+<000006d3> 【Takeru】「――Really!? Th-\pthank you!」\e
+
+//<000006d4> これは本当にありがたい――これで前の機体と同じ感覚で操縦できるぞ！\e
+<000006d4> That really is good news――I can pilot this thing just like the old one!\e
+
+//<000006d5> 【冥夜】「では、\p私達も午後から不知火を使えるのでしょうか？」\e
+<000006d5> 【Meiya】「Does that mean we will also be able to use our Shiranui this afternoon?」\e
+
+//<00002037> 【夕呼】「管制ユニットの換装は、\pいくら急いでも夕方になるわねぇ…\p…\pＯＳも最新バージョンにしなきゃならないし…\p…\p」\e
+<00002037> 【Yuuko】「Converting the Control Units is gonna take until evening no matter what...\p...\pand we have to update the OS to the latest version...\p...\p」\e
+
+//<000006d7> 【冥夜】「吹雪は先程返納してしまいましたが…\p…\p」\e
+<000006d7> 【Meiya】「We have returned our Fubuki already, so...\p...\p」\e
+
+//<000006d8> 【夕呼】「でも伊隅は大丈夫だって言ってたわよ？　訓練に支障はないって」\e
+<000006d8> 【Yuuko】「But Isumi said it'd be fine.\bIt won't get in the way of training.」\e
+
+//<000006d9> 【武】「――え？」\e
+<000006d9> 【Takeru】「――Eh?」\e
+
+//<00002302> 【夕呼】「よくわからないけど、\p伊隅達が別の機体に乗って、\pあんた達新人を不知火に乗せるみたいな事言ってたわよ…\p…\p？」\e
+<00002302> 【Yuuko】「I'm not sure why,\p but apparently they'll be using some other TSFs so you guys can use their Shiranui...\p...\p」\e
+
+//<000006db> 【武】「冥夜達が…\p…\p大尉達の機体を借りるってことですか…\p…\p？」\e
+<000006db> 【Takeru】「Meiya and the others...\p...\pwill be borrowing the rest of A-01's Shiranui...\p...\p?」\e
+
+//<000006dc> 【夕呼】「強化装備側でデータを持っているんだから、\pそれは問題ないはずだけど？」\e
+<000006dc> 【Yuuko】「They have their data in their Armored Suits,\p so that shouldn't be a problem.」\e
+
+//<000006dd> 【武】「着座調整は５分もかからないですしね」\e
+<000006dd> 【Takeru】「It takes less than five minutes to install a seat, yeah.」\e//very unsure what to do with that ~IX
+
+//<000027bc> できるできないと言うよりは心理的な問題だろうな…\p…\p。\n上官の機体を訓練で壊すなんて事になったらシャレにならないからなあ…\p…\p。\e
+<000027bc> It's more of a psychological issue really...\p...\p\nIt'd be bad if any of us broke our superiors' TSFs during this exercise...\p...\p\e
+
+//<000006df> 【夕呼】「というわけで機体の問題はクリア。\nとにかく訓練には参加しなさい。\nわかった？」\e
+<000006df> 【Yuuko】「So there'll be no shortage of TSFs.\nAnyway, join them.\p Understand?」\e
+
+//<000006e0> 【武】「わかりました」\e
+<000006e0> 【Takeru】「I understand.」\e
+
+//<000006e1> 【夕呼】「がんばってね～」\e
+<000006e1> 【Yuuko】「Good luck～」\e
+
+//<000006e3> 【武】「…\p…\p…\p…\p」\e
+<000006e3> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000006e5> 【夕呼】「あ、\pシートのビニール、\p破いておくから」\e
+<000006e5> 【Yuuko】「Ah,\p I'll take off the vinyl for you.」\e
+
+//<000006e6> 【武】「…\p…\pどうぞ」\e
+<000006e6> 【Takeru】「...\p...\pgo ahead.」\e
+
+//<000006e7> 【夕呼】「じゃあねぇ～～」\e
+<000006e7> 【Yuuko】「Bye now～～」\e
+
+//<000006e9> 【冥夜】「私達も行こう。\nブリーフィング前に朝食を済ませなければな」\e
+<000006e9> 【Meiya】「Let us go as well.\nWe must finish breakfast before the briefing.」\e
+
+//<000006ea> 【武】「ああ。そうだな」\e
+<000006ea> 【Takeru】「Yeah, you're right.」\e
+
+//<00002039> 【伊隅大尉】「明日の訓練でやっと不知火が全機揃うわけだが、\pその前に新入り共の慣熟訓練を行っておく」\e
+<00002039> 【Capt. Isumi】「By tomorrow we'll all finally be able to use Shiranui for our training,\p but before then we'll give the newbies a chance to get used to them.」\e
+
+//<0000277e> 【伊隅大尉】「機動特性や出力の違いは、\pシミュレーターで認識できていると思うが、\pやはり実機とは違うからな」\e
+<0000277e> 【Capt. Isumi】「I assume you're aware from the simulators that its output and exact movements are different,\p but there's nothing like the real thing.」\e
+
+//<000006f3> 【伊隅大尉】「従って本日の演習は、\p市街地での模擬戦闘だ」\e
+<000006f3> 【Capt. Isumi】「So today's exercise will be a mock battle.」\e
+
+//<000006f5> 【速瀬中尉】「――来たぁっ！」\e
+<000006f5> 【1st Lt. Hayase】「――There they are!」\e//obligatory: ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!! -Shikiller
+
+//<000006f7> うわぁ…\p…\pなんだか速瀬中尉…\p…\p張り切ってるなぁ…\p…\p。\e
+<000006f7> Uwaaa...\p...\p1st Lt. Hayase's...\p...\preally getting into this...\p...\p\e
+
+//<000006f8> 【伊隅大尉】「なんだ速瀬、\p新人いびりが楽しみでしょうがないのか？」\e
+<000006f8> 【Capt. Isumi】「Hayase?\p Is bullying the newbies really that fun?」\e
+
+//<000006fa> 【速瀬中尉】「いやですよ大尉～。\n愛の鞭です。\nあ・い・の・む・ち！」\e
+<000006fa> 【1st Lt. Hayase】「Not at all Captain～\nThis is tough love.\nT-O-U-G-H love～!」\e
+
+//<000006fc> 【伊隅大尉】「そうか、\p最初が肝心だ。\n思いっきりやれ」\e
+<000006fc> 【Capt. Isumi】「I see,\p the first impression is important.\nGo for it.」\e
+
+//<000006fe> 【速瀬中尉】「サーイエッサー！」\e
+<000006fe> 【1st Lt. Hayase】「Sir, Yes, Sir!」\e
+
+//<00001937> あの人突撃前衛長なのに…\p…\p大人げねえなあ…\p…\p。\e
+<00001937> You'd think a Storm Vanguard would be a little more...\p...\padult...\p...\p\e
+
+//<00000701> 【千鶴】「大尉、\p私達はどうすれば良いんですか？　吹雪はもうありませんし、\p不知火は管制ユニットの換装作業中です」\e
+<00000701> 【Chizuru】「Captain,\p what should we do? We have no Fubuki,\p and our Shiranui Control Units are still being worked on.」\e
+
+//<00001939> 【伊隅大尉】「心配するな。\n今回は異機種間戦闘訓練とする。\n先任士官は全員撃震で訓練に臨む。\n貴様達は私達の機体に乗れ」\e
+<00001939> 【Capt. Isumi】「Don't worry.\nYou'll be fighting other TSFs this time.\nWe'll all be using Gekishin during this exercise.\nYou'll use our TSFs.」\e
+
+//<00000705> 【速瀬中尉】「――え～～～ッ！？」\n
+<00000705> 【1st Lt. Hayase】「――Eeeeeeeh!?」\n
+
+//<00000707> 【涼宮少尉】「――え～～～ッ！？」\n
+<00000707> 【2nd Lt. Suzumiya】「――Eeeeeeeh!?」\n
+
+//<00002306> 【千鶴・壬姫・慧・美琴】「――！」\n
+<00002306> 【Chizuru & Miki & Kei & Mikoto】「――!」\n
+
+//<0000070a> 【冥夜】「…\p…\p…\p…\p」\e
+<0000070a> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<0000070d> ――先生の言っていた別の機体って…\p…\p撃震だったのか！　てっきりイーグル辺りかと思ってた！\e
+<0000070d> ――The other TSFs Sensei mentioned...\p...\pwere Gekishin!? I thought they'd be Eagles!\e
+
+//<0000070e> 【伊隅大尉】「なんだ速瀬、\p涼宮…\p…\p不満なのか？」\e
+<0000070e> 【Capt. Isumi】「What is it?\bHayase, Suzumiya...\p...\psomething wrong?」\e
+
+//<0000203c> 【涼宮少尉】「――す、\pすみません…\p…\p」\e
+<0000203c> 【2nd Lt. Suzumiya】「――S-\psorry...\p...\p」\e
+
+//<00000712> 【速瀬中尉】「不満はないですけど、\pせっかく同じ条件で腕試しできると思ってたので」\e
+<00000712> 【1st Lt. Hayase】「Nothing's wrong,\p but I wanted to finally fight them on even terms.」\e
+
+//<00002327> 【宗像中尉】「大尉、\p速瀬中尉は白銀との対決を心待ちにしてたんですよ」\e
+<00002327> 【1st Lt. Munakata】「Captain,\p 1st Lt. Hayase has been waiting for a chance to duel Shirogane.」\e
+
+//<00000717> 【武】「――えっ？！」\n
+<00000717> 【Takeru】「――Eh!?」\n
+
+//<00000718> 【涼宮少尉】「――！？」\e
+<00000718> 【2nd Lt. Suzumiya】「――!?」\e
+
+//<0000071b> うわぁ…\p…\pオレ、\pすっかりあの人に目ぇ付けられてるんだな…\p…\p。\e
+<0000071b> Uwaa...\p...\pshe really does have her eye on me...\p...\p\e
+
+//<00002783> 【伊隅大尉】「ふん…\p…\p白銀の驚異的なデータを見せつけられて、\p突撃前衛長としては黙っちゃいられないって訳か？」\e
+<00002783> 【Capt. Isumi】「Hmm...\p...\pso Storm Vanguard One can't take Shirogane's exceptional piloting data lying down?」\e
+
+//<0000071e> 【速瀬中尉】「訓練兵の時のデータなんてどうでも良いんです。\nただ昨日のシミュレーター実習の結果が本物かどうか試したいだけですよ」\e
+<0000071e> 【1st Lt. Hayase】「His data during training doesn't matter.\nI just wanted to see if yesterday's simulator results were the real thing.」\e
+
+//<00000720> 【伊隅大尉】「なるほど。\n初めて中階層を突破する事ができたのに、\p複雑な顔をしていたのはそういうわけだったのか」\e
+<00000720> 【Capt. Isumi】「I see.\nSo that's why you looked so conflicted, even though we broke through the middle strata for the first time.」\e
+
+//<00000722> 【速瀬中尉】「別に私は…\p…\p」\e
+<00000722> 【1st Lt. Hayase】「It's not like I was...\p...\p」\e
+
+//<0000193c> 【宗像中尉】「新入り共が、\p初めてのハイヴ戦実習で好成績だったっていうのが、\p中尉は内心面白くないんですよ」\e
+<0000193c> 【1st Lt. Munakata】「The First Lieutenant doesn't like the fact that the newbies did so well in their first ever hive exercise.」\e
+
+//<00002779> 【速瀬中尉】「む・な・か・たぁ～～！\nあんたはいちいち…\p…\p」\e
+<00002779> 【1st Lt. Hayase】「MU-NA-KA-TAAAA!\nDon't make everything I do out to be...\p...\p」\e
+
+//<0000193f> 【風間少尉】「速瀬中尉はあなたを認めているって事だから、\p気にしないのよ？」\e
+<0000193f> 【2nd Lt. Kazama】「It just means she recognizes your skills,\p so don't worry about it.」\e
+
+//<0000072a> 【武】「はあ…\p…\p」\e
+<0000072a> 【Takeru】「Haa...\p...\p」\e
+
+//<0000072b> 【柏木少尉】「そうそう。\n中尉はすぐムキになるからね～。\n茜なんか――」\e
+<0000072b> 【2nd Lt. Kashiwagi】「Yeah, yeah.\nShe gets annoyed so easily～\nEven Akane's――」\e
+
+//<0000072d> 【速瀬中尉】「――聞こえたわよ柏木！」\e
+<0000072d> 【1st Lt. Hayase】「――I heard that Kashiwagi!」\e
+
+//<0000072f> 【柏木少尉】「うへぇ…\p…\p」\e
+<0000072f> 【2nd Lt. Kashiwagi】「Uhee...\p...\p」\e
+
+//<00000731> 恐ろしいお方よ…\p…\p\e
+<00000731> She's scary...\p...\p\e
+
+//<00002786> 【伊隅大尉】「楽しいおしゃべりはそこまでだ。\n――とにかく、\p中隊の戦力増強は喜ばしい事だ」\e
+<00002786> 【Capt. Isumi】「That's it for the amusing chit-chat.\n――In any event,\p we're glad to see the company is stronger now.」\e
+
+//<00000734> 【伊隅大尉】「まだ詳細は言えないが、\p近々大規模な作戦が展開される予定だ」\e
+<00000734> 【Capt. Isumi】「I can't tell you the details yet,\p but there are plans for a large-scale operation in the near future.」\e
+
+//<00002328> 【中隊全員】「――！？」\n
+<00002328> 【Entire Company】「――!?」\n
+
+//<00000739> 【武】「――！」\e
+<00000739> 【Takeru】「――!」\e
+
+//<0000073b> ――やっぱり…\p…\pそうか！\e
+<0000073b> ――So that was it...\p...\p!\e//huh? ~IX
+
+//<0000073c> 【伊隅大尉】「その作戦に間に合わせる意味でも、\p部隊連携や慣熟訓練は効率的に行いたい」\e
+<0000073c> 【Capt. Isumi】「Partly because of that deadline,\p I want this training to be efficient.」\e
+
+//<00001942> 【伊隅大尉】「よって、\p本日の模擬戦は、\p新入りをより早く機体に慣れさせる事もそうだが、\p我々も不知火の優秀性を再確認するには絶好の機会である」\e
+<00001942> 【Capt. Isumi】「So,\p today's mock battle will give the newbies a chance to get used to Shiranui sooner,\p but it's also a good way to remind the rest of us how good our Shiranui are.」\e
+
+//<00000740> 【伊隅大尉】「普段当たり前だと思っている機動が、\p貴様達の腕なのか、\pそれとも機体性能のおかげなのかを認識するんだ」\e
+<00000740> 【Capt. Isumi】「Learn whether the movements you consider ordinary and effortless are really your own skill or just the abilities of that particular TSF.」\e
+
+//<00001945> 【伊隅大尉】「機体の性能が高いに越したことはない。\nだが…\p…\p最後は腕がものを言う」\e
+<00001945> 【Capt. Isumi】「It's always better to use superior weapons.\nHowever...\p...\pthe skill of the user is what matters in the end.」\e
+
+//<00001948> 【伊隅大尉】「腕とは、\p操縦技能と柔軟な発想により、\p機体性能を十二分に引き出す能力を指す」\e
+<00001948> 【Capt. Isumi】「Skill refers to the ability to draw out and make use of the TSF's abilities through control technique and a flexible conception of piloting.」\e//finally some other adaptation for that "soft ideas" nonsense ~IX
+
+//<00000744> 【伊隅大尉】「昨日の実習データを見ればわかるが、\p高性能機に乗り換えた新人共の伸び幅が、\p先任のそれに肉薄している」\e
+<00000744> 【Capt. Isumi】「As you can see from yesterday's data,\p the newbies' changes in performance with the high-spec TSFs were much the same as the rest of yours.」\e
+
+//<00000746> 【伊隅大尉】「この事実からも、\p先任共がこのタイミングで機動特性の異なる機体に搭乗しておく意義は大きい。\nわかったな」\e
+<00000746> 【Capt. Isumi】「That fact helps make it meaningful to put you in TSFs with different idiosyncrasies today.\nUnderstand?」\e
+
+//<00002329> 【茜・柏木・風間・水月・宗像】「了解」\e
+<00002329> 【Kazama & Mitsuki & Akane & Munakata & Kashiwagi】\b「Understood.」\e
+
+//<0000074a> 【伊隅大尉】「そして、\p新人共にも言っておく」\e
+<0000074a> 【Capt. Isumi】「And something for the newbies.」\e
+
+//<00002175> 【伊隅大尉】「確かに撃震は基本設計こそ第一世代の旧式機だが、\p本日使う機体は最新型のブロック２１５…\p…\pつまりＸＭ３搭載機だ」\e
+<00002175> 【Capt. Isumi】「The Gekishin is fundamentally an old, first generation TSF,\p but today they'll be using the latest Block 215...\p...\pwhich has the XM3.」\e
+
+//<0000074e> 【伊隅大尉】「なめてかかると痛い目に遭うぞ？　いいな」\e
+<0000074e> 【Capt. Isumi】「You'll lose fast if you underestimate it.\bGot that?」\e
+
+//<00002308> 【千鶴・冥夜・壬姫・慧・美琴】「――了解！！」\e
+<00002308> 【Meiya & Chizuru & Kei & Miki & Mikoto】\b「――Understood!!」\e
+
+//<00002045> 【伊隅大尉】「編成を発表する。\nＡ隊――速瀬以下、\p宗像、\p鎧衣、\p白銀、\p彩峰、\p御剣――ＣＰが涼宮中尉」\e
+<00002045> 【Capt. Isumi】「The units are as follows.\nAlpha Team――Hayase leading Munakata,\p Yoroi,\p Shirogane,\p Ayamine,\p and Mitsurugi――With 1st Lt. Suzumiya at the Command Post.」\e
+
+//<00000757> 【速瀬中尉】「…\p…\pッ」\e
+<00000757> 【1st Lt. Hayase】「...\p...\ptsk\p!」\e
+
+//<00000759> とりあえず…\p…\pこれで速瀬中尉につけ狙われる事だけは避けられそうだ。\e
+<00000759> So for now...\p...\pI don't have to worry about 1st Lt. Hayase singling me out.\e
+
+//<0000075b> 【武】「う…\p…\p」\e
+<0000075b> 【Takeru】「Uu...\p...\p」\e
+
+//<0000075c> まさか…\p…\p後ろから撃たれる事はないと思う…\p…\p。\e
+<0000075c> She won't...\p...\pshoot me in the back or anything, right...\p...\p?\e
+
+//<0000075d> 【伊隅大尉】「Ｂ隊――伊隅以下、\p風間、\p涼宮、\p柏木、\p珠瀬、\p榊――ＣＰはピアティフ中尉とする」\e
+<0000075d> 【Capt. Isumi】「Bravo Team――Isumi leading Kazama,\p Suzumiya,\p Kashiwagi,\p Tamase,\p and Sakaki――With 1st Lt. Piatif at the Command Post.」\e
+
+//<0000075f> ピアティフ中尉…\p…\p夕呼先生の秘書官だな。\nあの人、\p戦域管制もできるのか…\p…\p司令部にいるんだから当然か。\e
+<0000075f> 1st Lt. Piatif...\p...\pthat's Yuuko-sensei's secretary.\nShe can do battle logistics too? ...\p...\pI guess she has to, to work with generals.\e
+
+//<0000194b> 【伊隅大尉】「各機の装備、\p及び配置は昨日のシミュレーター実習と同じとする」\e
+<0000194b> 【Capt. Isumi】「Your equipment and positions will be the same as yesterday's simulator exercise.」\e
+
+//<0000276d> 【伊隅大尉】「また、\p今回はより実戦に近い状況を想定するため、\pＪＩＶＥＳを使用する」\e
+<0000276d> 【Capt. Isumi】「Also,\p in order to make it more like real combat,\p we'll use JIVES.」\e
+
+//<00002770> ジャイブス…\p…\p？\e
+<00002770> JIVES...\p...\p?\e
+
+//<0000278b> 【伊隅大尉】「ＪＩＶＥＳとは、\p戦術機の各種センサーとデータリンクを利用し、\p実戦と同じ損害判定を可能とした、\p統合仮想情報演習システムだ」\e
+<0000278b> 【Capt. Isumi】「JIVES is a unified virtual information exercise system which uses the sensors and data links of each TSF to make damage assessments, which reflect what would happen in the field.」\e
+
+//<0000278d> 【伊隅大尉】「簡単にいえば、\p実機を動かしながらシミュレーター演習をするようなものだが、\pシステムが再現するのは、\p兵装と損害に関わる情報だ」\e
+<0000278d> 【Capt. Isumi】「To keep it simple,\p you could say it's like moving a real TSF while using a simulator,\p but what the system replicates is information related to weapons and damage.」\e
+
+//<000027b2> 【伊隅大尉】「たとえば、\p砲弾消費による重量変化、\p障害物の有無、\p障害物の強度と破壊――」\e
+<000027b2> 【Capt. Isumi】「For instance,\p weight changes from ammo consumption,\p presence or lack of obstacles,\p the strength and condition of the obstacles――」\e
+
+//<00002791> 【伊隅大尉】「着弾や破片による被害判定及び損害個所など、\p攻撃によるあらゆる物理現象がシミュレートされる」\e
+<00002791> 【Capt. Isumi】「Bullet or debris impact, the location and severity of the damage it caused, and so on.\p All physical phenomena involved in attacking are simulated.」\e
+
+//<0000076d> 【伊隅大尉】「その際はシミュレーター同様、\p着弾や誘導弾の爆発等の衝撃も、\p強化装備からのフィードバックによって再現されるわけだ」\e
+<0000076d> 【Capt. Isumi】「And like in a simulator,\p the impact of bullets or missile explosions will be replicated through Armored Suit feedback.」\e
+
+//<0000076f> 【伊隅大尉】「当然火器だけではなく、\p長刀で袈裟斬りにされれば、\pセンサーの軌道から被害個所とダメージが即座に判定されるぞ」\e
+<0000076f> 【Capt. Isumi】「And of course this isn't just guns.\bIf someone cuts you with their sword,\p the sensors will immediately determine the damage based on its trajectory.」\e//she made the location/severity distinction again, but I can't be bothered to fit it in ~IX
+
+//<00002796> 【伊隅大尉】「従って、\pペイント弾での演習のように、\p障害物に身を隠し続ける策は最早安全ではない」\e
+<00002796> 【Capt. Isumi】「Therefore,\p unlike paintball exercises,\p hiding behind cover is not always the safest option.」\e//she's making the distinction, in paintball exercises hiding behind covers is a safe option, but that's not the case with the weapon simulator. -Shikiller
+
+//<000027d6> 【伊隅大尉】「そういった実戦ではあり得ない状況は完全に排除される。\n大雑把で曖昧な結果は絶対に出ないシステムなんだ」\e
+<000027d6> 【Capt. Isumi】「All unrealistic strategies like that are ineffective with this system.\nIt cannot give vague or uncertain results.」\e
+
+//<00002775> 【伊隅大尉】「断っておくが、\pこれは非常に高価なオモチャだ…\p…\p壊したらただじゃ置かないからな」\e
+<00002775> 【Capt. Isumi】「You should also know that this is an extremely pricey toy...\p...\pyou'd better not break it.」\e
+
+//<00000775> なるほど…\p…\p実戦部隊があまりシミュレータールームを使っていないのは、\pこんな物が配備されているからか。\e
+<00000775> I see...\p...\pcombat units don't use simulators much because they can use stuff like this.\e
+
+//<00000776> 【伊隅大尉】「演習の開始予定は１３時３０分、\p場所は第二演習場東」\e
+<00000776> 【Capt. Isumi】「The exercise will begin at 13:30,\p on the East side of Training Ground No. 2.」\e
+
+//<00000778> あと４時間はあるな…\p…\pじっくり作戦を考える事ができる。\e
+<00000778> So four more hours...\p...\pthat's plenty of time to come up with a plan.\e
+
+//<00000779> 【伊隅大尉】「整備作業の遅延により開始時間の変更がある場合は事前に伝える――以上、\p解散！」\e
+<00000779> 【Capt. Isumi】「If there are any delays due to technical difficulties you will all be informed――That is all,\p dismissed!」\e
+
+//<0000077b> 【速瀬中尉】「――敬礼ッ！」\e
+<0000077b> 【1st Lt. Hayase】「――Salute!」\e
+
+//<00000780> 【伊隅大尉】「よしＢ隊、\p付いてこい。\n作戦立案会議としゃれ込もう」\e
+<00000780> 【Capt. Isumi】「Okay, Bravo Team,\p follow me.\nLet's go discuss our plan.」\e
+
+//<000026a5> 【柏木・千鶴・壬姫・茜・風間】「了解」\e
+<000026a5> 【Kazama & Chizuru & Akane & Kashiwagi & Miki】\b「Roger!」\e
+
+//<00000784> 【涼宮少尉】「…\p…\p…\p…\p」\e
+<00000784> 【2nd Lt. Suzumiya】「...\p...\p...\p...\p」\e
+
+//<00000786> 【武】「涼宮…\p…\pなんだ…\p…\p？」\e
+<00000786> 【Takeru】「Suzumiya? ...\p...\pwhat is it...\p...\p?」\e
+
+//<00000787> そんなに睨むなよ～\e
+<00000787> Don't glare at me so hard...\p...\e
+
+//<00000788> 【涼宮少尉】「絶対負けないから…\p…\p」\e
+<00000788> 【2nd Lt. Suzumiya】「We won't lose...\p...\p」\e
+
+//<0000078b> こっちの涼宮は怖えなあ…\p…\p。\e
+<0000078b> This world's Suzumiya is scary...\p...\p\e
+
+//<0000078c> 【速瀬中尉】「――じゃあ私達はＰＸに行きましょ」\e
+<0000078c> 【1st Lt. Hayase】「――Then let's all go to the PX.」\e
+
+//<0000078f> 【武】「了解」\n
+<0000078f> 【Takeru】「Understood.」\n
+
+//<0000232a> 【慧・美琴・冥夜・宗像】「了解」\e
+<0000232a> 【Meiya & Munakata & Kei & Mikoto】「Understood.」\e
+
+//<00001492> 【美琴】「――おばちゃん、\p合成宇治茶４人分と、\pコーヒーモドキ２つ、\pあとラムネ１本ちょうだい」\e
+<00001492> 【Mikoto】「――Oba-chan,\p we want four Ujicha,\p two imitation coffees,\p and one Lamune.」\e//yeah, I dunno if any of that was a good idea either ~IX
+
+//<00001493> 【京塚】「――昼の仕込みで忙しいんだよっ！　ちょっとまってな！」\e
+<00001493> 【Kyozuka】「――I'm busy preparing for lunch! Gimme a minute!」\e
+
+//<00001495> 【美琴】「え～～～、\p中尉に怒られちゃうよー」\e
+<00001495> 【Mikoto】「Eeeeeeeh?\p The First Lieutenant's gonna get mad.」\e
+
+//<00002048> 【京塚】「――中尉って水月ちゃんだろ？　怒ったらあたしに言いつけるって言いな！」\e
+<00002048> 【Kyozuka】「――You mean Mitsuki-chan, right?\bIf she gets mad tell her to talk to me about it!」\e
+
+//<00001498> 【美琴】「そんな～～～！？　――タケル、\pボク、\p中尉に遅くなること伝えてくるね！」\e
+<00001498> 【Mikoto】「Nooooooo!! ――Takeru,\p tell the First Lieutenant this is gonna take a while!」\e
+
+//<0000149b> 【冥夜】「――鎧衣！」\n
+<0000149b> 【Meiya】「――Yoroi!」\n
+
+//<0000149c> 【武】「――あっ…\p…\p！」\e
+<0000149c> 【Takeru】「――Ah...\p...\p!」\e
+
+//<0000149e> 行っちまった…\p…\p。\nまだ時間はたっぷりあるんだから、\pそんなに慌てなくても大丈夫だろ？\e
+<0000149e> There she goes...\p...\p\nThere's plenty of time left,\p so why do you have to rush?\e
+
+//<0000149f> 【武】「…\p…\p…\p…\p」\e
+<0000149f> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000014a0> まあいいか。\e
+<000014a0> Oh well.\e
+
+//<000014a1> そんなことより情報収集だ。\nオレにとってはこのタイミングしかないからな。\e
+<000014a1> Gotta focus on gathering information.\nThis is my only good chance to do that.\e
+
+//<000014a2> すすんで飲み物を取りに行こうとした彩峰を、\p無理矢理制してまで作ったこの時間、\p有効に使わないと…\p…\p。\e
+<000014a2> I've gotta make use of this time,\p after forcing Ayamine to help get our drinks so that I'd have it...\p...\p\e//when the hell did he do that? ~IX
+
+//<000014a3> 【武】「…\p…\pなあ、\p冥夜」\e
+<000014a3> 【Takeru】「...\p...\phey,\p Meiya.」\e
+
+//<000014a4> 【冥夜】「なんだ」\e
+<000014a4> 【Meiya】「What?」\e
+
+//<000014a5> 【武】「実際、\p中隊の実力…\p…\pっていうか、\p戦力っていうか、\pどうなんだその辺」\e
+<000014a5> 【Takeru】「How good is the company,\p really?\b...\p...\pI mean in combat,\p how are they?」\e
+
+//<000014a6> 【冥夜】「なんだいきなり…\p…\pしかも質問が漠然としすぎているぞ」\e
+<000014a6> 【Meiya】「What brought this on?\b...\p...\pand your question is far too vague.」\e
+
+//<000014a7> 【武】「いや…\p…\pオレまだ実機訓練、\p一緒にやってないだろ？　だから中隊の連中が持ってる特性がわからないんだよ」\e
+<000014a7> 【Takeru】「Well...\p...\pI didn't get to do any of the mock battles with you guys. So I don't know any of our comrades' peculiarities.」\e
+
+//<000014a8> 【武】「作戦会議をする前に、\pおまえ達が吹雪で訓練に参加してどういう印象を持ったかを聞いておきたいんだよ」\e
+<000014a8> 【Takeru】「I wanted to ask what impression you had of them from your Fubuki before we started working on a plan.」\e
+
+//<000014a9> 【冥夜】「なるほどな…\p…\pそういう意味であれば、\p全員かなり手強いぞ」\e
+<000014a9> 【Meiya】「I see...\p...\pin that sense,\p they are all quite strong.」\e
+
+//<000014aa> 【武】「やっぱり？」\e
+<000014aa> 【Takeru】「No surprise.」\e
+
+//<000014ab> 【冥夜】「そなたも聞いたであろうが、\pこの部隊は私達とほぼ同時期にそなたのＯＳを導入している。\nその意味でのアドバンテージはない」\e
+<000014ab> 【Meiya】「As you have likely heard,\p this unit obtained the OS shortly after we did.\nSo we do not even have that advantage.」\e
+
+//<000014ac> 【武】「ああ、\p知ってるよ」\e
+<000014ac> 【Takeru】「Yeah,\p I knew that.」\e
+
+//<000014ad> 【冥夜】「その上実戦経験豊富な士官が４名、\p機体も高性能とくればその差は歴然であろう」\e
+<000014ad> 【Meiya】「On top of that, four of them have vast leadership experience from the field.\p That benefit is quite evident when they have highly capable TSFs.」\e
+
+//<000014ae> 【武】「…\p…\p…\p…\p」\e
+<000014ae> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000014af> 【冥夜】「もし今日の模擬戦が、\p新任対先任という編成であったなら、\p私達が勝てる見込みは無かったであろうな」\e
+<000014af> 【Meiya】「If today's mock battle had been us versus them,\p we would not have stood a chance.」\e
+
+//<000014b0> 【武】「おまえがそこまで言うなら…\p…\p相当なんだろうな」\e
+<000014b0> 【Takeru】「If even you think so...\p...\pthey really must be good.」\e
+
+//<000022fa> 【冥夜】「私も彩峰も、\p近接格闘戦で速瀬中尉に１度も勝てていないのだ。\nそれどころか、\p機体にかすらせる事すらかなわん」\e
+<000022fa> 【Meiya】「Ayamine and I have yet to beat 1st Lt. Hayase once in close quarters.\nNot only that,\p we have not even grazed her.」\e
+
+//<000014b3> 【武】「うそだろ…\p…\p？　おまえらが？」\e
+<000014b3> 【Takeru】「You're kidding...\p...\pright? Neither of you?」\e
+
+//<000014b4> 昨日のシミュレーター実習だけでも、\p速瀬中尉が相当な腕の持ち主なのはわかる…\p…\p。\nでも、\p冥夜と彩峰にかすらせもしないなんて…\p…\p。\e
+<000014b4> I could tell 1st Lt. Hayase was good from yesterday's simulator exercise...\p...\p\nBut Meiya and Ayamine can't even scratch her...\p...\p?\e
+
+//<000014b5> 【武】「…\p…\pおまえ達が吹雪じゃなくて、\p不知火に乗ってたとしても、\pそう思うか」\e
+<000014b5> 【Takeru】「...\p...\pdo you think that'd still be true if you had Shiranui?」\e
+
+//<0000204b> 【冥夜】「おそらく結果は同じであろう…\p…\pただし」\e
+<0000204b> 【Meiya】「Most likely, it would...\p...\palthough...\p...」\e
+
+//<000014b7> 【武】「…\p…\p…\p…\p」\e
+<000014b7> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000204d> 【冥夜】「それは、\p今のところの話であるがな」\e
+<0000204d> 【Meiya】「That is merely the present state of affairs.」\e
+
+//<000014ba> 【武】「お…\p…\p？」\e
+<000014ba> 【Takeru】「Oh...\p...\p?」\e
+
+//<000014bb> 【冥夜】「私とて、\pいつまでも中尉の後塵を拝するつもりはない」\e
+<000014bb> 【Meiya】「I do not plan on lagging behind the First Lieutenant forever.」\e
+
+//<000014bc> 【武】「…\p…\pそう来なくちゃな」\e
+<000014bc> 【Takeru】「...\p...\pglad to hear it.」\e//lit. "it's gotta come to that" -> "you can't not think that"
+
+//<000014bd> 【冥夜】「故に今日の大尉の計らいは喜ばしい事だ。\n１日でも早く不知火に慣れたいからな」\e
+<000014bd> 【Meiya】「Hence the Captain's plan is welcoming to me.\nI also wish to become accustomed with Shiranui as quickly as possible.」\e
+
+//<000014be> 【武】「そうだな」\e
+<000014be> 【Takeru】「Yeah.」\e
+
+//<000014bf> 【冥夜】「それに、\pそなたの奇っ怪な機動を目の当たりにしている私には、\p先任達のそれはさして驚くべきものではなかったからな…\p…\p」\e
+<000014bf> 【Meiya】「Besides,\p after seeing your eccentric maneuvers,\p their moves were not surprising in the least...\p...\p」\e
+
+//<000014c1> 【武】「さすが…\p…\p言ってくれるね」\e
+<000014c1> 【Takeru】「...\p...\pI guess not.」\e//lit. "as expected...you really said it" or something? I don't get this line ~IX
+
+//<000014c2> 【冥夜】「思い上がる訳ではないが、\p昨日のシミュレーター実習の結果を鑑みても、\p一矢報いる日はそう遠くないであろう」\e
+<000014c2> 【Meiya】「Not to overestimate myself,\p but even looking back on yesterday's simulator results,\p the day when I can land a blow on her does not seem far off.」\e
+
+//<000014c3> 【武】「ああ、\pオレ達ならやれる…\p…\p絶対にな」\e
+<000014c3> 【Takeru】「Yeah,\p we can match them...\p...\pno question.」\e
+
+//<000014c4> そう思い続けるんだ。\nもう、\p気持ちで負けたくないからな。\e
+<000014c4> I'll keep thinking that.\nI don't wanna lose anymore.\e
+
+//<000014c5> だけど…\p…\p速瀬中尉には絶対聞かれたくねぇ会話だよなぁ…\p…\p\e
+<000014c5> But...\p...\pwe really can't let 1st Lt. Hayase hear anything like that...\p...\p\e
+
+//<000014c6> 【美琴】「――なになに？　なんの話～？」\e
+<000014c6> 【Mikoto】「――What is it? What're you talking about～?」\e
+
+//<000014c8> 【武】「――っ！？」\e
+<000014c8> 【Takeru】「――!?」\e
+
+//<000014c9> ――なんだよ美琴…\p…\p！！　脅かすなよ…\p…\p。\e
+<000014c9> ――Mikoto...\p...\p!! Don't scare me like that...\p...\p\e
+
+//<000014ca> 【冥夜】「タケルが作戦会議の前に、\p先任者達の技能を知っておきたいのだそうだ」\e
+<000014ca> 【Meiya】「Takeru wished to know our predecessors' ability before we begin planning.」\e
+
+//<000014cb> 【美琴】「ああ、\pそういう話か～」\e
+<000014cb> 【Mikoto】「Aaah,\p that's what it was～」\e
+
+//<000014cc> 【武】「何もわからないまま会議に参加したって、\p意味ないからな」\e
+<000014cc> 【Takeru】「Not much point in me joining in if I have no idea.」\e
+
+//<000014cd> 【美琴】「それもそうだね」\e
+<000014cd> 【Mikoto】「I guess not.」\e
+
+//<000014ce> 【武】「なんでもいいからたのむ。\nＢ隊の先任の特性を教えてくれ」\e
+<000014ce> 【Takeru】「I don't care what,\p just tell me anything you can about the Bravo Team members.」\e
+
+//<000014cf> 【美琴】「ええと…\p…\pボクと同じ制圧支援の風間少尉は、\pものすごく冷静な人だよ。\n標的脅威度の格付けも的確で、\pとっても素早いんだ」\e
+<000014cf> 【Mikoto】「Ummm...\p...\p2nd Lt. Kazama is a Blast Guard like me,\p and she's incredibly calm.\p Her threat evaluation is so fast and accurate.」\e
+
+//<000014d1> へえ…\p…\p。風間少尉は落ち着きがあって、\pなんか大人っぽい雰囲気がある人だけど、\p見た目の印象を裏切らない感じだな。\e
+<000014d1> Hmm...\p...\pshe did seem the most mature because of that calm attitude.\p Sounds like my impression is accurate.\e//lit. "feels like she doesn't betray the impression of her appearance"
+
+//<000014d2> 【美琴】「狙撃特性もかなり高いし、\p近接格闘戦に持ち込むのは至難の業だと思うよ」\e
+<000014d2> 【Mikoto】「She's a great sniper too.\bIt's almost impossible to get up close to her.」\e
+
+//<000014d4> そこまで持ち込んだとしても、\p風間少尉の格闘戦能力が低い訳じゃないだろうしなあ…\p…\p\e
+<000014d4> And I doubt her close quarters skills are bad even if we could...\p...\p\e
+
+//<00002050> 【武】「じゃあ柏木は？　あいつは砲撃支援だよな？」\e
+<00002050> 【Takeru】「What about Kashiwagi?\bShe's an Impact Guard, right?」\e
+
+//<000014d6> 【美琴】「うん、\p壬姫さんと同じだね。\n訓練部隊の時は、\p狙撃のナンバー２だったから、\p砲撃支援は順当なポジションだと思う」\e
+<000014d6> 【Mikoto】「Yeah,\p same as Miki-san.\nShe was the second best sniper in her training unit,\p so I think Impact Guard is just right for her.」\e//obviously, if any of you disagree with what I think the voices are pronouncing these positions as, do speak up ~IX
+
+//<00002052> 【冥夜】「あの者は広い戦術的視野を持っている優秀な衛士だ。\n狙撃特性に於いて珠瀬には及ばないが、\pその比較はあまり意味がないであろう」\e
+<00002052> 【Meiya】「She is an excellent Eishi with a broad tactical outlook.\nShe cannot match Tamase's sniping skill,\p but that comparison is likely meaningless.」\e
+
+//<000014d9> まあ、\pそれだけたまが抜きん出ているって事だ。\e
+<000014d9> Well,\p that just means Tama's gonna give her all.\e
+
+//<000014da> 何しろ『前のこの世界』でＨＳＳＴを撃ち落としたぐらいだからな。\nそれと比較するのは柏木がかわいそうだ。\e
+<000014da> She managed to shoot down an HSST in the previous world.\nI almost feel sorry for Kashiwagi, being compared to that.\e
+
+//<000014db> 【美琴】「射撃精度では壬姫さん、\p状況判断では晴子さんってとこかな」\e
+<000014db> 【Mikoto】「So Miki-san's more accurate,\p but Haruko-san's better at judging the situation.」\e
+
+//<000014dc> 【冥夜】「戦況を的確に判断し、\p敵を狙撃することで、\p突撃前衛の動くスペースを確保するのが砲撃支援だ」\e
+<000014dc> 【Meiya】「The Impact Guard's role is to assess the situation and to snipe whichever enemies stand in the way of the Storm Vanguards.」\e//lit. "secure the Storm Vanguards' movement space"
+
+//<00002054> 【冥夜】「それを担う者がＡ隊にひとりもいないというのは、\p条件としてはかなり厳しいぞ？」\e
+<00002054> 【Meiya】「Not one of us in Alpha Team is well-suited for that role,\p which is a severe handicap.」\e
+
+//<000014e0> 【武】「確かに…\p…\pかなり厄介だなあ」\e
+<000014e0> 【Takeru】「Good point...\p...\pthat will be problematic.」\e
+
+//<000014e1> こっちの布陣は中・近接戦主体の編成だし…\p…\p。\e
+<000014e1> We all specialize in short or mid-range fighting...\p...\p\e
+
+//<000014e2> 訓練校の時の模擬戦の編成も、\p狙撃対格闘的なシチュエーションだったなあ…\p…\pこういうのってそういう状況に設定するように決まってるのか？\e
+<000014e2> I remember having this kind of dichotomy back in Training School too...\p...\pdo they put us in this kind of situation on purpose?\e//if it's not clear, he means the one where Class Rep+him+Ayamine had to take on a team with Tama, and the latter part seems to be implying this is practice for fighting BETA swarms with laser classes ~IX
+
+//<000014e3> まあ、\p『前のこの世界』の時は力業で、\p『この世界』ではＯＳのおかげでうまく勝てたけど…\p…\p今度は正規兵が相手だからなぁ…\p…\p。\e
+<000014e3> Well,\p we beat it in the previous world through insane effort,\p and this time we did it with the OS...\p...\pbut now we have to fight experienced soldiers...\p...\p\e
+
+//<000014e4> その分、\p不知火の数はこっちが多いけど…\p…\pさすがにたまと風間少尉と柏木が揃ってるんじゃ…\p…\pどうやって近づくんだよって感じだな。\e
+<000014e4> We do have more Shiranui on our side...\p...\pbut with Tama, 2nd Lt. Kazama and Kashiwagi against us...\p...\pit's hard to imagine getting close enough to defeat any of them.\e
+
+//<000014e5> 【武】「なんか憂鬱になってきたな…\p…\pじゃあ、\p大尉は？」\e
+<000014e5> 【Takeru】「This is starting to feel hopeless...\p...\pwhat about the Captain?」\e
+
+//<000014e6> 何となく想像付くけど…\p…\p。\e
+<000014e6> I can kinda imagine, but...\p...\p\e
+
+//<000014e7> 【冥夜】「伊隅大尉は、\pさすが最古参だけあって、\pあらゆる面に於いて隙がない」\e
+<000014e7> 【Meiya】「As you might expect,\p Capt. Isumi being the most experienced means she has no weaknesses of any sort.」\e
+
+//<000014e8> …\p…\pやっぱり。\e
+<000014e8> ...\p...\pso much for that.\e
+
+//<00002057> 【冥夜】「右翼迎撃後衛は中隊長のポジションである故致し方ないが、\p何れのポジションでも高い能力を発揮するに違いない」\e
+<00002057> 【Meiya】「The company leader's position may be fixed at Right Gun Interceptor,\p but there is no doubt she would excel in any role.」\e
+
+//<000027ca> 【武】「そういう何でもそつなくこなすタイプが、\p一番やりづらいんだよなあ」\e
+<000027ca> 【Takeru】「The jack-of-all-trades type really is a pain to fight against.」\e
+
+//<000014ec> あの人、\p努力家で完璧主義っぽいから、\p昔からムキになって全ての特性を磨いたんだろうな…\p…\p。\e
+<000014ec> She's a hard worker and a perfectionist,\p so she's probably been obsessively polishing all of her skills for ages...\p...\p\e
+
+//<000014ed> 【冥夜】「これは私見だが…\p…\p榊が実戦経験と精神修練を積んだ果てには、\p大尉のような衛士になると思う」\e
+<000014ed> 【Meiya】「This is only my opinion...\p...\pbut I feel that Sakaki could become an Eishi much like the Captain given enough live combat experience and mental training.」\e//again, I feel the Class Rep-personality is much more attractive to Japanese audiences, and this is the sort of thing that really helps explain why (if only because I can't imagine any mass hate for Isumi) ~IX
+
+//<000014ef> 【武】「ああ、\pわかる気がする…\p…\p」\n
+<000014ef> 【Takeru】「Yeah,\p I can imagine that happening...\p...\p」\n
+
+//<000014f0> 【美琴】「なるほどねえ…\p…\p」\e
+<000014f0> 【Mikoto】「I seeee...\p...\p」\e
+
+//<000014f2> 単純に比較するのは委員長がかわいそうだけど、\p大尉は理屈派であっても思考に柔軟性があって、\p尚かつ冷静だって事だ。\e
+<000014f2> It's unfair to just directly compare Class Rep to her,\p but the Captain is flexible despite being logical,\p and she's always calm.\e
+
+//<000014f3> ああいう完璧主義者が転ぶことを憶えると、\p手に負えないんだよな…\p…\p。\e
+<000014f3> I can't really imagine her taking on such a perfectionist...\p...\p\e
+
+//<000014f4> そういう意味で大尉には、\p委員長がまだ持っていないある種のずる賢さみたいなものが備わっているんだろう。\e
+<000014f4> That might mean the Captain may have some sort of wit or intuition that Class Rep doesn't.\e
+
+//<000014f5> …\p…\pあの夕呼先生の下でずっとやれてるということは、\pそういうことだ。\e
+<000014f5> ...\p...\pwhich makes sense given she's been working under Yuuko-sensei forever.\e
+
+//<000014f6> 【武】「じゃあ…\p…\p最後に涼宮は？」\e
+<000014f6> 【Takeru】「Then...\p...\pwhat about Suzumiya?」\e
+
+//<0000230b> 【美琴】「茜さんは近接格闘戦能力が秀でてるね。\n凄く思い切りがいいよ。\nちょっと無鉄砲な感じではあるけど」\e
+<0000230b> 【Mikoto】「Akane-san excels in close quarters.\nAnd she's really good at going all out.\nThough it does feel a little reckless.」\e
+
+//<000014f8> 【冥夜】「大尉や中尉達と比較するのは気の毒ではあるが、\pやはり経験が少ない分、\p斑が多いな」\e
+<000014f8> 【Meiya】「Comparing her to the Captain and First Lieutenants feels wrong,\p but having less experience does make her less consistent.」\e
+
+//<000014fa> 【武】「そういえば速瀬中尉も言ってたな…\p…\p見ていてなんか危なっかしいって」\e
+<000014fa> 【Takeru】「1st Lt. Hayase said something about that...\p...\pwatching her made her start worrying or something.」\e
+
+//<000014fb> でもそれは、\p速瀬中尉への憧れや、\p涼宮中尉のためでもあるんだよな。\e
+<000014fb> But that's because she's enamored with 1st Lt. Hayase,\p and because she's trying to make up for 1st Lt. Suzumiya.\e
+
+//<000014fc> 【美琴】「うん。タケルの紹介の時、\p大尉が言ってたでしょ？　最近の任務で戦死した人のこと…\p…\p」\e
+<000014fc> 【Mikoto】「Yeah. Didn't the Captain talk about how many people died in recent missions...\p...\p?」\e//lit. "during Takeru's introduction" too long, so cut that out
+
+//<000014fd> 【武】「え？　…\p…\pああ」\e
+<000014fd> 【Takeru】「Eh? ...\p...\pyeah.」\e
+
+//<0000205b> 確か…\p…\pクーデターとトライアルの時にふたり戦死してひとりが重傷っていってたっけ？\e
+<0000205b> I think...\p...\pwith the coup d'etat and trials combined, two died and one severely injured?\e
+
+//<000014ff> 【冥夜】「…\p…\p…\p…\p」\e
+<000014ff> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00001500> 【美琴】「あれ…\p…\p２０７Ａ分隊の人達なんだ…\p…\p」\e
+<00001500> 【Mikoto】「They were...\p...\pfrom Squad 207A...\p...\p」\e
+
+//<00001501> 【武】「え…\p…\p？」\e
+<00001501> 【Takeru】「Eh...\p...\p?」\e
+
+//<00001502> 【冥夜】「恐らく涼宮は、\pその者達への想いに駆り立てられているのであろうな」\e
+<00001502> 【Meiya】「Suzumiya likely feels added pressure from their deaths.」\e
+
+//<0000230c> 【美琴】「茜さんＡ分隊の隊長だったからね…\p…\p」\e
+<0000230c> 【Mikoto】「Akane-san was Squad A's leader, after all...\p...\p」\e
+
+//<00001504> そうだったのか…\p…\p\e
+<00001504> That's right...\p...\p\e//okay, it's more like "She was...?" but I don't really buy that he forgot that; if you do change it ~IX
+
+//<00001505> 【武】「…\p…\p…\p…\p」\e
+<00001505> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001506> あいつ…\p…\pいろんなもの背負ってるんだな…\p…\p。\e
+<00001506> She has...\p...\pa lot weighing on her...\p...\p\e
+
+//<0000205d> 【冥夜】「それが涼宮の無鉄砲さや斑の多さに繋がっているのであろう」\e
+<0000205d> 【Meiya】「That must be a major cause of her recklessness and inconsistency.」\e
+
+//<00001508> その上神宮司軍曹の事があっても…\p…\pそれでも…\p…\pあんなに明るく振る舞ってるのか…\p…\p。\e
+<00001508> But despite that, as well as Sgt. Jinguuji's death...\p...\pdespite all of that...\p...\pshe can still act so brightly...\p...\p?\e
+
+//<00002060> 【冥夜】「特性的には突撃前衛向きの涼宮が、\p強襲掃討に置かれているのは、\pその辺りを大尉が懸念しているからであろうな」\e
+<00002060> 【Meiya】「She is probably placed in the Gun Sweeper position despite her aptitude for Storm Vanguard because the Captain worries about such things.」\e
+
+//<0000150b> よくよく考えれば涼宮だけじゃない…\p…\pそれは冥夜達にしても同じだ。\e
+<0000150b> Now that I think about it, Meiya and the others are in that position too...\p...\pnot just Suzumiya.\e
+
+//<0000150c> 軍曹にあんな事があった直後…\p…\pオレがあっちに行っている間に、\p同じ訓練小隊の仲間だった連中が、\p戦死していた事を知らされたんだろうな…\p…\p。\e
+<0000150c> She probably learned that everyone in her old squad died...\p...\pright after that happened to Sgt. Jinguuji,\p while I was in the other world...\p...\p\e//I know I got something wrong here ~IX//I'm pretty confident not everyone died in her squad >.> - Sheeta
+
+//<0000150d> しかも、\p委員長は親父さんが亡くなって…\p…\p美琴だって鎧衣課長はまだ行方不明…\p…\p。\n彩峰だって昔の恋人なのか…\p…\p少なくとも親しかった人が目の前で死んだんだ…\p…\p。\e
+<0000150d> Not to mention Class Rep's dad passed away...\p...\pMikoto still has no idea where Section Chief Yoroi is...\p...\p\nAyamine lost someone close to her too...\p...\pwhether he really was her lover or not...\p...\p\e
+
+//<0000150e> …\p…\p…\p…\pオレは…\p…\p本当に甘えていたんだな。\e
+<0000150e> ...\p...\p...\p...\pI...\p...\preally have been childish.\e
+
+//<0000150f> 今更気付くなんて…\p…\pほんとに悔しいぜ…\p…\p…\p…\p。\e
+<0000150f> I can't believe...\p...\pit took me this long to notice...\p...\p...\p...\p\e
+
+//<00001510> おまえら本当にすげえよ。\nオレは…\p…\pそんなおまえらに…\p…\p負けたくない。\e
+<00001510> You guys are amazing.\nI don't want...\p...\pto lose...\p...\pto guys like you.\e
+
+//<00001511> だから絶対にもう…\p…\pオレはそれを他人に押しつけたりしない。\e
+<00001511> So I'll never push my problems on to others again...\p...\pnever.\e
+
+//<00001512> 白々しくても、\p無理にでも明るく振る舞うんだ。\nそれができて始めて衛士なんだから…\p…\p。\e
+<00001512> I'll force myself to act bright and cheerful,\p even if it's obvious.\nI'm not a real Eishi until I can do that...\p...\p\e
+
+//<0000230d> 【美琴】「だから茜さん、\p冥夜さんや慧さんに露骨にライバル意識向けてるもんね」\e
+<0000230d> 【Mikoto】「That's why Akane-san sees Meiya-san and Kei-san as rivals.」\e//lit. "is making it obvious that she thinks" didn't feel that was important
+
+//<00001514> 【武】「え、\pそうなんだ？」\e
+<00001514> 【Takeru】「Eh?\p She does?」\e
+
+//<00001515> オレにだけって訳じゃなかったんだな。\e
+<00001515> So it wasn't just me.\e
+
+//<0000230e> 【美琴】「けっこうハッキリ口に出す人だからね。\n茜さんて」\e
+<0000230e> 【Mikoto】「Akane-san likes saying what she thinks.」\e
+
+//<00001517> 【冥夜】「だが、\p涼宮の言葉には邪気がない故、\pこちらも張り合いがあるというものだ」\e
+<00001517> 【Meiya】「But there was no ill will in her words,\p so we shall answer her challenge.」\e
+
+//<00001518> そうだよな…\p…\pあいつの言葉にはそういう暗さとか悪意はないもんな…\p…\p。\e
+<00001518> She's right...\p...\pSuzumiya's words never sound dark or malicious...\p...\p\e
+
+//<00001519> 【美琴】「でも今日のブリーフィング中は、\pずっとタケルを睨んでたね」\e
+<00001519> 【Mikoto】「But during today's briefing she wouldn't stop glaring at Takeru.」\e
+
+//<0000151a> 【武】「――えっ？　き、\p気のせいだろ」\e
+<0000151a> 【Takeru】「――Eh? Y-\pyou're just imagining things.」\e
+
+//<0000151b> 邪気も暗さもないけど、\pあいつの去り際のひと言は、\pやけに凄みがあったなあ…\p…\p。\e
+<0000151b> It wasn't dark or malicious,\p but the last thing she said before walking away did feel serious...\p...\p\e//I like how the noun form of sugoi is used more like "gravitas" than "awesomeness"
+
+//<0000151c> 涼宮中尉の事故の事とか聞くと、\pあいつ、\pああ見えて結構修羅場を潜って来ているのかも知れないって思うよ。\e
+<0000151c> Considering 1st Lt. Suzumiya's accident,\p she might be keeping a lot hidden on the inside.\e//at least I think that's what "hiding quite the battlefield" means, and that's what I think the literal is, but gah this monologue ~IX
+
+//<0000151d> 【冥夜】「突撃前衛長である速瀬中尉が、\pタケルを強く意識しているのだ。\nＢ小隊入りを望んでいる涼宮にとって、\pそれは面白くなかろう」\e
+<0000151d> 【Meiya】「1st Lt. Hayase, as Storm Vanguard One, is conscious of you, Takeru.\p Since Suzumiya wants to be in B Platoon,\p she must dislike that.」\e
+
+//<0000151f> 【美琴】「そうか～。\n速瀬中尉にも目を付けられているし、\pタケルは人気者だね」\e
+<0000151f> 【Mikoto】「I see～\nYou're so popular Takeru,\p catching even 1st Lt. Hayase's eye.」\e
+
+//<00001520> おまえ…\p…\pそれは皮肉なのか？　それともいつものヤツなのか…\p…\p？\e
+<00001520> ...\p...\pare you trying to be sarcastic?\bOr did you just miss the point again...\p...\p?\e//again, no idea if that's right ~IX
+
+//<00001521> 【武】「ありがとう。\nＢ隊の先任のことは大体わかった。\nじゃあＡ隊の先任はどうだ？」\e
+<00001521> 【Takeru】「Thank you.\nI have a good idea what we're up against now.\nSo what about our Alpha Team?」\e
+
+//<00001522> 【美琴】「宗像中尉は…\p…\pカッコイイよねぇ…\p…\p」\e
+<00001522> 【Mikoto】「As for 1st Lt. Munakata...\p...\pshe's really cool...\p...\p」\e
+
+//<00001523> 【武】「は？」\e
+<00001523> 【Takeru】「Huh?」\e
+
+//<00001524> 【美琴】「中性的って言うか美少年的っていうか…\p…\p憧れちゃうよね～～」\e
+<00001524> 【Mikoto】「She's kinda gender neutral, maybe even like a pretty boy...\p...\pso enchanting～」\e
+
+//<00001525> 【武】「いや、\pだからさあ、\pそういう所じゃなくて…\p…\p」\e
+<00001525> 【Takeru】「Umm,\p weeell,\p that's not really what I was...\p...\p」\e
+
+//<00001526> …\p…\pまあ確かに女子に人気があるタイプではあるな。\e
+<00001526> ...\p...\pI can see how she might be popular with the girls though.\e
+
+//<00002067> でも…\p…\p気持ちよければなんでもいいとか言い切ってたよな、\pあの人。\e
+<00002067> But...\p...\pshe did say something about "not caring as long as it felt good."\e
+
+//<00002068> 国連軍は前線兵士のメンタルケアのために自由な性交渉を容認しているとはいっても、\pそりゃあ普通男と女の話だろ？\e
+<00002068> The UN Army allows free sexual conduct on the grounds that it's better for the front line soldiers,\p but isn't that about men doing it with women?\e
+
+//<00002069> 何でもありっていうんだから…\p…\p危ない嗜好をお持ちなのかも知れんな。\e
+<00002069> And if she says anything goes...\p...\pshe might have some dangerous tastes.\e
+
+//<0000206a> あの人の言動は冗談なのか本気なのかが、\pいまいち掴めないんだよな。\e
+<0000206a> I can't quite figure out how serious anything she says is yet.\e
+
+//<0000206b> さっきだって、\p明らかに速瀬中尉で遊んでただろ…\p…\p危険な発言は大好物って感じだし…\p…\p。\e
+<0000206b> She was obviously toying with 1st Lt. Hayase earlier...\p...\pand she seems to love making dangerous statements...\p...\p\e
+
+//<0000206c> 【美琴】「男の子っぽくってカッコイイんだけど、\p何考えてるかわからない人ではあるかなぁ…\p…\p」\e
+<0000206c> 【Mikoto】「She's cool since she looks like a guy,\p but you really can't tell what she's thinking...\p...\p」\e
+
+//<0000152b> …\p…\p宗像中尉も、\pおまえだけには言われたくないだろうな…\p…\pそれ。\e
+<0000152b> ...\p...\pyou're probably the last person who can say that, even about 1st Lt. Munakata...\p...\p\e
+
+//<0000206f> 【冥夜】「確かに飄々としてはいるが、\p左翼迎撃後衛を任されている我が部隊のナンバー３だ。\n実力も相当だぞ」\e
+<0000206f> 【Meiya】「She does indeed seem aloof,\p but as the Left Gun Interceptor, she is the third best in the unit.\nHer skills are significant.」\e
+
+//<0000152e> 確かに実力は侮れない。\e
+<0000152e> That's true.\e//I am so sick of all these "she's got game" lines everywhere, make fucking concrete statements people, and more than just what range they like to fight at ~IX
+
+//<00002072> 昨日の実習で思ったけど、\p速瀬中尉よりも宗像中尉のほうが、\p部隊指揮には向いている気がする。\e
+<00002072> It did occur to me yesterday that 1st Lt. Munakata might be better at commanding than 1st Lt. Hayase.\e
+
+//<00002074> でも、\p速瀬中尉は速瀬中尉で『部隊長より突撃前衛のほうが好き！』とかいって昇進断りそうだよな。\e
+<00002074> But I can easily imagine 1st Lt. Hayase refusing that promotion, saying she loves being a Storm Vanguard more than leading the company.\e
+
+//<00001532> 【京塚】「――あいよッ！　お待たせ！」\e
+<00001532> 【Kyozuka】「――Okay! Finally made it!」\e
+
+//<00001533> 【京塚】「合成宇治茶４つに、\pコーヒーモドキ２つ、\pラムネ１本、\pこれでいいんだろ？」\e
+<00001533> 【Kyozuka】「Four synthetic Ujicha,\p two imitation coffees,\p and one Lamune.\p Is all that right?」\e
+
+//<00001534> 【美琴】「おばちゃん、\pおそいよ～」\e
+<00001534> 【Mikoto】「Oba-chan,\p that took forever～」\e
+
+//<00001535> 【京塚】「なんだい、\p水月ちゃん怒ってたのかい？」\e
+<00001535> 【Kyozuka】「What?\p Did Mitsuki-chan get mad?」\e
+
+//<00001536> 【美琴】「ううん。『文句があるなら来いっておばちゃんが言ってます』って伝えたら、\p何も言われなかったよ」\e
+<00001536> 【Mikoto】「No. When I told her to complain to you instead,\p she just said nothing.」\e
+
+//<00001537> おまえ…\p…\p微妙に情報を改竄してねえか…\p…\p？\e
+<00001537> Wait...\p...\pyou sure that's completely accurate...\p...\p?\e
+
+//<00001538> 【京塚】「そうかいそうかい！　よかったね。\n水月ちゃんの弱味はたぁ～～くさん握ってるから、\p知りたかったらいつでもおいで」\e
+<00001538> 【Kyozuka】「Did she now! Glad to hear it.\nI know aaaaall sorts of things about Mitsuki-chan,\p ask me anytime.」\e
+
+//<00001539> 【武】「そんな恐ろしいマネできませんよ」\e
+<00001539> 【Takeru】「I can't ask about that stuff.」\e
+
+//<0000153a> 【京塚】「――ほら！　水月ちゃん睨んでるから、\pとっとと持っていきな！」\e
+<0000153a> 【Kyozuka】「――Come on! Mitsuki-chan's glaring so take it to her already!」\e
+
+//<0000153b> 【美琴】「――えっ！？」\e
+<0000153b> 【Mikoto】「――Eh!?」\e
+
+//<0000153c> ――うわッ！\nやべ！\e
+<0000153c> ――Uwa!\p Crap!\e
+
+//<0000153d> 【武】「――急須と茶碗はオレが持つ！　後は任せたっ！」\e
+<0000153d> 【Takeru】「――I'll take the bowls and teapot!\bYou carry the rest!」\e
+
+//<0000153e> 【冥夜】「――あ、\pタケル！」\e
+<0000153e> 【Meiya】「――Ah,\p Takeru!」\e
+
+//<0000153f> 【京塚】「――あはははは…\p…\pがんばんなよ～～！」\e
+<0000153f> 【Kyozuka】「――Ahahahaha...\p...\pgood luck～～!」\e
+
+//<00001544> 【涼宮中尉】「…\p…\p皆さ～ん、\p聞いてくださ～い」\e
+<00001544> 【1st Lt. Suzumiya】「...\p...\peveryone～\p Please listen～」\e
+
+//<00001546> 【速瀬中尉】「あのさあ…\p…\pそんなひそひそ話さなくても大丈夫でしょ。\nここには大尉達いないんだから」\e
+<00001546> 【1st Lt. Hayase】「You know...\p...\pyou don't need to talk quietly like that.\nThe Captain's not here or anything.」\e
+
+//<00001549> 【涼宮中尉】「あ、\pそうね。\nじゃあ、\p作戦立案会議を始めましょうか」\e
+<00001549> 【1st Lt. Suzumiya】「Ah,\p you're right.\nThen let's start planning.」\e
+
+//<0000154b> 【武】「…\p…\p…\p…\p」\e
+<0000154b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000154c> 涼宮中尉、\p戦域管制やってる時は結構きりっとしてるのに…\p…\pどうして普段はこんなにほわっとしてるんだろう？\e
+<0000154c> 1st Lt. Suzumiya's so firm when she does battle logistics...\p...\pwhy's she so soft the rest of the time?\e
+
+//<0000154d> 【速瀬中尉】「じゃあ先ず始めに、\p新入りたちの策を聞こうじゃない。\n誰からでもいいわよ？」\e
+<0000154d> 【1st Lt. Hayase】「Why don't we let the newbies start.\nAny ideas?」\e
+
+//<0000154f> 【美琴】「――え？　ボク達からですか、\p中尉？」\e
+<0000154f> 【Mikoto】「――Eh? You mean us,\p First Lieutenant?」\e
+
+//<00002076> 【速瀬中尉】「そうよ。\n大尉も言ってたけど、\pこれは新入り達の慣熟が主な目的。\n主役はあんた達じゃない。\n張り切ってどうぞ！」\e
+<00002076> 【1st Lt. Hayase】「That's right.\nLike the Captain said,\p the idea is to get you guys used to this.\p That makes you the priority.\nNow throw something onto the table!」\e
+
+//<00002079> 【美琴】「ええと…\p…\pまず、\pＡ隊の戦力から判断すると、\pスタンドオフ戦術を取る事は確実です」\e
+<00002079> 【Mikoto】「Ummm...\p...\pfirst of all,\p going by Alpha Team's strengths,\p it seems certain we'll end up in a standoff.」\e
+
+//<00001554> 【美琴】「こちらの部隊戦力では、\p勝つためには攻撃に出るしかないと考えられますので――」\e
+<00001554> 【Mikoto】「And given our strengths,\p I doubt we can win without going on the offensive――」\e
+
+//<00001555> そりゃそうだ。向こうは遠距離からでも攻撃できるが、\pこっちは接近するしかない。\e
+<00001555> That's true.\bThey can attack us from much farther away,\p so we have to get in close.\e
+
+//<00001558> 【美琴】「予想される布陣は、\p最後方に風間少尉、\pその左右手前に柏木少尉と珠瀬少尉」\e
+<00001558> 【Mikoto】「We can expect them to put 2nd Lt. Kazama in the rear,\p with 2nd Lt. Kashiwagi and 2nd Lt. Tamase in front of her and on each side.」\e
+
+//<00001957> 【美琴】「柏木少尉と珠瀬少尉の前にそれぞれ涼宮少尉と榊少尉…\p…\p」\e
+<00001957> 【Mikoto】「In front of them would be 2nd Lt. Suzumiya and 2nd Lt. Sakaki...\p...\p」\e
+
+//<00001561> たまの前に涼宮、\p柏木の前に委員長って配置がミソだな。\e
+<00001561> Putting Suzumiya in front of Tama and Class Rep in front of Kashiwagi is important.\e
+
+//<00001562> 【宗像中尉】「なるほど、\pこちらの機動力には付き合わないって事か。\n教科書通りの防御的布陣だな。\nで…\p…\p大尉はどこだ？」\e
+<00001562> 【1st Lt. Munakata】「I see,\p so they wouldn't be able to move as fast as us.\nThat's a textbook defensive formation.\nSo...\p...\pwhat about the Captain?」\e
+
+//<00001564> 確かにあまりにもオーソドックス過ぎて、\pこの布陣で来られたら逆に驚くかもなあ\e
+<00001564> It is a little too ordinary.\bIf anything I'd be surprised to see them use this.\e
+
+//<00001565> 【美琴】「それなんですが…\p…\p単機遊撃でボクを潰しに来るのか、\p狙撃手の直援かで迷います」\e
+<00001565> 【Mikoto】「About that...\p...\pI'm not sure whether she'd try ambushing us on her own,\p or backing up the snipers.」\e
+
+//<00001566> 【速瀬中尉】「で、\p結局どっちなのよ？」\e
+<00001566> 【1st Lt. Hayase】「So which is it?」\e
+
+//<00001568> この布陣なら大尉は風間少尉のサポートに入る気がするな。\e
+<00001568> I get the feeling the Captain would choose to support 2nd Lt. Kazama in this formation.\e
+
+//<00001569> これが速瀬中尉なら間違いなく遊撃だけど、\pあの人完璧主義っぽいから、\pここまでオーソドックスならより完成度の高い陣形を選ぶんじゃないかな。\e
+<00001569> 1st Lt. Hayase would definitely go for ambushing,\p but as a perfectionist,\p if the Captain was gonna use such an ordinary formation in the first place wouldn't she try to make it flawless?\e
+
+//<0000156a> 【美琴】「え～～と…\p…\pそうですね、\pやはり迂回を警戒して、\p風間少尉の後ろです」\e
+<0000156a> 【Mikoto】「Ummmmmm...\p...\pright,\p she would go behind 2nd Lt. Kazama to make sure none of us came up behind them.」\e
+
+//<0000156b> おお、\p更に守りを固めて来たか！\e
+<0000156b> Oooh,\p she chose to harden their defenses!\e
+
+//<0000207c> 【宗像中尉】「風間が誘導弾を使い切ったら、\p大尉とふたりで後方を固めて、\p狙撃チームを前後から守る…\p…\pという訳か」\e
+<0000207c> 【1st Lt. Munakata】「So when Kazama runs out of missiles,\p she and the Captain will focus on guarding the snipers...\p...\p」\e
+
+//<0000156e> 【美琴】「その通りです」\e
+<0000156e> 【Mikoto】「That's right.」\e
+
+//<0000156f> 【宗像中尉】「じゃあ彩峰、\pおまえは？」\e
+<0000156f> 【1st Lt. Munakata】「What about you,\p Ayamine?」\e
+
+//<00001571> 【慧】「はい…\p…\p大尉と榊、\p涼宮が斥候で、\p前面で動き回り…\p…\p」\e
+<00001571> 【Kei】「Yes...\p...\pthe Captain, Sakaki and Suzumiya will be on recon,\p moving around in the front...\p...\p」\e
+
+//<00001573> 【慧】「一定距離を維持しながら、\p風間少尉と珠瀬、\p柏木が後方支援…\p…\p」\e
+<00001573> 【Kei】「2nd Lt. Kazama, Tamase and Kashiwagi will maintain a fixed distance behind them...\p...\p」\e
+
+//<00001951> 【慧】「斥候が交戦し位置を特定し、\pその上で長距離攻撃という連携を考えます」\e
+<00001951> 【Kei】「If the recon units encounter enemies,\p they'll also set up long distance attacks.」\e
+
+//<0000207f> 【慧】「敵の第１目標は鎧衣。\n第２目標は速瀬中尉、\p第３目標は宗像中尉です」\e
+<0000207f> 【Kei】「Their first target will be Yoroi.\nNext 1st Lt. Hayase,\p then 1st Lt. Munakata.」\e
+
+//<0000157d> 【速瀬中尉】「鎧衣とは逆に攻性が高いプランね」\e
+<0000157d> 【1st Lt. Hayase】「That's a much more aggressive plan than Yoroi's.」\e
+
+//<0000157f> かなり積極的な戦術だ…\p…\pまあ、\p彩峰らしいといえばらしい。\e
+<0000157f> It is...\p...\pwell,\p it's also a lot like Ayamine herself.\e
+
+//<00001580> 【宗像中尉】「よし、\pじゃあ御剣」\e
+<00001580> 【1st Lt. Munakata】「Okay,\p now Mitsurugi.」\e
+
+//<00001582> 【冥夜】「はい。敵の優先撃破目標は彩峰と同意見です」\e
+<00001582> 【Meiya】「Yes. I agree with Ayamine about the enemy's priority targets.」\e
+
+//<00001584> 【冥夜】「ですが戦域が市街地ということを考えると、\p珠瀬、\p柏木の狙撃特性を生かせるポイントは限られます」\e
+<00001584> 【Meiya】「However, thinking about the urban nature of the battlefield,\p there are a limited number of points where Tamase and Kashiwagi can make use of their sniping abilities.」\e
+
+//<00001585> 【冥夜】「故にこの２機は囮として前面配備。\n振動、\p音源で大まかな位置を掴むと同時に遠距離から威嚇攻撃を開始」\e
+<00001585> 【Meiya】「Therefore they will be placed in the front as bait.\nThey'll attack from long-range once they ascertain our location through vibration and sound sensors.」\e
+
+//<00002081> 【冥夜】「あえて自分の位置を曝し、\p私達に攻撃させる事で、\p各機の位置を特定――」\e
+<00002081> 【Meiya】「In other words exposing their own positions in order to make us attack and expose our own――」\e
+
+//<00002083> 【冥夜】「そして、\p風間少尉による面威圧を加え、\pこちらの突撃前衛の数を減じた後は、\p優先順に目標をしらみ潰しにすると考えます」\e
+<00002083> 【Meiya】「And once 2nd Lt. Kazama's suppressive fire has taken out some of our Storm Vanguards,\p they can take out whoever is left in any order they choose.」\e
+
+//<0000158f> 【速瀬中尉】「なるほどねぇ」\e
+<0000158f> 【1st Lt. Hayase】「I see...\p...」\e
+
+//<00001591> こっちが叩きたい狙撃チームをエサにして風間少尉を生かすのか…\p…\pそういうやり方もあるな。\e
+<00001591> So knowing we want to get their snipers, they'll use them as bait to keep 2nd Lt. Kazama safe? ...\p...\pthat could work.\e
+
+//<00001592> 【宗像中尉】「彩峰、\p御剣揃って攻性戦術とは…\p…\p突撃前衛候補だけのことはあるね」\e
+<00001592> 【1st Lt. Munakata】「Ayamine and Mitsurugi both proposed aggressive tactics...\p...\pthey could be Storm Vanguard material.」\e
+
+//<00001594> 【速瀬中尉】「白銀、\pあんたは？」\e
+<00001594> 【1st Lt. Hayase】「Shirogane,\p what about you?」\e
+
+// Selection: もちろん攻撃的布陣だ
+// Selection: 手堅く防御的布陣
+// Selection: 攻防一体の戦術だ
+// Selection: そんなの考えても意味ない
+//<0000159a> 【武】「まず大尉と榊、\p涼宮が斥候で前面をかき回す。\nここまでは彩峰と同じです」\e
+<0000159a> 【Takeru】「First the Captain, Sakaki and Suzumiya will do recon to stir up the front.\nI agree with Ayamine on that part.」\e//BR_1
+
+//<00001959> 【武】「柏木と珠瀬が両翼を固め、\p随時斥候を支援。\n風間少尉は最後方で連携します」\e
+<00001959> 【Takeru】「But Kashiwagi and Tamase will defend their flanks,\p backing them up when necessary.\n2nd Lt. Kazama would be in the rear.」\e
+
+//<000015a6> 【武】「こちらの出鼻を挫き混乱させ、\p混戦となれば柏木、\p珠瀬機の狙撃、\p膠着すれば風間機の面制圧で圧倒します」\e
+<000015a6> 【Takeru】「They'd break up whatever we tried to do,\p then once things got chaotic,\p Kashiwagi and Tamase's sniping would wipe us out.\p If there was a stalemate, Kazama's bombardment would break it.」\e
+
+//<000015a7> 【宗像中尉】「突撃前衛候補は揃いも揃って攻撃的戦術か。\nふふふ…\p…\p面白い」\e
+<000015a7> 【1st Lt. Munakata】「So all the Storm Vanguard candidates gave aggressive strategies.\p Huhuhu...\p...\pinteresting.」\e
+
+//<000015a9> 【武】「冥夜達と同じ前提ですが、\p結局、\pこっちは攻撃的な戦術を選ばざるを得ません」\e
+<000015a9> 【Takeru】「I made the same assumptions as they did,\p so I also think we have no choice but to attack.」\e
+
+//<000015aa> こっちが防御的戦術を採れば、\p斥候との接触に続く長距離攻撃の繰り返しで狩られていくだけだからな。\e
+<000015aa> If we end up fighting a defensive battle,\p we'll just keep bumping into their recon and they'll take us out easily at long range.\e
+
+//<000015ab> 【武】「普通に考えれば、\p大尉達は最もリスクの低い防御的戦術を取るはずですが、\pその裏をかいてくる、\pというのがオレの考えです」\e
+<000015ab> 【Takeru】「To me it makes the most sense to assume the Captain's team would want to take on a low risk defensive strategy.」\e//BR_2 also lit. "Thinking normally, ..."
+
+//<000015af> 【武】「まず大尉は最前面で斥候。\nその後方左右最外郭を榊と涼宮が固めます」\e
+<000015af> 【Takeru】「First the Captain will spearhead recon.\nBehind her would be Sakaki and Suzumiya off to the sides.」\e
+
+//<0000195b> 【武】「その内側に柏木と珠瀬、\p風間少尉は中央最後方です」\e
+<0000195b> 【Takeru】「Closer in would be Kashiwagi and Tamase,\p with 2nd Lt. Kazama at the center and rear.」\e
+
+//<00002086> 【宗像中尉】「へえ…\p…\pおまえがそんな防御的布陣を予測するとは…\p…\p意外だったな」\e
+<00002086> 【1st Lt. Munakata】「Hmm...\p...\pI am surprised...\p...\pto see you predict a defensive formation.」\e
+
+//<000015bd> 【武】「冥夜達も同じ前提だと思いますが、\pこっちは攻撃的な布陣を選ばざるを得ません」\e
+<000015bd> 【Takeru】「I agree with the others' assumptions,\p and that we have no choice but to be offensive.」\e
+
+//<000015be> こっちが防御的戦術を採れば、\p斥候との接触に続く長距離攻撃の繰り返しで狩られていくだけだからな。\e
+<000015be> If we end up fighting a defensive battle,\p we'll just keep bumping into their recon and they'll take us out easily at long range.\e//BCP
+
+//<000015bf> 【武】「こっちは動かざるを得ない。\nそうすれば振動や音源で大まかな位置は確認できます」\e
+<000015bf> 【Takeru】「Whatever we do, we'll have to keep moving.\nWhen we do, they can approximate our positions from vibration and sound.」\e//BR_3
+
+//<000015c0> 【武】「ですから、\p大尉達が最もリスクが低い防御的戦術を放棄してまで、\p攻撃的戦術に出るメリットは０です」\e
+<000015c0> 【Takeru】「Which means there's no reason for the Captain's team to abandon a low-risk defensive position in favor of going on the offensive.」\e
+
+//<000015c4> 【武】「まず大尉と榊、\p涼宮が遊斥候で前面をかき回す。\nここまでは彩峰と同じです」\e
+<000015c4> 【Takeru】「First the Captain, Sakaki and Suzumiya will do recon to stir up the front.\nI agree with Ayamine on that part.」\e//BCP
+
+//<0000195d> 【武】「柏木と珠瀬、\p風間少尉は、\pそれぞれ独立して連携します」\e
+<0000195d> 【Takeru】「Kashiwagi, Tamase and 2nd Lt. Kazama would each operate independently.」\e
+
+//<000015d0> 【武】「ただし完全に分離はしません。\nあくまで前衛との距離は一定以上離れないように連動します」\e
+<000015d0> 【Takeru】「But they wouldn't be completely separated.\nThey'd avoid going more than a certain distance away from the recon units.」\e
+
+//<000015d1> 【武】「こうする事で、\p全ての支援機が一気に発見されるリスクが低下し、\pさらにそれぞれが斥候の役目を果たせます」\e
+<000015d1> 【Takeru】「That lowers the risk that their whole formation will be found at once,\p and helps each of the recon units to fulfill their duties.」\e
+
+//<000015d2> 【宗像中尉】「ふむ…\p…\p。\n攻撃的布陣ではあるが、\p積極防御も両立させているというわけか」\e
+<000015d2> 【1st Lt. Munakata】「Hmm...\p...\p\nThat is an aggressive formation,\p but defensive at the same time.」\e
+
+//<000015d4> 【武】「はい。冥夜達と同じ前提ですが、\p結局、\pこっちは攻撃的な戦術を選ばざるを得ません」\e
+<000015d4> 【Takeru】「Yes. I made the same assumptions as they did,\p so I also think we have no choice but to attack.」\e//PBCP
+
+//<000015d5> こっちが防御的戦術を採れば、\p斥候との接触に続く長距離攻撃の繰り返しで狩られていくだけだからな。\e
+<000015d5> If we end up fighting a defensive battle,\p we'll just keep bumping into their recon and they'll take us out easily at long range.\e//BCP
+
+//<000015d6> 【武】「普通に考えれば、\p大尉達は最もリスクの低い防御的戦術を取るはずですが、\pこちらの選択肢を狭める意味でこんな手に出ると考えます」\e
+<000015d6> 【Takeru】「To me it makes the most sense to assume the Captain's team would want to take on a low risk defensive strategy,\p but they might try other things in order to limit our options.」\e//BR_4
+
+//<000015da> 【武】「理詰めで考えれば、\p大尉達はリスクが少ない防御戦術で来るでしょう」\e
+<000015da> 【Takeru】「Logically speaking,\p they probably will choose a low risk defensive strategy.」\e
+
+//<000015db> 【武】「だけど…\p…\pこっちは攻めに出る以外ない以上、\p相手の出方なんて気にしても仕方がないと思います」\e
+<000015db> 【Takeru】「But...\p...\psince we have no choice but to attack,\p I don't see much point in worrying about what they'll do.」\e
+
+//<000015dd> 【速瀬中尉】「…\p…\p…\p…\p」\n
+<000015dd> 【1st Lt. Hayase】「...\p...\p...\p...\p」\n
+
+//<000015df> 【宗像中尉】「へえ…\p…\p」\n
+<000015df> 【1st Lt. Munakata】「Hmm...\p...\p」\n
+
+//<000015e1> 【涼宮中尉】「…\p…\p…\p…\p」\e
+<000015e1> 【1st Lt. Suzumiya】「...\p...\p...\p...\p」\e
+
+//<000015e4> 【武】「結局、\p予想は予想でしかない。\n大尉達がどういう布陣でいようが、\pこちらが動けばそれに合わせて変化します」\e
+<000015e4> 【Takeru】「In the end,\p predictions are just predictions.\nNo matter what formation the others use,\p we'll just change our plan to match it.」\e
+
+//<000015e5> 【武】「初期条件を想定して動き始めるのは構わないけど、\pそれを引きずって動き続けるのは危険です」\e
+<000015e5> 【Takeru】「We could certainly start with an assumption of what they'll do,\p but sticking to it for long would be dangerous.」\e
+
+//<000015e6> 【武】「オレ達衛士は、\p常に与えられた情報と状況を見て、\p即的確な判断を下し、\p臨機応変に対処しなければならない」\e
+<000015e6> 【Takeru】「We Eishi need to look at the latest information we're given,\p make quick decisions about how to handle it and carry them out swiftly.」\e
+
+//<000015e7> 【武】「広い視野での戦域情報は涼宮中尉が常にフォローしてくれている。\nオレ達は目の前の戦いに集中すればいい」\e
+<000015e7> 【Takeru】「1st Lt. Suzumiya will be helping us keep the battlefield information in perspective.\nWe can just focus on the battle in front of us.」\e
+
+//<000015e8> 【武】「そして、\p発見した敵を迅速かつ確実に仕留め続けるだけです」\e
+<000015e8> 【Takeru】「So we simply take out any enemies we find as quickly as possible.」\e
+
+//<000015eb> 【速瀬中尉】「なるほど…\p…\pよくわかった」\e
+<000015eb> 【1st Lt. Hayase】「I see...\p...\pI understand.」\e
+
+//<000015ee> 【武】「…\p…\p…\p…\p」\n
+<000015ee> 【Takeru】「...\p...\p...\p...\p」\n
+
+//<000015ef> 【冥夜・慧・美琴】「…\p…\p…\p…\p」\e
+<000015ef> 【Meiya & Kei & Mikoto】「...\p...\p...\p...\p」\e
+
+//<000015f2> 【速瀬中尉】「それじゃあここで確認しておくけど、\pこの訓練の目的は一体なんだった？」\e
+<000015f2> 【1st Lt. Hayase】「Now then, just to double-check:\bWhat's the objective of this exercise?」\e
+
+//<000015f4> 【美琴】「ボク達が早く機体に慣れるためと、\p先任の人達が不知火の性能を再確認するためです」\e
+<000015f4> 【Mikoto】「To let us get used to the new TSFs,\p and for you guys to show your skills outside of Shiranui.」\e
+
+//<000015f5> 【速瀬中尉】「その通り。\nじゃあ、\pなんのためにそんなことやってるか、\pわかるわよね？」\e
+<000015f5> 【1st Lt. Hayase】「Exactly.\nAnd you all know why we need to do that,\p right?」\e
+
+//<000015f7> ００ユニットを守るためだろう。\n今はまだ言えないはずだけど…\p…\pここで明かすのか？\e
+<000015f7> To protect the 00 Unit.\nI can't say that yet...\p...\pbut is she going to?\e
+
+//<000015f8> 【美琴】「Ａ－０１部隊の使命を果たすためです」\e
+<000015f8> 【Mikoto】「To fulfill the duty of Unit A-01.」\e
+
+//<000015f9> 【速瀬中尉】「う～～ん、\pもうちょっと具体的に」\e
+<000015f9> 【1st Lt. Hayase】「Mmmmmmm,\p a little more precise.」\e
+
+//<00002200> 【冥夜】「人類の勝利に貢献する為です」\e
+<00002200> 【Meiya】「To contribute to humanity's victory.」\e
+
+//<000015fc> 【速瀬中尉】「ちょっと先に行きすぎ」\e
+<000015fc> 【1st Lt. Hayase】「Back up a little.」\e
+
+//<000015fe> 【冥夜】「ＢＥＴＡと戦うためです」\e
+<000015fe> 【Meiya】「To fight the BETA.」\e
+
+//<000015ff> 【速瀬中尉】「正解。\n部隊の訓練は全て、\pあんた達がＢＥＴＡと戦っても、\p生き残れるようにする為にやってるのよ」\e
+<000015ff> 【1st Lt. Hayase】「That's right.\nWe're doing all this training so that you can survive fighting the BETA.」\e
+
+//<00001601> なるほど…\p…\pそういう話か。\n００ユニットのことじゃないんだな。\e
+<00001601> I see...\p...\pso that's what she meant.\nShe didn't mean the 00 Unit at all.\e
+
+//<00002089> 【速瀬中尉】「では質問。\n大尉がＡ隊とＢ隊を今みたいな編成にした理由…\p…\pわかる者いる？」\e
+<00002089> 【1st Lt. Hayase】「So, a question.\nDo any of you know...\p...\pwhy the Captain split us into these two teams?」\e
+
+//<00001604> 今回はオレ達が不知火に慣れる事が主な目的なんだから…\p…\pそうか、\pそれだけなら戦力を均等に分けてもいいんだ…\p…\p。\e
+<00001604> The main objective this time is to get us used to the Shiranui, so...\p...\pI see,\p if that was all then she could've split us up evenly...\p...\p\e
+
+//<00001605> 【武】「…\p…\p…\p…\p」\e
+<00001605> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001606> …\p…\p前に神宮司軍曹が彩峰と委員長でそうしたように…\p…\pオレと速瀬中尉の関係とか、\p涼宮の心理とか考えて…\p…\p\e
+<00001606> ...\p...\pjust like what Sgt. Jinguuji did with Ayamine and Class Rep...\p...\pshe's trying to help me, 1st Lt. Hayase and Suzumiya...\p...\p\e
+
+//<00001607> そんなわけないか…\p…\p。\nあの大尉がそんな個人事情を訓練に反映するはずがない。\e
+<00001607> No, that can't be it...\p...\p\nThe Captain wouldn't use training to deal with our personal problems.\e
+
+//<0000208c> 【宗像中尉】「おまえら…\p…\p黙ってないで、\pわからないならわからないといえ！」\e
+<0000208c> 【1st Lt. Munakata】「Hello? ...\p...\psay something.\bIf you don't know, then say you don't know!」\e
+
+//<0000160c> 【武】「――わかりません！」\n
+<0000160c> 【Takeru】「――I don't know!」\n
+
+//<0000230f> 【冥夜・慧・美琴】「――わかりません！！」\e
+<0000230f> 【Meiya & Kei & Mikoto】「――I don't know!!」\e
+
+//<00001610> 【宗像中尉】「…\p…\p？　涼宮中尉…\p…\pどうしたんですか？」\e
+<00001610> 【1st Lt. Munakata】「...\p...\p? 1st Lt. Suzumiya...\p...\pwhat's wrong?」\e
+
+//<00001612> 【涼宮中尉】「あ…\p…\pあははは…\p…\p。\n急に大きい声出すから、\pビックリしちゃって…\p…\p」\e
+<00001612> 【1st Lt. Suzumiya】「Ah...\p...\pahahaha...\p...\p\nYou got so loud all of a sudden,\p it startled me...\p...\p」\e//does anyone actually say "startled" any more? ~IX//yes - Sheeta
+
+//<00001614> 【宗像中尉】「はあ…\p…\p驚かせて申し訳ありません」\e
+<00001614> 【1st Lt. Munakata】「Haa...\p...\pI apologize for the surprise.」\e
+
+//<00001616> 【涼宮中尉】「あははは…\p…\pいいのよ宗像中尉…\p…\pあはは…\p…\p」\e
+<00001616> 【1st Lt. Suzumiya】「Ahahaha...\p...\pit's fine, 1st Lt. Munakata...\p...\pahaha...\p...\p」\e
+
+//<00001618> 涼宮中尉って…\p…\p…\p…\p\e
+<00001618> 1st Lt. Suzumiya...\p...\p...\p...\p\e
+
+//<00001619> 【速瀬中尉】「あんた達がＢＥＴＡと戦って生き残るって、\pすっごいヒントだったんだけどねぇ」\e
+<00001619> 【1st Lt. Hayase】「And I even gave you guys that huge hint about surviving fights with the BETA.」\e
+
+//<0000161b> 【宗像中尉】「白銀、\p我々が戦うＢ隊最大の戦術的特長を言ってみろ」\e
+<0000161b> 【1st Lt. Munakata】「Shirogane,\p what situation would the Bravo Team be best suited to?」\e
+
+//<0000161d> 【武】「最大の特徴は長射程…\p…\pスタンドオフ戦術です」\e
+<0000161d> 【Takeru】「They're better at long-range than anything else...\p...\pso a standoff.」\e
+
+//<0000161e> 【宗像中尉】「同じく、\pＡ隊は？」\e
+<0000161e> 【1st Lt. Munakata】「And us, the Alpha Team?」\e
+
+//<00001620> 【武】「近接戦闘主体のインファイト戦術です」\e
+<00001620> 【Takeru】「We're better in close quarters, so a free-for-all.」\e
+
+//<0000208f> 【速瀬中尉】「その通り。\nつまりＡ隊にとってこの模擬戦はハイヴ突撃前、\pつまり光線級の存在が想定される状況なんだ」\e
+<0000208f> 【1st Lt. Hayase】「Exactly.\nIn other words the Alpha Team hasn't entered the hive yet and has to deal with laser species.」\e//Whoops...called this one when I read the game *and* when I translated it. I'm making Takery look stupid now. ~IX
+
+//<00001624> 【武】「――！？」\n
+<00001624> 【Takeru】「――!?」\n
+
+//<00002310> 【冥夜・慧・美琴】「――！！」\e
+<00002310> 【Meiya & Kei & Mikoto】「――!!」\e
+
+//<00001627> 【速瀬中尉】「逆にＢ隊にとっては、\p同じくハイヴ突撃前、\p突撃級が存在する戦いを想定した模擬戦なんだ」\e
+<00001627> 【1st Lt. Hayase】「While Bravo Team also hasn't entered the hive yet,\p but they have to deal with the Destroyer Class.」\e
+
+//<00001629> …\p…\pなるほど…\p…\pそういうことか…\p…\p！！\e
+<00001629> ...\p...\pI get it...\p...\pso that's why...\p...\p!!\e
+
+//<0000162a> そういうシチュエーションで、\p慣熟をやらせる…\p…\pなるほど！\nだから訓練兵の時もそういう編成になってたのか！\e
+<0000162a> They're getting us used to those situations...\p...\pI see!\nThat's why they did it to us as cadets too!\e
+
+//<0000162b> 単に彩峰と委員長の問題だけじゃなかったんだな。\e
+<0000162b> So it wasn't just about Ayamine and Class Rep.\e
+
+//<00001632> 【速瀬中尉】「その意味ではさっきの白銀の策は結果的に正しいのよ」\e
+<00001632> 【1st Lt. Hayase】「In that sense what Shirogane said happens to be correct.」\e//BR_4? Or is this whole convo an aside within that branch? ~IX
+
+//<00001634> 【武】「え…\p…\p？」\e
+<00001634> 【Takeru】「Eh...\p...\p?」\e
+
+//<0000222b> 相手の出方を考えてもしょうがないってやつが？\e
+<0000222b> The part about it not mattering what the enemies do?\e
+
+//<00001637> 【速瀬中尉】「私達が訓練する目的はＢＥＴＡと戦うため。\nだとすれば人間相手の訓練でああだこうだ考えて勝ってもしょうがないのよ」\e
+<00001637> 【1st Lt. Hayase】「We're training in order to fight the BETA.\nWhich means thinking about what our human enemies might do serves no purpose.」\e
+
+//<00001639> 【宗像中尉】「人間相手の模擬戦でいくら優秀な戦績を上げようが、\p実戦では全く当てにならない。\nＢＥＴＡの思考は人間とは全く違うからな」\e
+<00001639> 【1st Lt. Munakata】「No matter how well you do in mock battles against humans,\p none of it applies to real combat.\nThe BETA don't think anything like humans.」\e
+
+//<0000163b> そうだ…\p…\p忘れてた。\n『前のこの世界』で任官してから教えられた言葉だ…\p…\p。\nそういえばトライアルの時も思い出したっけ…\p…\p。\e
+<0000163b> That's right...\p...\pI completely forgot.\nThey told me that when I got commissioned in the previous world too...\p...\p\nAnd I remember it from the trials too...\p...\p\e
+
+//<0000163c> 【速瀬中尉】「だからこそ、\pこの設定であんた達に慣熟をやらせるの。\nそして、\pどんな状況変化にも対処できる連携を学ぶのよ」\e
+<0000163c> 【1st Lt. Hayase】「Which is why they try to get you used to these scenarios.\nAnd have you study approaches to teamwork which can be adapted to fit in any situation.」\e
+
+//<0000163e> …\p…\pつまり、\p昨日のシミュレーター実習と全く同じ事だったんだ。\n人間相手の模擬戦という状況に意識が行き過ぎてたんだな…\p…\p。\e
+<0000163e> ...\p...\pso the idea is exactly the same as yesterday's simulator exercise.\p I was thinking of this too much as a human-on-human mock battle...\p...\p\e
+
+//<0000163f> 【速瀬中尉】「人類を守るとか、\p地球を守るとか、\p遠くの大きな目標を見据えるのは大変結構だけど、\p足元もちゃんと見る事ね」\e
+<0000163f> 【1st Lt. Hayase】「Protecting humanity,\p and the Earth,\p and whatever our ultimate objective is are great things to focus on,\p but you've gotta look at your feet too.」\e
+
+//<00001641> 【涼宮中尉】「訓練だけじゃなくて、\p個別の目的や要求を明確に意識しないと、\p何をやっても時間の無駄になるから気を付けてね」\e
+<00001641> 【1st Lt. Suzumiya】「If you aren't clearly aware of your personal objectives and desires as well as your training,\p you might just end up wasting time, so be careful.」\e
+
+//<00001644> 【武】「――はい！」\n
+<00001644> 【Takeru】「――Ma'am!」\n
+
+//<00002311> 【冥夜・慧・美琴】「――はい！！」\e
+<00002311> 【Meiya & Kei & Mikoto】「――Ma'am!!」\e
+
+//<000027b8> 確かにそうだ。人類を守るとか、\p『この世界』を救うとか、\p大きい目標にばっかり目が行っちまってるような気がする。\e
+<000027b8> They're definitely right. It does feel like I've been focusing on nothing but huge long-term objectives like protecting humanity and saving this world.\e
+
+//<00001648> 【速瀬中尉】「さあて…\p…\p意識の統一もできたところで、\p連携の確認よ！　こっちの配置考えるわよ！」\e
+<00001648> 【1st Lt. Hayase】「Nooow...\p...\psince we're all on the same page,\p let's pick formations! Think about your own positions!」\e
+
+//<0000164b> 【武】「――はい！」\n
+<0000164b> 【Takeru】「――Ma'am!」\n
+
+//<00002312> 【冥夜・慧・美琴】「――はい！！」\e
+<00002312> 【Meiya & Kei & Mikoto】「――Ma'am!!」\e
+
+//<0000164e> 【速瀬中尉】「言っておくけど、\pあんた達…\p…\p負けたらどうなるかわかってるでしょうね？」\e
+<0000164e> 【1st Lt. Hayase】「But I should warn you all...\p...\pyou know what happens if we lose, right?」\e
+
+//<00001650> …\p…\pは？\e
+<00001650> ...\p...\phuh?\e
+
+//<00001651> 【美琴】「え…\p…\pでも中尉、\pさっき人間相手に勝っても実戦では関係ないって…\p…\p」\e
+<00001651> 【Mikoto】「Eh? ...\p...\pbut First Lieutenant,\p didn't you just say it didn't matter if we won against humans...\p...\p?」\e
+
+//<00001652> 【速瀬中尉】「勝っても負けても結果が同じなら勝つのよ！　その方が絶対いいの！」\e
+<00001652> 【1st Lt. Hayase】「If winning and losing are both irrelevant, then win! That's obviously better!」\e//...lol ~IX
+
+//<00001654> 【美琴】「はあ…\p…\p」\e
+<00001654> 【Mikoto】「Haa...\p...\p」\e
+
+//<00001655> やっぱり速瀬中尉ってこういう人なんだよなぁ…\p…\p。\nまあ、\p突撃前衛長やるには、\pこのくらいじゃなきゃだめなのかも…\p…\p。\e
+<00001655> So 1st Lt. Hayase is that kind of person...\p...\p\nWell,\p maybe you have to be to be Storm Vanguard One...\p...\p\e
+
+//<00001656> 【冥夜】「確かにな…\p…\p」\e
+<00001656> 【Meiya】「Indeed...\p...\p」\e
+
+//<00001657> 【武】「おいおい…\p…\pおまえまで…\p…\p」\e
+<00001657> 【Takeru】「Hey now...\p...\pdon't tell me you...\p...\p」\e
+
+//<00001658> 【冥夜】「いや、\p敗北から教訓を導き出す事は容易であるが故に、\p人は往々にしてその行為で満足してしまうものだ」\e
+<00001658> 【Meiya】「No.\p It is easy to draw lessons out of defeats,\p so people may find such conduct satisfying.」\e//not getting this ~IX//"We learn from defeat so it's OK to lose" Meiya's saying people use that as an excuse of sorts - Sheeta
+
+//<00001659> …\p…\pう。何か…\p…\p痛い言葉だぜ…\p…\p。\e
+<00001659> ...\p...\puuu...\p...\pthat hurts for some reason...\p...\p\e
+
+//<00002092> 【冥夜】「実際にその教訓を活かす事は、\p言われているほど容易くはないぞ」\e
+<00002092> 【Meiya】「Putting those lessons into practice is not as simple as it may appear.」\e
+
+//<0000165b> ああ…\p…\pその通り。\nオレはそれを身を以て知ったよ。\e
+<0000165b> Yeah...\p...\pthat's true.\nI know that firsthand.\e
+
+//<00002095> 【冥夜】「だが、\p勝利から得るものは、\pそれを謙虚に受け止めさえすれば、\p更なる成功に繋げやすいものだ」\e
+<00002095> 【Meiya】「However,\p if you accept the rewards of victory with humility,\p it can be easily connected to further success.」\e
+
+//<0000165d> 【速瀬中尉】「御剣ぃ、\pあんたなかなかいいこと言うわねえ…\p…\p気に入ったわ！」\e
+<0000165d> 【1st Lt. Hayase】「Mitsurugiii,\p you say some cool stuff...\p...\pI like it!」\e
+
+//<0000165f> 【冥夜】「は…\p…\pありがとうございます」\e
+<0000165f> 【Meiya】「Yes...\p...\pthank you very much.」\e
+
+//<00001660> 【武】「冥夜、\p中尉に気に入られても、\pあんまり良いことないような気がするぞ…\p…\p」\e
+<00001660> 【Takeru】「Meiya,\p I don't think being liked by the First Lieutenant is necessarily a good thing...\p...\p」\e
+
+//<00001661> 【速瀬中尉】「し・ろ・が・ね…\p…\p聞こえたわよ」\e
+<00001661> 【1st Lt. Hayase】「Shi-ro-ga-ne...\p...\pI heard that.」\e
+
+//<00001663> ――げ！\e
+<00001663> ――Geh!\e
+
+//<00002097> 【速瀬中尉】「あんたはそうね…\p…\p単独斥候決定ッ！！」\e
+<00002097> 【1st Lt. Hayase】「I know...\p...\pyou'll do lone wolf recon!!」\e
+
+//<00001666> 【武】「――えッ…\p…\pた、\p単独斥候ですかッ！？」\e
+<00001666> 【Takeru】「――Eh!? ...\p...\pa-\pall by myself!?」\e
+
+//<00001667> つまり…\p…\p囮って事かよ！？\e
+<00001667> Which means...\p...\pI'm the bait!?\e
+
+//<00001668> 【速瀬中尉】「撃墜されたら食事２回抜くわよ…\p…\pいいわねッ？！」\e
+<00001668> 【1st Lt. Hayase】「Get shot and you lose two meals...\p...\pgot it!?」\e
+
+//<0000166a> 向こうには狙撃手がずらっと揃っている上に、\pオレを狙っている涼宮がいて…\p…\p最悪だ――！！\e
+<0000166a> They've got snipers lined up against us on top of Suzumiya gunning for me...\p...\pI'm dead meat――!!\e
+
+//<0000166b> 【宗像中尉】「速瀬中尉、\p白銀が何か文句があるそうです」\e
+<0000166b> 【1st Lt. Munakata】「1st Lt. Hayase,\p Shirogane seems unsatisfied by this.」\e
+
+//<0000166d> 【武】「――えっ？」\e
+<0000166d> 【Takeru】「――Eh?」\e
+
+//<0000166e> 【宗像中尉】「オレの方があんたより戦術機の操縦はうまいからそんなのは楽勝だ、\pといっていました」\e
+<0000166e> 【1st Lt. Munakata】「He said that role would be too easy since he's a much better pilot than you.」\e
+
+//<00001670> 【速瀬中尉】「――なんですって…\p…\p！？」\e
+<00001670> 【1st Lt. Hayase】「――He said what...\p...\p!?」\e
+
+//<00001672> ――だああああっ！\n――言ってねえって！　一体何なんだよこの人は！？\e
+<00001672> ――Aaaaaaaah!\n――I said none of that! What the hell's she doing!?\e
+
+//<00001673> 【武】「――な…\p…\p何言ってるんですか宗像中尉っ！」\e
+<00001673> 【Takeru】「――Wh-...\p...\pwhat're you doing, 1st Lt. Munakata!?」\e
+
+//<0000209a> 【宗像中尉】「おまえならやれる。\n期待しているぞ」\e
+<0000209a> 【1st Lt. Munakata】「You can do it.\nWe're expecting a lot from you.」\e
+
+//<00001676> 【武】「――はあ？」\e
+<00001676> 【Takeru】「――Huuuh?」\e
+
+//<00001677> ――さっきっから何言ってるんですか、\pあんたはッ！？\e
+<00001677> ――What the hell are you rambling on about!?\e
+
+//<0000209d> 【速瀬中尉】「わかったわ…\p…\pそこまで言うなら、\p単独斥候の上、\p風間を仕留めなさい。\nいいわね？」\e
+<0000209d> 【1st Lt. Hayase】「I understand...\p...\pif you insist,\p then on top of reconnoitering alone, take out Kazama.\p That better?」\e
+
+//<0000167a> 【武】「え…\p…\p？」\e
+<0000167a> 【Takeru】「Eh...\p...\p?」\e
+
+//<0000167b> 【速瀬中尉】「できなかったら食事３回抜くわよ…\p…\p」\e
+<0000167b> 【1st Lt. Hayase】「If you can't you lose three meals...\p...\p」\e
+
+//<000027cc> どう考えたって一番奥にいる風間少尉を…\p…\p斥候やりながら仕留めろだって…\p…\p？\e
+<000027cc> 2nd Lt. Kazama's bound to be at the heart of their formation...\p...\phow do I get to her while scouting...\p...\p?\e
+
+//<0000167e> ――バカなぁ…\p…\p！！\e
+<0000167e> ――No waaay...\p...\p!!\e
+
+//<0000167f> 【慧】「白銀…\p…\p早く返事したほうがいい」\e
+<0000167f> 【Kei】「Shirogane...\p...\pyou should speak up quickly.」\e
+
+//<000020a2> 【美琴】「…\p…\p宗像中尉がまた何か言いたそうな顔してるよ？」\e
+<000020a2> 【Mikoto】「...\p...\p1st Lt. Munakata looks ready to say something else.」\e
+
+//<00001682> ――え？\e
+<00001682> ――Eh?\e
+
+//<00001684> ――だ、\pだめだッ…\p…\pこれ以上はまずい！\n合成蛋白とは言え、\pメシは『この世界』の数少ない娯楽なのに！\e
+<00001684> ――N-\pno! ...\p...\pI can't let her do any more!\nIt may only be synthetic protein,\p but food's one of the few pleasures in this world!\e
+
+//<00001685> 【武】「――白銀少尉、\p単独斥候の上、\p風間少尉機を撃墜します！！」\e
+<00001685> 【Takeru】「――I, 2nd Lt. Shirogane,\p will perform solitary recon and neutralize 2nd Lt. Kazama!!」\e
+
+//<00001686> 【宗像中尉】「――ほう、\pでかく出たな。\nそんなに腕に自信があるのか」\e
+<00001686> 【1st Lt. Munakata】「――Oooh,\p ambitious, are we?\nAre you that confident?」\e
+
+//<00001688> ――あんたが言わせたんだろ――！！\e
+<00001688> ――You made me say it――!!\e
+
+//<0000168c> 【武】「…\p…\pはぁ…\p…\p…\p…\p」\e
+<0000168c> 【Takeru】「...\p...\phaa...\p...\p...\p...\p」\e
+
+//<0000168d> 【冥夜】「どうした、\pため息などついて」\e
+<0000168d> 【Meiya】「Why are you sighing?」\e
+
+//<0000217a> 【武】「いや…\p…\p結局風間少尉を墜せなかったからな。\nメシ抜きかと思うと気が重い」\e
+<0000217a> 【Takeru】「Well...\p...\pI couldn't take out 2nd Lt. Kazama.\nI don't look forward to not eating.」\e
+
+//<0000168f> 【美琴】「惜しかったよね。\n風間少尉を追いつめるところまでは行ってたんだからさ」\e
+<0000168f> 【Mikoto】「But you got so close.\nYou even had her backed into a corner for a moment.」\e//ffffuuuuck exciting battle got skipped. - Raide //AGE, THE KINGS OF COCKTEASING - kViN
+
+//<00001690> 【慧】「結局、\p風間機が囮だったね」\e
+<00001690> 【Kei】「Though it turned out she was the bait.」\e
+
+//<00001691> 【美琴】「まさか制圧支援を最前面に出してくるなんて思わなかったよ」\e
+<00001691> 【Mikoto】「I never thought they'd put the Blast Guard all the way in the front.」\e
+
+//<00001693> 【武】「結局それに引きずられて、\p挟撃されちまった」\e
+<00001693> 【Takeru】「We fell for it hook, line and sinker.」\e
+
+//<00001694> 【冥夜】「接敵するや即後退して誘い込み、\p左右からの狙撃で足止めしている間に、\p後退した風間機が面制圧を行う…\p…\p見事な連携であったな」\e
+<00001694> 【Meiya】「She retreated immediately, inviting you in,\p then as both snipers kept us pinned down she bombarded us...\p...\pit was splendid teamwork.」\e
+
+//<00001695> 【美琴】「みんな良くあの波状攻撃で生き残ったね。\n離れて見てたボクが生きた心地しなかったからね」\e
+<00001695> 【Mikoto】「I'm amazed you guys survived them all at once.\nI felt half-dead just watching it.」\e
+
+//<000020a5> 【慧】「市街戦だから遮蔽物も多い。\nミサイルはこっちをあぶり出すための威嚇だから」\e
+<000020a5> 【Kei】「There's lots of cover in that town.\nThe missiles were just meant to draw us out.」\e
+
+//<00001697> 【武】「そうなんだよ。\n下手に避けたり、\pミサイルの対処に集中してるとガンガン撃たれる」\e
+<00001697> 【Takeru】「That's right.\nIf we focused too much on dodging them we'd get torn full of holes.」\e
+
+//<00001698> 【美琴】「でも、\p涼宮機と柏木機を撃墜したし、\pこっちは損害無しだから、\p速瀬中尉も大目に見てくれるんじゃないかなあ？」\e
+<00001698> 【Mikoto】「But we destroyed Suzumiya and Kashiwagi without taking any damage,\p so maybe 1st Lt. Hayase won't mind?」\e
+
+//<00001699> 【慧】「それは無理」\e
+<00001699> 【Kei】「Inconceivable.」\e
+
+//<0000169a> 【美琴】「え…\p…\pそうかなあ」\e
+<0000169a> 【Mikoto】「Eh? ...\p...\preally?」\e
+
+//<000020a8> 【冥夜】「タケルが墜したのは涼宮機だ。\n柏木機を墜したのは速瀬中尉だ」\e
+<000020a8> 【Meiya】「Takeru shot down Suzumiya.\n1st Lt. Hayase took out Kashiwagi.」\e
+
+//<000020ab> 【武】「だよな～。今日の想定だと、\p光線級や重光線級に相当する機体を墜さなきゃ意味ないだろう」\e
+<000020ab> 【Takeru】「Yeah...\p...and since we didn't defeat the TSFs representing the Laser and Heavy Laser Classes,\p that doesn't mean much.」\e
+
+//<000020ad> 【冥夜】「対光線級戦を想定した演習である以上、\p此度は私達の敗北であろうからな」\e
+<000020ad> 【Meiya】「If this had been a real fight against the Heavy Laser Class,\p we certainly would have lost.」\e
+
+//<0000169e> 【美琴】「そうか～。\nじゃあ、\pタケルのご飯の運命は、\pこの後の演習評価の時間ではっきりするね」\e
+<0000169e> 【Mikoto】「I see～\nThen we'll find out if Takeru gets to eat after they finish scoring.」\e
+
+//<0000169f> 【武】「気が滅入るからその話はもうやめてくれ～」\e
+<0000169f> 【Takeru】「Please don't talk about that, it's depressing.」\e
+
+//<000020b0> 【冥夜】「う～む。普通であれば、\pあれは奮起させるための冗談であろうから気にするな、\pと言ってやりたいところなのだが…\p…\p」\e
+<000020b0> 【Meiya】「Hmmm. Normally I would tell you not to worry so much over what is clearly a joke meant to motivate you...\p...\p」\e
+
+//<000016a1> 【武】「速瀬中尉だしなあ…\p…\p」\e
+<000016a1> 【Takeru】「But this is 1st Lt. Hayase...\p...\p」\e
+
+//<000016a2> 【慧】「…\p…\p多分本気」\e
+<000016a2> 【Kei】「...\p...\pshe'll probably do it.」\e
+
+//<000016a3> 【武】「だからもうやめろって～」\e
+<000016a3> 【Takeru】「I said stop it!」\e
+
+//<000016a4> 【美琴】「じゃあさ、\p感想聞かせてよ」\e
+<000016a4> 【Mikoto】「Then tell us what you thought.」\e
+
+//<000016a5> 【武】「え…\p…\pいったい何の感想？」\e
+<000016a5> 【Takeru】「Eh? ...\p...\pthought about what?」\e
+
+//<000016a6> 【美琴】「タケルはさ、\pシミュレーターも１度しかやってないし、\p吹雪と不知火の差をストレートに感じたんじゃない？」\e
+<000016a6> 【Mikoto】「You've only been in the simulator once, Takeru,\p so didn't you get to feel the differences between the Fubuki and Shiranui directly?」\e//apparently piloting nothing for a week, one sim and one real is better than one week in sims and one real, I don't really get this myself ~IX
+
+//<000016a7> 【武】「ああ、\pまあそうだな」\e
+<000016a7> 【Takeru】「Yeah,\p I guess so.」\e
+
+//<000020b2> 【美琴】「ボクとしては、\p２０７小隊最高の戦術機乗りであるタケルの意見には、\pとても興味あるんだ」\e
+<000020b2> 【Mikoto】「I'm really interested in your opinion,\p Takeru, as the best TSF pilot in Squad 207.」\e
+
+//<000016a9> 【武】「感想っていってもなあ…\p…\p」\e
+<000016a9> 【Takeru】「Not that I have much to say...\p...\p」\e
+
+//<000016aa> 【美琴】「ボク達はシミュレーターで感覚的に慣れちゃってからの搭乗で、\pしかもまだ機体は借り物だからね。\n明日以降の演習の参考にしたいんだ」\e
+<000016aa> 【Mikoto】「We got used to them gradually through the simulators,\p and even today we're just borrowing them.\nI'd like to know for tomorrow's practice.」\e
+
+//<000016ab> 【冥夜】「成る程。そういう意味では確かに興味があるな」\e
+<000016ab> 【Meiya】「I see. In that sense it certainly would be interesting.」\e
+
+//<000016ac> 【武】「そうだな…\p…\p昨日はハイヴ内戦闘っていう、\p初めてのシチュエーションだったから気付かなかったのかも知れないけど――」\e
+<000016ac> 【Takeru】「Good question...\p...\pI probably didn't notice yesterday since that was a brand new scenario for me,\p but――」\e
+
+//<000016ad> 【武】「やっぱり主機の出力の差がでかいな。\nトルクが太いって言うか、\p余裕があるって言うか…\p…\p」\e
+<000016ad> 【Takeru】「There really is a huge difference in engine output.\nIt has more torque than I could ever want...\p...\p」\e
+
+//<000020b4> 【慧】「そうだね。機体挙動の繋がり方に違和感が全くないよ」\e
+<000020b4> 【Kei】「It does. Connecting different movements feels perfectly natural.」\e
+
+//<000020b6> 【冥夜】「私も長刀の斬り返しの反応には驚いた。\n肩下重量に対する出力比が相当上がっているのであろうな」\e
+<000020b6> 【Meiya】「I was also surprised at how it felt to wield swords with it.\p The ratio of power to shoulder weight must have been much higher.」\e
+
+//<000020b9> 今考えると、\p沙霧大尉達の不知火を吹雪で相手にしようとしてたんだから…\p…\pぞっとするよ。\e
+<000020b9> Now that I think about it,\p we had to take on Capt. Sagiri's Shiranui with Fubuki...\p...\pit's almost chilling.\e
+
+//<000016b1> 新型ＯＳが搭載されてなかったら、\p今頃ここにいなかったかも知れないな。\e
+<000016b1> If we didn't have the new OS,\p we might not be here.\e
+
+//<000016b2> 【武】「あとはＣＮＩシステムの性能が吹雪とは段違いだな。\nまあ、\p訓練兵が初っ端から不知火のレベルじゃあ逆に戸惑うと思うけど」\e
+<000016b2> 【Takeru】「And the CNI system is much better than the Fubuki's.\nWell,\p going straight from cadet TSFs to real Shiranui is sure to make it obvious.」\e//again, fucked up ~IX
+
+//<000016b3> 【美琴】「確かにＣＮＩ能力の差は驚くよね。\nボクは制圧支援だから、\p特にそう感じるよ」\e
+<000016b3> 【Mikoto】「The CNI was a big surprise.\nEspecially for me as a Blast Guard.」\e
+
+//<000027c4> 【武】「そうだよな。\n捕捉して追跡できる標的の数や、\p敵味方識別、\p脅威度設定、\pどれも遠距離攻撃には特に重要だからな」\e
+<000027c4> 【Takeru】「Right.\p Tracking multiple enemies,\p distinguishing friendlies and enemies,\p threat level evaluation,\p those all become even more important at long range.」\e
+
+//<000016b6> 【美琴】「あとは…\p…\p？　他になんか感じなかった？」\e
+<000016b6> 【Mikoto】「What else...\p...\p? Did you feel anything else?」\e
+
+//<000016b7> 他に…\p…\pか…\p…\p。\e
+<000016b7> Anything...\p...\pelse...\p...\p?\e
+
+//<000016b8> 普通に考えれば、\p第三世代機用の練習機である吹雪と、\p実戦機の不知火にそれ程差があったらマズイんじゃねえのかな…\p…\p。\e
+<000016b8> You would think there shouldn't be that huge of a difference between Training TSFs designed for the third generation and real Shiranui...\p...\p\e
+
+//<000016b9> 【美琴】「違和感とか…\p…\pそういうのは…\p…\pない？」\e
+<000016b9> 【Mikoto】「Anything feel strange? ...\p...\panything...\p...\pat all?」\e
+
+//<000016ba> それこそあったらヤバイだろ。\e
+<000016ba> Wouldn't it be really bad if something did?\e
+
+//<000016bb> 【武】「そうだな…\p…\p話は変わるかも知れないけど、\p大尉と風間少尉は異常だろ、\pあれ。\nいくらＸＭ３搭載機って言っても撃震だぜ？」\e
+<000016bb> 【Takeru】「Good question...\p...\pmaybe I'm going off topic here,\p but the Captain and 2nd Lt. Kazama were just nuts.\nSure they had the XM3, but those were Gekishin, how'd they do that?」\e
+
+//<000020bd> 【武】「速瀬中尉と宗像中尉もそうだけど、\pあれだけ凄い不知火と組んでも、\p全く遅れを取ってなかったよな」\e
+<000020bd> 【Takeru】「1st Lt. Hayase and 1st Lt. Munakata were amazing too,\p and even in Shiranui it didn't feel like we had any advantage over them.」\e
+
+//<000016bd> トライアルに参加してた部隊の連中とは、\p全てに於いて次元が違っていた。\e
+<000016bd> Those guys are on a completely different level from everyone who participated in the trial.\e
+
+//<000016be> 撃震は基本設計が古いから、\pいくら近代化改装してるって言っても限度があるはずなんだ。\e
+<000016be> The Gekishin are just plain old,\p so even renovated there should be a limit to how well they can perform.\e
+
+//<000016bf> なのにあの動き…\p…\pさすが新型ＯＳに慣れている部隊だけの事はあるな。\e
+<000016bf> But those moves...\p...\pthey really are familiar with the new OS.\e
+
+//<000016c0> そういう意味では、\p前線の衛士達がＸＭ３に慣れさえすれば、\pそれが即、\p大幅な戦力向上に直結するって事が確認できたのは本当にうれしい。\e
+<000016c0> In that sense I'm really happy to see proof that, once all the other Eishi get used to the XM3,\p all our forces will be more powerful.\e
+
+//<000016c1> 【美琴】「大尉達だって、\p撃震には乗ったこと無かったんでしょ？」\e
+<000016c1> 【Mikoto】「But they've never even flown Gekishin before, right?」\e
+
+//<000020bf> 【冥夜】「うん、\p座学で聞いた限り、\pＡ－０１部隊は最初から不知火を装備していたはずだ」\e
+<000020bf> 【Meiya】「Yes,\p from what I heard in class,\p Unit A-01 has always used Shiranui.」\e
+
+//<000016c3> 【慧】「さすがだね」\e
+<000016c3> 【Kei】「Impressive.」\e
+
+//<000016c4> 【武】「初めての機体という意味では同じ条件だったのに、\pおまえ達の動きがもどかしく感じる位だったからなあ…\p…\p」\e
+<000016c4> 【Takeru】「So we all had to deal with new TSFs,\p but they were still so good you guys felt sluggish...\p...\p」\e
+
+//<000016c5> 【美琴】「なんだよもう。\nタケルは自分の機体だから、\pデータも何もかも万全で良かったのかも知れないけどさ！」\e
+<000016c5> 【Mikoto】「Come ooon.\nYou were using your own TSF, Takeru,\p so your data was all there and everything!」\e
+
+//<000016c7> 【武】「へえ…\p…\pさすがのおまえでも、\p上官の機体は使いづらかったのか」\e
+<000016c7> 【Takeru】「Wow...\p...\pso even you found it tough to use their TSFs?」\e
+
+//<000016c8> 【美琴】「確かに演習前はそうだったけど、\pそんなんじゃないよ」\e
+<000016c8> 【Mikoto】「It was before the exercise but that's not what I meant.」\e
+
+//<000016ca> 【武】「なんだよ」\e
+<000016ca> 【Takeru】「Then what is it?」\e
+
+//<000016cb> 【美琴】「だからさっき訊いたじゃないか」\e
+<000016cb> 【Mikoto】「Didn't I just ask you?」\e
+
+//<000016cd> 【武】「何を？」\e
+<000016cd> 【Takeru】「Ask me what?」\e
+
+//<000020c1> 【美琴】「ボクは今日初めて実機に乗って、\pかなりシミュレーターと違うなって思ったんだよ。\n後半は慣れたけどさ」\e
+<000020c1> 【Mikoto】「Today's the first time I flew a real Shiranui,\p so it struck me how different they were from the simulator.\nThough I got used to it partway through.」\e
+
+//<000016cf> 【武】「気のせいなんじゃないか？　多少ならともかく、\pシミュレーターと実機がかなり違うなんて、\pおかしいだろ。\n訓練の意味がない」\e
+<000016cf> 【Takeru】「Aren't you imagining things? If nothing else it'd be really bad if the simulator wasn't close to the real thing.\nThere'd be no point training with it.」\e
+
+//<000016d0> 【冥夜】「タケル、\p実は私もだ。\nシミュレーターと実機の挙動の差に慣れるのに、\p多少時間が掛かった」\e
+<000016d0> 【Meiya】「Takeru,\p I actually felt the same way.\nIt took considerable time to adapt to the differences in behavior.」\e
+
+//<000016d1> 【武】「え…\p…\p？　彩峰は？」\e
+<000016d1> 【Takeru】「Eh...\p...\p? What about you, Ayamine?」\e
+
+//<000016d2> 【慧】「そうだね。機体側の機動データにちょっと振り回された」\e
+<000016d2> 【Kei】「They're right.\bI had to fight the TSF's movement data a little.」\e
+
+//<000016d3> 【武】「冥夜が速瀬中尉で、\p彩峰が宗像中尉の機体に乗ったんだっけ…\p…\p？」\e
+<000016d3> 【Takeru】「Meiya, you were in 1st Lt. Hayase's TSF, right?\p And Ayamine was in 1st Lt. Munakata's...\p...\p?」\e
+
+//<000020c5> 【冥夜】「そうだ」\e
+<000020c5> 【Meiya】「Correct.」\e
+
+//<000020c6> 【武】「…\p…\p…\p…\p」\e
+<000020c6> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000020c7> オレ達の機体のＯＳは概念実証用だったから、\p機体側にもバックアップデータが残っている筈だよな。\e
+<000020c7> Our Fubuki used the proof-of-concept OS,\p so they should still have backup data from that.\e
+
+//<000020c8> だから、\p機体にはワンオフ仕様の機体に近い個人の特性が残る筈だ…\p…\p。\e
+<000020c8> So they should also have some individual quirks which don't adapt well to the new versions...\p...\p\e//lit. "individual quirks like those of one-off TSFs" where one-off means single-purpose
+
+//<000020c9> もしかしてそのせいなのか？\e
+<000020c9> Maybe theirs did too?\e
+
+//<000020ca> 速瀬中尉が実戦で蓄積した膨大なデータとかち合って、\p冥夜はその機体挙動に戸惑ったとか…\p…\p？\e
+<000020ca> Maybe Meiya had to fight with the enormous volume of data 1st Lt. Hayase accumulated in the field...\p...\p?\e
+
+//<000020cb> 彩峰の場合は、\p迎撃後衛である宗像中尉の蓄積した実戦データとの、\pポジションの違いによる感覚的な差が大きかったのか…\p…\p？\e
+<000020cb> As for Ayamine,\p 1st Lt. Munakata is a Gun Interceptor,\p so all her data being for a different position was confusing...\p...\p?\e
+
+//<000020cc> いや…\p…\pそれでもそれはデータリンクで姿勢制御情報を共有できている筈だから、\pシミュレーターとの違和感は感じないはずだ。\e
+<000020cc> No...\p...\pthe data links should synchronize all of their posture control information,\p so it still should feel like the simulator.\e
+
+//<000020cd> システムのバグなのか…\p…\p？\e
+<000020cd> Maybe there's a bug in the system...\p...\p?\e
+
+//<000020ce> 【冥夜】「訓練学校で、\pシミュレーターから実機教習に移った際には感じなかった違和感故、\p気にはなる」\e
+<000020ce> 【Meiya】「I do wonder why I feel such a gap between the simulator and the real thing when I did not in Training School.」\e
+
+//<000020cf> 【美琴】「うん。武のＯＳに変えた時の違和感と何となく似た感じだったよね」\e
+<000020cf> 【Mikoto】「Yeah. It kinda felt like when we changed to Takeru's OS the first time.」\e
+
+//<000020d0> 【武】「…\p…\p…\p…\p」\e
+<000020d0> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000020d1> 【慧】「でもすぐ慣れた。\n問題ないよ」\e
+<000020d1> 【Kei】「But we got used to it.\nThere's no problem.」\e
+
+//<000020d2> 【武】「――ああ、\pわかった！　なんだ、\pそんな単純な事か！」\e
+<000020d2> 【Takeru】「――Aaah,\p I get it! It's so simple!」\e
+
+//<000020d3> 【冥夜】「何がわかったのだ？」\e
+<000020d3> 【Meiya】「You know the cause?」\e
+
+//<000020d4> 【武】「オレがおまえ達のような違和感を感じなかったのは、\p自分の吹雪で訓練に参加してなかったからだ」\e
+<000020d4> 【Takeru】「I didn't feel anything weird because I never trained using my Fubuki.」\e
+
+//<000020d5> 【美琴】「え？　どういう事？」\e
+<000020d5> 【Mikoto】「Eh? What do you mean?」\e
+
+//<000020d6> 【武】「オレはいきなり不知火、\pしかも自分のデータを移した機体で参加しただろ？」\e
+<000020d6> 【Takeru】「I went straight to the Shiranui,\p and it already had all my old data, right?」\e
+
+//<000020d7> 【武】「だから各機の姿勢制御情報が、\pデータリンクによってオレの機体に反映され、\p即時応用されていたから何も感じなかったんだ」\e
+<000020d7> 【Takeru】「So all of your posture control data got influenced by mine during the data link,\p then went away after they adapted.」\e
+
+//<000020d8> 【冥夜】「…\p…\p私達の吹雪にもデータ自体はあったが、\p機体の基本性能の差でそれを再現できなかったということか？」\e
+<000020d8> 【Meiya】「...\p...\pwe did have some of our old Fubuki data,\p but the Shiranui were simply too different to work from it?」\e//assuming the first part means Armored Suit data and adapted accordingly ~IX
+
+//<000020d9> 【慧】「それは変だね。\nだったらシミュレーターだけじゃなく、\p実機でも再現できなきゃおかしい」\e
+<000020d9> 【Kei】「That would be strange.\nThe simulator shouldn't be able to adapt to it if the real thing can't.」\e
+
+//<000020da> 【美琴】「そうだよ。\nだってデータ自体は強化装備側で持ってるんじゃないか」\e
+<000020da> 【Mikoto】「They're right.\nWe have that data in our Armored Suits so it was there for both.」\e//oh cool, nvm ~IX
+
+//<000020db> 【武】「まあ聞けよ。\nＸＭ３って、\pオレ達が概念実証やってた頃は単に『新型ＯＳ』って言われてただろ？」\e
+<000020db> 【Takeru】「Let me finish.\nWe used to call the XM3 the "new OS" back when it was just a proof-of-concept, right?」\e
+
+//<000020dc> 【美琴】「うん、\pそうだね」\e
+<000020dc> 【Mikoto】「Yes,\p we did.」\e
+
+//<000020dd> 【武】「ＸＭ３は生産型に付けられた形式名称だ。\nつまりオレやおまえ達の吹雪にはプロトタイプのＸＭ３が搭載されていたんだ」\e
+<000020dd> 【Takeru】「XM3 only refers to the mass-produced version.\nSo our Fubuki were still using the original prototype for XM3.」\e
+
+//<000020de> 【武】「大尉達の機体に搭載されたタイプは、\pオレ達のデータを元に改良された先行量産タイプだ」\e
+<000020de> 【Takeru】「The Captain and the others are using a later prototype, revised based on our data and designed to be mass-producible.」\e//added "prototype" here (and played with adjectives here and above) so that Takeru's comparison four lines down is clearer. If anyone knows a fancy term for the "mass-producible prototype" I'm all ears. ~IX
+
+//<000020df> 【武】「違和感の原因はたぶんそこだと思う。\n機体の性能差じゃなくＯＳの差だよ」\e
+<000020df> 【Takeru】「I think that's what caused the problems.\nNot the TSFs, but the OS's.」\e
+
+//<000020e0> 【美琴】「ＯＳの差…\p…\p」\e
+<000020e0> 【Mikoto】「The OS's...\p...\p」\e
+
+//<000020e1> 【武】「オレの不知火は管制ユニットも新品だから、\p当然ＯＳは生産型のＸＭ３だ。\nだからシミュレーターとのマッチングが良かったんだ」\e
+<000020e1> 【Takeru】「My Shiranui's control unit is brand new so of course it uses the XM3.\nThat's why it matched the simulator.」\e
+
+//<00002270> 【武】「生産型の方が試作型より優れているのは当然だろ？\nシミュレーターのＯＳ設定はＸＭ３搭載機だったじゃないか」\e
+<00002270> 【Takeru】「It's no surprise that the actual mass-produced version is better than any of the prototypes.\nAnd the simulator was set to emulate the XM3, right?」\e
+
+//<000020e3> 【武】「そこで強化装備のデータがＸＭ３に対応したのに、\p先行量産型ＯＳの機体に戻った事で、\pデータの対応に時間がかかった」\e
+<000020e3> 【Takeru】「Since our Armored Suits have been working with the XM3,\p it took them a while to adapt to the mass-producible prototype OS.」\e
+
+//<000020e4> 【武】「特に、\p機体の性能が上がって、\pＯＳの性能が下がった事で余計そう感じたんだと思う」\e
+<000020e4> 【Takeru】「Especially since you got a better TSF at the same time you felt the OS downgrade.」\e
+
+//<000020e5> 【冥夜】「成る程…\p…\pそれが最初に感じた違和感の正体ということか」\e
+<000020e5> 【Meiya】「I see...\p...\pso that was what caused the discrepancy.」\e
+
+//<000020e6> ああ、\pそうか。だから先任は…\p…\p\e
+<000020e6> Yeah,\p that's it, that's why they...\p...\p\e
+
+//<00002271> 【武】「逆に先任達はＸＭ３搭載の撃震で、\pおまえ達と同じ様な事をやったってわけだ」\e
+<00002271> 【Takeru】「And that might be why the others in Gekishin with the XM3 did about as well as we did.」\e
+
+//<000020e8> 【美琴】「機体の性能が下がって、\pＯＳの性能が上がるってことかあ…\p…\p」\e
+<000020e8> 【Mikoto】「Their TSFs got worse but the OS better...\p...\p」\e
+
+//<000020e9> 【慧】「なるほどね」\e
+<000020e9> 【Kei】「Makes sense.」\e
+
+//<000020ea> 【冥夜】「そういえば今朝、\p副司令が私達の管制ユニットのＯＳをバージョンアップすると仰っていたな」\e
+<000020ea> 【Meiya】「Speaking of which,\p the XO did tell us something about an upgrade to the control unit OS.」\e
+
+//<000020eb> 【武】「ああ、\pそうだったな」\e
+<000020eb> 【Takeru】「Yeah,\p that's right.」\e
+
+//<000020ec> ということは先任達の機体のＯＳも順次生産型にバージョンアップされるんだろう。\e
+<000020ec> Which probably means she'll be giving the rest of the unit the latest OS soon.\e
+
+//<000020ed> 【美琴】「じゃあ慣熟訓練って、\p機体だけじゃなく、\pＯＳのマッチングも含んでのことだったのかな？」\e
+<000020ed> 【Mikoto】「So maybe we were meant to get used to the OS as well as the TSF?」\e
+
+//<000020ee> 【武】「多分な。だから上官達の機体に慣れたおまえ達が、\p次に自分の機体に乗っても違和感は全く感じないはずだ」\e
+<000020ee> 【Takeru】「Probably. You guys shouldn't have any trouble transitioning to your own Shiranui after this.」\e
+
+//<000020ef> 【慧】「ＯＳの全タイプのデータが揃ったから？」\e
+<000020ef> 【Kei】「Because we have data on all the OS types?」\e
+
+//<000020f0> 【武】「そうだ」\e
+<000020f0> 【Takeru】「Right.」\e
+
+//<000027ce> 【美琴】「凄いよタケル！　やっぱりわからないことは開発者に訊くのが一番良いね！」\e
+<000027ce> 【Mikoto】「You're amazing, Takeru!\bThe inventor is the best at figuring these things out!」\e
+
+//<000016ea> 【慧】「さすがだね。\n知ってるね」\e
+<000016ea> 【Kei】「Only you would notice that.」\e
+
+//<000020f2> 【武】「いや、\pだから開発したのは夕呼先生だって。\nしかも今のはあくまでそうなんじゃないかなって話だよ」\e
+<000020f2> 【Takeru】「No,\p really, Yuuko-sensei did all the real work.\nAnd what I said just now was only guessing.」\e
+
+//<000016ef> 【美琴】「でも、\pやっぱりタケルに訊けて良かったよ！　千鶴さん達も話聞きたいんじゃないかな」\e
+<000016ef> 【Mikoto】「But I'm still glad I asked you!\bMaybe I should go ask Chizuru-san and Miki-san too.」\e
+
+//<000016f0> 【冥夜】「うん。私達と同じ様な戸惑いを感じているやも知れんな」\e
+<000016f0> 【Meiya】「Yes, they may have felt the same thing as us.」\e
+
+//<000016f1> 【美琴】「演習評価が終わったらみんなでＰＸに行こうよ。\n今日の訓練はもうないし」\e
+<000016f1> 【Mikoto】「Let's all go to the PX after they're done scoring.\nWe've got nothing else planned today.」\e//lit. "there's no more training today" just felt this version flowed better
+
+//<000016f2> 【武】「あ、\pいやオレは――」\e
+<000016f2> 【Takeru】「Ah,\p actually I――」\e
+
+//<000016f3> 【千鶴】「――ちょっとあなた達何やってるのよ！　早く行かないと演習評価に遅れるわよ！」\e
+<000016f3> 【Chizuru】「――Hey, what're you three doing!?\bHurry up or we'll be late to the scoring!」\e
+
+//<000016f4> 【壬姫】「そうですよー。\n怒られますよー」\e
+<000016f4> 【Miki】「She's right～\nDon't make her mad～」\e
+
+//<000020f5> 【美琴】「あ、\pふたりとも。\nちょうど良かった！」\e
+<000020f5> 【Mikoto】「Ah,\p perfect timing!\nBoth of you wait a sec!」\e
+
+//<000016f6> 【千鶴】「なによ」\e
+<000016f6> 【Chizuru】「What?」\e
+
+//<000016f7> 【壬姫】「なんですか？」\e
+<000016f7> 【Miki】「What is it?」\e
+
+//<000016f8> 【美琴】「今ね、\pちょうど不知火の違和感の話をしていた所なんだ」\e
+<000016f8> 【Mikoto】「We were just talking about how weird the Shiranui felt.」\e
+
+//<000016f9> 【千鶴】「――え？　…\p…\pじゃあ…\p…\pあなた達も…\p…\p？」\e
+<000016f9> 【Chizuru】「――Eh? ...\p...\pso...\p...\pyou three too...\p...\p?」\e
+
+//<000016fa> 【冥夜】「ほう…\p…\pやはりな。\n珠瀬はどうだ？」\e
+<000016fa> 【Meiya】「Oooh...\p...\pso it is true.\nAnd you, Tamase?」\e
+
+//<000016fb> 【壬姫】「はい…\p…\pなんか、\p最初凄く挙動が気持ち悪くて…\p…\p」\e
+<000016fb> 【Miki】「Yes...\p...\pthe movements felt really weird at first...\p...\p」\e
+
+//<000020f7> 【美琴】「やっぱり！　その仕組みをタケルが解明したんだ。\n演習評価が終わったらＰＸで色々訊こうとおもってさ。\nふたりはどう？」\e
+<000020f7> 【Mikoto】「So it was all of us! Takeru figured that out.\nI was gonna ask him more in the PX after scoring ended.\nWanna join us?」\e
+
+//<000016fd> 【武】「――ちょっと待て美琴」\e
+<000016fd> 【Takeru】「――Wait a second, Mikoto.」\e
+
+//<00002313> 【千鶴・冥夜・壬姫・慧・美琴】「…\p…\p？」\e
+<00002313> 【Meiya & Chizuru & Kei & Mikoto & Miki】「...\p...\p?」\e
+
+//<000016ff> 【武】「ごめん…\p…\pオレ、\pちょっと用事があるんだよ…\p…\p」\e
+<000016ff> 【Takeru】「Sorry...\p...\pI have to go do something...\p...\p」\e
+
+//<00001700> 今日は演習まで参加したから、\p純夏の所に行く時間は夜しか残っていない。\e
+<00001700> I had to spend all of today on this exercise,\p so seeing Sumika has to wait until nighttime.\e
+
+//<00001701> だからその前の空いてる時間は、\pなるべくサンタウサギを作る時間に充てたいんだよな。\e
+<00001701> I want to spend as much time as possible before that on making the Santa rabbit.\e
+
+//<00001702> 昨日ほぼ完徹した甲斐もあって、\pもう少しで原型が完成するところまで行ってるから、\pここで詰めておきたい。\e
+<00001702> It was worth spending practically all of last night on it,\p since I'm on the verge of completing the overall shape.\bI'd really like to finish it up today.\e
+
+//<00001703> 【冥夜】「…\p…\p…\p…\p」\e
+<00001703> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00002768> 【壬姫】「じゃあ、\p夜ご飯は？　私もそのお話聞きたいです。\n一緒に食べられない？」\e
+<00002768> 【Miki】「Then how about dinner?\bI'd like to ask about that too.\nWon't you eat with us?」\e
+
+//<00001706> 【武】「いや…\p…\pオレ、\pメシ抜きかも知れないから…\p…\p」\e
+<00001706> 【Takeru】「Well...\p...\pI might not be allowed to eat...\p...\p」\e
+
+//<00001707> 【美琴】「うん、\pそれはわかってる。\nだからタケルは話だけしてていいよ！」\e
+<00001707> 【Mikoto】「Yeah,\p we know that.\nYou can just talk, Takeru!」\e
+
+//<00001708> 【武】「おまえね…\p…\p」\e
+<00001708> 【Takeru】「Hey...\p...\p」\e
+
+//<00001709> 【千鶴】「食事抜き…\p…\p？　何かあったの？」\e
+<00001709> 【Chizuru】「Not allowed...\p...\p? Did something happen?」\e
+
+//<0000170a> 【慧】「…\p…\pこっちの事情」\e
+<0000170a> 【Kei】「...\p...\pit's complicated.」\e//lit. "this (team's) circumstances" i.e. none of your beeswax
+
+//<000025a3> \r\n
+<000025a3> \r\n
+
+//<0000170b> 【千鶴・壬姫】「？」\e
+<0000170b> 【Chizuru & Miki】「?」\e
+
+//<0000170c> 【美琴】「じゃあ決まりだね！」\e
+<0000170c> 【Mikoto】「Then you're coming!」\e
+
+//<0000170d> 【武】「――って、\p話聞けよ！　悪いけど夜も用事があるの！」\e
+<0000170d> 【Takeru】「――Hey,\p listen to me!\bI'm sorry but I'm busy this evening too!」\e
+
+//<000020f9> 【冥夜】「タケル…\p…\pそなたの用事というのは、\p今朝方、\p副司令が仰っていた特殊任務なのではないか？」\e
+<000020f9> 【Meiya】「Takeru...\p...\pis that because of the special mission the XO mentioned this morning?」\e
+
+//<0000170f> 【美琴】「――え？」\e
+<0000170f> 【Mikoto】「――Eh?」\e
+
+//<00001710> 【武】「あ、\pああ。\nそうだ」\e
+<00001710> 【Takeru】「Ah,\p yeah.\p It is.」\e
+
+//<00001711> 最初からそういえば良かったんだな…\p…\p。\e
+<00001711> I probably should've mentioned that sooner...\p...\p\e
+
+//<00001712> 【武】「演習が終わったらやらなきゃならない任務があるんだ…\p…\p」\e
+<00001712> 【Takeru】「I have to go do that mission now that training's over...\p...\p」\e
+
+//<00001713> 【冥夜】「…\p…\p…\p…\p」\e
+<00001713> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00001715> 【美琴】「そうだったんだ…\p…\pごめんね、\pタケル」\e
+<00001715> 【Mikoto】「I see...\p...\psorry,\p Takeru.」\e
+
+//<00001716> 【壬姫】「それじゃあしょうがないですね～」\e
+<00001716> 【Miki】「Then it just can't be helped～」\e
+
+//<00001717> 【武】「いや、\pいいんだ。\nハッキリ言わなかったオレが悪い」\e
+<00001717> 【Takeru】「No,\p it's okay.\nIt's my fault for not telling you guys.」\e
+
+//<00001718> 純夏を正気に戻す事は正規の任務なんだ。\nプレゼントを作ってる事だって、\pその一環なんだし…\p…\p。\e
+<00001718> My official mission is to restore Sumika to sanity.\nMaking that present for her is part of it...\p...\p\e
+
+//<00001719> 具体的な内容は明かさないまでも、\p『任務だから』って、\pもっと堂々としてればいいんだけど…\p…\p。\e
+<00001719> Since I can't tell them any of that,\p I should've just flat out told them it was a mission from the start...\p...\p\e
+
+//<0000171a> どうしても純夏に対する個人感情の部分が後ろめたくて、\pはぐらかしたくなるんだよな…\p…\p。\e
+<0000171a> But part of me still doesn't want to do that because of my personal feelings for Sumika...\p...\p\e
+
+//<0000171b> 【美琴】「タケルはここのところずっと特殊任務でしょ…\p…\p？　最近、\pゆっくり話もできてないから…\p…\p」\e
+<0000171b> 【Mikoto】「You've been doing special missions all the time lately, Takeru...\p...\pwe haven't had any chances to just relax and talk...\p...\p」\e
+
+//<0000171c> そうなんだよな…\p…\pクーデターからこっち、\pみんなとまともに話なんかできてないんだ。\e
+<0000171c> That's true...\p...\pI haven't had a real conversation with these guys since the coup d'etat.\e
+
+//<0000171d> 神宮司軍曹にあんなことがあったのに、\pオレはひとりで特殊任務に行ったって事になってるし…\p…\p。\nだから余計、\p心配もしてくれているんだろう。\e
+<0000171d> Even after what happened to Sgt. Jinguuji,\p they were told I went on a special mission alone...\p...\p\nSo they must be even more worried.\e
+
+//<0000171e> 自分達だって、\p結構な事情を抱えているはずなのに…\p…\p。\e
+<0000171e> Even though they've all got problems of their own...\p...\p\e
+
+//<0000171f> 【武】「ごめんな」\e
+<0000171f> 【Takeru】「Sorry.」\e
+
+//<00001720> 【美琴】「ううん。タケルが悪いんじゃないから」\e
+<00001720> 【Mikoto】「It's okay, it's not your fault, Takeru.」\e
+
+//<00001721> 【冥夜】「…\p…\p…\p…\p」\e
+<00001721> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00001722> 【千鶴】「ゆっくり話せないのは残念だけど、\pとにかく今はブリーフィングルームへ急ぎましょう」\e
+<00001722> 【Chizuru】「It's too bad we can't talk longer,\p but for now we still need to go to the briefing room.」\e
+
+//<00001723> 【武】「ああ、\pそうだな」\e
+<00001723> 【Takeru】「Yeah,\p you're right.」\e
+
+//<00001727> 【霞】「ええと…\p…\p…\p…\pごめんなさい」\e
+<00001727> 【Kasumi】「Ummmm...\p...\p...\p...\pI'm sorry.」\e
+
+//<00001729> 霞のやつ、\pまた謝ってるな。\nあやとり失敗したのかな。\e
+<00001729> Kasumi's apologizing again.\nIs she still failing at cat's cradle?\e
+
+//<0000172a> 【霞】「だけど…\p…\pあの人は、\p大切な人ですよね？」\e
+<0000172a> 【Kasumi】「But...\p...\phe's important to you,\p isn't he?」\e
+
+//<0000172c> 【純夏】「…\p…\p…\p…\p」\e
+<0000172c> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000172e> え…\p…\p？\e
+<0000172e> Eh...\p...\p?\e
+
+//<0000172f> 【霞】「白銀武さんは、\p純夏さんにとって…\p…\p大切な人ですよね？」\e
+<0000172f> 【Kasumi】「Shirogane Takeru-san is very important to you,\p Sumika-san...\p...\pisn't he?」\e
+
+//<00001731> 【純夏】「…\p…\p…\p…\p」\e
+<00001731> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00001733> なんだ…\p…\pそういう話をしてくれていたのか…\p…\p。\e
+<00001733> What? ...\p...\pthey're talking about me...\p...\p?\e
+
+//<00001734> 【霞】「側にいて欲しいと思いませんか？」\e
+<00001734> 【Kasumi】「Do you want him to be with you?」\e
+
+//<00001735> 【純夏】「…\p…\p…\p…\p」\e
+<00001735> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00001737> …\p…\pそれは、\p『この世界』の純夏に言っても効果があるかどうか、\pまだわからない事なんだよ。\e
+<00001737> ...\p...\pwe still don't know if saying that to this world's Sumika means anything.\e//I think we do, given all the screaming about don't take takeru-chan away ~IX //Takeru's mental density is up there with mercury - kViN
+
+//<00001738> 全く同じ事やってるオレが、\p偉そうに言える事じゃないけど…\p…\p。\e
+<00001738> Though I can't criticize her for it when I'm working on the same assumption...\p...\p\e
+
+//<00001739> 【霞】「大切な人…\p…\p側にいて欲しい人…\p…\pええと…\p…\p…\p…\p他には…\p…\p」\e
+<00001739> 【Kasumi】「Someone important to you...\p...\psomeone you want to be with you...\p...\pummm...\p...\p...\p...\pand...\p...\p」\e
+
+//<0000173a> 【純夏】「…\p…\p…\p…\p」\e
+<0000173a> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000173c> 【霞】「…\p…\p…\p…\p」\e
+<0000173c> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000173e> 【純夏】「…\p…\p早く、\p戦わせて」\e
+<0000173e> 【Sumika】「...\p...\plet me fight soon.」\e
+
+//<0000173f> 【霞】「ごめんなさい。\n私、\pお話するの下手ですね…\p…\p」\e
+<0000173f> 【Kasumi】「I'm sorry.\nI'm not good at talking about things...\p...\p」\e
+
+//<00001740> 【武】「…\p…\p…\p…\p」\e
+<00001740> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001741> 【霞】「うまく説明できません」\e
+<00001741> 【Kasumi】「I can't explain it well.」\e
+
+//<00001742> 【純夏】「今なら、\pあいつらを殺せる」\e
+<00001742> 【Sumika】「I can kill them this time.」\e
+
+//<00001743> 【霞】「ごめんなさい…\p…\p前は見えていたのに…\p…\p」\e
+<00001743> 【Kasumi】「I'm sorry...\p...\pI could see before...\p...\p」\e
+
+//<00001744> …\p…\pえ？\e
+<00001744> ...\p...\peh?\e
+
+//<00001745> 【純夏】「殺したいから」\e
+<00001745> 【Sumika】「I want to kill.」\e//sometimes I feel like my wife has dangerous hobbies - kViN
+
+//<00001746> 【霞】「今は…\p…\p何もみえません…\p…\p」\e
+<00001746> 【Kasumi】「But now...\p...\pI can't see anything...\p...\p」\e
+
+//<00001747> そうか…\p…\pああやって言葉をかけて、\p純夏の感情の変化を読み取ろうとしているのか。\e
+<00001747> I see...\p...\pshe's saying things to try and trigger Sumika's emotions so she can read them.\e
+
+//<00001748> 【純夏】「…\p…\pもう待たせないで」\e
+<00001748> 【Sumika】「...\p...\pdon't keep me waiting.」\e
+
+//<00001749> 【霞】「ごめんなさい…\p…\p」\e
+<00001749> 【Kasumi】「I'm sorry...\p...\p」\e
+
+//<0000174a> 【武】「――霞、\p謝るな」\e
+<0000174a> 【Takeru】「――Kasumi,\p don't apologize.」\e
+
+//<0000174b> 【霞】「――え？　あっ…\p…\p」\e
+<0000174b> 【Kasumi】「――Eh? Ah...\p...\p!」\e
+
+//<0000174c> 【武】「なんだ…\p…\pオレが居た事、\p気付いてなかったのか？」\e
+<0000174c> 【Takeru】「What? ...\p...\pyou didn't notice I was here?」\e
+
+//<0000174d> それ程純夏に集中してたって事か…\p…\p。\e
+<0000174d> You were that focused on Sumika...\p...\p?\e
+
+//<0000174e> 【霞】「…\p…\pはい。\nごめんなさい」\e
+<0000174e> 【Kasumi】「...\p...\pno.\p I'm sorry.」\e
+
+//<0000174f> 【武】「だからあ…\p…\pいちいち謝らなくていいんだよ」\e
+<0000174f> 【Takeru】「I just saaaaid...\p...\pdon't apologize every five seconds.」\e//"for every little thing" sounded off ~IX
+
+//<00001750> 【霞】「…\p…\p」\e
+<00001750> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00001751> 【武】「おまえが謝る理由なんて何もないじゃないか。\n悪くもないのに謝るなよ」\e
+<00001751> 【Takeru】「What reason do you have to apologize?\nDon't say sorry if you did nothing wrong.」\e
+
+//<00001752> 【霞】「…\p…\p…\p…\p」\e
+<00001752> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00001754> 【武】「…\p…\p少なくともおまえは一生懸命じゃないか。\n今日だってずっと純夏の側に居てくれたんだろ？」\e
+<00001754> 【Takeru】「...\p...\pbesides, you're trying your hardest.\nYou've been with Sumika all day, haven't you?」\e
+
+//<00001755> オレは今日、\p夜明け前からずっと任務と演習だったからな…\p…\p。\e
+<00001755> I've been busy with that exercise and my "mission" ever since dawn...\p...\p\e
+
+//<00001756> 【霞】「…\p…\p…\p…\p」\e
+<00001756> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00001758> 【純夏】「…\p…\p…\p…\p」\e
+<00001758> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000175a> 【武】「それ以前も、\pおまえはずーっと純夏の側にいてくれたじゃないか…\p…\p」\e
+<0000175a> 【Takeru】「And you've been with her for ages in the past...\p...\p」\e
+
+//<0000175b> 【霞】「…\p…\p…\p…\p」\e
+<0000175b> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000175d> 【武】「オレは本当におまえに感謝している。\n先生だってそうだ。\nだから誰もおまえが悪いなんて思ってないよ」\e
+<0000175d> 【Takeru】「I'm really grateful you did all that.\nAnd so's Sensei.\nSo don't think any of this is your fault.」\e
+
+//<0000175e> 【霞】「ありがとうございます…\p…\p」\e
+<0000175e> 【Kasumi】「Thank you...\p...\p」\e
+
+//<0000175f> 【武】「うん。ところで今日はどんな様子だった？　おい純夏！　元気にしてたか？」\e
+<0000175f> 【Takeru】「No problem. So how's she been today? Hey, Sumika! How are you?」\e
+
+//<00001760> 【純夏】「…\p…\p…\p…\p」\e
+<00001760> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00001762> 【霞】「今日は安定しています。\n発作もありませんでした」\e
+<00001762> 【Kasumi】「She's stable today.\nShe hasn't freaked out once.」\e
+
+//<00001763> 【武】「そうか…\p…\pおとなしくしてたのか純夏！　いい子だぞ！」\e
+<00001763> 【Takeru】「I see...\p...\pso you've been behaving yourself today, Sumika? Good girl!」\e
+
+//<00001764> 【純夏】「…\p…\p…\p…\p」\e
+<00001764> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00001766> 【武】「そういえば先生はどうしたんだろう…\p…\p部屋にいないみたいだったけど、\p何か知ってるか？」\e
+<00001766> 【Takeru】「Come to think of it, where is Sensei?\b...\p...\pher room looked empty.\p Do you know?」\e
+
+//<00001767> 今日のバイタルデータの推移を見ておきたかったんだよな。\e
+<00001767> I wanted to see Sumika's data for today.\e
+
+//<00001768> 【霞】「中央作戦司令室で司令と作戦立案会議です」\e
+<00001768> 【Kasumi】「She's in the command room planning an operation with the CO.」\e
+
+//<00001769> 【武】「作戦立案会議～！？　じゃあ今日はもう帰ってこないよなぁ…\p…\p」\e
+<00001769> 【Takeru】「Planning an operation?\bGuess she won't be coming back today...\p...\p」\e
+
+//<0000176a> そういえばこのところ会議やら接待やらでとか言ってたな。\e
+<0000176a> She did say something about being stuck in meetings constantly these days.\e
+
+//<0000176b> 純夏が安定してた時の波形の変化だけでも見ておきたかったんだけど…\p…\pまあ、\p仕方ないか。\e
+<0000176b> I kinda wanted to see what Sumika's brainwaves looked like when stable...\p...\pbut oh well.\e
+
+//<0000176c> 【純夏】「…\p…\pせて…\p…\pよ…\p…\p」\e
+<0000176c> 【Sumika】「...\p...\plet...\p...\pme...\p...\p」\e
+
+//<0000176e> 【武】「なんだ純夏？　何が言いたいんだ？」\e
+<0000176e> 【Takeru】「What is it, Sumika? You wanna say something?」\e
+
+//<0000176f> 【純夏】「…\p…\pこんなこと…\p…\pもういい。\n訓練したい…\p…\p」\e
+<0000176f> 【Sumika】「...\p...\pthis...\p...\pis pointless.\nI want to train...\p...\p」\e
+
+//<00001770> 戦闘訓練か…\p…\p。\n本当に、\p余程ＢＥＴＡが憎いんだな…\p…\p。\e
+<00001770> More combat training...\p...\p\nShe really does hate the BETA...\p...\p\e
+
+//<00001771> 【武】「…\p…\p…\p…\p」\e
+<00001771> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001772> そんなの当たり前か…\p…\pあんな姿にされれば誰だってそうなる。\e
+<00001772> Of course she does...\p...\panyone would after suffering that.\e
+
+//<00001773> 【純夏】「…\p…\p訓練したい…\p…\p」\e
+<00001773> 【Sumika】「...\p...\pI wanna train...\p...\p」\e
+
+//<00001774> 【武】「今日はもうやっただろう？　訓練は１日１回だ」\e
+<00001774> 【Takeru】「You already did that today.\bOnly once per day.」\e
+
+//<00001775> 【純夏】「もっとやれば、\pずっとうまくなるよ」\e
+<00001775> 【Sumika】「I'd get much better if I did more.」\e
+
+//<00001776> 【武】「だめなんだよ。\nそういう決まりなの」\e
+<00001776> 【Takeru】「But you can't.\nThat's just how it is.」\e
+
+//<00001777> 【純夏】「殺したい…\p…\p」\e
+<00001777> 【Sumika】「I wanna kill...\p...\p」\e
+
+//<00001778> 【武】「純夏…\p…\p」\e
+<00001778> 【Takeru】「Sumika...\p...\p」\e
+
+//<00001779> 【純夏】「あいつらを殺してやりたい…\p…\p」\e
+<00001779> 【Sumika】「I wanna kill them...\p...\p」\e
+
+//<0000177a> 【武】「…\p…\p…\p…\p」\e
+<0000177a> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000177b> 【純夏】「私がいっぱい殺してあげるね…\p…\p…\p…\p」\e
+<0000177b> 【Sumika】「I'll kill tons of them for you...\p...\p」\e
+
+//<0000177c> 【武】「それだけじゃだめなんだよ、\p純夏」\e
+<0000177c> 【Takeru】「You need to do more than that,\p Sumika.」\e
+
+//<0000177d> 【純夏】「そしたら復讐できる…\p…\p私が復讐してあげるからね」\e
+<0000177d> 【Sumika】「Then I'll have my revenge...\p...\p\b...\p...\pI'll get my revenge for you.」\e
+
+//<0000177e> 【武】「…\p…\p」\e
+<0000177e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000177f> 【純夏】「許さない…\p…\p絶対、\p絶対、\p絶対！！　全部殺したい」\e
+<0000177f> 【Sumika】「I'll never forgive them...\p...\pnever,\p never,\p never!!\bI wanna kill all of them!」\e
+
+//<00001780> 【霞】「純夏さん、\p白銀さんは大切な人ですよね？」\e
+<00001780> 【Kasumi】「Sumika-san,\p Shirogane-san is important to you, isn't he?」\e
+
+//<00001782> 【純夏】「早く、\p早くしてよ！」\e
+<00001782> 【Sumika】「Hurry up,\p lemme do it now!」\e
+
+//<00001783> 【霞】「目の前にいるのは白銀さんですよ？　わかってますよね？」\e
+<00001783> 【Kasumi】「That's Shirogane-san in front of you.\bYou know that, right?」\e
+
+//<00001785> 【純夏】「早く戦わせて！　戦う！　戦うから！」\e
+<00001785> 【Sumika】「Let me fight now! I'll fight! I will!」\e
+
+//<00001786> 【霞】「白銀さんの想いは…\p…\p伝わっていますよね？」\e
+<00001786> 【Kasumi】「You know how Shirogane-san feels...\p...\pdon't you?」\e
+
+//<00001788> 【純夏】「皆殺しにするから…\p…\p」\e
+<00001788> 【Sumika】「I'll kill every last one...\p...\p」\e//her being more eloquent now means I can do little variations like this ~IX
+
+//<00001789> 【霞】「…\p…\p大切な人なんですよね？」\e
+<00001789> 【Kasumi】「...\p...\pisn't he important to you?」\e
+
+//<0000178b> 【純夏】「…\p…\p…\p…\p」\e
+<0000178b> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000178c> これは…\p…\p\e
+<0000178c> She just...\p...\p\e
+
+//<0000178d> 【霞】「…\p…\p大切な思い出…\p…\pたくさんありますよね」\e
+<0000178d> 【Kasumi】「...\p...\pyou have lots of precious memories...\p...\p\b...\p...\pdon't you?」\e
+
+//<0000178f> 【純夏】「…\p…\p…\p…\p」\e
+<0000178f> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00001791> 【霞】「頑張って思い出して下さい…\p…\p」\e
+<00001791> 【Kasumi】「Please try to remember...\p...\p」\e
+
+//<00001793> これは、\pほんの少しだけど…\p…\p霞の言葉に反応してるんじゃないのか？\e
+<00001793> It's not much,\p but...\p...\pshe is reacting to Kasumi's words, right?\e
+
+//<00001794> 今までだったら、\pもっと取り乱してからじゃないと落ち着かなかったのに…\p…\p。\e
+<00001794> She never calmed down before without completely freaking out first...\p...\p\e
+
+//<00001795> 思い出とか…\p…\pそういう言葉に反応し始めてるんじゃないのか？！\e
+<00001795> Memories...\p...\phas she started reacting to words like that!?\e
+
+//<00001796> 【武】「…\p…\p…\p…\p」\e
+<00001796> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001797> 校舎裏の丘に連れて行ってみるか…\p…\p？\e
+<00001797> Maybe I should take her to the hill behind school...\p...\p?\e
+
+//<00001798> 『この世界』のオレと純夏がどういう関係で、\pどういう思い出を持っているのかはわからない。\e
+<00001798> I don't know what relationship Sumika and I had in this world,\p or what memories we shared.\e
+
+//<00001799> それに、\pあの丘にある木だって、\p『この世界』では植樹されたもので、\p元々あんなものは無かったのかもしれない。\e
+<00001799> And the tree that's there now was planted later,\p so there might not have been one in this world originally.\e
+
+//<0000179a> 【武】「…\p…\p…\p…\p」\e
+<0000179a> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000179b> だけど、\p今の純夏にはリーディング能力がある。\nオレ自身が、\p純夏との思い出を強くイメージできる場所に連れて行く意味はあるはずだ。\e
+<0000179b> But Sumika can do readings now.\nIf I take her somewhere that helps me picture memories with her,\p it should mean something.\e
+
+//<0000179c> そのイメージに触れて、\pどういう反応をするかを見れば、\p『この世界』のオレと純夏の関係がわかるかもしれない。\e
+<0000179c> I might be able to learn what our relationship was like in this world by seeing how she reacts to that.\e
+
+//<0000179d> 【武】「…\p…\p…\p…\p」\e
+<0000179d> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000179e> こんなに安定しているのは今だけかもしれないんだ…\p…\p。\e
+<0000179e> She might not be this stable for long...\p...\p\e
+
+//<0000179f> 【武】「なあ純夏…\p…\p散歩に行かないか？」\e
+<0000179f> 【Takeru】「Hey Sumika...\p...\pwanna take a walk?」\e
+
+//<000017a0> 【純夏】「…\p…\p散歩って…\p…\p訓練？」\e
+<000017a0> 【Sumika】「...\p...\pdoes walk...\p...\pmean training?」\e
+
+//<000017a1> 【武】「違うよ、\p訓練じゃない。\nたまには外に出て、\p気分を変えようって事だ」\e
+<000017a1> 【Takeru】「No,\p not training.\nI mean going outside and getting some fresh air.」\e
+
+//<000017a2> 【霞】「あ…\p…\pそれは…\p…\p」\e
+<000017a2> 【Kasumi】「Ah...\p...\pbut...\p...\p」\e
+
+//<000017a3> 【武】「心配するな。\n結果が出せるなら何をしてもいいって、\p先生に言われてる」\e
+<000017a3> 【Takeru】「Don't worry.\nSensei said I can do whatever I want if it gets results.」\e
+
+//<000017a4> 【霞】「でも…\p…\p」\e
+<000017a4> 【Kasumi】「But...\p...\p」\e
+
+//<000017a5> 【武】「さあ、\pいこうぜ純夏」\e
+<000017a5> 【Takeru】「Come on Sumika,\p let's go.」\e
+
+//<000017a6> 【純夏】「そんなのいいから、\pあいつらと戦わせてよ！」\e
+<000017a6> 【Sumika】「I don't care about that,\p just let me fight them!」\e
+
+//<000017a7> 【武】「今はまだ無理だ。\nおまえがそんなんじゃ戦わせる事はできないってさ」\e
+<000017a7> 【Takeru】「You can't do that yet.\nWe can't let you fight the way you are now.」\e
+
+//<000017a8> 【純夏】「…\p…\pいいから…\p…\pもういいから！　じゃないと」\e
+<000017a8> 【Sumika】「...\p...\pI don't care...\p...\pit doesn't matter! Let me or...\p...」\e
+
+//<000017a9> 【武】「…\p…\pじゃないと、\pなんだよ？」\e
+<000017a9> 【Takeru】「...\p...\por what?」\e
+
+//<000017aa> 【純夏】「――タケルちゃんがいなくなっちゃうよ――っ！！」\e
+<000017aa> 【Sumika】「――I'll lose you, Takeru-chan――!!」\e
+
+//<000017ad> 【武】「――えっ！？」\n
+<000017ad> 【Takeru】「――Eh!?」\n
+
+//<000017ae> 【霞】「――！」\e
+<000017ae> 【Kasumi】「――!」\e
+
+//<000017b0> 【純夏】「――取らないでよ！　タケルちゃんを取らないでよ！！」\e
+<000017b0> 【Sumika】「――Don't take him away!\bDon't take Takeru-chan away from me!!」\e//dude, I think you had the same relationship in this world, you can stop worrying about that ~IX //BUT WHAT IF WE WERE ONLY FRIENDS OH GOD MY NAME IS TAKERU AND I'M DENSE AS A METAL PENIS - kViN
+
+//<000017b1> 【武】「純夏っ！？」\e
+<000017b1> 【Takeru】「Sumika!?」\e
+
+//<000017b2> 【霞】「大丈夫です！　白銀さんここにいますから！」\e
+<000017b2> 【Kasumi】「It's okay! Shirogane-san is right here!」\e
+
+//<000017b3> 【純夏】「いやだよ…\p…\pいやだあっ！　…\p…\p行かないで…\p…\pどこにも…\p…\pいやあぁぁっ！！」\e
+<000017b3> 【Sumika】「Don't...\p...\pnoooo! ...\p...\pdon't go...\p...\panywhere...\p...\pnooooooo!!」\e
+
+//<000017b4> 【武】「オレはここにいるぞ純夏っ！？」\e
+<000017b4> 【Takeru】「Sumika! I'm right here!!」\e
+
+//<000017b5> 【純夏】「…\p…\p…\p…\pいやだよ…\p…\pやめてよぉ…\p…\pや…\p…\pやめて…\p…\pやめろぉぉっ！！」\e
+<000017b5> 【Sumika】「...\p...\p...\p...\pdon't...\p...\pstop it...\p...\ps-...\p...\pstop...\p...\pstooooop!!」\e
+
+//<000017b6> 【霞】「大丈夫です！　純夏さん！　大丈夫ですから！」\e
+<000017b6> 【Kasumi】「It's okay! Sumika-san! It's all right!」\e
+
+//<000017b7> 【武】「純夏！　オレはどこにもいかないから！！」\e
+<000017b7> 【Takeru】「Sumika! I'm not going anywhere!!」\e
+
+//<000017b8> 【純夏】「…\p…\pほんと？」\e
+<000017b8> 【Sumika】「...\p...\preally?」\e
+
+//<000017ba> …\p…\pえ？\e
+<000017ba> ...\p...\peh?\e
+
+//<000017bb> 【純夏】「…\p…\pほんとに…\p…\pどこにも…\p…\pいかない？」\e
+<000017bb> 【Sumika】「...\p...\pyou really...\p...\pwon't...\p...\pgo anywhere?」\e
+
+//<000017bc> 【武】「…\p…\pああ、\p純夏のそばにいる」\e
+<000017bc> 【Takeru】「...\p...\pyeah,\p I'll stay with you, Sumika.」\e
+
+//<000017bd> 【純夏】「…\p…\pうん…\p…\p…\p…\p」\e
+<000017bd> 【Sumika】「...\p...\pokay...\p...\p...\p...\p」\e
+
+//<000017be> 【武】「…\p…\p…\p…\p」\e
+<000017be> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000017bf> 【霞】「！？」\e
+<000017bf> 【Kasumi】「!?」\e
+
+//<000017c0> 【武】「――どうした！？　何か見えたか！？」\e
+<000017c0> 【Takeru】「――What!? Did you see something!?」\e
+
+//<000017c1> 【霞】「…\p…\pとても暖かい色が見えます」\e
+<000017c1> 【Kasumi】「...\p...\pI see a very warm color.」\e
+
+//<000017c2> 暖かい色…\p…\p確か感情は色で認識できるんだったよな？\e
+<000017c2> A warm color...\p...\pshe sees emotions as colors, right?\e
+
+//<000017c3> 【武】「今までそんなことあったか？」\e
+<000017c3> 【Takeru】「Has that ever happened before?」\e
+
+//<000017c4> 【霞】「いいえ…\p…\p初めてです…\p…\p」\e
+<000017c4> 【Kasumi】「No...\p...\pnot until now...\p...\p」\e//lit. "this is the first time"
+
+//<000017c5> ――よし…\p…\pやっぱりあの丘に連れて行くなら今しかない。\e
+<000017c5> ――Good...\p...\pthen this really is my best chance to take her to the hill.\e
+
+//<000027d0> それに、\pサンタウサギを渡すならこのタイミングが一番だ。\nまだ色も塗ってないし完成じゃないけど、\pそれでも意味はあるはずだ。\e
+<000027d0> In fact this should also be the best time to give her the Santa rabbit.\nI haven't painted it so it's not quite finished yet,\p but it should still be meaningful.\e
+
+//<000017c7> 【霞】「…\p…\p私は残ります」\e
+<000017c7> 【Kasumi】「...\p...\pI'll stay here.」\e
+
+//<000017c9> 【武】「先生に聞かれたら、\p前に一緒に行ったあの丘に行ったって伝えてくれ」\e
+<000017c9> 【Takeru】「If Sensei asks,\p tell her we went to the hill I showed you before.」\e
+
+//<000017ca> たぶん先生は、\p純夏のモニターで位置を割り出すと思うけど。\e
+<000017ca> Though Sensei's probably monitoring Sumika's location remotely.\e
+
+//<000017cb> 【霞】「はい」\e
+<000017cb> 【Kasumi】「Okay.」\e
+
+//<000027ba> 【武】「あと悪いんだけど、\p定期的にオレの思考を見ていてくれ。\n万が一何かあったら助けてってイメージするから」\e
+<000027ba> 【Takeru】「And if you don't mind,\p please look at my thoughts every so often.\nIf something happens, I'll think "help."」\e
+
+//<000017cd> 【霞】「わかりました」\e
+<000017cd> 【Kasumi】「I understand.」\e
+
+//<000017ce> 【武】「じゃあ純夏…\p…\pオレと一緒に散歩に行こう。\nその前にオレの部屋によるけどいいよな？」\e
+<000017ce> 【Takeru】「Now, Sumika...\p...\plet's go take a walk.\nWe'll stop by my room on the way, but that's okay, right?」\e
+
+//<000017cf> 【純夏】「うん…\p…\p一緒にいく…\p…\p」\e
+<000017cf> 【Sumika】「Yeah...\p...\pI'll go with you...\p...\p」\e//yay, now she can be clingy～ ~IX
+
+//<000017d0> 【霞】「行ってらっしゃい…\p…\p」\e
+<000017d0> 【Kasumi】「See you later...\p...\p」\e
+
+//<000017d5> うわあ…\p…\pさすがに真っ暗だな…\p…\p。\n夜景なんてしゃれたもんはないからなあ…\p…\p。\e
+<000017d5> Uwaaa...\p...\pthis really is pitch black...\p...\p\nThe night sky is impressive...\p...\p\e//lit. "the view at night isn't a joke" do whatever here as long as it sounds better than sugoi ~IX
+
+//<000017d6> 【武】「ははは…\p…\pやっぱり寒いな、\pここは」\e
+<000017d6> 【Takeru】「Hahaha...\p...\pit is pretty cold out here.」\e
+
+//<000017d7> 【純夏】「…\p…\pさむい…\p…\p…\p…\p」\e
+<000017d7> 【Sumika】「...\p...\pcold...\p...\p...\p...\p」\e
+
+//<000017d8> 本当に寒いのか…\p…\pそれともオレの言葉をオウム返しにしただけなのか…\p…\p。\e
+<000017d8> Is she cold?\b...\p...\por is she just repeating what I said...\p...\p?\e
+
+//<000017d9> いや、\p本当にそう感じてるんだろう。\n夕呼先生の言葉からすれば、\p００ユニットの擬似生体にはそういう感覚だってあるはずだ。\e
+<000017d9> No,\p she probably is feeling it.\nFrom what Yuuko-sensei said,\p the 00 Unit's false body has all the same senses.\e
+
+//<000017da> 息だって…\p…\pちゃんと白くなってるし…\p…\p。\e
+<000017da> Even her breath...\p...\pis white...\p...\p\e
+
+//<000017db> …\p…\pこれで人間じゃないなんて…\p…\p…\p…\p絶対信じられないよ…\p…\p。\e
+<000017db> ...\p...\pno one would ever believe...\p...\p...\p...\pshe isn't human...\p...\p\e
+
+//<000017dc> 【武】「だから何か上に着てこいっていったのに…\p…\p。\nオレのジャケット羽織ってろよ」\e
+<000017dc> 【Takeru】「That's why I told you to wear layers...\p...\p\nTake my jacket.」\e
+
+//<000017de> 【純夏】「いいよ…\p…\pタケルちゃんがさむいから…\p…\p」\e
+<000017de> 【Sumika】「It's okay...\p...\pyou're cold, Takeru-chan...\p...\p」\e
+
+//<000017df> 【武】「――えっ？」\e
+<000017df> 【Takeru】「――Eh?」\e
+
+//<000017e0> 【純夏】「大丈夫…\p…\p私は寒くても風邪ひかない身体だから…\p…\p」\e
+<000017e0> 【Sumika】「It's okay...\p...\pI won't catch a cold with this body...\p...\p」\e//I hope this doesn't meam your body can't secrete mucus because sex is going to hurt then - kViN
+
+//<000017e1> 【武】「そ、\pそうか…\p…\p」\e
+<000017e1> 【Takeru】「I-\pI see...\p...\p」\e
+
+//<000017e2> ここまで普通の反応をするなんて…\p…\p！\e
+<000017e2> She's reacting so normally...\p...\p!\e
+
+//<000017e3> やっぱり、\p純夏の中で何かが変わりつつあるんだ！\e
+<000017e3> Something really is changing inside Sumika.\e
+
+//<000017e4> 純夏との思い出があるこの丘。\n『この世界』のオレとおまえの思い出じゃないけど…\p…\p。\e
+<000017e4> This hill holds a lot of memories for us.\nMaybe not us in this world, but...\p...\p\e
+
+//<000017e5> でも、\pそのイメージや想いを感じてくれたら、\p何かの切っ掛けにはなるはずなんだ。\e
+<000017e5> But if you can feel my images of them,\p then it should help somehow.\e
+
+//<00000250> 【純夏】「う～～さぶ～～」\e
+<00000250> 【Sumika】「Uuuuuu...\p...so coooold...\p...」\e
+
+//<000017ed> 【武】「だから言ったろ？　悪いけどオレ、\p貸してやれる上着持ってないぞ？」\e
+<000017ed> 【Takeru】「I told you to wear more.\bSorry but I don't have any other coats with me.」\e
+
+//<000017ef> 【純夏】「いいよ、\p期待してなかったから」\e
+<000017ef> 【Sumika】「That's okay,\p I wasn't expecting you to.」\e
+
+//<000017f1> 【武】「そう言われるとなー」\e
+<000017f1> 【Takeru】「...\p...that kinda hurts.」\e
+
+//<000017f3> 【純夏】「ねえねえタケルちゃん」\e
+<000017f3> 【Sumika】「Hey, hey, Takeru-chan.」\e
+
+//<000017f4> 【武】「なんだ？」\e
+<000017f4> 【Takeru】「What?」\e
+
+//<000017f6> 【純夏】「来年の夏も、\p一緒に来てくれるー？」\e
+<000017f6> 【Sumika】「Will you be with me next summer too?」\e
+
+//<000017f7> 【武】「何で来年の夏なんだ？」\e
+<000017f7> 【Takeru】「Why summer?」\e
+
+//<000017f9> 【純夏】「だって冬は寒いし～、\p春になればみんな卒業しちゃってるじゃない」\e
+<000017f9> 【Sumika】「Winter's cooold～\bAnd everyone's gonna graduate next spring.」\e
+
+//<000017fa> 【武】「でも、\p白陵大にそのまんまスィーっと進んでるだろ」\e
+<000017fa> 【Takeru】「But we'll all go straight to Hakuryou University,\p right?」\e
+
+//<000017fc> 【純夏】「じゃあ、\p大学入ってから初めての夏休みだ」\e
+<000017fc> 【Sumika】「Then the first summer break after entering university.」\e
+
+//<000017fd> 【武】「だから、\p別に来ようと思えば来れるんじゃねーか？　ここが潰れてなけりゃな」\e
+<000017fd> 【Takeru】「Still,\p can't you come to my house whenever you want? As long as this place is in one piece.」\e
+
+//<000017ff> 【純夏】「ホントに？」\e
+<000017ff> 【Sumika】「Really?」\e
+
+//<00001801> 【武】「…\p…\p…\p…\p」\e
+<00001801> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001802> ああ…\p…\pそういえばそんなこともあったな…\p…\p。\e
+<00001802> Aaah...\p...\pI remember that now...\p...\p\e
+
+//<00001803> 純夏とここに来たから、\pオレも思い出せたんだろうな。\e
+<00001803> Even I'm remembering things after bringing Sumika here.\e
+
+//<000027d2> でもやっぱり…\p…\pこの丘での一番の思い出は...\p...\e
+<000027d2> But...\p...\pmy biggest memory from this hill would have to be...\p...\e
+
+//<00000001> 【武】「…\p…\pサンタこないな～～～」\e
+<00000001> 【Takeru】「...\p...\pSanta just won't come～～～」\e//CP_S MLE_1001
+
+//<00000002> 【純夏】「もう、\pタケルちゃんのばか」\e
+<00000002> 【Sumika】「Aaah,\p Takeru-chan, you idiot.」\e
+
+//<00000003> 【武】「いいじゃんか…\p…\p…\p…\pガキの頃はさ、\p毎年ここでこんな風にやってたんだ」\e
+<00000003> 【Takeru】「What's your problem?\n...\p...\pwe did it like this every year when we were kids.」\e
+
+//<00000004> 【純夏】「途中でやめちゃったけどね」\e
+<00000004> 【Sumika】「Though we stopped doing that.」\e
+
+//<00000005> 【武】「あれ、\pいつからだった？」\e
+<00000005> 【Takeru】「We did?\p When?」\e
+
+//<00000006> 【純夏】「小学校の途中までだと思う」\e
+<00000006> 【Sumika】「Sometime in elementary school, I think.」\e
+
+//<00000007> 【武】「そっか」\e
+<00000007> 【Takeru】「I see.」\e
+
+//<00000008> 【純夏】「こないねぇ～～～」\e
+<00000008> 【Sumika】「He's not coming～～～」\e
+
+//<00000009> 【武】「オレたち以外にも、\p待ってるやついるかな？」\e
+<00000009> 【Takeru】「You think anyone else is waiting for him?」\e
+
+//<0000000a> 【純夏】「待ってる子がいるなら、\pここには来なくてもいいや」\e
+<0000000a> 【Sumika】「If some other children are waiting,\nthen I don't mind if he skips us.」\e
+
+//<0000000b> 【武】「なんでだ？」\e
+<0000000b> 【Takeru】「You don't?」\e
+
+//<00000f0e> 【純夏】「それはね…\p…\pあ、\p雪だ！」\e
+<00000f0e> 【Sumika】「Well, I already...\p...\pah,\p it's snowing!」\e
+
+//<0000000d> 【武】「おっ、\pほんとだ…\p…\p…\p…\p冷えると思ったぜ」\e
+<0000000d> 【Takeru】「Oh!\p You're right...\p...\pno wonder it's been so cold.」\e
+
+//<00000f11> 【純夏】「…\p…\pね、\pタケルちゃん、\pプレゼントちょうだい」\e
+<00000f11> 【Sumika】「...\p...\phey,\p Takeru-chan,\p gimme a present.」\e
+
+//<0000000f> 【武】「…\p…\p…\p…\p」\e
+<0000000f> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000f14> 【純夏】「あ～、\pさては忘れたなっ！」\e
+<00000f14> 【Sumika】「Aaah～\p\p You forgot!」\e
+
+//<00000011> 【武】「なんだよずっといっしょで買う暇無かったじゃんか！」\e
+<00000011> 【Takeru】「You've been with me all day,\p\nI haven't had a chance to buy something!」\e
+
+//<00000f17> 【純夏】「こんなときに最低だよ」\e
+<00000f17> 【Sumika】「You always blow it at times like this.」\e
+
+//<00000013> 【武】「うわっ、\pそこまで言いますか？」\e
+<00000013> 【Takeru】「Uwa!\p Isn't that a bit harsh?」\e
+
+//<00000f1a> 【純夏】「けど、\pゆるしてあげちゃう」\e
+<00000f1a> 【Sumika】「But...\p...\pI'll forgive you.」\e
+
+//<00000015> 【武】「お、\pやさしいじゃん」\e
+<00000015> 【Takeru】「Oh,\p you're merciful.」\e
+
+//<00000f1d> 【純夏】「今日は特別だからね」\e
+<00000f1d> 【Sumika】「Today's special.」\e
+
+//<00000017> 【武】「ん？」\e
+<00000017> 【Takeru】「Hm?」\e
+
+//<00000f20> 【純夏】「わたしにはプレゼントくれる人いるもん」\e
+<00000f20> 【Sumika】「There's someone here to give me a present.」\e
+
+//<00000019> 【武】「…\p…\p…\p…\p」\e
+<00000019> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000f23> 【純夏】「抱えきれないほどのプレゼントくれたよ…\p…\p」\e
+<00000f23> 【Sumika】「Someone who's given me more presents than I can hold...\p...\p」\e
+
+//<0000001b> 【武】「…\p…\p純夏」\e
+<0000001b> 【Takeru】「...\p...\pSumika.」\e
+
+//<000027d4> 【純夏】「…\p…\p今年は、\p今までで一番のプレゼント…\p…\pもう貰ったから…\p…\p」\e
+<000027d4> 【Sumika】「...\p...\pand I already have...\p...\pthe best present I've ever been given...\p...\p...\p...\p」\e//CP_E
+
+//<00001827> 【武】「…\p…\pこの場所はさ…\p…\p…\p…\pオレにとって、\p特別なんだ…\p…\p」\e
+<00001827> 【Takeru】「...\p...\pthis place...\p...\p...\p...\pis special to me...\p...\p」\e
+
+//<00001828> 【純夏】「…\p…\p…\p…\p」\e
+<00001828> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000182a> 【武】「本当はここじゃないんだけどな。\n別の世界の…\p…\p同じ場所だ」\e
+<0000182a> 【Takeru】「That's not technically right.\nBut this place in the other world...\p...\pis special.」\e
+
+//<0000182b> 【純夏】「…\p…\p別の世界」\e
+<0000182b> 【Sumika】「...\p...\pthe other world.」\e
+
+//<0000182c> 【武】「そうだ…\p…\p別の世界だ」\e
+<0000182c> 【Takeru】「That's right...\p...\pthe other world.」\e
+
+//<0000182d> 【純夏】「…\p…\p…\p…\p」\e
+<0000182d> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000182f> 【武】「…\p…\p…\p…\p」\e
+<0000182f> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001830> 『この世界』に来た時には、\p純夏との事をすっかり忘れてたなんて…\p…\pいまだに信じられない。\n今じゃ鮮明に思い出せるのに。\e
+<00001830> I still can't believe...\p...\pI completely forgot about her when I came to this world.\nNow I can remember it all like it was yesterday.\e
+
+//<00001831> もしオレが、\pあっちの世界に戻っていなかったら、\p思い出すことすらなかったはずだ…\p…\p。\nそんな事、\p考えたくもない…\p…\p。\e
+<00001831> If I hadn't gone back to that world,\p I wouldn't have remembered her...\p...\p\nI don't even want to think about that...\p...\p\e
+
+//<00001832> 【武】「…\p…\p…\p…\p純夏、\pちょっと手を出してみろ」\e
+<00001832> 【Takeru】「...\p...\p...\p...\pSumika,\p hold out your hands.」\e
+
+//<00001833> 【純夏】「…\p…\p…\p…\p」\e
+<00001833> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00001835> 反応無しか…\p…\p。\e
+<00001835> No reaction...\p...\p?\e
+
+//<00001836> 【武】「しょうがねえなあ…\p…\p。\n…\p…\pこうやって…\p…\p手を前に出すんだ」\e
+<00001836> 【Takeru】「This could be a pain...\p...\p\n...\p...\pokay, you do this...\p...\pjust hold your hands out.」\e
+
+//<00001838> 【純夏】「…\p…\p…\p…\p」\e
+<00001838> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000183a> 【武】「あんまりいい出来じゃないけど…\p…\pおまえに渡したいものがあるんだ」\e
+<0000183a> 【Takeru】「It's not that well made, but...\p...\p\b...\p...\pthere's something I want to give you.」\e
+
+//<0000183e> 【純夏】「…\p…\p…\p…\p」\e
+<0000183e> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00001840> 【武】「…\p…\pこれ、\pやるよ」\e
+<00001840> 【Takeru】「...\p...\phere,\p take this.」\e
+
+//<00001841> 【純夏】「…\p…\p…\p…\pなに…\p…\pこれ」\e
+<00001841> 【Sumika】「...\p...\p...\p...\pwhat...\p...\pis it?」\e
+
+//<00001842> 【武】「純夏はクリスマスって、\p知ってるか？」\e
+<00001842> 【Takeru】「Sumika,\p you know what Christmas is, right?」\e
+
+//<00001843> 【純夏】「…\p…\pクリスマス…\p…\p知ってるよ」\e
+<00001843> 【Sumika】「...\p...\pChristmas...\p...\pI know.」\e
+
+//<00001844> 【武】「おお！　普通に知ってるなんて、\p『この世界』だとハイソな感じがするな」\e
+<00001844> 【Takeru】「Good! In this world knowing something like that will impress people.」\e
+
+//<00001845> 【純夏】「クリスマスと誕生日はプレゼントの日…\p…\p」\e
+<00001845> 【Sumika】「Birthdays and Christmases are days to give presents...\p...\p」\e//CP MLA_0047
+
+//<00001846> 【武】「そうだ。ちょっと早いけど、\pオレからのクリスマスプレゼントだ」\e
+<00001846> 【Takeru】「That's right. It's a little early,\p but this is a Christmas present from me to you.」\e
+
+//<00001847> 【純夏】「クリスマス…\p…\pプレゼント…\p…\p」\e
+<00001847> 【Sumika】「Christmas...\p...\ppresent...\p...\p」\e
+
+//<00001848> 【武】「クリスマスにはサンタクロースという爺さんがやってきて、\p世界中のよい子にプレゼントをくれるんだ」\e
+<00001848> 【Takeru】「On Christmas an old man named Santa Claus goes all over the world giving presents to good children.」\e
+
+//<00001849> 【純夏】「…\p…\p…\p…\p」\e
+<00001849> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000184b> 【武】「世間ではそういう事になってる。\n…\p…\pでも実際はそんな爺さんは来ない」\e
+<0000184b> 【Takeru】「At least that's what everyone says.\n...\p...\pbut he doesn't really exist.」\e
+
+//<0000184c> 【純夏】「…\p…\p…\p…\p息、\p白い」\e
+<0000184c> 【Sumika】「...\p...\p...\p...\pyour breath...\p...it's white.」\e//I guess she could mean her own too ~IX
+
+//<0000184d> 【武】「だから別の世界のオレは、\p子供の頃決めたんだ。\nサンタの代わりに、\p純夏に毎年プレゼントをあげるんだってな…\p…\p」\e
+<0000184d> 【Takeru】「So when I was young, in the other world,\p I made a decision.\p Every year I would give Sumika a present in Santa's place...\p...\p」\e
+
+//<0000184e> 【純夏】「…\p…\p…\p…\p」\e
+<0000184e> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00001850> 【武】「子供だったオレは…\p…\p純夏がそのプレゼントをどういう意味で受け取っていたのかなんて、\p想像もしなかった」\e
+<00001850> 【Takeru】「At the time...\p...\pI was too young to even imagine how much those presents meant to her.」\e
+
+//<00001851> 【純夏】「…\p…\p…\p…\p」\e
+<00001851> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00001853> 【武】「でもそれは…\p…\p成長しても同じだった。\n心はガキのまんまだったんだよ」\e
+<00001853> 【Takeru】「But that didn't change...\p...\peven after I grew up.\nMy heart was still that of a child.」\e
+
+//<00001854> 【純夏】「…\p…\p…\p…\p」\e
+<00001854> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00001856> 【武】「自分の純夏に対する本当の気持ちすら、\pちっともわかってなかった」\e
+<00001856> 【Takeru】「I didn't understand any of my real feelings for Sumika.」\e
+
+//<00001857> 【純夏】「…\p…\p…\p…\p」\e
+<00001857> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00001859> 【武】「ふたりの関係を幼なじみって枠に収めて、\p本当の気持ちを見ないようにしていたんだ…\p…\p」\e
+<00001859> 【Takeru】「I told myself we were just childhood friends,\p and tried not to think about how I really felt...\p...\p」\e
+
+//<0000185a> 【純夏】「…\p…\p…\p…\p」\e
+<0000185a> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000185c> 【武】「…\p…\pだけどオレは――」\e
+<0000185c> 【Takeru】「...\p...\pbut I――」\e
+
+//<0000185d> 【純夏】「…\p…\pやっぱりさむいよ」\e
+<0000185d> 【Sumika】「...\p...\pit really is cold.」\e
+
+//<0000185e> 【武】「それはオレの話か？　それとも気温か？」\e
+<0000185e> 【Takeru】「You mean my story? Or the temperature?」\e
+
+//<0000185f> 【純夏】「…\p…\pさむい」\e
+<0000185f> 【Sumika】「...\p...\p...\p...\pcold.」\e
+
+//<00001860> 【武】「だからさっき言っただろ、\p上着貸すって…\p…\p今脱ぐからまってろ」\e
+<00001860> 【Takeru】「I keep telling you you can have my coat...\p...\pI'll take it off now.」\e
+
+//<00001861> 【純夏】「やだ…\p…\pタケルちゃんがさむくなる」\e
+<00001861> 【Sumika】「No...\p...\pyou'll get cold, Takeru-chan.」\e
+
+//<00001862> 【武】「なんだよ…\p…\pじゃあ…\p…\pもう戻ろうか？」\e
+<00001862> 【Takeru】「Geez...\p...\pfine...\p...\pshould we go back?」\e
+
+//<00001863> このタイミングでウサギのマスコットを渡せば、\p何かしら変化が起こるかと思ったけど…\p…\pさすがにそんな都合良くいかなかったか。\e
+<00001863> I thought giving her the rabbit now would change something...\p...\pbut I guess it's not that easy.\e
+
+//<00001864> ちゃんとオレを認識してはいるみたいだけど…\p…\pこれ以上の反応がないんだよな…\p…\p。\e
+<00001864> She does seem to be conscious of me...\p...\pbut that's about it...\p...\p\e
+
+//<00001865> あまり無理をさせる意味はもうないかもしれない。\nやっぱり『この世界』の思い出じゃないと――\e
+<00001865> Maybe there's no point trying to force things any further.\nMaybe they do have to be memories from this world after――\e
+
+//<00001866> 【純夏】「――いい」\e
+<00001866> 【Sumika】「――No.」\e
+
+//<00001867> 【武】「え…\p…\p？」\e
+<00001867> 【Takeru】「Eh...\p...\p?」\e
+
+//<00001868> 【純夏】「まだここにいる」\e
+<00001868> 【Sumika】「Let's stay here.」\e
+
+//<00001869> …\p…\pこれは…\p…\pどう判断していいかわからないけど…\p…\pここにいたいって事なんだよな？\e
+<00001869> ...\p...\pI'm not sure...\p...\phow I should take that...\p...\pbut that means she wants us to stay here, right?\e
+
+//<0000186a> もしかして、\pちょっとは効果があったのかな？\e
+<0000186a> Maybe it had an effect after all?\e
+
+//<0000186b> 【武】「でも…\p…\pさむいんだろ？」\e
+<0000186b> 【Takeru】「But...\p...\paren't you cold?」\e
+
+//<0000186c> 【純夏】「くっついて」\e
+<0000186c> 【Sumika】「Hold me.」\e
+
+//<0000186d> 【武】「――え？」\e
+<0000186d> 【Takeru】「――Eh?」\e
+
+//<0000186e> 【純夏】「くっつけばあったかいよ」\e
+<0000186e> 【Sumika】「I'll be warm if you hold me.」\e
+
+//<0000186f> す…\p…\pすごいぞ…\p…\p！\e
+<0000186f> A-...\p...\pamazing...\p...\p!\e
+
+//<00001870> こんな普通の反応するなんて…\p…\pこれはもしかしたら…\p…\p！\e
+<00001870> That's so...\p...normal...\p...\pshe just might be...\p...\p!\e
+
+//<00001871> 【武】「じゃあ、\pオレが座るから、\pおまえは前に座って寄っかかれよ」\e
+<00001871> 【Takeru】「Okay,\p I'll sit down here,\p so you sit right in front of me.」\e
+
+//<00001872> 【純夏】「うしろからだっこして。\nそうすればもっとあったかいよ」\e
+<00001872> 【Sumika】「Hug me from behind.\nThat's much warmer.」\e
+
+//<00001873> 【武】「ああ、\pわかった」\e
+<00001873> 【Takeru】「Yeah,\p okay.」\e
+
+//<00001878> 【武】「…\p…\pどうだ？　ちょっとはマシか？」\e
+<00001878> 【Takeru】「...\p...\phow's this? Any better?」\e
+
+//<00001879> 【純夏】「…\p…\p…\p…\p」\e
+<00001879> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000187b> 【武】「まだ寒いか？」\e
+<0000187b> 【Takeru】「Still cold?」\e
+
+//<0000187c> 【純夏】「…\p…\pあったかい」\e
+<0000187c> 【Sumika】「...\p...\pwarm.」\e
+
+//<0000187d> 【武】「そうか」\e
+<0000187d> 【Takeru】「I see.」\e
+
+//<0000187e> 【純夏】「タケルちゃんは…\p…\pあったかいよ」\e
+<0000187e> 【Sumika】「Takeru-chan...\p...\pyou're warm.」\e
+
+//<0000187f> ――いいぞ！\n『この世界』のオレを思い出しているんだ！\e
+<0000187f> ――Yes!\nShe's remembering this world's me!\e
+
+//<00001880> 【武】「そうか。オレはどんな風にあったかかったんだ？」\e
+<00001880> 【Takeru】「I see. What kind of warm am I?」\e//wut ~IX
+
+//<000027be> このままいけば『この世界』のオレと純夏の関係が詳しくわかるはずだ…\p…\p！\e
+<000027be> If this keeps up I might learn more about what we were like in this world...\p...\p!\e
+
+//<00001882> 【純夏】「…\p…\pとってもあったかかったよ…\p…\pタケルちゃんは…\p…\p」\e
+<00001882> 【Sumika】「...\p...\pyou were really warm...\p...\pTakeru-chan...\p...\p」\e
+
+//<00001883> 【武】「それで？」\e
+<00001883> 【Takeru】「And?」\e
+
+//<00001884> 【純夏】「…\p…\pなのに…\p…\pあったかくなくなったよ…\p…\p」\e
+<00001884> 【Sumika】「...\p...\pbut then...\p...\pyou stopped being warm...\p...\p」\e//I am sad now ~IX //stop hugging corpses you silly - kViN
+
+//<00001885> 【武】「え…\p…\p？」\e
+<00001885> 【Takeru】「Eh...\p...\p?」\e
+
+//<00001886> 【純夏】「タケルちゃん…\p…\pあったかくなくなった…\p…\p」\e
+<00001886> 【Sumika】「Takeru-chan...\p...\pstopped being warm...\p...\p」\e
+
+//<00001887> まただ…\p…\p。\e
+<00001887> This again...\p...\p\e
+
+//<00001888> この前から何となく思ってたけど…\p…\p『この世界』の純夏は、\p少なくともオレが死んだことを知っているんじゃないのか？\e
+<00001888> I've been wondering this for a while...\p...\pbut does this world's Sumika know I'm dead?\e//GEEZ I WONDER YOU - kViN
+
+//<00001889> 【武】「純夏…\p…\p？」\e
+<00001889> 【Takeru】「Sumika...\p...\p?」\e
+
+//<0000188a> 【純夏】「…\p…\p復讐するんだ…\p…\p…\p…\p！！」\e
+<0000188a> 【Sumika】「...\p...\pI'll get my revenge...\p...\p...\p...\p!!」\e
+
+//<0000188b> ――まずい！　そっちに行かないでくれ！！\e
+<0000188b> ――Not good! Please don't start doing that!!\e
+
+//<0000188c> せっかく普通の心を取り戻しかけていたのに、\pそっちに戻らないでくれ！！\e
+<0000188c> You were just about to get back to normal,\p don't start doing that again!!\e
+
+//<0000188d> 【純夏】「…\p…\p復讐…\p…\p…\p…\pしてやる…\p…\p！！」\e
+<0000188d> 【Sumika】「...\p...\pI will...\p...\p...\p...\pavenge you...\p...\p!!」\e//da'wwwww, I wonder if any yandere fans adore these Sumika lines ~IX //I feel somehow disturbed by them, but in a good way - kViN
+
+//<0000188e> 【武】「純夏いいんだ、\p今はまだそんなこと考えなくていいんだ！」\e
+<0000188e> 【Takeru】「Sumika, it's okay,\p you don't need to think about that right now!」\e
+
+//<0000188f> 【純夏】「全部だめにした。\n全部奪った。\n全部…\p…\p全部…\p…\p…\p…\p」\e
+<0000188f> 【Sumika】「They ruined everything.\nThey took everything.\nEverything...\p...\peverything...\p...\p...\p...\p」\e
+
+//<00001890> 【武】「大丈夫だ純夏！　もう大丈夫だから！」\e
+<00001890> 【Takeru】「It's okay, Sumika! It's okay now!」\e
+
+//<00001891> 【純夏】「同じ目に遭わせてやる…\p…\pあいつ等も同じ目に…\p…\p！！」\e
+<00001891> 【Sumika】「I'll do the same to them...\p...\p\b...\p...\pI'll show them how much I...\p...\p!!」\e
+
+//<00001892> 【武】「純夏…\p…\pそんなのは、\pいいんだ！」\e
+<00001892> 【Takeru】「Sumika...\p...\pyou don't need to do that!」\e
+
+//<00001893> 【純夏】「よくない！」\e
+<00001893> 【Sumika】「Yes I do!」\e
+
+//<00001894> 【武】「おまえはいつか必ず戦わなければならない。\n…\p…\pだけどその時はオレも一緒だ！　絶対ひとりにしないよ！」\e
+<00001894> 【Takeru】「Yes, you'll have to fight someday.\n...\p...\pbut right now you're with me! You're not alone now!」\e
+
+//<00001895> 【純夏】「うぅッ…\p…\p…\p…\pうあぁぁッ…\p…\p…\p…\p」\e
+<00001895> 【Sumika】「Uuu! ...\p...\p...\p...\puaaaa...\p...\p...\p...\p!」\e
+
+//<00001896> 【武】「だから今は…\p…\pせめて今は純夏でいてくれ！」\e
+<00001896> 【Takeru】「So please...\p...\pkeep being Sumika!」\e
+
+//<00001897> 【純夏】「…\p…\pうぅ…\p…\pいたいッ！　いたいよぅ！！」\e
+<00001897> 【Sumika】「...\p...\puuu...\p...\pit hurts! It huuurts!!」\e
+
+//<00001898> 【武】「――！？」\e
+<00001898> 【Takeru】「――!?」\e
+
+//<00001899> ――まずい、\p発作だ！\e
+<00001899> ――Crap,\p she's losing it!\e
+
+//<0000189a> くそッ――せっかく安定してたのに、\p無理をさせすぎたのか！？\e
+<0000189a> Dammit! ――She'd finally gotten stable.\bDid I push her too far!?\e
+
+//<0000189b> 【純夏】「――いたいよう…\p…\pいたい…\p…\pタ…\p…\pケ…\p…\p…\p…\pル…\p…\pちゃん」\e
+<0000189b> 【Sumika】「――It huuurts...\p...\pit hurts...\p...\pTa...\p...\pke...\p...\p...\p...\pru...\p...\pchan.」\e
+
+//<0000189c> 【武】「――純夏！」\e
+<0000189c> 【Takeru】「――Sumika!」\e
+
+//<0000189d> ――霞…\p…\p見ていてくれてるか！？\nもう少し様子をみてだめそうだったら、\p先生を呼んでくれ！\e
+<0000189d> ――Kasumi...\p...\pare you watching this!?\nIf this gets any worse call Sensei!\e
+
+//<0000189e> 【純夏】「――タケルちゃん…\p…\pタケルちゃん…\p…\pどこ…\p…\pどこにいるんだよぉっ！！」\e
+<0000189e> 【Sumika】「――Takeru-chan...\p...\pTakeru-chan...\p...\pwhere...\p...\p\b...\p...\pwhere are youuuu!?」\e
+
+//<0000189f> 【武】「オレはここにいるぞ！　大丈夫だ！」\e
+<0000189f> 【Takeru】「I'm right here! It's okay!」\e
+
+//<000018a0> 【純夏】「…\p…\p助けてよ…\p…\p助けて…\p…\p…\p…\pタケルちゃん…\p…\p助けて…\p…\p…\p…\p」\e
+<000018a0> 【Sumika】「...\p...\psave me...\p...\psave me...\p...\p\b...\p...\p...\p...\pTakeru-chan...\p...\psave me...\p...\p...\p...\p」\e
+
+//<000018a1> 【武】「オレはここにいる！　こんな側にいるじゃないか！？」\e
+<000018a1> 【Takeru】「I'm right here! I'm right next to you!!」\e
+
+//<000018a2> 【純夏】「ううぅ…\p…\pああぁぁッ…\p…\p…\p…\pタケルちゃん…\p…\p…\p…\p」\e
+<000018a2> 【Sumika】「Uuuuu...\p...\paaaaaa! ...\p...\p...\p...\pTakeru-chan...\p...\p...\p...\p」\e
+
+//<000018a3> 【武】「――側にいるからッ！！　オレはここにいるからッ！！」\e
+<000018a3> 【Takeru】「――I'll stay with you!! I'll be right here!!」\e
+
+//<000018a4> 【純夏】「…\p…\p…\p…\pああ…\p…\pうあッ！」\e
+<000018a4> 【Sumika】「...\p...\p...\p...\paaaa...\p...\puaa!」\e
+
+//<000018a5> 【武】「大丈夫だから…\p…\p…\p…\pいつも側にいる。\nオレはここにいるんだよッ！」\e
+<000018a5> 【Takeru】「It's just fine...\p...\p...\p...\pI'll always be with you.\nI'm right here!」\e
+
+//<000018a6> 【純夏】「…\p…\pあ…\p…\pああっ…\p…\p…\p…\pほ…\p…\pんとだ…\p…\p…\p…\p」\e
+<000018a6> 【Sumika】「...\p...\pah...\p...\paaah! ...\p...\p...\p...\pi-...\p...\pit's true...\p...\p...\p...\p」\e
+
+//<000018a7> 【武】「す、\p純夏っ…\p…\p！」\e
+<000018a7> 【Takeru】「S-\pSumika...\p...\p!」\e
+
+//<000018a8> 【純夏】「…\p…\pタ…\p…\pケルちゃん…\p…\pだ…\p…\p」\e
+<000018a8> 【Sumika】「...\p...\pTa-...\p...\pTakeru-chan...\p...\pit's you...\p...\p」\e
+
+//<000018a9> 反応…\p…\pしてる！？　落ち着いてきたのか！？\e
+<000018a9> She's...\p...\preacting!? Did she calm back down!?\e
+
+//<000018aa> 【武】「純夏…\p…\p大丈夫か？」\e
+<000018aa> 【Takeru】「Sumika...\p...\pare you okay?」\e
+
+//<000018ab> 【純夏】「…\p…\pタケルちゃんの声がする」\e
+<000018ab> 【Sumika】「...\p...\pI can hear Takeru-chan.」\e
+
+//<000018ac> 【武】「え…\p…\p」\e
+<000018ac> 【Takeru】「Eh...\p...\p」\e
+
+//<000018ad> 【純夏】「タケルちゃんの匂いがする」\e
+<000018ad> 【Sumika】「I can smell Takeru-chan.」\e
+
+//<000018ae> 【武】「純夏…\p…\p」\e
+<000018ae> 【Takeru】「Sumika...\p...\p」\e
+
+//<000018af> …\p…\p目の前にいるオレの存在を…\p…\p認識してるって事か？\e
+<000018af> ...\p...\pshe's aware...\p...\pthat I'm physically here in front of her?\e
+
+//<000018b5> またさっきみたいに、\pオレを『白銀武』だってわかって反応してるのか？\e
+<000018b5> Is she gonna start reacting normally again?\e//lit. "knowing I'm Shirogane Takeru and reacting"
+
+//<000018b6> 【純夏】「タケルちゃんがいる…\p…\p…\p…\p」\e
+<000018b6> 【Sumika】「Takeru-chan's here...\p...\p...\p...\p」\e
+
+//<000018b7> 【武】「純夏…\p…\pオレがわかるのか？」\e
+<000018b7> 【Takeru】「Sumika...\p...\pyou can tell it's me?」\e
+
+//<000018b8> 【純夏】「…\p…\pなに、\p言ってるの？」\e
+<000018b8> 【Sumika】「...\p...\pwhat are you saying?」\e
+
+//<000018b9> 【武】「いや…\p…\pなにって…\p…\p」\e
+<000018b9> 【Takeru】「Umm...\p...\pwell...\p...\p」\e
+
+//<000018ba> 【純夏】「ああ…\p…\pうぅ…\p…\p…\p…\pなんだろ、\p頭が…\p…\p…\p…\p」\e
+<000018ba> 【Sumika】「Aaaa...\p...\puuu...\p...\p...\p...\pwhy does my head...\p...\p...\p...\p」\e
+
+//<000018bc> 【武】「おい…\p…\p大丈夫か？」\e
+<000018bc> 【Takeru】「Hey...\p...\pyou okay?」\e
+
+//<000018bd> 【純夏】「あれ？　私、\pなにを言ってたんだろ…\p…\p…\p…\pあいつらを殺したいだけなのに」\e
+<000018bd> 【Sumika】「Huh? What am I saying?\b...\p...\p...\p...\pI just want to kill them.」\e
+
+//<000018be> 【武】「お、\pおい…\p…\p」\e
+<000018be> 【Takeru】「H-\phey...\p...\p」\e
+
+//<000018bf> まずい…\p…\pまた元に戻りかけてる！\e
+<000018bf> Crap...\p...\pshe's doing it again!\e
+
+//<000018c0> 【純夏】「うぅ…\p…\pいたい、\pいたい。\n頭が割れそうだよ…\p…\p」\e
+<000018c0> 【Sumika】「Uuu...\p...\pit hurts,\p it hurts.\nMy head's tearing apart...\p...\p」\e
+
+//<000018c1> もう…\p…\p様子を見てる場合じゃ無いのかも知れない…\p…\p。\e
+<000018c1> Maybe...\p...\pI should be doing more than just watching this...\p...\p\e
+
+//<000018c2> 安定と怒りと発作を短いサイクルで繰り返し始めている…\p…\pこんなの今まで無かった…\p…\p。\e
+<000018c2> She's bouncing back and forth between stability and rage...\p...\pshe never did this before...\p...\p\e
+
+//<000018c3> 【純夏】「ううぅっ！　ああッ！　うあああああッ！！！」\e
+<000018c3> 【Sumika】「Uuuuu! Aaah! Uuaaaaaaaaaa!!!」\e
+
+//<000018c4> 【武】「――純夏！？」\e
+<000018c4> 【Takeru】「――Sumika!?」\e
+
+//<000018c5> 【純夏】「あはっ…\p…\p…\p…\pあはは、\pあははっ！　そうだ。\nそうだよ、\pタケルちゃん！　いいこと教えてあげる」\e
+<000018c5> 【Sumika】「Aha! ...\p...\p...\p...\pahaha,\p ahaha! That's right.\nThat's right,\p Takeru-chan! I have good news.」\e//I almost shat myself here. Remember when Sumika wasn't scary? - kViN
+
+//<000018c6> 【武】「え…\p…\p？」\e
+<000018c6> 【Takeru】「Eh...\p...\p?」\e
+
+//<000018c7> どうしたんだ…\p…\p発作の時はいつも、\p憎悪と怯えが混在していたのに。\nしかもオレを認識できなかったはずだ…\p…\p。\e
+<000018c7> What the...\p...\pwhenever she freaks out she's always either mad or scared.\nAnd she was never aware of me...\p...\p\e
+
+//<000018c8> 【純夏】「やっと…\p…\pあいつらに復讐できるよ…\p…\p」\e
+<000018c8> 【Sumika】「I can finally...\p...\pget my revenge on them...\p...\p」\e
+
+//<000018c9> 【武】「…\p…\p…\p…\p」\e
+<000018c9> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000027c0> 【純夏】「タケルちゃんを殺したあいつらを…\p…\p皆殺しにしてあげるから…\p…\p待っててね」\e
+<000027c0> 【Sumika】「I'll kill every last one of them...\p...\pthe guys who killed you, Takeru-chan...\p...\pso wait for me.」\e
+
+//<000018cb> 【武】「…\p…\p純夏…\p…\p…\p…\p」\e
+<000018cb> 【Takeru】「...\p...\pSumika...\p...\p...\p...\p」\e
+
+//<000018cc> 【純夏】「ね？　タケルちゃん、\pそうだよね？」\e
+<000018cc> 【Sumika】「Right? Takeru-chan,\p isn't that right?」\e
+
+//<000018cd> やっぱり今までとは違う…\p…\p。\e
+<000018cd> This really is different from before...\p...\p\e
+
+//<000027c2> 死んだ『この世界』のオレと、\p目の前のオレを混同してはいるみたいだけど…\p…\p目の前の『白銀武』はちゃんと認識できてるんだ！\e
+<000027c2> It looks like she's getting me confused with the dead me from this world...\p...\pbut that means she's aware of a Shirogane Takeru being in front of her!\e
+
+//<000018cf> 【純夏】「それでね…\p…\p…\p…\pううぅ…\p…\p…\p…\pまた、\pいたい」\e
+<000018cf> 【Sumika】「And about that...\p...\p...\p...\puuuuu...\p...\p...\p...\pit hurts again.」\e
+
+//<000018d0> また頭痛だ…\p…\p。\nやっぱりサイクルが短くなっているんだ！\e
+<000018d0> Another headache...\p...\p\nShe is alternating faster!\e
+
+//<000018d1> それに、\p昨日よりも長い言葉を話している。\e
+<000018d1> And she's using much longer sentences than yesterday.\e
+
+//<000018d2> 【純夏】「――邪魔なのッ！　ああもう…\p…\pイライラするなぁッ！　――なんなのこの痛いのはあッ！！」\e
+<000018d2> 【Sumika】「――Out of my way!\bAaah, stop it...\p...\pstop pissing me off!\b――Why the hell does it hurt!?」\e
+
+//<000018d3> よし…\p…\pここはオレの思い出話を続けて、\pさらに反応を見るしかない。\nここで腰が退けたら、\pリスクを負ってまで連れ出した意味がない。\e
+<000018d3> Okay...\p...\pmy only option here is to continue talking about my memories and see how she reacts.\nThere's no point in taking the risk of bringing her outside if I stop now.\e
+
+//<000018d4> 【武】「…\p…\pあのな純夏。\nそのウサギのプレゼントの話だけどさ、\pまだ続きがあるんだよ」\e
+<000018d4> 【Takeru】「...\p...\phey, Sumika.\nThere's more to the story about that rabbit.」\e
+
+//<000018d5> 【純夏】「ぅあああぁ…\p…\pくぅッ…\p…\pい…\p…\pたいッ…\p…\p」\e
+<000018d5> 【Sumika】「Uaaaaa...\p...\puuu! ...\p...\pit...\p...\phurts...\p...\p!」\e
+
+//<000018d6> 頑張ってくれ純夏…\p…\p！　たのむ！\e
+<000018d6> Keep trying, Sumika...\p...\p! Please!\e
+
+//<000018d7> 【武】「そのうちサンタなんていないってわかる歳になって、\pいつしかオレは純夏にクリスマスプレゼントをやらなくなってた」\e
+<000018d7> 【Takeru】「At some point we got old enough to know there was no Santa,\p though I still had to give Sumika Christmas presents.」\e
+
+//<000018d8> 【純夏】「…\p…\p大丈夫だよタケルちゃん…\p…\p全部殺してあげるからね」\e
+<000018d8> 【Sumika】「...\p...\pit'll be fine, Takeru-chan...\p...\p\b...\p...\pI'll kill them all for you.」\e
+
+//<000018d9> 【武】「正直言うとすっかり忘れちまってたんだ。\n…\p…\pだけど、\pオレと付き合った時、\p純夏がなんて言ったと思う？」\e
+<000018d9> 【Takeru】「But to be honest, I completely forgot to do it.\n...\p...\pdo you know what Sumika said when we started going out?」\e
+
+//<000018da> 【純夏】「…\p…\p安心して…\p…\pタケルちゃん…\p…\p私があいつらを…\p…\p」\e
+<000018da> 【Sumika】「...\p...\pdon't worry...\p...\pTakeru-chan...\p...\pI'll deal with...\p...\p」\e
+
+//<000018db> 【武】「最高のプレゼントもらったって、\p言ってくれたんだぜ…\p…\p」\e
+<000018db> 【Takeru】「She said she already had the best present she'd ever been given...\p...\p」\e//PCP MLE_1001 he's not really trying to quote her, but English doesn't give me the option of simply using another word for "best" and I don't wanna risk rewriting it for no reason ~IX
+
+//<000018dc> 【純夏】「凄い力なんだから…\p…\pもうなんでもできるよ」\e
+<000018dc> 【Sumika】「I'm super powerful now...\p...\pI can do anything.」\e
+
+//<000018dd> 【武】「普通に生きて来てさ…\p…\p人に言われてあんなにうれしい言葉…\p…\pなかったよ」\e
+<000018dd> 【Takeru】「I was living a normal life back then...\p...\pand I'd never heard anyone say something...\p...\pthat made me so happy before.」\e
+
+//<000018de> 【純夏】「…\p…\pよかったよ…\p…\p復讐…\p…\pできるんだ…\p…\p」\e
+<000018de> 【Sumika】「...\p...\pthis is good...\p...\pI can...\p...\ptake revenge now...\p...\p」\e
+
+//<000018e0> 【武】「だから、\p純夏…\p…\p…\p…\pもういい…\p…\pもういいんだ」\e
+<000018e0> 【Takeru】「So,\p Sumika...\p...\p...\p...\pit's okay...\p...\pit's okay now.」\e
+
+//<000018e1> 【純夏】「…\p…\p…\p…\p」\e
+<000018e1> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000018e3> 【武】「またいつか、\pふたりでクリスマス、\p過ごそうぜ…\p…\p」\e
+<000018e3> 【Takeru】「Let's spend another Christmas together someday...\p...\p」\e
+
+//<000018e4> 【純夏】「…\p…\p…\pル…\p…\pちゃ…\p…\pん…\p…\p…\p」\e
+<000018e4> 【Sumika】「...\p...\p...\pru...\p...\pcha...\p...\pn...\p...\p...\p」\e
+
+//<000018e6> 【武】「いつかふたりで…\p…\p」\e
+<000018e6> 【Takeru】「Together...\p...\p」\e
+
+//<000018e7> 【純夏】「…\p…\pタ…\p…\pケル…\p…\pちゃ…\p…\pん…\p…\p…\p…\p？」\e
+<000018e7> 【Sumika】「...\p...\pTa...\p...\pkeru...\p...\pcha...\p...\pn...\p...\p...\p...\p?」\e
+
+//<000018e8> 【武】「な？」\e
+<000018e8> 【Takeru】「Okay?」\e
+
+//<000018e9> 【純夏】「タケルちゃん？」\e
+<000018e9> 【Sumika】「Takeru-chan?」\e
+
+//<000018ea> 【武】「なんだ？」\e
+<000018ea> 【Takeru】「What is it?」\e
+
+//<000018eb> 【純夏】「…\p…\pうぅ…\p…\p…\p…\p」\e
+<000018eb> 【Sumika】「...\p...\puuu...\p...\p...\p...\p」\e
+
+//<000018ed> 【武】「…\p…\p純夏？」\e
+<000018ed> 【Takeru】「...\p...\pSumika?」\e
+
+//<000018ee> 【純夏】「ううぅっ…\p…\pぁあぅ…\p…\p」\e
+<000018ee> 【Sumika】「Uuu! ...\p...\paaau...\p...\p」\e
+
+//<000018ef> 【武】「また頭が痛いのか？」\e
+<000018ef> 【Takeru】「Does your head still hurt?」\e
+
+//<000018f0> 【純夏】「早く出撃したい…\p…\p」\e
+<000018f0> 【Sumika】「I wanna get deployed now...\p...\p」\e
+
+//<000018f1> さっきよりサイクルが早くなってるのは確かだ…\p…\p。\nそれに一瞬、\p明確にオレを呼んだな。\e
+<000018f1> She's definitely bouncing back and forth faster than before...\p...\p\nAnd she clearly said my name once.\e
+
+//<000018f2> 【純夏】「…\p…\p先生もう待たなくていいのに」\e
+<000018f2> 【Sumika】「...\p...\pSensei doesn't need to keep waiting.」\e
+
+//<000018f3> 【武】「…\p…\p…\p…\pえ？」\e
+<000018f3> 【Takeru】「...\p...\p...\p...\peh?」\e
+
+//<000018f4> 今…\p…\p先生って、\p言ったのか？\n夕呼先生のこと…\p…\pか？\e
+<000018f4> Did she just say...\p...\pSensei?\nDoes she mean Yuuko-sensei...\p...\p?\e
+
+//<000018f5> 【純夏】「なんかここにいると気分が悪いよ…\p…\p」\e
+<000018f5> 【Sumika】「Being here feels wrong somehow...\p...\p」\e
+
+//<000018f6> 【武】「純夏？」\e
+<000018f6> 【Takeru】「Sumika?」\e
+
+//<000018f7> 【純夏】「…\p…\pだめ。\nなにこれ」\e
+<000018f7> 【Sumika】「...\p...\pno good.\nWhat is this?」\e
+
+//<000018f8> 【武】「なにがだめなんだ？」\e
+<000018f8> 【Takeru】「What's no good?」\e
+
+//<000018f9> 【純夏】「知らないよ。\n私はあいつらを殺したい。\nそれだけなのに」\e
+<000018f9> 【Sumika】「I don't know.\nI wanna kill them.\nThat's all there is to it, but...\p...」\e
+
+//<000018fa> もう限界か…\p…\p？\nこれ以上はさすがに純夏への負担が大きすぎるだろう…\p…\p。\e
+<000018fa> Is this her limit...\p...\p?\nGoing on any longer would probably be too hard on her...\p...\p\e
+
+//<000018fb> 【純夏】「先生がいつまでも待たせるからいけないんだ」\e
+<000018fb> 【Sumika】「It's because Sensei keeps making me wait forever.」\e
+
+//<000018fc> また、\p先生って…\p…\p…\p…\p。\nオレが夕呼先生って呼んでるからなのか？\e
+<000018fc> "Sensei" again...\p...\p...\p...\p\nIs that because I call her Yuuko-sensei?\e
+
+//<000018fd> 普通なら香月博士か副司令じゃないのか…\p…\p？\e
+<000018fd> Shouldn't everyone else be calling her Professor Kouzuki or XO or something...\p...\p?\e
+
+//<000018fe> でも、\p霞だって副司令とは呼んでないからな。\nこれだけじゃ何とも言えない…\p…\p、\p\e
+<000018fe> But,\p Kasumi doesn't call her XO either.\nI can't be sure either way...\p...\p\e
+
+//<000018ff> 【純夏】「無駄なことしてる場合じゃない――訓練しなきゃ！」\e
+<000018ff> 【Sumika】「I can't keep wasting time――I have to train!」\e
+
+//<00001900> 【純夏】「訓練しておかないと、\p勝てなくなっちゃうよ！　復讐できない！」\e
+<00001900> 【Sumika】「If I don't train I won't be able to win!\bI won't be able to take revenge!」\e
+
+//<00001901> 【武】「純夏…\p…\p」\e
+<00001901> 【Takeru】「Sumika...\p...\p」\e
+
+//<00001902> 【純夏】「ね、\pタケルちゃん。\nそうだよね？」\e
+<00001902> 【Sumika】「Hey,\p Takeru-chan,\p that's you, right?」\e
+
+//<00001903> 【武】「――あ、\pああ。\nそうだな」\e
+<00001903> 【Takeru】「――Ah,\p yeah.\p It's me.」\e
+
+//<00001904> またオレを明確に認識している…\p…\p。\nだけど死んだオレとの区別は付いていない。\e
+<00001904> She's aware of me again...\p...\p\nBut she can't tell me apart from the dead me.\e
+
+//<00001905> 【純夏】「…\p…\p…\p…\p早く殺したいなあ…\p…\p」\e
+<00001905> 【Sumika】「...\p...\p...\p...\pI wanna kill them nooow...\p...\p」\e
+
+//<00001906> 一体…\p…\p何がどうなってんだ？\e
+<00001906> What the hell...\p...\pis going on?\e
+
+//<00001907> 【純夏】「早く訓練の続きしたいよぉ…\p…\p」\e
+<00001907> 【Sumika】「I wanna do more training now...\p...\p」\e
+
+//<00001908> 【武】「よし。じゃあそろそろ戻ろう」\e
+<00001908> 【Takeru】「Okay. Then let's start heading back.」\e
+
+//<00001909> 【純夏】「訓練の続き？」\e
+<00001909> 【Sumika】「More training?」\e//I imagine her antenna perking up ~IX
+
+//<0000190a> 【武】「それは戻ってからのお楽しみだ」\e
+<0000190a> 【Takeru】「You'll find out when we get there.」\e
+
+//<0000190b> 【純夏】「…\p…\pここ来るの…\p…\pなんか久しぶりだね…\p…\p…\p…\p」\e
+<0000190b> 【Sumika】「...\p...\pI haven't been here...\p...\pin a long time...\p...\p...\p...\p」\e
+
+//<0000190c> 【武】「え…\p…\p？」\e
+<0000190c> 【Takeru】「Eh...\p...\p?」\e
+
+//<0000190d> いったい…\p…\p何がどうなってるんだ？\n久しぶりって…\p…\p？\e
+<0000190d> Seriously...\p...\pwhat's going on?\nWhy's she being nostalgic now...\p...\p?\e
+
+//<0000190e> 【武】「何が久しぶりなんだ…\p…\p純夏？」\e
+<0000190e> 【Takeru】「What do you mean? ...\p...\pSumika?」\e//lit. "what haven't you done in a long time" clearly not meant that way since she kinda said it already, so rewrote ~IX
+
+//<0000190f> 【純夏】「訓練始まらないかなあ…\p…\p」\e
+<0000190f> 【Sumika】「I wonder if training starts soon...\p...\p」\e
+
+//<00001910> 【武】「あ…\p…\p…\p…\p」\e
+<00001910> 【Takeru】「Ah...\p...\p...\p...\p」\e
+
+//<00001911> 【純夏】「くんれん！　くんれん！」\e
+<00001911> 【Sumika】「Train-ing! Train-ing!」\e
+
+//<00001913> 【武】「わかった…\p…\p戻ろうな」\e
+<00001913> 【Takeru】「I get it...\p...\plet's go.」\e
+
+//<000022ef> 純夏の言動から判断して、\p『この世界』のオレと純夏の間に、\pただの知り合い以上の関係がある事は間違いない。\e
+<000022ef> Judging from what Sumika said,\p our relationship in this world was definitely more than just acquaintances.\e
+
+//<00001916> 純夏が『この世界』のオレが死んでる事を知っていて、\pその仇を取ろうとしているのがその証拠だ。\e
+<00001916> Sumika knows this world's me is dead,\p and she's trying to take revenge for me. That proves it.\e
+
+//<00001917> それがわかっただけでも大きい前進だ…\p…\p今はそう思いたい。\e
+<00001917> Just knowing that is a big improvement...\p...\pat least, I'd like to think so.\e
+

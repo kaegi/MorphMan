@@ -1,0 +1,1825 @@
+// Title: Final episode マブラヴ
+#FILENAME 10b00a9c
+#TYPE 3
+
+//<00000010> 【声】「――あ゛あ゛あ゛あ゛あ゛あ゛っっっ！！！」\e
+<00000010> 【Voice】「AAAAAAAAAAAA――!!!」\e
+
+//<00000013> …\p…\p\e
+<00000013> ...\p...\p\e
+
+//<00000014> 【声】「――あ゛あ゛あ゛あ゛あ゛あ゛っっっ！！！」\e
+<00000014> 【Voice】「AAAAAAAAAAAA――!!!」\e
+
+//<00000017> …\p…\p…\p…\pん…\p…\p。\e
+<00000017> ...\p...\p...\p...\pmm...\p...\p\e
+
+//<00000019> 【声】「――あ゛あ゛あ゛あ゛あ゛あ゛っっっ！！！」\e
+<00000019> 【Voice】「AAAAAAAAAAAA――!!!」\e//PCP_S MLE_0003
+
+//<0000001c> …\p…\p…\p…\pッ…\p…\p。\n…\p…\pんだよ…\p…\pうっせーな…\p…\p。\e
+<0000001c> ...\p...\p...\p...\p! ...\p...\p\n...\p...\pwhat...\p...?\p ...\p...\pshut up.\e
+
+//<0000001d> 【声】「起きてーー！　タケルちゃん起きてぇぇぇ！！　ていうか、\p開けてぇぇぇ！！！」\e
+<0000001d> 【Voice】「Wake uuup!\p Takeru-chan, wake uuuuup!!\p\nAnd open this dooooor!!!」\e
+
+//<0000001f> …\p…\p純夏の奴…\p…\p外でなに叫んでんだよぉ…\p…\p。\e
+<0000001f> ...\p...\pSumika...\p...\pstop screaming out there...\p...\p\e
+
+//<00000021> 【純夏】「ここ開けてわたしをぜひ中に入れてぇ…\p…\pうわ～～ん、\pチェーンロックなんてずるいよぉぉぉ…\p…\p」\e
+<00000021> 【Sumika】「Open the front door and let me insiiide...\p...\p\b...\p...\p\nuwaaan...\p...\p...\p...\pchain locks aren't fairrrr...\p...\p」\e
+
+//<00000024> …\p…\pずるいもクソもあるかっ…\p…\p！　オレん家は昔っからチェーンロックがお約束なんだ…\p…\pっ！！\e
+<00000024> ...\p...\pdo I give a crap if it's fair!?\p\nWe've been using that chain lock since forever!!\e
+
+//<00000025> いつも掛かってないのは、\p毎朝お袋が外してるからなんだよっっ！！\e
+<00000025> It's only been unlocked before because mom always undid it for you!!!!\e
+
+//<00000026> 【純夏】「おばさあ～ん！　鍵持ってたってダメじゃ～～～ん」\e
+<00000026> 【Sumika】「The house key isn't enough to get in～～～!」\e//PCP_E
+
+//<00000028> …\p…\pそういえば…\p…\pお袋…\p…\pなんでチェーンロック掛けっぱなしなんだろ…\p…\p？\e
+<00000028> ...\p...\pcome to think of it...\p...\pwhy did she...\p...\pleave the chain lock on...\p...\p?\e
+
+//<00000029> 【武】「…\p…\p…\p…\p」\e
+<00000029> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000002a> …\p…\pああ、\pそうだ…\p…\p。\nお袋と親父…\p…\p旅行だったな…\p…\p。\n純夏に鍵…\p…\p預けていきやがったんだ…\p…\p。\e
+<0000002a> ...\p...\paaah,\p that's right...\p...\p\nMy parents...\p...\pwent on vacation...\p...\p\nAnd they...\p...\pleft Sumika the key for some reason...\p...\p\e
+
+//<0000002b> まったく…\p…\p余計な事しやがって…\p…\p。\e
+<0000002b> Geez...\p...\pwhy'd they have to do that...\p...\p\e
+
+//<0000002c> 【純夏】「くぉのぉぉっっ！　まじ本気だすぞー！！」\e
+<0000002c> 【Sumika】「This loooock!!!\p I'm gonna get serious now!!」\e//CP
+
+//<0000002f> さぁて…\p…\pあと３０分はいけるな…\p…\p。\n寝よ寝よ…\p…\p。\e
+<0000002f> Nooow then...\p...\pthat should keep her out for a half hour...\p...\p\nLet's get some more sleep...\p...\p\e
+
+//<00000031> …\p…\p…\p…\pおやすみ。\e
+<00000031> ...\p...\p...\p...\pgood night.\e
+
+//<00000033> …\p…\p…\p…\p。\e
+<00000033> ...\p...\p...\p...\p\e
+
+//<00000035> …\p…\p…\p…\p…\p…\p。\e
+<00000035> ...\p...\p...\p...\p...\p...\p\e
+
+//<00000037> …\p…\p…\p…\p…\p…\p…\p…\pッ…\p…\p！！\e
+<00000037> ...\p...\p...\p...\p...\p...\p...\p...\p...\p...\p!!\e
+
+//<0000003b> 【武】「――んああああもうっ！！　うるっせぇぇぇ！！」\e
+<0000003b> 【Takeru】「Nnnaaaaaaah cut it out!!!\p Go awaaaay!!」\e//PCP_S
+
+//<0000003c> 【声】「ああ…\p…\p騒々しいな」\e
+<0000003c> 【Voice】「Aaah...\p...\p...\p...\psuch commotion.」\e
+
+//<0000003e> ――ん？\e
+<0000003e> ――Hm?\e
+
+//<00000042> 【武】「…\p…\p…\p…\p」\e
+<00000042> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000043> 【女】「朝からこれでは、\p精神衛生上好ましくないな…\p…\p」\e
+<00000043> 【Woman】「Waking up like this is bad for one's mental health.」\e
+
+//<00000045> 【武】「…\p…\p…\p…\p」\e
+<00000045> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000046> …\p…\p…\p…\pはい？\e
+<00000046> ...\p...\pwhat?\e
+
+//<00000047> 【女】「先が思いやられるが致し方ない…\p…\pこれも覚悟の上」\e
+<00000047> 【Woman】「I must apologize for what is about to occur...\p...\p...\p...\pbut I came prepared.」\e
+
+//<00000049> …\p…\p…\p…\pはい？\e
+<00000049> ...\p...\pwhat?\e
+
+//<0000004a> …\p…\pオ…\p…\pオレは…\p…\pアンタと一緒に寝るって覚悟ができてないんだけど…\p…\p？\e
+<0000004a> ...\p...but...\p...\pI'm not...\p...\pprepared to share a bed with you...\p...\p\e//PCP_E
+
+//<0000004c> …\p…\pあ…\p…\pれ…\p…\p？\e
+<0000004c> ...\p...\phu...\p...\ph...\p...\p?\e
+
+//<0000004d> 【女】「…\p…\p…\p…\p」\e
+<0000004d> 【Woman】「...\p...\p...\p...\p」\e
+
+//<0000004f> …\p…\pオレ…\p…\p何で…\p…\p涙が…\p…\p…\p…\p？\e
+<0000004f> ...\p...\pwhy...\p...\pam I...\p...\pcrying...\p...\p...\p...\p?\e
+
+//<00000050> 【純夏】「――よぉし…\p…\pコイツで…\p…\pッ！！」\e
+<00000050> 【Sumika】「――Ooookay...\p...\pthis should be enough to...\p...\p」\e//PCP_S
+
+//<00000053> 【純夏】「――やった！　タケルちゃん！！　さすがにもう起きてるとは思うけど、\p今起こしに行くからね～～～！！」\e
+<00000053> 【Sumika】「――Yes!\p Takeru-chan!!\p I'm sure you're already awake by now,\p but I'm coming to wake you up anyway～～～!!」\e
+
+//<00000055> 【武】「――ぬあッ！？」\e
+<00000055> 【Takeru】「――Wut!!?」\e//PCP_E//wut?! - Raide
+
+//<00000057> ――あの野郎…\p…\pドアこわしやがったな！？\e
+<00000057> ――Damn her...\p...\pshe broke the door, didn't she!?\e
+
+//<00000058> 【女】「ふふ…\p…\pどうした？　奇妙な声を出すでない」\e
+<00000058> 【Woman】「Huhu...\p...\pwhat is it?\bDo not speak in such a strange manner.」\e//PCP_S
+
+//<0000208c> …\p…\p…\p…\p奇妙なのはあんただろ！？\e
+<0000208c> ...\p...\p...\p...\pyou're the strange one here!!\e//PCP_E
+
+//<0000005c> 【武】「――ッ！？」\e
+<0000005c> 【Takeru】「――!?」\e
+
+//<0000005d> ――やべぇっ！　階段を軽快に駆け上る音がっっ！！\e
+<0000005d> ――This is bad!! I can hear Sumika leaping up the stairs!!!!\e//PCP_S
+
+//<0000005e> 【純夏】「――タケルちゃん、\p遅刻しちゃうよっ！！」\e
+<0000005e> 【Sumika】「――Takeru-chan,\p we're gonna be late!!!」\e
+
+//<00000061> ――うわああっ！！　来るな…\p…\p来るなあ！！\e
+<00000061> ――Uwaaaa!!! Don't come in! Stay away!!\e
+
+//<00000062> ――今来られると、\p非常にヤバい！　理由はさておき絶対ヤバい！！\e
+<00000062> ――Coming in right now would be extremely bad!\p\nI can't say why, but it'd be incredibly bad!!\e
+
+//<00000063> 【女】「…\p…\pふむ、\p確かに。\nそろそろ起きねば遅刻するな」\e
+<00000063> 【Woman】「...\p...\phmm...\p...\pthat is true.\nWe will be late if we do not get up soon.」\e
+
+//<00000065> 【武】「――起きるなっ！！」\e
+<00000065> 【Takeru】「――You stay right there!!」\e
+
+//<00000066> 【女】「…\p…\p何故だ？」\e
+<00000066> 【Woman】「...\p...\pwhy?」\e
+
+//<00000068> 【武】「――なにゆえもクソもあるかっ！！」\e
+<00000068> 【Takeru】「I don't care why, just do it!!!」\e
+
+//<00000069> 【純夏】「あがっ、\pちょ、\pちょっと待って待って、\p落ちるのは待ってぇ～～～」\e
+<00000069> 【Sumika】「Aga!\p Wai-\pwait,\p wait a minute,\p not yet,\p don't fall over yeeet～～～」\e
+
+//<0000006c> 【純夏】「いたたたた…\p…\p…\p…\pひど～い。\nもうなんだよ～」\e
+<0000006c> 【Sumika】「Ow-ow-ow-ow-ow...\p...\p...\p...\pso meeean.\p\nWhat'd I do～?」\e//PCP_E
+
+//<0000006e> ――あいつ、\p階段から転げ落ちたのかっ？！　そのまま諦めて行ってしまえっっ！！\e
+<0000006e> ――You fell down the stairs,\p right!?\bNow give up and go away!!\e
+
+//<00000070> 【純夏】「――タケルちゃーん！」\e
+<00000070> 【Sumika】「Takeru-chaaan!」\e//PCP_S
+
+//<00000072> ――あああああああ…\p…\pもうッ…\p…\pこれしかないっっ！！\e
+<00000072> ――Aaaaaaaaaaaaah...\p...\pI have no other choice!!!!\e
+
+//<00000074> 【女】「――あ…\p…\p！」\e
+<00000074> 【Woman】「Ah...\p...\p!」\e//PCP_E
+
+//<00001c6f> 布団にもぐってやり過ごすんだ！\e
+<00001c6f> I'll have to hide under the blanket until she leaves!\e
+
+//<00001c70> この女が何者かは知らんが、\pとにかく純夏に会わせるわけにはいかない！！\e
+<00001c70> I have no idea who this woman is,\p but there's no way I can let them see Sumika!!\e
+
+//<00000079> ――誤魔化す…\p…\pっ！　とにかく誤魔化し倒すっ！！　それしかないっっ！\e
+<00000079> ――For now...\p...\pI'll fight her off with excuses!!!\p\nThere's no other way!!!\e//PCP_S
+
+//<0000007b> 【純夏】「…\p…\pた～け～る～ちゃ～～～～ん？」\e
+<0000007b> 【Sumika】「...\p...Taaakeeeruuu-chaaaaaaaaan?」\e
+
+//<0000007d> …\p…\p純夏の声が恐ろしいっっ！！　無性に恐ろしいッ！\e
+<0000007d> ...\p...\pSumika's voice is scary!!\p Really scary!!\e
+
+//<0000007e> 【純夏】「ま～だ寝てたの～？　起きてよう！！」\e
+<0000007e> 【Sumika】「Are you stiiill in bed?\p Get up already!!」\e
+
+//<00000082> ――ひっぱるなぁ～～～！\e
+<00000082> ――Don't pull the blankeeeeeeet!\e
+
+//<00000083> 【純夏】「…\p…\pあれ？」\e
+<00000083> 【Sumika】「...\p...\phuh?」\e
+
+//<00000086> 【純夏】「タケルちゃん…\p…\p起きてるんだよね…\p…\p？」\e
+<00000086> 【Sumika】「Takeru-chan...\p...you're awake, aren't you...\p...?」\e
+
+//<00000087> 【武】「――うるさいっ！　オレのことは構わず、\pとっとと学校行けっ！！」\e
+<00000087> 【Takeru】「――Shut up!!\p Forget about me and just go to school.」\e
+
+//<00000088> 【純夏】「そうはいかないよぉ。\n――もう絶対起きてもらうんだからね！」\e
+<00000088> 【Sumika】「You know I can't do that.\n――You're going to get up whether you like it or not!」\e
+
+//<0000008b> 【武】「――だめだ、\pだめだ、\pだめだっ！　オレは今日は起きないと心に決めたんだっ！！」\e
+<0000008b> 【Takeru】「No,\p you can't,\p you mustn't!!\p\nI swore to myself I wouldn't get out of bed today.」\e
+
+//<0000008c> 【純夏】「わたしはタケルちゃんを起こすって心に決めたよ～！」\e
+<0000008c> 【Sumika】「And I swore to myself to wake Takeru-chan up～」\e
+
+//<0000008d> 【武】「――それはおまえの都合だろ！」\e
+<0000008d> 【Takeru】「――That's just because you wanted to!」\e
+
+//<0000008e> 【純夏】「そっちだって、\pタケルちゃんの都合だよっ！」\e
+<0000008e> 【Sumika】「Same to you, Takeru-chan, you just don't wanna get up!」\e
+
+//<0000008f> 【武】「――とにかくオレは行かない！　ほっとけっ！！」\e
+<0000008f> 【Takeru】「――Anyway, I'm not going!\p Leave me alone!」\e
+
+//<00000090> 【女】「あの者も親切で言っているのだ…\p…\p無下にするでない」\e
+<00000090> 【Woman】「She speaks out of kindness...\p...\pdo not be so cold.」\e
+
+//<00000092> 【純夏】「…\p…\p…\p…\pえ？」\e
+<00000092> 【Sumika】「...\p...\p...\p...eh?」\e
+
+//<00000093> ――ぎゃああああああ！！！！　な、\p何でしゃべるんだよぉぉぉっ！！\e
+<00000093> ――Gyaaaaaaaaaaaaaah!!!! Wh-\pwhy are you talkiiiiing!!?\e
+
+//<00000094> 【純夏】「タケル…\p…\pちゃん！？」\e
+<00000094> 【Sumika】「Takeru...\p...chan!?」\e
+
+//<00000097> ――ぎゃあああああ！！！\n――時間を戻してえぇぇぇぇぇ！！！！！！\e
+<00000097> ――Gyaaaaaaaaaaaah!\n――Give me more tiiiiiime!\e
+
+//<0000009b> 【純夏】「…\p…\pあ」\e
+<0000009b> 【Sumika】「...\p...\p...\p...\pah.」\e//PCP_E
+
+//<0000009d> …\p…\pすみ…\p…\pか…\p…\p？\e
+<0000009d> ...\p...\pSumi...\p...\pka...\p...\p?\e
+
+//<0000009f> …\p…\pあ…\p…\p…\p…\pまた…\pだ…\p…\p？\e
+<0000009f> ...\p...\pah...\p...\p...\p...\pI'm doing it...\pagain...\p...\p?\e
+
+//<000000a0> 【純夏】「…\p…\p…\p…\p」\e
+<000000a0> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000000a2> …\p…\p光が眩しいから…\p…\pかな…\p…\p？\e
+<000000a2> ...\p...\pis this because...\p...\pit's so bright...\p...\p?\e
+
+//<000000a3> 【純夏】「…\p…\p…\p…\p」\e
+<000000a3> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000000a5> ――いや、\p今はそんなこと考えてる場合じゃねえっ！！　この状況…\p…\pなんとか誤魔化さなきゃ！！\e
+<000000a5> ――No,\p this is no time to think about that!!\bI have to...\p...\pI have get rid of her somehow!!\e
+
+//<000000a6> 【純夏】「…\p…\p…\p…\p」\e
+<000000a6> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000000a8> 【武】「…\p…\pハッハッハッハッ、\pおはよう純夏君？　いい朝だね」\e
+<000000a8> 【Takeru】「...\p...\pha ha ha ha!\p Good morning, Sumika-kun.\bThe weather's nice this morning.」\e//PCP_S
+
+//<000000a9> 【純夏】「…\p…\p…\p…\p」\e
+<000000a9> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000000ab> 【武】「ところで君、\pつかぬ事を聞くが、\pチェーンロックは一体どうしたのかね？」\e
+<000000ab> 【Takeru】「By the way,\p not to change the subject or anything,\p but what did you do to the chain lock?」\e
+
+//<000000ac> 【純夏】「あわ…\p…\pあわわ…\p…\pあわわわわわ…\p…\p」\e
+<000000ac> 【Sumika】「Awa...\p...\pawa...\p...\pawawawa...\p...!\p」\e
+
+//<000000ad> 【武】「純夏君～～？　聞いているのかねぇ～？」\e
+<000000ad> 【Takeru】「Sumika-kuuuuun?\p Can you hear meee?」\e
+
+//<000000ae> 【純夏】「…\p…\p…\p…\p」\e
+<000000ae> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000000b0> 【武】「ふむ。では、\p取引と行こうじゃないか。\n君が壊したチェーンロックの件、\p遺憾ながら目をつぶろう」\e
+<000000b0> 【Takeru】「Hmph. Well then,\p I think we can make a deal.\p\nI'll pretend you didn't break the lock,\p but in exchange, you turn a blind eye to this.」\e
+
+//<000000b1> 【純夏】「…\p…\p…\p…\p」\e
+<000000b1> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000000b3> 【武】「君は私の部屋で見た超自然現象に目をつぶる…\p…\p悪い条件じゃあないと思うがねッ！？」\e
+<000000b3> 【Takeru】「All you have to do is turn a blind eye to the supernatural phenomenon you've just witnessed...\p...\p\nI think that's a pretty good deal, so what do you――」\e
+
+//<000000b5> 【純夏】「…\p…\p…\p…\p」\e
+<000000b5> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000000b7> 【武】「…\p…\pああ、\pいい。\nもう何も言うな、\pわかったよ」\e
+<000000b7> 【Takeru】「...\p...\paaah,\p never mind.\nYou don't have to say anything.\p I understand.」\e
+
+//<000000b8> 【武】「ガキの頃からおまえとはずっと一緒だけど、\pオレ達にも埋められない溝ってものはあるんだな…\p…\p」\e
+<000000b8> 【Takeru】「Even though we've been together since childhood,\p\nthere are still things that can come between us...\p...」\e
+
+//<000000b9> 【純夏】「…\p…\p…\p…\p」\e
+<000000b9> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000000bb> 【武】「悲しいけど、\pこれが大人になっていくってことで、\p確かにそれは現実として受け止めなきゃ…\p…\p…\p…\p」\e
+<000000bb> 【Takeru】「Sadly,\p this is a normal part of growing up,\p\nso one must accept it as a part of life...\p...\p...\p...\p」\e
+
+//<000000bc> 【純夏】「おおおおおおおお…\p…\p」\e
+<000000bc> 【Sumika】「Oooooooooooooooh...\p...\p...\p...\p」\e
+
+//<000000bd> 【武】「――待て！　落ち着いて話しあおうぢゃないか！　暴力で解決しようなんて野蛮だぞ！　やめっ…\p…\p」\e
+<000000bd> 【Takeru】「Wait!\p Shouldn't we calm down and talk about this!?\bOnly barbarians settle things with violence! Sto――...\p...\p!」\e
+
+//<000000be> 【純夏】「おおばかものぉぉっぉ～～～っ！！」\e
+<000000be> 【Sumika】「Youuu...\p...idioooooot～～～!!!」\e
+
+//<000000c3> 【武】「――マッッヅォーーン！！」
+<000000c3> 【Takeru】「Maaadzooon!!」
+
+//<00002096> \r
+<00002096> \r
+
+//<000000c9> 【純夏】「…\p…\p…\p…\p」\e
+<000000c9> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000000cb> 【武】「なあ純夏…\p…\p」\e
+<000000cb> 【Takeru】「Hey, Sumika...\p...\p」\e
+
+//<000000cc> 【純夏】「不潔だよ、\p不純だよ、\pけがれてるよ…\p…\p」\e
+<000000cc> 【Sumika】「You're filthy,\p\p you're impure,\p\p you're disgusting...\p...\p」\e
+
+//<000000cd> 【武】「だから純夏よ…\p…\p」\e
+<000000cd> 【Takeru】「Listen to me, Sumika...\p...\p」\e
+
+//<000000ce> 【純夏】「信じられないよ…\p…\p信じたくないよ…\p…\p」\e
+<000000ce> 【Sumika】「I can't believe it...\p...\p\pI don't want to believe it...\p...\p」\e
+
+//<000000cf> 【武】「…\p…\p…\p…\pうるっせぇな！　オレも知らねぇって何度言わせりゃ気が済むんだ！！？」\e
+<000000cf> 【Takeru】「...\p...\p...\p...\pshut up already! How many times do I have to tell you!? I don't know her!!」\e
+
+//<000000d0> 【純夏】「タケルちゃんの馬鹿…\p…\p」\e
+<000000d0> 【Sumika】「Takeru-chan, you idiot...\p...\p」\e
+
+//<000000d1> 【武】「なにおう！」\e
+<000000d1> 【Takeru】「Whaaat!?」\e
+
+//<000000d2> 【純夏】「――バカバカバ～カバ～カバカバカバカ…\p…\p」\e
+<000000d2> 【Sumika】「――Idiot-idiot-idiooot-idiooot-idiot-idiot-idiot...\p...\p」\e
+
+//<000000d5> 【純夏】「――あいたーっ！」\e
+<000000d5> 【Sumika】「――Owieee!!」\e
+
+//<000000d6> 【武】「――バカバカ叫んでんじゃねー！　だいたいオメーには関係ねぇだろうが！」\e
+<000000d6> 【Takeru】「――Stop screaming 'idiot' over and over like that!\bBesides, it doesn't have anything to do with you!」\e
+
+//<000000d7> 【純夏】「関係あるよ」\e
+<000000d7> 【Sumika】「Of course it does!」\e
+
+//<000000d8> 【武】「ああ？」\e
+<000000d8> 【Takeru】「Aaah?」\e
+
+//<000000d9> 【純夏】「…\p…\p…\p…\pでも、\pもういいよ…\p…\p」\e
+<000000d9> 【Sumika】「...\p...\p...\p...\pbut,\p I don't care anymore...\p...\p」\e
+
+//<000000da> 【武】「ふん、\pもっと早くその言葉を言ってりゃ、\p殴られずに済んだのにな！」\e
+<000000da> 【Takeru】「Hmph!\p If you'd just said that sooner,\p\nI wouldn't have hit you.」\e
+
+//<000000db> 【純夏】「タケルちゃんは、\p何しても殴るときは殴るよ。\nだからわたし頭悪いんだね。\n最近記憶力も落ちてきた気がするよ」\e
+<000000db> 【Sumika】「Takeru-chan,\p you just hit me whenever you feel like it.\p That's why I'm so stupid.\p\nI think my memory's gotten worse lately.」\e
+
+//<000000dc> 【武】「昨日の晩飯は？」\e
+<000000dc> 【Takeru】「Last night's dinner?」\e
+
+//<000000dd> 【純夏】「おいしかったよ」\e
+<000000dd> 【Sumika】「Was delicious.」\e
+
+//<000000df> 【純夏】「あいたーー！！」\e
+<000000df> 【Sumika】「Owieeeee!!」\e
+
+//<000000e0> 【武】「どうやら記憶力より理解力に問題があるようだな」\e
+<000000e0> 【Takeru】「It seems to me that remembering stuff isn't as much of a problem for you as understanding people.」\e
+
+//<000000e1> 【純夏】「だからあ、\pタケルちゃんが叩くからだってばあ…\p…\p」\e
+<000000e1> 【Sumika】「Like I said,\p it's because you keep hitting me, Takeru-chan...\p...\p」\e
+
+//<000000e2> 【武】「それはない。\nとっくの昔に、\pいくら叩いてもどうにもならんトコまできたから」\e
+<000000e2> 【Takeru】「That's not it.\n For a long, long time,\p there's been a part of your brain that no amount of hitting could possibly make worse.」\e
+
+//<000000e3> 【純夏】「…\p…\p晩ご飯ひとつで酷い言われようだよ」\e
+<000000e3> 【Sumika】「...\p...\pthat's a lot to say just because of one dinner.」\e
+
+//<000000e4> 【武】「それよりおまえ、\pどうしてくれんだよ、\pチェーンロック」\e
+<000000e4> 【Takeru】「Speaking of which,\p what're you gonna do about my chain lock?」\e
+
+//<000000e5> 【純夏】「大丈夫だよ」\e
+<000000e5> 【Sumika】「That'll be fine.」\e
+
+//<000000e6> 【武】「あの鎖、\pどうやって切ったんだよ？」\e
+<000000e6> 【Takeru】「How did you cut the chain?」\e
+
+//<000000e7> 【純夏】「この辺泥棒なんて話、\p聞いたことないもんね」\e
+<000000e7> 【Sumika】「I haven't heard anything about thieves in our neighborhood.」\e
+
+//<000000e8> 【武】「お袋、\p帰ってきたら怒るぞぉ？」\e
+<000000e8> 【Takeru】「Mom's gonna be mad when she gets back.」\e
+
+//<000000e9> 【純夏】「これで明日から安心して起こしに行けるよ」\e
+<000000e9> 【Sumika】「Now I can go wake you up every day.」\e
+
+//<000000ea> …\p…\p。\e
+<000000ea> ...\p...\p\e
+
+//<000000eb> 【純夏】「…\p…\p？　どしたの？　遅刻しちゃうよ？」\e
+<000000eb> 【Sumika】「...\p...\p? What's wrong?\p We're gonna be late...\p...\p」\e
+
+//<000000ec> 【武】「あのさ～、\pオレ前々から薄々気にはなってたんだけどさあ…\p…\p」\e
+<000000ec> 【Takeru】「You know...\p...\pit's been kinda bugging me for a while now, but...\p...\p」\e
+
+//<000000ed> 【純夏】「え？」\e
+<000000ed> 【Sumika】「Eh?」\e
+
+//<000000ee> 【武】「オレ達って、\p話噛み合わないこと多くねぇか？」\e
+<000000ee> 【Takeru】「Aren't we usually talking about completely different things?」\e
+
+//<000000ef> 【純夏】「そう？　わたしは気にならないけどな」\e
+<000000ef> 【Sumika】「Are we?\p I haven't really felt that way.」\e
+
+//<000000f0> 【武】「そうか…\p…\p」\e
+<000000f0> 【Takeru】「I see...\p...\p」\e
+
+//<000000f1> 【純夏】「だってタケルちゃんが人の話聞かないの、\p昔っからじゃん。\n今更何言ってんのさ、\pあはは…\p…\p」\e
+<000000f1> 【Sumika】「After all,\p you never listen to what anyone else says.\p It's far too late to do anything about that,\p ahaha...\p...\p」\e
+
+//<000000f2> 【武】「サラリと、\p酷い事いってないか？」\e
+<000000f2> 【Takeru】「Didn't you just say something really cruel in a casual tone?」\e
+
+//<000000f3> 【純夏】「わたしぐらいのモンだよねきっと。\nタケルちゃんと会話できるの」\e
+<000000f3> 【Sumika】「I must be the only one who can hold a conversation with you,\p Takeru-chan.」\e
+
+//<000000f4> 【武】「もっと酷くない？」\e
+<000000f4> 【Takeru】「Isn't that even worse?」\e
+
+//<000000f5> 【純夏】「そう？」\e
+<000000f5> 【Sumika】「Is it?」\e
+
+//<000000f6> 【武】「まあ、\pそりゃいいけどな。\nさて…\p…\p鍵返せ」\e
+<000000f6> 【Takeru】「Well...\p...\pnever mind that.\p\nFor now...\p...\pgive back that key.」\e
+
+//<000000f7> 【純夏】「コトワル」\e
+<000000f7> 【Sumika】「Not happening.」\e 
+
+//<000000f8> ――即答かよ！\e
+<000000f8> ――At least think before answering!\e
+
+//<000000f9> 【武】「オレが大人しく言ってるうちに返せ。\nオレと唯一会話できるんだろ？」\e
+<000000f9> 【Takeru】「Give it back now while I'm still being nice.\p\nI'm sure you understand what I mean.」\e
+
+//<000000fa> 【純夏】「――絶ッ対ヤ！！」\e
+<000000fa> 【Sumika】「――Absolutely not!!」\e
+
+//<000000fb> …\p…\p…\p…\pふぅ。\e
+<000000fb> ...\p...\p...\p...\p*sigh*\e
+
+//<000000fc> 【武】「純夏、\pもう一度だけこのオレがやさし～く…\p…\p」\e
+<000000fc> 【Takeru】「Sumika...\p...\pI'll ask nicely just one more tiiime...\p...\p」\e
+
+//<000000fd> 【純夏】「――却下！」\e
+<000000fd> 【Sumika】「――Denied!」\e
+
+//<000000ff> 【純夏】「あいたーーー！！」\e
+<000000ff> 【Sumika】「Owieeeeeee!!」\e
+
+//<00000101> 【武】「スミカァァッッ！！！　どこの口がそんなクソ生意気な口利いてんだ！　いいから鍵よこせったらよこせっっ！！」\e
+<00000101> 【Takeru】「Sumikaaaaa!!!\p\nYour negotiation skills are terrible!\bScrew the cheeky answers and give me back my key!!!!」\e
+
+//<00000102> 【純夏】「やだっ！　それはダメッ！」\e
+<00000102> 【Sumika】「No!!\p You can't have it!!」\e
+
+//<00000103> 【武】「うるせぇっ！　よこせ！　自由を返せっ！」\e
+<00000103> 【Takeru】「Shut up!\p Give it back!\p\nGive me back my freedom!」\e
+
+//<00000104> 【純夏】「やだやだ！　タケルちゃんのこと起こしにいけなくなっちゃうよぉ…\p…\p」\e
+<00000104> 【Sumika】「No! No!\p I wouldn't be able to go wake you up anymore, Takeru-chan...\p...\p」\e
+
+//<00000105> 【武】「それでいいんだ！　もう勝手に入られてたまるか！！」\e
+<00000105> 【Takeru】「That's a good thing!\p\nI don't want you barging in like that!!」\e
+
+//<00000106> 【純夏】「あの人はよくって、\pわたしはダメなんて、\pずるい～～～！！」\e
+<00000106> 【Sumika】「So you'll let 'her' in, but not me...\p...\pthat's not fair～～～!!」\e
+
+//<00000107> …\p…\p…\p…\p。\e
+<00000107> ...\p...\p...\p...\p\e
+
+//<00000109> 【純夏】「あ…\p…\p止まった…\p…\p」\e
+<00000109> 【Sumika】「Ah...\p...\pyou stopped...\p...\p」\e
+
+//<0000010a> そういや…\p…\pそうだよ。\nあの女はどうやって入ってきた？　チェーンロックかかってたのに、\pどっから！？\e
+<0000010a> Come to think of it...\p...\pthat's right.\nHow did that woman get in my house?\bI left the chain lock in place...\p...\pso where'd she come from!?\e
+
+//<0000010b> おまけに純夏にぶっ飛ばされて部屋に戻って来たらいなくなってて…\p…\p。\e
+<0000010b> On top of that,\p after Sumika knocked me into the stratosphere,\p I went back to my room, but she was gone...\p...\p\e
+
+//<0000010c> は！？　もしや…\p…\p人間じゃ…\p…\pない！？　霊的存在との邂逅！？\e
+<0000010c> Ha!? Maybe...\p...\pshe's not...\p...\phuman!?\p\nHave I encountered a spectral life form!?\e
+
+//<0000010e> 【純夏】「カイコウってなに～～？」\e
+<0000010e> 【Sumika】「What do you mean 'spectral'～～?」\e
+
+//<0000010f> …\p…\pとなるとだ。\nこれは…\p…\p\e
+<0000010f> ...\p...\pwhich would then mean...\p...\nThis is...\p...\p\e
+
+//<00000111> ――全然問題なし！\e
+<00000111> ――Not a problem at all!\e
+
+//<00000112> いなかったヒトってことで。\e
+<00000112> She was never there to begin with.\e
+
+//<00000113> 【純夏】「ありまくりだよ～～」\e
+<00000113> 【Sumika】「She was there～～」\e
+
+//<00000114> 【武】「人の心にいちいちツッコむな！」\e
+<00000114> 【Takeru】「Don't correct my thoughts!」\e
+
+//<00000115> 【純夏】「全部口に出てたよ…\p…\p大体どう見てもあれ、\p人間でしょ！」\e
+<00000115> 【Sumika】「You said it all out loud...\p...\pbesides,\p she was obviously human!」\e
+
+//<00000116> 【武】「うるせぇ」\e
+<00000116> 【Takeru】「Shut up.」\e
+
+//<00000118> 【純夏】「――はっ！」\e
+<00000118> 【Sumika】「――Ha!!」\e
+
+//<0000011a> ――ぬ…\p…\p鞄で受け止めやがったか！\e
+<0000011a> ――Damn...\p...\pshe blocked it with her book bag.\e
+
+//<0000011b> 【純夏】「へっへ～ん、\pこれ以上は喰らわないよーだ！」\e
+<0000011b> 【Sumika】「He-\pheeen,\p you won't be hitting me anymore.」\e
+
+//<0000011c> 【武】「…\p…\pあ！　あれ朝の幽霊！」\e
+<0000011c> 【Takeru】「...\p...\pah! There's a ghost over there!」\e
+
+//<0000011d> 【純夏】「――えっうそ！　どこっ！！？」\e
+<0000011d> 【Sumika】「――Eh!? No way! Where is it!!?」\e
+
+//<0000011e> ――バカめッ！\e
+<0000011e> ...\p...\pyou fool!\e
+
+//<00000120> 【純夏】「――ふわああああああ～～～～～っっっ！！」\e
+<00000120> 【Sumika】「――Huwaaaaaaaaaaaaaaaaaaaaaaa!!!!!」\e
+
+//<00000122> 【武】「――あばよ純夏！　そしてこんにちわ自由！」\e
+<00000122> 【Takeru】「――Farewell, Sumika! And hello, freedom!」\e
+
+//<00000125> 【武】「――んあ？」\e
+<00000125> 【Takeru】「――Hmm?」\e
+
+//<00000126> ――何か、\p顔に落ちて来た…\p…\p？\e
+<00000126> ――Something landed on my face just now...\p...\p\e//PCP_E
+
+//<00000128> 【武】「なんだ、\pこの薄汚い人形は…\p…\p？」\e
+<00000128> 【Takeru】「What's this filthy doll...\p...\p?」\e
+
+//<00000129> 純夏が鞄にいっつもつけてる人形…\p…\p\e
+<00000129> Sumika always has this on her book bag...\p...\p\e
+
+//<0000012b> 【武】「――？！」\e
+<0000012b> 【Takeru】「――!?」\e
+
+//<0000012c> これは…\p…\p…\p…\p\e
+<0000012c> This is...\p...\p...\p...\p\e
+
+//<0000012e> 【純夏】「あいたたた…\p…\pもう、\p死ぬかと思ったよ～～」\e
+<0000012e> 【Sumika】「Owieeee...\p...\pI thought I was gonna die～～」\e//CP
+
+//<00000130> 【武】「…\p…\p…\p…\pこれ…\p…\p」\e
+<00000130> 【Takeru】「...\p...\p...\p...\pthis is...\p...\p」\e
+
+//<00000131> 【純夏】「――え…\p…\pあっ！」\e
+<00000131> 【Sumika】「Eh...\p...\p?\p ...\p...\pah!!」\e//CP_S
+
+//<00000133> 【純夏】「よかったあ…\p…\p取れただけだあ…\p…\p」\e
+<00000133> 【Sumika】「Thank goodness...\p...\pit's still in one piece...\p...\p」\e//CP_E
+
+//<00000134> 【武】「なあ…\p…\pそれって…\p…\p」\e
+<00000134> 【Takeru】「Hey...\p...\pisn't this...\p...\p」\e
+
+//<00000135> 【純夏】「――これはうさぎさんだよ！　それに薄汚いなんて言わないでよ、\pバカっ！」\e
+<00000135> 【Sumika】「――This is a rabbit!\bAnd don't call it filthy, you idiot!」\e//PCP//Usagi-san - Raide
+
+//<00000136> 【武】「――な、\p何だよッ！　汚ねぇモンは汚ねぇだろ！？　バカはおまえだバーカ！」\e
+<00000136> 【Takeru】「――Wh-\pwhat!? It really is filthy!!\bAre you stupid? You iiidiot!」\e
+
+//<00000137> 【純夏】「じゃあ…\p…\p新しいの買ってくれる？」\e
+<00000137> 【Sumika】「Then...\p...\pwill you buy me a new one?」\e//PCP_S
+
+//<00000138> 【武】「はあ？　…\p…\pオレが？　何でだよ」\e
+<00000138> 【Takeru】「Huuuh? ...\p...me? Why?」\e
+
+//<00000139> 【純夏】「そういうと思ったよ…\p…\p」\e
+<00000139> 【Sumika】「That's what I thought...\p...\p」\e
+
+//<0000013a> 【武】「…\p…\pまあ好きにしろ。\nところで、\p話は終わってない。\n鍵をよこ――」\e
+<0000013a> 【Takeru】「...\p...well,\p whatever. By the way,\p we're not done talking. Give me back my――」\e
+
+//<0000013c> 【武】「――の゛ッ…\p…\p！！」\e
+<0000013c> 【Takeru】「――NGGH...\p...\p!!」\e
+
+//<0000013e> 【純夏】「――あ、\p遅刻しちゃう！！　先行くね～～」\e
+<0000013e> 【Sumika】「――Ah,\p I'm gonna be late!! I'll go on ahead, okay～～?」\e
+
+//<00000140> す、\p純夏…\p…\pきさ…\p…\pま…\p…\p\e
+<00000140> Su...\p...\pSumika...\p...\pyou...\p...\pyou...\p...\p\e//PCP_E
+
+//<00000141> 【武】「――まてえ…\p…\p！！」\e
+<00000141> 【Takeru】「――Waaait...\p...\p!!」\e
+
+//<00000142> 【純夏】「――待ったないよ～～～～だ！！」\e
+<00000142> 【Sumika】「――No I won't waaaaaaaaait!!」\e
+
+//<00000143> 【武】「――バカ、\p道に出るなッ！　危な――」\e
+<00000143> 【Takeru】「――Idiot,\p stay off the road! It's dan――」\e
+
+//<00000ceb> 【純夏】「――あがぁっ！」\n
+<00000ceb> 【Sumika】「――Agaaa!!」\n//PCP_S MLE_0004
+
+//<00000d57> \r
+<00000d57> \r
+
+//<0000014a> 【武】「――ッ！？」
+<0000014a> 【Takeru】「――!?」
+
+//<000020c5> \r
+<000020c5> \r
+
+//<0000014e> 【武】「――ぎゃああああああっっっ！！」\e
+<0000014e> 【Takeru】「――Gyaaaaaaaaaaaaa!!!!!」\e//PCP_E
+
+//<00000150> 【武】「――純夏あああっっっ！！」\e
+<00000150> 【Takeru】「――SUMIKAAAAAAA!!!!!」\e//is another all-caps overkill? ~IX//no - Sheeta
+
+//<00000154> 【夕呼】「おはよう」\e
+<00000154> 【Yuuko】「Morning.」\e//CP
+
+//<00000155> ――ゆ、\p夕呼先生ぃぃっ！！\e
+<00000155> ――Y-\pYuuko-senseiiiii!!\e
+
+//<00000156> 【武】「――先生、\pおはようじゃないッスよっ！　――純夏がッ！！」\e
+<00000156> 【Takeru】「――Sensei,\p don't just say 'morning'!!\bSumika's――!!」\e//PCP_S
+
+//<00000157> 【夕呼】「あ…\p…\pやっぱりそうだったの？」\e
+<00000157> 【Yuuko】「Ah...\p...so I did hit something just now.」\e
+
+//<00000159> ――やっぱりって、\pひどい、\pひどすぎるぅぅぅ！！\e
+<00000159> ――'I did hit something'...\p...\phorrible...\p...\pyou're horribleeee!!\e
+
+//<0000015a> 【夕呼】「まあ大丈夫よ。\n人間って意外に丈夫にできてるから」\e
+<0000015a> 【Yuuko】「Well, it's fine.\p\nHumans are surprisingly durable.」\e
+
+//<0000015c> 【武】「――笑いごとじゃないっすよ！！」\e
+<0000015c> 【Takeru】「――Don't just laugh it off!!」\e
+
+//<0000015d> 【夕呼】「腕のいい脳外科医なら紹介するけど？」\e
+<0000015d> 【Yuuko】「I could introduce you to a skilled neurosurgeon.」\e
+
+//<0000015f> 【純夏】「あたたたた…\p…\p…\p…\p死ぬかと思ったよぉ～～」\e
+<0000015f> 【Sumika】「Ow-ow-ow-ow-ow...\p...\p...\p...\pI thought I was gonna die～～」\e//PCP_E
+
+//<00000160> ――平気なんかいッ！\e
+<00000160> ――You're okay!?\e
+
+//<00000161> 【夕呼】「おはよう鑑。\n朝から星になるなんて、\pいい技持ってるわね」\e
+<00000161> 【Yuuko】「Morning, Kagami.\p\nTurning into a star after that is a pretty neat trick.」\e//PCP_S
+
+//<00000162> 【純夏】「ううっ、\p香月先生～、\pひど～い」\e
+<00000162> 【Sumika】「Uuuu!\p Kouzuki-sensei～\p You're so mean～」\e
+
+//<00000164> 【夕呼】「次からはよけてね」\e
+<00000164> 【Yuuko】「Be sure to dodge me next time.」\e
+
+//<00000165> 【武】「次からは気をつけるねって言ってください…\p…\p」\e
+<00000165> 【Takeru】「Shouldn't you say 'I'll be more careful next time'?」\e//PCP_E
+
+//<00000172> 【武】「ぜ～は～…\p…\pま、\p間に合ったあ…\p…\p…\p…\p」\e
+<00000172> 【Takeru】「*wheeze*...\p...\pwe...\p...\pwe made it...\p...\p...\p...\p」\e//PCP_S MLE_0003 at the moment I'm just using PCP because so many of them change ellipse count or add ―― for no reason that I can't be bothered to check which blocks I actually changed nothing on
+
+//<00000173> 【純夏】「はあ…\p…\pはあ…\p…\pもう…\p…\pタケルちゃんトド過ぎっ！」\e
+<00000173> 【Sumika】「Haa...\p...\phaa...\p...\pcome on...\p...\pTakeru-chan, you're staggering too much!」\e
+
+//<00000174> 【武】「ぜ～は～…\p…\pそ、\pそれ言うならトロだ」\e
+<00000174> 【Takeru】「*wheeze*...\p...\pyou...\p...\pyou mean stumbling.」\e
+
+//<00000175> 【純夏】「間違ってない！　トドだよ、\pトド！　もっと機敏にこう…\p…\p動いてよぉ」\e
+<00000175> 【Sumika】「No!\p I mean staggering,\p swaying around!\p\nYou need to move faster...\p...\pless sluggishly.」\e
+
+//<00000176> 【武】「ぜ～は～…\p…\pどの面下げておまえが言うんだ！！　オレがトドならおまえはナメクジだ！」\e
+<00000176> 【Takeru】「*wheeze*...\p...\pyou'd better apologize for saying that!!\bIf I'm sluggish, then you're a slug!!」\e
+
+//<00000177> 【純夏】「なんだよー！　ひどいよー！」\e
+<00000177> 【Sumika】「Whaaat!?\p How meaaan!」\e
+
+//<00000178> 【武】「うるせえぞナメクジ」\e
+<00000178> 【Takeru】「Shut up, you slug.」\e
+
+//<00000179> 【純夏】「ムキーーーーッッ！　ナメクジに謝れー」\e
+<00000179> 【Sumika】「Gaaaaah!!!\p Apologize to slugs!」\e
+
+//<0000017a> 【武】「ぎゃはははははッ！　おまえ自分で言ってる意味わかってんのか！？」\e
+<0000017a> 【Takeru】「Gyahahahahaha!!\bDo you even know what you're saying!?」\e
+
+//<0000017b> 【純夏】「うるさあい！　わたしにもあやまれー！！」\e
+<0000017b> 【Sumika】「Shut uuup!\p Apologize to me too!!」\e
+
+//<0000017c> 【声】「――ちょっと…\p…\p！　毎朝毎朝…\p…\p騒ぎすぎよ？」\e
+<0000017c> 【Voice】「――Hey!\p Stop being so noisy!」\e//these ellipses are retarded so not adding ~IX
+
+//<0000017e> 【純夏】「あ、\p榊さんおはよー」\e
+<0000017e> 【Sumika】「Ah,\p Sakaki-san,\p morning.」\e//PCP_E
+
+//<00000181> 【千鶴】「鑑さん、\p白銀君…\p…\pおはよう」\e
+<00000181> 【Chizuru】「Kagami-san,\p Shirogane-kun...\p...\pgood morning.」\e
+
+//<00000184> 【武】「…\p…\p委員…\p…\p長…\p…\p」\e
+<00000184> 【Takeru】「...\p...\pClass...\p...\pRep...\p...\p」\e
+
+//<00000187> 【千鶴】「まったく、\pあなた達は毎日毎日遅刻ギリギリで…\p…\p。\nおまけに入ってきた途端騒がしくて…\p…\pはぁ…\p…\p」\e
+<00000187> 【Chizuru】「Every day you two barely make it here on time...\p...\p\nAnd you're always so loud when you do get here...\p...\phaa...\p...\p」\e
+
+//<00000189> 【純夏】「そーだそーだー」\e
+<00000189> 【Sumika】「That's right! That's right!」\e//PCP_S technically previous line had some PCP but I forgot to use it and it turned out to be mostly the same anyway
+
+//<0000018a> 【千鶴】「鑑さんもよ」\e
+<0000018a> 【Chizuru】「You too, Kagami-san!」\e//PCP_E
+
+//<0000018b> 【武】「…\p…\p…\p…\p」\e
+<0000018b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000018c> 【純夏】「あうう、\pごめんなさい…\p…\p」\e
+<0000018c> 【Sumika】「Aauuu,\p I'm sorry...\p...\p」\e//PCP
+
+//<0000018d> 【千鶴】「白銀君、\p黙ってないで…\p…\p何とか言いなさいよ！？」\e
+<0000018d> 【Chizuru】「Shirogane-kun,\p don't be so quiet...\p...\psay something!!」\e
+
+//<0000018f> ――っ！？\e
+<0000018f> ――!?\e
+
+//<00000191> 【千鶴】「――ちょっと！　人の話、\p聞いてるのっ！？」\e
+<00000191> 【Chizuru】「――Hey! Are you listening to me!?」\e
+
+//<00000192> なんだ…\p…\p？　何でオレ…\p…\p委員長の顔見て涙なんか…\p…\p。\e
+<00000192> What...\p...\p? Why am I...\p...\pcrying from seeing Class Rep's face...\p...\p?\e
+
+//<00000193> …\p…\pまさかオレ…\p…\p委員長の事…\p…\pすき…\p…\pなのか…\p…\p？\e
+<00000193> ...\p...\pI don't...\p...\plove...\p...\pClass Rep...\p...\pdo I...\p...\p?\e//please don't, that route sucks ~IX
+
+//<00000195> 【武】「――オエェェェッ！！　キモッ！！」\e
+<00000195> 【Takeru】「――Ooweeeeeeeee!! Gross!!」\e
+
+//<00000196> 【純夏】「――え？」\e
+<00000196> 【Sumika】「――Eh?」\e
+
+//<00000197> 【千鶴】「――はあ…\p…\p？　キモって…\p…\pちょっと、\pそれどういう意味…\p…\p？」\e
+<00000197> 【Chizuru】「――Huuuh...\p...\p? What are you saying...\p...\pis gross...\p...\p?」\e
+
+//<00000199> 【武】「――あッ…\p…\pいや、\pつい本音が…\p…\p」\e
+<00000199> 【Takeru】「――Ah! ...\p...\psorry,\p didn't mean to say that out loud...\p...\p」\e
+
+//<0000019b> 【千鶴】「――なっ…\p…\pなんですってぇ！？」\e
+<0000019b> 【Chizuru】「――Wha-! ...\p...\pwhat did you say!?」\e
+
+//<0000019c> 【武】「――ヤバイ！　委員長がキレる前に脱出だッ！」\e
+<0000019c> 【Takeru】「――Crap! Let's get out of here before she snaps!」\e//typo: "naps"
+
+//<0000019d> 【千鶴】「――あッ！」\e
+<0000019d> 【Chizuru】「――Ah!」\e
+
+//<000001a1> ――！？\e
+<000001a1> ――!?\e
+
+//<000001a2> 【千鶴】「――もうすぐＨＲが始まるわ。\n教室の外に出ないで！」\e
+<000001a2> 【Chizuru】「――Homeroom's about to start.\nDon't leave the classroom!」\e
+
+//<000001a3> 【武】「なんだよ～、\pどこに行こうがオレの勝手だろ！？　だいたい、\p始まるまであと５分はあるじゃねえか！？」\e
+<000001a3> 【Takeru】「What?\p Isn't it up to me where I go when!?\bBesides,\p I still have five minutes!!」\e
+
+//<000001a4> 【千鶴】「予鈴はとっくに鳴ったでしょう？　聞こえなかった？」\e
+<000001a4> 【Chizuru】「The bell already rang. Didn't you hear it?」\e
+
+//<000001a5> 【武】「ちぇ…\p…\p融通の利かない女は嫌われるぞ？」\e
+<000001a5> 【Takeru】「Damn...\p...\pno one likes a stubborn woman,\nyou know?」\e//PCP_S MLE_0004 huh, back then he was trying to leave 5 mins before class ended
+
+//<000001a6> 【千鶴】「――あっ…\p…\pあなたに好きになって貰わなくても構わないわッ！」\e
+<000001a6> 【Chizuru】「――I-...\p...I don't care if you like me or not!」\e//they added tsundere this time ~IX
+
+//<000001a8> 【武】「くそ…\p…\p…\p…\p」\e
+<000001a8> 【Takeru】「Dammit...\p...\p...\p...\p」\e
+
+//<000001a9> 【千鶴】「…\p…\pいいから席に戻りなさいよ！」\e
+<000001a9> 【Chizuru】「...\p...\pjust get back to your seat!」\e//rewrote so not PCP but who cares
+
+//<000001aa> 【武】「――と見せかけてっ！！」\e
+<000001aa> 【Takeru】「――That was just a feint!!!」\e
+
+//<000001ac> 【千鶴】「――あっ！　待ちなさ――きゃっっ！！」\e
+<000001ac> 【Chizuru】「――Ah! Wait a――kyaaa!!」\e
+
+//<000001ad> 【武】「――おわっ！」\e
+<000001ad> 【Takeru】「――Owa!!」\e
+
+//<000001ae> ――いきなり袖掴むなあぁっっ！　――バランスがぁ！！\e
+<000001ae> ――Don't grab my sleeve without warning!!!!\b――That destabilized me!!\e//lit. "My balance is _ !!"
+
+//<000001b1> 【武】「――のわあああ！！」\n
+<000001b1> 【Takeru】「――Nowaaaaaah!!」\n
+
+//<000001b2> 【千鶴】「――きゃあああ！！！」\e
+<000001b2> 【Chizuru】「――Kyaaaaaah!!!」\e
+
+//<000001b8> 【武】「あたたたた…\p…\p」\e
+<000001b8> 【Takeru】「Ow-ow-ow-ow-ow...\p...\p」\e
+
+//<000001b9> 【千鶴】「うう…\p…\pったぁい…\p…\p」\e
+<000001b9> 【Chizuru】「Uuuu...\p...\pouch...\p...\p」\e
+
+//<000001bd> 【武】「――ッ！？」\n
+<000001bd> 【Takeru】「――!?」\n
+
+//<000001be> 【千鶴】「――ッ！？」\e
+<000001be> 【Chizuru】「――!?」\e
+
+//<000001c0> 【千鶴】「――ななななななにするのよっっ！　早くどいてっ！」\e
+<000001c0> 【Chizuru】「――Whwhwhwhwhwhat're you doing!!?\p\nGet off me, right now!!」\e
+
+//<000001c1> 【武】「――そりゃこっちのセリフだ。\n乗っかってんのはそっちだろ！！」\e
+<000001c1> 【Takeru】「――That's my line.\nYou're the one on top of me!!」\e
+
+//<000001c2> 【声】「…\p…\p朝から…\p…\pなかなか…\p…\p」\e
+<000001c2> 【Voice】「...\p...\psuch intimacy...\p...\pand in public...\p...\p」\e
+
+//<000001c5> 【武】「――え…\p…\pッ！？」\n
+<000001c5> 【Takeru】「――Eh...\p...\p!?」\n
+
+//<000001c6> 【千鶴】「――あッ！？」\e
+<000001c6> 【Chizuru】「――Ah!?」\e
+
+//<000001cc> 【武】「――っ！」\e
+<000001cc> 【Takeru】「――!」\e
+
+//<000001cd> ――彩…\p…\p峰…\p…\p！？\e
+<000001cd> ――Aya...\p...\pmine...\p...\p!?\e
+
+//<000001d0> 【千鶴】「――こっ、\pこれは単なる事故よッ！　そそそれより彩峰さんっ！！」\e
+<000001d0> 【Chizuru】「――Th-\pthis is just an accident!\p\nM-m-more importantly,\p Ayamine-san...\p...\p」\e
+
+//<000001d1> 【慧】「…\p…\p…\p…\p」\e
+<000001d1> 【Kei】「...\p...\p...\p...\p」\e
+
+//<000001d3> 【千鶴】「え～と…\p…\pあっ――挨拶くらい…\p…\pしなさいよ！」\e
+<000001d3> 【Chizuru】「Ummm...\p...\pAh! ――At least...\p...\psay hello!」\e
+
+//<000001d4> 【慧】「…\p…\p…\p…\p」\e
+<000001d4> 【Kei】「...\p...\p...\p...\p」\e
+
+//<000001d6> 【千鶴】「――彩峰さん、\p聞いてるのっ！？」\e
+<000001d6> 【Chizuru】「――Ayamine-san,\p are you listening?」\e//PCP_E originally Tama shows up here, but they have to replay her intro scene so its pulled out
+
+//<000001d7> 【慧】「…\p…\p…\p…\p」\e
+<000001d7> 【Kei】「...\p...\p...\p...\p」\e
+
+//<000001d9> 【純夏】「――タケルちゃん、\p榊さん大丈夫！？　――あ、\p彩峰さん、\pおはよー！」\e
+<000001d9> 【Sumika】「――Takeru-chan,\p Sakaki-san, are you okay!? ――Ah,\p Ayamine-san,\p morning!」\e
+
+//<000001da> 【慧】「…\p…\pおはよ」\e
+<000001da> 【Kei】「...\p...\pmorning.」\e
+
+//<000001db> 【千鶴】「うぅぅぅぅぅ…\p…\pあなたねぇ…\p…\p」\e
+<000001db> 【Chizuru】「Uuuuuuuuuuuu...\p...\pyou are just...\p...\p」\e
+
+//<0000208b> 【声】「――ぢごぐずる～～～！」
+<0000208b> 【Voice】「――I'm gonna be late～～～!」//PCP_S MLE_0003 was it 0004 last time? I forgot. And don't care.
+
+//<000020cf> \r
+<000020cf> \r
+
+//<000001e6> 【武】「――うおっ！？」\n
+<000001e6> 【Takeru】「――Uuwoo!?」\n
+
+//<000001e7> 【壬姫】「――ぎゃふ～～！！」\n
+<000001e7> 【Miki】「――Gyafuuuuu!!」\n
+
+//<000001e8> 【純夏】「――あっ！」\n
+<000001e8> 【Sumika】「――Ah!」\n
+
+//<000001e9> 【千鶴】「――！」\e
+<000001e9> 【Chizuru】「――!」\e
+
+//<000001eb> 【武】「いたたたたた…\p…\p」\e
+<000001eb> 【Takeru】「Ow-ow-ow-ow-ow...\p...\p」\e
+
+//<000001ec> ――いったいなんなんだ…\p…\p！？\e
+<000001ec> ――What the hell was that...\p...\p!?\e
+
+//<000001ee> 【壬姫】「いたっ！　いたっ！　いたっ！」\e
+<000001ee> 【Miki】「Ow!! Ow!! Ow!!」\e
+
+//<000001f0> ――たま…\p…\p！\e
+<000001f0> ――Tama...\p...\p!\e
+
+//<000001f1> 【純夏】「――壬姫ちゃん、\p大丈夫？！」\e
+<000001f1> 【Sumika】「Miki-chan,\p you alright?」\e//actual CPing for this block starts here
+
+//<000001f2> 【壬姫】「いたっ！　いたっ！」\e
+<000001f2> 【Miki】「Ow!! Ow!!」\e
+
+//<000001f6> 【壬姫】「あ、\p千鶴ちゃんおはよ～～！　純夏ちゃんも、\p慧ちゃんもおはよ～～」\e
+<000001f6> 【Miki】「Ah,\p good morning Chizuru-chan～～!\bSumika-chan and Kei-chan, good morning～～」\e
+
+//<000001f8> 【純夏】「おはよ！」\n
+<000001f8> 【Sumika】「Morning!」\e
+
+//<000001f9> 【千鶴】「おはよう」\n
+<000001f9> 【Chizuru】「Good morning.」\n//PCP_E attempting to tag this stuff is such a huge waste of time
+
+//<000001fa> 【慧】「おはよ…\p…\p」\e
+<000001fa> 【Kei】「Morning...\p...\p」\e
+
+//<000001fd> 【壬姫】「たっ…\p…\pたけるさんも…\p…\pおはよう！」\e
+<000001fd> 【Miki】「Ta-...\p...\pTakeru-san...\p...\pmorning!」\e
+
+//<000001fe> 【武】「ああ…\p…\pおはよう」\e
+<000001fe> 【Takeru】「Yeah...\p...\pmorning.」\e
+
+//<000001ff> 【千鶴】「珠瀬さん…\p…\pもう少し余裕を持って来ればそんなに焦らなくて済むのよ？」\e
+<000001ff> 【Class Rep】「Tamase-san...\p...if you left a little earlier, you wouldn't have to rush all the time.」\e//PCP_S
+
+//<00000201> 【壬姫】「あうぅ…\p…\pはうぅぅ…\p…\p」\e
+<00000201> 【Miki】「Aauuu...\p...\p...\p...\phauuuu...\p...\p...\p...\p」\e//PCP_E
+
+//<00000202> 【純夏】「――あれ…\p…\pタケルちゃん…\p…\pどうしたの？」\e
+<00000202> 【Sumika】「――Huh? ...\p...\pTakeru-chan...\p...\pwhat's wrong?」\e
+
+//<00000203> 【武】「――えっ…\p…\p？」\e
+<00000203> 【Takeru】「――Eh...\p...\p?」\e
+
+//<00000204> 【純夏】「涙出てるよ？　…\p…\pどっか痛いの？」\e
+<00000204> 【Sumika】「You're crying? ...\p...\pare you in pain?」\e
+
+//<00000205> ――！\e
+<00000205> ――!\e
+
+//<00000208> 【武】「――なっ…\p…\p何でもねえよ！　たまとぶつかった時、\p鼻打ったんだよ！」\e
+<00000208> 【Takeru】「――It's...\p...\pit's nothing!\bI just hit my nose when Tama bumped into me!」\e
+
+//<00000209> 【純夏】「え…\p…\p大丈夫？　ちょっと見せて」\e
+<00000209> 【Sumika】「Eh? ...\p...\pyou okay? Let me see.」\e
+
+//<0000020a> 【武】「い、\pいいって！　――ほら、\p早く教室もどらねえと、\p委員長に怒られるぞ！」\e
+<0000020a> 【Takeru】「I-\pit's fine! ――Come on,\p we gotta get back to class before Class Rep gets mad at us!」\e
+
+//<0000020c> 【純夏】「――あっ、\pタケルちゃん？！」\e
+<0000020c> 【Sumika】「――Ah!\p Takeru-chan!?」\e
+
+//<0000020f> …\p…\pったく！　なんか今朝からオレ、\p変だぞ…\p…\p？！　あいつ等見る度に…\p…\p訳もなくウルウルしちまうなんて…\p…\p！\e
+<0000020f> ...\p...\pgeez! What's wrong with me this morning...\p...\p!? Every time I see one of these guys...\p...\pI wanna cry for no reason...\p...\p!\e
+
+//<00000210> それだけじゃなく、\pあいつ等の顔見ると…\p…\p何となく胸のあたりがモヤモヤするんだよな…\p…\p。\e
+<00000210> Not only that,\p when I look at their faces...\p...\pmy chest starts feeling fuzzy for some reason...\p...\p\e
+
+//<00000211> 【武】「…\p…\p…\p…\p」\e
+<00000211> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000212> 昨日、\pなんか変なモノでも喰ったっけ…\p…\p？\e
+<00000212> Did I eat anything weird yesterday...\p...\p?\e
+
+//<00000214> 【純夏】「たけるちゃーん！　なんだよもう…\p…\pせっかく心配してあげてるのに～！」\e
+<00000214> 【Sumika】「Takeru-chaaan!\bCome ooon...\p...\pI'm trying to be nice here!」\e//lit. "I was just worrying about you! (for your sake)" 
+
+//<00000215> 【武】「うるせえ！　おまえは自分の頭でも心配してろ！」\e
+<00000215> 【Takeru】「Shut up! Worry about your own head!」\e
+
+//<00000216> 【純夏】「なんだとー！」\e
+<00000216> 【Sumika】「What did you say!?」\e
+
+//<00000218> ――まりもちゃん！？\e
+<00000218> ――Marimo-chan!?\e
+
+//<0000021c> 【武】「…\p…\p…\p…\p」\e
+<0000021c> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000021d> ――はあ？\e
+<0000021d> ――Huuuh!?\e
+
+//<0000021e> 【純夏】「――なななな…\p…\p何？」\e
+<0000021e> 【Sumika】「――Wh-wh-wh-wh...\p...\pwhat?」\e
+
+//<0000021f> 【武】「何と言われましても…\p…\p」\e
+<0000021f> 【Takeru】「I have no idea...\p...\p」\e
+
+//<00000220> …\p…\p人？\e
+<00000220> ...\p...\pa person?\e//CP_S MLE_0005
+
+//<00000223> 【壬姫】「――あ！　足が出てるよー！」\e
+<00000223> 【Miki】「――Ah! It has feet!」\e
+
+//<00000224> 【千鶴】「――人間！？」\e
+<00000224> 【Chizuru】「――Is it human!?」\e
+
+//<00000225> 【純夏】「まさか…\p…\p」\e
+<00000225> 【Sumika】「Is that...\p...\p?」\e
+
+//<00000226> 【壬姫】「――あっ！　微妙に足が動いてるよー！」\e
+<00000226> 【Miki】「――Ah!!\p I saw its leg twitch!」\e
+
+//<00000227> 【慧】「…\p…\p痙攣…\p…\p？」\e
+<00000227> 【Kei】「...\p...\pconvulsions...\p...\p?」\e//PCP_E?
+
+//<00000229> 【千鶴】「――は、\p早く取ってあげないとッ！！」\e
+<00000229> 【Chizuru】「――W-\pwe have to get it off him!!」\e
+
+//<0000022b> 【柏木】「――私に任せて！」\e
+<0000022b> 【Kashiwagi】「――I'll do it!」\e
+
+//<0000022d> ――柏…\p…\p木…\p…\p！\e
+<0000022d> ――Kashi...\p...\pwagi...\p...\p!\e
+
+//<00000231> 【慧】「足の動きが止まった…\p…\p」\e
+<00000231> 【Kei】「His leg stopped moving...\p...\p」\e//PCP
+
+//<00000232> 【壬姫】「わ～～～～！」\e
+<00000232> 【Miki】「Waaaaaaaaa!」\e
+
+//<00000233> 【千鶴】「――急いで！」\e
+<00000233> 【Chizuru】「――Hurry!」\e
+
+//<00000235> 【声】「――ぷっは～～～！！」\e
+<00000235> 【Voice】「――Puhaaaaaaa!!」\e
+
+//<00000238> 【慧】「…\p…\p！」\n
+<00000238> 【Kei】「...\p...\p!」\n
+
+//<0000047a> 【壬姫・純夏】「――あぁッ！」\n
+<0000047a> 【Miki & Sumika】「――Aaa!」\n
+
+//<0000023a> 【千鶴・柏木】「――あっ！」\n
+<0000023a> 【Chizuru & Kashiwagi】「――Ah!」\n
+
+//<0000023b> 【武】「…\p…\p…\p…\p？」\e
+<0000023b> 【Takeru】「...\p...\p...\p...\p?」\e
+
+//<0000023d> ――いったい何が出てきたんだ？\e
+<0000023d> ――What the hell came out of it?\e
+
+//<00002384> 【慧】「…\p…\p鎧衣」\n【壬姫】「――美琴ちゃん！」\n【千鶴・純夏】「――鎧衣さん！」\n【柏木】「――鎧衣ッ！」\n【武】「――ッ！？」\e
+<00002384> 【Kei】「...\p...\pYoroi.」\n【Miki】「――Mikoto-chan!」\n【Chizuru & Sumika】「――Yoroi-san!」\n【Kashiwagi】「――Yoroi!」\n【Takeru】「――!?」\e
+
+//<00000246> 【美琴】「いや～、\p一時はどうなることかと思ったよー」\e
+<00000246> 【Mikoto】「Wooow,\p for a minute there I wasn't sure I'd make it.」\e//CP
+
+//<00000248> みこ…\p…\pと…\p…\p！？\e
+<00000248> Miko...\p...\pto...\p...\p!?\e//machine translator says "shrine maiden and" ~IX
+
+//<0000024a> 【壬姫】「死んだかと思っちゃったー」\e
+<0000024a> 【Miki】「I thought you'd died.」\e//CP
+
+//<0000024b> …\p…\pいや…\p…\pえっ…\p…\p？　いや…\p…\p美琴？\e
+<0000024b> ...\p...\pwait...\p...\peh...\p...\p? No...\p...\pgirl Mikoto?\e
+
+//<0000024c> 【千鶴】「もう…\p…\p人騒がせなんだから、\p鎧衣さんは…\p…\p」\e
+<0000024c> 【Chizuru】「Really...\p...you're such a troublemaker,\p Yoroi-san.」\e//PCP_S
+
+//<0000024d> 【美琴】「やっぱいいねぇ、\p日本は。\nしかも、\p人がいるって安心するね」\e
+<0000024d> 【Mikoto】「Japan really is nice.\nAnd it's nice to be around other people again.」\e
+
+//<0000024e> 【純夏】「今度はどこに行ってきたの？」\e
+<0000024e> 【Sumika】「Where did you go this time?」\e//PCP_E
+
+//<0000024f> 【武】「…\p…\p…\p…\p…\p…\p」\e
+<0000024f> 【Takeru】「...\p...\p...\p...\p...\p...\p」\e
+
+//<00000252> …\p…\p…\pなにがおかしいって…\p…\p訳じゃないんだけど…\p…\p\e
+<00000252> ...\p...\p...\pthere isn't...\p...\panything weird about this, but...\p...\p\e
+
+//<00000254> 【美琴】「タケル…\p…\p久しぶりだね。\n背伸びた？　なんかもう、\p３年くらい会ってないような気がするけど…\p…\p」\e
+<00000254> 【Mikoto】「Takeru...\p...it's been so long.\p Have you grown again?\bIt feels like we haven't seen each other for three years...\p...」\e//PCP
+
+//<00000255> 【武】「あ、\pああ…\p…\pそうだな」\e
+<00000255> 【Takeru】「Y-\pyeah...\p...\pit does.」\e
+
+//<00000256> …\p…\pいや…\p…\p美琴は…\p…\p美琴だよ…\p…\pな？\e
+<00000256> ...\p...\pno...\p...\pMikoto's...\p...\pMikoto...\p...\pright?\e//I just noticed mikoto's kanji are all wrong ~IX
+
+//<00000257> 【美琴】「それにしても参ったよ～、\p起きたらマグロ漁船みたいのに簀巻き状態で乗せられてて――」\e
+<00000257> 【Mikoto】「Still, that was rough,\p I woke up in a tuna fishing ship with all these reeds tied around me――」\e//PCP
+
+//<0000025c> 【まりも】「みんなおはよう！　さ、\p席ついて～～」\e
+<0000025c> 【Marimo】「Good morning everyone!\p\nPlease return to your seats～～」\e//PCP_S MLE_0003
+
+//<0000025e> まりも…\p…\pちゃん…\p…\p！\e
+<0000025e> Marimo...\p...\pchan...\p...\p!\e
+
+//<00000260> 【千鶴】「――きり～つ！」\e
+<00000260> 【Chizuru】「――Stand!」\e
+
+//<00000262> 【千鶴】「――礼！」\e
+<00000262> 【Chizuru】「――Bow!」\e
+
+//<00000265> 【千鶴】「――着せ～き！」\e
+<00000265> 【Chizuru】「――Be seated!」\e
+
+//<00000268> 【まりも】「それじゃ出席とるわね～。\nええっと――あっ、\p彩峰さん…\p…\p！　感心感心、\p今日はちゃんと来たのね～」\e
+<00000268> 【Marimo】「And now to take attendance～\p\nLet's see――Ah, Ayamine-san...\p...\p!\bI'm impressed,\p you actually came today～」\e//PCP_E
+
+//<00000269> 【慧】「ごくまれに…\p…\p」\e
+<00000269> 【Kei】「A most rare occurrence...\p...\p」\e
+
+//<0000026a> 【武】「…\p…\p…\p…\p」\e
+<0000026a> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000026b> まりもちゃんにまで…\p…\p涙…\p…\p？　どうなっちまったんだ…\p…\pオレ？！\e
+<0000026b> Marimo-chan...\p...\ptoo...\p...\p? What the hell...\p...\phappened to me!?\e
+
+//<0000026c> 【まりも】「――まあ！　鎧衣さんまで！　よかった～」\e
+<0000026c> 【Marimo】「――Oh my! Yoroi-san too! This is great～」\e
+
+//<0000026d> 【美琴】「はい！　父の一瞬の隙をついて、\pマラッカ海峡でＬＰＧタンカーに――」\e
+<0000026d> 【Mikoto】「Yes! I slipped away from dad and used an LPG tanker in the Strait of Malacca to――」\e
+
+//<0000026e> 【武】「…\p…\p…\p…\p」\e
+<0000026e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000026f> それに…\p…\p美琴にしろ…\p…\pまりもちゃんていう呼び方にしろ…\p…\pどことなく違和感があるのはどうしてだ…\p…\p？\e
+<0000026f> And...\p...\pwhy does something feel wrong...\p...\pwith calling her Mikoto...\p...\pand Sensei Marimo-chan...\p...\p?\e//"She" wears girls' uniform in this universe - Raide
+
+//<00000271> 【純夏】「…\p…\p…\p…\pあれ？　そう言えば…\p…\p今日、\p剛田君お休みなのかな…\p…\p？」\e
+<00000271> 【Sumika】「...\p...\p...\p...\phuh? Come to think of it...\p...\pis Gouda-kun absent today...\p...\p?」\e
+
+//<00000272> 【武】「…\p…\p剛田？」\e
+<00000272> 【Takeru】「...\p...\pGouda?」\e
+
+//<00000273> …\p…\pああ、\pそう言えばそうだ。\nどーりで、\pいつもより教室が静かなわけだ。\e
+<00000273> ...\p...\paaah,\p she's right.\nNo wonder the class is quieter than usual.\e
+
+//<00000274> Ｄ組をお払い箱になって、\pうちのクラスに押しつけられた熱苦しい転校生。\nあいつ、\pよりにもよってオレの隣の席だもんなあ…\p…\p。\e
+<00000274> That's the transfer student Class D kicked out and forced on us.\nAnd for some reason he always picked the seat next to mine...\p...\p\e
+
+//<00000277> 【まりも】「――さて、\p今日は皆さんに悲しいお知らせがあります」\e
+<00000277> 【Marimo】「――Now then,\p I have some bad news for everyone today.」\e//PCP_S
+
+//<00000278> 【武】「…\p…\pえ？」\e
+<00000278> 【Takeru】「...\p...\peh?」\e
+
+//<00000279> 【武】「悲しいお知らせ…\p…\p？」\e
+<00000279> 【Takeru】「Bad news...\p...\p?」\e
+
+//<0000027a> 【まりも】「剛田君が転校してしまいました」\e
+<0000027a> 【Marimo】「Gouda-kun has transferred to another school.」\e
+
+//<0000027b> 【クラスのみんな】「――はああああああああ？」\e
+<0000027b> 【The Whole Class】「Haaaaaaaaaaaaaaaaa?」\e
+
+//<0000027d> 【武】「――はあ！？」\e
+<0000027d> 【Takeru】「――Huuuh!?」\e
+
+//<0000027e> 【千鶴】「――て、\p転校ですかっ！？」\e
+<0000027e> 【Chizuru】「――Tr-\ptransferred!?」\e
+
+//<0000027f> ――転校って…\p…\pあいつがここに来て、\pまだ２ヶ月も経ってないじゃん！！\e
+<0000027f> ――Transferred...\p...?\p But it hasn't even been two months since he got here!!\e
+
+//<00000280> 確かおとといまで文化祭の実行委員、\pいや、\p土曜日の撤収作業まで居たじゃねえか！！\e
+<00000280> I'm pretty sure he was the acting representative of the culture festival until two days ago...\p...\pno wait,\p he was still here on Saturday, when they were cleaning up afterward!!\e
+
+//<00000281> 【まりも】「何でも、\p急に野球の実力校からスカウトが来たらしいの。\nムードメーカーだったのに残念ね～」\e
+<00000281> 【Marimo】「It seems he was suddenly scouted by a more athletic school.\p It's a shame too,\p he used to inspire the whole class～」\e
+
+//<00000282> …\p…\p…\p…\pいや、\p別に。\e
+<00000282> ...\p...\p...\p...\pno,\p not really.\e
+
+//<00000284> 【純夏】「タケルちゃん…\p…\p剛田君が転校なんて、\p知ってた？」\e
+<00000284> 【Sumika】「Takeru-chan,\p did you know that Gouda-kun transferred?」\e
+
+//<00000285> 【武】「…\p…\p今知った。\n突然やってきて、\p流れ星のごとく速攻消えたな…\p…\p」\e
+<00000285> 【Takeru】「...\p...\ponly just now.\p He appeared so suddenly,\p then vanished like a shooting star.」\e
+
+//<00000286> 【純夏】「どうしちゃったんだろ？」\e
+<00000286> 【Sumika】「What do you think happened?」\e
+
+//<00000287> 【武】「さあな…\p…\p。\n案外美琴なら知ってそうだけど」\e
+<00000287> 【Takeru】「Beats me...\p...although Mikoto might know something.」\e
+
+//<00000288> 【純夏】「鎧衣さん、\p仲良かったからね」\e
+<00000288> 【Sumika】「He was pretty close to Yoroi-san.」\e
+
+//<00000289> う～ん、\pきっと変人同士、\p気が合ったんだろうなぁ。\n本能が引き寄せたというか…\p…\p。\e
+<00000289> Hmmm,\p they must have gotten along well because they were both weirdos.\p They were instinctively attracted to each other or something...\p...\p\e
+
+//<0000028a> あいつらに言葉はいらないって感じだったからな。\n正確には、\p言葉を有効活用してなかったんだが…\p…\p。\e
+<0000028a> It felt like those two didn't need words to communicate.\nActually,\p they never used words effectively at all...\p...\p\e
+
+//<0000028d> 【まりも】「――じゃあ、\pみんなも精一杯悲しんだところで…\p…\p」\e
+<0000028d> 【Marimo】「――And now that everyone's had a chance to feel sad...\p...\p」\e
+
+//<0000028e> いえ…\p…\p特に悲しくはないんですけど…\p…\p。\e
+<0000028e> Well...\p...\pwe're not exactly sad about it...\p...\p\e
+
+//<0000028f> 【まりも】「――転校生を紹介します」\e
+<0000028f> 【Marimo】「――We have a new transfer student.」\e
+
+//<00000290> 【クラスのみんな】「――おお～～～？」\e
+<00000290> 【The Whole Class】「――Oooooooooooh?」\e
+
+//<00000292> ――はあ！？\e
+<00000292> ――Huuuh!?\e
+
+//<00000293> 【千鶴】「――ま、\pまたですか！？」\e
+<00000293> 【Chizuru】「――A-\panother one!?」\e
+
+//<00000294> ――３年の２学期に転校するバカがまだいたのか！？\e
+<00000294> ――There's someone stupid enough to transfer during the second term of senior year!?\e
+
+//<00000295> 【まりも】「今度は女の子よ。\n白銀君よかったわね。\nさ、\p入ってきて」\e
+<00000295> 【Marimo】「It's a girl this time.\p\nGood for you,\p Shirogane-kun.\p\nYou can come in now.」\e
+
+//<00000296> なにゆえオレ指名？　つーか、\pせわしないクラスだなココは…\p…\p。\e
+<00000296> Why'd you use my name?\p\nAlso, this class moves people around a lot...\p...\e
+
+//<0000029b> ――！！！？\e
+<0000029b> ――!!!?\e
+
+//<0000029c> 【純夏】「…\p…\p…\p…\pえ…\p…\p？　え…\p…\pえ…\p…\p！？」\e
+<0000029c> 【Sumika】「...\p...\peh...\p...\p? Eh...\p...\peh...\p...\p!?」\e
+
+//<000002a2> 【武】「ぎゃお――――――っ！！！！」\e
+<000002a2> 【Takeru】「Gyaooooooooh!!!!!」\e
+
+//<000002a4> 【まりも】「はいはい白銀君、\pはしゃぎすぎよ」\e
+<000002a4> 【Marimo】「Alright,\p Shirogane-kun,\p calm down.」\e
+
+//<000002a5> 【純夏】「…\p…\p…\p…\p」\e
+<000002a5> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<000002a7> 【武】「あわわわわわ…\p…\p…\p…\p」\e
+<000002a7> 【Takeru】「Awawawawawa...\p...\p...\p...\p」\e
+
+//<000002a8> 【純夏】「あう…\p…\pあうあうあう…\p…\p」\e
+<000002a8> 【Sumika】「Aauu...\p...\p...\p...\paauu, aauu, aauu...\p...\p」\e
+
+//<000002a9> 【まりも】「今日から皆さんと一緒に勉強することになった、\p御剣冥夜さんです」\e
+<000002a9> 【Marimo】「Her name is Mitsurugi Meiya-san.\p\nShe'll be joining you all starting today.」\e
+
+//<000002ab> 【冥夜】「冥夜だ。以後見知りおくがよい」\e
+<000002ab> 【Meiya】「Call me Meiya.\p Let us all become acquainted.」\e
+
+//<000002ac> ――ままままちがいないっ！！　その顔、\pその声…\p…\p朝オレの隣で寝てた女っ！！！\e
+<000002ac> ――I-i-i-i-it's her!!!\bThat face,\p that voice...\p...\pit's the woman from my bed this morning!!!!\e//PCP_E
+
+//<000002ad> 【まりも】「そして、\pもうひとり――」\e
+<000002ad> 【Marimo】「And one more――」\e
+
+//<000002ae> 【武】「…\p…\p…\p…\pへ…\p…\p？」\e
+<000002ae> 【Takeru】「...\p...\p...\p...\peh...\p...\p?」\e
+
+//<000002b3> 【まりも】「――御剣悠陽さんで～す」\e
+<000002b3> 【Marimo】「――Her name is Mitsurugi Yuuhi-san.」\e
+
+//<000002b5> 【悠陽】「悠陽と申します。\n３年Ｂ組の皆様、\p以後お見知りおきいただきますよう、\p宜しくお願い致します」\e
+<000002b5> 【Yuuhi】「My name is Yuuhi.\nI humbly ask that I may become acquainted with everyone in Year 3 Class B.」\e//I just noticed she doesn't have her own text color. - Raide
+
+//<000002b6> 【クラスのみんな】「――おお～～～？」\e
+<000002b6> 【Entire Class】「――Oooooooooh?」\e
+
+//<000002bc> 【武】「――ふッ…\p…\p双子ォォォォォ！？」\e
+<000002bc> 【Takeru】「――T-...\p...\ptwiiiiiiiiiiins!?」\e
+
+//<000002c0> 【まりも】「あら、\p白銀君、\pよく知ってるわね？　知り合い？」\e
+<000002c0> 【Marimo】「Oh,\p Shirogane-kun,\p how'd you know that? Met them before?」\e
+
+//<000002c1> 【武】「いえ！　滅相もございませんっ！」\e
+<000002c1> 【Takeru】「No! I've never seen them before!」\e
+
+//<000002c2> 【まりも】「悠陽さんと冥夜さんは、\pずっと海外に留学していて、\p日本に戻ったのはつい最近だから、\pみんな、\pちゃんと面倒見てあげてね」\e
+<000002c2> 【Marimo】「Yuuhi-san and Meiya-san have been studying abroad for a long time,\p and only just got back to Japan,\p so everyone take good care of them.」\e
+
+//<000002c3> 【クラスのみんな】「は～～～い！」\e
+<000002c3> 【Entire Class】「Okaaaaaaay!」\e
+
+//<000002c5> あの女…\p…\p帰国子女だったのか…\p…\p。\nだから行動が突飛――いや、\pさすがに海外でもそれはないだろ！\e
+<000002c5> These girls...\p...\phave been abroad that long...\p...\p?\nNo wonder she acts so ridicu――No,\p even overseas that can't be normal!\e
+
+//<000002c8> 【冥夜】「…\p…\p…\p…\p」\n
+<000002c8> 【Meiya】「...\p...\p...\p...\p」\n
+
+//<000002c9> 【悠陽】「…\p…\p…\p…\p」\e
+<000002c9> 【Yuuhi】「...\p...\p...\p...\p」\e
+
+//<000002cb> 【武】「う…\p…\p…\p…\p」\e
+<000002cb> 【Takeru】「Uu...\p...\p...\p...\p」\e
+
+//<000002cc> な、\pなんだ？　あいつら…\p…\pオレのことじ～～～っと見て。\e
+<000002cc> Wh-\pwhat? They're...\p...staaaaaaaring right at me.\e//PCP_S
+
+//<000002cd> 【冥夜】「――タケル、\p共に過ごせる事、\pうれしく思うぞ」\e
+<000002cd> 【Meiya】「Takeru,\p I am glad that we may spend this time together.」\e
+
+//<000002cf> 【純夏・千鶴・壬姫・美琴・慧】「――っ！？」\n
+<000002cf> 【Sumika & Chizuru & Miki & Mikoto & Kei】「――!?」\n
+
+//<000002d0> 【武】「――え゛っ！？」\e
+<000002d0> 【Takeru】「EH!!?」\e
+
+//<000002d2> 【クラスのみんな】「おお～～～？」\e
+<000002d2> 【Entire Class】「Ooooooooooh?」\e
+
+//<000002d5> 【武】「――みみみ御剣さん？　な、\p何でオレの名前を…\p…\p！？」\e
+<000002d5> 【Takeru】「――Mi-Mi-Mi-Mitsurugi-san?\p\nWh-\pwhy did you just use my...\p...\p」\e
+
+//<000002d6> 【冥夜】「冥夜でよい」\e
+<000002d6> 【Meiya】「Meiya is fine.」\e
+
+//<000002d8> 【クラスのみんな】「おおおおーーーー」\e
+<000002d8> 【Classmates】「Oooooooooooooooh!」\e
+
+//<000002da> 【武】「いや、\pだから…\p…\p」\e
+<000002da> 【Takeru】「No,\p that's not...\p...\p」\e
+
+//<000002db> 【冥夜】「そなたに感謝を…\p…\p」\e
+<000002db> 【Meiya】「I give you my thanks.」\e
+
+//<000002dd> 【純夏・千鶴・壬姫・美琴・慧】「――はあ？！」\n
+<000002dd> 【Sumika & Miki & Chizuru & Kei & Mikoto】「――Huuuh!?」\n
+
+//<000002de> 【武】「――は？」\e
+<000002de> 【Takeru】「――Huh?」\e
+
+//<000002e0> 【冥夜】「昨夜は…\p…\p夢心地であった。\n傍らにそなたの温もりを感じて眠れたのだからな」\e
+<000002e0> 【Meiya】「Last night...\p...\p...\p...\pwas simply exquisite.\p\nAnd all because I was able to sleep by your side and feel your warmth.」\e
+
+//<000002e4> 【純夏・千鶴・壬姫・美琴・慧】「――ッ？！」\n
+<000002e4> 【Sumika & Chizuru & Miki & Mikoto & Kei】「――!?」\n
+
+//<00001c0f> 【悠陽】「まあ…\p…\p！」\e
+<00001c0f> 【Yuuhi】「Oh my...\p...\p!」\e
+
+//<000002e7> 【武】「…\p…\p…\p…\pは？」\e
+<000002e7> 【Takeru】「...\p...\p...\p...\phuh?」\e
+
+//<000002ea> 【悠陽】「昨晩、\p寝所に姿が見あたらないと思えば…\p…\p。\nそなた、\pその様な抜け駆けを…\p…\p！？」\e
+<000002ea> 【Yuuhi】「I had wondered why you did not seem to be in bed last night...\p...\p\nI see you dared to make the first move...\p...\p!!」\e
+
+//<0000047c> 【冥夜】「先手必勝と申します。\n如何に相手が姉上とは言え、\pこればかりは易々と譲れませぬ故…\p…\p」\e
+<0000047c> 【Meiya】「It is said that victory goes to the swift.\nEven if you are my opponent, sister,\p I have no intention of letting you take him without a fight...\p...\p」\e
+
+//<000002ed> 【悠陽】「見事ですね、\p冥夜。\nですがこれより先、\p武殿がそなたの気随に適う等とは思わぬがよい」\e
+<000002ed> 【Yuuhi】「That is lovely,\p Meiya.\nHowever,\p it would be best not to think that Takeru-dono will do exactly as you please.」\e
+
+//<000002ef> 【冥夜】「は…\p…\p重々、\p肝に銘じておきます」\e
+<000002ef> 【Meiya】「Yes...\p...\pI will remember that.」\e
+
+//<000002f3> 【クラスのみんな】「おおおおーーーー！！　転校早々白銀を巡って三角関係ェェ！？」\e
+<000002f3> 【Entire Class】「Ooooooooooooooooh!! An instant love triangle between Shirogane and the transfer studeeeents!?」\e
+
+//<000002f6> 【武】「…\p…\p…\p…\p」\e
+<000002f6> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000002f7> コノヒトタチハ、\pナニヲイッテイルンダロウ…\p…\p？\e
+<000002f7> What. The. Hell. Are. These. People. Talking. About...\p...\p?\e
+
+//<000002fa> 【純夏】「ターケールーちゃ～ん…\p…\pどういうことォ～？」\e
+<000002fa> 【Sumika】「Taaakeeeruuuchaaan...\p...\pwhat is the meaning of thiiis?」\e
+
+//<000002fc> 【武】「だから、\pオレに聞くな…\p…\p！」\e
+<000002fc> 【Takeru】「Don't ask me...\p...\p!」\e
+
+//<000002fd> 【声】「――よ～し、\p私たちも転校だ！　おーーーッ！！」\e
+<000002fd> 【Voice】「――Okaaay,\p we're transferring too! Ooooooooh!!」\e
+
+//<00000300> 【武】「――！？」\n
+<00000300> 【Takeru】「――!?」\n
+
+//<00000301> 【純夏】「――？」\e
+<00000301> 【Sumika】「――?」\e
+
+//<00000303> ――なんだ！？　…\p…\p何か…\p…\p廊下が騒がしいぞ？\e
+<00000303> ――What!? ...\p...\pthere's something...\p...\preally loud in the hallway.\e
+
+//<00000308> 【まりも】「――ちょ、\pちょっと、\pあなた達は…\p…\p！？」\e
+<00000308> 【Marimo】「――H-\phey,\p who are you...\p...\p!?」\e
+
+//<00200309> 【神代・戎・巴】「――冥夜様と悠陽様のお世話をさせていただいている者だ！」\e
+<00200309> 【Kamiyo & Ebisu & Tomoe】「――Maids who serve Meiya-sama and Yuuhi-sama!」\e
+
+//<0000030b> …\p…\pえ！？\e
+<0000030b> ...\p...\peh!?\e
+
+//<0000030c> 【戎】「――このたび私達も！」\e
+<0000030c> 【Ebisu】「――It has been decided!」\e
+
+//<0000030d> 【巴】「――この３年Ｂ組に！」\e
+<0000030d> 【Tomoe】「――That we will also!」\e
+
+//<0000030e> 【神代】「――転入してやる事に決定しました～～～！！」\e
+<0000030e> 【Kamiyo】「――Transfer into Year 3 Class B～～～!!」\e
+
+//<0000030f> 【クラスのみんな】「――はああああああああ？」\e
+<0000030f> 【Entire Class】「――Haaaaaaaaaaaaaaaaa?」\e
+
+//<00000311> こいつら…\p…\p何者だよ…\p…\p！？\e
+<00000311> Who...\p...\pare these three...\p...\p!?\e
+
+//<0000031c> …\p…\pあの人…\p…\pは…\p…\p？\e
+<0000031c> ...\p...\pand...\p...\pwho's that...\p...\p?\e
+
+//<0020031d> 【神代・戎・巴】「真那様痛いーー」\e
+<0020031d> 【Kamiyo & Ebisu & Tomoe】「Mana-sama that huuurts.」\e//CP MLE_0008
+
+//<0000031f> 【月詠】「おほほほほ…\p…\p皆様、\p大変お騒がせ致しました…\p…\p！」\e
+<0000031f> 【Tsukuyomi】「Ohohohoho...\p...\peveryone,\p I apologize for the disturbance...\p...\p!」\e
+
+//<00000321> いったい…\p…\pな、\pなんだったんだ…\p…\p？\e
+<00000321> What the hell...\p...\pis going on...\p...\p?\e
+
+//<00000323> 【悠陽】「我が御剣家に仕える者達のご無礼…\p…\p何卒、\p平にご容赦を…\p…\p」\e
+<00000323> 【Yuuhi】「Please find it in your heart...\p...\pto forgive the rudeness of these who serve the Mitsurugi family...\p...\p」\e
+
+//<00000324> 【冥夜】「臣下の非礼は主の責任…\p…\p皆の者、\p許すが良いぞ」\e
+<00000324> 【Meiya】「The retainer's blunder is the master's responsibility...\p...\peveryone,\p forgive me.」\e
+
+//<00000326> 【まりも】「――い、\pいいのよ、\p気にしないで！\n海外が長かったんだもの、\p仕方ないわよね～～」\e
+<00000326> 【Marimo】「――I-\pit's fine,\p don't worry about it!\nYou've been overseas for a long time,\p you can't help this～」\e
+
+//<00000328> いや…\p…\p海外は関係ないと思います…\p…\p\e
+<00000328> Umm...\p...\pI don't think that has anything to do with it...\p...\p\e
+
+//<00000329> 【まりも】「…\p…\pき、\p気を取り直して――席決めましょう、\pね、\p席！」\e
+<00000329> 【Marimo】「...\p...\pn-\pnow let's try again――And pick your seats!\p Okay?\p Seats!」\e
+
+//<0000032a> 【声】「そうねぇ…\p…\p白銀の両隣にしましょう。\nちょうど空いてるから」\e
+<0000032a> 【Voice】「Good idea...\p...\phow about both sides of Shirogane.\nThose seats happen to be open.」\e
+
+//<0000032c> 【美琴】「え～～っ！！」\n
+<0000032c> 【Mikoto】「Eeeeeh!?」\n
+
+//<0000032d> 【千鶴】「…\p…\pっ！」\n
+<0000032d> 【Chizuru】「...\p...\p!」\n
+
+//<0000032e> 【壬姫】「えぇっ！？」\n
+<0000032e> 【Miki】「Eeeh!?」\n
+
+//<0000032f> 【純夏】「だめ～～～～～！」\n
+<0000032f> 【Sumika】「Nooooooooooo!」\n
+
+//<00000330> 【慧】「…\p…\p」\e
+<00000330> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00000333> 【武】「――ゆ、\p夕呼先生ッ！？　しかもオレの両隣って…\p…\p！？」\e
+<00000333> 【Takeru】「――Y-\pYuuko-sensei!? And why both sides...\p...\p!?」\e
+
+//<00000334> 【夕呼】「あんた達、\pさっさと自分の席に着きなさい。\n…\p…\pせっかく空けた席でしょ？」\e
+<00000334> 【Yuuko】「Both of you,\p sit down now.\n...\p...\pthey've got your names on them.」\e//yay adaptation ~IX
+
+//<00000335> 【冥夜】「は、\p心得ております」\e
+<00000335> 【Meiya】「Yes,\p I understand.」\e
+
+//<00000337> 【悠陽】「畏れ入ります」\e
+<00000337> 【Yuuhi】「I shall do just that.」\e
+
+//<00000339> …\p…\pせっかく…\p…\p空けた…\p…\pって…\p…\p？\e
+<00000339> ...\p...\pthey've got...\p...\ptheir names...\p...\pon them...\p...\p?\e
+
+//<0000033a> 【まりも】「――ちょっと夕ッ…\p…\p香月先生！\nなんでここにいらっしゃるんですかっ！　Ｄ組のＨＲは――」\e
+<0000033a> 【Marimo】「――Wait, Yuu-...\p...\pKouzuki-sensei!\nWhy are you here!? Class D's homeroom is――」\e
+
+//<0000033b> 【夕呼】「ちゃっちゃと終わらせたわよ。\n時間を無駄にするのって、\p好きじゃないのよね～」\e
+<0000033b> 【Yuuko】「I just got it over with.\nI don't like wasting time on such things～」\e
+
+//<0000033c> 【まりも】「だったら職員室に戻ってください！\nそれに、\p人のクラスの席順、\p勝手に決めないでいただけますか！？」\e
+<0000033c> 【Marimo】「Then go to the staff room!\nBesides,\p don't mess with other people's seating plans!」\e
+
+//<0000033d> 【夕呼】「なによご挨拶ね～。\nわざわざあんたの尻ぬぐいしに来てあげたのに」\e
+<0000033d> 【Yuuko】「What kind of hello is that?\nI came out here to clean up your mess.」\e
+
+//<0000033e> 【まりも】「わ、\p私の尻ぬぐい…\p…\p？」\e
+<0000033e> 【Marimo】「M-\pmy mess...\p...\p?」\e
+
+//<0000033f> 【夕呼】「そうよ。ひとり忘れていったでしょ？」\e
+<0000033f> 【Yuuko】「That's right. Didn't you forget one?」\e
+
+//<00000340> 【まりも】「ひとり忘れ…\p…\p…\p…\pあっ！」\e
+<00000340> 【Marimo】「Forget one...\p...\p...\p...\pah!」\e
+
+//<00000341> 【夕呼】「あらら…\p…\pいくら存在感が薄いからって、\p担任教師がそんな薄情な事して良いのかしらね～？」\e
+<00000341> 【Yuuko】「Oh my...\p...\pI know she doesn't leave much of an impression,\p but shouldn't her teacher pay a little more attention than that?」\e
+
+//<00000342> 【まりも】「それはその…\p…\pはぅぅぅぅ～～！！」\e
+<00000342> 【Marimo】「That's just...\p...\phauuuuuuuuuuuu!!」\e
+
+//<00000344> 【夕呼】「まったく…\p…\pそんなんじゃ教師以前に、\p人間失格ね」\e
+<00000344> 【Yuuko】「Really now...\p...\pthat makes you a failure as a human,\p not just as a teacher.」\e
+
+//<00000345> それを夕呼先生に言われたくないだろうなあ…\p…\p\e
+<00000345> She probably doesn't want to hear that from Yuuko-sensei...\p...\p\e
+
+//<00000348> 【夕呼】「あら、\p再起不能？　…\p…\p仕方ないわねぇ。\n成行き上、\pあたしが代わりにやっといてあげる」\e
+<00000348> 【Yuuko】「Oh,\p you can't restart yourself? ...\p...\pso much for that.\nWhile I'm here I guess I'll ad lib the rest of your part.」\e
+
+//<0000034a> いや、\p再起不能にしたのはあんたですが…\p…\p。\e
+<0000034a> But aren't you the one who made her unable to restart...\p...\p?\e
+
+//<0000034b> 【夕呼】「――ああ、\pそう言えばこのクラスの佐藤と田中、\p２人とも、\p親が急に栄転したとかで、\p昨日付けで転校したわよ」\e
+<0000034b> 【Yuuko】「――Aaah,\p speaking of which, Satou's and Tanaka's parents suddenly got promoted so they both transferred yesterday.」\e
+
+//<0000034c> 【クラスのみんな】「――はああああああああ？」\e
+<0000034c> 【Entire Class】「――Haaaaaaaaaaaaaaaaa?」\e
+
+//<0000034e> またか～～～～！？　オレの周りの席が妙にガランとしちまっていたのは、\pそういう事だったのか～～！！\e
+<0000034e> Agaaaaaaaaain!? Is that why all the seats next to mine are empty all of a sudden!?\e
+
+//<0000034f> 【夕呼】「じゃあ、\pまりもが忘れたもうひとり…\p…\p紹介するわ。\n――いいわよ、\p入ってらっしゃい」\e
+<0000034f> 【Yuuko】「Now,\p the girl Marimo forgot about...\p...\phere she is.\n――It's okay,\p you can come in.」\e
+
+//<00000350> 【声】「…\p…\pはい」\e
+<00000350> 【Voice】「...\p...\pokay.」\e
+
+//<00000352> 【武】「――えっ？」\e
+<00000352> 【Takeru】「――Eh?」\e
+
+//<00000353> まさか…\p…\p…\p…\pまた転校生…\p…\pなのか！？\e
+<00000353> No way...\p...\p...\p...\panother...\p...\ptransfer student!?\e
+
+//<000017bf> １人入って３人出ていって、\pまた３人入ってくるなんて…\p…\pいったいなんなんだ、\pこの転校ラッシュは！？\e
+<000017bf> One came in, then three left,\p then three more came in...\p...\pwhat's with this school's transfer system!?\e
+
+//<0000035a> 【夕呼】「今日からこのクラスに入る、\p社霞よ」\e
+<0000035a> 【Yuuko】「This is Yashiro Kasumi.\bShe'll be in your class from now on.」\e
+
+//<0000035c> 【武】「…\p…\p…\p…\pあ」\e
+<0000035c> 【Takeru】「...\p...\p...\p...\pah.」\e
+
+//<0000035e> 【霞】「社…\p…\p霞です」\e
+<0000035e> 【Kasumi】「I'm Yashiro...\p...\pKasumi.」\e
+
+//<0000035f> 【武】「…\p…\p…\p…\p」\e
+<0000035f> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000362> 【霞】「みなさん…\p…\pよろしくお願い…\pします…\p…\p」\e
+<00000362> 【Kasumi】「It's...\p...\pa pleasure...\p...\pto meet you all...\p...\p」\e
+
+//<00000363> …\p…\p…\p…\pオレはあの娘に…\p…\p…\p…\pどっかで会ったことが…\p…\pあ…\p…\pる…\p…\p？\e
+<00000363> ...\p...\p...\p...\phave I...\p...\p...\p...\pmet...\p...\pthat girl...\p...\pbefore...\p...\p?\e
+
+//<00000365> 【夕呼】「社は生まれも育ちもロシアで、\p日本に来たのは初めてらしいわ。\nそうね？」\e
+<00000365> 【Yuuko】「Yashiro was born and raised in Russia,\p and this is her first time in Japan.\nRight?」\e
+
+//<00000366> 【霞】「はい…\p…\p」\e
+<00000366> 【Kasumi】「Yes...\p...\p」\e
+
+//<00000367> 【武】「…\p…\p…\p…\p」\e
+<00000367> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000368> ははは…\p…\p…\p…\pやっぱり、\p気のせいか…\p…\p。\e
+<00000368> Hahaha...\p...\p...\p...\pso it was just my imagination...\p...\p\e
+
+//<00000369> 【夕呼】「来年の４月に、\p飛び級進学で白陵大に入るんだけど、\p生活環境と同期生に慣れておくために、\pまずここに来たってわけ」\e
+<00000369> 【Yuuko】「She'll be entering Hakuryou University next April thanks to the grades she skipped,\p but she came here first to give herself a chance to get used to the area and make some friends.」\e
+
+//<0000036a> オレはロシアになんて行ったことがないもんな…\p…\p。\nあの娘に会ってる筈なんてない。\e
+<0000036a> I've never been to Russia before...\p...\p\nSo there's no way I've seen her before.\e
+
+//<0000036b> 【夕呼】「まあ見ての通り、\pひとみしりで存在感薄い娘だけど、\pよろしく面倒見てあげてちょうだい」\e
+<0000036b> 【Yuuko】「Well, as you can see,\p she's a shy and quiet girl who blends into the background,\p so everyone take good care of her.」\e
+
+//<0000036c> 【クラスのみんな】「は～～～い！」\e
+<0000036c> 【Entire Class】「Okaaaaaaay!」\e
+
+//<0000036e> 【武】「…\p…\p…\p…\p」\e
+<0000036e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000036f> でも…\p…\pどこかで会った事があるような…\p…\p\e
+<0000036f> But...\p...\pit still feels like we've...\p...\p\e
+
+//<00000370> 【霞】「…\p…\p…\p…\p」\e
+<00000370> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000371> 【武】「…\p…\p…\p…\p」\e
+<00000371> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000372> どこかで…\p…\p一緒に暮らしたような…\p…\p\e
+<00000372> Like we've...\p...\plived together somewhere...\p...\p\e
+
+//<00000373> 【霞】「…\p…\p…\p…\p」\e
+<00000373> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000374> 【武】「…\p…\p…\p…\p」\e
+<00000374> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000375> 今日初めて会ったはずなのに…\p…\pどこか懐かしい感じがするのは、\pなぜなんだろう…\p…\p。\e
+<00000375> This should be our first meeting...\p...\pso why...\p...does she feel so familiar...\p...\p?\e
+
+//<00000376> 【霞】「…\p…\p…\p…\p」\e
+<00000376> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000037b> 【まりも】「――せっ…\p…\p席は…\p…\p白銀君の前が空いているから、\pそこに…\p…\p！！」\e
+<0000037b> 【Marimo】「――Y-...\p...\pyou can sit...\p...\pat the empty desk in front of Shirogane...\p...\p!!」\e
+
+//<0000037d> 【霞】「…\p…\pはい」\e
+<0000037d> 【Kasumi】「...\p...\pokay.」\e
+
+//<0000037e> 【夕呼】「あらま…\p…\p復活したわ」\e
+<0000037e> 【Yuuko】「Oh...\p...\pyou recovered.」\e
+
+//<00000381> いや…\p…\p今日は朝からオレ、\pなんか変だからな。\n初対面の人間が知り合いみたいに錯覚しても…\p…\p仕方ないだろ。\e
+<00000381> No...\p...\pI've been feeling weird all day.\nThinking I know someone I only just met...\p...\pis just another delusion.\e
+
+//<00000382> 確かデジャヴュとかって、\p脳が疲れている時によく起こるらしいからな…\p…\p。\e
+<00000382> I've heard people get deja vu a lot when their brains are tired...\p...\p\e
+
+//<00000384> 【霞】「…\p…\p…\p…\p」\e
+<00000384> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000385> 【純夏】「私、\p鑑純夏。\n席が隣になったのも何かの縁だね。\nよろしく！」\e
+<00000385> 【Sumika】「I'm Kagami Sumika.\nI'm sure there's a reason we ended up sitting together.\nLet's be friends!」\e//acceptable yoroshiku adaptation? y/n ~IX//y - Sheeta
+
+//<00000386> 【霞】「…\p…\p…\p…\pはい…\p…\p」\e
+<00000386> 【Kasumi】「...\p...\p...\p...\pyes...\p...\p」\e
+
+//<00000388> 【冥夜】「御剣冥夜だ。\n同じ日に転校してくるとは、\p何やら因縁めいたものを感じるな」\e
+<00000388> 【Meiya】「I am Mitsurugi Meiya.\nI am sure there is a reason why we have transferred on the same day.」\e
+
+//<00000389> 【悠陽】「初めまして社さん。\n私は御剣悠陽と申します。\n今後とも宜しくお願い致します」\e
+<00000389> 【Yuuhi】「Pleased to meet you, Yashiro-san.\nMy name is Mitsurugi Yuuhi.\nI hope we can get along well.」\e
+
+//<0000038b> 【霞】「…\p…\pよろしくお願い…\p…\pします」\e
+<0000038b> 【Kasumi】「...\p...\pso...\p...\pdo I.」\e
+
+//<0000038d> 【武】「オレ、\p白銀武。\nよろしくな、\p社！」\e
+<0000038d> 【Takeru】「I'm Shirogane Takeru.\nNice to meet you,\p Yashiro!」\e
+
+//<0000038e> 【霞】「…\p…\p…\p社…\p…\p」\e
+<0000038e> 【Kasumi】「...\p...\p...\pYashiro...\p...\p」\e
+
+//<00000390> 【武】「まあ、\p転校生の中で、\p君だけはまともそうなんで助かった…\p…\pよ…\p…\p？」\e
+<00000390> 【Takeru】「Still,\p it's nice to see at least one of the transfer students is norm...\p...\pal...\p...\p?」\e
+
+//<00000391> 【霞】「…\p…\p…\p…\p…\p…\p」\e
+<00000391> 【Kasumi】「...\p...\p...\p...\p...\p...\p」\e
+
+//<00000393> 【武】「…\p…\pえ？」\e
+<00000393> 【Takeru】「...\p...\peh?」\e
+
+//<00000394> …\p…\p何だ？　…\p…\pなんで…\p…\p黙ってるんだ？\e
+<00000394> ...\p...\pwhat? ...\p...\pwhy...\p...\pare you so quiet?\e
+
+//<00000396> 【霞】「…\p…\p…\p…\pっ…\p…\p」\e
+<00000396> 【Kasumi】「...\p...\p...\p...\p! ...\p...\p」\e
+
+//<00000398> …\p…\pえ？　まさか…\p…\pこの娘…\p…\p！\e
+<00000398> ...\p...\peh? There's no way...\p...\pthis girl...\p...\p!\e
+
+//<00000399> 【武】「…\p…\pあの…\p…\pどうした…\p…\pの？」\e
+<00000399> 【Takeru】「...\p...\pumm...\p...\pwhat's...\p...\pwrong?」\e
+
+//<0000039a> オイオイ…\p…\pいきなり…\p…\pなんで泣き始めるんだ？！\e
+<0000039a> Hey now...\p...\pdon't...\p...\pdon't cry on me for no reason!!\e
+
+//<0000039b> 【霞】「…\p…\pっ…\p…\p…\p…\p」\e
+<0000039b> 【Kasumi】「...\p...\p! ...\p...\p...\p...\p」\e
+
+//<0000039d> 【武】「…\p…\pあの…\p…\pオレ…\p…\p何か…\p…\p気に障ること…\p…\p言ったかな…\p…\p？」\e
+<0000039d> 【Takeru】「...\p...\pumm...\p...\pdid I...\p...\psay something...\p...\pwrong...\p...\p?」\e
+
+//<0000039e> 【霞】「…\p…\pちがいま…\p…\pっ…\p…\p」\e
+<0000039e> 【Kasumi】「...\p...\pno, you di-...\p...\p! ...\p...\p」\e
+
+//<000003a0> 【武】「え…\p…\p？」\e
+<000003a0> 【Takeru】「Eh...\p...\p?」\e
+
+//<000003a1> 【霞】「…\p…\pこち…\p…\pこそ…\p…\p」\e
+<000003a1> 【Kasumi】「...\p...\pI...\p...\pshould be...\p...\p」\e
+
+//<000003a4> 【武】「――え…\p…\p！？」\e
+<000003a4> 【Takeru】「――Eh...\p...\p!?」\e
+
+//<000003a5> 【霞】「…\p…\pよろ…\p…\pし…\p…\pっ…\p…\pおね…\p…\pが…\p…\pぅ…\p…\p」\e
+<000003a5> 【Kasumi】「...\p...\pI...\p...\phope we...\p...\p! ...\p...\pcan...\p...\pget...\p...\puu...\p...\p」\e
+
+//<000003a7> 【武】「――え？！　お、\pおいッ！？　社？！」\e
+<000003a7> 【Takeru】「――Eh!? H-\phey!? Yashiro!?」\e
+
+//<000003a8> いったいぜんたい何がどうなっちまってるんだぁ…\p…\p？\e
+<000003a8> What the hell is going on here...\p...\p?\e
+
+//<000003aa> 【霞】「…\p…\pぅぅ…\p…\pぅあぁ…\p…\pすみ…\pか…\pさんっ…\p…\pっく…\p…\p…\p…\p」\e
+<000003aa> 【Kasumi】「...\p...\puuu...\p...\puwaaa...\p...\pSumi...\p...\pka...\p...\psan! ...\p...\puu...\p...\p...\p...\p」\e
+
+//<000003ac> …\p…\p…\p…\pえ？\e
+<000003ac> ...\p...\p...\p...\peh?\e
+
+//<000003ad> 【霞】「…\p…\pぅぅ…\p…\pっく…\p…\pうぅっ…\p…\pあり…\pがとう…\p…\pっ…\pございます…\p…\p…\pうぅ…\p…\p」\e
+<000003ad> 【Kasumi】「...\p...\puuu...\p...\puu! ...\p...\puuu! ...\p...\pthank...\p...\pyou...\p...\p! ...\p...\pso much...\p...\p...\puu...\p...\p」\e
+
+//<000003af> …\p…\p…\p…\pなにがだ…\p…\p？\e
+<000003af> ...\p...\p...\p...\pfor what...\p...\p?\e
+
+//<000003b0> 【霞】「…\p…\pうぅっ…\p…\pぁうぅぅ…\p…\pっく…\p…\p…\p…\pっ…\p…\p…\p…\pうぅ…\p…\p」\e
+<000003b0> 【Kasumi】「...\p...\puuu! ...\p...\paauuuuu...\p...\puu...\p...\p...\p...\p! ...\p...\p...\p...\puuu...\p...\p」\e
+
+//<000003b2> 純夏が…\p…\pどうしたって…\p…\p？\e
+<000003b2> What did...\p...\pSumika do...\p...\p?\e
+
+//<000003b3> 【霞】「…\p…\pぅぅ…\p…\pぅぅ…\p…\pっく…\pっく…\p…\pうぅっ…\p…\p…\pうぅ…\p…\p」\e
+<000003b3> 【Kasumi】「...\p...\puuu...\p...\puuu...\p...\puu! ...\p...\puu...\p...\puuu! ...\p...\p...\puuu...\p...\p」\e
+
+//<000003b5> …\p…\p今日初めて会った純夏に…\p…\p…\p…\pなんで礼なんていうんだ…\p…\p？\e
+<000003b5> ...\p...\pshe met Sumika for the first time today...\p...\p...\p...\pwhy's she bowing to her...\p...\p?\e
+
+//<000003b6> 【霞】「…\p…\pぅぅ…\p…\pぅあぁ…\p…\pっく…\p…\p…\pぅぅ…\p…\p…\p」\e
+<000003b6> 【Kasumi】「...\p...\puuu...\p...\puwaaaa...\p...\puu...\p...\p...\puuu...\p...\p...\p」\e
+
+//<000003b9> 【純夏】「あ～～ッ！！　タケルちゃん、\p社さん泣かした～～ッ！！」\e
+<000003b9> 【Sumika】「Aaaaaa!! Takeru-chan,\p you made Yashiro-san cryyyyy!!」\e
+
+//<000003bb> 【千鶴】「――えっ！」\n
+<000003bb> 【Chizuru】「――Eh!?」\n
+
+//<000003bc> 【壬姫】「――えぇっ！？」\n
+<000003bc> 【Miki】「――Eeeh!?」\n
+
+//<000003bd> 【慧】「…\p…\p」\e
+<000003bd> 【Kei】「...\p...\p...\p...\p」\e
+
+//<000003c1> 【まりも】「――白銀君ッ！？」\e
+<000003c1> 【Marimo】「――Shirogane-kun!?」\e
+
+//<000003c2> 【武】「――いや、\pオレじゃないです！」\e
+<000003c2> 【Takeru】「――No,\p it wasn't me!」\e
+
+//<000003c3> 【美琴】「酷いよタケル～～ッ！！」\e
+<000003c3> 【Mikoto】「You're so meaaaaan, Takeru!!」\e
+
+//<000003c4> 【武】「――違うッ！　オレじゃないんだ！　オレはただ、\pよろしくって言っただけなんだッ！」\e
+<000003c4> 【Takeru】「――No! I did nothing!\bAll I said was "nice to meet you"!」\e
+
+//<000003c5> 【夕呼】「あらあら…\p…\p転校初日の女子に泣かれるなんて、\p何か訳ありなんじゃないのォ？　…\p…\p本当に初対面？」\e
+<000003c5> 【Yuuko】「Oh my...\p...\phaving a girl who just transferred cry because of you...\p...there has to be a reason for this...\p...\pyou sure you don't know her?」\e
+
+//<000003c6> ――だああ～～～！\nだからあんたはどうしてそう、\p火に油を注ぐような事言うかな――ッ！！\e
+<000003c6> ――Daaaaaaaaaaa!\nDo you always have to fan the flames when stuff like this happens――!?\e
+
+//<000003ca> 【冥夜】「…\p…\pタケル、\pどうやら因縁めいたものがあったのは、\pそなた達だったようだな…\p…\p？」\e
+<000003ca> 【Meiya】「...\p...\pTakeru,\p it seems as though you two are the ones with a connection...\p...\p?」\e
+
+//<000003cc> 【武】「――え…\p！？」\e
+<000003cc> 【Takeru】「――Eh...\p...\p!?」\e
+
+//<000003de> 【悠陽】「その辺りのご事情…\p…\p是が非にも伺いたいものですわ」\e
+<000003de> 【Yuuhi】「I would love to hear...\p...\pwhat the circumstances behind this are.」\e
+
+//<000003e0> 【武】「み、\p御剣…\p…\pさん…\p…\p？」\e
+<000003e0> 【Takeru】「Mi-\pMitsurugi...\p...\psan...\p...\p?」\e
+
+//<000003e3> 【悠陽】「いやですわ武様…\p…\p…\p…\p紛らわしい故、\pどうか悠陽とお呼び捨て下さい」\e
+<000003e3> 【Yuuhi】「Do not say that, Takeru-sama...\p...\p...\p...\pit is confusing.\bPlease call me Yuuhi, with no honorifics.」\e
+
+//<000003e4> 【冥夜】「――ぬ！　姉上～～！！」\e
+<000003e4> 【Meiya】「――Uu! Sisteeeeer!!」\e
+
+//<000003e5> 【純夏】「――わ～～～～～～っ！！　タケルちゃんが御剣さんにくっついた～～！！」\e
+<000003e5> 【Sumika】「――Waaaaaaaaaaaaa!!!\bTakeru-chan's squeezing Mitsurugi-saaaaan!!」\e
+
+//<000003e7> 【純夏】「あいたーーー！」\e
+<000003e7> 【Sumika】「Owieeeeeee!」\e
+
+//<000003e8> 【武】「――バカかおまえは！　ちゃんと見てものを言えッ！」\e
+<000003e8> 【Takeru】「――Are you stupid!? Take a better look at things before talking about them!」\e
+
+//<000003e9> ――逆だろ逆ッ！！\e
+<000003e9> ――It's the other away around!!\e
+
+//<000003eb> 【壬姫】「――たけるさん！　そんなことしちゃダメですよ～ッ！！」\e
+<000003eb> 【Miki】「――Takeru-san! You shouldn't be doing that～!!」\e
+
+//<000003ef> 【武】「――のわッ！！」\e
+<000003ef> 【Takeru】「――Nowa!!」\e
+
+//<000003f0> 【美琴】「――そうだよッ、\pだめだよタケルッ！！」\e
+<000003f0> 【Mikoto】「――She's right,\p don't do that Takeru!!」\e
+
+//<000003f3> 【武】「――うおッ！！」\e
+<000003f3> 【Takeru】「――Uwoo!!」\e
+
+//<00001f30> 【全員】「――あっ！！」\e
+<00001f30> 【Everyone】「――Ah!!」\e
+
+//<000003f9> 【武】「…\p…\p…\p…\p！？」\e
+<000003f9> 【Takeru】「...\p...\p...\p...\p!?」\e
+
+//<000003fa> ――おお、\p痛くないぞ！？　…\p…\pなんか柔らかいものが衝撃を吸収してくれたんだ！　とにかく助かっ――\e
+<000003fa> ――Oooh,\p this doesn't hurt!? ...\p...\pit's like something soft absorbed the shock! Anyway, I'm sa――\e
+
+//<000003fc> ――！？\e
+<000003fc> ――!?\e
+
+//<00000400> 【慧】「白銀…\p…\p大胆…\p…\p」\e
+<00000400> 【Kei】「Shirogane...\p...\pso bold...\p...\p」\e
+
+//<00000401> 【武】「――あ…\p…\p彩峰…\p…\p？」\e
+<00000401> 【Takeru】「――A-...\p...\pAyamine...\p...\p?」\e
+
+//<00000402> 【慧】「…\p…\pもっと…\p…\pする？」\e
+<00000402> 【Kei】「...\p...\pwanna...\p...\pdo more?」\e
+
+//<00000403> 【武】「――はっ！？」\e
+<00000403> 【Takeru】「――Huh!?」\e
+
+//<00000408> ――す、\p純夏っ？\e
+<00000408> ――S-\pSumika!?\e
+
+//<00000409> 【純夏】「…\p…\pたーけーるーちゃんーのー…\p…\p」\e
+<00000409> 【Sumika】「...\p...\pTaaakeeeruuu-chan, youuu...\p...\p」\e
+
+//<0000040b> 【武】「ちっ…\p…\pちがうッ！　今のはたまが――」\e
+<0000040b> 【Takeru】「N-...\p...\pno! I didn't mean to, that was Tama pu――」\e
+
+//<0000040c> 【純夏】「――んバカあぁぁぁぁぁ！！！！」\e
+<0000040c> 【Sumika】「――Idiooooooooooooot!!!!」\e
+
+//<0000040f> 【武】「――エアバーーーーッグッッ！！！」
+<0000040f> 【Takeru】「――Airbaaaaaaaaag!!!」//I don't get it either ~IX//the end ;_; - Sheeta
+
+//<000020fd> \r
+<000020fd> \r
+

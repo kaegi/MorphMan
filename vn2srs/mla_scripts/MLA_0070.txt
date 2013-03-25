@@ -1,0 +1,594 @@
+#FILENAME 667fa28c
+#TYPE 3
+
+//<0000014c> 【武】「…\p…\p…\p…\p」\e
+<0000014c> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000014d> これが…\p…\p地球…\p…\p\e
+<0000014d> This is...\p...\pthe Earth...\p...\p\e
+
+//<0000014e> 【武】「…\p…\p…\p…\p」\e
+<0000014e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000014f> 凄え…\p…\p凄えよ…\p…\p…\p…\p！\nテレビや写真で見たのとは…\p…\p全然違う…\p…\p！！\e
+<0000014f> Amazing...\p...\pthis is incredible...\p...\p...\p...\p!\nIt feels completely different...\p...\pfrom just seeing it in pictures or on TV...\p...\p!!\e
+
+//<00000151> 【霞】「…\p…\p…\p…\pきれい…\p…\p」\e
+<00000151> 【Kasumi】「...\p...\p...\p...\pit's beautiful...\p...\p」\e
+
+//<00000153> 【武】「…\p…\pああ…\p…\p凄え綺麗だ…\p…\p」\e
+<00000153> 【Takeru】「...\p...\pyeah...\p...\pit really is...\p...\p」\e
+
+//<00000154> これが…\p…\pオレが…\p…\pオレ達が守ろうとしているもの…\p…\p。\n人類の…\p…\p人間の故郷なんだ…\p…\p。\e
+<00000154> This is...\p...\pwhat I'm...\p...\pwhat we're trying to protect...\p...\p\nThis is...\p...\phumanity's homeworld...\p...\p\e
+
+//<00000155> そして今、\p地上では…\p…\p全世界の人間が、\pこの人類の故郷を守るために、\p一丸となって戦っているんだ。\e
+<00000155> And right now,\p on the surface...\p...\ppeople all over the world are fighting as one to protect it.\e
+
+//<00000158> 【武】「…\p…\p…\p…\p」\e
+<00000158> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000159> なんて圧倒的なんだ…\p…\p。\e
+<00000159> It's overwhelming...\p...\p\e
+
+//<0000015a> 月並みだけど…\p…\p日本人だとか、\p米国人だとか、\p何人なんて関係ないって、\p理屈抜きにそう思えてくる…\p…\p。\nこの光景を見たら…\p…\p誰だってそう思うはずだ。\e
+<0000015a>  This is pretty ordinary, but...\p...\pseeing this...\p...\pmakes it feel like it doesn't matter whether we're Japanese or American or whatever...\p...\pI think anyone would feel that way if they saw this.\e
+
+//<0000015b> 【武】「…\p…\p…\p…\p」\e
+<0000015b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000015c> そしてこの故郷を…\p…\p絶対に守ろうって思うはずだ…\p…\p！！\e
+<0000015c> And they should also want...\p...\pto protect this world at all costs...\p...\p!!\e
+
+//<0000015d> 【武】「…\p…\p…\p…\p」\e
+<0000015d> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000015e> 冥夜達も見てるかな…\p…\p。\e
+<0000015e> I wonder if the others can see it...\p...\p\e
+
+//<0000015f> もしかしたら、\p再突入殻に格納されているから、\p外の画像は見えないかもしれない…\p…\p。\e
+<0000015f> Maybe being in reentry shells prevents them from seeing images from the outside...\p...\p\e
+
+//<00000160> 【武】「霞――この外部映像、\p委員長達の機体にリンクできるか？」\e
+<00000160> 【Takeru】「Kasumi――Could you link this external image to the escort TSFs?」\e
+
+//<00000162> 【霞】「わかりました。\n繋いでおきます」\e
+<00000162> 【Kasumi】「Understood.\nI'll connect them.」\e
+
+//<00000163> 【武】「たのむ」\e
+<00000163> 【Takeru】「Thanks.」\e
+
+//<00000164> …\p…\p…\p…\p純夏にも…\p…\p見えているかな…\p…\p。\e
+<00000164> ...\p...\p...\p...\pI wonder...\p...\pif Sumika can see this...\p...\p\e
+
+//<00000166> ――！？　\e
+<00000166> ――!?\e
+
+//<00000167> 【霞】「艦隊旗艦からの音声通信です」\e
+<00000167> 【Kasumi】「It's an audio transmission from the flagship.」\e
+
+//<00000168> ――来た！　いよいよか…\p…\p！\e
+<00000168> ――Yes! It's finally time...\p...\p!\e
+
+//<00000169> 【ネウストラシムイ艦長】「――こちら第３艦隊旗艦ネウストラシムイ。\n最終ブリーフィングを開始する」\e
+<00000169> 【Neustrashimy Class Captain】「――This is Neustrashimy, flagship of the 3rd Fleet.\nWe will now begin the final briefing.」\e
+
+//<0000016b> 【ネウストラシムイ艦長】「――まず始めに『桜花作戦』の状況を伝える」\e
+<0000016b> 【Neustrashimy Class Captain】「――First, the present state of Operation Cherry Blossom.」\e
+
+//<0000016e> 【ネウストラシムイ艦長】「――ユーラシアの各戦線では、\p最外縁部のハイヴに対し、\p全軍が一斉に侵攻中だ」\e
+<0000016e> 【Neustrashimy Class Captain】「――All front lines in Eurasia have reached the outermost portions of the hives,\p and all armies are infiltrating at once.」\e
+
+//<00000170> 【ネウストラシムイ艦長】「――現在、\p作戦は第２段階。\n国連軍と米軍の軌道降下部隊がＳＷ１１５周辺を制圧中」\e
+<00000170> 【Neustrashimy Class Captain】「――The Operation is currently at Phase 2.\p The UN and American Army drop units are securing the area around SW 115.」\e
+
+//<00000b3f> 【ネウストラシムイ艦長】「――だが、\p戦況は芳しくない。\n部隊の損耗率は予想を遥かに上回っている」\e
+<00000b3f> 【Neustrashimy Class Captain】「――However,\p the situation is not good.\p The unit's casualties are far higher than expected.」\e
+
+//<00000175> 予想を上回る…\p…\pか。\pものは言い様だな。\e
+<00000175> Higher than expected...\p...\pguess you could say that.\e
+
+//<00000176> 今までの経験から言って、\pＢＥＴＡの異常な出現率は十分予想されているはずだろう。\e
+<00000176> From what we've seen before, we should've expected ridiculous numbers of BETA to be there.\e
+
+//<00000177> 国連軍は全軌道戦術機甲兵力を、\p米軍だって８割も投入した結果…\p…\pそれが今の状況なんだ。\e
+<00000177> The UN Army put all of its drop-capable TSF armored forces into this,\p and America put in 80% of its own...\p...\pbut we're still doing badly.\e
+
+//<00000178> 今の人類にできる精一杯の事…\p…\pそれが、\p案の定足りなかったってだけだ。\e
+<00000178> The best humanity's been able to do until now...\p...\pjust isn't enough.\e
+
+//<00000179> だからといって、\p『桜花作戦』は中止できない。\nそれは即『トライデント作戦』の発動となっちまうからな。\e
+<00000179> But that doesn't mean we can cancel Operation Cherry Blossom.\nThat'll mean an immediate activation of Operation Trident.\e
+
+//<0000017a> だとすると…\p…\p選択し得る手段はひとつしかない。\e
+<0000017a> Which means...\p...\pthere's only one option.\e
+
+//<0000017b> 【ネウストラシムイ艦長】「――従って、\p作戦司令部は、\p第３段階移行タイミングの繰り上げを決定した」\e
+<0000017b> 【Neustrashimy Class Captain】「――As a result,\p operational HQ has decided to switch to Phase 3 early.」\e
+
+//<00000bc9> 【ネウストラシムイ艦長】「――ＳＷ１１５周辺の戦力が健在であるうちに、\p『あ号標的』攻撃部隊の降下を完了させるのだ」\e
+<00000bc9> 【Neustrashimy Class Captain】「――We will drop the Primary Objective attack unit now while the forces around SW 115 are still intact.」\e
+
+//<0000017f> 【武】「…\p…\p…\p…\p」\e
+<0000017f> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000180> 【ネウストラシムイ艦長】「――では、\p再突入の詳細を説明する」\e
+<00000180> 【Neustrashimy Class Captain】「――Now then,\p I will explain how you are to use the reentry shells.」\e
+
+//<00000183> 【ネウストラシムイ艦長】「――当初予定されていた再突入殻の降下軌道投入プランは全て破棄」\e
+<00000183> 【Neustrashimy Class Captain】「――The original reentry shell orbital drop plan is to be abandoned.」\e
+
+//<00000c1f> 【ネウストラシムイ艦長】「現周回を以て、\p全艦隊再突入し、\p降下部隊の地表到達率を高めるものとする」\e
+<00000c1f> 【Neustrashimy Class Captain】「All ships will reenter on this orbit,\p and increase the chances of the drop units reaching the surface.」\e
+
+//<00000187> だろうな…\p…\p次の軌道周回の後じゃあ、\p地上部隊は全滅しちまうだろう。\e
+<00000187> Makes sense...\p...\pif we waited to come all the way around again,\p the units on the surface would be gone.\e
+
+//<00000188> その前に…\p…\p降下目標周辺の部隊によって、\p光線級が減らされているうちに突入する――それしか手はない。\e
+<00000188> We'll just have to drop to the objective...\p...\pwhile those units are still keeping the number of Laser Class down――That's the only option.\e
+
+//<0000018a> 【ネウストラシムイ艦長】「――まず艦隊陣形だ。\n爆撃装備の第１、\p第２戦隊は再突入軌道を４２０秒先行」\e
+<0000018a> 【Neustrashimy Class Captain】「――The formation will be as follows.\p 1st and 2nd Squadrons, which are equipped for bombing, will reenter 420 seconds ahead.」\e
+
+//<0000018c> 【ネウストラシムイ艦長】「――降下部隊を輸送する第３から第５戦隊はそれに続く」\e
+<0000018c> 【Neustrashimy Class Captain】「――3rd through 5th Squadrons, which are carrying the drop units, will follow behind them.」\e
+
+//<0000018e> 【ネウストラシムイ艦長】「――Ａ－０１部隊を輸送中の第５戦隊各艦は、\pＡ－０４の更に後方、\p艦隊最後方配置とする」\e
+<0000018e> 【Neustrashimy Class Captain】「――Every ship in the 5th Squadron carrying Unit A-01 will stay behind A-04,\p and reenter last.」\e
+
+//<00000192> なるほど…\p…\pラザフォード場を展開する凄乃皇の後に付く事で、\p一番無防備になる再突入時の対レーザー防御を完全にする狙いか。\e
+<00000192> I see...\p...\pcoming in behind the Susano'o and its Rutherford Fields will give the almost defenseless reentry shells a chance of surviving the lasers.\e
+
+//<00000193> 【ネウストラシムイ艦長】「――続いて再突入シーケンスだ」\e
+<00000193> 【Neustrashimy Class Captain】「――The reentry sequence will be as follows.」\e
+
+//<00000196> 【ネウストラシムイ艦長】「――まず、\p第１、\p第２戦隊は再突入開始９００秒前にＡＬ弾を全弾分離。\nその後、\p先行１２０秒まで減速」\e
+<00000196> 【Neustrashimy Class Captain】「――First, the 1st and 2nd Squadrons will release all anti-laser warheads 900 seconds before reentering.\nThey will then slow down to 120 seconds ahead.」\e
+
+//<00000198> 【ネウストラシムイ艦長】「――隊形を維持したまま再突入開始。\n尚、\p第３から第５戦隊各艦は、\p再突入殻を分離せず、\p背負ったまま再突入せよ」\e
+<00000198> 【Neustrashimy Class Captain】「――And begin reentering while maintaining formation.\nThe 3rd through 5th Squadrons will reenter without releasing their reentry shells.」\e
+
+//<0000019b> 【ネウストラシムイ艦長】「――電離層突破後再突入殻を分離し、\p各艦は最大加速。\n侵攻軌道を先行しエドワーズに向かう」\e
+<0000019b> 【Neustrashimy Class Captain】「――All ships will release them after penetrating the ionosphere,\p then begin maximum acceleration.\nThey will head for the Edwards farther along our orbital trajectory.」\e
+
+//<0000019d> 【武】「…\p…\p…\p…\p」\e
+<0000019d> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000019e> 【ネウストラシムイ艦長】「――以上だ」\e
+<0000019e> 【Neustrashimy Class Captain】「――That is all.」\e
+
+//<000001a0> そういう事か…\p…\p。\e
+<000001a0> I see...\p...\p\e
+
+//<000001a1> 再突入殻を背負ったまま駆逐艦が再突入するのは、\p万が一に備え、\p再突入殻の融除材を可能な限り温存するためだ。\e
+<000001a1> He wants the shuttles to reenter while carrying the reentry shells so they can preserve their ablative coating, in case they need it to resist lasers.\e
+
+//<000001a2> しかもその後は、\p先行させた対レーザー弾の効力が低かった時のために、\p駆逐艦自身が加速して囮になろうってのか…\p…\p。\e
+<000001a2> And after that,\p the shuttles will also accelerate to act as bait in case the anti-laser warheads weren't effective enough...\p...\p\e
+
+//<000001a3> 【武】「…\p…\p…\p…\p」\e
+<000001a3> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000001a4> オレ達は…\p…\pそれ程の期待を背負っているという事なんだ。\e
+<000001a4> That shows...\p...\phow much everyone expects of us.\e
+
+//<000001a5> それだけの犠牲を払ってでも、\pオレ達を『あ号標的』に届ける価値がある…\p…\pそう信じてくれているんだ。\e
+<000001a5> Reaching the Primary Objective is worth all those sacrifices...\p...\pand they believe that.\e
+
+//<000001a6> オレ達はその信用を絶対に裏切ることはできない。\n――いや、\p絶対に裏切らない…\p…\p！\e
+<000001a6> We can't betray their trust.\n――No,\p we absolutely won't...\p...\p!\e
+
+//<000001a7> ――オレ達はやるんだ！！\e
+<000001a7> ――We will do this!!\e
+
+//<000001b7> 【ネウストラシムイ艦長】「――全艦減速開始！　――再突入回廊へ進入せよ！」
+<000001b7> 【Neustrashimy Class Captain】「――All ships, begin deceleration!\b――Proceed to reentry corridors!」//reentry corridor: A narrow corridor along which a spacecraft must travel during reentry in order to pass safely through the atmosphere and achieve a successful landing ~IX
+
+//<000008a9> \r
+<000008a9> \r
+
+//<000001ba> 【霞】「――減速開始。\nＡ－０４軌道降下中」
+<000001ba> 【Kasumi】「――Beginning deceleration.\nA-04 is falling out of orbit.」
+
+//<000008ab> \r
+<000008ab> \r
+
+//<000001bb> 【武】「――システムチェック！」
+<000001bb> 【Takeru】「――Systems check!」
+
+//<000008af> \r
+<000008af> \r
+
+//<000001bc> 【霞】「――――データリンク正常。\n軌道制御は艦隊と完全に連動中」
+<000001bc> 【Kasumi】「――――Data link normal.\nOrbit control is perfectly synchronized with the fleet's.」
+
+//<000008b3> \r
+<000008b3> \r
+
+//<000001be> 【武】「――了解。ムアコック・レヒテ機関起動」
+<000001be> 【Takeru】「――Copy that.\bActivate the Moorcock-Lechte engine.」
+
+//<000008b8> \r
+<000008b8> \r
+
+//<000001bf> 【霞】「――機関起動します」
+<000001bf> 【Kasumi】「――Activating engine.」
+
+//<000008c5> \r
+<000008c5> \r
+
+//<000001c0> ――頼むぞ…\p…\p純夏！！
+<000001c0> ――We're counting on you...\p...\pSumika!!
+
+//<000008c9> \r
+<000008c9> \r
+
+//<000001c3> 【千鶴】「――ヴァルキリー１よりヴァルキリーズ各機！」
+<000001c3> 【Chizuru】「――Valkyrie 1 to all Valkyries!」
+
+//<000008cc> \r
+<000008cc> \r
+
+//<000001c5> ――委員長！
+<000001c5> ――Class Rep!
+
+//<000008ee> \r
+<000008ee> \r
+
+//<000001c7> 【千鶴】「――ＳＷ１１５で会いましょう！　良いわね！？」
+<000001c7> 【Chizuru】「――I want to see all of you at SW 115! Got it!?」
+
+//<0000097e> \r
+<0000097e> \r
+
+//<000001ca> 【武】「――了解！」\n
+<000001ca> 【Takeru】「――Copy that!」\n
+
+//<000001cb> 【冥夜・壬姫・慧・美琴】「――了解！」
+<000001cb> 【Meiya & Mikoto & Kei & Miki】「――Copy that!」//to fit the image sequence. - Raide
+
+//<0000097f> \r
+<0000097f> \r
+
+//<000001ce> ――みんな…\p…\p無事でいてくれよ！
+<000001ce> ――Everyone...\p...\pstay safe down there!
+
+//<000008f3> \r
+<000008f3> \r
+
+//<00000c2f> 【霞】「――大気圏に突入」
+<00000c2f> 【Kasumi】「――Entering atmosphere.」
+
+//<000008f6> \r
+<000008f6> \r
+
+//<000001d6> 【武】「うおぉぉぉぉぉ…\p…\p！？」
+<000001d6> 【Takeru】「Uuoooooooooooo...\p...\p!?」
+
+//<000008f9> \r
+<000008f9> \r
+
+//<000001d7> …\p…\pす…\p…\p凄え…\p…\p！！これが大気圏突入…\p…\pッ？！
+<000001d7> ...\p...\pi-...\p...\pincredible...\p...\p!!\bThis is what atmospheric reentry is like...\p...\p!?
+
+//<000008fc> \r
+<000008fc> \r
+
+//<000001d8> 【霞】「――ラザフォード場展開」
+<000001d8> 【Kasumi】「――Rutherford Field active.」
+
+//<000008ff> \r
+<000008ff> \r
+
+//<000001db> 【霞】「――展開率１００％。\n――抗重力係数９．８」\n
+<000001db> 【Kasumi】「――Field is 100% deployed.\n――Anti-gravity coefficient at 9.8」\n
+
+//<000001dd> 【武】「――！？」
+<000001dd> 【Takeru】「――!?」
+
+//<00000905> \r
+<00000905> \r
+
+//<000001df> ――振動が収まった！？　――重力制御…\p…\p！？
+<000001df> ――The shaking stopped!?\b――The gravity control can...\p...\p!?
+
+//<00000908> \r
+<00000908> \r
+
+//<000001e0> 【霞】「――次元境界面の歪曲率、\p許容値以内。\nラザフォード場、\p安定しています」\n
+<000001e0> 【Kasumi】「――Dimension boundary surface distortions within tolerances.\nThe Rutherford Field is stable.」\n
+
+//<000001e1> 【武】「――よぅし！」
+<000001e1> 【Takeru】「――Yeaaah!」
+
+//<0000090e> \r
+<0000090e> \r
+
+//<000001e2> ――がんばれ…\p…\p純夏…\p…\pッ！！
+<000001e2> ――Good work...\p...\pSumika...\p...\p!!
+
+//<00000911> \r
+<00000911> \r
+
+//<000001e4> 【霞】「Ａ－０１収容の各艦、\p本機と同一軌道を降下中…\p…\p！」
+<000001e4> 【Kasumi】「All ships carrying A-01 are descending along the same path as us...\p...\p!」
+
+//<00000914> \r
+<00000914> \r
+
+//<000001e8> 【霞】「――電離Ｅ層突破。\p機関正常…\p…\p００ユニット安定しています」\n
+<000001e8> 【Kasumi】「――Ionospheric E-layer penetrated.\bEngine normal...\p...\pthe 00 Unit is stable.」\n
+
+//<000001ea> 【武】「――了解！」
+<000001ea> 【Takeru】「――Copy that!」
+
+//<0000091b> \r
+<0000091b> \r
+
+//<000001eb> ――よし！　全機無事に…\p…\p
+<000001eb> ――Yes! Everyone should be...\p...\p
+
+//<0000091e> \r
+<0000091e> \r
+
+//<000001ee> 【武】「――なにッ！？」
+<000001ee> 【Takeru】「――What!?」
+
+//<00000921> \r
+<00000921> \r
+
+//<000001f0> 【霞】「――第１、\p第２戦隊が多数のレーザー照射を受けています…\p…\p！」\n
+<000001f0> 【Kasumi】「――1st and 2nd Squadrons are receiving multiple laser exposures...\p...\p!」\n
+
+//<000001f1> 【武】「――くッ！」
+<000001f1> 【Takeru】「――Uu!」
+
+//<00000924> \r
+<00000924> \r
+
+//<000001f7> 【霞】「――第１戦隊の８０％が轟沈。\n――第２戦隊も５０％を切りました…\p…\p！」\n
+<000001f7> 【Kasumi】「――80% of 1st Squadron has been shot down.\n――Less than 50% of 2nd Squadron remains...\p...\p!」\n
+
+//<000001f8> 【武】「――なにいッ！？　――じゅ、\p重金属雲はッ！？」
+<000001f8> 【Takeru】「――Whaaat?!\b――Wh-\pwhat about the heavy metal clouds!?」
+
+//<0000092e> \r
+<0000092e> \r
+
+//<000001f9> 【霞】「――濃度不足です。\n敵はＡＬ弾を殆ど迎撃していません…\p…\p！」\n
+<000001f9> 【Kasumi】「――Not dense enough.\nThe enemy didn't shoot most of the anti-laser warheads...\p...\p!」\n
+
+//<000001fc> ――バカなッ！！　先行した部隊は同じ手で降下に成功して…\p…\p！？
+<000001fc> ――Impossible!! The unit before us made it down fine using the same tactic...\p...\p!!
+
+//<00000936> \r
+<00000936> \r
+
+//<000001fe> ――ッ！？　――まさかあいつら…\p…\pもう対処したのか…\p…\pッ！？
+<000001fe> ――!?\b――There's no way they...\p...\palready figured out why not to shoot them...\p...\p!?
+
+//<0000093a> \r
+<0000093a> \r
+
+//<00000202> ――ッ！
+<00000202> ――!
+
+//<0000093d> \r
+<0000093d> \r
+
+//<00000203> 【霞】「――ラザフォード場に高出力照射…\p…\p！\n次元境界面が不安定化しています…\p…\p！」
+<00000203> 【Kasumi】「――Rutherford Field receiving high energy exposure...\p...\p!\nThe dimensional boundary surface is destabilizing...\p...\p!」
+
+//<00000940> \r
+<00000940> \r
+
+//<00000205> 【霞】「――数１０体の重光線級が焦点を合わせているようです…\p…\p！\n――このままでは…\p…\p！」
+<00000205> 【Kasumi】「――Dozens of Heavy Laser Class are concentrating their fire...\p...\p!\n――At this rate we'll...\p...\p!」
+
+//<00000943> \r
+<00000943> \r
+
+//<00000208> 【武】「――くそッ！！　機関出力最大ッ！！」
+<00000208> 【Takeru】「――Dammit!!\bFull power to the engine!!」
+
+//<00000946> \r
+<00000946> \r
+
+//<00000209> ――頼むぞ純夏ぁッ！！
+<00000209> ――Keep trying, Sumikaaa!!
+
+//<00000949> \r
+<00000949> \r
+
+//<00000215> 【霞】「――００ユニットに高い負荷が掛かっています…\p…\p！　機関出力安定しません…\p…\p！」
+<00000215> 【Kasumi】「――The 00 Unit is under extreme pressure...\p...\p!\bThe engine output is not stable...\p...\p!」
+
+//<0000094d> \r
+<0000094d> \r
+
+//<00000216> ――ＳＷ１１５まで４２０秒切ってるッ！！――耐えてくれ純夏…\p…\p！！
+<00000216> ――Only 420 seconds until SW 115!!\b――Hang in there, Sumika...\p...\p!!
+
+//<00000950> \r
+<00000950> \r
+
+//<0000021a> 【早蕨艦長】「――Ａ－０４ッ！　我々に構わず回避しろッ！！」
+<0000021a> 【Sawarabi Captain】「――A-04!\bForget about us and evade!!」
+
+//<00000955> \r
+<00000955> \r
+
+//<0000021c> 【武】「――ッ！？」
+<0000021c> 【Takeru】「――!?」
+
+//<00000958> \r
+<00000958> \r
+
+//<00000220> 【エイラート艦長】「――そうだッ！　Ａ－０４をやらせる訳には行かない！」
+<00000220> 【Eilat Captain】「――He's right!\bWe can't let them get the A-04!」
+
+//<0000095b> \r
+<0000095b> \r
+
+//<00000222> 【武】「――ダメですッ！――駆逐艦にそんな機動はできない！！」\n
+<00000222> 【Takeru】「――Don't do it!\b――Your shuttles can't maneuver that well!!」\n//I can't understand the logic around here. Everyone is insisting on evasive maneuver (only for A-04? or for the entire fleet?) to avoid the lazor, which Takeru refuse because they'll get off course. And then later Ichimonji told the fleet to stay on course, he'll shield everyone from lazor. - Raide //NOW I remember, the A-04 is shielding the fleet with its own Rutherford Field so Takeru's first response here is "if I start evading you guys will no longer be shielded and you can't maneuever well enough to survive without shields!" while his second response below is "if I evade the A-04 will be screwed too!" ~IX
+
+//<00000226> 【シャイロー艦長】「――回避してみせるッ！　やってくれ！」
+<00000226> 【Shiloh Captain】「――Evasive maneuvers! Do it!」
+
+//<00000961> \r
+<00000961> \r
+
+//<0000022b> 【ラファイエット艦長】「――我々はＡ－０４を失うわけにはいかないんだッ！　早くしろッ！！」
+<0000022b> 【Lafayette Captain】「――We can't afford to lose the A-04! Do it already!!」
+
+//<00000964> \r
+<00000964> \r
+
+//<0000022d> 【武】「――回避したらコースを大きくはずれちまう！\n下手なところに降りたら、\pそれこそレーザーの袋叩きですッ！！」\n
+<0000022d> 【Takeru】「――If I try to evade, we'll be off course!\nAnd if we land in the wrong place we'll be sitting ducks for more lasers!!」\n
+
+//<00000231> 【夕凪艦長】「――貴艦らはコースを維持しろッ！」
+<00000231> 【Yuunagi Captain】「――All of you, maintain course!」
+
+//<0000096e> \r
+<0000096e> \r
+
+//<00000234> 【武】「――ッ！？」\n
+<00000234> 【Takeru】「――!?」\n
+
+//<00000235> 【早蕨艦長】「――ッ！」\n
+<00000235> 【Sawarabi Captain】「――!」\n
+
+//<00000237> 【エイラート艦長】「――！」\n
+<00000237> 【Eilat Captain】「――!」\n
+
+//<00000239> 【シャイロー艦長】「――！」\n
+<00000239> 【Shiloh Captain】「――!」\n
+
+//<0000023b> 【ラファイエット艦長】「――い…\p…\p一文字ッ！」
+<0000023b> 【Lafayette Captain】「――I-...\p...\pIchimonji!?」//OH FUCK I COMPLETELY FORGOT ABOUT THIS ~IX
+
+//<00000971> \r
+<00000971> \r
+
+//<0000023f> ――夕凪！？　第２戦隊の旗艦――無事だったのかッ！？
+<0000023f> ――The Yuunagi!?\bThe 2nd Squadron flagship――Is intact!?
+
+//<00000974> \r
+<00000974> \r
+
+//<00000240> 【夕凪艦長・一文字】「――ここは我等に任せてもらおうッ！」
+<00000240> 【Capt. Ichimonji of the Yuunagi】「――Let us handle this!」
+
+//<00000979> \r
+<00000979> \r
+
+//<00000244> ――凄乃皇の盾になろうってのか…\p…\pッ！？
+<00000244> ――He's gonna shield the Susano'o...\p...\p!?
+
+//<00000a37> \r
+<00000a37> \r
+
+//<000002ce> 【武】「――止めてください一文字艦長ッ！　いくらなんでも無茶ですッ！！」
+<000002ce> 【Takeru】「――Please stop, Capt. Ichimonji! This is insane!!」
+
+//<00000aa0> \r
+<00000aa0> \r
+
+//<00000248> 【霞】「――ラザフォード場の次元境界面安定。\n機関出力曲線、\p定常域へ回復中」\n
+<00000248> 【Kasumi】「――Rutherford dimensional boundary field stable.\nEngine output fluctuations are back within tolerances.」\n
+
+//<0000024a> 【武】「――ッ…\p…\p！！」
+<0000024a> 【Takeru】「――...\p...\p!!」
+
+//<00000a4a> \r
+<00000a4a> \r
+
+//<0000024d> 【夕凪艦長・一文字】「――人類をッ――頼むぞ…\p…\pッ！！」\n
+<0000024d> 【Capt. Ichimonji of the Yuunagi】\b「――I'm counting on you――To save humanity...\p...\p!!」\n
+
+//<00000bed> 【武】「――や、\pやめてくれぇ！！」
+<00000bed> 【Takeru】「――P-\pplease, stooop!!」
+
+//<00000a99> \r
+<00000a99> \r
+
+//<00000251> 【武】「――い、\p一文字艦長ォォッ！！」
+<00000251> 【Takeru】「――C-\pCapt. Ichimonjiiii!!」
+
+//<00000a9e> \r
+<00000a9e> \r
+
+//<00000252> 【早蕨艦長】「――全艦再突入殻分離ッ！　最大加速でＡ－０４の前に出るッ！」
+<00000252> 【Sawarabi Captain】「――All ships release reentry shells!\bMaximum acceleration! Get in front of A-04!」
+
+//<00000aca> \r
+<00000aca> \r
+
+//<00000255> 【エイラート艦長】「――了解ッ！」\n
+<00000255> 【Eilat Captain】「――Copy that!」\n
+
+//<00000257> 【シャイロー艦長】「――了解！」\n
+<00000257> 【Shiloh Captain】「――Copy that!」\n
+
+//<00000259> 【ラファイエット艦長】「――了解ッ！」
+<00000259> 【Lafayette Captain】「――Copy that!」
+
+//<00000a62> \r
+<00000a62> \r
+
+//<0000025c> 【武】「――そんなッ！！　あなた達までッ…\p…\p！！」
+<0000025c> 【Takeru】「――No!! Not you guys too...\p...\p!!」
+
+//<00000a67> \r
+<00000a67> \r
+
+//<0000025d> 重レーザーの一点集中照射なんだぞ…\p…\p！？\nラザフォード場じゃなきゃ防げないんだぞッ！！
+<0000025d> We're talking about concentrated Heavy Laser fire here...\p...\p!!\nYou can't block that without a Rutherford Field!!
+
+//<00000a6c> \r
+<00000a6c> \r
+
+//<0000025f> 【早蕨艦長】「――貴様等を無傷でオリジナルハイヴに連れて行く事が我等の任務…\p…\p！」
+<0000025f> 【Sawarabi Captain】「――It is our mission to see that you all safely reach the Original Hive...\p...\p!」
+
+//<00000c12> \r
+<00000c12> \r
+
+//<00000c14> 【霞】「――ラザフォード場の次元境界面安定。\n機関出力曲線定常値」\n
+<00000c14> 【Kasumi】「――Rutherford dimensional boundary field stable.\nEngine output is steady.」\n
+
+//<00000262> 【エイラート艦長】「――人類反撃の切り札となる決戦部隊を運んだ事は、\p駆逐艦乗りにとっては最大の名誉だ！！」
+<00000262> 【Eilat Captain】「――Carrying the unit that will decide the fate of humanity has been our greatest honor!!」
+
+//<00000ad2> \r
+<00000ad2> \r
+
+//<00000265> 【武】「――ッ…\p…\p！！」
+<00000265> 【Takeru】「――...\p...\p!!」
+
+//<00000a77> \r
+<00000a77> \r
+
+//<00000267> 【シャイロー艦長】「――その名誉を汚させはせんッ！　そして貴様達にも手出しはさせんッ！！」\n
+<00000267> 【Shiloh Captain】「――We will not disgrace that honor!\bAnd we will not allow them to lay a hand on you!!」\n
+
+//<00000269> 【霞】「――ＳＷ１１５まで約２５００…\p…\p！　――突入部隊各機、\p強硬着陸準備…\p…\p！」
+<00000269> 【Kasumi】「――2500 meters to SW 115...\p...\p!\b――Infiltration units are bracing for impact...\p...\p!」//the ones on the surface bracing for the impact of the orbital drop, if unclear ~IX
+
+//<00000ac4> \r
+<00000ac4> \r
+
+//<0000026c> 【ラファイエット艦長】「――フランスを――ユーラシアを取り戻してくれッ！！」
+<0000026c> 【Lafayette Captain】\b「――Take back France――And all of Eurasia!!」
+
+//<00000a8c> \r
+<00000a8c> \r
+
+//<0000026f> 【武】「――了…\p…\p解…\p…\pッ！！」
+<0000026f> 【Takeru】「――C-...\p...\pcopy that...\p...\p!!」
+
+//<00000ac6> \r
+<00000ac6> \r
+

@@ -1,0 +1,2431 @@
+// Title: 許されざる者 12月9日（日）
+#FILENAME 5f4cf75e
+#TYPE 1
+
+//<00000001> ――てぇ！！\e
+<00000001> ――Owww!!\e
+
+//<00000002> 【武】「いててて…\p…\p」\e
+<00000002> 【Takeru】「Ow-ow-ow-ow...\p...\p」\e
+
+//<00000003> 【夕呼】「お休みのところ悪いわね」\e
+<00000003> 【Yuuko】「Sorry to disturb your nap.」\e
+
+//<00000004> ここは…\p…\p。\e
+<00000004> This place...\p...\p\e
+
+//<00000005> 戻ってきたのか？\e
+<00000005> I've come back?\e
+
+//<00000006> 【夕呼】「いくら取ろうとしても、\pあんた抱きしめて放してくれないんだもの」\e
+<00000006> 【Yuuko】「I kept trying to get it off you, but you just wouldn't let go.」\e
+
+//<00000007> あ…\p…\p書類。\e
+<00000007> Ah...\p...\pthe documents.\e
+
+//<00000008> 【夕呼】「ま、\p寝てても放さないその意気や良しってところだけどね」\e
+<00000008> 【Yuuko】「Well,\p having the will to hold on to them even in your sleep is still a good thing.」\e
+
+//<00000009> 【武】「今は何月何日の何時ですか？」\e
+<00000009> 【Takeru】「What's the date? And the time?」\e//having a pause here felt more natural to me - Sheeta //may as well make them separate sentences then ~IX
+
+//<0000000a> 【夕呼】「１２月９日午前０時１４分。\n３０分ほど前に帰ってきたのよ」\e
+<0000000a> 【Yuuko】「December 9th, fourteen minutes after midnight.\nYou got back around a half hour ago.」\e
+
+//<0000000b> 【武】「…\p…\p…\pそうですか」\e
+<0000000b> 【Takeru】「...\p...\pI see.」\e
+
+//<0000000c> 時間を待ってる内に寝ちまったのか…\p…\p。\e
+<0000000c> So I fell asleep before the time came...\p...\p\e
+
+//<0000000d> 【夕呼】「で、\pこれ。\nさっそく確認させてもらうわよ？」\e
+<0000000d> 【Yuuko】「Now gimme.\nI need to look through it right away.」\e
+
+//<0000000e> 【武】「あ、\pはい…\p…\p」\e
+<0000000e> 【Takeru】「Ah,\p okay...\p...\p」\e
+
+//<000009cd> ペラ…\p…\p。\e
+<000009cd> *flip*...\p...\p\e
+
+//<00000010> 【夕呼】「…\p…\p…\p…\p」\e
+<00000010> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<000009ce> ペラ…\p…\p。\e
+<000009ce> *flip*...\p...\p\e
+
+//<00000012> 【夕呼】「…\p…\p…\p…\p」\e
+<00000012> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<000009cf> ペラ…\p…\p。\e
+<000009cf> *flip*...\p...\p\e
+
+//<00000cc9> 【夕呼】「…\p…\p…\p…\p」\e
+<00000cc9> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<00000015> 【武】「どうです？　それな――」\e
+<00000015> 【Takeru】「How is it? Tha――」\e
+
+//<00000016> 【夕呼】「そうよ、\pそう！　これが言いたかったのよ！！」\e
+<00000016> 【Yuuko】「That's it,\p yes!\bThis is exactly what I wanted to say!!」\e
+
+//<00000017> 【武】「ぬあ！　ぐっ…\p…\p！？」\e
+<00000017> 【Takeru】「Wha――!? Uu...\p...\p!?」\e
+
+//<00000018> な、\pなんで抱きついてるんですかっっ！？\e
+<00000018> Wh-\pwhy are you hugging me!!?\e
+
+//<00000019> 【夕呼】「あたしの求めている物をちゃんと出してくれるなんて、\pさすが向こうのあたしね！」\e
+<00000019> 【Yuuko】「The other me gave me exactly what I wanted! I knew she would!」\e
+
+//<0000001a> ちょ、\pちょっと…\p…\p！　胸！　胸が当たってるっ！\e
+<0000001a> H-\phey...\p...\p! Your chest! Your chest is touching me!!\e
+
+//<0000001b> なんでいきなり子供みたいにはしゃいでるんだ、\pこの人は！？\e
+<0000001b> Why're you turning into a hyperactive little kid!?\e
+
+//<0000001c> 【夕呼】「凡人にはこれがわからないのよねぇ。\nもう最高よ！　ンー――」\e
+<0000001c> 【Yuuko】「No ordinary person could understand this stuff.\nIt's just wonderful! Mmm――」\e
+
+//<0000001d> 【武】「！？　ちょ、\pちょっと…\p…\p！？」\e
+<0000001d> 【Takeru】「――!? W-\pwait...\p...\p!!」\e
+
+//<0000001e> キスまで！？　――ぬああああぁぁぁぁ―――！？\e
+<0000001e> Another kiss!?\b――Whaaaaaaaaaaaaaa―――!?\e
+
+//<0000001f> 【武】「まったく…\p…\pなにするんですか！？」\e
+<0000001f> 【Takeru】「Geez...\p...\pwhat the hell was that for!?」\e
+
+//<00000020> 顔中ベタベタだよ…\p…\p。\e
+<00000020> My whole face is wet now...\p...\p\e
+
+//<00000021> 向こうもこっちも、\pやっぱり先生は先生だ。\nやること同じじゃねーか。\e
+<00000021> Sensei really is Sensei in both worlds.\nThey both did exactly the same thing.\e
+
+//<00000022> 【夕呼】「あら、\pごめんなさいね。\nあんまりうれしいんで年下なんかに手を出しちゃったわ」\e
+<00000022> 【Yuuko】「Oh,\p sorry about that.\nI was so happy I accidentally laid hands on a young person for some reason.」\e//there has got to be a way to make this natural and funny in English ~IX
+
+//<00000023> 【武】「…\p…\p年下なんかで悪かったですね」\e
+<00000023> 【Takeru】「...\p...\psorry for being younger than you.」\e
+
+//<00000024> 動悸がおさまらねぇよ、\pくそ。\e
+<00000024> My heart's still pounding, dammit.\e
+
+//<00000025> 【夕呼】「あたしって年下に本気になれない性格だから。\n欲情しないでね」\e
+<00000025> 【Yuuko】「I'm the type who can't get serious about someone younger than me.\nSo don't get too excited.」\e
+
+//<00000026> 【武】「あ、\p当たり前じゃないですか！！」\e
+<00000026> 【Takeru】「Wh-\pwhy the hell would I!?」\e
+
+//<00000027> 【夕呼】「…\p…\p…\p…\pその割には男全開なのね…\p…\p」\e
+<00000027> 【Yuuko】「...\p...\p...\p...\pyour manhood has other ideas...\p...\p」\e//I think this line turned out much better ~IX
+
+//<00000028> 【武】「どこ見てるんですか！？」\e
+<00000028> 【Takeru】「Where are you looking!?」\e
+
+//<00000029> 【夕呼】「まあ、\pいいわ。\n顔拭いておいた方がいいわよ。\nそのまま歩くと独り身の兵士に恨まれるから」\e
+<00000029> 【Yuuko】「It doesn't matter.\nYou should go wash your face.\nAll the single soldiers will glare at you if you walk around like that.」\e
+
+//<0000002a> 【武】「言われなくてもわかってます」\e
+<0000002a> 【Takeru】「You don't have to tell me that.」\e
+
+//<0000002b> こんな状況で廊下歩けるかっての。\e
+<0000002b> You think I can bear to walk down the hallways like this?\e
+
+//<0000002c> まったく…\p…\p…\p…\pよっぽどうれしかったんだろうな…\p…\p…\p…\p。\e
+<0000002c> Geeeez...\p...\p...\p...\pshe must've been really happy...\p...\p...\p...\p\e
+
+//<0000002d> あんなに喜んだ先生、\p初めてだ。\e
+<0000002d> I've never seen Sensei like that before.\e
+//He just described her happiness in past tense one sentence above.
+
+//<0000002e> 【武】「これで、\p先生の研究は完成するんですよね？」\e
+<0000002e> 【Takeru】「This'll let you complete your research,\p right Sensei?」\e
+
+//<0000002f> 【夕呼】「そうよ。これで００ユニットが完成する…\p…\p」\e
+<0000002f> 【Yuuko】「Right. With this I can complete the 00 Unit...\p...\p」\e
+
+//<00000030> ００ユニットが完成すれば、\pオルタネイティヴ４が動き出す。\e
+<00000030> And if she completes the 00 Unit,\bAlternative IV will finally start moving.\e
+
+//<00000031> そうすれば、\pオルタネイティヴ５の発動は阻止出来る。\e
+<00000031> Which means Alternative V won't happen.\e
+
+//<00000032> 未来を、\p変えられるんだ…\p…\p。\e
+<00000032> We can change the future...\p...\p\e
+
+//<00000033> 【夕呼】「必要なものはすべて揃ったわ」\e
+<00000033> 【Yuuko】「I've got everything I need.」\e
+
+//<00000034> 【武】「じゃあ…\p…\p」\e
+<00000034> 【Takeru】「Then...\p...\p」\e
+
+//<00000035> 【夕呼】「ええ、\pあなたのおかげよ」\e
+<00000035> 【Yuuko】「Yes,\p thanks to you.」\e
+
+//<00000036> 【武】「…\p…\p…\p…\p」\e
+<00000036> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000037> 【夕呼】「あんたは『この世界』の英雄よ」\e
+<00000037> 【Yuuko】「You're this world's hero.」\e
+
+//<00000038> 【武】「…\p…\p…\p…\p」\e
+<00000038> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000039> そうだ…\p…\p…\p…\pオレが変えたんだ。\e
+<00000039> That's right...\p...\p...\p...\pI changed it.\e
+
+//<0000003a> 敗北の未来を知ってて、\p未来を変えようと思って、\p『向こうの世界』にまで飛んで…\p…\p…\p…\p。\e
+<0000003a> I learned of our future destruction,\p so I tried to change the future,\p and even went back to my old world to do it...\p...\p\e
+
+//<0000003b> オレがいなければ、\p『この世界』はまたあの未来を繰り返していたはずなんだ。\e
+<0000003b> If I wasn't here,\p this world would just repeat that same future again.\e
+
+//<0000003c> それを…\p…\p変えたんだ…\p…\p…\p…\p！\e
+<0000003c> But I...\p...\pchanged it...\p...\p...\p...\p!\e
+
+//<0000003d> 【夕呼】「これで特殊任務からは解放ね」\e
+<0000003d> 【Yuuko】「Your special mission is hereby complete.」\e
+
+//<0000003e> 【武】「はい！」\e
+<0000003e> 【Takeru】「Ma'am!」\e
+
+//<0000003f> 【夕呼】「あんたも、\p部屋のベッドでゆっくり眠りなさい」\e
+<0000003f> 【Yuuko】「Now go back to your room and get some sleep.」\e
+
+//<00000040> 【武】「はい…\p…\pって言っても、\pもう散々眠ったんですけどね」\e
+<00000040> 【Takeru】「Okay...\p...\pbut I already slept a ton in the other world.」\e
+
+//<00000041> 【夕呼】「自分で思っているよりは疲れていると思うわ。\n簡単に言うと、\p向こうのあなたの体に、\pいくらか体力を置いてきたはずだから」\e
+<00000041> 【Yuuko】「You're probably more tired than you think.\nTo put it simply,\p let's just say you probably left a lot of stamina in the other you's body.」\e
+
+//<00000042> 【武】「…\p…\pなるほど」\e
+<00000042> 【Takeru】「...\p...\pI see.」\e
+
+//<00000043> 【夕呼】「じゃ、\pお疲れ様。\n社は既に部屋に戻ってるから、\p起こしちゃだめよ？」\e
+<00000043> 【Yuuko】「Good night then.\nYashiro's already there, so don't wake her.」\e
+
+//<00000044> 【武】「はい。それじゃおやすみなさい」\e
+<00000044> 【Takeru】「Okay. Good night then.」\e
+
+//<00000046> おーおー、\p相変わらずの無邪気さで寝てるわ。\e
+<00000046> Oooh,\p she's sleeping as innocently as ever.\e
+
+//<00000047> …\p…\pでも、\pおまえが頑張ってくれたおかげで、\pオレは無事『この世界』に帰って来られたんだ。\e
+<00000047> ...\p...\pbut,\p it's thanks to your hard work that I was able to come back to this world safely.\e
+
+//<00000048> ありがとな…\p…\p。\e
+<00000048> Thank you...\p...\p\e
+
+//<00000049> 【霞】「ん…\p…\p…\p…\p」\e
+<00000049> 【Kasumi】「Hm...\p...\p...\p...\p」\e
+
+//<0000004a> 【武】「ごめんごめん…\p…\pさ、\pゆっくり眠りな…\p…\p」\e
+<0000004a> 【Takeru】「Sorry, sorry...\p...\pplease go back to sleep...\p...\p」\e
+//Sounded a little too forceful.
+
+//<0000004b> 【霞】「…\p…\p…\p…\p」\e
+<0000004b> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000004c> …\p…\p…\p…\p。\e
+<0000004c> ...\p...\p...\p...\p\e
+
+//<0000004e> 【武】「う～～～…\p」\e
+<0000004e> 【Takeru】「Uuuuuuuu...\p...\p」\e
+
+//<00000050> 【武】「ん～」\e
+<00000050> 【Takeru】「Mmm...\p...\p」\e
+
+//<00000051> 【霞】「おはよう」\e
+<00000051> 【Kasumi】「Good morning.」\e
+
+//<00000052> 【武】「おお、\pおはよう」\e
+<00000052> 【Takeru】「Yeah,\p morning.」\e
+
+//<00000053> 【霞】「いってらっしゃい」\e
+<00000053> 【Kasumi】「See you later.」\e
+
+//<00000054> ん？\e
+<00000054> Hm?\e
+
+//<00000e0f> 【武】「ああ…\p…\pそうだな、\pもう転移実験は終わったんだ…\p…\p」\e
+<00000e0f> 【Takeru】「Aaah...\p...\pthat's right,\p we're done with those transfer experiments...\p...\p」\e
+
+//<00000056> そうか、\p今日からまたみんなと…\p…\p…\p…\pって！\e
+<00000056> That's right,\p starting today I'm back to...\p...\p...\p...\pwait!\e
+
+//<00000057> 【武】「は、\p８時ぃっ！？」\e
+<00000057> 【Takeru】「E-\peight o'clooock!?」\e
+
+//<00000058> お、\pおいおいっ！？　点呼ぶっちぎってるし、\p寝過ごしもいいトコだぞ！！\e
+<00000058> H-\phey now!! I slept straight through the morning roll call!!\e
+
+//<00000059> たった１日向こうで過ごしたくらいで向こうの体に――\e
+<00000059> Just from spending a day over there, my body――\e
+
+//<0000005a> 【霞】「大丈夫」\e
+<0000005a> 【Kasumi】「It's fine.」\e
+
+//<0000005b> 【武】「――え？」\e
+<0000005b> 【Takeru】「――Eh?」\e
+
+//<0000005c> 【霞】「９時に講堂集合です」\e
+<0000005c> 【Kasumi】「Your squad is to assemble in the auditorium at nine.」\e
+
+//<0000005d> 【武】「講堂…\p…\p集合？」\e
+<0000005d> 【Takeru】「The...\p...\pauditorium?」\e
+
+//<0000005e> …\p…\pなんかあったっけ？\e
+<0000005e> ...\p...\pdid something happen?\e
+
+//<0000005f> なにかあるような予定は聞かされてないけど…\p…\p。\e
+<0000005f> I haven't heard about any special events today...\p...\p\e
+
+//<00000060> 【霞】「覚えていないんですか？」\e
+<00000060> 【Kasumi】「You don't remember?」\e
+
+//<00000061> 【武】「…\p…\p…\p…\p」\e
+<00000061> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000062> …\p…\pない…\p…\pな。\e
+<00000062> ...\p...\pno...\p...\p\e
+
+//<00000063> 【霞】「覚えていないんですね？」\e
+<00000063> 【Kasumi】「You don't remember.」\e
+
+//<00000064> 【武】「…\p…\pうーん。\n覚えてないっていうか、\pまったく見当がつかない。\nどうしてだ？　そんなこと、\p気にするだけ仕方ないのか…\p…\p？」\e
+<00000064> 【Takeru】「...\p...\pmmmm.\p It's not so much I don't remember,\bas I have no idea what you're talking about.\nSo what are we doing there? I can't help but wonder, right...\p...\p?」\e
+
+//<00000065> 寝坊することを見越して呼び出し…\p…\pなんてことは絶対あり得ない。\nそもそも、\p懲罰関係で呼び出すなら講堂は不適切すぎる。\e
+<00000065> There's absolutely no way...\p...\pit's because I overslept.\nBesides,\p the auditorium just isn't appropriate for disciplinary action.\e
+
+//<00000066> 【霞】「…\p…\p…\p…\p」\e
+<00000066> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000067> 【武】「思い出がないっていうのは、\pやっぱちょっとヤだな」\e
+<00000067> 【Takeru】「I kinda don't like not remembering it.」\e
+
+//<00000068> 【霞】「…\p…\pはい」\e
+<00000068> 【Kasumi】「...\p...\pyes.」\e
+
+//<00000069> 【武】「思い出せることなのか？　それとも本当に知らないのかな？」\e
+<00000069> 【Takeru】「Can I remember it? Or do I really not know?」\e
+
+//<0000006a> 【霞】「わかりません。\nないイメージは読めません」\e
+<0000006a> 【Kasumi】「I don't know.\nI can't read an image which isn't there.」\e
+
+//<0000006b> 【武】「…\p…\pまあいいや。\n飯…\p…\pどうする？」\e
+<0000006b> 【Takeru】「...\p...\poh well.\n...\p...\pwhat about breakfast?」\e
+
+//<0000006c> 【霞】「今はいいです」\e
+<0000006c> 【Kasumi】「I'm fine for now.」\e
+
+//<0000006d> 【武】「そうか…\p…\pじゃあ、\p行ってくる」\e
+<0000006d> 【Takeru】「I see...\p...\pI'll be off then.」\e
+
+//<0000006e> 【霞】「ばいばい」\e
+<0000006e> 【Kasumi】「Bye-bye.」\e
+
+//<0000006f> 【武】「ああ…\p…\pばいばい」\e
+<0000006f> 【Takeru】「Yeah...\p...\pbye-bye.」\e
+
+//<00000070> …\p…\p。\e
+<00000070> ...\p...\p\e
+
+//<00000071> 【千鶴】「…\p…\p…\p…\p」\e
+<00000071> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00000072> 【武】「よお、\p委員長」\e
+<00000072> 【Takeru】「Hey,\p Class Rep.」\e
+
+//<00000073> 【千鶴】「…\p…\p…\p…\p」\e
+<00000073> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00000074> 【武】「委員長？　ぶつかるぞ」\e
+<00000074> 【Takeru】「Class Rep? You're gonna walk into me.」\e
+
+//<00000075> 【千鶴】「え…\p…\pあ、\p白銀…\p…\pっ！」\e
+<00000075> 【Chizuru】「Eh...\p...\pah,\p Shirogane...\p...\p!」\e
+
+//<0000259f> 【武】「ほらほら、\p危ねぇな…\p…\pボーっとしてるとメシぶちまけちまうぞ」\e
+<0000259f> 【Takeru】「Come on,\p that's dangerous...\p...\pyou're gonna drop all your food like that.」\e
+
+//<00000077> 【千鶴】「…\p…\pごめんなさい」\e
+<00000077> 【Chizuru】「...\p...\pI'm sorry.」\e
+
+//<00000078> 【武】「…\p…\p…\p…\p」\e
+<00000078> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000079> …\p…\p無理もないか。\nいくらしっかりしてても、\p親父さんがあんなことになったんだ。\nそれで平然としていられるほど、\p委員長だって強くない。\e
+<00000079> ...\p...\pguess I can't blame her.\nNo matter how composed she is,\p she did lose her father.\nEven Class Rep's not strong enough to be perfectly fine after that.\e//lit. "that thing happened to her father" lol
+
+//<0000007a> 口では何と言おうと、\pどう思うことにしようと、\p本心まではごまかせない。\e
+<0000007a> Whatever she says,\p or whatever she thinks,\p she can't hide it.\e
+
+//<0000007b> でも…\p…\pそんな物憂げな顔してても、\pやっぱり委員長は委員長の顔してる。\e
+<0000007b> But...\p...\peven with that look of mourning,\p Class Rep still looks like Class Rep.\e
+
+//<0000007c> 『向こうの世界』の委員長とは…\p…\pやっぱり違う。\e
+<0000007c> She really is different...\p...\pfrom the other Class Rep.\e
+
+//<0000007d> 【千鶴】「な、\pなに？　…\p…\pじーっと見たりして…\p…\p」\e
+<0000007d> 【Chizuru】「Wh-\pwhat? ...\p...\pwhy're you staring...\p...\p?」\e
+
+//<0000007e> 【武】「いや…\p…\pすっかりこっちの委員長に慣れちまってたんだなと思って」\e
+<0000007e> 【Takeru】「Well...\p...\pit just occurred to me how much I was used to this Class Rep.」\e
+
+//<0000007f> 【千鶴】「え？」\e
+<0000007f> 【Chizuru】「Eh?」\e
+
+//<00000080> 【武】「いや、\p何でもない…\p…\pそれよりみんなは？」\e
+<00000080> 【Takeru】「No,\p it's nothing...\p...\pwhere is everyone, anyway?」\e
+
+//<00000081> 【千鶴】「…\p…\p…\p…\p知らないわ。\nあれから満足に顔合わせていないの」\e
+<00000081> 【Chizuru】「...\p...\p...\p...\pI don't know.\nI haven't seen them much since then.」\e
+
+//<00000082> 【武】「そうか…\p…\p」\e
+<00000082> 【Takeru】「I see...\p...\p」\e
+
+//<00000083> 【声】「あ…\p…\p」\e
+<00000083> 【Voice】「Ah...\p...\p」\e
+
+//<00000084> 【武】「ん…\p…\pあ、\pたま…\p…\p」\e
+<00000084> 【Takeru】「Hm? ...\p...\pah,\p Tama...\p...\p」\e
+
+//<00000085> 【壬姫】「たけるさん…\p…\pと榊さん」\e
+<00000085> 【Miki】「Takeru-san...\p...\pand Sakaki-san.」\e
+
+//<00000086> 【千鶴】「…\p…\pおはよう」\e
+<00000086> 【Chizuru】「...\p...\pgood morning.」\e
+
+//<00000087> 【壬姫】「う、\pうん…\p…\p…\p…\pうん！　おはようっ！」\e
+<00000087> 【Miki】「O-\pokay...\p...\p...\p...\pyeah! Good morning!」\e
+
+//<00000088> 【武】「たまひとりか？」\e
+<00000088> 【Takeru】「You alone, Tama?」\e
+
+//<00000089> 【壬姫】「うん…\p…\p」\e
+<00000089> 【Miki】「Yeah...\p...\p」\e
+
+//<0000008a> 【武】「他のみんなはどうした？」\e
+<0000008a> 【Takeru】「Where's everyone else?」\e
+
+//<0000008b> 【壬姫】「…\p…\p御剣さんも、\p彩峰さんも、\pもうご飯は食べちゃったみたい」\e
+<0000008b> 【Miki】「...\p...\pMitsurugi-san and Ayamine-san already ate.」\e
+
+//<0000008c> 【武】「…\p…\p…\p…\p」\e
+<0000008c> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000008d> 【壬姫】「鎧衣さんは…\p…\p」\e
+<0000008d> 【Miki】「Yoroi-san's still...\p...\p」\e
+
+//<0000008e> 【千鶴】「大丈夫よ…\p…\pきっと」\e
+<0000008e> 【Chizuru】「She'll be fine...\p...\pI'm sure of it.」\e
+
+//<0000008f> 【壬姫】「…\p…\pうん」\e
+<0000008f> 【Miki】「...\p...\pokay.」\e
+
+//<00000090> 【武】「…\p…\pとにかくさ、\p９時に講堂なんだろ？　さっさと食って行こうぜ？」\e
+<00000090> 【Takeru】「...\p...\panyway,\p we're supposed to be somewhere at nine, right? Let's hurry up and eat.」\e
+
+//<00000091> 【千鶴】「そうね」\e
+<00000091> 【Chizuru】「You're right.」\e
+
+//<00000092> 【壬姫】「…\p…\p…\p…\p何があるのか、\p知ってる？」\e
+<00000092> 【Miki】「...\p...\p...\p...\pdo you know what happened?」\e
+
+//<00000093> 【武】「いや」\e
+<00000093> 【Takeru】「No.」\e
+
+//<00000094> 【千鶴】「知らない」\e
+<00000094> 【Chizuru】「Me neither.」\e
+
+//<00000095> 【壬姫】「…\p…\pそう」\e
+<00000095> 【Miki】「...\p...\pI see.」\e
+
+//<00000096> …\p…\p講堂か。\e
+<00000096> ...\p...\pthe auditorium.\e
+
+//<00000097> 入隊宣誓の時に来たきりだな…\p…\p。\e
+<00000097> Haven't been here since my enlistment oath...\p...\p\e
+
+//<00000098> しっかし、\p一体何に使うんだ、\pここ？　戦術機主体の衛士がこういった場所で訓練することはない…\p…\pとなると整備兵用の訓練所？\e
+<00000098> What do they use this place for anyway? Eishi can't do any TSF-related training in here...\p...\pmaybe training the mechanics?\e
+
+//<00000099> とは思えないしな…\p…\pあ…\p…\p…\p…\p。\e
+<00000099> Seems unlikely though...\p...\pah...\p...\p...\p...\p\e
+
+//<0000009a> 【武】「冥夜！」\e
+<0000009a> 【Takeru】「Meiya!」\e
+
+//<0000009b> 【冥夜】「…\p…\pタケルか、\p特殊任務はもういいのか？」\e
+<0000009b> 【Meiya】「...\p...\pTakeru?\p Is your special mission over?」\e
+
+//<0000009c> 【武】「ああ、\p昨日で終わった」\e
+<0000009c> 【Takeru】「Yeah,\p it ended yesterday.」\e
+
+//<0000009d> 【千鶴】「そう言えばそんなことしてたんだっけ…\p…\p」\e
+<0000009d> 【Chizuru】「I completely forgot you were doing that...\p...\p」\e
+
+//<0000009e> 【武】「おいおい」\e
+<0000009e> 【Takeru】「Hey now.」\e
+
+//<0000009f> 【壬姫】「忘れてたね…\p…\p」\e
+<0000009f> 【Miki】「So did I...\p...\p」\e
+
+//<000000a0> 【武】「別にいいけどさー。\nそれより冥夜、\p一緒に飯食うぐらい良いんじゃねぇのか？」\e
+<000000a0> 【Takeru】「I guess it doesn't matter.\nAnyway, Meiya,\p what's wrong with eating as a group?」\e
+
+//<000000a1> 【冥夜】「ああ…\p…\p許すがよい。\n此度の呼び出し…\p…\p妙に気持ちが落ち着かぬのだ」\e
+<000000a1> 【Meiya】「Yes...\p...\pforgive me.\nThis summons...\p...\phas me strangely unsettled.」\e
+
+//<000000a2> 【武】「どうして？」\e
+<000000a2> 【Takeru】「Why?」\e
+
+//<000000a3> 【冥夜】「わからん…\p…\p何故であろうな…\p…\p」\e
+<000000a3> 【Meiya】「I know not...\p...\pwhy indeed...\p...\p」\e
+
+//<000000a4> 【武】「…\p…\p…\p…\p」\e
+<000000a4> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000000a5> 自分が背負ってるものを改めて実感したってだけで、\p十分だと思うぞ。\e
+<000000a5> I think just being reminded of how much rests on your shoulders would be enough.\e
+
+//<000000a6> どんな感情をそこで出すべきなのか、\pそれはオレにもわからないし、\p思いつかない。\e
+<000000a6> I don't know and can't imagine what kind of emotions come up during that.\e
+
+//<000000a7> でも…\p…\p何か都合が悪かったりする感覚は理解できる。\e
+<000000a7> But...\p...\pI can understand why it'd be unsettling for you.\e
+
+//<000000a8> 感覚過ぎて、\p人に説明できるようなモンじゃないってこともな。\e
+<000000a8> It's too subjective to explain to others anyway.\e
+
+//<000000a9> 【冥夜】「…\p…\pじきに落ち着くであろう。\n許すがよいぞ」\e
+<000000a9> 【Meiya】「...\p...\pI should compose myself shortly.\nForgive me.」\e
+
+//<000000aa> 【武】「気にするな」\e
+<000000aa> 【Takeru】「Don't worry about it.」\e
+
+//<000000ab> 【壬姫】「あ、\p彩峰さんだ」\e
+<000000ab> 【Miki】「Ah,\p it's Ayamine-san.」\e
+
+//<000000ac> 【千鶴】「…\p…\p…\p…\p」\e
+<000000ac> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<000000ad> 【武】「よう」\e
+<000000ad> 【Takeru】「Hey.」\e
+
+//<000000ae> 【慧】「…\p…\pよう」\e
+<000000ae> 【Kei】「...\p...\phey.」\e
+
+//<000000af> 『向こうの世界』の彩峰を見たせいか…\p…\pやっぱり、\pどこか落ち込んでる様な気がする。\e
+<000000af> Maybe it's because I saw the other Ayamine...\p...\pbut she really does seem sad somehow.\e
+
+//<000025a1> あの事件からまだ数日しか経っていない今、\p沙霧大尉の件、\p吹っ切れる訳がない。\e
+<000025a1> It's only been a few days since that incident with Capt. Sagiri.\p There's no way she'd be totally over it yet.\e
+
+//<000000b1> だけど…\p…\pこうして、\p今までどおりの会話を重ねていくしかないんだ。\e
+<000000b1> But...\p...\pthere's nothing I can do for her other than keep trying to interact with everyone normally for a while.\e
+
+//<000000b2> 後は彩峰が、\p自分でケリを付ける問題で、\pオレが首を突っ込むべきじゃない。\e
+<000000b2> It's up to Ayamine to come to terms with it.\bI should just mind my own business.\e
+
+//<000000b3> 【慧】「…\p…\pどうした？」\e
+<000000b3> 【Kei】「...\p...\pwhat?」\e
+
+//<000000b4> 【武】「いや、\p別に」\e
+<000000b4> 【Takeru】「No,\p it's nothing.」\e
+
+//<000000b5> 【慧】「…\p…\p…\p…\p」\e
+<000000b5> 【Kei】「...\p...\p...\p...\p」\e
+
+//<000000b6> 【武】「大丈夫なのか？」\e
+<000000b6> 【Takeru】「Are you okay?」\e
+
+//<000000b7> 【慧】「…\p…\pなにが？」\e
+<000000b7> 【Kei】「...\p...\pwhat do you mean?」\e
+
+//<000000b8> 【武】「…\p…\p…\pならいい」\e
+<000000b8> 【Takeru】「...\p...\p...\pnever mind then.」\e
+
+//<000000b9> 【慧】「…\p…\pきっと大丈夫」\e
+<000000b9> 【Kei】「...\p...\pI'm sure I'm fine.」\e
+
+//<000000ba> 【武】「…\p…\p…\p…\pそうか」\e
+<000000ba> 【Takeru】「...\p...\p...\p...\pI see.」\e
+
+//<000000bb> 【慧】「…\p…\pうん」\e
+<000000bb> 【Kei】「...\p...\pyes.」\e
+
+//<000000bc> 【武】「…\p…\p…\p…\p」\e
+<000000bc> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000000bd> 【慧】「…\p…\p心配かけた？」\e
+<000000bd> 【Kei】「...\p...\pdid I worry you?」\e
+
+//<000000be> 【武】「…\p…\p…\p…\pそれなりにな」\e
+<000000be> 【Takeru】「...\p...\p...\p...\pkinda.」\e
+
+//<000000bf> 【慧】「…\p…\pなら、\p平気」\e
+<000000bf> 【Kei】「...\p...\pthen it's fine now.」\e
+
+//<000000c0> いつものことながら…\p…\p…\p…\pよくわからん。\e
+<000000c0> I didn't really understand that...\p...\p...\p...\pas usual.\e
+
+//<000000c1> 【武】「にしても、\pなんの集まりなんだ？」\e
+<000000c1> 【Takeru】「Still,\p why this summons?」\e
+
+//<000000c2> 他に誰かが来るような気配はない。\n呼ばれたのは、\p２０７小隊だけか。\e
+<000000c2> I see no sign of anyone else coming.\nWere we the only ones called out here?\e
+
+//<000000c3> こんなでっかいところに集めた意味はなんだ？\e
+<000000c3> What's the point of bringing just our squad into this huge room?\e
+
+//<000000c4> まさか、\p本当に何かの懲罰…\p…\p営倉入りの発表か？\e
+<000000c4> There's no way this really is a disciplinary announcement...\p...\pright?\e
+
+//<00002003> 確かにクーデター事件の時、\pウォーケン少佐の命令をきかず殿下にトリアゾラムを投与しなかったが…\p…\pまさか…\p…\pその件で？\e
+<00002003> I did disobey Maj. Walken's order to administer the triazolam during the coup d'etat...\p...\pbut that can't be it...\p...\pright?\e//lit. "I didn't listen to Maj. Walken's order and so didn't administer the triazolam"
+
+//<000000c6> いや、\pそもそも営倉入りをこんなところで発表するとは思えないし…\p…\p。\e
+<000000c6> No,\p I can't imagine they'd announce my imprisonment in a place like this even if that was it...\p...\p\e
+
+//<000000c7> 【声】「見当もつかないの？」\e
+<000000c7> 【Voice】「You really have no idea?」\e
+
+//<000000c8> 【武】「…\p…\p美琴！？」\e
+<000000c8> 【Takeru】「...\p...\pMikoto!?」\e
+
+//<000000c9> 【美琴】「やあ、\pみんな…\p…\p」\e
+<000000c9> 【Mikoto】「Hey guys...\p...\p」\e//lit. "Hey, everybody"
+
+//<000000ca> 【冥夜】「鎧衣…\p…\p」\e
+<000000ca> 【Meiya】「Yoroi...\p...\p」\e
+
+//<000000cb> 【壬姫】「戻ってきたんだね！！」\e
+<000000cb> 【Miki】「You came back!!」\e
+
+//<000000cc> 【美琴】「え…\p…\p？　あ…\p…\pうん、\pただいま」\e
+<000000cc> 【Mikoto】「Eh...\p...\p? Ah...\p...\pright,\p I'm back.」\e
+
+//<000000cd> 【慧】「…\p…\pよかった」\e
+<000000cd> 【Kei】「...\p...\pgood to see you.」\e
+
+//<000000ce> 【美琴】「ありがとう、\pみんな…\p…\p」\e
+<000000ce> 【Mikoto】「Thanks guys...\p...\p」\e
+
+//<000000cf> 【千鶴】「…\p…\pよかった」\e
+<000000cf> 【Chizuru】「...\p...\pit is good to see you.」\e
+
+//<000000d0> 【美琴】「…\p…\pうん」\e
+<000000d0> 【Mikoto】「...\p...\pyeah.」\e
+
+//<000000d1> …\p…\p親父さんの安否がわからない美琴にとって、\p「よかった」という言葉に頷くのは、\p辛いはずだ…\p…\p。\e
+<000000d1> ...\p...\pMikoto has no idea whether her father is safe,\p so being told "it's good to see you" might be kinda painful...\p...\p\e
+
+//<000000d2> でも、\pみんなは、\p鎧衣課長のことを知らない…\p…\pだからその言葉しかかけられない。\e
+<000000d2> But no one knows about Section Chief Yoroi...\p...\pso they can't say anything else.\e
+
+//<000000d3> そして美琴もそのことを重々承知して、\p逆に気を遣って礼を言っている…\p…\p。\e
+<000000d3> And Mikoto understands that full well,\p so she ends up being nice to them by saying thanks...\p...\p\e
+
+//<000000d4> オレだって色々な裏事情を知らなければ、\pみんなと同じ事をしているだろう。\e
+<000000d4> I would've done the same thing too if I didn't know all the behind-the-scenes stuff.\e
+
+//<000000d5> 結局オレ達は、\p他人に気休め以外の言葉は、\pかけてやれないのかもしれないな。\e
+<000000d5> In the end,\p maybe our words can never be more than short-term consolation for each other.\e
+
+//<000000d6> ――！？\e
+<000000d6> ――!?\e
+
+//<000000d7> 【千鶴】「――気をつけ！！」\e
+<000000d7> 【Chizuru】「――Attention!!」\e
+
+//<000000d8> 【まりも】「――小隊整れーつッ！」\e
+<000000d8> 【Marimo】「――Squad, form up!」\e
+//Extended the vowel in either one of those sounds way too weird.-Spin
+
+//<000000d9> 【千鶴・冥夜・壬姫・慧・美琴】「――！？」\n
+<000000d9> 【Chizuru & Meiya & Miki & Kei & Mikoto】「――!?」\n
+
+//<000000da> 【武】「――！？」\e
+<000000da> 【Takeru】「――!?」\e
+
+//<000000db> ――あ、\pあれは…\p…\p基地司令？\e
+<000000db> ――Th-\pthat's...\p...\pthe base CO?\e
+
+//<000000dd> ――ま、\pまさか…\p…\pオルタネイティヴ…\p…\p５…\p…\p？！\e
+<000000dd> ――Th-\pthis can't be...\p...\pAlternative...\p...\pV...\p...\p!?\e
+
+//<000000de> …\p…\pいや、\pそんなバカなッ！？\e
+<000000de> ...\p...\pno,\p there's no way!!\e
+
+//<000000df> オレは…\p…\p未来を変えたじゃないかッ！？\n数式だって回収してきたじゃないかッ！！\e
+<000000df> I...\p...\pI changed the future!!\nI even recovered that equation!!\e
+
+//<000000e0> 【まりも】「ラダビノッド司令官に対し――敬礼ッ！」\e
+<000000e0> 【Marimo】「Salute General Radhabinod!」\e
+
+//<000000e1> …\p…\p…\p…\pそれに…\p…\pあれはクリスマスのはず…\p…\p。\nオレが歴史を変えたから、\pそれが早まったなんて事…\p…\pないよな…\p…\p？\e
+<000000e1> ...\p...\p...\p...\pbesides...\p...\pthat was on Christmas Day...\p...\p\nThere's no way...\p...\pme changing the future...\p...\pmade it happen sooner, right?\e//I *think* it was christmas day - Sheeta
+
+//<000000e2> 【武】「――！？」\e
+<000000e2> 【Takeru】「――!?」\e
+
+//<000000e3> まりもちゃんの…\p…\p横にいるのは…\p…\p誰だ…\p…\p？！\e
+<000000e3> Marimo-chan...\p...\pwho is that...\p...\pnext to you...\p...\p!?\e
+
+//<000000e4> …\p…\p階級は…\p…\p大尉…\p…\pって…\p…\p一体なんだッ！？\e
+<000000e4> ...\p...\phis rank is...\p...\pCaptain...\p...\pbut...\p...\pwho is he!?\e
+
+//<00000ccb> 【国連軍大尉】「――休めッ！」\e
+<00000ccb> 【UN Captain】「――At ease!」\e
+
+//<00000cce> 【国連軍大尉】「突然ではあるが、\pただ今より、\p国連太平洋方面第１１軍、\p横浜基地衛士訓練学校、\p第２０７衛士訓練小隊解隊式を執り行う」\e
+<00000cce> 【UN Captain】「I know this is rather sudden,\p but we will now carry out the graduation ceremony for the 207th Eishi Cadet Squadron of the UN 11th Pacific Army's Yokohama Base Eishi Training School.」\e
+
+//<000000e7> ――えッ…\p…\p解隊式ッ！？　ということは…\p…\p。\e
+<000000e7> ――Eh!? ...\p...\pgraduation!? Which means...\p...\p\e
+
+//<00000cd1> 【国連軍大尉】「――基地司令訓示！」\e
+<00000cd1> 【UN Captain】「――The base CO will commence!」\e//not really sure what this line means, change to whatever the phrase is for "ok he'll talk now" ~IX//Sounded like he was presenting him at a beauty pangeant or something. Also, I'd like to replace "base CO" in this line with "*Rank* Rodbhinojihad(however you spell his name)" just cause it sounds awkward like this. So like "General Rodbin-- will commence."-Spin
+
+//<000000e9> 【まりも】「――気を付けェッ！」\e
+<000000e9> 【Marimo】「――Attentiooon!」\e
+
+//<00001fbe> 【ラダビノッド司令】「楽にしたまえ…\p…\p」\e
+<00001fbe> 【Gen. Radhabinod】「At ease...\p...\p」\e
+
+//<00001fbf> 【ラダビノッド司令】「訓練過程終了、\p晴れて任官というめでたい日だ。\n本来であれば、\p諸君の門出を盛大に祝ってやりたいところではあるが…\p…\p先日の一件もあり、\p日本国民の感情に配慮した事を理解して欲しい」\e
+<00001fbf> 【Gen. Radhabinod】「It is worthy of celebration when cadets complete their training and earn the right to be commissioned.\nNormally,\p we would do just that for your graduation...\p...\pbut given recent events,\p we must allow the Japanese people time to mourn.」\e//adapted like hell ~IX
+//earn their commission is more natural - Makoto //I think this sounds cooler ~IX
+
+//<000000ec> とうとう来た…\p…\p訓練部隊解隊…\p…\p全教程の終了だ…\p…\p！\e
+<000000ec> It's finally time...\p...\pthe squad's being commissioned...\p...\pwe've completed our training...\p...\p!\e
+
+//<00001fc0> 【ラダビノッド司令】「世界は今、\p力と勇気ある若者を欲している」\e
+<00001fc0> 【Gen. Radhabinod】「The world needs more young men and women with strength and courage.」\e
+
+//<00001fc1> 【ラダビノッド司令】「実戦において、\p経験豊富な指揮官や兵士の力は、\p勝利を掴み取るためには欠かせないものである」\e
+<00001fc1> 【Gen. Radhabinod】「Yes, we must have soldiers and commanders with widespread combat experience in order to achieve victory.」\e
+
+//<000000ef> やっと…\p…\pやっとここまで来たんだ…\p…\p。\e
+<000000ef> We've finally...\p...\pmade it this far...\p...\p\e
+
+//<00001fc2> 【ラダビノッド司令】「だが、\pそれと同じぐらい重要なものがある。\nそれは勝利を信じる心だ」\e
+<00001fc2> 【Gen. Radhabinod】「But there is something else no less important.\nHearts which believe we can win.」\e
+
+//<00002038> 【ラダビノッド司令】「若者たちよ、\p失敗を恐れず己の最善を尽くせ。\pどんな苦境に陥ろうとも、\p最後の勝利を信じ努力を惜しむな。\p勝利を信じあきらめぬ心、\pそれこそが君たち若者が持つ唯一にして最大の武器なのだ」\e
+<00002038> 【Gen. Radhabinod】「Young soldiers,\p do everything in your power without fear of failure.\p Whatever dire straits you find yourselves in,\p always believe you will emerge victorious.\bYour young hearts,\p with an unyielding faith in victory, are your sole and greatest weapon.」\e
+//Alt: Shall
+
+//<00001fbd> 【ラダビノッド司令】「…\p…\p人類は今、\p未曾有の窮地に立たされている。\p戦況は厳しい。\nだからこそ、\p必勝の信念を曲げてはならない。\p諦めたらそこで終わってしまうのだ」\e
+<00001fbd> 【Gen. Radhabinod】「...\p...\phumanity is in the midst of an unprecedented crisis.\bThe war is long and hard,\p but that is precisely why we cannot let our faith in victory be shaken.\bThe moment we give up is the moment we lose.」\e
+//second sentence is more like "we're up against the ropes" - Makoto //adapted ~IX
+
+//<00001fc4> 【ラダビノッド司令】「いま地球人類はその歴史上初めて、\pひとつの絆によって結ばれている。\nそれは、\p人種、\p民族、\p宗教、\p国境といったあらゆる人為的区分を超越した、\p『同じ種である』という最も根源的な絆である。\nそう、\p地球のすべての人々は同じ赤い血潮が流れる同胞なのだ」\e
+<00001fc4> 【Gen. Radhabinod】「For the first time in history all humans on Earth share a common bond.\p It is the fundamental bond between members of the same species, which surpasses all political, religious, and ethnic divisions.」\b\b【Gen. Radhabinod】「Yes,\p all the people of Earth share the same red blood.」\e//line got split into two pages for some reason, so I felt it'd be cooler to split it into two separate lines ~IX
+
+//<00001fc5> 【ラダビノッド司令】「隣人と、\pそれに連なる人々に思いをはせよ。\n明日も彼らが在るか否かは、\p諸君らにかかっているのだ」\e
+<00001fc5> 【Gen. Radhabinod】「Think of your neighbors and your neighbor's neighbors.\nIt is up to you to ensure that they will live to see another day.」\e//lit. "whether they exist or not tomorrow depends on all of you"
+
+//<00001fc6> 【ラダビノッド司令】「座して手に入れられるものは何もない。\n命をかけて掴み取れ」\e
+<00001fc6> 【Gen. Radhabinod】「Nothing can be obtained without action.\nAchieve your objectives at any cost.」\e//intentional similarity to Yuuhi speech, lit. "risk your life and grasp it" ~IX
+
+//<00001fc7> 【ラダビノッド司令】「それがどれほどの気概を必要とするか…\p…\p諸君は先の作戦で嫌と言うほど感じたことであろう」\e
+<00001fc7> 【Gen. Radhabinod】「You have already learned all too well...\p...\phow much spirit it takes to do that.」\e
+
+//<00001fc8> 【ラダビノッド司令】「…\p…\p何が正しく、\p何が過ちであったか、\pそれは後の時代が判断することだ。\nだから今我々が出来る事は、\p信じる道に従い、\p未来を人類の手に取り戻すため全力で戦うことだけだ」\e
+<00001fc8> 【Gen. Radhabinod】「...\p...\pwhat you did right or wrong will be for the next generation to judge.\p What we can do here and now is follow the path we believe in and expend all our efforts toward regaining humanity's future.」\e
+
+//<00001fc9> 【ラダビノッド司令】「脈々と紡がれてきた人類の歴史を、\p未来の世代に受け渡す──それこそが、\p我々に与えられた使命だ」\e
+<00001fc9> 【Gen. Radhabinod】「Humanity's long and vibrant history must be passed on to a future generation――And that is the duty we have been entrusted with.」\e
+
+//<00001fca> 【ラダビノッド司令】「第２０７衛士訓練小隊の若人よ。\n私は、\p諸君が信じる正しさと、\p我々のそれとが同じであることを確信している」\e
+<00001fca> 【Gen. Radhabinod】「Young cadets of Eishi Training Squadron 207.\nI am convinced that you all believe in the same things we do.」\e//lit. "the justness/rightness you all believe in is the same as ours"
+
+//<00001fcb> 【ラダビノッド司令】「本日付をもって諸君は、\p人類防衛の前衛たる国連軍衛士の資格を得た。\nその栄誉と責任を噛み締め、\p必勝の気概を持って、\p勝利と未来を掴み取る為に、\pその持てる力を尽くしてほしい」\e
+<00001fcb> 【Gen. Radhabinod】「Today,\p you have all earned the right to stand on the front lines as Eishi of the UN Army.\nReflect upon that honor, that responsibility.\bI want you to be certain of victory and give all your strength to taking back our future.」\e
+//Felt awkward. Just for this instance, I feel that the entire thing should be said out.-Spin
+
+//<00001fcc> 【ラダビノッド司令】「君たちの誇りは私の誇りであり、\p日本国民の誇りである。\nそして、\p世界の、\p全人類の誇りだ」\e
+<00001fcc> 【Gen. Radhabinod】「Your pride is also my pride,\p and the Japanese people's pride.\nNot only that,\p it is the pride of all humanity.」\e
+
+//<00001fcd> 【ラダビノッド司令】「…\p…\p手のひらを見たまえ」\e
+<00001fcd> 【Gen. Radhabinod】「...\p...\plook at your hands.」\e
+
+//<000000fd> 【武】「…\p…\p…\p…\p」\e
+<000000fd> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001fce> 【ラダビノッド司令】「その手で何を掴む？」\e
+<00001fce> 【Gen. Radhabinod】「What will you grasp with those hands?」\e
+
+//<000000ff> 【千鶴】「…\p…\p…\p…\p」\e
+<000000ff> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00001fcf> 【ラダビノッド司令】「その手で何を守る？」\e
+<00001fcf> 【Gen. Radhabinod】「What will you protect with those hands?」\e
+
+//<00000101> 【冥夜】「…\p…\p…\p…\p」\e
+<00000101> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00001fd0> 【ラダビノッド司令】「拳を握りたまえ」\e
+<00001fd0> 【Gen. Radhabinod】「Clench your fists.」\e
+
+//<00000103> 【慧】「…\p…\p…\p…\p」\e
+<00000103> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00001fd1> 【ラダビノッド司令】「その拳で何を拓く？」\e
+<00001fd1> 【Gen. Radhabinod】「What will you destroy with those fists?」\e
+
+//<00000105> 【壬姫】「…\p…\p…\p…\p」\e
+<00000105> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00001fd2> 【ラダビノッド司令】「その拳で何を倒す？」\e
+<00001fd2> 【Gen. Radhabinod】「What will you defeat with those fists?」\e
+
+//<00000107> 【美琴】「…\p…\p…\p…\p」\e
+<00000107> 【Mikoto】「...\p...\p...\p...\p」\e
+
+//<00001fd3> 【ラダビノッド司令】「…\p…\p…\p…\p…\p…\p」\e
+<00001fd3> 【Gen. Radhabinod】「...\p...\p...\p...\p...\p...\p」\e
+
+//<00001fd4> 【ラダビノッド司令】「最後に…\p…\p極めて異例な事ではあるが…\p…\p諸君の任官に際しお言葉が寄せられている」\e
+<00001fd4> 【Gen. Radhabinod】「Finally...\p...\palthough it is very exceptional...\p...\pwe were sent a message in time with your commissioning.」\e
+
+//<0000203a> 【千鶴・冥夜・壬姫・慧・美琴】「…\p…\p…\p…\p」\e
+<0000203a> 【Chizuru & Meiya & Miki & Kei & Mikoto】「...\p...\p...\p...\p」\e
+
+//<0000010b> 極めて異例…\p…\p？\e
+<0000010b> Very exceptional...\p...\p?\e
+
+//<00002005> 【ラダビノッド司令】「日本帝国政威大将軍、\p煌武院悠陽殿下からの御祝辞、\p心して賜りたまえ」\e
+<00002005> 【Gen. Radhabinod】「Take to heart this congratulatory letter from the Grand Shogun of the Japanese Empire,\p Her Highness Koubuin Yuuhi.」\e
+
+//<00000d25> 【千鶴・壬姫・慧・美琴】「――！！」\n
+<00000d25> 【Chizuru & Miki & Kei & Mikoto】「――!!」\n
+
+//<0000010e> 【冥夜】「――！？」\e
+<0000010e> 【Meiya】「――!?」\e
+
+//<00002008> ――殿下…\p…\pわざわざオレ達のために…\p…\p？\e
+<00002008> ――Your Highness...\p...\pyou wrote that for us...\p...\p?\e//Speech starts here. - Raide
+
+//<0000011e> 【冥夜】「…\p…\p」\e
+<0000011e> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<0000200a> 【ラダビノッド司令】「…\p…\p昇任に際し、\p殿下よりお言葉を賜るという名誉は、\p諸君自身の手で掴んだ栄光である」\e
+<0000200a> 【Gen. Radhabinod】「...\p...\pyou have all earned with your own hands the honor of being directly addressed by Her Highness for your promotion.」\e
+
+//<00000120> 最後の言葉は多分、\p冥夜に向けられていた…\p…\pそんな気がする…\p…\p。\e
+<00000120> Those last words were probably for Meiya...\p...\pthat's the feeling I get...\p...\p\e
+
+//<0000200d> 【ラダビノッド司令】「また、\pこの度の急な昇任は、\p先日の将軍救出作戦に於ける諸君等の目覚ましい活躍と作戦成功への貢献が評価された結果である事を付け加えておく」\e
+<0000200d> 【Gen. Radhabinod】「And I would like to add that your brilliant contribution to the successful effort to save the Shogun recently is a major reason for this sudden promotion.」\e
+
+//<00001fd8> 【ラダビノッド司令】「…\p…\p以上である」\e
+<00001fd8> 【Gen. Radhabinod】「...\p...\pthat is all.」\e
+
+//<00000123> 【まりも】「――気を付けェッ！」\e
+<00000123> 【Marimo】「――Attentiooon!」\e
+
+//<00000124> 【まりも】「ラダビノッド司令官に対し――敬礼ッ！」\e
+<00000124> 【Marimo】「Salute General Radhabinod!」\e
+
+//<000021f3> 【国連軍大尉】「引き続き、\p衛士徽章授与を行う」\e
+<000021f3> 【UN Captain】「I will now give you your Eishi insignia.」\e
+
+//<000021fd> 殿下…\p…\p。\e
+<000021fd> Your Highness...\p...\p\e
+
+//<000021fe> もう…\p…\p同じ過ちは繰り返しません。\n繰り返させません。\e
+<000021fe> I won't...\p...\pmake the same mistake again.\nI won't repeat it.\e
+
+//<00002200> そのために必要なものが揃いました。\e
+<00002200> I have everything I need now.\e
+
+//<00002201> オレが、\pこの手でそれを持ってきたんです！\e
+<00002201> And I've obtained all of it with my own hands!\e
+
+//<0000220d> もう敵に怯える必要も人間同士が争う必要もなくなります。\e
+<0000220d> Soon I won't need to fear the enemy or fight humans anymore.\e
+
+//<00002213> …\p…\pそんな日がすぐそこまで来ているんです。\e
+<00002213> ...\p...\pthat day is coming soon.\e
+
+//<00002216> 見ていて下さい…\p…\p！\e
+<00002216> Watch me...\p...\p!\e
+
+//<00002224> 【ラダビノッド司令】「榊千鶴訓練兵！」\e
+<00002224> 【Gen. Radhabinod】「Cadet Sakaki Chizuru!」\e
+
+//<0000222b> 【千鶴】「はい！」\e
+<0000222b> 【Chizuru】「Sir!」\e
+
+//<00002234> 【ラダビノッド司令】「ただ今をもって、\p貴官は国連軍衛士となった。\n…\p…\pおめでとう少尉」\e
+<00002234> 【Gen. Radhabinod】「As of now,\p you are a UN Army Eishi.\n...\p...\pcongratulations, Second Lieutenant.」\e
+//For this instance, I think it you should go the route of how they say it irl. Basically that but no acronyms. "As of today, you are a Ranger of the United States Army. Congratulations." etc.-Spin
+
+//<0000223a> 【千鶴】「ありがとうございます」\e
+<0000223a> 【Chizuru】「Thank you, sir.」\e
+
+//<00002250> 【武】「…\p…\p…\p…\p」\e
+<00002250> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00002253> …\p…\pこれでオレ達は正規兵に…\p…\p衛士になったんだ…\p…\p。\e
+<00002253> ...\p...\pnow we're all commissioned officers...\p...\pand Eishi...\p...\p\e
+
+//<0000225b> 霞が疑問を持ったのも無理はない。\nこんなの記憶にあるわけが無い…\p…\p。\e
+<0000225b> No wonder Kasumi was puzzled by this.\nI don't remember anything like it...\p...\p\e
+
+//<0000225c> 『前のこの世界』ではこんなセレモニー何か無くて、\p略式命令書だけの昇任だったんだ。\e
+<0000225c> There wasn't a ceremony like this in the previous world,\p we just got a summary order in the mail.\e
+//Not sure "summary order" is right or not for something like that but since I'm not in JAG, I'll just assume it is.-Spin
+
+//<0000225d> それも、\pオルタネイティヴ５に接収された後の、\pまりもちゃんも夕呼先生もいない横浜基地で…\p…\p。\e
+<0000225d> And that was after we moved on to Alternative V,\p and Marimo-chan and Yuuko-sensei left the base...\p...\p\e
+
+//<0000225e> その後はもう…\p…\p毎日基地の警備だったんだ…\p…\p。\e
+<0000225e> After that...\p...\pwe just guarded the base every day...\p...\p\e
+
+//<00002260> 【ラダビノッド司令】「御剣冥夜訓練兵！」\e
+<00002260> 【Gen. Radhabinod】「Cadet Mitsurugi Meiya!」\e
+
+//<00002267> 【冥夜】「はい！」\e
+<00002267> 【Meiya】「Sir!」\e
+
+//<00002270> 【ラダビノッド司令】「ただ今をもって、\p貴官は国連軍衛士となった。\n…\p…\pおめでとう少尉」\e
+<00002270> 【Gen. Radhabinod】「As of now,\p you are a UN Army Eishi.\n...\p...\pcongratulations, Second Lieutenant.」\e
+//Yea, hearing it again, I really think you should do it the irl way, since it really does sound awkward.-Spin
+
+//<00002276> 【冥夜】「ありがとうございます」\e
+<00002276> 【Meiya】「Thank you, sir.」\e
+//"thank you, sir" seems better for these - Makoto //I can't decide myself, editors ~IX//Yea, I'm gonna have to go with Makoto just cause even irl, you still need to respect and ackowledge the rank. Also, it just sounds like they're receiving birthday gifts or something.-Spin
+
+//<0000228c> だが、\pそんなこともう関係ない。\e
+<0000228c> But,\p that doesn't matter anymore.\e
+
+//<0000228f> 確かなことは、\p今この時期に昇任が行われているということだ。\e
+<0000228f> All I know for sure is that we're being promoted here and now.\e
+
+//<00002290> 未来を変えるためには、\p２４日までにオルタネイティヴ４の完成の目途と、\pひとつでも上の階級になっていることが必要だった。\e
+<00002290> In order to change the future,\p I needed to complete Alternative IV by the 24th,\p and get a higher rank.\e
+
+//<00002298> それが、\p確実にひとつ…\p…\p…\p…\p。\e
+<00002298> And now one of those is done...\p...\p...\p...\p\e
+
+//<00002299> やっと…\p…\p大きな山をひとつ…\p…\p越えたんだ。\e
+<00002299> We've finally overcome...\p...\pone of the biggest hurdles.\e
+
+//<0000229d> 【ラダビノッド司令】「鎧衣美琴訓練兵！」\e
+<0000229d> 【Gen. Radhabinod】「Cadet Yoroi Mikoto!」\e
+
+//<000022a5> 【美琴】「はい！」\e
+<000022a5> 【Mikoto】「Sir!」\e
+
+//<000022af> 【ラダビノッド司令】「ただ今をもって、\p貴官は国連軍衛士となった。\n…\p…\pおめでとう少尉」\e
+<000022af> 【Gen. Radhabinod】「As of now,\p you are a UN Army Eishi.\n...\p...\pcongratulations, Second Lieutenant.」\e
+
+//<000022b6> 【美琴】「ありがとうございます」\e
+<000022b6> 【Mikoto】「Thank you, sir..」\e
+
+//<000022de> 【ラダビノッド司令】「彩峰慧訓練兵！」\e
+<000022de> 【Gen. Radhabinod】「Cadet Ayamine Kei!」\e
+
+//<000022e4> 【慧】「…\p…\pはい！」\e
+<000022e4> 【Kei】「...\p...\pSir!」\e
+
+//<000022ed> 【ラダビノッド司令】「ただ今をもって、\p貴官は国連軍衛士となった。\n…\p…\pおめでとう少尉」\e
+<000022ed> 【Gen. Radhabinod】「As of now,\p you are a UN Army Eishi.\n...\p...\pcongratulations, Second Lieutenant.」\e
+
+//<000022f3> 【慧】「…\p…\pありがとうございます」\e
+<000022f3> 【Kei】「...\p...\pthank you, sir..」\e
+
+//<00002318> 【ラダビノッド司令】「珠瀬壬姫訓練兵！」\e
+<00002318> 【Gen. Radhabinod】「Cadet Tamase Miki!」\e
+
+//<0000231f> 【壬姫】「はい！」\e
+<0000231f> 【Miki】「Sir!」\e
+
+//<00002329> 【ラダビノッド司令】「ただ今をもって、\p貴官は国連軍衛士となった。\n…\p…\pおめでとう少尉」\e
+<00002329> 【Gen. Radhabinod】「As of now,\p you are a UN Army Eishi.\n...\p...\pcongratulations, Second Lieutenant.」\e
+
+//<00002330> 【壬姫】「ありがとうございます」\e
+<00002330> 【Miki】「Thank you, sir..」\e
+
+//<00002353> 【ラダビノッド司令】「白銀武訓練兵！」\e
+<00002353> 【Gen. Radhabinod】「Cadet Shirogane Takeru!」\e
+
+//<00002354> 【武】「はい！」\e
+<00002354> 【Takeru】「Sir!」\e
+
+//<00002365> 【ラダビノッド司令】「ただ今をもって、\p貴官は国連軍衛士となった。\n…\p…\pおめでとう少尉」\e
+<00002365> 【Gen. Radhabinod】「As of now,\p you are a UN Army Eishi.\n...\p...\pcongratulations, Second Lieutenant.」\e
+
+//<00002366> 【武】「はい！」\e
+<00002366> 【Takeru】「Sir!」\e
+
+//<00002367> 胸につけられたのは…\p…\p衛士であることを示すパイロット章だ…\p…\p。\e
+<00002367> He pinned a pilot's badge to my chest...\p...\pthis shows I'm an Eishi...\p...\p\e
+
+//<00002368> …\p…\p『前のこの世界』では感じられなかった、\pこの銀の翼の重み…\p…\p…\p…\pオレはやるぞ…\p…\p！\e
+<00002368> ...\p...\pI never got to feel the weight of these flight wings in the previous world...\p...\p...\p...\pI'll do it now...\p...\p!\e
+
+//<00002369> 【ラダビノッド司令】「…\p…\p…\p…\p」\e
+<00002369> 【Gen. Radhabinod】「...\p...\p...\p...\p」\e
+
+//<0000236a> 【武】「…\p…\p？」\e
+<0000236a> 【Takeru】「...\p...\p?」\e
+
+//<0000236b> …\p…\pあれ。司令…\p…\p？\e
+<0000236b> ...\p...\phuh? General...\p...\p?\e
+
+//<0000236c> 【ラダビノッド司令】「…\p…\p少尉。\nここは敬礼で返すところだ」\e
+<0000236c> 【Gen. Radhabinod】「...\p...\pSecond Lieutenant.\nYou're supposed to salute now.」\e
+
+//<0000236d> 【武】「――は、\pはッ　失礼しましたッ！」\e
+<0000236d> 【Takeru】「――S-\psir! Excuse me!」\e
+
+//<0000237b> 【まりも】「…\p…\p…\p…\p」\e
+<0000237b> 【Marimo】「...\p...\p...\p...\p」\e
+
+//<0000237c> う…\p…\pまりもちゃんに睨まれてる…\p…\p。\e
+<0000237c> Uu...\p...\pMarimo-chan's glaring at me...\p...\p\e
+
+//<0000237d> 後で大目玉だな…\p…\p。\e
+<0000237d> I'm gonna get it later...\p...\p\e
+
+//<00002390> 【国連軍大尉】「――衛士徽章授与を終了する」\e
+<00002390> 【UN Captain】「――That concludes the ceremony.」\e//lit. "badge-giving"
+
+//<00002391> 【ラダビノッド司令】「…\p…\p頑張りたまえ」\e
+<00002391> 【Gen. Radhabinod】「...\p...\pdo your very best.」\e
+
+//<00002393> 【国連軍大尉】「――気を付けェッ！」\e
+<00002393> 【UN Captain】「――Attentiooon!」\e
+
+//<000023a0> 【国連軍大尉】「ラダビノッド司令官に対し――敬礼ッ！」\e
+<000023a0> 【UN Captain】「Salute General Radhabinod!」\e
+
+//<000023c6> 【国連軍大尉】「以上を以て、\p国連太平洋方面第１１軍、\p横浜基地衛士訓練学校、\p第２０７衛士訓練小隊解隊式を終わる」\e
+<000023c6> 【UN Captain】「That concludes the graduation ceremony for the 207th Eishi Cadet Squadron of the UN 11th Pacific Army's Yokohama Base Eishi Training School.」\e
+
+//<000023d2> 【まりも】「――２０７衛士訓練小隊――――解散ッ！」\e
+<000023d2> 【Marimo】「――Eishi Training Squad 207――――Dismissed!」\e
+
+//<000023e7> 【千鶴・冥夜・壬姫・慧・美琴】「――ありがとうございましたッ！！」\n
+<000023e7> 【Chizuru & Meiya & Mikoto & Kei & Miki】\b「――Thank you very much!!」\n
+
+//<000023e8> 【武】「――ありがとうございましたッ！！」\e
+<000023e8> 【Takeru】「――Thank you very much!!」\e
+//Actually, having them say "Thank you very much" here instead of everywhere else, adds to the effect since it'll show a clear distinction of them being thankful to everyone.-Spin
+
+//<000023f5> …\p…\pあれ？　まりもちゃんも一緒に出て行っちゃったぞ？\e
+<000023f5> ...\p...\phuh? Marimo-chan left too?\e
+
+//<000023fe> 【国連軍大尉】「――午後のスケジュールを伝える。\n新任少尉は１３時００分に第７ブリーフィングルームへ集合」\e
+<000023fe> 【UN Captain】「――Your afternoon schedule is as follows.\nAssemble in the No. 7 Briefing Room at 13:00 hours.」\e
+
+//<000023ff> 【国連軍大尉】「配属部隊の通達、\p軍服の支給方法、\p事務手続きの説明等が行われる予定である――以上」\e
+<000023ff> 【UN Captain】「Your new unit assignments,\p means of procuring new uniforms,\p and other logistical details will be provided there――That is all.」\e
+
+//<00002400> 【千鶴】「――敬礼！」\e
+<00002400> 【Chizuru】「――Salute!」\e
+
+//<00002410> そうか…\p…\p。これで…\p…\p２０７小隊ともお別れなんだな…\p…\p。\nまりもちゃんがオレ達と一緒にいる理由はもうないんだ。\e
+<00002410> I see...\p...\pso now...\p...\pwe won't be Squad 207 anymore...\p...\p\nThere's no reason for Marimo-chan to stay with us.\e
+
+//<00002411> 衛士候補生の白い制服…\p…\p『元の世界』の白陵柊と同じ、\pこの白い制服を着るのも、\pこれで最後か…\p…\p。\e
+<00002411> The white Eishi cadet uniforms...\p...\pwhich look just like my world's Hakuryou uniforms...\p...\pwe'll never wear these again...\p...\p\e
+
+//<00002420> 【壬姫】「…\p…\p私たち…\p…\p私たち…\p…\pとうとう…\p…\p」\e
+<00002420> 【Miki】「...\p...\pwe...\p...\pwe...\p...\pfinally...\p...\p」\e
+
+//<00002423> 【千鶴】「そうよ…\p…\p国連軍の衛士に…\p…\pなったのよ…\p…\p」\e
+<00002423> 【Chizuru】「Yes...\p...\pwe did it...\p...\pwe're UN Army Eishi...\p...\p」\e
+
+//<0000242b> 【冥夜】「…\p…\p皆…\p…\p良く耐えたな…\p…\p」\e
+<0000242b> 【Meiya】「...\p...\pwell done enduring it...\p...\pall of you...\p...\p」\e
+
+//<00002432> …\p…\p耐えた…\p…\pか。\nそれは訓練の事だけじゃないんだろうな。\e
+<00002432> ...\p...\penduring it...\p...\phuh.\nShe means more than just the training, doesn't she.\e
+
+//<00002433> あの事件に対して、\p殿下と同じ想いを持っている冥夜が…\p…\pこのタイミングでやっとみんなに言えたんだ…\p…\p。\e
+<00002433> Meiya felt the same way as Her Highness about that incident...\p...\pbut now she can finally say it to everyone...\p...\p\e
+
+//<00002439> 【美琴】「冥夜さんだって…\p…\pみんながんばったよ！　ねえ？」\e
+<00002439> 【Mikoto】「You too Meiya-san...\p...\pwe all worked hard for this! Didn't we?」\e
+
+//<0000243a> 【冥夜】「…\p…\p鎧衣…\p…\p」\e
+<0000243a> 【Meiya】「...\p...\pYoroi...\p...\p」\e
+
+//<0000243c> 【壬姫】「そうですよ…\p…\pみんなで…\p…\pみんなで力を合わせたから…\p…\p」\e
+<0000243c> 【Miki】「That's right...\p...\pwe all...\p...\pwe all worked together to get this far...\p...\p」\e
+
+//<0000243e> 【慧】「…\p…\pそうだね」\e
+<0000243e> 【Kei】「...\p...\pthat's true.」\e
+
+//<00002440> 【千鶴】「…\p…\pみんな…\p…\pありがとう…\p…\p」\e
+<00002440> 【Chizuru】「...\p...\pthank you...\p...\peveryone...\p...\p」\e
+
+//<00002441> 【美琴】「千鶴さん…\p…\pそんな…\p…\pボクこそ…\p…\pみんなありがとう！」\e
+<00002441> 【Mikoto】「Chizuru-san...\p...\pthat's...\p...\pI should be...\p...\pthank you everyone!」\e
+
+//<00002442> 【慧】「…\p…\pありがと」\e
+<00002442> 【Kei】「...\p...\pthank you.」\e
+
+//<00002443> 【壬姫】「あり…\pが…\p…\pうぅぅぁ…\p…\p…\p…\p」\e
+<00002443> 【Miki】「Th...\p...\pank...\p...\puuuuuwaa...\p...\p...\p...\p」\e
+
+//<00002444> 【美琴】「壬姫さん…\p…\p嬉しい事なのに…\p…\p泣くなんて…\p…\p変…\p…\p」\e
+<00002444> 【Mikoto】「Miki-san...\p...\pdon't cry...\p...\pyou should be...\p...\phappy...\p...\p」\e
+
+//<00002445> 【冥夜】「私からも言わせて欲しい…\p…\pそなた達に心よりの感謝を…\p…\p」\e
+<00002445> 【Meiya】「I would like to say it as well...\p...\p\bI give you all my thanks...\p...\p」\e
+
+//<00002446> みんなにしてみれば、\p涼宮のＡ分隊が先に進んじまって、\p置いてきぼりだったわけだから…\p…\pうれしさもひとしおだろうな。\e
+<00002446> These guys were left behind by Suzumiya's squad ages ago...\p...\pso they must be insanely happy.\e
+
+//<00002447> 個々の能力はＢ分隊のほうが高いのに、\pチームワークがダメだった…\p…\pまりもちゃんはそう言ってたっけ。\e
+<00002447> Their individual abilities were better,\p but their teamwork sucked...\p...\p\bI think that's what Marimo-chan said.\e
+
+//<00002448> でも、\p今思うに、\p前回の総戦技評価演習をみんながクリアしていたとしても、\p最終的にはもっと政治的な理由で任官できなかった…\p…\pいや、\pさせてもらえなかったと思う…\p…\p。\e
+<00002448> But,\p now that I think about it,\p even if everyone had passed the previous Comprehensive Combat Skill Evaluation,\p they might not have gotten commissioned in the end for some political reason...\p...\pno,\p I don't think they'd have been allowed to...\p...\p\e//huh? ~IX //they're all important political figures, so they might not want to risk commissioning them, I think - Sheeta //oh right, duh ~IX
+
+//<00002449> このタイミングでの急な昇任…\p…\p確かにクーデター事件の功労もあるだろうが…\p…\pあまりに出来過ぎだろう。\e
+<00002449> This sudden promotion...\p...\pour performance in the coup d'etat certainly helped, but...\p...\pit's just too perfect.\e
+
+//<0000244a> どこかの誰かにとって…\p…\pこの小隊のメンバーは、\pキープしておく価値が無くなったのかも知れない…\p…\p。\e
+<0000244a> Maybe someone, somewhere...\p...\pno longer has a reason to keep all of us together...\p...\p\e
+
+//<00002452> 【鎧衣】「安心したまえ…\p…\pその犠牲を無駄にするような事はしないさ…\p…\p」\e
+<00002452> 【Yoroi】「Worry not...\p...\pI wouldn't dare waste those sacrifices...\p...\p」\e//CP_S MLA_0025
+
+//<0000245a> 【鎧衣】「その犠牲を最大限に活かす方法とタイミングは、\p十分心得ているつもりだよ…\p…\p私も、\p香月博士も」\e
+<0000245a> 【Yoroi】「I fully intend to make them in the time and place where they will have the greatest effect...\p...\pas does Professor Kouzuki.」\e//CP_E
+
+//<00002460> でも…\p…\p今はそれでいい。\e
+<00002460> But...\p...\pfor now, that's fine.\e
+
+//<00002461> オレ達の任官…\p…\pそして実験の成功と理論の回収…\p…\p実戦でも証明できた新ＯＳの優秀性。\e
+<00002461> We've been commissioned...\p...\pand the experiments were successful enough to retrieve the theory...\p...\pand we've proven the new OS' quality in live combat.\e
+
+//<00002462> このタイミングでこれ以上何が望める？\e
+<00002462> How much more could I ask for?\e
+
+//<00002463> オレは確実に『この世界』の未来を変えている…\p…\p少なくとも人類が地球を棄て、\p自殺めいた総攻撃をかけるような未来は遠ざけているはずなんだ。\e
+<00002463> I certainly am changing this world's future...\p...\pif nothing else,\p I'm distancing us from the future where humanity abandons Earth and what's left performs a bunch of suicide attacks.\e
+
+//<00002464> 【武】「…\p…\p…\p…\p」\e
+<00002464> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00002465> それに…\p…\pクーデター事件の後、\pそれぞれの事情からなんとなくギクシャクしていたみんなが、\pこうしていつも以上に素直な気持ちで向き合えたんだ。\e
+<00002465> Besides...\p...\pafter the coup d'etat,\p everyone can start being more honest about their feelings now,\p instead of being too nervous to even ask like before.\e
+
+//<00002466> ２０７小隊Ｂ分隊は解隊してしまうけど…\p…\pそれぞれの配属先での新たな任務が待っている。\e
+<00002466> Squad 207B is gonna be broken up...\p...\pbut we'll all have new missions waiting for us.\e
+
+//<00002467> 最後にこうして向き合えたんだ…\p…\pそれでいい。\e
+<00002467> They got to be honest in the end...\p...\pthat's good enough.\e
+
+//<000024e1> 【千鶴】「…\p…\p白銀。\nありがとう」\e
+<000024e1> 【Chizuru】「...\p...\pShirogane.\nThank you.」\e
+
+//<000024e2> 【武】「委員長…\p…\p」\e
+<000024e2> 【Takeru】「Class Rep...\p...\p」\e
+
+//<000024ee> 【千鶴】「あなたの入隊は、\p私たちの大きな力になったわ…\p…\p本当にありがとう…\p…\p」\e
+<000024ee> 【Chizuru】「Your enlistment made us all much stronger...\p...\pthank you...\p...\p」\e
+
+//<000024f0> 【武】「ありがとう委員長。\n…\p…\p色々とゴチャゴチャ言って済まなかったな」\e
+<000024f0> 【Takeru】「Thanks, Class Rep.\n...\p...\psorry I lectured you so much.」\e
+
+//<000024f5> 【千鶴】「白銀…\p…\p」\e
+<000024f5> 【Chizuru】「Shirogane...\p...\p」\e
+
+//<000024f6> 【武】「…\p…\p…\p…\p頑張れよ」\e
+<000024f6> 【Takeru】「...\p...\p...\p...\pkeep it up.」\e
+
+//<000024f9> 【千鶴】「…\p…\p…\p…\pばか…\p…\p」\e
+<000024f9> 【Chizuru】「...\p...\p...\p...\pidiot...\p...\p」\e
+
+//<000024fa> おまえは…\p…\p色々な意味で、\p親父さんのことを克服したとき、\pもっと強くなれるはずだ。\e
+<000024fa> You'll be even stronger, in a lot of ways...\p...\ponce you manage to move past everything that happened to your father.\e
+
+//<000024fb> 『前のこの世界』で言っていたように、\p１日も早く偉くなってくれ。\e
+<000024fb> Please, become a leader as soon as you can,\p like you said you would in the previous world.\e
+
+//<000024fc> そして、\p政治のゴチャゴチャを吹っ飛ばして…\p…\p２度とこの前の様な事件が起きないようにして欲しい。\e
+<000024fc> I want you to wipe out all this complaining about governments...\p...\pand make sure an incident like that never happens again.\e
+
+//<00002500> 【壬姫】「たけるさぁん…\p…\pミキはぁ…\p…\pミキはぁ…\p…\pうわぅぅぁぁぁ…\p…\p」\e
+<00002500> 【Miki】「Takeru-saaan...\p...\pMiki is...\p...\pMiki feels so...\p...\puwauuaaa...\p...\p」\e
+
+//<00002502> 【武】「おいおい…\p…\p泣きすぎだろ？」\e
+<00002502> 【Takeru】「Hey now...\p...\pdon't cry so much.」\e
+
+//<00002507> 【壬姫】「だって…\p…\pだってぇぇぇ…\p…\p…\pううぁ…\p…\p」\e
+<00002507> 【Miki】「But...\p...\pbuuuuut...\p...\p...\puuuuaa...\p...\p」\e
+
+//<00002508> 【武】「ははは…\p…\pありがとう、\pたま…\p…\p」\e
+<00002508> 【Takeru】「Hahaha...\p...\pthank you,\p Tama...\p...\p」\e
+
+//<00002509> おまえには、\p水平線の遥か向こうから極超音速で落ちてくる駆逐艦を撃ち落とせるだけの、\pものすごい才能と技能が…\p…\pそして度胸があるんだ。\nそれを人類のために生かしてくれ。\e
+<00002509> You've got such incredible skill and nerve that you can shoot down an HSST falling at supersonic speed from the other side of the horizon.\nPlease live on and use that skill for humanity.\e
+//there's no "live on," but it's not really a problem - Makoto //yeah, I add things like that on purpose sometimes ~IX
+
+//<0000250c> 【壬姫】「…\p…\p…\pう…\p…\pうぁぁぁ…\p…\p」\e
+<0000250c> 【Miki】「...\p...\p...\puu...\p...\puwaaaa...\p...\p」\e
+
+//<0000250d> 【美琴】「急な任官でビックリしたけど…\p…\p」\e
+<0000250d> 【Mikoto】「I can't believe how sudden this is...\p...\p」\e
+
+//<0000250f> 【武】「ああ、\pそうだな…\p…\p」\e
+<0000250f> 【Takeru】「Yeah,\p neither can I...\p...\p」\e
+
+//<00002514> 【美琴】「…\p…\pタケル…\p…\p今までホントにありがとう…\p…\p」\e
+<00002514> 【Mikoto】「...\p...\pTakeru...\p...\pthanks for everything...\p...\p」\e
+
+//<00002515> 【武】「…\p…\pオレもおまえには感謝しているよ」\e
+<00002515> 【Takeru】「...\p...\pthank you too.」\e
+
+//<00002516> …\p…\p『前のこの世界』でオレが蛇に噛まれた時、\p何となくよそよそしいオレに対してでも、\pおまえは懸命に看病してくれたよな。\e
+<00002516> ...\p...\pwhen I got bitten by that snake in the previous world,\byou looked after me even though I was acting cold to you.\e
+
+//<0000251a> 【美琴】「また同じ部隊に配属されるといいね！」\e
+<0000251a> 【Mikoto】「I hope we get assigned to the same unit again!」\e
+
+//<0000251b> 【武】「その時は宜しくな」\e
+<0000251b> 【Takeru】「I hope so.」\e
+
+//<0000251c> 父親が行方不明…\p…\pその上、\pＭＰに何を聞かされたかはわからない。\nたとえそんな状況であっても変わらないおまえの明るさや人懐こさは、\pこの追いつめられた世界では財産だ。\e
+<0000251c> No one knows where your dad is...\p...\pon top of that,\p I have no idea what the military police asked you.\nThe fact that your bright, friendly attitude doesn't change even in that situation is a huge asset in this troubled world.\e
+
+//<0000251d> それを無くさないで欲しい。\nそして新しい仲間達にもそれを分けてやってくれ。\e
+<0000251d> Don't ever lose that.\nAnd make sure your new comrades get the full benefit of it.\e
+
+//<0000251f> 【武】「彩峰…\p…\p」\e
+<0000251f> 【Takeru】「Ayamine...\p...\p」\e
+
+//<00002520> 【慧】「…\p…\p…\p…\p」\e
+<00002520> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00002521> 【武】「色々と押しつけがましくて、\p迷惑かけたな…\p…\p」\e
+<00002521> 【Takeru】「Sorry for being so pushy lately...\p...\p」\e
+
+//<00002522> その上おまえをスパイだと疑ったりしたな…\p…\p。\n本当に悪かったよ。\e
+<00002522> And for suspecting you of espionage...\p...\p\nI'm really sorry about that.\e
+
+//<00002526> 【慧】「…\p…\p…\p…\p本当は…\p…\p…\p…\p感謝してる…\p…\p」\e
+<00002526> 【Kei】「...\p...\p...\p...\pthe truth is...\p...\p...\p...\pI'm grateful...\p...\p」\e
+
+//<00002527> 【武】「…\p…\pそうか…\p…\pありがとう」\e
+<00002527> 【Takeru】「...\p...\pI see...\p...\pthank you.」\e
+
+//<00002528> 沙霧大尉のこと…\p…\p親父さんのこと…\p…\p誰にも言わず、\pひとりで戦ったおまえのことだ、\p事件の事もいつか自分でケリを付けるんだろう。\e
+<00002528> You never told anyone...\p...\pabout Capt. Sagiri...\p...\por your father,\p but fought with it all on your own.\bThere's no doubt you'll feel closure about this someday.\e
+
+//<00002529> ただ、\p次の配属先ではもう少し仲間を頼っても良いんじゃないかと思う。\e
+<00002529> But...\p...\pI think it would be nice if you relied a little more on your comrades...\p...\pin your new unit.\e
+
+//<0000252a> 【武】「…\p…\p元気でな」\e
+<0000252a> 【Takeru】「...\p...\ptake care.」\e
+
+//<00002531> 【慧】「白銀もね…\p…\p」\e
+<00002531> 【Kei】「You too, Shirogane...\p...\p」\e
+
+//<00002533> 【冥夜】「…\p…\pタケル」\e
+<00002533> 【Meiya】「...\p...\pTakeru.」\e
+
+//<00002534> 【武】「冥夜…\p…\p色々と世話になったな…\p…\p」\e
+<00002534> 【Takeru】「Meiya...\p...\pthanks for all your help...\p...\p」\e
+
+//<00002539> 【冥夜】「何を言う…\p…\p」\e
+<00002539> 【Meiya】「What are you saying...\p...\p?」\e
+
+//<0000253a> 【武】「おまえには教えられる事ばかりだった。\n本当にありがとう」\e
+<0000253a> 【Takeru】「You've taught me so much, even though I could never do the same for you.\p I'm really grateful.」\e//lit. "nothing but being taught by you" not sure I adapted this decently
+
+//<0000253d> おまえと殿下のおかげで、\pオレは迷わなくなった。\e
+<0000253d> Thanks to you and Her Highness,\p I won't hesitate anymore.\e
+
+//<0000259d> 確かに、\p今のオレの決心が本当に『立脚点』になるのかは正直なところわからない。\nだが、\pおまえの宿命に殉じる姿が、\pオレに勇気をくれた。\e
+<0000259d> It's true that I still don't know for sure what I can base my convictions on.\nBut seeing you risk your life to fulfill your duty has given me courage.\e
+
+//<00002541> 考え方や色々なものは違うけど、\pオレはおまえを尊敬する。\e
+<00002541> There are a lot of differences between us, even our way of thinking,\p but I still respect you.\e
+
+//<00002542> 【冥夜】「…\p…\p…\p…\pそなたは…\p…\p立派な男だ…\p…\p」\e
+<00002542> 【Meiya】「...\p...\pyou are...\p...\pa wonderful man...\p...\p」\e
+
+//<00002543> 【武】「…\p…\pえ？」\e
+<00002543> 【Takeru】「...\p...\peh?」\e
+
+//<00002546> 【冥夜】「私は…\p…\pそなたのように強くありたい…\p…\p」\e
+<00002546> 【Meiya】「I wish...\p...\pto be as strong as you...\p...\p」\e
+
+//<00002547> 【武】「ありがとう冥夜…\p…\pおまえにそう言われるのは、\p本当に嬉しいよ」\e
+<00002547> 【Takeru】「Thank you Meiya...\p...\phearing you say that really makes me happy.」\e
+
+//<00002548> 【冥夜】「…\p…\p配属はまだわからぬが…\p…\p達者でな」\e
+<00002548> 【Meiya】「...\p...\pwe may not know our assignments yet...\p...\pbut remain in good health.」\e//"tassha de na" is kinda sorta the Meiya version of "genki de ne," so this tl is an effort to formalize "take care of yourself" but I'm worried it fails ~IX //imo it works - Sheeta
+
+//<0000254b> 【武】「ああ…\p…\pおまえもな」\e
+<0000254b> 【Takeru】「Yeah...\p...\pyou too.」\e
+
+//<00002550> 【武】「…\p…\p…\p…\p」\e
+<00002550> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00002551> これからが本当の戦いだ。\nここは通過点でしかない…\p…\p。\e
+<00002551> The real fight starts now.\nThis is just a stepping stone...\p...\p\e//lit. "a point we have to pass through to get there"
+
+//<00002552> 前のオレだったらここで涙を流したかも知れない。\e
+<00002552> The old me might've cried during all of this.\e
+
+//<00002553> だけどまだ、\p気を緩める訳には行かないんだ…\p…\p。\e
+<00002553> But I can't afford to slack off yet...\p...\p\e
+
+//<0000255d> 【武】「さあみんな…\p…\pそろそろ行こうぜ。\n１３時までにメシも済ませないとな」\e
+<0000255d> 【Takeru】「Okay guys...\p...\pwe should go now.\nGotta finish eating before 13:00.」\e
+
+//<00002565> 【壬姫】「…\p…\p…\p…\p」\e
+<00002565> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00002566> 【美琴】「…\p…\p…\p…\p」\e
+<00002566> 【Mikoto】「...\p...\p...\p...\p」\e
+
+//<00002567> 【慧】「…\p…\p…\p…\p」\e
+<00002567> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00002568> 【武】「それに…\p…\pまだやり残していることがあるだろ」\e
+<00002568> 【Takeru】「And...\p...\pwe still have something left to do.」\e
+
+//<00002569> 【千鶴】「…\p…\p…\p…\pそうね」\e
+<00002569> 【Chizuru】「...\p...\pthat's true.」\e
+
+//<0000256a> 【冥夜】「…\p…\p…\p…\p」\e
+<0000256a> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00001cb6> 【千鶴】「神宮司軍曹…\p…\pあなたには…\p…\p大変お世話になりました」\e
+<00001cb6> 【Chizuru】「Sgt. Jinguuji...\p...\pyou have...\p...\pdone a great deal for all of us.」\e
+
+//<00001cb7> 【まりも】「ご昇任おめでとうございます少尉殿！　武運長久をお祈り致しております！」\e
+<00001cb7> 【Marimo】「Second Lieutenant, congratulations on your promotion!\bI pray that you may find fortune on the battlefield!」\e//I *might* allow "may fortune favor your blade" but...lol ~IX //no way - Sheeta
+
+//<00001cb9> 【千鶴】「…\p…\pこのご恩…\p…\p決して忘れません！」\e
+<00001cb9> 【Chizuru】「...\p...\pwe will never...\p...\pforget what we owe you!」\e
+
+//<00001cbf> 【まりも】「お気を付け下さい少尉殿。\n私は下士官です。\n丁寧な言葉をお遣い戴くにあたりません」\e
+<00001cbf> 【Marimo】「Relax, Second Lieutenant.\nI'm a non-commissioned officer.\nThere's no need to speak to me so formally.」\e//no idea what to do with that first bit ~IX
+//this is meant as a warning. speaking politely to a noncom sets a bad example or whatever - Makoto //the problem was more how to adapt it, since "be careful" felt too harsh and "take care" would sound like something totally different, etc. ~IX//Makoto used the wrong word there, you should definitely be polite of course, it's just the formality of the speech that you should change.-Spin
+
+//<00001cc0> 【千鶴】「…\p…\pは…\p…\p」\e
+<00001cc0> 【Chizuru】「...\p...\pma'am...\p...\p」\e
+
+//<00001cc3> オレ達が少尉になった事で、\pまりもちゃんと立場が逆転したから、\pこうなるのは当然なんだ…\p…\p。\e
+<00001cc3> Now that we're second lieutenants,\p suddenly we outrank Marimo-chan...\p...\pso this is only natural...\p...\p\e
+
+//<00001cc4> だけど…\p…\p複雑だ。\nどうにも言いようのない感情がわき上がってくる。\e
+<00001cc4> But...\p...\pit's complicated.\nThere's a bunch of emotions welling up I just can't describe.\e
+
+//<00001cc5> …\p…\p『前のこの世界』では紙切れ１枚の略式昇任だったから初めての経験だ。\e
+<00001cc5> ...\p...\pin the previous world our promotions were merely sheets of paper, so I've never experienced this before.\e
+
+//<00001cc6> その時は…\p…\pまりもちゃんも、\p夕呼先生も、\p京塚のおばちゃんも、\p基地司令もみんないなくなった後の事だった…\p…\p。\e
+<00001cc6> Back then...\p...\pMarimo-chan,\p Yuuko-sensei,\p Kyozuka-oba-chan,\p the General and everyone were already gone...\p...\p\e
+
+//<00001cc7> だから、\p余計そう思うのかな…\p…\p。\e
+<00001cc7> Is that making me feel it even worse...\p...\p?\e
+
+//<00001cd9> 【冥夜】「貴官の錬成に心より感謝する…\p…\p」\e
+<00001cd9> 【Meiya】「I give you my thanks for training us...\p...\p」\e
+
+//<00001cda> 【まりも】「ご昇任おめでとうございます少尉殿！」\e
+<00001cda> 【Marimo】「Congratulations on your promotion, Second Lieutenant!」\e
+
+//<00001cdc> 【冥夜】「貴官の教えと、\p栄えある２０７衛士訓練小隊の名を汚さぬよう、\p戦場に於いても精進し、\p人類の楯となる所存だ」\e
+<00001cdc> 【Meiya】「I shall be diligent in my role as humanity's shield on the battlefield,\p so as not to defile your teachings or the honorable name of Eishi Training Squad 207.」\e
+
+//<00001cdd> 【まりも】「はッ。身に余る光栄です。\n武運長久をお祈りしております」\e
+<00001cdd> 【Marimo】「Ma'am! Your words honor me.\nI pray for your fortune in battle.」\e
+
+//<00001cdf> 【冥夜】「どうか…\p…\pどうか、\pご壮健であれ」\e
+<00001cdf> 【Meiya】「I only ask...\p...\pI only ask that you remain in good health.」\e//"please...please" just did not sound right at all here ~IX
+
+//<00001ce5> 【まりも】「は…\p…\pありがとうございます」\e
+<00001ce5> 【Marimo】「Ma'am...\p...\pthank you very much.」\e
+
+//<00001ce6> 【冥夜】「…\p…\p…\p…\p」\e
+<00001ce6> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00001cfb> 【美琴】「神宮司教官！　私をここまで育てて戴いたこと、\pとても感謝しています！」\e
+<00001cfb> 【Mikoto】「Instructor Jinguuji! I wish to express my gratitude for everything you've done to make me a better soldier!」\e//lit. "raise/nurture me" what is it with this script and stuff that doesn't adapt well?
+
+//<00001cfd> 【まりも】「少尉殿、\p私はもう、\pあなたの教官ではありません」\e
+<00001cfd> 【Marimo】「Second Lieutenant,\p I am no longer your Instructor.」\e
+
+//<00001cff> 【美琴】「あ、\p失礼しました！」\e
+<00001cff> 【Mikoto】「Ah,\p my apologies!」\e
+
+//<00001d00> 【まりも】「お詫び頂く必要もありません。\n何はともあれ、\pご昇任おめでとうございます！」\e
+<00001d00> 【Marimo】「You don't need to apologize either.\nAnyway,\p congratulations on your promotion!」\e
+
+//<00001d02> 【美琴】「ありがとうござ――いや、\pありがとう軍曹」\e
+<00001d02> 【Mikoto】「Thank you very mu――I mean,\p thank you, Sergeant.」\e
+
+//<00001d03> 【まりも】「武運長久をお祈りしております、\p少尉殿！」\e
+<00001d03> 【Marimo】「I pray for your fortune on the battlefield,\p Second Lieutenant!」\e
+
+//<00001d04> 【美琴】「軍曹もお元気で！」\e
+<00001d04> 【Mikoto】「You take care too, Sergeant!」\e
+
+//<00001d05> 【まりも】「ありがとうございます！」\e
+<00001d05> 【Marimo】「Thank you very much!」\e
+
+//<00001d1f> 【慧】「…\p…\p軍曹の尽力に感謝する」\e
+<00001d1f> 【Kei】「...\p...\pthanks for your hard work, Sergeant.」\e
+
+//<00001d20> 【まりも】「ご昇任おめでとうございます少尉殿！　武運長久をお祈り致しております！」\e
+<00001d20> 【Marimo】「Congratulations on your promotion, Second Lieutenant! I pray for your fortune on the battlefield!」\e
+
+//<00001d21> 【慧】「…\p…\p…\p…\p」\e
+<00001d21> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00001d22> 【まりも】「…\p…\p…\p…\p」\e
+<00001d22> 【Marimo】「...\p...\p...\p...\p」\e
+
+//<00001d24> 【慧】「…\p…\p…\p…\p」\e
+<00001d24> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00001d25> 【まりも】「…\p…\p」\e
+<00001d25> 【Marimo】「...\p...\p...\p...\p」\e
+
+//<00001d27> 【慧】「…\p…\p…\p…\p」\e
+<00001d27> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00001d28> 【まりも】「少尉…\p…\pありがとうございます」\e
+<00001d28> 【Marimo】「Second Lieutenant...\p...\pthank you very much.」\e
+
+//<00001d43> 【まりも】「…\p…\p…\p…\p」\e
+<00001d43> 【Marimo】「...\p...\p...\p...\p」\e
+
+//<00001d44> 【壬姫】「神宮司…\p…\p軍曹…\p…\pうぅ…\p…\p」\e
+<00001d44> 【Miki】「Sergeant...\p...\pJinguuji...\p...\puuu...\p...\p」\e
+
+//<00001d45> 【まりも】「ご昇任おめでとうございます少尉殿！　武運長久をお祈り致しております！」\e
+<00001d45> 【Marimo】「Congratulations on your promotion, Second Lieutenant! I pray for your fortune on the battlefield!」\e
+
+//<00001d47> 【壬姫】「…\p…\p本当にッ…\p…\p本当に…\p…\p私っ…\p…\p」\e
+<00001d47> 【Miki】「...\p...\pI'm really! ...\p...\preally...\p...\pI...\p...!」\e
+
+//<00001d48> 【まりも】「…\p…\p…\p…\p」\e
+<00001d48> 【Marimo】「...\p...\p...\p...\p」\e
+
+//<00001d4a> 【壬姫】「…\p…\pうぅぅぅ…\p…\pくぅぅぅ…\p…\p」\e
+<00001d4a> 【Miki】「...\p...\puuuuu...\p...\puuuuuuu...\p...\p」\e
+
+//<00001d4b> 【まりも】「…\p…\p少尉殿」\e
+<00001d4b> 【Marimo】「...\p...\pSecond Lieutenant.」\e
+
+//<00001d4c> 【壬姫】「…\p…\pうぅぅぅぅぅ…\p…\p」\e
+<00001d4c> 【Miki】「...\p...\puuuuuuuuuu...\p...\p」\e
+
+//<00001d4d> 【まりも】「お気持ちは十分戴きました。\nさあ、\pもうお行き下さい…\p…\p」\e
+<00001d4d> 【Marimo】「I understand how you feel.\nNow,\p please go join the others...\p...\p」\e
+
+//<00001d4f> 【壬姫】「…\p…\pうぅぅぅぅぅ…\p…\p」\e
+<00001d4f> 【Miki】「...\p...\puuuuuuuuuu...\p...\p」\e
+
+//<00001d61> 【武】「神宮司軍曹…\p…\p今までありがとう」\e
+<00001d61> 【Takeru】「Sgt. Jinguuji...\p...\pthank you for everything.」\e
+
+//<00001d62> 【まりも】「ご昇任おめでとうございます少尉殿！　武運長久をお祈り致しております！」\e
+<00001d62> 【Marimo】「Congratulations on your promotion, Second Lieutenant!\bI pray you find fortune on the battlefield!」\e//for some reason I felt the need to type this out manually every time, kinda like how ingame you feel like it's worth reading through all the repetitions because, like a high school graduation or something, it really is worth honoring every one of them individually ~IX
+
+//<00001d63> 【武】「軍曹の錬成を受けた事を生涯誇りに思う。\n今オレがこうしているのも、\p軍曹のおかげだ」\e
+<00001d63> 【Takeru】「Being trained by you will be my lifelong pride.\nIt's thanks to you that I've gotten this far.」\e//;_; I love this line -Shikiller
+
+//<00001d64> 【まりも】「光栄です少尉殿。\nですが、\p少尉殿は元より傑物でした。\n私は何も益しておりません」\e
+<00001d64> 【Marimo】「I am honored, Second Lieutenant.\nHowever,\p you were exceptional to begin with.\nI have done nothing.」\e
+
+//<00001d65> まりもちゃん…\p…\p違うんです…\p…\p\e
+<00001d65> Marimo-chan...\p...\pthat's not true...\p...\p\e
+
+//<00001d6a> 『前のこの世界』でオレはあなたに鍛え上げられたんです。\e
+<00001d6a> You made me into a man in the previous world.\e//idiom sounds appropriate to me, possible overkill though ~IX
+
+//<00001d6b> 不平不満ばかり漏らして、\pもやしの様なガキだったオレを…\p…\p。\e
+<00001d6b> Back when I spent all my time complaining and couldn't do anything right...\p...\p\e
+
+//<00001d6c> あなたが…\p…\p。あなたが…\p…\p一端の衛士に育て上げてくれたんです！\e
+<00001d6c> You...\p...\pyou brought me up...\p...\pto the level of being a real Eishi!\e
+
+//<00001d72> 記憶は曖昧だけど…\p…\pオルタネイティヴ５発動後も、\p何か大きな事でお世話になっていた筈なんです。\e
+<00001d72> My memories are pretty vague, but...\p...\pI'm pretty sure you helped me with something huge after Alternative V activated too.\e
+
+//<00001d73> オレは必ず…\p…\p必ずオルタネイティヴ４を成功させます！そして、\p必ず人類とこの星を救います！\e
+<00001d73> I will make sure...\p...\pthat Alternative IV is completed!\bAnd I will save humanity and this planet!\e
+
+//<00001d74> 今、\pオレがそれをやる事ができるのは…\p…\pあなたに鍛え上げて戴いたから…\p…\pだから最初からうまくやれているんです！\e
+<00001d74> The reason I can do that now...\p...\pis because you trained me so well...\p...\pthat's why I've been so good from the start!\e
+
+//<00001d75> 【武】「…\p…\p…\p…\p」\e
+<00001d75> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001d76> それを伝えることができたら…\p…\pこの事を伝えて感謝することができたら…\p…\p。\e
+<00001d76> If only I could tell her that...\p...\pand how grateful I am for it...\p...\p\e
+
+//<00001d7d> 【まりも】「…\p…\p…\p…\p」\e
+<00001d7d> 【Marimo】「...\p...\p...\p...\p」\e
+
+//<00001d7e> 【武】「…\p…\p…\p…\pそれでも」\e
+<00001d7e> 【Takeru】「...\p...\p...\p...\peven so...\p...\p」\e
+
+//<00001d85> 【まりも】「…\p…\p…\p…\p」\e
+<00001d85> 【Marimo】「...\p...\p...\p...\p」\e
+
+//<00001d86> 【武】「それでもオレは――まりもちゃんに育てられたんです！」\e
+<00001d86> 【Takeru】「That doesn't change the fact that――You made me who I am, Marimo-chan!」\e
+
+//<00001d8d> 【まりも】「…\p…\p…\p…\p」\e
+<00001d8d> 【Marimo】「...\p...\p...\p...\p」\e
+
+//<00001d93> しまった…\p…\p思いっきり『まりもちゃん』っていっちまった――！\e
+<00001d93> Crap...\p...\pI just screamed "Marimo-chan" at the top of my lungs――!\e
+
+//<00001d95> しかもオレの言ってること、\p端から見たらかなり頭オカシイよな…\p…\p。\e
+<00001d95> Not to mention that probably sounded like utter nonsense to everyone else...\p...\p\e
+
+//<00001d97> 【まりも】「少尉殿…\p…\p」\e
+<00001d97> 【Marimo】「Second Lieutenant...\p...\p」\e
+
+//<00001d98> 【武】「…\p…\p…\p…\p」\e
+<00001d98> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001d9a> 【まりも】「お望みであれば『まりもちゃん』でも構いませんが…\p…\p軍紀上、\p神宮司軍曹とお呼び頂く事が望ましいと思われますが？」\e
+<00001d9a> 【Marimo】「If you really want to, I don't mind if you use\b"Marimo-chan"...\p...\pbut wouldn't it still be more appropriate to call me Sgt. Jinguuji?」\e
+
+//<00001d9b> まりもちゃん…\p…\p。\e
+<00001d9b> Marimo-chan...\p...\p\e
+
+//<00001d9c> 【武】「…\p…\p検討しておく」\e
+<00001d9c> 【Takeru】「...\p...\pI'll think about it.」\e
+
+//<00001d9e> 【まりも】「宜しくお願い致します少尉殿！　それではまた後ほど…\p…\p」\e
+<00001d9e> 【Marimo】「Please do, Second Lieutenant! See you again...\p...\p」\e
+
+//<00000207> 【まりも】「――という手順となります。\n以上で国連軍Ｃ型軍装の受領についての説明を終わります」\e
+<00000207> 【Marimo】「――is the plan.\nThat concludes the explanation of how you are to acquire your UN Army Type-C Uniforms.」\e
+
+//<00000cec> 【まりも】「補足ですが、\p皆さんの昇任は急遽決まりましたので、\p各種軍装の手配が間に合っておりません」\e
+<00000cec> 【Marimo】「However,\p in this particular case your promotions were decided so suddenly that your uniforms have not been procured yet.」\e
+
+//<00000cee> 【まりも】「正式配備までには間に合うよう動いておりますので、\p今暫く、\p候補生の白い軍装をお召し下さい」\e
+<00000cee> 【Marimo】「We're working to ensure that they arrive before your official reassignments,\p but for now,\p please continue to wear your white cadet uniforms.」\e
+
+//<00000cf0> 【まりも】「以上、\p何かご不明な点、\pまたは質問がある方は――」\e
+<00000cf0> 【Marimo】「That is all.\p If anything was unclear or if you have further questions――」\e
+
+//<00000209> さっきまで涙の解隊式だったのに、\p浸る暇もなく強化装備の交換やら正規軍の黒い制服の手配やら大忙しだ。\e
+<00000209> Despite all the crying during the ceremony,\p everyone's busy with exchanging Armored Suits and procuring the black uniforms now.\e
+
+//<000011e9> しかし強化装備の交換はしたって言うのに、\p肝心のＣ型軍装――黒い制服が間に合ってないとは…\p…\p。\e
+<000011e9> But if the new Armored Suits were made in time,\p why aren't the black Type-C uniforms ready...\p...\p?\e
+
+//<000011ea> それだけ急な昇任だったって事か。\e
+<000011ea> Was our promotion really that sudden?\e
+
+//<000011d4> 強化装備は規格品だし、\pサイズに融通が利くから在庫があるんだろうけど、\pさすがにＣ型軍装だけはセミオーダーだからな。\e
+<000011d4> The Armored suits are standardized and one-size-fits-all to a certain extent, so I can imagine some were just lying around in storage.\p But I guess the Type-C's do need to be custom ordered.\e
+
+//<000011ee> 黒い強化装備や黒いＣ型軍装は、\p候補生の憧れ…\p…\p正規兵の証だ。\e
+<000011ee> All cadets want to wear the black uniforms and Armored Suits...\p...\pthey prove you're a real Eishi.\e
+
+//<000011ef> 任官したってのに制服が候補生のままって言うのは、\pちょっと肩すかしを喰らった感じだよ。\e
+<000011ef> Having to keep these old uniforms after being commissioned does kinda feel like a slap in the face.\e//lit. "narrow miss to the shoulder/under-shoulder throw in sumo" yay new word to guesslate
+//a let down - Makoto //that's how I'm reading the current line ~IX //clarified later: current phrasing is arguably too strong so may want to rephrase ~IX
+
+//<000011d7> 【美琴】「候補生の制服もいよいよ今日で着納めだね～。\n白い強化装備はもう交換しちゃったしね」\e
+<000011d7> 【Mikoto】「So this'll finally be the last day of these cadet uniforms.\nWe've even gotten our white Armored Suits replaced already.」\e//*just realized white = transparent* ~IX
+
+//<000011d9> 【壬姫】「白い強化装備、\pやっと慣れたと思ったら、\pあっという間でしたねー」\e
+<000011d9> 【Miki】「I'd finally gotten used to them,\p and now we're getting different ones.」\e
+
+//<00000cf7> 【千鶴】「最初は恥ずかしかったけど…\p…\p慣れって恐ろしいわね。\n今じゃ何とも思わなくなったわ」\e
+<00000cf7> 【Chizuru】「It was embarrassing at first...\p...\pbut it's amazing what you can get used to.\p I don't think anything of it now.」\e
+
+//<00000cf9> 【慧】「自信があったから…\p…\p最初から平気」\e
+<00000cf9> 【Kei】「I had confidence...\p...\pso it never bothered me.」\e//awesome line is awesome ~IX
+
+//<00000cfb> 【千鶴】「どういう意味かしら…\p…\p？」\e
+<00000cfb> 【Chizuru】「What do you mean by that...\p...\p?」\e
+
+//<00000cfd> 【壬姫】「まあまあ千鶴さ～ん」\e
+<00000cfd> 【Miki】「Don't worry about it, Chizuru-saaan.」\e
+
+//<00000cff> 【冥夜】「正規軍では男も女もないからな。\nあれに慣らされてしまえば、\p大概の事はもう恥ずかしくなかろう」\e
+<00000cff> 【Meiya】「Gender should mean nothing to a soldier, after all.\nNow that we have been habituated with that,\p most similar issues should be of no concern.」\e
+
+//<00000d14> 【美琴】「うん。最前線の基地じゃあ、\p寝る場所どころかトイレもお風呂も一緒だからね」\e
+<00000d14> 【Mikoto】「Yeah. We'll have to sleep and bathe and share bathrooms together on the front lines after all.」\e
+
+//<00000d03> 【武】「…\p…\p…\p…\p」\e
+<00000d03> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000020a> オレは元々正規軍の強化装備だからいいけど、\pみんなは交換だの何だので大変だな…\p…\p。\e
+<0000020a> I got to wear a real soldier's Armored Suit from the start,\p but everyone else has to go through this messy exchange process...\p...\p\e
+
+//<0000020b> 特にさっきまでの、\p任官の事務手続きや書類の作成、\pあれは最悪だよ…\p…\p。\e
+<0000020b> That official paperwork for our commissioning was especially painful...\p...\p\e
+
+//<0000020c> 『前のこの世界』の略式昇任の時は、\p荷物をドカッと渡されて、\p目録にサインして終わったような気がする。\e
+<0000020c> I think our informal promotions in the previous world ended with handing us the goods and making us sign something.\e
+
+//<0000020d> しかも２０７小隊はそのまま正規軍に編入されたけど、\p強化装備は候補生用のまんまだった。\e
+<0000020d> Not to mention Squad 207 was left completely intact afterward,\p though we still had cadet Armored Suits.\e
+
+//<0000020e> 今考えると、\pあの時はやっぱりオルタネイティヴ５への移行で、\p組織としてかなりいい加減になっちまったんだな…\p…\p。\n夕呼先生がいなくなった後でも、\pずっと霞に会いに行き続けられたのも納得だよ。\e
+<0000020e> Now that I think about it,\p Alternative V really messed up how this place was organized...\p...\p\nNo wonder I could get away with seeing Kasumi all the time even after Yuuko-sensei left.\e
+
+//<0000020f> 【まりも】「――では続きまして、\p配属部隊についてご説明します」\e
+<0000020f> 【Marimo】「――And now for your new unit assignments.」\e
+
+//<00000210> 【千鶴・冥夜・壬姫・慧・美琴】「…\p…\p…\p…\p」\e
+<00000210> 【Chizuru & Meiya & Miki & Kei & Mikoto】「...\p...\p...\p...\p」\e
+
+//<00000211> 部隊配属か…\p…\p。\n恐らくオレは夕呼先生の直下で働くことになるんだろうな。\nそうなったら…\p…\pみんなとは離ればなれだ。\e
+<00000211> Unit assignments...\p...\p\nI'll probably end up working directly under Yuuko-sensei.\nIf that happens...\p...\pI'll be separated from everyone.\e
+
+//<00001fad> 主観時間で３年以上も一緒にいる仲間達と別れるのは…\p…\p正直つらい。\nだけど、\pここでそんな甘えた事は言ってられない。\e
+<00001fad> I've been with them for over three years counting last time...\p...\pleaving them now would really hurt.\nBut I can't say something naive like that.\e
+//might want to make clearer that he means three years "from my point of view" - Makoto //I habitually drop "subjective time" since it sounds much more nerdy in English than Japanese, but yeah worth putting something in here ~IX
+
+//<00000213> 【まりも】「今後皆さんは、\p国連軍の正規兵として実戦部隊に組み込まれ、\p多様な地域でのあらゆる作戦に従事することになります」\e
+<00000213> 【Marimo】「From now on,\p you will join a UN Army combat unit,\p and be sent on various missions in a variety of locations.」\e
+
+//<00000214> 【まりも】「この度衛士訓練学校を卒業した新任少尉は全員、\p同一部隊に配属される事が決定しています」\e
+<00000214> 【Marimo】「It has been decided that all of the recent Eishi Training School graduates will be assigned at once to the same unit.」\e
+
+//<00000215> 【千鶴・冥夜・壬姫・慧・美琴】「――！」\n
+<00000215> 【Chizuru & Meiya & Miki & Kei & Mikoto】「――!」\n
+
+//<00000216> 【武】「――えっ！？」\e
+<00000216> 【Takeru】「――Eh!?」\e
+
+//<00000217> 全員同じ部隊って…\p…\pそりゃ新任は何処に回されたとしても、\p同じ横浜基地内の部隊ではあるんだろうけど…\p…\p全員同じって？！\e
+<00000217> The same unit? ...\p...\pwell of course we'd be put in some other unit on Yokohama Base, but...\p...\pthe same one for all of us!?\e
+
+//<00000218> 『前のこの世界』で、\pとりあえず２０７小隊はひとまとめにしておけって感じだったのは…\p…\pそれはオルタネイティヴ５に乗っ取られたからだろう？\e
+<00000218> Wasn't Squad 207 left exactly as it was in the previous world...\p...\pbecause of Alternative V?\e
+
+//<00000219> 【まりも】「皆さんは、\p明日――つまり、\p１２月１０日午前０時を以て、\p横浜基地司令部直轄の特殊任務部隊、\pＡ－０１部隊に配属となります」\e
+<00000219> 【Marimo】「Tomorrow――Midnight on December 10th to be precise,\p you will all become part of Special Unit A-01,\p under the direct control of the Yokohama Base commanders.」\e
+
+//<0000021a> 【千鶴・冥夜・壬姫・慧・美琴】「…\p…\p…\p…\p」\e
+<0000021a> 【Chizuru & Meiya & Miki & Kei & Mikoto】「...\p...\p...\p...\p」\e
+
+//<0000021b> …\p…\pエーゼロワン部隊？\n基地司令部直轄の…\p…\p特殊任務部隊？\n基地司令部直属って…\p…\pどういう意味だ？\e
+<0000021b> ...\p...\pUnit A-01?\nA special unit...\p...\punder the commanders' direct control?\n...\p...\pwhat does that mean?\e
+
+//<0000021c> だいたい…\p…\pそんな特殊部隊があったのか。\e
+<0000021c> I didn't even know...\p...\pthere was a special unit here.\e
+
+//<0000021d> 【まりも】「ただし、\p現在Ａ－０１部隊は作戦行動中のために基地を離れています」\e
+<0000021d> 【Marimo】「However,\p Unit A-01 is currently away on a mission.」\e
+
+//<00000cc4> 【まりも】「予定では明日、\p装備性能評価演習に参加する事となっておりますので、\p皆さんは演習の終了を待って、\p正式配属となります」\e
+<00000cc4> 【Marimo】「The plan is for you to join their equipment evaluation exercise tomorrow,\p so you will all formally join their unit afterward.」\e//since my military terms suck, I think that's "practice checking how good your stuff works", so have fun with it ~IX //yay I was right, just changed to "exercise" for consistency ~IX
+//this is the new OS exercise, not "Unit A-01's exercise" - Makoto //since the unit possessing the exercise makes no sense, I see this as shorthand for "the ... exercise in which they are participating". Still feels like the least awkward way to get that across. ~IX
+
+//<0000021f> 装備性能評価演習…\p…\p？\e
+<0000021f> Equipment evaluation exercise...\p...\p?\e
+
+//<00000220> 【まりも】「従って皆さんは、\pこの演習に参加するために、\pＡ２０７小隊として臨時編成される事になりました」\e
+<00000220> 【Marimo】「Therefore,\p in order to participate in that exercise,\p you will be temporarily treated as Platoon A207.」\e
+
+//<00000221> ――えっ？　いきなり演習に参加！？\e
+<00000221> ――Eh? We're joining their practices already!?\e//...didn't she say that in the last line? ~IX
+
+//<00000222> 【まりも】「小隊の臨時指揮官は榊少尉にお願いします」\e
+<00000222> 【Marimo】「2nd Lt. Sakaki will be the temporary commander of this platoon.」\e
+
+//<00000223> 【千鶴】「はい」\e
+<00000223> 【Chizuru】「Ma'am.」\e
+
+//<00000224> 【まりも】「――ここまでで何かご質問はありますか？」\e
+<00000224> 【Marimo】「――Are there any questions regarding this plan?」\e
+
+//<00000225> ――よし！\nしつも――\e
+<00000225> ――Okay!\nNow I can――\e
+
+//<00000226> 【千鶴】「――軍曹、\p演習の詳細を教えてください」\e
+<00000226> 【Chizuru】「――Sergeant,\p please tell us the details of this training.」\e
+
+//<00000227> ――っと、\pさすが委員長。\e
+<00000227> ――Oh,\p nice one Class Rep.\e
+
+//<00000228> 【まりも】「詳しいブリーフィングは当日行いますので、\p概要を説明します」\e
+<00000228> 【Marimo】「The detailed briefing will take place today,\p so I'll merely outline it here.」\e
+
+//<00000cc6> 【まりも】「装備性能評価演習は文字通り、\p新装備が制式採用に相応しい能力を発揮するのかを試験するための演習です」\e
+<00000cc6> 【Marimo】「An equipment evaluation drill is, as the name states,\p an exercise meant to test whether new equipment is functioning well enough to perform its intended use.」\e
+
+//<0000022a> 【まりも】「これは、\p香月副司令の要請で１０日前急遽計画された演習です。\n当初１２月８日に実施する予定でしたが、\p先の事件が発生し２日順延されました」\e
+<0000022a> 【Marimo】「This practice was planned ten days ago by XO Kouzuki's personal request.\nIt was originally planned for December 8th,\p but recent events postponed it by two days.」\e
+
+//<0000022b> 夕呼先生が…\p…\p急遽演習を計画…\p…\p？\e
+<0000022b> Yuuko-sensei...\p...\pplanned an exercise that fast...\p...\p?\e
+
+//<0000022c> しかも、\pあんな騒ぎがあったのに２日しか延期しないなんて…\p…\p。\n相当急ぐ理由があるんだろうな。\e
+<0000022c> And it only got postponed for two days even after that huge mess...\p...\p?\nShe must have a reason for hurrying so much.\e
+
+//<0000022d> 【まりも】「Ａ２０７小隊が臨時編成された理由は、\p皆さんの機体に搭載されている概念実証型ＯＳとＸＭ３の比較試験がこの演習の目的であるからです」\e
+<0000022d> 【Marimo】「The reason you have been temporarily designated Platoon A207 is to allow for a comparative practical evaluation of the proof-of-concept OS in your TSFs against the XM3.」\e
+
+//<0000022e> エクセムスリー？　新ＯＳの名前が決まったのか…\p…\p。\e
+<0000022e> XM3? Is that the latest version of our OS or something...\p...\p?\e//uh...didn't Marimo say it like they were two separate things? Also I vaguely recall XM3 being an even newer version so leaving for now ~IX //yep, it's explicitly stated later in the script ~IX //tweaked to make it more obvious that the XM3 is different from the OS Takeru's team currently uses - Sheeta
+
+//<0000022f> 【まりも】「尚、\pこれは実弾演習ではありませんので、\p武装は全て演習用装備に換装します」\e
+<0000022f> 【Marimo】「Also,\p since this is a live combat exercise,\p your equipment will be exchanged for practice weapons.」\e
+
+//<00000230> 【武】「あの、\pオレ達は吹雪で参加するんですよね？」\e
+<00000230> 【Takeru】「Umm,\p will we be using our Fubuki?」\e
+
+//<00000231> 【まりも】「その通りです。\n本来であれば制式機で参加して頂く予定でしたが、\pこれもまた、\p先の事件により搬入が遅れています」\e
+<00000231> 【Marimo】「That is correct.\nWe originally planned on having you participate in non-training TSFs,\p but as with everything else, their shipment has been delayed.」\e
+
+//<00000232> 【まりも】「制式機の稼働まではこれまで通り、\p吹雪にお乗りいただきます。\n実際の――」\e
+<00000232> 【Marimo】「Until they arrive,\p you will continue to use Fubuki as before.\p Once in――」\e
+
+//<00000233> Ａ２０７小隊の臨時編成は夕呼先生の指示だろう…\p…\p。\n新ＯＳのテストがメインなら確実だ。\e
+<00000233> The A207 thing was probably Yuuko-sensei's order...\p...\p\nIf testing the new OS is the main purpose, that's definitely it.\e
+
+//<00000234> でも、\pクーデター事件では殆ど逃げ回っていただけとは言え、\p新ＯＳは初陣の訓練兵を全員生存させたんだぞ…\p…\p？\e
+<00000234> But even if we spent most of the coup d'etat running away,\p the new OS was still enough to keep all of us cadets alive in our first real battle...\p...\p\e
+
+//<00000235> その潜在能力の高さは十分見せつけた筈だけど…\p…\p今更何で演習で比較試験が必要なんだ？\e
+<00000235> That should be more than enough to prove its usefulness...\p...\pso what's the point in a comparative evaluation?\e
+
+//<00000236> 【武】「…\p…\p…\p…\p」\e
+<00000236> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000259b> まあいい。実戦で蓄積したデータも豊富にある。\n一番大きいのは、\pオレ自身が実戦を経験した事だ。\e
+<0000259b> Whatever. It'll let us get even more data accumulated anyway.\nThe most important thing is I have real combat experience now.\e
+
+//<00000238> その上でオレと新ＯＳがどこまでやれるのか…\p…\p自分でも知っておきたい。\e
+<00000238> And now that I have it, I'd like to know...\p...\phow much more I can do with the new OS.\e
+
+//<00000239> 任官していきなり正規兵と腕を競うっていうのも悪くはない。\e
+<00000239> Fighting with real soldiers right after being commissioned isn't a bad idea.\e
+
+//<0000023a> 【千鶴】「――白銀少尉！」\e
+<0000023a> 【Chizuru】「――2nd Lt. Shirogane!」\e
+
+//<0000023b> ――ん！？\e
+<0000023b> ――Hm!?\e
+
+//<0000023c> 委員長…\p…\p。\e
+<0000023c> Class Rep...\p...\p\e
+
+//<0000023d> 少尉なんて呼ばれ方、\p凄く久しぶりな気がする。\n『前のこの世界』ではそう呼ばれていた時間の方が長かったのに…\p…\p。\e
+<0000023d> It feels like I haven't been called "2nd Lt." in ages.\nEven though I was called that for a long time in the previous world...\p...\p\e
+
+//<0000023e> 【武】「どうした、\p榊隊長？」\e
+<0000023e> 【Takeru】「What is it,\p Squad Leader Sakaki?」\e
+
+//<0000023f> 【千鶴】「ちょっと、\p今更何よ？　…\p…\p調子狂うからいつもの『委員長』でいいわ」\e
+<0000023f> 【Chizuru】「Hey,\p what's that about?\b...\p...\pcall me Class Rep as usual, that's just distracting.」\e
+
+//<00000240> 【武】「じゃあオレも名前で良いよ。\n一瞬誰かと思った。\pで、\pなに？」\e
+<00000240> 【Takeru】「Then use my name too.\nI wasn't even sure if you meant me for a moment.\p So what is it?」\e
+
+//<00000241> 【千鶴】「ブリーフィングが終わったら、\pすぐ出て行っちゃうから渡しそびれたのよ」\e
+<00000241> 【Chizuru】「You ran off the moment the briefing ended so I didn't get a chance to give you this.」\e
+
+//<00000242> 【武】「いや…\p…\pずっとだるい説明ばっかりだったからさ…\p…\p」\e
+<00000242> 【Takeru】「Well...\p...\pit was getting rather tedious, so...\p...\p」\e
+
+//<00000243> 【千鶴】「まあいいわ…\p…\pはい、\pこれ」\e
+<00000243> 【Chizuru】「Whatever...\p...\phere you go.」\e
+
+//<00000244> …\p…\p…\p…\pなんだ？\e
+<00000244> ...\p...\p...\p...\pwhat?\e
+
+//<00000245> 【武】「…\p…\pなんだこれ？」\e
+<00000245> 【Takeru】「...\p...\pwhat is this?」\e
+
+//<00000246> 【千鶴】「見ての通り…\p…\p遺書を書くための紙と封筒よ。\n説明聞いてなかったの？」\e
+<00000246> 【Chizuru】「What it looks like...\p...\ppaper and an envelope for your will.\p Weren't you listening?」\e
+
+//<00000247> 【武】「…\p…\p遺書？」\e
+<00000247> 【Takeru】「...\p...\pmy will?」\e
+
+//<00000248> …\p…\pそんなの書いたっけ？　全然覚えてない…\p…\p。\e
+<00000248> ...\p...\pdid we ever write one before?\bI don't remember doing it...\p...\p\e
+
+//<00000249> 【千鶴】「そうよ、\pこれからは常に実戦だから…\p…\p」\e
+<00000249> 【Chizuru】「Yes,\p we'll be in constant combat from now on, so...\p...\p」\e
+
+//<0000024a> 【武】「…\p…\pいつ死んでもいいように、\p今のうちに書いとけって事か」\e
+<0000024a> 【Takeru】「...\p...\pwe need to write it now since we don't know when we'll die.」\e
+
+//<0000024b> 【千鶴】「そういう事ね…\p…\p」\e
+<0000024b> 【Chizuru】「That's right...\p...\p」\e
+
+//<0000024c> 【武】「でもさぁ、\p明日は演習だろ？　しかも実弾は使わないじゃないか」\e
+<0000024c> 【Takeru】「But don't we have practice tomorrow?\bWith no live rounds or anything?」\e
+
+//<0000024d> だからって安全な訳じゃないだろうけど…\p…\p。\e
+<0000024d> Not that it's completely safe, but...\p...\p\e
+
+//<0000024e> 【千鶴】「そういう事になってるんだから仕方ないじゃない」\e
+<0000024e> 【Chizuru】「That's just what happened, it doesn't matter.」\e
+
+//<0000024f> 【武】「まあ、\pそうだけど…\p…\p」\e
+<0000024f> 【Takeru】「Yeah,\p I guess so...\p...\p」\e
+
+//<00000250> 【千鶴】「…\p…\p…\p…\p」\e
+<00000250> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00000251> 【武】「…\p…\pなんだよ？」\e
+<00000251> 【Takeru】「...\p...\pwhat?」\e
+
+//<00000252> 【千鶴】「ちゃんと書きなさいよ？」\e
+<00000252> 【Chizuru】「Make sure you write it.」\e
+
+//<00000253> 【武】「う～ん…\p…\p」\e
+<00000253> 【Takeru】「Hmmmm...\p...\p」\e
+
+//<00000254> 【千鶴】「私は…\p…\p書くわ」\e
+<00000254> 【Chizuru】「...\p...\pI'll write one.」\e
+
+//<00000255> 【武】「え…\p…\p？」\e
+<00000255> 【Takeru】「Eh...\p...\p?」\e
+
+//<00000256> 委員長…\p…\p親父さんを亡くしたばっかりなのに、\p遺書なんて…\p…\pちょっと生々し過ぎないか？\e
+<00000256> Class Rep...\p...\pyou just lost your father...\p...\pisn't writing a will right now a bit much?\e
+
+//<00000257> それが委員長なりに、\p親父さんの事を克服するための手段なら良いんだけど…\p…\p。\e
+<00000257> Though it'd be nice if that helps her get past it...\p...\p\e
+
+//<00000258> 【千鶴】「別に死ぬために書く訳じゃないから、\pなんて事はないわ」\e
+<00000258> 【Chizuru】「I'm not planning on dying after I write it, by the way.」\e
+
+//<00000259> 【武】「そうか…\p…\p」\e
+<00000259> 【Takeru】「Yeah...\p...\p」\e
+
+//<0000025a> 【千鶴】「いつ死んでも良いように、\p出撃の度に気持ちや身辺の整理をしておくことが、\p逆に活路を開く事に繋がる…\p…\p」\e
+<0000025a> 【Chizuru】「Putting your personal affairs in order ahead of time,\p so that it doesn't matter when you die,\p can make it easier to do what you have to do to stay alive...\p...\p」\e
+
+//<0000025b> 【武】「…\p…\p…\p…\p」\e
+<0000025b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000025c> 【千鶴】「武士道云々の聞きかじりだけど、\p出撃の度に書く遺書なんて、\pそんなものかなって思うから…\p…\p」\e
+<0000025c> 【Chizuru】「I know a little about Bushido,\p so I think that's the idea behind writing a will before being deployed...\p...\p」\e
+
+//<0000025d> 【武】「そうか…\p…\p」\e
+<0000025d> 【Takeru】「I see...\p...\p」\e
+
+//<0000025e> 委員長から武士道とか出てくるとは思わなかった…\p…\p。\nでも、\p遺書とか死とかを、\pそれなりに距離を置いて考えているみたいで安心した。\e
+<0000025e> I never thought Class Rep would bring up Bushido...\p...\p\nBut I'm relieved to see her thinking so rationally about wills and death and such.\e
+
+//<0000025f> 【千鶴】「そういえば、\p夕食をみんなで食べたいって、\p珠瀬が言っていたわ。\n顔出してね」\e
+<0000025f> 【Chizuru】「Come to think of it,\p Tamase said she wanted us all to eat dinner together.\p Make sure you're there.」\e
+
+//<00000260> 【武】「ささやかな任官パーティーって所か？」\e
+<00000260> 【Takeru】「So we're having a little party for our commissioning?」\e
+
+//<00000261> 【千鶴】「まあ…\p…\pそうね」\e
+<00000261> 【Chizuru】「Well...\p...\ppretty much.」\e
+
+//<00000262> 今の状況では不謹慎かも知れないけど、\pみんなの気持ちを考えたらやっておいても損はないだろ。\e
+<00000262> Maybe that's a bit imprudent in this situation,\p but it certainly wouldn't hurt to make everyone feel better by doing that.\e
+
+//<00000263> 【千鶴】「…\p…\p部隊配備になったら、\pもう今のメンバーだけで食事する事も無くなるでしょうから…\p…\p」\e
+<00000263> 【Chizuru】「...\p...\ponce we're in the new unit,\p we won't get to eat in the usual group anymore...\p...\p」\e
+
+//<00000264> 【武】「ああ…\p…\pわかった。\n絶対行くよ」\e
+<00000264> 【Takeru】「Yeah...\p...\pI know.\nI'll be there.」\e
+
+//<00000265> 【千鶴】「また一緒の部隊になったけど…\p…\pこれからも宜しく」\e
+<00000265> 【Chizuru】「We'll be in the same unit again, so...\p...\pI hope things go well.」\e
+
+//<00000266> …\p…\p…\p…\p委員長。\e
+<00000266> ...\p...\p...\p...\pClass Rep.\e
+
+//<00000267> 【武】「こちらこそ、\pよろしくな」\e
+<00000267> 【Takeru】「I hope so too.」\e
+
+//<00000268> 【千鶴】「…\p…\pじゃあ、\p後で」\e
+<00000268> 【Chizuru】「...\p...\pbye for now then.」\e
+
+//<00000269> 【武】「…\p…\p…\p…\p」\e
+<00000269> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000026a> 遺書…\p…\pねえ…\p…\p。\n『前のこの世界』でもオレは書いてたのか…\p…\p？\e
+<0000026a> A will...\p...\phmmm...\p...\p\nDid I ever write one in the previous world...\p...\p?\e
+
+//<0000026b> 全然記憶にない…\p…\p。\nもし書いたとしたら…\p…\p誰に宛てたんだろう。\e
+<0000026b> I don't remember it at all...\p...\p\nIf I did write one...\p...\pthen to who?\e
+
+//<0000026c> 純夏…\p…\pいや、\p純夏は『この世界』には存在しないはずだ。\e
+<0000026c> Sumika...\p...\pno,\p Sumika doesn't exist in this world.\e
+
+//<00002037> だとすると『この世界』には、\pオレの身内なんてひとりもいないのに。\e
+<00002037> But that means I don't have any old friends or relatives here.\e
+
+//<0000026e> …\p…\p…\p…\p。\e
+<0000026e> ...\p...\p...\p...\p\e
+
+//<0000026f> まあ、\pこういうものを書けっていうのはわかる。\e
+<0000026f> Well,\p I can understand why she wants me to write this.\e
+
+//<00000270> 正規の軍人になるってことは、\p当然、\p最前線に行く可能性も高くなるわけだ。\e
+<00000270> Becoming real soldiers means,\p obviously,\p that we're probably gonna be sent to the front lines.\e
+
+//<00002033> 死を間近に感じる時期を過ごすわけだし、\pもしかして明日また何かがあって出撃して、\p速攻死んじまう可能性だって考えられるよな。\e
+<00002033> We'll be feeling death right next to us all the time,\p and for all we know we could get deployed and killed tomorrow.\e
+
+//<00000272> …\p…\p。\e
+<00000272> ...\p...\p\e
+
+//<00000273> …\p…\p…\p…\p。\e
+<00000273> ...\p...\p...\p...\p\e
+
+//<00000274> 【武】「…\p…\p…\p…\p書くわけねえだろ！」\e
+<00000274> 【Takeru】「...\p...\p...\p...\phow the hell can I write this!?」\e
+
+//<00000275> 委員長はああ言ってたけど、\pオレにはそんな割り切りはない。\e
+<00000275> Despite everything Class Rep said,\p it's just not that simple for me.\e
+
+//<00000276> …\p…\p今のオレは絶対に死ねないんだ。\nオレは「万が一」すら許されない人間なんだ。\e
+<00000276> ...\p...\pI can't die right now no matter what.\nI'm not allowed to worry about the what-ifs.\e
+
+//<00000277> オレはあの未来を回避して、\p人類を救わなくちゃいけないんだ。\e
+<00000277> I need to save humanity and keep them away from that future.\e
+
+//<00000278> 【武】「…\p…\p…\p…\p」\e
+<00000278> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000279> 『この世界』でやるべき事をやった後――『元の世界』に帰る。\e
+<00000279> And after I've done what I need to do in this world――I'll go back to mine.\e
+
+//<0000027a> 『この世界』を救えればそれでいいと思ったこともあった、\pでも今は違う。\e
+<0000027a> I used to think all I needed to do was save this world,\p but not anymore.\e
+
+//<00000e11> 夕呼先生が帰れる可能性があるって言っていたんだ。\nその証拠に、\p転移実験も成功したじゃないか！\e
+<00000e11> Yuuko-sensei said there was a chance I could go home.\nAnd didn't all those experiments prove her right!?\e
+
+//<0000027c> オレは絶対に帰るんだ。\n『この世界』を救い、\p心残りをなくしたら…\p…\p『元の世界』で普通に暮らすんだ。\e
+<0000027c> I will go home.\nOnce I've saved this world and have no regrets...\p...\p\bI'll go back to my old, normal life.\e
+
+//<0000027d> オレは純夏がいる世界で暮らしたい。\nたとえ記憶の通りに結ばれなくても。\e
+<0000027d> I wanna live in a world with Sumika.\nEven if our memories don't match.\e
+
+//<0000027e> 『元の世界』に帰らないと…\p…\pそうしないと、\p純夏と一緒に生きることができない――だからいつ死んでもいいなんて絶対に思わない。\e
+<0000027e> I have to go back to my world...\p...\potherwise I'll never be able to live with her――Which is why I'm not prepared to die here.\e
+
+//<0000027f> オレが死んでも、\p志を引き継ぐ仲間がいるからそれでいい――なんて、\p絶対に思えない。\e
+<0000027f> They're all fine with dying as long as their comrades finish the fight――But not me.\e
+
+//<00002016> 冥夜や殿下が立派だと思っても、\pオレにその真似はできないんだ…\p…\p。\e
+<00002016> I do think Meiya and Her Highness are admirable,\p but I can't do what they do...\p...\p\e
+
+//<00000281> 【武】「…\p…\p…\p…\p」\e
+<00000281> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000282> でも、\pそうするには戦場に行かなくちゃいけない…\p…\pこの世界でオレの影響力を大きくするためには、\p階級を上げていくしかない。\e
+<00000282> But in order to save this world, I have to go into combat...\p...\pand I need to improve my rank in order to exert a greater influence on this world.\e
+
+//<00000283> その為には、\p目覚しい戦果を上げて、\pオレのことを軍の上層部に認めてもらわなくちゃいけない。\e
+<00000283> Which means I have to perform incredibly well out there and get the highest levels of the military to listen to me.\e
+
+//<000011c7> でも、\pそうしようとすれば、\pほかの衛士より死ぬ確率が高くなるかもしれない…\p…\p。\e
+<000011c7> But,\p doing that might make me more likely to die than any of the other Eishi...\p...\p\e
+
+//<00000285> 【武】「…\p…\p…\p…\p」\e
+<00000285> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000286> ――ちくしょう…\p…\p何でこんな事考えているんだオレは！\e
+<00000286> ――Dammit...\p...\pwhy am I even thinking about all this!?\e
+
+//<00000287> 行動するための『立脚点』だって決めた。\n実戦に出て生き残った！\e
+<00000287> I already decided what to base my actions on.\nAnd I've lived through real combat!\e
+
+//<00000288> しかも『この世界』を救うオルタネイティヴ４の鍵になる理論も回収した。\nオレが考えたＯＳの優位性だって証明したんだ。\e
+<00000288> I even recovered the theory that'll get Alternative IV going.\nAnd we proved how useful my OS is.\e
+
+//<00000289> 『前のこの世界』より全然早く任官だってしたじゃないか！\nオレは未来を変えたんだぞ！？\e
+<00000289> And didn't we get commissioned far sooner than in the previous world!?\nI am changing the future!!\e
+
+//<0000028a> なのに――どうして遺書ぐらいでこんな気持ちになっちまうんだ？！\e
+<0000028a> And yet――Why does the idea of writing a will make me feel like this!?\e
+
+//<0000028b> 【武】「はぁ…\p…\p…\p…\p」\e
+<0000028b> 【Takeru】「Haa...\p...\p...\p...\p」\e
+
+//<0000028c> 死んでたまるか…\p…\p負けてたまるかよ！\e
+<0000028c> How can I die...\p...\phow can I lose after all this!?\e
+
+//<0000028d> オレは他の人間には絶対真似できないことをしてるんだ。\e
+<0000028d> I'm doing things no one else could ever do.\e
+
+//<0000028e> もう少しでそれが叶うんだ。\nオレが『この世界』の未来を変えてるんだ！\e
+<0000028e> And it won't be much longer before I can get what I want.\nI am changing this world's future!\e
+
+//<0000028f> 絶対に、\p死んでたまるか！\e
+<0000028f> There's no way in hell I can die now!\e
+
+//<00000290> 【武】「お…\p…\p早いな、\pみんな」\e
+<00000290> 【Takeru】「Oh...\p...\pyou guys are fast.」\e
+
+//<00000291> 【千鶴】「あなたが遅いのよ。\n時間きっかりに来るなんて」\e
+<00000291> 【Chizuru】「No, you're slow.\nDon't come right at the last minute.」\e
+
+//<00000292> 【武】「失礼しました榊隊長」\e
+<00000292> 【Takeru】「My apologies, Squad Leader Sakaki.」\e
+
+//<00000293> 【千鶴】「もう、\pやめてっていってるでしょ！」\e
+<00000293> 【Chizuru】「Aaah,\p I told you to stop that!」\e
+
+//<00000294> 【壬姫】「じゃあ、\pみんな揃ったから、\p乾杯しようよ」\e
+<00000294> 【Miki】「Then let's all make a toast.」\e
+
+//<00001f55> 【武】「お？　そういえば…\p…\p今日の晩飯はちょっと豪華だな」\e
+<00001f55> 【Takeru】「Oh? Come to think of it...\p...\pwe've got a lot for dinner today.」\e
+
+//<0000202f> 【美琴】「京塚のおばちゃんがね、\pお祝いだって用意してくれたんだ」\e
+<0000202f> 【Mikoto】「Kyozuka-oba-chan said she put this together to celebrate.」\e
+
+//<00000297> 【武】「そうか…\p…\pおお、\pそれに飲み物まで」\e
+<00000297> 【Takeru】「I see...\p...\poooh,\p even drinks.」\e
+
+//<00000d32> 【冥夜】「私たちの晴れの門出だ…\p…\pささやかではあるが、\pこのくらいは良かろう」\e
+<00000d32> 【Meiya】「It is our graduation...\p...\pit may not be much,\p but no more would be appropriate.」\e
+
+//<00000299> 【武】「このくらいは…\p…\pって、\p何にも問題ないじゃないか」\e
+<00000299> 【Takeru】「Appropriate? ...\p...\pwhy's it even matter how much she gives us?」\e
+
+//<0000029a> ただの合成オレンジジュースだろ…\p…\p後ろめたくなるほど高級な品でもないし。\e
+<0000029a> It's just synthetic orange juice...\p...\pnowhere near fancy enough to get modest about.\e
+
+//<0000029b> 【慧】「…\p…\pはい、\p白銀」\e
+<0000029b> 【Kei】「...\p...\phere,\p Shirogane.」\e
+
+//<0000029c> 【武】「え？　あ、\pああ…\p…\p悪いな」\e
+<0000029c> 【Takeru】「Eh? Ah,\p yeah...\p...\psorry.」\e
+
+//<0000029d> 彩峰…\p…\p？\e
+<0000029d> Ayamine...\p...\p?\e
+
+//<0000029e> 【慧】「はい、\p御剣」\e
+<0000029e> 【Kei】「Here,\p Mitsurugi.」\e
+
+//<0000029f> 【冥夜】「む…\p…\pあ、\pすまぬ」\e
+<0000029f> 【Meiya】「Mm? ...\p...\pah,\p my apologies.」\e
+
+//<000002a0> …\p…\p彩峰のやつ、\pどうしたんだ？\e
+<000002a0> ...\p...\pwhat's gotten into Ayamine?\e
+
+//<000002a1> 【慧】「…\p…\p…\p…\p…\p…\pはい」\e
+<000002a1> 【Kei】「...\p...\p...\p...\phere.」\e
+
+//<000002a2> 【千鶴】「…\p…\pえ？」\e
+<000002a2> 【Chizuru】「...\p...\peh?」\e
+
+//<000002a3> 【慧】「…\p…\pお酌」\e
+<000002a3> 【Kei】「...\p...\pa drink.」\e
+
+//<000002a4> 【千鶴】「あ…\p…\p…\p…\pあ、\pありがとう…\p…\p」\e
+<000002a4> 【Chizuru】「Ah...\p...\p...\p...\pth-\pthank you...\p...\p」\e
+
+//<000002a5> 【慧】「…\p…\pごめん」\e
+<000002a5> 【Kei】「...\p...\psorry.」\e
+
+//<000002a6> そうか…\p…\p彩峰のヤツ…\p…\pそういうことか…\p…\p。\e
+<000002a6> I see...\p...\pAyamine...\p...\pso that's what she's...\p...\p\e
+
+//<000002a7> 【千鶴】「え？　…\p…\pなに…\p…\pが？」\e
+<000002a7> 【Chizuru】「Eh? ...\p...\pwhat...\p...\pis it?」\e
+
+//<000002a8> 【慧】「…\p…\p…\p…\p」\e
+<000002a8> 【Kei】「...\p...\p...\p...\p」\e
+
+//<000002a9> 【千鶴】「じゃ、\pじゃあ…\p…\p私も…\p…\p」\e
+<000002a9> 【Chizuru】「Th-\pthen...\p...\pI'll just...\p...\p」\e
+
+//<000002aa> 【慧】「…\p…\p…\p…\pありがと」\e
+<000002aa> 【Kei】「...\p...\p...\p...\pthank you.」\e
+
+//<000002ab> 【武】「…\p…\p…\p…\p」\e
+<000002ab> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000002ac> やっぱり…\p…\p良かったな。\e
+<000002ac> This really is...\p...\pfor the best.\e
+
+//<000002ad> たとえそれが、\p夕呼先生や色々な人間の都合に合わせたものだとしても…\p…\p解隊式がこのタイミングっていうのは、\pこの小隊にとっては良い事だった。\e
+<000002ad> Even if this is just what happens to suit Yuuko-sensei's and everyone else's interests right now...\p...\pgetting promoted at a time like this is good for our squad.\e//not using "reassignment" anymore since that used to imply reassigned to different units but they now know that's not what's happening ~IX
+
+//<000002ae> 納得のいかないことは色々あるにせよ、\pクーデター事件が始まった時以来の重く沈んだ雰囲気が、\pこういう形にまとまったんだから…\p…\p。\e
+<000002ae> There are a lot of things I don't like about it,\p but if this takes care of that heavy, sunken atmosphere the coup d'etat left behind...\p...\p\e
+
+//<000002af> 【美琴】「もー、\p何だかお葬式みたいだよー！？」\e
+<000002af> 【Mikoto】「Come on,\p why does this feel like a funeral!?」\e
+
+//<000002b0> 【慧】「…\p…\p…\p…\p」\e
+<000002b0> 【Kei】「...\p...\p...\p...\p」\e
+
+//<000002b1> 【千鶴】「…\p…\p…\p…\p」\e
+<000002b1> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<000002b2> 【壬姫】「そうだよ～。\nせっかく任官できたんだから、\pもっと賑やかに…\p…\pねえ？」\e
+<000002b2> 【Miki】「We just got commissioned here,\p shouldn't we be more lively? ...\p...\pdon't you think?」\e
+
+//<000002b3> みんなバラバラになる覚悟でいたところに、\p全員同じ部隊に配属っていうのは、\pちょっと肩すかしっぽいけど、\pこのチームがばらけなくて済んだことは、\pマイナスではないと思う。\e
+<000002b3> It was kind of annoying to be told we're all still in the same unit after preparing ourselves to be split up,\p but I don't think it's a bad thing that this team gets to stay together.\e
+
+//<000002b4> ひとりでいる時は遺書ひとつであんな気持ちになったオレも、\pみんなの前だとこうして普通でいられる。\e
+<000002b4> I got all emotional over the will when I was alone,\p but here with everyone else I'm perfectly normal.\e
+
+//<000002b5> ちょっと前までと違って、\pオレが絶対上、\pみたいな気持ちは薄れているんだろう。\nそれだけ、\p戦友として頼っている部分も沢山出てきたってことだ。\e
+<000002b5> Unlike before,\p I'm starting to lose that sense of...\p...\psuperiority?\nThat's gotta be because I feel like I can rely on these guys more now.\e
+
+//<000002b6> 【武】「そうそう、\pたまの言うとおり！」\e
+<000002b6> 【Takeru】「Yeah, yeah,\p Tama's right!」\e
+
+//<000002b7> ここで、\pこの流れにもう一押し…\p…\pこれはオレにしかできない事だよな。\e
+<000002b7> Making one last push here...\p...\pis something only I can do.\e
+
+//<000002b8> 【壬姫】「たけるさん…\p…\p」\e
+<000002b8> 【Miki】「Takeru-san...\p...\p」\e
+
+//<000002b9> 【武】「オレ達はもう、\p後ろに回されて誰かに守ってもらったり、\pお荷物扱いされたりしなくて済むんだ」\e
+<000002b9> 【Takeru】「From now on,\p we won't be kept in the back and protected by others like dead weight.」\e
+
+//<000002ba> 【千鶴】「…\p…\p…\p…\p」\e
+<000002ba> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<000002bb> 【武】「これでやっと、\p自分の手でＢＥＴＡを叩けるようになったんだ。\nやっと人類に直接貢献できるようになったんだぞ？」\e
+<000002bb> 【Takeru】「Now we'll finally be able to fight the BETA with our own hands.\nWe can finally help humanity as a whole.」\e
+
+//<000002bc> 【冥夜】「…\p…\p…\p…\p」\e
+<000002bc> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<000002bd> 【武】「その事実は素直に喜ぼうぜ」\e
+<000002bd> 【Takeru】「Let's be happy about that.」\e
+
+//<000002be> 【慧】「…\p…\p…\p…\p」\e
+<000002be> 【Kei】「...\p...\p...\p...\p」\e
+
+//<000002bf> 【武】「別れる気満々のセレモニーの直後、\p同じ部隊配属ってのは照れるけど、\pまたしばらくみんな一緒なんだ。\nオレは嬉しいぜ？」\e
+<000002bf> 【Takeru】「It feels pretty weird ending up in the same unit after preparing ourselves to be split up right away.\bBut it looks like we'll be together a while longer.\nI don't know about you, but I'm happy about that.」\e
+
+//<000002c0> 【壬姫】「…\p…\p…\p…\p」\e
+<000002c0> 【Miki】「...\p...\p...\p...\p」\e
+
+//<000002c1> 【武】「まあ、\p合成オレンジジュースで乾杯ってのがなんだけどさ、\pオレ達は同じ戦火を潜った戦友なんだ。\n景気よくその未来に乾杯しようぜ！？」\e
+<000002c1> 【Takeru】「Well,\p making a toast with synthetic orange juice is a bit strange,\p but we're comrades who've survived the fires of war together.\nLet's make a toast to our bright future!」\e//couldn't think of anything to make this sound less stupid ~IX
+
+//<000002c2> 【美琴】「…\p…\p…\p…\pっぷ」\e
+<000002c2> 【Mikoto】「...\p...\p...\p...\phu!」\e
+
+//<000002c3> 【武】「あ？」\e
+<000002c3> 【Takeru】「Ah?」\e
+
+//<000002c4> 【美琴】「あははは…\p…\pタケル、\pくっさいセリフー！」\e
+<000002c4> 【Mikoto】「Ahahaha...\p...\pTakeru,\p that was so cheesy!」\e
+
+//<000002c5> 【千鶴】「ふふ…\p…\pそうね、\p未来に乾杯、\pだって…\p…\p」\e
+<000002c5> 【Chizuru】「Huhu...\p...\pit was,\p especially the toasting to our future part...\p...\p」\e
+
+//<000002c6> 【武】「おまえらなぁ…\p…\p人がせっかくいい話したっていうのに…\p…\p」\e
+<000002c6> 【Takeru】「Guuuys...\p...\pI'm trying to be inspirational here...\p...\p」\e
+
+//<000002c7> 【慧】「…\p…\p自分に酔ってる…\p…\p白銀はナル」\e
+<000002c7> 【Kei】「...\p...\pdrunk on oneself...\p...\pShirogane is.」\e//not a clue what ナル is ~IX
+//it means someone who's full of himself - Makoto
+
+//<000002c8> 【武】「彩峰てんめぇ…\p…\pまりもちゃんの前で大泣きしてやがったくせにッ！」\e
+<000002c8> 【Takeru】「Ayamineeee...\p...\pyou're the one who couldn't stop crying in front of Marimo-chan!」\e
+
+//<000002c9> 【美琴】「ええッ！？　慧さん…\p…\p意外だよ！？」\e
+<000002c9> 【Mikoto】「Eeeh!? Kei-san...\p...\pno way!!」\e
+
+//<000002ca> 【慧】「凄く嘘！　白銀は目が腐ってる」\e
+<000002ca> 【Kei】「Incredibly untrue! Shirogane's eyes are rotting.」\e
+
+//<000002cb> 【武】「おまえ、\pそんな事言って良いのか？　おまえの次だったヤツにはバッチリ見られてるはずだろ。\nなあ、\pたま？」\e
+<000002cb> 【Takeru】「You sure you wanna say that?\bThe girl after you saw it clear as day.\nDidn't you,\p Tama?」\e
+
+//<000002cc> 【壬姫】「う～ん確かにそうだったような…\p…\pそうじゃなかったような…\p…\p」\e
+<000002cc> 【Miki】「Hmmm, I do think she was...\p...\pthough it also feels like she wasn't...\p...\p」\e
+
+//<000002cd> 【武】「なんだよ憶えてないのかよ～～ッ！　あ、\pそういえばおまえも、\p話にならないくらい大泣きしてたっけ…\p…\p」\e
+<000002cd> 【Takeru】「What the hell, you don't remember!!?\bAh,\p come to think of it you were crying so much you couldn't even talk...\p...\p」\e
+
+//<000002ce> 【壬姫】「そういえばそうですね～～、\pあははは」\e
+<000002ce> 【Miki】「Oh yeah, that's right～\p Ahahaha.」\e
+
+//<000002cf> 【慧】「白銀あとで死刑」\e
+<000002cf> 【Kei】「Shirogane, execution later.」\e
+
+//<000002d0> 【冥夜】「全く…\p…\pこのままでは埒が明かんな。\n僭越ながらこの私が音頭を取ろう」\e
+<000002d0> 【Meiya】「Really now...\p...\pyou two will never settle this.\nI shall have to give the toast myself.」\e
+
+//<000002d1> 【千鶴】「そうね。御剣、\pお願い」\e
+<000002d1> 【Chizuru】「Good idea. Please do that,\p Mitsurugi.」\e
+
+//<000002d2> 【冥夜】「うん…\p…\p。\nでは、\p我等の門出を祝して――乾杯！」\e
+<000002d2> 【Meiya】「Yes...\p...\p\nNow then――A toast to our graduation!」\e
+
+//<000002d3> 【千鶴】「乾杯！」\n
+<000002d3> 【Chizuru】「Cheers!」\n
+
+//<00001f57> 【慧】「乾杯」\n
+<00001f57> 【Kei】「Cheers.」\n
+
+//<00001f58> 【壬姫】「かんぱ～～いっ！」\n
+<00001f58> 【Miki】「Cheeeeeers～!」\n
+
+//<00001f59> 【美琴】「カンパーイ！」\n
+<00001f59> 【Mikoto】「Cheeers!」\n
+
+//<000002d7> 【武】「ごあ！？　オレのセリフ～～！！」\e
+<000002d7> 【Takeru】「Gowaa!? What about my line!!?」\e
+
+//<000002d8> 【夕呼】「とりあえず、\p昇任おめでとう」\e
+<000002d8> 【Yuuko】「Anyway,\p congrats on your promotion.」\e
+
+//<000002d9> 【武】「ありがとうございます。\nでも先生、\pやっぱりこのタイミングの任官って…\p…\p」\e
+<000002d9> 【Takeru】「Thank you very much.\nBut Sensei,\p being commissioned this quickly seems a little...\p...\p」\e
+
+//<000002da> 【夕呼】「あら、\p勘違いしないで。\nあたしは特に何もしてないわ。\n当然の結果が出ただけよ」\e
+<000002da> 【Yuuko】「Oh,\p don't jump to conclusions.\nI didn't do anything in particular.\nAll of that happened naturally.」\e
+
+//<000002db> 【武】「でも、\p最後にゴーサイン出したのは…\p…\p」\e
+<000002db> 【Takeru】「But,\p the person who signed off on it was...\p...\p」\e
+
+//<000002dc> 【夕呼】「基地司令。\nあたしは定例の書類を提出しただけなの」\e
+<000002dc> 【Yuuko】「The base CO.\nI did nothing more than the usual paperwork.」\e
+
+//<000002dd> 【武】「…\p…\p…\p…\p」\e
+<000002dd> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000002de> そうは言ってもなあ…\p…\p夕呼先生がその定例の書類出すこと自体が、\p大きな意味を持ってるんだろ。\e
+<000002de> She says that, but...\p...\pjust the fact that Yuuko-sensei herself filed the paperwork was probably pretty significant.\e
+
+//<000002df> 【夕呼】「だいたい、\p誰が見たって文句ない昇任でしょ？　総戦技演習をちゃんとクリアしているし、\p戦術機シミュレーターや実機での機動教習の成績も抜群に優秀――」\e
+<000002df> 【Yuuko】「Besides,\p who would complain about it? You've all passed the test of real combat,\p and your performance in basic training, TSF simulators and mock battles are stellar――」\e
+
+//<00002018> 【夕呼】「その上、\p実戦部隊でもないのに将軍救出作戦の成功に多大な貢献をした連中を、\p訓練兵のままにしておく意味なんてあると思う？」\e
+<00002018> 【Yuuko】「On top of that,\p you guys were a huge part of the successful operation to save the Shogun despite having no combat experience.\bWhat'd be the point in keeping you as cadets?」\e
+
+//<000002e1> 要はそういう事実を突きつけて周りを納得させたって事だろう。\e
+<000002e1> So you took advantage of that to get us promoted.\e
+
+//<000002e2> 実機演習での優秀な成績や作戦への貢献は、\p新ＯＳのおかげで底上げされてるって事は伏せてるんだろうし。\e
+<000002e2> She probably left out the fact that her new OS is part of why our mock battle and live combat performances were so impressive.\e
+
+//<000002e3> 【夕呼】「今の人類には、\p優秀な人材を遊ばせておく余裕なんてないからね～」\e
+<000002e3> 【Yuuko】「Humanity doesn't have time to waste skilled people like you guys.」\e
+
+//<000002e4> 【武】「とにかくありがとうございました。\n色々とお礼、\p言ってませんでしたから」\e
+<000002e4> 【Takeru】「Anyway, thank you very much.\nThere's a lot I never thanked you for.」\e
+
+//<000002e5> 【夕呼】「やめてよ気持ち悪い。\nそれに、\pここからが始まりでしょ？」\e
+<000002e5> 【Yuuko】「Stop it, you're making me feel bad.\nBesides,\p we're only just getting started.」\e
+
+//<000002e6> 【武】「はい…\p…\pそうですね」\e
+<000002e6> 【Takeru】「Yes...\p...\pyou're right.」\e
+
+//<000002e7> 【夕呼】「あんたが回収してきた理論でオルタネイティヴ４の成功確率が高まった」\e
+<000002e7> 【Yuuko】「The theory you recovered also increased the chances of Alternative IV succeeding.」\e
+
+//<000002e8> 【夕呼】「そしてあんたの発案したＯＳが戦術機の性能を飛躍的に向上させた」\e
+<000002e8> 【Yuuko】「And the OS you came up with has dramatically improved our TSF capabilities.」\e
+
+//<000002e9> 【夕呼】「だからって、\pまだＢＥＴＡに勝った訳じゃないわ。\nここで気を緩めないことね」\e
+<000002e9> 【Yuuko】「But that doesn't mean we've beaten the BETA yet.\nWe can't let up now.」\e
+
+//<000002ea> 【武】「わかってます」\e
+<000002ea> 【Takeru】「I know that.」\e
+
+//<000002eb> その通りだ。\e
+<000002eb> You're right.\e
+
+//<000002ec> 理論を回収したからって『００ユニット』とかいうものが完成したからって、\pＢＥＴＡに勝った訳じゃない。\e
+<000002ec> Retrieving the theory and completing the 00 Unit won't make us win automatically.\e//if only it was an RTS with a technological victory condition ~IX
+
+//<000002ed> 【夕呼】「というわけで、\p死にものぐるいで頑張って、\p良い結果を出しなさい」\e
+<000002ed> 【Yuuko】「So work yourself to the bone and make sure we get a good result.」\e
+
+//<000002ee> 【武】「――え？　何の事ですか？」\e
+<000002ee> 【Takeru】「――Eh? Result from what?」\e
+
+//<000002ef> 【夕呼】「明日の演習よ」\e
+<000002ef> 【Yuuko】「Tomorrow's practice.」\e
+
+//<000002f0> 【武】「そうだ――それが聞きたかったんですけど、\p明日の演習、\pどうしてそんなに急いだんですか？」\e
+<000002f0> 【Takeru】「That's right――I wanted to ask about that.\bWhy're you rushing that exercise so much?」\e
+
+//<000002f1> 【夕呼】「別に急いじゃいないわ。\n１０日も待たされてイライラしたぐらいよ」\e
+<000002f1> 【Yuuko】「It's not really rushing.\nMaking me wait even ten days is infuriating.」\e//I can see some readers applauding here ~IX
+
+//<000002f2> 【武】「いや、\p先生的にはそうかもしれませんが、\pいくらなんでもそんな演習、\p準備なんかも考えれば、\p１０日やそこらでやれないんじゃないですか、\p普通」\e
+<000002f2> 【Takeru】「Well,\p maybe that's how it looks to you, Sensei,\p but wouldn't it normally take at least ten days to get everything ready for an exercise like that?」\e
+
+//<000002f3> 【夕呼】「…\p…\p…\p…\p」\e
+<000002f3> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<000002f4> 【武】「それもあの騒ぎの直後…\p…\pいくら順延したと言っても事件から２日後なんて…\p…\p『００ユニット』とかいうのと何か関係あるんですか？」\e
+<000002f4> 【Takeru】「And right after that incident...\p...\peven after being postponed, it's only been two days since then...\p...\pdoes this have anything to do with the 00 Unit?」\e
+
+//<000002f5> 【夕呼】「全然関係ないわよ。\n明日の演習は新ＯＳの制式採用トライアルだってば。\nまりもに聞いてないの？」\e
+<000002f5> 【Yuuko】「Nothing whatsoever.\nTomorrow's practice is just a formal test of the new OS.\nDidn't Marimo tell you that?」\e
+
+//<000002f6> 【武】「いえ、\pオレ達の小隊が比較試験のために参加するっていうのは聞きましたけど…\p…\p」\e
+<000002f6> 【Takeru】「No,\p but she said something like our squad would participate for the purposes of a comparative evaluation...\p...\p」\e
+
+//<000002f7> 【夕呼】「そうよ。だから、\pトライアルで使う数機を残して、\p基地にいる全ての戦術機にあのＯＳを換装しといたから」\e
+<000002f7> 【Yuuko】「That's right. Which is why,\p other than the few TSFs you'll be fighting against,\p I went ahead and switched all TSFs on the base to the new OS.」\e
+//you'll be using - Makoto //the ones they're using already have it (the old version of it at least), and the ones they fight against are the only ones on the base still using the old OS, so... ~IX
+
+//<000002f8> 【武】「ええ？！　オレ達だけじゃなく、\p全ての戦術機って…\p…\p？！」\e
+<000002f8> 【Takeru】「Eeeh!? Not just ours,\p but all of them...\p...\p!?」\e
+
+//<000002f9> 【夕呼】「どうせ制式採用されるんだし…\p…\pまとめてやっておいた方が良いでしょ？」\e
+<000002f9> 【Yuuko】「It's going to get adopted anyway...\p...\pso we might as well get the conversion out of the way now.」\e
+
+//<000002fa> 【武】「まあ…\p…\pそうでしょうけど」\e
+<000002fa> 【Takeru】「Well...\p...\pI guess that's true.」\e
+
+//<000002fb> 【夕呼】「それに、\pもうこの先あんたの記憶はあてにできない。\nこの前の事件みたいに、\pいつ何が起こるかわからないんだから、\pできることはやれるうちにやっておくのよ」\e
+<000002fb> 【Yuuko】「Besides,\p we can't use your memories from here on out.\p You no longer have any idea what's going to happen next,\p so I'm doing this now while we have the chance.」\e
+
+//<000002fc> 【武】「確かにそうですね。\nだけど、\pいつの間に…\p…\p」\e
+<000002fc> 【Takeru】「You've got a point.\nBut when did you...\p...\p?」\e
+
+//<000002fd> 【夕呼】「先月の概念実証機を使った模擬戦で、\pあんた達が圧勝したでしょ？　あれを見て、\pその日のうちに演習をねじ込んだのよ」\e
+<000002fd> 【Yuuko】「Your team won single-handedly in that mock battle last month, didn't they? I put together this exercise the day I saw that.」\e
+
+//<000002fe> 【武】「ええッ！？　だって、\p概念実証がどうこうとか…\p…\pとにかくすぐにどうこうできる感じじゃなかったじゃないですか」\e
+<000002fe> 【Takeru】「Eeeh!? But wasn't that just a proof of concept? ...\p...\pI didn't think we were anywhere near having a finished product.」\e
+
+//<000002ff> 【夕呼】「だからぁ…\p…\pあたしとあんたに残された時間を考えたら、\p考え得る限りのことを前倒しで段取っておいて損はないって言ったでしょ」\e
+<000002ff> 【Yuuko】「I'm trying to say...\p...\pconsidering how much time we have left,\p there's no reason not to speed up everything we can.」\e
+
+//<00000300> 【武】「…\p…\pそうでした」\e
+<00000300> 【Takeru】「...\p...\pthat's true.」\e
+
+//<00000e13> 【夕呼】「あんたが転移実験している間も、\p他の子達がずっとデータをくれていたからね。\n白銀のデータより、\pむしろ参考になったわ」\e
+<00000e13> 【Yuuko】「And everyone's been giving me more data while you were helping with those experiments.\nI'd say it's been even more useful than your data.」\e
+
+//<00000302> 【武】「――え？」\e
+<00000302> 【Takeru】「――Eh?」\e
+
+//<00000303> 【夕呼】「あのＯＳは全世界の衛士が使ってこそ意味がある。\nだから、\pあんたの機動概念を肌でわかっていない連中のデータの方が役に立つのよ」\e
+<00000303> 【Yuuko】「That OS means nothing unless Eishi around the world use it.\nSo data from people who don't innately understand the concepts it's based on like you do is much more useful.」\e
+
+//<00000304> 【武】「なるほど…\p…\pどこを直せばより扱いやすくなるか良くわかるって訳ですね。\nでも…\p…\pよくこんな短時間で…\p…\p」\e
+<00000304> 【Takeru】「I see...\p...\pso that helps you work out what would make it easier to use.\nBut...\p...\pit's only been a few days...\p...\p」\e
+//Something was up with that second line. Wasn't entirely sure if he meant that it's only been a few days since the experiments, therefore the accumlation of new data as well, or something else entirely.-Spin
+
+//<00000305> 【夕呼】「オルタネイティヴ計画の技術部門を甘く見てもらっちゃ困るわ。\n材料と的確な指示さえ与えてやれば、\pこの程度の事造作もないのよ」\e
+<00000305> 【Yuuko】「You really shouldn't underestimate the Alternative Plan's technological department.\nIf you give them the materials and precise enough instructions,\p something like that is easy.」\e
+//I'm not confidant about this at all. However, that contraction there definitely needs to be replaced some how. It was way too easy to misread it.-Spin
+
+//<00000306> そうだよな…\p…\p政治的ないざこざはあれ、\pオルタネイティヴ４計画が全人類の英知を結集している事は事実だもんな。\e
+<00000306> That's true...\p...\pdespite all those political squabbles,\bAlternative IV is a compilation of all of humanity's knowledge.\e
+
+//<00000307> 『前のこの世界』では『材料』と『的確な指示』ができなかった…\p…\pだからクリスマスの日、\p夕呼先生は…\p…\p。\e
+<00000307> In the previous world she didn't have materials or precise instructions...\p...\pwhich was why, on Christmas Day,\p Yuuko-sensei...\p...\p\e
+
+//<00000308> 【夕呼】「装置の改良と並行して作業してたんだけど、\pクーデター騒ぎで換装が遅れた事は痛かったわね」\e
+<00000308> 【Yuuko】「I've been working on it alongside the transfer device improvements,\p but it really hurt when the coup d'etat forced us to delay the OS switch.」\e
+
+//<0000201b> 【武】「そうですね」\e
+<0000201b> 【Takeru】「That's true.」\e
+
+//<0000030c> 【夕呼】「まあとにかく、\pあんた達に実装したものに比べたら、\p最新バージョンのＸＭ３はかなり進化したわ」\e
+<0000030c> 【Yuuko】「Well, anyway,\p compared to what you guys are using,\p the latest version of XM3 has evolved quite a bit.」\e//thank god, I was right about it being an entirely separate thing ~IX
+
+//<0000030d> 【武】「それじゃあ、\pあしたの演習はかなり期待できますね」\e
+<0000030d> 【Takeru】「So we can expect a lot from that practice.」\e
+
+//<0000030e> 【夕呼】「初めての衛士でも結構使いこなせるはず。\nそうなるように改良したんだから当然だけど」\e
+<0000030e> 【Yuuko】「Even first-timers should have no trouble with it.\nThough that's to be expected since we designed it that way.」\e
+
+//<0000030f> 【武】「オレ達のアドバンテージはあまり無いって事ですか…\p…\p」\e
+<0000030f> 【Takeru】「So we no longer have much of an advantage...\p...\p」\e
+
+//<00000310> 【夕呼】「何いってんのよ？　あんた達の機体には、\p実戦で得た貴重なデータがあるでしょう？」\e
+<00000310> 【Yuuko】「What're you saying?\bYour TSFs have data from live combat,\p don't they?」\e
+
+//<00000311> 【武】「あ…\p…\p。\nでも、\pデータリンクで即時共有されるから意味ないのでは…\p…\p」\e
+<00000311> 【Takeru】「Ah...\p...\p\nBut,\p since everything's synchronized immediately after we data link...\p...\p」\e
+
+//<00000312> 【夕呼】「明日の演習は、\p実戦経験のあるＯＳと新品のＯＳの比較試験なのよ。\nそんなバカなミスすると思ってるの？」\e
+<00000312> 【Yuuko】「Tomorrow's exercise is a comparative test of your OS with combat experience, and the brand new OS.\nDo you think I'd be stupid enough to let them all sync?」\e
+
+//<00000313> そうか、\pオレ達の隊と他の部隊の機動制御データのリンクを切っておけば良いだけのことだ。\e
+<00000313> I see,\p all she had to do was keep our squad's movement control data from linking with everyone else's.\e
+
+//<00000314> 【武】「そうですよね、\pシツレイしました」\e
+<00000314> 【Takeru】「You're right,\p sorry about that.」\e
+
+//<00000315> 【夕呼】「まあとにかく、\pここで実績が出れば、\p全世界の戦術機への搭載も現実味を帯びてくる」\e
+<00000315> 【Yuuko】「Well, anyway,\p after we get the results from this,\p the idea of giving every TSF in the world this OS will start to look more realistic.」\e
+
+//<00000316> 【夕呼】「ＯＳの連続起動時間についてはとっくに記録更新済みだから、\pあとは目に見てわかりやすいアピールよね」\e
+<00000316> 【Yuuko】「We've already got plenty of data on how the OS behaves over extended use,\p so now we just need to make it look cool.」\e//lit. "what's left is an appeal to the eyes/making its positive qualities easy to discern through sight alone"
+
+//<00000317> 【武】「まかせておいて下さい！」\e
+<00000317> 【Takeru】「Leave it to me!」\e
+
+//<00000318> 【夕呼】「…\p…\pそうなれば、\pそれを欲しがる連中もうようよ湧いてくるわ。\n取引の材料にして時間を稼ぐも良し…\p…\p」\e
+<00000318> 【Yuuko】「...\p...\ponce we do that,\p people who want it will start to show up.\nWe can also use the threat of delaying it as a bargaining chip...\p...\p」\e
+
+//<00000319> 【武】「――え？　すぐに公開して、\p全世界の戦術機に搭載するんじゃないんですか？　そうすれば人類が勝てる可能性だって――」\e
+<00000319> 【Takeru】「――Eh? Aren't we gonna publicize it right away and get it in all TSFs worldwide?\bWouldn't that give humanity a better――」\e
+
+//<0000031a> 【夕呼】「――呆れたわね。\nまだそんな甘ちゃんな事言ってるの？」\e
+<0000031a> 【Yuuko】「――Not this again.\nAre you still that naive?」\e
+
+//<0000031b> 【武】「…\p…\pえ」\e
+<0000031b> 【Takeru】「...\p...\peh?」\e
+
+//<0000031c> 【夕呼】「この前の事件、\p裏の話もある程度聞いていたんじゃないの？　そんな善意が『はいそうですか』って受け入れられるような話だった？」\e
+<0000031c> 【Yuuko】「Didn't you hear all about what was going on behind the scenes of that incident? Do you think anyone would simply accept our generosity?」\e
+
+//<0000031d> 【武】「…\p…\p…\p…\pいえ」\e
+<0000031d> 【Takeru】「...\p...\p...\p...\pnever mind.」\e
+
+//<0000031e> 全くその通りだ。くっそう…\p…\p覚悟が決まったのはいいが…\p…\pこうも応用が利かないとは情けねえぜ。\e
+<0000031e> You're exactly right.\bDamn iiit...\p...\pI've got my resolve worked out now, but...\p...\pit's pathetic that I still can't apply it right in these situations.\e
+
+//<0000031f> 【夕呼】「まあ、\pいいわ。\nとにかく、\pあのＯＳはあんたが発案したんだから、\pオリジナルの強さを見せつけてやりなさい」\e
+<0000031f> 【Yuuko】「Oh well.\nAnyway,\p that OS was your idea to begin with,\p so show them the strength of the original.」\e
+
+//<00000320> 【武】「はい」\e
+<00000320> 【Takeru】「Yes, ma'am.」\e
+
+//<00000321> 【夕呼】「…\p…\p逆に、\p負けたらものすごくカッコ悪いわよ？」\e
+<00000321> 【Yuuko】「...\p...\pit'd look incredibly lame if you lost.」\e
+
+//<00000322> 【武】「わ、\pわかってますって！」\e
+<00000322> 【Takeru】「I-\pI know that!」\e
+
+//<00000323> 【夕呼】「それに、\p現場の連中は何であれ、\p新型を嫌う傾向が強いから、\p簡単に納得しないわよ？」\e
+<00000323> 【Yuuko】「Also,\p skilled though they may be,\p the people with experience tend to hate new things,\p so they won't be easily persuaded.」\e
+
+//<00000324> 【武】「実績がない新型に、\p自分の命を預けられないって事でしょう？」\e
+<00000324> 【Takeru】「You mean they can't trust their lives to a new, unproven technology?」\e
+
+//<00000325> 【夕呼】「その通り。\n実戦証明主義偏重の連中を、\p唖然とさせる程の結果を残しなさい」\e
+<00000325> 【Yuuko】「That's right.\nGive us a result that'll leave those "live combat tests are everything" fools dumbstruck.」\e
+
+//<00000326> 【武】「わかりました」\e
+<00000326> 【Takeru】「Understood.」\e
+
+//<00000327> 【夕呼】「…\p…\p新ＯＳがどこまでやれるのか…\p…\pふふ、\p見物ね」\e
+<00000327> 【Yuuko】「...\p...\phuhu, it'll be fun to see...\p...\pwhat the new OS can do.」\e
+

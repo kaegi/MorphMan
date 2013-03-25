@@ -1,0 +1,2195 @@
+// Title: 兵士よ問うなかれ 11月2日（金）
+#FILENAME 1ad91bfc
+#TYPE 1
+
+//<00000002> 【冥夜】「やるではないか！」\e
+<00000002> 【Meiya】「Not bad at all!」\e
+
+//<000029c7> 【武】「っと！！」\e
+<000029c7> 【Takeru】「Whoa!!」\e
+
+//<000029ca> 【Takeru】「そうでも...\p...\pねぇよ！」\e
+<000029ca> 【Takeru】「I'm not...\p...\pthat good!」\e
+
+//<00002a3d> 今のオレなら圧倒できる自信、\pあったんだけどな。\e
+<00002a3d> And here I thought I'd be able to overpower her.\e
+
+//<00002a3e> 戦術機近接戦闘の予備訓練とはいえ…\p…\pさすがだぜ冥夜。\e
+<00002a3e> This may be just a prelude to close quarters TSF training, but still...\p...\pMeiya's incredible.\e
+
+//<00000007> 【冥夜】「謙遜するな。\n近接戦闘でここまでやれるのは、\p正直彩峰だけだと思っていたぞ」\e
+<00000007> 【Meiya】「Do not be modest.\nI thought Ayamine was the only one who could do this well at close quarters.」\e
+
+//<00000d03> 【武】「刀での斬り合いならここまでいかないさ。\nオレには居合いなんて技はないからな！」\e
+<00000d03> 【Takeru】「If we were using swords, I wouldn't be half as good!」\e//removing "iai" ref for those who never read MLU or more likely don't remember it ~IX
+
+//<00000009> 確か前の世界では訓練刀で戦って、\pボコボコにされたんだ。\e
+<00000009> I remember getting beaten to a pulp with training swords in the previous world.\e
+
+//<00000d04> あの訓練がこの予備訓練に変わったのか？\e
+<00000d04> How'd that change into this?\e
+
+//<00000d05> …\p…\p…\p…\p微妙に歴史が変わった…\p…\pってことなのかよ？\e
+<00000d05> ...\p...\p...\p...\pdoes this mean...\p...\phistory's changing a little?\e
+
+//<00000d06> 今までは、\pオレが以前の記憶をもとに状況に関与した事ばかりだったからな…\p…\pこういう変化は結構、\p大きく感じる。\e
+<00000d06> Until now, I've done everything based on my memories of what happened last time...\p...\pthis change feels pretty significant.\e
+
+//<0000000d> 【冥夜】「どうした！？　集中力が欠けているぞッ！」\e
+<0000000d> 【Meiya】「What happened!? Your concentration is wavering!」\e
+
+//<0000000e> 【武】「おっと！　あぶねぇ――どうして狙わなかった？」\e
+<0000000e> 【Takeru】「Whoa! That was close――Why didn't you take advantage of that?」\e
+
+//<0000000f> 【冥夜】「武士の情けと言うものだ」\e
+<0000000f> 【Meiya】「The pity of a warrior.」\e
+
+//<00000010> 【武】「へへ…\p…\p後悔するぞ！？」\e
+<00000010> 【Takeru】「Heheh...\p...\pyou're gonna regret that!!」\e
+
+//<00000011> 【冥夜】「させてみるがよい！」\e
+<00000011> 【Meiya】「We shall see!」\e
+
+//<00000012> 悪いが、\pオレはおまえの癖を知っている。\e
+<00000012> Sorry,\p but I know all your habits.\e
+
+//<00000013> 手に取るように見えるとはさすがに言えないが…\p…\pなんとか互角なのはそのおかげだ。\e
+<00000013> I can't say I know them like the palm of my hand, but...\p...\pit's a big reason why I can spar evenly with you.\e
+
+//<00000014> 【冥夜】「――くっ！」\e
+<00000014> 【Meiya】「――Uu!」\e
+
+//<00000015> 【武】「おりゃっ！！」\e
+<00000015> 【Takeru】「Oryaaa!!」\e
+
+//<00000017> 【冥夜】「正直、\p近接戦闘でもここまでやるとは思わなかったぞ」\e
+<00000017> 【Meiya】「To be honest,\p I did not think you would be so skilled.」\e
+
+//<00000018> 【武】「見た目で判断されたってか？」\e
+<00000018> 【Takeru】「So you judged me by my appearance?」\e//She didn't really judged him by appearance, but by other factor, so maybe "underestimated me" or "prejudged me" would fit better. -Shikiller //which is what she explains in the next line, what Takeru asks here is quite clearly "appearance," and he may very well have meant what Meiya explains and just didn't have a word for it ~IX
+
+//<00000d07> 【冥夜】「…\p…\p許すがよい。\n射撃の能力が高まるに従って、\p近接戦闘を軽んじるようになる者が多かったのでな」\e
+<00000d07> 【Meiya】「...\p...\pforgive me.\nThere are many who neglect hand-to-hand combat as they begin to excel in shooting.」\e
+
+//<00000d08> 【武】「気持ちはわかるな…\p…\p」\e
+<00000d08> 【Takeru】「I can see why they would...\p...\p」\e
+//I know how they (people who ignore hand-to-hand) feel - Makoto
+
+//<00000d09> 弾切れになった戦術機で戦わなくちゃいけない状況なんて、\pオレだって想像したくない。\e
+<00000d09> I don't wanna imagine a TSF having to fight after it's out of ammo.\e
+
+//<00000d0a> けど実戦では、\p常にあらゆる状況を想定しておく必要がある。\e
+<00000d0a> But in a real battle,\p you have to be prepared for anything and everything.\e
+
+//<00000d0b> 何かの能力が優れていることは素晴らしいことだ。\e
+<00000d0b> It's wonderful to excel at something.\e
+
+//<00285880> しかしその能力も、\p全体のバランスが崩れていたら十分に生かすことが出来ない。\e
+<00000d0c> But if that skill throws off your overall balance,\p you can't even make use of it.\e
+
+//<00002ae3> 専門家ばかりの部隊じゃ、\pひとりやられたらアウトだ。\e
+<00002ae3> A squad full of specialists is doomed if a single one of them dies.\e
+
+//<0000001f> …\p…\pふふ、\p懐かしいな。\n前の世界でそう教えられたっけ。\e
+<0000001f> ...\p...\phuhu,\p that takes me back.\nI remember getting lectured on that.\e
+
+//<00000021> 【武】「にしてもさ」\e
+<00000021> 【Takeru】「But still...\p...\p」\e
+
+//<00000022> 【冥夜】「なんだ？」\e
+<00000022> 【Meiya】「What?」\e
+
+//<00000023> 【武】「勝たせてくれないよな」\e
+<00000023> 【Takeru】「You're not letting me win.」\e
+
+//<00000024> 【冥夜】「手を合わせる以上、\p手加減など出来ぬ！」\e
+<00000024> 【Meiya】「I cannot hold back for any opponent!」\e//not sure here, but meh ~IX
+//it's fine (lit: once battle is joined, there's no holding back) - Makoto
+
+//<00000025> 【武】「くっ！」\e
+<00000025> 【Takeru】「Uu!」\e
+
+//<00000026> 【冥夜】「であっ！」\e
+<00000026> 【Meiya】「Dyaa!」\e
+
+//<00000027> 【武】「おりゃっ！！」\e
+<00000027> 【Takeru】「Oryaaa!」\e
+
+//<00000028> 【冥夜】「むっ！　…\p…\pけ、\p決着がつかぬな…\p…\p」\e
+<00000028> 【Meiya】「Mm! ...\p...\pth-\pthis will not end soon...\p...\p」\e
+
+//<00000029> 【武】「なんだ３０分ぐらいで…\p…\pもう息が上がったか？」\e
+<00000029> 【Takeru】「What? It's only been thirty minutes...\p...\pyou giving up already?」\e
+
+//<0000002a> 【冥夜】「だっ、\p黙るがよいぞっ！」\e
+<0000002a> 【Meiya】「R-\premain silent!」\e
+
+//<0000002b> 悪いが、\pこっちはもう何年も鍛えてきたんだ。\e
+<0000002b> Sorry,\p but I've been doing this for years.\e
+
+//<0000002c> …\p…\p持久戦になれば、\pこっちのもんだ。\e
+<0000002c> ...\p...\pif it comes down to endurance,\p I win by default.\e
+
+//<0000002d> 【冥夜】「…\p…\pはあ…\p…\pはあ…\p…\pはあ…\p…\p」\e
+<0000002d> 【Meiya】「...\p...\phaa...\p...\phaa...\p...\phaa...\p...\p」\e
+
+//<0000002e> 【武】「…\p…\p…\p…\p」\e
+<0000002e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000002f> …\p…\p何か考えてる目だ。\e
+<0000002f> ...\p...\pshe's thinking about something.\e
+
+//<00000030> 勝負を焦ってる奴はこんな目をする。\e
+<00000030> She looks like she's desperate for a way to win this.\e
+
+//<00000031> それがわかるくらいの経験は積んだ。\e
+<00000031> I've been doing this long enough that I can see it on her face.\e//LWI
+
+//<00000032> 足りないのは、\p実戦経験…\p…\pだけ。\e
+<00000032> The only thing I'm missing...\p...\pis experience in real combat.\e
+
+//<00002ae5> オルタネイティヴ４が破棄されてからの２年間…\p…\pみんな死ぬ気で訓練やってたんだ。\e
+<00002ae5> In the two years after they gave up on Alternative IV...\p...\peveryone trained themselves to the bone.\e
+
+//<00000d0f> そんなオレが負けるわけにはいかない…\p…\p今のおまえ達に。\e
+<00000d0f> After all of that...\p...\pthere's no way I can lose to you guys here.\e
+
+//<00000035> 【冥夜】「…\p…\p全てを見透かしたような目だな」\e
+<00000035> 【Meiya】「...\p...\pyou look as if you can see my every move.」\e
+
+//<00000036> 【武】「そうかな」\e
+<00000036> 【Takeru】「Maybe.」\e
+
+//<00000037> 【冥夜】「…\p…\p…\p…\pくっ」\e
+<00000037> 【Meiya】「...\p...\p...\p...\puu!」\e
+
+//<00000038> 【武】「どうした？　自分の負けが見えたのか？」\e
+<00000038> 【Takeru】「What's wrong? Did you see yourself losing?」\e
+
+//<00000039> 【冥夜】「…\p…\pもし仮にそうであっても、\p退くわけがなかろう？」\e
+<00000039> 【Meiya】「...\p...\peven if I did,\p I cannot stop now!」\e
+
+//<0000003a> 【武】「そりゃそうだ…\p…\p」\e
+<0000003a> 【Takeru】「That's true...\p...\p」\e
+
+//<0000003b> 【冥夜】「いくぞっ！」\e
+<0000003b> 【Meiya】「Take this!」\e
+
+//<0000003c> 【武】「ああ！」\e
+<0000003c> 【Takeru】「Aaah!」\e
+
+//<0000003d> 【冥夜】「やあっっ！」\e
+<0000003d> 【Meiya】「Yaaaaa!!」\e
+
+//<0000003e> 【壬姫】「たけるさん、\pすごいよ。\n御剣さんと互角にやるなんて」\e
+<0000003e> 【Miki】「Takeru-san,\p you're amazing.\nI can't believe you held Mitsurugi-san off until the match ended.」\e
+
+//<0000003f> 【冥夜】「…\p…\p…\p…\p互角ではない。\n完全に負けだ」\e
+<0000003f> 【Meiya】「...\p...\phe did not match me,\nhe thoroughly routed me.」\e
+
+//<00000040> 【美琴】「時間いっぱいで引き分けだよ？」\e
+<00000040> 【Mikoto】「But wasn't it a draw?」\e
+
+//<00000041> 【冥夜】「…\p…\p違う」\e
+<00000041> 【Meiya】「...\p...\pno.」\e
+
+//<00000042> 【美琴】「え？」\e
+<00000042> 【Mikoto】「Eh?」\e
+
+//<00000043> 【慧】「白銀が負けさせなかった…\p…\p」\e
+<00000043> 【Kei】「Shirogane wouldn't let her lose...\p...\p」\e
+
+//<00000044> 【壬姫】「そうなの？」\e
+<00000044> 【Miki】「Really?」\e
+
+//<00000045> 【千鶴】「御剣の息が上がるたびに、\p何かを語りかけていたのよ。\n一気に攻め込んでいれば決着はついた…\p…\p当然白銀の勝利でね」\e
+<00000045> 【Chizuru】「Every time Mitsurugi got tired,\p Shirogane started talking to her.\p If he'd come at her all at once, he could've ended it whenever he wanted...\p...\p」\e
+//whenver she started to tire out, he started talking to her (to let her rest). If he'd attacked then, he would have won. - Makoto //man I completely blew it on this knife fight ~IX
+
+//<00000046> 【武】「勘ぐりすぎだ」\e
+<00000046> 【Takeru】「You're thinking too hard.」\e
+
+//<00000047> 【千鶴】「そう？」\e
+<00000047> 【Chizuru】「Really?」\e
+
+//<00000048> 【冥夜】「全く…\p…\pそこまで余裕を見せつけられては、\p腹も立たん」\e
+<00000048> 【Meiya】「Unbelievable...\p...\pyou were so dominant I do not even feel irritated.」\e
+//Don't get this line at all. Retl or something please.-Spin
+
+//<00000049> 【武】「勘ぐりすぎだって」\e
+<00000049> 【Takeru】「Same to you, you're thinking too hard.」\e
+
+//<0000004a> 【慧】「…\p…\p隠しても無駄」\e
+<0000004a> 【Kei】「...\p...\pcan't hide it.」\e
+
+//<0000004b> 【武】「ちぇっ」\e
+<0000004b> 【Takeru】「Damn.」\e
+
+//<0000004c> …\p…\pしっかりばれてるよ。\e
+<0000004c> ...\p...\pthey totally saw through me.\e
+
+//<0000004d> 逆に言えば、\pそこまで上手くごまかせるほどの実力差がなかったって事だ。\e
+<0000004d> In a sense,\p I guess that means we were close enough in skill that we couldn't afford to hide it well.\e
+
+//<0000004e> 【冥夜】「１秒でも多く強い者と手合わせができたのだから、\pそれはそれで満足だ。\nだがタケル、\p次はこうはいかんぞ？」\e
+<0000004e> 【Meiya】「I was able to cross blades with a strong foe.\p I am satisfied with that.\nHowever, Takeru,\p it will not be so easy next time.」\e
+
+//<0000004f> 【武】「…\p…\pお手柔らかにな」\e
+<0000004f> 【Takeru】「...\p...\pbe gentle with me.」\e
+
+//<00000050> 【美琴】「タケルって、\p凄いんだね～～」\e
+<00000050> 【Mikoto】「Takeru,\p you're amazing～」\e
+
+//<00000051> 【武】「ん？」\e
+<00000051> 【Takeru】「Hm?」\e
+
+//<00000052> 【美琴】「さっきね、\pちょっと話を聞いたんだよ。\n特殊部隊にでもいたの？」\e
+<00000052> 【Mikoto】「I heard some stuff about you just now.\nWere you in some kind of elite unit or something?」\e
+//Can take out the "or something."-Spin
+
+//<00000053> 【武】「は？」\e
+<00000053> 【Takeru】「Huh?」\e
+
+//<00000d12> 【美琴】「だってほら、\p特殊部隊って、\p何をやらせても凄いレベルでできる人間の集まりでしょ？　タケルのことじゃない」\e
+<00000d12> 【Mikoto】「You know,\p elite squadrons are full of people who can do everything amazingly.\p Doesn't that describe you, Takeru?」\e
+
+//<00000055> 【武】「おいおい、\pあんまり褒めるなよ～。\n増長しちまうだろ～？」\e
+<00000055> 【Takeru】「Hey now,\p don't compliment me that much.\nI'm gonna get full of myself.」\e
+
+//<00000056> 【千鶴】「…\p…\p…\p…\p」\e
+<00000056> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00000057> 【美琴】「なんだー、\p怪我なんてしてないで、\pはじめっから一緒にいられたらよかったのになー」\e
+<00000057> 【Mikoto】「Aaah,\p I should never have gotten injured.\p\bThen I could've seen more of this.」\e
+
+//<00000058> 【冥夜】「とにかく、\pタケルがいれば隊全体の技術の底上げもできるし、\p士気も上がるし、\p言うことはない」\e
+<00000058> 【Meiya】「Anyway,\p Takeru being here will raise everyone's skills,\p as well as morale,\p so I have nothing to say.」\e
+
+//<00000059> 【美琴】「ねえねえ、\p午後は何だっけ？」\e
+<00000059> 【Mikoto】「Hey, hey,\p what're we doing this afternoon?」\e
+
+//<0000005a> 【千鶴】「救急治療についてよ」\e
+<0000005a> 【Chizuru】「First aid training.」\e
+
+//<0000005b> 【美琴】「あそうか…\p…\pじゃあ、\pタケル、\p本領発揮してね！」\e
+<0000005b> 【Mikoto】「Ah, that's right...\p...\pTakeru,\p you're gonna be impressed!」\e
+
+//<0000005c> 【武】「…\p…\p何をだ？」\e
+<0000005c> 【Takeru】「...\p...\pby what?」\e
+
+//<00000d13> …\p…\p…\p…\p。\e
+<00000d13> ...\p...\p...\p...\p\e
+
+//<00000d14> あの、\p冥夜にボコボコにされた剣術訓練が近接戦闘訓練に変わった…\p…\pらしい。\e
+<00000d14> The sword training where Meiya beat me to a pulp...\p...\pthat part's been changed.\e
+
+//<00000d15> まあ…\p…\pオレにしてみれば３年以上前のことでもあるし、\p記憶が曖昧なのは当然だけど…\p…\p多分変わったんだ。\e
+<00000d15> Well...\p...\pthat was over three years ago for me,\p so of course my memory's kinda hazy, but...\p...\pI'm pretty sure it's changed.\e
+
+//<00000d16> 極端に状況を変えないようにしつつバランスを取りながら…\p…\pって言うのもわかるんだけど…\p…\p。\e
+<00000d16> I know I'm supposed to...\p...\pget everything balanced without making any extreme changes, but...\p...\p\e//another weird one ~IX
+//I know I'm supposed to be balancing it out without making any major changes (but do I really have time for that) - Makoto //thanks ~IX
+
+//<00000064> 【武】「…\p…\p…\p…\p」\e
+<00000064> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000065> こんなことしてていいのか？　\e
+<00000065> Do I really have time for this?\e
+
+//<00000066> 間に合うのか？\e
+<00000066> Are we gonna make it?\e
+
+//<00000067> 小さいことを積み重ねていくと、\pそれがどこかで一気に何かを引き起こしてくれたりするのか？\e
+<00000067> Can I really change what happens with a long series of little things like this?\e
+
+//<00000068> くそ…\p…\pわかんねーな。\e
+<00000068> Damn it...\p...\pI have no way of knowing.\e
+
+//<00000069> 今までも別に受け身だったつもりはないが、\pどうも自分的に「これだ！」っていう変化を与えられてない。\e
+<00000069> I haven't exactly been passive about it so far,\p but I also haven't made any changes that've gotten my hopes up.\e//that got vs that've gotten, both are off but I can't come up with anything better ~IX
+
+//<0000006a> さっきの予備訓練は新しい変化ではあったけど、\p微妙にベクトルが違う。\e
+<0000006a> That training session just now was different from before,\p but that's not the kind of change I'm after.\e
+
+//<0000006b> くそ…\p…\pもっと頑張らなきゃヤベえな。\e
+<0000006b> Dammit...\p...\pI'm gonna have to do more somehow.\e
+
+//<0000006d> 【美琴】「そう言えば、\p入院中に色々と面白いテレビを見たよ」\e
+<0000006d> 【Mikoto】「Speaking of which,\p I saw a lot of fun TV in the hospital.」\e
+
+//<0000006e> 【壬姫】「テレビ？」\e
+<0000006e> 【Miki】「TV?」\e
+
+//<0000006f> 【美琴】「うん、\pＰＸのテレビって、\p自由にチャンネル変えられないでしょ？　でも病院は自由だったんだ」\e
+<0000006f> 【Mikoto】「Yeah.\p You know how we can't change the channel on the TV here in the PX? In the hospital I could watch whatever I wanted.」\e
+
+//<00000070> 【千鶴】「へえ…\p…\p」\e
+<00000070> 【Chizuru】「Wow...\p...\p」\e
+
+//<00000071> 【美琴】「それでね、\pすんごい感動のお話があったんだよーー」\e
+<00000071> 【Mikoto】「So then,\p I saw something really moving.」\e
+
+//<00000072> 【冥夜】「何だ？」\e
+<00000072> 【Meiya】「What was it?」\e
+
+//<00000d17> 【美琴】「疎開で置き去りになった犬が、\p何百キロも歩いて飼い主のところにたどり着いたっていう話なんだ」\e
+<00000d17> 【Mikoto】「A dog that got left behind when its owner evacuated walked hundreds of kilometers to find him!」\e//lol metric ~IX
+
+//<00000074> 【壬姫】「え～～～！？　すごい～～っっ！！」\e
+<00000074> 【Miki】「Eeeeeeh!? That's amaaaaazing!!」\e
+
+//<00000075> 【美琴】「でしょ、\pでしょ？　もう話聞いてるだけで泣けてくるよ…\p…\p」\e
+<00000075> 【Mikoto】「I know,\p right? You'd cry if you heard the details...\p...\p」\e//Too late.-Spin
+
+//<00000076> 【慧】「…\p…\pそういう話は好き」\e
+<00000076> 【Kei】「...\p...\pI like stories like that.」\e//....-Spin
+
+//<00000077> 【冥夜】「…\p…\p…\p…\p」\e
+<00000077> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00000078> 【武】「…\p…\p…\p…\p」\e
+<00000078> 【Takeru】「...\p...\p...\p...\p」\e//I am happy to see you guys on the same wavelength.-Spin
+
+//<00000079> 【慧】「何？」\e
+<00000079> 【Kei】「What?」\e
+
+//<0000007a> 【武】「いや…\p…\p」\e
+<0000007a> 【Takeru】「Nothing...\p...\p」\e
+
+//<00000d18> たぶんそれは作り話だ。\n国民向けのプロパガンダプログラムだろう。\e
+<00000d18> It's probably made up.\nOne of those propaganda programs made for civilians.\e
+
+//<00000d19> この時代、\pペットを飼う余裕のある民間人なんていやしないはずだ。\n住んでるのが前線の近くだったりしたら、\pなおさらだろ。\e
+<00000d19> In this day and age,\p no one can afford to take care of a pet.\p Especially if they live near the front lines.\e
+
+//<0000007e> 【美琴】「飼い主は連れて行くつもりだったんだけど、\pその数日前にあることで行方不明になっちゃって」\e
+<0000007e> 【Mikoto】「His owner wanted to take the dog with him,\p but he'd gotten lost a few days before he left.」\e
+
+//<0000007f> 【千鶴】「あること？」\e
+<0000007f> 【Chizuru】「How'd that happen?」\e
+
+//<00000080> 【美琴】「その地域でね、\p誤報で避難サイレンがなっちゃったんだって…\p…\p」\e
+<00000080> 【Mikoto】「There was a false evacuation siren in his region,\p so...\p...\p」\e
+
+//<00000081> 【武】「ああ、\pそれで逃げ出したんだな？」\e
+<00000081> 【Takeru】「Aaah,\p so the dog ran away then?」\e
+
+//<00000082> 【美琴】「うん…\p…\pで、\p帰ってこなくて…\p…\pずーっと探したけど見つからなくて、\pそのまま疎開して…\p…\p２ヶ月だって！」\e
+<00000082> 【Mikoto】「Yeah...\p...\pbut he wouldn't come back...\p...\phis owner looked everywhere for him but couldn't find him,\p and had to leave without him...\p...\pthen two months later!」\e
+
+//<00000083> 【武】「…\p…\p…\p…\p」\e
+<00000083> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000084> だいたい、\p軍用犬以外の犬は、\pほとんどの種類が絶滅しちまっているって話だ。\e
+<00000084> Not to mention pretty much all non-military dog species have been wiped out.\e
+
+//<00000d1a> 犬どころか、\p野生動物の８０％が絶滅しているはずなんだ。\n全部ＢＥＴＡにやられちまったんだよ。\e
+<00000d1a> Well,\p eighty percent of all wild animals to be exact.\nAll obliterated by the BETA...\p...\p\e
+
+//<00000087> 【美琴】「いい話でしょ！？」\e
+<00000087> 【Mikoto】「Isn't it heartwrenching!?」\e
+
+//<00000088> 【慧】「…\p…\pうん、\pとても」\e
+<00000088> 【Kei】「...\p...\pyes,\p very.」\e
+
+//<00000089> 【武】「…\p…\p…\p…\p」\e
+<00000089> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000d1b> …\p…\p任官前のこいつらが、\pその手の話がプロパガンダだって知らないのも無理はないか。\e
+<00000d1b> ...\p...\pI guess it makes sense.\p Before getting commissioned, we didn't know those stories were mostly propaganda.\e
+
+//<0000008b> 【慧】「何？」\e
+<0000008b> 【Kei】「What?」\e
+
+//<0000008c> 【武】「いや…\p…\p」\e
+<0000008c> 【Takeru】「Nothing...\p...\p」\e
+
+//<0000008d> 【美琴】「飼い主もね、\pいつか会える日が来るって、\p犬小屋作って待ってたりとか…\p…\pもう、\p涙無くしては見られなかったよ…\p…\p」\e
+<0000008d> 【Mikoto】「And his owner believed they'd meet again someday,\p so he made a doghouse and waited...\p...\paaah,\p I couldn't watch it without crying...\p...\p」\e
+
+//<0000008e> 犬か…\p…\p。\e
+<0000008e> A dog...\p...\p\e
+
+//<0000008f> 【純夏】「あ、\p犬が来た！　おいでおいで…\p…\p」\e
+<0000008f> 【Sumika】「Ah,\p the dog's back!\p Come here, come here...\p...\p」\e//CP_S MLE_0002
+
+//<00002b58> 【武】「やめとけよ」\e
+<00002b58> 【Takeru】「Cut it out already.」\e//Hell yea. Takeru voice is back.-Spin
+
+//<00000091> 【純夏】「ねえ、\pタケルちゃんのポテト、\pあげていい？」\e
+<00000091> 【Sumika】「Hey,\p Takeru-chan,\p can I give it your fries?」\e//No, they're potatoes.-Spin
+
+//<00000a06> 【武】「何でオレのなんだよ。\p絶対却下」\e
+<00000a06> 【Takeru】「Why my fries?\p I'm not letting go of them.」\e
+
+//<00000093> 【純夏】「はいどーぞ」\e
+<00000093> 【Sumika】「Here you go～」\e
+
+//<00000094> 【武】「あっ！　こらっ！！」\e
+<00000094> 【Takeru】「Ah!? Hey!!!」\e
+
+//<00000096> ぬ。犬コロのクセに、\pそのつぶらな瞳でガンくれようってのか！？\e
+<00000096> Damn this stupid dog...\p...\pthose little round eyes of yours are just asking for it!!\e
+
+//<00000097> 【武】「ガルルルルルル…\p…\p」\e
+<00000097> 【Takeru】「Grrrrrrrrrrrr...\p...\p」\e
+
+//<00000099> 【武】「あいてっ！」\e
+<00000099> 【Takeru】「Owie!!」\e
+
+//<0000009a> 【純夏】「もう、\pバカ！　はい、\p好きなだけ食べてね」\e
+<0000009a> 【Sumika】「Stop it,\p you idiot!\bHere you go,\p eat as much as you want.」\e
+
+//<0000009c> ああっ！　オレのポテトォォ！！\e
+<0000009c> Aaah!! My fries!!\e//CP_E
+
+//<0000009d> 純夏…\p…\p。\e
+<0000009d> Sumika...\p...\p\e
+
+//<00000d1d> …\p…\pあいつにだけは、\pもう何年も会ってない。\e
+<00000d1d> ...\p...\pI haven't seen her in years.\e
+
+//<00000d1e> オレは可能性の世界どころか、\p時間を遡って過去に来たらしいから、\p歳もとっていない。\n体も元のままだ。\e
+<00000d1e> Since I didn't come from some other world, but actually went back in time,\p I haven't gotten any older.\nMy body hasn't changed a bit.\e
+
+//<000000a4> …\p…\pけど、\p記憶だけはどんどん曖昧になっていく。\e
+<000000a4> ...\p...\pbut...\p...\pmy memories keep fading.\e
+
+//<00000d1f> 平和だった生活。純夏との時間。\n並行世界への転移。\n人類の滅亡…\p…\p。\e
+<00000d1f> My old, peaceful life.\bMy time with Sumika.\nMoving between parallel worlds.\nThe annihilation of humanity...\p...\p\e
+
+//<00000d20> プロパガンダの犬は、\p２ヶ月で飼い主のところに戻れたけど、\pオレは３年経っても『元の世界』に戻れていない。\e
+<00000d20> The dog in that story reached his owner in two months,\p but after three years I still haven't found a way back to my world.\e
+
+//<00000d21> いや、\p本当に戻りたいと思っているのかどうか、\p自分でも分からなくなる時がある。\e
+<00000d21> Actually,\p sometimes I'm not even sure if I want to go back anymore.\e
+
+//<000000a8> ここでやらなきゃいけないことが、\pあまりに大切なことだから。\e
+<000000a8> There's something I have to do here,\p and it's really important to me.\e
+
+//<00000d22> けど…\p…\p時々、\pひと目だけでもいいから、\p純夏に会いたくなるよ…\p…\p。\e
+<00000d22> But...\p...\psometimes,\p I really want to see Sumika again,\p even just once...\p...\p\e
+
+//<000000aa> もうおまえとふざけ合うほど、\pオレはのーてんきな奴じゃなくなっちまったかもしれないけど…\p…\p。\e
+<000000aa> I might not be carefree enough to goof off like we used to, but...\p...\p\e
+
+//<000000ab> これがさ…\p…\p冥夜も、\p委員長も、\pたまも、\p彩峰も、\p美琴も、\pまりもちゃんも、\p夕呼先生も誰もいない世界だったなら…\p…\pまだ違っていたかもしれない。\e
+<000000ab> If this world...\p...\pdidn't have Meiya,\p or Class Rep,\p or Tama,\p or Ayamine,\p or Mikoto,\p or Marimo-chan,\p or Yuuko-sensei in it...\p...\pmaybe I'd be even more different.\e
+
+//<000000ac> そんな世界にどっぷり漬かっちまったら、\p諦めもついたかもしれない。\e
+<000000ac> If I got that deeply entrenched in some far-off world,\p I might've just given up.\e
+
+//<000000ad> でも、\pおまえ以外はここにいる。\e
+<000000ad> But everyone else is here.\e
+
+//<000000ae> おまえだけいないし…\p…\p。\e
+<000000ae> Everyone but you...\p...\p\e
+
+//<000000af> …\p…\pこんな中途半端な環境だから…\p…\p未練がましくもなるんだな…\p…\p。\e
+<000000af> ...\p...\pI'm still attached to my old world...\p...\pbecause this one has a lot in common with it...\p...\p\e
+
+//<000000b0> 【冥夜】「どうした、\pタケル…\p…\p」\e
+<000000b0> 【Meiya】「Is something wrong,\p Takeru...\p...\p?」\e
+
+//<000000b1> 【武】「…\p…\pん？」\e
+<000000b1> 【Takeru】「...\p...\phm?」\e
+
+//<000000b2> 【慧】「…\p…\p泣いてる？」\e
+<000000b2> 【Kei】「...\p...\pyou're crying.」\e
+
+//<000000b3> 【武】「え…\p…\p！？」\e
+<000000b3> 【Takeru】「Eh...\p...\p!?」\e
+
+//<000000b4> 【美琴】「ホントだー、\p目がなんか潤んでるよ？」\e
+<000000b4> 【Mikoto】「She's right,\p your eyes are watering!」\e
+
+//<000000b5> ――うそッ！？\e
+<000000b5> ――No way!?\e
+
+//<000000b6> 【武】「な、\p何でもねーよ！！」\e
+<000000b6> 【Takeru】「I-\pit's nothing!!」\e
+
+//<000000b7> 【美琴】「あ！　さては…\p…\p今の話に感動しちゃったんだーー！！」\e
+<000000b7> 【Mikoto】「Ah! That means...\p...\pyou were reaaaaally moved by that story!!」\e
+
+//<000000b8> 【武】「す、\pするかっ！」\e
+<000000b8> 【Takeru】「O-\pof course not!」\e
+
+//<000000b9> 【美琴】「照れない照れない！」\e
+<000000b9> 【Mikoto】「Don't be shy!」\e
+
+//<000000ba> 【武】「違うって！　ちょっと…\p…\p人のこと思い出してただけだ…\p…\p」\e
+<000000ba> 【Takeru】「That's not it! I just...\p...\premembered a certain someone...\p...\p」\e
+
+//<000000bb> 【千鶴】「…\p…\p人のこと？」\e
+<000000bb> 【Chizuru】「...\p...\pa certain someone?」\e
+
+//<000000bc> 【武】「…\p…\p…\p…\p幼なじみだよ」\e
+<000000bc> 【Takeru】「...\p...\p...\p...\pa childhood friend.」\e
+
+//<000000bd> 【冥夜】「…\p…\pどこかに疎開されたのか？」\e
+<000000bd> 【Meiya】「...\p...\pwas she evacuated somewhere?」\e
+
+//<000000be> 【武】「…\p…\pさあな」\e
+<000000be> 【Takeru】「...\p...\pdunno.」\e
+
+//<000000bf> 【壬姫】「…\p…\pたけるさん、\pどこに住んでたんですか？」\e
+<000000bf> 【Miki】「...\p...\pTakeru-san,\p where'd you use to live?」\e
+
+//<000000c0> 【武】「ん…\p…\p？　小さい頃は…\p…\p…\p…\p…\p…\pここにいたよ」\e
+<000000c0> 【Takeru】「Hm...\p...\p?\bWhen I was really young...\p...\p...\p...\pI lived here.」\e//he loved here? Takeru x City OTP - kViN
+
+//<000000c1> 【千鶴】「え！？」\e
+<000000c1> 【Chizuru】「Eh!?」\e
+
+//<000000c2> 【武】「ここがまだ町だった頃…\p…\pオレはここに住んでいた」\e
+<000000c2> 【Takeru】「Back when there was still a town here...\p...\pI mean.」\e
+
+//<000000c3> 【冥夜】「そうだったのか…\p…\p」\e
+<000000c3> 【Meiya】「I see...\p...\p」\e
+
+//<000000c4> 【武】「純夏は隣の家に住んでて…\p…\p」\e
+<000000c4> 【Takeru】「And Sumika lived next door to me...\p...\p」\e
+
+//<000000c5> 【千鶴】「純夏？　その方のお名前？」\e
+<000000c5> 【Chizuru】「Sumika? Is that her name?」\e
+
+//<000000c6> 【武】「あ…\p…\pつい癖で…\p…\pああ、\p鑑純夏って言うんだ」\e
+<000000c6> 【Takeru】「Ah...\p...\pyeah, it is...\p...\pher name was Kagami Sumika.」\e
+
+//<000000c7> 【千鶴】「そう…\p…\p」\e
+<000000c7> 【Chizuru】「I see...\p...\p」\e
+
+//<000000c8> 【美琴】「カガミって、\pちょっと珍しい名字だね」\e
+<000000c8> 【Mikoto】「Kagami's kind of a rare surname.」\e
+
+//<000000c9> 【冥夜】「その鑑殿の消息は、\pいつまでならわかるのだ？」\e
+<000000c9> 【Meiya】「When did you last know if Kagami-dono was still alive or not?」\e
+
+//<000000ca> 【武】「…\p…\pどうして？」\e
+<000000ca> 【Takeru】「...\p...\pwhat do you mean?」\e
+
+//<000000cb> 【冥夜】「もしその気があるなら、\p調べることができる」\e
+<000000cb> 【Meiya】「If it troubles you,\p I could investigate.」\e
+
+//<000000cc> 【壬姫】「ここだけの話だけど…\p…\p…\p…\p私もね、\pお願いしたことがあるんだよ」\e
+<000000cc> 【Miki】「Don't tell anyone, but...\p...\pI've asked her before too.」\e
+
+//<000000cd> 【武】「たまが？」\e
+<000000cd> 【Takeru】「You, Tama?」\e
+
+//<000000ce> 【壬姫】「うん…\p…\p知り合いの女の子」\e
+<000000ce> 【Miki】「Yeah...\p...\pthere was this girl I knew...\p...\p」\e//I wonder if she's talking about the archer girl in her Extra route. -Shikiller//Confirmed for lesbian.-Spin
+
+//<000000cf> 【武】「そうか…\p…\p」\e
+<000000cf> 【Takeru】「I see...\p...\p」\e
+
+//<00000d23> 【冥夜】「…\p…\p気がかりを解消し、\pいらぬ迷いが消えれば、\p今以上に前を向いてしっかり歩んでいける」\e
+<00000d23> 【Meiya】「...\p...\pif you dispel that anxiety,\p and cast aside the distraction it brings,\p you will be able to perform even better than before.」\e
+
+//<000000d1> 【武】「そうだな」\e
+<000000d1> 【Takeru】「That's true.」\e
+
+//<00000d24> 【冥夜】「もし、\pそなたが望むなら…\p…\p恐らく解決することはできるぞ」\e
+<00000d24> 【Meiya】「And...\p...\pif you truly want it...\p...\pit can probably be resolved.」\e
+
+//<00000a49> 【武】「…\p…\pありがとう冥夜。\pでも、\pいいよ」\e
+<00000a49> 【Takeru】「...\p...\pthank you, Meiya.\p But it's okay.」\e
+
+//<000000d4> 【壬姫】「遠慮することはないよ？　あ…\p…\p私が言うのも変だけど！」\e
+<000000d4> 【Miki】「You don't have to hold back.\bAh...\p...\pmaybe I shouldn't say that, but still!」\e
+
+//<000000d5> 【冥夜】「その通りだ。\n遠慮はいらぬぞ？」\e
+<000000d5> 【Meiya】「She is right.\nYou have every right to know.」\e
+
+//<000000d6> 【武】「その気持ちだけで十分だ」\e
+<000000d6> 【Takeru】「It's okay, really.」\e
+
+//<000000d7> 【慧】「…\p…\p迷いはあとから膨れるよ？」\e
+<000000d7> 【Kei】「...\p...\pyou're going to feel worse later.」\e
+
+//<000000d8> 【武】「うん…\p…\pけど、\p捜しても仕方ないんだ」\e
+<000000d8> 【Takeru】「Hmm...\p...\pbut there's no way they'd find her.」\e
+
+//<000000d9> 【千鶴】「どうして？」\e
+<000000d9> 【Chizuru】「Why not?」\e
+
+//<00002b6c> 【武】「…\p…\p…\p…\p『この世界』にはいないんだ」\e
+<00002b6c> 【Takeru】「...\p...\p...\p...\pshe's not in "this world."」\e
+
+//<00002b3f> 【千鶴・冥夜・慧・壬姫・美琴】「…\p…\p…\p…\p」\e
+<00002b3f> 【Chizuru & Meiya & Kei & Miki & Mikoto】「...\p...\p...\p...\p」\e
+
+//<000000e0> 【武】「あ、\p別にみんな落ち込むなよ！？　それはもうだいぶ前にわかってたことなんだ」\e
+<000000e0> 【Takeru】「Ah,\p you don't have to feel sad about it!!\bI've known for a while now.」\e//Hello, you must be Mr. Buzzkillington.-Spin
+
+//<000000e1> 【冥夜】「許すがよい…\p…\p無神経であった…\p…\p」\e
+<000000e1> 【Meiya】「Forgive us...\p...\pwe did not think...\p...\p」\e
+
+//<000000e2> 【武】「だから～いいんだって！　そいつ犬みたいなヤツでさ、\pははは。\nちょっと今の話聞いて思い出しただけだよ！」\e
+<000000e2> 【Takeru】「I told you guys, it's okay!\bShe always used to act like a dog,\p hahaha,\nso that story just now reminded me of her!」\e
+
+//<000000e3> 【武】「誰にだってあるだろ？　しんみりしたくなる瞬間」\e
+<000000e3> 【Takeru】「Everyone has something that makes them sad, right?」\e
+
+//<000000e4> 【壬姫】「う、\pうん…\p…\p」\e
+<000000e4> 【Miki】「Y-\pyeah...\p...\p」\e
+
+//<000000e5> 【武】「ほらーほらー！　美琴ぉ、\p他に何か面白い話ないのかよ？」\e
+<000000e5> 【Takeru】「Come ooon, come ooon!\bMikotooo,\p got any other fun stories?」\e
+
+//<000000e6> 【美琴】「え…\p…\pあ…\p…\pう～んと…\p…\p」\e
+<000000e6> 【Mikoto】「Eh...\p...\pah...\p...\phmmmm...\p...\p」\e
+
+//<000000e7> 【武】「そうだっ！　変な教育番組やってたりしなかったか？」\e
+<000000e7> 【Takeru】「That's right! Didn't you see some weird educational program?」\e
+
+//<000000e8> 【美琴】「え、\pえ？」\e
+<000000e8> 【Mikoto】「Eh?\p Eh?」\e
+
+//<000000e9> 【武】「ほら、\p何か、\p国民的人気者で、\p奇妙な人形の出てくる…\p…\p何つったっけあの人形！！」\e
+<000000e9> 【Takeru】「You know,\p that nationwide hit with the weird doll...\p...\paaaah, what was that puppet called!?」\e
+
+//<000000ea> 【千鶴】「チョップ君のことかしら？」\e
+<000000ea> 【Chizuru】「Do you mean Chop-kun?」\e
+
+//<000000eb> 【美琴】「あ、\pやってたやってた！！」\e
+<000000eb> 【Mikoto】「Ah,\p they were showing that one!!」\e
+
+//<000000ec> 【武】「あ、\pそうそう、\pそれっ！　オレさー、\pアイツに似てるって言われたことあるんだよなー」\e
+<000000ec> 【Takeru】「Ah,\p yeah, yeah,\p that one!\bI've been told I kinda look like him.」\e
+
+//<000000ed> 【美琴】「え？　タケルがチョップ君に…\p…\p…\p…\p？」\e
+<000000ed> 【Mikoto】「Eh? Takeru and Chop-kun...\p...\p...\p...\p?」\e
+
+//<00002b40> 【千鶴・壬姫・慧・美琴】「…\p…\p…\p…\p」\e
+<00002b40> 【Chizuru & Miki & Kei & Mikoto】「...\p...\p...\p...\p」\e
+
+//<000000f2> 【冥夜】「何だ？　チョップ君とは一体何者なのだ？」\e
+<000000f2> 【Meiya】「What? What on Earth is Chop-kun?」\e
+
+//<000000f3> 【慧】「…\p…\pわかるような気がする」\e
+<000000f3> 【Kei】「...\p...\pI think I can see why.」\e
+
+//<000000f4> 【美琴】「いや～、\pわかり過ぎって感じかな？」\e
+<000000f4> 【Mikoto】「Weeell,\p more like it's kinda obvious why.」\e
+
+//<00000d26> 【千鶴】「それ言った人、\p鋭い観察眼の持ち主ね…\p…\p」\e
+<00000d26> 【Chizuru】「Whoever said that had some good eyes...\p...\p」\e
+
+//<000000f6> …\p…\pおまえだ、\pおまえ。\e
+<000000f6> ...\p...\pit was you,\p you said that.\e
+
+//<000000f7> 【壬姫】「でもあれ、\pまだやってたんだねー！」\e
+<000000f7> 【Miki】「But I can't believe that's still going!」\e
+
+//<000000f8> 【武】「おうよ！　驚いたよな～～」\e
+<000000f8> 【Takeru】「I know! It was such a surprise～」\e
+
+//<000000f9> …\p…\p全然中身は知らないんだけどさ。\e
+<000000f9> ...\p...\pnot that I have any clue what it's about.\e
+
+//<000000fb> 【武】「ん？」\e
+<000000fb> 【Takeru】「Hm?」\e
+
+//<000000fc> 【慧】「…\p…\pあんまり喜べる話じゃない」\e
+<000000fc> 【Kei】「...\p...\pit's not something to be happy about.」\e
+
+//<000000fd> 【武】「う、\pうっせーな！！」\e
+<000000fd> 【Takeru】「S-\pshut uuup!!」\e
+
+//<000000fe> 雰囲気が元に戻ったから、\pこれでいいんだよ！\e
+<000000fe> Now this feels just like old times.\e
+
+//<000000ff> 【美琴】「意識がなくなって呼吸が停止していても、\p死亡しているとは限らないんだ」\e
+<000000ff> 【Mikoto】「If someone's lost consciousness and stopped breathing,\p that doesn't necessarily mean they're dead.」\e//CP MLU_0005
+
+//<00000100> 【武】「そうだな」\e
+<00000100> 【Takeru】「That's true.」\e
+
+//<00000101> 【美琴】「確認すべきは次のこと」\e
+<00000101> 【Mikoto】「There's other things you need to check.」\e//CP
+//Even though these are CP, I just realized that they don't make sense. Since Mikoto lists several things. If you agree with this, you can fix it for the rerelease patch or I could do it.-Spin //that one's valid, and you go change the MLU one please ~IX
+
+//<00000102> 【武】「おう」\e
+<00000102> 【Takeru】「Yeah.」\e
+
+//<00000103> 【美琴】「出血の有無、\p意識の有無、\p呼吸の有無。\nそれと鼓動の確認ね」\e
+<00000103> 【Mikoto】「Are they bleeding?\p Are they conscious?\p Are they breathing?\p And you need to check their pulse as well.」\e//CP //that one was not valid ~IX
+
+//<00000104> 【武】「わかった」\e
+<00000104> 【Takeru】「Got it.」\e
+
+//<00000105> 【美琴】「じゃあ、\p人工呼吸なんだけど…\p…\pタケル、\p寝転がってくれる？」\e
+<00000105> 【Mikoto】「Now,\p on to artificial respiration...\p...\pTakeru,\p would you lie down?」\e//CP
+
+//<00000106> 【武】「え゛…\p…\p…\p…\p」\e
+<00000106> 【Takeru】「EEEH...\p...\p...\p...\p!?」\e
+
+//<00000107> そ、\pそうだ…\p…\pそういうことがあった！\e
+<00000107> Th-\pthat's right...\p...\pI forgot about this!\e
+
+//<00000108> 【美琴】「実際に見せたほうが早いでしょ？　さ、\p寝転がって？」\e
+<00000108> 【Mikoto】「Wouldn't it be better to demonstrate? Come on,\p lie down.」\e//PCP
+
+// Selection: 寝転がる
+// Selection: たま頼む
+//<0000010c> 【武】「…\p…\p…\p…\pわ、\pわかった」\e
+<0000010c> 【Takeru】「...\p...\p...\p...\pf-\pfine.」\e//BR_1
+
+//<0000010d> 【冥夜】「どうした？　そなた顔が紅いぞ？」\e
+<0000010d> 【Meiya】「What is it? Your face is bright red.」\e
+
+//<0000010e> 【武】「そそそそんなことねーよッ」\e
+<0000010e> 【Takeru】「Th-th-th-that's not true at all!」\e
+
+//<0000010f> 【美琴】「じゃ、\p寝転がってね～～…\p…\p」\e
+<0000010f> 【Mikoto】「Then lie down～...\p...\p」\e
+
+//<00000110> 【武】「お、\pおう！」\e
+<00000110> 【Takeru】「O-\pokay!」\e
+
+//<00000111> …\p…\p…\p…\p\e
+<00000111> ...\p...\p...\p...\p\e
+
+//<00000112> …\p…\p…\p…\p…\p…\p。\e
+<00000112> ...\p...\p...\p...\p...\p...\p\e
+
+//<00000113> 【美琴】「タケル…\p…\p」\e
+<00000113> 【Mikoto】「Takeru...\p...\p」\e
+
+//<00000114> 【武】「…\p…\p…\p…\p」\e
+<00000114> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000115> 【美琴】「…\p…\pいくね？」\e
+<00000115> 【Mikoto】「...\p...\pready?」\e
+
+//<00000116> 【武】「あ、\pああ…\p…\p」\e
+<00000116> 【Takeru】「Ah,\p yeah...\p...\p」\e
+
+//<00000117> あ…\p…\pなんか柔らかいものが口に…\p…\p美琴の…\p…\p唇…\p…\p\e
+<00000117> Ah...\p...\pthere's something soft on my mouth...\p...\pMikoto's...\p...\plips...\p...\p\e
+
+//<0000011c> ――いまのは…\p…\p！？\e
+<0000011c> ――What was that...\p...\p!?\e
+
+//<0000011e> ――つまみっ！\e
+<0000011e> ――A pinch!?\e
+
+//<0000011f> ぬあ？\e
+<0000011f> Nuwaa?\e
+
+//<00000120> ――ぐいっ！\e
+<00000120> ――Gwii!\e
+
+//<00000121> ぬおっ！？\e
+<00000121> Nwooh!?\e
+
+//<00000122> ――ぱかっ！\e
+<00000122> ――Paka!\e
+
+//<00000123> おおっ！？\e
+<00000123> Oooh!?\e
+
+//<00000124> 【美琴】「ふぅぅぅぅぅぅぅぅぅぅぅっぅぅぅ～～～～～」\e
+<00000124> 【Mikoto】「Fuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu～～～～～」\e
+
+//<00000125> ――！？\e
+<00000125> ――!?\e
+
+//<00000126> 【美琴】「っはああ…\p…\pふぅぅぅぅぅぅぅぅぅぅぅっぅぅぅ～～～～～」\e
+<00000126> 【Mikoto】「Haaaaa...\p...\pfuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu～～～～～」\e
+
+//<00000127> な、\pなんかこれは想像していたのと…\p…\p…\p…\pち、\p違うぞ～～～！！\e
+<00000127> Th-\pthis is kinda...\p...\pnot what I was expecting at all!!\e
+
+//<00000128> 肺に勝手に空気が入ってくるって…\p…\pなんだか変な感じだ…\p…\p。\e
+<00000128> Air's being pushed into my lungs for me...\p...\pthis feels so weird...\p...\p\e
+
+//<00000129> 鼻つままれて、\p上向かされて、\p口開けられて、\p肺の奥深くまで強制注入…\p…\p。\e
+<00000129> I'm lying face up,\p with my nose pinched,\p and my mouth open,\p and there's this pressure deep in my lungs...\p...\p\e
+
+//<0000012a> 任官後の定期講習では、\p専用のマネキンみたいなのがあったから、\pやられる側になったのは初めてだ…\p…\p。\e
+<0000012a> After being commissioned, we had to practice this every so often,\p but we always used a training dummy for that,\p so I've never had it done to me before...\p...\p\e
+
+//<0000012b> と、\pとにかく、\p残念ながらそんな色っぽいもんじゃなかったってことで。\e
+<0000012b> A-\panyway,\p unfortunately it didn't turn out to be nearly as exciting as I thought.\e
+
+//<0000012c> …\p…\p残念？\e
+<0000012c> ...\p...\punfortunately?\e
+
+//<0000012d> この辺の思考にはあまり深く突っ込まないようにしよう。\e
+<0000012d> I'd better not think too much about that.\e
+
+//<00000131> 【武】「たま頼む」\e
+<00000131> 【Takeru】「Tama, can we switch?」\e//BR_2
+
+//<00000132> 【壬姫】「え？」\e
+<00000132> 【Miki】「Eh?」\e
+
+//<00000133> 【武】「オレは状況を見ていたい。\nだから代わってくれ」\e
+<00000133> 【Takeru】「I wanna watch this from the outside.\nSo please take my spot.」\e
+
+//<00000134> 【壬姫】「べつにいいけど…\p…\p」\e
+<00000134> 【Miki】「I guess that's okay...\p...\p」\e
+
+//<00000135> 【美琴】「…\p…\pいやなのかな？」\e
+<00000135> 【Mikoto】「...\p...\pyou don't wanna practice with me?」\e
+
+//<00000136> 【武】「そ、\pそういうわけじゃないけど…\p…\p」\e
+<00000136> 【Takeru】「I-\pit's nothing like that...\p...\p」\e
+
+//<00000137> 【美琴】「嘘ついた？」\e
+<00000137> 【Mikoto】「Was that a lie?」\e
+
+//<00000138> 【武】「ついてない！」\e
+<00000138> 【Takeru】「No it wasn't!」\e
+
+//<00000139> 【慧】「焦るところが怪しい…\p…\p」\e
+<00000139> 【Kei】「Getting mad makes you suspicious...\p...\p」\e
+
+//<0000013a> 【武】「そんなことないっ！！」\e
+<0000013a> 【Takeru】「No it doesn't!!」\e
+
+//<0000013b> 【美琴】「…\p…\p…\p…\p」\e
+<0000013b> 【Mikoto】「...\p...\p...\p...\p」\e
+
+//<0000013c> 【武】「な、\pなんだよ」\e
+<0000013c> 【Takeru】「Wh-\pwhat?」\e
+
+//<0000013d> 【美琴】「…\p…\pそれじゃ壬姫さん、\pやるね？」\e
+<0000013d> 【Mikoto】「...\p...\pokay then, Miki-san,\p you wanna do it?」\e
+
+//<0000013e> 【壬姫】「うん、\pいいよー」\e
+<0000013e> 【Miki】「Yeah,\p sure.」\e
+
+//<0000013f> …\p…\pう～ん。\e
+<0000013f> ...\p...\phmmm.\e
+
+//<00000140> 前に見たときは、\p色々な意味でびっくりしたけど…\p…\p。\e
+<00000140> The last time I saw this,\p it shocked me in a lot of ways...\p...\p\e
+
+//<00000d27> それなりの軍歴がある今となっちゃ、\pさすがにもう何とも思わないな。\e
+<00000d27> But now that I'm more experienced,\p I don't really think anything of it.\e
+
+//<00000142> 命を左右する救急処置だもんな。\e
+<00000142> These first aid techniques could save our lives, after all.\e
+
+//<00000144> 【美琴】「次は止血の方法だね」\e
+<00000144> 【Mikoto】「Now for hemostasis.」\e//BR_E CP
+
+//<00000145> 【武】「ああ」\e
+<00000145> 【Takeru】「Okay.」\e
+
+//<00000146> 【美琴】「止血方法は全部で３通りあって、\p通常負傷に用いる圧迫法、\p動脈出血に使う指圧法、\pそして、\p生死に関わるような負傷時には止血帯をこんな風に…\p…\p」\e
+<00000146> 【Mikoto】「There are three types of hemostasis:\p applying pressure for normal wounds,\p pressing your fingers down on a bleeding artery,\p and using a tourniquet on potentially lethal wounds,\p like this...\p...\p」\e//CP_S
+
+//<00000147> 【武】「わっ、\pちょっ…\p…\pなにすんだっ！？」\e
+<00000147> 【Takeru】「Wa!\p Hey!\n...\p...\pwhat're you doing!?」\e
+
+//<00000148> 【美琴】「じっとしてて…\p…\pこうやってヒモ状のものを巻き付ける、\pと」\e
+<00000148> 【Mikoto】「Stay still...\p...\pthis is how you do it using a string...\p...\pthere.」\e
+
+//<00000149> 【武】「わ、\pわかった」\e
+<00000149> 【Takeru】「I-\pI got it.」\e
+
+//<0000014a> あんまり接近するなっ！\e
+<0000014a> Don't come any closer!\e//CP_E
+
+//<0000014b> 何でこんなところまで当時を完全再現なんだよ！？　こ、\p困るだろ！\e
+<0000014b> Why do I have to relive this part too!?\bI-\pI didn't ask for this!\e
+
+//<00000d28> あの時よりずっと美琴のことを知っちまってるんだから…\p…\pちょっと…\p…\pシャレにならん感じだよ。\e
+<00000d28> And I know far more about Mikoto now than I did back then...\p...\pso it feels kinda...\p...\pnot funny anymore.\e//not getting this one at all ~IX
+//feels kinda serious - Makoto //oh then I guess I did get it ~IX
+
+//<0000014d> 【美琴】「でもこれじゃまだ緩いから、\p棒なんかを入れて回す、\pと。\n止血の原則は箇所を心臓より高くすること…\p…\pよいしょ！」\e
+<0000014d> 【Mikoto】「But this is still pretty loose, so you need to slide a stick through here and twist it...\p...\pthere.\p\nYou need to raise the arm until it's higher than the heart too...\p...\p...\phere goes!」\e//CP_S //Low copypasta skills! - kViN
+
+//<0000014e> 【武】「いだだだだっ！！」\e
+<0000014e> 【Takeru】「Owwwwwwwww!!!」\e
+
+//<0000014f> 【美琴】「もうちょっと我慢してよ、\p男でしょ？」\e
+<0000014f> 【Mikoto】「You're a man, aren't you?\p\p\p\nYou can take this.」\e//CP_E
+
+//<00000150> 【千鶴】「屈強の訓練兵も、\p衛生兵の前では形無しね」\e
+<00000150> 【Chizuru】「Even the toughest cadets do something shameful in front of the orderlies.」\e//fffff why I do keep forgetting eiseihei means orderly ~IX
+
+//<00000151> 【武】「うるせぇっ！　いだだだっ！」\e
+<00000151> 【Takeru】「Shut up! Owwwwwww!」\e
+
+//<00000152> 【美琴】「ところでタケルは、\p市販の本でこういう処置について読んだことあるのかな？」\e
+<00000152> 【Mikoto】「By the way, Takeru,\p have you ever read about this in a book?」\e//CP
+
+//<00000153> 【武】「市販の本はないな。\nえっと…\p…\p専門知識を持ってる人から教えてもらった」\e
+<00000153> 【Takeru】「Not a book, no.\nUmm...\p...\pI knew someone who'd done this in the past.」\e//makoto!
+
+//<00000154> つまりおまえな。\e
+<00000154> By which I mean you.\e//oh
+
+//<00000155> 【美琴】「あ、\pそうなんだ…\p…\pじゃあ要らないね。\n止血帯を緩めるべきかどうかって話だったんだけど」\e
+<00000155> 【Mikoto】「Ah,\p I see...\p...\pthen I guess there's no need to tell you whether to loosen the tourniquet or not.」\e
+
+//<00000156> 【武】「緩めちゃいけない、\p折角止めた血液がまた流れちまって、\p止血した意味が無くなっちまう。\nだからこそ、\p止血帯を施したら２時間以内に医者に診せないと、\p壊死が始まっちまう…\p…\pだったよな？」\e
+<00000156> 【Takeru】「You can't loosen it.\p If you let the blood start flowing again,\p then you lost everything you gained by stopping it in the first place.\p That's also why you have to get to a doctor within two hours,\p since they'll start to suffer necrosis...\p...\pright?」\e
+//comment: that's not the reason. Once you've applied a tourniquet, toxins begin to build up in the cut-off extremity. If you loosen the tourniquet before doing certain things that only a hospital can do, the toxins will reenter the bloodstream and cause all sorts of really nasty problems. It may also cause a sudden drop in blood pressure because the blood vessels beyond the tourniquet will be dilated. Hence, you don't fucking demonstrate on people - Makoto //Maybe that's what he meant by "necrosis"? Awesome details though. ~IX
+
+//<00000157> 【美琴】「その通り！！　凄いねタケルっ！！」\e
+<00000157> 【Mikoto】「That's correct!! You're amazing, Takeru!!」\e
+
+//<00000158> 【武】「お、\pおい…\p…\pあんまりくっつくなよ」\e
+<00000158> 【Takeru】「H-\phey...\p...\pdon't squeeze me!」\e//I wanted to use "glomp" but oh well ~IX //I'm all in for glomping - kViN
+
+//<00000159> 【美琴】「えへへ…\p…\p賢い賢い」\e
+<00000159> 【Mikoto】「Eheheh...\p...\pso smart, so smart～」\e
+
+//<0000015a> こ、\pこいつって、\p初めからこんなに人なつこかったっけ！？\e
+<0000015a> S-\pshe's always been like this,\p right!?\e
+
+//<0000015b> よからぬ妄想が頭の中に浮かんでくるだろ！？\e
+<0000015b> She always makes me imagine things I shouldn't, right!?\e
+
+//<0000015c> 【武】「と、\pとりあえず離れてくれっ！」\e
+<0000015c> 【Takeru】「A-\panyway, let go of me!」\e
+
+//<0000015d> 【美琴】「え？　なんで？」\e
+<0000015d> 【Mikoto】「Eh? Why?」\e
+
+//<0000015e> 【武】「いや、\p何でじゃなくてっ！！」\e
+<0000015e> 【Takeru】「Why do you need to ask!?」\e
+
+//<0000015f> 【美琴】「…\p…\p…\p…\p」\e
+<0000015f> 【Mikoto】「...\p...\p...\p...\p」\e
+
+//<00000160> 【武】「なんだよ？」\e
+<00000160> 【Takeru】「What?」\e
+
+//<00000161> 【美琴】「…\p…\pボクのこと、\p嫌い？」\e
+<00000161> 【Mikoto】「...\p...\pdo you hate me?」\e
+
+//<00000162> 【武】「そういう問題じゃない！」\e
+<00000162> 【Takeru】「That's not the issue!」\e
+
+//<00000163> 【美琴】「ウソだ」\e
+<00000163> 【Mikoto】「You're lying.」\e
+
+//<00000164> 【慧】「ウソだ…\p…\p」\e
+<00000164> 【Kei】「Liar....\p...\p」\e
+
+//<00000165> 【壬姫】「？　ウソなの？」\e
+<00000165> 【Miki】「Eh? He is?」\e
+
+//<00000166> 【武】「知るか！」\e
+<00000166> 【Takeru】「How would I know!?」\e
+
+//<00000167> 【美琴】「…\p…\p続けるね。\nボク達が怪我人に対して、\pもうひとつ気を付ける大事な要素があるよ」\e
+<00000167> 【Mikoto】「...\p...\pmoving on.\p There's one other very important factor you have to consider when dealing with a patient.」\e//a casualty? a patient? ~IX
+//dealing with trauma works too - Makoto //hmm...very interesting, but I like patient a bit better for now ~IX
+
+//<000028c0> 【武】「…\p…\p精神的な不安を取り除いてやることだな？」\e
+<000028c0> 【Takeru】「...\p...\pyou have to get rid of any mental anxiety, right?」\e
+
+//<00000169> 【美琴】「そう！！　その通りだよ～～！！　まず、\p不安を取り除くために付き添って励ますこと」\e
+<00000169> 【Mikoto】「Yes!! That's riiight～!! So first off,\p stay close to them so you can reassure them.」\e
+
+//<0000016a> 【武】「…\p…\pん？」\e
+<0000016a> 【Takeru】「...\p...\phm?」\e
+
+//<0000016b> 【美琴】「そして、\p衣類を緩めて、\p頭部に損傷がなければ頭を低くして寝かせる。\n体温が下がらないように暖かくしてあげることも大切だよ」\e
+<0000016b> 【Mikoto】「Also be sure to loosen clothing,\p and if their head's okay then lay it down below their feet and let them sleep.\nYou also have to keep them warm so their internal temperature doesn't drop.」\e
+//head below the feet. You wouldn't do this if there's a head injury because it would make any bleeding worse. In all other cases, however, you want blood to go to the brain. Also, "so that their temperature doesn't drop" - Makoto //thought "stays high" was the same thing, but I can see why it might not be so changed ~IX
+
+//<0000016c> 【武】「どうした？」\e
+<0000016c> 【Takeru】「What are you doing?」\e
+
+//<0000016d> 【美琴】「不安にかられて錯乱状態になるのを防ぐんだ。\n勇気付けてあげるってことだね」\e
+<0000016d> 【Mikoto】「You need to give them courage to keep them from freaking out.」\e
+
+//<0000016e> 【武】「いやそうじゃなくて…\p…\p」\e
+<0000016e> 【Takeru】「No, I didn't mean that...\p...\p」\e
+
+//<0000016f> なに寝転がってやがる！？\e
+<0000016f> I meant why are you lying down!?\e//she's lying down as she says this. -Shikiller
+
+//<00000170> 【美琴】「さあ、\pタケル！」\e
+<00000170> 【Mikoto】「So,\p Takeru!」\e
+
+//<00000171> 【武】「さあじゃねぇだろ？」\e
+<00000171> 【Takeru】「What do you mean by that?」\e
+
+//<00000172> 【美琴】「風邪とかひいたとき、\p君は不安になったりしないのかな？」\e
+<00000172> 【Mikoto】「Don't you feel anxious when you catch a cold?」\e
+
+//<00000173> 【武】「そういう問題じゃない！」\e
+<00000173> 【Takeru】「That's not what I mean!」\e
+
+//<00000174> 【美琴】「もしかして、\pボクじゃ嫌？」\e
+<00000174> 【Mikoto】「Do you...\p...\pnot want my help?」\e
+
+//<00000175> 【武】「いやそういうのとは意味が…\p…\p」\e
+<00000175> 【Takeru】「It's nothing like that...\p...\p」\e
+
+//<00000176> 【美琴】「遠慮しなくていいよ…\p…\p…\p…\pボクは気にしないから」\e
+<00000176> 【Mikoto】「You don't have to worry about it...\p...\p\b...\p...\pI don't mind or anything.」\e
+
+//<00000177> 【武】「そういうのとも…\p…\p」\e
+<00000177> 【Takeru】「That's not it either...\p...\p」\e
+
+//<00000178> 【美琴】「目、\p瞑ってるから」\e
+<00000178> 【Mikoto】「I'll close my eyes.」\e
+
+//<00000179> 【武】「ダメ！」\e
+<00000179> 【Takeru】「No!」\e
+
+//<0000017a> 【美琴】「タケル、\p変だよ」\e
+<0000017a> 【Mikoto】「Takeru,\p you're weird.」\e
+
+//<0000017b> 【武】「どっちがっ！？」\e
+<0000017b> 【Takeru】「No, you are!!」\e
+
+//<00000228> 【美琴】「ねえねえ、\pどうしてタケルはボクのこと避けるのかなあ？」\e
+<00000228> 【Mikoto】「Hey, hey,\p Takeru, why do you keep avoiding me?」\e//CP_S MLU_0005
+
+//<00000229> 【武】「べ、\p別に避けてるわけじゃないぞ」\e
+<00000229> 【Takeru】「I-\pI'm not avoiding you or anything.」\e
+
+//<0000022a> 【美琴】「仕方ないじゃない、\p入院してたんだから」\e
+<0000022a> 【Mikoto】「It's not your fault,\p I was in the hospital.」\e
+
+//<0000022b> 【武】「何の話だ？」\e
+<0000022b> 【Takeru】「What do you mean?」\e
+
+//<0000022c> 【美琴】「初日に会えなかったのは残念だけどさ…\p…\p」\e
+<0000022c> 【Mikoto】「It's too bad we couldn't see each other on the first day...\p...\p」\e
+
+//<0000022d> 【武】「別にそういうんじゃないって」\e
+<0000022d> 【Takeru】「I don't think that had anything to do with it.」\e
+
+//<0000022e> 【美琴】「でも、\pたった１週間の違いぐらい、\pボクとタケルなら何でもないよね？」\e
+<0000022e> 【Mikoto】「But one week apart can't come between us,\p right Takeru?」\e
+//the week they lost is nothing to them - Makoto //I could've sworn you tlc'd this same line in MLU as something different... ~IX
+
+//<0000022f> 【武】「あのなあっ！！」\e
+<0000022f> 【Takeru】「Hey now!!」\e//CP_E
+
+//<00000230> なんでオメーはそういう言い回しを…\p…\pていうか、\p相変わらずペースに巻き込まれてるオレって…\p…\p。\e
+<00000230> Why do you have to say it like that? ...\p...\pthough I guess it's still my fault for letting you steer the conversation...\p...\p\e
+
+//<0000182a> あの時、\pあんなに悩まなくても、\pこいつが戻って来たら自然にオレの態度も軟化してたんだろうな…\p…\pハァ。\e
+<0000182a> I didn't really have anything to worry about back then.\bMy behavior naturally softened as soon as you came back...\p...\phaa...\p...\p\e
+
+//<00000232> 【声】「おや、\p美琴ちゃんじゃないかい！」\e
+<00000232> 【Voice】「Oya,\p isn't that Mikoto-chan!?」\e//CP_S
+
+//<00000233> 【美琴】「あ、\p京塚のおばちゃん！」\e
+<00000233> 【Mikoto】「Ah,\p it's Kyozuka-oba-chan!」\e
+
+//<00000234> 【京塚】「入院してたって聞いたよ？　もう大丈夫なのかい？」\e
+<00000234> 【Kyozuka】「I heard you were in the hospital.\p\nYou recovered already?」\e
+
+//<00000235> 【美琴】「昨日戻ってきたんだー。\nでもおばちゃん、\p昨日は凄く忙しそうだったから…\p…\p」\e
+<00000235> 【Mikoto】「I got back yesterday,\p but it was insanely busy here that day so I didn't get a chance to eat yet...\p...\p」\e//PCP_E
+
+//<00002b98> 【京塚】「おやそうかい、\pそりゃ済まなかったね。\n昨日は確かに１度に人が集中してさ…\p…\p」\e
+<00002b98> 【Kyozuka】「Oya, I see,\p sorry to hear that.\nIt really was crowded that day...\p...\p」\e
+//Makes it seem more like she's confirming what Mikoto said instead of saying it herself out of nowhere.-Spin
+
+//<00000237> 【美琴】「またお世話になりま～～す！」\e
+<00000237> 【Mikoto】「And now I'm baaaaack!」\e
+
+//<00000238> 【京塚】「あいよっ！　…\p…\pで？　ひょっとしてこの子がウワサの新人かい？」\e
+<00000238> 【Kyozuka】「I hear you! ...\p...\pso, is this the newbie I've heard so much about?」\e//PCP
+
+//<00000239> 【武】「どうも、\p白銀武です…\p…\p」\e
+<00000239> 【Takeru】「Hello,\p I'm Shirogane Takeru...\p...\p」\e
+
+//<0000023a> 京塚のおばちゃん…\p…\pお久しぶりです。\e
+<0000023a> Kyozuka-oba-chan...\p...\pI haven't seen you in ages.\e
+
+//<0000023b> …\p…\p…\p…\pまた…\p…\p世話になります。\e
+<0000023b> \r//untlable ritual phrase dies ~IX
+
+//<0000023c> 【京塚】「ふんふん…\p…\pなかなかいい男だねぇ…\p…\p背筋も伸びてて…\p…\pうん、\pいい軍人になる…\p…\pよっ！」\e
+<0000023c> 【Kyozuka】「Hmm, hmm...\p...\pnot a bad man at all...\p...\pyou're even standing up straight...\p...\pyes,\p you'll be a good soldier...\p...\pokay!」\e
+
+//<0000023d> 【武】「っ！？」\e
+<0000023d> 【Takeru】「――!?」\e
+
+//<0000023e> 【京塚】「へぇ？　身体も相当鍛えてるみたいだね…\p…\p勉強も運動もかなりできるって話だけど…\p…\pまんざら嘘じゃないのかねぇ」\e
+<0000023e> 【Kyozuka】「Oooh? Your body seems pretty tough too...\p...\p\bI've been told you were good at the physical and mental stuff...\p...\pso it wasn't just lies.」\e
+
+//<0000023f> 【武】「っと！　その話、\p誰から聞いたんですか？」\e
+<0000023f> 【Takeru】「Whoa! Who'd you hear that from?」\e
+
+//<00002b9a> 【京塚】「そりゃ内緒だよ。\nここではいろんな秘密の話が飛び交ってるのさ」\e
+<00002b9a> 【Kyozuka】「That's a secret.\nA lot of secrets get flung around in a place like this.」\e
+
+//<00000241> 【武】「嘘だ、\pそうだなあ…\p…\pおばちゃんにそんな話をするとすれば…\p…\pまりもちゃんかな？」\e
+<00000241> 【Takeru】「That doesn't sound right...\p...\pif anyone would tell you about that...\p...\pMarimo-chan maybe?」\e
+
+//<00000242> 【京塚】「あははは…\p…\p肝の据わったガキだねぇ…\p…\p教官をちゃん付けで呼ぶかい？」\e
+<00000242> 【Kyozuka】「Ahahaha...\p...\pyou're pretty bold...\p...\pusing the Instructor's first name.」\e
+
+//<00000243> 【武】「あ…\p…\pしまった！」\e
+<00000243> 【Takeru】「Ah...\p...\pcrap!」\e
+
+//<00000244> 【京塚】「ま、\pそういう性格は、\pあたしゃ嫌いじゃないよ」\e
+<00000244> 【Kyozuka】「Well,\p I don't mind it at all, so don't let it worry you.」\e
+
+//<00000245> 【武】「ど、\pどうもです」\e
+<00000245> 【Takeru】「Th-\pthank you.」\e
+
+//<00000246> やべーやべー。\e
+<00000246> That was bad...\p...\p\e
+
+//<000028c5> おばちゃん相変わらずだから、\pついこっちまで…\p…\pって、\pおばちゃんが相変わらずなのは、\p当たり前か。\e
+<000028c5> Oba-chan hasn't changed one bit,\p so I lapsed back into...\p...\pwell,\p of course she hasn't changed,\p I haven't seen her before.\e
+
+//<00000248> 【京塚】「とりあえずこれで千鶴ちゃん達も安心だね、\p頼りになる男が増えてさ」\e
+<00000248> 【Kyozuka】「Anyway Chizuru-chan and the others should be glad they've got such a strong man on their squad.」\e
+
+//<0000182b> 【武】「ははは…\p…\pそうですかね」\e
+<0000182b> 【Takeru】「Hahaha...\p...\pI guess so.」\e
+
+//<0000024a> 【京塚】「せいぜい尻に敷いて、\pこき使ってやりなよ？」\e
+<0000024a> 【Kyozuka】「Make sure you make good use of him.」\e
+
+//<0000024b> 【千鶴】「そのつもりです」\e
+<0000024b> 【Chizuru】「I plan to.」\e
+
+//<0000024c> 【武】「嘘っ！？」\e
+<0000024c> 【Takeru】「No way!?」\e
+
+//<00000cdb> 【慧】「今頃気づいたの？」\e
+<00000cdb> 【Kei】「You only just noticed?」\e
+
+//<0000024e> 【武】「そりゃ酷い…\p…\p」\e
+<0000024e> 【Takeru】「That's just mean...\p...\p」\e
+
+//<0000024f> 【京塚】「あははは、\pすっかりとけ込んでるねぇ、\pうんうん。\nそれじゃ、\pもう少しで晩ご飯だから、\p待ってておくれよ」\e
+<0000024f> 【Kyozuka】「Ahahaha,\p you're fitting right in,\p good man.\nDinner will be ready in a minute,\p so wait right there.」\e
+
+//<00000250> ――ちゃんと食べてるか？\e
+<00000250> ――Are you eating well?\e//CP_S
+
+//<00000251> ――足りてるか？\e
+<00000251> ――You getting enough?\e
+
+//<00000252> ――あたしの所に来い\e
+<00000252> ――Come to me for your food.\e//CP_E
+
+//<00000253> …\p…\p確か、\pおばちゃんとの始まりはそんなものだったような気がする。\e
+<00000253> ...\p...\pI'm pretty sure those were among the first things she said to me.\e
+
+//<00000254> 半ば無理矢理に、\p他の奴らの倍ぐらい飯食わされたっけ…\p…\p。\e
+<00000254> Then she kinda forced me to eat twice as much rice as the others...\p...\p\e
+
+//<00000255> …\p…\pそうか、\p今のオレじゃそんな話になるわけもねぇか。\e
+<00000255> ...\p...\pthat's right,\p there's no reason for her to do that this time.\e
+
+//<0000182c> いまさら素人扱いされるのもシャクだけど…\p…\p少し寂しい気もするな…\p…\p。\e
+<0000182c> I'd hate to be treated like an amateur after all this...\p...\pbut it still feels a bit lonely not to be...\p...\p\e
+
+//<0000182d> 【千鶴】「ここで給食任務全般を担当していらっしゃる、\p京塚志津江曹長よ」\e
+<0000182d> 【Chizuru】「That's Sergeant Major Kyozuka Shizue.\bShe's in charge of providing meals for everyone on the base.」\e
+//Hmm, consistency issue maybe. Since you're using abbreviations for everyone else, shouldn't this then be "Sgt. Maj. Kyozuka Shizue"?-Spin //my gut memory is we expand them out for introductions and such, check this yourself if it still bugs you ~IX
+
+//<00000cdd> 【美琴】「要するに、\p食堂のおばちゃんだね」\e
+<00000cdd> 【Mikoto】「Basically,\p she's the cafeteria lady.」\e//CP
+
+//<00000259> 【武】「ああ…\p…\p」\e
+<00000259> 【Takeru】「Okay...\p...\p」\e
+
+//<00000cdf> 【壬姫】「頼もしい人ですよー。\n彩峰さんもお世話になってるよね？」\e
+<00000cdf> 【Miki】「She's really trustworthy.\nEspecially to you, Ayamine-san.」\e//PCP_S (why'd they drop "kind" this time around?)
+
+//<00000ce0> 【慧】「…\p…\p言わなくていい」\e
+<00000ce0> 【Kei】「...\p...\pyou didn't need to say that.」\e
+
+//<0000025c> 【武】「…\p…\pどうしてだ？」\e
+<0000025c> 【Takeru】「...\p...\pwhy not?」\e
+
+//<0000025d> 知ってるけどな。\e
+<0000025d> I already know, but...\p...\p\e
+
+//<00002bb0> 【冥夜】「ははは…\p…\p彩峰は一番食事量が多いからな」\e
+<00002bb0> 【Meiya】「Hahaha...\p...\pthat is because Ayamine eats the most.」\e//PCP_E (and the hu's changed to ha's...?)
+
+//<00000ce2> 【慧】「…\p…\p変なこと言っちゃダメ」\e
+<00000ce2> 【Kei】「...\p...\pdon't say weird things.」\e
+
+//<00000ce3> 【壬姫】「隠してもダメだよー」\e
+<00000ce3> 【Miki】「Don't hide it either.」\e
+
+//<00000ce4> 【慧】「…\p…\p…\p…\p」\e
+<00000ce4> 【Kei】「...\p...\p...\p...\p」\e
+
+//<0000182e> 【美琴】「慧さんは、\p暇があるといっつも運動してるもんね、\pお腹もすくでしょ！」\e
+<0000182e> 【Mikoto】「Kei-san,\p you always do some kind of exercise when you're bored,\p of course you get hungry a lot!」\e//another interesting change, last time it was: "You're always pushing your body too hard, Kei-san." ~IX
+
+//<00000263> 【千鶴】「そういう鎧衣も何故かよく食べるわよね？」\e
+<00000263> 【Chizuru】「You eat quite a lot too,\p Yoroi.」\e//CP_S
+
+//<00000264> 【美琴】「あははっ！　育ち盛りだから」\e
+<00000264> 【Mikoto】「Ahaha!\p\p I'm just having a growth spurt.」\e
+
+//<00000265> 【武】「ウソ言うな」\e
+<00000265> 【Takeru】「Don't lie.」\e
+
+//<00000266> 【美琴】「ホントだよ？　胸がねー、\p少しだけ大きくなったような気がするんだよ、\p最近」\e
+<00000266> 【Mikoto】「I mean it.\p\p Besides,\p it feels like my breasts have gotten a little bigger lately.」\e//PCP_E steadily -> a little
+
+//<00000267> 【武】「！？」\e
+<00000267> 【Takeru】「――!?」\e
+
+//<00000268> またそういう話題かーー！！\e
+<00000268> You brought that up agaaaain!!?\e
+
+//<00000269> 【壬姫】「えー？　いいなあ…\p…\p。\n私も、\pもう少しおっきくなりたいな…\p…\p…\p…\p」\e
+<00000269> 【Miki】「Eeeh?\p\p\p\p\p That must be nice...\p...\p\nI wish I could grow a little more too...\p...\p...\p...\p」\e//PCP
+
+//<0000026a> 【武】「背が？」\e
+<0000026a> 【Takeru】「In height?」\e
+
+//<0000026b> 【壬姫】「…\p…\p…\p…\p」\e
+<0000026b> 【Miki】「...\p...\p...\p...\p」\e
+
+//<0000026c> 【美琴】「…\p…\p…\p…\p」\e
+<0000026c> 【Mikoto】「...\p...\p...\p...\p」\e
+
+//<0000182f> 【千鶴】「白銀って…\p…\p兵士としては優秀かも知れないけど…\p…\p意外とカタブツね」\e
+<0000182f> 【Chizuru】「Shirogane...\p...\pyou may be an incredible soldier, but...\p...\pyou don't always listen to people.」\e
+
+//<0000026f> 委員長にカタブツって言われた…\p…\p。\e
+<0000026f> Class Rep said I don't listen to people...\p...\p?\e//how to emphasize the "I"... ~IX//suggestion added. -Shikiller //not the right kind of emphasis, revert for now ~IX
+
+//<00000270> 【武】「ちょっとまって…\p…\p？　オレが悪いのか！？」\e
+<00000270> 【Takeru】「Wait a minute...\p...\pwhat'd I do wrong!?」\e
+
+//<00001830> 【冥夜】「気にするでない。\nこの手の冗談には、\p私も上手く対処できず困っていたのだ。\n仲間が増えて心強く思うぞ」\e
+<00001830> 【Meiya】「Do not worry.\nI am also unable to properly respond to that sort of joke.\nI am glad to not be alone.」\e
+
+//<00001831> 【武】「…\p…\p冥夜と一緒にされるのか…\p…\pそれはちょっとショックだな」\e
+<00001831> 【Takeru】「...\p...\pI have the same problem as Meiya?\b...\p...\pthat's kind of...\p...\pshocking.」\e
+
+//<00000ce5> 【冥夜】「う…\p…\pそれはどういう意味だ？」\e
+<00000ce5> 【Meiya】「Uu...\p...\pwhat do you mean by that?」\e
+
+//<00000ce6> 【美琴】「あ、\pもうカウンターに並び始めてる！　急ごうっ！」\e
+<00000ce6> 【Mikoto】「Ah,\p they're already lining up! We'd better hurry!」\e
+
+//<00000275> 【武】「あ！」\e
+<00000275> 【Takeru】「Ah!」\e
+
+//<00000276> 【美琴】「いただきまーす！」\e
+<00000276> 【Mikoto】「Time to eat!」\e//I am lazy ~IX
+
+//<00000277> もしゃもしゃもしゃもしゃ…\p…\p…\p…\p\e
+<00000277> *munch* *munch* *munch* *munch*...\p...\p...\p...\p\e
+
+//<00000278> 【美琴】「あ～、\p何か帰ってきたって感じするよね～～」\e
+<00000278> 【Mikoto】「Aaah,\p I feel at home again～」\e
+
+//<00000279> 【武】「ん…\p…\p？」\e
+<00000279> 【Takeru】「Hm...\p...\p?」\e
+
+//<0000027a> 【壬姫】「鎧衣さん、\p朝はいなかったよね？」\e
+<0000027a> 【Miki】「Yoroi-san,\p why weren't you here this morning?」\e
+
+//<0000027b> 【美琴】「病院生活してたら時間の感覚が狂っちゃって…\p…\p寝坊しちゃったんだ…\p…\pあはは…\p…\p」\e
+<0000027b> 【Mikoto】「Being in the hospital for so long messed up my sense of time...\p...\pso I overslept...\p...\pahaha...\p...\p」\e//CP
+
+//<0000027c> 【武】「そういえば、\p点呼の時いなかったよな」\e
+<0000027c> 【Takeru】「Come to think of it,\p you weren't here for roll call.」\e
+
+//<0000027d> 居ないことに慣れてて、\p気づかなかったよ。\e
+<0000027d> They've gotten so used to her not being around they didn't even notice.\e
+
+//<0000027e> 【美琴】「だからそれで怒られてたってわけ」\e
+<0000027e> 【Mikoto】「Which they chewed me out for later.」\e
+
+//<0000027f> 【武】「何で入院してたんだ？」\e
+<0000027f> 【Takeru】「Why were you hospitalized anyway?」\e//PCP_S
+
+//<00000280> 【美琴】「え？　そういうこと聞くかな～～…\p…\p女の子に」\e
+<00000280> 【Mikoto】「Eh?\p\p Why would you ask a girl about that sort of thing?」\e
+
+//<00000281> 【武】「はあ？」\e
+<00000281> 【Takeru】「Huuuh?」\e
+
+//<00000282> 【美琴】「あ、\pでもタケルにだったら…\p…\pいいかな？」\e
+<00000282> 【Mikoto】「Ah,\p although in your case, Takeru...\p...\pmaybe it'd be okay.」\e
+
+// Selection: 聞く必要はまったくないことになった
+// Selection: ならぜひ教えてくれ
+//<00000287> 【武】「聞く必要はまったくないことになった」\e
+<00000287> 【Takeru】「I no longer have any reason to ask.」\e//BR_1
+
+//<00000288> 【美琴】「酷いなー」\e
+<00000288> 【Mikoto】「How cruel...\p...」\e//CP_E
+
+//<0000028b> 【武】「ならぜひ教えてくれ」\e
+<0000028b> 【Takeru】「Then tell me.」\e//CP_2
+
+//<0000028c> 【美琴】「タケルは案外強引なタイプなんだね…\p…\p」\e
+<0000028c> 【Mikoto】「You're surprisingly pushy, Takeru...\p...\p」\e
+
+//<0000028d> 【武】「案外じゃなく、\pとても強引だ」\e
+<0000028d> 【Takeru】「It's not surprising at all,\p I'm very pushy.」\e
+
+//<0000028e> 【美琴】「まあいいや。\nボクが入院してたのはね、\pラペリング中に落ちたからなんだ…\p…\pあはは」\e
+<0000028e> 【Mikoto】「Whatever.\nI was hospitalized because I fell during rappelling...\p...\pahaha.」\e//oh woops we did find out ~IX
+
+//<0000028f> …\p…\pつーか、\pむしろ強引なのはおまえのその話の持っていき方だ。\e
+<0000028f> ...\p...\pactually,\p you're the one who brought it up, so doesn't that make you the pushy one?\e
+
+//<00000290> 【千鶴】「笑い事じゃないわよ…\p…\pもう…\p…\p金具閉め忘れて落ちるなんて…\p…\p」\e
+<00000290> 【Chizuru】「That isn't funny...\p...\pI mean it...\p...\pI still can't believe you forgot to fasten the safety rope...\p...\p」\e
+
+//<0000076d> 【美琴】「風邪引いててボーっとしてたんだ。\nロープが外れて真っ逆さま…\p…\pあ～こわかった」\e
+<0000076d> 【Mikoto】「I had a cold that day, I wasn't thinking straight.\nThen the rope came off and I was upside down...\p...\paaah, it was scary.」\e
+
+//<00000292> 【武】「どのぐらいの高さから落ちたんだ？」\e
+<00000292> 【Takeru】「How far did you fall?」\e
+
+//<00000293> 【美琴】「３メートルぐらいだと思うよ」\e
+<00000293> 【Mikoto】「I think it was about three meters.」\e
+
+//<00000294> 【武】「あぶねぇなあ…\p…\p壁の高さは？」\e
+<00000294> 【Takeru】「Daaamn...\p...\pand the climbing wall?」\e
+
+//<00000295> 【美琴】「１５メートルって所かな」\e
+<00000295> 【Mikoto】「Fifteen I guess.」\e
+
+//<00000296> 【武】「この敷地内に、\pラペリング専用の壁なんてあったっけ？」\e
+<00000296> 【Takeru】「Does this base even have a rappelling wall?」\e
+
+//<00000297> 【美琴】「専用の壁っていうか、\p倉庫の南側の外壁が一応そうだけど」\e
+<00000297> 【Mikoto】「It technically doesn't,\p everyone just uses the South side of the warehouse for that.」\e
+
+//<00000298> 【武】「あ、\pそうか…\p…\p」\e
+<00000298> 【Takeru】「Ah,\p I see...\p...\p」\e
+
+//<00000299> 【美琴】「でもまあ、\pロープ固定して壁を降りる訓練だから、\pやろうと思えばどこでも出来るんだけどね」\e
+<00000299> 【Mikoto】「But still,\p since it's just attaching a rope to something and moving down a wall,\p we could do it practically anywhere we wanted.」\e
+
+//<0000029a> 【冥夜】「確か以前、\p校舎の壁を降りようとして、\p大目玉を食らったことがあったな」\e
+<0000029a> 【Meiya】「I do believe you once tried rappelling down the school building,\p and received a severe scolding.」\e
+
+//<0000029b> 【美琴】「あはは…\p…\p若かったあ…\p…\p」\e
+<0000029b> 【Mikoto】「Ahaha...\p...\pI was so young...\p...\p」\e
+
+//<0000029c> つまらんツッコミはしないぞ。\e
+<0000029c> Not gonna bother reacting to that.\e//lit. "I won't do a boring tsukkomi/criticism"
+
+//<0000029d> 【武】「それはそうと、\p怪我の具合はどうだったんだ？」\e
+<0000029d> 【Takeru】「That aside,\p how badly were you hurt?」\e
+
+//<0000029e> 【美琴】「うんとね、\p打ち身とねんざと、\p軽い脳しんとう。\n検査入院も兼ねて、\p１０日も入院してたんだ」\e
+<0000029e> 【Mikoto】「About that...\p...\pI had bruises, and sprains,\p and a mild concussion.\nCounting all the tests,\p I was in there for ten days.」\e//I'll never get used to seeing 'concussion' as a singular - Sheeta
+
+//<0000029f> 【壬姫】「でも、\p酷い怪我じゃなくて、\p本当によかったね」\e
+<0000029f> 【Miki】「But I'm really glad it wasn't that serious.」\e
+
+//<000002a0> 【美琴】「うん、\pまたみんなと会えてよかったよー！」\e
+<000002a0> 【Mikoto】「Yeah,\p I'm so happy I got to see you all again!」\e
+
+//<000002a2> 【冥夜】「鎧衣がいると、\p場が賑やかになるな」\e
+<000002a2> 【Meiya】「Yoroi being here really makes things more lively.」\e//BR_E CP_S
+
+//<00001833> 【千鶴】「賑やか過ぎるぐらいよ」\e
+<00001833> 【Chizuru】「More than they should be.」\e
+
+//<000002a4> 【壬姫】「１０日もいなかったから、\pまたこの雰囲気に慣れるのが大変だね、\pあははは…\p…\p」\e
+<000002a4> 【Miki】「After being gone for ten days,\p it's gonna take a while to get used to having you around again,\p ahahaha...\p...\p」\e
+
+//<000002a5> 【美琴】「え？　そんなことないと思うけどな」\e
+<000002a5> 【Mikoto】「Eh?\p I don't think it'll be that hard.」\e
+
+//<000002a6> 【武】「おまえが決めるこっちゃねぇだろ」\e
+<000002a6> 【Takeru】「How would you know?」\e//not using CP since I like this adaptation way better ~IX
+
+//<000002a7> 【美琴】「で？　何の話？」\e
+<000002a7> 【Mikoto】「So,\p what were we talking about?」\e//has nobody considered the possibility that she has alzeimer? -shikiller
+
+//<000002a8> 【慧】「…\p…\p相変わらず」\e
+<000002a8> 【Kei】「...\p...\pyou haven't changed.」\e//CP_E
+
+//<000002a9> 【千鶴】「みんな、\pちょっと聞いて」\e
+<000002a9> 【Chizuru】「Everyone,\p we have to talk.」\e
+
+//<000002aa> 【冥夜・壬姫・慧・美琴】「？」\e
+<000002aa> 【Meiya & Miki & Kei & Mikoto】「?」\e
+
+//<000002ab> 【千鶴】「とうとう１１月に入ったわ。\n総合戦闘技術評価演習までもう１ヶ月ない」\e
+<000002ab> 【Chizuru】「It's finally November.\nThere's less than a month left until the Comprehensive Combat Skill Evaluation.」\e//PCP
+
+//<000002ac> 【千鶴】「準備は…\p…\p間に合う？」\e
+<000002ac> 【Chizuru】「Will we...\p...\pbe ready in time?」\e//PCP
+
+//<000002ad> 【武】「ああ、\pオレはいつでも行ける」\e
+<000002ad> 【Takeru】「Yeah,\p I'm always ready for it.」\e
+
+//<000002ae> 【美琴】「全然問題ないよ」\e
+<000002ae> 【Mikoto】「No problem at all.」\e//CP
+
+//<000002af> 【冥夜】「うん」\e
+<000002af> 【Meiya】「Yes.」\e
+
+//<000002b0> 【慧】「…\p…\pうん」\e
+<000002b0> 【Kei】「...\p...\pyeah.」\e
+
+//<000002b1> 【壬姫】「私も！」\e
+<000002b1> 【Miki】「Me too!」\e
+
+//<000002b2> 【千鶴】「一応白銀には言っておくわ。\n演習と言っても、\p死人が出ることもあるからね？」\e
+<000002b2> 【Chizuru】「I should tell you now, Shirogane.\nIt may be an Evaluation,\p but people do die in it.」\e
+
+//<00000c8e> 【武】「わかってる。\p覚悟してるよ」\e
+<00000c8e> 【Takeru】「I know.\p I'm prepared for that.」\e
+
+//<000002b4> 【冥夜】「これに合格することは基礎訓練の終了を意味し、\p戦術機の訓練に移行するということだ」\e
+<000002b4> 【Meiya】「Passing it will mark the end of basic training,\p\p\p allowing us to move up to TSF training.」\e//CP
+
+//<000002b5> 【武】「それも知ってる」\e
+<000002b5> 【Takeru】「I know that too.」\e
+
+//<000002b6> 【千鶴】「中身は聞かなくても知ってるってこと？」\e
+<000002b6> 【Chizuru】「So we don't have to tell you what it is either?」\e
+
+//<000002b7> 【武】「ああ、\p南の島でやる演習だろ。\n南の島といえばジャングルはつきものだな」\e
+<000002b7> 【Takeru】「Yeah,\p they do it on some random Southern island.\nAnd that means there'll be a jungle on it.」\e
+
+//<000002b8> 【壬姫】「うん！」\e
+<000002b8> 【Miki】「Yeah!」\e
+
+//<000002b9> 【武】「年に２回夏と冬に行われる…\p…\p今回はその冬のほう…\p…\p」\e
+<000002b9> 【Takeru】「It happens twice a year, summer and winter...\p...\pand this is the winter one...\p...\p」\e
+
+//<000002ba> 【美琴】「うん、\pボク達は夏に１度落ちてるからね、\pもう後がないんだ…\p…\p」\e
+<000002ba> 【Mikoto】「Yeah,\p we failed the summer one already,\p so this is our last chance...\p...\p」\e
+
+//<000002bb> 【慧】「涼宮涼宮…\p…\p」\e
+<000002bb> 【Kei】「Suzumiya,\p Suzumiya...\p...\p」\e//CP_S
+
+//<000002bc> 【千鶴】「彩峰…\p…\p余計なこと言わないで」\e
+<000002bc> 【Chizuru】「Ayamine...\p...\pyou don't need to bring that up.」\e//CP_E
+
+//<000002bd> 【武】「…\p…\p涼宮…\p…\p」\e
+<000002bd> 【Takeru】「...\p...\pSuzumiya...\p...\p」\e
+
+//<000002be> 【美琴】「前回の総戦技演習で戦術機操縦課程に上がった隊の分隊長さん」\e
+<000002be> 【Mikoto】「She's the other squad leader.\p Her team passed the Combat Evaluation last time,\p and they're doing TSF pilot training now.」\e//CP_S
+
+//<000002bf> 【壬姫】「２０７隊はそれまでは２チームあったんだよ」\e
+<000002bf> 【Miki】「Squad 207 was actually split into two teams.」\e//CP_E
+
+//<000002c0> 【武】「涼宮茜…\p…\pだよな？」\e
+<000002c0> 【Takeru】「Suzumiya Akane...\p...\pright?」\e
+
+//<000002c1> 【千鶴】「！？　な、\p何で知ってるの？」\e
+<000002c1> 【Chizuru】「Ho-\p\phow do you know her name!?」\e//CP
+
+//<000002c2> 【武】「ちょっとな…\p…\pそんな奴がいたって小耳に挟んだだけだよ」\e
+<000002c2> 【Takeru】「Well...\p...\pI just happened to hear someone mention that name before.」\e//PCP
+
+//<000002c3> …\p…\p懐かしい名前だ。\nそんなやつもいたっけ。\e
+<000002c3> ...\p...\pI haven't heard it in ages though.\nI'd totally forgotten about her.\e
+
+//<00001834> 【千鶴】「とにかくっ！　私たちは失敗するわけに行かないの！　それ、\p肝に銘じておいて」\e
+<00001834> 【Chizuru】「Anyway!\p\p\p We cannot allow ourselves to fail!\p\p\p\p Don't you dare forget that.」\e//CP
+
+//<000002c5> 【美琴】「大丈夫だよ！　今回はタケルがいるじゃない？」\e
+<000002c5> 【Mikoto】「It'll be fine! We have Takeru this time.」\e
+
+//<000002c6> 【冥夜】「そうだな、\p油断は禁物だが、\p不安材料が確実に減っているのもまた確かだ」\e
+<000002c6> 【Meiya】「That is true.\p We must not slack off,\p but there is certainly less to be concerned about now.」\e
+
+//<000002c7> 【千鶴】「…\p…\p…\p…\p」\e
+<000002c7> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<000002c8> 【武】「委員長、\p浮かない顔してるな？」\e
+<000002c8> 【Takeru】「Class Rep,\p why the long face?」\e
+
+//<000002c9> 【千鶴】「別に…\p…\p」\e
+<000002c9> 【Chizuru】「It's nothing...\p...\p」\e
+
+//<000002ca> …\p…\p…\p…\p。\e
+<000002ca> ...\p...\p...\p...\p\e
+
+//<00001835> 確か前はここでうかつにも、\p前の試験に落ちた理由を聞いちまったんだ。\e
+<00001835> I think this was when I asked her why they failed the exam last time.\e
+
+//<00002b6e> そんで「命令」ってもんが、\pいかに『この世界』の人間にとって…\p…\pいや、\p軍人にとって絶対的なものであるかを言われて…\p…\p反発したっけな。\e
+<00002b6e> Then we started arguing...\p...\pand I got a lecture on what 'orders' are to people in this world...\p...\pno,\p to any soldier in any world.\e
+
+//<000002cd> オレも青かったよなー。\e
+<000002cd> I was such a rookie back then.\e
+
+//<000002ce> 命令は絶対だ。まずこれを大原則にしないと、\pここでは何もできない。\e
+<000002ce> Orders are absolute.\bIf you can't establish that basic rule,\p no army can do anything.\e
+
+//<000002cf> オレ達は個人で行動しているわけじゃない。\e
+<000002cf> We're not acting alone out there.\e
+
+//<00001837> 大勢を統率するためには、\pどうしても組織が必要だし、\pそうなるとしっかりした命令系統も必要になる。\e
+<00001837> In order to lead that many people,\p there has to be some kind of organization,\p and inevitably one that relies on a chain of command.\e
+
+//<000028c8> 大きな組織をひとつの目標に向かって動かすためには、\p命令を確実に、\p効率的に遂行しなければならない。\e
+<000028c8> In order to get a large organization moving toward a single goal,\p orders have to be fulfilled with efficiency and certainty.\e
+
+//<00001839> そして、\pその時、\p異論や反論は押さえ込む必要があるんだ…\p…\p。\e
+<00001839> And there's also a need to quell any disobedience...\p...\p\e
+
+//<000002d5> …\p…\pそういうことだよな。\e
+<000002d5> ...\p...\pthat's just how it is.\e
+
+//<000002d6> もちろんオレだって、\pそれについて是非を問いたいという気持ちはゼロじゃない。\e
+<000002d6> Admittedly,\p there are times when I'd really like to ask my superiors what they were thinking.\e//lit: "of course even for me the feeling of wanting to question it is not zero" ~IX
+
+//<0000183a> けど、\pそんなことを考えるぐらいなら、\p権限を持つ地位に登るための努力をした方がいい。\e
+<0000183a> But since I feel that way,\p it'd be more productive to get some authority of my own.\e
+//more productive than thinking about how much he wants to ask them what they're thinking - Makoto //that's what it means as is ~IX
+
+//<0000183b> 命令の是非を問うことは、\p軍隊という組織では許されない行為だから…\p…\p。\e
+<0000183b> Since questioning orders is unforgivable in a military organization...\p...\p\e
+
+//<00002b70> 少なくとも『この世界』では…\p…\p。\e
+<00002b70> At least, it is in this world...\p...\p\e
+
+//<000002e1> ただ、\p任官してから知った事だけど、\p軍も前線では、\p戦域情報の共有によって指令系統は部隊ごとに細分化されていて、\p現場指揮官の判断を重視する逆ピラミッド型の組織構造だったのは意外だったっけ。\e
+<000002e1> I only found this out after getting commissioned,\p but on the front lines the chain of command is split up between all of the individual units which share their information.\p\bSurprisingly, it turns into an upside down pyramid where the on-site commander has greater authority.\e
+
+//<00002b15> まあ、\p組織力や連携では人類よりＢＥＴＡの方が遥かに優秀らしいから、\p同じピラミッド型のシステムでは対抗しようもないからな。\e
+<00002b15> Well,\p the BETA seem to be far better organized and unified than humanity,\p so we wouldn't stand much of a chance otherwise.\e
+
+//<000002e3> だからといって、\p命令に対する概念が変る訳じゃない。\e
+<000002e3> Still,\p that doesn't change the fact that we need orders.\e
+
+//<00002bb2> どんな組織であれ、\p命令を正確に実行することが一番重要なことに変わりはない。\e
+<00002bb2> No matter how it's organized,\p the most important part is that orders are sure to be executed.\e
+
+//<0000183e> だから訓練生のうちは、\pつべこべ言わずに理不尽とも言える命令に従うことに慣れておく必要があるんだ。\e
+<0000183e> That's why, as cadets, we have to get used to following seemingly absurd or unfair orders without complaint.\e
+
+//<000002e5> 【冥夜】「…\p…\pどうした、\pタケル？」\e
+<000002e5> 【Meiya】「...\p...\pwhat is it,\p Takeru?」\e
+
+//<000002e6> 【武】「ん？　いや、\p何でもない」\e
+<000002e6> 【Takeru】「Hm? No,\p it's nothing.」\e
+
+//<000002e7> 【千鶴】「当てて見せましょうか、\p考えていたこと」\e
+<000002e7> 【Chizuru】「Why don't I try to guess what you're thinking.」\e
+
+//<000002e8> 【武】「…\p…\pえ？」\e
+<000002e8> 【Takeru】「...\p...\peh?」\e
+
+//<0000183f> 【千鶴】「どうして前回、\p私たちが合格しなかったか…\p…\pってことじゃないの？」\e
+<0000183f> 【Chizuru】「Why didn't we pass last time? ...\p...\pam I close?」\e
+
+//<00000d00> …\p…\pおいおい。\e
+<00000d00> ...\p...\phey now.\e
+
+//<000002ea> 【武】「いや、\pそんなことは…\p…\p」\e
+<000002ea> 【Takeru】「No,\p that's not...\p...\p」\e
+
+//<00002b9c> 【千鶴】「仲間としては気にはならない？」\e
+<00002b9c> 【Chizuru】「You don't want to know?」\e
+
+//<000002ec> 【武】「いや、\p気にならない訳じゃないけど…\p…\p」\e
+<000002ec> 【Takeru】「Well no,\p of course I'm curious...\p...\p」\e
+
+//<000002ed> まさか委員長からその話を振ってくるとは…\p…\p。\nこれじゃ前と展開が同じじゃないか…\p…\p。\e
+<000002ed> I didn't expect Class Rep to bring it up herself...\p...\p\nNow that argument's gonna happen all over again...\p...\p\e
+
+//<00000ceb> 【千鶴】「…\p…\pチームをまとめられない無能な分隊長と、\p指示に従わない部下、\p見切りをつけて独断した部下…\p…\p主にこれが理由」\e
+<00000ceb> 【Chizuru】「...\p...\pan incompetent squad leader who couldn't control her team, and subordinates who wouldn't obey orders...\p...\pis about right.」\e//CP
+
+//<000002ef> 【壬姫】「さ、\p榊さん…\p…\p」\e
+<000002ef> 【Miki】「S-\pSakaki-san...\p...\p」\e
+
+//<000002f0> 【美琴】「ど、\pどうしてそんなことわざわざ言い出すの？」\e
+<000002f0> 【Mikoto】「Wh-\pwhy're you bringing this up again?」\e
+
+//<000002f1> 【慧】「…\p…\p違うね。\n最後はアンタの指示に従って、\p地雷原の餌食になったんだ…\p…\p」\e
+<000002f1> 【Kei】「No it isn't.\p\p\p\p The land mines got us because we obeyed your orders...\p...\p」\e//CP
+
+//<000002f2> 【壬姫】「彩峰さんまで！？」\e
+<000002f2> 【Miki】「Ayamine-san too!?」\e
+
+//<000002f3> 【冥夜】「…\p…\p鎧衣は迂回するべきだと言っていた。\n鎧衣の勘が尊重されるべきことは事前に了解済みだと思っていたのだがな…\p…\p」\e
+<000002f3> 【Meiya】「...\p...\pYoroi advised us to take a detour.\nAt the time we knew how important it was to value Yoroi's intuition...\p...\p」\e
+
+//<000002f4> 【美琴】「冥夜さんっ！」\e
+<000002f4> 【Mikoto】「Meiya-san!」\e
+
+//<000002f5> 【千鶴】「…\p…\p…\p…\p」\e
+<000002f5> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<000002f6> 【慧】「…\p…\p…\p…\p」\e
+<000002f6> 【Kei】「...\p...\p...\p...\p」\e
+
+//<000002f7> 【冥夜】「…\p…\p…\p…\p」\e
+<000002f7> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00000cec> 【壬姫】「あわわ…\p…\pどうしよう？」\e
+<00000cec> 【Miki】「Awawa...\p...\pwhat do we do?」\e
+
+//<00000cfb> 【美琴】「どうしようって言われてもー…\p…\p」\e
+<00000cfb> 【Mikoto】「Don't ask me, I don't know...\p...\p」\e
+
+//<00001840> …\p…\pったく、\p仕方ねえなぁ。\n結局その話になるのかよ。\e
+<00001840> ...\p...\pdamn it,\p is there nothing I can do to keep this from happening again?\e
+
+//<00001841> ここはひとつ、\pオレが極端に厳しい事を言ってまとめるしかないな…\p…\p。\e
+<00001841> I might have to say something extremely harsh if I want them to shut up...\p...\p\e
+
+//<00001842> 【武】「あのさ…\p…\p」\e
+<00001842> 【Takeru】「Hey...\p...\p」\e
+
+//<000002fa> 【武】「どうしてわざわざそんなことを言い出したのか…\p…\pオレにはいまいち理解できないけどさ、\pひとつ言っていいか？」\e
+<000002fa> 【Takeru】「I know I don't understand why you two felt the need to bring this up...\p...\pbut can I say something?」\e
+
+//<00000d99> 【千鶴】「なに？」\e
+<00000d99> 【Chizuru】「What?」\e
+
+//<00000d9a> 【武】「率直に言うぞ？」\e
+<00000d9a> 【Takeru】「I'm gonna be blunt, okay?」\e
+
+//<00000d9b> 【慧】「…\p…\pいいよ」\e
+<00000d9b> 【Kei】「...\p...\pokay.」\e
+
+//<00000d9c> 【武】「みんな甘すぎたんだよ」\e
+<00000d9c> 【Takeru】「You're all playing the victim.」\e//WHY DID I NEVER THINK OF THIS ADAPTATION BEFORE also lit. "you're all too naive" ~IX
+
+//<00000d9d> 【冥夜】「…\p…\p」\e
+<00000d9d> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00000300> 【慧】「…\p…\p…\p…\p」\e
+<00000300> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00001843> 【武】「大勢で何かをしようとするとき、\p組織は絶対に必要だ」\e
+<00001843> 【Takeru】「When you want to do something as a group,\p organization is vital.」\e
+
+//<00000303> 【壬姫】「…\p…\p…\p…\p」\e
+<00000303> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00001844> 【武】「そして、\p組織において命令は絶対だ」\e
+<00001844> 【Takeru】「And that organization needs an absolute chain of command.」\e
+
+//<00000305> 【美琴】「…\p…\p」\e
+<00000305> 【Mikoto】「...\p...\p...\p...\p」\e
+
+//<00000306> 【武】「訓練兵のうちは、\pお互いが未熟だし組織も小さいから、\pその辺がなあなあになってしまうのはわかる…\p…\pでも、\p本物はそうじゃない」\e
+<00000306> 【Takeru】「Since we're cadets,\p we're all inexperienced and the 'organization' is pretty small,\p so I can understand how this happens...\p...\pbut that's not what the real thing's like.」\e
+
+//<00000308> 【千鶴】「…\p…\p…\p…\p」\e
+<00000308> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<0000030a> 【武】「どんな理由があってもリーダーはリーダーだ、\p逆らう奴は必要ない。\nそれが悔しかったら自分がリーダーになればいいんだ。\n皆に認められてな」\e
+<0000030a> 【Takeru】「However they got in command, the leader is the leader,\p and insubordination is intolerable.\nIf you don't like it, become the leader yourself.\nWith everyone's approval, of course.」\e
+
+//<0000030c> 【冥夜】「…\p…\p…\p…\p」\e
+<0000030c> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<0000030e> 【武】「それが組織の中で生きるってことだ」\e
+<0000030e> 【Takeru】「That's how you live within an organization.」\e
+
+//<00000310> 【慧】「…\p…\p…\p…\p」\e
+<00000310> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00000312> 【武】「とは言えリーダーは部下の命を預かってることを忘れちゃいかん。\n命令は絶対だと言ってあぐらかいてるヤツもいない訳じゃないしな」\e
+<00000312> 【Takeru】「But still, the leader has to value the lives of their subordinates.\p Orders are absolute, but there are some guys who really shouldn't be giving them.」\e
+
+//<00000313> 【千鶴】「…\p…\p…\p…\p」\e
+<00000313> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00002b67> 【美琴】「正論だとは思うけど…\p…\pそれはさすがに極端じゃないかな？」\e
+<00002b67> 【Mikoto】「I think you're right, but...\p...\pisn't that kinda extreme?」\e
+
+//<0000031b> 【武】「まあ…\p…\pそうだな。\nでも、\pそういうことを言ってるつもりだよ」\e
+<0000031b> 【Takeru】「Well...\p...\pit is.\nBut that's exactly what I was trying to say.」\e
+
+//<0000031c> 【美琴】「そんな…\p…\p」\e
+<0000031c> 【Mikoto】「But...\p...\p」\e
+
+//<0000031d> 【武】「理解はできるが、\p納得できないって感じか？　それはオレの言い方の問題か？」\e
+<0000031d> 【Takeru】「You can understand it,\p but can't accept it, right?\bIs that because of how I worded it?」\e
+
+//<0000031f> 【美琴】「…\p…\p…\p…\p」\e
+<0000031f> 【Mikoto】「...\p...\p...\p...\p」\e
+
+//<00001847> 【武】「例えばさ、\pおまえが基地の全員に命令を出したとして…\p…\pどれだけの人間がそれに従うと思う？」\e
+<00001847> 【Takeru】「For example,\p if you gave an order to everyone on the base...\p...\phow many of them do you think would obey it?」\e
+
+//<00000325> 【美琴】「…\p…\pそれは」\e
+<00000325> 【Mikoto】「...\p...\pwell...\p...\p」\e
+
+//<00000328> 【武】「基地司令が今すぐ総員に死ねと言って、\pおまえが生きろと言ったら、\pどっちに従う人間が多いと思う？」\e
+<00000328> 【Takeru】「If the CO for our whole base told everyone to die,\p and you told them to live,\p how many do you think would obey you?」\e
+
+//<0000032b> 【美琴】「…\p…\p…\p…\p」\e
+<0000032b> 【Mikoto】「...\p...\p...\p...\p」\e
+
+//<00001848> 【武】「もちろん全員が死ぬとはオレも思わないよ。\nでもこんな簡単な例え話が理解できないんなら、\pそれが甘いって証拠だ。\n命令に正しいも間違いもないんだよ」\e
+<00001848> 【Takeru】「Of course I don't think every single one of them will die.\p But if you can't understand a simple example like this,\p that proves you're being naive.\p There's no right or wrong when it comes to orders.」\e
+
+//<00000331> 【壬姫】「…\p…\p…\p…\p」\e
+<00000331> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00001849> 【武】「けど…\p…\p考えてみろよ。\nそんな理不尽なことを言う人間が、\p軍の司令官になれると思うのか？　権限を持てると思うか？」\e
+<00001849> 【Takeru】「But...\p...\pthink about it.\p Do you think someone who said crazy stuff like that could ever become a military officer?\bDo you think they'd be given authority?」\e
+
+//<00000d9e> 【壬姫】「…\p…\p…\p…\p」\e
+<00000d9e> 【Miki】「...\p...\p...\p...\p」\e
+
+//<0000184a> 【武】「命令を出す人間には、\pその権利を持つだけの素質と責任があるんだ。\nそれが大前提だろ？」\e
+<0000184a> 【Takeru】「Anyone authorized to give orders will have the skill and responsibility to do it right.\nIsn't that a safe assumption?」\e//lit. "people who give orders have enough skill and responsibility to get the authority to do so"
+
+//<00000d9f> 【慧】「そんなことない…\p…\p」\e
+<00000d9f> 【Kei】「Not at all...\p...\p」\e
+
+//<00000343> 【武】「ん？」\e
+<00000343> 【Takeru】「Hm?」\e
+
+//<00000da0> 【慧】「権力を持っていても素質のない人間がいる…\p…\p」\e
+<00000da0> 【Kei】「There are powerful people with no skill...\p...\p」\e
+
+//<00002b9e> 【武】「…\p…\p一部にそういう人間がいる可能性は、\p否定しない」\e
+<00002b9e> 【Takeru】「...\p...\pI can't deny the possibility that they exist.」\e
+
+//<00000da2> 【慧】「…\p…\p…\p…\p」\e
+<00000da2> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00002bb4> 【武】「そして、\p何が一番大切なのか…\p…\p命令を出す側と現場とでは、\p往々にしてそれが噛み合わないのも、\p分かっているつもりだ」\e
+<00002bb4> 【Takeru】「And I understand that...\p...\pthe people giving orders and those in the field may not see eye to eye.」\e
+
+//<000028b2> 【武】「その２つの間では、\p最終目的は同じでも、\pそれを成し遂げるための手段に対する見方が大きく違う…\p…\pそれも分かっている」\e
+<000028b2> 【Takeru】「Even if they both have the same overall objective,\p they'll have very different opinions on how to achieve it...\p...\pI get that.」\e
+
+//<0000034e> 【慧】「…\p…\p…\p…\p」\e
+<0000034e> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00002aed> 【武】「でも、\p命令を出す側にとって、\p常に目的達成が第１目標で、\p部下の命は二の次になるのは…\p…\p仕方のないことだろ？」\e
+<00002aed> 【Takeru】「But for those giving orders,\p the objective will always be the top priority,\p and the lives of their subordinates have to come second...\p...\pthat's inevitable.」\e//*almost* did "can't be helped" here ~IX
+
+//<00000350> 【慧】「！？」\e
+<00000350> 【Kei】「!?」\e
+
+//<00000352> 【武】「ＢＥＴＡを殲滅しろ、\pそして生き残れ…\p…\p言うのは簡単だ。\nじゃあ旗色が悪くなったとき…\p…\pどうする？」\e
+<00000352> 【Takeru】「Wipe out the BETA,\p and survive afterward...\p...\pit's easy to say.\nBut when things go to hell...\p...\pwhat can you do?」\e
+
+//<00000354> 【千鶴】「…\p…\p…\p…\p」\e
+<00000354> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00001851> 【武】「ＢＥＴＡの殲滅は、\p人類の生存のための至上命題だ。\nそして、\pそのために何を優先するのかを選ぶ、\pそれが命令を出す人間の役割と責任だ」\e
+<00001851> 【Takeru】「Annihilating the BETA is the ultimate goal if we want to survive as a species.\p And the people who give us orders are responsible for deciding what we need to do to achieve it.」\e
+
+//<00000356> 【慧】「無駄死にすることもある」\e
+<00000356> 【Kei】「They might get us killed for no reason.」\e
+
+//<00001852> 【武】「確かに、\p無能な指揮官の采配ミスで無駄死にする可能性もある。\nだけど…\p…\p」\e
+<00001852> 【Takeru】「That's true,\p there may be an incompetent commander who gives a bad order and gets people killed.\p But still...\p...\p」\e
+
+//<00000da4> 【慧】「…\p…\p…\p…\p」\e
+<00000da4> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00001853> 【武】「逆に適切な指揮の下に戦ったけど、\p命令の不徹底のせいでＢＥＴＡに破れてしまう…\p…\pそう言う結果も有りうるだろ？」\e
+<00001853> 【Takeru】「What if you were given a good order,\p but chose not to obey it and got overrun by the BETA...\p...\pisn't that just as likely?」\e
+//There are two subtle meanings here. That right there, or "Isn't that equally possible?" Not sure which you were going for.-Spin
+
+//<0000035b> 【慧】「…\p…\p…\p…\p」\e
+<0000035b> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00001854> 【武】「ましてや、\p何をもって無駄死にと言うか主観的なものだ。\n今の例えも、\p人によっては無駄死にと言うだろうな」\e
+<00001854> 【Takeru】「Not to mention,\p it's subjective whether anyone's death was in vain.\nIn fact, the disobedience I just described could get a lot of people killed too.」\e
+
+//<00001855> 【千鶴】「命令云々については白銀の言うとおりよ」\e
+<00001855> 【Chizuru】「Shirogane's right about following orders.」\e
+
+//<00000363> …\p…\pさすが、\p委員長。\e
+<00000363> ...\p...\pno surprise there.\e
+
+//<00000da6> 【千鶴】「でも、\pあなたは…\p…\pまるで実戦を経験したことがあるような言い方をするのね…\p…\p」\e
+<00000da6> 【Chizuru】「But,\p you say it as if...\p...\pyou've experienced real combat before...\p...\p」\e
+
+//<00000da7> 一部、\p曖昧になっちまっているオレの記憶の中で、\p鮮明によみがえってくるあの気持ち…\p…\p。\e
+<00000da7> I can remember that feeling very clearly,\p even though most of my memory is hazy...\p...\p\e
+
+//<0000036a> 人類の地球放棄…\p…\p\e
+<0000036a> Humanity abandoning Earth...\p...\p\e
+
+//<0000036b> 残された人達…\p…\p\e
+<0000036b> Those left behind...\p...\p\e
+
+//<00000da8> 【武】「そんなことはないよ。\nただ、\p自分の中で、\p今のことを強く感じた経験がある…\p…\pとは言えるかな」\e
+<00000da8> 【Takeru】「I haven't had any.\nBut I have experienced something which made this issue personal...\p...\pand I'll leave it at that.」\e
+
+//<0000036e> もう、\pあんな思いは…\p…\pごめんだ。\e
+<0000036e> I never want...\p...\pto feel like that again.\e
+
+//<00000373> 絶対に…\p…\p！！\e
+<00000373> Never again...\p...\p!!\e
+
+//<00001856> 【冥夜】「そなたの主張はいささか不明瞭ではあるが…\p…\p大筋理解した」\e
+<00001856> 【Meiya】「That is a rather unclear statement, but...\p...\pI see what you mean.」\e
+
+//<00001857> 【武】「そうか」\e
+<00001857> 【Takeru】「Okay.」\e
+
+//<00001858> オレ自身言いたいことを上手く伝えられたという自信はない。\nそもそも挑発が目的だし…\p…\p今はそれでいい。\e
+<00001858> I have no real confidence that I got across what I wanted to say.\p Interrupting those two was the goal anyway...\p...\pso this is good enough.\e
+
+//<00001859> それに…\p…\pあの結末を見ていないみんなに、\p同じ気持ちになれという方が無理だ。\e
+<00001859> Besides...\p...\pnone of these guys have seen what happened,\p\bso I can't blame them for feeling differently.\e
+
+//<00000375> 【武】「ストレートすぎて、\pきっと頭にきたろ？　それについては…\p…\p謝るよ」\e
+<00000375> 【Takeru】「I was being too forward.\bThat must've made you all mad...\p...\psorry about that.」\e//I failed here ~IX
+
+//<00000cee> 【冥夜】「その必要はない…\p…\pただ」\e
+<00000cee> 【Meiya】「You need not apologize...\p...\pbut...\p...\p」\e
+
+//<00000daa> 【武】「…\p…\pただ？」\e
+<00000daa> 【Takeru】「...\p...\pbut?」\e
+
+//<0000185a> 【冥夜】「その主張が、\pいついかなる時にも正しいとは限らないことを心に留めておいて欲しい」\e
+<0000185a> 【Meiya】「I want you to be aware that whatever you experienced does not guarantee that you are correct.」\e
+
+//<00000dab> 【武】「どういうことだ？」\e
+<00000dab> 【Takeru】「What do you mean?」\e
+
+//<00000cf0> 【冥夜】「そなたも言ったな？　権限を持っていても素質のない人間はいると」\e
+<00000cf0> 【Meiya】「As you stated earlier, there are powerful people with no skill.」\e
+
+//<00000dad> 【武】「可能性の話でな」\e
+<00000dad> 【Takeru】「I only said it's possible.」\e
+
+//<00000cf1> 【冥夜】「人間の行いに絶対はない。\nこれについては絶対と断言できよう」\e
+<00000cf1> 【Meiya】「There are no absolutes in human behavior.\nThat is the one thing we can be absolutely sure of.」\e
+
+//<00000dae> 【武】「なるほど」\e
+<00000dae> 【Takeru】「That makes sense.」\e
+
+//<00000cf2> 【冥夜】「そなたは、\pそれを認めていながら、\p結局は『命令ならば従う』という単純論に自分を収めていると、\p私は感じた」\e
+<00000cf2> 【Meiya】「It felt to me as if,\p while acknowledging that fact,\p you still upheld the simplistic view of obeying any order no matter what it was.」\e
+
+//<00000389> 【武】「…\p…\pそうか」\e
+<00000389> 【Takeru】「...\p...\pI see.」\e
+
+//<00000cf3> 【冥夜】「命令に従うのは当然だ。\nしかしいついかなる場合もそこで思考を止めてよいわけではない」\e
+<00000cf3> 【Meiya】「Of course I will obey my orders.\nBut that does not mean there are no situations in which I would pause to reconsider.」\e
+
+//<00000cf4> 【冥夜】「そなたの言う、\p『自分がリーダーになる』という事を実践するには、\p自分がその先を考える必要がある」\e
+<00000cf4> 【Meiya】「In order to become the leader yourself,\p as you said,\p you need to be able to evaluate the consequences of different orders.」\e
+
+//<00000cf5> 【冥夜】「そなた程の者が、\pこの矛盾を看過しているとは思えないが…\p…\p」\e
+<00000cf5> 【Meiya】「I doubt someone like yourself would overlook that contradiction...\p...\p」\e
+
+//<0000038f> 【武】「…\p…\p」\e
+<0000038f> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000cf6> 【冥夜】「…\p…\p私が言いたいのはそれだけだ」\e
+<00000cf6> 【Meiya】「...\p...\pthat is all I wish to say.」\e
+
+//<00000391> さすが冥夜…\p…\p鋭いね。\e
+<00000391> Well done, Meiya...\p...\pyou're dead on.\e
+
+//<00000392> っていうか、\pミエミエか…\p…\p。\e
+<00000392> Though I guess it was kinda obvious...\p...\p\e
+
+//<0000185b> 前の時、\pみんながオレに厳しい覚悟を迫ったのは、\p大甘だったオレに、\pその甘さを自覚させるためだったんだろう。\e
+<0000185b> Last time,\p when everyone ganged up on me about resolve,\p\bthey helped me realize just how childish I was being.\e
+
+//<0000185c> 今のオレのドライ過ぎる言葉に、\p反発したみんなを見て、\pそれがよくわかった。\e
+<0000185c> After seeing them all react to my dry argument this time,\p I can really tell.\e
+
+//<00000395> こいつらは結構バランスとれてたんだな…\p…\p。\e
+<00000395> These guys are good at balancing things...\p...\p\e//personally, I think most sane humans would also balance out well if you averaged all the universes (lol) ~IX
+
+//<0000185d> 【武】「…\p…\p色々言っておいて何だけど」\e
+<0000185d> 【Takeru】「...\p...\pI know this'll sound weird after what I just said, but...\p...\p」\e
+
+//<00000397> 【美琴】「何？」\e
+<00000397> 【Mikoto】「What?」\e
+
+//<0000185e> 【武】「確かにオレ達はまだ、\p人間のつながりとか、\p仲間意識みたいな感覚でまとまっていけると思う」\e
+<0000185e> 【Takeru】「I agree that, for now,\p we could do fine simply by being friends and respecting each other.」\e
+
+//<0000039c> 【美琴】「…\p…\pうん」\e
+<0000039c> 【Mikoto】「...\p...\pyeah.」\e
+
+//<0000185f> 【武】「だから今はそれでもいいんだ。\nただ…\p…\p」\e
+<0000185f> 【Takeru】「That's plenty for the time being.\p But...\p...\p」\e
+
+//<0000039e> 【壬姫】「それで済まなくなった時のお話だよね？」\e
+<0000039e> 【Miki】「What you were saying earlier was for when that isn't enough, right?」\e
+
+//<0000039f> 【美琴】「あと、\pボク達が卒業してバラバラになって、\pどこかに配属されたときの話…\p…\p」\e
+<0000039f> 【Mikoto】「Like after we all graduate,\p then get broken up and assigned to different units...\p...\p」\e
+
+//<000003a0> 【武】「…\p…\pああ」\e
+<000003a0> 【Takeru】「...\p...\pyeah.」\e
+
+//<000003a1> 【千鶴】「…\p…\p私、\pそろそろ行くわね…\p…\p」\e
+<000003a1> 【Chizuru】「...\p...\pI'll be going now...\p...\p」\e
+
+//<000003a3> 【武】「え…\p…\pあ…\p…\p」\e
+<000003a3> 【Takeru】「Eh...\p...\pah...\p...\p」\e
+
+//<000003a5> 【千鶴】「大丈夫よ。\n別に今の話で気分を害したとか、\pそういうことじゃないから…\p…\pそれじゃまたね」\e
+<000003a5> 【Chizuru】「Don't worry.\p I'm not going because this conversation made me feel bad or anything...\p...\panyway, bye for now.」\e
+
+//<000003a6> 【武】「なあ、\pひとつだけいいか？」\e
+<000003a6> 【Takeru】「Hey,\p can I ask you something?」\e
+
+//<000003a7> 【千鶴】「なに？」\e
+<000003a7> 【Chizuru】「What?」\e
+
+//<00000cf7> 【武】「どうして自分から失敗の話なんかしだしたんだ？」\e
+<00000cf7> 【Takeru】「Why'd you bring up the subject in the first place?」\e
+
+//<00000cf8> 【千鶴】「それをどう評価するか…\p…\pあなたの話が聞きたかったのよ」\e
+<00000cf8> 【Chizuru】「I wanted to find out...\p...\pwhat you'd think of it.」\e
+
+//<00000daf> 【武】「なんだ…\p…\pじゃあオレは、\p見事にそれに乗せられたわけか」\e
+<00000daf> 【Takeru】「That was it?\b...\p...\pI guess that means I played right into it.」\e
+
+//<00000cf9> 【千鶴】「どうかしらね」\e
+<00000cf9> 【Chizuru】「I'm not so sure.」\e
+
+//<00002aef> 【武】「委員長の方が１枚上だったってことだろ？」\e
+<00002aef> 【Takeru】「But doesn't it mean you were one step ahead of me?」\e//gotta assume this is what one step higher means ~IX
+
+//<00000cfa> 【千鶴】「ふふ…\p…\pだといいけどね…\p…\pそれじゃ」\e
+<00000cfa> 【Chizuru】「Huhu...\p...\pI hope so...\p...\pbye now.」\e
+
+//<00000db3> 【美琴】「あ、\pうん…\p…\pじゃあ、\pボク達も行こうか？」\e
+<00000db3> 【Mikoto】「Ah,\p okay...\p...\pshould we be going too?」\e
+
+//<000003b9> 【冥夜】「そうだな…\p…\p」\e
+<000003b9> 【Meiya】「Probably...\p...\p」\e
+
+//<000003bb> 【武】「ああ」\e
+<000003bb> 【Takeru】「Yeah.」\e
+
+//<000003bc> 【武】「失礼します」\e
+<000003bc> 【Takeru】「Excuse me.」\e
+
+//<000003bd> 【夕呼】「あら、\pちょうど良かったわ、\p今日あたり呼ぼうと思っていたの」\e
+<000003bd> 【Yuuko】「Oh?\p Perfect timing,\p I was thinking of calling you here today.」\e
+
+//<00000db4> 【武】「オレも何となくそんな感じがしてやってきました」\e
+<00000db4> 【Takeru】「I came here because I had a feeling you would.」\e
+
+//<00000db5> 最近は先生も忙しいっつって取り合ってくれなかったから、\p来るのを遠慮してたんだよな…\p…\p。\e
+<00000db5> Sensei's been busy lately,\p so I've been trying not to disturb her...\p...\p\e
+
+//<00002af1> 【夕呼】「社のところには顔出してるんでしょ？」\e
+<00002af1> 【Yuuko】「You've been visiting Yashiro, right?」\e//same English tense thrice in a row, ugh ~IX
+
+//<00000db7> 【武】「そうですね、\p割と」\e
+<00000db7> 【Takeru】「Yes,\p quite a bit.」\e
+
+//<000003c3> 【夕呼】「どう？　何か記憶と大きく変わってることはあった？」\e
+<000003c3> 【Yuuko】「How is it? Anything different from what you remember?」\e
+
+//<00000db8> 【武】「霞についてですか？」\e
+<00000db8> 【Takeru】「You mean about Kasumi?」\e
+
+//<000003c6> 【夕呼】「全般的に」\e
+<000003c6> 【Yuuko】「In general.」\e
+
+//<00000db9> 【武】「記憶にあることが起きてるんで、\p大きく変わってはいないんでしょう…\p…\p」\e
+<00000db9> 【Takeru】「Everything I remember is happening,\bso probably no big changes yet...\p...\p」\e
+
+//<000003d0> 【夕呼】「浮かない顔ね？」\e
+<000003d0> 【Yuuko】「You look disappointed.」\e
+
+//<00000dbb> 【武】「それはそうですよ…\p…\p多少やり方を変えたぐらいじゃ、\p全然影響がないって証拠じゃないですか」\e
+<00000dbb> 【Takeru】「Well, yeah...\p...\pdoesn't that prove that changing how I do things isn't having any effect at all?」\e
+
+//<000003d2> 【夕呼】「そういうことになるわね」\e
+<000003d2> 【Yuuko】「That would be correct.」\e
+
+//<00000dbc> 【武】「…\p…\p…\p…\pどうしたらいいでしょう？」\e
+<00000dbc> 【Takeru】「...\p...\pso what should I do?」\e
+
+//<000003d5> 【夕呼】「今のままじゃどうにもならないわね」\e
+<000003d5> 【Yuuko】「Nothing's gonna improve like this.」\e
+
+//<000003d6> 【武】「何か、\p大きなことしないとダメですよね、\pやっぱり…\p…\p」\e
+<000003d6> 【Takeru】「So I do have to do something big after all...\p...\p」\e
+
+//<000003d7> 【夕呼】「大きなこと？」\e
+<000003d7> 【Yuuko】「Something big?」\e
+
+//<000003d8> 【武】「例えば、\pいきなり戦術機を動かしちゃうとか…\p…\p」\e
+<000003d8> 【Takeru】「Like hopping in a TSF right now and...\p...\p」\e
+
+//<000003da> 【夕呼】「それで何になるの？」\e
+<000003da> 【Yuuko】「What would that do?」\e
+
+//<000003dc> 【武】「全くしたことのない行動というか…\p…\p」\e
+<000003dc> 【Takeru】「It's just something I never did last time...\p...\p」\e
+
+//<000003e2> 【夕呼】「後先考えないのはただのバカよ」\e
+<000003e2> 【Yuuko】「Not thinking about the consequences is just stupid.」\e
+
+//<000003e5> 【武】「…\p…\p…\p…\p」\e
+<000003e5> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000003e6> 【夕呼】「何かとてつもなく世界に影響力のある事件って、\p１度も起きなかったの？」\e
+<000003e6> 【Yuuko】「Were there any incidents which had a huge impact on the world?」\e
+
+//<00000dbd> 【武】「え…\p…\p？」\e
+<00000dbd> 【Takeru】「Eh...\p...\p?」\e
+
+//<00000dbe> 【夕呼】「前に言ってなかった？　ＨＳＳＴがどうとかこうとか…\p…\p」\e
+<00000dbe> 【Yuuko】「Didn't you say something about an HSST before...\p...\p?」\e
+
+//<000003f3> 【武】「ああ…\p…\pありましたよ」\e
+<000003f3> 【Takeru】「Yeah...\p...\pthere was that.」\e
+
+//<00000dbf> 【夕呼】「それを利用してみるのは、\pひとつの手かもしれないわね」\e
+<00000dbf> 【Yuuko】「Maybe we could try and make use of that.」\e
+
+//<00000dc0> 【武】「利用って…\p…\pどういうふうにですか？」\e
+<00000dc0> 【Takeru】「Make use...\p...\pwhat do you mean?」\e
+
+//<00002b5d> 【夕呼】「例えば、\pそれを未然に防いでしまったり…\p…\p起きるのは見逃すけど、\pその経過を変えてしまったり…\p…\p」\e
+<00002b5d> 【Yuuko】「Like preparing for it in advance...\p...\plet it happen as before,\p but change how we respond...\p...\p」\e
+
+//<00000dc2> 【武】「…\p…\pなるほど。\nそれは確かに些細なこととは言えないですね…\p…\pでもいいんですか？」\e
+<00000dc2> 【Takeru】「...\p...\pI see.\p That would definitely be a significant change...\p...\pbut would that cut it?」\e
+
+//<00002b60> 【夕呼】「そういうやり方も有りだって話。\n具体的に何が原因で、\pどういう事件が発生したのかわからないんだから…\p…\pどう対処すべきか判断できないわ」\e
+<00002b60> 【Yuuko】「I'm just saying it's an option.\nI don't know what these incidents are or what caused them...\p...\pso I can't make any decisions yet.」\e
+
+//<00002ba0> 次にでかいと言えば…\p…\p佐渡島ハイヴからの侵攻か。\n情けなくなってくるから思い出したくないな…\p…\p。\e
+<00002ba0> The next big thing that happens...\p...\pthat'd be the attack from Sadogashima Hive.\nI feel pathetic just remembering that...\p...\p\e//I know it says invasion but they didn't really manage to invade anything except I guess the mainland ~IX
+
+//<000003fd> 【武】「じゃあ…\p…\p」\e
+<000003fd> 【Takeru】「In that case...\p...\p」\e
+
+//<00001864> 【夕呼】「――ストップ」\e
+<00001864> 【Yuuko】「――Stop.」\e
+
+//<00000dc5> 【武】「え？」\e
+<00000dc5> 【Takeru】「Eh?」\e
+
+//<00002b62> 【夕呼】「今あなたが言おうとしているのは、\pここ数日以内に起きること？」\e
+<00002b62> 【Yuuko】「Are you going to bring up something that'll happen within the next few days?」\e
+
+//<00000dc7> 【武】「えっと…\p…\p」\e
+<00000dc7> 【Takeru】「Umm...\p...\p」\e
+
+//<00002b63> 【夕呼】「今日それを知って対処をしようとした場合…\p…\p間に合うのかしら？」\e
+<00002b63> 【Yuuko】「If I start trying to do something today...\p...\pwould I make it in time?」\e
+
+//<00002b3a> 【武】「向こうの世界では、\p１週間後くらいに起きたはずですから、\pあと数日は大丈夫じゃないでしょうか」\e
+<00002b3a> 【Takeru】「Last time,\p I think it happened at least a week from now,\p so you probably could if you hurried.」\e
+
+//<00000dca> 【夕呼】「じゃあ、\pその時に報告しに来なさい」\e
+<00000dca> 【Yuuko】「Then tell me about it a few days before it happens.」\e
+
+//<00000dcb> 【武】「今から知ったら、\p何か問題がありますか？　…\p…\pあ、\p無いわけはないんですけど…\p…\p」\e
+<00000dcb> 【Takeru】「Why not hear about it now?\b...\p...\pah,\p well of course something could...\p...\p」\e
+
+//<00000dcc> 【夕呼】「２つ理由があるわ。\nひとつは、\p問題があるかどうかわからないから」\e
+<00000dcc> 【Yuuko】「I have two reasons.\nOne,\p I don't know what problems might come up.」\e
+
+//<00000dcd> 【武】「やっぱり…\p…\p」\e
+<00000dcd> 【Takeru】「Thought so...\p...\p」\e
+
+//<00002b65> 【夕呼】「今聞くのと、\p適切な時期に聞くのとでは、\p多分周りに与える影響が違うでしょう」\e
+<00002b65> 【Yuuko】「Hearing it now versus hearing it at the appropriate time would probably have a significant impact.」\e
+
+//<0000040c> 【武】「わかりました…\p…\pもうひとつは？」\e
+<0000040c> 【Takeru】「I understand...\p...\pand the other?」\e
+
+//<00002b66> 【夕呼】「余計なこと考えて、\p脳のリソースと時間が無駄に消費されるのが嫌」\e
+<00002b66> 【Yuuko】「I don't wanna waste time or mental resources on it.」\e
+
+//<00000414> 【武】「は…\p…\p？」\e
+<00000414> 【Takeru】「Huh...\p...\p?」\e
+
+//<00000415> 【夕呼】「今からそんな話を知っていたら、\pその分別のことが頭に入らないじゃない」\e
+<00000415> 【Yuuko】「If you tell me about it now,\p my brain won't be able to process anything else.」\e
+
+//<00000416> 【武】「あ…\p…\pああ…\p…\p」\e
+<00000416> 【Takeru】「Ah...\p...\pyeah...\p...\p」\e
+
+//<0000186a> …\p…\pさすがは「夕呼先生」と言うべきか…\p…\p世界は違っても人格は同じだ。\e
+<0000186a> ...\p...\pthat's so like Yuuko-sensei...\p...\pshe really is the same in all worlds.\e
+
+//<0000186b> 正直、\p少しだけ呆れた。\e
+<0000186b> To be honest,\p it's almost irritating.\e
+
+//<00002af3> でも、\pオルタネイティヴ４のため死ぬ気で研究している先生が、\p１分１秒でも無駄にしたくないのはわかる。\e
+<00002af3> But Sensei's working herself to the bone on Alternative IV,\p so I can understand why she doesn't want to waste even one minute of her time.\e
+
+//<0000041b> 【武】「わかりました。\nじゃあ…\p…\p時期が近づいたら改めて報告しに来ます」\e
+<0000041b> 【Takeru】「Understood.\nThen...\p...\pI'll come back shortly before it happens.」\e
+
+//<00000426> 【夕呼】「わかったわ」\e
+<00000426> 【Yuuko】「Got it.」\e
+
+//<00000427> …\p…\pまず起きること…\p…\pそれは、\p佐渡島のＢＥＴＡが本州に上陸して、\pこの基地目指して侵攻してくることだ。\e
+<00000427> ...\p...\pthe next big incident...\p...\pwould be when the BETA from Sadogashima surfaced on the mainland,\p and headed toward this base.\e
+//surfaced --> landed / made landfall
+//mainland --> Honshu - Makoto //waaaaaaay too late to change this convention ~IX//Not anymore. With all the stuff I consistencies I did, you could change whatever the hell you want.-Spin //I thought all you did was do/undo contractions, nothing regarding locutions/terminology ~IX
+
+//<00000450> オレが…\p…\p…\p…\p気を失った事件。\e
+<00000450> That was when...\p...\pI fainted.\e
+
+//<00000451> あれはいつのことだったかな…\p…\p？\e
+<00000451> When was that exactly...\p...\p?\e
+
+//<00000452> 確か…\p…\p…\p…\pオレ達が休みの日だったような気がする。\e
+<00000452> I think...\p...\pwe were given a day off or something.\e
+
+//<00000453> …\p…\p…\p…\pそうだ、\p休みの日だ！\e
+<00000453> ...\p...\pthat's right,\p it was on our day off!\e
+
+//<00000454> ってことは、\p次の休みを調べれば、\p正確な日付がわかるのか…\p…\p。\e
+<00000454> Which means,\p if I look up our next one,\p I'll know the exact date...\p...\p\e
+
+//<00000455> …\p…\p…\p…\p。\e
+<00000455> ...\p...\p...\p...\p\e
+
+//<00000457> 日付がずれるって可能性はあるか？\e
+<00000457> Is there a chance it won't happen on the same day?\e
+
+//<0000045f> …\p…\pある。\e
+<0000045f> ...\p...\pthere is.\e
+
+//<00000460> それについては…\p…\pどうしよう…\p…\p。\e
+<00000460> What can I do...\p...\pabout that...\p...\p\e
+
+//<0000186d> ＢＥＴＡの基地なんだから、\p常に監視されてるはずだ。\e
+<0000186d> It's a base for the BETA,\p so they should be watching it 24/7.\e
+
+//<0000186e> あらかじめ、\p注意するように言っておけばいいんだ。\e
+<0000186e> We could just tell them to pay really close attention.\e
+
+//<00000464> …\p…\pよし、\pそれでいこう。\e
+<00000464> ...\p...\pokay,\p let's go with that.\e
+
+//<00000468> その時何をどう変えるか、\pそれは先生と相談だ…\p…\p。\e
+<00000468> Then I'll talk to Sensei about what we can change...\p...\p\e
+
+//<00000469> …\p…\p。\e
+<00000469> ...\p...\p\e
+
+//<0000046c> …\p…\p…\p…\p。\e
+<0000046c> ...\p...\p...\p...\p\e
+
+//<0000046d> オレは諦めてなんかいないぞ！！\e
+<0000046d> I'm not giving up!!\e
+
+//<0000046e> だからオレは別の世界になんか行かない！\e
+<0000046e> And I'm not running off to some other world!\e
+
+//<0000046f> 【武】「よしっ！」\e
+<0000046f> 【Takeru】「Okay!」\e
+

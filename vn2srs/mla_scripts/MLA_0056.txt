@@ -1,0 +1,2715 @@
+#FILENAME 307b8b6e
+#TYPE 3
+
+//<0000163c> 【最上艦長　小沢】「――現在、\p対レーザー砲弾を積んだ第三次補給艦隊がこちらへ向いつつあります」\e
+<0000163c> 【Capt. Kozawa of the Mogami】「――The 3rd Resupply Fleet is heading this way with anti-laser shells.」\e
+
+//<0000163d> 【最上艦長　小沢】「ですが、\p合流、\p積み込み等の時間を考えますと、\p１時間は優に要するでしょう」\e
+<0000163d> 【Capt. Kozawa of the Mogami】「However,\p moving the supplies on board will easily take over an hour.」\e
+
+//<0000163e> 【夕呼】「そんな悠長な事はやっていられません。\nこの際補給案は切り捨てましょう」\e
+<0000163e> 【Yuuko】「We can't afford to dilly dally like that.\nLet's forget about resupplying altogether.」\e
+
+//<0000163f> 【最上艦長　小沢】「致し方ありませんな。\nそうなるとやはり、\p本土に向かわせるしかないのでは？」\e
+<0000163f> 【Capt. Kozawa of the Mogami】\b「There does seem to be no other choice.\nPerhaps you will have to send him to the mainland instead?」\e
+
+//<00001640> 【夕呼】「Ａ－０２を爆破する可能性がある以上、\pそれはあり得ません」\e
+<00001640> 【Yuuko】「As long as we might have to detonate the A-02,\p we can't risk it.」\e
+
+//<00001641> 【最上艦長　小沢】「さすれば、\p南下ルートを取り、\p海上を大きく迂回することも…\p…\p」\e
+<00001641> 【Capt. Kozawa of the Mogami】「Then what about heading South and taking a long detour around the bay...\p...\p?」\e
+
+//<00001642> 【夕呼】「推進剤の残量から言って無理でしょう」\e
+<00001642> 【Yuuko】「He won't have enough propellant for that.」\e
+
+//<00001643> 【夕呼】「かと言って、\p途中母艦に着艦させて補給するにしても、\p私達が南下するにしてもリスクが高過ぎます」\e
+<00001643> 【Yuuko】「And having him land on a mothership to refuel or having us head South ourselves would also be too risky.」\e
+
+//<00001644> 【夕呼】「陸地に近く、\p水深が１０００ｍに満たない海域では、\p爆発の影響を強く受ける可能性がありますから」\e
+<00001644> 【Yuuko】「It's likely we'd be hit hard by the explosion near land,\p where the depth is less than a thousand meters.」\e
+
+//<00001645> 【最上艦長　小沢】「なるほど。\nその様な危険な海域で、\p時間のかかる補給など、\pさせる訳には参りませんな」\e
+<00001645> 【Capt. Kozawa of the Mogami】「I see.\nWe can't allow him to spend time refueling within the danger zone.」\e
+
+//<00001646> 【夕呼】「佐渡島に最も近い水深２０００ｍ以上の座標は、\p現在私達がいる場所なのです」\e
+<00001646> 【Yuuko】「The closest place to Sadogashima with a depth over two thousand meters is where we are now.」\e//decided to check age's oceanography here, and found this: http://www.ngdc.noaa.gov/mgg/image/2minsurface/1350/45N135E.jpg (sadogashima bit only: http://gyazo.com/3b3f4d567b04f3e9746620c6335768e0.png) Not super detailed but it's enough to confirm the minimap (of depths over 1000m) shown ingame is at least roughly accurate
+
+//<00001647> 【最上艦長　小沢】「そう考えると…\p…\p先の脱出ルートは、\p様々な条件を満たした最良のものでしたな」\e
+<00001647> 【Capt. Kozawa of the Mogami】「So the original evac route...\p...\pwas ideal in a number of ways.」\e
+
+//<00001648> 【夕呼】「考え方としては、\p如何にしてこの座標まで連れてくるか、\pという事が重要ですわ」\e
+<00001648> 【Yuuko】「So the critical question is how can we get him to these coordinates.」\e
+
+//<00001649> 【最上艦長　小沢】「…\p…\p…\p…\p」\e
+<00001649> 【Capt. Kozawa of the Mogami】「...\p...\p...\p...\p」\e
+
+//<0000164a> 【夕呼】「ピアティフ中尉、\p全軍の展開状況とＢＥＴＡの出現分布を重ねて見せて。\n本土側の動きもわかるようにね」\e
+<0000164a> 【Yuuko】「1st Lt. Piatif,\p lay a map of the emerged BETA distribution over one of all forces deployed in the area.\nGet the mainland's units on there too.」\e
+
+//<0000164b> 【ピアティフ中尉】「本土側の情報を照会中…\p…\p２分お待ちください」\e
+<0000164b> 【1st Lt. Piatif】「Accessing data from the mainland...\p...\pplease wait two minutes.」\e
+
+//<0000164c> 【夕呼】「２分…\p…\pわかったわ」\e
+<0000164c> 【Yuuko】「Two minutes...\p...\pokay.」\e
+
+//<0000164d> 【最上艦長　小沢】「副司令。\nひとつ確認させていただくがよろしいかな」\e
+<0000164d> 【Capt. Kozawa of the Mogami】「XO.\nWould you mind if I asked you something?」\e
+
+//<0000164e> 【夕呼】「何でしょう」\e
+<0000164e> 【Yuuko】「What is it?」\e
+
+//<00001ee7> 【最上艦長　小沢】「先程来のお話ぶりから推察するに、\p副司令は既に爆破を決心なさっている様にも伺えますが？」\e
+<00001ee7> 【Capt. Kozawa of the Mogami】「The way you have been speaking leads me to believe you have already resigned to detonating the A-02. Is that true?」\e
+
+//<00001650> 【夕呼】「最悪のケースを想定しているに過ぎませんわ」\e
+<00001650> 【Yuuko】「I'm merely considering the worst-case scenario.」\e
+
+//<00001651> 【最上艦長　小沢】「…\p…\p…\p…\p」\e
+<00001651> 【Capt. Kozawa of the Mogami】「...\p...\p...\p...\p」\e
+
+//<00001652> 【夕呼】「それが甘かったために、\pこうして脱出ルートが行き詰まるという状況を許してしまったのです」\e
+<00001652> 【Yuuko】「Being too optimistic is what allowed them to cut off the route I wanted to use.」\e
+
+//<00001653> 【夕呼】「何れ私の責任を追及される日も来ましょう。\nですが今はこの作戦が全てです」\e
+<00001653> 【Yuuko】「Someday I'll have to take responsibility for that.\nBut right now, this operation is everything.」\e
+
+//<00001654> 【最上艦長　小沢】「…\p…\p…\p…\p」\e
+<00001654> 【Capt. Kozawa of the Mogami】「...\p...\p...\p...\p」\e
+
+//<00001655> 【夕呼】「同じ過ちを繰り返す事は…\p…\p絶対に許されませんわ」\e
+<00001655> 【Yuuko】「I can't allow myself...\p...\pto repeat the same mistake.」\e
+
+//<00001656> 【最上艦長　小沢】「成る程…\p…\p」\e
+<00001656> 【Capt. Kozawa of the Mogami】「I see...\p...\p」\e
+
+//<00001657> 【ピアティフ中尉】「――副司令、\p３番モニターに回します」\e
+<00001657> 【1st Lt. Piatif】「――XO,\p sending to monitor three.」\e
+
+//<00001658> 【夕呼】「ありがとう」\e
+<00001658> 【Yuuko】「Thank you.」\e
+
+//<00001659> 【最上艦長　小沢】「…\p…\p…\p…\p副司令、\p私にひとつ策があります」\e
+<00001659> 【Capt. Kozawa of the Mogami】「...\p...\pXO,\p I have an idea.」\e
+
+//<0000165a> 【夕呼】「何でしょう…\p…\p伺いますわ」\e
+<0000165a> 【Yuuko】「May I ask...\p...\pwhat?」\e
+
+//<0000165b> 【最上艦長　小沢】「ここはひとつ、\p我が連合艦隊にお任せいただけませんか」\e
+<0000165b> 【Capt. Kozawa of the Mogami】「Would you allow my UN fleet to take care of this?」\e
+
+//<0000165c> 【夕呼】「連合艦隊…\p…\pですか？」\e
+<0000165c> 【Yuuko】「The UN Fleet...\p...\p?」\e
+
+//<0000165d> 【最上艦長　小沢】「いかにも。\n真野湾沖に待機中の我が第二戦隊を湾内に突入させ、\p当初の脱出ルートを一時的に確保するのです」\e
+<0000165d> 【Capt. Kozawa of the Mogami】「Yes.\nI will order my 2nd Fleet to stand by outside Mano Bay then charge inside and temporarily secure the original evac route.」\e//technically, "verily" is a more accurate rendering of the first word ~IX
+
+//<0000165e> 【夕呼】「それでは第二戦隊が敵の矢面に立って、\pまともに撃ち合う事になりますが…\p…\pよろしいのですか」\e
+<0000165e> 【Yuuko】「That means your 2nd Fleet will be the target of all the enemy's firepower...\p...\pare you okay with that?」\e
+
+//<0000165f> 【最上艦長　小沢】「副司令。\nそれは戦艦乗りの本懐であり誇りなのですよ。\n後方支援に甘んじている今こそが不本意なのです」\e
+<0000165f> 【Capt. Kozawa of the Mogami】「XO,\p any sailor would be proud to do such a thing.\nThe last thing we want is to spend our whole lives supporting other soldiers from the rear as we do now.」\e
+
+//<00001660> 【夕呼】「古の艦隊決戦思想は理解できますが…\p…\p相手は人間が操る戦艦ではなく重光線級です」\e
+<00001660> 【Yuuko】「I understand the old romantic view of sea battles...\p...\pbut you'll be fighting Heavy Laser Class, not other ships.」\e
+
+//<00001662> 【最上艦長　小沢】「幸い現代の戦艦には、\p対レーザー近接防御システムと分厚い耐熱対弾装甲、\pそして艦隊データリンク制御の自動砲塔が数多くあります」\e
+<00001662> 【Capt. Kozawa of the Mogami】「Fortunately, current warships possess anti-laser close defense systems, thick heat- and bullet-resistant armor,\p and a number of automatic turrets which can be controlled through ship-to-ship data links.」\e
+
+//<00001663> 【最上艦長　小沢】「照射を受けても、\p即座にその源を探知し撃破すれば、\pそう易々と沈められる事はありません」\e
+<00001663> 【Capt. Kozawa of the Mogami】「Even if we're hit by lasers,\p as long as we locate and attack the source immediately,\p we won't sink that easily.」\e
+
+//<00001664> 【最上艦長　小沢】「加えて、\p大型コンピューターを積んでいますので、\p陽動としても最適でしょう」\e
+<00001664> 【Capt. Kozawa of the Mogami】「All our ships are also full of huge computers,\p so they're perfect bait.」\e
+
+//<00001665> 【夕呼】「確かにそうですわね」\e
+<00001665> 【Yuuko】「That is true.」\e
+
+//<00001666> 【最上艦長　小沢】「いずれにせよこのままでは、\p七浦海岸沖のウィスキー回収艦隊は狙い撃ちです。\nそれを見殺しにはできない」\e
+<00001666> 【Capt. Kozawa of the Mogami】「Moreover, even if we did not do this,\p the ships retrieving Whiskey Unit outside Nanaura will have to fight them head-on anyway.\nI cannot simply let them die.」\e
+
+//<00001668> 【最上艦長　小沢】「まして副司令の言われる最悪のケースを想定するなら、\p足の遅い戦術機母艦を逃がす時間も稼がねばなりません」\e
+<00001668> 【Capt. Kozawa of the Mogami】「And if the worst case you speak of should come to pass,\p we must buy time for the slow TSF motherships to escape.」\e
+
+//<00001669> 【夕呼】「…\p…\p…\p…\p」\e
+<00001669> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<0000166a> 【最上艦長　小沢】「これまでのデータから、\p温存されているＢＥＴＡの個体数はそう多くはありますまい」\e
+<0000166a> 【Capt. Kozawa of the Mogami】「Given all the data we have,\p there aren't that many BETA left.」\e
+
+//<0000166b> 【最上艦長　小沢】「数十分であれば、\p持ち堪えられます」\e
+<0000166b> 【Capt. Kozawa of the Mogami】「We can put up a fight for at least twenty minutes.」\e//lit. "tens of minutes"
+
+//<0000166c> 【夕呼】「…\p…\p…\p…\p」\e
+<0000166c> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<0000166d> 【最上艦長　小沢】「欠陥兵器にすぎなかったＸＧ－７０を戦力化せしめた新型コンピューター…\p…\p００ユニットと言いましたかな？」\e
+<0000166d> 【Capt. Kozawa of the Mogami】「The new computer which turned the defective XG-70 into a fearsome weapon...\p...\pyou said it was called the 00 Unit?」\e
+
+//<0000166e> 【夕呼】「ええ」\e
+<0000166e> 【Yuuko】「Yes.」\e
+
+//<0000166f> 【最上艦長　小沢】「人類の希望たる００ユニットと、\p多くの将兵を救う一石二鳥の策だと自負しますが、\p如何か」\e
+<0000166f> 【Capt. Kozawa of the Mogami】「I see this as a way of saving humanity's best weapon, the 00 Unit,\p along with a great many soldiers under my command.\p Well?」\e//what say you? ~IX
+
+//<00001670> 【夕呼】「…\p…\pわかりました。\nお言葉に甘えさせていただきます」\e
+<00001670> 【Yuuko】「...\p...\p...\p...\pI understand.\nI'll take you up on that offer.」\e
+
+//<00001671> 【最上艦長　小沢】「それがよろしかろう。\n――君、\p信濃の安倍艦長につなぎたまえ」\e
+<00001671> 【Capt. Kozawa of the Mogami】「I am glad to hear it.\n――You,\p get me Capt. Abe of the Shinano.」\e
+
+//<00001672> 【最上オペレーター１】「――は」\e
+<00001672> 【Mogami Operator 1】「――Sir!」\e
+
+//<00001678> 【最上艦長　小沢】「――以上が作戦の内容だ。\n安倍君…\p…\pやってくれ」\e
+<00001678> 【Capt. Kozawa of the Mogami】「――You heard the plan.\nAbe-kun...\p...\pgive them hell.」\e
+
+//<0000167a> 【信濃艦長　安倍】「――は！　お任せください！！」\e
+<0000167a> 【Capt. Abe of the Shinano】「――Sir!\bThey won't know what hit 'em!!」\e//hard to make this not sound lame, I think I got close ~IX
+
+//<0000167e> 【最上艦長　小沢】「うむ…\p…\p存分に暴れて来られよ」\e
+<0000167e> 【Capt. Kozawa of the Mogami】「Good...\p...\pscatter their ranks.」\e
+
+//<00001680> 【夕呼】「安倍艦長、\p国連軍の香月です」\e
+<00001680> 【Yuuko】「Capt. Abe,\p this is Kouzuki of the UN Army.」\e
+
+//<00001682> 【信濃艦長　安倍】「副司令、\p小官にこの様な大任を賜り、\p真に光栄です」\e
+<00001682> 【Capt. Abe of the Shinano】「XO,\p I am truly honored to be trusted with such a great mission.」\e
+
+//<00001683> 【夕呼】「輸送任務を負う作戦機には最大戦速ＮＯＥを指示しますので、\p陸地を脱けるのに約５分掛かります」\e
+<00001683> 【Yuuko】「The TSF carrying the computer will be flying NOE at top speed,\p so it'll only take five minutes to get offshore.」\e
+
+//<00001685> 【夕呼】「ですが後続が居りますので、\p湾内での戦闘は最低でも２０分は持ち堪えてください」\e
+<00001685> 【Yuuko】「However, more will follow it,\p so please hold the bay for at least twenty minutes.」\e
+
+//<00001687> 【夕呼】「非常に過酷な任務ですが、\p宜しくお願いします」\e
+<00001687> 【Yuuko】「This is an extremely harsh mission,\p but please.」\e
+
+//<00001689> 【信濃艦長　安倍】「なんの副司令。\nむしろ彼奴等めに直接砲弾を喰らわす事を思うと、\p今から心が踊ります」\e
+<00001689> 【Capt. Abe of the Shinano】「You misunderstand, XO.\nIf anything we are overjoyed at the thought of firing shots into the enemy directly.」\e
+
+//<0000168b> 【信濃艦長　安倍】「かつて航空機によって無用の長物とされた戦艦が、\p航空機を駆逐した光線級に一泡ふかすというのも真に痛快！」\e
+<0000168b> 【Capt. Abe of the Shinano】「Just as we were when ships like ours, after being made useless by aircraft carriers, were given renewed purpose by the laser species!」\e
+
+//<00001e7d> 【夕呼】「作戦機が海上に出次第、\p後退を開始してください。\nプランＧが発令中であることをお忘れ無く」\e
+<00001e7d> 【Yuuko】「Once the TSF is offshore,\p please begin to retreat.\nDon't forget that Plan G is in effect.」\e
+
+//<0000168f> 【信濃艦長　安倍】「肝に銘じておきましょう。\nところで副司令」\e
+<0000168f> 【Capt. Abe of the Shinano】「I will keep that in mind.\nBy the way, XO.」\e
+
+//<00001690> 【夕呼】「はい」\e
+<00001690> 【Yuuko】「Yes?」\e
+
+//<00001692> 【信濃艦長　安倍】「ありがとうございました」\e
+<00001692> 【Capt. Abe of the Shinano】「Thank you so much.」\e
+
+//<00001693> 【夕呼】「安倍艦長、\p突然…\p…\p何でしょう」\e
+<00001693> 【Yuuko】「Capt. Abe...\p...\pwhat brought that on?」\e
+
+//<00001695> 【信濃艦長　安倍】「いや、\p失礼いたしました。\nお許しください」\e
+<00001695> 【Capt. Abe of the Shinano】「No,\p never mind.\nForgive me.」\e
+
+//<00001eec> 【信濃艦長　安倍】「ただ、\pひとりの日本人として、\p子を持つ親として、\p貴女にはひと言御礼申し上げておきたかった」\e
+<00001eec> 【Capt. Abe of the Shinano】「I just wished to thank you,\p as a citizen of Japan,\p and a father.」\e
+
+//<00001698> 【夕呼】「…\p…\p…\p…\p」\e
+<00001698> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<0000169a> 【信濃艦長　安倍】「彼の新兵器の放ったあの閃光は、\p正に希望の光そのものでした」\e
+<0000169a> 【Capt. Abe of the Shinano】「The beam from that weapon was none other than the light of hope.」\e
+
+//<0000169b> 【信濃艦長　安倍】「帝国に…\p…\pいや、\p人類に未来はある。\n黒煙を上げ崩れ落ちるハイヴを目の当たりにした時、\pそう確信するに到りました」\e
+<0000169b> 【Capt. Abe of the Shinano】「The Empire...\p...\pno,\p humanity has a future.\nNow that I've seen a hive crumble with my own eyes,\p I am sure of it.」\e
+
+//<0000169c> 【夕呼】「…\p…\p…\p…\p」\e
+<0000169c> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<0000169e> 【信濃艦長　安倍】「必ずやメインコンピューターの回収任務、\p成功させてご覧に入れましょう」\e
+<0000169e> 【Capt. Abe of the Shinano】「I will ensure the mission to retrieve its main computer succeeds.」\e
+
+//<0000169f> 【夕呼】「宜しくお願い致します」\e
+<0000169f> 【Yuuko】「Please do.」\e
+
+//<000016a4> 【武】「…\p…\p…\p…\p」\e
+<000016a4> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000016a7> 純夏…\p…\pいったいどうしちまったんだ…\p…\p。\e
+<000016a7> Sumika...\p...\pwhat the hell happened to you...\p...\p\e
+
+//<000016a8> コクピットまで運んだ時も、\p簡易ベルトに固定している間も、\p全然目を覚ます気配はなかった。\e
+<000016a8> She didn't show any sign of waking up the whole time I was carrying her to the cockpit and fastening the safety belt.\e
+
+//<000016a9> こうして息をしてるから、\pまだ安心できる…\p…\p。\e
+<000016a9> Though she's still breathing,\p so I don't have to worry yet...\p...\p\e
+
+//<000016aa> 純夏の呼吸は、\p精神を安定させるための擬似行為という意味以外に、\pヒートシンクに空気を通す強制換気の役割がある。\e
+<000016aa> Sumika's breathing is partly an imitation of human behavior to keep her mind stable,\p but it also acts as a way of forcing air over the heat sink.\e
+
+//<000016ab> これが続いている限り、\p少なくとも自律機能が正常に働いている証拠なんだ…\p…\p。\e
+<000016ab> As long as she's doing this,\p we know her autonomic functions are working at least...\p...\p\e//not everyone knows the word, but I can't think of a better way to express this, and it's certainly not obscure ~IX
+
+//<000016af> 【夕呼】「――伊隅、\p白銀、\p待たせたわね」\e
+<000016af> 【Yuuko】「――Isumi,\p Shirogane,\p sorry for the wait.」\e
+
+//<000016b2> 【武】「――先生」\e
+<000016b2> 【Takeru】「――Sensei.」\e
+
+//<00001e80> 【夕呼】「結局ルートに変更はないわ。\nふたりとも、\pさっき説明した手順であたしの所まで来なさい」\e
+<00001e80> 【Yuuko】「In the end we decided on the same route.\nBoth of you do exactly what I said earlier.」\e
+
+//<000016b6> 【武】「了解。強行突破って事ですね」\e
+<000016b6> 【Takeru】「Understood. So we'll just try to charge through it?」\e
+
+//<000016b7> 純夏を送り届けるためだ。\nなんだってやってやるぜ…\p…\p。\e
+<000016b7> I'm going to bring Sumika to you.\nI'll do whatever it takes...\p...\p\e
+
+//<000016b8> 【夕呼】「まあ似たようなものね。\n伊隅、\pそっちはなんとかなりそう？」\e
+<000016b8> 【Yuuko】「Well, something like that.\nIsumi,\p how's it going?」\e
+
+//<000016ba> 【伊隅大尉】「未だ起動には到っていません。\n００ユニット欠損による影響があるようです」\e
+<000016ba> 【Capt. Isumi】「I haven't activated it yet.\nThe loss of the 00 Unit is making it more difficult.」\e
+
+//<000016bc> 【夕呼】「そう…\p…\pじゃあ、\pあんた達の脱出手順を説明するわ」\e
+<000016bc> 【Yuuko】「I see...\p...\pthen I'll explain your evacuation procedure.」\e
+
+//<000016bd> 【夕呼】「今から１４分後、\p真野湾に連合艦隊第二戦隊が突入する」\e
+<000016bd> 【Yuuko】「The UN 2nd Fleet will charge into Mano Bay fourteen minutes from now.」\e
+
+//<000016bf> 【武】「――え？　戦艦部隊が…\p…\pですか？　あの辺は重光線級がうようよしてるんじゃないですか！？」\e
+<000016bf> 【Takeru】「――Eh? The fleet will...\p...\pthemselves?\bAren't there Heavy Laser Class all over that place!?」\e
+
+//<000016c0> 【夕呼】「そうよ。だから、\pあんた達とウィスキー部隊を撤退させるために、\p陽動を買って出てくれたのよ」\e
+<000016c0> 【Yuuko】「There are. They agreed to draw fire while you and Whiskey Unit evacuate.」\e
+
+//<000016c2> 【伊隅大尉】「――！」\e
+<000016c2> 【Capt. Isumi】「――!」\e
+
+//<000016c4> 【武】「いくら戦艦が重装甲って言っても…\p…\pわざわざ重光線級と直接撃ち合わなくても…\p…\p」\e
+<000016c4> 【Takeru】「I know those ships are heavily armored...\p...\pbut fighting laser species head on...\p...\p」\e
+
+//<000016c5> 【夕呼】「対レーザー弾がもう殆ど残ってないって言ったでしょ。\n予定された補給は待ってられないわ」\e
+<000016c5> 【Yuuko】「I told you there aren't many anti-laser shells left.\nWe can't wait for the resupply ships.」\e
+
+//<000016c7> 【伊隅大尉】「…\p…\p…\p…\p」\e
+<000016c7> 【Capt. Isumi】「...\p...\p...\p...\p」\e
+
+//<000016c9> そうか。さっきのオレ達への支援はイレギュラーだったし、\p敵の数も異常だったから、\p補給のスケジュールが合わないんだ。\e
+<000016c9> I see. The artillery support we got was unplanned,\p not to mention the number of enemies,\p so we ran out before the scheduled resupply time.\e
+
+//<000016ca> 【夕呼】「第二戦隊は現在、\p残りの対レーザー弾を撃ちながら、\p最大戦速で真野湾に向かっている」\e
+<000016ca> 【Yuuko】「The 2nd Fleet is currently firing the last of their anti-laser shells while moving into Mano Bay at full speed.」\e
+
+//<000016cb> 【夕呼】「今から１０分後、\pＡ－０１中隊は移動開始。\n白銀の脱出ルートを先行させなさい」\e
+<000016cb> 【Yuuko】「Unit A-01 will begin moving ten minutes from now.\nThey will proceed along Shirogane's evac route before him.」\e//she happened to say company for once but it's too jarring in English ~IX
+
+//<000016cd> 【夕呼】「ただし、\pＸＧ－７０に張り付いている２機はそのままの直援任務を継続させてちょうだい」\e
+<000016cd> 【Yuuko】「However,\p please leave the two TSFs guarding the XG-70 directly where they are.」\e
+
+//<000016ce> 【伊隅大尉】「了解」\e
+<000016ce> 【Capt. Isumi】「Copy that.」\e
+
+//<000016d0> 【夕呼】「１４分後、\p湾内に突入した第二戦隊が陽動ポジションを確保したら白銀機は発進。\n直援のうち１機はこれに随伴」\e
+<000016d0> 【Yuuko】「Fourteen minutes from now,\p once the 2nd Fleet has secured the diversion position, Shirogane will take off.\nHave one other TSF escort him.」\e
+
+//<000016d2> 【武】「…\p…\p…\p…\p」\e
+<000016d2> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001f25> 海上に出たらアフターバーナー全開で飛ぶのか…\p…\p速度は出るけど燃料はギリギリだな。\e
+<00001f25> Once we're out to sea we'll have our afterburners on full power...\p...\pit'll be fast but I'll barely have enough fuel.\e
+
+//<000016d3> 【夕呼】「先行したＡ－０１中隊は、\p真野湾付近に前面展開し、\p脱出ルートの確保と警備よ」\e
+<000016d3> 【Yuuko】「Most of A-01 will have taken up positions around the Mano Bay perimeter, securing and guarding the evac route.」\e
+
+//<000016d5> 【夕呼】「第二戦隊は、\p最低でも白銀機が海上に出るまでは粘ってくれる。\n中隊をうまく連動させてちょうだい」\e
+<000016d5> 【Yuuko】「The 2nd Fleet should at least last long enough to get Shirogane out to sea.\nKeep the unit under tight control.」\e
+
+//<000016d7> 【伊隅大尉】「了解」\e
+<000016d7> 【Capt. Isumi】「Copy that.」\e
+
+//<000016d9> …\p…\pオレがモタモタしてたら、\pそれだけ犠牲が増えるって事だ。\e
+<000016d9> ...\p...\pso every second I waste means more of them will die.\e
+
+//<000016da> 【夕呼】「伊隅は自律制御起動作業を継続。\n白銀の飛行が順調なら５～６分程度の時間しかない筈」\e
+<000016da> 【Yuuko】「Isumi, keep trying to activate the autopilot.\nShirogane shouldn't need more than five or six minutes to make the flight.」\e
+
+//<000016dc> 【夕呼】「白銀機の海上到達を確認次第、\p安全装置を解除し爆破コードを入力しなさい」\e
+<000016dc> 【Yuuko】「Once we've confirmed Shirogane's escape,\p release the safety and enter the self-destruct code.」\e
+
+//<000016de> 【夕呼】「ＸＧ－７０を放棄して直援機と共に中隊と合流したら、\pそのまま戦線を離脱。\n白銀と同じルートを通りここまで来る」\e
+<000016de> 【Yuuko】「Abandon the XG-70, then the two of you still there will rendezvous with the rest of the unit and leave the battlefield.\nYou'll come here along the same route as Shirogane.」\e
+
+//<000016e0> 【夕呼】「白銀が動き始めたら、\p部隊間の交信は禁止よ。\nそれぞれ交信して良いのはあたしと涼宮だけ」\e
+<000016e0> 【Yuuko】「Once Shirogane starts moving,\p no transmissions to other units.\nYou may only contact me or Suzumiya.」\e
+
+//<000016e2> 【夕呼】「速瀬達は独自に動いてもらうから、\p事前に細かく指示しておきなさい」\e
+<000016e2> 【Yuuko】「You'll need Hayase and the others to fight alone,\p so give detailed instructions in advance.」\e
+
+//<000016e4> 【伊隅大尉】「了解」\e
+<000016e4> 【Capt. Isumi】「Copy that.」\e
+
+//<000016e6> 【武】「先生、\p部隊内なら交信しても良いんですか？」\e
+<000016e6> 【Takeru】「Sensei,\p can we still transmit within the unit?」\e
+
+//<000016e7> 【夕呼】「部隊内の低出力交信なら構わないわ。\n有線なら最高ね」\e
+<000016e7> 【Yuuko】「As long as you use minimum output.\nWired would be ideal.」\e
+
+//<000016e9> 【武】「それってある種の無線封鎖ですよね？　ＢＥＴＡ相手に…\p…\pですか？」\e
+<000016e9> 【Takeru】「You're after some kind of radio silence, right?\bBut why...\p...\pagainst the BETA?」\e
+
+//<000016ea> 【夕呼】「ＢＥＴＡはもちろん、\pＸＧ－７０の墜落の原因が特定できない現状では、\p反対勢力の存在も想定しないとね」\e
+<000016ea> 【Yuuko】「Since we can't determine why the XG-70 crashed,\p we need to assume the possible presence of saboteurs.」\e
+
+//<000016ec> …\p…\pなるほど、\pその線があったか。\e
+<000016ec> ...\p...\pI see,\p that's what she was thinking.\e
+
+//<000037c1> あり得ない話じゃないぞ…\p…\p。\nそう言う意味ではＸＧ－７０を作った会社の連中だってかなり怪しいしな。\e
+<000037c1> It is possible...\p...\p\nIn that case the people from the companies that made the XG-70 are going to be under heavy suspicion now.\e
+
+//<000016ee> 【夕呼】「当然各機のマーカー情報も更新しないようにするわ」\e
+<000016ee> 【Yuuko】「And of course, set your marker information not to be updated.」\e
+
+//<000016ef> 凄乃皇の周囲にずっといるように見せかける訳か。\nどれが００ユニットを運んでいるかわからないようにするんだな？\e
+<000016ef> So make it look like we're spending all our time around the Susano'o?\nThat's so they can't tell who has the 00 Unit, right?\e
+
+//<000016f0> 【夕呼】「今までは見せびらかす意味で放っておいたけど、\pさすがにもうそんな余裕は無くなったのよ」\e
+<000016f0> 【Yuuko】「I haven't worried about it before since we wanted to show off,\p but now we can't afford that luxury.」\e
+
+//<000016f1> エコー部隊の国連艦隊は全部米国海軍の戦艦だし…\p…\pどこで聞き耳を立てているかわかったもんじゃない。\e
+<000016f1> The UN ships in Echo Unit are all from the American Navy...\p...\pthere's no way to know who's listening.\e
+
+//<000016f2> 【武】「今までの会話は…\p…\pもちろん大丈夫なんですよね？」\e
+<000016f2> 【Takeru】「All our previous conversations...\p...\pwere safe, right?」\e
+
+//<000016f3> 【夕呼】「今話してるこの回線は、\pあたしのオリジナル暗号化ツールを使っているから、\p安心して」\e
+<000016f3> 【Yuuko】「The channel we're using right now uses my original encryption tools,\p so nothing to worry about.」\e
+
+//<000016f4> 【夕呼】「傍受しても解析し終わる頃には、\p『甲２１号作戦』なんてとっくに終わってるから」\e
+<000016f4> 【Yuuko】「Even if they intercepted it, by the time they cracked it the Objective 21 Operation would be long over.」\e
+
+//<000016f5> 当然か。夕呼先生相手に愚問だった…\p…\p。\e
+<000016f5> Of course Yuuko-sensei would do something about that...\p...\p\e
+
+//<000016f6> 【夕呼】「時間がないわ。\n伊隅は早速中隊に指示してちょうだい」\e
+<000016f6> 【Yuuko】「There's no time.\nIsumi, give your company its orders quickly.」\e
+
+//<000016f8> 【伊隅大尉】「――はッ！」\e
+<000016f8> 【Capt. Isumi】「――Ma'am!」\e
+
+//<000016fb> 【夕呼】「白銀。念のために言っておくけど――」\e
+<000016fb> 【Yuuko】「Shirogane, just to be on the safe side――」\e
+
+//<000016fc> 【武】「――わかっています。\n先生を失望させる様な事はしません」\e
+<000016fc> 【Takeru】「――I know.\nI won't do anything to disappoint you, Sensei.」\e
+
+//<000016fd> 【夕呼】「そう。余計な心配だったわね」\e
+<000016fd> 【Yuuko】「I see. Looks like I had nothing to worry about.」\e
+
+//<000016ff> さっき、\p純夏の事でつい感情が出ちまったから、\p夕呼先生は不安になったんだろう。\e
+<000016ff> Yuuko-sensei was probably worried when she saw me getting emotional about Sumika earlier.\e
+
+//<00001700> …\p…\pでも、\pもうオレは近視的な感情論には流されないって決めたんだ。\e
+<00001700> ...\p...\pbut I decided not to be misled by short-sighted emotions anymore.\e
+
+//<00001701> 【夕呼】「じゃあ、\p頼んだわよ」\e
+<00001701> 【Yuuko】「Okay,\p we're counting on you.」\e
+
+//<00001703> 【武】「――はい！」\e
+<00001703> 【Takeru】「――Ma'am!」\e
+
+//<00001705> 【武】「…\p…\p…\p…\p」\e
+<00001705> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001706> この段取り…\p…\p以前のオレだったら、\pみんなに守ってもらって先に逃げるみたいで嫌がっただろう。\e
+<00001706> This plan...\p...\pthe old me would've hated running away while everyone else protected him.\e
+
+//<00001707> 本音を言えば今だってそうだ。\nだけど、\p見えている物が前とは違う。\n自分で背負ってしまったものがある。\e
+<00001707> And I still feel that way now.\nBut I can see more than I could back then.\nI have a duty to fulfill.\e
+
+//<00001708> そう言うオレの弱さや愚かさのせいで…\p…\p滅茶苦茶にしてしまった世界があるんだ。\e
+<00001708> There are worlds I've ruined...\p...\pwith such weak and foolish behavior.\e
+
+//<00001709> 【武】「…\p…\p…\p…\p」\e
+<00001709> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000170a> オレは…\p…\pオレにしかできないことを…\p…\pやるんだ。\e
+<0000170a> I will...\p...\pdo what only I can do.\e
+
+//<0000170f> 【最上オペレーター１】「――第二戦隊湾内に侵入！　信濃、\p美濃、\p加賀全て健在です！」\e
+<0000170f> 【Mogami Operator 1】「――2nd Fleet has entered the bay! The Shinano,\p Mino and Kaga are all intact!」\e
+
+//<00001710> 【夕呼】「ほぼ無傷で湾内侵入…\p…\p奇跡だわ…\p…\p」\e
+<00001710> 【Yuuko】「It's a miracle...\p...they made it into the bay almost without a scratch...\p...\p」\e
+
+//<00001712> 【最上艦長　小沢】「…\p…\p…\p…\p」\e
+<00001712> 【Capt. Kozawa of the Mogami】「...\p...\p...\p...\p」\e
+
+//<00001713> 【最上オペレーター２】「――ウィスキー部隊の収容率は現在６０％！　斯衛軍第１６大隊も後退を開始しました！」\e
+<00001713> 【Mogami Operator 2】「――Sixty percent of Whiskey Unit has been retrieved! The 16th Honor Guard Battalion has begun retreating!」\e
+
+//<00001714> 【最上艦長　小沢】「ウィスキー部隊の将兵には恐らく第二戦隊の勇戦が見えている筈です」\e
+<00001714> 【Capt. Kozawa of the Mogami】「The soldiers of Whiskey Unit can probably see the 2nd Fleet's desperate fight.」\e
+
+//<00001715> 【夕呼】「…\p…\p…\p…\p」\e
+<00001715> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<00001716> 【最上艦長　小沢】「支援砲撃のない撤退を強いられる彼の者達にとって、\pその姿はとても心強い事でしょう」\e
+<00001716> 【Capt. Kozawa of the Mogami】「After having to retreat without artillery support,\p they must find that greatly encouraging.」\e
+
+//<00001717> 【夕呼】「…\p…\p…\p…\p」\e
+<00001717> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<00001718> 【最上オペレーター１】「――真野湾周辺地域の重金属雲濃度、\p急速に低下中！」\e
+<00001718> 【Mogami Operator 1】「――Heavy metal cloud densities around Mano Bay decreasing rapidly!」\e
+
+//<00001719> 【最上艦長　小沢】「安倍君…\p…\pここからが正念場だぞ…\p…\p」\e
+<00001719> 【Capt. Kozawa of the Mogami】「Abe-kun...\p...\pthis is it...\p...\p」\e
+
+//<0000171b> 【ピアティフ中尉】「――先行のＡ－０１、\p旧国分寺で中隊規模のＢＥＴＡ群と交戦中」\e
+<0000171b> 【1st Lt. Piatif】「――A-01 has engaged a company-sized herd of BETA at Old Kokubunji.」\e
+
+//<0000171c> 【最上オペレーター１】「――第二戦隊、\p所定のエリアへ接近」\e
+<0000171c> 【Mogami Operator 1】「――The 2nd Fleet is approaching the designated area.」\e
+
+//<0000171d> 【夕呼】「――涼宮」\e
+<0000171d> 【Yuuko】「――Suzumiya.」\e
+
+//<00001e96> 【涼宮中尉】「――ヴァルキリー・マムよりヴァルキリーズ。\n作戦に変更無し！\n繰り返す――作戦に変更無し！」\e
+<00001e96> 【1st Lt. Suzumiya】「――Valkyrie Mum to all Valkyries.\nNo changes to the plan!\nRepeat――No changes to the plan!」\e
+
+//<00001723> 【伊隅大尉】「――聞いたな白銀、\p発進準備だ。\n００ユニットを頼んだぞ」\e
+<00001723> 【Capt. Isumi】「――You heard her, Shirogane,\p get ready to launch.\nTake care of the 00 Unit.」\e
+
+//<00001725> 【武】「はい。ＸＧ－７０を…\p…\pお願いします」\e
+<00001725> 【Takeru】「Yes, ma'am. You take care of...\p...\pthe XG-70.」\e
+
+//<00001726> 【伊隅大尉】「ギリギリまで手を尽くしてみる。\nコイツは是非とも持ち帰りたいからな」\e
+<00001726> 【Capt. Isumi】「I'll do everything I can until the last second.\nI'd like to bring this thing back home with us.」\e
+
+//<00001728> 【武】「でも…\p…\p無理はしないでください」\e
+<00001728> 【Takeru】「Yes, but...\p...\pdon't do anything dangerous.」\e
+
+//<00001729> 【伊隅大尉】「わかっている」\e
+<00001729> 【Capt. Isumi】「I know.」\e
+
+//<0000172c> 【伊隅大尉】「――柏木！　御剣！」\e
+<0000172c> 【Capt. Isumi】「――Kashiwagi! Mitsurugi!」\e
+
+//<0000172f> 【伊隅大尉】「――発進準備だ。\n号令に備えろ」\e
+<0000172f> 【Capt. Isumi】「――Prepare for launch.\nOn my command.」\e
+
+//<00001732> 【冥夜】「――了解！」\n
+<00001732> 【Meiya】「――Copy that!」\n
+
+//<00001734> 【柏木少尉】「――了解！」\e
+<00001734> 【2nd Lt. Kashiwagi】「――Copy that!」\e
+
+//<00001737> 【柏木少尉】「――御剣。\n白銀のお守り、\p頼んだよ」\e
+<00001737> 【2nd Lt. Kashiwagi】「――Mitsurugi,\p keep Shirogane in one piece.」\e
+
+//<00001739> 【冥夜】「――ああ。\nそなたこそＡ－０２と大尉の直援、\pくれぐれも宜しく頼むぞ」\e
+<00001739> 【Meiya】「――Yes.\nYou take care of the A-02 and the Captain yourself.」\e
+
+//<0000173b> 【柏木少尉】「回収するにしろ爆発させるにしろ、\pＡ－０２でハイヴを何とかできれば、\pそれに越した事はないからね」\e
+<0000173b> 【2nd Lt. Kashiwagi】「Whether we can get it back or not,\p we'll still have destroyed the hive using the A-02.」\e
+
+//<0000173d> 【武】「自分の事も気をつけろよ。\nまあ、\pおまえなら大丈夫だと思うけど」\e
+<0000173d> 【Takeru】「Take care of yourself too.\nWell,\p not that we have much to worry about if you're there.」\e
+
+//<0000173e> 【柏木少尉】「アハハ…\p…\pりょーかい！」\e
+<0000173e> 【2nd Lt. Kashiwagi】「Ahaha...\p...\pcopy that～!」\e
+
+//<00001740> 【伊隅大尉】「――柏木」\e
+<00001740> 【Capt. Isumi】「――Kashiwagi.」\e
+
+//<00001742> 【柏木少尉】「――はい」\e
+<00001742> 【2nd Lt. Kashiwagi】「――Yes?」\e
+
+//<00001744> 【伊隅大尉】「――作戦を変更する。\n貴様も白銀の直援だ」\e
+<00001744> 【Capt. Isumi】「――I'm changing the plan.\nYou go with Shirogane too.」\e
+
+//<00001747> 【武】「――え？」\n
+<00001747> 【Takeru】「――Eh?」\n
+
+//<00001748> 【冥夜】「――？！」\n
+<00001748> 【Meiya】「――!?」\n
+
+//<0000174a> 【柏木少尉】「――え？！」\e
+<0000174a> 【2nd Lt. Kashiwagi】「――Eh!?」\e
+
+//<0000174d> 急にどうしたんだ？　夕呼先生は１機は凄乃皇の直援にしろって言ってたじゃないか…\p…\p！？\e
+<0000174d> What the hell?\bDidn't Yuuko-sensei tell you to leave one behind on the Susano'o...\p...\p!?\e
+
+//<000063ae> 【伊隅大尉】「先行した速瀬達が、\p旧国分寺で敵と交戦中だ」\e
+<000063ae> 【Capt. Isumi】「Hayase and the others are engaging the enemy at Old Kokubunji.」\e
+
+//<00001750> …\p…\pでも、\p中隊規模だって言ってたよな？\e
+<00001750> ...\p...\pbut wasn't it only a company-sized herd?\e
+
+//<00001751> 要塞級も重光線も含まれてないＢＥＴＡ群に、\p速瀬中尉達が手こずるとは思えないけど…\p…\p。\e
+<00001751> I doubt they'd have any trouble at all with a BETA herd that had no Heavy Laser or Fort Classes...\p...\p\e
+
+//<00001752> 【伊隅大尉】「こちらが考えているより、\p地下にいる敵の数は多いらしい。\n下手をすればルートの確保が間に合わない可能性もある」\e
+<00001752> 【Capt. Isumi】「There are clearly more enemies underground than any of us think.\nThere's a chance the others won't be able to secure the route in time.」\e
+
+//<000063b1> 【伊隅大尉】「ＢＥＴＡの物量には、\p散々嫌な目に遭わされているからな。\n念のため柏木も一緒に行け」\e
+<000063b1> 【Capt. Isumi】「The sheer numbers of the BETA have caused plenty of problems for us already.\nKashiwagi, go with them just in case.」\e
+
+//<00001756> なるほど…\p…\pさすが大尉。\n憂いには先に手を打って備えておくって事か。\e
+<00001756> I see...\p...\pthat's our Captain.\nShe's making sure our plans don't get messed up again.\e
+
+//<00001757> 【柏木少尉】「…\p…\p…\p…\p」\e
+<00001757> 【2nd Lt. Kashiwagi】「...\p...\p...\p...\p」\e
+
+//<00001759> 【冥夜】「――大尉、\p進言します」\e
+<00001759> 【Meiya】「――Captain,\p I must speak.」\e
+
+//<000063b4> 【伊隅大尉】「作業しながらで良ければ聞いてやる。\n言ってみろ」\e
+<000063b4> 【Capt. Isumi】「I'll have to work on this,\p but go ahead.」\e
+
+//<0000175d> 【冥夜】「やはりＡ－０２の直援に、\pいずれか１機は残すべきだと愚考致します」\e
+<0000175d> 【Meiya】「I believe we must leave one TSF to defend the A-02.」\e
+
+//<000063bc> 【伊隅大尉】「理由は？」\e
+<000063bc> 【Capt. Isumi】「And why is that?」\e
+
+//<00001e9f> 【冥夜】「戦術機編隊の基本単位は二機連携です。\nそしてご存じのように白銀はあの腕の持ち主です」\e
+<00001e9f> 【Meiya】「TSFs always operate in elements.\nAnd as you know, Shirogane is extremely skilled.」\e
+
+//<00001dfc> 【冥夜】「たとえ２機であっても、\p３機連携に劣らないものと考えられます」\e
+<00001dfc> 【Meiya】「I do not believe he will be in any more danger in a pair than he would be in a triple.」\e
+
+//<00001765> 【冥夜】「その根拠は、\p先日の１２・５事件の際、\p白銀が退路の制限という意味ではより厳しい状況をして任務を達成した事です」\e
+<00001765> 【Meiya】「I am sure of that because of his successful escape under arguably worse conditions during the 12-5 incident.」\e
+
+//<00001767> 【冥夜】「方や１機も残さぬ場合、\pＡ－０２が無防備になるばかりでなく、\p大尉が離脱する際、\p基本である二機連携が成立しません」\e
+<00001767> 【Meiya】「And if we did not leave a single guard here,\p not only would the A-02 be undefended,\p but Captain, you would have no partner when you needed to escape.」\e
+
+//<0000176a> 【柏木少尉】「…\p…\p」\e
+<0000176a> 【2nd Lt. Kashiwagi】「...\p...\p...\p...\p」\e
+
+//<0000176c> 【冥夜】「――以上です」\e
+<0000176c> 【Meiya】「――That is all.」\e
+
+//<0000176e> 【武】「…\p…\p…\p…\p」\e
+<0000176e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000176f> 冥夜は、\p凄乃皇もそうだが、\pひとりで残る事になる大尉が心配なんだろう。\nその気持ちは…\p…\p良くわかる。\e
+<0000176f> Meiya's worried about leaving the Captain here alone,\p not just the Susano'o.\nI can understand...\p...\pthat feeling.\e
+
+//<00001770> ００ユニットの事をハッキリ説明できれば、\p納得させ易いんだろうけど…\p…\p。\e
+<00001770> It'd be easy to convince her otherwise if we explained the 00 Unit,\p but...\p...\p\e
+
+//<00001771> しかし柏木はさすが、\p割り切ってるだけのことはあるな。\n顔色ひとつ変えない。\e
+<00001771> Still,\p Kashiwagi's taking this well.\nShe's so decisive she can just accept it without flinching.\e
+
+//<000063c0> 【伊隅大尉】「なるほど。\nだったら尚更、\p柏木は貴様と共に白銀の直援に付くべきだな」\e
+<000063c0> 【Capt. Isumi】「I see.\nBut that is all the more reason for Kashiwagi to accompany you two.」\e
+
+//<00001775> 【冥夜】「…\p…\p…\p…\p」\n
+<00001775> 【Meiya】「...\p...\p...\p...\p」\n
+
+//<00001776> 【柏木少尉】「…\p…\p…\p…\p」\e
+<00001776> 【2nd Lt. Kashiwagi】「...\p...\p...\p...\p」\e
+
+//<000063c3> 【伊隅大尉】「白銀機に積んであるレコーダーを無事に回収する事は、\pこの任務の…\p…\pいや、\p『甲２１号作戦』に於ける最優先事項だ」\e
+<000063c3> 【Capt. Isumi】「Retrieving the recorder Shirogane's carrying is this mission's...\p...\pno,\p the Objective 21 Operation's top priority.」\e
+
+//<000063c5> 【伊隅大尉】「従って、\p白銀は可能な限り戦闘に参加せず、\p離脱を優先しなければならない。\nだが、\pそうなると護衛は１機だけという事になる」\e
+<000063c5> 【Capt. Isumi】「So Shirogane needs to prioritize escape while taking part in as little combat as possible.\nAnd that would mean a single escort would be fighting alone.」\e
+
+//<000063c7> 【冥夜】「…\p…\p…\p…\p」\e
+<000063c7> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<000063c9> 【伊隅大尉】「だからこそ、\p基本である２機連携を貴様と柏木で組む必要がある」\e
+<000063c9> 【Capt. Isumi】「So Kashiwagi needs to go with you for there to be an element.」\e
+
+//<000063ce> 【伊隅大尉】「貴様の能力が新人としては並はずれていようが、\p実質、\p今日が初陣の新米だけに委ねて良い任務ではないんだ」\e
+<000063ce> 【Capt. Isumi】「Your abilities may be extraordinary for a newbie,\p but the fact remains that this mission is not one to be entrusted to anyone during their first battle.」\e
+
+//<000063d0> 【冥夜】「…\p…\p…\p…\p」\e
+<000063d0> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00001784> なるほど。こうなった以上仕方がないって事だな。\e
+<00001784> I see. There's not a lot I can do about that.\e
+
+//<00001785> 最初から宗像中尉や速瀬中尉を直援にしていたら、\pそれこそ先行した中隊の戦力が危うくなるもんな。\e
+<00001785> If she'd assigned 1st Lt. Hayase and 1st Lt. Munakata to stay back here,\p we'd all be worried about the rest of the company after all.\e
+
+//<000063d5> 【伊隅大尉】「それとも何か？　貴様が僚機を守りながらでもこなせる脱出行が、\p私には単独でも危なっかしい…\p…\pそう言いたいのか？」\e
+<000063d5> 【Capt. Isumi】「Or are you trying to say that what you can do while escorting him would be difficult for me to do when escaping on my own? ...\p...\pwell?」\e
+
+//<00001788> 【冥夜】「――いえ！　決してその様な…\p…\p」\e
+<00001788> 【Meiya】「――No! I most certainly did not...\p...\p」\e
+
+//<0000178a> 【伊隅大尉】「ふふふ…\p…\p冗談だ。\nだがな御剣、\pひとつ言っておくぞ」\e
+<0000178a> 【Capt. Isumi】「Huhuhu...\p...\pI'm kidding.\nBut Mitsurugi,\p I will say this.」\e
+
+//<000063da> 【伊隅大尉】「貴様のような覚悟の決め方をした人間にとって、\p何かを護るために命を棄てるというのは、\pある意味簡単な事なんだろう」\e
+<000063da> 【Capt. Isumi】「For people like you, whose resolve is set in stone,\p in a way it's easy to throw away your life to defend something.」\e//lit. "decided your resolve" or something equally lame in English
+
+//<000063dd> 【伊隅大尉】「だがな、\p護衛任務というのは、\pその対象を守り切って当たり前。\nその上自分も守って初めて一人前なんだ」\e
+<000063dd> 【Capt. Isumi】「However,\p escort missions require you protect your charge until the very end.\nAnd that means you need to survive in order to do it right.」\e
+
+//<00001794> 【武】「――！」\n
+<00001794> 【Takeru】「――!」\n
+
+//<00001795> 【冥夜】「…\p…\p…\p…\p」\n
+<00001795> 【Meiya】「...\p...\p...\p...\p」\n
+
+//<00001797> 【柏木少尉】「…\p…\p」\e
+<00001797> 【2nd Lt. Kashiwagi】「...\p...\p...\p...\p」\e
+
+//<0000179a> 大尉は…\p…\p冥夜の最近の事情を知っているのか？　まさか…\p…\p月詠中尉が…\p…\p？\e
+<0000179a> Captain...\p...\pdo you know what's been going on with Meiya?\bThere's no way...\p...\p1st Lt. Tsukuyomi told you...\p...\p?\e
+
+//<000063e2> 【伊隅大尉】「我が身を棄てて何かを守る、\pという行為を否定しているんじゃない。\nむしろそれは尊い行いだ」\e
+<000063e2> 【Capt. Isumi】「I'm not telling you not to sacrifice yourself to protect something.\nThat's a noble thing to do.」\e
+
+//<000063e4> 【伊隅大尉】「だがそれは、\p一生に一度しかできない事だ。\nここぞというタイミングを見極める事が大切だろう」\e
+<000063e4> 【Capt. Isumi】「But it's something you can only do once.\nSo it's important to get the timing just right.」\e
+
+//<000063e6> 【冥夜】「…\p…\p…\p…\p」\e
+<000063e6> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<000063e8> 【伊隅大尉】「どうせ死ぬなら、\pひとつの生命をより多くのメリットに昇華させるべきだ」\e
+<000063e8> 【Capt. Isumi】「Since you're going to die someday anyway,\p wait until that sacrifice will have the most meaning.」\e
+
+//<00001e1c> 【伊隅大尉】「その最大効率のタイミングを知るには、\p物事を広く捉える視野が必要だ」\e
+<00001e1c> 【Capt. Isumi】「It takes a broad perspective to know when that most efficient time comes.」\e
+
+//<000017a5> 最大効率か…\p…\pこういう言い方は大尉らしい部分だな。\e
+<000017a5> Most efficient...\p...\pjust like the Captain to say it that way.\e
+
+//<000017a7> 【伊隅大尉】「貴様はまるで抜き身の刀だ。\n訓練を見ているとそう感じる」\e
+<000017a7> 【Capt. Isumi】「You are like an unsheathed blade.\nThat's the impression I get from watching you train.」\e
+
+//<000017a9> 【冥夜】「…\p…\p…\p…\p」\e
+<000017a9> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<000017ab> 【伊隅大尉】「少しは柏木を見習って肩の力を脱け」\e
+<000017ab> 【Capt. Isumi】「Learn a little from Kashiwagi and loosen up.」\e
+
+//<000017ad> 【柏木少尉】「あれ～おかしいな。\n何事もヒジョーに真面目に取り組んでるのに」\e
+<000017ad> 【2nd Lt. Kashiwagi】「Huh? That's a weird thing to say.\nI always get so serious about everything.」\e
+
+//<000063f0> 【伊隅大尉】「ふ。この通りだ。\nこの力加減が、\pある種の余裕と視野の広さを産むんだ」\e
+<000063f0> 【Capt. Isumi】「Hu, you're right.\nBut you know when to get serious because of your perspective.」\e
+
+//<000017b2> 【冥夜】「…\p…\p…\p…\p」\e
+<000017b2> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<000063f5> 【伊隅大尉】「戦闘中、\p柏木は貴様達を良く見ている。\n支援も的確だろう。\nだが、\p自分もキッチリ守っているぞ？」\e
+<000063f5> 【Capt. Isumi】「Kashiwagi's been watching all of you during combat.\nShe knows exactly when to back you up.\nBut she takes care of herself too.」\e
+
+//<000063f7> 【冥夜】「…\p…\p…\p…\p」\e
+<000063f7> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<000017b5> 【伊隅大尉】「…\p…\pそう言う事だ。\nいいな」\e
+<000017b5> 【Capt. Isumi】「...\p...\pthat's all I'm saying.\nUnderstood?」\e
+
+//<000017b9> 【冥夜】「――は。精進致します」\e
+<000017b9> 【Meiya】「――Ma'am. I shall strive to do this.」\e
+
+//<000017bb> 【武】「…\p…\p…\p…\p」\e
+<000017bb> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000017bc> 冥夜が、\p柏木のようになるのは多分無理だ。\n…\p…\p大尉もそんなことは承知の上で話したんだろう。\e
+<000017bc> It's probably impossible for Meiya to start acting like Kashiwagi.\n...\p...\pthough I'm sure the Captain knows that.\e
+
+//<000017bd> 今、\p戦況が追いつめられてるからこそ大尉はそうしたんだ。\n命令の理由を丁寧に説明したのも同じ事だ。\e
+<000017bd> She said that now because we're being backed into a corner.\nThat's also why she explained her reasoning so carefully.\e
+
+//<000017be> 不安な時の頭ごなしの命令は余計不安を煽る。\n冥夜の素性を知っているであろう大尉が、\pそこに気を配ったに違いない。\e
+<000017be> When we're worried like this, an order we can't understand only makes it worse.\nThe Captain understood that and tried to help her.\e
+
+//<000017bf> あれだけの威力を見せつけた凄乃皇がこんな状態になっただけでも、\pみんなの志気に相当な影響が出ている。\e
+<000017bf> Seeing the powerful Susano'o collapse like this had a significant effect on everyone's morale.\e
+
+//<000017c0> 日本人の悲願である佐渡島ハイヴ壊滅が、\pその一歩手前まで行きながら失敗するショックは計り知れない。\e
+<000017c0> I can't imagine what a huge shock it must be to fail right before destroying the Sadogashima Hive,\p which Japan's wanted to get rid of for years.\e
+
+//<00002fa8> 特に冥夜は、\p殿下や国民を人並み以上に想っている分、\pもっとダメージが大きかった筈だ。\e
+<00002fa8> Meiya must have been hurt especially bad since she feels for Her Highness and the people more than most.\e
+
+//<000017c2> その上、\pウィスキー部隊が半分以上やられちまってるんじゃ、\p月詠中尉達の事だって…\p…\p。\e
+<000017c2> On top of that,\p over half of Whiskey Unit's been killed,\p so 1st Lt. Tsukuyomi...\p...\p\e
+
+//<000017c3> ――そう言えば…\p…\p。\n大尉だってウィスキー部隊の妹さんが心配なはずなんだ…\p…\p。\e
+<000017c3> ――Come to think of it...\p...\p\nThe Captain should also be worried about her sister in Whiskey Unit...\p...\p\e
+
+//<000063fc> 【伊隅大尉】「白銀機の安全確保と引き替えにＡ－０２が無防備になるのは、\p任務としての優先度が低い以上、\p仕方がない事だ」\e
+<000063fc> 【Capt. Isumi】「Leaving A-02 unguarded in exchange for ensuring Shirogane's safety is something the mission priorities demand we do.」\e
+
+//<000063fe> 【伊隅大尉】「まして、\p私が脱出する際の安全確保など、\pそれと同列に語るべき問題ではないぞ」\e
+<000063fe> 【Capt. Isumi】「And whether or not I can escape safely is irrelevant compared to that objective.」\e
+
+//<000017c8> 【冥夜】「――は」\e
+<000017c8> 【Meiya】「――Ma'am.」\e
+
+//<000017ca> 【伊隅大尉】「理由はわかったな。\n柏木と御剣で白銀の直援につけ」\e
+<000017ca> 【Capt. Isumi】「You understand now?\nKashiwagi, Mitsurugi, escort Shirogane.」\e
+
+//<000017cd> 【冥夜】「――了解！」\n
+<000017cd> 【Meiya】「――Copy that!」\n
+
+//<00001eb1> 【柏木少尉】「――了解！」\e
+<00001eb1> 【2nd Lt. Kashiwagi】「――Copy that!」\e
+
+//<00001e98> 【涼宮中尉】「――ヴァルキリー・マムよりヴァルキリー１０――移動を開始せよ！　繰り返す――移動を開始せよ！」\e
+<00001e98> 【1st Lt. Suzumiya】「――Valkyrie Mum to Valkyrie 10――Begin moving! Repeat――Begin moving!」\e
+
+//<000017d7> 【冥夜】「――大尉、\p御武運を」\e
+<000017d7> 【Meiya】「――Captain,\p I wish you luck.」\e
+
+//<000017d9> 【柏木少尉】「――お先に失礼します、\p大尉！」\e
+<000017d9> 【2nd Lt. Kashiwagi】「――See you later,\p Captain!」\e
+
+//<000017dc> 【武】「――最上で待ってます！」\e
+<000017dc> 【Takeru】「――We'll be waiting on the Mogami!」\e
+
+//<000017de> 【伊隅大尉】「――頼んだぞ…\p…\p以降は無線封鎖に入る。\nさあ行けッ！」\e
+<000017de> 【Capt. Isumi】「――Please do...\p...\pand observe radio silence from now on.\nNow go!」\e
+
+//<000017e2> 【武】「――了解ッ！」\n
+<000017e2> 【Takeru】「――Copy that!」\n
+
+//<000017e3> 【冥夜】「――了解！」\n
+<000017e3> 【Meiya】「――Copy that!」\n
+
+//<00001eb3> 【柏木少尉】「――了解！」\e
+<00001eb3> 【2nd Lt. Kashiwagi】「――Copy that!」\e
+
+//<000017fe> 【信濃艦長　安倍】「――くッ！」\e
+<000017fe> 【Capt. Abe of the Shinano】「――Uu!」\e
+
+//<000017ff> 【信濃オペレーター１】「――第３副砲大破ッ！！　戦闘継続に支障なしッ！！」\e
+<000017ff> 【Shinano Operator 1】「――3rd Auxiliary Gun damaged!! We're still operational!!」\e//I am so sick of this "no obstacles to continuation of battle" phrase, someone figure out better ways of dealing with it ~IX //thank you shikiller ~IX
+
+//<00001801> 【信濃オペレーター２】「――右舷機関部装甲の６０％が規定耐久値を割りましたッ！！」\e
+<00001801> 【Shinano Operator 2】「――Starboard engine armor has taken 60% damage!!」\e//lit. "lost 60% of its designated endurance" I think?
+
+//<00001803> 【信濃艦長　安倍】「――取舵一杯ッ！　陸に左舷を向けるんだッ！！」\e
+<00001803> 【Capt. Abe of the Shinano】「――Hard port! Get our port side facing the shore!!」\e
+
+//<00001805> 【信濃オペレーター３】「――美濃、\p艦首に被弾ッ！！　尚も戦闘続行中ッ！！」\e
+<00001805> 【Shinano Operator 3】「――Mino's been hit in the bow!!\bIt remains operational!!」\e
+
+//<00001807> 【信濃オペレーター２】「――レーザー照射多数ッ！　自動反撃追いつきませんッ！！」\e
+<00001807> 【Shinano Operator 2】「――Exposure to multiple lasers!\bAutomatic counterattacks aren't fast enough!!」\e
+
+//<00001808> 【信濃艦長　安倍】「――対レーザー近接防御手動制御ッ！！　艦尾ＶＬＳ開けッ！」\e
+<00001808> 【Capt. Abe of the Shinano】「――Switch the anti-laser close defense system to manual!! Open the VLS in the stern!」\e
+
+//<0000180b> 【信濃オペレーター３】「――レーザー照射ＡＬＭを追尾ッ！！　本艦を逸れましたッ！！」\e
+<0000180b> 【Shinano Operator 3】「――The lasers are following our ALMs!!\bThe mothership escaped!!」\e
+
+//<0000180f> 【信濃オペレーター２】「――重金属雲発生、\p戦闘濃度ッ！！　――レーダーアウト！」\e
+<0000180f> 【Shinano Operator 2】「――Heavy metal cloud concentration too high!! ――Radar is down!」\e
+
+//<00001810> 【信濃艦長　安倍】「――データリンク照準ッ！！　全砲一斉射――撃てーッ！」\e
+<00001810> 【Capt. Abe of the Shinano】「――Use data link for sighting!! All guns aim――FIREEE!」\e
+
+//<00001820> 【柏木少尉】「――１時方向にＢＥＴＡ１９ッ！」\e
+<00001820> 【2nd Lt. Kashiwagi】「――Nineteen BETA at one o'clock!」\e
+
+//<00001823> 【冥夜】「――迂回するか！？」\e
+<00001823> 【Meiya】「――Should we circumvent them!?」\e
+
+//<00001825> 【武】「――ダメだ！　モタモタしてたら第二戦隊がやられる！　このまま突っ込むぞ！」\e
+<00001825> 【Takeru】「――We can't! The longer we take the more of 2nd Fleet dies! We're charging through them!」\e
+
+//<00001827> 【冥夜】「――了解！」\n
+<00001827> 【Meiya】「――Copy that!」\n
+
+//<00001828> 【柏木少尉】「――了解！」\e
+<00001828> 【2nd Lt. Kashiwagi】「――Copy that!」\e
+
+//<0000182e> 【柏木少尉】「――ヴァルキリー６――バンデッドインレンジ！　エンゲージオフェンシヴ！」\e
+<0000182e> 【2nd Lt. Kashiwagi】「――Valkyrie 6――Bandit in range!\bEngaging and attacking!」\e
+
+//<00001831> 【涼宮中尉】「――ＨＱ了解！　一撃離脱のみ許可する！」\e
+<00001831> 【1st Lt. Suzumiya】「――HQ, copy that!\bBreak off after only one attack!」\e//kinda guessing there... ~IX
+
+//<00001833> ――くそ！　さっきっからチョロチョロと出てきやがる！　大尉の判断は正解だったな！\e
+<00001833> ――Dammit! The whole route is dotted with them!\bThe Captain did make the right choice!\e
+
+//<00006470> 【柏木少尉】「――ヴァルキリー６――フォックス３！」\e
+<00006470> 【2nd Lt. Kashiwagi】「――Valkyrie 6――Fox 3!」\e
+
+//<00001836> 【冥夜】「――ヴァルキリー１１――フォックス２！」\e
+<00001836> 【Meiya】「――Valkyrie 11――Fox 2!」\e
+
+//<00001843> 【武】「――ヴァルキリー１０――フォックス３！」\e
+<00001843> 【Takeru】「――Valkyrie 10――Fox 3!」\e
+
+//<0000184c> 【武】「――うおおおおッ！」
+<0000184c> 【Takeru】「――Uwooooooooo!」
+
+//<00006299> \r
+<00006299> \r
+
+//<00001854> \r【純夏】「…\p…\p…\p…\pぅ…\p…\p」\e
+<00001854> \r【Sumika】「...\p...\p...\p...\pu...\p...\p」\e
+
+//<0000628c> 【武】「――邪魔だ！どけェッ！」
+<0000628c> 【Takeru】「――Outta my way! Mooove!」
+
+//<0000628e> \r
+<0000628e> \r
+
+//<00001861> 【純夏】「…\p…\p…\p…\pタ…\p…\p…\p…\pル…\p…\p…\pん…\p…\p」\e
+<00001861> 【Sumika】「...\p...\p...\p...\pTa...\p...\p...\p...\pru...\p...\p...\pan...\p...\p」\e
+
+//<0000186e> 【信濃オペレーター１】「――艦長、\p変です！　ＢＥＴＡの動きが完全に停止していますッ！」\e
+<0000186e> 【Shinano Operator 1】「――Captain,\p something's wrong!\bThe BETA have stopped moving!」\e
+
+//<0000186f> 【信濃艦長　安倍】「――なにィッ！？」\e
+<0000186f> 【Capt. Abe of the Shinano】「――What!?」\e
+
+//<00001873> 【伊隅大尉】「――ッ！？」\e
+<00001873> 【Capt. Isumi】「――!?」\e
+
+//<00001877> 【伊隅大尉】「――副司令ッ、\pプログラムにアクセスできました！」\e
+<00001877> 【Capt. Isumi】「――XO!\p I've managed to access the program!」\e
+
+//<00001879> 【最上艦長　小沢】「――おお！？」\e
+<00001879> 【Capt. Kozawa of the Mogami】「――Oooh!?」\e
+
+//<0000187a> 【夕呼】「――良くやったわ！　それで！？」\e
+<0000187a> 【Yuuko】「――Well done! How is it!?」\e
+
+//<0000187b> 【伊隅大尉】「――主機の手動制御は全て確保しました」\e
+<0000187b> 【Capt. Isumi】「――I have access to all manual engine controls.」\e
+
+//<0000187d> 【伊隅大尉】「現在、\p自律制御と起爆プログラムの立ち上がりを待っている所です」\e
+<0000187d> 【Capt. Isumi】「I'm currently waiting for the autopilot and self-destruct programs to load.」\e
+
+//<0000187f> 【ピアティフ中尉】「――ふっ…\p…\p副司令ッ！」\e
+<0000187f> 【1st Lt. Piatif】「――X-...\p...\pXO!」\e
+
+//<00001880> 【夕呼】「――どうしたの？」\e
+<00001880> 【Yuuko】「――What is it!?」\e
+
+//<00001881> 【ピアティフ中尉】「――Ｓエリアに旅団規模のＢＥＴＡ群出現！」\e
+<00001881> 【1st Lt. Piatif】「――Brigade-sized BETA herd emerged in the South area!」\e
+
+//<00001883> 【ピアティフ中尉】「――進路は…\p…\pＡ－０２擱坐地点ですッ！！」\e
+<00001883> 【1st Lt. Piatif】「――They're heading...\p...\pfor the A-02 crashlanding point!!」\e
+
+//<00001885> 【夕呼】「――くッ…\p…\p！」\e
+<00001885> 【Yuuko】「――Uu...\p...\p!」\e
+
+//<00001886> 【涼宮中尉】「――副司令ッ！」\e
+<00001886> 【1st Lt. Suzumiya】「――XO!」\e
+
+//<00001888> 【夕呼】「――今度は何っ！？」\e
+<00001888> 【Yuuko】「――What is it now!?」\e
+
+//<0000188a> 【涼宮中尉】「――ＳＷエリアで第二戦隊と交戦中のＢＥＴＡ群が…\p…\p南下し始めましたっ！」\e
+<0000188a> 【1st Lt. Suzumiya】「――The BETA herd engaged with the 2nd Fleet in the Southwest area...\p...\pis moving South!」\e
+
+//<0000188d> 【夕呼】「――ッ！？」\e
+<0000188d> 【Yuuko】「――!?」\e
+
+//<000063a0> 【純夏】「…\p…\p…\p…\p…\p…\p」
+<000063a0> 【Sumika】「...\p...\p...\p...\p...\p...\p」
+
+//<000062a1> \r
+<000062a1> \r
+
+//<00001899> 【伊隅大尉】「――えッ！？」
+<00001899> 【Capt. Isumi】「――Eh!?」
+
+//<0000189d> \r【伊隅大尉】「…\p…\p…\p…\pくッ！！」
+<0000189d> \r【Capt. Isumi】「...\p...\p...\p...\puu!!」
+
+//<00006351> \r
+<00006351> \r
+
+//<00006402> 【伊隅大尉】「――副司令！　プログラムがフリーズしました！　反応ありません！」\e
+<00006402> 【Capt. Isumi】「――XO! The program froze! It's not responding!」\e
+
+//<000043e2> 【夕呼】「何ですって？！\n――全くどこもかしこも…\p…\p何がどうなってんのよ…\p…\p！」\e
+<000043e2> 【Yuuko】「What did you say!?\n――Why won't anything...\p...\pwhat's going on here...\p...\p!?」\e
+
+//<000018a7> 【伊隅大尉】「は。入力画面呼び出し中に突然エラーメッセージが表示され、\p以降反応が――」\e
+<000018a7> 【Capt. Isumi】「Ma'am. It suddenly displayed an error message while loading the input screen and since then――」\e
+
+//<000018a9> 【夕呼】「――ああ、\pちがうのよ伊隅、\pあんたに言ったんじゃない。\nただのボヤきよ、\pボヤき」\e
+<000018a9> 【Yuuko】「――Aaah,\p not you, Isumi,\p I wasn't talking to you.\nI'm just complaining.」\e
+
+//<000018aa> 【伊隅大尉】「は」\e
+<000018aa> 【Capt. Isumi】「Ma'am.」\e
+
+//<000018ac> 【夕呼】「ＳエリアにＢＥＴＡが出現してそっちに向かってるわ。\n知ってるわね」\e
+<000018ac> 【Yuuko】「The BETA which emerged in the South area are heading toward you.\nYou're aware of that?」\e
+
+//<000018ad> 【伊隅大尉】「はい、\p先程確認しました」\e
+<000018ad> 【Capt. Isumi】「Yes,\p I saw it a moment ago.」\e
+
+//<000018af> 【夕呼】「自律制御の起動作業は中止よ。\nすぐ爆破作業にかかってちょうだい」\e
+<000018af> 【Yuuko】「Forget about activating the autopilot.\nStart the self-destruct sequence immediately.」\e//did anyone think they had a prayer of getting the autopilot working? Did you? ~IX//I did ;_; - Sheeta
+
+//<000018b5> 【伊隅大尉】「了解」\e
+<000018b5> 【Capt. Isumi】「Copy that.」\e
+
+//<000018b7> 【夕呼】「真野湾周辺のＢＥＴＡもなぜか南下し始めている。\nルートを塞がれたら、\p本土にしか逃げ道がなくなるわよ？」\e
+<000018b7> 【Yuuko】「The BETA around Mano Bay also started moving South for some reason.\nThey're gonna block the route soon and you might have to escape to the mainland.」\e
+
+//<000018b8> 【伊隅大尉】「わかりました。\n作業急ぎます」\e
+<000018b8> 【Capt. Isumi】「Understood.\nI'll finish quickly.」\e
+
+//<000018ba> 【夕呼】「早くしなさい」\e
+<000018ba> 【Yuuko】「You'd better.」\e
+
+//<000018c0> ――先生ッ！？\e
+<000018c0> ――Sensei!?\e
+
+//<000018c1> 【夕呼】「――白銀、\p速度が上がってないわね。\nどうしたの！？」\e
+<000018c1> 【Yuuko】「――Shirogane,\p you're not moving fast enough.\nWhat's wrong!?」\e
+
+//<000018c3> 【武】「――ルートの所々にＢＥＴＡがいるんですよ！　さっきより数が増えてます――どういう事ですか！？」\e
+<000018c3> 【Takeru】「――There's BETA all over the route!\bAnd they're increasing in number――What's going on!?」\e
+
+//<000018c4> 【夕呼】「佐渡島全域でＢＥＴＡの出現数が急激に増加しているのよ。\nしかも更に悪い知らせがあるわ」\e
+<000018c4> 【Yuuko】「The BETA emergence rates all over Sadogashima rose suddenly.\nAnd I have even worse news.」\e
+
+//<000018c5> 【武】「――え？」\e
+<000018c5> 【Takeru】「――Eh?」\e
+
+//<000018c6> 【夕呼】「真野湾周辺のＢＥＴＡが南下を始めたの。\n早くしないとレーザー属種に頭を押さえられるわよ」\e
+<000018c6> 【Yuuko】「The BETA around Mano Bay are moving South.\nMove quickly or you'll be charging headfirst into laser species.」\e
+
+//<000018c9> 【武】「――！？」\e
+<000018c9> 【Takeru】「――!?」\e
+
+//<000018ca> ＳエリアにＢＥＴＡが…\p…\pしかもなんだよこの進路予測はッ！？\e
+<000018ca> The BETA in the South area are...\p...\pand what the hell's with this prediction!?\e
+
+//<000018cb> 【夕呼】「とにかく何とかして速度を上げなさい。\n迂回はダメよ。\n推進剤が足りなくなるから」\e
+<000018cb> 【Yuuko】「Just figure out a way to move faster.\nNo detours.\p You'll run out of propellant.」\e
+
+//<000018cd> 【武】「――ちょっとまって下さい！　Ｓエリアに現れた敵は凄乃皇に向かってるじゃないですか！」\e
+<000018cd> 【Takeru】「――Wait a minute! Aren't the BETA in the South area heading toward the Susano'o!?」\e
+
+//<000018cf> 【冥夜】「副司令――大尉は未だＡ－０２に…\p…\p？」\e
+<000018cf> 【Meiya】「XO――Is the Captain still inside A-02...\p...\p?」\e
+
+//<000018d1> 【夕呼】「予定を繰り上げて爆破作業に入ったわ。\n見ての通りＢＥＴＡが迫ってるからね」\e
+<000018d1> 【Yuuko】「We're cutting our losses and blowing it up.\nYou can see the BETA approaching on it.」\e
+
+//<000018d3> 【柏木少尉】「――ですがこの敵の数では」\e
+<000018d3> 【2nd Lt. Kashiwagi】「――But with that many ene――」\e
+
+//<000018da> 【武】「――！」\n
+<000018da> 【Takeru】「――!」\n
+
+//<000018db> 【冥夜】「――！」\n
+<000018db> 【Meiya】「――!」\n
+
+//<000018dd> 【柏木少尉】「――ッ！？」\e
+<000018dd> 【2nd Lt. Kashiwagi】「――!?」\e
+
+//<000018e0> 【夕呼】「――予想以上に展開が早いわ！　――とにかく急ぎなさい！　いいわねッ！？」\e
+<000018e0> 【Yuuko】「――Too many unexpected things happened!\n――Just hurry the hell up! Got it!?」\e
+
+//<000018e2> 【柏木少尉】「――あっ、\p副司令！？」\e
+<000018e2> 【2nd Lt. Kashiwagi】「――Ah!\p XO!?」\e
+
+//<000018e7> ――ッ！\e
+<000018e7> ――!\e
+
+//<000018ed> 【武】「――ぐおおおおおおッ！」
+<000018ed> 【Takeru】「――Guwoooooooooooo!」
+
+//<000062c0> \r
+<000062c0> \r
+
+//<000018f0> 【冥夜】「――ぐゥゥッ！」
+<000018f0> 【Meiya】「――Guuuuu!」
+
+//<000062c1> \r
+<000062c1> \r
+
+//<000018f4> ――くそッ！　数が多すぎるッ！　自動回避が…\p…\p！！
+<000018f4> ――Dammit! There's too many of them! My automatic evasion...\p...\p!!
+
+//<000018f5> \r【武】「――自動回避解除ッ！　マニュアルモードッ！」
+<000018f5> \r【Takeru】「――Deactivating automatic evasion! I'm using manual!」
+
+//<000062c9> \r
+<000062c9> \r
+
+//<000018fc> 【武】「光線級か――展開が早いはずだ」\e
+<000018fc> 【Takeru】「Laser Class――They'll be here fast.」\e
+
+//<00001900> 【冥夜】「――タケルッ！　自動回避を切るなどと…\p…\p無茶をするでないぞ！」\e
+<00001900> 【Meiya】「――Takeru! Why did you kill auto-evasion?\b...\p...\pdo not do something so reckless!」\e
+
+//<00001905> 【柏木少尉】「――ゆっくりしている暇はないよ、\pおふたりさん！」\e
+<00001905> 【2nd Lt. Kashiwagi】「――There's no time to talk,\p you two!」\e
+
+//<0000190c> ――ッ！？\e
+<0000190c> ――!?\e
+
+//<0000190d> 【武】「柏木…\p…\pおまえ――」\e
+<0000190d> 【Takeru】「Kashiwagi...\p...\pyou――」\e//here we go... I TOLD YOU ABOUT THE DEATH FLAGS - kViN
+
+//<0000190e> 【冥夜】「――被弾したのか！？」\e
+<0000190e> 【Meiya】「――You were hit!?」\e
+
+//<00001910> 【柏木少尉】「――大丈夫、\p大丈夫！　大したことないって」\e
+<00001910> 【2nd Lt. Kashiwagi】「――I'm fine,\p I'm fine! It's no big deal.」\e
+
+//<00001913> 【冥夜】「機体のステータスチェックはしたのであろうな？」\e
+<00001913> 【Meiya】「Have you run a status check?」\e
+
+//<00001915> 【柏木少尉】「バッチリね。\n――さ、\pこうしてる間にも、\p第二戦隊が危ないんだ。\n早く！」\e
+<00001915> 【2nd Lt. Kashiwagi】「Of course.\n――But the 2nd Fleet's losing men every second.\nHurry up!」\e
+
+//<00001917> 【武】「作戦行動に支障がないなら、\p多少の問題があっても先を急ぐべきだ！」\e
+<00001917> 【Takeru】「If it won't get in the way then we need to keep moving forward!」\e
+
+//<00001918> 【冥夜】「――了解」\e
+<00001918> 【Meiya】「――Copy that.」\e
+
+//<0000191a> 【柏木少尉】「そう言う事」\e
+<0000191a> 【2nd Lt. Kashiwagi】「Exactly.」\e
+
+//<00001920> 【武】「――柏木ッ！？　何やってるんだ！」\e
+<00001920> 【Takeru】「――Kashiwagi! What're you doing!?」\e
+
+//<00001922> 【冥夜】「――どうした！？　やはり機体が…\p…\p！？」\e
+<00001922> 【Meiya】「――What happened!? Was your TSF...\p...\p!?」\e
+
+//<00001928> 【柏木少尉】「――白銀、\p御剣。\n悪いけど先に行って」\e
+<00001928> 【2nd Lt. Kashiwagi】「――Shirogane,\p Mitsurugi.\nSorry but go on without me.」\e
+
+//<0000192a> 【武】「――お、\pおまえ何言ってるんだ！？　機体のトラブルが深刻なら――」\e
+<0000192a> 【Takeru】「――Wh-\pwhat are you talking about!? If you're in that bad shape――」\e
+
+//<0000192b> 【冥夜】「――タケル、\p私が引き返す！　そなたは離脱を優先しろ！」\e
+<0000192b> 【Meiya】「――Takeru,\p I will return to her! You prioritize escape!」\e
+
+//<0000192c> 【柏木少尉】「――御剣ダメだよ！　あんたは白銀を守るんでしょ！？」\e
+<0000192c> 【2nd Lt. Kashiwagi】「――Mitsurugi, don't!\bAren't you gonna protect Shirogane!?」\e
+
+//<00001932> 【武】「――バッ…\p…\pバカ野郎――動くじゃねえかッ！　どこに行くつもりだッ！？」\e
+<00001932> 【Takeru】「――Y-...\p...\pyou idiot!\b――You can move fine! Where are you going!?」\e
+
+//<00001933> 【柏木少尉】「――白銀、\p御剣。\n私は今から大尉の援護に戻る」\e
+<00001933> 【2nd Lt. Kashiwagi】「――Shirogane,\p Mitsurugi.\nI'm going back to protect the Captain.」\e
+
+//<00001935> 【冥夜】「――何だと！？」\e
+<00001935> 【Meiya】「――What!?」\e
+
+//<00001938> 【柏木少尉】「このまま一緒に行っても、\pこの機体じゃ最上までたどり着けない」\e
+<00001938> 【2nd Lt. Kashiwagi】「With this damage I won't be able to reach the Mogami.」\e
+
+//<0000193a> 【武】「――やっぱりどっかおかしいのか！？」\e
+<0000193a> 【Takeru】「――So you did get hit badly!?」\e
+
+//<0000193c> 【柏木少尉】「推進剤が漏れてる…\p…\p装備を投棄しても無理だよ。\n計算した」\e
+<0000193c> 【2nd Lt. Kashiwagi】「I'm leaking propellant...\p...\premoving armor won't be enough.\p I did the math.」\e
+
+//<0000193e> 【柏木少尉】「しかも推力が一定以上に上がらないから速度的に足手纏いになる」\e
+<0000193e> 【2nd Lt. Kashiwagi】「And I've lost enough fuel already it'd be a bottleneck on my flight speed.」\e
+
+//<00001941> 【武】「――何だって？！」\n
+<00001941> 【Takeru】「――What did you say!?」\n
+
+//<00001942> 【冥夜】「――！」\e
+<00001942> 【Meiya】「――!」\e
+
+//<00001944> 【柏木少尉】「さっきの戦闘でやられたんだ。\n跳躍ユニットをレーザーが掠めたからね」\e
+<00001944> 【2nd Lt. Kashiwagi】「They got me during that last skirmish.\nA laser grazed my jump unit.」\e
+
+//<00001947> 【冥夜】「――柏木、\pそなたを私の機に乗せて行く！　着陸して機体放棄の準備をしろ！」\e
+<00001947> 【Meiya】「――Kashiwagi,\p you will ride in my TSF!\bLand and prepare to abandon yours!」\e
+
+//<00001948> 【柏木少尉】「――だめだ、\p任務を優先しろ御剣！　これは先任少尉としての命令だッ！」\e
+<00001948> 【2nd Lt. Kashiwagi】「――No, Mitsurugi,\p the mission comes first! That's an order as your senior!」\e//meaning she has more experience in this unit, clear enough? ~IX
+
+//<0000194b> 【冥夜】「――ッ！？」\n
+<0000194b> 【Meiya】「――!?」\n
+
+//<0000194c> 【武】「――？！」\e
+<0000194c> 【Takeru】「――!?」\e
+
+//<0000194e> 【柏木少尉】「白銀を守るのが御剣の役目だよ…\p…\p忘れた？」\e
+<0000194e> 【2nd Lt. Kashiwagi】「It's your job to protect Shirogane, Mitsurugi...\p...\pdid you forget that?」\e
+
+//<00001950> 【冥夜】「――しッ、\pしかし…\p…\pッ！」\e
+<00001950> 【Meiya】「――B-\pbut...\p...\p!」\e
+
+//<00001951> 【柏木少尉】「御剣もさっき見たよね…\p…\p『凄乃皇弐型』の攻撃でハイヴが崩れ落ちる光景」\e
+<00001951> 【2nd Lt. Kashiwagi】「You saw it too, Mitsurugi...\p...\pwhen the hive crumbled from the Susano'o's attack.」\e
+
+//<00001953> 【冥夜】「…\p…\p柏木？」\e
+<00001953> 【Meiya】「...\p...\pKashiwagi?」\e
+
+//<00001954> 【柏木少尉】「戦場で死ぬ人間が１００分の１以下になるっていう副司令の話…\p…\p『凄乃皇弐型』が完全になれば不可能じゃないと思う」\e
+<00001954> 【2nd Lt. Kashiwagi】「The XO said future operations might take a hundred times fewer deaths than this...\p...\pif she completes the Susano'o, I think that'll be true.」\e
+
+//<00001956> 【柏木少尉】「白銀が運んでいるのはその『凄乃皇弐型』のメインコンピューター…\p…\p人類の希望なんだよ」\e
+<00001956> 【2nd Lt. Kashiwagi】「Shirogane, what you're carrying is the Susano'o's main computer...\p...\phumanity's last hope.」\e
+
+//<00001958> 【柏木少尉】「それを無事に戦域から脱出させる事が私達の任務…\p…\p」\e
+<00001958> 【2nd Lt. Kashiwagi】「Our mission is to get that off the battlefield intact...\p...\p」\e
+
+//<0000195a> 【柏木少尉】「孤立した者の救助が任務の障害になる場合、\pそれは切り捨てて行くべきなんだよ」\e
+<0000195a> 【2nd Lt. Kashiwagi】「If helping stranded comrades gets in the way of that mission,\p then we need to leave them there.」\e
+
+//<0000195c> 【冥夜】「…\p…\p…\p…\p」\e
+<0000195c> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<0000195d> 【柏木少尉】「そうだよね、\p白銀？」\e
+<0000195d> 【2nd Lt. Kashiwagi】「Isn't that right,\p Shirogane?」\e
+
+//<00001962> 【柏木少尉】「それに、\p孤立したとき切り捨てられるのは突撃前衛に限った話じゃない。\nみんな同じだよ」\e
+<00001962> 【2nd Lt. Kashiwagi】「Besides,\p it's not just Storm Vanguards who'd get abandoned if they were isolated.\p We all would.」\e//CP_S MLA_0049
+
+//<00001964> 【柏木少尉】「だからもし私がそうなっても、\p助けに来る必要はないからね」\e
+<00001964> 【2nd Lt. Kashiwagi】「So if that happens to me you don't need to come save me.」\e//CP_E
+
+//<00001966> 柏木…\p…\pおまえは…\p…\p。\e
+<00001966> Kashiwagi...\p...\pyou're...\p...\p\e
+
+//<0000196a> 【柏木少尉】「明日のテスト…\p…\pうまく行って欲しいなあ…\p…\p」\e
+<0000196a> 【2nd Lt. Kashiwagi】「I hope the test goes well...\p...\ptomorrow...\p...\p」\e//CP_S MLA_0051
+
+//<0000196c> 【柏木少尉】「テストが成功して『凄乃皇弐型』が正規配備されたら…\p…\p弟達は戦わなくて済むかな」\e
+<0000196c> 【2nd Lt. Kashiwagi】「If this succeeds and the Susano'o becomes an officially accepted weapon...\p...\pmaybe my brothers won't have to fight...\p...\p」\e
+
+//<0000196e> 【柏木少尉】「身勝手でしょ…\p…\p私って…\p…\p」\e
+<0000196e> 【2nd Lt. Kashiwagi】「I'm selfish...\p...\paren't I...\p...\p?」\e//CP_E
+
+//<00001974> 【武】「――冥夜、\p現進路を維持しろ。\n柏木を追って引き返したら、\pおまえまで最上に辿り着けなくなる」\e
+<00001974> 【Takeru】「――Meiya,\p maintain present course.\nIf you go back for Kashiwagi,\p you won't be able to reach the Mogami.」\e
+
+//<00001975> 【冥夜】「タケル…\p…\p」\e
+<00001975> 【Meiya】「Takeru...\p...\p」\e
+
+//<00001976> 【柏木少尉】「さすが白銀。\nわかってるねぇ」\e
+<00001976> 【2nd Lt. Kashiwagi】「Well said, Shirogane.\nYou get what I mean.」\e
+
+//<00001978> 何言ってんだ…\p…\pオレ達に躊躇させないよう、\pワザとそうしたくせに。\e
+<00001978> What're you saying?\b...\p...\pyou did that on purpose to keep us from hesitating.\e//wait, what? ~IX
+
+//<00001979> 【武】「柏木…\p…\p大尉の護衛、\p頼むぞ」\e
+<00001979> 【Takeru】「Kashiwagi...\p...\pkeep the Captain safe.」\e
+
+//<0000197a> 【柏木少尉】「了解。\n御剣も大尉の護衛があった方が良いって言ってたんだから、\p納得してよ。\pね？」\e
+<0000197a> 【2nd Lt. Kashiwagi】「Roger.\nMitsurugi, you wanted me to guard her anyway,\p so let me go.\p Okay?」\e
+
+//<0000197c> 【冥夜】「…\p…\p…\p…\p」\e
+<0000197c> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<0000197d> 【武】「大尉の機体…\p…\p推進剤残量の計算だけは気をつけろよ」\e
+<0000197d> 【Takeru】「Just keep an eye...\p...\pon the propellant left in her TSF.」\e
+
+//<0000197e> 【柏木少尉】「そうだね。\n私が乗せてもらう分、\p重量が増えるし」\e
+<0000197e> 【2nd Lt. Kashiwagi】「Good point.\nHaving me in there too will increase the weight.」\e
+
+//<00001980> 【武】「ああ」\e
+<00001980> 【Takeru】「Yeah.」\e
+
+//<00001981> 【冥夜】「――柏木」\e
+<00001981> 【Meiya】「――Kashiwagi.」\e
+
+//<00001982> 【柏木少尉】「――なに？」\e
+<00001982> 【2nd Lt. Kashiwagi】「――What?」\e
+
+//<00001985> 【冥夜】「必ず戻れ」\e
+<00001985> 【Meiya】「Do not fail to return.」\e
+
+//<00001986> 【柏木少尉】「…\p…\p…\p…\p」\e
+<00001986> 【2nd Lt. Kashiwagi】「...\p...\p...\p...\p」\e
+
+//<00001988> 【冥夜】「私に欠けている余裕とやらを、\p今後そなたから学ばねばならんのだからな」\e
+<00001988> 【Meiya】「I must learn more of this "perspective" I seem to be lacking.」\e
+
+//<0000198a> 【柏木少尉】「あはは…\p…\p了解。\nじゃあ、\pまた後で」\e
+<0000198a> 【2nd Lt. Kashiwagi】「Ahaha...\p...\proger that.\nSee you guys later.」\e
+
+//<00001990> 【最上オペレーター１】「――ＳＷエリアのＢＥＴＡ群、\p依然南西に移動中」\e
+<00001990> 【Mogami Operator 1】「――The BETA herd in the Southwest area is still heading Southwest.」\e
+
+//<00001993> 【最上オペレーター２】「第二戦隊は進攻阻止のため、\p真野湾内を南東に進撃中！」\e
+<00001993> 【Mogami Operator 2】「The 2nd Fleet in Mano Bay is heading Southeast to slow the enemy advance Southward!」\e
+
+//<00001995> 【ピアティフ中尉】「――ＳエリアのＢＥＴＡ郡、\pＡ－０２擱坐地点到達まで約７０００！」\e
+<00001995> 【1st Lt. Piatif】「――The BETA herd in the Southeast area is about 7000 meters from A-02's crashlanding point!」\e//LOL typo: ＢＥＴＡ郡 (BETA county) should be ＢＥＴＡ群 (BETA herd) ~IX //ok it says South area but it's obvious only the one in the Southeast area is even heading toward the A-02, so fixing that ~IX
+
+//<00001997> 【夕呼】「――伊隅、\pそっちはどう！？」\e
+<00001997> 【Yuuko】「――Isumi,\p talk to me!!」\e
+
+//<00001998> 【伊隅大尉】「――申し訳ありません、\p難航しています！」\e
+<00001998> 【Capt. Isumi】「――I'm sorry,\p it's not going well!」\e
+
+//<0000199a> 【夕呼】「――ＢＥＴＡが７ｋｍ先まで迫ってるわ。\n急いでちょうだい！」\e
+<0000199a> 【Yuuko】「――The BETA are seven kilometers away.\nHurry it up!」\e
+
+//<0000199b> 【伊隅大尉】「――は！」\e
+<0000199b> 【Capt. Isumi】「――Ma'am!」\e
+
+//<0000199d> 【夕呼】「幸いレーザー属種が含まれていなかったから、\pエコー艦隊の支援砲撃で何とか足止めして来たけど、\pそれもそろそろ限界よ」\e
+<0000199d> 【Yuuko】「Fortunately there are no laser species among them, so Echo Fleet's artillery's been slowing them down,\p but that won't work much longer.」\e
+
+//<0000199e> 【夕呼】「弾切れの艦も出始めて順次補給に入ってるから、\pジリジリ間を詰められているのが現状」\e
+<0000199e> 【Yuuko】「They're falling back to resupply individually as they run out of ammo,\p so they're practically bumping into each other right now.」\e
+
+//<0000199f> 【伊隅大尉】「安全装置の解除までは行きましたが、\p例によって起爆プログラムが立ち上がりません」\e
+<0000199f> 【Capt. Isumi】「I've managed to release the safety device,\p but the detonation program still won't load.」\e
+
+//<000019a1> 【夕呼】「最悪だわ――こちらでモニターする限り全て正常なのに…\p…\p！」\e
+<000019a1> 【Yuuko】「Just awful――And all of our diagnostics say it's normal...\p...\p!」\e
+
+//<00006473> 【伊隅大尉】「――先程回復した原因はわかりませんか！？　同じ状況を再現できれば或いは！」\e
+<00006473> 【Capt. Isumi】「――Do you know why it briefly reactivated before!? Maybe we can make it happen again!」\e
+
+//<000019a4> 【夕呼】「残念ながら皆目見当が付かないわ。\nとにかくギリギリまで粘ってちょうだい！」\e
+<000019a4> 【Yuuko】「Unfortunately none of us have any idea.\nJust keep at it until the last second!」\e
+
+//<000019a5> 【伊隅大尉】「――了解！」\e
+<000019a5> 【Capt. Isumi】「――Copy that!」\e
+
+//<000019a9> 【夕呼】「所定のルートはもうすぐＢＥＴＡの支配下になるわ。\n爆破の成否にかかわらず、\p脱出は本土を目指しなさい」\e
+<000019a9> 【Yuuko】「The designated route is about to fall under BETA control.\nWhether you can detonate it or not,\p you'll be heading for the mainland.」\e
+
+//<000019ab> 【夕呼】「主機の暴走に成功した場合は、\p推進剤の続く限り内陸を目指すのよ？　山岳部でもいいわ」\e
+<000019ab> 【Yuuko】「If you can get the engine going out of control,\p head inland until you run out of fuel. Try to reach mountains.」\e
+
+//<000019ad> 【伊隅大尉】「わかりました。\nところで、\p隊の状況はどうなっていますか」\e
+<000019ad> 【Capt. Isumi】「Understood.\nBy the way,\p how's the rest of the unit?」\e
+
+//<00006489> 【夕呼】「速瀬達には白銀の脱出ルートを先行させて、\p散在しているＢＥＴＡを排除させているわ。\n全機健在よ」\e
+<00006489> 【Yuuko】「Hayase and the others have been destroying scattered BETA along Shirogane's escape route.\nThe whole unit's still intact.」\e
+
+//<000064a0> 【夕呼】「白銀達は今、\p第二戦隊が突出してくれているおかげで、\p一番危険な地域は何とか突破できそうよ」\e
+<000064a0> 【Yuuko】「Thanks to 2nd Fleet's charge,\p Shirogane should be able to break through the most dangerous part.」\e
+
+//<00006495> 【伊隅大尉】「第二戦隊が南下したのはそういう事だったんですね。\n彼らに感謝せねば…\p…\p」\e
+<00006495> 【Capt. Isumi】「So that's why 2nd Fleet's heading South.\nWe have to thank them...\p...\p」\e
+
+//<000019b5> 【夕呼】「全ての状況が把握できた方がやり易そうね。\nこちらの通信もオープンで流しておくから」\e
+<000019b5> 【Yuuko】「It'd be easier if you could see everything.\nI'll send these transmissions on an open channel.」\e
+
+//<000019b7> 【伊隅大尉】「ありがとうございます」\e
+<000019b7> 【Capt. Isumi】「Thank you.」\e
+
+//<000019b9> 【夕呼】「そう言えば、\p柏木機が跳躍ユニットに被弾したわ。\n推進剤漏れと推力低下程度で済んだけど」\e
+<000019b9> 【Yuuko】「Come to think of it,\p Kashiwagi's jump unit was hit.\nThough other than a fuel leak she's fine.」\e
+
+//<000019bc> 【伊隅大尉】「――そうですか。\nあいつめ…\p…\p褒めた矢先に…\p…\p」\e
+<000019bc> 【Capt. Isumi】「――I see.\nAnd right after I complimented her...\p...\p」\e
+
+//<000019be> 【夕呼】「今、\pあんたの機体の準備を色々やらせてるわ。\n脱出する時は２人乗りで来なさい」\e
+<000019be> 【Yuuko】「I'm having her get your TSF ready.\nYou'll be escaping in it together.」\e
+
+//<000019c0> 【伊隅大尉】「――は？！　柏木はここに戻って来たんですか！？」\e
+<000019c0> 【Capt. Isumi】「――Huh!? Kashiwagi came back here!?」\e
+
+//<000019c2> 【夕呼】「元々そういう手筈じゃなかったの？　まあいいわ。\nとにかく爆破作業、\p急いで」\e
+<000019c2> 【Yuuko】「Wasn't that the original plan anyway?\bIt doesn't matter. Just get the self-destruct started.」\e
+
+//<000019c4> 【伊隅大尉】「――了解」\e
+<000019c4> 【Capt. Isumi】「――Copy that.」\e
+
+//<000019c7> 【柏木少尉】「――大尉、\p脱出準備、\p整いました！」\e
+<000019c7> 【2nd Lt. Kashiwagi】「――Captain,\p we're ready for the escape!」\e
+
+//<00004dac> 【伊隅大尉】「――ばかもの！　貴様なぜ戻って来た？！\n大体…\p…\pなぜ今まで黙っていた！」\e
+<00004dac> 【Capt. Isumi】「――You fool! Why did you come back!?\nNot to mention...\p...\pwhy didn't you tell me!?」\e
+
+//<000019cb> 【柏木少尉】「無線封鎖中ですから…\p…\p」\e
+<000019cb> 【2nd Lt. Kashiwagi】「You know, radio silence...\p...\p」\e//adaptation is fun ~IX
+
+//<000019cd> 【伊隅大尉】「貴様…\p…\p低出力通信は許可されている筈だが…\p…\p？」\e
+<000019cd> 【Capt. Isumi】「You...\p...\pweren't we allowed low output transmissions...\p...\p?」\e
+
+//<000019cf> 【柏木少尉】「あはは…\p…\p失念していました」\e
+<000019cf> 【2nd Lt. Kashiwagi】「Ahaha...\p...\pslipped my mind.」\e
+
+//<00006406> 【伊隅大尉】「ふん…\p…\p帰ったら反吐が出るほど鍛え直してやる。\n二度と命令を失念しないようにな！」\e
+<00006406> 【Capt. Isumi】「Hmph...\p...\pwhen we get back I'll retrain you 'till you vomit.\nYou won't forget an order of mine again!」\e
+
+//<000019d3> 【柏木少尉】「宜しくお願いします！」\e
+<000019d3> 【2nd Lt. Kashiwagi】「Can't wait!」\e
+
+//<000019d6> 【伊隅大尉】「私の機体の制御優先権を今から貴様に切り換える。\n自分の機体の二次優先を自分自身に設定し直せ」\e
+<000019d6> 【Capt. Isumi】「I'm switching my TSF's remote control priority to you.\nChange your TSF's second priority back to yourself.」\e//why? ~IX
+
+//<000019d8> 【柏木少尉】「了解。\nこれでやっと、\p私の機体を自律制御で戦わせる事ができます」\e
+<000019d8> 【2nd Lt. Kashiwagi】「Got it.\nNow I can finally make my TSF fight on autopilot.」\e
+
+//<000019da> 【伊隅大尉】「余計なことは言わんでいい！　さっさとかかれ！」\e
+<000019da> 【Capt. Isumi】「Don't waste time talking! Do it now!」\e
+
+//<000019dc> 【柏木少尉】「――了解！」\e
+<000019dc> 【2nd Lt. Kashiwagi】「――Copy that!」\e
+
+//<000019df> 【伊隅大尉】「…\p…\p…\p…\pまったく。\n…\p…\p柏木め」\e
+<000019df> 【Capt. Isumi】「...\p...\p...\p...\pgeez.\n...\p...\pKashiwagiii.」\e
+
+//<000019e1> 【伊隅大尉】「私に見る目が無かったというべきか…\p…\p」\e
+<000019e1> 【Capt. Isumi】「Maybe I misjudged her...\p...\p」\e
+
+//<000019e5> 【冥夜】「――はああああッ！」
+<000019e5> 【Meiya】「――Haaaaaaaaa!」
+
+//<00006308> \r
+<00006308> \r
+
+//<000019e7> 【武】「――ッ！！」
+<000019e7> 【Takeru】「――!!」
+
+//<0000630a> \r
+<0000630a> \r
+
+//<000019e8> \r【武】「――甘いんだよッ！！」
+<000019e8> \r【Takeru】「――Not good enough!!」
+
+//<0000630c> \r
+<0000630c> \r
+
+//<000019e9> 【冥夜】「――てやぁぁぁッ！」
+<000019e9> 【Meiya】「――Teyaaaaaaa!」
+
+//<0000630e> \r
+<0000630e> \r
+
+//<000019eb> 【武】「――この野郎ォォッ！！」
+<000019eb> 【Takeru】「――You bastaaaaards!!」
+
+//<00006310> \r
+<00006310> \r
+
+//<000019ec> 【冥夜】「――くぅッ！！」
+<000019ec> 【Meiya】「――Uuu!!」
+
+//<00006311> \r
+<00006311> \r
+
+//<000019ee> 【武】「――冥夜ッ！」\n
+<000019ee> 【Takeru】「――Meiya!」\n
+
+//<000019f0> 【冥夜】「――ならんぞッ！　先に行けッ！！」
+<000019f0> 【Meiya】「――Do not! Go onward!!」
+
+//<00006317> \r
+<00006317> \r
+
+//<000019f4> 【武】「――！」\n
+<000019f4> 【Takeru】「――!」\n
+
+//<000019f5> 【冥夜】「――！？」\e
+<000019f5> 【Meiya】「――!?」\e
+
+//<000019f8> 【速瀬中尉】「――あんた達随分遅かったわね！　待ちくたびれたわよ！」\e
+<000019f8> 【1st Lt. Hayase】「――You guys are so slow!\bIt's about damn time you got here!」\e
+
+//<000019fa> 【武】「――中尉！」\e
+<000019fa> 【Takeru】「――First Lieutenant!」\e
+
+//<000019fd> 【冥夜】「――危ない所でした。\n感謝致します」\e
+<000019fd> 【Meiya】「――That was close.\p I am thankful.」\e
+
+//<000019ff> ――マーカーが消えているせいで接近に気付かなかった！\e
+<000019ff> ――We didn't notice her because her marker's off!\e
+
+//<00001a00> 【速瀬中尉】「――礼を言うなら狙撃した珠瀬にね」\e
+<00001a00> 【1st Lt. Hayase】「――Thank Tamase for sniping them.」\e
+
+//<00001a02> ――たま…\p…\pさすがだぜ！\e
+<00001a02> ――Tama...\p...\pnice job!\e
+
+//<00001a03> 【速瀬中尉】「――とにかく話は後！　海上に出るわよッ！」\e
+<00001a03> 【1st Lt. Hayase】「――Anyway, talking later! Get out to sea!」\e
+
+//<00001a06> 【武】「――了解ッ！」\n
+<00001a06> 【Takeru】「――Copy that!」\n
+
+//<00001a07> 【冥夜】「――了解ッ！」\e
+<00001a07> 【Meiya】「――Copy that!」\e
+
+//<00001a0e> 【涼宮中尉】「――白銀機、\pＡ－０１と合流し海上へ離脱――北上を開始しました！　本艦到達まで約９００秒！」\e
+<00001a0e> 【1st Lt. Suzumiya】「――Shirogane has regrouped with A-01 and is over water――He's heading North!\b900 seconds until he reaches us!」\e
+
+//<00001a12> 【夕呼】「白銀機は最上の艦載機デッキに。\n速瀬以下の中隊各機は、\p随伴している戦術機母艦国東に誘導」\e
+<00001a12> 【Yuuko】「Have him land on the Mogami's TSF deck.\nLead Hayase and the others to one of the Far East motherships next to us.」\e
+
+//<00001a14> 【涼宮中尉】「――了解」\e
+<00001a14> 【1st Lt. Suzumiya】「――Understood.」\e
+
+//<00001a16> 【夕呼】「小沢提督、\p第二戦隊に撤退命令をお出しください」\e
+<00001a16> 【Yuuko】「Admiral Kozawa,\p please order the 2nd Fleet to retreat.」\e
+
+//<00001a17> 【最上艦長　小沢】「――君、\p信濃を呼び出したまえ」\e
+<00001a17> 【Capt. Kozawa of the Mogami】「――You,\p call the Shinano.」\e
+
+//<00001a18> 【最上オペレーター１】「――は！」\e
+<00001a18> 【Mogami Operator 1】「――Sir!」\e//"sit"? What was wrong with me... ~IX
+
+//<00001a23> 【最上艦長　小沢】「――安倍君、\pご苦労だった！　至急真野湾を離脱してくれたまえ！」\e
+<00001a23> 【Capt. Kozawa of the Mogami】「――Abe-kun,\p splendid job!\bNow get everyone out of Mano Bay immediately!」\e
+
+//<00001a25> 【信濃艦長　安倍】「――小沢提督！　ということは…\p…\p！？」\e
+<00001a25> 【Capt. Abe of the Shinano】\b「――Admiral Kozawa! Does that mean...\p...\p!?」\e
+
+//<00001a26> 【最上艦長　小沢】「――うむ。\n例のものは既に戦域を離脱した」\e
+<00001a26> 【Capt. Kozawa of the Mogami】\b「――Yes. It's left the battlefield.」\e
+
+//<00001a29> 【信濃オペレーター１】「――艦尾ヘリコプターデッキ大破！！　火災発生ッ！！」\e
+<00001a29> 【Shinano Operator 1】\b「――Stern helicopter deck hit!! We're on fire!!」\e
+
+//<00001a2b> 【信濃艦長　安倍】「――そうですか！　これで…\p…\p人類は救われます」\e
+<00001a2b> 【Capt. Abe of the Shinano】\b「――They've done it! Now...\p...\phumanity will be saved.」\e
+
+//<00001a2c> 【信濃オペレーター２】「――自動消火装置作動せずッ！　消火作業かかれッ！！」\e
+<00001a2c> 【Shinano Operator 2】\b「――Automatic extinguishers not functioning! Get someone to put it out!!」\e
+
+//<00001a2e> 【最上艦長　小沢】「それも第二戦隊将兵の勇戦があったればこそ。\n見事であった。\nさあ、\p撤退を開始したまえ」\e
+<00001a2e> 【Capt. Kozawa of the Mogami】\b「And it's all thanks to the bravery of the 2nd Fleet's sailors.\nYou did admirably.\p Now begin your retreat.」\e
+
+//<00006493> 【信濃オペレーター３】「――『美濃』、\p艦橋に被弾ッ！！　尚も戦闘継続中ッ！！」\e
+<00006493> 【Shinano Operator 3】\b「――Mino's bridge hit!! It's continuing to fight!!」\e
+
+//<00001a33> 【信濃艦長　安倍】「――小沢提督、\pまだです。\nまだここを動くわけには参りません」\e
+<00001a33> 【Capt. Abe of the Shinano】\b「――Admiral Kozawa,\p we're not done yet.\nWe can't leave here yet.」\e
+
+//<00001a34> 【最上艦長　小沢】「どういう事だ安倍君！？　既に艦隊は満身創痍…\p…\p一刻を争うぞ！」\e
+<00001a34> 【Capt. Kozawa of the Mogami】「What do you mean, Abe-kun!?\bYour ship's already full of holes...\p...\pget out of there now!」\e
+
+//<00001a37> 【信濃オペレーター３】「――第二砲塔損傷ッ！！　基部が照射により融解、\p固定されましたッ！！」\e
+<00001a37> 【Shinano Operator 3】「――2nd turret damaged!!\bLasers have melted the base,\p fixing it in place!!」\e
+
+//<00001a38> 【信濃艦長　安倍】「――今、\p我が艦隊がここを放棄すれば、\p撤退中のウィスキー部隊が狙い撃ちにされてしまいます！」\e
+<00001a38> 【Capt. Abe of the Shinano】「――If we abandon this position now,\p the last of Whiskey Unit will be sitting ducks!」\e
+
+//<00001a39> 【最上艦長　小沢】「む…\p…\p！」\e
+<00001a39> 【Capt. Kozawa of the Mogami】「Mm...\p...\p!」\e
+
+//<00001a3b> 【信濃艦長　安倍】「第二戦隊はウィスキー部隊の撤退完了までここを動きません。\nこれは全艦長の総意です」\e
+<00001a3b> 【Capt. Abe of the Shinano】「The 2nd Fleet will not move until Whiskey Unit has retreated.\nEvery ship wants to do this.」\e
+
+//<00006491> 【信濃艦長　安倍】「――尚、\p退艦希望者は１名たりとも居りませんでした！」\e
+<00006491> 【Capt. Abe of the Shinano】\b「――Not one single ship has requested a retreat!」\e
+
+//<00001a42> 【最上艦長　小沢】「ぬぅ…\p…\p」\e
+<00001a42> 【Capt. Kozawa of the Mogami】「Uuu...\p...\p」\e
+
+//<00001a44> 【夕呼】「…\p…\p…\p…\p」\e
+<00001a44> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<00001a45> 【信濃艦長　安倍】「提督…\p…\p今日を境に、\p人類は必ずや攻勢に転じます」\e
+<00001a45> 【Capt. Abe of the Shinano】\b「Admiral...\p...\ptoday,\p humanity goes on the offensive.」\e
+
+//<00001a47> 【信濃艦長　安倍】「さすれば主戦場は大陸。\nそこに於いて人類の尖兵となり、\p且つまた彼の新兵器を護衛する陸の戦力こそ肝要」\e
+<00001a47> 【Capt. Abe of the Shinano】\b「Which means the battles will be fought on land.\nLand forces will be crucial to humanity's vanguard as well as the new weapons which support them.」\e
+
+//<0000648f> 【信濃艦長　安倍】「そう易々と敵に討たせる訳には参りません」\e
+<0000648f> 【Capt. Abe of the Shinano】\b「We cannot allow them to be destroyed so easily.」\e
+
+//<00001a4b> 【最上艦長　小沢】「…\p…\p…\p…\p」\e
+<00001a4b> 【Capt. Kozawa of the Mogami】「...\p...\p...\p...\p」\e
+
+//<00001a4c> 【信濃艦長　安倍】「寂寞たる想いはあれど…\p…\p今日この時こそ、\p戦艦が用に立つ残り少ない機会であると存じます」\e
+<00001a4c> 【Capt. Abe of the Shinano】\b「We know that today will be one of the few remaining chances for warships to be of use...\p...\pas lonely as it may be.」\e
+
+//<00001a4e> 【最上艦長　小沢】「安倍君…\p…\p君達は…\p…\p」\e
+<00001a4e> 【Capt. Kozawa of the Mogami】「Abe-kun...\p...\pyou are...\p...\p」\e
+
+//<00001a53> 【信濃艦長　安倍】「帝国海軍軍人たる者、\p海行かば水漬く屍は元より覚悟」\e
+<00001a53> 【Capt. Abe of the Shinano】\b「Soldiers in the Imperial Navy live and die on the sea.」\e
+
+//<00001a55> 【最上艦長　小沢】「…\p…\p…\p…\p」\e
+<00001a55> 【Capt. Kozawa of the Mogami】「...\p...\p...\p...\p」\e
+
+//<00001a58> 【信濃艦長　安倍】「――そうでありましょう、\p提督」\e
+<00001a58> 【Capt. Abe of the Shinano】「――Is that not true,\p Admiral?」\e
+
+//<00001a5c> 【大和艦長　田所】「――提督、\p誰かがやらねばならぬのです。\nならば彼等にやらせてやって下さい」\e
+<00001a5c> 【Capt. Tadokoro of the Yamato】\b「――Admiral,\p someone has to do this.\nSo please let us be the ones.」\e
+
+//<00001a5e> 【信濃艦長　安倍】「田所君…\p…\p」\e
+<00001a5e> 【Capt. Abe of the Shinano】「Tadokoro-kun...\p...\p」\e
+
+//<00001a5f> 【大和艦長　田所】「――信濃も大和も…\p…\pそして武蔵も、\p佐渡島陥落の際この海に在りました」\e
+<00001a5f> 【Capt. Tadokoro of the Yamato】\b「――The Shinano, the Yamato...\p...\pand the Musashi were all here when Sadogashima was lost.」\e
+
+//<00001a61> 【最上艦長　小沢】「む…\p…\p」\e
+<00001a61> 【Capt. Kozawa of the Mogami】「Mm...\p...\p」\e
+
+//<00001a63> 【大和艦長　田所】「――あの日ここに居た者の胸裏、\p一水兵に到るまで皆同じです」\e
+<00001a63> 【Capt. Tadokoro of the Yamato】\b「――Every last soldier who was there that day feels the same.」\e
+
+//<00001a65> 【信濃艦長　安倍】「…\p…\p…\p…\p」\e
+<00001a65> 【Capt. Abe of the Shinano】「...\p...\p...\p...\p」\e
+
+//<00001a66> 【最上艦長　小沢】「…\p…\pウィスキー部隊の撤退を急がせる。\nそれまで持ち堪えてくれ…\p…\p」\e
+<00001a66> 【Capt. Kozawa of the Mogami】\b「...\p...\pget Whiskey Unit out of there quickly.\nAnd please survive that long...\p...\p」\e
+
+//<00001a68> 【信濃艦長　安倍】「――はッ！」\e
+<00001a68> 【Capt. Abe of the Shinano】「――Sir!」\e
+
+//<00001a6a> 【信濃艦長　安倍】「香月副司令」\e
+<00001a6a> 【Capt. Abe of the Shinano】「XO Kouzuki.」\e
+
+//<00001a6d> 【夕呼】「何でしょう」\e
+<00001a6d> 【Yuuko】「What is it?」\e
+
+//<00001a6f> 【信濃艦長　安倍】「日本を…\p…\pいえ――人類を宜しくお願いします！」\e
+<00001a6f> 【Capt. Abe of the Shinano】\b「Please save Japan...\p...\pno――All of humanity!」\e
+
+//<00001a70> 【夕呼】「お任せ下さい、\p安倍艦長。\n必ず…\p…\p必ずＢＥＴＡを滅ぼします」\e
+<00001a70> 【Yuuko】「You have nothing to worry about,\p Capt. Abe.\nI will...\p...\pdestroy the BETA.」\e
+
+//<00001a75> 【大和艦長　田所】「安倍君、\pしっかり頼むぞ。\nご家族の心配は無用だ」\e
+<00001a75> 【Capt. Tadokoro of the Yamato】\b「Abe-kun,\p we're counting on you.\nNo worrying about your family now.」\e
+
+//<00001a76> 【信濃艦長　安倍】「宜しく頼む。\n…\p…\p君には最後の最後まで世話になりっ放しだな」\e
+<00001a76> 【Capt. Abe of the Shinano】「Let's do this.\n...\p...\plooks like you'll be helping me right until the end.」\e
+
+//<00001a77> 【大和艦長　田所】「ふふふ…\p…\p何を今更。\n水くさい」\e
+<00001a77> 【Capt. Tadokoro of the Yamato】\b「Huhuhu...\p...\pwhy bring that up?\nShould I not help?」\e
+
+//<00001a78> 【信濃艦長　安倍】「何も返せないまま逝く事、\p慚愧の念に堪えんが…\p…\pさらばだ、\p田所君」\e
+<00001a78> 【Capt. Abe of the Shinano】「The thought of leaving this world without repaying you is tragic...\p...\pbut this is farewell,\p Tadokoro-kun.」\e
+
+//<00001a79> 【大和艦長　田所】「さらばだ安倍君…\p…\p九段で会おう」\e
+<00001a79> 【Capt. Tadokoro of the Yamato】\b「Farewell, Abe-kun...\p...\psee you in hell.」\e
+
+//<00001a7c> 【最上艦長　小沢】「――ウィスキー部隊の撤退状況はどうなっているか！？」\e
+<00001a7c> 【Capt. Kozawa of the Mogami】\b「――Status report on Whiskey Unit's evacuation!!」\e//wtf is Kudan? Guessing this for now ~IX
+
+//<00001a7d> 【最上オペレーター１】「――現在機甲部隊を揚陸艦へ回収中！　予定の１７分遅れです！」\e
+<00001a7d> 【Mogami Operator 1】「――Landing craft are retrieving TSFs! Seventeen minutes behind schedule!」\e
+
+//<00001a7e> 【最上オペレーター２】「――斯衛軍第１６大隊は後退しつつも戦線を維持しています！」\e
+<00001a7e> 【Mogami Operator 2】「――The 16th Honor Guard Battalion is holding the line as they fall back!」\e
+
+//<00001a7f> 【最上艦長　小沢】「戦闘車両は即時放棄。\n将兵の収容が終了次第、\p揚陸艦は離岸！」\e
+<00001a7f> 【Capt. Kozawa of the Mogami】「Forget the TSFs.\nHave the landing craft leave the moment all the soldiers are onboard!」\e
+
+//<00001a80> 【最上艦長　小沢】「――戦術機部隊は揚陸艦の安全圏到達を確認後、\pＮＯＥにて七浦海岸沖の戦術機母艦部隊へ帰還せよ」\e
+<00001a80> 【Capt. Kozawa of the Mogami】\b「――Once the landing craft have reached safety,\p send the TSFs to the motherships off Nanaura by NOE.」\e
+
+//<00001a82> 【最上艦長　小沢】「――これはエコー部隊も同様である。\n厳命せよ！」\e
+<00001a82> 【Capt. Kozawa of the Mogami】\b「――Do the same for Echo Unit.\p No exceptions!」\e
+
+//<00001a84> 【最上オペレーター１】「――了解！」\n
+<00001a84> 【Mogami Operator 1】「――Copy that!」\n
+
+//<00001a85> 【最上オペレーター２】「――了解！」\e
+<00001a85> 【Mogami Operator 2】「――Copy that!」\e
+
+//<00001a87> 【夕呼】「戦闘車両の放棄…\p…\p賢明なご判断ですわ、\p提督」\e
+<00001a87> 【Yuuko】「Abandoning the TSFs...\p...\pthat was a good call,\p Admiral.」\e
+
+//<00001a88> 【最上艦長　小沢】「それでも優に２０分は掛かかるでしょう…\p…\p。\nもっと早くこの決断をすべきでした」\e
+<00001a88> 【Capt. Kozawa of the Mogami】\b「It'll still take twenty minutes at best...\p...\p\nI should have done this sooner.」\e
+
+//<00001a89> 【夕呼】「…\p…\p…\p…\p」\e
+<00001a89> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<00001eea> 【最上艦長　小沢】「有能な部下をむざむざ死なせなければならない己の無能が…\p…\p口惜しい」\e
+<00001eea> 【Capt. Kozawa of the Mogami】「I cannot stand...\p...\pmy incompetence forcing skilled subordinates of mine to die.」\e
+
+//<00001a8b> 【夕呼】「…\p…\pこちらも急がせませすわ。\n――伊隅」\e
+<00001a8b> 【Yuuko】「...\p...\pwe'll try to hurry up too.\n――Isumi.」\e
+
+//<00001a8c> 【伊隅大尉】「――は！」\e
+<00001a8c> 【Capt. Isumi】「――Ma'am!」\e
+
+//<00001a90> 【夕呼】「――状況は？」\e
+<00001a90> 【Yuuko】「――Anything new?」\e
+
+//<00001a92> 【伊隅大尉】「――申し訳ありません。\n起爆プログラムは依然沈黙しています」\e
+<00001a92> 【Capt. Isumi】「――I'm sorry.\nThe self-destruct program is still silent.」\e
+
+//<00001a94> 【夕呼】「そう。こっちの話は聞こえていたわね？　第二戦隊がウィスキー、\pエコー部隊の撤退を――」\e
+<00001a94> 【Yuuko】「I see. You heard us, right?\bThe 2nd Fleet will continue until Whiskey and Echo Uni――」\e
+
+//<00001a98> 【伊隅大尉】「――ッ！？」\e
+<00001a98> 【Capt. Isumi】「――!?」\e
+
+//<00001a9a> 【夕呼】「――伊隅！？　どうしたの！？」\e
+<00001a9a> 【Yuuko】「――Isumi!? What happened!?」\e
+
+//<0000649c> 【柏木少尉】「――コード９９１発生ッ！　大尉ッ――地中からＢＥＴＡがッ！」\e
+<0000649c> 【2nd Lt. Kashiwagi】「――Code 991! Captain!\b――BETA coming from underground!」\e
+
+//<00001aa1> 【伊隅大尉】「――ッ！？」\n
+<00001aa1> 【Capt. Isumi】「――!?」\n
+
+//<00001aa3> 【夕呼】「――！！」\e
+<00001aa3> 【Yuuko】「――!!」\e
+
+//<00001aa8> 【涼宮中尉】「――Ａ－０２周辺から――ぐっ、\p軍団規模のＢＥＴＡ群が出現中ッ！」\e
+<00001aa8> 【1st Lt. Suzumiya】「――A corps-sized herd of BETA――E-emerging around the A-02!」\e
+
+//<00001aad> 【最上艦長　小沢】「――ばかな…\p…\pいったい佐渡島ハイヴには…\p…\pどれだけのＢＥＴＡが居ると言うんだッ！？」\e
+<00001aad> 【Capt. Kozawa of the Mogami】「――Impossible...\p...\phow many BETA could there have been...\p...\pin the Sadogashima hive!?」\e
+
+//<00001aae> 【夕呼】「…\p…\p…\p…\p」\e
+<00001aae> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<00001aaf> 【ピアティフ中尉】「――予測進路…\p…\p出ます！」\e
+<00001aaf> 【1st Lt. Piatif】「――Predicting route...\p...\pthere!」\e
+
+//<00001ab2> 【夕呼】「――本土に…\p…\p上陸？！」\e
+<00001ab2> 【Yuuko】「――Surfacing...\p...\pon the mainland!?」\e
+
+//<00001ab3> 【最上艦長　小沢】「――なっ…\p…\pなんと言う事だ！」\e
+<00001ab3> 【Capt. Kozawa of the Mogami】\b「――H-...\p...\phow could this happen!?」\e
+
+//<00001ab4> 【最上艦長　小沢】「Ａ－０２の自爆に備え、\p日本海沿岸部には最低限の戦力しか展開していないというのに…\p…\p！！」\e
+<00001ab4> 【Capt. Kozawa of the Mogami】「We kept our forces on the Japanese coast to a minimum in the event of A-02's destruction...\p...\p!!」\e
+
+//<00001ab5> 【ピアティフ中尉】「――Ａ－０２、\pＢＥＴＡと接触ッ！」\e
+<00001ab5> 【1st Lt. Piatif】「――BETA have contacted A-02!」\e
+
+//<00001aba> 【ピアティフ中尉】「――柏木機、\p自律戦闘モードで交戦中！」\e
+<00001aba> 【1st Lt. Piatif】「――Kashiwagi,\p engaging on autopilot!」\e
+
+//<00001ac3> 【柏木少尉】「――敵の構成は突撃級と戦車級、\p要撃級――レーザー種は認めず！」\e
+<00001ac3> 【2nd Lt. Kashiwagi】「――The enemies include Destroyer Class,\p Tank Class and Grappler Class――No sign of laser species!」\e
+
+//<00001ac7> 【夕呼】「――伊隅、\pプランＤに変更よ。\n至急Ａ－０２を放棄して戦域を離脱しなさい」\e
+<00001ac7> 【Yuuko】「――Isumi,\p we're changing to Plan D.\nAbandon the A-02 and leave the battlefield.」\e
+
+//<00001aca> 【伊隅大尉】「ですが副司令、\pそれでは敵に――」\e
+<00001aca> 【Capt. Isumi】「But XO,\p then the enemy――」\e
+
+//<00001ace> 【伊隅大尉】「――うッ！？」\e
+<00001ace> 【Capt. Isumi】「――Uu!?」\e
+
+//<00001ad3> 【柏木少尉】「――数十体の突撃級がＡ－０２に激突しています！」\e
+<00001ad3> 【2nd Lt. Kashiwagi】「――A dozen or so Destroyer Class are ramming the A-02!」\e
+
+//<00001ad8> 【柏木少尉】「――数が多すぎて対処しきれません！」\e
+<00001ad8> 【2nd Lt. Kashiwagi】「――There's too many of them for me to hold off!」\e
+
+//<00001ade> 【柏木少尉】「――要塞級出現ッ！　――大尉、\p急いでくださいッ！」\e
+<00001ade> 【2nd Lt. Kashiwagi】「――Fort Class emerged!\b――Captain,\p please hurry!」\e
+
+//<00001ae1> 【伊隅大尉】「――柏木ッ！　貴様だけでも離脱しろッ！」\e
+<00001ae1> 【Capt. Isumi】「――Kashiwagi! Leave without me!」\e
+
+//<00001ae3> 【柏木少尉】「――バカ言わないでください！　――ハッチは守ってますから早くッ！」\e
+<00001ae3> 【2nd Lt. Kashiwagi】「――Don't be stupid!\b――I'll guard the hatch so hurry up here!」\e
+
+//<00001ae6> 【夕呼】「――プランＤに従って、\pエコー艦隊がＡ－０２への集中砲撃を開始するわ」\e
+<00001ae6> 【Yuuko】「――Per Plan D,\p Echo Fleet will begin bombarding A-02.」\e
+
+//<00001ae7> 【伊隅大尉】「――！」\e
+<00001ae7> 【Capt. Isumi】「――!」\e
+
+//<00001ae9> 【夕呼】「跡形もなくという訳には行かないけど、\p何もしないよりはマシでしょう」\e
+<00001ae9> 【Yuuko】「It may not be destroyed without a trace,\p but it's better than nothing.」\e
+
+//<00001aea> 【夕呼】「レーザー種が出てくる前に済ませたいわ。\n早く離脱しなさい！」\e
+<00001aea> 【Yuuko】「I'd like to finish this before more laser species appear.\nLeave the battlefield immediately!」\e
+
+//<00001aeb> 【伊隅大尉】「――りょ、\p了解ッ！」\e
+<00001aeb> 【Capt. Isumi】「――C-\pcopy that!」\e
+
+//<00001aef> 【柏木少尉】「――気安く近寄るんじゃないよッ！」\e
+<00001aef> 【2nd Lt. Kashiwagi】「――You're not touching this thing without a fight!」\e
+
+//<00001af4> 【夕呼】「――柏木！　伊隅を乗せたリフトが上がるまで３０秒よ！」\e
+<00001af4> 【Yuuko】「――Kashiwagi! Thirty seconds until Isumi's lift reaches you!」\e
+
+//<00001af6> 【柏木少尉】「――了解ッ！」\e
+<00001af6> 【2nd Lt. Kashiwagi】「――Copy that!」\e
+
+//<00001afb> 【柏木少尉】「――うぉぉぉぉぉーーーっ！！」\e
+<00001afb> 【2nd Lt. Kashiwagi】「――Uuuoooooooooooooooo!!」\e
+
+//<00001aff> 【柏木少尉】「――！？」\e
+<00001aff> 【2nd Lt. Kashiwagi】「――!?」\e
+
+//<00001b03> 【柏木少尉】「――しまった！　このままじゃ大尉が――！！」\e
+<00001b03> 【2nd Lt. Kashiwagi】「――Crap! The Captain's never gonna――!!」\e
+
+//<00001b07> 【柏木少尉】「――ッ！」\e
+<00001b07> 【2nd Lt. Kashiwagi】「――!」\e
+
+//<00001b0c> 【伊隅大尉】「――柏木ーーーッ！？」\e
+<00001b0c> 【Capt. Isumi】「――Kashiwagiiiiiii!!」\e//HARUKOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!! - kViN
+
+//<00001b10> 【夕呼】「――涼宮！」\e
+<00001b10> 【Yuuko】「――Suzumiya!」\e
+
+//<00001b11> 【ピアティフ中尉】「――衝角が伊隅機の胸部を直撃ッ！　先端部は装甲を貫通し、\p管制ユニットまで到達していますッ！」\e
+<00001b11> 【1st Lt. Piatif】「――Direct physical impact on Isumi's TSF's chest! The tip has penetrated the armor and reached the control unit!」\e
+
+//<00001b12> 【涼宮中尉】「――柏木少尉のバイタルモニターは…\p…\p全てフラットです！」\e
+<00001b12> 【1st Lt. Suzumiya】「――Kashiwagi's vital signs...\p...\phave all flatlined!」\e
+
+//<00001b14> 【夕呼】「――蘇生処置！　――カウンターショックよ」\e
+<00001b14> 【Yuuko】「――Resuscitate her! ――Apply a countershock!」\e
+
+//<00001b15> 【涼宮中尉】「副司令。\n強化装備の反応そのものが無いんです。\n恐らく衝角の溶解液で…\p…\p」\e
+<00001b15> 【1st Lt. Suzumiya】「XO.\nHer Armored Suit isn't reacting at all.\nThe acid in the tip must have...\p...\p」\e
+
+//<00001b17> 【ピアティフ中尉】「…\p…\p…\p…\p」\e
+<00001b17> 【1st Lt. Piatif】「...\p...\p...\p...\p」\e
+
+//<00001b18> 【夕呼】「そう。…\p…\p柏木をＫＩＡと認定」\e
+<00001b18> 【Yuuko】「I see...\p...\plist Kashiwagi as KIA.」\e
+
+//<00001b1a> 【涼宮中尉】「了解」\e
+<00001b1a> 【1st Lt. Suzumiya】「Understood.」\e
+
+//<00001b1c> 【最上艦長　小沢】「副司令、\pエコー艦隊に収容済みの２個中隊を大尉の救助に向かわせましょう」\e
+<00001b1c> 【Capt. Kozawa of the Mogami】「XO,\p I'm sending two companies from Echo Fleet to help. They've already finished retrieving their units.」\e
+
+//<00001b1d> 【伊隅大尉】「――小沢提督お止め下さい。\n離脱は既に不可能です！」\e
+<00001b1d> 【Capt. Isumi】「――Don't bother, Admiral Kozawa.\nIt's impossible for me to escape now.」\e
+
+//<00001b1f> 【最上艦長　小沢】「――何を言うか大尉！　貴様は特殊任務を預かるＡ－０１部隊の指揮官だ！　簡単に楽になれると思うな！」\e
+<00001b1f> 【Capt. Kozawa of the Mogami】「――What are you saying, Captain!? You are the commander of special unit A-01!\bDon't let yourself die that easily!」\e
+
+//<00001b20> 【ピアティフ中尉】「――リフト再下降、\p管制ブロックに向かっています」\e
+<00001b20> 【1st Lt. Piatif】「――I'm taking the lift back down to the control block.」\e
+
+//<00001b21> 【最上艦長　小沢】「――ッ！？」\e
+<00001b21> 【Capt. Kozawa of the Mogami】「――!?」\e
+
+//<00001b22> 【夕呼】「――伊隅、\pこうなった以上…\p…\pわかっているわね」\e
+<00001b22> 【Yuuko】「――Isumi,\p you heard what happened...\p...\pyou know what to do.」\e
+
+//<00001b23> 【伊隅大尉】「はい」\e
+<00001b23> 【Capt. Isumi】「Yes.」\e
+
+//<00006487> 【夕呼】「現時刻を以てプランＧへ再移行。\nエコー艦隊にＡ－０２への砲撃中止を伝えてちょうだい」\e
+<00006487> 【Yuuko】「We're going back to Plan G.\nTell Echo Fleet to cancel the bombardment on A-02.」\e
+
+//<00001b27> 【ピアティフ中尉】「了解！」\n
+<00001b27> 【1st Lt. Piatif】「Copy that!」\n
+
+//<00001b28> 【涼宮中尉】「了解」\e
+<00001b28> 【1st Lt. Suzumiya】「Copy that.」\e
+
+//<00001b2b> 【最上艦長　小沢】「――副司令…\p…\p！？」\e
+<00001b2b> 【Capt. Kozawa of the Mogami】「――XO...\p...\p!?」\e
+
+//<00001b2c> 【伊隅大尉】「――提督、\pＡ－０１部隊の指揮官だからこそ、\pやらなければならない事があります」\e
+<00001b2c> 【Capt. Isumi】「――Admiral,\p this is something I have to do because I'm A-01's commander.」\e
+
+//<00001b2e> 【伊隅大尉】「この作戦の結果がオルタネイティヴ４の存続を脅かす事態になる事だけは、\p絶対に避けなければなりません」\e
+<00001b2e> 【Capt. Isumi】「The outcome of this operation absolutely must not threaten the continuation of Alternative IV.」\e
+
+//<00001b30> 【最上艦長　小沢】「む…\p…\p」\e
+<00001b30> 【Capt. Kozawa of the Mogami】「Mm...\p...\p」\e
+
+//<00001b31> 【伊隅大尉】「このままでは佐渡島ハイヴの排除も叶わず、\pそればかりか、\p本土の蹂躙を許すことになります！」\e
+<00001b31> 【Capt. Isumi】「If I don't, not only will the Sadogashima Hive remain intact,\p but we'll be allowing them to invade mainland Japan!」\e
+
+//<00001b36> 【伊隅大尉】「今から手動で主機を起動します。\n第二戦隊を即時退却させてください」\e
+<00001b36> 【Capt. Isumi】「I'm going to activate the engine manually.\nHave 2nd Fleet retreat immediately.」\e
+
+//<00001b3a> 【最上艦長　小沢】「なに…\p…\p？」\e
+<00001b3a> 【Capt. Kozawa of the Mogami】「What...\p...\p?」\e
+
+//<00001b3b> 【夕呼】「――あなた、\p安倍艦長に伝えなさい。\n急いで！」\e
+<00001b3b> 【Yuuko】「――You,\p tell Capt. Abe that.\p Hurry!」\e
+
+//<00001b3c> 【最上オペレーター１】「――了解！」\e
+<00001b3c> 【Mogami Operator 1】「――Copy that!」\e
+
+//<00001b3d> 【最上艦長　小沢】「――副司令！？」\e
+<00001b3d> 【Capt. Kozawa of the Mogami】「――XO!?」\e
+
+//<00001b3e> 【夕呼】「提督、\pムアコック・レヒテ機関が起動すれば、\pＢＥＴＡはＡ－０２におびき寄せられます」\e
+<00001b3e> 【Yuuko】「Admiral,\p when the Moorcock-Lechte engine activates,\p the BETA will be drawn to the A-02.」\e
+
+//<00001b3f> 【夕呼】「そうなれば、\p本土に向けて進攻中のＢＥＴＡ群の足止めも可能でしょう」\e
+<00001b3f> 【Yuuko】「That should stop the BETA heading for the mainland too.」\e
+
+//<00001b40> 【最上艦長　小沢】「しかし…\p…\pそれでも…\p…\p」\e
+<00001b40> 【Capt. Kozawa of the Mogami】「But...\p...\pthat still...\p...\p」\e
+
+//<00001b41> 【夕呼】「ご安心下さい…\p…\p主機の手動制御は確保してあります」\e
+<00001b41> 【Yuuko】「Don't worry...\p...\pshe has manual control of the engine.」\e
+
+//<00001b42> 【ピアティフ中尉】「――Ａ－０２の主機再起動を確認！　カルーツァ・クラインエコー増大中！」\e
+<00001b42> 【1st Lt. Piatif】「――A-02's engine back online!\bKaluza-Klein echo enlarging!」\e
+
+//<00001b43> 【最上オペレーター２】「――本土に向け南下中のＢＥＴＡ群が進路反転！」\e
+<00001b43> 【Mogami Operator 2】「――The BETA heading South to the mainland have reversed course!」\e
+
+//<00001b44> 【夕呼】「全てを引きつけた上で、\p佐渡島ごと消滅させてご覧に入れる…\p…\p伊隅はそう申し上げているのです」\e
+<00001b44> 【Yuuko】「Once we've drawn them all back,\p we'll destroy them along with Sadogashima...\p...\pthat's what Isumi's proposing.」\e
+
+//<00001b45> 【最上オペレーター３】「――ＳＷエリアのＢＥＴＡ群、\p移動開始！　目標――Ａ－０２です！」\e
+<00001b45> 【Mogami Operator 3】「――The BETA in the Southwest are moving! Their destination――A-02!」\e
+
+//<00001b46> 【最上艦長　小沢】「伊隅大尉は貴女の腹心中の腹心――いわば第四計画実働の中軸…\p…\pよろしいのですか？」\e
+<00001b46> 【Capt. Kozawa of the Mogami】「Capt. Isumi is one of your most trusted soldiers――Alternative IV's right-hand woman, even...\p...\pare you sure?」\e
+
+//<00001b47> 【夕呼】「良いも悪いもございませんわ。\nこれが最も合理的かつ正しい選択です」\e
+<00001b47> 【Yuuko】「It's not about whether I'm okay with it.\nThis is the most practical choice.」\e
+
+//<00001b48> 【最上艦長　小沢】「…\p…\p…\p…\p」\e
+<00001b48> 【Capt. Kozawa of the Mogami】「...\p...\p...\p...\p」\e
+
+//<00001b49> 【夕呼】「Ａ－０１部隊に名を連ねた者として選び得る、\p最良の可能性を秘めた未来なのです」\e
+<00001b49> 【Yuuko】「That will be the future with optimal possibilities,\p which only those in Unit A-01 can select.」\e
+
+//<00001b4a> 【最上艦長　小沢】「最良の可能性を秘めた未来…\p…\p？」\e
+<00001b4a> 【Capt. Kozawa of the Mogami】\b「A future with optimal possibilities...\p...\p?」\e
+
+//<00001b4b> 【最上オペレーター１】「――第二戦隊真野湾を離脱！　損害甚大なれど全艦健在！」\e
+<00001b4b> 【Mogami Operator 1】「――2nd Fleet has left Mano Bay!\bTremendous damage but all ships intact!」\e//what the fuck ~IX
+
+//<00001b4c> 【夕呼】「いえ…\p…\pこちらの話です」\e
+<00001b4c> 【Yuuko】「Never mind...\p...\pit's nothing.」\e
+
+//<00001b4d> 【最上艦長　小沢】「…\p…\p私は第二艦橋で各部隊の撤退の指揮にあたります。\n何かありましたらお呼び下さい」\e
+<00001b4d> 【Capt. Kozawa of the Mogami】「...\p...\pI will oversee 2nd Fleet's retreat from the secondary bridge.\nCall me if anything happens.」\e//you have two bridges? ~IX
+
+//<00001e27> 【夕呼】「提督…\p…\pひとつお願いがあるのですが…\p…\p」\e
+<00001e27> 【Yuuko】「Admiral...\p...\pif you wouldn't mind...\p...\p」\e
+
+//<00001e28> 【最上艦長　小沢】「…\p…\pなんでしょう」\e
+<00001e28> 【Capt. Kozawa of the Mogami】「...\p...\pwhat is it?」\e
+
+//<00001b59> 【武】「――先生ッ！」\e
+<00001b59> 【Takeru】「――Sensei!」\e
+
+//<00001b5b> 【夕呼】「――こっちよ、\p白銀」\e
+<00001b5b> 【Yuuko】「――Over here,\p Shirogane.」\e
+
+//<00001b5d> 【武】「――ＣＩＣに行ったら、\pここに居るってピアティフ中尉にいわれて…\p…\p」\e
+<00001b5d> 【Takeru】「――When I went to the CIC 1st Lt. Piatif said you'd be in here...\p...\p」\e
+
+//<000064a2> 【夕呼】「ちょっと人払いする必要があったからね。\nで、\p００ユニットは？」\e
+<000064a2> 【Yuuko】「I needed to get a room to myself.\nSo where's the 00 Unit?」\e
+
+//<00001b5f> ――００ユニットって…\p…\pそうか、\pそれで人払いをしたのか。\nでも涼宮中尉がいるから、\p遠回しな言い方をした方が良いだろう…\p…\p。\e
+<00001b5f> ――The 00 Unit...\p...\pI see,\p so that's why she came in here.\nBut 1st Lt. Suzumiya's still here,\p so I'd better not be too candid...\p...\p\e
+
+//<00006476> 【武】「――指示通りに、\pメンテナンス装置に接続しました」\e
+<00006476> 【Takeru】「――Per your instructions,\p I connected it to the maintenance device.」\e
+
+//<00001b61> 【夕呼】「そう、\pご苦労様。\n良くやってくれたわ」\e
+<00001b61> 【Yuuko】「I see,\p glad to hear it.\nYou've done really well today.」\e
+
+//<00001b62> ――えっ…\p…\pそれだけかよ！？\e
+<00001b62> ――Eh!? ...\p...\pthat was it!?\e
+
+//<00001b63> 【武】「――どんな状態か直接見ないんですか！？」\e
+<00001b63> 【Takeru】「――You're not gonna go take a look at it!?」\e
+
+//<00006478> 【夕呼】「直接見たからといって、\p何かがわかる訳じゃないわ。\nほら、\pあそこのモニターに数値が出て来たでしょ」\e
+<00006478> 【Yuuko】「I'm not gonna learn anything from looking at it in person.\nLook,\p the numbers are coming in on that monitor.」\e
+
+//<00001b65> あんな見出しもない数字の羅列で何かわかるのか？…\p…\pいや…\p…\pオレが見てわかるようなものだったら、\p涼宮中尉にもわかっちまうか。\e
+<00001b65> How can you get anything out of unlabeled numbers like that? ...\p...\pno...\p...\pif I could tell what it meant on sight,\p then so could 1st Lt. Suzumiya.\e
+
+//<00001b66> 【武】「見たところどんな感じですか？」\e
+<00001b66> 【Takeru】「How's it look?」\e
+
+//<00001b67> 【夕呼】「…\p…\p機能停止やオリジナルデータの消失に繋がる深刻な問題は、\p今のところ見あたらないわね」\e
+<00001b67> 【Yuuko】「...\p...\pI can't see anything serious enough to cause a complete shutdown and erasure of original data.」\e
+
+//<00001b68> つまり、\p命や記憶に関しては問題ないって事だ…\p…\p。\e
+<00001b68> So there was no memory confusion or life-threatening injury...\p...\p\e
+
+//<00001b69> 内容はさっきと変わってないけど、\p専用のメンテナンスベッドの診断データだから、\pその分安心できる。\e
+<00001b69> That doesn't really tell us anything new,\p but since it's from specialized analytical equipment,\p I do feel a little better.\e
+
+//<00001b6a> 【夕呼】「どのみちここではこれ以上の事はできないわ。\nＡ－０２爆破の影響が収まったら、\pあんたが基地まで運んでちょうだい」\e
+<00001b6a> 【Yuuko】「We wouldn't be able to fix it here anyway.\nOnce the A-02's done exploding,\p take it back to base.」\e
+
+//<00001e2c> 【武】「結局自律制御は時間内に立ちあがらなかったんですね。\nでも…\p…\p戦術機で運ぶんですか？」\e
+<00001e2c> 【Takeru】「So we weren't able to get the autopilot working after all.\nBut...\p...\pwhy carry it in a TSF?」\e
+
+//<00001b6c> 【夕呼】「爆発の影響で、\p沿岸部にどの程度の被害が出るかわからないでしょう？　多分、\p平野部は壊滅だから陸路は無理」\e
+<00001b6c> 【Yuuko】「We have no way of knowing how much damage the tsunami will do to the coast. The plains will probably be destroyed so we can't go overland.」\e
+
+//<00001b6d> 【夕呼】「海路だと琵琶湖運河を通っても２０時間はかかるわ。\n途中で推進剤を補給したとしても、\p空路の方が断然早いでしょ」\e
+<00001b6d> 【Yuuko】「The sea route would take over twenty hours going through the Lake Biwa canal.\nGoing by air would be much faster,\p right?」\e
+
+//<00001b6e> 【武】「ですが空路は…\p…\p」\e
+<00001b6e> 【Takeru】「But still, flying is...\p...\p」\e
+
+//<00001b6f> 【夕呼】「佐渡島ハイヴが無くなれば、\p東本州の高度１０００ｍ以下の空は全て安全になるから大丈夫よ」\e
+<00001b6f> 【Yuuko】「Without the Sadogashima Hive,\p the skies will be safe as long as you stay under a thousand meters.」\e
+
+//<00001b70> 【武】「わかりました。\nところで、\p爆破作業はどうなってますか？」\e
+<00001b70> 【Takeru】「I understand.\nSo how's the self-destruct going?」\e
+
+//<00001b71> 情報攪乱のためにマーカーが更新されなかったから、\p気になってたんだよな。\e
+<00001b71> The markers haven't been updated in order to fool any saboteurs,\p so I've been a little worried.\e
+
+//<00001b72> 【夕呼】「順調よ。エコー艦隊とウィスキー艦隊が安全圏に出るのを待っている所」\e
+<00001b72> 【Yuuko】「Well. We're just waiting for Echo and Whiskey Units to reach safety.」\e
+
+//<00001b73> 【武】「そうですか――じゃあ大尉と柏木もこっちに向かってるんですね」\e
+<00001b73> 【Takeru】「I see――So the Captain and Kashiwagi are heading this way?」\e
+
+//<00001b74> 【夕呼】「いいえ。伊隅はまだＡ－０２の中にいる。\n柏木は戦死したわ」\e
+<00001b74> 【Yuuko】「No. Isumi's still inside A-02.\nKashiwagi's dead.」\e
+
+//<00001b75> 【武】「――ッ！？」\e
+<00001b75> 【Takeru】「――!?」\e
+
+//<00001b78> 【武】「…\p…\p柏木が…\p…\p死んだんですか？」\e
+<00001b78> 【Takeru】「...\p...\pKashiwagi...\p...\pdied?」\e
+
+//<00001b79> 【夕呼】「そうよ」\e
+<00001b79> 【Yuuko】「Yes.」\e
+
+//<00001b7b> 【武】「いったい…\p…\pどうして…\p…\p？」\e
+<00001b7b> 【Takeru】「How...\p...\pdid she...\p...\p?」\e
+
+//<00001b7c> 【夕呼】「戦争だからよ。\n柏木だけじゃない。\n今日だけで何百人も死んでるわ」\e
+<00001b7c> 【Yuuko】「It's a war.\nKashiwagi's not the only one.\nHundreds have died today.」\e
+
+//<00001b7d> 【武】「ちがいますよ、\pそんな事を聞いているんじゃなく――」\e
+<00001b7d> 【Takeru】「No,\p that's not what I'm ask――」\e
+
+//<00001b7f> 【涼宮中尉】「――やめなさい少尉！」\e
+<00001b7f> 【1st Lt. Suzumiya】「――Stop, Second Lieutenant!」\e
+
+//<00001b81> 【武】「…\p…\p！」\e
+<00001b81> 【Takeru】「...\p...\p!」\e
+
+//<00001b82> 【涼宮中尉】「副司令には…\p…\p今、\pあなたと話をしている時間はないのよ」\e
+<00001b82> 【1st Lt. Suzumiya】「The XO...\p...\pdoesn't have time to explain it to you right now.」\e
+
+//<00001b84> 【武】「涼宮中尉…\p…\p」\e
+<00001b84> 【Takeru】「1st Lt. Suzumiya...\p...\p」\e
+
+//<00001b85> 【涼宮中尉】「白銀少尉には私から説明しておきます。\n副司令、\p手続きをお願いします」\e
+<00001b85> 【1st Lt. Suzumiya】「I'll tell you what happened to her, 2nd Lt. Shirogane.\nXO,\p please continue your work.」\e
+
+//<00001b87> 【夕呼】「そう。悪いけど宜しく…\p…\p」\e
+<00001b87> 【Yuuko】「I see. Thanks, I'll do just that...\p...\p」\e
+
+//<00001b88> 【武】「…\p…\p…\p…\p」\e
+<00001b88> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001b8a> 【武】「涼宮中尉…\p…\pあの――」\e
+<00001b8a> 【Takeru】「1st Lt. Suzumiya...\p...\pumm――」\e
+
+//<00001b8b> 【涼宮中尉】「あなた達が洋上に離脱した後、\p軍団規模のＢＥＴＡが、\pＡ－０２のすぐ傍に出現したの」\e
+<00001b8b> 【1st Lt. Suzumiya】「After you reached water,\p a corps-sized herd of BETA emerged right next to A-02.」\e
+
+//<00001b8d> 【武】「え…\p…\pＡ－０２のすぐ傍に…\p…\pＢＥＴＡが…\p…\p？」\e
+<00001b8d> 【Takeru】「Eh? ...\p...\pBETA emerged...\p...\pright next to it...\p...\p?」\e
+
+//<00001b8e> 【涼宮中尉】「そのＢＥＴＡ群は、\p本土侵攻のために地中を南下していたのよ」\e
+<00001b8e> 【1st Lt. Suzumiya】「Those BETA had been heading South to invade mainland Japan.」\e
+
+//<00001b90> 【武】「え…\p…\p本土侵攻…\p…\p？！」\e
+<00001b90> 【Takeru】「Eh...\p...\pinvade the mainland...\p...\p!?」\e
+
+//<00001b91> 【涼宮中尉】「ハイヴから擱坐地点の手前までは激しい砲撃に曝されていたから、\p恐らくそれを避けたんだと思う」\e
+<00001b91> 【1st Lt. Suzumiya】「We believe they stayed underground until just in front of the crashlanding point in order to avoid bombardment.」\e
+
+//<00001b93> そうか…\p…\p凄乃皇の周辺には砲撃がないから、\pその辺りから地上に…\p…\p。\e
+<00001b93> I see...\p...\pthere's no artillery right on top of the Susano'o,\p so they emerged there...\p...\p\e
+
+//<00001b94> 【涼宮中尉】「副司令はＡ－０２の即時放棄を大尉に指示したんだけど、\pＢＥＴＡの数が余りにも多くて…\p…\p」\e
+<00001b94> 【1st Lt. Suzumiya】「The XO told the Captain to abandon A-02 immediately,\p but there were so many BETA...\p...\p」\e
+
+//<00001b96> 【武】「…\p…\p…\p…\p」\e
+<00001b96> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001b97> 【涼宮中尉】「柏木少尉は単独離脱命令に従わずに、\p伊隅大尉の脱出を待って…\p…\pそれで…\p…\p」\e
+<00001b97> 【1st Lt. Suzumiya】「2nd Lt. Kashiwagi ignored her order to escape alone,\p saying she'd wait for the Captain...\p...\pand then...\p...\p」\e
+
+//<00001b99> 【武】「柏木…\p…\p」\e
+<00001b99> 【Takeru】「Kashiwagi...\p...\p」\e
+
+//<00001b9a> なんだよおまえ…\p…\pさっきから…\p…\p言ってる事とやってる事が…\p…\p違うじゃねえか…\p…\p！\e
+<00001b9a> What the hell...\p...\pisn't this...\p...\pcompletely different...\p...\pfrom what you said you'd do...\p...\p!?\e
+
+//<00001b9e> 【柏木少尉】「明日のテスト…\p…\pうまく行って欲しいなあ…\p…\p」\e
+<00001b9e> 【2nd Lt. Kashiwagi】「I hope the test goes well...\p...\ptomorrow...\p...\p」\e//CP MLA_0051
+
+//<00001ba2> 【柏木少尉】「戦場で死ぬ人間が１００分の１以下になるっていう副司令の話…\p…\p『凄乃皇弐型』が完全になれば不可能じゃないと思う」\e
+<00001ba2> 【2nd Lt. Kashiwagi】「The XO said future operations might take a hundred times fewer deaths than this...\p...\pif she completes the Susano'o, I think that'll be true.」\e//CP MLA_0056
+
+//<00001ba6> 【柏木少尉】「テストが成功して『凄乃皇弐型』が正規配備されたら…\p…\p弟達は戦わなくて済むかな…\p…\p」\e
+<00001ba6> 【2nd Lt. Kashiwagi】「If this succeeds and the Susano'o becomes an officially accepted weapon...\p...\pmaybe my brothers won't have to fight...\p...\p」\e//CP MLA_0051
+
+//<00001baa> 【柏木少尉】「回収するにしろ爆発させるにしろ、\pＡ－０２でハイヴを何とかできれば、\pそれに越した事はないからね」\e
+<00001baa> 【2nd Lt. Kashiwagi】「Whether we can get it back or not,\p we'll still have destroyed the hive using the A-02.」\e//CP_S MLA_0056
+
+//<00001bae> 【柏木少尉】「孤立した者の救助が任務の障害になる場合、\pそれは切り捨てて行くべきなんだよ」\e
+<00001bae> 【2nd Lt. Kashiwagi】「If helping stranded comrades gets in the way of that mission,\p then we need to leave them there.」\e//CP_E
+
+//<00001bb2> 【柏木少尉】「部隊でも個人でも、\p与えられた役割を完璧にこなす事が全てなんだから、\pそこに理由を求めるのは疲れるしね」\e
+<00001bb2> 【2nd Lt. Kashiwagi】「Every unit, every individual has to complete their assigned tasks perfectly no matter what,\p so trying to justify it is just tiring.」\e//CP MLA_0049
+
+//<00001bb6> 【柏木少尉】「私も自分が何のために戦うのか…\p…\pその順番ってやつを、\pちょっと考えてみるよ」\e
+<00001bb6> 【2nd Lt. Kashiwagi】「Maybe I'll try thinking a little...\p...\pabout which of my reasons for fighting are most important.」\e//CP MLA_0051 might've gotten one of these tags wrong but who cares
+
+//<00001bb9> 【武】「…\p…\p…\p…\p」\e
+<00001bb9> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001bba> 柏木…\p…\pこれがおまえの答えなのかよ…\p…\p！？\e
+<00001bba> Kashiwagi...\p...\pwas this your answer...\p...\p!?\e
+
+//<00001bbb> 仲間も家族も、\p日本も人類も、\pそして任務も…\p…\pおまえは全てを守ろうとしたのか…\p…\p？\e
+<00001bbb> Did you try to protect...\p...\pyour family, comrades, Japan, humanity, and the mission all at once...\p...\p?\e
+
+//<00001bbf> 【柏木少尉】「身勝手でしょ…\p…\p私って…\p…\p」\e
+<00001bbf> 【2nd Lt. Kashiwagi】「I'm selfish...\p...\paren't I...\p...\p?」\e//CP MLA_0051
+
+//<00001bc2> …\p…\pバカ野郎…\p…\p割り切ったフリしやがって…\p…\p！…\p…\pおまえ…\p…\p全然そんな事無いじゃねえかよ…\p…\p！\e
+<00001bc2> ...\p...\pyou idiot...\p...\ppretending to know the answer to all that...\p...\p! ...\p...\pyou couldn't have...\p...\pyou don't know all that...\p...\p!\e
+
+//<00001bc3> おまえだけは…\p…\p『この世界』の人間らしくない部分を感じてたのに…\p…\p結局同じかよ…\p…\p！\e
+<00001bc3> You're the only one...\p...\pwho felt different from everyone else in this world...\p...\pbut in the end you're exactly the same...\p...\p!?\e
+
+//<00001bc4> 【涼宮中尉】「――残された大尉はＡ－０２の主機をマニュアル起動したの」\e
+<00001bc4> 【1st Lt. Suzumiya】「――So the Captain activated A-02's engine manually.」\e
+
+//<00001bc6> 【武】「――え！？　そんな事をしたらＢＥＴＡが…\p…\p」\e
+<00001bc6> 【Takeru】「――Eh!? But doing that would make the BETA...\p...\p」\e
+
+//<00001bc7> 【涼宮中尉】「そうよ。\n本土に向かっていた軍団だけじゃなく、\p島中のＢＥＴＡがＡ－０２に向かっているわ」\e
+<00001bc7> 【1st Lt. Suzumiya】「That's right.\nNot only has the corps heading to the mainland turned around,\p but all the BETA on the island are heading toward her.」\e
+
+//<00001bc9> 【武】「それじゃあ…\p…\p救助は…\p…\p！？」\e
+<00001bc9> 【Takeru】「Then...\p...\phow do we save her...\p...\p!?」\e
+
+//<00001bca> 【涼宮中尉】「――大尉は帝国軍の救出作戦の申し出を断ったの」\e
+<00001bca> 【1st Lt. Suzumiya】「――The Captain refused the Imperial Navy's proposed rescue attempt.」\e
+
+//<00001bcd> 【武】「――！！」\e
+<00001bcd> 【Takeru】「――!!」\e
+
+//<00001bce> 【涼宮中尉】「決死の陽動を引き受けた第二戦隊…\p…\p撤退中だったエコー部隊やウィスキー部隊の将兵の生命を…\p…\p大尉は救ったのよ」\e
+<00001bce> 【1st Lt. Suzumiya】「The Captain saved the lives...\p...\pof 2nd Fleet during their certain-death diversion...\p...\pand the retreating soldiers of Echo and Whiskey Units.」\e
+
+//<00001bd0> 【涼宮中尉】「そして、\pＢＥＴＡの本土上陸を防ぎ…\p…\p佐渡島を消滅させることで…\p…\pもっと多くの人達の生命を救うのよ」\e
+<00001bd0> 【1st Lt. Suzumiya】「As well as protecting the mainland from the BETA...\p...\pand by destroying Sadogashima...\p...\pshe'll save even more lives.」\e
+
+//<00001e30> 【武】「大尉が…\p…\p手動で…\p…\p主機を暴走させるんですね…\p…\p！」\e
+<00001e30> 【Takeru】「The Captain's going to...\p...\pdestabilize the engine...\p...\pmanually...\p...\p!?」\e
+
+//<00001bd4> 【涼宮中尉】「そうよ」\e
+<00001bd4> 【1st Lt. Suzumiya】「That's right.」\e
+
+//<00001bd9> 【伊隅大尉】「生命とはとても素晴らしいものだ。\nだからこそ愛し、\p守らねばならない」\e
+<00001bd9> 【Capt. Isumi】「Life is a wonderful thing.\nThat's why we must cherish and protect it.」\e//CP_S MLA_0047
+
+//<00001bdb> 【伊隅大尉】「だが私達は、\p自らの生命を愛しすぎてはいけない。\nそうでなければ他人の生命を守ることなどできないからだ」\e
+<00001bdb> 【Capt. Isumi】「But we must not love our own lives too much.\nThen we couldn't protect the lives of others.」\e//CP_E
+
+//<0000640b> 【伊隅大尉】「私も結局は…\p…\p仲間のために戦っているな。\n隣で戦っている戦友を、\p１秒でも長く生かすために…\p…\p」\e
+<0000640b> 【Capt. Isumi】「I think...\p...\pI fight for my comrades too.\nI want everyone I've fought alongside to live at least a little longer...\p...\p」\e//CP MLA_0051
+
+//<0000640e> 【伊隅大尉】「我が身を棄てて何かを守る、\pという行為を否定しているんじゃない。\nむしろそれは尊い行いだ」\e
+<0000640e> 【Capt. Isumi】「I'm not telling you not to sacrifice yourself to protect something.\nThat's a noble thing to do.」\e//CP_S MLA_0056
+
+//<00006410> 【伊隅大尉】「だがそれは、\p一生に一度しかできない事だ。\nここぞというタイミングを見極める事が大切だろう」\e
+<00006410> 【Capt. Isumi】「But it's something you can only do once.\nSo it's important to get the timing just right.」\e
+
+//<00006412> 【伊隅大尉】「どうせ死ぬなら、\pひとつの生命をより多くのメリットに昇華させるべきだ」\e
+<00006412> 【Capt. Isumi】「Since you're going to die someday anyway,\p wait until that sacrifice will have the most meaning.」\e
+
+//<00001e34> 【伊隅大尉】「その最大効率のタイミングを知るには、\p物事を広く捉える視野が必要だ」\e
+<00001e34> 【Capt. Isumi】「It takes a broad perspective to know when that most efficient time comes.」\e//CP_E
+
+//<00001bec> …\p…\p死力を尽くして任務にあたり…\p…\p生ある限り最善を尽くし…\p…\p決して犬死をしない。\e
+<00001bec> ...\p...\pfulfill your duty with all your strength...\p...\pdespair not until your last breath...\p...\pnever die in vain.\e//CP MLA_0045
+
+//<00001bed> くそっ…\p…\p…\p…\p隊規の重みを…\p…\pこんな形で知る事になるなんて…\p…\p。\e
+<00001bed> Dammit...\p...\p...\p...\pwhy does this have to be...\p...\phow I learn the true meaning of the unit motto...\p...\p\e
+
+//<00001bee> オレは…\p…\pオレは大尉に…\p…\pもっと色々な事を教わりたかったのに…\p…\p！\e
+<00001bee> I wanted...\p...\pto learn so much more...\p...\pfrom the Captain...\p...\p!\e
+
+//<00001bef> 【夕呼】「――人間の生命だけじゃないわ。\n伊隅はオルタネイティヴ４も守るのよ」\e
+<00001bef> 【Yuuko】「――Not just human lives.\nIsumi's protecting Alternative IV too.」\e
+
+//<00001bf2> 【武】「先生…\p…\p」\e
+<00001bf2> 【Takeru】「Sensei...\p...\p」\e
+
+//<00001e39> 【夕呼】「Ａ－０２不調の原因が何であれ、\pあのまま終わっていたら、\pあたし達は相当な窮地に立たされていたはずよ」\e
+<00001e39> 【Yuuko】「No matter what the cause of A-02's failure was,\p if things had ended like that we'd be in a horrible position.」\e
+
+//<00001bf4> …\p…\p確かにそうだ。\nハイヴの制圧には失敗し、\pリーディングの成否も不明。\nその上、\p藪蛇で本土にＢＥＴＡを呼び込んだとなれば…\p…\pただでは済まされないはずだ。\e
+<00001bf4> ...\p...\pthat's true.\nWe'd have failed to destroy the hive,\p and we have no idea if the reading succeeded yet.\nOn top of that,\p if we'd let BETA crawl all over Japan...\p...\pwe'd have a lot of explaining to do.\e
+
+//<00001bf5> 【夕呼】「白銀、\pあんたになら伊隅がやっている事の意味と重さ…\p…\pわかるわね？」\e
+<00001bf5> 【Yuuko】「Shirogane,\p I'm sure you can understand...\p...\phow important it is that Isumi does this.」\e
+
+//<00001bf6> 大尉は…\p…\pオルタネイティヴ４――つまり人類の未来と引き換えに…\p…\p自分の生命を差し出すんだ…\p…\p！\e
+<00001bf6> The Captain's...\p...\pgiving her own life in exchange for Alternative IV...\p...\pfor humanity's future...\p...\p!\e
+
+//<00001bf7> 【武】「――はい」\e
+<00001bf7> 【Takeru】「――Yes.」\e
+
+//<00001bf8> 【夕呼】「準備ができたわ。\nこれから伊隅と繋ぐから、\pしけた顔見せたら張り倒すわよ」\e
+<00001bf8> 【Yuuko】「We're ready.\nI'll connect you to Isumi now.\bLook sad in front of her and I'll kick you.」\e//lit. "knock you down/over"
+
+//<00001bf9> 【涼宮中尉】「…\p…\p…\p…\p」\e
+<00001bf9> 【1st Lt. Suzumiya】「...\p...\p...\p...\p」\e
+
+//<00001bfb> 【夕呼】「いいわね？」\e
+<00001bfb> 【Yuuko】「Got it?」\e
+
+//<00001bfc> 【武】「はい」\e
+<00001bfc> 【Takeru】「Okay.」\e
+
+//<00001c00> 【夕呼】「――伊隅、\pエコー艦隊は安全圏まで待避できたわ」\e
+<00001c00> 【Yuuko】「――Isumi,\p Echo Fleet's escaped to the safety zone.」\e
+
+//<00001c05> 【夕呼】「ウィスキー艦隊もあと十数分で待避できる。\n準備に掛かってちょうだい」\e
+<00001c05> 【Yuuko】「Whiskey Fleet will be there in another ten or twenty minutes.\nGet ready to detonate it.」\e
+
+//<00001c06> 【伊隅大尉】「――了解」\e
+<00001c06> 【Capt. Isumi】「――Copy that.」\e
+
+//<00001c08> 【夕呼】「…\p…\pといっても、\p特にやることはないわね」\e
+<00001c08> 【Yuuko】「...\p...\pnot that there's a lot for you to do.」\e
+
+//<00001c09> 【伊隅大尉】「ふふふ…\p…\pそうですね。\nあとは減速材を全て投棄するだけですから」\e
+<00001c09> 【Capt. Isumi】「Huhuhu...\p...\ptrue.\nAll that's left is throwing out all the neutron moderators.」\e
+
+//<00001c0b> 【夕呼】「人生最後の十数分…\p…\pお邪魔じゃなければ、\p部下との交信を許可するわ」\e
+<00001c0b> 【Yuuko】「If you don't mind...\p...\pI'll allow you to talk to your subordinates during your last several minutes on Earth.」\e
+
+//<00001c0c> 【伊隅大尉】「――えっ…\p…\p」\e
+<00001c0c> 【Capt. Isumi】「――Eh...\p...\p?」\e
+
+//<00001c0e> 【夕呼】「任務の性格上、\pそれ以外には繋いであげられないんだけど」\e
+<00001c0e> 【Yuuko】「Given the nature of your mission,\p I can't let you talk to anyone else.」\e
+
+//<00001c0f> 【伊隅大尉】「ですが…\p…\pその様な私的な交信は…\p…\p」\e
+<00001c0f> 【Capt. Isumi】「But...\p...\pa personal transmission like that would...\p...\p」\e
+
+//<00001c11> 【夕呼】「小沢提督を始め、\p帝国側の指揮官達から『せめて部下との交信を』って強い要請があってね」\e
+<00001c11> 【Yuuko】「Admiral Kozawa requested you "at least get to talk to your subordinates" and every captain in the Imperial Navy agreed with him.」\e
+
+//<00001c12> 【伊隅大尉】「帝国軍が…\p…\p？」\e
+<00001c12> 【Capt. Isumi】「Imperial Navy...\p...\p?」\e
+
+//<00001c14> 【夕呼】「このクソ忙しい中、\p速瀬達がいる国東とこの最上に有線の秘匿回線を引いてくれたのよ」\e
+<00001c14> 【Yuuko】「They set up an encrypted channel over a wired connection to the Far East ship Hayase and the others are on,\p despite being busy as hell right now.」\e
+
+//<00001c15> 【伊隅大尉】「――！？」\e
+<00001c15> 【Capt. Isumi】「――!?」\e
+
+//<00001c17> 【夕呼】「あんたたちが周囲を気にせず、\p心おきなく話せるようにね」\e
+<00001c17> 【Yuuko】「Just so you can talk to them without worrying about anyone else hearing.」\e
+
+//<00001c18> 【夕呼】「軍人として、\p日本人として、\p人類の一員として…\p…\p細やかながら、\pあんたにお礼がしたいって」\e
+<00001c18> 【Yuuko】「As soldiers,\p as Japanese citizens,\p and as humans...\p...\pthey said they wanted to do what little they could to thank you.」\e
+
+//<00001c1a> 【伊隅大尉】「そんな…\p…\pその様な厚遇は身に過ぎます」\e
+<00001c1a> 【Capt. Isumi】「They did...\p...\pI'm undeserving of such treatment.」\e
+
+//<00001c1c> 【夕呼】「向こうが勝手に準備したんだから、\pありがたく受けておきなさい。\n――そうそう、\pもうひとつあったわ」\e
+<00001c1c> 【Yuuko】「They set it all up without asking so just be glad and use it.\n――Oh right,\p one other thing.」\e
+
+//<00001c1d> 【伊隅大尉】「…\p…\pなんでしょう」\e
+<00001c1d> 【Capt. Isumi】「...\p...\pwhat is it?」\e
+
+//<00001c1f> 【夕呼】「帝国陸軍第１３３連隊所属、\p伊隅あきら少尉の生還を認む。\n尚、\p負傷なし――だそうよ」\e
+<00001c1f> 【Yuuko】「2nd Lt. Isumi Akira of the Imperial Army 133rd Regiment survived.\nAnd unharmed――They say.」\e
+
+//<00001c21> 【伊隅大尉】「…\p…\p…\pそう…\p…\pですか…\p…\p」\e
+<00001c21> 【Capt. Isumi】「...\p...\p...\pI...\p...\psee...\p...\p」\e
+
+//<00001c23> 【夕呼】「…\p…\p…\p…\p」\e
+<00001c23> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<00001c24> 【伊隅大尉】「…\p…\p…\p…\pありがとうございます」\e
+<00001c24> 【Capt. Isumi】「...\p...\pthank you very much.」\e
+
+//<00001e3d> 【夕呼】「あたしに言われてもね…\p…\p」\e
+<00001e3d> 【Yuuko】「They're the ones who told me...\p...\p」\e
+
+//<00006417> 【伊隅大尉】「…\p…\pこの様な緊急時にも関わらず、\p諸々手を尽くして下さった方々に…\p…\pお伝え下さい」\e
+<00006417> 【Capt. Isumi】「...\p...\ptell the ones who went to such lengths for my sake even in these harsh times...\p...\pthat I said thank you.」\e
+
+//<00001c29> 【夕呼】「わかったわ。\n…\p…\pじゃあ、\p繋ぐわよ」\e
+<00001c29> 【Yuuko】「Got it.\n...\p...\pokay,\p connecting.」\e
+
+//<00001c2a> 【伊隅大尉】「――副司令」\e
+<00001c2a> 【Capt. Isumi】「――XO.」\e
+
+//<00001c2c> 【夕呼】「なに？」\e
+<00001c2c> 【Yuuko】「What?」\e
+
+//<00001c2d> 【伊隅大尉】「お世話になりました。\n長いようで短かった２年でした」\e
+<00001c2d> 【Capt. Isumi】「Thank you for everything.\nIt's been a long and short two years.」\e
+
+//<00001c2f> 【夕呼】「…\p…\p…\p…\p」\e
+<00001c2f> 【Yuuko】「...\p...\p...\p...\p」\e
+
+//<00001c30> 【伊隅大尉】「副司令の下、\p人類の未来に貢献するという、\p栄誉ある任務に従事させて戴いた事に感謝します」\e
+<00001c30> 【Capt. Isumi】「I thank you for giving me honorable missions that contributed to the future of humanity.」\e
+
+//<00001c32> 【夕呼】「やめてよ…\p…\pそういうの…\p…\p」\e
+<00001c32> 【Yuuko】「Stop it...\p...\pyou know I don't like that...\p...\p」\e
+
+//<00001c34> 【伊隅大尉】「ともすれば凡庸に終わったであろう私の人生に、\p特別な意味と価値を与えていただきました」\e
+<00001c34> 【Capt. Isumi】「You gave my life special meaning when it would have otherwise been ordinary.」\e
+
+//<00001c36> 【夕呼】「決して人様には自慢できない意味と価値だけど…\p…\p」\e
+<00001c36> 【Yuuko】「Not that you can tell anyone else about it...\p...\p」\e//she's so tsun～ ~IX
+
+//<00001c37> 【伊隅大尉】「第４計画の完遂と、\p人類の勝利をこの目で見届けられない事は心残りですが…\p…\p一足お先に逝って参ります」\e
+<00001c37> 【Capt. Isumi】「I regret not being able to see Alternative IV's completion and humanity's victory...\p...\pbut I must leave ahead of you.」\e
+
+//<00001e41> 【夕呼】「あたしが逝くのは地獄だから、\p二度と会う事もないわね。\nまりもに…\p…\p宜しく」\e
+<00001e41> 【Yuuko】「I'll be going to hell when I leave so don't expect to see me again.\nBut...\p...\psay hi to Marimo.」\e
+
+//<0000641a> 【伊隅大尉】「申し訳ありませんが、\pその言伝はお引き受けできませんね。\n私の逝く先も、\p地獄ですから」\e
+<0000641a> 【Capt. Isumi】「My apologies,\p but I can't accept that request.\nI'm going to hell too.」\e
+
+//<0000641d> 【夕呼】「それじゃあ、\pあたしが逝ったら道案内頼むわ。\nどうせ最下層なんだし、\p面倒くさい手続きはごめんだからね」\e
+<0000641d> 【Yuuko】「Then show me around the place when I get there.\nI'll be in the lowest level and I won't be in the mood to do any paperwork.」\e
+
+//<00001c3d> 【伊隅大尉】「わかりました。\n閻魔や鬼共は蹴散らしておきます」\e
+<00001c3d> 【Capt. Isumi】「Understood.\nI'll chase off the devil and his demons before you arrive.」\e
+
+//<00001c3f> 【夕呼】「フフフ…\p…\p」\e
+<00001c3f> 【Yuuko】「Huhuhu...\p...\p」\e
+
+//<00001c40> 【伊隅大尉】「ふふふ…\p…\p」\e
+<00001c40> 【Capt. Isumi】「Huhuhu...\p...\p」\e
+
+//<00001c45> …\p…\p今から死のうとしている人間と、\pそれをさせようとしている人間が、\p冗談を言い合い…\p…\p穏やかに笑っている。\e
+<00001c45> ...\p...\psomeone who's preparing to die and someone else preparing to let her are joking to each other...\p...\pand smiling calmly.\e
+
+//<00001c46> 『元の世界』の日本人が持っている感覚や常識に照らし合わせれば、\p狂気とさえ受け取られるであろう光景…\p…\p。\e
+<00001c46> If I judged this based on the intuitions and common sense from my world's Japan,\p they'd both look absolutely insane...\p...\p\e
+
+//<00001c47> だけど『この世界』では、\pごくありふれた光景にすぎない。\n前のオレだったら、\p間違いなく取り乱していた筈だ。\e
+<00001c47> But in this world it's perfectly ordinary.\nThe old me would've completely lost it upon seeing this.\e
+
+//<00001c48> そして先生に失望し『この世界』を呪い、\p大尉を哀れんだあげく自分の非力を悔み、\p落ち込んでいただろう。\e
+<00001c48> I would've lost faith in Sensei, cursed this world,\p pitied the Captain, hated my powerlessness and fallen into depression.\e
+
+//<00001c49> 【武】「…\p…\p…\p…\p」\e
+<00001c49> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001c4a> オレはもうそんな風にはならない。\e
+<00001c4a> I'm not doing that anymore.\e
+
+//<00001c4b> 『元の世界』ですら、\p日本以外に目を向ければ、\pこれと同じ光景が日常的に繰り返されている事を知ったから。\e
+<00001c4b> Because now I know that even in my world,\p exactly this kind of scene occurred on a daily basis in places outside Japan.\e
+
+//<00006421> ＢＥＴＡが存在しない世界であっても、\p念仏のように唱えたり、\pただ願っているだけでは、\p『平和』が絶対に手に入らない事を知ったから。\e
+<00006421> Because now I know that even in a world where the BETA don't exist,\p praying and wishing for peace is never enough to achieve it.\e
+
+//<00001c4d> 【武】「…\p…\p…\p…\p」\e
+<00001c4d> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001c4e> たとえ自分の身を危険に曝し、\p命を投げ出しても、\p誰かのためにそれをつかみ取ろうとする人達がいる。\e
+<00001c4e> There are people who expose themselves to mortal danger,\p even give up their lives in order to bring peace to someone else.\e
+
+//<00001c4f> その人達も決して死にたいわけじゃない。\nその人達にも家族や仲間や恋人がいる。\e
+<00001c4f> That doesn't mean they want to die.\nThey have family, comrades and lovers too.\e
+
+//<00001c50> だからこそ、\pその時自分にしかできない事を、\p命に替えてもやり通す。\nその行為の尊さを…\p…\pオレはもう否定できない。\e
+<00001c50> Which is why they'll give up their lives in order to do what only they can do.\nAnd that's noble of them...\p...\pI can't deny that anymore.\e
+
+//<00001c51> 【武】「…\p…\p…\p…\p」\e
+<00001c51> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00006423> だからといって今、\p辛くない訳じゃない。\n自分であれ他人であれ…\p…\p『死』という現実はとても辛い。\nそれが親しい人であれば尚更だ…\p…\p。\e
+<00006423> But that doesn't mean she isn't in pain right now.\nDeath is a painful reality...\p...\pwhether it happens to yourself or someone else.\nEspecially if it happens to someone close to you...\p...\p\e
+
+//<00001e4c> 涼宮中尉や夕呼先生だってそれは同じ筈だ。\nでも絶対にそれを顔に出さない。\e
+<00001e4c> 1st Lt. Suzumiya and Yuuko-sensei should be no different.\nBut they'll never let it show.\e
+
+//<0000649a> 人の死を何とも思わない人間が、\pＢＥＴＡと死に物狂いで戦うわけが無いんだ。\e
+<0000649a> People who think nothing of other people's deaths would never fight against the BETA so hard.\e
+
+//<00001c5a> 人の死を何とも思わない人間だったら…\p…\pあの時、\p自分を見失うほど酔って、\pオレみたいなガキ相手に泣き叫んだりしない。\e
+<00001c5a> If she didn't care whether others died...\p...\pthen she wouldn't have complained to a brat like me back then.\e
+
+//<00001c5b> 【夕呼】「――白銀、\p秘匿回線で繋げるから」\e
+<00001c5b> 【Yuuko】「――Shirogane,\p I'll connect you to her channel.」\e
+
+//<00001c5c> 【武】「はい」\e
+<00001c5c> 【Takeru】「Okay.」\e
+
+//<00001c5d> 【夕呼】「誰もモニターしてないから好きに喋って良いわよ。\n伊隅の指示で速瀬達にも繋がる段取り。\nいいわね」\e
+<00001c5d> 【Yuuko】「No one's monitoring it so say whatever you want.\nI'll switch it to Hayase and the others when Isumi gives me the signal.\p Okay?」\e
+
+//<00001c5e> 【武】「はい」\e
+<00001c5e> 【Takeru】「Okay.」\e
+
+//<00001c5f> 【夕呼】「涼宮…\p…\pあたし達はＣＩＣに戻りましょう」\e
+<00001c5f> 【Yuuko】「Suzumiya...\p...\plet's go back to the CIC.」\e
+
+//<00001e51> ――え？\e
+<00001e51> ――Eh?\e
+
+//<00001c60> 【涼宮中尉】「はい」\e
+<00001c60> 【1st Lt. Suzumiya】「Ma'am.」\e
+
+//<00001c63> 涼宮中尉だけじゃなく、\p夕呼先生まで出て行くのか…\p…\p。\n機密レベルでの線引きもあるんだろうけど、\p大尉に気を遣ったんだろうな。\e
+<00001c63> Not just 1st Lt. Suzumiya,\p but Yuuko-sensei too...\p...\p?\nSecrecy is definitely a concern here,\p but she's also being considerate of the Captain.\e
+
+//<00001c64> 【武】「…\p…\p…\p…\p」\e
+<00001c64> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001c65> オレが大尉に何かを返せるとしたら、\p衛士として１人前の態度を取ることぐらいしかない。\e
+<00001c65> If I can do anything for the Captain,\p it's to act like a proper Eishi right now.\e
+
+//<00001c66> 何事もなく…\p…\p普通に送り出すんだ。\e
+<00001c66> To send her off...\p...\pwithout any unsightly behavior.\e
+
+//<00001c68> 【武】「――大尉、\p白銀です」\e
+<00001c68> 【Takeru】「――Captain,\p it's Shirogane.」\e
+
+//<00001c69> 【伊隅大尉】「――白銀…\p…\p００ユニットは無事らしいな。\n良くやったぞ」\e
+<00001c69> 【Capt. Isumi】「――Shirogane...\p...\pI heard the 00 Unit's okay.\nGood job.」\e
+
+//<00001c6b> 【武】「ありがとうございます。\nあの、\pそっちは…\p…\p大丈夫ですか？」\e
+<00001c6b> 【Takeru】「Thank you.\nUmm,\p how are you...\p...\pdoing?」\e
+
+//<00001c6c> ――なに間抜けなこと訊いてんだオレは…\p…\p！\e
+<00001c6c> ――What kind of stupid question was that...\p...\p!?\e
+
+//<00001c6d> 【伊隅大尉】「ああ、\p周囲のＢＥＴＡの事か。\n主機に火を入れたからな。\n『ラザフォード場』が守ってくれている」\e
+<00001c6d> 【Capt. Isumi】「Aaah,\p you mean the BETA?\nI'm fine now that the engine's on.\nThe Rutherford Field's protecting me.」\e
+
+//<00001e58> 【伊隅大尉】「さすがに機体を動かしたら、\p私もただでは済まないがな」\e
+<00001e58> 【Capt. Isumi】「Though if I tried getting it moving I wouldn't last long.」\e
+
+//<00001c71> 【武】「そうですね」\e
+<00001c71> 【Takeru】「True.」\e
+
+//<0000648d> くそ…\p…\pいざとなると…\p…\p何を言っていいのかわからねえよ…\p…\p！\e
+<0000648d> Dammit...\p...\pnow that I'm faced with this...\p...\p\b...\p...\pI have no idea what to say...\p...\p!\e
+
+//<00001c73> 【武】「あの…\p…\p妹さん…\p…\p無事で良かったですね」\e
+<00001c73> 【Takeru】「Umm...\p...\pI'm glad to hear...\p...\pyour sister's okay.」\e
+
+//<00001c74> 【伊隅大尉】「ありがとう…\p…\p。\nだが、\p副司令の取り計らい…\p…\p多少気が引けるのは確かだ」\e
+<00001c74> 【Capt. Isumi】「Thank you...\p...\p\nIt's a little embarrassing...\p...\pthat the XO bothered to find out.」\e
+
+//<00001c76> 【武】「…\p…\pえ？　夕呼先生のって…\p…\pそれは帝国側が」\e
+<00001c76> 【Takeru】「...\p...\peh? Yuuko-sensei?\b...\p...\pthe Empire told her.」\e
+
+//<00001c77> 【伊隅大尉】「全く…\p…\p貴様も、\pもう少し広い視野で状況判断ができるようになるといいんだがな」\e
+<00001c77> 【Capt. Isumi】「Come on...\p...\pyou need to consider a few more possibilities when evaluating a situation.」\e
+
+//<00001c79> 【武】「すみません」\e
+<00001c79> 【Takeru】「I'm sorry.」\e
+
+//<00001c7a> 【伊隅大尉】「Ａ－０１部隊の性格上、\p副司令が私の素性を明かさなければ、\p帝国側も妹の照会などできるわけないだろう？」\e
+<00001c7a> 【Capt. Isumi】「The Empire wouldn't be able to tell her about my sister unless the XO revealed who I was,\p compromising A-01.」\e
+
+//<00001c7c> ――ということは…\p…\p大尉の妹さんの安否は夕呼先生が…\p…\p。\e
+<00001c7c> ――Which means...\p...\pYuuko-sensei must've checked it herself...\p...\p\e
+
+//<00001c7d> 【伊隅大尉】「柏木を始め、\p多くの将兵が命を落としている中、\p私だけが厚遇される事は、\p周囲の者達の心情を考えると心苦しいものだ」\e
+<00001c7d> 【Capt. Isumi】「It pains me to know that as Kashiwagi and countless others have died,\p those around me are more worried about what happens to me.」\e
+
+//<00001c7f> 【伊隅大尉】「副司令は周囲に配慮し、\pまた私の心情も酌んだ上でああいう言い方をされたんだろう」\e
+<00001c7f> 【Capt. Isumi】「The XO said it that way out of consideration for those listening as well as for me.」\e
+
+//<00001c81> 【武】「そうだったんですか…\p…\p」\e
+<00001c81> 【Takeru】「I see...\p...\p」\e
+
+//<00001c82> 【伊隅大尉】「あの人は計画や研究に関しての機密保持は徹底しているが、\p自身の人間味ある部分を隠す事には不慣れらしいな」\e
+<00001c82> 【Capt. Isumi】「She's very thorough when keeping her plans and research secret,\p but she's not so good about keeping her own humanity hidden.」\e
+
+//<00001c84> 【武】「そうですね。\n結局大尉にはバレてますからね。\nそっち方面は不器用って言うか、\p苦手なんでしょうね」\e
+<00001c84> 【Takeru】「That's true.\nYou saw through it in no time.\nIt seems more like she was too ashamed to say it than anything else.」\e
+
+//<00001c85> ――くそ…\p…\pオレが言いたいのはこんな事じゃないのに…\p…\p！\e
+<00001c85> ――Dammit...\p...\pthis isn't what I wanted to talk about...\p...\p!\e
+
+//<00006427> 【伊隅大尉】「そんな副司令の配慮も帝国軍の思い遣りも…\p…\p本音を言えばとても嬉しい。\nだが、\pそれは私の身に過ぎる」\e
+<00006427> 【Capt. Isumi】「The XO's and the Imperial Navy's sympathy...\p...\phonestly, they make me happy.\nBut I'm not worthy of it.」\e
+
+//<00001c88> 【武】「でもそれは…\p…\p大尉が人類のために戦ってきた事を先生が知っているから…\p…\p！」\e
+<00001c88> 【Takeru】「But still...\p...\pSensei knows you've been fighting for the sake of humanity...\p...\p!」\e
+
+//<00001c89> 【武】「帝国軍だって…\p…\p多くの命を大尉が救うから…\p…\pそれを…\p…\p！」\e
+<00001c89> 【Takeru】「And the Imperial Navy...\p...\pthey know how many lives you're saving...\p...\pso...\p...\p!」\e
+
+//<00001c8a> ちくしょう！　もうあと数分で二度と喋れなくなっちまうのに…\p…\p言いたい事はたくさんあるはずなのに…\p…\pうまい言葉が出てこない…\p…\p！！\e
+<00001c8a> Dammit! It'll only be a few minutes before I can never talk to her again...\p...\pthere's so much more I want to say to her...\p...\pbut I can't get any of it out...\p...\p!!\e
+
+//<00001c8c> 【伊隅大尉】「何人もの部下を殺し、\p多くの人の死に関わって来た私には…\p…\pこのような死に場所を与えられただけでも十分なんだ」\e
+<00001c8c> 【Capt. Isumi】「After losing so many of my subordinates and being responsible for the deaths of countless others...\p...\pjust being able to die like this is enough.」\e
+
+//<00001c8e> 【武】「そんな…\p…\p大尉は…\p…\p立派じゃないですか！　自分の命と引き換えに多くの人達を救うじゃないですか！」\e
+<00001c8e> 【Takeru】「No...\p...\pCaptain...\p...\pyou're doing something incredible!\bYou're giving up your own life to save countless others!」\e
+
+//<0000642a> 【伊隅大尉】「違うんだ白銀。\n私の本音は、\p貴様が思っている程、\pご立派なものじゃないんだ」\e
+<0000642a> 【Capt. Isumi】「No I'm not, Shirogane.\nMy real reasons aren't as noble as you think they are.」\e
+
+//<00001c91> 【武】「――え…\p…\p？」\e
+<00001c91> 【Takeru】「――Eh...\p...\p?」\e
+
+//<00006431> 【伊隅大尉】「今、\p私が一番強く思っている事は…\p…\p結果的に救う事になった多くの命の事でも、\p人類の未来でもない…\p…\p」\e
+<00006431> 【Capt. Isumi】「What I'm thinking about the most right now...\p...\pisn't the number of lives I'll save,\p or humanity's future...\p...\p」\e
+
+//<00001c94> 【武】「大尉…\p…\p」\e
+<00001c94> 【Takeru】「Captain...\p...\p」\e
+
+//<00001c97> 【伊隅大尉】「まして、\p柏木の事でも、\p今までに失った部下達の事でも…\p…\p」\e
+<00001c97> 【Capt. Isumi】「It's not even about Kashiwagi or all the other subordinates I've lost...\p...\p」\e
+
+//<00006434> 【伊隅大尉】「私が捕獲したＢＥＴＡのせいで生命を奪われた…\p…\p基地の人間や神宮司軍曹の事でもない」\e
+<00006434> 【Capt. Isumi】「Nor is it about Sgt. Jinguuji and everyone else on the base...\p...\pwho was killed by the BETA I captured.」\e
+
+//<00001c9c> ――大尉は…\p…\pその事を知っていたんだ…\p…\p。\nそれでも大尉は…\p…\p任務を…\p…\p\e
+<00001c9c> ――So the Captain...\p...\pdid know about that...\p...\p\nAnd yet...\p...\pshe still...\p...\p\e
+
+//<0000647a> 【伊隅大尉】「妹が助かった事…\p…\p。\nそして、\p両親や姉妹達に…\p…\p…\p…\pあの男にもう二度と会えないという事…\p…\p」\e
+<0000647a> 【Capt. Isumi】「But the fact that my sister's okay...\p...\p\nAnd the fact that I'll never get to see...\p...\p...\p...\pmy parents, my sisters or that man again...\p...\p」\e
+
+//<00001ca1> 【伊隅大尉】「私は今…\p…\pそんな自分の身の回りの事ばかりを考えているんだ」\e
+<00001ca1> 【Capt. Isumi】「Right now...\p...\pthat's all I can think about.」\e
+
+//<00001ca4> 【武】「…\p…\pそれの――それのどこがいけないんですか！？」\e
+<00001ca4> 【Takeru】「...\p...\pso what――What's so wrong with that!?」\e
+
+//<00001ca5> 【伊隅大尉】「…\p…\p白銀」\e
+<00001ca5> 【Capt. Isumi】「...\p...\pShirogane.」\e
+
+//<00001ca7> 【武】「…\p…\p大尉は…\p…\pオルタネイティヴ計画のために…\p…\pずっと自分の手を汚して来たじゃないですか！」\e
+<00001ca7> 【Takeru】「...\p...\pCaptain...\p...\pyou've been dirtying your hands for Alternative IV...\p...\pfor years!」\e
+
+//<00001ca8> 【武】「人類のためだろうが戦友のためだろうが…\p…\p家族のためだろうが――汚れ役をやって来たのは事実じゃないですか！」\e
+<00001ca8> 【Takeru】「Isn't it still true...\p...\pthat you took on that role for humanity, your comrades and your family!?」\e
+
+//<00001caa> 【柏木少尉】「テストが成功して『凄乃皇弐型』が正規配備されたら…\p…\p弟達は戦わなくて済むかな…\p…\p」\e
+<00001caa> 【2nd Lt. Kashiwagi】「If this succeeds and the Susano'o becomes an officially accepted weapon...\p...\pmaybe my brothers won't have to fight...\p...\p」\e//CP MLA_0051
+
+//<00001cad> 【武】「柏木だって――そうやって生きて…\p…\p戦って…\p…\p死んでいったんです」\e
+<00001cad> 【Takeru】「Kashiwagi also――Lived that way...\p...\pand fought...\p...\pand died.」\e
+
+//<00001caf> 【まりも】「ひとりでも多くの衛士を、\p１秒でも長生きさせるために、\pその経験を生かす…\p…\pそうする事でしか私が部下に報いる方法はないのよ」\e
+<00001caf> 【Marimo】「To use my experience to help as many Eishi as I can survive every second possible...\p...\pthat's the only way I can make it up to my subordinates.」\e//CP MLA_0038
+
+//<00001cb1> 【武】「神宮司軍曹だって…\p…\p自分の使命を最後まで全うして…\p…\pオレ達の心に…\p…\pいろんなものを残してくれたんです」\e
+<00001cb1> 【Takeru】「Sgt. Jinguuji too...\p...\pright up until her final moments...\p...\pgave me...\p...\pall sorts of advice.」\e//lit. "left all sorts of things in my heart"
+
+//<00001cb2> 【伊隅大尉】「…\p…\p…\p…\p」\e
+<00001cb2> 【Capt. Isumi】「...\p...\p...\p...\p」\e
+
+//<00001cb4> 【武】「結果的でも何でも――大尉のおかげで…\p…\p多くの命が救われるのは事実じゃないですか…\p…\p？！」\e
+<00001cb4> 【Takeru】「And whether it's on your mind now or not――Captain, isn't it still true...\p...\pthat you're going to save countless lives...\p...\p!?」\e
+
+//<00001cb5> 【武】「最後の数分に…\p…\p心の中で家族や恋人の事を考えるのは――そんなに悪い事ですか！？」\e
+<00001cb5> 【Takeru】「Thinking about your family and the man you loved...\p...\pin your final moments...\p...what the hell's wrong with that!?」\e
+
+//<00001cb6> 【伊隅大尉】「…\p…\p…\p…\p」\e
+<00001cb6> 【Capt. Isumi】「...\p...\p...\p...\p」\e
+
+//<00001cb8> 【武】「…\p…\pオレは、\p誰がなんて言おうと大尉を尊敬します」\e
+<00001cb8> 【Takeru】「...\p...\pI don't care what anyone says, Captain,\p I respect you.」\e
+
+//<00001cb9> 【武】「大尉の行いは――立派だと思います！！」\e
+<00001cb9> 【Takeru】「I think what you're doing is admirable!!」\e
+
+//<00001cba> 【伊隅大尉】「…\p…\p…\p…\p」\e
+<00001cba> 【Capt. Isumi】「...\p...\p...\p...\p」\e
+
+//<00001cbd> ――くそッ…\p…\p泣くな…\p…\pッ！！　ここで泣いたら…\p…\pだめだッ…\p…\p！！\e
+<00001cbd> ――Dammit...\p...\pdon't cry...\p...\p!! I can't...\p...\pcry now...\p...\p!!\e
+
+//<00001cbe> 【伊隅大尉】「…\p…\p白銀」\e
+<00001cbe> 【Capt. Isumi】「...\p...\pShirogane.」\e
+
+//<00001cc0> 【武】「…\p…\pはい」\e
+<00001cc0> 【Takeru】「...\p...\pyes?」\e
+
+//<00001cc1> 【伊隅大尉】「部隊の連中を頼んだぞ。\n貴様の強さを…\p…\pみんなにも分けてやってくれ」\e
+<00001cc1> 【Capt. Isumi】「Take care of the unit.\nLet everyone have...\p...\psome of your strength.」\e
+
+//<00001cc3> 【武】「オレは…\p…\p全然強くなんかありませんよ…\p…\p」\e
+<00001cc3> 【Takeru】「I'm not...\p...\pstrong at all...\p...\p」\e
+
+//<00001cc4> 【伊隅大尉】「白銀…\p…\p貴様は十分強い」\e
+<00001cc4> 【Capt. Isumi】「Shirogane...\p...\pyou're plenty strong.」\e
+
+//<00001cc6> 【武】「――そんなこと無いです！」\e
+<00001cc6> 【Takeru】「――No I'm not!」\e
+
+//<0000647d> 【伊隅大尉】「貴様の戦う理由が、\pどこか達観している訳が…\p…\p貴様が特別なのだと感じる訳が、\p今日ハッキリわかった…\p…\p」\e
+<0000647d> 【Capt. Isumi】「Your reason for fighting may feel a little intangible for me...\p...\pbut now I know for sure why I felt you were special...\p...\p」\e
+
+//<00001cca> 【武】「え…\p…\p」\e
+<00001cca> 【Takeru】「Eh...\p...\p?」\e
+
+//<00001ccb> 昨日の夜大尉が言っていた事だ…\p…\p。\e
+<00001ccb> She said something like that last night...\p...\p\e
+
+//<00006440> 【伊隅大尉】「００ユニットの被験者は…\p…\p…\p…\p貴様の恋人なんだろう…\p…\p？」\e
+<00006440> 【Capt. Isumi】「The 00 Unit test subject...\p...\p\b...\p...\pis she your lover...\p...\p?」\e
+
+//<00006442> 【武】「――え…\p…\p！？」\e
+<00006442> 【Takeru】「――Eh...\p...\p!?」\e
+
+//<00006443> 【伊隅大尉】「…\p…\p…\p…\p」\e
+<00006443> 【Capt. Isumi】「...\p...\p...\p...\p」\e
+
+//<00006445> 【武】「…\p…\p大尉…\p…\p…\p…\p知っていたんですか…\p…\p？！」\e
+<00006445> 【Takeru】「...\p...\pCaptain...\p...\p...\p...\pyou knew...\p...\p!?」\e
+
+//<00006446> 【伊隅大尉】「いや…\p…\p貴様が名を呼んで彼女を抱き起こした時にわかった。\n純夏という名は、\p昨日聞いていたからな」\e
+<00006446> 【Capt. Isumi】「No...\p...\pI figured it out when you shouted her name and held her.\nYou told me about Sumika yesterday, remember?」\e
+
+//<00001cd1> しまった…\p…\p気がつかなかった…\p…\p。\nデータリンクが切られていたから油断したのか…\p…\p。\e
+<00001cd1> Crap...\p...\pI didn't even notice I did that...\p...\p\nI let myself slip up because there was no data link...\p...\p\e
+
+//<00006450> 【伊隅大尉】「貴様と彼女に降りかかったであろう、\p悲劇と心の傷の深さは…\p…\p想像を絶する」\e
+<00006450> 【Capt. Isumi】「I can hardly imagine...\p...\pthe tragic wounds you've had to bear because of her fate.」\e
+
+//<00001cd4> ――え…\p…\p？\e
+<00001cd4> ――Eh...\p...\p?\e
+
+//<00001cd5> 【伊隅大尉】「００ユニットの真実を知りながら、\p第４計画の中枢任務をこなすなど…\p…\p私には絶対に耐えられないだろう」\e
+<00001cd5> 【Capt. Isumi】「Completing a critical mission for Alternative IV while knowing the truth behind the 00 Unit...\p...\pisn't something I'd be able to endure.」\e
+
+//<00001cd7> 【伊隅大尉】「訓練部隊編入から今日に至るまでの貴様の働きを思い返すと…\p…\p貴様の強さを知ると同時に、\p自分の弱さが情けなくなる」\e
+<00001cd7> 【Capt. Isumi】「Looking back on your actions from the day you first trained with us...\p...\pI can see your strength and feel ashamed at my weakness.」\e
+
+//<00001cd9> 【武】「違います…\p…\p！　たぶん大尉が考えているような事じゃ…\p…\p！！」\e
+<00001cd9> 【Takeru】「That's not true...\p...\p!\bNone of it's as great as you think...\p...\p!!」\e
+
+//<00001cda> オレは…\p…\p『この世界』のオレじゃない…\p…\p！！　『この世界』のオレと純夏に起きた悲劇は…\p…\p知らないんだ！！\e
+<00001cda> I'm not...\p...\pthis world's me...\p...\p!!\bI wasn't there...\p...\pwhen all that happened to this world's Sumika!!\e//lit. "I don't know the tragedy that befell Sumika" obviously he does know but he means firsthand or something
+
+//<00006456> 【伊隅大尉】「多少の違いなど問題じゃない…\p…\p。\n彼女に対する貴様の態度を見ればわかる」\e
+<00006456> 【Capt. Isumi】「It doesn't matter if I'm partly wrong...\p...\p\nI can tell from the way you acted around her.」\e
+
+//<00006458> 【伊隅大尉】「私はこの手の話の読みを外したことはないんだ。\n特に…\p…\p幼馴染み狙い同士じゃないか」\e
+<00006458> 【Capt. Isumi】「I've never been wrong about this sort of thing.\nAnd besides...\p...\pweren't you both childhood friends who fell for each other?」\e
+
+//<00001cdf> 【武】「はい…\p…\p」\e
+<00001cdf> 【Takeru】「Yes...\p...\p」\e
+
+//<00006480> 【伊隅大尉】「貴様がたまに見せる『甘さ』…\p…\pというか、\p独特の優しさは、\p私が今までに出会った誰もが持っていないものだ」\e
+<00006480> 【Capt. Isumi】「I've never met anyone before who had the same "naivete"...\p...\pthe same unique kindness that you have.」\e
+
+//<00001ce2> それは…\p…\pオレが『この世界』の人間じゃないから…\p…\p覚悟が足りないんだ…\p…\p。\e
+<00001ce2> That's because...\p...\pI'm not from this world...\p...\pbecause I don't have enough resolve...\p...\p\e
+
+//<00006483> 【伊隅大尉】「それだけの悲劇を体験しながら、\pそういう優しさを失っていない貴様は…\p…\p強いと思う」\e
+<00006483> 【Capt. Isumi】「I think you're strong...\p...\pfor not losing that kindness despite having experienced such tragedy.」\e//that actually makes a lot of sense ~IX
+
+//<00001ce5> 【武】「え…\p…\p」\e
+<00001ce5> 【Takeru】「Eh...\p...\p?」\e
+
+//<00001ce6> 【伊隅大尉】「ある意味余裕があるというのか…\p…\p私のような人間にはそれがうらやましい」\e
+<00001ce6> 【Capt. Isumi】「For someone like me...\p...\pthe ability to put all your objectives aside to be nice to others is enviable.」\e//that was tough ~IX
+
+//<00001ce8> うらやましい…\p…\p？　ばかな…\p…\p『この世界』では、\pそんな弱さは邪魔になるだけじゃないか…\p…\p！\e
+<00001ce8> Enviable...\p...\p? No way...\p...\pin this world that weakness just gets in the way of everything...\p...\p!\e
+
+//<00001ce9> 今までオレは…\p…\p自分の甘さのせいで人に迷惑をかけ…\p…\p散々辛い思いをして来たって言うのに…\p…\p！？\e
+<00001ce9> I've created so much trouble for others...\p...\pby being so naive...\p...\pand I've caused them so much pain...\p...\p!!\e
+
+//<00006463> 【伊隅大尉】「そして、\p衛士としての申し分のない才能も持ち合わせている。\nもしかしたら…\p…\p貴様は、\p人類の救世主なのかも知れないな」\e
+<00006463> 【Capt. Isumi】「And your talents as an Eishi are beyond criticism.\nYou might just be...\p...\phumanity's savior.」\e
+
+//<00006465> 【武】「…\p…\pオレが…\p…\p救世主…\p…\p…\p…\pですか…\p…\p」\e
+<00006465> 【Takeru】「...\p...\pI'm...\p...\phumanity's...\p...\p...\p...\psavior...\p...\p?」\e
+
+//<00001ced> オレは…\p…\pそうありたい…\p…\p。\n『この世界』を救って…\p…\pオレが滅茶苦茶にした他の世界を修復したい…\p…\p！\e
+<00001ced> I...\p...\pwant to be that...\p...\p\nI want to save this world...\p...\pand fix the other worlds I tore apart...\p...\p!\e//I've been wondering, didn't he fuck up just one world? Why is always plural? What other world did he ruin besides the branch of his original world? -Shikiller //I assume he means the past MLUs: 【Yuuko】「Your death would cut off all the possible worlds branching from this one.」 though I can't honestly remember where he used an explicit plural that made me start tling it as plural, so I guess it's possible I'm screwing up ~IX
+
+//<00001cee> でも…\p…\pそれはオレ独りじゃできない。\nだから…\p…\p大尉や神宮司軍曹の様な人達が傍にいて欲しいのに…\p…\p！\e
+<00001cee> But...\p...\pI can't do that alone.\nWhich is why...\p...\pI want people like Sgt. Jinguuji to help me...\p...\nThat's why I wanted you to help me, Captain!\e//felt less dramatic when I tried cramming both names in one clause ~IX
+
+//<00006469> 【伊隅大尉】「今日の戦闘での貴様は…\p…\pとても新任とは思えなかったぞ」\e
+<00006469> 【Capt. Isumi】「Your performance in today's battle...\p...\pwas not that of a newbie.」\e
+
+//<0000646b> 【武】「それは大尉のおかげじゃないですか。\n催眠療法に頼らなきゃまともに戦えない救世主なんて…\p…\p情けないんですけど」\e
+<0000646b> 【Takeru】「Isn't that thanks to you, Captain?\nI couldn't even fight without taking hypnotic therapy...\p...\pwhat kind of savior is that?」\e
+
+//<00001cf2> 【伊隅大尉】「ふふふ…\p…\p安心しろ。\n貴様はそれを自分で克服したんだ」\e
+<00001cf2> 【Capt. Isumi】「Huhuhu...\p...\pdon't worry.\nYou conquered that all on your own.」\e
+
+//<00001cf4> 【武】「…\p…\pえ」\e
+<00001cf4> 【Takeru】「...\p...\peh?」\e
+
+//<0000646d> 【伊隅大尉】「あの時貴様が受けたのは、\p特殊な効果は何もない、\pただの安静プログラムだ」\e
+<0000646d> 【Capt. Isumi】「What you received was just a resting program with no special effects.」\e
+
+//<00001cf7> 【武】「…\p…\pえ！？　…\p…\pじゃあ…\p…\p始まる前に、\p大尉と催眠療法の先生が長々と話していたのは…\p…\p」\e
+<00001cf7> 【Takeru】「...\p...\peh!? ...\p...\pthen...\p...\pyou spent all that time talking to the doctor because...\p...\p」\e
+
+//<00001cf8> 【伊隅大尉】「そうだ。\n先生に一芝居打ってもらうようお願いしていたんだ」\e
+<00001cf8> 【Capt. Isumi】「Right.\nI was asking him to put on a show for you.」\e
+
+//<00001cfa> 【武】「大尉…\p…\p」\e
+<00001cfa> 【Takeru】「Captain...\p...\p」\e
+
+//<00001cfb> 【伊隅大尉】「この作戦が終わったら種明かしをするつもりだったが…\p…\p伝えられて良かった」\e
+<00001cfb> 【Capt. Isumi】「I was planning to tell you that after the operation was over...\p...\pI'm glad I got a chance to.」\e
+
+//<00001cfd> …\p…\p…\p…\pそうだったのか…\p…\p。\nそうやって大尉は…\p…\pオレに自信を付けさせようとしてくれてたんだ…\p…\p。\e
+<00001cfd> ...\p...\p...\p...\pI see...\p...\p\nSo that's how...\p...\pthe Captain gave me confidence...\p...\p\e
+
+//<00001cfe> 【伊隅大尉】「これで文字通り、\p貴様にはもう怖いものは無くなった筈だ」\e
+<00001cfe> 【Capt. Isumi】「Now you literally have nothing to be afraid of anymore.」\e
+
+//<00001d00> 【武】「はい…\p…\pありがとうございました」\e
+<00001d00> 【Takeru】「Yes...\p...\pthank you very much.」\e
+
+//<00001d01> 【伊隅大尉】「…\p…\pさて。\n長くなってしまったな…\p…\p皆にもお別れをさせてもらおう」\e
+<00001d01> 【Capt. Isumi】「...\p...\pnow then.\nWe've taken too long...\p...\pI'll go say farewell to the others.」\e
+
+//<00001d03> ――！　もう…\p…\p大尉とは…\p…\pこれで…\p…\p！！\e
+<00001d03> ――!\nAfter this...\p...\pthe Captain...\p...\pI'll...\p...\p!!\e
+
+//<00001d06> 【武】「――大尉ッ！　――お世話になりましたッ！！」\e
+<00001d06> 【Takeru】「――Captain!\b――I am proud to have served under you!!」\e//I'm imagining him saluting ~IX//he did. - Raide//derp ~IX
+
+//<00001d08> 【伊隅大尉】「泣くな…\p…\p…\p…\p男だろう…\p…\p」\e
+<00001d08> 【Capt. Isumi】「Don't cry...\p...\p...\p...\pyou're a man...\p...\p」\e
+
+//<00001d0a> 【武】「…\p…\pッ…\p…\pす…\p…\pすみませ…\p…\pッ…\p…\p」\e
+<00001d0a> 【Takeru】「...\p...\p! ...\p...\ps-...\p...\psorr-...\p...\p! ...\p...\p」\e
+
+//<00001d0b> 【武】「…\p…\pオレは…\p…\pもっと大尉に…\p…\p色んな事を…\p…\p教えてもらいたかった…\p…\pのにっ…\p…\p」\e
+<00001d0b> 【Takeru】「...\p...\pI...\p...\pwanted you...\p...\pto teach me...\p...\pso much more...\p...\pCaptain...\p...\p!」\e
+
+//<00001d0c> 【伊隅大尉】「…\p…\p…\p…\p」\e
+<00001d0c> 【Capt. Isumi】「...\p...\p...\p...\p」\e
+
+//<00001d0e> 【武】「…\p…\pッ…\p…\p…\pくッ…\p…\p」\e
+<00001d0e> 【Takeru】「...\p...\p! ...\p...\p...\puu...\p...\p」\e
+
+//<00001d0f> 【伊隅大尉】「私も多くの先達と同じく、\p基地に咲く桜となって貴様達を見守る…\p…\p」\e
+<00001d0f> 【Capt. Isumi】「Like many others before me,\p I'll watch over you as one of the cherry blossoms on the base...\p...\p」\e
+
+//<00001d11> 【武】「…\p…\p大…\p…\p尉…\p…\p…\p…\p」\e
+<00001d11> 【Takeru】「...\p...\pCap...\p...\ptain...\p...\p...\p...\p」\e
+
+//<00001d12> 【伊隅大尉】「何かあったら…\p…\p桜並木に会いに来い」\e
+<00001d12> 【Capt. Isumi】「If you ever want to talk...\p...\pcome to me there.」\e
+
+//<00001d14> 【武】「…\p…\pッ…\p…\pはいッ…\p…\p！！」\e
+<00001d14> 【Takeru】「...\p...\p! ...\p...\pma'am...\p...\p!!」\e
+
+//<00001d15> 【伊隅大尉】「…\p…\p人類を頼んだぞ」\e
+<00001d15> 【Capt. Isumi】「...\p...\psave humanity for me.」\e
+
+//<00001d17> 【武】「必ず…\p…\pオレが必ず守ります！」\e
+<00001d17> 【Takeru】「I will...\p...\pI will save them!」\e
+
+//<00001d18> 【伊隅大尉】「さらばだ…\p…\p白銀」\e
+<00001d18> 【Capt. Isumi】「Farewell...\p...\pShirogane.」\e
+
+//<00001d1a> 【武】「…\p…\pさようなら…\p…\p大尉…\p…\pッ…\p…\p」\e
+<00001d1a> 【Takeru】「...\p...\pgoodbye...\p...\pCaptain...\p...\p...\p...\p!」\e//GOOD NIGHT SWEET PRINCESS ;_; - kViN
+
+//<00001d1d> 【伊隅大尉】「…\p…\p…\p…\pもう一度…\p…\p基地に咲く桜が見たかったな…\p…\p」\e
+<00001d1d> 【Capt. Isumi】「...\p...\p...\p...\pI wish I could've seen...\p...\pthose cherry blossoms bloom one more time...\p...\p」\e
+

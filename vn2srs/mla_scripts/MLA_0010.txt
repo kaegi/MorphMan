@@ -1,0 +1,615 @@
+// Title: 島をゆく 総合戦闘技術評価演習 2日目
+#FILENAME 214b3fa2
+#TYPE 1
+
+//<0000073c> 【武】「美琴～、\pなんかあったか？」\e
+<0000073c> 【Takeru】「Mikoto～\p Something there?」\e
+
+//<0000073d> …\p…\p懐かしいなあ…\p…\p。\nホント、\pまたここに来るとは…\p…\p。\e
+<0000073d> ...\p...\pthis takes me back...\p...\p\nI never imagined I'd be here again...\p...\p\e
+
+//<0000073e> ここでは、\p何見つけたんだっけなあ…\p…\p。\e
+<0000073e> What did we find here again...\p...\p?\e
+
+//<0000073f> 【美琴】「タケル～！　こっち来てよ～！」\e
+<0000073f> 【Mikoto】「Takeruuu!\p Come over heeere!」\e//CP MLU_0011
+
+//<00000740> 【武】「おう、\pなんかあったか？」\e
+<00000740> 【Takeru】「Yeah?\p Did something happen?」\e
+
+//<00000095> 【美琴】「うん、\pトラップはなかったよ。\n後、\p電気は生きてるみたいだ」\e
+<00000095> 【Mikoto】「No,\p there weren't any traps.\p\nBut the electricity here works.」\e//CP_S
+
+//<00000742> 【武】「そうか」\e
+<00000742> 【Takeru】「I see.」\e//CP_E
+
+//<00000743> 【美琴】「それに、\pなかなかの物があったよ」\e
+<00000743> 【Mikoto】「And I found something pretty sweet.」\e
+
+//<00000744> 【武】「ほう、\p高機動車か」\e
+<00000744> 【Takeru】「Oooh?\p A Humvee?」\e
+
+//<00000745> そうそう！　使えない高機動車があったんだ！\e
+<00000745> That's right!\bThere was an unusable Humvee here!\e
+
+//<00000746> 【美琴】「でも、\pエンジンが丸々無かったよ」\e
+<00000746> 【Mikoto】「But the engine's completely gone.」\e//PCP
+
+//<000000ed> 【武】「可動状態だったとしても、\p周りがこんなジャングルじゃ使い道はないだろ…\p…\p道もなくなってるし」\e
+<000000ed> 【Takeru】「And even if we could get it running,\p there's nothing but jungle around here...\p...\pthe road's long gone after all.」\e
+
+//<00000748> 【美琴】「…\p…\p…\p…\p」\e
+<00000748> 【Mikoto】「...\p...\p...\p...\p」\e
+
+//<00000749> 【武】「な、\pなんだよ？」\e
+<00000749> 【Takeru】「Wh-\pwhat?」\e
+
+//<000000ee> 【美琴】「よくわかったね。\n向こうで道がなくなってること…\p…\p」\e
+<000000ee> 【Mikoto】「I can't believe you saw the old tire tracks over there...\p...\p」\e
+
+//<000000ef> …\p…\pしまった！\e
+<000000ef> ...\p...\pcrap!\e//once again, you suck ~IX
+
+//<000000f0> 【武】「ああ、\pそりゃ～、\pぼんやり歩いてたわけじゃねぇからな。\nそれより探索だ、\p探索！」\e
+<000000f0> 【Takeru】「Yeah,\p that's, well...\p...\pI haven't been staring off into space this whole time.\nAnyway, we need to finish searching!」\e
+
+//<000000f1> あぶねえ…\p…\p見てもいないのに記憶で道のこと言っちまったよ。\n気をつけなきゃな…\p…\p。\e
+<000000f1> That was bad...\p...\pI blurted out something I remembered her telling me but I never actually saw.\nGotta be more careful...\p...\p\e
+
+//<0000074c> 【美琴】「このシートは使えそうだよ」\e
+<0000074c> 【Mikoto】「We could use this sheet though.」\e
+
+//<0000074d> 【武】「さすが、\p手早いな」\e
+<0000074d> 【Takeru】「That took you no time at all.」\e
+
+//<0000074e> そうだそうだ…\p…\pこのシートは…\p…\p…\pオレがヘビに噛まれて…\p…\p…\p\e
+<0000074e> That's right...\p...\pwe used this sheet...\p...\pwhen I got bitten by that snake...\p...\p...\p\e
+
+//<0000074f> 【武】「…\p…\p…\p…\pんがぁ！」\e
+<0000074f> 【Takeru】「...\p...\p...\p...\pngaaah!」\e
+
+//<00000750> 【美琴】「――ど、\pどうしたのッ！？」\e
+<00000750> 【Mikoto】「――Wh-\pwhat's wrong!?」\e
+
+//<00000751> 【武】「…\p…\pいや、\pなんでもない」\e
+<00000751> 【Takeru】「...\p...\psorry,\p it's nothing.」\e
+
+//<00000752> …\p…\p思い出すのはやめとこう。\e
+<00000752> ...\p...\pI've gotta stop remembering that.\e//he just remembered naked Mikoto. -Shikiller
+
+//<000001da> 【美琴】「シートの他には…\p…\p何もないね。\n脱出地点のヒントらしきものも見あたらない」\e
+<000001da> 【Mikoto】「Other than the sheet...\p...\p...\p...\phm...\p...\p...\p...\pthere's nothing.\p I don't see any hints about the evac point here.」\e//PCP
+
+//<00000754> 【武】「わかった」\e
+<00000754> 【Takeru】「Okay.」\e
+
+//<00000755> あとは、\p何かあったっけ？\e
+<00000755> Wasn't there something else here too?\e
+
+//<00000756> 【武】「美琴、\pあのドラム缶は…\p…\p」\e
+<00000756> 【Takeru】「Mikoto,\p that metal drum...\p...\p」\e//CP_S
+
+//<0000011e> 【美琴】「ああ、\pあれ？　軽油だよ」\e
+<0000011e> 【Mikoto】「Oh,\p\p that?\p\p Gasoline.」\e
+
+//<0000011f> 【美琴】「高機動車の燃料だね。\nまだ使えそうだったけど」\e
+<0000011f> 【Mikoto】「Fuel for the HMMWV.\bIt still looks usable, but...\p...\p」\e//CP_E
+
+//<00000759> 燃料…\p…\p。\e
+<00000759> Gasoline...\p...\p\e
+
+//<0000075d> 燃料…\p…\p燃料…\p…\p。\e
+<0000075d> Gasoline...\p...\pgasoline...\p...\p\e//BR if you found the boat in MLU, but I can't figure out how to force this branch to occur on my version so if it happens for any of you please tell me ~IX//damn, I tried everything, even finished MLU making sure I had seen the boat, and can't make this happen. -Shikiller
+
+//<0000075e> 何かがひっかかるぞ…\p…\p。\e
+<0000075e> Something's nagging at me...\p...\p\e
+
+//<0000075f> 【武】「あ！」\e
+<0000075f> 【Takeru】「Ah!」\e
+
+//<00000760> 【美琴】「どうしたの？」\e
+<00000760> 【Mikoto】「What is it?」\e
+
+//<00000761> ヘリポートわきの海岸にボートがあった！！\e
+<00000761> There was a boat hidden next to the heliport!!\e
+
+//<000000f2> エンジンには異常がなかったんだ。\e
+<000000f2> And the engine was working just fine.\e
+
+//<000000f3> 燃料さえあれば、\pあれを動かせるはずだ。\e
+<000000f3> If we could bring fuel with us,\p then we could use it.\e
+
+//<00000764> あのクソ忌々しい砲台さえどうにかすれば、\pそのまま海を突っ切って一気にゴールできるはずだ！\e
+<00000764> Once we do something about that damned gun battery,\p we could fly straight to the finish line!\e
+
+// Selection: 燃料を回収する
+// Selection: 燃料を回収しない
+//<00000768> 【武】「美琴」\e
+<00000768> 【Takeru】「Mikoto.」\e
+
+//<00000769> 【美琴】「なに？」\e
+<00000769> 【Mikoto】「What?」\e
+
+//<0000076a> 【武】「念のため、\p持っていこう」\e
+<0000076a> 【Takeru】「Let's take it with us,\p just in case.」\e//lol, good luck with this one ~IX
+
+//<0000076b> 【美琴】「え？　軽油を？」\e
+<0000076b> 【Mikoto】「Eh? The gasoline?」\e
+
+//<0000076c> 【武】「ああ」\e
+<0000076c> 【Takeru】「Yeah.」\e
+
+//<0000076d> 【美琴】「…\p…\p。\nタケル大丈夫？」\e
+<0000076d> 【Mikoto】「...\p...\pTakeru, you okay?」\e
+
+//<0000076e> 【武】「…\p…\p…\p…\p」\e
+<0000076e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000076f> やっぱり疑われるか…\p…\p。\nまあ、\pそうだろうな。\e
+<0000076f> So she did find it odd...\p...\p\nWell,\p of course she would.\e
+
+//<00000770> 事情を知らない美琴から見れば、\p生命維持に必要な水を捨ててまで、\p使うかどうかわからない燃料を持ってこうなんて、\p常識知らずだよな。\e
+<00000770> Since Mikoto doesn't know the boat's there,\p the idea of throwing away precious water in order to bring potentially useless fuel with us is simply insane.\e
+
+//<00000771> 【美琴】「水を捨てるのは自殺行為だよ。\n本来、\p前線で戦う兵士が１日に必要とする水は――」\e
+<00000771> 【Mikoto】「Throwing away our water would be suicide.\nThe average soldier needs at least――」\e
+
+//<00000772> 【武】「飲料用で最低でも２リットル…\p…\pだろ？」\e
+<00000772> 【Takeru】「Two liters of water a day...\p...\pright?」\e
+
+//<00000773> 【美琴】「うん。ちなみに、\pボクたちの水筒は１本１リットルも入らないから」\e
+<00000773> 【Mikoto】「Yes.\p And by the way, our canteens don't even hold one liter.」\e
+
+//<00000774> 【武】「２本でも２リットルにならない」\e
+<00000774> 【Takeru】「So even put together, we don't have two liters.」\e
+
+//<00000775> 【美琴】「そうだよ。\nだから、\p確実に飲める水源が見つかるまでは水を大切にしないと…\p…\p」\e
+<00000775> 【Mikoto】「That's right.\nSo we have to conserve it until we can find a drinkable water source...\p...\p」\e
+
+//<00000776> 【武】「…\p…\p…\p…\p」\e
+<00000776> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000777> ここで美琴を丸め込むのは無理だな。\e
+<00000777> Doesn't look like I can talk Mikoto into this one.\e
+
+//<00000778> …\p…\p仕方ねぇ。\e
+<00000778> ...\p...\pbetter forget about that.\e
+
+//<00000779> 【武】「…\p…\pわかったよ。\nシートだけもらって行こう。\n他に何もないんだな？」\e
+<00000779> 【Takeru】「...\p...\pokay then.\nWe'll just take the sheet with us.\nThat was it, right?」\e
+
+//<0000077a> 【美琴】「うん。ボクの見た限りじゃなかったよ」\e
+<0000077a> 【Mikoto】「Yeah, I didn't see anything else.」\e
+
+//<0000077b> 【武】「よし。じゃあ、\pここを爆破する準備をしよう」\e
+<0000077b> 【Takeru】「Okay.\p Then let's prepare the explosive.」\e//alt. "set them up the bomb"
+
+//<0000077c> 【美琴】「そうだね。\nじゃあ、\pタケルは軽油を運んできて」\e
+<0000077c> 【Mikoto】「Good idea.\nTakeru, bring that gas over here.」\e//PCP
+
+//<0000077d> 【美琴】「軽油は燃えにくいから、\p高圧線と組合わせて遅延発火装置を作るから」\e
+<0000077d> 【Mikoto】「Gas doesn't burn well on its own,\p so we need to make a time delay fuse to set it off.」\e//CP
+
+//<0000077e> 【武】「おう」\e
+<0000077e> 【Takeru】「Okay.」\e//CP
+
+//<0000077f> …\p…\p…\p…\p。\e
+<0000077f> ...\p...\p...\p...\p\e
+
+//<00000780> …\p…\p。\e
+<00000780> ...\p...\p\e
+
+//<00000781> 行った？\e
+<00000781> Is she gone?\e
+
+//<00000782> もう行った？\e
+<00000782> Is she really gone?\e
+
+//<00000783> こっち見てない…\p…\pよな？\e
+<00000783> She's not looking this way...\p...\pright?\e//ah I'm already chuckling ~IX
+
+//<00000784> よし！\e
+<00000784> Okaaay!\e
+
+//<00000785> 【武】「んぐんぐんぐんぐんぐ…\p…\p…\p！！」\e
+<00000785> 【Takeru】「*gulp* *gulp* *gulp* *gulp* *gulp*...\p...\p...\p!!」\e
+
+//<00000787> 【武】「――っぷはぁ！」\e
+<00000787> 【Takeru】「――Aaaah!」\e
+
+//<00000788> やっぱ久しぶりに飲む水はうめぇよ…\p…\p！\e
+<00000788> Water tastes incredible after not drinking any in a while...\p...\p!\e
+
+//<00000789> この島に来ると、\p水のありがたさが身に染みてわかる。\e
+<00000789> Coming to this island always makes me appreciate it more.\e
+
+//<0000078a> 【美琴】「何かあったの～？」\e
+<0000078a> 【Mikoto】「Something happen～?」\e
+
+//<0000078b> 【武】「いやいや、\pなんもねぇぞ！」\e
+<0000078b> 【Takeru】「No, no,\p I'll be right there!」\e
+
+//<0000078c> 水筒一気飲みしたのが見つかったら、\p水のありがたさを延々説教されちまう。\e
+<0000078c> If she sees me inhaling the whole canteen,\p I'll get lectured for all eternity on how priceless water is.\e
+
+//<0000078d> それに身体への負担もバカにならないが…\p…\pいたしかたない。\e
+<0000078d> This'll probably put a huge burden on my body...\p...\pbut it'll be worth it.\e
+
+//<0000078e> 空にする水筒は１本で良いだろ…\p…\pさすがに水を全部使うのはヤバイしな。\e
+<0000078e> We can afford to empty just one of the canteens...\p...\pit really would be a bad move to use both.\e
+
+//<0000078f> ボートのあったところから回収ポイントまで、\p海上を行けば直線で１キロもない。\e
+<0000078f> If we go straight from where the boat is to the evac point,\p it shouldn't even be one kilometer.\e
+
+//<00000790> 砲台さえ黙らせれば、\p後は楽勝だ。\e
+<00000790> So if we can silence the gun battery,\p the rest will be effortless.\e
+
+//<000000f4> 全員でボートに乗ったとしても、\p１キロぐらいなら燃料も保つだろう。\e
+<000000f4> Even with everyone in the boat,\p this should be enough fuel for one klick.\e//typo'd as "klock", not sure why I found it funny ~IX
+
+//<00000792> 手持ちの水が減っちまうのは痛いが…\p…\p気合いでどうにかしよう。\e
+<00000792> It's gonna suck having less water on hand...\p...\pbut I'll fight through it somehow.\e
+
+//<00000793> 土壇場の選択肢が増えることは悪い事じゃないし…\p…\p。\e
+<00000793> It'll be nice to have this option later on...\p...\p\e
+
+//<00000794> シュッ、\pシュッ、\pシュッ…\p…\p\e
+<00000794> *glug* *glug* *glug*...\p...\p\e
+
+//<00000795> 【武】「…\p…\pこんなもんか？」\e
+<00000795> 【Takeru】「...\p...\pwill this be enough?」\e
+
+//<00000796> 【美琴】「タケルまだ～？」\e
+<00000796> 【Mikoto】「What's taking so long～?」\e
+
+//<00000797> 【武】「おう、\p今行くぜ！」\e
+<00000797> 【Takeru】「Sorry,\p coming!」\e//hyperlit. "Yeah, I go now!"
+
+//<0000079b> …\p…\pだが、\p水がないのは正直困るな。\e
+<0000079b> ...\p...\pbut...\pnot having water is a real problem.\e//BR_? looks like you chose not to sneak the fuel out, but I see no option for this in MLA_Choices, and once again no idea how to get to this point in the game ~IX
+
+//<0000079c> ヘリポートについたときのことを今考えるのは悪くない。\e
+<0000079c> Sure, it isn't bad to plan ahead a little.\e
+
+//<0000079d> けど、\pそこに着くまでに水筒１本で行かなくちゃいけないのはつらすぎる。\e
+<0000079d> But it'd be too painful to try and get to the heliport with only one canteen.\e
+
+//<0000079e> 事を急ぎすぎて訓練不合格なんてことになっても困るしなあ。\e
+<0000079e> I don't wanna risk failing everyone by trying to rush things along.\e
+
+//<0000079f> 【武】「…\p…\p…\p…\p」\e
+<0000079f> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000007a0> だいたい、\pボートの燃費がどのくらいかわからないのに、\p水筒１本分の水を捨てちまうのはヤバイよなあ。\e
+<000007a0> Besides,\p I don't know how much fuel the boat needs,\p so it's just not worth the risk of throwing out all that water.\e
+
+//<000007a1> 【美琴】「どうしたの？」\e
+<000007a1> 【Mikoto】「What's wrong?」\e
+
+//<000007a2> 【武】「…\p…\p…\p…\pいや、\pなんでもない。\nそれより、\p他に何もなかったんだな？」\e
+<000007a2> 【Takeru】「...\p...\p...\p...\psorry,\p it's nothing.\nAnyway,\p that was it, right?」\e
+
+//<000007a3> 【美琴】「うん。ボクの見た限りじゃなかったよ」\e
+<000007a3> 【Mikoto】「Yeah, I didn't see anything else.」\e//BCP
+
+//<000007a4> 【武】「よし。さっさとここを爆破して、\p先に進もうぜ」\e
+<000007a4> 【Takeru】「Okay. Let's blow this place up and get moving.」\e
+
+//<000007a5> 【美琴】「そうだね。\nじゃあ、\pタケルは軽油をお願い。\nそれも爆破に使おう」\e
+<000007a5> 【Mikoto】「Good idea.\nTakeru, bring that gas over here.\nIt'll help the explosion.」\e//PBCP
+
+//<000007a6> 【武】「おう、\p任せとけ」\e
+<000007a6> 【Takeru】「Sure,\p no problem.」\e
+
+//<000007a7> 燃料はあきらめよう。\e
+<000007a7> I'd better forget about the fuel.\e
+
+//<000007a8> ボートを使わなくたって、\p蛇に咬まれさえしなければ、\p時間短縮は出来るはずだ。\e
+<000007a8> Even if we can't use the boat,\p I can still shorten the Evaluation by not getting bitten by that snake.\e
+
+//<000007ac> 【武】「まあ、\p必要ないだろ」\e
+<000007ac> 【Takeru】「Oh well,\p no need for that.」\e//BR if you didn't find the boat in MLU
+
+//<000007ad> 【美琴】「そうだね。\n使うかどうかわからないものを、\pわざわざ水を捨ててまで持っておく必要ないし」\e
+<000007ad> 【Mikoto】「Yeah.\nThere's no reason to throw out our water to carry it when we don't even know if it'll be useful.」\e//dude, that was so subtle (script only guys: the game zoomed in on the barrel a few lines ago) ~IX
+
+//<000007ae> 前回だってギリギリまで水を使ったんだ。\e
+<000007ae> Last time we barely had enough water.\e
+
+//<000007af> 余計なところで無駄になんか出来ねぇよ。\e
+<000007af> We can't afford to waste it now.\e
+
+//<000007b0> 【武】「戦利品はシートだけだな」\e
+<000007b0> 【Takeru】「So all we found was this sheet.」\e//lit. "our spoils are only"
+
+//<000007b1> 【美琴】「そうなるね。\n…\p…\pじゃあ、\p破壊しようか。\nタケルは軽油を運んできて」\e
+<000007b1> 【Mikoto】「Guess so.\n...\p...\plet's blow it up now.\nTakeru, bring that gas over here.」\e
+
+//<000007b2> 【武】「おう」\e
+<000007b2> 【Takeru】「Okay.」\e
+
+//<000007b4> 【武】「お！　爆発したな」\e
+<000007b4> 【Takeru】「Oh! It went off!」\e
+
+//<000007b5> 【美琴】「まあまあかな。\n急ごしらえの遅延発火装置も捨てた物じゃないね！」\e
+<000007b5> 【Mikoto】「That wasn't too bad.\nEspecially considering the fuse was improvised!」\e//CP MLU_0011 notice the script numbers have been off by exactly one? Blame the uselessly brief MLU_0009
+
+//<000000f5> 【武】「この爆発は、\pいい陽動になるな。\nこれで他の連中も動きやすくなるだろう」\e
+<000000f5> 【Takeru】「That ought to be a good diversion too.\nThe other teams shouldn't have to worry as much.」\e
+
+//<000007b7> 【美琴】「ボクたちも結構距離稼いだし、\p位置を特定される危険は低いはずだよ」\e
+<000007b7> 【Mikoto】「And we're a good distance away now,\p\p so there's little risk of them finding us because of it.」\e//CP
+
+//<000000f7> まあ実際、\pこの訓練に追撃部隊なんていないんだけどな。\e
+<000000f7> Well,\p there isn't actually anyone out there looking for us.\e
+
+//<000000f8> 敵の支配地域からの脱出という訓練だから、\p当然、\p追撃部隊を想定した行動を取らないと減点対象になるわけで…\p…\p。\e
+<000000f8> But since, hypothetically, we're trying to escape from enemy territory,\p we have to take into account the possibility of pursuers,\p or else we might lose points...\p...\p\e
+
+//<000007b8> 【武】「これでオレたちのポイントは終わったわけだ。\n後は合流するだけだ」\e
+<000007b8> 【Takeru】「So now we're done with our point.\nNext, gotta rendezvous.」\e
+
+//<000007b9> 【美琴】「ここからが大変なんだよ。\n気を抜かないでね」\e
+<000007b9> 【Mikoto】「It's only gonna get harder.\nDon't let up now.」\e
+//I might miss some "going to"s and "gonna"s but I guess I'll do a mass search when I'm done with the arc.-Spin
+
+//<000007ba> 【武】「わかってるさ」\e
+<000007ba> 【Takeru】「I know that.」\e
+
+//<000007bb> 前回は本当に大変だったからな。\e
+<000007bb> It really was harder last time.\e
+
+//<000007bc> 今度は、\pちゃんと乗り越えてみせるぜ…\p…\p。\e
+<000007bc> But this time I'll fly right through it...\p...\p\e
+
+//<000007bd> …\p…\p。\e
+<000007bd> ...\p...\p\e
+
+//<000007be> …\p…\p…\p…\p。\e
+<000007be> ...\p...\p...\p...\p\e
+
+//<000007bf> 【武】「ふぅっ…\p…\p」\e
+<000007bf> 【Takeru】「Huuu...\p...\p!」\e
+
+//<000000f9> 罠と違って、\p自然の地形は単純に避けるわけにはいかない。\e
+<000000f9> Unlike traps,\p we can't just walk around natural landforms.\e
+
+//<000000fa> 確かにオレの体力は前の時とは段違いだ。\nでも、\p延々と続くこの傾斜面相手だとペースを上げるにしても限界がある。\e
+<000000fa> I definitely have a lot more stamina than I did before.\nBut there's still a limit to how long I can climb a steep slope.\e
+
+//<000000fb> 思ったより時間を短縮できないのがもどかしい。\e
+<000000fb> I'm not saving as much time as I'd hoped.\e
+
+//<000000fc> 【武】「崖を登っていけたら早いのにな」\e
+<000000fc> 【Takeru】「It'd be so much faster just to climb straight up.」\e
+
+//<000000fd> 【美琴】「そうだね…\p…\pでも、\p崩れやすい地形だから危険だよ」\e
+<000000fd> 【Mikoto】「Probably...\p...\pbut it's too unstable.」\e//lit: "but dangerous because easily crumbling terrain"
+
+//<000000fe> 今のオレは、\pちょっとした時間でも無駄にしたくない。\nでも、\p１分１秒を惜しんで死んでしまったら意味がない。\e
+<000000fe> I don't wanna waste even a single moment.\nBut all of that's meaningless if I get myself killed.\e
+
+//<000007c5> っと、\pここらへんか…\p…\p？\e
+<000007c5> Wait,\p is this the spot...\p...\p?\e
+
+//<000007c6> 確か足元に罠が…\p…\p。\e
+<000007c6> Pretty sure my foot was...\p...\p\e
+
+//<000007c7> …\p…\p。\e
+<000007c7> ...\p...\p\e
+
+//<000007c8> あった。\e
+<000007c8> Found it.\e
+
+//<000007c9> 【武】「美琴ストップ」\e
+<000007c9> 【Takeru】「Mikoto, stop.」\e
+
+//<000007ca> 【美琴】「え、\pなに？」\e
+<000007ca> 【Mikoto】「Eh?\p What?」\e
+
+//<000007cb> 【武】「ここにトラップがある。\n見えるか？」\e
+<000007cb> 【Takeru】「There's a trap here.\nCan you see it?」\e
+
+//<000007cc> 【美琴】「…\p…\pホントだ。\nよく見つけたね、\pこんなの」\e
+<000007cc> 【Mikoto】「...\p...\pyou're right.\nGood job seeing this one.」\e
+
+//<000007cd> 【武】「たまたまだよ。\nついで言うと…\p…\pベルトキットが切れそうになってないか？」\e
+<000007cd> 【Takeru】「I just got lucky.\nBut while I'm at it...\p...\pI think your belt kit's falling off.」\e
+
+//<000007ce> 【美琴】「え…\p…\p？　あ…\p…\p…\p…\pあ、\pありがとう…\p…\p？」\e
+<000007ce> 【Mikoto】「Eh...\p...\p? Ah...\p...\p...\p...\pth-\pthank you...\p...\p」\e
+
+//<000007cf> 【武】「気にするな」\e
+<000007cf> 【Takeru】「Don't worry about it.」\e
+
+//<000007d0> 【美琴】「…\p…\pどうしてわかったの？」\e
+<000007d0> 【Mikoto】「...\p...\phow'd you know?」\e
+
+//<000007d1> 【武】「だから、\pたまたまだよ」\e
+<000007d1> 【Takeru】「Like I said,\p dumb luck.」\e
+
+//<000007d2> 【美琴】「…\p…\p」\e
+<000007d2> 【Mikoto】「...\p...\p...\p...\p」\e
+
+//<000007d3> …\p…\pあからさまに不審がられてるし。\e
+<000007d3> ...\p...\pshe's definitely not buying it.\e
+
+//<000007d4> 【武】「…\p…\p実は、\pさっき見たんだよ。\n切れそうだったのをな」\e
+<000007d4> 【Takeru】「...\p...\pwell,\p actually, I noticed it earlier.\nI meant to tell you...\p...\p」\e//lit. "saw it seemingly about to break"
+
+//<000007d5> 【美琴】「…\p…\p」\e
+<000007d5> 【Mikoto】「...\p...\p...\p...\p」\e
+
+//<000007d6> 【武】「罠は、\p太陽の光に糸が光ったのが見えた」\e
+<000007d6> 【Takeru】「And I only saw the trap because the sun hit the thread just right.」\e
+
+//<000007d7> 【美琴】「そう、\pなんだ…\p…\p」\e
+<000007d7> 【Mikoto】「I...\p...\psee...\p...\p」\e
+
+//<000007d8> 【武】「おう。さ、\p種明かし終わり。\p先を急ごうぜ。\nベルトキット気をつけとけよ」\e
+<000007d8> 【Takeru】「Yeah. Now,\p enough explaining.\p\bWe'd better hurry.\p Watch your belt.」\e
+
+//<000007d9> 【美琴】「わ…\p…\pま、\p待ってよ！　応急処置させてよ～…\p…\p！」\e
+<000007d9> 【Mikoto】「Wa...\p...\pw-\pwait up! Let me repair it～...\p...\p!」\e
+
+//<000000ff> 美琴は荷物を失わずにすんだ。\nこれで水の心配もしなくてすむ…\p…\pと。\e
+<000000ff> Now Mikoto won't lose her stuff.\nWe shouldn't have to worry about water now...\p...\p\e
+
+//<000007db> んで次はっと…\p…\p。\e
+<000007db> Next up is...\p...\p\e
+
+//<000007dc> お、\pいたいた。オレの宿敵だ。\e
+<000007dc> Oh,\p my archenemy, we meet again.\e//alt. "we meet again"//I like the literal, sounds funnier. -Shikiller //this isn't literal, hence "alt" not "lit," and it sounds better at the end ~IX
+
+//<000007dd> 【武】「…\p…\p美琴ストップ」\e
+<000007dd> 【Takeru】「...\p...\pMikoto, stop.」\e
+
+//<000007de> 【美琴】「今度はどうしたの？」\e
+<000007de> 【Mikoto】「What is it now?」\e
+
+//<000007df> 【武】「蛇がいる」\e
+<000007df> 【Takeru】「Snake.」\e
+
+//<000007e0> 【美琴】「あ…\p…\pホントだ」\e
+<000007e0> 【Mikoto】「Ah...\p...\pyou're right.」\e
+
+//<000007e1> 【武】「奴には非常食になってもらうか」\e
+<000007e1> 【Takeru】「Let's make food out of him.」\e
+
+//<000007e2> あ、\pカレー粉忘れちまった…\p…\p。\e
+<000007e2> Ah,\p I forgot to bring curry powder...\p...\p\e
+
+//<000007e3> まぁ、\pいっか。\e
+<000007e3> Oh well.\e
+
+//<000007e4> 臭くたって、\p食えなくはないんだ。\e
+<000007e4> I can eat it even if it stinks.\e
+
+//<000007e5> 蛇よ、\pおまえが今や希少生物だって事はわかっている。\e
+<000007e5> Snake,\p I know you're a rare species right now.\e
+
+//<000007e6> だが貴重なタンパク源として、\p大人しくオレ達に食われてくれ…\p…\p。\e
+<000007e6> But as a valuable source of protein,\p please allow us to ingest you...\p...\p\e//figured "ingest" was funnier ~IX
+
+//<000007e7> 地球は必ず救うから。\e
+<000007e7> It'll help me save the world.\e
+
+//<000007e8> 【美琴】「だ、\pだめだよ。\n蛇を食べるなんて…\p…\p気持ち悪いし、\p臭うし…\p…\p」\e
+<000007e8> 【Mikoto】「Y-\pyou can't just eat a snake raw...\p...\pit's gross,\p and it smells...\p...\p」\e
+
+//<000007e9> 【武】「あれ？　おまえ蛇ダメだったのか？」\e
+<000007e9> 【Takeru】「Huh? You can't handle snakes?」\e
+
+//<000007ea> 【美琴】「え？　う、\pそ、\pそんなこと無いけど～…\p…\p」\e
+<000007ea> 【Mikoto】「Eh? N-\pno,\p of course I can～...\p...\p」\e
+
+//<000007eb> いや…\p…\pその態度はダメって言ってるのと同じだぞ？\e
+<000007eb> Umm...\p...\pyou're acting pretty convincingly like you can't.\e//lit. "that attitude is the same as saying you can't" god I'm leaving a ton of these today
+
+//<000007ec> そりゃオレだってイヤさ。\n蛇は臭いし、\p蛙とかオタマジャクシはあのぐにょぐにょした食感がな…\p…\p。\e
+<000007ec> I don't like this either, you know.\nThis does smell horrible,\p and it has that same squelchiness as frogs and tadpoles...\p...\p\e//untranslated line. -shikiller //couldn't figure out what he was trying to say, and not just the gunyo gunyo part ~IX
+
+//<000007ed> 【武】「でも、\pレーションだってもうねぇんだ。\n我慢しろって」\e
+<000007ed> 【Takeru】「But we're out of rations.\nGonna have to put up with it.」\e
+
+//<000007ee> 【美琴】「ボクは木の実とかキノコでいいから…\p…\p」\e
+<000007ee> 【Mikoto】「I'm fine with fruit and mushrooms...\p...\p」\e
+
+//<000001c7> 【武】「そんなんで体力持つかっての。\nそれに天然の動物性蛋白質なんて超貴重じゃねぇか」\e
+<000001c7> 【Takeru】「How's that gonna replenish stamina?\nAnd isn't natural animal protein extremely valuable?」\e
+
+//<000007f0> 【美琴】「ボクは遠慮しとくよ」\e
+<000007f0> 【Mikoto】「You can have it.」\e//lit. "I shall refrain (from partaking)" gotta love that 'enryo' word
+
+//<00000101> 【武】「なんだよ…\p…\p…\p…\p前は食ったくせ――」\e
+<00000101> 【Takeru】「What? ...\p...\pyou ate it last――」\e
+
+//<00000102> ――やべッ！　またやっちまった！\e
+<00000102> ――Crap! I did it again!\e//upgraded from crap to shit because you keep doing it ~IX
+
+//<000007f3> 【美琴】「…\p…\pなにか言った？」\e
+<000007f3> 【Mikoto】「...\p...\pdid you say something?」\e
+
+//<000007f4> 【武】「なんにも。ほら、\p行こうぜ」\e
+<000007f4> 【Takeru】「Nope. Come on,\p let's go.」\e
+
+//<000007f5> …\p…\pっと、\pその前に、\p食料調達っと。\e
+<000007f5> ...\p...\poh,\p but before that,\p gotta actually catch him.\e
+
+//<000007f6> 咬まれずに慎重に…\p…\p\e
+<000007f6> Careful...\p...\pdon't let him bite me...\p...\p\e
+
+//<000007f7> タバコ臭いからって逃げるなよ。\e
+<000007f7> Don't run away from the tobacco smell...\p...\p\e
+
+//<000007f9> 【武】「よし、\p晩飯調達」\e
+<000007f9> 【Takeru】「Okay,\p I have dinner.」\e//lit. "dinner procured" have fun here
+
+//<000007fa> 【美琴】「うわ、\pこっちに向けないでよ～」\e
+<000007fa> 【Mikoto】「Uwa!\p Don't point it at me～」\e
+
+//<000007fb> 慣れればなんて事無いな。\e
+<000007fb> It's fine once you get used to it.\e
+
+//<000001c9> 前はこいつに咬まれて大変だったってのに…\p…\p。\e
+<000001c9> Though...\p...\pgetting bitten last time was a huge ordeal...\p...\p\e
+
+//<000007fd> っていうか…\p…\pコイツ毒蛇じゃなかったんだけどね…\p…\p。\e
+<000007fd> Actually...\p...\pI don't think it was even poisonous...\p...\p\e
+
+//<000007fe> 逆プラシーボ効果ってやつかな？　逆じゃないのか？\e
+<000007fe> Would you call that a reverse placebo effect? Or is it not reverse?\e//it's not reverse unless "placebo" is defined using "benefit" rather than "effect" ~IX
+
+//<000007ff> とにかく、\p思い出すだけでも恥ずかしいよ…\p…\p。\e
+<000007ff> Anyway,\p it's embarrassing to think about...\p...\p\e
+
+//<00000800> 【武】「…\p…\p…\p…\p」\e
+<00000800> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000801> …\p…\pそういや、\p美琴との関係もずいぶん違う気がする。\e
+<00000801> ...\p...\pcome to think of it,\p Mikoto and I are acting pretty differently toward each other this time.\e
+
+//<00000802> 前はこいつが女だってことに戸惑ってギクシャクしてたのに。\e
+<00000802> Last time, I was freaking out because she was a girl.\e
+
+//<00000803> 若かったんだな…\p…\pオレ。\e
+<00000803> I was so young...\p...\p\e
+
+//<00000804> 【美琴】「予定よりもずいぶん進んでるよ」\e
+<00000804> 【Mikoto】「We're moving a lot faster than expected.」\e
+
+//<00000805> 【武】「そうなのか？」\e
+<00000805> 【Takeru】「Really?」\e
+
+//<00000806> 【美琴】「このペースで行くと…\p…\p今日中に合流地点まで行けるよ」\e
+<00000806> 【Mikoto】「At this pace...\p...\pwe could reach the rendezvous point today.」\e
+
+//<00000807> 【武】「…\p…\pそんなに早くか？」\e
+<00000807> 【Takeru】「...\p...\pthat fast?」\e
+
+//<00000808> えらい早さだな。\e
+<00000808> That'd be wonderful.\e
+
+//<00000809> …\p…\p逆を言えば、\p前回はそれだけオレが足を引っ張っていたことになる…\p…\pと。\e
+<00000809> ...\p...\pnow I can really tell how much I was holding her back last time...\p...\p\e
+
+//<0000080a> 【武】「…\p…\p…\p…\p」\e
+<0000080a> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000080b> 美琴がそこまで余裕を持って計画を練っていたとはな…\p…\p。\e
+<0000080b> I had no idea how much time she'd set aside for dealing with my screw ups...\p...\p\e
+//she planned to leave that much time before (thinking that he would be a liability) - Makoto //oooooh ~IX
+
+//<0000080c> 【美琴】「今頃みんなも、\p目標を破壊しただろうね」\e
+<0000080c> 【Mikoto】「The others probably just destroyed their objectives.」\e
+
+//<000001d8> 【武】「だろうな。…\p…\pじゃ、\p合流地点一番乗りと行こうぜ！」\e
+<000001d8> 【Takeru】「Probably...\p...\pthen let's beat them all to the rendezvous!」\e
+
+//<0000080e> 【美琴】「さ～て、\p晩御飯の収穫をするぞ～」\e
+<0000080e> 【Mikoto】「Now then～\p I'm gonna go find dinner～」\e
+
+//<000000c1> 意地でも蛇食わねえつもりだな…\p…\p。\e
+<000000c1> She really doesn't wanna eat this snake...\p...\p\e
+//Since he's carrying it around I assume.-Spin
+

@@ -1,0 +1,1779 @@
+#FILENAME 0db990d4
+#TYPE 3
+
+//<0000059d> …\p…\p…\p…\p。\e
+<0000059d> ...\p...\p...\p...\p\e
+
+//<0000059f> 【霞】「…\p…\pし…\p…\pが…\p…\pん…\p…\p…\p…\p」\e
+<0000059f> 【Kasumi】「...\p...\pShi...\p...\pga...\p...\pn...\p...\p...\p...\p」\e
+
+//<000005a1> …\p…\p…\p…\p。\e
+<000005a1> ...\p...\p...\p...\p\e
+
+//<000005a2> …\p…\p…\p…\p…\p…\p…\p…\p。\e
+<000005a2> ...\p...\p...\p...\p...\p...\p...\p...\p\e
+
+//<000005a4> 【霞】「…\p…\pしろ…\p…\pね…\pさん…\p…\p…\p…\p」\e
+<000005a4> 【Kasumi】「...\p...\pShiro...\p...\pne...\psan...\p...\p...\p...\p」\e
+
+//<000005a6> …\p…\p…\p…\p。\e
+<000005a6> ...\p...\p...\p...\p\e
+
+//<000005a7> …\p…\p…\p…\p…\p…\p…\p…\p。\e
+<000005a7> ...\p...\p...\p...\p...\p...\p...\p...\p\e
+
+//<000005a8> …\p…\p…\p…\p…\p…\p…\p…\pう…\p…\p…\p…\p。\e
+<000005a8> ...\p...\p...\p...\p...\p...\p...\p...\puu...\p...\p...\p...\p\e
+
+//<000005aa> 【霞】「…\p…\pし…\pがね…\pさん…\p…\p…\p…\p」\e
+<000005aa> 【Kasumi】「...\p...\pShi...\pgane...\psan...\p...\p...\p...\p」\e
+
+//<000005ae> 【武】「…\p…\pう…\p…\pん…\p…\p」\e
+<000005ae> 【Takeru】「...\p...\pu...\p...\pmm...\p...\p」\e
+
+//<000005af> …\p…\p…\p…\pう…\p…\p…\p…\pく…\p…\pっ…\p…\p。\e
+<000005af> ...\p...\p...\p...\puuu...\p...\p...\p...\pu...\p...\p...\p...\p\e
+
+//<000005b2> 【武】「…\p…\p…\p…\p霞…\p…\p」\e
+<000005b2> 【Takeru】「...\p...\p...\p...\pKasumi...\p...\p」\e
+
+//<000005b3> …\p…\pここは…\p…\p…\p…\p\e
+<000005b3> ...\p...\pwhere...\p...\p...\p...\p\e
+
+//<000005b4> 【霞】「帰ってきました」\e
+<000005b4> 【Kasumi】「We're home.」\e
+
+//<000005b5> 【武】「…\p…\pえ」\e
+<000005b5> 【Takeru】「...\p...\peh?」\e
+
+//<000005b6> 【霞】「ここは横浜基地です」\e
+<000005b6> 【Kasumi】「This is Yokohama Base.」\e
+
+//<000005b7> 【武】「――横浜…\p…\p基地…\p…\p…\p…\p？」\e
+<000005b7> 【Takeru】「――Yokohama...\p...\pBase...\p...\p...\p...\p?」\e
+
+//<000005b8> 【霞】「はい」\e
+<000005b8> 【Kasumi】「Yes.」\e
+
+//<000005b9> 【武】「…\p…\p帰って…\p…\p来たのか…\p…\p…\p…\p」\e
+<000005b9> 【Takeru】「...\p...\pwe've...\p...\pcome home...\p...\p...\p...\p?」\e
+
+//<000005ba> 【霞】「いま外では、\p機体の冷却と浄化作業をしています。\nもうすぐ、\p外に出られますよ」\e
+<000005ba> 【Kasumi】「They're working to cool down and clean the shuttle now.\nWe should be able to leave soon.」\e
+
+//<000005bb> 【武】「…\p…\pああ…\p…\p」\e
+<000005bb> 【Takeru】「...\p...\paaah...\p...\p」\e
+
+//<000005bc> 【霞】「とても大勢の人が、\p集まってきています」\e
+<000005bc> 【Kasumi】「A very large number of people have gathered.」\e
+
+//<000005bd> …\p…\p地上要員が…\p…\p大勢…\p…\p…\p…\p？\e
+<000005bd> ...\p...\pa large number...\p...\pof workers...\p...\p...\p...\p?\e
+
+//<000005be> 【霞】「地上要員だけじゃありません。\n大勢の人が、\p私達が出るのを待っています」\e
+<000005be> 【Kasumi】「Not workers.\nThey have all been waiting for our return.」\e
+
+//<000005c0> 【武】「…\p…\pえ…\p…\p？」\e
+<000005c0> 【Takeru】「...\p...\peh...\p...\p?」\e
+
+//<000005c1> 【霞】「皆さん感謝しています。\n大勢の人がいるのに…\p…\p感じるのはたったひとつの感情だけ」\e
+<000005c1> 【Kasumi】「Everyone's grateful.\nThere are so many people here...\p...\pbut gratitude is the only emotion I can feel.」\e
+
+//<000005c2> 【武】「…\p…\pそう…\p…\pか…\p…\p」\e
+<000005c2> 【Takeru】「...\p...\pI...\p...\psee...\p...\p」\e
+
+//<000005c3> みんな…\p…\pオレ達のために…\p…\p集まってくれたのか…\p…\p…\p…\p\e
+<000005c3> Everyone...\p...\pgathered here...\p...\pjust for us...\p...\p...\p...\p\e
+
+//<000005c4> 【武】「…\p…\p…\p…\p」\e
+<000005c4> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000005c7> …\p…\pしかし…\p…\pあの大爆発の中を、\pよく巻き込まれもせず無事に…\p…\p。\e
+<000005c7> ...\p...\pstill...\p...\pI'm amazed we got out of that huge explosion unharmed...\p...\p\e
+
+//<000005c8> 情けねえな…\p…\p。\nオレ…\p…\pあの時、\p気を失っちまったんだな…\p…\p。\e
+<000005c8> I'm so pitiful...\p...\p\nWhen that happened...\p...\pI lost consciousness...\p...\p\e
+
+//<000005ca> 【武】「…\p…\pありがとう霞。\nおまえが操縦して、\pここまで連れてきてくれたんだな…\p…\p」\e
+<000005ca> 【Takeru】「...\p...\pthank you, Kasumi.\nYou piloted us all the way back here,\p didn't you...\p...\p?」\e
+
+//<000005cb> 【霞】「自律制御で帰って来ました。\n私も、\p目を覚ましたばかりです」\e
+<000005cb> 【Kasumi】「We came back via autopilot.\nI only just woke up myself.」\e
+
+//<000005cd> 【武】「そうか…\p…\p」\e
+<000005cd> 【Takeru】「I see...\p...\p」\e
+
+//<000005ce> 【霞】「はい」\e
+<000005ce> 【Kasumi】「Yes.」\e
+
+//<000005cf> 【武】「…\p…\p…\p…\p」\e
+<000005cf> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000005d0> 【霞】「…\p…\p…\p…\p」\e
+<000005d0> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000e55> …\p…\p１０人分の座席がある連絡艇の艦橋。\n本当だったらあと５人…\p…\pここに座っているはずだった。\e
+<00000e55> ...\p...\pa reconnaissance shuttle capable of holding ten people.\nThere were supposed to be...\p...\pfive more of us here.\e
+
+//<000005d2> でも、\p今ここにいるのは…\p…\pオレと霞と、\p００ユニット管制ブロックにいる純夏だけだ。\e
+<000005d2> But,\p right now...\p...\pit's just me, Kasumi,\p and Sumika in the 00 Unit control block.\e
+
+//<000005d3> 【霞】「…\p…\p…\p…\p」\e
+<000005d3> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000005d4> これが…\p…\pオレが背負うべき現実だ…\p…\p。\e
+<000005d4> This is...\p...\pthe reality I have to bear...\p...\p\e
+
+//<000005d5> 『この世界』を救う事を…\p…\p『向こうの世界』を修復する事を望んだオレが、\p絶対に目を背けちゃいけない現実なんだ。\e
+<000005d5> I wanted to save this world...\p...\pand repair the other world,\p so I can't ignore this reality.\e
+
+//<000005d8> オレは…\p…\p立ち止まらない。\e
+<000005d8> I won't...\p...\pstand still.\e
+
+//<000005d9> …\p…\pおまえ達の命と引き換えに手に入れた『未来』を無駄にする事だけは…\p…\p絶対にしない。\e
+<000005d9> ...\p...\pI absolutely will not...\p...\pwaste the future we gained in exchange for your lives.\e
+
+//<000005dc> 【霞】「…\p…\p…\p…\p」\e
+<000005dc> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000005dd> 【武】「――ッ！！」\e
+<000005dd> 【Takeru】「――!!」\e
+
+//<000005df> 【武】「…\p…\pッ…\p…\pぅ…\p…\p！！」\e
+<000005df> 【Takeru】「...\p...\p! ...\p...\pu...\p...\p!!」\e
+
+//<000005e0> ――泣かねえぞ…\p…\pッ！　オレは…\p…\pここで…\p…\p泣くわけにはいかないんだッ…\p…\p！！\e
+<000005e0> ――Don't cry...\p...\p! I can't...\p...\pnot here...\p...\pthis is no time to cry...\p...\p!!\e
+
+//<000005e2> 【武】「じゃあオレは…\p…\pひとりの人間としての…\p…\p心の自由みたいなものすら許されないって言うのか？」\e
+<000005e2> 【Takeru】「Then...\p...\pdoes that mean...\p...\pI don't have any personal freedom to feel what I want?」\e//CP_S MLA_0038
+
+//<000005e4> 【冥夜】「そうだ。極端にいえばその通りだ」\e
+<000005e4> 【Meiya】「Yes. In the extreme case, that is exactly right.」\e
+
+//<000005e5> 【武】「…\p…\p…\p…\p」\e
+<000005e5> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000005e7> 【冥夜】「心は自由であっても良いと思う…\p…\pだが、\pその立ち振る舞いや発言は、\p常に周囲への影響を考慮すべきであろう」\e
+<000005e7> 【Meiya】「I believe you should be free to feel what you want...\p...\p\b...\p...\phowever,\p you should always consider the effect your statements and demeanor will have on those around you.」\e
+
+//<000005e8> 【冥夜】「それが…\p…\pそなたのように、\p天賦の才を与えられし者に課せられた宿命だ」\e
+<000005e8> 【Meiya】「That is...\p...\pthe duty of those with unparalleled natural talent like yours.」\e//CP_E
+
+//<000005eb> 外には…\p…\pオレ達の帰還を…\p…\p人類の勝利を信じて待ってくれていた人達がいる…\p…\p！\e
+<000005eb> Outside...\p...\pthere are people who believed in humanity's victory...\p...\pand waited for our return...\p...\p!\e
+
+//<000005ec> その人達に…\p…\p辛い泣き顔を見せちゃいけないんだ…\p…\pッ！！\n流すなら…\p…\p喜びの涙じゃなきゃいけないんだ…\p…\p！！\e
+<000005ec> I can't go out there...\p...\pand let them see me crying...\p...\p!!\nIf I have to cry...\p...\pit needs to be tears of joy...\p...\p!!\e//lit. "I can't show them my painful crying face"
+
+//<000005ed> ここでみんなに、\p笑顔で感謝の言葉を言ったり…\p…\p\n笑顔でみんなのねぎらいに応えるのは…\p…\p\e
+<000005ed> Everyone's going to smile and thank me...\p...\p\nI need to answer them with a smile of my own...\p...\p\e
+
+//<000005ee> 生き残らせてもらったオレが…\p…\pあいつらの代わりにやらなきゃならない事なんだ…\p…\p！！\e
+<000005ee> Since I'm the one left alive...\p...\pI have to do it in their place...\p...\p!!\e
+
+//<000005ef> 【霞】「…\p…\p…\p…\p」\e
+<000005ef> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000005f0> …\p…\pこれで良いんだよな…\p…\p？\e
+<000005f0> ...\p...\pyou're all okay with this, right...\p...\p?\e
+
+//<000005f4> 委員長…\p…\p…\p…\p\e
+<000005f4> Class Rep...\p...\p...\p...\p\e
+
+//<000005f6> 美琴…\p…\p…\p…\p\e
+<000005f6> Mikoto...\p...\p...\p...\p\e
+
+//<000005f8> 彩峰…\p…\p…\p…\p\e
+<000005f8> Ayamine...\p...\p...\p...\p\e
+
+//<000005fa> たま…\p…\p…\p…\p\e
+<000005fa> Tama...\p...\p...\p...\p\e
+
+//<000005fc> 冥夜…\p…\p…\p…\p\e
+<000005fc> Meiya...\p...\p...\p...\p\e
+
+//<000005fe> オレは…\p…\pこれで…\p…\p良いんだよな…\p…\p？\e
+<000005fe> I'm also...\p...\pokay with this...\p...\paren't I...\p...\p?\e//lots of interpretive guessing here and with Kasumi's response ~IX
+
+//<000005ff> 【霞】「…\p…\p…\p…\pはい」\e
+<000005ff> 【Kasumi】「...\p...\p...\p...\pyes.」\e
+
+//<00000600> 【武】「え…\p…\p…\p」\e
+<00000600> 【Takeru】「Eh...\p...\p...\p?」\e
+
+//<00000601> 【霞】「白銀さんはそれで良いんです」\e
+<00000601> 【Kasumi】「Shirogane-san, you'll be fine.」\e
+
+//<00000602> 【武】「…\p…\p霞…\p…\p…\p…\p」\e
+<00000602> 【Takeru】「...\p...\pKasumi...\p...\p...\p...\p」\e
+
+//<00000603> 【霞】「皆さんもそれを望んでいました…\p…\p」\e
+<00000603> 【Kasumi】「That's what everyone would have wanted...\p...\p」\e
+
+//<00000604> 【武】「…\p…\pそうか…\p…\p。\nおまえは…\p…\pみんなの考えがわかっていたんだな…\p…\p」\e
+<00000604> 【Takeru】「...\p...\pI see...\p...\p\nYou could tell...\p...\pwhat everyone was thinking...\p...\p」\e
+
+//<00000605> 【霞】「…\p…\pはい」\e
+<00000605> 【Kasumi】「...\p...\pyes.」\e
+
+//<00000606> 【武】「…\p…\pごめんな…\p…\p…\p…\p」\e
+<00000606> 【Takeru】「...\p...\psorry...\p...\p...\p...\p」\e
+
+//<00000607> 【霞】「…\p…\p…\p…\p」\e
+<00000607> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000608> 【武】「…\p…\pオレが情けねえばっかりに…\p…\pおまえにまで辛い役をやらせちまったな」\e
+<00000608> 【Takeru】「...\p...\pI'm so pathetic...\p...\pI keep forcing you to do all the hard parts.」\e
+
+//<00000609> 【霞】「いえ…\p…\p誰も悪くないです」\e
+<00000609> 【Kasumi】「No...\p...\pno one did anything wrong.」\e
+
+//<0000060a> 【武】「霞…\p…\p」\e
+<0000060a> 【Takeru】「Kasumi...\p...\p」\e
+
+//<0000060b> 【霞】「私は知っています」\e
+<0000060b> 【Kasumi】「I know.」\e
+
+//<0000060d> 【霞】「あなたは、\p作戦を最優先に考えて、\p他の全てを割り切ろうとしていました」\e
+<0000060d> 【Kasumi】「You were trying to prioritize the mission and not think about anything else.」\e
+
+//<0000060e> 【武】「…\p…\p…\p…\p」\e
+<0000060e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000060f> 【霞】「でも本当は、\p作戦を成功させて、\p皆さんも救おうと考えていましたね」\e
+<0000060f> 【Kasumi】「But the truth was,\p you wanted to save everyone on top of completing the mission.」\e
+
+//<00000610> 【武】「…\p…\p…\p…\p」\e
+<00000610> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000611> 【霞】「皆さん、\pそれに気付いていました」\e
+<00000611> 【Kasumi】「Everyone noticed that.」\e
+
+//<00000612> 【武】「…\p…\pああ…\p…\pわかってる…\p…\p」\e
+<00000612> 【Takeru】「...\p...\pyeah...\p...\pI know...\p...\p」\e
+
+//<00000613> だからあいつらは…\p…\pオレに本当の戦況を見せなかったんだ…\p…\p。\e
+<00000613> That's why they...\p...\pdidn't show me what was really happening...\p...\p\e
+
+//<00000614> 人類の未来が掛かっているって言うのに…\p…\pオレが、\p作戦に徹しきれていなかったから…\p…\p。\e
+<00000614> Humanity's future was at stake...\p...\pbut I still couldn't focus on the mission, so they...\p...\p\e
+
+//<00000615> 【霞】「…\p…\pでも、\pあなたがそういう人だから、\p皆さん頑張れたんですよ？」\e
+<00000615> 【Kasumi】「...\p...\pbut they were able to fight that hard because you're that kind of person.」\e
+
+//<00000617> 【武】「…\p…\p…\p…\pッ…\p…\p」\e
+<00000617> 【Takeru】「...\p...\p...\p...\p! ...\p...\p」\e
+
+//<00000618> 【霞】「あなたがそういう人だからこそ、\p皆さんは人類のために、\p自分がやれる事を精一杯やったんです」\e
+<00000618> 【Kasumi】「Because you're like that,\p everyone did the very best they could for humanity.」\e
+
+//<00000619> 【武】「…\p…\p…\p…\p」\e
+<00000619> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000061a> 【霞】「人類を救うために。\n一緒に戦ってきた仲間を生き残らせるために」\e
+<0000061a> 【Kasumi】「In order to save humanity.\nIn order for the people they'd fought with to survive.」\e
+
+//<0000061b> 【武】「…\p…\p…\p…\pッ…\p…\p」\e
+<0000061b> 【Takeru】「...\p...\p...\p...\p! ...\p...\p」\e
+
+//<0000061c> 【霞】「そして…\p…\pひとりで苦しみ抜いたあなたを死なせないために…\p…\p」\e
+<0000061c> 【Kasumi】「And...\p...\pin order to keep you from dying alone and in pain...\p...\p」\e
+
+//<0000061e> 【武】「――ッ…\p…\p！！」\e
+<0000061e> 【Takeru】「――...\p...\p!!」\e
+
+//<0000061f> 【霞】「部隊の全員が…\p…\pお互いに同じ事を考えていたんです」\e
+<0000061f> 【Kasumi】「Everyone in the unit...\p...\pwas thinking the same thing.」\e
+
+//<00000620> 【武】「…\p…\p…\pっ…\p…\p…\p！」\e
+<00000620> 【Takeru】「...\p...\p...\p! ...\p...\p...\p!」\e
+
+//<00000621> 【霞】「…\p…\pそれは、\p純夏さんも一緒でした」\e
+<00000621> 【Kasumi】「...\p...\pso was Sumika-san.」\e
+
+//<00000622> 【武】「…\p…\pえ…\p…\p…\p…\p」\e
+<00000622> 【Takeru】「...\p...\peh...\p...\p...\p...\p?」\e
+
+//<00000623> …\p…\p純夏も…\p…\pあいつもそうだった…\p…\pのか…\p…\p。\e
+<00000623> ...\p...\pSumika...\p...\pfelt the same way...\p...\pas the others...\p...\p?\e
+
+//<00000624> 【霞】「…\p…\p…\p…\p」\e
+<00000624> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000626> ――え…\p…\p？！\e
+<00000626> ――Eh...\p...\p!?\e
+
+//<00000627> 【武】「…\p…\p…\p…\p霞…\p…\p」\e
+<00000627> 【Takeru】「...\p...\p...\p...\pKasumi...\p...\p」\e
+
+//<00000628> 【霞】「…\p…\p…\p…\p」\e
+<00000628> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000629> 【武】「…\p…\p…\p…\pでしたっ…\p…\pて…\p…\p？」\e
+<00000629> 【Takeru】「...\p...\p...\p...\pyou said...\p...\p"was"...\p...\p?」\e
+
+//<0000062a> 【霞】「…\p…\p…\p…\p」\e
+<0000062a> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000062b> 【武】「…\p…\pでしたって…\p…\pどういう意味だよ…\p…\p！？」\e
+<0000062b> 【Takeru】「...\p...\pwhat do you mean...\p...\p"was"...\p...\p!?」\e
+
+//<0000062c> 【霞】「…\p…\p…\p…\p」\e
+<0000062c> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000062e> ――ッ！！\e
+<0000062e> ――!!\e
+
+//<00000634> 【武】「――純夏ッ！　――純夏ッ！？」
+<00000634> 【Takeru】「――Sumika! ――Sumika!?」
+
+//<00000da7> \r
+<00000da7> \r
+
+//<00000636> 【武】「――ッ！？」\e
+<00000636> 【Takeru】「――!?」\e
+
+//<00000638> 【武】「…\p…\pおい…\p…\p純夏…\p…\p！？」\e
+<00000638> 【Takeru】「...\p...\phey...\p...\pSumika...\p...\p!?」\e
+
+//<0000063b> 【武】「…\p…\p純夏」\e
+<0000063b> 【Takeru】「...\p...\pSumika.」\e
+
+//<0000063c> 【純夏】「…\p…\p…\p…\p」\e
+<0000063c> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<0000063f> 【武】「…\p…\p純夏…\p…\p？　…\p…\pおい起きろ…\p…\p」\e
+<0000063f> 【Takeru】「...\p...\pSumika...\p...\p? ...\p...\phey, wake up...\p...\p」\e
+
+//<00000641> 【武】「…\p…\pお、\pおい――純夏…\p…\pッ？」\e
+<00000641> 【Takeru】「...\p...\pH-\phey――Sumika...\p...\p!?」\e
+
+//<00000642> 【純夏】「…\p…\p…\p…\p」\e
+<00000642> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000645> 【武】「…\p…\pどうしたんだよ…\p…\p純夏…\p…\pッ？」\e
+<00000645> 【Takeru】「...\p...\pwhat's wrong...\p...\pSumika...\p...\p!?」\e
+
+//<00000647> 【武】「おい、\p純夏？　純夏！？　なんの、\p冗談…\p…\p…\p…\pだよ？」\e
+<00000647> 【Takeru】「Hey,\p Sumika? Sumika!?\bThis is...\p...some kind of joke...\p...\p...\p...\pright?」\e
+
+//<00000649> 【武】「――おい、\p純夏ッ！？」\e
+<00000649> 【Takeru】「――Hey,\p Sumika!?」\e
+
+//<0000064b> 【武】「――純夏ぁッ！？」\e
+<0000064b> 【Takeru】「――Sumikaaa!?」\e
+
+//<0000064e> 【純夏】「…\p…\p…\p…\p」\e
+<0000064e> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000650> 【武】「…\p…\pすみ…\p…\pかッ…\p…\p…\p…\p！！」\e
+<00000650> 【Takeru】「...\p...\pSumi...\p...\pka...\p...\p...\p...\p!!」\e
+
+//<00000651> …\p…\pな…\p…\p何なんだよ…\p…\p！？\e
+<00000651> ...\p...\pwh-...\p...\pwhat the hell...\p...\p!?\e
+
+//<00000652> 【純夏】「…\p…\p…\p…\p」\e
+<00000652> 【Sumika】「...\p...\p...\p...\p」\e
+
+//<00000654> …\p…\p何で…\p…\p何でこうなるんだよ…\p…\pッ！？\e
+<00000654> ...\p...\pwhy...\p...\pwhy did this happen...\p...\p!?\e
+
+//<00000655> ――最後にオレが無理させたからなのか…\p…\p！？\e
+<00000655> ――Is it because I pushed her so hard at the end...\p...\p!?\e
+
+//<00000656> 【霞】「――違います」\e
+<00000656> 【Kasumi】「――No.」\e
+
+//<00000657> ――！？\e
+<00000657> ――!?\e
+
+//<0000065a> 【霞】「最初から、\p帰ってくる事を考えていなかったんです」\e
+<0000065a> 【Kasumi】「She never planned on coming home in the first place.」\e
+
+//<0000065c> 【武】「…\p…\pは…\p…\p…\p…\p？　…\p…\p何の…\p…\p事だ…\p…\p？」\e
+<0000065c> 【Takeru】「...\p...\phuh...\p...\p...\p...\p? ...\p...\pwhat do you...\p...\pmean...\p...\p?」\e
+
+//<0000065d> 【霞】「…\p…\p…\p…\p」\e
+<0000065d> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000065e> 【武】「…\p…\p確かに…\p…\p生きて返れる保証は無かったよ…\p…\p。\n…\p…\pだから…\p…\pそれが何だっていうんだよ…\p…\p？！」\e
+<0000065e> 【Takeru】「...\p...\pI know...\p...\pthere was no guarantee she would survive...\p...\p\n...\p...\pbut...\p...\pwhat are you talking about...\p...\p!?」\e
+
+//<0000065f> 【霞】「この基地の反応炉が壊れた時…\p…\p純夏さんはそう決めていたんです」\e
+<0000065f> 【Kasumi】「Sumika-san made that decision...\p...\pwhen this base's reactor was destroyed.」\e
+
+//<00000661> ――ッ！？\e
+<00000661> ――!?\e
+
+//<00000662> 【武】「…\p…\pなんだそれ…\p…\p！？」\e
+<00000662> 【Takeru】「...\p...\pwhat the hell...\p...\p!?」\e
+
+//<00000663> 【霞】「…\p…\p…\p…\p」\e
+<00000663> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000664> 【武】「…\p…\pわかんねえよ…\p…\p。\n――わけわかんねえよ…\p…\pッ…\p…\p！！」\e
+<00000664> 【Takeru】「...\p...\pthat makes no sense...\p...\p\n――Why the hell would she...\p...\p...\p...\p!!?」\e
+
+//<00000665> 【霞】「…\p…\p…\p…\p」\e
+<00000665> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000666> 【武】「――反応炉と純夏が何だって言うんだ…\p…\pッ！」\e
+<00000666> 【Takeru】「――What does the reactor have to do with Sumika...\p...\p!?」\e
+
+//<00000668> 【霞】「純夏さんの脳髄が入っていたシリンダー…\p…\p青白く光っていますね」\e
+<00000668> 【Kasumi】「The cylinder Sumika-san's brain used to be in...\p...\pglowed a bluish white.」\e
+
+//<00000669> 【武】「…\p…\pは…\p…\p…\p…\p？」\e
+<00000669> 【Takeru】「...\p...\phuh...\p...\p...\p...\p?」\e
+
+//<0000066a> 【霞】「反応炉や『あ号標的』と同じ光です」\e
+<0000066a> 【Kasumi】「The same color as the reactor and the Primary Objective.」\e
+
+//<0000066d> 【霞】「…\p…\pメンテナンスベッドのＯＤＬ浄化装置は…\p…\p反応炉に繋がっているんです」\e
+<0000066d> 【Kasumi】「...\p...\pthe ODL purification device on the maintenance bed...\p...\pwas connected to the reactor.」\e
+
+//<0000066e> 【武】「…\p…\p…\p…\pえ…\p…\p？」\e
+<0000066e> 【Takeru】「...\p...\p...\p...\peh...\p...\p?」\e
+
+//<0000066f> 【霞】「…\p…\p実際の浄化は…\p…\p反応炉がやっていました」\e
+<0000066f> 【Kasumi】「...\p...\pthe reactor did...\p...\pall the purifying.」\e
+
+//<00000671> 【武】「――な…\pッ…\p…\p！？」\e
+<00000671> 【Takeru】「――Wha-...\p...\p...\p!?」\e
+
+//<00000672> …\p…\pそれじゃあ…\p…\pあの脳味噌の部屋にメンテナンスベッドがあったのは…\p…\p\e
+<00000672> ...\p...\pthen...\p...\pthe maintenance bed in the brain room was...\p...\p\e
+
+//<00000673> 【霞】「あのシリンダーが反応炉に直結しているからです」\e
+<00000673> 【Kasumi】「That cylinder is directly connected to the reactor.」\e
+
+//<00000675> ――ッ！！\e
+<00000675> ――!!\e
+
+//<00000677> 【夕呼】「ＯＤＬは、\p量子電導脳の稼働率や時間経過に比例して劣化していくから、\p７２時間以内に交換、\p若しくは浄化しなければならないの」\e
+<00000677> 【Yuuko】「The ODL deteriorates as time passes and her quantum brain operates,\p and it has to be refilled every seventy-two hours.」\e//CP_S MLA_0057
+
+//<00000679> 【夕呼】「完全な浄化には専用の設備が必要なのよ。\nＯＤＬを血液に例えれば、\p人工透析器の様なものがね」\e
+<00000679> 【Yuuko】「A complete purification requires special equipment.\nIf we compare the ODL to blood,\p it's like a hemodialysis machine.」\e
+
+//<0000067a> 【武】「７２時間を過ぎたら…\p…\pどうなるんですか？」\e
+<0000067a> 【Takeru】「What happens...\p...\pafter seventy-two hours?」\e
+
+//<0000067c> 【夕呼】「良くて機能停止。\n悪くすれば再起動しても、\p人格と記憶の再現はできなくなるわ」\e
+<0000067c> 【Yuuko】「At best, she stops functioning.\nAt worst she wouldn't have the same personality and memories after we restarted her.」\e
+
+//<0000067d> 【武】「え…\p…\p…\p」\e
+<0000067d> 【Takeru】「Eh...\p...\p...\p?」\e
+
+//<0000067f> 【夕呼】「つまり００ユニットである意義を失い、\p人の形をしたコンピューター以下のものになるって事よ」\e
+<0000067f> 【Yuuko】「Which would mean she'd lose her value as the 00 Unit and become, at best, a human-shaped computer.」\e//CP_E
+
+//<00000683> …\p…\pだから…\p…\p…\p…\pッ！！\n――だから無理して…\p…\p『桜花作戦』を繰り上げたっていうのか…\p…\pッ！？\e
+<00000683> ...\p...\pthat's why...\p...\p...\p...\p!!\n――That's why she was...\p...\pmaking Operation Cherry Blossom happen so soon...\p...\p!?\e
+
+//<00000684> ００ユニットを使えるうちに…\p…\p決着を付けようとしたっていうのか――ッ！？\e
+<00000684> We needed to end this...\p...\pwhile we could still use the 00 Unit――!!\e
+
+//<00000685> …\p…\p…\p…\pそんな…\p…\pッ…\p…\pそんな事…\p…\p聞いてないぞ…\p…\pッ…\p…\p！！\e
+<00000685> ...\p...\p...\p...\pwhy...\p...\p! ...\p...\pwhy didn't...\p...\panyone tell me...\p...\p...\p...\p!?\e
+
+//<00000686> それに…\p…\pあの時反応炉を止めろって言ったのは夕呼先生じゃないかっ…\p…\p！？\e
+<00000686> Besides...\p...\pdidn't Yuuko-sensei tell us to stop the reactor...\p...\p!?\e
+
+//<00000687> 純夏がこんなことになるってわかっているのに…\p…\p先生はいったいどういうつもりで――ッ！！\e
+<00000687> If she knew this would happen to Sumika...\p...\pthen why the hell would Sensei――!?\e
+
+//<00000689> 【霞】「――あの時、\p反応炉を壊す事を提案したのは…\p…\p純夏さんです」\e
+<00000689> 【Kasumi】「――Back then,\p it was Sumika-san's idea...\p...\pto destroy the reactor.」\e
+
+//<0000068b> 【武】「――え…\p…\pッ！？」\e
+<0000068b> 【Takeru】「――Eh...\p...\p!?」\e
+
+//<00000c4f> 【霞】「司令の充填封鎖に反対して、\p反応炉を完全に壊すように強く求めました」\e
+<00000c4f> 【Kasumi】「She reacted badly to the General's order to seal it off,\p and asked them to completely destroy it instead.」\e
+
+//<0000068f> 【霞】「それでも香月博士は、\p後で使えるように、\p一時的に止める決定をしたんです」\e
+<0000068f> 【Kasumi】「But Professor Kouzuki decided to shut it down instead in case we could use it again later.」\e
+
+//<00000691> 【武】「…\p…\p…\p…\p」\e
+<00000691> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000692> 【霞】「…\p…\p結果的に、\p反応炉は２発のＳ－１１で壊されました」\e
+<00000692> 【Kasumi】「...\p...\pin the end,\p the reactor was destroyed by two S-11s.」\e
+
+//<00000693> 【武】「…\p…\p…\p…\p」\e
+<00000693> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000694> 【霞】「おかしくありませんか？」\e
+<00000694> 【Kasumi】「Isn't that strange?」\e
+
+//<00000695> 【武】「…\p…\pなにがだ」\e
+<00000695> 【Takeru】「...\p...\phow?」\e
+
+//<00000696> 【霞】「たった２発のＳ－１１で、\p反応炉を止めてしまうほど壊せるなんて」\e
+<00000696> 【Kasumi】「Only two S-11s did enough damage to the reactor to bring it offline.」\e
+
+//<00000697> 【武】「…\p…\pそれは…\p…\p構造図のデータが転送…\p…\p」\e
+<00000697> 【Takeru】「...\p...\pthat was because...\p...\pshe knew where to place...\p...\p」\e
+
+//<00000699> ――いやッ…\p…\pあの時、\pデータ転送の前に有線がダウンしたんだッ…\p…\p！！　\e
+<00000699> ――No! ...\p...\pthe wired connection cut off before the data got transferred...\p...\p!!\e
+
+//<0000069a> 中尉は…\p…\pいったいどうやって構造的な弱点を知ったんだ…\p…\p！？\e
+<0000069a> How the hell did the First Lieutenant...\p...\pknow where to place them...\p...\p!?\e
+
+//<0000069b> 【霞】「純夏さんが速瀬中尉にプロジェクションしたんです」\e
+<0000069b> 【Kasumi】「Sumika-san did a projection on 1st Lt. Hayase.」\e
+
+//<0000069c> 【武】「…\p…\pえ…\p…\pッ！？」\e
+<0000069c> 【Takeru】「...\p...\peh...\p...\p!?」\e
+
+//<0000069d> 【霞】「危機的状況を知らされた純夏さんが、\p香月博士の命令で、\p弱点のイメージを投影したんです」\e
+<0000069d> 【Kasumi】「Sumika-san knew how desperate the situation was,\p so on Professor Kouzuki's order she projected an image of the weak points.」\e
+
+//<0000069e> 【霞】「でも純夏さんは、\p香月博士の命令とは違う場所のイメージを送りました」\e
+<0000069e> 【Kasumi】「But Sumika-san sent a different image than the one Professor Kouzuki ordered.」\e
+
+//<0000069f> 【武】「…\p…\p…\p…\p！」\e
+<0000069f> 【Takeru】「...\p...\p...\p...\p!」\e
+
+//<000006a0> 【霞】「香月博士が知らない、\p反応炉を完全に壊してしまう弱点の位置です」\e
+<000006a0> 【Kasumi】「Without Professor Kouzuki's knowledge,\p she sent the weakpoints that would destroy the reactor completely.」\e
+
+//<000006a1> 【武】「…\p…\p…\p…\pそう…\p…\pだったのか…\p…\p！」\e
+<000006a1> 【Takeru】「...\p...\p...\p...\pso that's...\p...\pwhy she...\p...\p!」\e
+
+//<000006a4> ――じゃあ…\p…\pあの時…\p…\p\n速瀬中尉がほぼ正確に、\p反応炉の役割を予測できたのは…\p…\pもしかして…\p…\p！？\e
+<000006a4> ――So...\p...\pback then...\p...\pwhen 1st Lt. Hayase made that incredibly accurate guess about the reactor's role...\p...\pwas that because...\p...\p!?\e
+
+//<000006a5> 【霞】「たぶん…\p…\pプロジェクションの影響だと思います」\e
+<000006a5> 【Kasumi】「It probably was...\p...\pbecause of the projection.」\e
+
+//<000006a7> 【武】「…\p…\p…\p…\p」\e
+<000006a7> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000006a8> 【霞】「あの時純夏さんは浄化処理を二度も中断して、\p無理に起きたんです」\e
+<000006a8> 【Kasumi】「Sumika-san interrupted the purification procedure twice and forced herself awake.」\e
+
+//<000006a9> …\p…\pそうだ…\p…\p純夏はＯＤＬの異常劣化で意識を失っていたんだ…\p…\p。\e
+<000006a9> ...\p...\pI see...\p...\pSumika had lost consciousness because of abnormal ODL degradation...\p...\p\e
+
+//<000006aa> 【霞】「弱点の情報だけを、\p正確に投影できる状態だったとは思えません」\e
+<000006aa> 【Kasumi】「I don't think she was capable of projecting much more than the weak points.」\e
+
+//<000006ad> 【武】「…\p…\pじゃあ…\p…\pあの時の速瀬中尉の行動は…\p…\p純夏が…\p…\p」\e
+<000006ad> 【Takeru】「...\p...\pthen...\p...\pwhat 1st Lt. Hayase did back then...\p...\pwas Sumika...\p...\p」\e
+
+//<000006ae> 【霞】「いくら純夏さんの能力が高くても、\p人の行動をコントロールする事はできません」\e
+<000006ae> 【Kasumi】「As strong as Sumika-san's powers are,\p she can't control what other people do.」\e
+
+//<000006af> 【武】「…\p…\pそう…\p…\pか…\p…\p」\e
+<000006af> 【Takeru】「...\p...\pI...\p...\psee...\p...\p」\e
+
+//<000006b1> 【霞】「イメージを伝える事ができたのは、\p速瀬中尉の勘や推測が元々あったからです」\e
+<000006b1> 【Kasumi】「She was able to convey that image because it lined up with 1st Lt. Hayase's own intuition and reasoning.」\e
+
+//<000006b2> 【武】「…\p…\p…\p…\p」\e
+<000006b2> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000006b3> 【霞】「プロジェクションは、\p受け手がそれと意識しなければ、\p浮かんでは消える一瞬の思考と区別できません」\e
+<000006b3> 【Kasumi】「If the receiver isn't conscious of the projected image,\p it's indistinguishable from a stray thought that disappears in an instant.」\e
+
+//<000006b4> 【霞】「受容体になる思考が受け手に存在しないと、\p投影は成功しないんです」\e
+<000006b4> 【Kasumi】「If no thoughts exist as receptors for the image,\p the projection will fail.」\e
+
+//<000006b5> …\p…\pそうか…\p…\pプロジェクションも、\p記憶の関連付けと同じような仕組みなのか…\p…\p。\e
+<000006b5> ...\p...\pI see...\p...\pso projection relies on memory associations too...\p...\p\e
+
+//<000006b6> 【霞】「オルタネイティヴ３の失敗が、\pそれを証明しています…\p…\p」\e
+<000006b6> 【Kasumi】「The failure of Alternative III proved that...\p...\p」\e
+
+//<000006b7> 【武】「…\p…\p…\p…\p」\e
+<000006b7> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000006b8> そうだよな…\p…\p。\n仮にコントロールができたとしても…\p…\p純夏がそんな事をするわけない…\p…\p。\e
+<000006b8> That's right...\p...\p\nAnd even if she could control her...\p...\pSumika would never do something like that...\p...\p\e
+
+//<000006b9> そんな事をする奴が、\p『あ号標的』の攻略に、\pひとりで出撃しようとなんてしない…\p…\p。\e
+<000006b9> Someone who could do that would never want to go attack the Primary Objective all on their own...\p...\p\e
+
+//<000006ba> 【霞】「…\p…\p…\p…\p」\e
+<000006ba> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000006bb> 【武】「…\p…\pでも…\p…\p何でなんだ…\p…\p…\p…\p？」\e
+<000006bb> 【Takeru】「...\p...\pbut...\p...\pwhy...\p...\p...\p...\p?」\e
+
+//<000006bc> 【霞】「…\p…\p…\p…\p」\e
+<000006bc> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000006be> 【武】「…\p…\p何で純夏はそこまでして…\p…\p反応炉を破壊したかったんだ…\p…\p？」\e
+<000006be> 【Takeru】「...\p...\pwhy did Sumika...\p...\pwant to destroy the reactor so badly...\p...\p?」\e
+
+//<000006bf> 【霞】「…\p…\p…\p…\p」\e
+<000006bf> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000006c0> 【武】「…\p…\pどうしてひとりで出撃しようとしたりしたんだ…\p…\p？」\e
+<000006c0> 【Takeru】「...\p...\pwhy did she want to be deployed all alone...\p...\p?」\e
+
+//<000006c1> 【霞】「…\p…\p…\p…\p」\e
+<000006c1> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000006c3> 【武】「…\p…\p知ってるんだろ…\p…\p？」\e
+<000006c3> 【Takeru】「...\p...\pyou know, right...\p...\p?」\e
+
+//<000006c4> 【霞】「…\p…\p…\p…\p」\e
+<000006c4> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000006c6> 【武】「…\p…\p教えてくれよ…\p…\p霞…\p…\p！」\e
+<000006c6> 【Takeru】「...\p...\ptell me...\p...\pKasumi...\p...\p!」\e
+
+//<000006c8> 【霞】「…\p…\p…\p…\p」\e
+<000006c8> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000006ca> 【武】「…\p…\p知ってるんだろう…\p…\p？\n…\p…\pどうしてなんだ…\p…\pッ…\p…\p？！」\e
+<000006ca> 【Takeru】「...\p...\pyou know why, don't you...\p...\p?\n...\p...\pwhy did she do all that...\p...\p...\p...\p!?」\e
+
+//<000006cc> 【武】「…\p…\pどうして…\p…\pどうしておまえはそんな事を…\p…\p！？」\e
+<000006cc> 【Takeru】「...\p...\pwhy...\p...\pwhy would you do something like that...\p...\p!?」\e
+
+//<000006ce> 【武】「自分が死ぬってわかっているのに…\p…\pなんでなんだよ…\p…\pッ！！」\e
+<000006ce> 【Takeru】「If you knew you were going to die...\p...\pwhy would you do that...\p...\p!!?」\e
+
+//<000006d0> 【霞】「あなたが考えないようにしている事…\p…\pそれが理由です」\e
+<000006d0> 【Kasumi】「Her reason was...\p...\pwhat you're trying not to think about.」\e
+
+//<000006d2> 【武】「――！」\e
+<000006d2> 【Takeru】「――!」\e
+
+//<000006d5> 【霞】「他の理由を探そうとしていますね…\p…\p」\e
+<000006d5> 【Kasumi】「You're trying to find a different reason...\p...\p」\e
+
+//<000006d7> 【武】「…\p…\pッ」\e
+<000006d7> 【Takeru】「...\p...\p!」\e
+
+//<00000c51> 【霞】「でも、\p今までの話を聞けば…\p…\pもうわかるはずです」\e
+<00000c51> 【Kasumi】「But,\p from what I've told you...\p...\pyou should already know.」\e
+
+//<000006da> 【武】「…\p…\p…\p…\pじゃあ…\p…\pやっぱり…\p…\p」\e
+<000006da> 【Takeru】「...\p...\p...\p...\pthen...\p...\pit was...\p...\p」\e
+
+//<000006dc> 【霞】「そうです」\e
+<000006dc> 【Kasumi】「It was.」\e
+
+//<000006de> 【霞】「人類の情報をＢＥＴＡに提供していたのは、\p純夏さんだったからです」\e
+<000006de> 【Kasumi】「Sumika-san was the one who gave information on humanity to the BETA.」\e
+
+//<000006e1> 【武】「…\p…\p…\p…\pッ…\p…\p！！」\e
+<000006e1> 【Takeru】「...\p...\p...\p...\p...\p...\p!!」\e
+
+//<000006e2> …\p…\p…\p…\pやっぱり…\p…\pそうなのか…\p…\pッ…\p…\p！！\n…\p…\p…\p…\pそれしか…\p…\pないのか…\p…\pッ！！\e
+<000006e2> ...\p...\p...\p...\pso...\p...\pthat really did happen...\p...\p...\p...\p!!\n...\p...\p...\p...\pis that...\p...\pthe only way to explain this...\p...\p!?\e
+
+//<000006e4> 【霞】「ＯＤＬを浄化する時に、\p純夏さんの見聞きした情報が、\p反応炉を通じて『あ号標的』に渡っていたんです」\e
+<000006e4> 【Kasumi】「Every time Sumika-san purified her ODL,\p everything she'd seen and heard passed through the reactor to the Primary Objective.」\e
+
+//<000006e6> 【速瀬中尉】「ＢＥＴＡは…\p…\pエネルギーと一緒に、\pＳ－１１の情報を反応炉から得たのかも知れない――？！」\e
+<000006e6> 【1st Lt. Hayase】「The BETA might have gained...\p...\pinformation about the S-11 from the reactor as well as energy――!!」\e//CP_S MLA_0066
+
+//<000006e9> 【速瀬中尉】「もし…\p…\p反応炉がただの動力源じゃなくて、\p通信装置でもあったとしたら――」\e
+<000006e9> 【1st Lt. Hayase】「If...\p...\pthe reactor isn't just a power source,\p but a transmission device――」\e
+
+//<000006ec> 【速瀬中尉】「ＢＥＴＡが集めた情報が、\p反応炉を通じてやり取りされるんだとしたら――」\e
+<000006ec> 【1st Lt. Hayase】「If the BETA exchange their information through the reactors――」\e
+
+//<000006ef> 【速瀬中尉】「オルタネイティヴ計画や凄乃皇の情報が…\p…\p世界中のハイヴに伝わってしまうのよッ！？」\e
+<000006ef> 【1st Lt. Hayase】「Then information on the Alternative Plan and the Susano'o...\p...\pwill be sent to every hive on Earth!!」\e//CP_E
+
+//<000006f1> ――中尉の推測は…\p…\p純夏の投影によって裏打ちされた確定情報だったんだ…\p…\p！！\e
+<000006f1> ――The First Lieutenant's guess...\p...\pwas confirmed by Sumika's projection...\p...\p!!\e
+
+//<000006f6> 【霞】「存在の証明を認識した、\p上位の存在は記録を持っている、\p正しい形式を照合し情報を転送せよ」\e
+<000006f6> 【Kasumi】「Acknowledged proof of existence,\p the higher existence is in possession of records,\p transfer information compared to the proper form.」\e//CP MLA_0074
+
+//<000006f7> ――あれは…\p…\p本当にそのままの意味だったんだ…\p…\p！！\e
+<000006f7> ――So that thing...\p...\preally did mean what it was saying...\p...\p!!\e
+
+//<000006f8> …\p…\pあれは攻撃じゃなくて…\p…\p純夏に情報交換を求めていたんだ…\p…\p！！\e
+<000006f8> ...\p...\pit wasn't attacking us...\p...\pbut it wanted to exchange information with Sumika...\p...\p!!\e
+
+//<000006fb> 【霞】「あの時、\p『あ号標的』が白銀さんとの会話に応じたのは…\p…\p」\e
+<000006fb> 【Kasumi】「Shirogane-san,\p when you talked to the Primary Objective...\p...\p」\e
+
+//<000006fc> 【武】「え…\p…\p？」\e
+<000006fc> 【Takeru】「Eh...\p...\p?」\e
+
+//<000006fd> 【霞】「純夏さんが送っていた情報に、\pあなたの事も沢山あったから、\p興味を惹いたんだと思います」\e
+<000006fd> 【Kasumi】「I think it was interested in you because so much of the information Sumika-san had been sending was about you.」\e
+
+//<000006fe> 【武】「…\p…\pそうか…\p…\p…\p…\p」\e
+<000006fe> 【Takeru】「...\p...\pI see...\p...\p...\p...\p」\e
+
+//<000006ff> 結局…\p…\p速瀬中尉の予想は正解だったんだ…\p…\p。\nコンピューターとしての機能を指摘しなかっただけだ。\e
+<000006ff> In the end...\p...\p1st Lt. Hayase's guess was correct...\p...\p\nWe just hadn't identified its computer-like functions.\e
+
+//<00000700> 夕呼先生が「惜しい」って言ったのは、\pオレに純夏の真実を悟らせないように、\p限定した情――\e
+<00000700> And Yuuko-sensei said she was "so close" because she only wanted to give me the information I needed,\p not enough to figure out the truth behind Sumi――\e
+
+//<00000701> 【武】「…\p…\p…\p…\p」\e
+<00000701> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000702> ――いや…\p…\pそもそも全員揃っている前で、\pそんな機密情報…\p…\p明らかになんかできっこない。\e
+<00000702> ――No...\p...\pthat was in front of everyone,\p there's no way...\p...\pshe could reveal something that heavily classified.\e
+
+//<00000704> 【夕呼】「ふふふ…\p…\p随分信用してもらってるみたいだけど…\p…\pいいの？」\e
+<00000704> 【Yuuko】「Huhuhu...\p...\pyou seem to be trusting me quite a bit...\p...\pyou sure about that?」\e//CP_S MLA_0057
+
+//<00000705> 【夕呼】「あたしは最後まであんたに本当の事を言わないかも知れないのよ？」\e
+<00000705> 【Yuuko】「I might never tell you the whole truth about this.」\e//CP_E
+
+//<00000708> もし情報操作だったとしても…\p…\p先生の性格を知りながら、\p直接会った時に確認しなかったオレ自身の責任なんだ…\p…\p。\e
+<00000708> Even if she was lying...\p...\pgiven Sensei's personality,\p it's my fault for not checking this when I last talked to her...\p...\p\e
+
+//<00000709> 【武】「…\p…\p純夏は…\p…\pいつ、\pその事実を…\p…\p？」\e
+<00000709> 【Takeru】「...\p...\pwhen...\p...\pdid Sumika learn all this...\p...\p?」\e
+
+//<0000070a> 【霞】「浄化処置中に、\p急に目を覚ました時です」\e
+<0000070a> 【Kasumi】「During purification,\p she suddenly opened her eyes.」\e
+
+//<0000070b> 【武】「夕呼先生に、\p反応炉の破壊を提案しに行った直前って事か…\p…\p？」\e
+<0000070b> 【Takeru】「You mean just before she told Yuuko-sensei to destroy the reactor...\p...\p?」\e
+
+//<0000070c> 【霞】「そうです。香月博士達にはその後、\p作戦司令室で直にお話ししました」\e
+<0000070c> 【Kasumi】「That's right. Professor Kouzuki talked to her about it in the Command Center.」\e
+
+//<0000070e> 【武】「…\p…\pそうか…\p…\p…\p…\p」\e
+<0000070e> 【Takeru】「...\p...\pI see...\p...\p...\p...\p」\e
+
+//<0000070f> よかった…\p…\p。前から知っていて…\p…\pずっとひとりで苦しんでいたわけじゃないんだな…\p…\p。\e
+<0000070f> Thank goodness...\p...\pshe hasn't been suffering from knowing all this...\p...\pfor very long...\p...\p\e
+
+//<00000710> 【武】「…\p…\pでも…\p…\p何で急に…\p…\pそれがわかったんだろう…\p…\p？」\e
+<00000710> 【Takeru】「...\p...\pbut...\p...\pwhy did she learn all that...\p...\pso suddenly...\p...\p?」\e
+
+//<00000711> 『甲２１号作戦』の時も、\p一度倒れてからの回復は早かったよな…\p…\p。\e
+<00000711> She recovered quickly after the Objective 21 Operation too...\p...\p\e
+
+//<00000712> 【霞】「…\p…\pあなたと結ばれた事で」\e
+<00000712> 【Kasumi】「...\p...\pbecause she became one with you.」\e//see? Sex is plot-CRITICAL ~IX
+
+//<00000713> ――えっ…\p…\p？\e
+<00000713> ――Eh...\p...\p?\e
+
+//<00000714> 【霞】「閉ざされていた無意識領域が、\p完全に開放されたからです」\e
+<00000714> 【Kasumi】「Because the closed-off parts of her subconscious were completely opened.」\e
+
+//<00000715> …\p…\pオレと…\p…\p結ばれたから…\p…\p？\e
+<00000715> ...\p...\pthat happened...\p...\pbecause of me...\p...\p?\e
+
+//<00000716> 【霞】「…\p…\pそして…\p…\p全ての真相を知ったんです」\e
+<00000716> 【Kasumi】「...\p...\pand then...\p...\pshe learned everything.」\e
+
+//<00000717> そうか…\p…\p。あの時おまえは…\p…\pそれで意識を失ったのか…\p…\p。\e
+<00000717> I see...\p...\pso that was why...\p...\pyou lost consciousness back then...\p...\p\e
+
+//<00000718> 【霞】「…\p…\pそうです。\n真相を知った事で受けた、\p精神的な負担が原因でした」\e
+<00000718> 【Kasumi】「...\p...\pthat's right.\nThat was caused by the mental strain of taking in all that new information.」\e
+
+//<00000719> 【武】「…\p…\p…\p…\p純夏…\p…\p」\e
+<00000719> 【Takeru】「...\p...\p...\p...\pSumika...\p...\p」\e
+
+//<0000071a> 知らず知らずのうちに、\p自分がＢＥＴＡのスパイになっていたなんて…\p…\p。\n可哀想に…\p…\p相当なショックだったろうな…\p…\p。\e
+<0000071a> You've been the BETA's spy all this time without even knowing about it...\p...\p\nI can't imagine...\p...\pwhat a shock that must have been...\p...\p\e
+
+//<0000071b> ＢＥＴＡにあんなひどいことをされた上に…\p…\p生きていくためには…\p…\pあいつらに情報を提供し続けなきゃならないなんて…\p…\p。\e
+<0000071b> On top of having them do all those horrible things to you...\p...\pyou had to keep sending them secret information...\p...\pin order to stay alive...\p...\p\e
+
+//<0000071c> だからおまえは…\p…\p死を覚悟して…\p…\p自分だけで決着を付けたがったんだな…\p…\p。\e
+<0000071c> That's why you...\p...\pwere prepared to die...\p...\pand wanted to end it all yourself...\p...\p\e
+
+//<0000071d> 【霞】「…\p…\pそれだけじゃありません」\e
+<0000071d> 【Kasumi】「...\p...\pthat's not the only reason.」\e
+
+//<0000071e> …\p…\pえっ…\p…\p？！\e
+<0000071e> ...\p...\peh...\p...\p!?\e
+
+//<00000722> 【武】「まだ何かあるのか…\p…\p」\e
+<00000722> 【Takeru】「There's more...\p...\p?」\e
+
+//<00000723> 【霞】「…\p…\p…\p…\pはい」\e
+<00000723> 【Kasumi】「...\p...\p...\p...\pyes.」\e
+
+//<00000724> 【武】「…\p…\pもう大抵の事じゃ驚かない…\p…\p。\n言ってくれよ」\e
+<00000724> 【Takeru】「...\p...\pnothing can surprise me now...\p...\p\nSay it.」\e
+
+//<00000725> 【霞】「…\p…\p…\p…\p全てを知る事が…\p…\p良い事とは限りません」\e
+<00000725> 【Kasumi】「...\p...\p...\p...\pknowing everything...\p...\pisn't always a good thing.」\e
+
+//<00000726> 【武】「…\p…\p確かに…\p…\pそうだな…\p…\p」\e
+<00000726> 【Takeru】「...\p...\pthat's...\p...\ptrue...\p...\p」\e
+
+//<00000727> 【霞】「…\p…\p知らないままでも…\p…\pすぐに問題なくなります」\e
+<00000727> 【Kasumi】「...\p...\peven if you never know...\p...\pthe problem will go away soon.」\e
+
+//<00000728> 【武】「…\p…\pじゃあ何で、\pそれだけじゃないって口に出したんだ…\p…\p？」\e
+<00000728> 【Takeru】「...\p...\pthen why did you tell me there was more to it...\p...\p?」\e
+
+//<00000729> 【霞】「…\p…\p…\p…\p」\e
+<00000729> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000072a> 【武】「オレの話を黙って聞き流してたら…\p…\p済んだだろ…\p…\p？」\e
+<0000072a> 【Takeru】「If you'd just quietly listened to my thoughts...\p...\pthat would've been the end of it...\p...\p」\e//PCP MLA_0060
+
+//<0000072b> 【霞】「…\p…\p…\p…\p」\e
+<0000072b> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000072c> 【武】「…\p…\p…\p…\p」\e
+<0000072c> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000072d> …\p…\pあ…\pれ…\p…\p…\p…\p？\n…\p…\pオレ…\p…\pこの会話…\p…\pどっかで…\p…\p？\nデジャヴだ…\p…\p\e
+<0000072d> ...\p...\phuh...\p...\p...\p...\p?\n...\p...\phave I...\p...\phad this conversation...\p...\pbefore...\p...\p?\nDeja vu...\p...\p\e
+
+//<0000072e> 【霞】「どうして、\pそこまでして知りたいんですか…\p…\p」\e
+<0000072e> 【Kasumi】「Why do you want to know so badly...\p...\p?」\e
+
+//<0000072f> 【武】「…\p…\pどうして…\p…\p？」\e
+<0000072f> 【Takeru】「...\p...\pwhy...\p...\p?」\e
+
+//<00000730> 【霞】「…\p…\pただ知りたいだけですか？」\e
+<00000730> 【Kasumi】「...\p...\pyou just want to know?」\e
+
+//<00000731> 【武】「いや…\p…\pちがうよ」\e
+<00000731> 【Takeru】「No...\p...\pit's not that.」\e
+
+//<00000732> 【霞】「…\p…\p…\p…\p」\e
+<00000732> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000733> 【武】「『この世界』でのオレの戦いはまだ終わっていないからだ」\e
+<00000733> 【Takeru】「My fight in this world isn't over yet.」\e
+
+//<00000734> 【霞】「…\p…\p…\p…\p」\e
+<00000734> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000735> 【武】「ハイヴが残ってる以上、\pＢＥＴＡとの戦闘もしばらく続くだろう…\p…\p」\e
+<00000735> 【Takeru】「As long as there are hives left,\p the war with the BETA will continue for a little while...\p...\p」\e
+
+//<00000736> 【武】「それに…\p…\pオレを『因果導体』にした存在を排除するための戦いも…\p…\pこれからだ」\e
+<00000736> 【Takeru】「And...\p...\pI haven't even started...\p...\pfinding and destroying what made me a causality conductor.」\e
+
+//<00000737> 【霞】「…\p…\p…\p…\p」\e
+<00000737> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000738> 【武】「その戦いが終わらない限り…\p…\pオレが死んじまったら、\pまた『この世界』を繰り返さなきゃならない」\e
+<00000738> 【Takeru】「Until I finish that...\p...\pthis world will have to repeat itself whenever I die.」\e
+
+//<00000739> 【武】「だから…\p…\pオレは自分がした事の全てを知る必要がある」\e
+<00000739> 【Takeru】「That's why...\p...\pI need to know everything about what I did.」\e
+
+//<0000073a> 【霞】「…\p…\p…\p…\p」\e
+<0000073a> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000073b> 【武】「…\p…\pその時に…\p…\p少しでも記憶を残すため」\e
+<0000073b> 【Takeru】「...\p...\pto give me as many memories as possible...\p...\pin case that happens.」\e
+
+//<0000073c> 【武】「…\p…\p少しでもみんなに――純夏に辛い思いをさせないために…\p…\p！！」\e
+<0000073c> 【Takeru】「...\p...\pto keep me from hurting――Sumika and the others any more than necessary...\p...\p!!」\e
+
+//<0000073d> 【霞】「…\p…\p…\p…\p」\e
+<0000073d> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000c55> 【武】「だから…\p…\pどの位オレが、\p純夏やみんなに甘やかされていたのか…\p…\p。\nその事を知らずに、\pどれくらいいい気になっていたのか…\p…\p」\e
+<00000c55> 【Takeru】「So...\p...\pno matter how much I've been relying on Sumika and the others...\p...\p\nNo matter how full of myself I've been without realizing that...\p...\p」\e
+
+//<00000740> 【霞】「…\p…\p…\p…\p」\e
+<00000740> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000741> 【武】「オレは…\p…\pそういうみっともない事実から目を逸らす訳には行かない」\e
+<00000741> 【Takeru】「I can't...\p...\pavert my eyes from those pathetic truths.」\e
+
+//<00000742> 【武】「それを知らないままじゃ…\p…\p絶対に前に進めないんだ」\e
+<00000742> 【Takeru】「If I don't learn them now...\p...\p\bI'll never be able to move forward.」\e
+
+//<00000743> 【霞】「…\p…\pどうして…\p…\pそこまで…\p…\p」\e
+<00000743> 【Kasumi】「...\p...\pwhy...\p...\pare you so...\p...\p」\e
+
+//<00000744> 【武】「…\p…\pみんなが…\p…\p好きだからだ」\e
+<00000744> 【Takeru】「...\p...\pbecause...\p...\pI love them all.」\e
+
+//<00000745> 【霞】「…\p…\p…\p…\p」\e
+<00000745> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000746> 【武】「知り合いだとか、\p見ず知らずだとか…\p…\p距離は関係ない…\p…\p」\e
+<00000746> 【Takeru】「It doesn't matter if they're just acquaintances...\p...\por I know nothing about them...\p...\por I'm not that close to them.」\e
+
+//<00000747> 【武】「…\p…\p人間という存在が…\p…\p生命というものが…\p…\pとても愛おしいからなんだ」\e
+<00000747> 【Takeru】「...\p...\pit's because...\p...\phumans...\p...\plife...\p...is so precious.」\e
+
+//<00000748> 【霞】「…\p…\p…\p…\p」\e
+<00000748> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000749> 【武】「『あ号標的』が言ってたろ…\p…\pこの宇宙に炭素生命は存在しないって」\e
+<00000749> 【Takeru】「Remember what the Primary Objective said?\b...\p...\pthere are no carbon-based life forms in this universe.」\e
+
+//<0000074a> 【武】「だから、\pそれだけ貴重で大事なものなんだって…\p…\pあの時、\p改めて気付かされたんだ…\p…\p」\e
+<0000074a> 【Takeru】「Hearing that made me realize once again...\p...\pjust how important life is...\p...\p」\e
+
+//<0000074b> 【武】「そして…\p…\pその意味や価値を、\p想像したり、\p認識できない事の恐ろしさも…\p…\p良くわかったんだ」\e
+<0000074b> 【Takeru】「And...\p...\pI also understood its meaning, its value...\p...\pand its terrifying power.」\e
+
+//<0000074d> 【武】「ＢＥＴＡに限った話じゃない。\nそれは人間同士…\p…\pいや、\pオレ自身の問題でもあるんだって…\p…\p思い知った」\e
+<0000074d> 【Takeru】「That's not just the BETA.\nHumans are no different...\p...\pwell,\p it's a problem for me too...\p...\pis what I learned.」\e
+
+//<0000074f> 【武】「…\p…\pオレ自身が…\p…\pかつてそうだったからな…\p…\p」\e
+<0000074f> 【Takeru】「...\p...\pbecause...\p...\pI was no different at one point...\p...\p」\e
+
+//<00000750> 【霞】「…\p…\p…\p…\p」\e
+<00000750> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000751> 【武】「…\p…\pここまでが大きい理由だ」\e
+<00000751> 【Takeru】「...\p...\pthose are my big reasons.」\e
+
+//<00000752> 【霞】「…\p…\p…\p…\p」\e
+<00000752> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000753> 【武】「それに、\pもっと個人的で身近な理由もある」\e
+<00000753> 【Takeru】「I also have more personal reasons.」\e
+
+//<00000754> 【霞】「…\p…\p…\p…\p」\e
+<00000754> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000755> 【武】「どの世界に存在していても、\pどんな存在になっていても…\p…\p」\e
+<00000755> 【Takeru】「No matter what world I'm in,\p no matter what the nature of my existence...\p...\p」\e
+
+//<00000756> 【霞】「…\p…\p…\p…\p」\e
+<00000756> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000757> 【武】「…\p…\p鑑純夏は、\pオレが愛する女だからだ」\e
+<00000757> 【Takeru】「...\p...\pKagami Sumika is the woman I love.」\e
+
+//<00000758> 【霞】「…\p…\p…\p…\p」\e
+<00000758> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000759> 【武】「だから、\pオレは――」\e
+<00000759> 【Takeru】「Which is why I――」\e
+
+//<0000075a> 【霞】「…\p…\p人を傷つけたら謝りたい。\nお詫びになるなら、\p何でもしてあげたい…\p…\p」\e
+<0000075a> 【Kasumi】「...\p...\pif you've hurt someone, you want to apologize,\p and you'd do anything to show how sorry you are...\p...\p」\e//PCP MLA_0023
+
+//<0000075b> …\p…\p！？\e
+<0000075b> ...\p...\p!?\e
+
+//<0000075e> 【霞】「訓練学校の裏にある丘で、\pあなたが私に言った言葉です」\e
+<0000075e> 【Kasumi】「You said that to me on the hill behind the training school.」\e
+
+//<0000075f> …\p…\pえ…\p…\p？\e
+<0000075f> ...\p...\peh...\p...\p?\e
+
+//<00000760> 【武】「…\p…\pそれが…\p…\p何だ…\p…\p？」\e
+<00000760> 【Takeru】「...\p...\pwhat does...\p...\pthat have to...\p...\p?」\e
+
+//<00000761> 【霞】「純夏さんもあなたと同じです…\p…\p」\e
+<00000761> 【Kasumi】「Sumika-san's the same as you...\p...\p」\e
+
+//<00000762> 【武】「…\p…\pえ？」\e
+<00000762> 【Takeru】「...\p...\peh?」\e
+
+//<00000763> 【霞】「自分のせいで不幸になった人達が、\p幸せになる事を願っていました」\e
+<00000763> 【Kasumi】「She wanted everyone she'd made miserable to be happy again.」\e
+
+//<00000764> 【武】「…\p…\p…\p…\p」\e
+<00000764> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000765> 【霞】「その人達に、\pできる限りのことをしたいと望んでいました」\e
+<00000765> 【Kasumi】「She wanted to do everything she could for those people.」\e
+
+//<00000766> 【武】「…\p…\p自分が流した情報のせいで…\p…\p被害を受けたみんなにって事か…\p…\p？」\e
+<00000766> 【Takeru】「...\p...\pyou mean everyone she hurt...\p...\pthrough the information she leaked...\p...\p?」\e
+
+//<00000767> 【霞】「違います」\e
+<00000767> 【Kasumi】「Not that.」\e
+
+//<00000768> 【武】「え…\p…\p」\e
+<00000768> 【Takeru】「Eh...\p...\p?」\e
+
+//<00000769> 【霞】「主体である『この世界』の事象を、\p都合よく変える事はできません」\e
+<00000769> 【Kasumi】「She couldn't change events in this world as she pleased.」\e//lit. "this world which is the subject" I doubt any of you remember the subject/object worlds thing (the one that intereferes is the one that all interference is relative to or gah) so dropping it like I think I always did
+
+//<0000076b> ――えッ…\p…\p？！\e
+<0000076b> ――Eh...\p...\p!?\e
+
+//<0000076c> 【霞】「変えられるのは、\p『この世界』からあなたが関与した別の世界だけ」\e
+<0000076c> 【Kasumi】「The only worlds she can change are ones you interfered with from this one.」\e
+
+//<0000076e> 【武】「…\p…\p…\p…\pかす…\p…\pみ…\p…\p！？」\e
+<0000076e> 【Takeru】「...\p...\p...\p...\pKasu...\p...\pmi...\p...\p!?」\e
+
+//<00000770> 【霞】「…\p…\p白銀さん。\nあなたの『この世界』での戦いは終わりました」\e
+<00000770> 【Kasumi】「...\p...\pShirogane-san.\nYour fight in this world is over.」\e//post pics of your face when you figured out what she meant ~IX//no way - Sheeta
+
+//<00000772> ――な…\p…\pッ！？\e
+<00000772> ――Wha-...\p...\p!?\e
+
+//<00000773> 【霞】「…\p…\pあなたはもう『因果導体』ではなくなったんです」\e
+<00000773> 【Kasumi】「...\p...\pyou're not a causality conductor anymore.」\e
+
+//<00000775> ――ッ！！！\e
+<00000775> ――!!!\e
+
+//<00000777> 【武】「――バッ…\p…\pバカな…\p…\pッ！！？　――それじゃあ…\p…\pッ！！」\e
+<00000777> 【Takeru】「――N-...\p...\pno way...\p...\p!! ――You mean...\p...\p!!?」\e
+
+//<00000779> 【霞】「そうです。あなたを『因果導体』にしていたのは…\p…\p純夏さんだったんです」\e
+<00000779> 【Kasumi】「That's right. Sumika-san was the one...\p...\pwho made you a causality conductor.」\e
+
+//<0000077c> 【武】「…\p…\pな…\p…\pッ…\p…\p…\p…\pか…\p…\pッ…\p…\pあ…\p…\pッ…\p…\p！！！！！」\e
+<0000077c> 【Takeru】「...\p...\pwha...\p...\p! ...\p...\p...\p...\phow...\p...\p! ...\p...\pah...\p...\p...\p...\p!!!!!」\e
+
+//<0000077e> 【霞】「…\p…\pだからもう『この世界』は、\pあなたを起点にループする事はありません」\e
+<0000077e> 【Kasumi】「...\p...\pso this world will never loop because of you again.」\e
+
+//<0000077f> 【武】「…\p…\pそ…\p…\p…\p…\pッ…\p…\p！！！」\e
+<0000077f> 【Takeru】「...\p...\ptha...\p...\p...\p...\p...\p...\p!!!」\e
+
+//<00000780> 【霞】「そしてあなたが望んだように、\p『この世界』から関わった世界は、\pすべて再構築されます」\e
+<00000780> 【Kasumi】「And all the worlds you interfered with have been rebuilt,\p just the way you wanted.」\e
+
+//<00000782> 【霞】「原因の消滅によって…\p…\p結果も消滅しますから…\p…\p」\e
+<00000782> 【Kasumi】「Now that the cause has been destroyed...\p...\pso have the effects...\p...\p」\e
+
+//<00000784> 【武】「――ッ！！」\e
+<00000784> 【Takeru】「――!!」\e
+
+//<00000785> ――こんな…\p…\p…\p…\pこんな終わりかたって…\p…\pあるかよ…\p…\pっ…\p…\p！？\e
+<00000785> ――How...\p...\p...\p...\phow could it possibly...\p...\pend like this...\p...\p...\p...\p!?\e
+
+//<00000786> ――純夏が…\p…\p純夏がオレを…\p…\p『因果導体』に…\p…\pしていたなんて…\p…\pッ！！\e
+<00000786> ――Sumika...\p...\pSumika was the one...\p...\pwho made me...\p...\pa causality conductor...\p...\p!!?\e
+
+//<00000787> 【霞】「あなたが持っている、\p純夏さん以外の皆さんとの記憶――」\e
+<00000787> 【Kasumi】「Your memories with everyone other than Sumika-san――」\e
+
+//<00000788> 【武】「――え…\p…\pッ！？」\e
+<00000788> 【Takeru】「――Eh...\p...\p!?」\e
+
+//<0000078c> 【霞】「あれは全て、\pあなた自身が、\pこのループ以前の『この世界』で実際に体験した事です」\e
+<0000078c> 【Kasumi】「Those are all your own personal experiences from previous loops of this world.」\e
+
+//<0000078e> 【武】「――あれは…\p…\p別の分岐世界にいるオレが経験した事なんじゃないのかッ！？」\e
+<0000078e> 【Takeru】「――Those aren't...\p...\pexperiences other me's have from different world branches!?」\e
+
+//<00000790> 【霞】「違います。全てあなた自身の経験と記憶です」\e
+<00000790> 【Kasumi】「They're not. You experienced them yourself.」\e
+
+//<00000791> 【武】「――でもッ！　…\p…\pオレと夕呼先生がッ…\p…\pって…\p…\pあり得ないぞッ！？」\e
+<00000791> 【Takeru】「――But! ...\p...\pme and Yuuko-sensei!\b...\p...\phow...\p...\phow could that happen!?」\e
+
+//<00000792> 【霞】「それは『今の』あなたが持っている感覚です。\n事実は変わりません」\e
+<00000792> 【Kasumi】「Only the current you is having that reaction.\nThat doesn't change the fact that it happened.」\e
+
+//<00000793> 【武】「――ッ！！」\e
+<00000793> 【Takeru】「――!!」\e
+
+//<000007a2> 【武】「…\p…\p…\p…\p…\p…\pッ！！！！」\e
+<000007a2> 【Takeru】「...\p...\p...\p...\p...\p...\p!!!!」\e
+
+//<000007a4> オレが『この世界』に戻って来た時――泣いていた理由…\p…\p\e
+<000007a4> That's why I cried――When I came back to this world...\p...\p\e
+
+//<000007a6> 基地で初めてあいつらにあった時――あいつらの喋り方や呼び方に覚えた違和感…\p…\p\e
+<000007a6> When I first saw these guys on the base――And heard them talk to me...\p...\p\e
+
+//<000007a8> 夕呼先生を説得していた時――無性に感じていた悲しみと喪失感…\p…\pそして後悔の念…\p…\p\e
+<000007a8> When I convinced Yuuko-sensei to let me stay――And felt such overpowering sadness, loss and regret...\p...\p\e
+
+//<000007aa> …\p…\p…\p…\pその理由が…\p…\p\n…\p…\p…\p…\p今…\p…\pやっとわかった…\p…\pッ…\p…\p\e
+<000007aa> ...\p...\p...\p...\pnow I finally know...\p...\p\n...\p...\p...\p...\pwhere all those emotions...\p...\pwere coming from...\p...\p! ...\p...\p\e
+
+//<000007ac> …\p…\p…\p…\pオレは…\p…\pあいつらと…\p…\p…\p…\p\e
+<000007ac> ...\p...\p...\p...\pI...\p...\preally did...\p...\p...\p...\p\e
+
+//<000007ae> …\p…\p本当に…\p…\p…\p…\p\e
+<000007ae> ...\p...\phave relationships...\p...\p...\p...\p\e
+
+//<000007b0> …\p…\p付き合っていたんだ…\p…\pッ…\p…\p！！\e
+<000007b0> ...\p...\pwith all of them...\p...\p...\p...\p!!\e
+
+//<000007b2> 【霞】「…\p…\p記憶の関連付けが…\p…\pできたようですね」\e
+<000007b2> 【Kasumi】「...\p...\pit seems...\p...\pyou've associated all those memories.」\e
+
+//<000007b4> ――ッ！？\e
+<000007b4> ――!?\e
+
+//<000007b7> 【霞】「だからあなたはループし続けた…\p…\p」\e
+<000007b7> 【Kasumi】「That's why you've been looping...\p...\p」\e
+
+//<000007b8> 【武】「――えッ…\p…\p！？」\e
+<000007b8> 【Takeru】「――Eh...\p...\p!?」\e
+
+//<000007b9> 【霞】「純夏さんに辿り着かなかったから…\p…\pループし続けた」\e
+<000007b9> 【Kasumi】「You continued to loop...\p...\pbecause you failed to reach Sumika-san.」\e
+
+//<000007ba> 【武】「…\p…\pっ…\p…\p…\p…\p」\e
+<000007ba> 【Takeru】「...\p...\p! ...\p...\p...\p...\p」\e
+
+//<000007bb> 【霞】「そうさせていたのは、\pシリンダーに入っていた脳髄…\p…\p純夏さんの純粋な無意識領域だったんです」\e
+<000007bb> 【Kasumi】「Her brain in that cylinder was making you do that...\p...\p\b...\p...\pSumika-san's purest subconscious.」\e
+
+//<000007be> 【武】「――純粋な…\p…\p無意識領域…\p…\p！？」\e
+<000007be> 【Takeru】「――Her purest...\p...\psubconscious...\p...\p!?」\e//untained by BETA tentacles, what else could she mean? ~IX
+
+//<000007bf> 【霞】「――タケルちゃんに会いたい」\e
+<000007bf> 【Kasumi】「――I want to see Takeru-chan.」\e
+
+//<000007c1> 【武】「――えッ！？」\e
+<000007c1> 【Takeru】「――Eh!?」\e
+
+//<000007c2> 【霞】「シリンダーのリーディングで一番はじめに理解できた思念です」\e
+<000007c2> 【Kasumi】「That was the first thought I ever read from the cylinder.」\e
+
+//<000007c3> 【武】「…\p…\p…\p…\p」\e
+<000007c3> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000008d2> 【霞】「その思念が洪水のように激しく渦巻いていました」\e
+<000008d2> 【Kasumi】「That thought was rushing through her like a flood.」\e
+
+//<000007c5> 【霞】「脳髄にされて以来ずっと、\p全ての感覚が閉ざされた闇の中で、\p純夏さんはその想いだけで生きていたんです」\e
+<000007c5> 【Kasumi】「Ever since she became a brain,\p and all her senses were replaced by darkness,\p Sumika-san's been living on that one feeling.」\e//lit. "within the darkness where all her senses were closed off"
+
+//<000007c6> 【霞】「目の前で『この世界』のあなたを殺された純夏さんは、\pずっとそれだけを想い続けていたんです」\e
+<000007c6> 【Kasumi】「After seeing this world's you killed in front of her,\p Sumika-san never stopped thinking that.」\e
+
+//<000007c8> 【武】「…\p…\pすみ…\p…\pか…\p…\p」\e
+<000007c8> 【Takeru】「...\p...\pSumi...\p...\pka...\p...\p」\e
+
+//<000007c9> 【霞】「２発のＧ弾が横浜ハイヴで爆発した時…\p…\p」\e
+<000007c9> 【Kasumi】「When the two G-Bombs exploded in the Yokohama Hive...\p...\p」\e
+
+//<000007ca> …\p…\p…\p…\pえっ…\p…\p\n…\p…\p『明星作戦』…\p…\pか…\p…\p？\e
+<000007ca> ...\p...\p...\p...\peh...\p...\p?\n...\p...\pyou mean...\p...\pthe Hesperus Operation...\p...\p?\e
+
+//<000007cc> 【霞】「爆発で発生した高重力潮汐力の複合作用と、\p反応炉の共鳴で、\p時空間に深く、\p鋭い歪みが発生しました」\e
+<000007cc> 【Kasumi】「The complex supergravitational tides of the explosion resonated with the reactor,\p producing a sharp, deep distortion in spacetime.」\e
+
+//<000007ce> 【霞】「その時、\pほんの一瞬ですが、\p比較的分岐が近い世界との道が繋がってしまったんです」\e
+<000007ce> 【Kasumi】「And for a brief moment,\p a path opened to a relatively close world.」\e
+
+//<000007d0> ――それが…\p…\pオレの『元の世界』…\p…\p！？\e
+<000007d0> ――And that was...\p...\pmy world...\p...\p!?\e
+
+//<000008d4> 【霞】「そこに、\p反応炉によって変換、\p増幅された純夏さんの思念が作用した結果――」\e
+<000008d4> 【Kasumi】「Sumika-san's feeling was altered and amplified by the reactor, until――」\e
+
+//<000008d6> 【霞】「あなた…\p…\p達が、\p大量のＧ元素の消失と引き換えに、\p『この世界』に連れて来られたんです」\e
+<000008d6> 【Kasumi】「You...\p...\pall of you were brought into this world,\p in exchange for the loss of large quantities of G Elements.」\e
+
+//<000007d5> 【霞】「これは純夏さんの話を聞いて、\p香月博士が考えた仮説です。\n確証はなにもありません」\e
+<000007d5> 【Kasumi】「This is Professor Kouzuki's hypothesis after hearing what Sumika-san learned.\p There is no proof.」\e
+
+//<000007d6> 【武】「――ちょっとまってくれ…\p…\p今あなた達っていったろ…\p…\p？　達って…\p…\pどういう意味だ…\p…\p！？」\e
+<000007d6> 【Takeru】「――Wait a minute...\p...\pdidn't you just say "all of me"...\p...\p? What do you mean...\p...\pthere's more than one of me...\p...\p!?」\e
+
+//<000007d7> 【霞】「今ここにいるあなたは、\p多くのあなたの統合体です」\e
+<000007d7> 【Kasumi】「The you I'm talking to now is a synthesis of a great many yous.」\e
+
+//<000007d8> 【武】「――はあッ…\p…\p？！　オレはオレだぞッ…\p…\p！？」\e
+<000007d8> 【Takeru】「――Huuuh...\p...\p!? But I'm me...\p...\p!?」\e//lol ~IX
+
+//<000007d9> 【霞】「あなたが『元の世界』と呼んでいる世界と、\pそこから分岐した世界から、\pあなたを構成する要素が少しづつ集められたんです」\e
+<000007d9> 【Kasumi】「Elements of you were gathered little by little from all the worlds which branched off what you call "your world", until there was enough to make you.」\e
+
+//<000007da> 【武】「…\p…\pそこから分岐した世界…\p…\p…\p…\p」\e
+<000007da> 【Takeru】「...\p...\pbranches of my world...\p...\p...\p...\p?」\e
+
+//<000007db> 【霞】「あなたと純夏さん以外の人が結ばれた世界です」\e
+<000007db> 【Kasumi】「Worlds where you became one with someone other than Sumika-san.」\e
+
+//<000007dd> 【霞】「あなたが『元の世界』の皆さんとの記憶も持っているのは、\pそういう事なんです」\e
+<000007dd> 【Kasumi】「That's why you have memories of everyone else from your world.」\e
+
+//<000007de> 【武】「…\p…\p一体誰が…\p…\pそれを…\p…\p！？」\e
+<000007de> 【Takeru】「...\p...\pwho the hell...\p...\pwould do that...\p...\p!?」\e
+
+//<000007df> 【霞】「何によってそれらの世界が選ばれたのかはわかりません。\n未知の現象です」\e
+<000007df> 【Kasumi】「We don't know how those worlds were chosen.\nIt's an unprecedented phenomenon.」\e
+
+//<000007e0> 【武】「純夏の意志じゃないのか…\p…\p？」\e
+<000007e0> 【Takeru】「It wasn't Sumika's will...\p...\p?」\e
+
+//<000007e1> 【霞】「そうであれば、\pもっと自分に都合のいい選び方をしている筈です」\e
+<000007e1> 【Kasumi】「If it was,\p she would've chosen the you she wanted most.」\e
+
+//<000007e2> …\p…\pッ\n…\p…\pそう…\p…\pだよな…\p…\p。\e
+<000007e2> ...\p...\p!\n...\p...\pyou're...\p...\pright...\p...\p\e
+
+//<000007e3> 【霞】「あなたが他の人と結ばれる世界群が発生する大元になった、\p『元の世界』の純夏さんにとっての運命の日――」\e
+<000007e3> 【Kasumi】「The worlds where you become one with others all branch from the same point,\p a day of destiny for your world's Sumika――」\e
+
+//<000007e4> 【霞】「１０月２２日という重い因果情報が、\pあなたのループの起点になってしまっているんです」\e
+<000007e4> 【Kasumi】「The heavy causality information from October 22nd formed the starting point of your loop.」\e
+
+//<000007e6> ――１０月２２日…\p…\pッ…\p…\p！？\e
+<000007e6> ――October 22nd...\p...\p...\p...\p!?\e
+
+//<000007ea> …\p…\p冥夜が…\p…\pオレの家に来た日だ…\p…\p…\p…\p。\nあの日から…\p…\p全てが変わり始めた…\p…\pのか…\p…\p！？\e
+<000007ea> ...\p...\pthat's the day...\p...\pMeiya came to my house...\p...\p...\p...\p\nEverything started changing...\p...\pafter...\p...\pthat day...\p...\p\e
+
+//<000007eb> 【霞】「ネガティヴな思考…\p…\pつまり負の思念波は逆向きのスピンを持っていて、\p過去に向かいます」\e
+<000007eb> 【Kasumi】「Negative thoughts...\p...\pnegative thought waves have a reversed spin,\p and they head toward the past.」\e//nice place to sneak in some technobabble ~IX
+
+//<000007ec> ――え…\p…\p？\e
+<000007ec> ――Eh...\p...\p?\e
+
+//<000007ed> 【霞】「あなたと結ばれなかった世界の純夏さんが持っている、\p『あの日に戻ってやり直せたら』という負の思念が、\p世界の数だけその日に集約しているんです」\e
+<000007ed> 【Kasumi】「In all the worlds where you don't become one with Sumika-san,\p her negative thought of "if only I could do it over from that day" caused all the worlds to come back to that date.」\e
+
+//<000007ee> 【武】「…\p…\p…\p…\p」\e
+<000007ee> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000007ef> 【霞】「それが、\p『この世界』の純夏さんの思念と強く結びついています」\e
+<000007ef> 【Kasumi】「That's related to this world's Sumika-san's feeling.」\e
+
+//<000007f0> 【霞】「そのせいで、\pあなたが『この世界』で純夏さんに辿り着かない限り、\p死と同時にループさせられていたんです」\e
+<000007f0> 【Kasumi】「Because of that,\p every time you failed to reach this world's Sumika-san,\p she made you loop when you died.」\e
+
+//<000007f1> 【武】「…\p…\p…\p…\p」\e
+<000007f1> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000007f2> 【霞】「そしてその時、\p純夏さんの無意識領域にある『独占欲』が、\p自分以外の人と結ばれた記憶を濾し取ってしまっていたんです」\e
+<000007f2> 【Kasumi】「And when she did,\p the possessiveness in Sumika-san's subconscious wiped out all memories of you becoming one with someone other than her.」\e
+
+//<000007f3> ――純夏の…\p…\p『独占欲』…\p…\p！？\e
+<000007f3> ――Sumika's...\p...\ppossessiveness...\p...\p!?\e//oh wow, I forgot that part ~IX
+
+//<000007f4> 【霞】「はい。純夏さんの無意識領域は、\p純粋な分、\p冷酷にその作業を繰り返して来ました」\e
+<000007f4> 【Kasumi】「Yes. Sumika-san's subconscious, her purest part,\p coldly erased it every single time.」\e
+
+//<000007f5> 【武】「…\p…\pでも…\p…\p『元の世界』の純夏には…\p…\p『独占欲』なんて…\p…\p」\e
+<000007f5> 【Takeru】「...\p...\pbut...\p...\pmy world's Sumika...\p...\pwas never that possessive...\p...\p」\e
+
+//<000007f6> 【霞】「誰にでも負の感情はあります。\n出すか出さないか…\p…\p。\n自分で気付くか気付かないか…\p…\pその違いだけです」\e
+<000007f6> 【Kasumi】「Everyone has negative emotions.\nIt's just a matter of whether they let them show...\p...\p\nAnd who notices they have them...\p...\pthat's all.」\e
+
+//<000007f7> 【武】「…\p…\p…\p…\p」\e
+<000007f7> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000007f8> 【霞】「私には…\p…\pそれが見えてしまうんです…\p…\p」\e
+<000007f8> 【Kasumi】「But I...\p...\pcan see those parts...\p...\p」\e
+
+//<00000c61> 【武】「…\p…\pああ…\p…\pそうだったな…\p…\p」\e
+<00000c61> 【Takeru】「...\p...\pyeah...\p...\pyou're right...\p...\p」\e
+
+//<000007fa> 【霞】「でも…\p…\pそれが人間なんです。\nだから…\p…\p仕方のない事です」\e
+<000007fa> 【Kasumi】「But...\p...\pthat's part of being human.\nSo...\p...\pthere's nothing you can do about it.」\e
+
+//<000007fb> ――え…\p…\p？\e
+<000007fb> ――Eh...\p...\p?\e
+
+//<000007fc> 【霞】「人を傷つけたら謝りたい…\p…\p。\nお詫びになるなら、\p何でもしてあげたい…\p…\p」\e
+<000007fc> 【Kasumi】「If you hurt someone, you want to apologize...\p...\p\nYou want to do anything to show you're sorry...\p...\p」\e
+
+//<000007fd> 【霞】「負の感情でやってしまった事も…\p…\pそれにどう向き合うかで…\p…\p結果は変わると思います」\e
+<000007fd> 【Kasumi】「Even if you do something out of negative emotions...\p...\pif you can face it somehow...\p...\pI think the effect will change.」\e
+
+//<000007fe> 【武】「…\p…\p霞…\p…\pおまえ…\p…\p…\p…\p」\e
+<000007fe> 【Takeru】「...\p...\pKasumi...\p...\pyou...\p...\p...\p...\p」\e
+
+//<000007ff> 【霞】「純夏さんも…\p…\pそうしたかったんです」\e
+<000007ff> 【Kasumi】「Sumika-san...\p...\pwanted to do that too.」\e
+
+//<00000800> 【武】「…\p…\p…\p…\p」\e
+<00000800> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000801> 【霞】「真実を知ってから…\p…\p純夏さんはとても悩んでいました」\e
+<00000801> 【Kasumi】「After learning the truth...\p...\pSumika-san worried a lot.」\e
+
+//<00000802> 【霞】「自分の浅ましさや卑しさを嘆き続けていました」\e
+<00000802> 【Kasumi】「She lamented how wretched and vile she was.」\e
+
+//<00000804> 【霞】「わたしがタケルちゃんやみんなを不幸にしている…\p…\p」\e
+<00000804> 【Kasumi】「"I'm making Takeru-chan and everyone else unhappy...\p...\p"」\e
+
+//<00000806> 【霞】「わたしのワガママのせいで…\p…\pタケルちゃんを何度も苦しめた…\p…\p」\e
+<00000806> 【Kasumi】「"My selfishness...\p...\pmade Takeru-chan suffer countless times...\p...\p"」\e
+
+//<00000808> 【霞】「わたしのヤキモチが…\p…\pみんなを苦しめた…\p…\p」\e
+<00000808> 【Kasumi】「"My jealousy...\p...\phurt everyone...\p...\p"」\e
+
+//<0000080a> 【武】「…\p…\p…\p…\p純夏…\p…\p」\e
+<0000080a> 【Takeru】「...\p...\p...\p...\pSumika...\p...\p」\e
+
+//<00000c6c> 【霞】「だから…\p…\p反応炉を壊そうとしたんです」\e
+<00000c6c> 【Kasumi】「That's why...\p...\pshe tried to destroy the reactor.」\e
+
+//<0000080c> 【霞】「だから…\p…\pひとりで出撃しようとしたんです」\e
+<0000080c> 【Kasumi】「That's why...\p...\pshe wanted to be deployed alone.」\e
+
+//<0000080d> 【霞】「あなたを『この世界』から開放するために…\p…\p」\e
+<0000080d> 【Kasumi】「In order to release you from this world...\p...\p」\e
+
+//<0000080e> 【霞】「そして少しでも、\pＡ－０１のみなさんや人類に対して…\p…\p自分の罪の償いをしようとしたんです」\e
+<0000080e> 【Kasumi】「And to atone for at least a little of her sins...\p...\pagainst A-01 and the rest of humanity.」\e
+
+//<0000080f> 【武】「そうか…\p…\p」\e
+<0000080f> 【Takeru】「I see...\p...\p」\e
+
+//<00000810> 【霞】「もう…\p…\pやり直しは利かなかったから」\e
+<00000810> 【Kasumi】「Because...\p...\pshe couldn't do it over again.」\e
+
+//<00000811> 【武】「…\p…\pえ…\p…\p…\p…\p？」\e
+<00000811> 【Takeru】「...\p...\peh...\p...\p...\p...\p?」\e
+
+//<00000812> 【霞】「あなたをループさせる力は、\p出撃前に消滅していました」\e
+<00000812> 【Kasumi】「She lost the power to make you loop before we deployed.」\e
+
+//<00000813> 【武】「…\p…\pえ…\p…\pっ…\p…\p！？」\e
+<00000813> 【Takeru】「...\p...\peh...\p...\p...\p...\p!?」\e
+
+//<00000814> 【霞】「あなたと純夏さんが結ばれたんですから…\p…\p当然です」\e
+<00000814> 【Kasumi】「You and Sumika-san became one...\p...\pof course she lost it.」\e
+
+//<00000815> 【武】「――そ…\p…\pそうだったのか…\p…\p」\e
+<00000815> 【Takeru】「――I...\p...\pI see...\p...\p」\e
+
+//<00000dd6> 【霞】「『この世界』はもう…\p…\p未来に向かって進んでいきます」\e
+<00000dd6> 【Kasumi】「This world...\p...\pis heading toward its own future now.」\e
+
+//<00000e47> 【霞】「『この世界』からあなたが関わった世界も、\p変わります」\e
+<00000e47> 【Kasumi】「The worlds you interfered with from this one are changing too.」\e
+
+//<00000818> 【武】「…\p…\p…\p…\p」\e
+<00000818> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000819> 【霞】「だから…\p…\pあなたの戦いは…\p…\pもうお終いです」\e
+<00000819> 【Kasumi】「So...\p...\pyour fight...\p...\pis already over.」\e
+
+//<0000081a> 【武】「…\p…\p…\p…\p」\e
+<0000081a> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000081b> 【霞】「辛いこと…\p…\pいっぱいありましたね…\p…\p」\e
+<0000081b> 【Kasumi】「A lot of painful things...\p...\phave happened to you...\p...\p」\e
+
+//<0000081c> 【武】「…\p…\p…\p…\p」\e
+<0000081c> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000081d> 【霞】「悲しいことも…\p…\pいっぱいありましたね」\e
+<0000081d> 【Kasumi】「A lot of sad things...\p...\phave happened to you too.」\e
+
+//<0000081e> 【武】「…\p…\p」\e
+<0000081e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000081f> 【霞】「でもこれで、\pあなたはやっと『この世界』から離れることができるんです」\e
+<0000081f> 【Kasumi】「But now,\p you'll finally be able to leave this world.」\e
+
+//<00000820> 【武】「…\p…\p…\p…\p」\e
+<00000820> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000008d8> 【霞】「…\p…\pもう、\pこれ以上苦しまなくて良いんです」\e
+<000008d8> 【Kasumi】「...\p...\pyou won't have to suffer anymore.」\e
+
+//<00000821> 【武】「…\p…\pなあ…\p…\p霞…\p…\p」\e
+<00000821> 【Takeru】「...\p...\phey...\p...\pKasumi...\p...\p」\e
+
+//<00000822> 【霞】「はい」\e
+<00000822> 【Kasumi】「Yes?」\e
+
+//<00000823> 【武】「…\p…\pほっといても、\pオレが関わった世界は、\p再構築されるんだよな…\p…\p？」\e
+<00000823> 【Takeru】「...\p...\pthe worlds I interfered with will be rebuilt now, no matter what I do...\p...\p?」\e
+
+//<00000824> 【霞】「はい」\e
+<00000824> 【Kasumi】「Yes.」\e
+
+//<00000825> 【武】「…\p…\pオレ…\p…\pは…\p…\p」\e
+<00000825> 【Takeru】「...\p...\pI...\p...\pstill...\p...\p」\e
+
+//<00000826> 【霞】「…\p…\p…\p」\e
+<00000826> 【Kasumi】「...\p...\p...\p」\e
+
+//<00000827> 【武】「オレは…\p…\pまだ『この世界』で…\p…\pみんなの分も戦わなきゃいけないんだ…\p…\p！」\e
+<00000827> 【Takeru】「I still...\p...\phave to fight in this world...\p...\pfor everyone who died...\p...\p!」\e
+
+//<00000828> 【霞】「…\p…\p…\p」\e
+<00000828> 【Kasumi】「...\p...\p...\p」\e
+
+//<00000829> 【武】「先に逝っちまった人達の事を…\p…\pみんなの事を…\p…\pッ…\p…\p！！」\e
+<00000829> 【Takeru】「Everyone who died without me...\p...\peveryone from my unit...\p...\p! ...\p...\p!!」\e
+
+//<0000082a> 【武】「誇らしく語り継いで行かなきゃならないんだよ…\p…\p！！」\e
+<0000082a> 【Takeru】「I have to carry on their legacy, speak of them with pride...\p...\p!!」\e
+
+//<0000082b> 【武】「誰かが覚えていなきゃ…\p…\pみんなの魂は…\p…\p本当に死んじまうんだよ…\p…\p！！」\e
+<0000082b> 【Takeru】「If no one remembers them...\p...\pthen their souls...\p...\preally will die...\p...\p!!」\e
+
+//<0000082c> 【武】「オレだけ生き残って…\p…\p生き残らしてもらっておいて…\p…\p逃げ出すなんて――絶対にいやだッ！！」\e
+<0000082c> 【Takeru】「I'm the only one left...\p...\pbecause they gave their lives for me...\p...\pI don't want――To run away after that!!」\e
+
+//<0000082d> 【霞】「…\p…\pだめです。\nあなたは『この世界』の存在ではありません」\e
+<0000082d> 【Kasumi】「...\p...\pyou can't stay.\nYou're not from this world.」\e
+
+//<0000082e> 【武】「オレはもう『この世界』の人間だ…\p…\p！！」\e
+<0000082e> 【Takeru】「I'm part of this world already...\p...\p!!」\e
+
+//<0000082f> 【武】「前に一度逃げ帰って…\p…\pつくづくそう感じたんだ…\p…\p！！」\e
+<0000082f> 【Takeru】「I learned that...\p...\pthe last time I ran away...\p...\p!!」\e
+
+//<00000830> 【武】「『この世界』の未来が動き始めたなら…\p…\pそのために戦わせてくれッ！！」\e
+<00000830> 【Takeru】「If this world has a future again...\p...\pthen let me fight in it!!」\e
+
+//<00000831> 【武】「『この世界』の生命を…\p…\p人間を守るために…\p…\p！！」\e
+<00000831> 【Takeru】「In order to protect humanity...\p...\pand all life in this world...\p...\p!!」\e
+
+//<00000832> 【霞】「平和な世界というのは…\p…\p生命や人間と同じぐらい、\p貴重で大切なものです」\e
+<00000832> 【Kasumi】「A peaceful world...\p...\pis just as important as life and humanity.」\e
+
+//<00000833> 【武】「…\p…\p…\p…\p」\e
+<00000833> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000834> 【霞】「それを…\p…\pしっかり守ってください…\p…\p」\e
+<00000834> 【Kasumi】「Please...\p...\pprotect that...\p...\p」\e
+
+//<00000835> 【武】「…\p…\p…\p…\p」\e
+<00000835> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000836> 【霞】「お願いします…\p…\p」\e
+<00000836> 【Kasumi】「Please...\p...\p」\e
+
+//<00000837> 【武】「…\p…\p頼むよ…\p…\p霞。\nおまえなら…\p…\p実験の時みたいに、\pオレをこの世界に残せるだろう！？」\e
+<00000837> 【Takeru】「...\p...\pcome on...\p...\pKasumi.\nI know you can do it...\p...\pyou can keep me in this world like you did during the experiments, can't you!?」\e
+
+//<00000838> 【霞】「…\p…\p…\p…\p」\e
+<00000838> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000839> 【武】「オレが死んでもループしないなら…\p…\p『この世界』で…\p…\pッ…\p…\p！！」\e
+<00000839> 【Takeru】「If this world won't loop even when I die...\p...\pthen keep me here...\p...\p...\p...\p!!」\e
+
+//<0000083a> 【武】「…\p…\p部隊のみんなや…\p…\p純夏が眠る…\p…\p『この世界』で死なせてくれッ…\p…\p！！」\e
+<0000083a> 【Takeru】「...\p...\plet me die in this world...\p...\pwhere all my comrades...\p...\pand Sumika died...\p...\p!!」\e//lit. "are resting"
+
+//<0000083b> 【霞】「…\p…\p無理なんです」\e
+<0000083b> 【Kasumi】「...\p...\pI can't.」\e
+
+//<0000083c> 【武】「…\p…\p霞…\p…\p…\p…\p！」\e
+<0000083c> 【Takeru】「...\p...\pKasumi...\p...\p...\p...\p!」\e
+
+//<0000083d> 【霞】「原因が消滅すれば結果も消滅するんです…\p…\p」\e
+<0000083d> 【Kasumi】「Eliminating the cause eliminates the effects...\p...\p」\e
+
+//<0000083e> 【武】「…\p…\pそれはもう…\p…\pどうやっても無理なのか…\p…\p？！」\e
+<0000083e> 【Takeru】「...\p...\pthere really is...\p...\pno way for you to stop it...\p...\p!?」\e
+
+//<0000083f> 【霞】「はい…\p…\p」\e
+<0000083f> 【Kasumi】「None...\p...\p」\e
+
+//<00000840> 【武】「…\p…\p…\p…\pッ…\p…\p」\e
+<00000840> 【Takeru】「...\p...\p...\p...\p! ...\p...\p」\e
+
+//<00000841> 【霞】「純夏さんや皆さんが、\pあなたにそう望んでいたように…\p…\p」\e
+<00000841> 【Kasumi】「Just like you wanted Sumika-san and the others to do...\p...\p」\e
+
+//<00000842> 【武】「…\p…\p…\p…\p」\e
+<00000842> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000843> 【霞】「平和な世界で、\p幸せに暮らしてください」\e
+<00000843> 【Kasumi】「Please have a happy life in a peaceful world.」\e
+
+//<00000844> 【武】「…\p…\p…\p…\p」\e
+<00000844> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000845> 【霞】「純夏さんを安心させてあげて下さい…\p…\p」\e
+<00000845> 【Kasumi】「Please make Sumika-san feel at ease...\p...\p」\e
+
+//<00000846> 【武】「…\p…\p…\p…\p」\e
+<00000846> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000847> 【霞】「…\p…\p…\p…\p」\e
+<00000847> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00000848> 【武】「…\p…\pわかった」\e
+<00000848> 【Takeru】「...\p...\pokay.」\e
+
+//<00000849> 【霞】「純夏さんは…\p…\p最後まで、\pあなたに感謝していましたよ」\e
+<00000849> 【Kasumi】「Sumika-san...\p...\pwas grateful to you right up until the last moment.」\e
+
+//<0000084a> 【武】「…\p…\pえ…\p…\p？」\e
+<0000084a> 【Takeru】「...\p...\peh...\p...\p?」\e
+
+//<0000084b> 【霞】「目を瞑って…\p…\p」\e
+<0000084b> 【Kasumi】「Close your eyes...\p...\p」\e
+
+//<0000084c> 【武】「え…\p…\p…\p…\p」\e
+<0000084c> 【Takeru】「Eh...\p...\p...\p...\p?」\e
+
+//<0000084f> 【霞】「――わたしを守ってくれて…\p…\p面倒を見てくれて…\p…\pありがとう」\e
+<0000084f> 【Kasumi】「――Thank you...\p...\pfor protecting me...\p...\pand for looking after me.」\e
+
+//<00000851> 【霞】「こんなわたしを…\p…\p全部受け止めてくれて…\p…\pありがとう」\e
+<00000851> 【Kasumi】「Thank you...\p...\pfor accepting everything...\p...\pabout me.」\e
+
+//<00000853> 【霞】「たった３日…\p…\pそれもほんの数時間だったけど…\p…\p彼女にしてくれてありがとう」\e
+<00000853> 【Kasumi】「Thank you for making me your girlfriend...\p...\peven for just a few hours...\p...\pof only three days.」\e
+
+//<00000996> 【霞】「タケルちゃんにもらった、\pうさぎさんのおかげで…\p…\p最後、\pがんばれたよ」\e
+<00000996> 【Kasumi】「I was able to fight hard until the end...\p...\pbecause of the Santa rabbit you gave me, Takeru-chan.」\e
+
+//<00000857> 【霞】「いっぱい…\p…\pいっぱい…\p…\pありがとね…\p…\p」\e
+<00000857> 【Kasumi】「Thank you...\p...\pso much...\p...\pso so much...\p...\p」\e
+
+//<00000859> 【霞】「思い出を…\p…\pありがとう」\e
+<00000859> 【Kasumi】「And thank you...\p...\pfor these memories.」\e
+
+//<00000860> 【武】「…\p…\p…\p…\pすみ…\p…\pか…\p…\p」\e
+<00000860> 【Takeru】「...\p...\p...\p...\pSumi...\p...\pka...\p...\p」\e
+
+//<00000863> 【純夏】「自分で決めたことだから…\p…\p」\e
+<00000863> 【Sumika】「I've decided to do this...\p...\p」\e//CP_S MLA_0067
+
+//<00000865> 【純夏】「自分のためにやることだから…\p…\pね…\p…\p」\e
+<00000865> 【Sumika】「It's something I need to do for my own sake...\p...\pafter all...\p...\p」\e
+
+//<00000867> 【純夏】「だから…\p…\pわたしは…\p…\p自分がやるべき事をやるんだよ」\e
+<00000867> 【Sumika】「Which is why...\p...\pI'll do...\p...\pwhat I have to do.」\e//CP_E
+
+//<00000869> あれは…\p…\pこういう事だったんだな…\p…\p…\p…\p。\e
+<00000869> So that's...\p...\pwhat she meant...\p...\p...\p...\p\e
+
+//<0000086a> 本当に…\p…\pごめんな…\p…\p。\e
+<0000086a> I'm so...\p...\psorry...\p...\p\e
+
+//<0000086b> オレ…\p…\pおまえに…\p…\pまともなこと何もしてやれなかった…\p…\p。\e
+<0000086b> I couldn't...\p...\pdo anything...\p...\pto help you...\p...\p\e
+
+//<0000086c> おまえの苦しみや悲しみを…\p…\p…\p…\p全然わかってやれなかった…\p…\p。\e
+<0000086c> I didn't understand...\p...\p...\p...\pyour pain or sadness at all...\p...\p\e
+
+//<0000086e> なのにおまえは…\p…\p強がって…\p…\p。\e
+<0000086e> And yet...\p...\pyou acted so strong...\p...\p\e
+
+//<0000086f> オレに気を遣って…\p…\pあんな事言って…\p…\p\e
+<0000086f> And said those things...\p...\pto keep me from worrying...\p...\p\e
+
+//<00000872> 【純夏】「…\p…\pいいんだよ」\e
+<00000872> 【Sumika】「...\p...\pit's okay.」\e//CP_S
+
+//<00000873> 【武】「純…\p…\p夏…\p…\p…\p…\p」\e
+<00000873> 【Takeru】「Sumi...\p...\pka...\p...\p...\p...\p」\e
+
+//<00000875> 【純夏】「…\p…\pタケルちゃんが悲しむ必要…\p…\pないんだよ…\p…\p」\e
+<00000875> 【Sumika】「...\p...\pthere's no need for you to feel sad...\p...\pTakeru-chan...\p...\p」\e
+
+//<00000876> 【武】「…\p…\p…\p…\p」\e
+<00000876> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000878> 【純夏】「仕方のない事なんだよ…\p…\p」\e
+<00000878> 【Sumika】「You can't do anything about it...\p...\p」\e
+
+//<00000879> 【武】「…\p…\p…\p…\pわかってる」\e
+<00000879> 【Takeru】「...\p...\p...\p...\pI know that.」\e
+
+//<0000087b> 【純夏】「…\p…\pごめん…\p…\pね…\p…\p」\e
+<0000087b> 【Sumika】「...\p...\pI'm...\p...\psorry...\p...\p」\e
+
+//<0000087d> 【武】「…\p…\p」\e
+<0000087d> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000087f> 【純夏】「…\p…\pタケルちゃん…\p…\pごめんね…\p…\p」\e
+<0000087f> 【Sumika】「...\p...\psorry...\p...\pTakeru-chan...\p...\p」\e
+
+//<00000880> 【武】「…\p…\pバカ…\p…\p何でおまえが謝るんだよ…\p…\p」\e
+<00000880> 【Takeru】「...\p...\pidiot...\p...\pwhy are you apologizing...\p...\p」\e
+
+//<00000882> 【純夏】「…\p…\pぅ…\p…\pうぅ…\p…\p」\e
+<00000882> 【Sumika】「...\p...\pu...\p...\puuu...\p...\p」\e
+
+//<00000884> 【武】「純夏…\p…\p」\e
+<00000884> 【Takeru】「Sumika...\p...\p」\e//CP_E
+
+//<00000888> こっちこそ…\p…\pおまえに、\pいっぱいいっぱい感謝しなきゃならねえよ…\p…\p。\e
+<00000888> I'm the one...\p...\pwho should be thanking you for everything...\p...\p\e
+
+//<00000889> 本当に…\p…\pありがとうな…\p…\p。\e
+<00000889> I mean it...\p...\pthank you...\p...\p\e
+
+//<0000088a> おまえは自分が悪いって思ってるかも知れないけど…\p…\p。\e
+<0000088a> You might think you were at fault for causing it...\p...\p\e
+
+//<0000088b> オレは『この世界』に来て…\p…\p良かったと思ってる…\p…\p。\e
+<0000088b> But I'm glad...\p...\pI came to this world...\p...\p\e
+
+//<0000088c> それに、\pおまえがいなかったら…\p…\pもしかしたら人類は負けていたかも知れないんだ。\e
+<0000088c> Besides, if you weren't here...\p...\phumanity might have lost.\e
+
+//<0000088d> 【武】「…\p…\p…\p…\p」\e
+<0000088d> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000088e> オレは…\p…\pおまえを…\p…\p誇りに思う…\p…\p。\e
+<0000088e> I'm...\p...\pproud...\p...\pof you...\p...\p\e
+
+//<0000099f> オレは…\p…\p『元の世界』に還るよ…\p…\p。\e
+<0000099f> I'll go back...\p...\pto my world now...\p...\p\e
+
+//<00000891> だからおまえは…\p…\p安心して、\pゆっくり休んでくれ…\p…\p。\e
+<00000891> So...\p...\pget some rest...\p...\p\e
+
+//<000008da> …\p…\p大変だったな…\p…\p疲れたろ…\p…\p？\e
+<000008da> ...\p...\pit was a hard fight...\p...\pyou're tired, right...\p...\p?\e
+
+//<000008db> もう誰も…\p…\pおまえの眠りを邪魔しないから…\p…\p。\e
+<000008db> No one's...\p...\pgoing to disturb your sleep anymore...\p...\p\e
+
+//<000008dc> 本当にありがとう…\p…\p。\e
+<000008dc> Thank you so much...\p...\p\e
+
+//<000008dd> …\p…\pさようなら…\p…\p純夏…\p…\p。\e
+<000008dd> ...\p...\pgoodbye...\p...\pSumika...\p...\p\e
+
+//<00000894> 【霞】「…\p…\p純夏さん…\p…\pとても喜んでますよ」\e
+<00000894> 【Kasumi】「...\p...\pSumika-san's...\p...\pvery happy.」\e
+
+//<00000895> 【武】「そうか…\p…\p」\e
+<00000895> 【Takeru】「I see...\p...\p」\e
+
+//<00000896> 【霞】「…\p…\p最後まで…\p…\pあなたの傍にいられたんですから」\e
+<00000896> 【Kasumi】「...\p...\pbecause...\p...\pshe was with you until the very end.」\e
+
+//<00000897> 【武】「…\p…\p…\p…\p」\e
+<00000897> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000898> 【霞】「…\p…\p最後に…\p…\pあなたにこうして語りかけてもらったんですから」\e
+<00000898> 【Kasumi】「...\p...\pand you spoke to her...\p...\pin her final moments.」\e
+
+//<00000899> 【武】「おまえは…\p…\p本当に純夏のことがよくわかるんだな…\p…\p」\e
+<00000899> 【Takeru】「You...\p...\preally do know everything about Sumika...\p...\p」\e
+
+//<0000089a> 【霞】「…\p…\pはい」\e
+<0000089a> 【Kasumi】「...\p...\pyes.」\e
+
+//<0000089b> 【武】「それに…\p…\pおまえ、\p変わったな」\e
+<0000089b> 【Takeru】「And...\p...\pyou've changed.」\e
+
+//<0000089c> 【霞】「…\p…\p…\p…\p」\e
+<0000089c> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000089d> 【武】「なんか…\p…\p頼もしくなったっていうか…\p…\p」\e
+<0000089d> 【Takeru】「You seem...\p...\pmore dependable now...\p...\p」\e
+
+//<0000089e> 【霞】「…\p…\p…\p…\p純夏さんのおかげです」\e
+<0000089e> 【Kasumi】「...\p...\p...\p...\pthanks to Sumika-san.」\e
+
+//<0000089f> 【武】「…\p…\pえ…\p…\p…\p…\p？」\e
+<0000089f> 【Takeru】「...\p...\peh...\p...\p...\p...\p?」\e
+
+//<000008a0> 【霞】「純夏さんが…\p…\p私に、\p思い出を残してくれたんです…\p…\p」\e
+<000008a0> 【Kasumi】「Sumika-san...\p...\pleft me so many memories...\p...\p」\e
+
+//<000008a1> 【武】「思い出…\p…\p」\e
+<000008a1> 【Takeru】「Memories...\p...\p」\e
+
+//<000008a2> 【霞】「喧嘩したことも…\p…\p仲直りしたことも…\p…\p楽しいことも悲しいことも…\p…\p」\e
+<000008a2> 【Kasumi】「Of fighting...\p...\pand making up...\p...\pbeing happy and being sad...\p...\p」\e//lit. "fighting things and making up things and fun things and sad things" notice the alternate def in Japanese but not in English
+
+//<000008a3> 【霞】「全部忘れません…\p…\p」\e
+<000008a3> 【Kasumi】「I'll never forget them...\p...\p」\e
+
+//<000008a4> 【武】「霞…\p…\p…\p…\p」\e
+<000008a4> 【Takeru】「Kasumi...\p...\p...\p...\p」\e
+
+//<000008a5> 【霞】「それが思い出になって残っていますから…\p…\p」\e
+<000008a5> 【Kasumi】「Those will remain as memories of mine...\p...\p」\e
+
+//<000008a6> 【武】「そう…\p…\pか…\p…\p」\e
+<000008a6> 【Takeru】「I...\p...\psee...\p...\p」\e
+
+//<000008a8> 【霞】「そして…\p…\p私がリーディングで集めた、\p純夏さんの思い出…\p…\p」\e
+<000008a8> 【Kasumi】「And...\p...\pthe memories of Sumika-san I gathered through readings...\p...\p」\e
+
+//<000008a9> 【霞】「純夏さんが残した、\pあなたへの想い…\p…\p」\e
+<000008a9> 【Kasumi】「The feelings Sumika-san felt for you...\p...\p」\e
+
+//<000008aa> 【霞】「大切なものが…\p…\p沢山…\p…\p息づいています」\e
+<000008aa> 【Kasumi】「They've given me...\p...\pso many...\p...\pprecious things.」\e//something about precious things breathing? having life put into them? not getting it ~IX
+
+//<000008ac> 【武】「…\p…\pそ…\p…\pか…\p…\p」\e
+<000008ac> 【Takeru】「...\p...\pI...\p...\psee...\p...\p」\e
+
+//<000008ad> 【霞】「それは確かに私の思い出ではありません…\p…\p」\e
+<000008ad> 【Kasumi】「They definitely aren't my memories...\p...\p」\e
+
+//<000008ae> 【霞】「でも…\p…\p私にとっては宝物です」\e
+<000008ae> 【Kasumi】「But...\p...\pthey're my treasure.」\e
+
+//<000008af> 【武】「…\p…\pう…\p…\pん…\p…\p」\e
+<000008af> 【Takeru】「...\p...\pyeah...\p...\p...\p...\p」\e
+
+//<000008b0> 【霞】「純夏さんから預かった、\p大切な宝物なんです」\e
+<000008b0> 【Kasumi】「They're all treasures Sumika-san gave to me.」\e
+
+//<000008b1> 【霞】「純夏さんは私の中に生きています」\e
+<000008b1> 【Kasumi】「Sumika-san lives on through me.」\e
+
+//<000008b2> 【武】「…\p…\pあ…\pぁ…\p…\p」\e
+<000008b2> 【Takeru】「...\p...\pye...\p...\pah...\p...\p」\e
+
+//<000008b3> 【霞】「…\p…\pだから…\p…\p安心して…\p…\p戻って下さい」\e
+<000008b3> 【Kasumi】「...\p...\pso...\p...\pplease go back...\p...\pwithout worrying about her.」\e
+
+//<000008b4> 【武】「…\p…\pあ…\pぁ…\p…\p」\e
+<000008b4> 【Takeru】「...\p...\po...\p...\pkay...\p...\p」\e
+
+//<000008b6> 【霞】「…\p…\p…\p…\p」\e
+<000008b6> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000008b7> 【武】「…\p…\pな…\pぁ…\p…\p霞…\p…\p」\e
+<000008b7> 【Takeru】「...\p...\phey...\p...\pKasumi...\p...\p」\e
+
+//<000008b8> 【霞】「はい」\e
+<000008b8> 【Kasumi】「Yes?」\e
+
+//<000008df> 【武】「…\p…\pハッチのロック…\p…\pかけてくれ…\p…\p」\e
+<000008df> 【Takeru】「...\p...\pplease...\p...\plock the hatch...\p...\p」\e
+
+//<000008e0> 【霞】「…\p…\p…\p…\p」\e
+<000008e0> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000008b9> 【武】「…\p…\pごめん…\p…\p５分だけ…\p…\p」\e
+<000008b9> 【Takeru】「...\p...\psorry...\p...\pjust for five minutes...\p...\p」\e
+
+//<000008ba> 【霞】「…\p…\p…\p…\p」\e
+<000008ba> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000008bb> 【武】「…\p…\p５分だけ…\p…\p泣いていいか…\p…\p？」\e
+<000008bb> 【Takeru】「...\p...\pcan I cry...\p...\pfor just five minutes...\p...\p?」\e
+
+//<000008bc> 【霞】「…\p…\p白銀…\p…\pさん…\p…\p」\e
+<000008bc> 【Kasumi】「...\p...\pShirogane...\p...\psan...\p...\p」\e
+
+//<000008e2> 【武】「…\p…\pそうしたら…\p…\pちゃんと…\p…\p」\e
+<000008e2> 【Takeru】「...\p...\pafter that...\p...\pI will...\p...\p」\e
+
+//<000008e3> 【武】「…\p…\pちゃんと…\p…\p出迎えてくれている人達の前に…\p…\pでるからさ…\p…\p」\e
+<000008e3> 【Takeru】「...\p...\pI will go out...\p...\pand show myself to everyone...\p...\pwho came out here to thank me...\p...\p」\e
+
+//<000008be> 【霞】「…\p…\p…\p…\p艦橋にいます…\p…\p」\e
+<000008be> 【Kasumi】「...\p...\p...\p...\pI'll be on the bridge...\p...\p」\e
+
+//<000008bf> 【武】「…\p…\pわりい…\p…\pな…\p…\p…\p…\p」\e
+<000008bf> 【Takeru】「...\p...\pthank...\p...\pyou...\p...\p...\p...\p」\e
+
+//<000008c0> 【霞】「…\p…\p…\p…\p」\e
+<000008c0> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000008c2> 【武】「…\p…\p…\p…\p」\e
+<000008c2> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000008c5> 【武】「…\p…\p…\pッ…\p…\p…\p」\e
+<000008c5> 【Takeru】「...\p...\p...\p! ...\p...\p...\p」\e
+
+//<000008c7> 【武】「…\p…\pす…\p…\pみかッ…\p…\p…\p…\p」\e
+<000008c7> 【Takeru】「...\p...\pSu...\p...\pmika! ...\p...\p...\p...\p」\e
+
+//<000008c9> 【武】「…\p…\p純夏…\p…\pッ…\p…\p…\pぅくッ…\p…\p…\p！！」\e
+<000008c9> 【Takeru】「...\p...\pSumika...\p...\p! ...\p...\p...\puuu! ...\p...\p...\p!!」\e
+
+//<000008cc> 【武】「…\p…\pうッ…\p…\p純夏…\p…\pうぅッ…\p…\p…\p純…\p夏ッ…\p…\p…\p！！」\e
+<000008cc> 【Takeru】「...\p...\puu! ...\p...\pSumika...\p...\puuu! ...\p...\p...\pSumi...\pka! ...\p...\p...\p!!」\e
+
+//<000008e5> 【武】「――ぅ純夏あぁぁぁぁぁぁぁぁッッ！！！！！」
+<000008e5> 【Takeru】「――SUMIKAAAAAAAAAAAAAAAAAAA!!!!!」//I gave Meiya all caps so Sumika sure as hell deserves some ~IX//I shouted IRL - kViN//;__; - Sheeta
+
+//<00000e15> \r
+<00000e15> \r
+

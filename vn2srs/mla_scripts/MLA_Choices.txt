@@ -1,0 +1,147 @@
+#FILENAME ffffffff
+#TYPE 0
+
+//<66a01d71> \c1) とにかく香月博士と会わせてくれ！\d\n
+<66a01d71> \c1) Anyway, let me talk to Professor Kouzuki!\d\n
+
+//<d9482080> \c2) いや、やはりおとなしく捕まろう\d\e
+<d9482080> \c2) No, I should just let them capture me\d\e
+
+//<93933c07> \c1) ええいッ！　ままよッ！！\d\n
+<93933c07> \c1) Okaaay! Here goes nothing!!\d\n
+
+//<33bf7383> \c2) いや……でもやめておこう\d\e
+<33bf7383> \c2) No......I really shouldn't\d\e
+
+//<ec85615e> \c1) 寝転がる\d\n
+<ec85615e> \c1) Lie down\d\n
+
+//<bc312d1a> \c2) たま頼む\d\e
+<bc312d1a> \c2) Switch with Tama\d\e
+
+//<5b325eb2> \c1) 聞く必要はまったくないことになった\d\n
+<5b325eb2> \c1) I no longer have any reason to ask\d\n
+
+//<bd0412a2> \c2) ならぜひ教えてくれ\d\e
+<bd0412a2> \c2) Then tell me\d\e
+
+//<4b647051> \c1) 今回は見送る\d\n
+<4b647051> \c1) Let it go this time\d\n
+
+//<f5763d75> \c2) でもダメだ！！\d\e
+<f5763d75> \c2) I can't do that!!\d\e
+
+//<f9e7a7aa> \c1) ロープを回収する\d\n
+<f9e7a7aa> \c1) Retrieve the rope\d\n
+
+//<38e96e99> \c2) ライフルを温存する\d\n
+<38e96e99> \c2) Save the rifle round\d\n
+
+//<5139b053> \c3) 増水がおさまるのを待つ\d\e
+<5139b053> \c3) Wait for the flood to end\d\e
+
+//<82258a81> \c1) 委員長、おまえが餌食だ！！\d\n
+<82258a81> \c1) Class Rep, you're my prey!!\d\n
+
+//<c6e90901> \c2) 数奇な運命を呪うがいい冥夜っ！\d\n
+<c6e90901> \c2) You shall rue your misfortune, Meiya!\d\n //I am proud of this one ~IX
+
+//<5b84f825> \c3) 彩峰、その顔を驚きに変えてやる！\d\n
+<5b84f825> \c3) Ayamine, your expression will soon be one of horror!\d\n
+
+//<82141bdc> \c4) 悪いな、たまっ！\d\n
+<82141bdc> \c4) Sorry about this, Tama!\d\n
+
+//<f88e4cfd> \c5) お約束だよな、美琴？\d\e
+<f88e4cfd> \c5) You know I've gotta do this, right Mikoto?\d\e
+
+//<be6fff30> \c1) 委員長が心配\d\n
+<be6fff30> \c1) I'm worried about Class Rep\d\n
+
+//<b72f5013> \c2) 冥夜は何を考えてるだろうか？\d\n
+<b72f5013> \c2) I wonder what Meiya's thinking\d\n
+
+//<1d00f1fe> \c3) 彩峰には会っておかないと……\d\n
+<1d00f1fe> \c3) I should go see Ayamine......\d\n
+
+//<5b33fdca> \c4) たまはどこだ……？\d\n
+<5b33fdca> \c4) Where's Tama......?\d\n
+
+//<3454b32b> \c5) 美琴と話してみるか……\d\e
+<3454b32b> \c5) Maybe I should talk to Mikoto......\d\e
+
+//<05937036> \c1) 賛成\d\n
+<05937036> \c1) I agree with it\d\n
+
+//<cd2ec9f9> \c2) わからない\d\e
+<cd2ec9f9> \c2) I'm not sure\d\e
+
+//<571f430d> \c1) はい、気になります\d\n
+<571f430d> \c1) Yes, I wanna know\d\n
+
+//<a24e083e> \c2) いえ、小難しい話はちょっと\d\e
+<a24e083e> \c2) No thanks, that sounds complicated......\d\e
+
+//<6d6d2ffc> \c1) 冥夜と……\d\n
+<6d6d2ffc> \c1) Meiya......\d\n
+
+//<1138c4b2> \c2) 委員長と……\d\n
+<1138c4b2> \c2) Class Rep......\d\n
+
+//<1fb6e7dd> \c3) たまと……\d\n
+<1fb6e7dd> \c3) Tama......\d\n
+
+//<6c61bd1d> \c4) 彩峰と……\d\n
+<6c61bd1d> \c4) Ayamine......\d\n
+
+//<569264ff> \c5) 美琴と……\d\e
+<569264ff> \c5) Mikoto......\d\e
+
+//<52d0278f> \c1) まずは冥夜だ……\d\n
+<52d0278f> \c1) Start with Meiya......\d\n
+
+//<5b421801> \c2) まずは委員長だ……\d\n
+<5b421801> \c2) Start with Class Rep......\d\n
+
+//<58d4f439> \c3) まずは彩峰だ……\d\n
+<58d4f439> \c3) Start with Ayamine......\d\n
+
+//<41b34d29> \c4) まずはたまだ……\d\n
+<41b34d29> \c4) Start with Tama......\d\n
+
+//<5b91737f> \c5) まずは尊人だ……\d\e
+<5b91737f> \c5) Start with Mikoto......\d\e
+
+//<7b43ed21> \c1) 突き放す\d\n
+<7b43ed21> \c1) Push her away\d\n
+
+//<6d45e374> \c2) 話をする\d\e
+<6d45e374> \c2) Talk to her\d\e
+
+//<cc0b2add> \c1) 憶えている\d\n
+<cc0b2add> \c1) I remember\d\n
+
+//<a952a137> \c2) 思い出す\d\e
+<a952a137> \c2) I kinda remember......\d\e
+
+//<fa6a2385> \c1) 違う\d\n
+<fa6a2385> \c1) That's not it\d\n
+
+//<e482949f> \c1) もちろん攻撃的布陣だ\d\n
+<e482949f> \c1) An offensive formation of course\d\n
+
+//<73e95130> \c2) 手堅く防御的布陣\d\n
+<73e95130> \c2) A tough defensive formation\d\n
+
+//<7dd74259> \c3) 攻防一体の戦術だ\d\n
+<7dd74259> \c3) Both defensive and offensive tactics\d\n
+
+//<bf929c75> \c4) そんなの考えても意味ない\d\e
+<bf929c75> \c4) There's no point in thinking about that\d\e
+
+//<72349bf5> \c1) 燃料を回収する\d\n
+<72349bf5> \c1) Retrieve the fuel\d\n
+
+//<04a0b94e> \c2) 燃料を回収しない\d\e
+<04a0b94e> \c2) Don't retrieve it\d\e
+

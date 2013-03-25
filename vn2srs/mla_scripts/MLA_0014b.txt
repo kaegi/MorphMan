@@ -1,0 +1,100 @@
+// Title: 島をゆく 総合戦闘技術評価演習 5日目
+#FILENAME 2377ce3c
+#TYPE 1
+
+//<00000ce0> 【武】「…\p…\p…\p…\p」\e
+<00000ce0> 【Takeru】「...\p...\p...\p...\p」\e//BCP_S MLU_0014
+
+//<00000ce1> 【壬姫】「あははははっ、\pえいっ！　えいっ！」\e
+<00000ce1> 【Miki】「Ahahahaha!\p Eei!\p Eeei!」\e
+
+//<00000ce2> 【慧】「…\p…\p…\p…\pえいっ、\pおかえし」\e
+<00000ce2> 【Kei】「...\p...\pei! Take that.」\e
+
+//<00000ce3> 【壬姫】「御剣さんもえいっ！　えいっ！」\e
+<00000ce3> 【Miki】「You too Mitsurugi-san!\p Eei!\p\p Eeei!」\e
+
+//<00000ce4> 【冥夜】「む、\pやったな。\nならば、\pこれでどうだ！」\e
+<00000ce4> 【Meiya】「Mm,\p well done.\p Then take this!」\e
+
+//<00000ce5> 【千鶴】「うわっ、\p私にまで！？」\e
+<00000ce5> 【Chizuru】「Uwaaa,\p not me too!」\e
+
+//<00000ce6> 【壬姫】「鎧衣さんもくらえっ！　えいっ！」\e
+<00000ce6> 【Miki】「Take that, Yoroi-san!\p Eei!」\e
+
+//<00000ce7> 【美琴】「きゃっ、\pつめたいよ～」\e
+<00000ce7> 【Mikoto】「Kya!\p It's cooold!」\e
+
+//<00000ce8> 霞にお土産持っていかないとな…\p…\p。\e
+<00000ce8> Gotta find something to bring back for Kasumi...\p...\p\e
+
+//<00000ce9> なにがいいんだろう。\e
+<00000ce9> But what?\e
+
+//<0000000a> 正直、\pどんな物で喜んでくれるのかわからないんだよな、\p女ってのは。\e
+<0000000a> To be honest,\p I have no idea what sort of thing a girl would like.\e
+
+//<00000ceb> 特に霞は変わってるし…\p…\p。\e
+<00000ceb> And Kasumi's especially strange...\p...\p\e
+
+//<00000cec> …\p…\pおっ！\e
+<00000cec> ...\p...\poh!\e
+
+//<00000ced> この貝殻なんかどうだ。\e
+<00000ced> How about this seashell?\e
+
+//<00000cee> 耳に当てると…\p…\p波の音が聞こえ…\p…\pるような気になれる優れもの！\e
+<00000cee> When I put it to my ear...\p...\pI can hear waves...\p...\por at least I think I can, but it's still incredible!\e
+
+//<00000cef> …\p…\p…\p…\pまあ、\p他に何にも出来ないけどな。\e
+<00000cef> ...\p...\p...\p...\pwell,\p not like there's anything else here.\e
+
+//<00000cf0> よし…\p…\pこれに決定！\e
+<00000cf0> Okay...\p...\pthis'll be it!\e//BCP_E
+
+//<00000cf1> 【壬姫】「にゃはははは」\e
+<00000cf1> 【Miki】「Nyahahahaha.」\e
+
+//<00000cf2> 【武】「にしてもよ、\pおまえら…\p…\p…\p…\p」\e
+<00000cf2> 【Takeru】「Still,\p you guys...\p...\p...\p...\p」\e
+
+//<00000cf3> 【壬姫】「どうしたの、\pたけるさん？」\e
+<00000cf3> 【Miki】「What's wrong,\p Takeru-san?」\e
+
+//<00000cf4> 【千鶴】「ひとりで退屈してるみたいだけど？」\e
+<00000cf4> 【Chizuru】「You look bored over there on your own.」\e
+
+//<00000cf5> 【慧】「…\p…\p…\p…\p泳ぐ？」\e
+<00000cf5> 【Kei】「...\p...\pwanna swim?」\e
+
+//<00000cf6> 【冥夜】「折角の時間を無駄にするのはよくないぞ」\e
+<00000cf6> 【Meiya】「It is not good to waste precious time like that.」\e
+
+//<00000cf7> 【美琴】「なんか、\p怒ってる？」\e
+<00000cf7> 【Mikoto】「You seem kinda mad.」\e
+
+//<00000cf8> …\p…\pまた水着忘れてるしな、\pオレは。\e
+<00000cf8> ...\p...\pI forgot to bring my swimsuit...\p...\pagain.\e
+
+//<00000cf9> なんでオレは肝心な物を忘れるのかね…\p…\p。\e
+<00000cf9> Why do I keep forgetting all the important things...\p...\p\e
+
+//<00000cfa> 【武】「はぁ…\p…\p」\e
+<00000cfa> 【Takeru】「Haa...\p...\p」\e
+
+//<00000cfb> 【冥夜】「疲れたような顔をしているな」\e
+<00000cfb> 【Meiya】「You look rather tired.」\e
+
+//<00000cfc> 【壬姫】「よ～し、\pみんなで水をかけちゃおう！」\e
+<00000cfc> 【Miki】「Okay～\p Everyone, splash him all at once!」\e
+
+//<00000cfd> なっ！？\e
+<00000cfd> Wha-!?\e
+
+//<00000cfe> 【武】「おい、\pこら待――」\e
+<00000cfe> 【Takeru】「Hey,\p guys, wait a――」\e
+
+//<00000cff> 【壬姫・美琴】「せ～のっ！」\e
+<00000cff> 【Miki & Mikoto】「One, two!」\e
+

@@ -1,0 +1,1153 @@
+// Title: 島をゆく 総合戦闘技術評価演習 5日目
+#FILENAME 230c2f12
+#TYPE 1
+
+//<00000b4c> 【千鶴】「さ、\pみんな起きて」\e
+<00000b4c> 【Chizuru】「Okay,\p everyone wake up.」\e
+
+//<00000b4d> 【壬姫】「おはようございます…\p…\p」\e
+<00000b4d> 【Miki】「Good morning...\p...\p」\e
+
+//<00000b4e> 【武】「ああ…\p…\p歩哨お疲れ」\e
+<00000b4e> 【Takeru】「Hi...\p...\p」\e//"thanks for patrolling"? couldn't see it working in English ~IX
+
+//<00000b4f> 【千鶴】「さ、\p今日中に任務完了するわよ。\n５分で移動準備して！」\e
+<00000b4f> 【Chizuru】「Now,\p we're going to complete the mission today.\nBe ready to move out in five minutes!」\e
+
+//<00000b50> 【美琴】「りょうかーい」\e
+<00000b50> 【Mikoto】「Understood～」\e
+
+//<00000b51> こんなにボロかったっけ…\p…\pこの橋。\e
+<00000b51> This bridge...\p...\pI forgot just how bad it was.\e
+
+//<0000033e> このまま渡ろうとすれば、\p必ず落ちるな。\nこの高さから落ちたら…\p…\p。\e
+<0000033e> If we tried crossing now we'd definitely fall.\nAnd if we fell at this height...\p...\p\e
+
+//<00000b53> 【千鶴】「これ…\p…\p…\p渡れるのかしら？」\e
+<00000b53> 【Chizuru】「Can we...\p...\pget across this?」\e//CP_S MLU_0015
+
+//<00000b54> 【美琴】「ロープで補修すればなんとかいけると思うよ…\p…\p」\e
+<00000b54> 【Mikoto】「I think it'll be fine if we use a fresh rope to repair it...\p...\p」\e
+
+//<00000b55> 【壬姫】「向こうの橋は、\p鉄橋だね～」\e
+<00000b55> 【Miki】「The bridge on the far side is made of metal.」\e//CP_E
+
+//<0000033f> 【武】「鉄のアーチが見えてるしな…\p…\pきっと、\p強度は雲泥の差だ。\nどうせ渡るなら安全な向こうの橋にしたいが…\p…\p」\e
+<0000033f> 【Takeru】「I can see the arch from here...\p...\p\bno doubt it's far stronger than this one.\nI'd like to cross the safer bridge, but...\p...\p」\e
+
+//<00000340> 【冥夜】「そうなると、\pかなりの遠回りになるな…\p…\p相当時間を失うことになる」\e
+<00000340> 【Meiya】「Doing that would require a significant detour...\p...\p\bwe would lose a lot of time.」\e
+
+//<00000341> 時間の余裕がないワケじゃない。\e
+<00000341> We do have extra time.\e
+
+//<00000342> 安全性と確実性を重視するのであれば、\p鉄橋を渡るべきだ。\e
+<00000342> If we want to be sure all of us make it,\p we should take the long way.\e
+
+//<00000343> でも、\p海岸線は入り組んでいるし、\pジャングルの中には罠が仕掛けられてるだろう。\e
+<00000343> But,\p the cliff here is far from straight,\p and there are probably traps in the jungle.\e
+
+//<00000344> 鉄橋まで行くには、\pかなり時間がかかってしまうに違いない。\e
+<00000344> It's definitely gonna take a while to get to the metal bridge.\e//Displays in japanese - kViN
+
+//<00000345> 時間の節約を優先するなら、\pこのボロ橋を渡るべきなんだが…\p…\p。\e
+<00000345> If we wanna prioritize speed,\p we need to get across the worn-down one right here...\p...\p\e
+
+//<00000346> 【武】「やっぱり時間が惜しい。\nロープで補修した後、\p一気に渡るのが賢明だと思う。\n美琴の言葉を信じよう」\e
+<00000346> 【Takeru】「We really do need to cross it now.\nI think it'd be best if we repaired it and crossed right away.\nLet's trust Mikoto on this one.」\e//BR rope+rifle?
+
+//<00000b61> 【千鶴】「そうね」\e
+<00000b61> 【Chizuru】「You're right.」\e
+
+//<00000b62> 【冥夜】「異存はない」\e
+<00000b62> 【Meiya】「No objections.」\e
+
+//<00000347> 【千鶴】「鎧衣、\p彩峰は橋の補修を、\p他の者は散開して周囲を警戒」\e
+<00000347> 【Chizuru】「Yoroi and Ayamine, repair the bridge.\bEveryone else, keep a look out.」\e
+
+//<00000b64> 【美琴】「了解」\e
+<00000b64> 【Mikoto】「Understood.」\e
+
+//<00000b65> 【慧】「…\p…\p了解」\e
+<00000b65> 【Kei】「...\p...\punderstood.」\e
+
+//<00000b66> …\p…\p相変わらず素早い。\e
+<00000b66> ...\p...\pshe's still so fast.\e
+
+//<00000b67> しかも、\p橋は揺れないと。\e
+<00000b67> And the bridge isn't even shaking.\e
+
+//<00000b68> …\p…\p浮いてんのか？\e
+<00000b68> ...\p...\pis she levitating?\e//"floating" didn't seem clear enough ~IX
+
+//<00000b69> 【冥夜】「しかし、\p砲台を黙らせることが出来たのが幸いだったな」\e
+<00000b69> 【Meiya】「Still,\p I am glad we were able to silence that gun.」\e
+
+//<00000b6a> 【武】「え？」\e
+<00000b6a> 【Takeru】「Eh?」\e
+
+//<00000b6b> 【冥夜】「もしあれが生きていたとしたら、\pおそらく渡りきった途端に砲撃を受けていたに違いない」\e
+<00000b6b> 【Meiya】「If it was still active,\p we would no doubt be fired upon the moment we crossed.」\e
+
+//<00000b6c> 【武】「ああ、\pなるほど」\e
+<00000b6c> 【Takeru】「Oh yeah,\p you're right.」\e
+
+//<00000b6d> 【冥夜】「珠瀬がセンサーを発見しなければ、\pこの後砲台の破壊という難関に立ち向かわねばならぬところであった」\e
+<00000b6d> 【Meiya】「If Tamase had not found that sensor,\p we would still have to find some way of destroying the gun.」\e
+
+//<00000b6e> 【武】「危険な上に…\p…\p砲台までは遠いからな。\nかなりの時間をロスしたろう」\e
+<00000b6e> 【Takeru】「Which would be dangerous...\p...\pand it's pretty far away.\p That'd take a long time.」\e
+
+//<00000b6f> あの谷で増水がおさまるのを待って、\p正解だった…\p…\p。\e
+<00000b6f> It really was right to wait for that water to recede...\p...\p\e
+
+//<00000b70> 【美琴】「隊長ー！　オッケーだよ！」\e
+<00000b70> 【Mikoto】「Squad leader! It's okay now!」\e
+
+//<00000348> 【千鶴】「あなた達はその場で全周警戒を！」\e
+<00000348> 【Chizuru】「You two stay there and keep your eyes peeled!」\e
+
+//<00000b72> 【美琴】「了解！　ただ、\pあんまり期待しないでね。\nのろのろ渡ってたら、\p落ちるよー」\e
+<00000b72> 【Mikoto】「Okay! But be careful!\nIt's still very fragile!」\e
+
+//<00000349> 【千鶴】「鎧衣、\pあんまり大声出さないで！」\e
+<00000349> 【Chizuru】「Yoroi,\p stop shouting!」\e
+
+//<00000b74> 【美琴】「橋の基部、\p腐ってるみたいだからー」\e
+<00000b74> 【Mikoto】「The core of it looks like it's rotting!」\e
+
+//<00000b75> 【壬姫】「聞こえてないみたい」\e
+<00000b75> 【Miki】「I don't think she can hear us.」\e
+
+//<00000b76> 【武】「いや、\pあいつの場合、\p聞こえていても同じかもな」\e
+<00000b76> 【Takeru】「No,\p she'd keep talking even if she could hear.」\e
+
+//<0000034a> 【千鶴】「…\p…\pはあ。\nじゃあ、\p体重の軽い順に渡りましょう。\nまず珠瀬から行って」\e
+<0000034a> 【Chizuru】「...\p...\phaa...\p...\p\nThen let's cross in order of weight.\nWe'll start with Tamase.」\e
+
+//<00000b78> 【壬姫】「はい」\e
+<00000b78> 【Miki】「Okay.」\e
+
+//<0000034b> 【千鶴】「他の者は、\p自分の順番が来るまで警戒を続けて」\e
+<0000034b> 【Chizuru】「Everyone else,\p stay alert until it's your turn.」\e
+
+//<0000034c> 【武】「了解」\e
+<0000034c> 【Takeru】「Understood.」\e
+
+//<00000b7b> 【千鶴】「回収ポイント確保！　散開して全方位警戒！」\e
+<00000b7b> 【Chizuru】「Evac point secured!\bEveryone split up and keep your eyes peeled!」\e
+
+//<00000b7c> 【武】「回収機は！？」\e
+<00000b7c> 【Takeru】「Where's the helicopter!?」\e
+
+//<0000034d> 【美琴】「目視範囲内に機影なし！」\e
+<0000034d> 【Mikoto】「Nothing in visual range!」\e
+
+//<00000b7e> 【まりも】「状況終了！　２０７Ｂ分隊集合！！」\e
+<00000b7e> 【Marimo】「Evaluation complete! Squad 207B, form up!!」\e//lit. "situation over" which refers to the fictional battle scenario
+
+//<00000b7f> 【武】「あ…\pれ…\p…\p？」\e
+<00000b7f> 【Takeru】「Hu...\p...\ph...\p...\p?」\e
+
+//<00000b80> ヘリは？\e
+<00000b80> Where's the chopper?\e
+
+//<00000b81> まりもちゃん、\pどこから…\p…\p？\e
+<00000b81> How did...\p...\pMarimo-chan...\p...\p?\e
+
+//<0000034e> 【まりも】「只今を以て、\p総合戦闘技術評価演習を終了する。\nご苦労だった」\e
+<0000034e> 【Marimo】「This Comprehensive Combat Skill Evaluation is hereby complete.\nYou've all done well.」\e
+
+//<00000b83> …\p…\p…\p…\p終わったな。\n疲れた…\p…\p。\e
+<00000b83> ...\p...\p...\p...\pit's over.\nI'm so tired...\p...\p\e
+
+//<00000b84> 【まりも】「評価訓練の結果を伝える」\e
+<00000b84> 【Marimo】「I will now inform you of the result.」\e
+
+//<00000b85> ――えっ？\e
+<00000b85> ――Eh?\e
+
+//<00000b86> ここに来れば合格じゃないのか？！\e
+<00000b86> We don't pass just by getting here!?\e
+
+//<00000890> 【まりも】「敵施設の破壊とその方法、\p鹵獲物資の有効活用…\p…\p何れも及第点といえる」\e
+<00000890> 【Marimo】「Your methods of destroying enemy facilities,\p\bplus capture and use of their items...\p...\pall get passing marks.」\e//PBCP_S MLA_0012 the tags just keep getting messier, thank god this evaluation is almost over ~IX
+
+//<00000b88> ――よし！\e
+<00000b88> ――Okay!\e
+
+//<00000b89> 【まりも】「最後の難関である砲台を、\p最小の労力と時間で無力化したことは、\p特筆に価する」\e
+<00000b89> 【Marimo】「Also,\p you neutralized the greatest threat in this exercise,\p the gun battery,\p with minimal effort.」\e//PCP
+
+//<00000b8a> ――きたきた！！\e
+<00000b8a> ――Yes, yeees!!\e
+
+//<00000b8b> 【まりも】「しかし…\p…\p」\e
+<00000b8b> 【Marimo】「However...\p...\p」\e
+
+//<00000b8c> ――えっ！？\e
+<00000b8c> ――Eh!?\e
+
+//<00000b8d> 【まりも】「白銀と鎧衣は基地襲撃を日中に行ったな…\p…\pなぜ、\pセオリーである夜明け前を選ばなかった？」\e
+<00000b8d> 【Marimo】「Shirogane and Yoroi, you assaulted your base in broad daylight...\p...\pwhy didn't you do it at dawn?」\e
+
+//<00000b8e> 【美琴】「それは…\p…\p」\e
+<00000b8e> 【Mikoto】「That was...\p...\p」\e
+
+//<00000350> 【武】「退路の確保ができていないジャングルでの夜間行動は危険だからです」\e
+<00000350> 【Takeru】「We felt it would be dangerous to move through the jungle at night without an existing path to follow.」\e
+
+//<00000b90> 【まりも】「…\p…\pふん」\e
+<00000b90> 【Marimo】「...\p...\phmm.」\e
+
+//<00000351> 【まりも】「周囲の地形を日中に確認してから、\p夜間に襲撃することもできたのではないか？」\e
+<00000351> 【Marimo】「Couldn't you have scouted the area during the day then attacked at night?」\e
+
+//<00000b92> しまった…\p…\p\e
+<00000b92> Crap...\p...\p\e
+
+//<00000b93> 焦りすぎたのか…\p…\p！？\e
+<00000b93> Was I rushing too much...\p...\p!?\e
+
+//<00000b94> 【まりも】「敵施設を迂回することもできたな？」\e
+<00000b94> 【Marimo】「You could have skipped the facility entirely.」\e//it's flipping the order around a lot but the lines themselves are still CP ~IX
+
+//<00000b95> 【武】「うッ…\p…\p」\e
+<00000b95> 【Takeru】「Uuu...\p...\p」\e
+
+//<00000b96> 【まりも】「これらの減点は決して小さくないぞ」\e
+<00000b96> 【Marimo】「You lost a lot of points for that.」\e//PCP okay that one wasn't ~IX
+
+//<00000b97> それは…\p…\p人間相手の場合だろう！？\e
+<00000b97> That...\p...\ponly matters against humans!!\e
+
+//<00000b98> オレ達の敵はＢＥＴＡじゃないかッ！！\e
+<00000b98> Aren't our enemies...\p...\pthe BETA...\p...\p!?\e
+
+//<00000b99> 【武】「――まりもちゃん！」\e
+<00000b99> 【Takeru】「――Marimo-chan!」\e
+
+//<00000b9a> 【まりも】「――まりもちゃん…\p…\p？」\e
+<00000b9a> 【Marimo】「――Marimo-chan...\p...\p?」\e
+
+//<00000b9b> ――しまった！　\e
+<00000b9b> ――Craaap!!\e
+
+//<00000b9c> こんな時に…\p…\p\e
+<00000b9c> Of all the times...\p...\p...\p...\e//PCP_S since they broke this one up
+
+//<00000b9d> つい…\p…\p\e
+<00000b9d> For me to slip up...\p...\p\e//PCP_E
+
+//<00000b9e> 【まりも】「まあ…\p…\pいい。\n白銀、\p今日の所は見逃してやろう…\p…\pめでたい日だからな」\e
+<00000b9e> 【Marimo】「Well...\p...\pit doesn't matter.\nShirogane,\p I'll overlook that for today...\p...\psince celebrations are in order.」\e
+
+//<000003f3> 【千鶴・冥夜・壬姫・慧・美琴】「――えっ！！」\e
+<000003f3> 【Chizuru & Meiya & Miki & Kei & Mikoto】「――Eh!?」\e
+
+//<00000ba0> えっ…\p…\p。\e
+<00000ba0> Eh...\p...\p!?\e
+
+//<00000ba1> …\p…\p…\p…\pどういう事だ？\e
+<00000ba1> ...\p...\p...\p...\pwhat do you mean?\e
+
+//<00000ba2> 【まりも】「おめでとう…\p…\p貴様らはこの評価演習をパスした！」\e
+<00000ba2> 【Marimo】「Congratulations...\p...\pyou've all passed the Evaluation!」\e
+
+//<00000ba3> 【千鶴】「…\p…\pえっ…\p…\pでも…\p…\pそれだけの重大なミスを…\p…\p」\e
+<00000ba3> 【Chizuru】「...\p...\peh!? ...\p...\pbut...\p...\pafter all those mistakes...\p...\p」\e
+
+//<00000ba4> 【まりも】「榊、\pこの演習の第一優先目的はなんだ？」\e
+<00000ba4> 【Marimo】「Sakaki,\p what was the number one objective?」\e
+
+//<00000ba5> 【千鶴】「脱出…\p…\pです」\e
+<00000ba5> 【Chizuru】「To...\p...\pescape.」\e
+
+//<00000359> 【まりも】「実戦に於いて、\p計画通り事態が推移することは希だ。\nそれ故、\pタイミングや運といった要素も重要になる」\e
+<00000359> 【Marimo】「It's rare for anything to go according to plan in the real world.\nHence,\p luck and timing become very important.」\e
+
+//<00000ba7> 【まりも】「それら全てを味方に付け、\p結果として目的を達成すれば『それが正しい判断だった』ということになるんだ」\e
+<00000ba7> 【Marimo】「Only with those on your side can you complete your objective and say later that you made the 'right decision.'」\e
+
+//<00000ba8> 【武】「…\p…\p…\p…\p！！」\e
+<00000ba8> 【Takeru】「...\p...\p...\p...\p!!」\e
+
+//<0000035c> 【まりも】「セオリーはセオリーでしかない。\n結果として、\p貴様等を狙える位置に追撃部隊は存在しなかったし、\p砲台のセンサーはひとつだけだった」\e
+<0000035c> 【Marimo】「Theories are just theories.\nIn the end,\p there were no enemy squads pursuing you,\p\band there was only one sensor.」\e
+
+//<0000035d> 【まりも】「そして貴様等は、\p全員脱出に成功した…\p…\p違うか？」\e
+<0000035d> 【Marimo】「And all of you managed to escape...\p...\pam I wrong?」\e
+
+//<00000bab> 【千鶴】「…\p…\pいえ…\p…\p」\e
+<00000bab> 【Chizuru】「...\p...\pno...\p...\p」\e
+
+//<00000bac> 【武】「…\p…\p」\e
+<00000bac> 【Takeru】「...\p...\p...\p...\p」\e//PCP since it was "We did it...\p...\pClass Rep, we did it!!" before
+
+//<00000bad> 【千鶴】「…\p…\p…\p…\p」\e
+<00000bad> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00000bae> 【冥夜】「…\p…\p榊」\e
+<00000bae> 【Meiya】「...\p...\pSakaki.」\e
+
+//<00000baf> 【千鶴】「…\p…\pや、\pや、\pや…\p…\p」\e
+<00000baf> 【Chizuru】「...\p...\pw-\pw-\pwe...\p...\p」\e
+
+//<00000bb0> 【美琴】「これで、\p戦術機だねっ！！」\e
+<00000bb0> 【Mikoto】「Now we can have TSFs!!」\e
+
+//<00000bb1> 【慧】「…\p…\p１歩前進」\e
+<00000bb1> 【Kei】「...\p...\pone step forward.」\e
+
+//<00000bb2> 【武】「ああ…\p…\pその通りだ」\e
+<00000bb2> 【Takeru】「Yeah...\p...\pthat's right.」\e//BCP_E finally
+
+//<00000bb3> なんだよ、\p驚かせやがって…\p…\p。\e
+<00000bb3> Don't scare us like that...\p...\p\e
+
+//<00000bb4> 【美琴】「やったね、\pタケル！」\e
+<00000bb4> 【Mikoto】「We did it,\p Takeru!」\e
+
+//<00000bb5> 【武】「ああ。みんなのおかげだ」\e
+<00000bb5> 【Takeru】「Yeah, thanks to all of you.」\e
+
+//<00000bb6> 【美琴】「そうだね！　みんながいて、\pタケルがいたからだよ！」\e
+<00000bb6> 【Mikoto】「That's right!\bThank you everyone,\p including you, Takeru!」\e
+
+//<00000bb7> 【武】「ああ…\p…\p」\e
+<00000bb7> 【Takeru】「Yeah...\p...\p」\e
+
+//<00000bb8> 【美琴】「…\p…\pどうしたの、\p浮かない顔して？　ただのクリアじゃないよ！？　１日も早いんだよ！？」\e
+<00000bb8> 【Mikoto】「...\p...\psomething wrong?\p You look sad.\bWe just passed the Evaluation! A whole day early too!!」\e
+
+//<00000bb9> 【武】「いや…\p…\p喜んでるよ。\nただ、\pちょっと疲れただけだ」\e
+<00000bb9> 【Takeru】「Sorry...\p...\pI am happy.\nI'm just a little tired.」\e
+
+//<00000bba> …\p…\p手放しで喜べねぇよ。\nこいつは受かって当然なんだ。\e
+<00000bba> ...\p...\pI'm just not as happy as the others.\nOf course we were going to pass.\e
+
+//<00000360> 最低でもあと１日は短縮したかった…\p…\p。\e
+<00000360> I just wanted to do it faster...\p...\pat least by one more day.\e
+
+//<00000bbc> やりようによっては多分…\p…\pできたんだ。\e
+<00000bbc> If I really wanted to...\p...\pI probably could've done it.\e
+
+//<00000bbd> 【壬姫】「ほら、\pたけるさんも、\p笑って笑って！！」\e
+<00000bbd> 【Miki】「Come on,\p Takeru-san,\p smile, smile!!」\e
+
+//<00000bbe> 【武】「…\p…\pああ」\e
+<00000bbe> 【Takeru】「...\p...\pyeah.」\e
+
+//<00000bbf> みんな喜んでるのに水差しても仕方ないな。\e
+<00000bbf> I can't rain on everyone's parade here.\e
+
+//<00000bc0> 最低限、\p超えなきゃいけないハードルは超えたんだ。\e
+<00000bc0> If nothing else,\p we've overcome one of the major hurdles.\e
+
+//<00000bc1> 素直に喜ばねぇと…\p…\p。\e
+<00000bc1> Gotta be happy about this...\p...\p\e
+
+//<00000bc7> 【武】「ここは美琴の言葉を信用して、\pロープで補修した後一気に渡るのが賢明だろう。\n時間が惜しいからな」\e
+<00000bc7> 【Takeru】「I trust Mikoto on this one,\p so I think it'd be best if we repaired it and crossed right away.\nCan't hurt to save time.」\e//BCP_S BR rope but no rifle?
+
+//<00000bc8> 【千鶴】「そうね」\e
+<00000bc8> 【Chizuru】「You're right.」\e
+
+//<00000bc9> 【冥夜】「異存はない」\e
+<00000bc9> 【Meiya】「No objections.」\e
+
+//<00000366> 【千鶴】「鎧衣、\p彩峰は橋の補修を、\p他の者は散開して周囲を警戒」\e
+<00000366> 【Chizuru】「Yoroi and Ayamine, repair the bridge.\bEveryone else, keep a look out.」\e
+
+//<00000bcb> 【美琴】「了解」\e
+<00000bcb> 【Mikoto】「Understood.」\e
+
+//<00000bcc> 【慧】「…\p…\p了解」\e
+<00000bcc> 【Kei】「...\p...\punderstood.」\e
+
+//<00000367> 彩峰め…\p…\p相変わらず素早い。\nしかも、\p橋は揺れない、\pと。\n…\p…\p浮いてんのか？\e
+<00000367> Ayamineee...\p...\p...\p...\pshe's still so fast.\nAnd the bridge isn't even shaking.\n...\p...\pis she levitating?\e//PBCP if only because three lines got squished into one
+
+//<00000bd6> 【美琴】「オッケーだよ！」\e
+<00000bd6> 【Mikoto】「It's okay now!」\e//PBCP_E lotta partials below I'm not marking
+
+//<00000bd7> 【慧】「…\p…\p補修完了」\e
+<00000bd7> 【Kei】「...\p...\prepairs complete.」\e
+
+//<00000bd8> 【美琴】「ただ、\pあんまり期待しないでね。\nのろのろ渡ってたら、\p落ちるよ」\e
+<00000bd8> 【Mikoto】「But be careful.\nIt's still very fragile.」\e
+
+//<00000bd9> 【慧】「…\p…\p橋の基部、\p腐ってるみたいだから」\e
+<00000bd9> 【Kei】「...\p...\pthe core of it looks like it's rotting.」\e
+
+//<00000bda> 【武】「さあ、\pもう少しだ！　一気に行くぞ」\e
+<00000bda> 【Takeru】「Okay,\p we're almost there! Let's finish this!」\e//I assume this is after they crossed and they're talking about disabling the guns now ~IX
+
+//<00000bdb> 【慧】「…\p…\pじゃ、\p行ってくる」\e
+<00000bdb> 【Kei】「...\p...\pbye for now.」\e
+
+//<00000bdc> 【千鶴】「気をつけてよ」\e
+<00000bdc> 【Chizuru】「Be careful.」\e
+
+//<00000bdd> 【慧】「…\p…\p言われるまでも」\e
+<00000bdd> 【Kei】「...\p...\pyou don't need to tell me.」\e
+
+//<00000bde> 【千鶴】「鎧衣は彩峰をバックアップ」\e
+<00000bde> 【Chizuru】「Yoroi, give Ayamine some support.」\e
+
+//<00000bdf> 【美琴】「了解。砲台は黙らせるから、\p安心して待っててよ！」\e
+<00000bdf> 【Mikoto】「Understood. We'll take out that gun battery,\p so wait right here!」\e
+
+//<0000036b> 【千鶴】「先ず私と珠瀬が歩哨に立つわ。\nその間、\p残りの２人は休息を」\e
+<0000036b> 【Chizuru】「Tamase and I will take the first shift.\nYou two can relax for now.」\e
+
+//<00200be1> 【壬姫・冥夜】「了解」\e
+<00200be1> 【Miki & Meiya】「Understood.」\e//Displaying in japanese too. Tasukete Nagatooo - kViN
+
+//<00000be2> 【武】「了解」\e
+<00000be2> 【Takeru】「Understood.」\e
+
+//<000003c9> 砲台を潰すために、\p彩峰と美琴が崖を下りていく…\p…\p。\e
+<000003c9> Ayamine and Mikoto are heading down the cliff to silence those guns...\p...\p\e
+
+//<000003ca> 今のオレならやれると思うけど、\pこの地形だ。\n彩峰と美琴が適任だ。\nあいつ等の身体能力は天性のものだからな。\e
+<000003ca> I could probably do it too,\p but in this terrain,\nthey're better suited for it.\nThey were born to do things like this.\e
+
+//<00000be6> しかし…\p…\p\e
+<00000be6> Still...\p...\p\e
+
+//<00000be7> 【武】「…\p…\p時間がもったいないな」\e
+<00000be7> 【Takeru】「...\p...\pthis is such a waste of time.」\e
+
+//<00000be8> 【冥夜】「仕方あるまい。\nこれしか手段がなかったのだ」\e
+<00000be8> 【Meiya】「It cannot be helped.\nWe have no other means of disabling it.」\e
+
+//<00000be9> 【武】「…\p…\pまあな」\e
+<00000be9> 【Takeru】「...\p...\pguess so.」\e
+
+//<0000036e> 余計な時間を食いすぎた。\n前より１日くらいしか短縮できてない。\e
+<0000036e> This is taking up too much time.\nI've only saved us one day.\e
+
+//<0000036f> 少なくとも、\pもう１日は短縮したかった…\p…\p。\e
+<0000036f> I wanted to save at least one more...\p...\p\e
+
+//<0000089a> 【武】「…\p…\p…\p…\p」\e
+<0000089a> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000089b> クソ…\p…\p。未来を変えるって事は…\p…\p思うほど簡単じゃない。\e
+<0000089b> Dammit...\p...\pchanging the future...\p...\pisn't as easy as I thought.\e
+
+//<0000089c> もっとやり方を考えないと…\p…\p取り返しが付かない事になっちまう…\p…\p！！\e
+<0000089c> If I don't change the way I do things...\p...\pthen something horrible will happen...\p...\p!!\e
+
+//<00000bf0> 【武】「ここは美琴の言葉を信用して、\pロープで補修した後一気に渡るのが賢明だろう。\n時間が惜しいからな」\e
+<00000bf0> 【Takeru】「I trust Mikoto on this one,\p so I think it'd be best if we repaired it and crossed right away.\nCan't hurt to save time.」\e//BCP_S BR another rope/no rifle one?
+
+//<00000bf1> 【千鶴】「そうね」\e
+<00000bf1> 【Chizuru】「You're right.」\e
+
+//<00000bf2> 【冥夜】「異存はない」\e
+<00000bf2> 【Meiya】「No objections.」\e
+
+//<00000373> 【千鶴】「鎧衣、\p彩峰は橋の補修を、\p他の者は散開して周囲を警戒」\e
+<00000373> 【Chizuru】「Yoroi and Ayamine, repair the bridge.\bEveryone else, keep a look out.」\e
+
+//<00000bf4> 【美琴】「了解」\e
+<00000bf4> 【Mikoto】「Understood.」\e
+
+//<00000bf5> 【慧】「…\p…\p了解」\e
+<00000bf5> 【Kei】「...\p...\punderstood.」\e
+
+//<00000374> 彩峰め…\p…\p相変わらず素早い。\nしかも、\p橋は揺れない、\pと。\n…\p…\p浮いてんのか？\e
+<00000374> Ayamineee...\p...\pshe's still so fast.\nAnd the bridge isn't even shaking.\n...\p...\pis she levitating?\e//BCP_E
+
+//<00000bf9> 【武】「砲台は…\p…\p彩峰に潰してもらうんだな」\e
+<00000bf9> 【Takeru】「As for the gun battery...\p...\pwe'll need Ayamine to destroy it.」\e
+
+//<00000376> 【冥夜】「この地形を考慮した場合、\p彩峰か鎧衣のどちらかに任せるべきであろうな」\e
+<00000376> 【Meiya】「Considering the terrain here,\p we should leave it to Ayamine or Yoroi.」\e
+
+//<00000bfb> 谷を渡る時といい…\p…\p肉体的にも精神的にもポテンシャルの高い奴だ。\e
+<00000bfb> Just like when she crossed that ravine...\p...\pthey both have incredible physical and mental potential.\e//weird line is weird ~IX
+
+//<00000bfc> それに…\p…\p特に彩峰は性格的にも単独ミッションに向いている。\e
+<00000bfc> Also...\p...\pAyamine in particular seems well-suited for a solo mission.\e
+
+//<00000bfd> 【美琴】「オッケーだよ！」\e
+<00000bfd> 【Mikoto】「It's okay now!」\e//BCP_S
+
+//<00000bfe> 【慧】「…\p…\p補修完了」\e
+<00000bfe> 【Kei】「...\p...\prepairs complete.」\e
+
+//<00000bff> 【美琴】「ただ、\pあんまり期待しないでね。\nのろのろ渡ってたら、\p落ちるよ」\e
+<00000bff> 【Mikoto】「But be careful.\nIt's still very fragile.」\e
+
+//<00000c00> 【慧】「…\p…\p橋の基部、\p腐ってるみたいだから」\e
+<00000c00> 【Kei】「...\p...\pthe core of it looks like it's rotting.」\e
+
+//<00000c01> 【武】「さあ、\pもう少しだ。\nさっさと渡っちまおう」\e
+<00000c01> 【Takeru】「Okay,\p we're almost there! Let's get across it ASAP!」\e//PBCP
+
+//<00000c02> 【慧】「…\p…\pじゃ、\p行ってくる」\e
+<00000c02> 【Kei】「...\p...\pbye for now.」\e
+
+//<00000c03> 【千鶴】「気をつけてよ」\e
+<00000c03> 【Chizuru】「Be careful.」\e
+
+//<00000c04> 【慧】「…\p…\p言われるまでも」\e
+<00000c04> 【Kei】「...\p...\pyou don't need to tell me.」\e
+
+//<00000c05> 【千鶴】「鎧衣は彩峰をバックアップ」\e
+<00000c05> 【Chizuru】「Yoroi, give Ayamine some support.」\e
+
+//<00000c06> 【美琴】「了解。行ってくるねー」\e
+<00000c06> 【Mikoto】「Understood. Bye now～」\e//PBCP
+
+//<00000379> 【千鶴】「先ず私と珠瀬が歩哨に立つわ。\nその間、\p残りの２人は休息を」\e
+<00000379> 【Chizuru】「Tamase and I will take the first shift.\nYou two can relax for now.」\e
+
+//<000003fe> \r
+<000003fe> \r //what happened here? ~IX
+
+//<00000c08> 【壬姫・冥夜】「了解」\e
+<00000c08> 【Miki & Meiya】「Understood.」\e
+
+//<00000c09> 【武】「了解」\e
+<00000c09> 【Takeru】「Understood.」\e//BCP_E
+
+//<0000037a> システム部をやるか動力ケーブルをカットすれば、\p所詮は無人砲台…\p…\pただの飾りになる。\n作業自体は至って簡単だ。\e
+<0000037a> If she cuts the hydraulic cables or destroys the core,\p it'll just be decoration...\p...\pthere's no one there to fix it, after all.\nThe actual sabotage should be simple.\e
+
+//<0000037b> しかし、\pそれを実行するためには、\p撃たれる危険を冒して砲台に接近しなければならないんだ。\e
+<0000037b> But making it happen requires getting close enough that you risk getting yourself shot in the process.\e
+
+//<00000c0e> 【武】「…\p…\pあいつら、\p大丈夫かな」\e
+<00000c0e> 【Takeru】「...\p...\pI wonder if they'll be okay.」\e
+
+//<00000c0f> 【冥夜】「これ以外に手段がないのだ。\nあの者たちを信じて任せるしかあるまい」\e
+<00000c0f> 【Meiya】「There is no other way.\nWe must simply wait and trust in their safe return.」\e
+
+//<00000c10> 【武】「…\p…\pまあな」\e
+<00000c10> 【Takeru】「...\p...\pguess so.」\e
+
+//<00000c11> そうじゃない。\e
+<00000c11> That's not it.\e
+
+//<00000c12> あいつらが砲台を黙らせるのはわかっている。\e
+<00000c12> I know they'll take it out with no difficulty.\e
+
+//<00000c13> そうじゃないんだ…\p…\p。\e
+<00000c13> That's not it...\p...\p\e
+
+//<0000037e> 余計な時間を食いすぎた。\n前より１日くらいしか短縮できてない。\e
+<0000037e> This is taking up too much time.\nI've only saved us one day.\e//BCP_S
+
+//<0000037f> 少なくとも、\pもう１日は短縮したかった…\p…\p。\e
+<0000037f> I wanted to save at least one more...\p...\p\e
+
+//<000008a7> 【武】「…\p…\p…\p…\p」\e
+<000008a7> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000008a8> クソ…\p…\p。未来を変えるって事は…\p…\p思うほど簡単じゃない。\e
+<000008a8> Dammit...\p...\pchanging the future...\p...\pisn't as easy as I thought.\e
+
+//<000008a9> もっとやり方を考えないと…\p…\p取り返しが付かない事になっちまう…\p…\p！！\e
+<000008a9> If I don't change the way I do things...\p...\pthen something horrible will happen...\p...\p!!\e//BCP_E
+
+//<00000c18> …\p…\p。\e
+<00000c18> ...\p...\p\e
+
+//<00000c19> …\p…\p…\p…\p。\e
+<00000c19> ...\p...\p...\p...\p\e
+
+//<00000c1a> …\p…\pゆさ、\pゆさ。\e
+<00000c1a> ...\p...\p*shake*\p *shake*\e//CP_S MLU_0015 about damn time I got to use this again
+
+//<00000c1b> 【声】「――タケル」\e
+<00000c1b> 【Voice】「――Takeru.」\e//CP_E oh come on!
+
+//<00000c1c> ――――ッ！！\e
+<00000c1c> ――――!!\e
+
+//<00000c1d> やべえ…\p…\p寝ちまった。\e
+<00000c1d> Crap...\p...\pI fell asleep.\e
+
+//<00000c1e> あ…\p…\p戻ってたのか。\e
+<00000c1e> Ah...\p...\pthey're back.\e
+
+//<00000c1f> 歩哨の交代前だから…\p…\p３０分位か！\e
+<00000c1f> It'd only been...\p...\pthirty minutes since we changed shifts!\e
+
+//<00000c20> 【武】「さすが…\p…\p早いな」\e
+<00000c20> 【Takeru】「Wow...\p...\pyou are fast.」\e
+
+//<00000c21> 【慧】「…\p…\pばっちり」\e
+<00000c21> 【Kei】「...\p...\pit went perfectly.」\e
+
+//<00000c22> 【美琴】「前方のトラップも、\pあらかた解除しておいたよ」\e
+<00000c22> 【Mikoto】「I also disabled most of the traps ahead of us.」\e
+
+//<00000c23> 【壬姫】「これで一気に進めるねー」\e
+<00000c23> 【Miki】「Now we can go right to the end～」\e
+
+//<00000c24> 【武】「…\p…\pよし、\p急ごう。\n回収ポイントはもう目の前だ」\e
+<00000c24> 【Takeru】「...\p...\pokay,\p let's hurry.\nThe evac point's right in front of us.」\e
+
+//<00000c25> 【千鶴】「ちょっと待って。\n時間にも余裕あるんだし、\p最後だからこそ慎重に…\p…\p」\e
+<00000c25> 【Chizuru】「Wait a minute.\nWe have extra time,\p and this is the very end,\p so let's be careful not to...\p...\p」\e
+
+//<00000c26> もう、\pここからは何の仕掛けもないんだ！\e
+<00000c26> There aren't any more traps for us!\e
+
+//<00000c27> しかも余裕なんか全然ないんだよ！\e
+<00000c27> And no, we don't have that kind of time!\e
+
+//<00000385> 【武】「――１秒でも早く着いて　回収ポイントの安全確保に時間をかけるべきだ」\e
+<00000385> 【Takeru】「――I'd like to get there as soon as possible, so we can spend time securing it.」\e//weird random space in JP ~IX
+
+//<00000c29> 【壬姫】「なるほどー」\e
+<00000c29> 【Miki】「I see～」\e
+
+//<00000c2a> 【千鶴】「白銀の意見はわかった。\nでも、\p彩峰と鎧衣を少し休ませたいの…\p…\pいいわね？」\e
+<00000c2a> 【Chizuru】「I understand, Shirogane.\nBut I'd like to let Ayamine and Yoroi get some rest...\p...\pokay?」\e
+
+//<00000c2b> うっ…\p…\p\e
+<00000c2b> Uuu...\p...\p\e
+
+//<00000c2c> 【武】「…\p…\p了解。\nオレが歩哨に立つ。\nついでに委員長達も休んでおいてくれ」\e
+<00000c2c> 【Takeru】「...\p...\punderstood.\p I'll keep watch.\nWhile we're at it, you get some sleep too, Class Rep.」\e
+
+//<00000c2d> 【冥夜】「私も行こう」\e
+<00000c2d> 【Meiya】「I will join him.」\e
+
+//<00000c2e> 【千鶴】「お願いね。\n４０分後に移動開始する。\nそれまで各自――」\e
+<00000c2e> 【Chizuru】「Thank you.\nWe'll move out in forty minutes.\nEveryone at ease until then――」\e
+
+//<00000c2f> 【千鶴】「回収ポイント確保！　散開して全方位警戒！」\e
+<00000c2f> 【Chizuru】「Evac point secured!\bEveryone split up and keep your eyes peeled!」\e//BCP_S
+
+//<00000c30> 【武】「――回収機はッ！？」\e
+<00000c30> 【Takeru】「Where's the helicopter!?」\e
+
+//<00000387> 【美琴】「目視範囲内に機影なし！」\e
+<00000387> 【Mikoto】「Nothing in visual range!」\e
+
+//<00000c32> 【まりも】「状況終了！　２０７Ｂ分隊集合！！」\e
+<00000c32> 【Marimo】「Evaluation complete! Squad 207B, form up!!」\e
+
+//<00000c33> 【武】「あ…\pれ…\p…\p？」\e
+<00000c33> 【Takeru】「Hu...\p...\ph...\p...\p?」\e
+
+//<00000c34> ヘリは？\e
+<00000c34> Where's the chopper?\e
+
+//<00000c35> まりもちゃん、\pどこから…\p…\p？\e
+<00000c35> How did...\p...\pMarimo-chan...\p...\p?\e
+
+//<00000388> 【まりも】「只今を以て、\p総合戦闘技術評価演習を終了する。\nご苦労だった」\e
+<00000388> 【Marimo】「This Comprehensive Combat Skill Evaluation is hereby complete.\nYou've all done well.」\e
+
+//<00000c37> …\p…\p…\p…\p終わったな。\n疲れた…\p…\p。\e
+<00000c37> ...\p...\p...\p...\pit's over.\nI'm so tired...\p...\p\e
+
+//<00000c38> 【まりも】「評価訓練の結果を伝える」\e
+<00000c38> 【Marimo】「I will now inform you of the result.」\e
+
+//<00000c39> ――えっ？\e
+<00000c39> ――Eh?\e
+
+//<00000c3a> ここに来れば合格じゃないのか？！\e
+<00000c3a> We don't pass just by getting here!?\e
+
+//<00000892> 【まりも】「敵施設の破壊とその方法、\p鹵獲物資の有効活用…\p…\p何れも及第点といえる」\e
+<00000892> 【Marimo】「Your methods of destroying enemy facilities,\p plus capture and use of their items...\p...\pall get passing marks.」\e
+
+//<00000c3c> ――！\e
+<00000c3c> ――!\e//PBCP
+
+//<00000c3d> 【まりも】「最後の難関である砲台を、\p最小の労力と時間で無力化したことは、\p特筆に価する」\e
+<00000c3d> 【Marimo】「Also,\p you neutralized the greatest threat in this exercise,\p the gun battery,\p with minimal effort.」\e
+
+//<00000c3e> ――よし！\e
+<00000c3e> ――Okay!\e//out of order again...
+
+//<00000c3f> 【まりも】「しかし…\p…\p」\e
+<00000c3f> 【Marimo】「However...\p...\p」\e
+
+//<00000c40> ――えっ！？\e
+<00000c40> ――Eh!?\e
+
+//<00000c41> 【まりも】「白銀と鎧衣は基地襲撃を日中に行ったな…\p…\pなぜ、\pセオリーである夜明け前を選ばなかった？」\e
+<00000c41> 【Marimo】「Shirogane and Yoroi, you assaulted your base in broad daylight...\p...\pwhy didn't you do it at dawn?」\e
+
+//<00000c42> 【美琴】「それは…\p…\p」\e
+<00000c42> 【Mikoto】「That was...\p...\p」\e
+
+//<0000038a> 【武】「退路の確保ができていないジャングルでの夜間行動は危険だからです」\e
+<0000038a> 【Takeru】「We felt it would be dangerous to move through the jungle at night without an existing path to follow.」\e
+
+//<00000c44> 【まりも】「…\p…\pふん」\e
+<00000c44> 【Marimo】「...\p...\phmm.」\e
+
+//<0000038b> 【まりも】「周囲の地形を日中に確認してから、\p夜間に襲撃することもできたのではないか？」\e
+<0000038b> 【Marimo】「Couldn't you have scouted the area during the day then attacked at night?」\e
+
+//<00000c46> しまった…\p…\p\e
+<00000c46> Crap...\p...\p\e
+
+//<00000c47> 焦りすぎたのか…\p…\p！？\e
+<00000c47> Was I rushing too much...\p...\p!?\e
+
+//<00000c48> 【まりも】「敵施設を迂回することもできたな？」\e
+<00000c48> 【Marimo】「You could have skipped the facility entirely.」\e
+
+//<00000c49> 【武】「うッ…\p…\p」\e
+<00000c49> 【Takeru】「Uuu...\p...\p」\e
+
+//<00000c4a> 【まりも】「これらの減点は決して小さくないぞ」\e
+<00000c4a> 【Marimo】「You lost a lot of points for that.」\e
+
+//<00000c4b> それは…\p…\p人間相手の場合だろう！？\e
+<00000c4b> That...\p...\ponly matters against humans!!\e
+
+//<00000c4c> オレ達の敵はＢＥＴＡじゃないかッ！！\e
+<00000c4c> Our enemies...\p...\paren't they the BETA...\p...\p!?\e
+
+//<00000c4d> 【武】「――まりもちゃん！」\e
+<00000c4d> 【Takeru】「――Marimo-chan!」\e
+
+//<00000c4e> 【まりも】「――まりもちゃん…\p…\p？」\e
+<00000c4e> 【Marimo】「――Marimo-chan...\p...\p?」\e
+
+//<00000c4f> ――しまった！　\e
+<00000c4f> ――Craaap!!\e
+
+//<00000c50> こんな時に…\p…\p\e
+<00000c50> Of all the times...\p...\p...\p...\e
+
+//<00000c51> つい…\p…\p\e
+<00000c51> For me to slip up...\p...\p\e
+
+//<00000c52> 【まりも】「まあ…\p…\pいい。\n白銀、\p今日の所は見逃してやろう…\p…\pめでたい日だからな」\e
+<00000c52> 【Marimo】「Well...\p...\pit doesn't matter.\nShirogane,\p I'll overlook that for today...\p...\psince celebrations are in order.」\e
+
+//<00000c53> 【千鶴・冥夜・壬姫・慧・美琴】「――えっ！！」\e
+<00000c53> 【Chizuru & Meiya & Miki & Kei & Mikoto】「――Eh!?」\e
+
+//<00000c54> えっ…\p…\p。\e
+<00000c54> Eh...\p...\p!?\e
+
+//<00000c55> …\p…\p…\p…\pどういう事だ？\e
+<00000c55> ...\p...\p...\p...\pwhat do you mean?\e
+
+//<00000c56> 【まりも】「おめでとう…\p…\p貴様らはこの評価演習をパスした！」\e
+<00000c56> 【Marimo】「Congratulations...\p...\pyou've all passed the Evaluation!」\e
+
+//<00000c57> 【千鶴】「…\p…\pえっ…\p…\pでも…\p…\pそれだけの重大なミスを…\p…\p」\e
+<00000c57> 【Chizuru】「...\p...\peh!? ...\p...\pbut...\p...\pafter all those mistakes...\p...\p」\e
+
+//<00000c58> 【まりも】「榊、\pこの演習の第一優先目的はなんだ？」\e
+<00000c58> 【Marimo】「Sakaki,\p what was the number one objective?」\e
+
+//<00000c59> 【千鶴】「脱出…\p…\pです」\e
+<00000c59> 【Chizuru】「To...\p...\pescape.」\e
+
+//<00000390> 【まりも】「実戦に於いて、\p計画通り事態が推移することは希だ。\nそれ故、\pタイミングや運といった要素も重要になる」\e
+<00000390> 【Marimo】「It's rare for anything to go according to plan in the real world.\nHence,\p luck and timing become very important.」\e
+
+//<00000c5b> 【まりも】「それら全てを味方に付け、\p結果として目的を達成すれば『それが正しい判断だった』ということになるんだ」\e
+<00000c5b> 【Marimo】「Only with those on your side can you complete your objective and say later that you made the 'right decision.'」\e
+
+//<00000c5c> 【武】「…\p…\p…\p…\p！！」\e
+<00000c5c> 【Takeru】「...\p...\p...\p...\p!!」\e
+
+//<00000392> 【まりも】「セオリーはセオリーでしかない。\n結果として、\p貴様等を狙える位置に追撃部隊は存在しなかったし、\p砲台のセンサーはひとつだけだった」\e
+<00000392> 【Marimo】「Theories are just theories.\nIn the end,\p there were no enemy squads pursuing you,\p\band there was only one sensor.」\e
+
+//<00000393> 【まりも】「そして貴様等は、\p全員脱出に成功した…\p…\p違うか？」\e
+<00000393> 【Marimo】「And all of you managed to escape...\p...\pam I wrong?」\e
+
+//<00000c5f> 【千鶴】「…\p…\pいえ…\p…\p」\e
+<00000c5f> 【Chizuru】「...\p...\pno...\p...\p」\e
+
+//<00000c60> 【武】「…\p…\p」\e
+<00000c60> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000c61> 【千鶴】「…\p…\p…\p…\p」\e
+<00000c61> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00000c62> 【冥夜】「…\p…\p榊」\e
+<00000c62> 【Meiya】「...\p...\pSakaki.」\e
+
+//<00000c63> 【千鶴】「…\p…\pや、\pや、\pや…\p…\p」\e
+<00000c63> 【Chizuru】「...\p...\pw-\pw-\pwe...\p...\p」\e
+
+//<00000c64> 【美琴】「これで、\p戦術機だねっ！！」\e
+<00000c64> 【Mikoto】「Now we can have TSFs!!」\e
+
+//<00000c65> 【慧】「…\p…\p１歩前進」\e
+<00000c65> 【Kei】「...\p...\pone step forward.」\e
+
+//<00000c66> 【武】「ああ…\p…\pその通りだ」\e
+<00000c66> 【Takeru】「Yeah...\p...\pthat's right.」\e
+
+//<00000c67> なんだよ、\p驚かせやがって…\p…\p。\e
+<00000c67> Don't scare us like that...\p...\p\e
+
+//<00000c68> 【美琴】「やったね、\pタケル！」\e
+<00000c68> 【Mikoto】「We did it,\p Takeru!」\e
+
+//<00000c69> 【武】「ああ。みんなのおかげだ」\e
+<00000c69> 【Takeru】「Yeah, thanks to all of you.」\e
+
+//<00000c6a> 【美琴】「そうだね！　みんながいて、\pタケルがいたからだよ！」\e
+<00000c6a> 【Mikoto】「That's right!\bThank you everyone,\p including you, Takeru!」\e
+
+//<00000c6b> 【武】「ああ…\p…\p」\e
+<00000c6b> 【Takeru】「Yeah...\p...\p」\e
+
+//<00000c6c> 【美琴】「…\p…\pどうしたの、\p浮かない顔して？　ただのクリアじゃないよ！？　１日も早いんだよ！？」\e
+<00000c6c> 【Mikoto】「...\p...\psomething wrong?\p You look sad.\bWe just passed the Evaluation! A whole day early too!!」\e
+
+//<00000c6d> 【武】「いや…\p…\p喜んでるよ。\nただ、\pちょっと疲れただけだ」\e
+<00000c6d> 【Takeru】「Sorry...\p...\pI am happy.\nI'm just a little tired.」\e
+
+//<00000395> …\p…\p手放しで喜べねぇよ。\nこいつは受かって当然なんだ。\e
+<00000395> ...\p...\pI'm just not as happy as the others.\nOf course we were going to pass.\e
+
+//<00000c6f> あと１日は短縮したかった…\p…\p。\e
+<00000c6f> I just wanted to do it faster...\p...\pat least by one more day.\e
+
+//<00000c70> やりようによっては多分…\p…\pできたんだ。\e
+<00000c70> If I really wanted to...\p...\pI probably could've done it.\e
+
+//<00000c71> 【壬姫】「ほら、\pたけるさんも、\p笑って笑って！！」\e
+<00000c71> 【Miki】「Come on,\p Takeru-san,\p smile, smile!!」\e
+
+//<00000c72> 【武】「…\p…\pああ」\e
+<00000c72> 【Takeru】「...\p...\pyeah.」\e
+
+//<00000c73> みんな喜んでるのに水差しても仕方ないな。\e
+<00000c73> I can't rain on everyone's parade here.\e
+
+//<00000c74> 最低限、\p超えなきゃいけないハードルは超えたんだ。\e
+<00000c74> If nothing else,\p we've overcome one of the major hurdles.\e
+
+//<00000c75> 素直に喜ばねぇと…\p…\p。\e
+<00000c75> Gotta be happy about this...\p...\p\e
+
+//<00000c78> 【武】「橋を補修する手段がない以上、\p海岸を迂回するしかない」\e
+<00000c78> 【Takeru】「Since we have no means of repairing the bridge,\p we're gonna have to follow the cliffs the long way.」\e//BR finally, if you don't have the rope
+
+//<00000c79> 【千鶴】「距離からして、\pかなりの時間のロスね…\p…\p」\e
+<00000c79> 【Chizuru】「Given the distance,\p we'll lose a lot of time...\p...\p」\e
+
+//<00000c7a> 全くだ！　くそっ！！\e
+<00000c7a> Hell yeah we will! Damn it!!\e
+
+//<00000c7b> 【武】「砲台が死んでるだけ、\pマシと思うしかない…\p…\p行くぞ」\e
+<00000c7b> 【Takeru】「At least we can be glad the gun's dead...\p...\plet's go.」\e
+
+//<00000c7c> 【千鶴】「え？」\e
+<00000c7c> 【Chizuru】「Eh?」\e
+
+//<00000c7d> 【武】「時間がないんだ。\n出発するぞ」\e
+<00000c7d> 【Takeru】「There's no time.\nLet's move out.」\e
+
+//<00000c7e> 【冥夜】「まて、\pタケル。\nここに来て焦りは禁物だぞ。\nヘリポートの件もあるからな」\e
+<00000c7e> 【Meiya】「Wait,\p Takeru.\nWe cannot rush things after coming this far.\nWe do not want a repeat of what occurred at the heliport.」\e
+
+//<00000c7f> 【武】「焦ってるワケじゃない。\n何があるかわからないからこそ、\p先を急ぐんだ」\e
+<00000c7f> 【Takeru】「I'm not rushing.\nI just wanna start moving now since we have no idea what might happen.」\e
+
+//<00000c80> 【壬姫】「でもここから２４時間あれば、\p十分に間に合うよ？」\e
+<00000c80> 【Miki】「But twenty four hours is more than enough time to get there.」\e
+
+//<0000039d> ただ合格するだけじゃ駄目なんだ！\e
+<0000039d> Just passing it isn't enough!\e
+
+//<00000c82> ６日目になっちまったら、\p全然意味がねぇんだよ！\e
+<00000c82> If we take six days to do this,\p then nothing's changed!\e
+
+//<00000c83> 今日中だ。なんとしてでも今日中に滑り込まないと…\p…\p！！\e
+<00000c83> Today. We have to finish this today...\p...\p!!\e
+
+//<00000884> 【武】「…\p…\pオレは回収ポイントの安全確保に時間を割くべきだと思う」\e
+<00000884> 【Takeru】「...\p...\pI think we should leave some time for securing the evac point.」\e
+
+//<00000c85> 【美琴】「なるほど…\p…\p」\e
+<00000c85> 【Mikoto】「I see...\p...\p」\e
+
+//<00000c86> 【千鶴】「確かに時間は稼いでおくべきね。\n前進するわよ」\e
+<00000c86> 【Chizuru】「We should certainly set aside time for that.\nLet's move forward.」\e
+
+//<00000c87> 【冥夜・壬姫・慧・美琴】「了解」\e
+<00000c87> 【Meiya & Miki & Kei & Mikoto】「Understood.」\e
+
+//<00000c88> 【武】「了解…\p…\p」\e
+<00000c88> 【Takeru】「Understood...\p...\p」\e
+
+//<000003a2> 余計な時間を食いすぎた。\n前より１日くらいしか短縮できてない。\e
+<000003a2> This is taking up too much time.\nI've only saved us one day.\e//BCP_S
+
+//<000003a3> 少なくとも、\pもう１日は短縮したかった…\p…\p。\e
+<000003a3> I wanted to save at least one more...\p...\p\e
+
+//<000008a2> 【武】「…\p…\p…\p…\p」\e
+<000008a2> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000008a3> クソ…\p…\p。未来を変えるって事は…\p…\p思うほど簡単じゃない。\e
+<000008a3> Dammit...\p...\pchanging the future...\p...\pisn't as easy as I thought.\e
+
+//<000008a4> もっとやり方を考えないと…\p…\p取り返しが付かない事になっちまう…\p…\p！！\e
+<000008a4> If I don't change the way I do things...\p...\pthen something horrible will happen...\p...\p!!\e
+
+//<00000c8d> 【千鶴】「回収ポイント…\p…\p確保！　散開してッ…\p…\p全方位警戒！」\e
+<00000c8d> 【Chizuru】「Evac point...\p...\psecured!\bEveryone, split up! ...\p...\pand keep your eyes peeled!」\e
+
+//<00000c8e> 【武】「――回収機はッ！？」\e
+<00000c8e> 【Takeru】「Where's the helicopter!?」\e
+
+//<00000c8f> 【美琴】「目視…\p範囲内に…\p…\p機影なし！」\e
+<00000c8f> 【Mikoto】「Nothing...\p...\pin...\p...\pvisual range!」\e
+
+//<00000c90> 確か…\p…\pこの辺りのはずだぞ…\p…\p！？\e
+<00000c90> I'm pretty sure...\p...\pit was near here...\p...\p!!\e
+
+//<00000c91> 信号弾だって…\p…\pさっき上げて…\p…\p\e
+<00000c91> And we just...\p...\pthrew out a signal flare...\p...\p\e
+
+//<00000c92> 【慧】「…\p…\p…\p…\p…\p…\p」\e
+<00000c92> 【Kei】「...\p...\p...\p...\p...\p...\p」\e
+
+//<00000c93> 【美琴】「はあ…\p…\pはあ…\p…\pさ、\pさすがに…\p…\pムチャ…\p…\pだよぉ…\p…\pはあ…\p…\p」\e
+<00000c93> 【Mikoto】「Haa...\p...\phaa...\p...\pth-\pthis really is...\p...\poverdoing...\p...\pit...\p...\phaa...\p...\p」\e
+
+//<00000c94> 【千鶴】「回収機がこないなんて…\p…\pおかしいわ…\p…\p」\e
+<00000c94> 【Chizuru】「The helicopter...\p...\pshould be here by now...\p...\p」\e
+
+//<00000c95> 【壬姫】「はあ…\p…\pはあ…\p…\p」\e
+<00000c95> 【Miki】「Haa...\p...\phaa...\p...\p」\e
+
+//<00000c96> 【武】「…\p…\p…\p…\p」\e
+<00000c96> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000c97> なんにもいねぇぞ…\p…\pどこだよッ？\e
+<00000c97> There's nothing here...\p...\pwhere are you!?\e
+
+//<00000c98> ヘリはどこにいる…\p…\p？\e
+<00000c98> Where's the damn chopper...\p...\p!?\e//you may leave obligatory jokes ~IX
+
+//<000003ac> 【まりも】「――状況終了！　２０７Ｂ分隊集合！！」\e
+<000003ac> 【Marimo】「――Evaluation complete! Squad 207B, form up!!」\e//PBCP partial because ――
+
+//<00000c9a> 【武】「――えっ！？」\e
+<00000c9a> 【Takeru】「――Eh!?」\e
+
+//<00000c9b> ヘリは？\e
+<00000c9b> Where's the chopper?\e//BCP_S
+
+//<00000c9c> まりもちゃん、\pどこから…\p…\p？\e
+<00000c9c> How did...\p...\pMarimo-chan...\p...\p?\e
+
+//<000003ad> 【まりも】「只今を以て、\p総合戦闘技術評価演習を終了する。\nご苦労だった」\e
+<000003ad> 【Marimo】「This Comprehensive Combat Skill Evaluation is hereby complete.\nYou've all done well.」\e
+
+//<00000c9e> …\p…\p…\p…\p終わった。\e
+<00000c9e> ...\p...\p...\p...\pit's over.\e//PBCP_S another split line
+
+//<00000c9f> さすがに疲れた…\p…\p。\e
+<00000c9f> I'm so tired...\p...\p\e//PBCP_E
+
+//<00000ca0> 【まりも】「評価訓練の結果を伝える」\e
+<00000ca0> 【Marimo】「I will now inform you of the result.」\e
+
+//<00000ca1> ――えっ？\e
+<00000ca1> ――Eh?\e//BCP_E
+
+//<00000ca2> ちょっと待ってくれ！？\e
+<00000ca2> Wait a minute!!\e
+
+//<00000ca3> ここに来れば合格じゃないのか？！\e
+<00000ca3> We don't pass just by getting here!?\e//BCP_S
+
+//<00000894> 【まりも】「敵施設の破壊とその方法、\p鹵獲物資の有効活用…\p…\p何れも及第点といえる」\e
+<00000894> 【Marimo】「Your methods of destroying enemy facilities,\p plus capture and use of their items...\p...\pall get passing marks.」\e
+
+//<00000ca5> ――！\e
+<00000ca5> ――!\e
+
+//<00000ca6> 【まりも】「加えて、\p砲台のセンサーを発見し、\p最小の労力と時間で無力化したことは、\p特筆に価する」\e
+<00000ca6> 【Marimo】「Also,\p you neutralized the greatest threat in this exercise,\p the gun battery,\p with minimal effort.」\e
+
+//<00000ca7> ――よし！\e
+<00000ca7> ――Okay!\e
+
+//<00000ca8> 【まりも】「しかし…\p…\p」\e
+<00000ca8> 【Marimo】「However...\p...\p」\e
+
+//<00000ca9> ――えっ！？\e
+<00000ca9> ――Eh!?\e
+
+//<00000caa> 【まりも】「白銀と鎧衣は基地襲撃を日中に行ったな…\p…\pなぜ、\pセオリーである夜明け前を選ばなかった？」\e
+<00000caa> 【Marimo】「Shirogane and Yoroi, you assaulted your base in broad daylight...\p...\pwhy didn't you do it at dawn?」\e
+
+//<00000cab> 【美琴】「それは…\p…\p」\e
+<00000cab> 【Mikoto】「That was...\p...\p」\e
+
+//<000003b2> 【武】「退路の確保ができていないジャングルでの夜間行動は危険だからです」\e
+<000003b2> 【Takeru】「We felt it would be dangerous to move through the jungle at night without an existing path to follow.」\e
+
+//<00000cad> 【まりも】「…\p…\pふん」\e
+<00000cad> 【Marimo】「...\p...\phmm.」\e
+
+//<000003b3> 【まりも】「周囲の地形を日中に確認してから、\p夜間に襲撃することもできたのではないか？」\e
+<000003b3> 【Marimo】「Couldn't you have scouted the area during the day then attacked at night?」\e
+
+//<00000caf> しまった…\p…\p\e
+<00000caf> Crap...\p...\p\e
+
+//<00000cb0> 焦りすぎたのか…\p…\p！？\e
+<00000cb0> Was I rushing too much...\p...\p!?\e
+
+//<00000cb1> 【まりも】「敵施設を迂回することもできたな？」\e
+<00000cb1> 【Marimo】「You could have skipped the facility entirely.」\e
+
+//<00000cb2> 【武】「うッ…\p…\p」\e
+<00000cb2> 【Takeru】「Uuu...\p...\p」\e//BCP_E
+
+//<000003b5> 【まりも】「そして、\pロープを回収していないのは大きな減点材料だ。\n追撃部隊に利用される危険があるばかりか、\p敵に道しるべを残していくようなものだ」\e
+<000003b5> 【Marimo】「Also,\p leaving the rope behind counts heavily against you.\p Not only may it be used by the enemy,\p but you may as well have left them a signpost.」\e//CP MLA_0012 (are you confused yet?)
+
+//<00000cb4> 【まりも】「これらの減点は決して小さくないぞ」\e
+<00000cb4> 【Marimo】「You lost a lot of points for that.」\e//BCP_S
+
+//<00000cb5> それは…\p…\p人間相手の場合だろう！？\e
+<00000cb5> That...\p...\ponly matters against humans!!\e
+
+//<00000cb6> オレ達の敵はＢＥＴＡじゃないかッ！！\e
+<00000cb6> Aren't our enemies...\p...\pthe BETA...\p...\p!?\e
+
+//<00000cb7> 【武】「――まりもちゃん！」\e
+<00000cb7> 【Takeru】「――Marimo-chan!」\e
+
+//<00000cb8> 【まりも】「――まりもちゃん…\p…\p？」\e
+<00000cb8> 【Marimo】「――Marimo-chan...\p...\p?」\e
+
+//<00000cb9> ――しまった！　\e
+<00000cb9> ――Craaap!!\e
+
+//<00000cba> こんな時に…\p…\p\e
+<00000cba> Of all the times...\p...\p...\p...\e
+
+//<00000cbb> つい…\p…\p\e
+<00000cbb> For me to slip up...\p...\p\e
+
+//<00000cbc> 【まりも】「まあ…\p…\pいい。\n白銀、\p今日の所は見逃してやろう…\p…\pめでたい日だからな」\e
+<00000cbc> 【Marimo】「Well...\p...\pit doesn't matter.\nShirogane,\p I'll overlook that for today...\p...\psince celebrations are in order.」\e
+
+//<000003f9> 【千鶴・冥夜・壬姫・慧・美琴】「――えっ！！」\e
+<000003f9> 【Chizuru & Meiya & Miki & Kei & Mikoto】「――Eh!?」\e
+
+//<00000cbe> えっ…\p…\p。\e
+<00000cbe> Eh...\p...\p!?\e
+
+//<00000cbf> …\p…\p…\p…\pどういう事だ？\e
+<00000cbf> ...\p...\p...\p...\pwhat do you mean?\e
+
+//<00000cc0> 【まりも】「おめでとう…\p…\p貴様らはこの評価演習をパスした！」\e
+<00000cc0> 【Marimo】「Congratulations...\p...\pyou've all passed the Evaluation!」\e
+
+//<00000cc1> 【千鶴】「…\p…\pえっ…\p…\pでも…\p…\pそれだけの重大なミスを…\p…\p」\e
+<00000cc1> 【Chizuru】「...\p...\peh!? ...\p...\pbut...\p...\pafter all those mistakes...\p...\p」\e
+
+//<00000cc2> 【まりも】「榊、\pこの演習の第一優先目的はなんだ？」\e
+<00000cc2> 【Marimo】「Sakaki,\p what was the number one objective?」\e
+
+//<00000cc3> 【千鶴】「脱出…\p…\pです」\e
+<00000cc3> 【Chizuru】「To...\p...\pescape.」\e
+
+//<000003b9> 【まりも】「実戦に於いて、\p計画通り事態が推移することは希だ。\nそれ故、\pタイミングや運といった要素も重要になる」\e
+<000003b9> 【Marimo】「It's rare for anything to go according to plan in the real world.\nHence,\p luck and timing become very important.」\e
+
+//<00000cc5> 【まりも】「それら全てを味方に付け、\p結果として目的を達成すれば『それが正しい判断だった』ということになるんだ」\e
+<00000cc5> 【Marimo】「Only with those on your side can you complete your objective and say later that you made the 'right decision.'」\e
+
+//<00000cc6> 【武】「…\p…\p…\p…\p！！」\e
+<00000cc6> 【Takeru】「...\p...\p...\p...\p!!」\e
+
+//<000003bb> 【まりも】「セオリーはセオリーでしかない。\n結果として、\p貴様等を狙える位置に追撃部隊は存在しなかったし、\p砲台のセンサーはひとつだけだった」\e
+<000003bb> 【Marimo】「Theories are just theories.\nIn the end,\p there were no enemy squads pursuing you,\p\band there was only one sensor.」\e
+
+//<000003bc> 【まりも】「そして貴様等は、\p全員脱出に成功した…\p…\p違うか？」\e
+<000003bc> 【Marimo】「And all of you managed to escape...\p...\pam I wrong?」\e
+
+//<00000cc9> 【千鶴】「…\p…\pいえ…\p…\p」\e
+<00000cc9> 【Chizuru】「...\p...\pno...\p...\p」\e
+
+//<00000cca> 【武】「…\p…\p」\e
+<00000cca> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000ccb> 【千鶴】「…\p…\p…\p…\p」\e
+<00000ccb> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00000ccc> 【冥夜】「…\p…\p榊」\e
+<00000ccc> 【Meiya】「...\p...\pSakaki.」\e
+
+//<00000ccd> 【千鶴】「…\p…\pや、\pや、\pや…\p…\p」\e
+<00000ccd> 【Chizuru】「...\p...\pw-\pw-\pwe...\p...\p」\e
+
+//<00000cce> 【美琴】「これで、\p戦術機だねっ！！」\e
+<00000cce> 【Mikoto】「Now we can have TSFs!!」\e
+
+//<00000ccf> 【慧】「…\p…\p１歩前進」\e
+<00000ccf> 【Kei】「...\p...\pone step forward.」\e
+
+//<00000cd0> 【武】「ああ…\p…\pその通りだ」\e
+<00000cd0> 【Takeru】「Yeah...\p...\pthat's right.」\e
+
+//<00000cd1> なんだよ、\p驚かせやがって…\p…\p。\e
+<00000cd1> Don't scare us like that...\p...\p\e
+
+//<00000cd2> 【美琴】「やったね、\pタケル！」\e
+<00000cd2> 【Mikoto】「We did it,\p Takeru!」\e
+
+//<00000cd3> 【武】「ああ。みんなのおかげだ」\e
+<00000cd3> 【Takeru】「Yeah, thanks to all of you.」\e
+
+//<00000cd4> 【美琴】「そうだね！　みんながいて、\pタケルがいたからだよ！」\e
+<00000cd4> 【Mikoto】「That's right!\bThank you everyone,\p including you, Takeru!」\e
+
+//<00000cd5> 【武】「ああ…\p…\p」\e
+<00000cd5> 【Takeru】「Yeah...\p...\p」\e
+
+//<00000cd6> 【美琴】「…\p…\pどうしたの、\p浮かない顔して？　ただのクリアじゃないよ！？　１日も早いんだよ！？」\e
+<00000cd6> 【Mikoto】「...\p...\psomething wrong?\p You look sad.\bWe just passed the Evaluation! A whole day early too!!」\e
+
+//<00000cd7> 【武】「いや…\p…\p喜んでるよ。\nただ、\pちょっと疲れただけだ」\e
+<00000cd7> 【Takeru】「Sorry...\p...\pI am happy.\nI'm just a little tired.」\e//BCP_E
+
+//<00000cd8> …\p…\p手放しで喜べるかよ。\n…\p…\pもっと早く受かって当然なんだ。\e
+<00000cd8> ...\p...\phow can I rejoice about this?\n...\p...\pwe should've gotten here sooner.\e
+
+//<00000cd9> なのに…\p…\p下手したらゴールが明日になってたかもしれないところだったんだぞ…\p…\p。\e
+<00000cd9> And yet...\p...\pwe almost took six days just to finish this damn Evaluation...\p...\p\e
+
+//<0000028a> 短縮したって言っても…\p…\pほとんど意味ねぇじゃねぇか…\p…\p。\e
+<0000028a> I know I shortened our time a little,\bbut still...\p...\pit hardly means a thing...\p...\p\e
+
+//<00000cdb> 【武】「…\p…\p…\p…\p」\e
+<00000cdb> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000cdc> …\p…\pはあ。\e
+<00000cdc> ...\p...\phaa...\p...\p\e
+
+//<00000cdd> …\p…\pみんな喜んでるのに水差しても、\p仕方ねぇよなあ。\e
+<00000cdd> ...\p...\pthere's no point in raining on everyone's parade.\e
+
+//<00000cde> 最低限、\p超えなきゃいけないハードルは超えたんだ。\e
+<00000cde> If nothing else,\p we've overcome one of the major hurdles.\e
+
+//<00000cdf> とりあえずは…\p…\p…\p…\p喜ぶか…\p…\p。\e
+<00000cdf> For now...\p...\p...\p...\pI'll try to be happy about that...\p...\p\e
+

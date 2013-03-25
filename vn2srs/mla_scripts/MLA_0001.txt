@@ -1,0 +1,194 @@
+// Title: プロローグ
+#FILENAME 0db0a9ba
+#TYPE 1
+
+//<00003b7e> １９９９年８月９日　横浜ハイヴＦ層
+<00003b7e> August 9th, 1999\nYokohama Hive Level F
+
+//<00003b83> \r
+<00003b83> \r
+
+//<00003b92> \r
+<00003b92> \r
+
+//<00003b93> ――ブラボーリーダーよりＣＰ、\p現在深度１３００ｍ。\n中枢区画に到着した。\nこれより担当区域の探索を開始する
+<00003b93> ――Bravo Leader to Command Post,\p our current depth is 1300 meters. We've arrived at the central area and will now begin our search of the assigned sector.
+
+//<00003b98> \r
+<00003b98> \r
+
+//<00003b9c> ――ＣＰよりブラボーリーダー、\pそちらの映像は酷いノイズだ。\nケーブルが破損したらしい。\n万が一の場合は記録の回収を最優先とする
+<00003b9c> ――Command Post to Bravo Leader,\p your video feed is nothing but static. We believe the wires may have been damaged during your descent.\p If we lose contact, your top priority will be to bring back data.//Okay, removed the last "the" there since that implies they're retrieving some data instead of making it themselves.-Spin
+
+//<00003be7> \r
+<00003be7> \r
+
+//<00003bea> ブラボーリーダー了解
+<00003bea> Bravo Leader, copy that.
+
+//<00003c47> \r
+<00003c47> \r
+
+//<00003c66> すげえ大ホールだ…\p…\p床が…\p…\pそれ自体が光っている！
+<00003c66> This place is huge...\p...\pah...\p...\pthe floor...\p...\pit's shining!//lol, that just *has* to stay. The voice is so damn clear there.-Spin
+
+//<00003c75> \r
+<00003c75> \r
+
+//<00003c77> ブラボーリーダーよりＣＰ、\pＢＥＴＡの反応は皆無だ。\n全センサーで確認
+<00003c77> Bravo Leader to Command Post,\p all sensors report no signs of BETA.
+
+
+//<00003c85> \r
+<00003c85> \r
+
+//<00003c87> ――ＣＰよりブラボーリーダー、\pＧ弾の影響と思われる破壊状況の変化も細大漏らさず記録せよ
+<00003c87> ――Command Post to Bravo Leader,\p make sure you record any damage which might have been caused by the G-Bombs.
+
+//<00003c95> \r
+<00003c95> \r
+
+//<00003c98> ブラボーリーダー了解。\n…\p…\pッたく、\pそんなものわかるかよ…\p…\p専門家じゃあるまいし。
+<00003c98> Bravo Leader, copy that.\n...\p...\pgeez,\p how would I know what that looks like...\p...\pI'm not an expert on this stuff.
+
+//<00003ca7> \r
+<00003ca7> \r
+
+//<00003cd7> だいたいこっちは、\p壊れる前がどんなのか見たこともねェんだぞ
+<00003cd7> Hell, I don't even know what this place looked like before it got bombed.
+
+//<00003d19> \r
+<00003d19> \r
+
+//<00003d27> 中隊全機、\pレコーダー回しっぱなしにしています、\p中尉
+<00003d27> The Company's recording devices are all active,\p First Lieutenant.
+
+//<00003d63> \r
+<00003d63> \r
+
+//<00003d66> よし、\p優秀だ。中隊このまま前進
+<00003d66> Okay,\p good job.\bEveryone, move forward.
+
+//<00003dc5> \r
+<00003dc5> \r
+
+//<00003dd3> ――ＣＰよりブラボーリーダー、\pデルタ中隊が数体の敵と遭遇、\p現在交戦中。\n残敵に警戒せよ
+<00003dd3> ――Command Post to Bravo Leader,\p Delta Company has encountered hostiles,\p and are currently engaged.\nBe on the lookout for stragglers.//Nvm about that, just saw the past tense.-Spin
+
+//<00003e4c> \r
+<00003e4c> \r
+
+//<00003e5a> ブラボーリーダー了解。\n中隊各機警戒を怠る――
+<00003e5a> Bravo Leader, copy that.\nAll units, keep your eyes peeled―― 
+//alt: stay frosty (lol)
+
+//<00003e9c> \r
+<00003e9c> \r
+
+//<00003e9e> ――中尉！
+<00003e9e> ――Lieutenant!
+
+//<00003ea3> \r
+<00003ea3> \r
+
+//<00003ea4> あ、\pどうしたッ！？
+<00003ea4> Ah?\p What is it!?
+
+//<00003ea6> \r
+<00003ea6> \r
+
+//<00003ef4> あれ…\p…\pなんでしょうか？
+<00003ef4> What...\p...\pwhat the hell is that?//matching the the voices a little
+
+//<00003ef6> \r
+<00003ef6> \r
+
+//<00003efc> ――ＣＰよりブラボーリーダー、\p状況を報告せよ
+<00003efc> ――Command Post to Bravo Leader,\p report your status.
+
+//<00003f06> \r
+<00003f06> \r
+
+//<00003f08> こちらブラボーリーダー…\p…\pちょっと…\p…\p待ってくれ。\nホールのど真ん中に…\p…\p何か、\pある
+<00003f08> This is Bravo Leader...\p...\pwait...\p...\pwait what?\nThere's something...\p...\pin the middle of the hall.
+
+//<00003f1c> \r
+<00003f1c> \r
+
+//<00003f1d> あれ…\p…\p柱じゃないですか？
+<00003f1d> That's...\p...\pis that some kind of pillar?
+//Not too sure about this one.-Spin
+
+//<00003f1f> \r
+<00003f1f> \r
+
+//<00003f22> こちらブラボーリーダー。\n何か細い柱のようなものが天井から床まで伸びていて、\pその中央部に透明の部分がある…\p…\p
+<00003f22> This is Bravo Leader.\p There appears to be some kind of column stretching from the floor to the ceiling,\p and...\p...\psomething transparent in the middle...\p...\p//"Of it" sounded a little redundant.-Spin
+
+//<00003f3a> \r
+<00003f3a> \r
+
+//<00003f3b> ――中尉！　見て下さい！　１本だけじゃない…\p…\p凄い数だ！
+<00003f3b> ――Lieutenant! Look! There's...\p...\ptons of them!
+//May as well go all the way for the adaptation.-Spin //I like this adaptation better, less repetitive ~IX
+
+//<00003f3d> \r
+<00003f3d> \r
+
+//<00003f3e> こちらブラボーリーダー。\n今、\p最大望遠で確認する…\p…\p
+<00003f3e> This is Bravo Leader.\nSwitching to full zoom...\p...\p
+
+//<00003f4f> \r
+<00003f4f> \r
+
+//<00003f52> ――ＣＰよりブラボーリーダー、\p状況を報告せよ。\nメンタリティが極度の緊張状態を示している
+<00003f52> ――Command Post to Bravo Leader,\p report your status.\nYour vitals are showing extremely high levels of mental stress.
+
+//<00003f54> \r
+<00003f54> \r
+
+//<00003f56> あ…\p…\pおぁ…\p…\p
+<00003f56> Ah...\p...\poooh...\p...\p
+
+//<00003f58> \r
+<00003f58> \r
+
+//<0000403d> ――ＣＰよりブラボーリーダー、\p状況を報告せよ。\n繰り返す！　状況を報告せよ！
+<0000403d> ――Command Post to Bravo Leader,\p report your status.\nRepeat! Report your status!//use a different line already ~IX
+
+//<00003f74> \r
+<00003f74> \r
+
+//<00003f75> ――くそったれッ！！　何てこったッ！！
+<00003f75> ――Fuck!! What the hell is this!?
+
+//<00003f77> \r
+<00003f77> \r
+
+//<00003f80> ――ＣＰよりブラボーリーダー、\p何があったッ！？　状況を報告せよ！
+<00003f80> ――Command Post to Bravo Leader,\p can you hear me!?\bWhat's going on? Report your status!
+
+//<00003f85> \r
+<00003f85> \r
+
+//<00003f8c> ――人間…\p…\pだ
+<00003f8c> ――Oh no...\p...\pit's human.
+
+//<00003fac> \r
+<00003fac> \r
+
+//<00003fb1> ――ＣＰよりブラボーリーダー、\p生存者か？！　ブラボーリーダーッ！
+<00003fb1> ――Human what? Say again! This is Command Post!\bBravo Leader! You found survivors!?\bBravo Leader! Come in!
+
+//<00004047> \r
+<00004047> \r
+
+//<00003fca> \r
+<00003fca> \r
+
+//<00003fd2> ――人間の…\p…\p脳だッ！！
+<00003fd2> ――They're human...\p...\pbrains!!
+
+//<00003fd4> \r
+<00003fd4> \r
+

@@ -1,0 +1,2337 @@
+#FILENAME 76ec26c8
+#TYPE 3
+
+//<00001ee8> 【冥夜】「――ッ！？」\n
+<00001ee8> 【Miki】「――!!」\n
+
+//<00001ee9> 【壬姫】「――ッ！！」\n
+<00001ee9> 【Mikoto】「――!?」\n
+
+//<00001eea> 【美琴】「――ッ！？」\e
+<00001eea> 【Meiya】「――!?」\e
+
+//<00001eed> 【冥夜】「――榊…\p…\p！」\e
+<00001eed> 【Meiya】「――Sakaki...\p...\p!」\e
+
+//<00001eef> 【冥夜】「――彩峰…\p…\p！」\e
+<00001eef> 【Meiya】「――Ayamine...\p...\p!」\e
+
+//<00001ef2> 【美琴】「…\p…\p成功…\p…\pしたのかな…\p…\p」\e
+<00001ef2> 【Mikoto】「...\p...\pdid they...\p...\pdo it...\p...\p?」\e
+
+//<00001ef4> 【壬姫】「…\p…\p２人は…\p…\p…\p…\p」\e
+<00001ef4> 【Miki】「...\p...\pthey're both...\p...\p...\p...\p」\e
+
+//<00001ef5> 【壬姫】「…\p…\p無事…\p…\pですよね…\p…\p？」\e
+<00001ef5> 【Miki】「...\p...\pokay...\p...\pright...\p...\p?」\e
+
+//<00001ef8> 【冥夜】「――あの者達を信じるほかあるまい…\p…\p！」\e
+<00001ef8> 【Meiya】「――We can only wait and have faith...\p...\p!」\e
+
+//<00001efa> 【壬姫】「…\p…\pはい」\e
+<00001efa> 【Miki】「...\p...\pyes.」\e
+
+//<00001efb> 【美琴】「…\p…\pそうだね」\e
+<00001efb> 【Mikoto】「...\p...\pyou're right.」\e
+
+//<00001eff> 【武】「――！？」\e
+<00001eff> 【Takeru】「――!?」\e
+
+//<00001f00> ――なんだ、\pこの波形…\p…\p！？　爆発パターンか…\p…\p！？\e
+<00001f00> ――What's with this waveform...\p...\p!? Is this an explosion...\p...\p!?\e
+
+//<00001f02> ――いや…\p…\pその後に続いているこの地震波は…\p…\p！？\e
+<00001f02> ――Wait...\p...\pand what's this earthquake following it...\p...\p!?\e//Tsunami check, earthquake check, nukes are already―? - Raide
+
+//<00001f04> 【武】「――霞！？」\e
+<00001f04> 【Takeru】「――Kasumi!?」\e
+
+//<00001f06> 【霞】「――複数の爆発のあとに、\p大規模な崩落が続いているようです…\p…\p！」\e
+<00001f06> 【Kasumi】「――There were multiple explosions,\p followed by a massive cave-in...\p...\p!」\e
+
+//<00001f07> …\p…\pなんだって！？\e
+<00001f07> ...\p...\pwhat the hell!?\e
+
+//<00001f08> 【武】「――たまか美琴の外部映像拾えないか！？」\e
+<00001f08> 【Takeru】「――Can you get an external image from Tama or Mikoto!?」\e
+
+//<00001f09> 【霞】「――画像が来ません。\pデータリンク異常なし――原因は不明です」\e
+<00001f09> 【Kasumi】「――I'm not getting any images.\bI don't know why――The data link's working fine.」\e
+
+//<00001f0a> ――くそッ…\p…\p何だよこんな時にッ！　これも例の壁が原因なのかッ？！\e
+<00001f0a> ――Dammit...\p...\pwhy now!?\bIs that barrier getting in the way somehow!?\e
+
+//<00001f0c> 【武】「――たまッ！　――美琴ッ！」\e
+<00001f0c> 【Takeru】「――Tama! ――Mikoto!」\e
+
+//<00001f0e> ――よし！　通信は生きてるぞっ！！\e
+<00001f0e> ――Yes! The transmitter's still working!!\e
+
+//<00001f0f> 【壬姫】「――たけるさん…\p…\p！」\e
+<00001f0f> 【Miki】「――Takeru-san...\p...\p!」\e
+
+//<00001f11> 【美琴】「――どうしたの？！　――まさか第二隔壁から敵が――？！」\e
+<00001f11> 【Mikoto】「――What's wrong!?\b――Did enemies come through the 2nd ba――!?」\e
+
+//<00001f13> 【武】「――違う！　――今、\p『主広間』で何があった！？\n凄く揺れてんだろ？！」\e
+<00001f13> 【Takeru】「――No!\b――What happened in the Main Hall just now!?\nWhat was all that shaking!?」\e
+
+//<00001f14> 【壬姫】「――えっ？」\e
+<00001f14> 【Miki】「――Eh?」\e
+
+//<00001f16> 【武】「――振動計が変なパターンを拾ってるんだ！\nそっちの状況が知りたい！」\e
+<00001f16> 【Takeru】「――The vibration sensors picked up a weird pattern!\nI wanna know what's going on over there!」\e
+
+//<00001f18> 【冥夜】「――安心するがよいッ！\n榊と彩峰が『主広間』の入り口を爆破したのだ！」\e
+<00001f18> 【Meiya】「――You need not worry!\nSakaki and Ayamine have blown the entrance to the Main Hall!」\e
+
+//<00001f1a> 【武】「――冥夜ッ！？\n――おまえ…\p…\p今まで何やってたんだ！？」\e
+<00001f1a> 【Takeru】「――Meiya!?\n――You...\p...\pwhat have you been doing!?」\e
+
+//<00001f1b> 【冥夜】「――戦闘中だッ…\p…\pッ…\p…\pいったん切るぞッ！！」\e
+<00001f1b> 【Meiya】「――Fighting! ...\p...\p...\p...\pI shall call back later!!」\e
+
+//<00001f1e> 【武】「――おいっ…\p…\p冥夜ッ！？」\e
+<00001f1e> 【Takeru】「――Hey! ...\p...\pMeiya!?」\e
+
+//<00001f1f> 【美琴】「――タケル、\p冥夜さんはとっくに合流していたんだ！」\e
+<00001f1f> 【Mikoto】「――Takeru,\p Meiya-san met up with us a while ago!」\e
+
+//<00001f21> 【武】「――え…\p…\p？！」\e
+<00001f21> 【Takeru】「――Eh...\p...\p!?」\e
+
+//<00001f22> 【壬姫】「――作業中の私達を守ってくれてるんだよ！」\e
+<00001f22> 【Miki】「――She's been protecting us while we finished here!」\e
+
+//<00001f24> 【武】「――そうだったのか…\p…\p！？」\e
+<00001f24> 【Takeru】「――She has...\p...\p!?」\e
+
+//<00001f25> 心配させやがって…\p…\p！\n合流したならしたで通信ぐらい――って、\pそれどころじゃないか…\p…\p！\e
+<00001f25> Don't worry me like that...\p...\p!\nIf she got here at least tell me――Wait,\p that's not the issue here...\p...\p!\e
+
+//<00001f26> 【武】「――で、\pさっき冥夜が言ってた爆破って…\p…\p！？」\e
+<00001f26> 【Takeru】「――So what was that explosion Meiya mentioned...\p...\p!?」\e
+
+//<00001f27> 【壬姫】「――データを呼び出して確認して！\n御剣さんが合流した時、\p更新されてるはずだよ！」\e
+<00001f27> 【Miki】「――Look at the data yourself!\nIt should've been updated when Mitsurugi-san rendezvoused with us!」\e//<Tatari|JERK> I don't think rendez-voused works <- even Tatari agrees it looks out of place - Raide //oh good someone else fixed that already ~IX
+
+//<00001f2a> 【武】「――だといいんだけどな！」\e
+<00001f2a> 【Takeru】「――It better be!」\e
+
+//<00001f2b> 【壬姫】「――えっ？」\e
+<00001f2b> 【Miki】「――Eh?」\e
+
+//<00001f2d> 【武】「――さっきデータリンクが不調で、\pおまえ達の外部モニターに繋げなかった」\e
+<00001f2d> 【Takeru】「――The data link's having trouble so I can't connect to your external monitors.」\e
+
+//<00001f2e> 【壬姫】「――っ！！」\e
+<00001f2e> 【Miki】「――!!」\e
+
+//<00001f30> 【美琴】「――たっ…\p…\p多分、\p壁のせいじゃないかな…\p…\p！？」\e
+<00001f30> 【Mikoto】「――I-...\p...\pit's probably the barrier's fault...\p...\p!!」\e
+
+//<00003cbe> 【美琴】「――こっちも似たようなもんだし…\p…\p」\e
+<00003cbe> 【Mikoto】「――We can't see yours either, so...\p...\p」\e
+
+//<00003cc0> ――やっぱり、\pそっちもそうか…\p…\p！\e
+<00003cc0> ――So that was it...\p...\p!\e
+
+//<00001f36> ――来たッ！\e
+<00001f36> ――There!\e
+
+//<00001f38> 【武】「――大丈夫だ、\p更新できてる！」\e
+<00001f38> 【Takeru】「――It's okay,\p mine updated!」\e
+
+//<00001f39> 【美琴】「――じゃあデータで確認しておいて！　ボク達作業に戻るから――！」\e
+<00001f39> 【Mikoto】「――Then you can check the data yourself!\bWe need to get back to work now――!」\e
+
+//<00001f3c> 【武】「――あっ…\p…\p！」\e
+<00001f3c> 【Takeru】「――Ah...\p...\p!」\e
+
+//<00001f3d> ――なんだよ美琴、\p焦ってるのか？\e
+<00001f3d> ――What the hell, Mikoto,\p you're in that big a hurry?\e
+
+//<00001f3e> いや――この状況じゃ仕方ないか…\p…\pオレが邪魔しちまったみたいなもんだし。\e
+<00001f3e> No――Remember the situation we're in...\p...\pI'm the one interrupting her when she needs to get this done.\e
+
+//<00001f40> 【武】「…\p…\pおいおい」\e
+<00001f40> 【Takeru】「...\p...\phey now.」\e
+
+//<00001f41> すげえな…\p…\pたった２発のＳ－１１で、\p頑強な内壁を崩落させちまうなんて…\p…\p！\e
+<00001f41> This is amazing...\p...\pthey brought down that much of the structure with only two S-11s...\p...\p!?\e
+
+//<00001f42> 振動波の２点観測から構造的な弱点を見つけ出したのか…\p…\p！\e
+<00001f42> She cross-referenced sonic data from two locations to find these weak points...\p...\p!\e
+
+//<00001f43> 【武】「…\p…\p…\p…\p」\e
+<00001f43> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001f46> …\p…\pこりゃあ、\p冥夜の作戦だな。\e
+<00001f46> ...\p...\pthis has to be Meiya's plan.\e
+
+//<00001f47> あいつ『前のこの世界』の天元山でも、\p同じような発想で山をぶった斬ったもんな。\e
+<00001f47> This is just like her plan to cut off part of Mt. Tengen in the previous world.\e
+
+//<00001f49> 【武】「…\p…\p…\p…\p」\e
+<00001f49> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001f4a> …\p…\pそれを…\p…\p委員長と彩峰が連携して成功させたのか…\p…\p！\e
+<00001f4a> ...\p...\pand Class Rep and Ayamine worked together...\p...\pto pull it off...\p...\p!\e
+
+//<00001f4b> 委員長…\p…\p。\p彩峰…\p…\p。\n水と油だったおまえ達が、\p本当にお互いを理解して認め合ったんだな…\p…\p。\e
+<00001f4b> Class Rep...\p...\pAyamine...\p...\p\nYou used to be like water and oil,\p but now you two really understand each other...\p...\p\e
+
+//<00001f4e> 委員長の組織論やルールの尊重と、\p彩峰の臨機応変な対処を重視するやり方は、\p訓練学校と実戦部隊、\pそれぞれの教練概念と同じ――まさに基礎と応用の関係だ。\e
+<00001f4e> Class Rep respects rules and chains of command,\p while Ayamine values adapting and improvising.\p It's just like the difference between what they taught us as cadets and as real Eishi――The fundamentals versus the application.\e
+
+//<00001f4f> だからそのバランスが悪いと前みたいになっちまう…\p…\p。\e
+<00001f4f> When those two approaches are out of balance, everything falls apart...\p...\p\e
+
+//<00001f50> だけど、\p一度こうして噛み合えば、\p過酷な状況での困難な任務でさえも成功させちまう力を発揮するんだ…\p…\p！\e
+<00001f50> But once they mesh like this,\p they have the power to make even the most difficult of missions succeed...\p...\p!\e
+
+//<00001f51> 【武】「…\p…\p…\p…\p」\e
+<00001f51> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001f52> 自分を変える事だけでも難しいのに…\p…\pその上相手が存在する問題も克服するなんて…\p…\p。\e
+<00001f52> It's hard enough just to change yourself...\p...\phaving to overcome someone else's problems too is just...\p...\p\e
+
+//<00001f53> すげえよ…\p…\pおまえ達は本当に凄えよ！\e
+<00001f53> Amazing...\p...\pyou guys really are amazing!\e
+
+//<00001f55> 【武】「――！」\e
+<00001f55> 【Takeru】「――!」\e
+
+//<00001f57> ――！？\e
+<00001f57> ――!?\e
+
+//<00001f59> ――よしッ！！　これで敵の大増援は、\p当分足止めできるはずだ…\p…\p！\e
+<00001f59> ――Yes!! This should keep the enemy reinforcements away for a while...\p...\p!\e
+
+//<00001f5a> 先鋒の流入は許したらしいが…\p…\p２０万以上のＢＥＴＡが流入するっていう、\p致命的な状況だけは先送りできた。\e
+<00001f5a> The vanguard slipped through...\p...\pbut they still prevented over 200,000 BETA from pouring in here and ruining our plan.\e//I thought it was 100,000 ~IX
+
+//<00001f5b> 今はそれで十分だ――主砲エネルギーを充填する時間さえ稼げれば何とかなる！\e
+<00001f5b> That's enough for now――All we need is time to charge the cannon!\e
+
+//<00001f62> 【冥夜】「――鎧衣、\p珠瀬ッ！　――旅団規模の敵集団が１２００ラインを越えたぞっ！」\e
+<00001f62> 【Meiya】「――Yoroi,\p Tamase!\b――A brigade-sized herd has passed the 1200 meter line!」\e//or just "is within 1200 meters of us"
+
+//<00201f65> 【美琴】「――？！」\n【壬姫】「――！」\e
+<00201f65> 【Mikoto】「――!?」\n【Miki】「――!」\e
+
+//<00001f68> 【冥夜】「――その後方の本隊は、\p先の生き残りに、\p崩落前に流入した個体群が加わり――２万強にふくれあがっている！」\e
+<00001f68> 【Meiya】「――The main force behind them,\p consisting of survivors from earlier and the reinforcements which got in before the collapse――Has grown to over twenty thousand!」\e
+
+//<00201f6b> 【美琴】「――！」\n【壬姫】「――！」\e
+<00201f6b> 【Mikoto】「――!」\n【Miki】「――!」\e
+
+//<00001f6e> 【冥夜】「――あと数分でそちらに到達するぞッ！　――固定作業は切り上げ、\p第一隔壁の閉鎖を開始するがよいッ！」\e
+<00001f6e> 【Meiya】「――They will reach you in a matter of minutes!\b――Unlock the tanks and begin closing the 1st barrier!」\e
+
+//<00001f70> 【壬姫】「――っ！？」\e
+<00001f70> 【Miki】「――!?」\e
+
+//<00001f72> 【美琴】「――だめだよ！　固定しないとコンプレッサーの振動で装置が動いちゃうんだ！」\e
+<00001f72> 【Mikoto】「――We can't do that! If they're not locked down, the compressor vibrations will make the whole thing shake around!」\e
+
+//<00001f74> 【冥夜】「――っ！？」\e
+<00001f74> 【Meiya】「――!?」\e
+
+//<00001f76> 【美琴】「――最悪の場合、\pパイプに引っ張られて、\p導管に刺さってる注入ノズルが抜けちゃうんだよ！？」\e
+<00001f76> 【Mikoto】「――It might even jerk the pipes hard enough to yank the injection nozzle out!!」\e
+
+//<00001f78> 【冥夜】「――っ…\p…\pわかった！　作業を急ぐがよいッ――終わり次第、\p閉鎖開始だ！」\e
+<00001f78> 【Meiya】「――...\p...\punderstood! Make it fast!\b――Begin closing it when you finish!」\e
+
+//<00001f7a> 【美琴】「――了解！」\e
+<00001f7a> 【Mikoto】「――Copy that!」\e
+
+//<00001f7c> 【壬姫】「――榊さんと彩峰さんは…\p…\pどうするの！？」\e
+<00001f7c> 【Miki】「――What do we do...\p...\pabout Sakaki-san and Ayamine-san!?」\e
+
+//<00001f7e> 【冥夜】「――閉鎖に間に合わなければ…\p…\p致し方あるまい…\p…\pッ！！」\e
+<00001f7e> 【Meiya】「――If they do not arrive in time...\p...\pthere is nothing we can do...\p...\p!!」\e
+
+//<00001f80> 【壬姫】「…\p…\p…\p…\p」\e
+<00001f80> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00001f82> 【冥夜】「――己がために人類全体を危険に曝すなど…\p…\pあの者達が望む訳が無かろう…\p…\p！」\e
+<00001f82> 【Meiya】「――They would not want us...\p...\pto risk all of humanity merely to save them...\p...\p!」\e
+
+//<00001f85> 【美琴】「――わかった…\p…\p」\e
+<00001f85> 【Mikoto】「――I know...\p...\p」\e
+
+//<00001f86> 【美琴】「――ボクが千鶴さんや慧さんの立場でも…\p…\pそうして欲しいって思うよ…\p…\p！」\e
+<00001f86> 【Mikoto】「――I'd want the same thing...\p...\pif I was in Chizuru-san or Kei-san's position...\p...\p!」\e
+
+//<00001f88> 【壬姫】「――うん…\p…\pそうだね…\p…\p！」\e
+<00001f88> 【Miki】「――Yeah...\p...\pyou're right...\p...\p!」\e
+
+//<00001f8a> 【美琴】「――じゃあ冥夜さんは、\p一度下がって第二隔壁の開放準備、\pお願い！」\e
+<00001f8a> 【Mikoto】「――Okay, Meiya-san,\p could you please fall back and work on opening the 2nd barrier?」\e
+
+//<00001f8c> 【冥夜】「――何っ！？　どういう事だ！？」\e
+<00001f8c> 【Meiya】「――What!? What do you mean!?」\e
+
+//<00001f8e> 【美琴】「――ごめん！　さっき急いでいて、\p開閉剤の注入装置、\p遠隔制御モードにし忘れちゃったんだ！」\e
+<00001f8e> 【Mikoto】「――Sorry! I was rushing a little earlier,\p so I forgot to set the closing chemical injector to remote control mode.」\e
+
+//<00001f91> 【冥夜】「――なんだと！？　――何故黙っていた！？」\e
+<00001f91> 【Meiya】「――What!? ――Why did you not say so!?」\e
+
+//<00001f93> 【美琴】「――今思いだしたんだよ！　――だから冥夜さんお願い！」\e
+<00001f93> 【Mikoto】「――I only just remembered!\b――So please go fix it, Meiya-san!」\e
+
+//<00001f95> 【冥夜】「――ならん、\p私は敵を食い止める！　１０分程度であれば稼ぐ事ができよう！」\e
+<00001f95> 【Meiya】「――No,\p I will stop the enemy in their tracks!\bI should be able to buy you ten minutes!」\e
+
+//<00001f97> 【冥夜】「――その間に、\pそなた達の何れかで対処するがよいッ！」\e
+<00001f97> 【Meiya】「――You two can decide what to do about it in that time!」\e
+
+//<00001f99> 【壬姫】「――何言ってるの御剣さん！　不安要素は前倒しで排除しなきゃ！」\e
+<00001f99> 【Miki】「――What're you saying, Mitsurugi-san!?\bWe need to take care of it now!」\e
+
+//<00001f9b> 【美琴】「――崩落させた入り口がどのくらい持つかわからないんだよ！？」\e
+<00001f9b> 【Mikoto】「――Do we know how long the collapsed entrance will hold!?」\e
+
+//<00001f9c> 【冥夜】「――っ…\p…\p！」\e
+<00001f9c> 【Meiya】「――...\p...\p!」\e
+
+//<00001f9e> 【美琴】「――万が一に備えて、\p凄乃皇からもコントロールできるようにしておきたいんだ！」\e
+<00001f9e> 【Mikoto】「――We need to make sure the Susano'o can control it too just in case!」\e
+
+//<00001fa0> 【壬姫】「――御剣さん！　伊隅大尉が、\pそう教えてくれたじゃないですか！」\e
+<00001fa0> 【Miki】「――Mitsurugi-san! Isn't this what Capt. Isumi would want us to do!?」\e
+
+//<00001fa2> 【冥夜】「――っ…\p…\p！」\e
+<00001fa2> 【Meiya】「――...\p...\p!」\e
+
+//<00001fa4> 【美琴】「――大丈夫だよ！　敵が来るまでの数分があれば、\pボク達は作業を終えるから！」\e
+<00001fa4> 【Mikoto】「――It's fine! If we have a few minutes before the enemies get here,\p we can finish up here!」\e
+
+//<00001fa6> 【冥夜】「――わかった…\p…\pすぐに戻る！　――そなた達は作業を急げ！」\e
+<00001fa6> 【Meiya】「――Understood...\p...\pI will return shortly!\b――Both of you, hurry!」\e
+
+//<00201fa8> 【美琴】「――了解ッ！」\n【壬姫】「――了解ッ！」\e
+<00201fa8> 【Mikoto】「――Copy that!」\n【Miki】「――Copy that!」\e
+
+//<00001fae> 【冥夜】「――邪魔するでないッッ！！」\e
+<00001fae> 【Meiya】「――Out of my waaaay!!」\e
+
+//<00001fb4> 【壬姫】「――鎧衣さん…\p…\pこれで良いんだよね…\p…\p？」\e
+<00001fb4> 【Miki】「――Yoroi-san...\p...\pyou sure you're okay with this...\p...\p?」\e
+
+//<00001fb6> 【美琴】「――うん、\pそうだよ。\nこれが一番良い方法なんだ…\p…\p！」\e
+<00001fb6> 【Mikoto】「――Yes,\p I am.\nThis is the best option...\p...\p」\e
+
+//<00001fb8> 【壬姫】「――うん…\p…\p」\e
+<00001fb8> 【Miki】「――Yeah...\p...\p」\e
+
+//<00001fba> 【美琴】「――冥夜さんがここを通過したら、\p壬姫さんも付いて行くんだよ？」\e
+<00001fba> 【Mikoto】「――When Meiya-san passes through here,\p you'll follow her, right Miki-san?」\e
+
+//<00001fbc> 【壬姫】「――うん…\p…\p…\p…\p」\e
+<00001fbc> 【Miki】「――Yeah...\p...\p...\p...\p」\e
+
+//<00001fbe> 【美琴】「――壬姫さん、\pさっき約束したじゃないか…\p…\p！」\e
+<00001fbe> 【Mikoto】「――Miki-san,\p didn't we just promise...\p...\p!?」\e
+
+//<00001fc0> 【壬姫】「――は…\p…\pい…\p…\p！」\e
+<00001fc0> 【Miki】「――Ye-...\p...\pyes...\p...\p!」\e
+
+//<00001fc1> 【美琴】「――それに、\pこういう時の勘には…\p…\p結構自信あるんだ」\e
+<00001fc1> 【Mikoto】「――Besides,\p I'm pretty confident...\p...\pin my intuition.」\e
+
+//<00001fc3> 【壬姫】「――え…\p…\p？」\e
+<00001fc3> 【Miki】「――Eh...\p...\p?」\e
+
+//<00001fc5> 【美琴】「――１回目の総戦技演習の時…\p…\p結果的にボクの勘、\p当たってたでしょ？」\e
+<00001fc5> 【Mikoto】「――During the first Comprehensive Combat Evaluation...\p...\nmy gut feeling turned out to be right, remember?」\e
+
+//<00001fc7> 【壬姫】「――！」\e
+<00001fc7> 【Miki】「――!」\e
+
+//<00001fcb> 【千鶴】「…\p…\pチームをまとめられない無能な分隊長と、\p指示に従わない部下、\p見切りをつけて独断した部下…\p…\p主にこれが理由」\e
+<00001fcb> 【Chizuru】「...\p...\pan incompetent squad leader who couldn't control her team, and subordinates who wouldn't obey orders...\p...\pis about right.」\e//CP_S MLA_0006
+
+//<00001fcc> 【壬姫】「さ、\p榊さん…\p…\p」\e
+<00001fcc> 【Miki】「S-\pSakaki-san...\p...\p」\e
+
+//<00001fcd> 【美琴】「ど、\pどうしてそんなことわざわざ言い出すの？」\e
+<00001fcd> 【Mikoto】「Wh-\pwhy're you bringing this up again?」\e
+
+//<00001fce> 【慧】「…\p…\p違うね。\n最後はアンタの指示に従って、\p地雷原の餌食になったんだ…\p…\p」\e
+<00001fce> 【Kei】「No it isn't.\p\p\p\p The land mines got us because we obeyed your orders...\p...\p」\e
+
+//<00001fcf> 【壬姫】「彩峰さんまで！？」\e
+<00001fcf> 【Miki】「Ayamine-san too!?」\e
+
+//<00001fd0> 【冥夜】「…\p…\p鎧衣は迂回するべきだと言っていた。\n鎧衣の勘が尊重されるべきことは事前に了解済みだと思っていたのだがな…\p…\p」\e
+<00001fd0> 【Meiya】「...\p...\pYoroi advised us to take a detour.\nAt the time we knew how important it was to value Yoroi's intuition...\p...\p」\e//CP_E
+
+//<00001fd2> 【美琴】「――もうあの時みたいに遠慮しない…\p…\p」\e
+<00001fd2> 【Mikoto】「――I won't do nothing about it this time...\p...\p」\e
+
+//<00001fd4> 【壬姫】「…\p…\p…\p…\p」\e
+<00001fd4> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00001fd6> 【美琴】「――だって今、\pボク達はスタンドアローンで、\p臨機応変な行動が求められているから…\p…\p」\e
+<00001fd6> 【Mikoto】「――After all,\p we're on our own out here.\bWe have to be able to improvise and take independent action when the need arises...\p...\p」\e
+
+//<00000216> 【美琴】「――変に遠慮したせいで、\pボクが好きな人達が不幸になるの…\p…\p嫌だしね」\e
+<00000216> 【Mikoto】「――I don't want someone I like getting hurt...\p...\pbecause I didn't do anything.」\e
+
+//<00001fda> 【壬姫】「――鎧衣さん…\p…\p」\e
+<00001fda> 【Miki】「――Yoroi-san...\p...\p」\e
+
+//<00001fdb> 【美琴】「――お願いだから…\p…\pボクを信じて」\e
+<00001fdb> 【Mikoto】「――So please...\p...\ptrust me.」\e
+
+//<00001fdc> 【壬姫】「…\p…\p…\p…\p」\e
+<00001fdc> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00001fdd> 【美琴】「…\p…\pね？」\e
+<00001fdd> 【Mikoto】「...\p...\pokay?」\e
+
+//<00001fe0> 【美琴】「――壬姫さん…\p…\p？」\e
+<00001fe0> 【Mikoto】「――Miki-san...\p...\p?」\e
+
+//<00001fe1> 【壬姫】「…\p…\p…\p…\p信じます」\e
+<00001fe1> 【Miki】「...\p...\p...\p...\pI trust you.」\e
+
+//<00001fe2> 【美琴】「――！　…\p…\pありがとう、\p壬姫さん」\e
+<00001fe2> 【Mikoto】「――! ...\p...\pthank you,\p Miki-san.」\e
+
+//<00001fe4> 【壬姫】「――私も、\p大好きな人達が幸せになって欲しいから…\p…\p」\e
+<00001fe4> 【Miki】「――I want the one I love to be happy too...\p...\p」\e
+
+//<00001fe5> 【美琴】「――うん…\p…\p」\e
+<00001fe5> 【Mikoto】「――Yeah...\p...\p」\e
+
+//<00001fe7> 【壬姫】「――だから、\p自分のできること…\p…\p精一杯やるって決めたから…\p…\p」\e
+<00001fe7> 【Miki】「――So,\p I've decided...\p...\pto put everything I have into what I can do...\p...\p」\e
+
+//<00001fea> 【美琴】「――大好きな人…\p…\pか…\p…\p」\e
+<00001fea> 【Mikoto】「――The one you love...\p...\phmm...\p...\p」\e
+
+//<00001fed> 【壬姫】「――うん…\p…\p」\e
+<00001fed> 【Miki】「――Yes...\p...\p」\e
+
+//<00001ff0> 【美琴】「――なんか…\p…\pなんだかんだ言って、\pみんな…\p…\p結構気があってたんだね…\p…\p」\e
+<00001ff0> 【Mikoto】「――It looks like...\p...\pdespite what we've all been saying...\p...\pwe all felt the same way...\p...\p」\e
+
+//<00001ff2> 【壬姫】「…\p…\pえへへ、\pそうだね…\p…\p。\n好みは同じだったって事だもんね…\p…\p」\e
+<00001ff2> 【Miki】「...\p...\peheheh,\p looks that way...\p...\p\nI guess we have the same tastes...\p...\p」\e
+
+//<00001ff4> 【美琴】「――あはは。\n千鶴さんと慧さんもそうだってわかった時は、\pびっくりしたけどね」\e
+<00001ff4> 【Mikoto】「――Ahaha.\nI was really shocked when I noticed Chizuru-san and Kei-san felt it too though.」\e
+
+//<00001ff6> 【壬姫】「――あははは…\p…\p」\e
+<00001ff6> 【Miki】「――Ahahaha...\p...\p」\e
+
+//<00001ff9> 【美琴】「――よし…\p…\p固定作業は完了だよ！　あとはボクだけでも大丈夫」\e
+<00001ff9> 【Mikoto】「――Okay...\p...\pdone locking it down!\bI can do the rest on my own.」\e
+
+//<00001ffa> 【美琴】「――壬姫さんは冥夜さんの後退を支援してあげて！」\e
+<00001ffa> 【Mikoto】「――Miki-san, go back Meiya-san up!」\e
+
+//<00001ffb> 【壬姫】「――わかりました…\p…\p！」\e
+<00001ffb> 【Miki】「――Understood...\p...\p!」\e
+
+//<00001ffd> 【壬姫】「――鎧衣さん…\p…\p」\e
+<00001ffd> 【Miki】「――Yoroi-san...\p...\p」\e
+
+//<00001ffe> 【美琴】「――なに？」\e
+<00001ffe> 【Mikoto】「――What?」\e
+
+//<00002000> 【壬姫】「――任務…\p…\p絶対成功させようね！」\e
+<00002000> 【Miki】「――Make sure...\p...\pthe mission succeeds, okay?」\e
+
+//<00002003> 【美琴】「――うん！」\e
+<00002003> 【Mikoto】「――Okay!」\e
+
+//<00002008> 【冥夜】「――ふんッ！！」
+<00002008> 【Meiya】「――Hmph!!」
+
+//<000032fa> \r
+<000032fa> \r
+
+//<0000200b> 【冥夜】「――はあああッ！！」
+<0000200b> 【Meiya】「――Haaaaaaa!!」
+
+//<000032ff> \r
+<000032ff> \r
+
+//<0000200e> 【冥夜】「――ッ！？」
+<0000200e> 【Meiya】「――!?」
+
+//<00003303> \r
+<00003303> \r
+
+//<00002011> 【冥夜】「――珠瀬ッ！？」
+<00002011> 【Meiya】「――Tamase!?」
+
+//<00003307> \r
+<00003307> \r
+
+//<00002015> 【壬姫】「――御剣さん早くッ！　――道は私が拓くから！」\n
+<00002015> 【Miki】「――Mitsurugi-san, hurry! ――I'll clear a path for you!」\n
+
+//<00002017> 【冥夜】「――すまぬッ！」
+<00002017> 【Meiya】「――My apologies!」
+
+//<00003313> \r
+<00003313> \r
+
+//<0000201d> 【美琴】「――っ…\p…\p…\p…\p！」
+<0000201d> 【Mikoto】「――...\p...\p...\p...\p!」
+
+//<0000331e> \r
+<0000331e> \r
+
+//<00002022> 【壬姫】「――このッ…\p…\pこのッ…\p…\pこのォッ…\p…\p！！」
+<00002022> 【Miki】「――Take that...\p...\ptake that! ...\p...\ptake thaaaat...\p...\p!!」
+
+//<00003324> \r
+<00003324> \r
+
+//<00002025> 【冥夜】「――はあああぁぁッ！」
+<00002025> 【Meiya】「――Haaaaaaaaaaa!」
+
+//<0000332b> \r
+<0000332b> \r
+
+//<00002028> 【冥夜】「――もうよいぞ珠瀬！　私はこのまま『横坑』に進入するッ！」\e
+<00002028> 【Meiya】「――That is enough, Tamase!\nI will enter the Drift now!」\e
+
+//<0000202a> 【壬姫】「――はい！」\e
+<0000202a> 【Miki】「――Okay!」\e
+
+//<0000202b> 【冥夜】「――敵は７５０まで迫っている！　鎧衣機を守ってやってくれ！」\e
+<0000202b> 【Meiya】「――The enemies are 750 meters away!\bProtect Yoroi!」\e
+
+//<0000202c> 【壬姫】「――大丈夫です！　任せてくださいっ！！」\e
+<0000202c> 【Miki】「――I'll be fine! Leave her to me!!」\e
+
+//<0000202d> 【冥夜】「――すぐに戻る故…\p…\pそれまで――頼むぞ！」\e
+<0000202d> 【Meiya】「――I shall return shortly...\p...\puntil then――Take care!」\e
+
+//<0000202e> 【壬姫】「――はい！」\e
+<0000202e> 【Miki】「――Yes!」\e
+
+//<00002032> 【霞】「――主砲エネルギー充填率８７％」\e
+<00002032> 【Kasumi】「――Main cannon 87% charged.」\e
+
+//<00002033> 【霞】「――機関出力は依然不安定ですが、\p偏差は許容値内です」\e
+<00002033> 【Kasumi】「――The engine output remains unstable,\p but deviations are within tolerances.」\e
+
+//<00002036> 【武】「――了解」\e
+<00002036> 【Takeru】「――Copy that.」\e
+
+//<00002037> …\p…\pくそ…\p…\p時間が経つのが異常に早く感じる…\p…\p。\e
+<00002037> ...\p...\pdammit...\p...\pit feels like time is passing really fast...\p...\p\e
+
+//<00002038> 純夏にしろ、\pみんなにしろ、\p必死で頑張ってる時に、\pオレだけがただじっと待ってるのは…\p…\p凄え辛いぜ…\p…\p。\e
+<00002038> Sumika and everyone else is trying so hard right now,\p but I'm just sitting here waiting...\p...\pthis really hurts...\p...\p\e
+
+//<00002039> 特に『主広間』で戦っているみんなの状況が全くわからないっていうのが、\pかなりキツイ…\p…\p。\e
+<00002039> It's especially hard knowing nothing about what's going on in the Main Hall...\p...\p\e
+
+//<0000203a> 第一隔壁を閉鎖した訳でもないのに、\pデータリンクが遮断されてるなんて…\p…\pどういう事なんだ！？\e
+<0000203a> The 1st barrier hasn't been closed,\p but the data link's been cut off...\p...\pwhy is that!?\e
+
+//<0000203b> このデータリンク障害が原因で、\p作戦が失敗する可能性だって――\e
+<0000203b> And losing the data link could very well cause the whole operation to fail――\e
+
+//<0000203d> 【霞】「…\p…\p白銀さん、\p気持ちを落ち着けてください」\e
+<0000203d> 【Kasumi】「...\p...\pShirogane-san,\p please calm down.」\e
+
+//<0000203e> ――ッ！？\e
+<0000203e> ――!?\e
+
+//<0000203f> 【霞】「――皆さんの事を心配しているんですね…\p…\p」\e
+<0000203f> 【Kasumi】「――You're worried about the others, aren't you...\p...\p?」\e
+
+//<00002040> 【武】「…\p…\p…\p…\p」\e
+<00002040> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00002041> 【霞】「…\p…\pでも今は――」\e
+<00002041> 【Kasumi】「...\p...\pbut right now――」\e
+
+//<00002042> 【武】「――霞…\p…\pっ！」\e
+<00002042> 【Takeru】「――Kasumi...\p...\p!」\e
+
+//<00002043> 【霞】「――！」\e
+<00002043> 【Kasumi】「――!」\e
+
+//<00002044> 【武】「…\p…\pオレは…\p…\p大丈夫だ！」\e
+<00002044> 【Takeru】「...\p...\pI'm...\p...\pfine!」\e
+
+//<00002045> 【霞】「…\p…\p…\p…\p」\e
+<00002045> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00002046> 【武】「オレは…\p…\p任務の成功を…\p…\p『あ号標的』の破壊を最優――」\e
+<00002046> 【Takeru】「My top priority...\p...\pis to complete the mission...\p...\pto destroy the Primary Objective――」\e
+
+//<00002048> ――！？\e
+<00002048> ――!?\e
+
+//<0000204a> ――冥夜が『横坑』内に？！\n――という事は、\pみんなが後退し始めたのか？！　\e
+<0000204a> ――Meiya's in the Drift!?\n――Does that mean the others are finally retreating!?\e
+
+//<0000204b> 【武】「――冥夜！　――どうしたんだ、\p外は片付いたのか？！」\e
+<0000204b> 【Takeru】「――Meiya!\b――What happened,\p are you done outside!?」\e
+
+//<0000204d> 【冥夜】「違う。\p第二隔壁開閉装置の設定に不備があってな。\pそれを正しに行くのだ」\e
+<0000204d> 【Meiya】「No,\p a mistake was made with the injector at the 2nd barrier.\p I am going to fix it.」\e
+
+//<0000204f> 【武】「――え！？」\e
+<0000204f> 【Takeru】「――Eh!?」\e
+
+//<00002050> ――美琴がミスったのか…\p…\p？！\e
+<00002050> ――Mikoto made a mistake...\p...\p!?\e
+
+//<00002051> 【冥夜】「遠隔制御の設定違いだ。\n致命的な問題ではない故、\pそなた達は安心して充填を続けるがよい」\e
+<00002051> 【Meiya】「She forgot to set the remote control.\nIt is not a fatal error,\p so you may rest easy and continue charging.」\e
+
+//<00002053> まさか美琴が、\pそんな些細なミスをするなんて…\p…\p？！\e
+<00002053> There's no way Mikoto would miss a detail like that...\p...\p!!\e
+
+//<00002054> ――いや、\pさっきだって結構焦ってたみたいだからな。\nあいつでさえミスをする程の状況だって事だ。\e
+<00002054> ――No,\p she sounded pretty rushed earlier.\nThe situation's tense enough even she might do that.\e
+
+//<00002055> 【武】「――ところで冥夜、\p『主広間』の戦況はどうなっている？！」\e
+<00002055> 【Takeru】「――By the way, Meiya,\p how's the battle going in the Main Hall!?」\e
+
+//<00002056> 【冥夜】「…\p…\p…\p…\p」\e
+<00002056> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00002058> 【武】「さっきからデータリンクが不調で、\p『主広間』の状況がよくわからないんだ！」\e
+<00002058> 【Takeru】「The data link's been down for a while so I have no idea what's going on out there!」\e
+
+//<00002059> 【冥夜】「鎧衣が開閉装置を固定中だ。\n…\p…\p他の者はそれを援護している」\e
+<00002059> 【Meiya】「Yoroi is locking down the closing chemical injector.\n...\p...\pthe others are supporting her.」\e
+
+//<0000205b> ――そうか、\p委員長達が合流して３機で援護…\p…\pなるほど、\pだから脚の速い冥夜機を第二隔壁に回したんだな？！\e
+<0000205b> ――I see,\p the other three are backing her up...\p...\pand they sent Meiya to the 2nd barrier because she was the fastest!!\e
+
+//<0000205d> 【霞】「――ヴァルキリー２接近。\n――通過します」\e
+<0000205d> 【Kasumi】「――Valkyrie 2 approaching.\n――Passing by.」\e
+
+//<0000205e> ――そうだ！　これだけ近くを通るなら、\pもしかして…\p…\p！\e
+<0000205e> ――That's right! If she's this close,\p then maybe...\p...\p!\e
+
+//<00002061> 【武】「…\p…\p…\p…\pッ」\e
+<00002061> 【Takeru】「...\p...\p...\p...\p!」\e
+
+//<00002062> ――だめだ…\p…\pデータは共有されていない！\e
+<00002062> ――Damn...\p...\pthe data isn't being shared!\e
+
+//<00002063> 【武】「――冥夜、\pそっちはデータ更新したか？！　こっちはだめだった！」\e
+<00002063> 【Takeru】「――Meiya,\p did you update your data!?\bI can't get anything new!」\e
+
+//<00002064> 【冥夜】「そうか…\p…\p。\pこちらも、\p完全とは言えない状態だな」\e
+<00002064> 【Meiya】「I see...\p...\pI cannot say mine is complete either.」\e
+
+//<00002066> 【武】「――やっぱりそうか…\p…\p！\n――あともう少しだって時に――何がどうしたってんだ！？」\e
+<00002066> 【Takeru】「――I knew it...\p...\p!\n――We're so close to the end.\n――Why are we letting little things like this happen now!?」\e
+
+//<00002068> 【冥夜】「…\p…\p…\p…\p」\n【霞】「…\p…\p…\p…\p」\e
+<00002068> 【Meiya】「...\p...\p...\p...\p」\n【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000206e> 【武】「――この障害が、\p最後の最後で命取りになる可能性だってあるのに…\p…\p！」\e
+<0000206e> 【Takeru】「――Not sharing all our data might get us killed right at the last moment...\p...\p!」\e
+
+//<0000206f> ――くそッ…\p…\p今までどれだけデータリンクに頼った戦いをして来たかって事を、\pつくづく思い知らされるぜ…\p…\p！\e
+<0000206f> ――Dammit! ...\p...\pwe've been relying so much on the data links to fight properly in the past...\p...\p!\e
+
+//<00002070> 【冥夜】「…\p…\pそうだな…\p…\p主な原因として思い当たるのは…\p…\p」\e
+<00002070> 【Meiya】「...\p...\pgood question...\p...\pthe main cause I can think of is...\p...\p」\e
+
+//<00002071> 【武】「――ん…\p…\p？！」\e
+<00002071> 【Takeru】「――Hm...\p...\p!?」\e
+
+//<00002072> 【冥夜】「二度のＳ－１１の爆発により、\p微粒子となった『主広間』の壁材が、\p大量に飛散している事か…\p…\p」\e
+<00002072> 【Meiya】「Particles in the air of the Main Hall as a result of the S-11 explosions...\p...\p」\e
+
+//<00002073> 【武】「――！」\e
+<00002073> 【Takeru】「――!」\e
+
+//<00002074> なるほど…\p…\p『主広間』の壁材は、\pただでさえある種の電磁波を吸収する特性がある物質だ…\p…\p。\e
+<00002074> I see...\p...\pthe Main Hall walls are made out of something that absorbs EM waves...\p...\p\e
+
+//<00002075> 【武】「機体は当然、\pアンテナやセンサー類にもその微粒子はかなり付着しているはず。\nだったら短距離でも障害が発生するっていうのも頷けるか…\p…\p」\e
+<00002075> 【Takeru】「So particles from the walls got on their TSFs,\p including antennas and sensors.\nNo wonder there'd be problems even at such short range...\p...\p」\e
+
+//<00002076> 【冥夜】「ああ。エアロゾル状となる事で、\p更に特定の電磁波――つまり、\pデータ通信帯のみを遮断するという、\p未知の特性が惹起されているとも考えられる」\e
+<00002076> 【Meiya】「Yes. Perhaps now that it has aerosolized,\p it can block even more EM waves――Including those in our data link transmissions.\p No one expected it to have such an ability.」\e
+
+//<00002078> 爆発下限濃度以下でも、\p十分な電磁波阻害効果があるって事か…\p…\p。\n場合によっちゃ、\p光線級への有効な防御策になる可能性があるんじゃないか？！\e
+<00002078> So even at that low density it can interfere with EM waves...\p...\p\nCouldn't we use this stuff to defend ourselves from the Laser Class!?\e
+
+//<00002079> 【冥夜】「未知の特性という意味では、\p臨界出力で発生する次元境界面の影響、\pという線も十分あり得るな」\e
+<00002079> 【Meiya】「Since this is an unknown material,\p the dimensional boundary field at critical power may also have contributed for all we know.」\e
+
+//<0000207b> 臨界運転の影響か…\p…\p。\n確かに不調が発生したタイミングと重なるな。\e
+<0000207b> The field at full power...\p...\p\nThat would overlap with when it was having trouble.\e//it would? ~IX
+
+//<0000207c> 【冥夜】「有り体に、\pＳ－１１の至近爆発による、\p自動診断では検知不可能な故障――という可能性もあろう」\e
+<0000207c> 【Meiya】「Perhaps the S-11 exploding so near us has made us unable to automatically detect such things――It is a possibility.」\e
+
+//<0000207d> 【武】「…\p…\pまあ、\p可能性は…\p…\pな」\e
+<0000207d> 【Takeru】「...\p...\pwell,\p it is...\p...\ppossible I guess.」\e
+
+//<0000207e> 【冥夜】「何れにせよ、\p私に推測できるのはこの程度だ…\p…\p許すがよい」\e
+<0000207e> 【Meiya】「In any event,\p that is all I can surmise...\p...\p\b...\p...\pforgive me.」\e
+
+//<0000207f> えっ…\p…\p？\e
+<0000207f> Eh...\p...\p?\e
+
+//<00002080> 【武】「なんでおまえが謝るんだ…\p…\p？」\e
+<00002080> 【Takeru】「Why are you apologizing...\p...\p?」\e
+
+//<00002081> 【冥夜】「可能性の話では、\p今のそなたの不安を取り除くに到らぬであろうからな」\e
+<00002081> 【Meiya】「Speaking of mere possibilities is surely not enough to assuage your fears.」\e
+
+//<00002082> 【武】「…\p…\p！」\e
+<00002082> 【Takeru】「...\p...\p!」\e
+
+//<00002084> 【冥夜】「…\p…\p…\p…\p」\n【霞】「…\p…\p…\p…\p」\e
+<00002084> 【Meiya】「...\p...\p...\p...\p」\n【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00002089> …\p…\pそうか…\p…\p！\nこんな状況なのに、\pおまえがオレの話に付き合ったのは…\p…\p\e
+<00002089> ...\p...\pI see...\p...\p!\nThat's why you stayed here and talked despite how urgent your task was...\p...\p\e
+
+//<0000208a> 【冥夜】「…\p…\p…\p…\p」\e
+<0000208a> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<0000208c> …\p…\pオレの苛立ち…\p…\pいや、\p不安を察しての事だったのか…\p…\p！\e
+<0000208c> ...\p...\pyou could tell I was irritated...\p...\pno,\p worried...\p...\p!\e
+
+//<0000208d> 【霞】「…\p…\p…\p…\p」\e
+<0000208d> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<0000208f> 【武】「…\p…\pッ」\e
+<0000208f> 【Takeru】「...\p...\p!」\e
+
+//<00002090> ――オレは…\p…\p何やってるんだ…\p…\p！？\e
+<00002090> ――What the hell...\p...\pam I doing...\p...\p!?\e
+
+//<00002091> 今ここでそんな事考えても、\p不調の原因なんて特定できないのに…\p…\p！\e
+<00002091> Thinking about this now isn't going to help us get rid of the interference...\p...\p!\e
+
+//<00002092> それこそ可能性の話なんて――きりがないじゃないか…\p…\p！\e
+<00002092> Even that's just more talk of possibility.\n――There's no end to it...\p...\p!\e
+
+//<00002093> 【武】「――いや…\p…\p今の話で十分だよ」\e
+<00002093> 【Takeru】「――No...\p...\pthat's plenty.」\e
+
+//<00002094> 【冥夜】「…\p…\p…\p…\p」\e
+<00002094> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00002095> 【武】「多分この障害は、\pおまえが推測した原因の複合的な影響だろう」\e
+<00002095> 【Takeru】「You're probably right about what's causing this.」\e
+
+//<00002096> 【冥夜】「…\p…\pであればよいが」\e
+<00002096> 【Meiya】「...\p...\pI hope so.」\e
+
+//<00002097> いつもだったら「余計な事を考えるな」って怒鳴りつける所なんだろう…\p…\p。\e
+<00002097> Normally she'd yell at me not to waste my time thinking this...\p...\p\e
+
+//<00002098> だけど、\pこんな時だからこそ、\pおまえは遠回しなやり方で諭してくれたんだな…\p…\p。\e
+<00002098> But because it's so important this time,\p you found a roundabout way to try and cheer me up...\p...\p\e
+
+//<00002099> 【武】「オレはおまえの指摘した事に全く気付けなかった。\n在り来たりだって言った、\p検知不能の故障にすら…\p…\pな」\e
+<00002099> 【Takeru】「I didn't think of that at all.\nIt interferes with EM waves normally,\p so it could easily get worse when we disturb it...\p...\pyeah.」\e//huuuuge guess, what is it with this script and lines I don't get? ~IX
+
+//<0000209a> 【冥夜】「…\p…\p…\p…\p」\e
+<0000209a> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<0000209b> 【武】「それが任務だって頭ではわかっていても、\pみんなが戦ってる時にオレだけ待機してるって事に、\pなんか焦っちまって…\p…\p頭が回らなくなってたんだ」\e
+<0000209b> 【Takeru】「I know the mission demands that I stand by in here while the rest of you are fighting,\p but I got a little flustered...\p...\pI wasn't thinking properly.」\e
+
+//<0000209c> 【冥夜】「…\p…\pやはり…\p…\pそうであったか」\e
+<0000209c> 【Meiya】「...\p...\pso...\p...\pyou were after all.」\e
+
+//<0000209f> 【武】「――悪かった。\nおかげで我に返ったよ。\n…\p…\pさすが、\pおまえは常に冷静だな」\e
+<0000209f> 【Takeru】「――Sorry.\nBut you helped me come back to my senses.\n...\p...\pyou're always calm like that.」\e
+
+//<000020a0> 【冥夜】「それは…\p…\p違う。\n今は冷静であろうと努力しているだけだ…\p…\p」\e
+<000020a0> 【Meiya】「That is...\p...\puntrue.\nI am only making a great effort to be calm...\p...\p」\e
+
+//<000020a3> 【霞】「…\p…\p…\p…\p」\n【武】「そうか…\p…\p」\e
+<000020a3> 【Kasumi】「...\p...\p...\p...\p」\n【Takeru】「I see...\p...\p」\e
+
+//<000020a7> 【冥夜】「――そして、\p姿が見えずとも…\p…\p彼の者達を信じ、\p己が役割を全うするのみだ…\p…\p」\e
+<000020a7> 【Meiya】「――And fulfilling my duty...\p...\pwhile having faith in those comrades I still cannot see for myself...\p...\p」\e
+
+//<000020a9> 【武】「そうだな…\p…\p」\e
+<000020a9> 【Takeru】「You're right...\p...\p」\e
+
+//<000020aa> くそ…\p…\p。耳が痛い言葉だぜ…\p…\p。\e
+<000020aa> Dammit...\p...\phearing you say that hurts...\p...\p\e
+
+//<000020ab> …\p…\pこんな事じゃ、\pおまえに『尊い存在』として認めてもらうなんて…\p…\p夢のまた夢だぜ…\p…\p。\e
+<000020ab> ...\p...\pat this rate...\p...\phaving you acknowledge me as your noble confidant is just a pipe dream...\p...\p\e
+
+//<000020ae> 【冥夜】「第二隔壁に到着した。\n私はこれより作業に入る――通信は一旦切るぞ」\e
+<000020ae> 【Meiya】「I have reached the 2nd barrier.\nI will now begin working on it――So I must cease transmitting.」\e
+
+//<000020b1> 【武】「わかった。もう脚は引っ張らないから、\p何かあったらちゃんと呼んでくれ！」\e
+<000020b1> 【Takeru】「Okay. I won't keep you any longer,\p just call me if something happens!」\e
+
+//<000020b3> 【冥夜】「――ふっ…\p…\p了解」\e
+<000020b3> 【Meiya】「――Hu...\p...\proger.」\e
+
+//<000020b7> 【冥夜】「…\p…\pタケル…\p…\p許すがよいぞ…\p…\p」\e
+<000020b7> 【Meiya】「...\p...\pTakeru...\p...\pforgive me...\p...\p」\e
+
+//<000020ba> 【冥夜】「さて…\p…\p」\e
+<000020ba> 【Meiya】「Now then...\p...\p」\e
+
+//<000020be> 【冥夜】「…\p…\p…\p…\p？」\e
+<000020be> 【Meiya】「...\p...\p...\p...\p?」\e
+
+//<000020c0> 【冥夜】「――なっ…\p…\pなんだと…\p…\pッ！？」\e
+<000020c0> 【Meiya】「――Wh-...\p...\pwhat...\p...\p!?」\e
+
+//<000020c3> 【冥夜】「――バカなッ…\p…\pこれは…\p…\pッ！？」\e
+<000020c3> 【Meiya】「――Impossible! ...\p...\pthis is...\p...\p!?」\e
+
+//<000020c7> 【美琴】「――よし…\p…\p！　これで作動するはずだ…\p…\p！」\e
+<000020c7> 【Mikoto】「――Okay...\p...\p! It should work now...\p...\p!」\e
+
+//<000020cb> 【美琴】「――システムチェック――流体加圧装置…\p…\p１番、\p２番――よしっ！」\e
+<000020cb> 【Mikoto】「――Systems check.\n――Flow pressurizer...\p...\pone,\p two――Yes!」\e
+
+//<000020ce> 【美琴】「――たのむよ…\p…\p動いて…\p…\pッ！」\e
+<000020ce> 【Mikoto】「――Come on...\p...\pmove...\p...\p!」\e
+
+//<000020d3> 【美琴】「――やったぁッ！！」\e
+<000020d3> 【Mikoto】「――It wooorked!!」\e
+
+//<000020dc> 【美琴】「――壬姫さんやったよッ！　閉鎖装置が動いたよッ――もういいから下がって！」\e
+<000020dc> 【Mikoto】「――Miki-san, I did it! The closing device works!\b――You can fall back now!」\e
+
+//<000020df> 【壬姫】「――でも…\p…\p御剣さんが言ってた２万の敵が、\p予想より早く接近中なんですっ！」\e
+<000020df> 【Miki】「――But...\p...\pthe twenty thousand enemies Mitsurugi-san told us about are coming faster than expected!」\e
+
+//<000020e1> 【美琴】「――えっ！？」\e
+<000020e1> 【Mikoto】「――Eh!?」\e
+
+//<000020e3> 【壬姫】「――今ここを放棄したら…\p…\p鎧衣さんが『脳』を破壊できなくなっちゃうよ…\p…\p！！」\e
+<000020e3> 【Miki】「――If I abandon my position now...\p...\pYoroi-san, you won't be able to destroy the brain...\p...\p!!」\e
+
+//<000020e6> 【美琴】「――大丈夫だよ壬姫さんっ！　あとはボクがやるから！」\e
+<000020e6> 【Mikoto】「――It'll be fine, Miki-san! I'll do the rest!」\e
+
+//<000020e8> 【壬姫】「――やっぱりだめだよっ！　万が一失敗したら、\pＢＥＴＡが『横坑』に侵入しちゃう」\e
+<000020e8> 【Miki】「――No you can't!\bIf you fail, the BETA will get into the Drift!」\e
+
+//<000020eb> 【美琴】「――壬姫さん！　それじゃ約束が違うじゃないかっ！」\e
+<000020eb> 【Mikoto】「――Miki-san! That's not what we promised!」\e
+
+//<000020ec> 【壬姫】「――ッ…\p…\p！」\e
+<000020ec> 【Miki】「――...\p...\p!」\e
+
+//<000020ee> 【美琴】「――さっきだって、\p冥夜さんについて行くはずだったのに…\p…\p勝手に残ったじゃないか！！」\e
+<000020ee> 【Mikoto】「――You were supposed to follow Meiya-san earlier...\p...\pbut you stayed here for no reason!!」\e
+
+//<000020ef> 【壬姫】「――鎧衣さん、\pごめんなさい…\p…\p！」\e
+<000020ef> 【Miki】「――Yoroi-san,\p I'm sorry...\p...\p!」\e
+
+//<000020f1> 【美琴】「――え…\p…\p？」\e
+<000020f1> 【Mikoto】「――Eh...\p...\p?」\e
+
+//<000020f3> 【壬姫】「――私はもう、\p他人に合わせて波風立てないようにするのはやめたんです！」\e
+<000020f3> 【Miki】「――I'm done doing whatever people want me to just to avoid rocking the boat!」\e
+
+//<000020f5> 【美琴】「――！？」\e
+<000020f5> 【Mikoto】「――!?」\e
+
+//<000020f7> 【壬姫】「――私の大好きな人達を守るために…\p…\p！」\e
+<000020f7> 【Miki】「――I'm going to protect the one I love...\p...\p!」\e
+
+//<000020fa> 【壬姫】「――完全閉鎖の直前まで…\p…\pここを守りますッ！」\e
+<000020fa> 【Miki】「――So I will stay here...\p...\puntil right before it closes!」\e
+
+//<000020fd> 【美琴】「――壬姫さん…\p…\p」\e
+<000020fd> 【Mikoto】「――Miki-san...\p...\p」\e
+
+//<000020fe> 【壬姫】「――鎧衣さんは『脳』を破壊する準備をしてください！」\e
+<000020fe> 【Miki】「――Yoroi-san, please destroy the brain now!」\e
+
+//<00002100> 【美琴】「…\p…\p…\p…\pッ！」\e
+<00002100> 【Mikoto】「...\p...\p...\p...\p!」\e
+
+//<00002106> 【壬姫】「――くッ！」\e
+<00002106> 【Miki】「――Uu!」\e
+
+//<0000210a> 【壬姫】「――ううぅぅッ！！」\e
+<0000210a> 【Miki】「――Uuuuuuuu!!」\e
+
+//<0000210f> 【壬姫】「――鎧衣さんッ！？　ここは私が…\p…\pッ！」\e
+<0000210f> 【Miki】「――Yoroi-san!? This is my...\p...\p!」\e
+
+//<00002112> 【美琴】「――第一隔壁が完全に閉まるまで『脳』は破壊できない！\n――半開きのままになっちゃうからね！」\e
+<00002112> 【Mikoto】「――We can't destroy the brain until the 1st barrier completely closes!\n――It'd be stuck halfway open!」\e
+
+//<00002115> 【美琴】「――完全閉鎖の直前まで、\pここをふたりで守ろう」\e
+<00002115> 【Mikoto】「――Let's protect this place together until it's moments away from closing.」\e
+
+//<00002116> 【壬姫】「――鎧衣さん…\p…\p！」\e
+<00002116> 【Miki】「――Yoroi-san...\p...\p!」\e
+
+//<00002118> 【美琴】「――純夏さんや霞さん…\p…\pそして、\pボク達が大好きなタケルを守るんだ！」\e
+<00002118> 【Mikoto】「――I will protect Sumika-san and Kasumi-san...\p...\pand the Takeru we all love!」\e
+
+//<0000211a> 【壬姫】「――はい！」\e
+<0000211a> 【Miki】「――Yes!」\e
+
+//<0000211c> 【美琴】「――その代わり…\p…\p今度は約束、\p守ってね…\p…\p！」\e
+<0000211c> 【Mikoto】「――In exchange...\p...\pkeep your promise this time...\p...\p!」\e
+
+//<0000211e> 【壬姫】「――っ…\p…\p！」\e
+<0000211e> 【Miki】「――...\p...\p!」\e
+
+//<00002120> 【美琴】「――お願いだよ…\p…\p！？」\e
+<00002120> 【Mikoto】「――Please...\p...\p!!」\e
+
+//<00002127> 【武】「――！？」\e
+<00002127> 【Takeru】「――!?」\e
+
+//<00002128> ――なんだこの波形…\p…\p？　ＢＥＴＡが第一隔壁に到達したのか…\p…\p！？　\e
+<00002128> ――What's this waveform...\p...\p?\bDid the BETA reach the 1st barrier...\p...\p!?\e
+
+//<0000212a> ――くそっ…\p…\pつい見ちまった！\e
+<0000212a> ――Dammit...\p...\pI just had to look!\e
+
+//<0000212c> 【武】「――霞！　フルチャージまであとどの位だ！？」\e
+<0000212c> 【Takeru】「――Kasumi! How long until we're fully charged!?」\e
+
+//<0000212e> 【霞】「最長予測で１３６５…\p…\p最短で７９２です」\e
+<0000212e> 【Kasumi】「At most, 1365 seconds...\p...\pat least 792 seconds.」\e
+
+//<0000212f> 【武】「――ッ！」\e
+<0000212f> 【Takeru】「――!」\e
+
+//<00002130> ――最悪あと２３分近くも待つのか…\p…\p！？　\e
+<00002130> ――We could be stuck here up to twenty three more minutes...\p...\p!?\e
+
+//<00002131> 【武】「…\p…\p予想値に結構開きがあるな」\e
+<00002131> 【Takeru】「...\p...\pthat's a lot longer than expected.」\e
+
+//<00002134> 【霞】「充填率が９０％を越えてから、\p出力が更に不安定になっています」\e
+<00002134> 【Kasumi】「After 90% the output becomes even more unstable.」\e
+
+//<00002135> 【武】「…\p…\pそうか…\p…\p」\e
+<00002135> 【Takeru】「...\p...\pI see...\p...\p」\e//I thought capacitor charge speed slowed as it got closer to full anyway ~IX
+
+//<00002136> 【霞】「…\p…\p…\p…\p」\e
+<00002136> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00002138> 【霞】「…\p…\pでも、\p純夏さんは一生懸命頑張っています」\e
+<00002138> 【Kasumi】「...\p...\pbut Sumika-san's trying her best.」\e
+
+//<00002139> 【武】「――ああ。\pあいつは精一杯やってる…\p…\pわかってるさ」\e
+<00002139> 【Takeru】「――Yeah.\p She's been working really hard...\p...\pI know.」\e
+
+//<0000213a> 【霞】「…\p…\pはい」\e
+<0000213a> 【Kasumi】「...\p...\pyes.」\e
+
+//<0000213c> ――これまでの戦闘で…\p…\p先生が言ってたラザフォード場への干渉許容値なんて、\p何度も越えちまっていたはずだ。\e
+<0000213c> ――All the fighting we've done so far...\p...\phas already put us far beyond Sensei's Rutherford Field interference tolerances.\e
+
+//<0000213e> ただでさえ負荷がかかりまくっていたのに…\p…\p。\e
+<0000213e> We've been demanding so much from her...\p...\p\e
+
+//<00002140> それでも純夏は…\p…\pあれだけの事をやってのけたんだ。\e
+<00002140> But Sumika's still...\p...\ptrying that hard.\e
+
+//<00002142> ここに来て息切れするのは当然だ…\p…\p。\nそれを責めてるんじゃない。\e
+<00002142> It's only natural for her to lose her breath now...\p...\p\nI'm not blaming her for that.\e
+
+//<00002144> 【純夏】「大丈夫大丈夫！　心配しないで、\pタケルちゃんっ！」\e
+<00002144> 【Sumika】「I'm fine, I'm fine!\bDon't worry about me,\p Takeru-chan!」\e
+
+//<00002148> ――えっ！？\e
+<00002148> ――Eh!?\e
+
+//<00002149> 【霞】「…\p…\pって…\p…\p純夏さんがいってます」\e
+<00002149> 【Kasumi】「...\p...\pthat's...\p...\pwhat Sumika-san said.」\e
+
+//<0000214a> 【武】「――あ…\p…\pああ」\e
+<0000214a> 【Takeru】「――Ah...\p...\pokay.」\e
+
+//<0000214b> …\p…\p何だオレ…\p…\p目を瞑った一瞬に落ちちまって、\p寝ぼけたのか…\p…\p？\n本当に純夏が喋ってるように聞こえたけど…\p…\p。\e
+<0000214b> ...\p...\pwhat the hell...\p...\pdid I fall asleep the moment I closed my eyes...\p...\p?\nIt really felt like Sumika was talking to me just now...\p...\p\e
+
+//<0000214d> 【冥夜】「――タケル」\e
+<0000214d> 【Meiya】「――Takeru.」\e
+
+//<0000214f> ――っと…\p…\p！\e
+<0000214f> ――...\p...\p!\e
+
+//<00002150> 【冥夜】「第一隔壁の閉鎖が始まったようだぞ！」\e
+<00002150> 【Meiya】「The 1st barrier has begun closing!」\e
+
+//<00002152> 【武】「そうか…\p…\pいよいよだな！　で、\p設定は終わったのか？」\e
+<00002152> 【Takeru】「I see...\p...\pit's finally time!\bSo did you finish changing the settings?」\e
+
+//<00002153> 【冥夜】「ああ、\pそれは疾うにな。\n充填率はどうだ」\e
+<00002153> 【Meiya】「Yes,\p quite some time ago.\nHow charged are you?」\e
+
+//<00002155> 【武】「９４まで行ってる。\nフルチャージまでは――」\e
+<00002155> 【Takeru】「We're at 94%.\nShould hit full in――」\e
+
+//<00002156> 【霞】「――現在最長１１２５、\p最短で５５２です」\e
+<00002156> 【Kasumi】「――At most 1125 seconds,\p at least 552 seconds.」\e
+
+//<00002157> 【武】「――最長１９分弱、\p最短でも９分強だ」\e
+<00002157> 【Takeru】「――At most nineteen minutes,\p at least nine.」\e
+
+//<00002158> 【冥夜】「そうか。閉鎖さえ完了してしまえば、\p如何にＢＥＴＡであれ、\p１９分以内に隔壁を破壊する事は適うまい」\e
+<00002158> 【Meiya】「I see. Once the barrier closes,\p even the BETA would be hard-pressed to reopen it within nineteen minutes.」\e
+
+//<0000215a> 【冥夜】「――『脳』を修復し、\p開放を試みるならば尚、\p時間が必要であろう」\e
+<0000215a> 【Meiya】「――It would take an especially long time if they attempted to regenerate the brain somehow.」\e
+
+//<0000215c> 【武】「ああ、\pそうだな！」\e
+<0000215c> 【Takeru】「Yeah,\p exactly!」\e
+
+//<0000215d> 【冥夜】「ではそなたは、\p凄乃皇を第二隔壁まで前進させるがよい。\n最終充填はそこで行うのだ」\e
+<0000215d> 【Meiya】「You would do well to move the Susano'o toward the 2nd barrier.\nComplete your charging there.」\e
+
+//<0000215f> 【武】「――どうした？　９７までは中間点で待機の手筈だろ？」\e
+<0000215f> 【Takeru】「――What? Weren't we going to stay at the middle until 97%?」\e
+
+//<00002160> 【冥夜】「『主広間』の残存２万が、\p予想を上回る速度で第一隔壁の至近に迫っている」\e
+<00002160> 【Meiya】「The twenty thousand stragglers in the Main Hall are approaching the 1st barrier faster than expected.」\e
+
+//<00002162> 【武】「ああ、\pこっちも振動センサーで確認してる」\e
+<00002162> 【Takeru】「Aaah,\p I saw that on the vibration sensor.」\e
+
+//<00002163> 【冥夜】「敵の『横坑』侵入に備え、\p凄乃皇までの最長距離を確保しておきたい」\e
+<00002163> 【Meiya】「We should keep the Susano'o as far away as possible from any enemies that make it into the Drift.」\e
+
+//<00002165> 【武】「なるほど、\pわかった。\n今からそっちに向かう」\e
+<00002165> 【Takeru】「Okay,\p understood.\nI'll head over there now.」\e
+
+//<00002166> 【冥夜】「――了解」\e
+<00002166> 【Meiya】「――Copy that.」\e
+
+//<00002167> 【武】「――霞、\p座標固定解除――微速前進だ」\e
+<00002167> 【Takeru】「――Kasumi,\p unfix coordinates――Move ahead slow.」\e
+
+//<00002169> 【霞】「――はい」\e
+<00002169> 【Kasumi】「――Okay.」\e
+
+//<0000216c> 【霞】「――ヴァルキリー２、\p高速接近中」\e
+<0000216c> 【Kasumi】「――Valkyrie 2,\p approaching at high speed.」\e
+
+//<0000216d> ――え？\e
+<0000216d> ――Eh?\e
+
+//<0000216f> 【霞】「減速しません…\p…\pフライパスするようです」\e
+<0000216f> 【Kasumi】「Not slowing down...\p...\pshe is going to fly past us.」\e
+
+//<00002171> 【武】「――冥夜、\pどうした？　――何かあったのか！？」\e
+<00002171> 【Takeru】「――Meiya,\p what's wrong? ――Did something happen!?」\e
+
+//<00002173> 【武】「――おいっ！？」\e
+<00002173> 【Takeru】「――Hey!?」\e
+
+//<00002176> 【冥夜】「皆の後退を援護しに行く。\nそなたは先に第二隔壁前に行っておれ」\e
+<00002176> 【Meiya】「I am going to support the others' retreat.\nYou go to the 2nd barrier now.」\e
+
+//<00002178> ――え…\p…\p？！　なんだ…\p…\pそういう事かよ…\p…\p！\e
+<00002178> ――Eh...\p...\p!? What the hell...\p...\pis that all...\p...\e
+
+//<00002179> 【武】「――それならそうって、\p最初から言ってくれ」\e
+<00002179> 【Takeru】「――Then tell me that sooner.」\e
+
+//<0000217a> 【冥夜】「――急いでおった故な…\p…\p許すが良いぞ」\e
+<0000217a> 【Meiya】「――I was in a hurry...\p...\pforgive me.」\e
+
+//<0000217c> またさっきみたいに、\pおまえの邪魔しちまう所だったじゃねえか…\p…\p。\e
+<0000217c> I almost held you up again,\p stop doing that...\p...\p\e
+
+//<00002181> 【冥夜】「――タケル、\pひとつ確認しておくが…\p…\p」\e
+<00002181> 【Meiya】「――Takeru,\p may I ask you something...\p...\p?」\e
+
+//<00002182> 【武】「――なんだ」\e
+<00002182> 【Takeru】「――What?」\e
+
+//<00002183> 【冥夜】「状況を鑑みるに、\p私達が凄乃皇へ搭乗するタイミングは、\p主砲発射直前となろう」\e
+<00002183> 【Meiya】「Given the situation,\p we will have to board the Susano'o immediately before the main cannon fires.」\e
+
+//<00002185> 【武】「多少の段取り変更は仕方がない。\n臨機応変にやるだけだ」\e
+<00002185> 【Takeru】「Yeah, we had to change the plan a lot to deal with everything.」\e
+
+//<00002187> 【冥夜】「――ただし、\p誰であれ、\pそのタイミングに間に合わぬ場合は…\p…\pわかっておろうな？」\e
+<00002187> 【Meiya】「――However,\p should one of us,\p any of us, fail to arrive by that time...\p...\pyou know what to do?」\e
+
+//<00002189> 【武】「――ああ。わかってる」\e
+<00002189> 【Takeru】「――Yes, I know.」\e
+
+//<0000218a> 【冥夜】「…\p…\p…\p…\p」\e
+<0000218a> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<0000218b> 【武】「…\p…\pできる事なら、\pもう誰ひとりとして失いたくはない」\e
+<0000218b> 【Takeru】「...\p...\pif possible,\p I don't want to lose anyone else.」\e
+
+//<0000218c> 【冥夜】「…\p…\p…\p…\p」\e
+<0000218c> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<0000218d> 【武】「だけど…\p…\pここに来るまでに払った多くの犠牲を無駄にするつもりもない」\e
+<0000218d> 【Takeru】「But...\p...\pI don't plan on wasting all the sacrifices we made to get this far.」\e
+
+//<0000218e> 【武】「おまえ達も…\p…\p同じ気持ちだって信じているから、\pオレは待たない」\e
+<0000218e> 【Takeru】「And I believe...\p...\pyou all feel the same way,\p so I won't wait.」\e
+
+//<00002190> 【冥夜】「そう…\p…\pか…\p…\p」\e
+<00002190> 【Meiya】「I...\p...\psee...\p...\p」\e
+
+//<00002192> 【武】「まあ…\p…\pおまえ達と一緒に脱出できるっていう未来も、\p同じぐらい信じてはいるけどな」\e
+<00002192> 【Takeru】「Well...\p...\pI believe just as strongly in the future where we can all escape together.」\e
+
+//<00002193> 【冥夜】「――フッ…\p…\p」\e
+<00002193> 【Meiya】「――Hu...\p...\p!」\e
+
+//<00002195> 【武】「笑うなよ…\p…\p本当にそう思ってんだって…\p…\p！」\e
+<00002195> 【Takeru】「Don't laugh...\p...\pI really believe that...\p...\p!」\e
+
+//<00002196> 【冥夜】「――まったく…\p…\p欲張りな男だな、\pそなたは」\e
+<00002196> 【Meiya】「――You really are...\p...\pa demanding man.」\e
+
+//<00002197> 【武】「――おいおい、\p自覚と責任を以て行動していれば、\p心でどう思ってもかまわないんじゃないのか？　おまえが言ったんだぜ？」\e
+<00002197> 【Takeru】「――Hey now,\p as long as I fulfill my duties,\p who cares what I feel on the inside?\bDidn't you say the same thing?」\e
+
+//<00002198> 【冥夜】「はて…\p…\p何の事やら…\p…\p」\e
+<00002198> 【Meiya】「Well now...\p...\pI cannot recall...\p...\p」\e
+
+//<0000219a> 【武】「なんだよ、\pとぼけやがって…\p…\p」\e
+<0000219a> 【Takeru】「Come on,\p don't play dumb...\p...\p」\e
+
+//<0000219b> 【冥夜】「私とて僅かながらではあるが成長しているのだ。\nいつまでも同じ手が通用すると思うでないぞ」\e
+<0000219b> 【Meiya】「Even I have made some slight growth of my own.\nDo not think the same trick will work on me forever.」\e
+
+//<0000219c> 【武】「――わかったわかった、\p交信切るぞ！　これ以上、\p脚、\p引っ張りたくないからな！」\e
+<0000219c> 【Takeru】「――I get it, I get it,\p I'll close the channel already!\bI'm not gonna keep holding you back like this!」\e
+
+//<0000219d> 【冥夜】「――そうするがよいぞ」\e
+<0000219d> 【Meiya】「――That is for the best.」\e
+
+//<0000219f> 【武】「…\p…\pその代わり、\pなるべく早く戻って来い！　――いいな？！」\e
+<0000219f> 【Takeru】「...\p...\pin exchange,\p get back here as fast as you can! ――Understood!?」\e
+
+//<000021a0> 【冥夜】「――ああ…\p…\p了解だ…\p…\p！」\e
+<000021a0> 【Meiya】「――Yes...\p...\pcopy that...\p...\p!」\e
+
+//<000021a4> 【冥夜】「――さて…\p…\pもう良いであろう…\p…\p」\e
+<000021a4> 【Meiya】「――Now then...\p...\pthat ought to be enough...\p...\p」\e
+
+//<000021a7> 【冥夜】「――鎧衣！　先刻からのコールに応答せんのは何故だ！」\e
+<000021a7> 【Meiya】「――Yoroi! Why did you not answer my calls!?」\e
+
+//<000021a9> 【冥夜】「――鎧衣ッ！　聞こえておるのであろうっ！　――鎧衣ッ！！」\e
+<000021a9> 【Meiya】「――Yoroi! I know you can hear me! ――Yoroi!!」\e
+
+//<000021aa> 【冥夜】「――珠瀬っ！　――応答せんかッ！！」\e
+<000021aa> 【Meiya】「――Tamase! ――Will you not answer!?」\e
+
+//<000021ac> 【冥夜】「――ッ！　――あくまでも繋がぬつもりか！？」\e
+<000021ac> 【Meiya】「――! ――Why are they so intent on remaining silent!?」\e
+
+//<000021ae> 【冥夜】「――鎧衣ッ！」\e
+<000021ae> 【Meiya】「――Yoroi!」\e
+
+//<000021b0> 【冥夜】「――ッ！？」\e
+<000021b0> 【Meiya】「――!?」\e
+
+//<000021b2> 【冥夜】「――おのれッ！！」\e
+<000021b2> 【Meiya】「――Damn them!!」\e
+
+//<00003db7> 【冥夜】「――とうとうここまで来たかッ！！」\e
+<00003db7> 【Meiya】「――They have come this far already!?」\e
+
+//<002021d1> 【美琴】「――冥夜さん…\p…\p何で戻ってきたのッ！」\n【壬姫】「…\p…\p…\p…\p」\e
+<002021d1> 【Mikoto】「――Meiya-san...\p...\pwhy did you come back!?」\n【Miki】「...\p...\p...\p...\p」\e
+
+//<000021d5> 【冥夜】「――そなた達何故後退しないっ！？　――じきに隔壁が閉鎖されてしまうぞッ！？」
+<000021d5> 【Meiya】「――Why have neither of you retreated!?\b――The barrier will close at any moment!!」
+
+//<00003dc7> \r
+<00003dc7> \r
+
+//<002021d8> 【美琴】「――ッ！」\n【壬姫】「…\p…\p…\p…\p」\e
+<002021d8> 【Mikoto】「――!」\n【Miki】「...\p...\p...\p...\p」\e
+
+//<000021db> 【冥夜】「――そなた達…\p…\p何を考えておる！？　――しかも鎧衣ッ…\p…\pあれは…\p…\pあれはどういう事だっ！」\e
+<000021db> 【Meiya】「――What on Earth...\p...\pare you two thinking!?\b――And Yoroi...\p...\pwhat was...\p...\pthe meaning of that!?」\e
+
+//<000021e2> 【壬姫】「――だって――ああでもしないと…\p…\pっ！！」\e
+<000021e2> 【Miki】「――But――If she didn't say that...\p...\p!!」\e
+
+//<000021e5> 【美琴】「――冥夜さんっ――『横坑』に後退しなかったでしょっ？！」\e
+<000021e5> 【Mikoto】「――Meiya-san! ――You wouldn't have retreated into the Drift, would you!?」\e
+
+//<000021e8> 【冥夜】「――なるほど…\p…\p！　私もタケル同様、\pそなた達に気を遣われたという訳か…\p…\pッ！」\e
+<000021e8> 【Meiya】「――I see...\p...\pso I have been manipulated by you just as Takeru...\p...\p」\e
+
+//<000021ea> 【冥夜】「――では、\pそなたの言とは裏腹に、\p遠隔制御の設定が正常であった由は問うまい！」\e
+<000021ea> 【Meiya】「――Then I need not ask why the remote control was functioning normally after all!」\e
+
+//<000021ec> 【冥夜】「――再三のコールに応じなかった事もッ――！！」\e
+<000021ec> 【Meiya】「――Or why you did not respond to my calls――!!」\e
+
+//<000021ef> 【冥夜】「――だが…\p…\p第一隔壁の『脳』に設置してあるべきＳ－１１が、\p第二隔壁附近に在るのは何故か！」\e
+<000021ef> 【Meiya】「――But...\p...\pwhy have you placed the S-11 meant for the 1st barrier wall at the 2nd instead!?」\e
+
+//<000021f0> 【冥夜】「――それだけは聞かせてもらうぞ！」\e
+<000021f0> 【Meiya】「――That much you will tell me!」\e
+
+//<000021f1> 【美琴】「――ボクの判断だよ！　――それがベストだって感じたんだ！」\e
+<000021f1> 【Mikoto】「――I made the decision!\b――I felt that was the best option!」\e
+
+//<000021f3> 【冥夜】「――ベストだと…\p…\pッ？！」\e
+<000021f3> 【Meiya】「――The best option...\p...\p!?」\e
+
+//<000021f6> 【美琴】「――実は、\p最初のＳ－１１が爆発した衝撃で――」\e
+<000021f6> 【Mikoto】「――The truth is,\p during that first S-11 explosion――」\e
+
+//<000021f8> 【美琴】「――壬姫さんの開閉装置が故障しちゃったんだよ」\e
+<000021f8> 【Mikoto】「――Miki's chemical tank was damaged by the shockwave.」\e//lit. "opening/closing device" so may want to change to "valve" or something ~IX
+
+//<000021fb> 【冥夜】「――！」\e
+<000021fb> 【Meiya】「――!」\e
+
+//<000021fd> 【美琴】「――あの段階で第一隔壁の開放は完了してたから…\p…\pボクは…\p…\pっ！」\e
+<000021fd> 【Mikoto】「――We'd already finished opening the 1st barrier by then...\p...\pso I...\p...\p!」\e
+
+//<0000025c> 【壬姫】「――うわあああああ～～～！！」
+<0000025c> 【Miki】「――Uwaaaaaaaaaaaaaaaaa!!」
+
+//<00001495> \r
+<00001495> \r
+
+//<0000147a> 【美琴】「――うあああぁぁぁ～～～～～！！」
+<0000147a> 【Mikoto】「――Uuuaaaaaaaaaaaaaaaaaaaaaa!!」
+
+//<000029ee> \r
+<000029ee> \r
+
+//<00002207> 【美琴】「…\p…\pっ…\p…\pぅう…\p…\p…\p…\p機体ステータス…\p…\p！」\e
+<00002207> 【Mikoto】「...\p...\p! ...\p...\puuu...\p...\p...\p...\pTSF status check...\p...\p!」\e
+
+//<0000220a> 【美琴】「…\p…\pよかった…\p…\p…\p丁度良く『脳』が盾になったのか…\p…\p？」\e
+<0000220a> 【Mikoto】「...\p...\pgood...\p...\p...\pthe brain shielded me...\p...\p?」\e
+
+//<0000220b> 【美琴】「…\p…\pいやこれは衝撃波だけだ。\n爆風や爆発が…\p…\p途中で遮断されてる…\p…\p？！」\e
+<0000220b> 【Mikoto】「...\p...\pno, this is just a shockwave.\nThe explosion was...\p...\pcut off...\p...\p!?」\e
+
+//<0000220c> 【美琴】「…\p…\pそうか…\p…\p純夏さんがまたラザフォード場で…\p…\p。――！？」\e
+<0000220c> 【Mikoto】「...\p...\pI see...\p...\pSumika-san deployed a Rutherford Field to...\p...\p――!?」\e
+
+//<0000220d> 【美琴】「――そうか、\pこれでＢＥＴＡを…\p…\p！\n凄いぞ、\pこんな事が…\p…\p…\p…\pあっ！\n――そうだ――壬姫さんは…\p…\pっ！？」\e
+<0000220d> 【Mikoto】「――I see,\p and then this got rid of the BETA...\p...\p!\nAmazing,\p I had no idea she could...\p...\p...\p...\pah!\n――That's right――Miki-san...\p...\p!!」\e
+
+//<0000220f> 【美琴】「――壬姫さん…\p…\p！！　――壬姫さんッ！」\e
+<0000220f> 【Mikoto】「――Miki-san...\p...\p!! ――Miki-san!」\e
+
+//<00002211> 【壬姫】「――鎧衣…\p…\pさん…\p…\p！」\e
+<00002211> 【Miki】「――Yoroi...\p...\psan...\p...\p!」\e
+
+//<00002213> 【美琴】「――そっちは大丈夫…\p…\p？！」\e
+<00002213> 【Mikoto】「――Are you okay...\p...\p!?」\e
+
+//<00002214> 【壬姫】「――私は…\p…\p大丈夫です…\p…\p」\e
+<00002214> 【Miki】「――I'm...\p...\pfine...\p...\p」\e
+
+//<00002216> 【美琴】「――そう、\pよかった。\nこっちも損害無しだよ」\e
+<00002216> 【Mikoto】「――Okay,\p good.\p I'm unharmed too.」\e
+
+//<00002217> 【壬姫】「――でも…\p…\pどうしよう…\p…\p」\e
+<00002217> 【Miki】「――But...\p...\pwhat do we do...\p...\p?」\e
+
+//<00002219> 【美琴】「――なに！？　どうしたの！？」\e
+<00002219> 【Mikoto】「――What!? What happened!?」\e
+
+//<0000221a> 【壬姫】「――開閉装置が…\p…\p爆発の衝撃で…\p…\p！」\e
+<0000221a> 【Miki】「――The shockwave...\p...\pbroke the tank...\p...\p!」\e
+
+//<0000221c> 【美琴】「――ッ！？　ちょっと待って！」\e
+<0000221c> 【Mikoto】「――!? Wait a minute!」\e
+
+//<00002220> 【美琴】「――ッ…\p…\p開放剤の停止装置にトラブル…\p…\p閉塞剤注入装置――機能停止ッ！？」\e
+<00002220> 【Mikoto】「――...\p...\punable to stop injecting the opening chemical...\p...\pand unable to inject the closing chemical!?」\e//typo: "checmial!?"
+
+//<00002223> 【壬姫】「――このままじゃ…\p…\p第一隔壁が閉められないよ…\p…\p！」　\e
+<00002223> 【Miki】「――There's no way...\p...\pfor us to close the 1st barrier...\p...\p!」\e
+
+//<00002224> 【壬姫】「――そうだ…\p…\pこの事をみんなに伝えなきゃ…\p…\p！！」　\e
+<00002224> 【Miki】「――That's right...\p...\pwe have to tell everyone...\p...\p!!」　\e
+
+//<00002225> 【美琴】「――壬姫さん、\pちょっと待って！」\e
+<00002225> 【Mikoto】「――Miki-san,\p wait a minute!」\e
+
+//<00002227> 【壬姫】「――え…\p…\p！？」\e
+<00002227> 【Miki】「――Eh...\p...\p!?」\e
+
+//<00002229> 【美琴】「――爆発の影響で、\pこの距離でも通信障害が出てるんだ――しばらくは時間の無駄だよ！」\e
+<00002229> 【Mikoto】「――The explosion's making it hard to transmit anything even at this range――You're gonna have to wait!」\e
+
+//<0000222a> 【壬姫】「――！」\e
+<0000222a> 【Miki】「――!」\e
+
+//<0000222b> 【美琴】「――それよりボクに考えがある。\n秘匿回線に切り換えてッ！」\e
+<0000222b> 【Mikoto】「――But more importantly, I have an idea.\nSwitch to an encrypted channel!」\e
+
+//<0000222c> 【壬姫】「――え…\p…\pは、\pはいッ…\p…\p！」　\e
+<0000222c> 【Miki】「――Eh? ...\p...\po-\pokay...\p...\p!」\e
+
+//<0000222f> 【壬姫】「――切り換えました…\p…\p！」\e
+<0000222f> 【Miki】「――Switched...\p...\p!」\e
+
+//<00002231> 【美琴】「――時間が勿体ないから、\p手を止めないで聞いて」\e
+<00002231> 【Mikoto】「――There's no time to waste,\p so please listen until the end.」\e
+
+//<00002232> 【美琴】「――壬姫さんは予定通り、\p第一隔壁を凄乃皇が通過するまでは、\p開放剤の間歇注入を続けるんだ」\e
+<00002232> 【Mikoto】「――Miki-san,\p you'll continue injecting the opening chemical intermittently until the Susano'o gets through the 1st barrier,\p just as planned.」\e
+
+//<00002233> 【壬姫】「――了解」\e
+<00002233> 【Miki】「――Okay.」\e
+
+//<00002235> 【美琴】「――ボクはＳ－１１を持って、\p第二隔壁に向かう」\e
+<00002235> 【Mikoto】「――I'll take the S-11 and head for the 2nd barrier.」\e
+
+//<00002236> 【壬姫】「――えっ…\p…\p！？」\e
+<00002236> 【Miki】「――Eh...\p...\p!?」\e
+
+//<00002238> 【美琴】「――大丈夫、\pそれらしいものは置いておくから、\pよく調べないとわからないよ」\e
+<00002238> 【Mikoto】「――It's okay,\p I'll leave something similar here so they won't know if they don't look closely.」\e
+
+//<00002239> 【壬姫】「――そういう問題じゃないですよ！　いったいどうするつもりなんですか！？」\e
+<00002239> 【Miki】「――That's not the problem!\bWhat in the world are you trying to do!?」\e
+
+//<0000223d> 【壬姫】「――鎧衣さん！」\e
+<0000223d> 【Miki】「――Yoroi-san!」\e
+
+//<0000223f> 【美琴】「――第一隔壁が開いた以上、\p第二隔壁の開放が最優先だよ！」\e
+<0000223f> 【Mikoto】「――Now that we've opened the 1st barrier,\p opening the 2nd barrier takes priority!」\e
+
+//<00002240> 【壬姫】「――それはわかります！　でもＳ－１１は！」\e
+<00002240> 【Miki】「――I know that! But the S-11――!」\e
+
+//<00002241> 【美琴】「――装置が直せなかったら、\p開けっ放しの第一隔壁に置いといても意味がない！」\e
+<00002241> 【Mikoto】「――If we can't fix the injector,\p then the 1st barrier is stuck open anyway so there's no point using it here!」\e
+
+//<00002242> 【壬姫】「――あ！」\e
+<00002242> 【Miki】「――Ah!」\e
+
+//<00002243> 【美琴】「――修理できるとしても、\p敵の到達前に終わらなければ同じ事だよ！」\e
+<00002243> 【Mikoto】「――Even if we could fix it,\p it doesn't matter unless we can do so before the enemies get here!」\e
+
+//<00002245> 【美琴】「――ボクのプランは副司令に近いんだ。\n簡単なトラップだよ…\p…\p見て！」\e
+<00002245> 【Mikoto】「――But I have a plan like the XO's.\nIt's a simple trap...\p...\plook!」\e
+
+//<00002247> 【美琴】「簡単に言うと、\p第一隔壁のセッティングを第二隔壁にスライドするイメージだよ」\e
+<00002247> 【Mikoto】「The basic idea will be to shift all our 1st barrier plans over to the 2nd barrier.」\e
+
+//<00002248> 【美琴】「ただし、\pＳ－１１を設置するのは第二隔壁の『脳』じゃない。\n少し手前に仕掛けるんだ」\e
+<00002248> 【Mikoto】「However, we won't put the S-11 inside the 2nd barrier's brain.\nWe'll set it down in front.」\e
+
+//<00002249> 【壬姫】「…\p…\p手前…\p…\pですか？」\e
+<00002249> 【Miki】「...\p...\pin...\p...\pfront?」\e
+
+//<0000224b> 【美琴】「これはさっきの爆発のモデルデータなんだけど、\p純夏さんがラザフォード場を展開して…\p…\pほら！」\e
+<0000224b> 【Mikoto】「Based on the data from that last explosion,\p Sumika-san can deploy her Rutherford Field again...\p...\plook!」\e
+
+//<0000224c> 【壬姫】「凄い…\p…\p私達がこの程度で済んだのも、\p鑑さんのおかげだったんですね…\p…\p！\nそれに…\p…\p『主広間』の敵が殆ど…\p…\p」\e
+<0000224c> 【Miki】「Amazing...\p...\pso Kagami-san kept us from taking any real damage...\p...\p!\nAnd...\p...\ptook out most of the enemies in the Main Hall...\p...\p」\e
+
+//<0000224d> 【美琴】「でもここはオリジナルハイヴ…\p…\pＢＥＴＡの増援は必ず来る！\nそれも何十万単位でね」\e
+<0000224d> 【Mikoto】「But this is the Original Hive...\p...\pBETA reinforcements are sure to show up!\nAnd tens of thousands of them.」\e
+
+//<0000224e> 【美琴】「崩落させた手前の『広間』が突破されるのも時間の問題…\p…\pいや、\pもう突破されているかも知れないよ」\e
+<0000224e> 【Mikoto】「It's only a matter of time before they break through the previous Hall...\p...\pno,\p they might have gotten through already.」\e
+
+//<00002250> 【美琴】「修理が不確定要素である以上、\p『横坑』へのＢＥＴＡ侵入は想定するべきだよね？」\e
+<00002250> 【Mikoto】「Since we don't know if we can repair the tank,\p we should assume BETA will get into the Drift, right?」\e
+
+//<00002251> 【壬姫】「うん…\p…\pそうだね」\e
+<00002251> 【Miki】「Yes...\p...\pyou're right.」\e
+
+//<00002252> 【美琴】「けど、\pラザフォード場に干渉し続けられたら、\p充填ができないどころか凄乃皇の主機が持たない」\e
+<00002252> 【Mikoto】「But if they keep interfering with the Rutherford Field,\p the Susano'o's engine won't last, much less build up the charge it needs.」\e
+
+//<00002253> 【美琴】「『あ号標的』ブロックに退避して、\p脱出だけする手はある。\nだけど、\p敵の対処能力から言って『次』はない」\e
+<00002253> 【Mikoto】「We would still have the option of retreating into the Primary Objective block and just escaping without shooting.\nBut given how fast the enemy adapts,\p this is our last chance.」\e
+
+//<00002255> 【美琴】「つまり、\pこの状態になったら人類の負けなんだ」\e
+<00002255> 【Mikoto】「So if it comes down to this humanity's done for.」\e
+
+//<00002256> 【壬姫】「…\p…\p…\p…\p」\e
+<00002256> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00002258> 【美琴】「――だから、\pさっきの爆発と同じ事を、\p第二隔壁の前で繰り返すんだ」\e
+<00002258> 【Mikoto】「――So we're going to do the same S-11 trick again in front of the 2nd barrier.」\e
+
+//<00002259> 【壬姫】「――そうか…\p…\p凄乃皇より後方なら安全…\p…\p！　だからＳ－１１が場の手前なんだ！？」\e
+<00002259> 【Miki】「――I see...\p...\pit'll work as long as it's behind the Susano'o...\p...\p! That's why you'll put it in front of the brain!!」\e
+
+//<0000225b> 【美琴】「うん。一時的に高い負荷はかかる。\nでも、\p延々負荷が掛かり続ける状況とは比較にならない」\e
+<0000225b> 【Mikoto】「Yeah. For a brief moment it'll put a huge strain on her.\nBut that's nothing compared to being strained for a long period of time.」\e
+
+//<0000225c> 【美琴】「しかも『主広間』より狭い『横坑』なら、\p場の被爆面積も小さくなるから、\pさっきより少ない負荷で済む」\e
+<0000225c> 【Mikoto】「Not to mention the Drift is much narrower than the Main Hall,\p so it shouldn't be nearly as hard for her to cover the whole area.」\e
+
+//<0000225e> 【美琴】「そして、\pその狭い『横坑』が爆発エネルギーの指向性を高めて、\pＢＥＴＡを薙ぎ払うんだ」\e
+<0000225e> 【Mikoto】「The fact that it's narrow will even improve the\bconcentration of the explosion and wipe out more of the BETA.」\e
+
+//<0000225f> 【壬姫】「そうか…\p…\p『横坑』がチャンバーの役割を果たすんですね！」\e
+<0000225f> 【Miki】「I see...\p...\pthe Drift is going to channel the explosion into them!」\e
+
+//<00002260> 【美琴】「それに今までと違って、\p数十万のＢＥＴＡが、\p２度の爆発や崩落で発生した煤や微粒子を巻き上げた後だよ？」\e
+<00002260> 【Mikoto】「And that'll be after the air is saturated with dust and microparticles from the second explosion and the collapse.」\e//isn't this before Chizuru/Ayamine blew the entrance? ~IX
+
+//<00002262> 【壬姫】「――粉塵爆発…\p…\pそれも、\pとんでもない規模の連鎖が起きるかも知れない…\p…\p」\e
+<00002262> 【Miki】「――A dust explosion...\p...\pthat might get really out of control...\p...\p」\e
+
+//<00002263> 【美琴】「まあ、\pそこまでうまく行かなくても、\pかなり広範囲のＢＥＴＡを殲滅できる。\n再充填に充分以上の時間が稼げるよ」\e
+<00002263> 【Mikoto】「Well,\p even if that part doesn't go well,\p it'll still take out a lot of BETA.\nIt should buy more than enough time to finish charging.」\e
+
+//<00002264> 【壬姫】「鎧衣さん…\p…\p凄い…\p…\p」\e
+<00002264> 【Miki】「Yoroi-san...\p...\pthis is amazing...\p...\p」\e
+
+//<00002267> 【美琴】「でもね、\pこれはあくまで保険だよ。\n第一隔壁の閉鎖は最後まで諦めない」\e
+<00002267> 【Mikoto】「But this is just the fallback plan.\nWe won't give up on closing the 1st barrier until the last second.」\e
+
+//<0000226a> 【美琴】「第一隔壁の閉鎖が最も安全である事にかわりはないからね」\e
+<0000226a> 【Mikoto】「Closing the 1st barrier is still by far the safest option.」\e
+
+//<0000226c> 【壬姫】「じゃあ、\pすぐにでも修理に掛からないと！」\e
+<0000226c> 【Miki】「So I'll try and repair it now!」\e
+
+//<0000226d> 【美琴】「だめだよ！　それをみんなが見たら、\pもっと無茶で…\p…\p厳しい手段を選んじゃうよ！」\e
+<0000226d> 【Mikoto】「No! If everyone sees you doing that,\p they'll...\p...\pchoose to do something much riskier!」\e
+
+//<0000226e> 【壬姫】「え…\p…\p？」\e
+<0000226e> 【Miki】「Eh...\p...\p?」\e
+
+//<0000226f> 【美琴】「――さっきだって、\pあの３人…\p…\pあんな無茶な事したじゃないか…\p…\p」\e
+<0000226f> 【Mikoto】「――You saw what the three of them did just now...\p...\pthat was absolutely reckless...\p...\p」\e
+
+//<00002270> 【壬姫】「でもあれは凄乃皇を…\p…\p」\e
+<00002270> 【Miki】「But the Susano'o was...\p...\p」\e
+
+//<00002271> 【美琴】「確かにそうだよ。\nでも…\p…\p３人も必要ない」\e
+<00002271> 【Mikoto】「Yes, it was.\nBut...\p...\pthere was no need for all three to go.」\e
+
+//<00002272> 【壬姫】「――え…\p…\p？」\e
+<00002272> 【Miki】「――Eh...\p...\p?」\e
+
+//<00002273> 【美琴】「どうせなら最も少ないリスクで…\p…\p最大の効果を得るべきだよ…\p…\p」\e
+<00002273> 【Mikoto】「They should've just had one of them go...\p...\pto minimize the risk...\p...\p」\e
+
+//<00002274> 【壬姫】「…\p…\p鎧衣さん…\p…\p？！」\e
+<00002274> 【Miki】「...\p...\pYoroi-san...\p...\p!?」\e
+
+//<00002275> 【美琴】「装置の修理はボクがやる。\n凄乃皇が『横坑』に侵入して充填している間にね」\e
+<00002275> 【Mikoto】「I'll try to repair the tank while the Susano'o charges up in the Drift.」\e
+
+//<00002276> 【壬姫】「…\p…\pじゃあ修理がうまく行ったとして…\p…\p『脳』は…\p…\pどうなるの…\p…\p？」\e
+<00002276> 【Miki】「...\p...\pso if you can repair it...\p...\pwhat do we do about...\p...\pthe brain...\p...\p?」\e
+
+//<00002277> 【美琴】「みんなが『横坑』に退避した後…\p…\pボクが壊すよ」\e
+<00002277> 【Mikoto】「After everyone's in the Drift...\p...\pI'll break it.」\e
+
+//<00002278> 【壬姫】「――っ！？」\e
+<00002278> 【Miki】「――!?」\e
+
+//<00002279> 【美琴】「ありったけの３６ｍｍを、\p至近距離で精密一点射し続ける」\e
+<00002279> 【Mikoto】「I'll shoot it repeatedly with the 36mm at point blank range.」\e
+
+//<0000227a> 【美琴】「いくら硬度があるって言っても、\pあれはＢＥＴＡの一種で頑強な内壁じゃない。\nだからやり様はあるよ」\e
+<0000227a> 【Mikoto】「No matter how hard it is,\p it's just another species of BETA. The inside can't be that tough.\nSo it should work.」\e
+
+//<0000227b> 【壬姫】「――でもっ…\p…\pそれじゃ鎧衣さんは…\p…\p！！」\e
+<0000227b> 【Miki】「――But...\p...\pYoroi-san, if you do that...\p...\p!!」\e
+
+//<0000227c> 【美琴】「…\p…\p詳しい事は話せないけど…\p…\pボク…\p…\p慧さんがあんな無茶する理由…\p…\p知ってるんだ」\e
+<0000227c> 【Mikoto】「...\p...\pI can't tell you the details, but...\p...\pI know...\p...\pwhy Kei-san would...\p...\pdo something that reckless.」\e
+
+//<0000227d> 【壬姫】「――え？」\e
+<0000227d> 【Miki】「――Eh?」\e
+
+//<0000227e> 【美琴】「…\p…\p１２・５事件の後、\p父さんの事でＭＰに尋問された時…\p…\p色々聞かされて…\p…\p」\e
+<0000227e> 【Mikoto】「...\p...\pafter the 12-5 incident,\p when I was interrogated by the MP about my dad...\p...\pthey asked me a lot...\p...\p」\e
+
+//<0000227f> 【壬姫】「１２・５事件…\p…\p」\e
+<0000227f> 【Miki】「The 12-5 incident...\p...\p」\e
+
+//<00002280> 【美琴】「昨日、\p桜並木で出撃報告した時、\p言いそびれちゃったけど…\p…\p」\e
+<00002280> 【Mikoto】「Yesterday,\p when we gave our reports at the cherry trees,\p I didn't get to say it, but...\p...\p」\e
+
+//<00002281> 【美琴】「…\p…\pボクの父さん、\p帝国情報省の人間で、\pあの事件に深く関わっていたらしいんだ」\e
+<00002281> 【Mikoto】「...\p...\pmy dad's part of an Imperial intelligence agency,\p and apparently he played a big role in the incident.」\e
+
+//<00002282> 【壬姫】「――えッ！？」\e
+<00002282> 【Miki】「――Eh!?」\e
+
+//<00002283> 【美琴】「…\p…\pもしかしたら…\p…\pあの事件は…\p…\pボクの父さんが企んだのかも知れないんだよ…\p…\p」\e
+<00002283> 【Mikoto】「...\p...\pso maybe...\p...\pthat whole incident...\p...\pwas something my dad planned...\p...\p」\e
+
+//<00002284> 【壬姫】「――ッ！？」\e
+<00002284> 【Miki】「――!?」\e
+
+//<00002285> 【美琴】「慧さんが無茶をするのも…\p…\p」\e
+<00002285> 【Mikoto】「Kei-san was so reckless...\p...\p」\e
+
+//<00002286> 【美琴】「冥夜さんがあんな理不尽な扱いを受けているのも…\p…\p」\e
+<00002286> 【Mikoto】「Meiya-san received such unfair treatment...\p...\p」\e
+
+//<00002287> 【美琴】「千鶴さんが辛い思いをしているのも…\p…\p」\e
+<00002287> 【Mikoto】「Chizuru-san was in so much pain...\p...\p」\e
+
+//<00002289> 【美琴】「…\p…\p壬姫さんがお父さんの事で苦しんでいるのも…\p…\p」\e
+<00002289> 【Mikoto】「...\p...\pand Miki-san, you worried about what your father might have done...\p...\p」\e
+
+//<0000228c> 【美琴】「壬姫さんが苦しんでいるのも…\p…\p」\e
+<0000228c> 【Mikoto】「Miki-san, you suffered during that incident...\p...\p」\e
+
+//<00003aef> 【美琴】「ボクの父さんのせいなのかも知れないんだ…\p…\p」\e
+<00003aef> 【Mikoto】「And all of that might be my dad's fault...\p...\p」\e
+
+//<00003af0> 【壬姫】「鎧衣さん…\p…\p」\e
+<00003af0> 【Miki】「Yoroi-san...\p...\p」\e
+
+//<00003af1> 【美琴】「だからってわけじゃないけど…\p…\pみんなにはなるべく生きて帰って、\p幸せになって欲しい」\e
+<00003af1> 【Mikoto】「That's not why, but...\p...\pI want everyone to get home alive and be happy there.」\e
+
+//<00003af6> 【壬姫】「――でもっ！　それは鎧衣さんだって…\p…\p同じだよ…\p…\p！」\e
+<00003af6> 【Miki】「――But! Yoroi-san...\p...\pI want you to live too...\p...\p!」\e
+
+//<00003afb> 【壬姫】「私だって…\p…\pみんなに…\p…\p幸せになって欲しい…\p…\p！！」\e
+<00003afb> 【Miki】「I also...\p...\pwant everyone...\p...\pto be happy...\p...\p!!」\e
+
+//<00003afc> 【美琴】「ありがとう…\p…\p。\nでも…\p…\pこの作業を一番うまくやれるのはボクなんだ」\e
+<00003afc> 【Mikoto】「Thank you...\p...\p\nBut...\p...\pI'm the best at this kind of work.」\e
+
+//<00003afd> 【壬姫】「――！」\e
+<00003afd> 【Miki】「――!」\e
+
+//<00003b07> 【美琴】「それが客観的な事実なんだよ、\p壬姫さん」\e
+<00003b07> 【Mikoto】「That's an objective truth,\p Miki-san.」\e
+
+//<00003b08> 【壬姫】「…\p…\p…\p…\p」\e
+<00003b08> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00003b09> 【美琴】「幸せになる人は、\pひとりでも多い方が良いよね？」\e
+<00003b09> 【Mikoto】「You want as many people to be happy as possible,\p right?」\e
+
+//<00003b0a> 【壬姫】「…\p…\p…\p…\p」\e
+<00003b0a> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00003b12> 【美琴】「…\p…\pボクは…\p…\p嬉しいんだよ」\e
+<00003b12> 【Mikoto】「...\p...\pI'm...\p...\phappy.」\e
+
+//<00003b18> 【壬姫】「…\p…\pえ…\p…\pっ…\p…\p？」\e
+<00003b18> 【Miki】「...\p...\peh...\p...\p...\p...\p?」\e
+
+//<00003b1e> 【美琴】「だって…\p…\pやっと、\pみんなの役に立てるんだもん」\e
+<00003b1e> 【Mikoto】「You know...\p...\pI'm finally going to be of use to everyone.」\e
+
+//<00003b1f> 【壬姫】「…\p…\p…\p…\p」\e
+<00003b1f> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00003b20> 【美琴】「正規配属になってからは…\p…\pボクのスキルが生かせる場所が無かったからね」\e
+<00003b20> 【Mikoto】「Ever since we got assigned to a real unit...\p...\pI've never gotten to use these skills.」\e
+
+//<00003b21> 【壬姫】「鎧衣さん…\p…\p」\e
+<00003b21> 【Miki】「Yoroi-san...\p...\p」\e
+
+//<00003b27> 【美琴】「ハイヴ突入作戦になれば必ず役に立つから、\p鈍らせるなよって…\p…\p宗像中尉や伊隅大尉が言ってくれたんだ」\e
+<00003b27> 【Mikoto】「1st Lt. Munakata and Capt. Isumi told me to keep those skills polished...\p...\pbecause they'd come in handy when we infiltrated a hive.」\e
+
+//<00003b28> 【壬姫】「…\p…\p…\p…\p」\e
+<00003b28> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00003b2e> 【美琴】「ボクが父さんに教わったスキルで…\p…\p少しでも役に立てるなら…\p…\p」\e
+<00003b2e> 【Mikoto】「If the skills my dad taught me...\p...\pcan be of any use at all...\p...\p」\e
+
+//<00003b34> 【美琴】「父さんが関わった事件で辛い思いをした、\pみんなの役に立てるなら…\p…\p」\e
+<00003b34> 【Mikoto】「If my dad can be of use to everyone despite hurting them so much in that incident...\p...\p」\e
+
+//<00003b35> 【壬姫】「…\p…\p…\p…\p」\e
+<00003b35> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00003b3b> 【美琴】「こんなに嬉しい事はないんだよ…\p…\p」\e
+<00003b3b> 【Mikoto】「I couldn't be happier...\p...\p」\e
+
+//<00003b40> 【壬姫】「…\p…\p…\p…\p」\e
+<00003b40> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00003b41> 【美琴】「いいね？　今までの話は、\pボクと壬姫さんだけの秘密だよ？」\e
+<00003b41> 【Mikoto】「And everything I've said is a secret between you and me, Miki-san.\p Okay?」\e
+
+//<00003b46> 【壬姫】「え…\p…\p」\e
+<00003b46> 【Miki】「Eh...\p...\p?」\e
+
+//<00003b47> 【美琴】「このプランに関しては、\p必ず秘匿回線を使って話す。\n…\p…\pいいね？！」\e
+<00003b47> 【Mikoto】「Always use an encrypted channel to talk to me about this plan.\n...\p...\pokay!?」\e
+
+//<00003b48> 【壬姫】「――でも…\p…\p！」\e
+<00003b48> 【Miki】「――But...\p...\p!」\e
+
+//<00003b49> 【美琴】「特にタケルには、\p絶対知られちゃだめだ。\nデータリンクも通信障害のフリをして共有しない」\e
+<00003b49> 【Mikoto】「We especially don't want Takeru to find out.\nPretend the data link's down and don't share with him.」\e
+
+//<00003b4e> 【美琴】「間接的に伝わったら意味がない…\p…\pだから作戦に支障がない限り、\pタケル以外のみんなにも徹底しなきゃ」\e
+<00003b4e> 【Mikoto】「There's no point if he finds out indirectly...\p...\pso as long as it doesn't interfere with the operation,\p we need to keep everyone else from knowing too.」\e
+
+//<00003b4f> 【壬姫】「…\p…\pでも…\p…\pそれって…\p…\p！？」\e
+<00003b4f> 【Miki】「...\p...\pbut...\p...\pthat means...\p...\p!!」\e
+
+//<00003b50> 【美琴】「ボク達は凄乃皇を…\p…\pタケルを『あ号標的』に送り込むためにここにいるんだよ？！」\e
+<00003b50> 【Mikoto】「We're here in order to get the Susano'o...\p...\pto get Takeru to the Primary Objective, remember!?」\e
+
+//<00003b55> 【美琴】「人類に未来を残すために…\p…\p大きな犠牲を払ってここまできたんじゃないか！」\e
+<00003b55> 【Mikoto】「We made huge sacrifices just to get here...\p...\pand to give humanity a future!」\e
+
+//<00003b56> 【壬姫】「――鎧衣さん…\p…\p」\e
+<00003b56> 【Miki】「――Yoroi-san...\p...\p」\e
+
+//<00003b57> 【美琴】「――壬姫さんだって…\p…\pわかるでしょ、\pタケルの優しさ…\p…\p」\e
+<00003b57> 【Mikoto】「――Miki-san, you know as well as I do...\p...\phow kind Takeru is...\p...\p」\e
+
+//<00003b5c> 【壬姫】「――え…\p…\p？！」\e
+<00003b5c> 【Miki】「――Eh...\p...\p!?」\e
+
+//<00003b5d> 【美琴】「――タケルを…\p…\p迷わせちゃいけない」\e
+<00003b5d> 【Mikoto】「――We can't...\p...\plet Takeru hesitate.」\e
+
+//<00003b5e> 【壬姫】「…\p…\p！」\e
+<00003b5e> 【Miki】「...\p...\p!」\e
+
+//<00003b5f> 【美琴】「――ボク達が…\p…\pタケルの脚を引っ張っちゃいけないんだよ…\p…\p！」\e
+<00003b5f> 【Mikoto】「――We can't...\p...\phold Takeru back...\p...\p!」\e
+
+//<00003b60> 【壬姫】「…\p…\p…\p…\p」\e
+<00003b60> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00003b61> 【美琴】「――タケルは強い人だけど…\p…\p本当はもの凄く辛いと思うんだ」\e
+<00003b61> 【Mikoto】「――Takeru's strong, but...\p...\pI think he's in a lot of pain.」\e
+
+//<00003b62> 【壬姫】「…\p…\p…\p…\p」\e
+<00003b62> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00003b70> 【美琴】「大切な人達を…\p…\p目の前で奪われ…\p…\p」\e
+<00003b70> 【Mikoto】「Having people he cares about...\p...\ptaken away from him...\p...\pright before his eyes.」\e
+
+//<00003b82> 【美琴】「大切な人達を失う可能性を知りながら…\p…\p自分の判断で立ち去らなきゃいけなかったんだ…\p…\p」\e
+<00003b82> 【Mikoto】「He knows he might lose everyone he cares about...\p...\pbut he can't let himself walk away from it...\p...\p」\e
+
+//<00003b87> 【壬姫】「…\p…\p…\p…\p」\e
+<00003b87> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00003b8d> 【美琴】「それはボク達も辛かった事だけど…\p…\pその場に居合わせなかった分…\p…\pタケルよりは楽だったはずなんだ」\e
+<00003b8d> 【Mikoto】「We suffer from that too...\p...\pbut I think not being there when it happened...\p...\pmade it easier on us than on Takeru.」\e
+
+//<00003b92> 【壬姫】「うん…\p…\p」\e
+<00003b92> 【Miki】「Yeah...\p...\p」\e
+
+//<00003b98> 【美琴】「今だって…\p…\pそうだよ」\e
+<00003b98> 【Mikoto】「And that's still true...\p...\pnow.」\e
+
+//<00003ba3> 【美琴】「死んだと思っていた恋人に再会したのが…\p…\pオルタネイティヴ計画だったなんて…\p…\p」\e
+<00003ba3> 【Mikoto】「The lover he thought was dead came back to him...\p...\pbut as part of the Alternative Plan...\p...\p」\e
+
+//<00003ba4> 【壬姫】「――っ…\p…\p！」\e
+<00003ba4> 【Miki】「――...\p...\p!」\e
+
+//<00003ba5> 【美琴】「つい最近まで重い病気を患っていた大切な人が…\p…\p凄乃皇の衛士なんて…\p…\p」\e
+<00003ba5> 【Mikoto】「Someone he cared about who had such a serious illness...\p...\pis piloting the Susano'o...\p...\p」\e
+
+//<00003bab> 【壬姫】「…\p…\p…\p…\p」\e
+<00003bab> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00003bb0> 【美琴】「…\p…\pいくらなんでも…\p…\pキツイよね…\p…\p」\e
+<00003bb0> 【Mikoto】「...\p...\pthat's just...\p...\ptoo cruel...\p...\p」\e
+
+//<00003bbf> 【壬姫】「――ッ！！」\e
+<00003bbf> 【Miki】「――!!」\e
+
+//<00003bc0> 【武】「――こち…\p…\pＡ…\p…\p銀ッ…\p…\p誰…\p…\p応答…\p…\p！」\e
+<00003bc0> 【Takeru】「――Thi...\p...\pA...\p...\pgane! ...\p...\psome...\p...\prespond...\p...\p!」\e
+
+//<00003bc6> 【壬姫】「――鎧衣さんっ！　たけるさんから…\p…\pたけるさんからのコールですっ！」\e
+<00003bc6> 【Miki】「――Yoroi-san!\bTakeru-san is...\p...\pTakeru-san's calling us!」\e
+
+//<00003bce> 【美琴】「――いいね、\p約束だよ！？」\e
+<00003bce> 【Mikoto】「――Okay,\p it's a promise, right!?」\e
+
+//<00003bd4> 【壬姫】「…\p…\p…\p…\p」\e
+<00003bd4> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00003bd5> 【武】「――こ…\pら…\p…\p４…\p銀…\p…\p応答…\p…\pれッ！…\p…\p」\e
+<00003bd5> 【Takeru】「――Th...\ps...\p...\p-04...\pgane...\p...\prespond...\p...\pond! ...\p...\p」\e//if you are sufficiently bored, you may wish to check Takeru's actual lines and make sure they match up with these ~IX
+
+//<00003bdb> 【美琴】「――壬姫さんッ！！」\e
+<00003bdb> 【Mikoto】「――Miki-san!!」\e
+
+//<00003be1> 【壬姫】「…\p…\p…\p…\pは…\p…\pい」\e
+<00003be1> 【Miki】「...\p...\p...\p...\py-...\p...\pyes.」\e
+
+//<00003be7> 【美琴】「…\p…\pありがとう…\p…\p壬姫さん」\e
+<00003be7> 【Mikoto】「...\p...\pthank you...\p...\pMiki-san.」\e
+
+//<00003be8> 【壬姫】「…\p…\p…\p…\p」\e
+<00003be8> 【Miki】「...\p...\p...\p...\p」\e
+
+//<00003bee> 【美琴】「千鶴さん達の事も心配だ。\pタケルに聞いてみて。\p…\p…\pね？」\e
+<00003bee> 【Mikoto】「I'm worried about the others too.\bAsk Takeru for me.\p...\p...\pokay?」\e
+
+//<00003bef> 【壬姫】「…\p…\pはい」\e
+<00003bef> 【Miki】「...\p...\pokay.」\e
+
+//<00003bf5> 【美琴】「じゃあ、\pこれ以上心配させたくないから、\p出てあげて」\e
+<00003bf5> 【Mikoto】「Now respond,\p we don't want to worry him any more.」\e
+
+//<00003bf7> 【武】「――…\pく…\p…\p…\pちらＡ…\p…\p４白…\p…\pッ」\e
+<00003bf7> 【Takeru】「――...\puu...\p...\p...\ps is A...\p...\p4 Shir...\p...\p!」\e
+
+//<00003bf8> 【壬姫】「…\p…\pたける…\p…\pさん…\p…\p！」\e
+<00003bf8> 【Miki】「...\p...\pTakeru...\p...\psan...\p...\p!」\e
+
+//<000022e5> 【美琴】「――勝手な事して…\p…\pごめん」\e
+<000022e5> 【Mikoto】「――Sorry...\p...\pfor doing that without telling anyone.」\e
+
+//<000022e8> 【美琴】「――千鶴さんと慧さんが時間を稼いでくれたおかげで、\p修理が間に合ったから…\p…\p無駄な事をしたのかも知れない」\e
+<000022e8> 【Mikoto】「――Thanks to the time Chizuru-san and Kei-san bought,\p I finished the repairs...\p...\pso it wasn't for nothing.」\e
+
+//<000022eb> 【美琴】「――でも…\p…\pボクは…\p…\p…\p…\p」\e
+<000022eb> 【Mikoto】「――But...\p...\pI...\p...\p...\p...\p」\e
+
+//<000022ed> 【冥夜】「――委細了解した」\e
+<000022ed> 【Meiya】「――I understand your plan.」\e
+
+//<00001a88> 【美琴】「――冥夜…\p…\pさん…\p…\p」\e
+<00001a88> 【Mikoto】「――Meiya...\p...\psan...\p...\p」\e
+
+//<000022f1> 【冥夜】「――鎧衣…\p…\p頼んだぞ…\p…\p」\e
+<000022f1> 【Meiya】「――Yoroi...\p...\pmake it happen...\p...\p」\e
+
+//<000022f5> 【冥夜】「――珠瀬っ！　後退だ！」\e
+<000022f5> 【Meiya】「――Tamase! Retreat!」\e
+
+//<000022f8> 【冥夜】「――凄乃皇の手前８００に防衛線を敷き、\pＢＥＴＡを迎え撃つぞッ！」\e
+<000022f8> 【Meiya】「――Form a defensive line 800 meters in front of the Susano'o and shoot all the BETA that enter!」\e
+
+//<000022fa> 【美琴】「冥夜さん…\p…\p…\p…\pありがとう…\p…\p…\p…\p」\e
+<000022fa> 【Mikoto】「Meiya-san...\p...\p...\p...\pthank you...\p...\p...\p...\p」\e
+
+//<000022fd> 【冥夜】「――急げッ！」\e
+<000022fd> 【Meiya】「――Hurry!」\e
+
+//<000022ff> 【壬姫】「――だめです！」\e
+<000022ff> 【Miki】「――We can't!」\e
+
+//<00002302> 【冥夜】「――なにっ！？」\n
+<00002302> 【Meiya】「――What!?」\n
+
+//<00002303> 【美琴】「――壬姫さんッ！？」\e
+<00002303> 【Mikoto】「――Miki-san!?」\e
+
+//<00002305> 【壬姫】「――開閉装置を守らなきゃっ！！」　\e
+<00002305> 【Miki】「――I need to protect the tank!!」\e
+
+//<00002306> 【冥夜】「――ッ！！」\e
+<00002306> 【Meiya】「――!!」\e
+
+//<00002308> 【壬姫】「――私はギリギリまでここに止まって、\p侵入を食い止めますッ！！」\e
+<00002308> 【Miki】「――I'll stay here as long as I can to keep them away from it!!」\e
+
+//<00002309> 【壬姫】「――御剣さんはＢＥＴＡをタケルさんに近づけないでっ！！」\e
+<00002309> 【Miki】「――Mitsurugi-san, don't let the BETA get anywhere near Takeru!!」\e
+
+//<0020230c> 【冥夜】「――！」\n【美琴】「――！！」\e
+<0020230c> 【Meiya】「――!」\n【Mikoto】「――!!」\e
+
+//<00002310> 【壬姫】「――お願いします…\p…\pっ！！」\e
+<00002310> 【Miki】「――Please...\p...\p!!」\e
+
+//<00000019> 【冥夜】「――了解…\p…\pッ！」\e
+<00000019> 【Meiya】「――Copy that...\p...\p!」\e
+
+//<0000001c> 【冥夜】「珠瀬…\p…\p」\e
+<0000001c> 【Meiya】「Tamase...\p...\p」\e
+
+//<0000001e> 【冥夜】「…\p…\p…\p…\p早まるでないぞ」\e
+<0000001e> 【Meiya】「...\p...\p...\p...\pdo not be too hasty.」\e
+
+//<00000021> 【冥夜】「――タケルッ！」\e
+<00000021> 【Meiya】「――Takeru!」\e
+
+//<00000023> 【武】「――冥夜！？　おまえ今どこにいる？！　マーカーが――」\e
+<00000023> 【Takeru】「――Meiya!? Where are you!? Your marker's――」\e
+
+//<00000024> 【冥夜】「――その様な事はどうでも良いッ！\n――直ちに第二隔壁の開放を開始しろッ！」\e
+<00000024> 【Meiya】「――That does not matter!\n――We will begin opening the 2nd barrier immediately!」\e
+
+//<00000025> 【武】「――なにッ？　まだ充填が終わってないぞ！？」\e
+<00000025> 【Takeru】「――What? We're not done charging yet!!」\e
+
+//<00000026> 【冥夜】「――敵の『横坑』侵入を許してしまったのだ！　――急げ！」\e
+<00000026> 【Meiya】「――We have allowed enemies to infiltrate the Drift! ――Hurry!」\e
+
+//<00000027> 【武】「――なッ…\p…\p！？　第一隔壁はまだ閉鎖できていないのか！？」\e
+<00000027> 【Takeru】「――Wh-...\p...\p!? You still haven't closed the 1st barrier!?」\e
+
+//<00000028> 【冥夜】「――じき完全閉鎖される！　だが、\pその間の流入は避けられん！」\e
+<00000028> 【Meiya】「――It will be closed shortly!\bBut we cannot prevent infiltration until then!」\e
+
+//<0000002a> 【冥夜】「――隔壁の開放完了までの間、\p敵は私達で食い止める！\nそなたは主砲発射態勢を整えろ！」\e
+<0000002a> 【Meiya】「――We will keep the enemies from reaching you until the 2nd barrier is open!\nYou will then prepare to fire!」\e
+
+//<0000002c> 【武】「――わかった！　みんなは…\p…\p無事なのか！？」\e
+<0000002c> 【Takeru】「――Got it! And is everyone else...\p...\palright!?」\e
+
+//<0000002d> 【冥夜】「――ああ…\p…\p今のところはな。\n『主広間』の者達は閉鎖寸前まで装置を守っておる！」\e
+<0000002d> 【Meiya】「――Yes...\p...\pfor now.\nThey will protect the closing tank in the Main Hall until the last moment!」\e
+
+//<0000002e> 【武】「――そうか…\p…\p！」\e
+<0000002e> 【Takeru】「――I see...\p...\p!」\e
+
+//<0000002f> 【冥夜】「――そなたがもたつけば、\pそれも危うかろうがな！」\e
+<0000002f> 【Meiya】「――The more you hesitate the less their chances!」\e
+
+//<00000030> 【武】「――バカにするな。\n開放操作、\pもうやってる！」\e
+<00000030> 【Takeru】「――I'm no idiot.\nI've already started to open it!」\e
+
+//<00000031> 【冥夜】「――よし、\p全開を待つでないぞ？\n通過可能となり次第『あ号標的』ブロックへ侵入するのだ！」\e
+<00000031> 【Meiya】「――Good,\p do not wait for it to open fully.\nAs soon as you can pass through, enter the Primary Objective block!」\e
+
+//<00000032> 【武】「――それはわかってるが…\p…\pおまえ達はどうするんだ？！」\e
+<00000032> 【Takeru】「――I know that...\p...\pbut what about you guys!?」\e
+
+//<00000036> 【冥夜】「――当然…\p…\p死にものぐるいで追いかけ、\p乗り込むまでだ！」\e
+<00000036> 【Meiya】「――Naturally...\p...\pwe will chase after you and climb onboard!」\e
+
+//<00000037> 【武】「――そうか…\p…\p全ハッチのロックは解除しておく！\nいいか、\pオレは待たないからな！？」\e
+<00000037> 【Takeru】「――I see...\p...\pI'll leave all hatches unlocked!\nI'm not gonna wait for you,\p understand!?」\e
+
+//<0000003a> 【冥夜】「――それでよい。\n『あ号標的』ブロックへ侵入するタイミングでコールしてくれ！」\e
+<0000003a> 【Meiya】「――Perfect.\nCall me when you are about to enter the Primary Objective block!」\e
+
+//<0000003c> 【武】「――わかった！」\e
+<0000003c> 【Takeru】「――Got it!」\e
+
+//<0000003d> 【冥夜】「――通信は以上だ！」\e
+<0000003d> 【Meiya】「――Ending transmission!」\e
+
+//<0000003e> 【武】「――まて冥夜」\e
+<0000003e> 【Takeru】「――Wait, Meiya.」\e
+
+//<0000003f> 【冥夜】「――なんだ？」\e
+<0000003f> 【Meiya】「――What?」\e
+
+//<00000040> 【武】「――もうオレに気をつかうな」\e
+<00000040> 【Takeru】「――Stop hiding things from me.」\e
+
+//<00000041> 【冥夜】「――なっ…\p…\p！　…\p…\pどういう…\p…\p意味だ…\p…\p？！」\e
+<00000041> 【Meiya】「――Wha-...\p...\p! ...\p...\pwhat do you...\p...\pmean...\p...\p!?」\e
+
+//<00000042> 【武】「とぼけるな。\nわかってるんだよ」\e
+<00000042> 【Takeru】「Don't play dumb.\nI saw through it.」\e
+
+//<00000043> 【冥夜】「――なんの話だ」\e
+<00000043> 【Meiya】「――What do you mean?」\e
+
+//<00000044> 【武】「おまえら、\pオレの気を散らさないように、\pマーカー切ってるんだろ？」\e
+<00000044> 【Takeru】「You guys have turned off your markers to avoid distracting me,\p right?」\e
+
+//<00000045> 【冥夜】「――ッ…\p…\p！！」\e
+<00000045> 【Meiya】「――...\p...\p!!」\e
+
+//<000001ca> 【武】「どうやら図星みたいだな。\n生憎『横坑』内で、\p通信障害は殆ど起きてないんだよ」\e
+<000001ca> 【Takeru】「Guess I was right.\nUnfortunately for you,\p transmissions work fine in the Drift so that excuse doesn't work.」\e
+
+//<00000047> 【冥夜】「…\p…\p…\p…\p」\e
+<00000047> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00000049> 【武】「――大丈夫だ。\nオレはおまえ達に気をとられて迷ったりしない」\e
+<00000049> 【Takeru】「――I'll be fine.\nI'm not gonna hesitate at the last second because I'm worried about you guys.」\e
+
+//<0000004a> 【冥夜】「…\p…\p…\p…\p」\e
+<0000004a> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<0000004c> 【武】「みんなにもそう伝えてくれ…\p…\p」\e
+<0000004c> 【Takeru】「Tell everyone that...\p...\p」\e
+
+//<0000004d> 【冥夜】「…\p…\pマーカーは…\p…\p故障だ…\p…\p！」\e
+<0000004d> 【Meiya】「...\p...\pour markers...\p...\pwere damaged...\p...\p!」\e
+
+//<0000004e> 【武】「――ふっ…\p…\p全員同時にか？」\e
+<0000004e> 【Takeru】「――Hu...\p...\peveryone's at the same time?」\e
+
+//<0000004f> 【冥夜】「…\p…\pそうだ」\e
+<0000004f> 【Meiya】「...\p...\pyes.」\e
+
+//<00000050> 【武】「…\p…\pまあ、\pそういう事にしておく。\n――じゃあな」\e
+<00000050> 【Takeru】「...\p...\pwell,\p I'll leave it at that.\n――Bye.」\e
+
+//<00000052> 【冥夜】「…\p…\p…\p…\p！」\e
+<00000052> 【Meiya】「...\p...\p...\p...\p!」\e
+
+//<00000054> 【冥夜】「…\p…\p…\p…\p驚かすでないぞ…\p…\p」\e
+<00000054> 【Meiya】「...\p...\p...\p...\pdo not scare me like that...\p...\p」\e
+
+//<00000057> 【冥夜】「…\p…\p全く…\p…\p鈍感なのやら敏感なのやら…\p…\pよくわからぬ男だ…\p…\p」\e
+<00000057> 【Meiya】「...\p...\preally now...\p...\pare you dense or are you sharp...\p...\psuch a confusing man...\p...\p」\e
+
+//<0000005a> 【冥夜】「…\p…\pだが」\e
+<0000005a> 【Meiya】「...\p...\pbut...\p...」\e
+
+//<0000005e> 【冥夜】「それを口にし、\p自己確認する事こそ…\p…\pそなたが迷っているという証だ…\p…\p」\e
+<0000005e> 【Meiya】「Bringing it up and confirming it...\p...\ponly proves that it is bothering you...\p...\p」\e
+
+//<00000061> 【冥夜】「…\p…\p…\p…\p」\e
+<00000061> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00000064> 【冥夜】「…\p…\p榊。\p…\p…\pやはり私は…\p…\pあの者に甘いか…\p…\p？」\e
+<00000064> 【Meiya】「...\p...\pSakaki...\p...\pam I...\p...\pweak to him after all...\p...\p?」\e
+
+//<00000065> 【冥夜】「…\p…\p副司令の指示通り…\p…\p最初から使うべきであったのか…\p…\p？」\e
+<00000065> 【Meiya】「...\p...\pshould I have used it from the start...\p...\pas the XO ordered me to...\p...\p?」\e
+
+//<00000067> 【冥夜】「…\p…\p何れにせよ…\p…\pあの者は私を許すまいな…\p…\p」\e
+<00000067> 【Meiya】「...\p...\pin any event...\p...\phe would not forgive me...\p...\p」\e
+
+//<0000006b> 【冥夜】「…\p…\pさて…\p…\pそなた達…\p…\p」\e
+<0000006b> 【Meiya】「...\p...\pnow then...\p...\pyou...\p...\p」\e
+
+//<0000006d> 【冥夜】「楽にここを通れると思うでないぞ…\p…\p」\e
+<0000006d> 【Meiya】「Do not think you will get through here without a fight...\p...\p!」\e
+
+//<00000074> 【壬姫】「――うぅ～～ッ！」\e
+<00000074> 【Miki】「――Uuuuuuuu!」\e
+
+//<00000077> 【壬姫】「――このぉッ！　――このぉッ！　――このぉッ！」\e
+<00000077> 【Miki】「――Take that! ――Take that! ――Take thaaaat!!」\e
+
+//<0000007a> 【壬姫】「――少しでも…\p…\p！」\e
+<0000007a> 【Miki】「――I have to...\p...\p!」\e
+
+//<0000007d> 【壬姫】「――少しでもＢＥＴＡを…\p…\p減らさなきゃ！！」\e
+<0000007d> 【Miki】「――I have to reduce...\p...\pthe number of BETA!!」\e
+
+//<0000007f> 【壬姫】「――減らさなきゃいけないんだからぁ～！」\e
+<0000007f> 【Miki】「――I have to get rid of as many as possible!」\e
+
+//<00000081> 【美琴】「――壬姫さんッ！！」\e
+<00000081> 【Mikoto】「――Miki-san!!」\e
+
+//<00000084> 【壬姫】「――鎧衣さんッ！　――どうしたのッ！？」\e
+<00000084> 【Miki】「――Yoroi-san! ――What's wrong!?」\e
+
+//<00000086> 【美琴】「――第一隔壁が殆ど閉まりかけてるよッ！」\e
+<00000086> 【Mikoto】「――The 1st barrier's almost completely closed!」\e
+
+//<00000088> 【壬姫】「――わかってますッ！　――でもッ!」\e
+<00000088> 【Miki】「――I know! ――But!」\e
+
+//<0000008a> 【美琴】「――もう十分だから！　早く後退してッ！」\e
+<0000008a> 【Mikoto】「――You've done enough! Hurry up and retreat already!」\e
+
+//<0000008c> 【壬姫】「――まだ何が起こるかわかりません！」\e
+<0000008c> 【Miki】「――We don't know if something might happen!」\e
+
+//<0000008f> 【美琴】「――導管に注入し終わった分で完全閉鎖できるよ！　もう何が起きても大丈夫だから！」\e
+<0000008f> 【Mikoto】「――The volume of chemical already injected is enough to completely close it!\bIt'll close no matter what happens now!」\e
+
+//<00000091> 【壬姫】「――後退は私の判断でします！　鎧衣さんは『脳』を破壊――」\e
+<00000091> 【Miki】「――I'll retreat when I want to!\bYoroi-san, you destroy the brain――」\e
+
+//<00000094> 【壬姫】「――ッ！？」\e
+<00000094> 【Miki】「――!?」\e
+
+//<00000095> 【美琴】「――これで壬姫さんがここに止まる理由…\p…\pなくなったね」\e
+<00000095> 【Mikoto】「――Now...\p...\pthere's no reason for you to stay here, Miki-san.」\e
+
+//<00000097> 【壬姫】「鎧衣…\p…\pさん…\p…\p…\p…\pなんて事を…\p…\p！？」\e
+<00000097> 【Miki】「Yoroi...\p...\psan...\p...\p...\p...\pwhy did you...\p...\p!?」\e
+
+//<00000098> 【美琴】「――注入済みの分で大丈夫って言ったじゃないか。\n…\p…\p早く後退して」\e
+<00000098> 【Mikoto】「――Didn't I tell you it'd injected enough already?\n...\p...\pnow let's fall back.」\e
+
+//<0000009b> 【美琴】「――『横坑』の中で戦った方が、\p的が絞れる分、\p弾も無駄にならなくて効率が良い」\e
+<0000009b> 【Mikoto】「――Fighting inside the Drift will give you a narrower range of targets so you can use your bullets more effectively.」\e
+
+//<0000009e> 【美琴】「――その方が…\p…\pタケルのためにもなるよ…\p…\p！」\e
+<0000009e> 【Mikoto】「――That will...\p...\phelp Takeru too...\p...\p!」\e
+
+//<000000a0> 【壬姫】「…\p…\pわかり…\p…\pました」\e
+<000000a0> 【Miki】「...\p...\pI...\p...\punderstand.」\e
+
+//<000000a1> 【美琴】「――急いで！」\e
+<000000a1> 【Mikoto】「――Now hurry!」\e
+
+//<000000a4> 【壬姫】「――ッ…\p…\p！！」\e
+<000000a4> 【Miki】「――...\p...\p!!」\e
+
+//<000000a7> 【壬姫】「…\p…\pな…\p…\pなに？」\e
+<000000a7> 【Miki】「...\p...\pwh-...\p...\pwhat?」\e
+
+//<000000a9> 【美琴】「――！　これは…\p…\p…\p…\p」\e
+<000000a9> 【Mikoto】「――! This is...\p...\p...\p...\p」\e
+
+//<002000ae> 【美琴】「――ッ！？」\n【壬姫】「――え…\p…\p！？」\e
+<002000ae> 【Mikoto】「――!?」\n【Miki】「――Eh...\p...\p!?」\e
+
+//<000000be> 【冥夜】「――ッ！？」\e
+<000000be> 【Meiya】「――!?」\e
+
+//<002000c3> 【武】「――な、\pなんだ？！」\n【霞】「…\p…\p…\p…\p」\e
+<002000c3> 【Takeru】「――Wh-\pwhat the hell!?」\n【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000000cc> 【霞】「『主広間』で大規模な崩落です…\p…\p！」\e
+<000000cc> 【Kasumi】「Large scale cave-in in the Main Hall...\p...\p!」\e
+
+//<000000cd> 【武】「――また崩落…\p…\p！？　まさか…\p…\pＢＥＴＡの増援が…\p…\p！？」\e
+<000000cd> 【Takeru】「――Another cave-in...\p...\p!?\bYou don't mean...\p...\pBETA reinforcements...\p...\p!?」\e
+
+//<000000ce> 【霞】「『主広間』以外にＢＥＴＡの大規模移動は、\p観測していません」\e
+<000000ce> 【Kasumi】「I'm not detecting any large scale BETA movement outside the Main Hall.」\e
+
+//<000000cf> 【武】「そうか…\p…\p。\nしかし…\p…\pなんだこの後ろの波形は？！　今まで見たことがないパターンだぞ！？」\e
+<000000cf> 【Takeru】「I see...\p...\p\nBut still...\p...\pwhat's this waveform behind it!?\bI've never seen this pattern before!!」\e
+
+//<000000d0> 【霞】「――データ照合中…\p…\p」\e
+<000000d0> 【Kasumi】「――Searching for possible matches...\p...\p」\e
+
+//<000000d2> 【霞】「――照合完了。\n適合は３件です」\e
+<000000d2> 【Kasumi】「――Search complete.\nThree hits.」\e
+
+//<000000d3> 【武】「なんだ、\pデータベースにサンプルがあるんじゃないか」\e
+<000000d3> 【Takeru】「What?\p So we do have samples in the database?」\e
+
+//<000000d7> ――１２月２５日の新潟県佐渡市が２件…\p…\p？　これって『甲２１号作戦』の当日だろ…\p…\p？　\e
+<000000d7> ――Two from December 25th, Sado City, Niigata Prefecture...\p...\p? Isn't this the day of the Objective 21 Operation...\p...\p?\e
+
+//<000000d8> １２月２９日は…\p…\p基地がＢＥＴＡに襲われた日じゃないか…\p…\p。\nそれに…\p…\p高崎と秩父って…\p…\pどっかで…\p…\p\e
+<000000d8> December 29th...\p...\pwasn't that the day the BETA attacked our base...\p...\p?\nAnd...\p...\pTakazaki and Chichibu...\p...\pI've heard these names...\p...\p\e
+
+//<000000dc> 【夕呼】「ＢＥＴＡは大深度地下を進攻して来ていたのよ」\e
+<000000dc> 【Yuuko】「The BETA came here from extremely deep underground.」\e//PCP_S MLA_0061
+
+//<000000df> 【夕呼】「地中を移動する微弱な震源を感知したのは、\p高崎と秩父の観測基地…\p…\p」\e
+<000000df> 【Yuuko】「The minute vibrations from the underground movement were detected by Takazaki and Chichibu observational posts...\p...」\e
+
+//<000000e2> 【夕呼】「佐渡島ハイヴの地下茎構造が、\p既に本州内陸部まで延びていたとしか考えられないわ」\e
+<000000e2> 【Yuuko】「We can only assume the Sadogashima Hive's stab already extended underneath Japan.」\e//CP_E
+
+//<000000e5> ――そうだ…\p…\p！！　これは…\p…\pＢＥＴＡが大深度地下を侵攻して来た時に…\p…\p！！\e
+<000000e5> ――That's it...\p...\p!! This is...\p...\pthe same as when they invaded from extreme depths...\p...\p!!\e//there's no way to make this not sound stupid ~IX
+
+//<000000ea> 【壬姫】「――よ…\p…\p鎧衣さんッ！」\n
+<000000ea> 【Miki】「――Y-...\p...\pYoroi-san!」\n
+
+//<000000eb> 【美琴】「――な…\p…\pなんだ…\p…\pあれは…\p…\pッ！？」\e
+<000000eb> 【Mikoto】「――Wh-...\p...\pwhat...\p...\pis that...\p...\p!?」\e
+
+//<000000f0> 【壬姫】「――ＢＥＴＡの…\p…\p未確認種…\p…\p…\p…\p？」\e
+<000000f0> 【Miki】「――An unknown...\p...\pBETA species...\p...\p...\p...\p?」\e
+
+//<000000f2> 【壬姫】「――胴体直径…\p…\p１７０ｍ…\p…\pッ！？」\e
+<000000f2> 【Miki】「――Its radius is...\p...\p170 meters...\p...\p!?」\e
+
+//<000000f4> 【美琴】「…\p…\pあんな巨大な生物が…\p…\pなんで今まで…\p…\p？」\e
+<000000f4> 【Mikoto】「...\p...\phow have we never...\p...\pidentified something that huge...\p...\p?」\e
+
+//<000000f6> 【美琴】「――っ！？」\e
+<000000f6> 【Mikoto】「――!?」\e
+
+//<000000f9> 【美琴】「――あぁッ…\p…\p壬姫さんッ！？　――隔壁がぁ…\p…\pッ！！」\e
+<000000f9> 【Mikoto】「――Aaah! ...\p...\pMiki-san!? ――The barrier...\p...\p!!」\e
+
+//<000000fa> 【壬姫】「――鎧衣さんッ！　――早く『脳』を壊してッ！！」\e
+<000000fa> 【Miki】「――Yoroi-san! ――Hurry, destroy the brain!!」\e
+
+//<000000fc> 【美琴】「――壬姫さんッ！！」\e
+<000000fc> 【Mikoto】「――Miki-san!!」\e
+
+//<000000fe> 【壬姫】「――あの巨大なＢＥＴＡの口から――沢山出てきてるよッ！！」\e
+<000000fe> 【Miki】「――Tons of BETA are coming out of that thing's mouth!!」\e
+
+//<00000100> 【美琴】「――え…\p…\pっ！？」\e
+<00000100> 【Mikoto】「――Eh...\p...\p!?」\e
+
+//<00000104> 【美琴】「――そんなっ…\p…\p地下茎構造内に…\p…\p要塞級まで…\p…\p！？」\e
+<00000104> 【Mikoto】「――No way...\p...\peven Fort Class...\p...\pin the stab...\p...\p!?」\e
+
+//<00000107> 【壬姫】「――鎧衣さんッ…\p…\p早くッ！！　あんなのがここまで来たら…\p…\p隔壁が壊されちゃうッ！！」\e
+<00000107> 【Miki】「――Yoroi-san...\p...\phurry!!\bIf they get over here...\p...\pthey'll break the barrier!!」\e
+
+//<00000108> 【美琴】「――ッ！？」\e
+<00000108> 【Mikoto】「――!?」\e
+
+//<00000109> 【壬姫】「――鎧衣さん！」\e
+<00000109> 【Miki】「――Yoroi-san!」\e
+
+//<0000010a> 【美琴】「――『脳』さえ壊せば…\p…\p時間は稼げる…\p…\p！」\e
+<0000010a> 【Mikoto】「――If we destroy the brain...\p...\pwe can buy some time...\p...\p!」\e
+
+//<0000010b> 【美琴】「――壬姫さんごめん…\p…\p！　もう『横坑』には…\p…\pッ」\e
+<0000010b> 【Mikoto】「――Miki-san, sorry...\p...\p! We won't be able to...\p...\p!」\e
+
+//<0000010c> 【壬姫】「――そんなのわかってる！　――私は前に出て援護するから早く『脳』をッ！」\e
+<0000010c> 【Miki】「――I know that! ――I'll go in front and defend you so destroy the brain already!」\e
+
+//<0000010d> 【美琴】「――わかったッ！」\e
+<0000010d> 【Mikoto】「――Okay!」\e
+
+//<0000010f> 【美琴】「――うっ…\p…\pうおぉぉぉぉぉぉぉっ！！！」\e
+<0000010f> 【Mikoto】「――Uu...\p...\puuoooooooooooooooooo!!!」\e
+
+//<00000112> 【美琴】「――ッ！？」\e
+<00000112> 【Mikoto】「――!?」\e
+
+//<00000114> 【美琴】「――くっそぉぉぉぉぉぉぉぉぉっ！！」\e
+<00000114> 【Mikoto】「――Damn iiiiiiiiiiiiiiiiiiiit!!」\e
+
+//<00000116> 【壬姫】「――このっ！！　――このっ！！　――このォォッ！！」\e
+<00000116> 【Miki】「――Take that!! ――And that!! ――And thaaaaaat!!」\e
+
+//<00000119> 【壬姫】「――うわああああああッ！？」\e
+<00000119> 【Miki】「――Uwaaaaaaaaaaaaa!?」\e
+
+//<0000011c> 【美琴】「――壬姫さんッ！？」\e
+<0000011c> 【Mikoto】「――Miki-san!?」\e
+
+//<0000011e> 【壬姫】「――大丈夫です…\p…\pッ！　気にしないで…\p…\pッ！！」\e
+<0000011e> 【Miki】「――I'm fine...\p...\p! Don't worry about me...\p...\p!!」\e
+
+//<00000120> 【壬姫】「――こうなる事は…\p…\pわかってたから…\p…\p！」\e
+<00000120> 【Miki】「――I knew...\p...\pit would come to this...\p...\p!」\e
+
+//<00000122> 【美琴】「――えッ？！」\e
+<00000122> 【Mikoto】「――Eh!?」\e
+
+//<00000125> 【壬姫】「――もう１回ぐらい大丈夫だと思ったんだけどなあ…\p…\p！」\e
+<00000125> 【Miki】「――I thought it'd work one last time, but...\p...\p!」\e
+
+//<00000126> 【美琴】「――それって…\p…\pどういう事…\p…\p！？」\e
+<00000126> 【Mikoto】「――What...\p...\pwhat do you mean...\p...\p!?」\e
+
+//<00000129> 【壬姫】「鎧衣さん――開閉装置だけが壊れるなんて、\pそんな事あるわけないよ…\p…\p！！」\e
+<00000129> 【Miki】「Yoroi-san――There's no way only the tank would get damaged in an explosion like that...\p...\p!!」\e
+
+//<0000012c> 【美琴】「…\p…\pえッ？！」\e
+<0000012c> 【Mikoto】「...\p...\peh!?」\e
+
+//<0000012e> 【壬姫】「――私、\pあの爆発の閃光を見た時…\p…\p咄嗟に利き腕をかばっちゃったんだ…\p…\p！！」\e
+<0000012e> 【Miki】「――When I saw that flash...\p...\pI raised my right arm to block the light...\p...\p!!」\e
+
+//<0000012f> 【美琴】「――！」\e
+<0000012f> 【Mikoto】「――!」\e
+
+//<00000130> 【壬姫】「――だから当然、\p左後ろから衝撃波をもろに受けて…\p…\p！！」\e
+<00000130> 【Miki】「――So of course the shockwave hit me from the left...\p...\p!!」\e//huh? ~IX
+
+//<00000132> 【壬姫】「――跳躍ユニットと主脚に深刻な障害が出ちゃったんだ…\p…\p！」\e
+<00000132> 【Miki】「――It caused severe damage to my jump unit and leg...\p...\p!」\e
+
+//<00000134> 【壬姫】「――あと少しだからって思って、\p騙し騙しやってた…\p…\pけどっ！」\e
+<00000134> 【Miki】「――I kept telling myself it'd last just a little longer, pretending it'd be okay...\p...\pbut!」\e
+
+//<00000138> 【壬姫】「――最後までちゃんと保ってくれるなんて――さすが武御雷だよ…\p…\p！」\e
+<00000138> 【Miki】「――This Takemikazuchi――Really did hold together until the last second...\p...\p!」\e
+
+//<0000013a> 【美琴】「――左側にある閉塞装置だけが故障してたのは…\p…\pそういう事だったんだね…\p…\p」\e
+<0000013a> 【Mikoto】「――So that's why only the closing valve on the left was damaged...\p...\pthat makes sense...\p...\p」\e
+
+//<0000013c> 【美琴】「――だからボクの言う事を…\p…\p聞いてくれなかったんだね…\p…\p」\e
+<0000013c> 【Mikoto】「――So that's why...\p...\pyou didn't listen to me...\p...\p」\e
+
+//<0000013e> 【壬姫】「――だって、\p私が変なよけ方をしたせいで…\p…\pこんな状況になっちゃったのに…\p…\p！」\e
+<0000013e> 【Miki】「――But it's my fault for not bracing properly...\p...\pmy fault I'm in this situation...\p...\p!」\e
+
+//<00000142> 【壬姫】「――鎧衣さん…\p…\p独りで残るなんて言い出すんだもん！！」\e
+<00000142> 【Miki】「――But Yoroi-san...\p...\pyou kept insisting on staying here alone!!」\e
+
+//<00000144> 【美琴】「――そうか…\p…\pデータリンク情報もなにもかも…\p…\p」\e
+<00000144> 【Mikoto】「――I see...\p...\pso all the data link information...\p...\p」\e
+
+//<00000146> 【壬姫】「――でも、\p恨みっこなしだよ？」\e
+<00000146> 【Miki】「――But no hard feelings, okay?」\e
+
+//<00000148> 【壬姫】「――鎧衣さんだって…\p…\pたけるさんやみんなを安心させるために、\pデータを誤魔化してたんだから」\e
+<00000148> 【Miki】「――Yoroi-san, you did the same thing...\p...\pfaking data to keep Takeru-san and the others from worrying.」\e
+
+//<0000014a> 【美琴】「――あはは…\p…\pそうだね…\p…\p」\e
+<0000014a> 【Mikoto】「――Ahaha...\p...\pthat's true...\p...\p」\e
+
+//<00003c9c> 【壬姫】「――御剣さんも秘匿回線使ってたね…\p…\p」　\e
+<00003c9c> 【Miki】「――Even Mitsurugi-san used an encrypted channel...\p...\p」　\e
+
+//<0000014e> 【美琴】「――千鶴さんも慧さんも…\p…\pそうしてくれていたんだろうね…\p…\p」\e
+<0000014e> 【Mikoto】「――Chizuru-san and Kei-san...\p...\pprobably did too...\p...\p」\e
+
+//<0000014f> 【壬姫】「――うん…\p…\p」\e
+<0000014f> 【Miki】「――Yeah...\p...\p」\e
+
+//<00000151> 【壬姫】「――みんな同じ事を考えて…\p…\p同じ様な行動をとったんだね…\p…\p」\e
+<00000151> 【Miki】「――Everyone had the same thought...\p...\pand took the same action...\p...\p」\e
+
+//<00000153> 【美琴】「――ボク達…\p…\p何の相談もしなかったのにね…\p…\p」\e
+<00000153> 【Mikoto】「――Even though...\p...\pwe hadn't planned on any of it...\p...\p」\e
+
+//<00000155> 【美琴】「同じ目的に向かって…\p…\pそれぞれが自分のやれる事を精一杯やったんだ…\p…\p」\e
+<00000155> 【Mikoto】「We were all so focused...\p...\pon giving everything we had for our own objectives...\p...\p」\e
+
+//<00000159> 【壬姫】「私達…\p…\p本当のチームになれたんだね…\p…\p！」\e
+<00000159> 【Miki】「We finally...\p...\pbecame a real team...\p...\p!」\e
+
+//<0000015d> 【美琴】「…\p…\pうん…\p…\p！」\e
+<0000015d> 【Mikoto】「...\p...\pyeah...\p...\p!」\e
+
+//<00000161> 【美琴】「――ッ！？」\e
+<00000161> 【Mikoto】「――!?」\e
+
+//<00002518> 【美琴】「…\p…\p…\pうぅッ！」\e
+<00002518> 【Mikoto】「...\p...\p...\puuu!」\e
+
+//<00000166> 【美琴】「――このぉぉぉぉッ！！」
+<00000166> 【Mikoto】「――Youuuuuuuuu!!」
+
+//<00003ce1> \r
+<00003ce1> \r
+
+//<00000168> 【美琴】「――ぐぅッ！　――ぐぅッ！！　―――このッ！！！」
+<00000168> 【Mikoto】「――Uuu! ――Uuu!! ―――Dammit――!!!」
+
+//<00003ce5> \r
+<00003ce5> \r
+
+//<0000016a> 【美琴】「――割れろッ！　――割れろッ！！　――割れろォッ！！！」
+<0000016a> 【Mikoto】「――Break! ――Break!! ――Breaaak!!!」
+
+//<00003ce7> \r
+<00003ce7> \r
+
+//<0000016d> 【美琴】「――まだまだァ！！」
+<0000016d> 【Mikoto】「――I'm not through with you!!」
+
+//<00003cea> \r
+<00003cea> \r
+
+//<00000170> 【壬姫】「――鎧衣さん動かないでッ！！」\n
+<00000170> 【Miki】「――Yoroi-san, don't move!!」\n
+
+//<00000173> 【美琴】「――ッ！！」
+<00000173> 【Mikoto】「――!!」
+
+//<00003cf0> \r
+<00003cf0> \r
+
+//<00000176> 【美琴】「――ッ！？」
+<00000176> 【Mikoto】「――!?」
+
+//<00003cf4> \r
+<00003cf4> \r
+
+//<00000179> 【美琴】「――壬姫さんッ！」\n
+<00000179> 【Mikoto】「――Miki-san!」\n
+
+//<0000017d> 【壬姫】「…\p…\p…\p…\p」
+<0000017d> 【Miki】「...\p...\p...\p...\p」
+
+//<00003cfc> \r
+<00003cfc> \r
+
+//<00000182> 【美琴】「――す…\p…\p凄い…\p…\p！！」
+<00000182> 【Mikoto】「――A-...\p...\pamazing...\p...\p!!」
+
+//<00003d07> \r
+<00003d07> \r
+
+//<00000185> 【美琴】「――弾着点が…\p…\p全くずれてない…\p…\pッ！！」
+<00000185> 【Mikoto】「――Those shots...\p...\pare all bullseyes...\p...\p!!」
+
+//<00003d09> \r
+<00003d09> \r
+
+//<00000188> 【美琴】「――あんな状態の機体で…\p…\p！！」
+<00000188> 【Mikoto】「――Even with that much damage...\p...\p!!」
+
+//<00003d0e> \r
+<00003d0e> \r
+
+//<0000018a> 【美琴】「――ッ！？」
+<0000018a> 【Mikoto】「――!?」
+
+//<00003d11> \r
+<00003d11> \r
+
+//<0000018b> 【壬姫】「…\p…\p…\p…\pごめんね、\p鎧衣さん」
+<0000018b> 【Miki】「...\p...\p...\p...\psorry,\p Yoroi-san.」
+
+//<00003d14> \r
+<00003d14> \r
+
+//<00000190> 【壬姫】「…\p…\p…\p…\pもう弾切れだよ…\p…\p」
+<00000190> 【Miki】「...\p...\p...\p...\pI'm out of ammo...\p...\p」
+
+//<00003d18> \r
+<00003d18> \r
+
+//<00000193> 【美琴】「…\p…\p壬姫さん…\p…\pッ…\p…\p」
+<00000193> 【Mikoto】「...\p...\pMiki-san...\p...\p! ...\p...\p」
+
+//<00003d1b> \r
+<00003d1b> \r
+
+//<00000196> 【壬姫】「…\p…\pあとは…\p…\pおねがい…\p…\p…\p…\p」
+<00000196> 【Miki】「...\p...\ptake care...\p...\pof the rest for me...\p...\p...\p...\p」
+
+//<00003d21> \r
+<00003d21> \r
+
+//<00000199> 【美琴】「――うくぅ…\p…\pッ！！！」
+<00000199> 【Mikoto】「――Uuuu...\p...\p!!!」
+
+//<00003d5c> \r
+<00003d5c> \r
+
+//<0000019c> 【美琴】「――壬姫…\p…\pさん…\p…\pッ…\p…\p！！」
+<0000019c> 【Mikoto】「――Miki...\p...\psan...\p...\p...\p...\p!!」
+
+//<00003d68> \r
+<00003d68> \r
+
+//<0000019f> 【美琴】「――あり…\p…\pがとう…\p…\pッ…\p…\p」
+<0000019f> 【Mikoto】「――Thank...\p...\pyou...\p...\p! ...\p...\p」
+
+//<00003d6e> \r
+<00003d6e> \r
+
+//<000001a2> 【美琴】「――うおぉぉぉぉぉ～～～～～ッ！！」
+<000001a2> 【Mikoto】「――Uuoooooooooooooooooooooo!!」
+
+//<00003d73> \r
+<00003d73> \r
+
+//<000001a9> 【美琴】「――ぁうぐぁぁぁぁぁ～～～～～ッッ！！」
+<000001a9> 【Mikoto】「――Aauguwaaaaaaaaaaaaaaaaaaa!!」
+
+//<00003d76> \r
+<00003d76> \r
+
+//<000001ad> 【美琴】「――あ゛あ゛あ゛ぁぁぁぁぁぁ～～～～～ッッ！！」
+<000001ad> 【Mikoto】「――AAAAAAAAAAAAAAAAAAaaaaaaaaaa!!!」
+
+//<00003d7a> \r
+<00003d7a> \r
+

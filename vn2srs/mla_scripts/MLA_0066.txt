@@ -1,0 +1,696 @@
+#FILENAME 5560805e
+#TYPE 3
+
+//<00000c3f> 【速瀬中尉】「――！」\e
+<00000c3f> 【1st Lt. Hayase】「――!」\e
+
+//<00000c42> 【速瀬中尉】「通過する個体数が増えてる…\p…\p」\e
+<00000c42> 【1st Lt. Hayase】「More of them are coming in...\p...\p」\e
+
+//<00000c44> 【速瀬中尉】「上出来、\p上出来…\p…\pあの子達、\pうまくやったわね！」\e
+<00000c44> 【1st Lt. Hayase】「Good,\p this is good...\p...\pthey did really well up there!」\e
+
+//<00000c47> 【速瀬中尉】「隔壁操作――良し。\n起爆ケーブル――良し…\p…\pと」\e
+<00000c47> 【1st Lt. Hayase】「Barrier controls――Ready.\nDetonation cable――Ready...\p...\pokay.」\e
+
+//<00000c4a> 【速瀬中尉】「――さぁて、\pあんた達…\p…\p」\e
+<00000c4a> 【1st Lt. Hayase】「――Nooow then,\p you guys...\p...\p」\e
+
+//<00000c4c> 【速瀬中尉】「散々好き勝手に暴れ回って、\pさぞ腹ペコなんでしょうねぇ…\p…\p？」\e
+<00000c4c> 【1st Lt. Hayase】「Get in here and chow down!\bYou must be starving by now...\p...\p」\e
+
+//<00000c4f> 【速瀬中尉】「最後の晩餐よ。\n…\p…\p良く味わっておきなさい？」\e
+<00000c4f> 【1st Lt. Hayase】「This will be your last meal.\n...\p...\pmake sure you enjoy it, okay?」\e
+
+//<00000c5a> 【武】「はぁ…\pはぁ…\pはぁ…\p…\p！」\e
+<00000c5a> 【Takeru】「Haa...\p...\phaa...\p...\phaa...\p...\p!」\e
+
+//<00000c5c> ――よし、\p次だ！\e
+<00000c5c> ――Okay,\p next!\e
+
+//<00000c5f> 【月詠】「――ブラッド１より各機に告ぐ。\n手を止めずに聞け」
+<00000c5f> 【Tsukuyomi】「――Blood 1 to all units.\nListen but keep fighting.」
+
+//<00005c1b> \r
+<00005c1b> \r
+
+//<00000c61> 【月詠】「――速瀬中尉のプランに沿い、\pこれより格納庫の閉鎖準備にかかる」\e
+<00000c61> 【Tsukuyomi】「――Per 1st Lt. Hayase's plan,\p we will now begin preparations to close the hangar.」\e
+
+//<00000c63> 【月詠】「Ａ小隊は引き続き、\p残存ＢＥＴＡの掃討」\e
+<00000c63> 【Tsukuyomi】「A Platoon will continue to eliminate the remaining BETA.」\e
+
+//<00000c66> 【巴・戎・神代】「――了解！」\e
+<00000c66> 【Tomoe & Ebisu & Kamiyo】「――Copy that!」\e
+
+//<00000c68> 【月詠】「Ｃ小隊は、\pメインシャフトへ続く通路に散在する死骸の撤去だ」\e
+<00000c68> 【Tsukuyomi】「C Platoon,\p clear out all the bodies in the corridor to the main shaft.」\e
+
+//<00000c6a> 【月詠】「第３、\p第４隔壁の閉鎖と、\p充填封鎖を確実なものとするための重要な作業だ。\n迅速かつ確実にこなせ」\e
+<00000c6a> 【Tsukuyomi】「It's important we do that before closing and sealing the 3rd and 4th barriers.\nWork quickly and efficiently.」\e
+
+//<00000c6d> 【千鶴・壬姫・美琴】「――了解ッ！」\e
+<00000c6d> 【Chizuru & Miki & Mikoto】「――Copy that!」\e
+
+//<00000c6f> 【月詠】「――榊」\e
+<00000c6f> 【Tsukuyomi】「――Sakaki.」\e
+
+//<00000c72> 【千鶴】「――は！」\e
+<00000c72> 【Chizuru】「――Ma'am!」\e
+
+//<00000c74> 【月詠】「――本作戦期間中の臨時措置として、\p貴様を小隊長に任命する。\nＣ小隊を指揮しろ！」\e
+<00000c74> 【Tsukuyomi】「――As an emergency measure,\p I hereby promote you to Platoon Leader for the remainder of this engagement.\nLead C Platoon!」\e
+
+//<00000c77> 【千鶴】「――え…\p…\p」\n
+<00000c77> 【Chizuru】「――Eh...\p...\p?」\n
+
+//<00000c79> 【武】「――？」\e
+<00000c79> 【Takeru】「――?」\e
+
+//<00000c7b> 委員長の能力は認めるけど…\p…\p先任の涼宮を差し置いてどういう事だ？　もしかしたら、\p涼宮中尉の事があるから――\e
+<00000c7b> I know Class Rep's good at commanding, but...\p...\pdoesn't Suzumiya have more experience? Or does she think that's risky because of what happened to 1st――\e
+
+//<00000c7f> 【武】「――ッ！？」\e
+<00000c7f> 【Takeru】「――!?」\e
+
+//<00000c80> 【月詠】「――これは宗像中尉の強い推薦があっての事だ。\n上官の期待に応えて見せろ」\e
+<00000c80> 【Tsukuyomi】「――This is based on 1st Lt. Munakata's recommendation.\nLive up to your superiors' expectations.」\e
+
+//<00000c82> 【千鶴】「――は、\pはいッ！　榊少尉、\pＣ小隊を指揮します！」\e
+<00000c82> 【Chizuru】「――M-\pma'am! 2nd Lt. Sakaki will take command of C Platoon!」\e
+
+//<00000c84> …\p…\pそうか…\p…\pそう言う事かよ…\p…\pッ！！　涼宮中尉だけじゃなく…\p…\p！！\e
+<00000c84> ...\p...\pI see...\p...\pso that's why...\p...\p!!\b1st Lt. Suzumiya's not the only one who...\p...\p!!\e
+
+//<00000c85> だから宗像中尉は…\p…\pあえて委員長を小隊長に…\p…\p！！\e
+<00000c85> That's why 1st Lt. Munakata...\p...\precommended Class Rep for Platoon Leader...\p...\p!!\e//I'm not following his traing of thought at all right now, and though I have one guess I want other opinions first ~IX//Akane's dot isn't on the screen, so he thinks she died - Sheeta
+
+//<00000c86> 【月詠】「――Ｂ小隊は負傷者の救助だ！」\e
+<00000c86> 【Tsukuyomi】「――B Platoon will aid the wounded!」\e
+
+//<00000c8b> 【武】「――了解ッ！」\n
+<00000c8b> 【Takeru】「――Copy that!」\n
+
+//<00000c8c> 【宗像中尉・冥夜・慧】「――了解！」\e
+<00000c8c> 【1st Lt. Munakata & Meiya & Kei】「――Copy that!」\e
+
+//<00000c8f> 【月詠】「――白銀」\e
+<00000c8f> 【Tsukuyomi】「――Shirogane.」\e
+
+//<00000c91> 【武】「――は！」\e
+<00000c91> 【Takeru】「――Ma'am!」\e
+
+//<00000c92> 【月詠】「貴様はα２へ復帰し、\p速瀬中尉の爆破作業を支援だ」\e
+<00000c92> 【Tsukuyomi】「Return to Alpha 2 and assist 1st Lt. Hayase with the detonation.」\e
+
+//<00000c94> 【武】「――！」\e
+<00000c94> 【Takeru】「――!」\e
+
+//<00000c96> …\p…\p月詠中尉…\p…\pありがとうございます…\p…\p！\e
+<00000c96> ...\p...\p1st Lt. Tsukuyomi...\p...\pthank you...\p...\p!\e
+
+//<00000c97> 【武】「――白銀少尉、\pα２へ復帰します！」\e
+<00000c97> 【Takeru】「――2nd Lt. Shirogane,\p returning to Alpha 2!」\e
+
+//<00000c98> ――これ以上は…\p…\pもう御免だ…\p…\p！　離れた場所で…\p…\p何もできずに状況を傍観しているのはもう御免だ！\e
+<00000c98> ――I can't take...\p...\pany more of this...\p...\p!\bJust watching a situation unfold from far away, unable to do anything about it...\p...\pI'm through with that!\e
+
+//<00000c99> 【月詠】「全ては一刻を争う。\n――即時行動を開始せよッ！」\e
+<00000c99> 【Tsukuyomi】「All is decided in a single moment.\n――Begin moving immediately!」\e
+
+//<00000c9c> 【武】「――了解ッ！」\n
+<00000c9c> 【Takeru】「――Copy that!」\n
+
+//<00000c32> 【全員】「――了解！！」\e
+<00000c32> 【Everyone】「――Copy that!!」\e
+
+//<00000cac> 【速瀬中尉】「――！？」
+<00000cac> 【1st Lt. Hayase】「――!?」
+
+//<00000021> \r
+<00000021> \r
+
+//<00000caf> 【速瀬中尉】「ＢＥＴＡの個体数がさっきより減ってる…\p…\p」
+<00000caf> 【1st Lt. Hayase】「There aren't as many BETA as before...\p...\p」
+
+//<00000022> \r
+<00000022> \r
+
+//<00000cb2> 【速瀬中尉】「ということは――そろそろ頃合い…\p…\pかな？」
+<00000cb2> 【1st Lt. Hayase】「Which means――It should be...\p...\pabout time.」
+
+//<00004d1b> \r
+<00004d1b> \r
+
+//<00000cb5> 【速瀬中尉】「…\p…\p…\p…\p」
+<00000cb5> 【1st Lt. Hayase】「...\p...\p...\p...\p」
+
+//<00000023> \r
+<00000023> \r
+
+//<00000cb7> 【速瀬中尉】「はぁ…\p…\p参ったな。\n向こうのＢＥＴＡが移動した事を確認する段取り…\p…\pすっぽり抜けてたわ」
+<00000cb7> 【1st Lt. Hayase】「Haa...\p...\pI can't believe myself.\nI didn't even plan out how I'd know when all the BETA had come down here.」
+
+//<00004d20> \r
+<00004d20> \r
+
+//<00000cbb> 【速瀬中尉】「…\p…\p私もまだまだね。\n…\p…\p遙の事で…\p頭に血が上ってたんだわ…\p…\p」
+<00000cbb> 【1st Lt. Hayase】「...\p...\pI've got so much to work on.\n...\p...\pI was getting ahead of myself...\p...\pafter what happened to Haruka...\p...\p」
+
+//<00004d22> \r
+<00004d22> \r
+
+//<00000cbe> 【速瀬中尉】「…\p…\p…\p…\pずるいよ遙」
+<00000cbe> 【1st Lt. Hayase】「...\p...\p...\p...\pthat's not fair, Haruka.」
+
+//<00004d03> \r
+<00004d03> \r
+
+//<00000cc1> 【速瀬中尉】「先にいっちゃうなんて…\p…\p」
+<00000cc1> 【1st Lt. Hayase】「Leaving without me...\p...\p」
+
+//<00004d06> \r
+<00004d06> \r
+
+//<00000cc4> 【速瀬中尉】「…\p…\p…\p…\p」
+<00000cc4> 【1st Lt. Hayase】「...\p...\p...\p...\p」//;_; - Sheeta
+
+//<00004d0f> \r
+<00004d0f> \r
+
+//<00400cc9> 【速瀬中尉】「――ここで迷っていても埒が明かない」\e
+<00400cc9> 【1st Lt. Hayase】「――Worrying about it now won't solve anything.」\e
+
+//<00400ccc> 【速瀬中尉】「起爆ケーブルの限界まで戻れば、\p通信が回復するかも知れないわ…\p…\p」\e
+<00400ccc> 【1st Lt. Hayase】「If I go to the far end of the detonation cable,\p I might be able to get some information...\p...\p」\e
+
+//<00400cce> 【速瀬中尉】「最悪、\pメインシャフトまで出て確認してから戻ってくればいいのよ！」\e
+<00400cce> 【1st Lt. Hayase】「And if nothing else I can go out into the main shaft to check!」\e
+
+//<00400cd1> 【速瀬中尉】「――よし！」\e
+<00400cd1> 【1st Lt. Hayase】「――Okay!」\e
+
+//<00000ce1> 【宗像中尉】「――彩峰そっちはどうだ！？」\e
+<00000ce1> 【1st Lt. Munakata】「――Ayamine, how is she!?」\e
+
+//<00000ce6> 【慧】「――崩壊に巻き込まれたＢＥＴＡの死骸が多く、\p風間機の状態は直接確認できません！」\e
+<00000ce6> 【Kei】「――There's too many BETA corpses in the wreckage between me and Kazama.\p I can't confirm her condition!」\e
+
+//<00000ce9> 【宗像中尉】「――救出口は確保できそうか！？」\e
+<00000ce9> 【1st Lt. Munakata】「――Can you get her out of there!?」\e
+
+//<00000ceb> 【慧】「ダメです。凄乃皇の機体が壁にめり込んでいてビクともしません！」\e
+<00000ceb> 【Kei】「No. The Susano'o has her TSF pinned against the wall and it won't budge!」\e
+
+//<00000ced> 【宗像中尉】「やはり、\pこちら側のヒートシンクを破壊するしか無さそうだな。\n――彩峰、\p上がってこい！」\e
+<00000ced> 【1st Lt. Munakata】「So we have no choice but to destroy the heat sinks over here.\n――Ayamine,\p come back up!」\e
+
+//<00000cef> 【慧】「――了解！」\e
+<00000cef> 【Kei】「――Copy that!」\e
+
+//<00000cfa> 【慧】「――中尉、\p風間少尉の血圧が低下しています！　急がないと――」\e
+<00000cfa> 【Kei】「――First Lieutenant,\p 2nd Lt. Kazama's blood pressure is falling! If we don't――」\e
+
+//<00000cfc> 【宗像中尉】「――わかっている！　危険だが１２０ｍｍの連射でヒートシンクを破壊するぞ」\e
+<00000cfc> 【1st Lt. Munakata】「――I know that! It's risky but shoot out the head sinks with the 120mm on full auto.」\e
+
+//<00004c82> 【宗像中尉】「有効角ギリギリまで寝かせて発射、\p風間機への影響を最小限に止めるんだ」\e
+<00004c82> 【1st Lt. Munakata】「Stop the moment it's loose so we don't damage Kazama's TSF too badly.」\e
+
+//<00000d02> 【宗像中尉】「射撃点と順序の計算結果を送る。\n位置に着け」\e
+<00000d02> 【1st Lt. Munakata】「I'm sending you calculations on the locations you need to hit.\nGo to this position.」\e
+
+//<00000d05> 【慧】「――了解。準備完了しました！」\e
+<00000d05> 【Kei】「――Copy that. I'm ready!」\e
+
+//<00000d07> 【宗像中尉】「――射撃開始…\p…\p！」\e
+<00000d07> 【1st Lt. Munakata】「――Begin firing...\p...\p!」\e
+
+//<00000d0c> 【宗像中尉】「――よし、\p残骸を除去する！　ここからは主腕での作業だ。\n両手は空けておけ！」\e
+<00000d0c> 【1st Lt. Munakata】「――Okay,\p get rid of the bodies!\bWe're gonna need both arms for this.\nDrop whatever you're holding!」\e
+
+//<00000d0f> 【慧】「――了解！」\e
+<00000d0f> 【Kei】「――Copy that!」\e
+
+//<00000d15> 【宗像中尉】「――よし、\pそこの大きいパネルを２機でどかすぞ！　奥を頼む。\n足場には気をつけろ？！」\e
+<00000d15> 【1st Lt. Munakata】「――Okay,\p we're gonna move that big panel over there! You push from the other side.\nWatch your feet!」\e
+
+//<00000d18> 【慧】「――了解！」\e
+<00000d18> 【Kei】「――Copy that!」\e
+
+//<00000d1c> 【慧】「――保持、\p完了しました！」\e
+<00000d1c> 【Kei】「――I have a foothold!」\e
+
+//<00000d1f> 【宗像中尉】「――持ち上げるぞ！　同調はオートでやる。\n操作を私に！」\e
+<00000d1f> 【1st Lt. Munakata】「――Let's lift it up.\bSet it so you synchronize with me automatically!」\e//"Let's it up" -> "Let's left it up" -> finally correct ~IX
+
+//<00000d21> 【慧】「――操作同調！」\e
+<00000d21> 【Kei】「――Synchronized!」\e
+
+//<00000d24> 【宗像中尉】「…\p…\p待っていろ祷子。\n今、\p助けてやるぞ…\p…\p！」\e
+<00000d24> 【1st Lt. Munakata】「...\p...\pjust wait, Touko.\nWe'll be there soon...\p...\p!」\e
+
+//<00000d2a> 【慧】「――――！？」
+<00000d2a> 【Kei】「――――!?」
+
+//<00000008> \r
+<00000008> \r
+
+//<00000d2f> 【慧】「――む…\p…\p宗像中尉ィィッッ！！！」
+<00000d2f> 【Kei】「――1-...\p...\p1st Lt. Munakataaaaa!!!」
+
+//<00004f69> \r
+<00004f69> \r
+
+//<00000d39> 【速瀬中尉】「――こちらヴァルキリー１！」\e
+<00000d39> 【1st Lt. Hayase】「――This is Valkyrie 1!」\e
+
+//<00000d3c> 【速瀬中尉】「――ヴァルキリー１よりヴァルキリーズ――応答せよ！」\e
+<00000d3c> 【1st Lt. Hayase】「――Valkyrie 1 to all Valkyries――Respond!」\e
+
+//<00000d3e> 【速瀬中尉】「――ヴァルキリー１よりブラッズ――応答せよ！」\e
+<00000d3e> 【1st Lt. Hayase】「――Valkyrie 1 to Bloods――Respond!」\e
+
+//<00000d41> 【速瀬中尉】「――こちらヴァルキリー１…\p…\p９０番格納庫の状況を知らせよ！　――こちらヴァルキリー１」\e
+<00000d41> 【1st Lt. Hayase】「――This is Valkyrie 1...\p...\ptell me what's going on in Hangar 90! ――This is Valkyrie 1.」\e
+
+//<00000d43> 【速瀬中尉】「…\p…\p…\p…\p」\e
+<00000d43> 【1st Lt. Hayase】「...\p...\p...\p...\p」\e
+
+//<00000d45> 【速瀬中尉】「…\p…\p…\p…\pやっぱり、\p応答無しか」\e
+<00000d45> 【1st Lt. Hayase】「...\p...\p...\p...\pso much for that.」\e
+
+//<00000d47> 【速瀬中尉】「起爆ケーブルはここまでが限界だし…\p…\p。\n一度格納庫まで行って、\p戻って来るしか無さそうね」\e
+<00000d47> 【1st Lt. Hayase】「That's as far as the detonation cable will go...\p...\p\nGuess I'll have to go the hangar to make sure.」\e
+
+//<00000d4a> 【武】「…\p…\p…\p…\p２より…\p…\p…\pキリー…\p…\p…\p…\p…\p…\p…\p」\e
+<00000d4a> 【Takeru】「...\p...\p...\p...\p2 to...\p...\p...\pkyri...\p...\p...\p...\p...\p...\p...\p」\e
+
+//<00000d4d> 【速瀬中尉】「――白銀ッ！？　――こちらヴァルキリー１！　聞こえるか！？」\e
+<00000d4d> 【1st Lt. Hayase】「――Shirogane!?\b――This is Valkyrie 1! Can you hear me!?」\e
+
+//<00000d50> 【武】「…\pは…\p瀬中尉…\p…\p…\p無事…\pった…\p…\pすね…\p…\p…\p…\p」\e
+<00000d50> 【Takeru】「...\p1...\p1st Lt. Hayase...\p...\p...\pyo...\pre...\p...\pkay...\p...\p...\p...\p」\e
+
+//<00000d51> 【速瀬中尉】「――そんな事はどうでも良い！　９０番格納庫のＢＥＴＡはどうなった！？」\e
+<00000d51> 【1st Lt. Hayase】「――Forget that!\bWhat about the BETA in Hangar 90!?」\e
+
+//<00000d54> 【武】「９０番…\p…\p納庫の敵…\p…\p応炉に向かってい…\p…\p…\pオレ…\pそっちに向か…\p…\pいます…\p…\p」\e
+<00000d54> 【Takeru】「The enem...\p...\pgar 90...\p...\pheading for the reac...\p...\p...\pI'm he...\pyour way...\p...\pnow...\p...\p」\e
+
+//<00000d55> 【速瀬中尉】「こっちに向かっ…\p…\p報告に来たのか！？　――上出来よ白銀ッ、\pさすが天才ッ！！」\e
+<00000d55> 【1st Lt. Hayase】「My way? ...\p...\pyou came to tell me that!?\b――Good call Shirogane,\p I knew you were a genius!!」\e
+
+//<00000d58> 【速瀬中尉】「――隔壁閉鎖開始…\p…\p！」\e
+<00000d58> 【1st Lt. Hayase】「――Closing barrier walls now...\p...\p!」\e
+
+//<00000d5c> 【速瀬中尉】「――起爆タイマーセット…\p…\p…\p…\p」\e
+<00000d5c> 【1st Lt. Hayase】「――Setting detonation timer...\p...\p...\p...\p」\e
+
+//<00000d61> 【速瀬中尉】「――ッ！」\e
+<00000d61> 【1st Lt. Hayase】「――!」\e
+
+//<00000d66> 【速瀬中尉】「…\p…\p…\p…\pケーブルの断線はない！　システムチェック…\p…\p」\e
+<00000d66> 【1st Lt. Hayase】「...\p...\pbut the cable's not severed!\bRunning a systems check...\p...\p」\e
+
+//<00000d69> 【速瀬中尉】「――ッ！？　…\p…\pこれは…\p…\pッ？！」\e
+<00000d69> 【1st Lt. Hayase】「――!? ...\p...\phow...\p...\p!?」\e
+
+//<00000d70> ――居たッ！　メインシャフトまで戻ってきていたのか！\e
+<00000d70> ――There she is!\bShe came all the way out to the main shaft!?\e
+
+//<00000d71> 【武】「――速瀬中尉！　反応炉の爆破は――」\e
+<00000d71> 【Takeru】「――1st Lt. Hayase! Blow the reac――」\e
+
+//<00000d73> 【武】「――ッ！？」\e
+<00000d73> 【Takeru】「――!?」\e
+
+//<00000d74> ――中尉が反転した！？　バカな――反応炉に戻るって言うのかッ！？\e
+<00000d74> ――She turned back!? No――Why are you heading back to the reactor!?\e
+
+//<00000d75> 【武】「――速瀬中尉ッ！　待ってください！　――速瀬中尉ッ！！」\e
+<00000d75> 【Takeru】「――1st Lt. Hayase! Please, wait! ――1st Lt. Hayase!!」\e
+
+//<00000d76> ――クソッ！！\e
+<00000d76> ――Damn it!!\e
+
+//<00000d7c> 【武】「――中尉！　待ってください！　何が起きたんですか！？」\e
+<00000d7c> 【Takeru】「――First Lieutenant! Wait! What happened!?」\e
+
+//<00000d7f> 【速瀬中尉】「――Ｓ－１１の起爆タイマーが作動しないのよ！　――その部分だけ綺麗に壊されてる」
+<00000d7f> 【1st Lt. Hayase】「――The S-11 timer isn't working!\n――They broke just that one part.」
+
+//<00000d81> \r【武】「――えっ！？」
+<00000d81> \r【Takeru】「――Eh!?」
+
+//<00000d82> \r――その部分だけって…\p…\p！？
+<00000d82> \r――Only that...\p...\p!?
+
+//<00004ddb> \r
+<00004ddb> \r
+
+//<00004a86> 【武】「――まさか…\p…\pそれが爆弾だって気付かれた…\p…\p！？」\e
+<00004a86> 【Takeru】「――Did they...\p...\pknow it was a bomb...\p...\p!?」\e
+
+//<00004a87> 【速瀬中尉】「――わからないわ。\nでもその可能性はある」\e
+<00004a87> 【1st Lt. Hayase】「――I don't know.\nBut it's possible.」\e
+
+//<00004a89> 【武】「――ただ単に、\p邪魔でどかした拍子に壊れただけなのかも知れないじゃないですかッ！」\e
+<00004a89> 【Takeru】「――Is it possible they broke it on a whim because it was in the way or something!?」\e
+
+//<00004a8a> 【速瀬中尉】「――バカ！　そんな簡単に壊れるモノじゃないわよッ！」\e
+<00004a8a> 【1st Lt. Hayase】「――Idiot! It's nowhere near that fragile!」\e
+
+//<00004a8c> 【武】「――ッ！！」\e
+<00004a8c> 【Takeru】「――!!」\e
+
+//<00000d87> 【速瀬中尉】「――とにかく、\p喰う以外の事をしたＢＥＴＡがいたのよ！」\e
+<00000d87> 【1st Lt. Hayase】「――Anyway,\p there's BETA in there doing more than just eating!」\e
+
+//<00000d89> 【武】「――それで…\p…\pいったいどうするつもりなんですか！？」\e
+<00000d89> 【Takeru】「――So...\p...\pwhat the hell are you going to do!?」\e
+
+//<00000d8a> 【速瀬中尉】「――決まってるじゃない…\p…\pＳ－１１を爆発させるのよ！」\e
+<00000d8a> 【1st Lt. Hayase】「――Isn't it obvious?\b...\p...\pI'm going to detonate the S-11!」\e
+
+//<00000d8c> 【武】「――そんな事はわかってますッ！　そのやり方を聞いているんですよッ！！」\e
+<00000d8c> 【Takeru】「――I know that!\bI'm asking how are you――!?」\e
+
+//<00000d8f> 【武】「――ッ！！」
+<00000d8f> 【Takeru】「――!!」
+
+//<00004e86> \r
+<00004e86> \r
+
+//<00000d95> 【武】「――ッ！！？」\e
+<00000d95> 【Takeru】「――!!?」\e
+
+//<00000d99> 【武】「――中尉ッ！　何やってるんですかッ！？　隔壁を開けてくださいッ！！」\e
+<00000d99> 【Takeru】「――First Lieutenant!\bWhat are you doing!? Open the barriers!!」\e
+
+//<00000d9a> 【速瀬中尉】「――ダメよ！　あんたは格納庫に戻って凄乃皇を守りなさい！！」\e
+<00000d9a> 【1st Lt. Hayase】「――No! Go back to the hangar and protect the Susano'o!!」\e
+
+//<00000da1> 【武】「――ッ！」\e
+<00000da1> 【Takeru】「――!」\e
+
+//<00000da2> ――やっぱり中尉は…\p…\pッ！！\e
+<00000da2> ――She is going to...\p...\p!!\e
+
+//<00000da4> 【武】「――邪魔するなァッ！！」\e
+<00000da4> 【Takeru】「――Out of my way!!」\e
+
+//<00000da6> 【武】「――止めてください中尉ッッ！！」\e
+<00000da6> 【Takeru】「――First Lieutenant, please, stop!!」\e
+
+//<00000da7> 【速瀬中尉】「――バカッ！　――早く離れろッ！」\e
+<00000da7> 【1st Lt. Hayase】「――You idiot! ――Get out of here!」\e
+
+//<00000da9> 【武】「――まだ他に方法はあるはずですッ！　自決装置を止めてくださいッ！！」\e
+<00000da9> 【Takeru】「――There has to be another way!\bYou don't need to kill yourself!!」\e
+
+//<00000daa> 【速瀬中尉】「――もう…\p…\p直接起爆しか方法はないのよッ！」\e
+<00000daa> 【1st Lt. Hayase】「――No there isn't...\p...\pdirect manual detonation is the only option!」\e
+
+//<00000dac> 【武】「――諦めないでください中尉ッ！」\e
+<00000dac> 【Takeru】「――Don't give up so quickly, First Lieutenant!」\e
+
+//<00000dad> 【速瀬中尉】「やけくそになってるんじゃないわ！　――あのＢＥＴＡが、\p最小限の手間でＳ－１１を無力化したのよ？！」\e
+<00000dad> 【1st Lt. Hayase】「Getting desperate now, aren't we!? ――Those BETA disabled an S-11 with the minimum possible effort!」\e
+
+//<00004a94> 【武】「――えっ！？」\e
+<00004a94> 【Takeru】「――Eh!?」\e
+
+//<00004a95> 【速瀬中尉】「――Ｓ－１１なんて見たこと無いはずの、\p佐渡島から来たＢＥＴＡが…\p…\pそれをやったのよ？！」\e
+<00004a95> 【1st Lt. Hayase】「――BETA from Sadogashima who've never had a chance to see an S-11...\p...\pdisarmed it!!」\e
+
+//<00004a97> …\p…\p…\p…\pそ…\p…\pそれは…\p…\p！！\e
+<00004a97> ...\p...\p...\p...\pth-...\p...\pthat means...\p...\p!!\e
+
+//<00004a98> 【速瀬中尉】「考えたくないけど…\p…\pＳ－１１の構造を知っているのかも知れないわ…\p…\p！！」\e
+<00004a98> 【1st Lt. Hayase】「I hope this isn't true...\p...\pbut they might know how S-11s work...\p...\p!!」\e
+
+//<00004a9a> 【武】「――ッ！！」\e
+<00004a9a> 【Takeru】「――!!」\e
+
+//<00004a9b> ――まさか…\p…\p…\p…\pそんな…\p…\pッ！！\e
+<00004a9b> ――No way...\p...\p...\p...\pthat's...\p...\p!!\e
+
+//<00004a9c> 【武】「――いったい…\p…\pどうやって！？」\e
+<00004a9c> 【Takeru】「――How the hell...\p...\pwould they know that!?」\e
+
+//<00004a9d> 【速瀬中尉】「――仕掛けた時には興味すら示さなかったし、\p機能も正常だった」\e
+<00004a9d> 【1st Lt. Hayase】「――They didn't show any interest when I placed it and it functioned normally back then.」\e
+
+//<00004a9f> 【速瀬中尉】「――でも、\p奴らがエネルギーを補給した直後に、\pタイマーは２つ共壊されたのよ…\p…\p？！」\e
+<00004a9f> 【1st Lt. Hayase】「――But the moment they replenished their energy, they broke both timers...\p...\p!!」\e
+
+//<00004aa1> 【武】「――！」\e
+<00004aa1> 【Takeru】「――!」\e
+
+//<00004aa2> 【速瀬中尉】「ＢＥＴＡは…\p…\pエネルギーと一緒に、\pＳ－１１の情報を反応炉から得たのかも知れない――？！」\e
+<00004aa2> 【1st Lt. Hayase】「The BETA might have gained...\p...\pinformation about the S-11 from the reactor as well as energy――!!」\e
+
+//<00004aa4> …\p…\pえ？\e
+<00004aa4> ...\p...\peh?\e
+
+//<00004aa5> 【速瀬中尉】「もし…\p…\p反応炉がただの動力源じゃなくて、\p通信装置でもあったとしたら――」\e
+<00004aa5> 【1st Lt. Hayase】「If...\p...\pthe reactor isn't just a power source,\p but a transmission device――」\e
+
+//<00004aa8> 【速瀬中尉】「ＢＥＴＡが集めた情報は、\p反応炉を通じてやり取りされるんだとしたら――」\e
+<00004aa8> 【1st Lt. Hayase】「If the BETA exchange their information through the reactors――」\e
+
+//<00000dbb> 【速瀬中尉】「オルタネイティヴ計画や凄乃皇の情報が…\p…\p世界中のハイヴに伝わってしまうのよ？！」\e
+<00000dbb> 【1st Lt. Hayase】「Then information on the Alternative Plan and the Susano'o...\p...\pwill be sent to every hive on Earth!!」\e
+
+//<00000dbe> 【速瀬中尉】「――その可能性がある以上、\p時間を無駄にはできないのよッ！」\e
+<00000dbe> 【1st Lt. Hayase】「――As long as that's possible,\p we can't afford to waste any more time!」\e
+
+//<00000dc0> 【武】「――っ！！」\e
+<00000dc0> 【Takeru】「――!!」\e
+
+//<00000dc2> 【速瀬中尉】「遙や大尉…\p…\p神宮司軍曹…\p…\p柏木…\p…\p。\nそれだけじゃない――」\e
+<00000dc2> 【1st Lt. Hayase】「Haruka, the Captain...\p...\pSgt. Jinguuji...\p...\pKashiwagi...\p...\p\nNot just them――」\e
+
+//<00000dc5> 【速瀬中尉】「今ここで時間を無駄にして…\p…\p人類の未来を信じて逝った人達の命が無駄になるなんて――絶対に許せない！！」\e
+<00000dc5> 【1st Lt. Hayase】「If we waste any more time here and now...\p...\pwe'll waste all the lives of those who believed in humanity's future――I'll never allow that!!」\e//I love how using past tense here makes the "they gave their lives" part implied ~IX
+
+//<00000dc8> 【武】「速瀬中尉…\p…\p」\e
+<00000dc8> 【Takeru】「1st Lt. Hayase...\p...\p」\e
+
+//<00004ac0> 【速瀬中尉】「…\p…\p白銀」\e
+<00004ac0> 【1st Lt. Hayase】「...\p...\pShirogane.」\e
+
+//<00004ac2> 【武】「…\p…\pはい」\e
+<00004ac2> 【Takeru】「...\p...\pyes?」\e
+
+//<00000dc9> 【速瀬中尉】「…\p…\pみんなが信じた人類の未来は…\p…\p鑑にかかっている…\p…\p！」\e
+<00000dc9> 【1st Lt. Hayase】「...\p...\pthe future everyone believes in...\p...\prests with Kagami...\p...\p!」\e
+
+//<00000dcb> 【武】「――！」\e
+<00000dcb> 【Takeru】「――!」\e
+
+//<00004ac8> 【速瀬中尉】「鑑と凄乃皇は人類の希望…\p…\p」\e
+<00004ac8> 【1st Lt. Hayase】「Kagami and the Susano'o are humanity's last hope...\p...\p」\e
+
+//<00004aca> 【速瀬中尉】「そして…\p…\pあの娘を支えられるのは、\pあんただけ…\p…\p」\e
+<00004aca> 【1st Lt. Hayase】「And...\p...\pyou're the only one who can support her...\p...\p」\e
+
+//<00000dcf> 【武】「中尉…\p…\p！」\e
+<00000dcf> 【Takeru】「First Lieutenant...\p...\p!」\e
+
+//<00000dd0> 【速瀬中尉】「あの娘がどんなに特殊な存在だとしても…\p…\pやっぱり女の子なんだから…\p…\p」\e
+<00000dd0> 【1st Lt. Hayase】「No matter what she is...\p...\pshe's still a girl...\p...\p」\e
+
+//<00000dd2> オレと純夏のこと…\p…\p知っていたのか…\p…\p！！\e
+<00000dd2> She knows...\p...\pabout me and Sumika...\p...\p!?\e
+
+//<00000dd3> 【速瀬中尉】「鑑には白銀が絶対必要なのよ。\n誰にもその代わりはできない」\e
+<00000dd3> 【1st Lt. Hayase】「Kagami needs you, Shirogane.\nNo one can take your place.」\e
+
+//<00000dd5> 【速瀬中尉】「だからあんたは鑑を支えることで、\p堂々と胸を張って個人の要求と、\p大儀を両立させればいい」\e
+<00000dd5> 【1st Lt. Hayase】「So take pride in supporting her.\bAnd through her, fulfill your personal desires along with the mission.」\e
+
+//<00000dd7> 【武】「中尉…\p…\pッ」\e
+<00000dd7> 【Takeru】「First Lieutenant...\p...\p!」\e
+
+//<00000dd8> 【速瀬中尉】「あんたは…\p…\pあんたにしかできない事をやるの！　良いわね？」\e
+<00000dd8> 【1st Lt. Hayase】「You'll do that...\p...\pbecause only you can! Understand?」\e
+
+//<00000dda> 【武】「――はい…\p…\pッ！」\e
+<00000dda> 【Takeru】「――Yes, ma'am...\p...\p!」\e
+
+//<00000ddb> 【速瀬中尉】「私も、\p今この状況でやれる限りの事をやるだけよ」\e
+<00000ddb> 【1st Lt. Hayase】「Just as I'll do what only I can do in this situation.」\e
+
+//<00000ddd> 【武】「…\p…\p…\p…\p」\e
+<00000ddd> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00004acd> 【速瀬中尉】「…\p…\p死力を尽くして任務にあたれ」\e
+<00004acd> 【1st Lt. Hayase】「...\p...\pfulfill your duty with all your strength.」\e//PCP_S MLA_0045
+
+//<00004acf> 【速瀬中尉】「…\p…\p生ある限り最善を尽くせ」\e
+<00004acf> 【1st Lt. Hayase】「...\p...\pdespair not until your last breath.」\e
+
+//<00004ad1> 【速瀬中尉】「…\p…\p決して、\p犬死するな」\e
+<00004ad1> 【1st Lt. Hayase】「...\p...\pnever die in vain.」\e//PCP_E
+
+//<00000de4> 【武】「…\p…\p…\p…\pッ」\e
+<00000de4> 【Takeru】「...\p...\p...\p...\p!」\e
+
+//<00004ad4> 【速瀬中尉】「白銀…\p…\p」\e
+<00004ad4> 【1st Lt. Hayase】「Shirogane...\p...\p」\e
+
+//<00004ad6> 【武】「…\p…\pはい」\e
+<00004ad6> 【Takeru】「...\p...\pyes?」\e
+
+//<00004ad7> 【速瀬中尉】「…\p…\p私は…\p…\p伊隅大尉の教えに…\p…\p反しているかな…\p…\p？」\e
+<00004ad7> 【1st Lt. Hayase】「...\p...\pam I...\p...\pgoing against...\p...\p\b...\p...\pCapt. Isumi's teachings...\p...\p?」\e
+
+//<00000de8> 【武】「――いえッ！　反していませんッ！！」\e
+<00000de8> 【Takeru】「――No! You're not doing that at all!!」\e
+
+//<00000de9> 【速瀬中尉】「…\p…\pそうか。\n良かった…\p…\p」\e
+<00000de9> 【1st Lt. Hayase】「...\p...\pI see.\nThat's good...\p...\p」\e
+
+//<00000deb> 【武】「――速瀬中尉…\p…\pッ！」\e
+<00000deb> 【Takeru】「――1st Lt. Hayase...\p...\p!」\e
+
+//<00000dec> 【速瀬中尉】「――？！」\e
+<00000dec> 【1st Lt. Hayase】「――!?」\e
+
+//<00000dee> 【武】「反応炉を…\p…\p宜しくお願いします…\p…\pッ！」\e
+<00000dee> 【Takeru】「Take care...\p...\pof the reactor...\p...\p!」\e
+
+//<00000def> 【速瀬中尉】「…\p…\p…\p…\p」\e
+<00000def> 【1st Lt. Hayase】「...\p...\p...\p...\p」\e
+
+//<00000df1> 【武】「――人類の未来は…\p…\p任せてください…\p…\pッ！」\e
+<00000df1> 【Takeru】「――You can trust me...\p...\pwith humanity's future...\p...\p!」\e
+
+//<00000df4> 【速瀬中尉】「よく言った…\p…\p白銀。\n…\p…\pやっと一人前の衛士になったわね」\e
+<00000df4> 【1st Lt. Hayase】「Well said...\p...\pShirogane.\n...\p...\pyou've finally become a good Eishi.」\e
+
+//<00000df6> 【武】「――はッ！」\e
+<00000df6> 【Takeru】「――Ma'am!」\e
+
+//<00004fb8> 【速瀬中尉】「あんた…\p…\p結構良い指揮官になると思うわ。\n私なんかよりずっと…\p…\pね」\e
+<00004fb8> 【1st Lt. Hayase】「I think...\p...\pyou'd be a pretty good commander.\nFar better...\p...\pthan I was.」\e
+
+//<00000df9> 【武】「…\p…\pありがとうございます…\p…\pッ！！」\e
+<00000df9> 【Takeru】「...\p...\pthank you very much...\p...\p!!」\e
+
+//<00000dfa> 【速瀬中尉】「私の事、\pあんたの部下達に誇らしく語ってちょうだい。\n頼んだわよ？」\e
+<00000dfa> 【1st Lt. Hayase】「Tell your subordinates about me with pride, okay?\nI'm counting on you.」\e
+
+//<00000dfc> 【武】「――は…\p…\pいッ…\p…\p！」\e
+<00000dfc> 【Takeru】「――Yes...\p...\pma'am...\p...\p!」\e
+
+//<00000dfd> 【速瀬中尉】「――さあ、\pもう行きなさい！　時間を無駄にできないわ」\e
+<00000dfd> 【1st Lt. Hayase】「――Now,\p get out of here!\bWe've wasted enough time.」\e
+
+//<00000dff> 【速瀬中尉】「伊隅ヴァルキリーズを頼んだわよ。\n…\p…\pみんなに宜しく！」\e
+<00000dff> 【1st Lt. Hayase】「Take care of Isumi's Valkyries.\n...\p...\pall of them!」\e
+
+//<00000e01> クソ…\p…\p中尉は…\p…\p涼宮の事も…\p…\p風間少尉の事も…\p…\p知らないんだ…\p…\p！\e
+<00000e01> Dammit...\p...\pthe First Lieutenant...\p...\pdoesn't know what happened...\p...\pto 2nd Lt. Kazama...\p...\pand 1st Lt. Munakata...\p...\p!\e
+
+//<00000e03> 【武】「――速瀬中尉…\p…\pお世話になりましたッ！」\e
+<00000e03> 【Takeru】「――1st Lt. Hayase...\p...\pthank you for everything!」\e
+
+//<00000e05> 【速瀬中尉】「…\p…\pじゃあね」\e
+<00000e05> 【1st Lt. Hayase】「...\p...\pgoodbye.」\e//SALUTE THE BEST EISHI KNOWN TO MAN - kViN//*salutes* - Sheeta
+
+//<00000e08> 【武】「…\p…\p…\p…\pッ」\e
+<00000e08> 【Takeru】「...\p...\p...\p...\p!」\e
+
+//<00000e0a> 【武】「…\p…\pう…\p…\pぅおおおおおおおォォォッッッ！！！」
+<00000e0a> 【Takeru】「...\p...\puu...\p...\puoooooooooooooooooooo!!!」
+
+//<00004ecf> \r
+<00004ecf> \r
+
+//<00000e0d> 【武】「――うおおおおおおおおおォォォォッ！！！」
+<00000e0d> 【Takeru】「――Uuoooooooooooooooooooooooooooooo!!!」
+
+//<00004ed1> \r
+<00004ed1> \r
+
+//<00000e0f> 【武】「――ちくしょう！　ちくしょうォ！　ちくしょおォォォッ！！！」
+<00000e0f> 【Takeru】「――Dammit! Damn iiit! God fucking damn iiiiiit!!!」
+
+//<00004ed3> \r
+<00004ed3> \r
+
+//<00000e11> ――どうしてなんだ！
+<00000e11> ――Why!?
+
+//<00004ed4> \r
+<00004ed4> \r
+
+//<00000e12> ――どうして…\p…\pオレがもっと教えを請いたいと思っている人が死んでいくんだ！！
+<00000e12> ――Why...\p...\pdo all the people I want to learn from keep dying!?//because mentors always die - Sheeta
+
+//<00004ee4> \r
+<00004ee4> \r
+
+//<00000e13> ――どうしてオレは…\p…\pその人達を救えないんだ…\p…\p！！
+<00000e13> ――Why can't I save...\p...\pany of them...\p...\p!!?
+
+//<00004ee7> \r
+<00004ee7> \r
+
+//<00000e14> ――ちくしょう！　ちくしょうォ！　ちくしょうォォ！　ちくしょうォォォ！
+<00000e14> ――Dammit! Damn iiit! Damn iiiiit! Damn iiiiiiit!
+
+//<00004eea> \r
+<00004eea> \r
+
+//<00000e16> 【武】「――ちくしょおォォォォォォォォッ！！！」
+<00000e16> 【Takeru】「――God damn iiiiiiiiiiiiiiiit!!!」
+
+//<00004ec1> \r
+<00004ec1> \r
+
+//<00000e1c> 【速瀬中尉】「…\p…\p…\p…\p」
+<00000e1c> 【1st Lt. Hayase】「...\p...\p...\p...\p」
+
+//<00000024> \r
+<00000024> \r
+
+//<00000e1f> 【速瀬中尉】「すみません…\p…\p大尉…\p…\p」
+<00000e1f> 【1st Lt. Hayase】「I'm sorry...\p...\pCaptain...\p...\p」
+
+//<00004c88> \r
+<00004c88> \r
+
+//<00000025> \r
+<00000025> \r
+
+//<00000e22> 【速瀬中尉】「…\p…\pもうすぐ…\p…\pお目にかかる事になってしまいます…\p…\p」
+<00000e22> 【1st Lt. Hayase】「...\p...\pbut you'll be seeing me...\p...\pvery soon...\p...\p」
+
+//<00000026> \r
+<00000026> \r
+
+//<00000e25> 【速瀬中尉】「…\p…\p…\p…\p」
+<00000e25> 【1st Lt. Hayase】「...\p...\p...\p...\p」
+
+//<00004cc2> \r
+<00004cc2> \r
+
+//<00000027> \r
+<00000027> \r
+
+//<00000e28> 【速瀬中尉】「遙…\p…\p…\p…\p」
+<00000e28> 【1st Lt. Hayase】「Haruka...\p...\p...\p...\p」
+
+//<00000028> \r
+<00000028> \r
+
+//<00000e2b> 【速瀬中尉】「一緒に…\p…\p孝之に逢いに行こうね…\p…\p」
+<00000e2b> 【1st Lt. Hayase】「Let's go see Takayuki...\p...\ptogether...\p...\p」//so they did know he died... ;_; (for those of you who missed it, Takayuki got G-Bombed during Hesperus) ~IX//;___; - Sheeta //Oh, I forgot Akane mentions this explicitly a few scripts later. Oh well. ~IX
+
+//<00004ce5> \r
+<00004ce5> \r
+

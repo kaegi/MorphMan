@@ -1,0 +1,1518 @@
+#FILENAME 680a7b70
+#TYPE 3
+
+//<00000020> 【武】「――霞、\pどうだ？」\e
+<00000020> 【Takeru】「――Kasumi,\p how's it look?」\e
+
+//<00000022> 【霞】「機体、\p機能共に損害はありません。\nですが、\p機関出力が安定しません」\e
+<00000022> 【Kasumi】「No hull damage or reduced functionality.\nHowever,\p the engine output is unstable.」\e
+
+//<00000023> 機関出力…\p…\pか…\p…\p。\n純夏は…\p…\p\e
+<00000023> Engine output...\p...\phmm...\p...\p\nSo Sumika's...\p...\p\e
+
+//<00000024> 【霞】「…\p…\p純夏さんは大丈夫だって言ってます」\e
+<00000024> 【Kasumi】「...\p...\pSumika-san says she's okay.」\e
+
+//<00000025> 【武】「…\p…\pそうか」\e
+<00000025> 【Takeru】「...\p...\pI see.」\e
+
+//<00000026> ここに辿り着くまで、\pオレ達は想定の倍以上の敵と戦ったんだ。\nラザフォード場に干渉した敵の数も半端じゃなかった。\e
+<00000026> We've fought more than twice as many enemies as expected just to get this far.\nLots of enemies managed to interfere with the Rutherford Field.\e
+
+//<00000027> それに、\p大気圏に突入した時のレーザー集中照射…\p…\pあれだって純夏に相当の負荷が掛かったはずだ。\e
+<00000027> And the concentrated laser exposure when we entered the atmosphere...\p...\pthis has all been hard on Sumika.\e
+
+//<00000028> 【武】「…\p…\p…\p…\p」\e
+<00000028> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000029> それでも、\pそうするしかなかったんだ…\p…\p仕方がない。\e
+<00000029> And yet,\p there's nothing we can do about it...\p...\pwe have to keep going.\e
+
+//<0000002a> 一緒に降下した中隊は空中で、\pＳＷ１１５周辺の部隊は、\pＢＥＴＡが迎撃しなかった無数のＡＬ弾頭落下の被害で全滅…\p…\p。\e
+<0000002a> The company we dropped with died in the air,\p and the unit at SW 115 was wiped out by the anti-laser warheads the BETA didn't shoot down...\p...\p\e
+
+//<0000002b> 純夏が地上に誘導するつもりでいたにしても、\p全滅した部隊が本来果たすはずだった陽動任務が、\p全く機能しなくなっちまったんだ。\e
+<0000002b> Even if Sumika was meant to trick them into heading to the surface,\p those units won't be able to run any diversions for us like we planned.\e
+
+//<0000002c> その分もひっくるめて、\p全部オレ達が相手にしたようなもんだからな。\e
+<0000002c> Because of that,\p we've effectively been fighting through every single enemy down here.\e
+
+//<0000002d> 【武】「…\p…\p…\p…\p」\e
+<0000002d> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000002e> しかし…\p…\p頭ではわかっていたけど、\p出現率が半端じゃない。\n正直、\p良くここまで来る事ができたと思う。\e
+<0000002e> Still...\p...\peven taking all that into account,\p their emergence rates are amazing.\nI'm honestly impressed we've made it this far.\e
+
+//<0000002f> さっきだって、\p２つ手前の『広間』を崩落させて、\pあいつらの追撃を食い止める事ができたから、\p今こうしていられるんだ…\p…\p。\e
+<0000002f> Just now we even had to bring down one of the previous Halls in order to delay their reinforcements,\p and that's why we're okay now...\p...\p\e//lit. "the hall two ago" ofc in English you need to put "Halls" in between "two" and "ago" so yeah
+
+//<00000030> 『あ号標的』への最終ルートが一本道で助かったぜ。\e
+<00000030> We're very fortunate that the home stretch doesn't have any branches.\e
+
+//<00000031> ここ以外にルートがないって条件は、\pＢＥＴＡも同じだからな。\n入り口さえ潰しておけば増援が出てくる心配はない。\e
+<00000031> The BETA don't have any alternate entrances to come in from.\p So destroying that one entrance means we don't have to worry about any more reinforcements.\e
+
+//<00000032> だけど『広間』１個潰すのに、\p残っていたＳ－１１、\pそれに『主広間』突入に必要だったミサイルの半分以上を使っちまった。\e
+<00000032> But we had to use over half of our S-11s and missiles to destroy just one Hall.\p We were supposed to use all of them here in the Main Hall.\e
+
+//<00000033> 反応炉みたいな重要施設じゃなくて、\pただの『広間』だぞ？\e
+<00000033> We used them on an ordinary Hall,\p not a reactor or anything.\e
+
+//<00000034> 戦術核に匹敵する破壊力を持つＳ－１１が５発、\pミサイル１００発以上の集中攻撃で、\p崩落させるのがやっとなんて…\p…\p。\e
+<00000034> It took five S-11s, each of which is close to a tactical nuke, and over a hundred missiles to just barely cause that collapse...\p...\p\e
+
+//<00000035> 出撃前のブリーフィングで先生も言ってたけど、\pハイヴの頑丈さには改めて驚くぜ…\p…\p。\e
+<00000035> Sensei told us the hive was tough in the briefing,\p but it's still shocking...\p...\p\e
+
+//<00000036> …\p…\p本当、\pオレ達がここまで、\pこの『主広間』の手前まで来られたのは、\p奇跡に近い事だ。\e
+<00000036> ...\p...\pit really is close to a miracle that we all made it to the Main Hall.\e
+
+//<00000037> 【武】「…\p…\p…\p…\p」\e
+<00000037> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001d3c> いや…\p…\p戦場に奇跡なんて存在しない。\e
+<00001d3c> No...\p...\pthere are no miracles on the battlefield.\e
+
+//<00000039> ひとりも死なず、\p１機も失う事無くここにいるのは、\p計画と準備と努力の結果導き出された必然なんだ。\e
+<00000039> We made it this far without losing a single TSF because we planned, prepared and worked so hard.\e
+
+//<0000003a> 純夏のリーディングデータと、\pそれを応用した出撃前のシミュレーター演習のおかげだ。\e
+<0000003a> Sumika's reading data and the simulator training based on it helped immensely.\e
+
+//<0000003b> だからオレ達は、\pほぼ無傷で、\p人類未到のハイヴ最深部に立っていられるんだ。\e
+<0000003b> That's why we can stand at the deepest part of this hive almost unharmed.\e
+
+//<0000003d> 【武】「…\p…\p無傷…\p…\pか…\p…\p」\e
+<0000003d> 【Takeru】「...\p...\punharmed...\p...\phuh...\p...\p」\e
+
+//<0000003e> 確かに機体にダメージはない…\p…\p。\e
+<0000003e> There's no damage to any TSFs...\p...\p\e
+
+//<0000003f> …\p…\pでも、\p主機の不調、\pＳ－１１やミサイルの消耗以上に…\p…\p純夏への負担は深刻だ。\e
+<0000003f> ...\p...\pbut the engine's instability and the expenditure of S-11s and missiles...\p...\pis a serious problem for Sumika.\e
+
+//<00001d3e> 今ここで主機の臨界運転を開始して、\p十数万のＢＥＴＡとの接触に耐え得るラザフォード場が展開できるのか…\p…\p。\e
+<00001d3e> Will she be able to bring the engine to full power and deploy a Rutherford Field that can survive contact with tens of thousands of BETA...\p...\p?\e
+
+//<00000042> それを吹き飛ばすだけの兵装は――ミサイルにしろ、\p砲弾にしろもう殆ど残っていない。\nＳ－１１はもう、\p武御雷に積まれている分だけだ。\e
+<00000042> We have almost nothing left to blow them away with――\nNo missiles, no shells, nothing.\nWe don't even have any S-11s besides those in the Takemikazuchi themselves.\e
+
+//<00000043> 直援部隊の補給だって、\pあと１回フルにできるかどうか…\p…\p。\e
+<00000043> I'm not even sure we can do another full resupply...\p...\p\e
+
+//<00000044> だからって、\pここでじっくり主砲のエネルギーを充填する訳にもいかない…\p…\p。\n手前の『広間』を突破されるのは時間の問題だ。\e
+<00000044> But we can't just stay here and wait for the main cannon's energy supply to recharge...\p...\p\nIt's only a matter of time before they get through the Hall we destroyed.\e
+
+//<00000045> 【武】「…\p…\p…\p…\p」\e
+<00000045> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00002bad> このまま当初の『主広間』突破プランを実行するのは…\p…\pやはり無謀すぎる。\e
+<00002bad> Going through with the original plan for breaking through the Main Hall...\p...\pis simply hopeless.\e
+
+//<00000047> 【武】「霞、\pムアコック・レヒテ機関停止――補助動力に切り換えてくれ」\e
+<00000047> 【Takeru】「Kasumi,\p shut down the Moorcock-Lechte engine――Switch to auxiliary power.」\e
+
+//<00000048> 【霞】「はい…\p…\p」\e
+<00000048> 【Kasumi】「Okay...\p...\p」\e
+
+//<00000049> 今は少しでも、\p純夏の負担を減らしておきたい…\p…\p。\e
+<00000049> I'd like to make things just a little easier on Sumika right now...\p...\p\e
+
+//<0000004a> それに、\p低出力運転でも、\p『主広間』のＢＥＴＡをこっちに呼び込んじまう可能性はあるしな。\e
+<0000004a> Besides,\p even low power might be enough to attract the BETA in the Main Hall.\e
+
+//<0000004c> 【武】「――委員長」\e
+<0000004c> 【Takeru】「――Class Rep.」\e
+
+//<0000004e> 【千鶴】「――白銀、\pそっちはどう？」\e
+<0000004e> 【Chizuru】「――Shirogane,\p what's your condition?」\e
+
+//<00000050> 【武】「やはり当初のプランは変更せざるを得ない。\nミサイルにしろ機関出力にしろ、\p絶対的に不足している」\e
+<00000050> 【Takeru】「We'll have to change the plan after all.\nThe engine output and missiles we need just aren't there.」\e
+
+//<00000051> 【千鶴】「…\p…\pそう」\e
+<00000051> 【Chizuru】「...\p...\pI see.」\e
+
+//<00000053> 【武】「今は補助動力に切り換えて、\p主機に負担をかけないようにしている」\e
+<00000053> 【Takeru】「I'm switching to auxiliary power to reduce the strain on the engine.」\e
+
+//<00000054> 【千鶴】「結果的に私達が足を引っ張った形になったわね…\p…\p」\e
+<00000054> 【Chizuru】「In the end we just held you back...\p...\p」\e
+
+//<00000056> 【冥夜・壬姫・慧・美琴】「…\p…\p…\p…\p」\e
+<00000056> 【Meiya & Mikoto & Kei & Miki】「...\p...\p...\p...\p」\e
+
+//<00000058> 【武】「足を引っ張る…\p…\p？　何のことだ…\p…\p？」\e
+<00000058> 【Takeru】「Held me back...\p...\p? What do you mean...\p...\p?」\e
+
+//<00000059> 【千鶴】「とぼけないで。\nここまでの戦闘中、\p私達の機体の周りに、\p何度もラザフォード場を張って守ってくれたじゃない…\p…\p」\e
+<00000059> 【Chizuru】「Don't play dumb.\nYou've had to deploy Rutherford Fields around us several times during all the previous battles...\p...\p」\e
+
+//<0000005b> 【武】「…\p…\p！？」\e
+<0000005b> 【Takeru】「...\p...\p!?」\e
+
+//<0000005c> 純夏…\p…\pおまえ…\p…\pそんな事していたのか…\p…\p！？\e
+<0000005c> Sumika...\p...\phave you...\p...\pbeen doing that...\p...\p!?\e
+
+//<0000005d> …\p…\pそうか…\p…\pみんなを守ってくれてたんだな。\n…\p…\pありがとう。\e
+<0000005d> ...\p...\pI see...\p...\pyou protected everyone.\n...\p...\pthank you.\e
+
+//<0000005e> 【武】「ごめん、\pそっちの担当は純夏だ。\nオレは戦闘に夢中で気付かなかった」\e
+<0000005e> 【Takeru】「Sorry,\p Sumika's the one doing that.\nI've been too focused on combat to notice.」\e
+
+//<0000005f> 【千鶴】「勿論、\p『主広間』を突破するのに私達が必要だっていう、\p戦略的な意味合いで助けたのはわかっているわ」\e
+<0000005f> 【Chizuru】「I understand that we're necessary in order to break through the Main Hall, of course.」\e
+
+//<00000061> …\p…\pそうか…\p…\pなるほど。\e
+<00000061> ...\p...\pI see...\p...\pthat makes sense.\e
+
+//<00000062> わざわざこの話を始めたのも、\pそういう言い方をして締める事が目的なんだろ？\nみんなが「作戦の脚を引っ張った」って、\p気にしないようにさせるためなんだろ？\e
+<00000062> You brought this up in order to say that, right?\nYou're trying to stop everyone else from worrying that they're hurting the plan.\e
+
+//<00000063> 【武】「ああ、\pそうだな」\e
+<00000063> 【Takeru】「Yeah,\p you're right.」\e
+
+//<00000064> たとえ、\p委員長の意図が見え見えだったとしても、\p今のあいつらなら、\pそれで気持ちを切り換えるはずだ。\n…\p…\pさすがだよ、\p委員長。\e
+<00000064> But even if Class Rep's goal is obvious,\p it should still help the others get over it.\n...\p...\pwell done,\p Class Rep.\e
+
+//<00000065> 【千鶴】「でも、\p鑑にはお礼を言っておいて。\nこっちから直通できないから」\e
+<00000065> 【Chizuru】「But thank Kagami for me.\nI can't talk to her directly.」\e
+
+//<00000067> 【武】「――いやだね」\e
+<00000067> 【Takeru】「――No.」\e
+
+//<00000069> 【千鶴】「…\p…\p！？」\n
+<00000069> 【Chizuru】「...\p...\p!?」\n
+
+//<0000006b> 【冥夜・壬姫・慧・美琴】「…\p…\p！？」\e
+<0000006b> 【Meiya & Mikoto & Kei & Miki】「...\p...\p!?」\e
+
+//<0000006f> 【武】「この作戦が終わったら、\p自分で直接言ってくれ」\e
+<0000006f> 【Takeru】「Tell her yourself after the operation.」\e
+
+//<00002d49> 【冥夜・壬姫・慧・美琴】「…\p…\p…\p…\p」\e
+<00002d49> 【Meiya & Mikoto & Kei & Miki】「...\p...\p...\p...\p」\e
+
+//<00000073> 【千鶴】「…\p…\pそうね。\nそうするわ」\e
+<00000073> 【Chizuru】「...\p...\pyou're right.\p I'll do that.」\e
+
+//<00000075> 【武】「ところで、\p突破プランだけど…\p…\p変更するにしても、\p何か良い手はあるか？」\e
+<00000075> 【Takeru】「By the way,\p about the breakthrough plan...\p...\pdoes anyone have any good ideas?」\e
+
+//<00000076> 【千鶴】「私に考えがあるの。\n聞いてちょうだい」\e
+<00000076> 【Chizuru】「I have one.\p Please listen to it.」\e
+
+//<00000078> 【武】「――え…\p…\p早いな、\p委員長…\p…\p？！」\e
+<00000078> 【Takeru】「――Eh? ...\p...\pthat was fast,\p Class Rep...\p...\p」\e
+
+//<00000079> 【冥夜】「タケル、\p事前に『想定外の状況に陥った場合』の対処を考えておく事こそ、\p指揮官の役目であろう？」\e
+<00000079> 【Meiya】「Takeru,\p did our instructor not teach us to think of countermeasures for unexpected situations?」\e
+
+//<0000007b> 【美琴】「そうだよタケル。\n千鶴さん、\p昨日から作戦の事、\pずっと考えてたんだから」\e
+<0000007b> 【Mikoto】「She's right, Takeru.\nChizuru-san's been thinking about the operation since yesterday.」\e
+
+//<0000007d> 【壬姫】「たけるさんだって、\p小隊長なのに～～」\e
+<0000007d> 【Miki】「Takeru-san,\p you're supposed to be a Platoon Leader～」\e
+
+//<0000007f> 【慧】「うまく行った時の事しか考えないのは若造ですよ」\e
+<0000007f> 【Kei】「So young, only thinking about what to do when everything works.」\e
+
+//<00000081> 【武】「むぅ…\p…\p確かに…\p…\p」\e
+<00000081> 【Takeru】「Mmm...\p...\pyou kinda have a...\p...\p」\e
+
+//<00000082> 【千鶴】「――余計なお喋りはそこまで」\e
+<00000082> 【Chizuru】「――That's enough chatter.」\e
+
+//<00000084> 【千鶴】「――説明を始めるわ。\nモタモタしてると、\pＢＥＴＡが追いついて来るわよ！」\e
+<00000084> 【Chizuru】「――I'm going to explain my plan.\nThe BETA will catch up to us if we waste time!」\e
+
+//<00000086> 【武】「了解」\n
+<00000086> 【Takeru】「Copy that.」\n
+
+//<00000087> 【冥夜・壬姫・慧・美琴】「――了解」\e
+<00000087> 【Meiya & Mikoto & Kei & Miki】「――Copy that.」\e
+
+//<00000089> …\p…\p委員長、\pおまえ本当に凄えよ。\nおまえはもう、\p本当の指揮官だよ。\nそれにみんなも、\pこのせっぱ詰まった時に――いや、\pそう言う状況だからこそ、\p軽口叩いたんだろう…\p…\p？\e
+<00000089> ...\p...\pClass Rep,\p you really are amazing.\nYou're a true commander now.\nAnd even in this desperate situation,\p everyone else can still――No,\p because it's a desperate situation,\p they can talk casually like this...\p...\pmaybe?\e
+
+//<0000008a> なんか『前のこの世界』に来たての頃を想い出すな…\p…\p。\nみんなが本当に逞しく感じるぜ。\e
+<0000008a> This is making me remember when I first came to the previous world...\p...\p\nEveryone felt so strong back then.\e
+
+//<0000008b> ふふふ…\p…\pオレなんか、\pもうとっくに追い越されちまったのかも知れないな。\e
+<0000008b> Huhuhu...\p...\pthese guys might already be far ahead of me.\e
+
+//<0000008d> 【千鶴】「当初、\pＭＬ機関の臨界運転に引き寄せられる敵集団を、\p『主広間』進入時にミサイルとラザフォード場で排除する予定だったけど――」\e
+<0000008d> 【Chizuru】「We originally planned to bait the enemies over here with the Moorcock-Lechte engine on full power,\p then destroy them with missiles and Rutherford Fields――」\e
+
+//<0000008f> 【千鶴】「凄乃皇の主機出力が安定しない事と、\pミサイルの残量を考えれば、\p白銀が言った通り、\p当初のプランは破棄せざるを得ない」\e
+<0000008f> 【Chizuru】「But the unstable engine output and lack of missiles,\p as Shirogane said,\p means we have to abandon that plan.」\e
+
+//<00000091> そうだ、\pラザフォード場には極力何も干渉させない必要がある。\n今の純夏にこれ以上の負荷をかける事はできないからな。\e
+<00000091> That's right.\p We need to make sure nothing interferes with the Rutherford Field.\nWe can't afford to push Sumika any harder.\e
+
+//<00000092> 今、\p純夏が自閉モードに入ったら、\pここに来るまでの全てが無駄になっちまう。\e
+<00000092> If Sumika enters autistic mode now,\p everything we've done to get here will be wasted.\e
+
+//<00000093> 【千鶴】「でも基本的には、\p副司令の立案がベスト――というより、\pそれしかやりようがないぐらい、\p考えられている…\p…\p」\e
+<00000093> 【Chizuru】「But the core idea behind the XO's plan is ideal――Or I should say,\p there's no other approach available to us...\p...\p」\e
+
+//<00000095> 【千鶴】「今、\p問題になっているのは、\p『主広間』進入時の敵集団を突破する方法だけ」\e
+<00000095> 【Chizuru】「The only problem right now is breaking through the enemies when infiltrating the Main Hall.」\e
+
+//<00000097> 【千鶴】「だから、\pそこさえ何とかやり繰りできれば、\pあとは副司令のプランをそのまま生かせるわ」\e
+<00000097> 【Chizuru】「So if we can figure out a way past that,\p we can use the rest of the XO's plan as-is.」\e
+
+//<00000099> 【武】「確かにな…\p…\p」\e
+<00000099> 【Takeru】「Good point...\p...\p」\e
+
+//<0000009a> 【冥夜・壬姫・慧・美琴】「…\p…\p…\p…\p」\e
+<0000009a> 【Meiya & Mikoto & Kei & Miki】「...\p...\p...\p...\p」\e
+
+//<0000009b> 【千鶴】「私はそれを、\pこの広大な『主広間』の奥行きを味方にする事で実現しようと思うの」\e
+<0000009b> 【Chizuru】「And I think we can do it by taking advantage of the extreme width and length of the Main Hall.」\e
+
+//<0000009d> …\p…\p奥行きを味方に…\p…\pどういう事だ？\e
+<0000009d> ...\p...\ptaking advantage of the width and length? ...\p...\pwhat does that mean?\e
+
+//<0000009f> 【千鶴】「まず、\p第１、\p第２分隊が『主広間』に突入。\n噴射跳躍で奥の第一隔壁まで一気に移動、\p開放作業と爆破準備に取りかかる」\e
+<0000009f> 【Chizuru】「First,\p Fireteams 1 and 2 will infiltrate the Main Hall.\nThey'll use boost jumps to move straight to the 1st barrier,\p and begin opening it and planting the bomb.」\e
+
+//<000000a2> 【武】「…\p…\p！」\n
+<000000a2> 【Takeru】「...\p...\p!」\n
+
+//<000000a3> 【冥夜・壬姫・慧・美琴】「…\p…\p…\p…\p」\e
+<000000a3> 【Meiya & Mikoto & Kei & Miki】「...\p...\p...\p...\p」\e
+
+//<000000a5> 【千鶴】「この時Ａ－０４は、\pミサイル発射態勢を完了させ現在位置で待機」\e
+<000000a5> 【Chizuru】「At this time A-04 will standby at its current location, preparing to fire missiles.」\e
+
+//<000000a8> 【千鶴】「私達につられて、\pＢＥＴＡは第一隔壁に向かって移動を開始するはず。\n先頭集団を周囲６００まで引きつけるわ」\e
+<000000a8> 【Chizuru】「The BETA should follow us toward the 1st barrier wall.\nWe'll draw the vanguard in to around 600 meters.」\e
+
+//<000000aa> 【千鶴】「このタイミングでＡ－０４は主機を起動――『主広間』に進入して臨界運転。\nＢＥＴＡを反転させ、\p引きつける」\e
+<000000aa> 【Chizuru】「A-04 will then activate its engine――And move into the Main Hall at full power.\nThis will make the BETA turn around and head toward it.」\e
+
+//<000000ac> 【冥夜・壬姫・慧・美琴】「…\p…\p…\p…\p」\e
+<000000ac> 【Meiya & Mikoto & Kei & Miki】「...\p...\p...\p...\p」\e
+
+//<000000ae> 【千鶴】「Ａ－０４はＢＥＴＡを３００まで引きつけたら、\p３６ｍｍで砲撃しつつ全速前進――」\e
+<000000ae> 【Chizuru】「A-04 will draw the BETA in to around 300 meters,\p then move full speed ahead while using its 36mm guns――」\e
+
+//<000000b0> 【千鶴】「ここまでに第一隔壁の開放と『脳』の爆破準備を完了、\p第２分隊は『横坑』に進入し、\p第二隔壁の開放準備」\e
+<000000b0> 【Chizuru】「By this time the 1st barrier wall should be open and the bomb placed in the brain,\p so Fireteam 2 will enter the Drift and begin opening the 2nd barrier.」\e
+
+//<000000b2> 【千鶴】「第１分隊は装置周辺で待機、\pＡ－０４を長距離支援」\e
+<000000b2> 【Chizuru】「Fireteam 1 will standby near the bomb and assist A-04 from long range.」\e
+
+//<000000b5> 【千鶴】「Ａ－０４はそのまま『横坑』に進入、\p反転してミサイルを斉射。\n照準は最もＢＥＴＡが密集した先頭部分」\e
+<000000b5> 【Chizuru】「A-04 will then proceed into the Drift,\p turn around and fire missiles.\nIt will aim at the most concentrated part of the BETA vanguard.」\e
+
+//<000000b7> 【千鶴】「ミサイル斉射で時間を稼いでいるうちに、\p第１分隊は第一隔壁閉鎖作業を完了させる。\nそして、\pＳ－１１を有線起爆」\e
+<000000b7> 【Chizuru】「While it's buying time with missiles,\p Fireteam 1 will begin closing the 1st barrier.\nAnd they will activate the S-11 by wire.」\e
+
+//<00001d40> 【千鶴】「Ｓ－１１の使用は第一隔壁の閉鎖――つまり『脳』の爆破を優先するわ」\e
+<00001d40> 【Chizuru】「Using the S-11 takes priority over closing the 1st barrier――We need to destroy the brain.」\e
+
+//<00001d42> 【千鶴】「従って、\p第二隔壁にＳ－１１を設置するのは、\p第一隔壁の『脳』を爆破後――『横坑』の安全確保ができてからとする」\e
+<00001d42> 【Chizuru】「Then once the S-11 in the 2nd barrier is placed,\p and the 1st barrier's brain is blown up――We can secure the inside of the Drift.」\e
+
+//<00001d44> 【千鶴】「以降は副司令のプランとほぼ同じ手順で行けるはず。\n『横坑』にいる時間は多少長くなるけどね」\e
+<00001d44> 【Chizuru】「The rest should be no different from the XO's plan.\nThough we'll end up spending much more time in the Drift.」\e
+
+//<00001d46> 【千鶴】「その時間を有効に使って、\p余裕があれば第二隔壁の『脳』にもＳ－１１を仕掛ける。\n何かトラブルがあれば切り捨てる」\e
+<00001d46> 【Chizuru】「We'll take advantage of that time by placing an S-11 in the 2nd barrier's brain if we can.\nBut if something happens, abandon that.」\e
+
+//<000000bc> なるほど…\p…\pこちらの移動速度の速さを利用して、\p奥行きをうまく味方に付ける――そう言う事か。\e
+<000000bc> I see...\p...\pso the combination of our quick movement and the length of the hall can be used to our advantage.\e
+
+//<00001d48> 当初の作戦と違って、\pラザフォード場でのＢＥＴＡ排除を想定していないから、\p不安定な主機出力でも何とか乗り切れそうだな。\e
+<00001d48> Unlike the original plan,\p we aren't expecting the Rutherford Field to help us destroy any of the BETA,\p so we might be able to get away with unstable output.\e
+
+//<00001d49> しかも、\p次の攻略を見越した第二隔壁の『脳』を破壊するプランは潔く切り捨てる覚悟を決めて、\p精神的にも戦力運用にも余裕を持たせてある。\e
+<00001d49> And giving up on destroying the 2nd barrier's brain for a possible later operation is going to make it easier for us to make this happen.\e
+
+//<00001d4a> 委員長…\p…\p本当に変わったな。\n全てを完全にしようと必死になっていた奴のプランとは思えないぜ。\e
+<00001d4a> Class Rep...\p...\pyou really have changed.\nThis isn't the kind of plan you'd come up with if you were still desperate to do everything perfectly.\e
+
+//<00001d4c> 【千鶴】「仮にＢＥＴＡが私達につられなかった場合は、\p全ての作業を完了してから、\pＡ－０４は全速移動」\e
+<00001d4c> 【Chizuru】「If the BETA aren't drawn to us,\p we'll wait until we're finished before the A-04 starts moving.」\e
+
+//<00001d4d> 【千鶴】「ミサイル、\p砲弾を可能な限り温存しつつ、\p隔壁閉鎖。\n『横坑』で充填完了を待つ間に、\p第二隔壁の『脳』の爆破準備も行う」\e
+<00001d4d> 【Chizuru】「Then save as many missiles and shells as possible for after we close the barrier.\nWe'll also place a bomb in the 2nd barrier's brain while waiting for the Susano'o to charge in the Drift.」\e
+
+//<00001d50> 【千鶴】「――まあ、\pＢＥＴＡが何も反応しないなんてラッキーな展開、\pあるわけ無いけどね」\e
+<00001d50> 【Chizuru】「――Well,\p I can't imagine we'd get so lucky that the BETA wouldn't react to us at all.」\e
+
+//<000000c3> まったくだ。可能性はゼロじゃないけど、\pそんな事あり得ない。\e
+<000000c3> Agreed.\bIt's still possible,\p but we should expect it not to happen.\e
+
+//<000000c4> 【千鶴】「補足だけど、\pここに来るまでに予備のＳ－１１は全て使ってしまったから、\p第一隔壁には珠瀬機か鎧衣機のものを使う」\e
+<000000c4> 【Chizuru】「This is just an aside,\p but we've used up all our spare S-11s to get this far,\p so we'll use either Tamase's or Yoroi's for the 1st barrier.」\e
+
+//<000000c6> 【千鶴】「珠瀬機と鎧衣機は開閉剤の増槽を背負うから、\p予めＳ－１１は外しておいて。\n御剣と私の機体で運ぶわ」\e
+<000000c6> 【Chizuru】「Tamase and Yoroi, you'll carry the opening and closing chemical tanks,\p so drop one of your S-11s in advance.\nMitsurugi and I will carry it.」\e
+
+//<000000c8> なるほど、\p増槽分の重量増で下る機動力を、\p少しでもカバーしようって事か。\n冥夜と委員長の武御雷は高出力型だし…\p…\p細かく考えてるな。\e
+<000000c8> I see,\p she's trying to give them better mobility by reducing the weight.\nMeiya and Class Rep have the most powerful Takemikazuchi so this evens it out...\p...\ptalk about micromanaging.\e
+
+//<000000c9> 【千鶴】「私のプランは以上よ――何か質問はある？」\e
+<000000c9> 【Chizuru】「That's it for my plan――Any questions?」\e
+
+//<000000cb> 【壬姫】「『横坑』で待機する時間が長引くのはちょっと心配だね…\p…\p。\nＢＥＴＡが何か対策を取ってくるんじゃないかな」\e
+<000000cb> 【Miki】「I'm a little worried about staying in the Drift for so long...\p...\p\nDo you think the BETA might take advantage of it somehow?」\e
+
+//<000000cd> 【美琴】「うん。再突入の時、\pＡＬ弾を迎撃しなかったし、\p副司令が言ったとおり、\pＢＥＴＡの対処速度は確実に上がってるよ」\e
+<000000cd> 【Mikoto】「Yeah, they didn't shoot the anti-laser warheads during reentry,\p so the XO was right when she said the BETA are starting to adapt faster.」\e
+
+//<000000cf> 【美琴】「世界中から情報が集まるオリジナルハイヴだから、\p尚更なのかも知れないけど…\p…\p」\e
+<000000cf> 【Mikoto】「The Original Hive gathers information from the whole world,\p so it might be even better at it...\p...\p」\e
+
+//<000000d1> 【千鶴】「確かにそうね。\pでも、\pその時はその時よ」\e
+<000000d1> 【Chizuru】「That's true.\p But we'll have to deal with it when it happens.」\e
+
+//<000000d3> ――おお、\p委員長、\p良い感じに開き直ってるな…\p…\p！\e
+<000000d3> ――Oooh,\p Class Rep,\p I like this new attitude...\p...\p!\e
+
+//<000000d4> 【千鶴】「どういう手を使うにしろ、\p『横坑』さえ確保してしまえば、\pあとは砲撃して…\p…\p脱出するだけ」\e
+<000000d4> 【Chizuru】「No matter what plan we use,\p once the Drift's secure all that's left is one shot from the main cannon...\p...\pand escape.」\e
+
+//<000000d6> 【千鶴】「仮に何かが起きても、\p今の状況より選択肢に幅がある分マシだわ」\e
+<000000d6> 【Chizuru】「Even if something does happen,\p it's better to leave our options open for when it does.」\e
+
+//<000000d8> 【冥夜・壬姫・慧・美琴】「…\p…\p…\p…\p」\e
+<000000d8> 【Meiya & Mikoto & Kei & Miki】「...\p...\p...\p...\p」\e
+
+//<000000d9> オレ達の最優先目的は『あ号標的』の破壊だ。\nそれさえ達成してしまえば、\pその後に何かあっても気持ち次第でどうとでも対処できる。\e
+<000000d9> Our top priority is the destruction of the Primary Objective.\nIf we can achieve that,\p we can do whatever the hell we want afterward.\e
+
+//<000000da> 最悪、\p脱出しないという選択肢もあるって事だ。\n…\p…\pそうすれば、\pＳ－１１弾頭の大型ミサイル１６発を、\p今ここで使っちまう事だってできる。\e
+<000000da> We even have the option of not escaping if it comes down to it.\n...\p...\pin which case we could use these 16 missiles packed with S-11 warheads.\e
+
+//<000000db> 【冥夜】「――よかろう。\n短期決戦では、\p後先考えて行動する事が裏目に出る場合もある」\e
+<000000db> 【Meiya】「――Very well.\nWhen time is so limited,\p it is reasonable to take action before planning for every eventuality.」\e
+
+//<000000dd> 【慧】「どのみちここを乗り切らないと、\p先はない」\e
+<000000dd> 【Kei】「Nothing else matters if we can't get through here.」\e
+
+//<000000df> 【武】「異論無い。オレは委員長のプランに賛成だ」\e
+<000000df> 【Takeru】「No objections. I agree with Class Rep's plan.」\e
+
+//<000000e0> 【壬姫】「そうですね。\n私も異論ありません」\e
+<000000e0> 【Miki】「Yeah.\p I have no objections either.」\e
+
+//<000000e2> 【美琴】「ボクも」\e
+<000000e2> 【Mikoto】「Me neither.」\e
+
+//<000000e4> 【千鶴】「決まりね。\nじゃあ、\p鎧衣、\p珠瀬はＳ－１１を下ろして増槽を装備。\n全員、\p補給を含め６００秒以内に出撃準備」\e
+<000000e4> 【Chizuru】「Then it's decided.\nOkay,\p Yoroi and Tamase,\p drop an S-11 and get the tanks.\nEveryone,\p resupply and prepare to deploy within 600 seconds.」\e
+
+//<00001d53> 【武】「――了解」\n
+<00001d53> 【Takeru】「――Copy that.」\n
+
+//<00001d54> 【冥夜・壬姫・慧・美琴】「――了解」\e
+<00001d54> 【Meiya & Mikoto & Kei & Miki】「――Copy that.」\e
+
+//<00001d5c> 【千鶴】「ここに辿り着くまでの事を思い返せばわかると思うけど、\p加速度的に向上している敵の対処能力から言って、\p恐らく…\p…\p人類に『次』はないわ」\e
+<00001d5c> 【Chizuru】「You can probably tell from looking back on everything that's happened so far,\p but given how fast the enemy is learning to adapt,\p humanity...\p...\pprobably won't have another chance.」\e
+
+//<00001d5e> 【武】「…\p…\p…\p…\p！」\n
+<00001d5e> 【Takeru】「...\p...\p...\p...\p!」\n
+
+//<00001d5f> 【冥夜・壬姫・慧・美琴】「…\p…\p…\p…\p！」\e
+<00001d5f> 【Meiya & Mikoto & Kei & Miki】「...\p...\p...\p...\p!」\e
+
+//<00001d61> 【千鶴】「――『今回』で決めるわよッ！　――いいわねッ！？」\e
+<00001d61> 【Chizuru】「――So we will end it here!\b――Understood!?」\e
+
+//<00001d63> 【武】「――了解ッ！」\n
+<00001d63> 【Takeru】「――Copy that!」\n
+
+//<00001d64> 【冥夜・壬姫・慧・美琴】「――了解ッ！」\e
+<00001d64> 【Meiya & Mikoto & Kei & Miki】「――Copy that!」\e
+
+//<000000eb> 【千鶴】「白銀――私達が『主広間』に入ったら通信が困難になる。\nセンサーとＢＥＴＡの動きでタイミングを計るのよ」\e
+<000000eb> 【Chizuru】「Shirogane――We're going to have trouble communicating inside the Main Hall.\nTime it based on your sensors and BETA movements.」\e
+
+//<000000ed> 【武】「――わかってるって。\nシミュレーターで散々やったからな」\e
+<000000ed> 【Takeru】「――I know that part.\nWe've done plenty of that in the simulator.」\e
+
+//<000000ee> 【千鶴】「――頼んだわよ？」\e
+<000000ee> 【Chizuru】「――I'm counting on you.」\e
+
+//<000000f1> 【武】「――霞」\e
+<000000f1> 【Takeru】「――Kasumi.」\e
+
+//<000000f3> 【霞】「――はい」\e
+<000000f3> 【Kasumi】「――Yes.」\e
+
+//<000000f4> 【武】「今の聞いてたな？　――純夏の準備、\pたのむぞ！」\e
+<000000f4> 【Takeru】「You heard her――Make sure Sumika's ready!」\e
+
+//<000000f5> 【霞】「――はい…\p…\p！」\e
+<000000f5> 【Kasumi】「――Yes...\p...\p!」\e
+
+//<00000117> 【千鶴】「――ヴァルキリー１より各リーダー。\p――時間よ、\p準備は良い？！」\e
+<00000117> 【Chizuru】「――Valkyrie 1 to fireteam leaders.\n――It's time,\p are you ready!?」\e
+
+//<00000119> 【冥夜】「――こちらヴァルキリー２。\p――第２分隊準備完了！」\e
+<00000119> 【Meiya】「――This is Valkyrie 2.\n――Fireteam 2 is ready!」\e
+
+//<0000011b> 【武】「――ヴァルキリー０、\pいつでも良いぜ！」\e
+<0000011b> 【Takeru】「――Valkyrie 0,\p ready when you are!」\e//lit. "I'm good whenever"
+
+//<0000011d> 【千鶴】「――みんな行くわよッ！？　――第１、\p第２分隊発進ッ！」\e
+<0000011d> 【Chizuru】「――Everyone, let's go!!\n――Fireteams 1 and 2,\p move out!」\e
+
+//<00000120> 【冥夜】「――了解ッ！」\n
+<00000120> 【Meiya】「――Copy that!」\n
+
+//<00000121> 【慧】「――了解ッ！」\n
+<00000121> 【Mikoto】「――Copy that!」\n
+
+//<00000122> 【美琴】「――了解ッ！」\n
+<00000122> 【Kei】「――Copy that!」\n
+
+//<00000123> 【壬姫】「――了解ッ！」\e
+<00000123> 【Miki】「――Copy that!」\e
+
+//<0000012b> 【千鶴】「――す…\p…\p凄い…\p…\pッ！！」\e
+<0000012b> 【Chizuru】「――A-...\p...\pamazing...\p...\p!!」\e
+
+//<0000012e> 【美琴】「――地下に…\p…\pこんな広い空間があるなんて…\p…\pッ！！」\e
+<0000012e> 【Mikoto】「――How can a space this huge...\p...\pexist underground...\p...\p!!」\e
+
+//<00000131> 【壬姫】「――み、\p見てっ！\n…\p…\pあれ…\p…\p全部ＢＥＴＡ…\p…\pッ？！」\e
+<00000131> 【Miki】「――L-\plook!\n...\p...\pare those all...\p...\pBETA...\p...\p!?」\e
+
+//<00000135> 【慧】「――ッ！！」\e
+<00000135> 【Kei】「――!!」\e
+
+//<00000138> 【冥夜】「――構うでないぞッ！　――よいなッ！」\e
+<00000138> 【Meiya】「――Pay them no mind!\b――Understand!?」\e
+
+//<0000013c> 【霞】「――ＢＥＴＡが、\p第一隔壁方向へ移動を開始しました」\e
+<0000013c> 【Kasumi】「――The BETA have begun moving toward the 1st barrier wall.」\e
+
+//<0000013d> 【武】「…\p…\pよし」\e
+<0000013d> 【Takeru】「...\p...\pokay.」\e
+
+//<0000013e> ――いいぞ！　無駄な戦闘はしないで、\p真っ直ぐ第一隔壁に向かってるな！\e
+<0000013e> ――This is good! They're heading straight for the barrier without wasting any time fighting!\e
+
+//<00001d68> 【霞】「――『主広間』内の総個体数は約１５万…\p…\p音源からの推定値です」\e
+<00001d68> 【Kasumi】「――The total number of enemies in the Main Hall is about 150,000...\p...\pjudging from sound sources.」\e
+
+//<00000141> 【武】「…\p…\pッ！　いつでも出られるようにしておいてくれ！」\e
+<00000141> 【Takeru】「...\p...\p! Make sure we're ready to head out on a moment's notice!」\e
+
+//<00000142> 【霞】「はい…\p…\p！」\e
+<00000142> 【Kasumi】「Yes...\p...\p!」\e
+
+//<00000143> くそ…\p…\pみんな急げ――！\e
+<00000143> Dammit...\p...\pguys, hurry――!\e
+
+//<00000149> 【美琴】「――べ、\pＢＥＴＡが降ってきたッ！」\e
+<00000149> 【Mikoto】「――Th-\pthe BETA are falling!」\e
+
+//<0000014b> 【壬姫】「――ぶつかるッ！！」\e
+<0000014b> 【Miki】「――Watch your head!!」\e
+
+//<0000014e> 【千鶴】「――御剣ッ！ ――彩峰ッ！！」\e
+<0000014e> 【Chizuru】「――Mitsurugi! ――Ayamine!!」\e
+
+//<00000155> 【千鶴】「――第一隔壁まで５００ッ！\n――開放作業準備ッ！！」\e
+<00000155> 【Chizuru】「――We're 500 meters from the 1st barrier!\n――Prepare to open it!!」\e
+
+//<00200158> 【冥夜・美琴】「――了解ッ！」\n
+<00200158> 【Meiya & Mikoto】「――Copy that!」\n
+
+//<00200159> 【壬姫・慧】「――了解ッ！」\e
+<00200159> 【Kei & Miki】「――Copy that!」\e
+
+//<0000015e> 【霞】「――第１、\p第２分隊、\p隔壁に取り付きました…\p…\p！」\e
+<0000015e> 【Kasumi】「――Fireteams 1 and 2 have reached the barrier wall...\p...\p!」\e
+
+//<0000015f> 【武】「――よしっ！　ＢＥＴＡの先頭集団が８００を切ったら機関起動準備だ！」\e
+<0000015f> 【Takeru】「――Good! Prepare to activate the engine when the BETA vanguard is 600 meters away from them!」\e//I'm going to have to assume this 800 was a typo by age ~IX //oh, on second thought it's "when they're at 800, start preparing to activate the engine" but that's such a minor difference in meaning I'll stick with the slightly clearer version I used before ~IX
+
+//<00000160> 【霞】「――わかりました…\p…\p！」\e
+<00000160> 【Kasumi】「――Understood...\p...\p!」\e
+
+//<00000165> 【冥夜】「――珠瀬、\p開放剤注入開始！」\e
+<00000165> 【Meiya】「――Tamase,\p begin injecting the opening chemical!」\e
+
+//<00000167> 【壬姫】「――了解ッ！　開放剤注入開始ッ！」\e
+<00000167> 【Miki】「――Copy that! Beginning to inject opening chemical!」\e
+
+//<0000016a> 【冥夜】「――榊ッ、\p今から隔壁を開放するッ！　そちらはどうだ？！」\e
+<0000016a> 【Meiya】「――Sakaki,\p we are opening the barrier!\bWhat about you!?」\e
+
+//<00001d6e> 【千鶴】「――固定に手間取っている…\p…\pッ！\n硬くて爆圧スパイクが役に立たないのよ！」\e
+<00001d6e> 【Chizuru】「――It's taking a while to break through...\p...\p!\nMy explosive spikes aren't penetrating it!」\e
+
+//<0000016d> 【千鶴】「――あなた達は準備ができ次第、\p第二隔壁に向かってちょうだい！」\e
+<0000016d> 【Chizuru】「――Head for the 2nd barrier as soon as you're done there!」\e
+
+//<0000016f> 【冥夜】「――了解！」\e
+<0000016f> 【Meiya】「――Copy that!」\e
+
+//<00000172> 【冥夜】「――鎧衣、\p発進準備だ！\n隔壁の全開は待たんぞ？！　通過可能になり次第『横坑』に進入する！」\e
+<00000172> 【Meiya】「――Yoroi,\p prepare to move!\nWe cannot wait for the barrier to fully open!!\bWe must enter the Drift as soon as possible!」\e
+
+//<00000174> 【美琴】「――了解ッ！」\e
+<00000174> 【Mikoto】「――Copy that!」\e
+
+//<00000176> 【壬姫】「――ＢＥＴＡ群接近――最前衛は９００ッ！」\e
+<00000176> 【Miki】「――BETA herd approaching――Vanguard at 900 meters!」\e
+
+//<00000179> 【慧】「――榊！　１２０ｍｍで穴をあけてそこにスパイクを――」\e
+<00000179> 【Kei】「――Sakaki! Open a hole with the 120mm and put a spike in――」\e
+
+//<00001d70> 【千鶴】「――だめよ！　万が一それで『脳』を破壊してしまったら隔壁も死んでしまう！」\e
+<00001d70> 【Chizuru】「――No good! If that destroys the brain then the barrier will die!」\e
+
+//<00001d71> 【千鶴】「――もしそうなったら、\p何を注入しても隔壁は動かなくなるわ！」\e
+<00001d71> 【Chizuru】「――And then we wouldn't be able to open it no matter what we injected!」\e
+
+//<0000017c> 【慧】「――くッ…\p…\p！！」\e
+<0000017c> 【Kei】「――Uu...\p...\p!!」\e
+
+//<00001d74> 【美琴】「――装甲の応急補修フォームを接着剤代わりにつかうんだ！」\e
+<00001d74> 【Mikoto】「――Use your armored emergency repair foam as an adhesive!」\e
+
+//<00202352> 【千鶴】「――！」\n【慧】「――！！」\e
+<00202352> 【Chizuru】「――!」\n【Kei】「――!!」\e
+
+//<0000017e> 【壬姫】「――８００ッ！」\e
+<0000017e> 【Miki】「――800!」\e
+
+//<00000182> 【壬姫】「――７５０ッ！」\e
+<00000182> 【Miki】「――750!」\e
+
+//<00000184> 【美琴】「――は、\pはやく～～！！」\e
+<00000184> 【Mikoto】「――H-\phurry uuup～!!」\e
+
+//<00000186> 【冥夜】「――っ…\p…\p！！」\e
+<00000186> 【Meiya】「――...\p...\p!!」\e
+
+//<00000187> 【壬姫】「――７００…\p…\p！」\e
+<00000187> 【Miki】「――700...\p...\p！」\e
+
+//<00000189> 【壬姫】「――６５０…\p…\p！」\e
+<00000189> 【Miki】「――650...\p...\p!」\e
+
+//<0000018b> 【霞】「――６００…\p…\p！」\e
+<0000018b> 【Kasumi】「――600...\p...\p!」\e
+
+//<0000018d> 【武】「――機関起動ッ！！　――『主広間』入り口まで前進だッ！」\e
+<0000018d> 【Takeru】「――Activate the engine!!\b――Move forward to the Main Hall entrance!」\e//typo: "Activate the ending"
+
+//<0000018f> 【霞】「――機関起動…\p…\p！」\e
+<0000018f> 【Kasumi】「――Activating engine...\p...\p!」\e
+
+//<00000196> 【壬姫】「――ＢＥＴＡ反転ッ！！　『主広間』入り口に向かっていますっ！」\e
+<00000196> 【Miki】「――The BETA turned around!!\bThey're heading for the Main Hall entrance!」\e
+
+//<0000019c> 【壬姫】「――すっ…\p…\p凄い…\p…\p！　まるでＢＥＴＡの大津波ですね…\p…\p！！」\e
+<0000019c> 【Miki】「――A-...\p...\pamazing...\p...\p!\bIt's like a tsunami of BETA...\p...\p!!」\e//don't you love being able to just romanize a word without thinking? ~IX//no earthquake. They got nukes though. - Raide
+
+//<0000019f> 【千鶴】「…\p…\p突撃級や後続の反転が追いついてないんだわ…\p…\p！」\e
+<0000019f> 【Chizuru】「...\p...\pthe Destroyer Class in the front and the slow ones in the back can't turn around fast enough...\p...\p!」\e
+
+//<000001a2> 【美琴】「どんどん高くなってる…\p…\p」\e
+<000001a2> 【Mikoto】「It's getting higher and higher...\p...\p」\e
+
+//<000001a6> 【慧】「――榊、\p攻撃しよう！　今なら敵を効率よく減らせるッ！」\e
+<000001a6> 【Kei】「――Sakaki,\p let's shoot them! We can whittle down their numbers a lot if we do it now!」\e
+
+//<000001a8> 【千鶴】「――だっ…\p…\pだめよッ！　ＢＥＴＡがこっちに向かって来たら、\p作戦が台無しになるわッ！？」\e
+<000001a8> 【Chizuru】「――N-...\p...\pno! If the BETA turn back this way the plan will be ruined!!」\e
+
+//<000001a9> 【慧】「――９０番格納庫でも、\p奴らは真っ直ぐ凄乃皇に向かっていた…\p…\p！」\e
+<000001a9> 【Kei】「――Back in Hangar 90 they ignored us and went for the Susano'o...\p...\p!」\e
+
+//<000001ab> 【慧】「――ここで撃っても反転してこないっ！」\e
+<000001ab> 【Kei】「――They're not going to turn around even if we shoot!」\e
+
+//<000001ad> 【千鶴】「――彩峰、\pいい加減にして！　私達はＳ－１１を――」\e
+<000001ad> 【Chizuru】「――Ayamine,\p that's enough!\bWe need to get the S-11――」\e
+
+//<000001ae> 【慧】「――お願い榊ッ！　――せめて珠瀬に狙撃命令を出してッ！」\e
+<000001ae> 【Kei】「――Please, Sakaki!\b――At least give Tamase permission to snipe!」\e
+
+//<000001b0> 【千鶴】「…\p…\p…\p…\p？！」\e
+<000001b0> 【Chizuru】「...\p...\p...\p...\p!?」\e
+
+//<000001b2> 【慧】「――あのまま折り重なっていったら――呑み込まれる…\p…\pッ！！」\e
+<000001b2> 【Kei】「――If they keep piling up like this――He'll be trapped...\p...\p!!」\e
+
+//<000001b4> 【千鶴】「――ッ！？」\e
+<000001b4> 【Chizuru】「――!?」\e
+
+//<000001b5> 【慧】「――凄乃皇が…\p…\pッ…\p…\p！！」\e
+<000001b5> 【Kei】「――The Susano'o won't be able to...\p...\p...\p...\p!!」\e
+
+//<000001b8> 【慧】「…\p…\p…\pし…\p…\pがねが…\p…\pッ！！」\e
+<000001b8> 【Kei】「...\p...\p...\pShi...\p...\pgane wi...\p...\p!!」\e
+
+//<000001bb> 【千鶴・冥夜・壬姫・美琴】「――！！」\e
+<000001bb> 【Chizuru & Meiya & Miki & Mikoto】「――!!」\e
+
+//<000001bd> 【千鶴】「…\p…\p彩峰…\p…\pあなた…\p…\p…\p…\p」\e
+<000001bd> 【Chizuru】「...\p...\pAyamine...\p...\pyou...\p...\p...\p...\p」\e
+
+//<000001c0> 【霞】「――主機出力、\p臨界へ…\p…\p」\e
+<000001c0> 【Kasumi】「――Engine output approaching critical levels...\p...\p」\e
+
+//<000001c1> 【武】「――純夏の様子は！？」\e
+<000001c1> 【Takeru】「――How's Sumika!?」\e
+
+//<000001c3> 【霞】「――大丈夫です…\p…\p安定しています」\e
+<000001c3> 【Kasumi】「――She's okay...\p...\pshe's still stable.」\e
+
+//<000001c6> 【武】「――そうか…\p…\p！」\e
+<000001c6> 【Takeru】「――Okay...\p...\p!」\e//I see!
+
+//<000001c7> ――がんばれ純夏…\p…\p！　もうすぐだ…\p…\pもうすぐ終わるからなッ！！\e
+<000001c7> ――Hang in there, Sumika...\p...\p!\bNot much longer...\p...\pthis'll be over soon!!\e
+
+//<000001c9> 【武】「――ッ！？」\e
+<000001c9> 【Takeru】「――!?」\e
+
+//<000001cb> 【霞】「――６時方向より音源…\p…\p！\n崩落させた『広間』が突破されたようです…\p…\p！」\e
+<000001cb> 【Kasumi】「――Sound sources at six o'clock...\p...\p!\nThey seem to have broken through the Hall we destroyed...\p...\p!」\e
+
+//<00001d7a> 【武】「――ッ！？」\e
+<00001d7a> 【Takeru】「――!?」\e
+
+//<00001d7b> 【霞】「――音源およそ３万…\p…\pいえ、\pその後方に８万…\p…\p１０万…\p…\p！」\e
+<00001d7b> 【Kasumi】「――About 30,000 sources...\p...\pno,\p 80,000 behind them...\p...\pmake that 100,000...\p...\p!」\e
+
+//<000001d0> ――どんどん増えてるじゃねえかッ！？\e
+<000001d0> ――Where are they all coming from!?\e
+
+//<000001d1> 【霞】「このままでは挟撃されてしまいます…\p…\p！」\e
+<000001d1> 【Kasumi】「We'll be trapped between them...\p...\p!」\e
+
+//<00001d7d> ――前後合わせて２５万以上…\p…\pッ！！\nそんな負荷に純夏が耐えられるわけがない…\p…\p！！\e
+<00001d7d> ――That's over a quarter of a million enemies total...\p...\p!!\nThere's no way Sumika can handle all that...\p...\p!!\e
+
+//<000001d7> ――前進して突破するか！？\n――いやダメだ！！　まだ第一隔壁の開放が終わっていない！！\e
+<000001d7> ――Should we charge through now!?\n――No, we can't!! They haven't finished opening the 1st barrier yet!!\e
+
+//<000001da> ――それに、\pギリギリまでこっち側に引きつけておかないと、\pミサイルで撃ち漏らした敵がすぐに隔壁まで戻っちまう！！\e
+<000001da> ――Besides,\p if we don't wait for them to get really close,\p then the enemies that escape the missiles will be back at the barrier in no time!!\e
+
+//<000001db> ――そうなれば隔壁を閉鎖するための時間が稼げなくなる…\p…\p！！\e
+<000001db> ――And we won't have enough time to close it...\p...\p!!\e
+
+//<000001de> ――ここで大型ミサイルを…\p…\p脱出用のＳ－１１弾頭弾を使うしか無いのか…\p…\p！？\e
+<000001de> ――Do we have no choice...\p...\pbut to use the S-11-packed warheads here instead of for our escape...\p...\p!?\e
+
+//<000001e2> 【武】「――ッ！」\e
+<000001e2> 【Takeru】「――!」\e
+
+//<000001e3> ――ダメだッ！　――そんなやり方大尉達が許すもんかッ！！\e
+<000001e3> ――No!\b――The Captain would never forgive me if I did that!!\e
+
+//<000001e5> 【武】「――霞！　最大戦速で突破する！\nラザフォード場の出力アップ――タイミング頼むぞッ！」\e
+<000001e5> 【Takeru】「――Kasumi!\bWe're breaking through at maximum speed!\nI'll count on you to figure out when to increase the Rutherford Field output!」\e
+
+//<000001e7> 【霞】「――大丈夫です…\p…\p！　ずっと見ていますから――大丈夫です…\p…\p！」\e
+<000001e7> 【Kasumi】「――I'll be fine...\p...\p!\bI'm always watching――So I'll be fine...\p...\p!」\e
+
+//<000001ed> 【武】「――上半分を削ぎ落とすぞッ！」\e
+<000001ed> 【Takeru】「――I'm gonna knock down the top half!」\e
+
+//<000001f0> 【武】「――行けえーーーーッ！！」\e
+<000001f0> 【Takeru】「――Gooooooooooo!!」\e
+
+//<000001f5> 【武】「――ッ！？」\n
+<000001f5> 【Takeru】「――!?」\n
+
+//<000001f6> 【霞】「――！」
+<000001f6> 【Kasumi】「――!」
+
+//<0000291c> \r
+<0000291c> \r
+
+//<000001f9> ――やったか――ッ！？\e
+<000001f9> ――Did it work――!?\e
+
+//<000001fc> 【武】「――クッソォォーーーーッ！！」\e
+<000001fc> 【Takeru】「――Damn iiiiiiiiiiiit!!」\e
+
+//<00000201> ――ちくしょう！　間に合わねえッ！！\e
+<00000201> ――Crap! We're not gonna make it!!\e
+
+//<00000204> 【武】「――ぐぅッ！！」\e
+<00000204> 【Takeru】「――Uuu!!」\e
+
+//<00000207> 【霞】「――次元境界面に規定値を遥かに超えた負荷がかかっています…\p…\p！」\e
+<00000207> 【Kasumi】「――The dimensional boundary surface is being strained far beyond tolerances...\p...\p!」\e
+
+//<0000020c> 【霞】「――機関出力…\p…\p低下…\p…\p！」\e
+<0000020c> 【Kasumi】「――Engine output...\p...\pdecreasing...\p...\p!」\e
+
+//<0000020e> 【武】「――右腕で薙ぎ払うッ！　ラザフォード場を外してくれ！！」\e
+<0000020e> 【Takeru】「――Push them away with the right arm!\bTurn off the Rutherford Field!!」\e
+
+//<0000020f> ――ラザフォード場への干渉がなければ純夏への負担はない！！\e
+<0000020f> ――If there's no Rutherford Field to interfere with there's no burden on Sumika!!\e
+
+//<00000210> 【霞】「――そんな事をしたら機体が…\p…\p！」\e
+<00000210> 【Kasumi】「――But then the hull would be expo-...\p...\p!」\e
+
+//<00000211> 【武】「――どうせ２７００ｍｍは倉庫代わりだッ！　――やるぞッ！！」\e
+<00000211> 【Takeru】「――The 2700mm is just sitting in a warehouse somewhere anyway! ――Let's do this!!」\e
+
+//<00000213> 【千鶴】「――やめなさいッ！　そこには蓄電装置があるんでしょう！」\e
+<00000213> 【Chizuru】「――Stop it! Aren't there capacitors on that arm!?」\e
+
+//<00000214> ――委員長ッ！？\e
+<00000214> ――Class Rep!?\e
+
+//<00000218> 【千鶴】「――タイマーは１２０秒、\p良いわねッ！？」\e
+<00000218> 【Chizuru】「――I'm setting the timer for 120 seconds,\p okay!?」\e
+
+//<0000021b> 【冥夜】「――了解！」\n
+<0000021b> 【Meiya】「――Copy that!」\n
+
+//<0000021c> 【慧】「――了解！」\e
+<0000021c> 【Kei】「――Copy that!」\e
+
+//<00000222> 【武】「――お…\p…\pおまえら何するつもりだッ！？」\e
+<00000222> 【Takeru】「――Wh-...\p...\pwhat the hell are you gonna do!?」\e
+
+//<00000224> 【千鶴】「――Ｓ－１１でこいつらを吹き飛ばすのよッ！」\e
+<00000224> 【Chizuru】「――Blow these guys away with an S-11!」\e
+
+//<00000226> 【武】「――な…\p…\pなにッ！？」\e
+<00000226> 【Takeru】「――Wh-...\p...\pwhat!?」\e
+
+//<00000228> 【慧】「――安心しろ　――私達のじゃないっ！」\e
+<00000228> 【Kei】「――Don't worry――Not using ours!」\e
+
+//<0000022a> ――え…\p…\pじゃあ――たまと美琴の…\p…\p！？\e
+<0000022a> ――Eh? ...\p...\pso――The one Tama and Mikoto left...\p...\p!?\e
+
+//<0000022b> 【冥夜】「――タケルッ！　――喋ってる暇があるならさっさと支援せんかッ！」\e
+<0000022b> 【Meiya】「――Takeru!\b――If you have time to talk then support us!」\e
+
+//<0000022d> ――くっ…\p…\p！\e
+<0000022d> ――Uu...\p...\p!\e
+
+//<00000233> 【壬姫】「――このっ！　このっ！　この～～～っ！！」
+<00000233> 【Miki】「――Take this! And this! And thiiiiiis!!」
+
+//<00002970> \r
+<00002970> \r
+
+//<00000234> 【美琴】「――みんなに近付くなーーッ！」
+<00000234> 【Mikoto】「――Stay away from them!」
+
+//<0000297c> \r
+<0000297c> \r
+
+//<00000236> 【千鶴】「――はぁぁぁぁ！！」
+<00000236> 【Chizuru】「――Haaaaaaaaa!!」
+
+//<00002974> \r
+<00002974> \r
+
+//<00000237> 【冥夜】「――うぉぉぉぉッ！！」
+<00000237> 【Meiya】「――Uuoooooooo!!」
+
+//<00002978> \r
+<00002978> \r
+
+//<00000238> 【慧】「――やらせない…\p…\pやらせないよッ！」
+<00000238> 【Kei】「――I won't let you...\p...\pyou can't do this!」
+
+//<0000297b> \r
+<0000297b> \r
+
+//<0000023a> 【霞】「――機関出力１２％低下…\p…\p！」
+<0000023a> 【Kasumi】「――Engine output under 12%...\p...\p!」
+
+//<00002989> \r
+<00002989> \r
+
+//<0000023c> 【武】「――くっそぉぉぉーーーッ！！」
+<0000023c> 【Takeru】「――Damn iiiiiiiiiiiit!!」
+
+//<00002991> \r
+<00002991> \r
+
+//<00001d98> 【美琴】「――ちゃんと見てよッ！！」
+<00001d98> 【Mikoto】「――I hope they're watching!!」//yay guesslation ~IX
+
+//<00002993> \r
+<00002993> \r
+
+//<00001d9d> 【冥夜】「――信号弾赤ッ！　――第一隔壁の開放完了だ！！」
+<00001d9d> 【Meiya】「――Signal flare red!\b――The 1st barrier is completely open!!」
+
+//<00002996> \r
+<00002996> \r
+
+//<00001d9f> 【千鶴】「――黄撃てッ！　――鎧衣を作業に戻らせるのよッ！！」
+<00001d9f> 【Chizuru】「――Shoot a yellow one!\b――Make Yoroi get back to work!!」
+
+//<00001da0> \r【冥夜】「――了解ッ！！」
+<00001da0> \r【Meiya】「――Copy that!!」
+
+//<0000299e> \r
+<0000299e> \r
+
+//<00001da6> 【慧】「――榊っ――時間だッ！！」
+<00001da6> 【Kei】「――Sakaki! ――It's time!!」
+
+//<000029a1> \r
+<000029a1> \r
+
+//<00000246> 【千鶴】「――御剣ッ！　――彩峰ッ！！」
+<00000246> 【Chizuru】「――Mitsurugi! ――Ayamine!!」
+
+//<000029a4> \r
+<000029a4> \r
+
+//<00001da9> 【慧】「――はぁぁぁぁッ！」
+<00001da9> 【Kei】「――Haaaaaaaaa!」
+
+//<000029aa> \r
+<000029aa> \r
+
+//<00001dab> 【冥夜】「――いやぁぁぁ～～ッ！！」
+<00001dab> 【Meiya】「――Iiyaaaaaaaaaaa!!」
+
+//<000029ac> \r
+<000029ac> \r
+
+//<0000024c> 【千鶴】「――全機反転上昇ォォッ！！」
+<0000024c> 【Chizuru】「――Everyone reverse boost jump upward!!」//huh, ingame it's clear they were under the S-11 at the time it blew up, so I'm not sure this makes sense ~IX
+
+//<000029b3> \r
+<000029b3> \r
+
+//<00000250> 【冥夜】「――ぐぅぅっぅう…\p…\pッ！！」\n
+<00000250> 【Meiya】「――Uuuuuuuuuu...\p...\p!!」\n
+
+//<00000251> 【慧】「――ぅぐぅぅぅ…\p…\pぅッ！！」\n
+<00000251> 【Chizuru】「――Uuuuuuuuuuuu...\p...\p!!」\n
+
+//<00000252> 【千鶴】「――うぅぅぅぅぅ…\p…\pッ！！」
+<00000252> 【Kei】「――Uuuuuuuuuu...\p...\puu!!」
+
+//<000029c2> \r
+<000029c2> \r
+
+//<00000255> 【武】「――純夏ぁぁッッ！　あいつらを――ッ！！」
+<00000255> 【Takeru】「――Sumikaaaaa! Don't let the――!!」
+
+//<00002a06> \r
+<00002a06> \r
+
+//<0000025c> 【壬姫】「――うわあああああ～～～！！」
+<0000025c> 【Miki】「――Uwaaaaaaaaaaaaaaa!!」
+
+//<000029ee> \r
+<000029ee> \r
+
+//<0000026e> 【霞】「――機関出力正常。\nラザフォード場安定しています…\p…\p！　機体損害なし…\p…\p！」
+<0000026e> 【Kasumi】「――Engine output normal.\nRutherford Fields stabilized...\p...\p!\bNo hull damage...\p...\p!」
+
+//<000029fe> \r
+<000029fe> \r
+
+//<00001dc5> 【武】「…\p…\p…\p…\p」\e
+<00001dc5> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001dc6> ――す…\p…\p凄えッ…\p…\p！！\e
+<00001dc6> ――A-...\p...\pamazing...\p...\p!!\e
+
+//<00001dc7> …\p…\pこれが…\p…\pＳ－１１の…\p…\p破壊力…\p…\pか…\p…\p！？\e
+<00001dc7> ...\p...\pthis is...\p...\pthe destructive power...\p...\pof an S-11...\p...\p!?\e
+
+//<00001dc8> ここに来るまでの戦闘じゃ、\p安全圏に離脱した後タイマー起爆させてたから、\p爆発を間近で見た事がなかったけど…\p…\p\e
+<00001dc8> Up until now we've always set the timer and run away before they went off,\p so I never got to see the explosion up close...\p...\p\e
+
+//<00001dc9> 半端じゃねえ…\p…\p！！\e
+<00001dc9> That blast is huge...\p...\p!!\e
+
+//<00001dcc> 【霞】「――ＢＥＴＡ個体の約９割を撃破。\n『主広間』に流入中だった１次増援約３万も壊滅させました」\e
+<00001dcc> 【Kasumi】「――About ninety percent of the BETA in the Main Hall have been destroyed.\nThirty thousand from the first wave of reinforcements were also destroyed.」\e
+
+//<00001dce> ――え…\p…\p！？\e
+<00001dce> ――Eh...\p...\p!?\e
+
+//<00001dd0> 【武】「…\p…\p…\p…\p」\e
+<00001dd0> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00001dd1> …\p…\pラザフォード場を円錐状に展開して…\p…\p爆発の威力を一方向に集めたのか…\p…\p？！\e
+<00001dd1> ...\p...\pthe Rutherford Field was deployed in a cone shape...\p...\pand concentrated the explosion in one direction...\p...\p!?\e
+
+//<00001dd2> 【武】「…\p…\p…\p…\p」\e
+<00001dd2> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000274> ――ラザフォード場には…\p…\pそんな使い方があったのか…\p…\p！？\e
+<00000274> ――I had no idea...\p...\pthe Rutherford Field could be used like that...\p...\p!!\e
+
+//<00000275> …\p…\pそれって…\p…\p純夏がやったんだよな…\p…\p？\e
+<00000275> ...\p...\pSumika did this...\p...\pright...\p...\p?\e
+
+//<00000276> 【武】「…\p…\p…\p…\p」\e
+<00000276> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000277> 凄えよ純夏…\p…\p。\nよく咄嗟にそんな事をやっ…\p…\p\e
+<00000277> You're incredible, Sumika...\p...\p\nYou did all that in an instant...\p...\p\e
+
+//<00000278> 【武】「――ッ！？」\e
+<00000278> 【Takeru】「――!?」\e
+
+//<00000279> ――という事は…\p…\pッ！？\n…\p…\p委員長達にはラザフォード場を…\p…\p張ってない…\p…\pのか…\p…\p！？\e
+<00000279> ――Does that mean...\p...\p...\p...\pshe's not...\p...\pdeploying them...\p...\paround the rest of the unit...\p...\p!!\e
+
+//<0000027b> 【武】「――みんな――みんな無事かッ！！　――応答しろッ！！」\e
+<0000027b> 【Takeru】「――Guys――Guys, are you okay!?\b――Respond!!」\e
+
+//<0000027d> 【霞】「――第一隔壁通過まで、\pあと１２００…\p…\p！」\e
+<0000027d> 【Kasumi】「――1200 meters to the 1st barrier wall...\p...\p!」\e
+
+//<0000027e> 【武】「――こちらＡ－０４白銀ッ！　――Ａ－０１応答しろッ！！」\e
+<0000027e> 【Takeru】「――This is A-04 Shirogane!\b――A-01, respond!!」\e
+
+//<00001dd8> 【武】「――こちらＡ－０４白銀ッ！　――誰でもいい応答しろ！」\e
+<00001dd8> 【Takeru】「――This is A-04 Shirogane!\b――Someone, anyone, respond!!」\e
+
+//<00001dda> ――ッ！！\e
+<00001dda> ――!!\e
+
+//<00001ddb> 【武】「――こちらＡ－０４白銀ッ！　――応答してくれッ！」\e
+<00001ddb> 【Takeru】「――This is A-04 Shirogane!\b――Please, answer me!」\e
+
+//<00001ddd> 【霞】「…\p…\p…\p…\p」\e
+<00001ddd> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<00001ddf> 【武】「――くそッ！　――こちらＡ－０４白…\p…\pッ」\e
+<00001ddf> 【Takeru】「――Dammit!\b――This is A-04 Shiro-...\p...\p」\e
+
+//<00000281> 【壬姫】「――たけ…\p…\pさん…\p…\p！」\e
+<00000281> 【Miki】「――Take...\p...\psan...\p...\p!」\e
+
+//<00000283> ――たまっ！？\e
+<00000283> ――Tama!?\e
+
+//<00001de1> 【武】「――たまッ！？　――おまえ…\p…\p大丈夫なのか！？」\e
+<00001de1> 【Takeru】「――Tama!?\b――Are you...\p...\pare you okay!?」\e
+
+//<00001de3> 【壬姫】「はい。閃光と初期衝撃波だけで…\p…\p爆風や爆発の影響はありませんでした…\p…\p」\e
+<00001de3> 【Miki】「Yes. Just the bright flash and initial shockwave...\p...\pthe explosion didn't hurt me at all...\p...\p」\e
+
+//<00001de4> 【壬姫】「鎧衣さんも無事です。\n『横坑』内で第二隔壁の開放作業を続けてます」\e
+<00001de4> 【Miki】「Yoroi-san's fine too.\nShe's in the Drift, working on opening the 2nd barrier.」\e//dammit I called Mikoto he again *corrects* ~IX
+
+//<00001de5> 【武】「――そうか…\p…\pよかった…\p…\p！」\e
+<00001de5> 【Takeru】「――I see...\p...\pthank goodness...\p...\p」\e
+
+//<00001de6> 【壬姫】「…\p…\p鑑さんのおかげで…\p…\p私達は何ともなかったです」\e
+<00001de6> 【Miki】「...\p...\pthanks to Kagami-san...\p...\pnothing happened to us.」\e
+
+//<00001de7> そうか、\pたま達と爆発の間にラザフォード場があったから、\p威力が遮断されたんだな…\p…\p。\e
+<00001de7> I see,\p there was a Rutherford Field between Tama and the explosion,\p so most of it never reached her...\p...\p\e
+
+//<00001de8> でも…\p…\p待てよ…\p…\p。\n初期衝撃波だけが来たって…\p…\pどういう事だ…\p…\p？\n単純に純夏の反応が遅れたってだけなのか…\p…\p？！\e
+<00001de8> But...\p...\pwait...\p...\p\nJust the initial shockwave?\b...\p...\pwhat does that mean...\p...\p?\nWas Sumika just a little too slow...\p...\p!?\e
+
+//<00001de9> 【壬姫】「…\p…\pたけるさん」\e
+<00001de9> 【Miki】「...\p...\pTakeru-san.」\e
+
+//<00001dea> 【武】「――なんだ…\p…\p？」\e
+<00001dea> 【Takeru】「――What...\p...\p?」\e
+
+//<00001deb> 【壬姫】「…\p…\pみんなは…\p…\pみんなはどうなったの…\p…\p？！」\e
+<00001deb> 【Miki】「...\p...\pwhat happened...\p...\pto all the others...\p...\p!?」\e
+
+//<00002baf> 【武】「――今、\pコールしている！　あいつらの事はこっちに任せて、\pおまえは自分の役目を果たせ！」\e
+<00002baf> 【Takeru】「――I'm calling them now!\bLet me handle that and get back to your job!」\e
+
+//<00001def> 【壬姫】「――はい…\p…\p！」\e
+<00001def> 【Miki】「――Okay...\p...\p!」\e
+
+//<00001df2> 【武】「――そんな顔すんな！」\e
+<00001df2> 【Takeru】「――Don't make that face!」\e
+
+//<00001df3> 【壬姫】「――ッ！？」\e
+<00001df3> 【Miki】「――!?」\e
+
+//<00001df4> 【武】「――オレは今そっちに向かっている！　敵が全滅した訳じゃないんだ――警戒怠るなよ！？」\e
+<00001df4> 【Takeru】「――I'm heading toward you!\nThere are still enemies left――So don't lower your guard!!」\e
+
+//<00001df5> 【壬姫】「――っ…\p…\pはいッ！」\e
+<00001df5> 【Miki】「――...\p...\pyes!」\e
+
+//<00000293> くっそ…\p…\p口では偉そうに言えても…\p…\pオレ自身が不安を隠せていたのか自信がない…\p…\p！！\e
+<00000293> Dammit...\p...\pI can say stuff like that fine...\p...\pbut I'm not confident I hid my own anxiety at all...\p...\p\e
+
+//<00000294> 【武】「――冥夜ッ！！　――委員長ッ！！　――彩峰ェッ！！\n聞こえてたら返事してくれッ！！」\e
+<00000294> 【Takeru】「――Meiya!! ――Class Rep!! ――Ayamineee!!\nIf you can hear me, answer!!」\e
+
+//<00001df9> 【武】「――おいッ！！　何でも良いから応えろッ！！\n信号弾でも何でも――生きてるなら反応しろッ！！」\e
+<00001df9> 【Takeru】「――Hey!! I don't care what, just say something!!\nOr send a signal flare or something――If you're alive, respond!!」\e
+
+//<00000298> 【武】「――応答しろよ…\p…\pッ！　誰でもいいッ――応答してくれ…\p…\pッ！！」\e
+<00000298> 【Takeru】「――Respond...\p...\p! Someone, anyone!\b――Please respond...\p...\p!!」\e
+
+//<0000029a> …\p…\pふざけんなよ…\p…\p！\e
+<0000029a> ...\p...\pyou've gotta be kidding me...\p...\p!\e
+
+//<0000029c> 【武】「…\p…\p冥夜…\p…\pッ！　…\p…\p彩峰…\p…\pッ！　…\p…\p委員長…\p…\pッ！」\e
+<0000029c> 【Takeru】「...\p...\pMeiya...\p...\p! ...\p...\pAyamine...\p...\p! ...\p...\pClass Rep...\p...\p!」\e
+
+//<0000029e> …\p…\p…\p…\pここまで来て…\p…\p…\p…\pやっとここまで来たのに…\p…\p！\n――ふざけんじゃねえぞ…\p…\pッッ！！！\e
+<0000029e> ...\p...\p...\p...\pafter all this...\p...\p...\p...\pwhen we've finally made it this far...\p...\p!\n――You guys better not have...\p...\p!!!\e
+
+//<000002a0> 【声】「…\p…\pひとつ訊いていい…\p…\p？」\e
+<000002a0> 【Voice】「...\p...\pcan I ask you something...\p...\p?」\e
+
+//<000002a2> 【武】「――ッ！！」\e
+<000002a2> 【Takeru】「――!!」\e
+
+//<000002a4> 【慧】「…\p…\p今の順番…\p…\p何か意味あるの？」\e
+<000002a4> 【Kei】「...\p...\pis there a reason...\p...\pyou called us in that order?」\e
+
+//<000002a6> 【武】「――彩峰ッ…\p…\p無事だったのかッ！！」\e
+<000002a6> 【Takeru】「――Ayamine! ...\p...\pyou're okay!?」\e
+
+//<00001dfb> 【千鶴】「そうね。私もちょっと気になるわ」\e
+<00001dfb> 【Chizuru】「Good question. I'd like to know too.」\e
+
+//<000002aa> 【武】「――委員長ッ！？」\e
+<000002aa> 【Takeru】「――Class Rep!?」\e
+
+//<00001dfe> 【冥夜】「ああ、\p私も是非知りたいな」\e
+<00001dfe> 【Meiya】「Yes,\p I would also love to hear him answer that.」\e
+
+//<000002ae> 【武】「――冥夜…\p…\pッ！？」\e
+<000002ae> 【Takeru】「――Meiya...\p...\p!?」\e
+
+//<000002b0> ――よかった…\p…\pみんな…\p…\p無事だったのか…\p…\p！！\e
+<000002b0> ――Thank goodness...\p...\pyou're all...\p...\pstill okay...\p...\p!!\e
+
+//<000002b1> 【武】「――ったく！　おまえらなんですぐ返事しないんだよッ！」\e
+<000002b1> 【Takeru】「――Geez! Why didn't you guys answer right away!?」\e
+
+//<00001e01> 【慧】「爆発の影響で通信に障害が出た。\n回復したのが今」\e
+<00001e01> 【Kei】「The explosion damaged our transmitters.\nWe only just got them working.」\e
+
+//<00001e04> 【武】「――あの至近爆発で…\p…\p本当に何ともないのか？！」\e
+<00001e04> 【Takeru】「――You guys weren't hurt at all...\p...\pby that point-blank explosion!?」\e//abuse of terminology yay ~IX
+
+//<00001e05> 【冥夜】「機体も身体も問題ない。\nまたしても鑑に助けられたようだな」\e
+<00001e05> 【Meiya】「Our TSFs and persons are unharmed.\nWe truly were protected by Kagami.」\e
+
+//<00001e08> 【武】「――そうか…\p…\p」\e
+<00001e08> 【Takeru】「――I see...\p...\p」\e
+
+//<00001e09> …\p…\pありがとう…\p…\p純夏。\n…\p…\pおまえも苦しかったはずなのに…\p…\p頑張ってくれたんだな…\p…\p！！\e
+<00001e09> ...\p...\pthank you...\p...\pSumika.\n...\p...\pyou must be in a lot of pain right now...\p...\pbut you're still fighting...\p...\p!!\e
+
+//<00001e0a> 【武】「…\p…\p…\p…\p！」\e
+<00001e0a> 【Takeru】「...\p...\p...\p...\p!」\e
+
+//<00002bb1> ――なるほど…\p…\pたまの所に初期衝撃波だけが届いた理由がこれでわかった。\e
+<00002bb1> ――I see...\p...\pnow I know why Tama only felt the initial shockwave.\e
+
+//<00001e0c> ラザフォード場を円錐状に展開したのが、\p凄乃皇と委員長達３人の後だったからだな。\nそのほんの僅かの差を、\p初期衝撃波がすり抜けたんだ。\e
+<00001e0c> She deployed the Rutherford Field in a cone shape after protecting the Susano'o, Meiya, Class Rep and Ayamine.\nThat slight delay was enough for the shockwave to slip through.\e
+
+//<00001e0e> 【千鶴】「白銀、\p珠瀬と鎧衣の状況、\p知っている？」\e
+<00001e0e> 【Chizuru】「Shirogane,\p do you know how Tamase and Yoroi are doing?」\e
+
+//<00001e10> 【武】「――安心してくれ、\pあいつらも無事だよ。\p作業を継続中だ」\e
+<00001e10> 【Takeru】「――No worries,\p they're okay too.\bStill working on the barriers.」\e
+
+//<00001e13> 【千鶴】「そう、\pよかったわ…\p…\p」\e
+<00001e13> 【Chizuru】「I see,\p that's good...\p...\p」\e
+
+//<00001e16> 【武】「――そうだ、\p委員長――良く聞いてくれ！\n敵の増援がこっちに向かっているんだ！」\e
+<00001e16> 【Takeru】「――Oh yeah,\p Class Rep――Listen carefully!\nEnemy reinforcements are coming this way!」\e
+
+//<00001e18> 【武】「――先鋒はさっきの爆発で撃破した。\nだけど少なく見積もっても１０万体以上の後続が――」\e
+<00001e18> 【Takeru】「――That explosion took out their vanguard.\nBut there's over a hundred thousand behi――」\e
+
+//<000002c5> 【武】「――おい委員長、\p聞こえてるか！？　――委員長ッ！？」\e
+<000002c5> 【Takeru】「――Hey, Class Rep,\p are you listening!?\b――Class Rep!?」\e
+
+//<000002c8> ――クソッ！　距離と爆発の影響か！？\e
+<000002c8> ――Dammit! Am I too far away now!?\bOr is the explosion still――!?\e
+
+//<000002cb> 【千鶴】「――白銀？！　――白銀っ！？」\e
+<000002cb> 【Chizuru】「――Shirogane!? ――Shirogane!?」\e
+
+//<00001e1a> 【千鶴】「…\p…\pだめだわ。\n距離がひらいたのね」\e
+<00001e1a> 【Chizuru】「...\p...\pno good.\p He's too far away.」\e
+
+//<000002cf> 【慧】「――爆発の影響もまだある」\e
+<000002cf> 【Kei】「――The explosion is still interfering too.」\e
+
+//<000002d1> 【冥夜】「――榊、\p彩峰、\p見たか？　先程凄乃皇に接近した際に更新されたデータを」\e
+<000002d1> 【Meiya】「――Sakaki,\p Ayamine,\p did you see the data update from the Susano'o a moment ago?」\e
+
+//<00001e1c> 【千鶴】「手前の『広間』が突破されたようね。\n第一波はさっきの爆発で殲滅したようだけど…\p…\p」\e
+<00001e1c> 【Chizuru】「Looks like they broke through the Hall.\nThe first wave seems to have been annihilated by that explosion, but...\p...\p」\e
+
+//<00001e1e> 【冥夜】「――ああ…\p…\pだが後続がいる。\n最後の計測値が約１１万」\e
+<00001e1e> 【Meiya】「――Yes...\p...\pthere are more coming.\nThe last estimate was 110,000.」\e
+
+//<00001e20> 【慧】「ここに来る頃にはもっと増える。\n確実に」\e
+<00001e20> 【Kei】「There will be more when they get here.\nFor sure.」\e
+
+//<00001e21> 【冥夜】「『主広間』に雪崩れ込まれると厄介だな。\n隔壁の開閉には予想以上に時間が掛かる」\e
+<00001e21> 【Meiya】「It would be awful if they poured into the Main Hall.\nIt would take longer than expected to open and close the barriers.」\e
+
+//<00001e22> 【慧】「そだね」\e
+<00001e22> 【Kei】「True.」\e
+
+//<00001e23> 【冥夜】「加えて、\p先程の状況から鑑みるに、\p凄乃皇の主砲エネルギー充填にも、\p想定以上の時間が必要と見るべきであろう」\e
+<00001e23> 【Meiya】「In addition,\p given what the Susano'o just did,\p we should assume it will take longer than expected for the main cannon to charge.」\e
+
+//<00001e25> 【千鶴】「仮に第一隔壁の閉鎖が間に合っても、\pその間に対策が講じられてしまう可能性もあるわね」\e
+<00001e25> 【Chizuru】「So even if we close the 1st barrier in time,\p we might have to come up with something else.」\e
+
+//<00001e26> 【慧】「数で圧されれば、\p隔壁が破壊されることも考えられる」\e
+<00001e26> 【Kei】「They may be able to destroy the barrier with sheer numbers.」\e
+
+//<00001e27> 【冥夜】「そこで私に策がある」\e
+<00001e27> 【Meiya】「I have a plan.」\e
+
+//<00001e29> 【千鶴】「聞くわ」\e
+<00001e29> 【Chizuru】「I'm all ears.」\e
+
+//<000002db> 【冥夜】「――まず、\pこれを見てくれ」\e
+<000002db> 【Meiya】「――First,\p look at this.」\e
+
+//<00001e2b> 【冥夜】「先程の爆発と、\p敵増援の振動波伝播パターンを比較して気付いたのだが、\p内壁の構造と、\p材質の密度は一律ではないらしい」\e
+<00001e2b> 【Meiya】「I noticed this when comparing the sound waveforms from the explosion and the enemy reinforcements.\p The density of the material making up the inner wall is inconsistent.」\e
+
+//<00001e2d> 【冥夜】「この様に複雑な構造パターンを組み合わせ、\p壁面全体であの強度を確保しているのだ」\e
+<00001e2d> 【Meiya】「The wall as a whole achieves that incredible strength through this complex structural pattern.」\e
+
+//<000002e2> 【慧】「…\p…\p…\p…\p」\n
+<000002e2> 【Kei】「...\p...\p...\p...\p」\n
+
+//<000002e4> 【千鶴】「…\p…\p…\p…\p」\e
+<000002e4> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00001e2f> 【冥夜】「これが低強度部位の分布だ。\nこの何れかであれば、\pＳ－１１単発であっても、\p内壁に穴を穿つ事ができよう」\e
+<00001e2f> 【Meiya】「This is a distribution of strong and weak points.\nIn the right place,\p even a single S-11 would be able to blow a hole in the wall.」\e
+
+//<00001e30> 【冥夜】「――だが今の私達に、\p穴など何の役にも立たん。\nそこで、\p構造力学的に算出した爆破ポイントがここだ」\e
+<00001e30> 【Meiya】「――But a mere hole is of no use to us.\nSo,\p after performing architectural calculations, I found these to be the ideal blasting points.」\e
+
+//<00001e32> 【冥夜】「…\p…\pここまではよいな？　次に、\p私の策だ」\e
+<00001e32> 【Meiya】「...\p...\pare you with me so far? Then this is my plan.」\e
+
+//<000002f0> 【慧】「…\p…\p…\p…\p」\n
+<000002f0> 【Kei】「...\p...\p...\p...\p」\n
+
+//<000002f2> 【千鶴】「…\p…\p…\p…\p」\e
+<000002f2> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00001e34> 【冥夜】「そなた達は即時、\p第一隔壁まで後退。\n榊指揮の下、\p珠瀬、\p鎧衣と共に第一、\p第二隔壁の各作業にあたる」\e
+<00001e34> 【Meiya】「You will both retreat immediately to the 1st barrier.\nWork with Tamase and Yoroi on both of the barriers.」\e
+
+//<000002f7> 【千鶴】「…\p…\p…\p…\p」\e
+<000002f7> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00001e36> 【冥夜】「――ただし、\p彩峰はＳ－１１をここで下ろして行くのだ。\n『主広間』入り口には私が赴く故な」\e
+<00001e36> 【Meiya】「――However,\p Ayamine will leave her S-11 here.\nI will head to the Main Hall entrance.」\e
+
+//<000002fa> 【慧】「…\p…\p…\p…\p」\e
+<000002fa> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00001e38> 【冥夜】「そなたと私のＳ－１１、\p２発を以て『横坑』両側壁を爆破。\n大規模崩落を引き起こし、\pＡ－０４主砲エネルギー充填の時間を稼ぐ」\e
+<00001e38> 【Meiya】「I will use your S-11 and mine on each side of the Drift to destroy it.\nThe collapse will buy time for A-04 to recharge.」\e
+
+//<000002ff> 【慧】「…\p…\p…\p…\p」\n
+<000002ff> 【Kei】「...\p...\p...\p...\p」\n
+
+//<00000301> 【千鶴】「…\p…\p…\p…\p」\e
+<00000301> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00001e3a> 【冥夜】「私は作業終了次第、\p第一隔壁まで後退し、\pそなた達に合流する」\e
+<00001e3a> 【Meiya】「Once I am finished,\p I will retreat to the 1st barrier and rendezvous with you.」\e
+
+//<00001e3c> 【慧】「…\p…\p…\p…\p」\e
+<00001e3c> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00001e3f> 【冥夜】「状況如何では、\p私の合流を待たず、\p隔壁を閉鎖する事」\e
+<00001e3f> 【Meiya】「If the need arises,\p close the barrier without waiting for me.」\e
+
+//<00001e41> 【千鶴】「…\p…\p…\p…\p」\e
+<00001e41> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<0000030c> 【冥夜】「――以上だ」\e
+<0000030c> 【Meiya】「――That is all.」\e
+
+//<0000030d> 【慧】「…\p…\p御剣…\p…\pあんた、\pひとりでカッコつけ――」\e
+<0000030d> 【Kei】「...\p...\pMitsurugi...\p...\pwhy do you have to――」\e
+
+//<0000030e> 【千鶴】「――なるほど、\p良い案だわ。\n早速実行しましょう」\e
+<0000030e> 【Chizuru】「――I see,\p that's a good idea.\nLet's make it happen.」\e
+
+//<00001d23> 【慧】「――っ…\p…\p！？」\e
+<00001d23> 【Kei】「――...\p...\p!?」\e
+
+//<00001e44> 【千鶴】「彩峰、\p早速Ｓ－１１を下ろしてちょうだい」\e
+<00001e44> 【Chizuru】「Ayamine,\p leave your S-11 here.」\e
+
+//<00000311> 【慧】「――待って榊。\p私が『主広間』の入り口に行く…\p…\p！！」\e
+<00000311> 【Kei】「――Wait, Sakaki.\p I'll go to the Main Hall entrance...\p...\p!!」\e
+
+//<00001e46> 【冥夜】「彩峰、\p私の機体が最も機動性が高いのは知っておろう。\n第一隔壁まで戻るにも最短時間で――」\e
+<00001e46> 【Meiya】「Ayamine,\p you know my TSF is the most maneuverable.\nEven the return to the 1st barrier will not――」\e
+
+//<00000313> 【慧】「――だったら尚更、\p御剣が凄乃皇の傍にいるべき」\e
+<00000313> 【Kei】「――And that's why you should stay with the Susano'o,\p Mitsurugi.」\e
+
+//<00000314> 【冥夜】「――彩峰、\p時間がないんだ。\n早くするがよい」\e
+<00000314> 【Meiya】「――Ayamine,\p there is no time.\nDo it now.」\e
+
+//<00000315> 【慧】「――凄乃皇の安全が最優先のはず…\p…\p！　最強の機体が警護すべき…\p…\p！」\e
+<00000315> 【Kei】「――The safety of the Susano'o is our top priority...\p...\p!\bThe best TSF should protect it...\p...\p!」\e
+
+//<00000316> 【千鶴】「…\p…\p…\p…\p」\e
+<00000316> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00001e48> 【冥夜】「彩峰。そなたは先程、\pあれ程執拗に攻撃を具申しながらも、\p榊の命令を待って行動したな？」\e
+<00001e48> 【Meiya】「Ayamine. A moment ago,\p when you repeatedly asked for permission to attack,\p you were waiting for Sakaki's order to move, were you not?」\e
+
+//<00000318> 【慧】「――何…\p…\p急に…\p…\p？！」\e
+<00000318> 【Kei】「――Why...\p...\pare you...\p...\p!?」\e
+
+//<00001e4b> 【冥夜】「訓練兵だったとはいえ、\pついひと月前まで事ある毎に榊に反発し、\p独断専行していたそなたが…\p…\p何故であろうな？」\e
+<00001e4b> 【Meiya】「Though you were a trainee at the time,\p only a month ago you would consistently disobey Sakaki and take independent action...\p...\pso why not now?」\e
+
+//<0000031b> 【慧】「――ッ…\p…\p！」\e
+<0000031b> 【Kei】「――...\p...\p!」\e
+
+//<0000031c> 【千鶴】「…\p…\p…\p…\p」\e
+<0000031c> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00001e4e> 【冥夜】「それは…\p…\pそなたが、\p榊を指揮官と認めているが故であろう？」\e
+<00001e4e> 【Meiya】「That is because...\p...\pyou have acknowledged Sakaki as your commander, yes?」\e
+
+//<0000031f> 【慧】「――ッ…\p…\p！」\n
+<0000031f> 【Kei】「――...\p...\p!」\n
+
+//<00000320> 【千鶴】「…\p…\p…\p…\p」\e
+<00000320> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00001e50> 【冥夜】「榊を心から指揮官と認め、\p尊重しているからこそ、\p命令を乞うたのではないか？」\e
+<00001e50> 【Meiya】「Did you not ask her to give you the order because you recognize her as our leader and genuinely respected her?」\e
+
+//<00000323> 【千鶴】「…\p…\p…\p…\p」\e
+<00000323> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00001e52> 【慧】「…\p…\pそれが…\p…\pどうした…\p…\p」\e
+<00001e52> 【Kei】「...\p...\pwhat...\p...\pdoes that have to do with this...\p...\p?」\e
+
+//<00001e53> 【冥夜】「思い出すがよい。\n私はヴァルキリーズの指揮官補佐…\p…\pつまり副隊長なのだ」\e
+<00001e53> 【Meiya】「Think about it.\nI am the Valkyries' second-in-command...\p...\punder Sakaki.」\e
+
+//<00000326> 【慧】「――っ…\p…\p！」\e
+<00000326> 【Kei】「――...\p...\p!」\e
+
+//<00000327> 【冥夜】「――そして、\pそなたの小隊長でもあるのだがな」\e
+<00000327> 【Meiya】「――And I am the leader of your platoon.」\e
+
+//<00000328> 【慧】「…\p…\p…\p…\p」\e
+<00000328> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00001e55> 【冥夜】「私は未だ、\pそなたに認められてはいないのであろうか…\p…\p？」\e
+<00001e55> 【Meiya】「Do you still not recognize me as a commander...\p...\p?」\e
+
+//<0000032a> 【千鶴】「…\p…\p…\p…\p」\e
+<0000032a> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<0000032b> 【慧】「――ッ…\p…\pそれは…\p…\pっ…\p…\p！」\e
+<0000032b> 【Kei】「――...\p...\pthat's not...\p...\p...\p...\p!」\e
+
+//<0000032e> 【千鶴】「…\p…\p…\p…\p」\e
+<0000032e> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<0000032f> 【慧】「…\p…\p認めて…\pいる…\p…\p。\nでも――！」\e
+<0000032f> 【Kei】「...\p...\pI do...\paccept you...\p...\p\nBut――!」\e
+
+//<00000330> 【冥夜】「――そなたに感謝を。\nでは、\p早々にＳ－１１を下ろすがよいぞ」\e
+<00000330> 【Meiya】「――I give you my thanks.\nNow then,\p leave your S-11 here.」\e
+
+//<00000331> 【千鶴】「――その必要はないわ」\e
+<00000331> 【Chizuru】「――She won't need to.」\e
+
+//<00000333> 【冥夜】「――！？」\n
+<00000333> 【Meiya】「――!?」\n
+
+//<00000334> 【慧】「――！？」\e
+<00000334> 【Kei】「――!?」\e
+
+//<00001e57> 【千鶴】「だいぶ時間を無駄にしたわ。\n『主広間』入り口のＳ－１１設置は２機同時作業で行う」\e
+<00001e57> 【Chizuru】「We've wasted a lot of time.\nWe'll have two TSFs carry the S-11s to the Main Hall entrance.」\e
+
+//<00000338> 【冥夜】「――榊！？」\n
+<00000338> 【Meiya】「――Sakaki!?」\n
+
+//<00000339> 【慧】「――！」\e
+<00000339> 【Kei】「――!」\e
+
+//<0000033b> 【千鶴】「――行くわよ彩峰。\nその代わり命令には従ってもらうわ。\nいいわね」\e
+<0000033b> 【Chizuru】「――Let's go, Ayamine.\nAnd in exchange you will obey my orders.\nUnderstand?」\e
+
+//<0000033c> 【慧】「――えっ…\p…\p！？　榊…\p…\pが…\p…\p？！」\e
+<0000033c> 【Kei】「――Eh...\p...\p!? Sakaki...\p...\pyou...\p...\p!?」\e
+
+//<0000033d> 【千鶴】「――御剣は第一隔壁のＳ－１１設置。\nいいわね？」\e
+<0000033d> 【Chizuru】「――Mitsurugi, set your S-11 on the 1st barrier.\nUnderstood?」\e
+
+//<0000033e> 【冥夜】「――まて榊っ！　――それはどういう事だ！？」\e
+<0000033e> 【Meiya】「――Wait, Sakaki!\b――What is the meaning of this!?」\e
+
+//<00001e59> 【千鶴】「どうもこうもないわ。\n最初から私が行くつもりだったのよ」\e
+<00001e59> 【Chizuru】「There's no meaning.\nI was always planning on going myself.」\e
+
+//<00000340> 【冥夜】「――なんだと！？　それでは私の策とは――」\e
+<00000340> 【Meiya】「――What!? But that is not what I――」\e
+
+//<00000341> 【千鶴】「――確かにあなたのプランは採用した。\n…\p…\pでも、\p人選は私が決める」\e
+<00000341> 【Chizuru】「――I am using your plan.\n...\p...\pbut I'm deciding who carries it out.」\e
+
+//<00000342> 【冥夜】「――しかし…\p…\pッ！」\e
+<00000342> 【Meiya】「――But...\p...\p!」\e
+
+//<00000343> 【千鶴】「――御剣…\p…\pあなたは私を、\p認めてくれているのよね…\p…\p？」\e
+<00000343> 【Chizuru】「――Mitsurugi...\p...\pyou accept me, don't you...\p...\p?」\e
+
+//<00001e5b> 【冥夜】「ぬッ…\p…\p！？」\e
+<00001e5b> 【Meiya】「Uuu...\p...\p!?」\e
+
+//<00001e5c> 【千鶴】「私がこの部隊の指揮官に相応しいと、\p認めてくれているのよね？」\e
+<00001e5c> 【Chizuru】「You accept me as a suitable commander for this unit, don't you?」\e
+
+//<00000346> 【冥夜】「――っ…\p…\p！」\e
+<00000346> 【Meiya】「――...\p...\p!」\e
+
+//<00000347> 【千鶴】「――それに、\pさっき彩峰が言った、\p凄乃皇の安全が最優先だって話だけど…\p…\p」\e
+<00000347> 【Chizuru】「――Besides,\p Ayamine was right about keeping the Susano'o safe...\p...\p」\e
+
+//<00001e5e> 【千鶴】「特に第二隔壁の開放が作戦成功の必須条件である以上、\pそこに最高性能機を当てるのは正論よね？」\e
+<00001e5e> 【Chizuru】「And since opening the 2nd barrier is absolutely critical to our success,\p doesn't it make sense to have the best TSF do that?」\e
+
+//<0000034a> 【冥夜】「…\p…\p…\p…\p」\n
+<0000034a> 【Meiya】「...\p...\p...\p...\p」\n
+
+//<0000034b> 【慧】「榊…\p…\p」\e
+<0000034b> 【Kei】「Sakaki...\p...\p」\e
+
+//<0000034d> 【千鶴】「――私と彩峰は『主広間』入り口の爆破作業。\n御剣は第一隔壁の爆破準備作業」\e
+<0000034d> 【Chizuru】「――Ayamine and I will prepare the bombs at the Main Hall entrance.\nMitsurugi, you prepare the bomb at the 1st barrier.」\e
+
+//<0000034e> 【千鶴】「――作業完了後、\p私と彩峰は『横坑』へ後退。\n但し第一隔壁の閉鎖は、\p凄乃皇の安全を最優先とし、\p状況を見て判断する事」\e
+<0000034e> 【Chizuru】「――Once we're done,\p Ayamine and I will retreat into the Drift.\nBut we'll decide when to close the 1st barrier later,\p and do it based on what will keep the Susano'o safe.」\e
+
+//<00001e60> 【千鶴】「…\p…\pこれは命令よ。\nふたりとも、\pいいわね？」\e
+<00001e60> 【Chizuru】「...\p...\pthis is an order.\nDo you both understand?」\e
+
+//<00000351> 【冥夜】「――了…\p解ッ！！」\n
+<00000351> 【Meiya】「――Copy...\p...\pthat!!」\n
+
+//<00000352> 【慧】「――了解ッ！」\e
+<00000352> 【Kei】「――Copy that!」\e
+
+//<00000354> 【千鶴】「――御剣…\p…\p」\e
+<00000354> 【Chizuru】「――Mitsurugi...\p...\p」\e
+
+//<00000355> 【冥夜】「なんだ…\p…\p？」\e
+<00000355> 【Meiya】「What...\p...\p?」\e
+
+//<00001e62> 【千鶴】「私達がＢＥＴＡと初めて戦った時のこと、\p憶えてる…\p…\p？」\e
+<00001e62> 【Chizuru】「Do you remember the first time we fought the BETA...\p...\p?」\e
+
+//<00001e63> 【冥夜】「…\p…\pトライアルの時であろう…\p…\p？\n憶えてはいるが…\p…\p何だ、\p藪から棒に…\p…\p」\e
+<00001e63> 【Meiya】「...\p...\pduring the trials...\p...\p?\nI do remember...\p...\pbut why do you bring this up...\p...\p?」\e
+
+//<00001e65> 【千鶴】「私が指揮する部隊ではね、\p白銀を助けに行くのは副隊長の仕事なのよ」\e
+<00001e65> 【Chizuru】「In my unit,\p it's the second-in-command's job to help Shirogane.」\e
+
+//<0000035a> 【冥夜】「――っ…\p…\p！？」\e
+<0000035a> 【Meiya】「――...\p...\p!?」\e
+
+//<00001e68> 【慧】「あの時…\p…\p私が行こうとしたら、\p御剣に怒られたね」\e
+<00001e68> 【Kei】「Back then...\p...\pI tried to go,\p but Mitsurugi wouldn't let me.」\e
+
+//<0000035d> 【冥夜】「…\p…\p…\p…\p」\e
+<0000035d> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00001e6b> 【慧】「…\p…\p今回は私から譲るよ」\e
+<00001e6b> 【Kei】「...\p...\pthis time I'll let you.」\e
+
+//<00002d4a> 【冥夜】「…\p…\p」\e
+<00002d4a> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00001e6e> 【千鶴】「――御剣…\p…\p。\nわかっているとは思うけど…\p…\p」\e
+<00001e6e> 【Chizuru】「――Mitsurugi...\p...\p\nI'm sure you know, but...\p...\p」\e
+
+//<00001e70> 【冥夜】「――ああ、\p心得ている。\nタケルには余計な負担をかけぬ様、\p配慮する」\e
+<00001e70> 【Meiya】「――Yes,\p I understand.\nI will take pains not to worry Takeru needlessly.」\e
+
+//<0000231d> 【千鶴】「万が一の時には…\p…\pアレを使って。\n宜しく頼むわね」\e
+<0000231d> 【Chizuru】「If it comes down to it...\p...\puse it.\nTake care of him.」\e
+
+//<0000231e> 【冥夜】「うん…\p…\p」\e
+<0000231e> 【Meiya】「Yes...\p...\p」\e
+
+//<00001e72> 【慧】「さすがだね、\p御剣。\n白銀のこと良くわかってる」\e
+<00001e72> 【Kei】「Not bad,\p Mitsurugi.\nYou really understand Shirogane.」\e
+
+//<00001e74> 【冥夜】「…\p…\p何を言う。\nそれはそなた達とて同じであろう…\p…\p？」\e
+<00001e74> 【Meiya】「...\p...\pwhat do you mean?\nDo you not all understand him equally well...\p...\p?」\e
+
+//<00001e76> 【千鶴】「…\p…\pまあね。\nあいつ…\p…\p鈍感なくせにわかりやすいから…\p…\p」\e
+<00001e76> 【Chizuru】「...\p...\ppretty much.\nHe's dense...\p...\pbut easy to read at the same time...\p...\p」\e
+
+//<00001e78> 【慧】「ホント、\p若造だね…\p…\p」\e
+<00001e78> 【Kei】「Indeed.\p So young...\p...\p」\e
+
+//<00000367> 【冥夜】「ふふふ…\p…\pまったく、\p揃いも揃って…\p…\p」\e
+<00000367> 【Meiya】「Huhuhu...\p...\pevery last one of us it seems...\p...\p」\e
+
+//<00001e7c> 【千鶴】「我が隊には物好きが多いわね」\e
+<00001e7c> 【Chizuru】「My unit is full of girls with weird taste.」\e
+
+//<00001e7e> 【慧】「ふふふ…\p…\p」\e
+<00001e7e> 【Kei】「Huhuhu...\p...\p」\e
+
+//<00001e80> 【千鶴】「――じゃあ…\p…\p行くわよ、\p彩峰」\e
+<00001e80> 【Chizuru】「――Okay...\p...\plet's go,\p Ayamine.」\e
+
+//<0000036d> 【慧】「――了解」\e
+<0000036d> 【Kei】「――Copy that.」\e
+
+//<00001e82> 【冥夜】「しっかり…\p…\pな…\p…\p！」\e
+<00001e82> 【Meiya】「Take care...\p...\p...\p...\p!」\e
+
+//<00001e85> 【千鶴】「…\p…\p…\p…\p」\e
+<00001e85> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00001e88> 【慧】「…\p…\p…\p…\p」\e
+<00001e88> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00000374> 【冥夜】「…\p…\p…\p…\p榊\n…\p…\p…\p…\p彩峰」\e
+<00000374> 【Meiya】「...\p...\p...\p...\pSakaki.\n...\p...\p...\p...\pAyamine.」\e
+
+//<00000378> 【冥夜】「…\p…\p…\p…\p頼むぞ…\p…\p」\e
+<00000378> 【Meiya】「...\p...\p...\p...\pplease...\p...\p」\e
+
+//<0000037b> 【冥夜】「…\p…\p私を嘘つきにしてくれるな…\p…\p…\p…\p」\e
+<0000037b> 【Meiya】「...\p...\pdo not make me a liar...\p...\p...\p...\p」\e
+

@@ -1,0 +1,2319 @@
+#FILENAME 7e9b8cd0
+#TYPE 3
+
+//<00000006> 【霞】「――各ＢＥＴＡ種の固有音源、\p震源共に反応なし…\p…\p」\e
+<00000006> 【Kasumi】「――No sound or vibration readings matching any BETA species...\p...\p」\e
+
+//<00000008> 【霞】「――『あ号標的』ブロック内にＢＥＴＡ群の存在は認められません」\e
+<00000008> 【Kasumi】「――No sign of any BETA inside the Primary Objective block.」\e
+
+//<00000009> 【武】「――了解！　準主砲発射態勢を維持！　――前進準備だ！」\e
+<00000009> 【Takeru】「――Copy that!\bKeep the cannon ready to fire! ――Moving forward!」\e
+
+//<0000000a> 【霞】「――わかりました」\e
+<0000000a> 【Kasumi】「――Understood.」\e
+
+//<0000000c> 【武】「…\p…\p…\p…\p」\e
+<0000000c> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000000d> ――どういう事だ…\p…\p。\e
+<0000000d> ――What does that mean...\p...\p?\e
+
+//<0000000e> 戦力の初期配備が無かったにしても、\pオレ達はこれだけ手間取ったんだぞ？\n増援を配備する時間は十分あったはずなのに…\p…\p。\e
+<0000000e> Even if there weren't any there to begin with,\p we've been stuck here for ages.\nThey've had plenty of time to divert reinforcements in there...\p...\p\e
+
+//<0000000f> …\p…\pオリジナルハイヴだぜ…\p…\p？\nＢＥＴＡ地球侵攻の総司令部なんだろ…\p…\pここは？\e
+<0000000f> ...\p...\pthis is the Original Hive...\p...\p\nThe central headquarters for all BETA on Earth...\p...\pright?\e
+
+//<00000010> こっちにとっては好都合だけど…\p…\p。\e
+<00000010> It's convenient for us, but still...\p...\p\e
+
+//<00000012> 【霞】「――隔壁開放率４０％…\p…\p１４０以内に通過可能です」\e
+<00000012> 【Kasumi】「――Barrier 40% open...\p...\pwe will be able to enter in 140 seconds.」\e
+
+//<000001bd> 【武】「――委員長ッ！」\e
+<000001bd> 【Takeru】「――Class Rep!」\e
+
+//<000001bf> 【千鶴】「――どうしたッ！？」\e
+<000001bf> 【Chizuru】「――What is it!?」\e
+
+//<00000017> 【武】「――おい…\p…\p凄いノイズだぞ！？　大丈夫か！？」\e
+<00000017> 【Takeru】「――Hey...\p...\pwhat's with all that static!?\bAre you okay!?」\e
+
+//<000001c2> 【千鶴】「――Ｓ－１１の至近爆発でアンテナをやられたのだ！」\e
+<000001c2> 【Chizuru】「――The point-blank S-11 explosion got our antennae!」\e
+
+//<0000001a> ――そうか！　ラザフォード場の防護が無かったから…\p…\p！\e
+<0000001a> ――That's right! There was no Rutherford Field protecting them this time...\p...\p!\e
+
+//<0000001b> 【武】「――あと１００で『あ号標的』ブロックに侵入する！」\e
+<0000001b> 【Takeru】「――We're entering the Primary Objective block in 100 seconds!」\e
+
+//<0000001c> 【武】「情報通りブロック内にＢＥＴＡ群はいない！\nあとはぶっ放すだけだ、\pそろそろ後退してこい！」\e
+<0000001c> 【Takeru】「There are no BETA inside, just as we expected!\nAll we have to do now is shoot,\p so start retreating!」\e
+
+//<000001c5> 【千鶴】「――必ず追いつく！　主砲の発射を優先しろ！」\e
+<000001c5> 【Chizuru】「――We'll catch up! Focus on firing that cannon!」\e
+
+//<0000001f> 【武】「――わかってる！隔壁は開けっ放しにしておく――急げよ！」\e
+<0000001f> 【Takeru】「――I know! I'll leave the barrier open for you――So hurry!」\e
+
+//<000001c8> 【千鶴】「――了解ッ！」\e
+<000001c8> 【Chizuru】「――Copy that!」\e
+
+//<000001cc> ――よし、\pちゃんと後退し始めたな…\p…\p！\e
+<000001cc> ――Good,\p they've finally started retreating...\p...\p!\e
+
+//<000001cd> しかし、\p『横坑』の戦いも相当激しそうだったな。\nあの委員長がいつもの口調じゃ無くなるぐらいだし…\p…\p。\e
+<000001cd> Still,\p fighting in the Drift must be pretty tough.\nEven Class Rep didn't sound like her normal self...\p...\p\e
+
+//<000001ce> みんな…\p…\p無茶すんなよ…\p…\p？　\e
+<000001ce> None of you guys do anything reckless now...\p...\pokay...\p...\p!?\e
+
+//<00000025> 【武】「――霞！　充填完了予測は！？」\e
+<00000025> 【Takeru】「――Kasumi! How long until we're fully charged!?」\e
+
+//<00000026> 【霞】「――約３００です」\e
+<00000026> 【Kasumi】「――About 300 seconds.」\e
+
+//<00000027> ――隔壁通過までは１分半――『あ号標的』ブロックに侵入してから砲撃まで３分半…\p…\p！　あいつらなら絶対間に合う！\e
+<00000027> ――One and a half minutes until we can go through――Three and a half until we can fire the cannon at the Primary Objective...\p...\p! Those guys are sure to make it in time!\e//lolno ~IX
+
+//<00000028> 【武】「――純夏は――純夏の様子はどうだ！？」\e
+<00000028> 【Takeru】「――Sumika――How's Sumika doing!?」\e
+
+//<0000002a> 【霞】「――状態は非常に安定しています。\nバイタルレベルも定常値です」\e
+<0000002a> 【Kasumi】「――She's extremely stable.\nHer vital signs are all normal.」\e
+
+//<0000002b> 【武】「――そうか！」\e
+<0000002b> 【Takeru】「――Yes!」\e
+
+//<0000002c> 【霞】「みんなが私をやすませてくれたから…\p…\pそう言っています」\e
+<0000002c> 【Kasumi】「She says...\p...\pthat's because everyone let her rest for a while.」\e
+
+//<0000002d> 【武】「ああ、\pそうだな。\nあいつらが必死に戦ってくれたおかげだ。\n…\p…\pでも、\pおまえもよく頑張ったぞ」\e
+<0000002d> 【Takeru】「Yeah,\p that'd do it.\nThose guys fought really hard.\n...\p...\pbut you did a lot too.」\e
+
+//<0000002e> 【武】「――あと数分で…\p…\pこの戦いも終わる。\nもう少しだから頼むな――って伝えてくれ！」\e
+<0000002e> 【Takeru】「――Only a few more minutes...\p...\pbefore we can end this war.\nTell her to――Hang in there just a little longer!」\e
+
+//<0000002f> 【霞】「はい…\p…\p」\e
+<0000002f> 【Kasumi】「Okay...\p...\p」\e
+
+//<00000033> ――来た！\e
+<00000033> ――Here we go!\e
+
+//<00000034> 【武】「――微速前進０．５！　『あ号標的』ブロックへの侵入を開始する！」\e
+<00000034> 【Takeru】「――Move forward at 0.5!\bIt's time to enter the Primary Objective block!」\e//guessing units again, still feel it's wrong somehow ~IX //switched to unitless until someone has a better idea ~IX
+
+//<00000035> 【霞】「――了解」\e
+<00000035> 【Kasumi】「――Copy that.」\e
+
+//<00000039> 【武】「――警戒怠るな…\p…\p念には念を…\p…\pだ！」\e
+<00000039> 【Takeru】「――Don't let your guard down...\p...\pwe need to be extra careful now...\p...\p!」\e
+
+//<0000003b> 【霞】「――はい」\e
+<0000003b> 【Kasumi】「――Yes.」\e
+
+//<0000003d> 【武】「…\p…\p…\p…\p」\e
+<0000003d> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000003e> とはいっても、\p主砲以外に残された武装は１５００発程度の３６ｍｍと、\p脱出を想定した３２発の大型ミサイルだけだ。\e
+<0000003e> Although the only weapons we have left other than the cannon are 1500 36mm rounds and the 32 missiles set aside for our escape.\e
+
+//<0000003f> いざという時には、\p負荷覚悟でラザフォード場の完全な防御力に頼るしかない。\e
+<0000003f> We'll have to rely on the Rutherford Field to protect us from whatever might happen.\e
+
+//<00000040> フルチャージなら１０％のマージンが出る。\nその出力消費内に収まれば…\p…\pオレ達の勝ちだ！！\e
+<00000040> Being at full charge gives us 10% extra to work with.\nIf we can just avoid using more than that...\p...\pwe'll win!!\e
+
+//<000001d0> いよいよ…\p…\pこの忌まわしい戦いに決着をつける時が来た…\p…\p！\e
+<000001d0> It's finally time...\p...\pto put an end to this horrible war...\p...\p!\e
+
+//<000001d1> 人類の勝利を信じて戦った人達や、\p今も戦い続けている人達…\p…\pその全ての思いに応える時が来た…\p…\p。\e
+<000001d1> It's time to answer the prayers...\p...\pof everyone who fought so hard, believing in humanity's victory...\p...\p\e
+
+//<000001d2> そして…\p…\pオレが巻き込んでしまった人達に報いるためにも…\p…\pこの戦いを終わらせるんだ！\e
+<000001d2> And...\p...\pI'm also going to end this war...\p...\pin order to repay all the innocent people I hurt!\e
+
+//<000001d4> そして…\p…\pオレを『因果導体』にした原因を見つけ出し、\p世界を修復するんだ！\e
+<000001d4> And then...\p...\pI'm going to find out what made me a causality conductor,\p and repair the worlds!\e
+
+//<00000051> 【霞】「――『あ号標的』確認…\p…\p１２時方向、\p距離５４００」
+<00000051> 【Kasumi】「――Primary Objective confirmed...\p...\ptwelve o'clock,\p 5400 meters away.」
+
+//<00001997> \r
+<00001997> \r
+
+//<00000052> 【霞】「――砲撃開始地点まで距離２２０」
+<00000052> 【Kasumi】「――220 meters to firing point.」
+
+//<0000199a> \r
+<0000199a> \r
+
+//<00000055> 【武】「――ッ！？」\e
+<00000055> 【Takeru】「――!?」\e
+
+//<0000005a> 【武】「…\p…\pあれが…\p…\p『あ号標的』…\p…\p！」\e
+<0000005a> 【Takeru】「...\p...\pthat's...\p...\pthe Primary Objective...\p...\p!?」\e
+
+//<0000005b> ――シミュレーターじゃ細かい形まで再現できて無かった…\p…\p本物の『あ号標的』…\p…\p！\e
+<0000005b> ――In the simulator they couldn't show what it really looked like...\p...\pbut that's the real thing...\p...\p!\e
+
+//<0000005c> あれが…\p…\p人類の敵…\p…\p！　あいつが人類を…\p…\pここまで追いつめたのか…\p…\p！！\e
+<0000005c> That's...\p...\phumanity's enemy...\p...\p! That's the thing...\p...\pwhich has been pushing humanity toward the brink of destruction...\p...\p!!\e//lit is closer to "pushing into a corner" I guess
+
+//<0000005e> 【霞】「――！」\e
+<0000005e> 【Kasumi】「――!」\e
+
+//<00000060> 【武】「――どうした…\p…\p霞！？」\e
+<00000060> 【Takeru】「――What is it...\p...\pKasumi!?」\e
+
+//<00000061> 【霞】「――第二隔壁が…\p…\p閉まり始めています…\p…\p！！」\e
+<00000061> 【Kasumi】「――The 2nd barrier...\p...\pis closing...\p...\p!!」\e
+
+//<00000062> 【武】「――えッ？」\e
+<00000062> 【Takeru】「――Eh?」\e
+
+//<0000006b> 【霞】「――しかも…\p…\p凄い早さです…\p…\p！！」\e
+<0000006b> 【Kasumi】「――And...\p...\pincredibly quickly...\p...\p!!」\e
+
+//<0000006d> 【武】「――なにッ！？　――装置の遠隔制御はッ！？」\e
+<0000006d> 【Takeru】「――What!? ――What about the remote control!?」\e
+
+//<0000006f> 【霞】「――開放剤の間歇注入続いています…\p…\pシステムは正常です…\p…\p！」\e
+<0000006f> 【Kasumi】「――The opening chemical is being injected...\p...\pthe system is functioning normally...\p...\p!」\e
+
+//<00000072> 【武】「――バカなッ！？　――みんなを急がせ――ッ」\e
+<00000072> 【Takeru】「――Impossible!! ――Tell everyone to――!」\e
+
+//<00000075> ――ッ！\e
+<00000075> ――!\e
+
+//<00000077> 【武】「――くそッ！　――敵の攻撃かッ！？」\e
+<00000077> 【Takeru】「――Dammit! ――Is it attacking us!?」\e
+
+//<00000079> 【霞】「――『あ号標的』から触手状の物体が延びて来ていますっ…\p…\p！！」\e
+<00000079> 【Kasumi】「――Tentacles are extending toward us from the Primary Objective...\p...\p!!」\e
+
+//<0000007a> ――なにッ！？\e
+<0000007a> ――What!?\e
+
+//<0000007b> 【霞】「――接触まで約２０秒…\p…\p！」\e
+<0000007b> 【Kasumi】「――Twenty seconds until contact...\p...\p!」\e
+
+//<0000007c> ――やっぱり『あ号標的』は…\p…\pＢＥＴＡだったのか…\p…\p！？\e
+<0000007c> ――So the Primary Objective...\p...\pis a type of BETA...\p...\p!?\e
+
+//<0000007d> 【武】「――くそッ！」\e
+<0000007d> 【Takeru】「――Dammit!」\e
+
+//<00000082> 【霞】「――全弾命中…\p…\pですが目標健在――迎撃失敗です…\p…\p！」\e
+<00000082> 【Kasumi】「――All direct hits...\p...\pbut the objective is intact――The attacks failed...\p...\p!」\e
+
+//<00000085> ――仕方ねえッ！\e
+<00000085> ――No choice!\e
+
+//<00000086> 【武】「――あいつはラザフォード・フィールドで食い止めるッ！」\e
+<00000086> 【Takeru】「――Stop him with the Rutherford Field!」\e
+
+//<00000087> ――頼むぞ純夏ッ！\e
+<00000087> ――Please, Sumika!\e
+
+//<0000008a> 【霞】「――第二隔壁…\p…\p完全閉鎖…\p…\p！」\e
+<0000008a> 【Kasumi】「――2nd barrier...\p...\pis completely closed...\p...\p!」\e
+
+//<0000008d> 【武】「――なっ…\p…\pなんだとッ！！」\e
+<0000008d> 【Takeru】「――Wh-...\p...\pwhat!!?」\e
+
+//<00000090> 【霞】「――次元境界面に敵接触…\p…\p！」\e
+<00000090> 【Kasumi】「――Enemy contacting the dimensional boundary field...\p...\p!」\e
+
+//<00000093> 【武】「――そっちはいい！　――開閉装置システムチェック急げッ！！」\e
+<00000093> 【Takeru】「――Forget that!\b――Do a systems check on the chemical tank!!」\e
+
+//<00000094> 【武】「　――主砲発射シーケンスに移行するぞッ！　――早く隔壁を…\p…\pッ」\e
+<00000094> 【Takeru】「――Start the main cannon firing sequence!\b――And get that barrier o-...\p...\p!」\e
+
+//<00000096> 【霞】「――っ！？」\e
+<00000096> 【Kasumi】「――!?」\e
+
+//<00000097> 【武】「――霞っ！　――早くっ！」\e
+<00000097> 【Takeru】「――Kasumi! ――Hurry!」\e
+
+//<0000009b> ――ばッ――バカな…\p…\pッ！？　ラザフォード場が消失し――！！？\e
+<0000009b> ――N――No way...\p...\p!? The Rutherford Field is gone――!!?\e
+
+//<000000a0> 【武】「――ぐぁぁぁぁッ！！」\n【霞】「――うぅッ！」
+<000000a0> 【Takeru】「――Guwaaaaaaaaa!!」\n【Kasumi】「――Uuu!」
+
+//<000019b5> \r
+<000019b5> \r
+
+//<000000a3> ――くっそぉぉぉ！！\e
+<000000a3> ――Damn iiiiiit!!\e
+
+//<000000a4> 【武】「――霞！！　――大丈夫か！？」\e
+<000000a4> 【Takeru】「――Kasumi!! ――You okay!?」\e
+
+//<000000a6> 【霞】「…\p…\p…\p…\p」\e
+<000000a6> 【Kasumi】「...\p...\p...\p...\p」\e
+
+//<000000a7> 【武】「――かすっ――！！？」\e
+<000000a7> 【Takeru】「――Kasu――!!?」\e
+
+//<000000a8> ――！\e
+<000000a8> ――!\e
+
+//<000000aa> 【武】「…\p…\p…\p…\pう…\p…\pうそ…\p…\pだろッ…\p…\p！？」\e
+<000000aa> 【Takeru】「...\p...\p...\p...\py-...\p...\pyou're kidding...\p...\pright...\p...\p!?」\e
+
+//<000000af> 【武】「――なッ…\p…\pなんだこりゃあぁッ…\p…\p！？」\e
+<000000af> 【Takeru】「――Wha-...\p...\pwhat the hell is this...\p...\p!?」\e
+
+//<000000b2> 【霞】「――ああああああああぁぁっ！？」\n
+<000000b2> 【Kasumi】「――Aaaaaaaaaaaaaaaaaaaa!?」\n
+
+//<000000b4> 【武】「――霞どうしたっ！？　霞いぃッ！！」\e
+<000000b4> 【Takeru】「――Kasumi, what happened!? Kasumiiiii!!」\e
+
+//<000000b8> 【武】「――ぐぅッ！？」
+<000000b8> 【Takeru】「――Uuu!?」
+
+//<000019b8> \r
+<000019b8> \r
+
+//<000000ba> ――あの触手に…\p…\pエネルギーを吸い取られているの…\p…\pかッ…\p…\p！？\e
+<000000ba> ――Those tentacles...\p...\pare sucking up...\p...\pour energy...\p...\p!?\e
+
+//<000000bd> 【霞】「――ああああああああぁぁっ！？」\n
+<000000bd> 【Kasumi】「――Aaaaaaaaaaaaaaaaaaaa!?」\n
+
+//<000000be> 【武】「――霞ッ！？」\e
+<000000be> 【Takeru】「――Kasumi!?」\e
+
+//<000000c0> 【霞】「――いやだぁぁぁぁぁッ！！」
+<000000c0> 【Kasumi】「――Nooooooooooo!!」
+
+//<000019d4> \r
+<000019d4> \r
+
+//<000000c2> 【霞】「――タケルちゃんたすけてェッッ！！！」\n
+<000000c2> 【Kasumi】「――Takeru-chan, save meeeee!!!」\n
+
+//<000000c6> 【武】「――くっそォ！！」\e
+<000000c6> 【Takeru】「――Damn iiit!!」\e
+
+//<000000c7> ――こうなりゃ仕方ねえッ――腕で叩き抜いてやるッ！！\e
+<000000c7> ――No options left――I'll have to pull these off us with the arms!!\e
+
+//<000000c9> 【武】「――この野郎ォォォォォッ！！」\e
+<000000c9> 【Takeru】「――You bastaaaaaaaaaaard!!」\e
+
+//<000000cc> 【武】「――ッ！？」\e
+<000000cc> 【Takeru】「――!?」\e
+
+//<000000cf> ――腕が――２７００ｍｍが動かねえ…\p…\pッ！！\e
+<000000cf> ――The arms――The 2700mm's won't move...\p...\p!!\e
+
+//<000000d0> ――まさか…\p…\p兵装のコントロールが…\p…\p乗っ取られたのか…\p…\p！？\e
+<000000d0> ――There's no way...\p...\pthat thing took over weapons control...\p...\pdid it...\p...\p!?\e
+
+//<000000d2> ――！\e
+<000000d2> ――!\e
+
+//<000000d3> 【武】「――霞っ！　――純夏の状態はどうなってるッ！？」\e
+<000000d3> 【Takeru】「――Kasumi! ――What's Sumika's status!?」\e
+
+//<000000d5> ――そうだった！　霞も何か様子が――\e
+<000000d5> ――That's right! Kasumi's also been acting a little――\e
+
+//<000000d6> 【霞】「――存在、\p認識、\p持っている、\p正しい、\p照合、\p情報、\p転送…\p…\p」\e
+<000000d6> 【Kasumi】「――Existence,\p acknowledge,\p possession,\p correct,\p comparison,\p information,\p transfer...\p...\p」\e
+
+//<000000d8> 【武】「…\p…\pかっ…\p…\p霞…\p…\p？」\e
+<000000d8> 【Takeru】「...\p...\pKa-...\p...\pKasumi...\p...\p?」\e
+
+//<000000d9> 【霞】「存在、\p形式、\p霞、\p否定…\p…\p」\e
+<000000d9> 【Kasumi】「Existence,\p form,\p Kasumi,\p deny...\p...\p」\e
+
+//<000000db> ――ど…\p…\pどうしちまったんだよ！？　何が起きてるんだ…\p…\p！？\e
+<000000db> ――Wh-...\p...\pwhat the hell!? What's going on...\p...\p!?\e
+
+//<000000dc> 【武】「――霞ッ！　しっかりしろッ！！　霞ぃ！！」\e
+<000000dc> 【Takeru】「――Kasumi! Pull yourself together! Kasumiii!!」\e
+
+//<000000dd> 【霞】「存在の、\p形式、\p霞、\p該当、\p否定…\p…\p」\e
+<000000dd> 【Kasumi】「Existence,\p form,\p matching,\p Kasumi,\p denied...\p...\p」\e
+
+//<000000de> 【武】「…\p…\p…\p…\p…\p」\e
+<000000de> 【Takeru】「...\p...\p...\p...\p...\p」\e
+
+//<000000df> 【霞】「存在の、\p認識、\p持っている、\p正しい　照合し　情報を、\p転送…\p…\p」\e
+<000000df> 【Kasumi】「Awareness,\p of existence,\p acknowledge,\p transfer information,\p comparison,\p proper...\p...\p」\e
+
+//<000000e0> ――なんだ？　…\p…\pだんだん片言じゃなくなってきてるぞ…\p…\p？\e
+<000000e0> ――What? ...\p...\pit's becoming less and less fragmented...\p...\p\e
+
+//<000000e2> …\p…\p…\p…\pまさか…\p…\pこれは…\p…\p…\p…\p…\p…\p！？\e
+<000000e2> ...\p...\p...\p...\pthere's no way...\p...\pthis is...\p...\p...\p...\p...\p...\p!?\e
+
+//<000000e3> 【武】「――ッ！？」\e
+<000000e3> 【Takeru】「――!?」\e
+
+//<000000e6> 【武】「…\p…\p…\p…\p」\e
+<000000e6> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000000e7> ――純夏が…\p…\pＢＥＴＡとコミュニケーションを取っているのか…\p…\p？\e
+<000000e7> ――Did Sumika...\p...\pestablish communication with the BETA...\p...\p?\e
+
+//<000000e9> 【霞】「存在の、\p証明、\p認識し、\p記録　持っている、\p正しい形式　照合　情報を転送…\p…\p」\e
+<000000e9> 【Kasumi】「Proof of existence,\p acknowledge,\p in possession of records,\p transfer information,\p properly formed comparison...\p...\p」\e
+
+//<000000ea> いや…\p…\p純夏が読みとったＢＥＴＡの意志が…\p…\p霞を通じて声になってるのかも知れない…\p…\pッ！\e
+<000000ea> No...\p...\pmaybe Sumika's reading the BETA's will...\p...\pand using Kasumi to voice it...\p...\p!\e
+
+//<000000eb> 【武】「…\p…\p…\p…\p」\e
+<000000eb> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000000ec> この手詰まりの状況だ――試す価値はある…\p…\p。\e
+<000000ec> In this desperate situation――It's worth a shot...\p...\p\e
+
+//<000000ed> 【霞】「存在の証明を認識した、\p記録を持っている、\p正しい形式を照合　情報を転送…\p…\p」\e
+<000000ed> 【Kasumi】「Acknowledged proof of existence,\p in possession of records,\p transfer information after properly formed comparison...\p...\p」\e
+
+//<000000ef> 【武】「…\p…\p何者…\p…\pだ…\p…\p？」\e
+<000000ef> 【Takeru】「...\p...\pwhat...\p...\pare you...\p...\p?」\e
+
+//<000000f0> 【霞】「…\p…\p…\p…\p固有の上位存在であり…\p…\p個ではない」\e
+<000000f0> 【Kasumi】「...\p...\p...\p...\pa particular higher existence...\p...\pnot an individual.」\e
+
+//<000000f1> …\p…\pなんだ…\p…\p？　何言ってるんだ？\e
+<000000f1> ...\p...\pwhat...\p...\p? What does that mean?\e
+
+//<000000f2> 【霞】「存在の証明を認識した、\p上位の存在は記録を持っている、\p正しい形式を照合し情報を転送せよ」\e
+<000000f2> 【Kasumi】「Acknowledged proof of existence,\p the higher existence is in possession of records,\p transfer information matching the proper form.」\e
+
+//<000000f3> 【武】「――！」\e
+<000000f3> 【Takeru】「――!」\e
+
+//<000000f4> どうやら上位の存在っていうのが『あ号標的』の事らしいな。\e
+<000000f4> Looks like "higher existence" means the Primary Objective.\e
+
+//<000000f5> …\p…\pそれにかなり普通の日本語になってる。\n霞か純夏が、\p意訳になれてきたのかも知れないな。\e
+<000000f5> ...\p...\pand it's slowly learning proper Japanese.\nKasumi or Sumika must be getting used to the translation process.\e
+
+//<000000f6> 【武】「おい、\pおまえは上位存在なのか？！」\e
+<000000f6> 【Takeru】「Hey,\p are you the higher existence!?」\e
+
+//<000000f7> 【霞】「肯定する。おまえ…\p…\p認識」\e
+<000000f7> 【Kasumi】「Affirm.\nYou...\p...\packnowledged.」\e
+
+//<000000f8> ――よし、\p行けるぞ！\e
+<000000f8> ――Okay,\p now we're getting somewhere!\e
+
+//<000000f9> 【武】「――おまえはなぜ地球を侵略するんだ！　なぜオレ達と戦う！？」\e
+<000000f9> 【Takeru】「――Why did you invade Earth!?\bWhy are you fighting us!?」\e
+
+//<000000fa> 【霞】「地球…\p…\p該当ない　オレ…\p…\p該当ない」\e
+<000000fa> 【Kasumi】「Earth...\p...\pno match.\bUs...\p...\pno match.」\e//this sounded like 'Earth is no match for us' instead of 'Earth = no match', so going with this crappy workaround until someone comes up with a better idea - Sheeta //I can't really see it like that, so far it's been clear the Big Daddy BETA is just making queries on his terribly coded database - kViN
+
+//<000000fb> 【武】「――地球はこの惑星の事だ！　なぜ人類と戦う！？」\e
+<000000fb> 【Takeru】「――Earth means this planet!\bWhy are you fighting humanity!?」\e
+
+//<000000fc> 【霞】「地球…\p…\p認識。\n侵略…\p…\p該当ない。\n戦う…\p…\p該当ない。\n人類…\p…\p該当ない」\e
+<000000fc> 【Kasumi】「Earth...\p...\packnowledged.\nInvade...\p...\pno match.\nFighting...\p...\pno match.\nHumanity...\p...\pno match.」\e
+
+//<000000fd> ――何だこいつっ！？　ふざけてるのか！？\e
+<000000fd> ――What's with this guy!? Is he fucking with me!?\e
+
+//<000000fe> 【武】「――おまえは地球を攻撃しに来たんだろッ？！　――今だってオレと戦ったじゃねえかッ！」\e
+<000000fe> 【Takeru】「――Didn't you come here to attack Earth!?\n――Aren't you fighting me right now!?」\e
+
+//<000000ff> 【霞】「攻撃…\p…\p該当ない。\nオレ…\p…\p認識。\n戦った…\p…\p暫定認識」\e
+<000000ff> 【Kasumi】「Attack...\p...\pno match.\nMe...\p...\packnowledged.\nFighting...\p...\ptentatively acknowledged.」\e
+
+//<00000100> ――こいつバカなんじゃねえか！？\e
+<00000100> ――Is this guy stupid!?\e
+
+//<00000101> 【武】「――おまえが、\pさっきからオレ達にしてる事が攻撃だよッ！　オレがその前におまえにした事も攻撃――そのふたつを合わせて戦いだよッ！」\e
+<00000101> 【Takeru】「――You've been attacking us since we got here! And what I did to you just now was an attack――Put those together and you have fighting!」\e
+
+//<00000102> 【霞】「戦い…\p…\p暫定認識。\n攻撃…\p…\p該当ない」\e
+<00000102> 【Kasumi】「Fighting...\p...\ptentatively acknowledged.\nAttack...\p...\pno match.」\e
+
+//<00000169> 【霞】「上位存在は存在に対して重大災害の防止策を実施した」\e
+<00000169> 【Kasumi】「The higher existence has enacted preventative measures against great disaster from your existence.」\e//intense negotiation with sheeta determined using "your" would make things slightly clearer without misrepresenting any of what the Primary Objective means with all these vague terms ~IX
+
+//<0000016a> 【霞】「存在は存在の一部を高速で分離し上位存在の一部に接触した」\e
+<0000016a> 【Kasumi】「A part of your existence separated from your existence and moved at high speed and contacted the higher existence.」\e
+
+//<00000104> 【武】「――上位存在も高速で接触しただろうッ！　それが攻撃なんだよ！」\e
+<00000104> 【Takeru】「――The higher existence "contacted" our existence at high speed too! That was an attack!」\e
+
+//<00000105> クソ…\p…\p早くしないとエネルギーを全部持って行かれちまうッ！\e
+<00000105> Dammit...\p...\pif I don't do something fast we'll lose all our energy!\e
+
+//<00000106> 【霞】「攻撃…\p…\p認識。\n上位存在の攻撃は重大災害の防止に必要。\n戦いは重大災害の防止に必要」\e
+<00000106> 【Kasumi】「Attack...\p...\packnowledged.\nThe higher existence needed to attack to prevent great disaster.\nFighting was necessary to prevent great disaster.」\e
+
+//<00000107> 【武】「――何が重大災害の防止だ――この侵略者めッ！\nおまえの一部を接触させるなッ！」\e
+<00000107> 【Takeru】「――Prevent what great disaster!?\b――You're the invaders!\p Don't "contact" us with parts of you!」\e
+
+//<00000108> 【霞】「否定する。重大災害は未然に防ぐ規定。\n侵略者…\p…\p該当ない」\e
+<00000108> 【Kasumi】「Deny.\bGreat disaster is to be prevented in advance.\nInvader...\p...\pno match.」\e
+
+//<00000109> 【武】「侵略者っていうのはおまえの事だよッ！　この星のオレ達人類を殺しただろッ！　だから存在達と戦争になったんだ！」\e
+<00000109> 【Takeru】「By invader I mean you!\nYou've been killing us, humanity, on this planet!\nThat's why a war between existences started!」\e
+
+//<0000010a> 【霞】「殺す…\p…\p該当ない。\n人類…\p…\p認識。\n戦争…\p…\p該当ない」\e
+<0000010a> 【Kasumi】「Killing...\p...\pno match.\nHumanity...\p...\packnowledged.\nWar...\p...\pno match.」\e
+
+//<0000010b> 【武】「――殺すっていうのは生命を奪う事だ。\n戦争は戦いを長い期間やる事だ！」\e
+<0000010b> 【Takeru】「――Killing means taking away life.\nA war is fighting that goes on for a long time!」\e
+
+//<0000010c> 【霞】「殺す…\p…\p認識。\n戦争…\p…\p認識。\n上位存在が地球で殺すを行った事実はない」\e
+<0000010c> 【Kasumi】「Killing...\p...\packnowledged.\nWar...\p...\packnowledged.\nThe claim that the higher existence performed killing on Earth is untrue.」\e//lit. "there is no truth that"; this "claim" phrasing is entirely my tentatively preferred adaptation, there is no word meaning "claim" in the JP ~IX
+
+//<0000010d> ――そうだ…\p…\pＢＥＴＡは人類を生命体だって思ってないんだった…\p…\p！！\e
+<0000010d> ――That's right...\p...\pthe BETA don't see humanity as life forms...\p...\p!!\e
+
+//<0000010e> 【武】「…\p…\p…\p…\pッ」\e
+<0000010e> 【Takeru】「...\p...\p...\p...\p!」\e
+
+//<0000010f> くそ…\p…\pもっと冷静になれ！　リーディングは思考を読んでいるんだ…\p…\p嘘はつけないはずだろ！\e
+<0000010f> Dammit...\p...\pcalm down!\bThey're reading its thoughts here...\p...\pit shouldn't be able to lie to me!\e
+
+//<00000171> 【武】「――くっ…\p…\p！？」\e
+<00000171> 【Takeru】「――Uu...\p...\p!?」\e
+
+//<00000172> …\p…\p質問のやり方を良く考えるんだ…\p…\p！！\e
+<00000172> ...\p...\pthink hard about what to ask...\p...\p!!\e
+
+//<00000173> ――うまくいけば…\p…\p何かこの状況を打開する手がかりが掴めるかも知れないんだ…\p…\p！\e
+<00000173> ――If I do this right...\p...\pI might find something to resolve the situation with...\p...\p!\e
+
+//<00000174> とにかく、\pもっと単純で簡潔に質問するんだ！　ひとつひとつ順番に！\e
+<00000174> Anyway,\p I need to ask it something simple and concise! One thing at a time!\e
+
+//<00000175> 【武】「…\p…\pおまえは何の目的で地球に来た？！」\e
+<00000175> 【Takeru】「...\p...\pwhat was your objective in coming to Earth!?」\e
+
+//<00000113> 【霞】「上位存在の目的は資源の回収」\e
+<00000113> 【Kasumi】「The higher existence's objective is the retrieval of materials.」\e
+
+//<00000179> 【武】「――資源を回収してどうするッ？！」\e
+<00000179> 【Takeru】「――What do you do with those materials!?」\e
+
+//<00000115> 【霞】「上位存在を送り出した惑星に送る」\e
+<00000115> 【Kasumi】「Send them back to the planet the higher existence came from.」\e
+
+//<00000116> …\p…\pそれが不定期に打ち上げられているものの正体なのか？\e
+<00000116> ...\p...\pso those are the things they've been sending into space?\e
+
+//<0000017b> 【武】「…\p…\p目的はそれだけかッ！？」\e
+<0000017b> 【Takeru】「...\p...\pthat's your only objective!?」\e
+
+//<00000118> 【霞】「肯定する」\e
+<00000118> 【Kasumi】「Affirm.」\e
+
+//<00000119> 資源目的の侵略なんて…\p…\p恒星間遠征をしてまでやる価値があるのか？\e
+<00000119> An invasion to acquire raw materials...\p...\pis that really worth interstellar travel?\e
+
+//<0000017d> 【武】「…\p…\p目的遂行に邪魔だから人類を攻撃するのか？！」\e
+<0000017d> 【Takeru】「...\p...\pdo you attack humanity because they interfere with that objective!?」\e
+
+//<0000011b> 【霞】「否定する」\e
+<0000011b> 【Kasumi】「Affirm.」\e
+
+//<0000017f> 【武】「――じゃあ、\pおまえが人類を攻撃する理由は何だッ！」\e
+<0000017f> 【Takeru】「――Then what is your reason for attacking humanity!?」\e//huh? ~IX
+
+//<000001e2> 【霞】「上位存在及び存在に危機をもたらす重大災害への対処」\e
+<000001e2> 【Kasumi】「To prevent great disasters that would endanger the higher existence and the existences.」\e
+
+//<000001e3> あくまでそれかよ…\p…\p！！　夕呼先生の例えが現実味を帯びてきたぜ…\p…\p。\e
+<000001e3> So it all comes down to that...\p...\p!?\bYuuko-sensei's guesses are getting more and more real...\p...\p\e//example? hypothesis? no idea what he means so dunno what word to use ~IX
+
+//<000001e4> 【武】「じゃあ…\p…\pおまえは…\p…\p人類を何だと認識してるんだ…\p…\p？！」\e
+<000001e4> 【Takeru】「Then...\p...\pwhat do you...\p...\packnowledge humanity as...\p...\p!?」\e
+
+//<0000011f> 【霞】「上位存在と同等の被創造物であり、\p再利用すべき資源」\e
+<0000011f> 【Kasumi】「Creatures equal to the higher existence,\p materials to be recycled.」\e
+
+//<00000184> ――ＢＥＴＡと人類が…\p…\p同じ…\p…\p？！　\e
+<00000184> ――BETA and humanity...\p...\pare equal...\p...\p!?\e
+
+//<000001e6> ――じゃあＢＥＴＡは、\p自分達も生命体だって認識していないって事かよ…\p…\p？！\e
+<000001e6> ――Does that mean the BETA don't recognize themselves as life forms or what...\p...\p!?\e
+
+//<000001e7> しかも被創造物って…\p…\pＢＥＴＡのくせに妙に宗教的なニュアンスだな…\p…\p？！\e
+<000001e7> But what do they mean...\p...\pby "creature"...\p...\p!?\e//he's actually saying it has a "regligious nuance"; the word "creature" originally implies "thing created by a deity" and apparently in Japanese you can add a kanji to give the word that nuance explicitly ~IX
+
+//<00000187> 【武】「…\p…\p被創造物ってなんの事だ？！」\e
+<00000187> 【Takeru】「...\p...\pwhat do you mean by "creature"!?」\e
+
+//<00000123> 【霞】「他星系からの資源回収を目的に設計された存在の一部」\e
+<00000123> 【Kasumi】「Part of an existence created to retrieve resources.」\e
+
+//<00000124> 存在の一部…\p…\p？　火星や月にもＢＥＴＡはいる。\nでもその戦力の総数は誰も知らないよな。\e
+<00000124> Part of an existence...\p...\p?\bThere are BETA on Mars and the Moon too.\nBut we have no idea what their total numbers are.\e
+
+//<00000189> 【武】「…\p…\pおまえ以外の存在はどの位いる…\p…\p？！」\e
+<00000189> 【Takeru】「...\p...\phow many existences other than you are there...\p...\p!?」\e
+
+//<00000126> 【霞】「計算上では１０の３７乗」\e
+<00000126> 【Kasumi】「Calculations indicate ten to the thirty-seventh.」\e
+
+//<0000018d> ――１０の３７乗ッ！？\e
+<0000018d> ――Ten to the thirty-seventh power!?\e
+
+//<0000159d> ――この宇宙にオリジナルハイヴがそんなにッ！？\nしかも…\p…\p今だって…\p…\p増え続けているんだろ…\p…\p！？\e
+<0000159d> ――There are that many Original Hives in the universe!?\nAnd...\p...\peven now...\p...\pthey're making more...\p...\p!!\e
+
+//<00000128> 【武】「…\p…\p…\p…\pッ！！」\e
+<00000128> 【Takeru】「...\p...\p...\p...\p!!」\e
+
+//<00000129> …\p…\pたった１つのオリジナルハイヴに…\p…\p全人類がこれだけの犠牲を払っているのに…\p…\p１０の３７乗って…\p…\p！？\e
+<00000129> ...\p...\phumanity's made all these sacrifices...\p...\pjust for one Original Hive...\p...\pbut there are ten to the thirty-seventh more...\p...\p!?\e
+
+//<00000190> 【武】「…\p…\pおまえ達は…\p…\p誰に…\p…\p作られたんだッ？！」\e
+<00000190> 【Takeru】「...\p...\pwho...\p...\pmade...\p...\pyou!?」\e
+
+//<0000012b> 【霞】「創造主」\e
+<0000012b> 【Kasumi】「The creator.」\e
+
+//<00000193> 【武】「…\p…\p創造主って…\p…\p何だよ…\p…\p？！」\e
+<00000193> 【Takeru】「...\p...\pwhat is...\p...\pthe creator...\p...\p!?」\e
+
+//<0000012d> 【霞】「生命体」\e
+<0000012d> 【Kasumi】「A life form.」\e
+
+//<0000012f> ――生命体！？\e
+<0000012f> ――A life form!?\e
+
+//<00000195> 【武】「…\p…\pおまえは…\p…\p生命体じゃないのかッ？！」\e
+<00000195> 【Takeru】「...\p...\pyou aren't...\p...\pa life form!?」\e
+
+//<00000131> 【霞】「肯定する。上位存在は生命体ではない」\e
+<00000131> 【Kasumi】「Affirm.\bThe higher existence is not a life form.」\e
+
+//<000001e9> ――やっぱり…\p…\pそうなのかッ！？\nＢＥＴＡは資源を採掘するだけの『機械』だって事なのかッ？！\e
+<000001e9> ――So I was right...\p...\pthey aren't!!\nThe BETA are just machines used to gather resources!!\e
+
+//<00000198> 【武】「――じゃあ…\p…\pおまえが認識している生命体って何なんだ？！」\e
+<00000198> 【Takeru】「――Then...\p...\pwhat do you acknowledge as life forms!?」\e
+
+//<00000135> 【霞】「珪素を基質とし、\p自己形成、\p自己増殖する散逸構造」\e
+<00000135> 【Kasumi】「Constructs based on silicon,\p with an established self,\p that are capable of reproduction and scattering.」\e//i.e. not only can 2 rabbits make 10 rabbits, but those 10 can all go off and live unrelated lives ~IX //oh wait, rabbits aren't life...whatever ~IX
+
+//<00000136> ――珪素って…\p…\pシリコンの事か…\p…\p！？　そんなものから生命が生まれるのかよ！？\e
+<00000136> ――Silicon? ...\p...\psilicon...\p...\p!?\nYou can make life out of that stuff!?\e//Japanese has a kanji name and an Engrish name for the element, which is the real reason Takeru said it twice ~IX
+
+//<00000137> 異星起源っていうだけでも異質なのに、\p基質からして違うんじゃ…\p…\p概念や思考は…\p…\p\e
+<00000137> Being extraterrestrial is weird enough,\p but they're based on a different element...\p...\pso their thoughts and concepts are...\p...\p\e
+
+//<00000138> 【武】「――ッ！？」\e
+<00000138> 【Takeru】「――!?」\e
+
+//<00000139> ――そう…\p…\pだ…\p…\p！　\e
+<00000139> ――That's...\p...\pit...\p...\p!\e
+
+//<0000013a> …\p…\pこいつらに、\p人類が生命体だって理解させる事ができれば…\p…\p地球や月、\p火星のＢＥＴＡと、\pこれ以上戦わなくて済むんじゃないか…\p…\p！？\e
+<0000013a> ...\p...\pif I can make this thing understand that humans are life forms...\p...\pthen we wouldn't have to fight for Earth, the Moon or Mars anymore,\p right...\p...\p!?\e
+
+//<0000013b> 宇宙の至る所に存在する、\p１０の３７乗のオリジナルハイヴの脅威に、\p怯えなくて済むようになるんじゃないのか？！\e
+<0000013b> We wouldn't have to fear any of the ten to the thirty-seventh Original Hives in the universe if I could do that!!\e
+
+//<0000013c> 今『横坑』で戦ってるみんなや、\p全世界で『桜花作戦』に関わっている将兵を救う事ができるんじゃないか…\p…\p？！\e
+<0000013c> Not to mention saving everyone fighting in the Drift and all the other soldiers in Operation Cherry Blossom...\p...\p\e
+
+//<0000019a> 【武】「おまえ達が生命体じゃない事は理解した…\p…\p」\e
+<0000019a> 【Takeru】「I understand that you aren't life forms...\p...\p」\e
+
+//<0000013e> 【霞】「肯定する」\e
+<0000013e> 【Kasumi】「Affirm.」\e
+
+//<0000019c> 【武】「――だけど…\p…\pオレ達人類は生命体なんだ。\n知的生命体なんだよ」\e
+<0000019c> 【Takeru】「――But...\p...\pwe humans are life forms.\nWe're intelligent life too.」\e
+
+//<00000140> 【霞】「否定する。炭素を基質とした生命体は宇宙に存在し得ない」\e
+<00000140> 【Kasumi】「Deny.\bThere are no life forms in the universe not based on silicon.」\e
+
+//<00000141> 【霞】「炭素は安易に化合し変化する。\n知的生命体まで進化する事はあり得ない」\e
+<00000141> 【Kasumi】「Carbon is easily combined with other elements.\nIt is impossible for it to evolve into intelligent life.」\e
+
+//<000001eb> 【武】「――地球ではそういう生命体が生まれたんだよ！」\e
+<000001eb> 【Takeru】「――Well life did evolve on Earth!」\e
+
+//<000001ec> 【武】「――おまえ達の言い方でいえば、\p炭素を基質に、\p自己形成、\p自己増殖する散逸構造なんだ！！」\e
+<000001ec> 【Takeru】「――To use your own words,\p we're constructs based on carbon,\p with an established self,\p that are capable of reproduction and scattering!!」\e
+
+//<00000143> 【霞】「否定する。人類は異星起源の被創造物と推定」\e
+<00000143> 【Kasumi】「Deny.\bHumanity is presumed to be creatures.」\e
+
+//<000001ee> ――ッ！！\e
+<000001ee> ――!!\e
+
+//<000001ef> 【霞】「最大根拠。上位存在の目的遂行は生命体が存在しない惑星に限定」\e
+<000001ef> 【Kasumi】「Ultimate evidence.\bLife forms do not exist on targets for higher existences.」\e
+
+//<000001f0> 【武】「…\p…\pえ？」\e
+<000001f0> 【Takeru】「...\p...\peh?」\e
+
+//<000001f1> 【霞】「上位存在は創造主の絶対則に違反不可能。\n従って上位存在が活動可能な地球に生命体は存在しない」\e
+<000001f1> 【Kasumi】「It is impossible for higher existences to disobey the absolute rules of the creator.\nSince the higher existence is capable of operating on Earth, no life forms exist on it.」\e
+
+//<00000144> 【武】「――おまえら人類を…\p…\p調べたんだろ…\p…\pッ！？」\e
+<00000144> 【Takeru】「――You've been...\p...\presearching humanity, haven't you...\p...\p!?」\e
+
+//<00000145> 【霞】「肯定する。調査は現在も継続中」\e
+<00000145> 【Kasumi】「Affirm.\bThe research still continues.」\e
+
+//<00000146> 【武】「――多くの命を奪いやがったくせにッ…\p…\pそれでもわからないのかよ…\p…\pッ！？」\e
+<00000146> 【Takeru】「――After taking away so many lives...\p...\pyou still can't tell we're alive...\p...\p!?」\e
+
+//<00000147> 【霞】「否定する。人類が生命体である証拠は存在しない。\n従って『命を奪う』という表現は不適切」\e
+<00000147> 【Kasumi】「Deny.\bThere is no evidence that humanity are life forms.\nTherefore the expression "taking away life" is inappropriate.」\e
+
+//<00000148> 【武】「――ふざけるなッ！！　人類はおまえ達のような作り物じゃないッ！！」\e
+<00000148> 【Takeru】「――Don't fuck with me!!\bHumanity wasn't made by something else like you guys were!!」\e
+
+//<00000149> 【霞】「上位存在はオレに問う」\e
+<00000149> 【Kasumi】「The higher existence asks humanity.」\e//actually it's "asks オレ", because it knows from <000000ff> that オレ refers to Takeru (lol) but of course translating it that way ("The higher existence asks me.") would be confusing as fuck in English. Debate later. ~IX
+
+//<000001a2> ――っ！？　ＢＥＴＡが…\p…\p質問だと…\p…\pッ！？\e
+<000001a2> ――!? The BETA...\p...\pare asking me a question...\p...\p!?\e
+
+//<0000014b> 【霞】「人類が自然発生した生命体であるという根拠の提示を求む」\e
+<0000014b> 【Kasumi】「We desire evidence for the claim that humanity is a naturally occurring life form.」\e
+
+//<0000014c> 【武】「――なんだと…\p…\p！？」\e
+<0000014c> 【Takeru】「――What...\p...\p!?」\e
+
+//<0000256d> 【霞】「『兵士級』に再利用される最新の標本を提供する。\n証明せよ」\e
+<0000256d> 【Kasumi】「We present to you the latest specimen meant for recycling into Soldier Class.\nShow us proof.」\e//I just realized, this means the Class names are used by the BETA too, so we must have gotten them out of Alternative III ~IX
+
+//<0000256e> 今…\p…\p兵士級って言わなかったか…\p…\p？\e
+<0000256e> Did it just say...\p...\pSoldier Class...\p...\p?\e
+
+//<000001a5> ――仮に純夏の意訳が間違ってないとして…\p…\pＢＥＴＡの材料になるもので何を証明しろっていうんだ！？\e
+<000001a5> ――Assuming Sumika's translation is correct...\p...\pwhat do the BETA expect me to do with parts of themselves!?\e
+
+//<000001a6> 【霞】「『これ』が生命体である訳がない」\e
+<000001a6> 【Kasumi】「There is no reason to believe this is life.」\e
+
+//<00000152> 【武】「――！？」\e
+<00000152> 【Takeru】「――!?」\e
+
+//<0000256f> ――あれが…\p…\p兵士級の…\p…\p…\p…\p…\p…\pッ！？\e
+<0000256f> ――That's...\p...\pa Soldier Class...\p...\p...\p...\p...\p...\pspecimen!?\e
+
+//<000001a9> 【武】「…\p…\p…\p…\p…\p…\pお…\p…\pぃ…\p…\p」
+<000001a9> 【Takeru】「...\p...\p...\p...\p...\p...\phe...\p...\py...\p...\p」
+
+//<00001a44> \r
+<00001a44> \r
+
+//<000001aa> 【霞】「証明せよ」
+<000001aa> 【Kasumi】「Show us proof.」
+
+//<00001a4b> \r
+<00001a4b> \r
+
+//<000001ac> 【武】「…\p…\p何…\pで…\p…\pだよ…\p…\p…\p…\p」
+<000001ac> 【Takeru】「...\p...\pwh...\p...\py...\p...\pare you...\p...\p...\p...\p」
+
+//<00001a50> \r
+<00001a50> \r
+
+//<000001ae> 【武】「…\p…\pだっ…\pて…\p…\p…\p…\pまだ…\p…\pここには…\p…\p」
+<000001ae> 【Takeru】「...\p...\pb...\p...\put...\p...\p...\p...\pshe's...\p...\pstill...\p...\p」
+
+//<00001a57> \r
+<00001a57> \r
+
+//<000001b2> 【武】「…\p…\pな…\p…\pんでッ…\p…\p」
+<000001b2> 【Takeru】「...\p...\pwh...\p...\py...\p...\p!」
+
+//<00001a5e> \r
+<00001a5e> \r
+
+//<000001b8> 【武】「――何でここにいるんだよォォォォォォッッッ！！！」
+<000001b8> 【Takeru】「――Why is she heeeeeeeeeeeeere!!!?」
+
+//<00001a61> \r
+<00001a61> \r
+
+//<000001ba> 【武】「――たまを放せェェェェェェェェェッッッ！！！」
+<000001ba> 【Takeru】「――Let go of Tamaaaaaaaaaaaaaaaaaaa!!!」
+
+//<00001a65> \r
+<00001a65> \r
+
+//<000001f7> 【武】「――ッ！！？」
+<000001f7> 【Takeru】「――!!?」
+
+//<00001a82> \r
+<00001a82> \r
+
+//<000001f8> ――ッ！？
+<000001f8> ――!?
+
+//<00001a84> \r
+<00001a84> \r
+
+//<000001fc> 【武】「――冥夜ッ！！」\e
+<000001fc> 【Takeru】「――Meiya!!」\e
+
+//<000001fd> 【冥夜】「――あ奴は私がッ！　――そなたは主砲ハッチをッ！」
+<000001fd> 【Meiya】「――I shall fight!\b――You close the main cannon hatches!」
+
+//<00000f55> \r
+<00000f55> \r
+
+//<00000201> 【冥夜】「――はああァァァァァァァァッ！！」\e
+<00000201> 【Meiya】「――Haaaaaaaaaaaaaaaaaaaaa!!」\e
+
+//<00000206> 【冥夜】「――タケルっ！　――撃てッ！！」\e
+<00000206> 【Meiya】「――Takeru! ――Fire!!」\e
+
+//<00000208> 【武】「――だめだッ！　今の攻撃でエネルギーを殆ど持って行かれちまってるッ！！」\e
+<00000208> 【Takeru】「――We can't!\bThat attack drained most of our energy!!」\e
+
+//<0000020a> 【冥夜】「――なんだと…\p…\pっ！！　再充填は――ッ！？」\e
+<0000020a> 【Meiya】「――What...\p...\p!!\bHow long to recharge――!?」\e
+
+//<0000020c> 【武】「――優に３０分はかかるッ！！　――しかも楽観的な予測だッ！！」\e
+<0000020c> 【Takeru】「――Over a half hour!!\b――And that's an optimistic estimate!!」\e
+
+//<0000020e> 【冥夜】「――くっ…\p…\p…\p…\pぬぅ…\p…\pっ！」\e
+<0000020e> 【Meiya】「――Uu...\p...\p...\p...\puuu...\p...\p!」\e
+
+//<0000020f> 【武】「――機関出力が不安定で、\p今の座標を固定するのが精一杯――ラザフォード場も殆ど消失してる！！」\e
+<0000020f> 【Takeru】「――The engine output is unstable so I'm having trouble just keeping us still――The Rutherford Fields are mostly dead too!!」\e
+
+//<00000211> 【冥夜】「――ここまで来ながら…\p…\pッ！！」\e
+<00000211> 【Meiya】「――After all this...\p...\p!!」\e
+
+//<00000214> 【武】「――かといって自爆しようにもプログラムが応答しないッ！」\e
+<00000214> 【Takeru】「――And the self-destruct program won't respond either!」\e
+
+//<00000215> 【冥夜】「――無念だが致し方ない…\p…\p」\e
+<00000215> 【Meiya】「――It seems we have no choice...\p...\p」\e
+
+//<00002570> 【冥夜】「――そなたは離脱しろッ！\n…\p…\pこのまま凄乃皇を失う訳にはいかんッ！！」\e
+<00002570> 【Meiya】「――Leave here immediately!\n...\p...\pwe cannot afford to lose the Susano'o!!」\e
+
+//<00000217> 【武】「――ちがう、\p制御系そのものがおかしいんだッ！！　――入力を一切受け付けないんだよッ！！」\e
+<00000217> 【Takeru】「――No,\p the entire control system is acting up!!\b――It won't accept any of my commands!!」\e
+
+//<00000219> 【冥夜】「――くッ…\p…\p…\p…\p八方塞がりか…\p…\pッ！！」\e
+<00000219> 【Meiya】「――Uu...\p...\p...\p...\pso we have no options...\p...\p!?」\e
+
+//<0000021b> 【霞】「――っ…\p…\p！」\e
+<0000021b> 【Kasumi】「――...\p...\p!」\e
+
+//<0000021e> 【武】「――霞ッ！？　――大丈夫かッ！！」\e
+<0000021e> 【Takeru】「――Kasumi!? ――You okay!!?」\e
+
+//<0000021f> 【霞】「――あ…\p…\pっ…\p…\p！」\e
+<0000021f> 【Kasumi】「――Ah...\p...\p...\p...\p!」\e
+
+//<00000220> 【武】「――悪いが休んでる暇ないぞッ！　――システムチェックだッ！」\e
+<00000220> 【Takeru】「――Sorry but there's no time to rest!\b――Run a systems check!」\e
+
+//<00000221> 【霞】「――それより白銀さん…\p…\p純夏さんがッ！！」\e
+<00000221> 【Kasumi】「――Not right now,\nShirogane-san...\p...\pSumika-san is――!!」\e
+
+//<00000222> 【武】「――ッ！？　純夏がどうしたッ！？」\e
+<00000222> 【Takeru】「――!? What about Sumika!?」\e
+
+//<00000225> 【霞】「――ＢＥＴＡの浸蝕で…\p…\pバイタルが不安定にッ！！」\e
+<00000225> 【Kasumi】「――The BETA attack...\p...\pmade her vitals unstable!!」\e
+
+//<00000227> 【武】「――なにッ！？」\e
+<00000227> 【Takeru】「――What!?」\e
+
+//<00000229> 【霞】「――捕まった時のイメージが…\p…\pあふれかえって…\p…\pッ！」\e
+<00000229> 【Kasumi】「――She was full of images...\p...\pof the time they caught her...\p...\p!」\e
+
+//<0000022d> 【武】「――ッ！」\e
+<0000022d> 【Takeru】「――!」\e
+
+//<0000022e> ――それで機体制御が利かなくなってるのか…\p…\pッ！！\e
+<0000022e> ――So that's why I can't control anything...\p...\p!!\e
+
+//<0000022f> ――でも…\p…\p主砲の防護殻に触手が突き刺さっただけなのに…\p…\pＢＥＴＡは純夏に何をしたんだッ！？\e
+<0000022f> ――But...\p...\pall they did was stick tentacles into the cannon's protective shell...\p...\pwhat did the BETA do to Sumika!?\e
+
+//<00000231> 【武】「――純夏ッ！！　――しっかりしろ純夏ッ！！」\e
+<00000231> 【Takeru】「――Sumika!! ――Pull yourself together, Sumika!!」\e
+
+//<00000233> 【霞】「――だめです…\p…\p何も応えてくれません…\p…\p！！」\e
+<00000233> 【Kasumi】「――It's no good...\p...\pshe won't respond to anything...\p...\p!!」\e
+
+//<00000235> ――純夏ッ…\p…\pがんばってくれッ！！　――頼むッ！！\n――このままじゃ人類が…\p…\p人類の未来が…\p…\pッ！！\e
+<00000235> ――Sumika...\p...\pplease keep fighting!! ――Please!!\n――At this rate humanity...\p...\phumanity's future will...\p...\p!!\e
+
+//<00002573> 【冥夜】「――次が来るぞタケルッ！！」\e
+<00002573> 【Meiya】「――More are coming, Takeru!!」\e
+
+//<00000238> 【武】「――ッ！？」\e
+<00000238> 【Takeru】「――!?」\e
+
+//<0000023b> 【冥夜】「――ぬォォォォォォォォッ！！」
+<0000023b> 【Meiya】「――Nuuoooooooooooooooo!!」
+
+//<00000a95> \r
+<00000a95> \r
+
+//<0000023d> 【冥夜】「――でやッ！　――でやぁぁッ！！」
+<0000023d> 【Meiya】「――Deya! ――Teyaaaaa!!」
+
+//<00000a23> \r
+<00000a23> \r
+
+//<00000240> 【冥夜】「――あ奴はどうやら、\p私がお気に召したようだッ！\n――時間を稼ぐッ！！」\e
+<00000240> 【Meiya】「――He seems to be focused on me for the moment!\n――I shall buy you time!!」\e
+
+//<00000242> 【武】「――無茶すんな冥夜ッ！！」\e
+<00000242> 【Takeru】「――Don't do anything reckless, Meiya!!」\e
+
+//<00000243> 【冥夜】「――そなたは凄乃皇を何とかいたせッ！！」\e
+<00000243> 【Meiya】「――You make the Susano'o function again!!」\e
+
+//<00000245> 【武】「――おいッ、\p冥…\p…\pッ！　――くっ！！」\e
+<00000245> 【Takeru】「――Hey,\p Mei-...\p...\p! ――Uu!!」\e
+
+//<00002574> 【武】「――霞っ、\p純夏の状態を詳しく教えてくれッ！　――オレに何かできる事を――ッ」\e
+<00002574> 【Takeru】「――Kasumi,\p tell me more about Sumika's status!\b――Is there anything I can――」\e
+
+//<00000249> 【霞】「――眩しくて…\p…\pもう…\p…\p何もみえない…\p…\p！」\e
+<00000249> 【Kasumi】「――It's too bright...\p...\pI can't...\p...\psee anything...\p...\p!」\e
+
+//<0000024a> 【武】「――え…\p…\pッ？！」\e
+<0000024a> 【Takeru】「――Eh...\p...\p!?」\e
+
+//<0000024b> 【霞】「――これは…\p…\p純夏さんが…\p…\p００ユニットになる前と同じ…\p…\p…\p…\p」\e
+<0000024b> 【Kasumi】「――This is...\p...\pjust like before...\p...\pSumika-san became the 00 Unit...\p...\p...\p...\p」\e
+
+//<0000024f> 【武】「――嘘…\p…\pだろ…\p…\pッ！？」\e
+<0000024f> 【Takeru】「――You're kidding...\p...\pright...\p...\p!?」\e
+
+//<00000252> ――まさかさっきの触手のせいで…\p…\pそこまで戻されちまったのか…\p…\p！？\e
+<00000252> ――There's no way those tentacles...\p...\pdid that much to her, right...\p...\p!?\e
+
+//<00000255> ――あいつ…\p…\p純夏に何しやがったんだ…\p…\pッ！！\e
+<00000255> ――What the hell...\p...\pdid that thing do to Sumika...\p...\p!!?\e
+
+//<00000257> ――くそ…\p…\pッ！　\e
+<00000257> ――Dammit...\p...\p!\e
+
+//<00000258> ――どうするッ！\n――どうするんだッ！？\nこのままじゃ本当に全滅しちまうぞ…\p…\pッ！！\e
+<00000258> ――What do I do!?\n――What can I do!?\nAt this rate, we really will lose everything...\p...\p!!\e
+
+//<00000259> ――純夏が前の状態に戻されちまったとすれば…\p…\p回復には時間が掛かるッ！！\e
+<00000259> ――If Sumika's reverted back to that state...\p...\pit'll take forever to fix her!!\e
+
+//<0000025a> ――残弾もない！\n――主砲も撃てない！！\n――脱出も撤退もできない！！\e
+<0000025a> ――We have no bullets left!\n――We can't fire the cannon!!\n――We can't even escape or retreat!!\e
+
+//<0000025b> ――どうすればいいんだッ？！　もう…\p…\p手の打ちようがないッ！！\e
+<0000025b> ――What the hell do I do!? Are there...\p...\pno options left!!?\e
+
+//<0000025d> 【武】「――！？」\e
+<0000025d> 【Takeru】「――!?」\e
+
+//<0000025e> ――やっぱり『あ号標的』に…\p…\pオレ達を生命体だって認めさせるべきなのか…\p…\p！？\e
+<0000025e> ――Should I try again...\p...\pto make the Primary Objective recognize us as life forms...\p...\p!?\e
+
+//<0000025f> 『あ号標的』…\p…\pいや、\pＢＥＴＡとのコミュニケーションが不可能じゃない事は証明できた…\p…\p！！\e
+<0000025f> We proved that communication with the Primary Objective...\p...\pno,\p with BETA isn't impossible...\p...\p!!\e
+
+//<00000260> あんな短い時間でも、\pあそこまでやれたんだ…\p…\p！\nもっと時間をかければ…\p…\p理解させられる可能性は…\p…\p…\p…\p\e
+<00000260> We learned so much in such a short time...\p...\p!\nIf I had more time to talk to it...\p...\pmaybe I could make it understand...\p...\p...\p...\p\e
+
+//<00000266> 【武】「――ッ！！」\e
+<00000266> 【Takeru】「――!!」\e
+
+//<00000267> 感情的には…\p…\p絶対許せねえよ…\p…\p！！\e
+<00000267> My emotions...\p...\pwon't let me forgive it...\p...\p!!\e
+
+//<00000268> ――だけどこのままじゃ…\p…\pそれこそ…\p…\pたまの死が…\p…\p無駄になっちまう…\p…\pッ！！\e
+<00000268> ――But if I don't do something...\p...\pI would just...\p...\pend up...\p...\pwasting Tama's death...\p...\p!!\e
+
+//<00000269> ここでオレ達が全滅したら…\p…\p『トライデント作戦』が発動しちまうんだ…\p…\p！\e
+<00000269> If we get wiped out here...\p...\pthen Operation Trident will be activated...\p...\p!\e
+
+//<0000026a> 今この時が…\p…\pＢＥＴＡと人類がコミュニケーションを取る…\p…\p最後のチャンスかも知れないんだぞ…\p…\p？！\e
+<0000026a> This might be our last chance...\p...\pto establish communication between BETA and humanity...\p...\p!!\e
+
+//<0000026b> 【武】「――ッ！！」\e
+<0000026b> 【Takeru】「――!!」\e
+
+//<0000026c> ――とにかく、\p霞に試してもらおう！　\e
+<0000026c> ――Anyway,\p I need to get Kasumi to try it!\e
+
+//<0000026d> 冥夜と委員長達にもこれを伝え…\p…\p\n――そう言えば、\p委員長達はどこでなにやってるんだ！？　\e
+<0000026d> I have to tell Meiya and the others about...\p...\p\n――Come to think of it,\p where the hell are the others!?\e
+
+//<00000270> 【武】「――え…\p…\pっ！？」\e
+<00000270> 【Takeru】「――Eh...\p...\p!?」\e
+
+//<00000273> 【冥夜】「――ふんッ！！」
+<00000273> 【Meiya】「――Hmph!!」
+
+//<00000a2f> \r
+<00000a2f> \r
+
+//<00000275> 【冥夜】「――ふんッ！　――ふぁッ！　――とりゃぁぁぁっ！」
+<00000275> 【Meiya】「――Hmph! ――Fwaa! ――Toryaaaaaaa!」
+
+//<00000a26> \r
+<00000a26> \r
+
+//<00000278> ――冥夜の周囲には誰も居ないのに、\pなんで委員長達のマーカーがあるんだよ…\p…\p？！\e
+<00000278> ――There's no one near Meiya,\p so why do the others have markers...\p...\p!?\e
+
+//<00000279> さっきこのブロックに進入したのは冥夜機だけ――\e
+<00000279> Meiya's the only one who entered the block a second ago――\e
+
+//<0000027b> 【武】「――ッ！？」\e
+<0000027b> 【Takeru】「――!?」\e
+
+//<0000027e> 【武】「…\p…\p…\pた…\p…\pま…\p…\p？」\e
+<0000027e> 【Takeru】「...\p...\p...\pTa...\p...\pma...\p...\p?」\e
+
+//<0000027f> 何だこれ…\p…\p！？　故障…\p…\pか…\p…\p？\nこれも凄乃皇のシステムトラブルの一部なのか…\p…\p！？\e
+<0000027f> What the hell...\p...\p!? Is this...\p...\pmore interference...\p...\p?\nIs this another side effect of the Susano'o's system failure...\p...\p!?\e
+
+//<00000281> いや、\pまさか…\p…\p委員長も、\p彩峰も、\p美琴も…\p…\p\nたまと同じように、\pとっくに死んじまってるって事なのか…\p…\p？！\e
+<00000281> Or,\p wait...\p...\pis it possible that Class Rep,\p Ayamine and Mikoto...\p...\pare all dead already,\p just like Tama...\p...\p!?\e
+
+//<00000282> 【武】「…\p…\p…\p…\p」\e
+<00000282> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000283> それは考えられない。\n『横坑』に進入したＢＥＴＡは、\pこの短時間で３機の武御雷を撃墜できる数じゃない。\e
+<00000283> I can't imagine that.\nNowhere near enough BETA entered the Drift to take out three Takemikazuchi in such a short time.\e
+
+//<00000284> 確かに委員長はいつもと違う感じだっ…\p…\p…\p…\p\e
+<00000284> Class Rep did sound different from usual though...\p...\p...\p...\p\e
+
+//<00000289> 【千鶴】「――どうしたッ！？」\e
+<00000289> 【Chizuru】「――What is it!?」\e//CP_S
+
+//<0000028c> 【千鶴】「――Ｓ－１１の至近爆発でアンテナをやられたのだ！」\e
+<0000028c> 【Chizuru】「――The point-blank S-11 explosion got our antennae!」\e
+
+//<0000028f> 【千鶴】「――必ず追いつく！　主砲の発射を優先しろ！」\e
+<0000028f> 【Chizuru】「――We'll catch up! Focus on firing that cannon!」\e//CP_E
+
+//<00000293> ――あの口調…\p…\pは…\p…\p！\e
+<00000293> ――That tone of voice...\p...\pis...\p...\p!\e
+
+//<00000295> 【武】「――ッ！」\e
+<00000295> 【Takeru】「――!」\e
+
+//<00000299> 【夕呼】「米軍と国連軍に提供した、\pオリジナルハイヴのマップデータに細工をしておいたわ」\e
+<00000299> 【Yuuko】「We did something interesting with the map data we gave to the American and UN Armies.」\e//PCP_S MLA_0067
+
+//<0000029c> 【夕呼】「そのデータには、\pある種のコンピュータウィルスが組み込まれているのよ」\e
+<0000029c> 【Yuuko】「The data has a very special computer virus in it.」\e
+
+//<0000029f> 【夕呼】「彼等の正確な位置マーカーを見る事ができるのは、\pこの地球上であたし達だけになるのよ」\e
+<0000029f> 【Yuuko】「We'll be the only ones on Earth who get to see their accurate location markers.」\e//CP_E
+
+//<000002a3> 【武】「…\p…\p…\p…\p！」\e
+<000002a3> 【Takeru】「...\p...\p...\p...\p!」\e
+
+//<000002a6> 【武】「…\p…\p…\p…\pッ！！」\e
+<000002a6> 【Takeru】「...\p...\p...\p...\p!!」\e
+
+//<000002a7> …\p…\pそう…\p…\pか…\p…\p…\p…\p！\n…\p…\p…\p…\pそういう事だったのか…\p…\pッ！？\e
+<000002a7> ...\p...\pso...\p...\pthat's it...\p...\p...\p...\p!\n...\p...\p...\p...\pthat's what it was...\p...\p!?\e
+
+//<000002a8> …\p…\p冥夜…\p…\pおまえはそこまでしてオレを…\p…\p任務に集中させようと…\p…\pッ…\p…\p！！\e
+<000002a8> ...\p...\pMeiya...\p...\pyou tried that hard...\p...\pto keep me focused on the mission...\p...\p...\p...\p!!\e
+
+//<000002a9> 【武】「…\p…\pッ…\p…\p！」\e
+<000002a9> 【Takeru】「...\p...\p...\p...\p!」\e
+
+//<000002aa> ――オレは…\p…\pそんなに頼りないのか…\p…\p？！　そこまでしないと安心できな――――\e
+<000002aa> ――Am I...\p...\pthat unreliable...\p...\p!?\nDo you have to do that much to be sure I'll――――\e
+
+//<000002ae> 【悠陽】「悲しい事ですが…\p…\p全ての者達の望みを満たす道が、\p常にそなたの前に有るとは限りません」\e
+<000002ae> 【Yuuhi】「Although it is sad,\p there may not always be a path which satisfies each and every one of their wishes.」\e//PCP_S MLA_0032
+
+//<000002b1> 【悠陽】「道を指し示そうとする者は、\p背負うべき責務の重さから…\p…\p目を背けてはならないのです」\e
+<000002b1> 【Yuuhi】「Those who show others the way must not avert their eyes...\p...from the weight of responsibility.」\e
+
+//<000002b4> 【悠陽】「そして…\p…\p自らの手を汚すことを、\p厭うてはならないのです」\e
+<000002b4> 【Yuuhi】「And...\p...\pyou must never hesitate to stain your own hands with blood.」\e//CP_E
+
+//<000002b8> ――そうか…\p…\pおまえは…\p…\pオレに嘘を責められる事も厭わず…\p…\p人類のために…\p…\p…\p…\p！！\e
+<000002b8> ――I see...\p...\pyou did this...\p...\pfor humanity...\p...\pno matter what I'd say to you for lying to me...\p...\p...\p...\p!!\e
+
+//<000002ba> 【武】「――クッ…\p…\p…\p…\p！！」\e
+<000002ba> 【Takeru】「――Uuu...\p...\p...\p...\p!!」\e
+
+//<000002bc> …\p…\p…\p…\pそうだ…\p…\pおまえは…\p…\p正しい…\p…\p！\e
+<000002bc> ...\p...\p...\p...\pthat's right...\p...\pyou made...\p...\pthe right choice...\p...\p!\e
+
+//<000002bd> この非常時に…\p…\pこんな事をグジグジ考えちまう奴がなに言ってんだ…\p…\p！\e
+<000002bd> What right do I have to disagree...\p...\pwhen I'm thinking about it during an emergency like this...\p...\p!?\e
+
+//<000002be> おまえがマーカーを消していたのに気付いたぐらいで、\pいい気になる程度の奴が…\p…\p！\e
+<000002be> I got full of myself just from realizing you'd been hiding your markers from me...\p...\p!\e
+
+//<000002bf> 純夏なしにＢＥＴＡと話し合うなんて――非現実的な選択に逃げようとする奴が…\p…\p信頼なんてされる訳ないっ！\e
+<000002bf> There's no way you'd trust a guy like me...\p...\pwho's trying to run away to unrealistic options like talking to the BETA without Sumika!\e
+
+//<000002c1> 【武】「――霞ッ！」\e
+<000002c1> 【Takeru】「――Kasumi!」\e
+
+//<000002c3> 【武】「――純夏にオレの声を直接聞かせる事はできないかッ！？\n例えば直接スピーカーでとか！」\e
+<000002c3> 【Takeru】「――Is there any way you can get Sumika to hear my voice!?\nAre there speakers down there or anything!?」\e
+
+//<000002c4> 【霞】「四型の接続方式では、\p純夏さんに外の音を聞かせる事はできません」\e
+<000002c4> 【Kasumi】「The Type 4 connection method is designed to prevent her from hearing any external sounds.」\e
+
+//<000002c5> 【武】「――他にやりようはないかッ！？　何でもいい！！」\e
+<000002c5> 【Takeru】「――Are there any other options!? Anything at all!!?」\e
+
+//<000002c6> 【霞】「さっきのような同調状態が再現できれば…\p…\p可能性はあります」\e
+<000002c6> 【Kasumi】「If we could reproduce the synchronization from before...\p...\pit's possible.」\e
+
+//<000002c7> 【武】「――ＢＥＴＡの浸蝕と同じ…\p…\p！？」\e
+<000002c7> 【Takeru】「――When the BETA tentacles hit us...\p...\p!?」\e
+
+//<000002c8> 【霞】「全く同じは無理です。\nでもそれに近い状態なら…\p…\p」\e
+<000002c8> 【Kasumi】「We can't match it perfectly.\nBut something close to it...\p...\p」\e
+
+//<000002c9> 【武】「――できるのか、\pそんな事っ？！」\e
+<000002c9> 【Takeru】「――Can you really do that!?」\e
+
+//<000002ca> 【霞】「完全に同調するには、\p深層意識下まで潜る必要があります」\e
+<000002ca> 【Kasumi】「Perfect synchronization requires reaching deep into her subconscious.」\e
+
+//<000002cb> 【霞】「その上で、\pリーディングとプロジェクションを同時にしないと会話はできません」\e
+<000002cb> 【Kasumi】「And you can't have a conversation without doing readings and projections at the same time.」\e
+
+//<000002cc> 【武】「――でもその並列処理は００ユニットじゃなきゃ無理なんじゃないのか！？」\e
+<000002cc> 【Takeru】「――But isn't that impossible without the 00 Unit's parallel processing!?」\e
+
+//<000002cd> 【霞】「はい。それに、\p私には深く潜る力もありません」\e
+<000002cd> 【Kasumi】「Yes. And I don't have the power to reach deep into her.」\e
+
+//<000002ce> 【武】「――えっ！？」\e
+<000002ce> 【Takeru】「――Eh!?」\e
+
+//<000002cf> 【霞】「でも、\p私と純夏さんを繋いでいる同調装置を使えば、\p何とかできると思います」\e
+<000002cf> 【Kasumi】「But I think it might work if I use the synchronization device connecting me to Sumika-san.」\e
+
+//<000002d0> 【霞】「装置の入出力を逆転させて、\pプロジェクションだけに集中するんです」\e
+<000002d0> 【Kasumi】「I'll reverse the input and output to make it focus entirely on projection.」\e
+
+//<000002d1> ――なるほど…\p…\p純夏は今しゃべれる状態じゃないからリーディングを切るわけか！\e
+<000002d1> ――I see...\p...\pSumika's in no position to speak right now so no point in doing readings!\e
+
+//<000002d2> 【武】「――でも深層意識下までどうやって…\p…\p！？」\e
+<000002d2> 【Takeru】「――But how well you get that deep in...\p...\p!?」\e
+
+//<000002d3> 【霞】「装置のリミッターを解除して、\p私の力を機械的に増幅させれば、\p深く潜れるはずです」\e
+<000002d3> 【Kasumi】「If I remove the device's limiter,\p the mechanical amplification of my power should be enough.」\e
+
+//<00002576> ブーストをかけるのか…\p…\p。\nそれだって相当な負荷が掛かる筈だ。\n霞にも純夏にも…\p…\p。\e
+<00002576> So you're using it to boost your own projection...\p...\p?\nThat's gotta be tough on you as well as Sumika...\p...\p\e//enough with the damn futans already ~IX
+
+//<000002d5> 【霞】「うまく行けば、\p白銀さんの声を直接、\p純夏さんに聞かせる事ができます」\e
+<000002d5> 【Kasumi】「If it works,\p Sumika-san will be able to hear your voice directly, Shirogane-san.」\e
+
+//<000002d6> 【武】「――最悪の場合どうなる！？」\e
+<000002d6> 【Takeru】「――And if it doesn't!?」\e
+
+//<000002d7> 【霞】「純夏さんの深層意識に捕らわれて、\p二度と意識が戻らないと思います」\e
+<000002d7> 【Kasumi】「I'll be trapped in Sumika-san's subconscious and never wake up again.」\e
+
+//<000002d9> ――ッ…\p…\p！！\e
+<000002d9> ――...\p...\p!!\e
+
+//<000002db> 【武】「…\p…\pそれでも…\p…\pやってもらえるか？！」\e
+<000002db> 【Takeru】「...\p...\pbut you'll still...\p...\pdo it!?」\e
+
+//<000002dc> 【霞】「はい」\e
+<000002dc> 【Kasumi】「Yes.」\e//this is kinda badass of her ~IX
+
+//<000002de> 【武】「…\p…\pありがとう、\p霞…\p…\pッ」\e
+<000002de> 【Takeru】「...\p...\pthank you,\p Kasumi...\p...\p!」\e
+
+//<000002e0> 【霞】「…\p…\p…\p…\p私も一緒に戦います…\p…\p！」\e
+<000002e0> 【Kasumi】「...\p...\p...\p...\pI'm fighting with you...\p...\p!」\e
+
+//<000002e3> 【冥夜】「――はあッ！　――いやぁぁッ！！」
+<000002e3> 【Meiya】「――Haaa! ――Iiyaaaaa!!」
+
+//<00000a3f> \r
+<00000a3f> \r
+
+//<000002e6> 【冥夜】「――ぬッ！？」
+<000002e6> 【Meiya】「――Uu!?」
+
+//<00000a39> \r
+<00000a39> \r
+
+//<000002e8> 【冥夜】「――うぉぉぉぉぉぉ～～～ッ！！」
+<000002e8> 【Meiya】「――Uuoooooooooooooooooo!!」
+
+//<00002685> \r
+<00002685> \r
+
+//<000002eb> 【冥夜】「――その程度かぁぁぁぁぁ～～～ッ！！」
+<000002eb> 【Meiya】「――Is that all you can dooooooooooooooooo!!?」
+
+//<0000273f> \r
+<0000273f> \r
+
+//<000002ee> 【霞】「――始めます…\p…\p！」\e
+<000002ee> 【Kasumi】「――Starting now...\p...\p!」\e
+
+//<000002f0> 【武】「…\p…\p頼むぞ…\p…\p！」\e
+<000002f0> 【Takeru】「...\p...\pgood luck...\p...\p!」\e
+
+//<000002f1> 【霞】「――はい」\e
+<000002f1> 【Kasumi】「――Yes.」\e
+
+//<000002f7> 【武】「…\p…\p…\p霞…\p…\p」\e
+<000002f7> 【Takeru】「...\p...\p...\p...\pKasumi...\p...\p」\e
+
+//<000002fa> 【武】「…\p…\p…\p頑張れ…\p…\p霞…\p…\p！」\e
+<000002fa> 【Takeru】「...\p...\p...\p...\pmake it happen...\p...\pKasumi...\p...\p!」\e
+
+//<000002fd> ――来たッ！！\e
+<000002fd> ――Here we go!!\e
+
+//<000002ff> 【武】「――純夏ッ！　――オレだ純夏ッ――聞こえるかッ！！」\e
+<000002ff> 【Takeru】「――Sumika!\b――It's me, Sumika!\b――Can you hear me!?」\e
+
+//<00000301> 【武】「――目を覚ましてくれ純夏ッ！！　――純夏ッ！」\e
+<00000301> 【Takeru】「――Please, wake up, Sumika!! ――Sumika!」\e
+
+//<00000303> 【武】「――今、\p冥夜が、\pオレ達のために、\pひとりで戦って時間を作ってくれてるんだ…\p…\p！」　\e
+<00000303> 【Takeru】「――Meiya's fighting all alone right now to buy time for us...\p...\p!」　\e
+
+//<00000305> 【武】「――霞もおまえを助けるために、\p命懸けで頑張ってくれてる…\p…\p！」\e
+<00000305> 【Takeru】「――Kasumi's risking her life to try and save you...\p...\p!」\e
+
+//<00000307> 【武】「――おまえも今、\p凄く辛いんだと思う…\p…\p」\e
+<00000307> 【Takeru】「――I know you're in a lot of pain right now...\p...\p」\e
+
+//<00000308> 【武】「――せっかく乗り越えた嫌な事や悲しかった事を…\p…\pまたほじくり返されたんだと思う…\p…\p」\e
+<00000308> 【Takeru】「――I know all those sad, painful memories you'd finally gotten over...\p...\phave been brought back to the surface again...\p...\p」\e
+
+//<0000030a> 【武】「――そんなおまえに…\p…\p戦わせるのは…\p…\p凄え辛い…\p…\p！」\e
+<0000030a> 【Takeru】「――And it hurts me...\p...\pto try and make you fight...\p...\pdespite that...\p...\p!」\e
+
+//<0000030b> 【武】「――だけどおまえしかいないんだ！　――『この世界』を救えるのはおまえだけなんだ！」\e
+<0000030b> 【Takeru】「――But you're the only one who can do this!\b――You're the only one who can save this world!」\e
+
+//<0000030d> 【武】「――おまえがこのまま目をさまさなかったら…\p…\pオレ達は全滅しちまう…\p…\p！」\e
+<0000030d> 【Takeru】「――If you don't wake up...\p...\pwe'll all die...\p...\p!」\e
+
+//<0000030f> 【武】「――もしそんな事になったら…\p…\p人類は…\p…\pッ！」\e
+<0000030f> 【Takeru】「――And if that happens...\p...\phumanity will...\p...\p!」\e
+
+//<00000310> 【武】「――『この世界』は…\p…\pまた終わっちまうッ！！」\e
+<00000310> 【Takeru】「――This world won't...\p...\pstand a chance!!」\e
+
+//<00000312> 【武】「――オレがここで死んだら…\p…\p世界はまた２ヶ月前に戻っちまうんだ…\p…\p！！」\e
+<00000312> 【Takeru】「――If I die here...\p...\pthe world will go back to two months ago...\p...\p!!」\e
+
+//<00000314> 【武】「――みんなが辛い思いをする所なんて…\p…\pオレは…\p…\pもう見たくない…\p…\p！！」\e
+<00000314> 【Takeru】「――I don't want to watch everyone suffer...\p...\pnever again...\p...\p!!」\e
+
+//<00000316> 【武】「――おまえが辛い思いをするのをもう一度見るなんて…\p…\p絶対に嫌なんだ…\p…\p！！」\e
+<00000316> 【Takeru】「――I don't want to see you go through all this again...\p...\pyou shouldn't have to...\p...\p!!」\e
+
+//<00000318> 【武】「――未来がわかっていたって…\p…\pやり直しができたって…\p…\pそんなの嫌なんだよ…\p…\p！！」\e
+<00000318> 【Takeru】「――Even if I remember the future...\p...\pand I can do it all over again...\p...\pI don't want to...\p...\p!!」\e
+
+//<0000031a> 【武】「――頼むよ純夏ッ…\p…\p戻ってきてくれッ！！」\e
+<0000031a> 【Takeru】「――Please, Sumika! ...\p...\pcome back to me!!」\e
+
+//<0000031c> 【武】「――オレと一緒に戦ってくれっ！　――みんなの『この世界』を一緒に守ってくれ！！」\e
+<0000031c> 【Takeru】「――Please fight with me!\n――Let's protect this world together!!」\e
+
+//<0000031e> 【武】「――純夏あ…\p…\pッ！！」\e
+<0000031e> 【Takeru】「――Sumikaaa...\p...\p!!」\e
+
+//<00000321> 【冥夜】「――させんぞッ！」
+<00000321> 【Meiya】「――Do not try it!」
+
+//<00000939> \r
+<00000939> \r
+
+//<00000323> 【冥夜】「――貴様のッ！　――好きにはッ！」
+<00000323> 【Meiya】「――I will not! ――Allow you to!」
+
+//<0000093b> \r
+<0000093b> \r
+
+//<00000326> 【冥夜】「――させるものかぁぁぁぁぁ～～～ッ！！」
+<00000326> 【Meiya】「――Do as you pleaaaaaaaaaaaaaaaaase!!」
+
+//<00000a47> \r
+<00000a47> \r
+
+//<00000329> 【冥夜】「――ッ！！」
+<00000329> 【Meiya】「――!!」
+
+//<00002790> \r
+<00002790> \r
+
+//<0000032c> 【冥夜】「――ぐぅぅぅぅッ！！」
+<0000032c> 【Meiya】「――Uuuuuuuuuu!!」
+
+//<00002793> \r
+<00002793> \r
+
+//<0000032e> 【冥夜】「――ぐぁぁぁぁぁッ！！」
+<0000032e> 【Meiya】「――Guwaaaaaaaaaaa!!」
+
+//<00000959> \r
+<00000959> \r
+
+//<00000333> 【武】「――冥夜ァァァッ！？」\e
+<00000333> 【Takeru】「――Meiyaaaaaaa!?」\e
+
+//<00000334> 【冥夜】「――気を散らすでないッ！！」\e
+<00000334> 【Meiya】「――Do not let me distract you!!」\e
+
+//<00000336> 【武】「――ッ！？」\e
+<00000336> 【Takeru】「――!?」\e
+
+//<00000338> 【冥夜】「――そなたは復旧に全力を注ぐがよいぞ…\p…\pッ！」
+<00000338> 【Meiya】「――Concentrate all your efforts on restoring functionality...\p...\p!」
+
+//<00000962> \r
+<00000962> \r
+
+//<0000033b> 【武】「――バカ野郎ッ――いくらなんでもその機体じゃ…\p…\pッ！」\e
+<0000033b> 【Takeru】「――You idiot! ――There's no way that TSF can...\p...\p!」\e
+
+//<0000033d> 【冥夜】「――そちらこそどうなのだ！？　――何某かの目処は立ったのかっ？！」\e
+<0000033d> 【Meiya】「――Then what about you!?\b――Do you know when you will have control again!?」\e
+
+//<0000033e> 【武】「――やってるが…\p…\p今のところ反応はないッ！」\e
+<0000033e> 【Takeru】「――We're working on it...\p...\pbut it's still not responding!」\e
+
+//<0000033f> 【冥夜】「――そうか…\p…\p…\p…\p」\e
+<0000033f> 【Meiya】「――I see...\p...\p...\p...\p」\e
+
+//<00000341> 【武】「――――ッ！？」\e
+<00000341> 【Takeru】「――――!?」\e
+
+//<00002ac0> \r
+<00002ac0> \r
+
+//<00002575> 【武】「――ちょっとまて冥夜ッ！！　――おまえ何の真似だッ！！」\e
+<00002575> 【Takeru】「――Wait, Meiya!! ――What the hell are you doing!?」\e
+
+//<00000344> 【冥夜】「――見ての通りだ。\n主脚を失った今、\p最早この手しかなかろう」
+<00000344> 【Meiya】「――You can see for yourself.\nNow that I have lost my leg,\p this is the only option left.」
+
+//<000027b9> \r
+<000027b9> \r
+
+//<00000347> 【冥夜】「――推進剤の残量も、\pもう心許ないでな。\n跳べるうちにやっておかねば…\p…\p」\e
+<00000347> 【Meiya】「――I have little propellant remaining as well.\nI must try this while I can still fly...\p...\p」\e
+
+//<0000034a> 【武】「――だったら自律制御でもいいだろうっ！　おまえは凄乃皇に乗り移れッ！！」\e
+<0000034a> 【Takeru】「――Then let the autopilot do it!\bYou get in the Susano'o!!」\e
+
+//<0000034b> 【冥夜】「――ならん！　――制御を奪われる可能性がある」\e
+<0000034b> 【Meiya】「――Unacceptable!\b――It may be able to take control of it.」\e
+
+//<0000034c> 【冥夜】「――その様な事になれば…\p…\p私は榊達に合わせる顔がない…\p…\p」\e
+<0000034c> 【Meiya】「――If that were to happen...\p...\p\bI could never face the others...\p...\p」\e
+
+//<0000034d> 【武】「――ッ！！」\e
+<0000034d> 【Takeru】「――!!」\e
+
+//<0000034e> 【冥夜】「もういい加減気付いておろう…\p…\p私がそなたを欺いた事…\p…\p」\e
+<0000034e> 【Meiya】「It is high time you opened your eyes...\p...\pI have been deceiving you...\p...\p」\e
+
+//<0000034f> 【武】「――ああ…\p…\pみんなグルだったんだろ…\p…\p？」\e
+<0000034f> 【Takeru】「――Yeah...\p...\pyou all did it together, right...\p...\p?」\e
+
+//<00000350> 【冥夜】「違う…\p…\p。\nだが、\p結果的には…\p…\pそういう事になろう…\p…\p」\e
+<00000350> 【Meiya】「No...\p...\p\nBut in the end...\p...\pthat was what happened...\p...\p」\e
+
+//<00000351> ――え…\p…\p？　みんなで話を合わせてたんじゃないのか…\p…\p？\e
+<00000351> ――Eh...\p...\p? They didn't plan it out in advance...\p...\p?\e
+
+//<00000352> 【冥夜】「――許すがよい…\p…\p」\e
+<00000352> 【Meiya】「――Forgive me...\p...\p」\e
+
+//<00000353> 【武】「謝るな――おまえは正しかった。\n今もそうだが…\p…\pオレは任務に徹し切れていない」\e
+<00000353> 【Takeru】「Don't apologize――You were right.\nEven now...\p...\pI'm not completely focused on my mission.」\e
+
+//<00000354> 【冥夜】「…\p…\p…\p…\p」\e
+<00000354> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00000356> 【武】「…\p…\pそれに、\pみんなの死を…\p…\p戦友の死を知りながら戦っていたおまえが、\p一番辛かった筈だ」\e
+<00000356> 【Takeru】「...\p...\pbesides,\p I think it was hardest on you...\p...\phaving to keep fighting while being aware of your comrades' deaths.」\e
+
+//<00000357> 【冥夜】「…\p…\pそなたに…\p…\p心よりの感謝を。\n…\p…\pよもやその様な言葉を返されるとは思いも寄らなかった…\p…\p」\e
+<00000357> 【Meiya】「...\p...\pI give you...\p...\pmy earnest thanks.\n...\p...\pI never imagined you would answer with such words...\p...\p」\e
+
+//<00000358> 【武】「――とにかく、\p自決装置を止めろッ！　――話はその後だッ！！」\e
+<00000358> 【Takeru】「――Anyway,\p turn off the bomb!\b――We'll talk after that!!」\e
+
+//<0000035a> 【冥夜】「ならん。これは…\p…\p皆が命を賭して私に残してくれた、\p最後のＳ－１１なのだ」\e
+<0000035a> 【Meiya】「No. This is...\p...\pthe final S-11,\p which everyone gave their lives to keep intact.」\e
+
+//<0000035c> 【武】「…\p…\pえっ？！」\e
+<0000035c> 【Takeru】「...\p...\peh!?」\e
+
+//<0000035e> 【冥夜】「――それ故、\p粗末に扱えぬ代物でな。\n皆の想いを推し量れば…\p…\p今この時こそ使うべきなのだ」\e
+<0000035e> 【Meiya】「――It is not a weapon to be used lightly.\nAfter considering how all the others felt...\p...\pI know this is the time I am meant to use it.」\e
+
+//<0000035f> 【武】「――あいつらの…\p…\p想い…\p…\p？」\e
+<0000035f> 【Takeru】「――How the others...\p...\pfelt...\p...\p?」\e
+
+//<00000361> 【冥夜】「――まあよい…\p…\p気にするでないぞ」\e
+<00000361> 【Meiya】「――It matters not...\p...\pdo not concern yourself.」\e
+
+//<00000362> 【武】「…\p…\p…\p…\p」\e
+<00000362> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000363> 【冥夜】「――これ１発であ奴を倒す事は不可能であろう。\nだが、\pあの頭部を破壊する事ができれば、\p相当な時間が稼げるやも知れん」\e
+<00000363> 【Meiya】「――I doubt it is possible to defeat that with only one of these.\nBut if I can destroy even its head,\p I may be able to buy you a great deal of time.」\e
+
+//<00000365> 【武】「――冥夜まてッ！　待ってくれッ！！」\e
+<00000365> 【Takeru】「――Meiya, wait! Please, wait!!」\e
+
+//<00000367> 【冥夜】「――よいかタケル…\p…\p可能であれば、\p先に制御系を回復させるのだ…\p…\p！」\e
+<00000367> 【Meiya】「――Listen, Takeru...\p...\pif you can,\p restore your controls before I do this...\p...\p!」\e
+
+//<00000369> 【武】「――え…\p…\pっ？」\e
+<00000369> 【Takeru】「――Eh...\p...\p?」\e
+
+//<0000036a> 【冥夜】「――どうやらあ奴は、\p脅威度の高い標的を優先しているらしい故な…\p…\p」\e
+<0000036a> 【Meiya】「――It seems to prioritize targets based on their threat level...\p...\p」\e
+
+//<0000036c> 【武】「…\p…\pわかったっ！　…\p…\pわかったから…\p…\p早く自決装置を解――」\e
+<0000036c> 【Takeru】「...\p...\pfine! ...\p...\pI understand...\p...\pso just turn it off al――」\e
+
+//<0000036e> 【冥夜】「――さらばだタケルッ！！　――社と鑑を頼むぞッ！！」\e
+<0000036e> 【Meiya】「――Farewell, Takeru!!\b――Take care of Yashiro and Kagami!!」\e
+
+//<00000370> 【武】「――待て冥夜ッ！！」
+<00000370> 【Takeru】「――Wait, Meiya!!」
+
+//<000027c5> \r
+<000027c5> \r
+
+//<00000374> 【冥夜】「――うおォォォォォォッッッ！！！」
+<00000374> 【Meiya】「――Uuuoooooooooooooo!!!!」
+
+//<00000d25> \r
+<00000d25> \r
+
+//<00000376> 【武】「――冥夜ぁぁぁぁぁッ！！」
+<00000376> 【Takeru】「――Meiyaaaaaaaaaaa!!」
+
+//<00000d2b> \r
+<00000d2b> \r
+
+//<000026d9> 【冥夜】「――おぉぉぉぉぉぉぉ～～ッ！」
+<000026d9> 【Meiya】「――Oooooooooooooooooooo!」
+
+//<000026e1> \r
+<000026e1> \r
+
+//<0000037b> 【冥夜】「――ぬぅぅぅッ！　――おのれッ！！　邪魔だて――ぐぁッ…\p…\p！？」
+<0000037b> 【Meiya】「――Uuuuuuuu! ――Damn you!!\bDo not interfe――Guwaa...\p...\p!?」
+
+//<0000097a> \r
+<0000097a> \r
+
+//<0000037e> 【冥夜】「――ぐうぅぅぅぅ～～～ッ！！」
+<0000037e> 【Meiya】「――Uuuuuuuuuuuuuuuuuu!!」
+
+//<00000a4f> \r
+<00000a4f> \r
+
+//<00000380> 【冥夜】「――ぐあぁッ！！」
+<00000380> 【Meiya】「――Guwaaaaa!!」
+
+//<00000987> \r
+<00000987> \r
+
+//<00000383> 【武】「――冥夜ぁぁッ！？」\e
+<00000383> 【Takeru】「――Meiyaaaaa!?」\e
+
+//<00000385> 【冥夜】「――ッ！？」\e
+<00000385> 【Meiya】「――!?」\e
+
+//<00000387> 【武】「――冥夜ッ！？　――もうその機体は放棄しろッ！！」\e
+<00000387> 【Takeru】「――Meiya!? ――That TSF is scrap, eject already!!」\e
+
+//<00000389> 【冥夜】「――ぅうぅぅぅぅッッッ…\p…\p！！」
+<00000389> 【Meiya】「――Uuuuuuuuuuuu...\p...\p!!!」
+
+//<000027ca> \r
+<000027ca> \r
+
+//<000024d1> 【武】「――早くこっちに乗り移れッ！！」\e
+<000024d1> 【Takeru】「――Get in here already!!」\e
+
+//<0000038d> 【冥夜】「――うぅぅぅ～～～ッ！！」
+<0000038d> 【Meiya】「――Uuuuuuuuuuuuuu!!」
+
+//<000027cf> \r
+<000027cf> \r
+
+//<0000038e> 【武】「――ッ！？　――どうした冥夜ッ！？」\e
+<0000038e> 【Takeru】「――!? ――Meiya, what's wrong!?」\e
+
+//<00000390> 【冥夜】「――ううッ…\pやめろォォォォォッ！！」
+<00000390> 【Meiya】「――Uuu! ...\p...\pstooooooooooop!!」
+
+//<0000098d> \r
+<0000098d> \r
+
+//<00000393> 【武】「――なッ…\p…\p何やってんだ冥夜ッッ！？」\e
+<00000393> 【Takeru】「――Wh-...\p...\pwhat are you doing, Meiya!!?」\e
+
+//<00000395> 【冥夜】「――許すが…\p…\pよい…\p…\pタケル…\p…\pッ！」\e
+<00000395> 【Meiya】「――Forgive...\p...\pme...\p...\pTakeru...\p...\p!」\e
+
+//<00000397> 【武】「――どうしたんだッ！？　何があったッ！？」\e
+<00000397> 【Takeru】「――What's wrong!? What happened!?」\e
+
+//<00000398> 【冥夜】「――主腕のコントロールをッ…\p…\p！」\e
+<00000398> 【Meiya】「――It has...\p...\p!」\e
+
+//<0000039b> 【冥夜】「…\p…\pッ…\p…\p奪われた…\p…\pッ！」
+<0000039b> 【Meiya】「...\p...\p...\p...\ptaken control of my arms...\p...\p!」
+
+//<0000256c> \r
+<0000256c> \r
+
+//<0000039f> 【武】「――なっ…\p…\pなんだってッ！？」\e
+<0000039f> 【Takeru】「――Wha-...\p...\pwhat did you say!?」\e
+
+//<000003a1> 【冥夜】「――どうやら私達を…\p…\pッ…\p…\pまとめてッ…\p…\p吹っ飛ばすつもりらしいッ！！」\e
+<000003a1> 【Meiya】「――It seems intent on...\p...\p...\p...\pblowing us both away...\p...\pat the same time!!」\e
+
+//<000003a3> 【武】「――なにッ！？」\e
+<000003a3> 【Takeru】「――What!!?」\e
+
+//<000003a4> ラザフォード場は展開できないんだぞッ？！――凄乃皇の機体だけで、\pＳ－１１の至近爆発に耐えられる訳がないッ…\p…\p！！\e
+<000003a4> We can't even deploy the Rutherford Field!!\b――There's no way the hull of the Susano'o can withstand a point-blank S-11 explosion...\p...\p!!\e
+
+//<000003a6> …\p…\p人類が持ち込んだ爆弾で、\p人類の兵器を破壊してやるって事かよ…\p…\pッ！？　\e
+<000003a6> ...\p...\pis it trying to destroy humanity with the weapons humanity brought in here...\p...\p!?\e
+
+//<000003a8> ――それとも、\pおまえらにとっちゃこれも災害防止の一環って事なのかッ！？\e
+<000003a8> ――Or is this nothing more than "preventing great disaster" to it!?\e
+
+//<000003ab> ――しかも追い討ちもかけず、\pただ眺めてるだけなんて――余裕じゃねえか…\p…\p。\n自分で手を下すまでもないッて事か！？\e
+<000003ab> ――But why is it just staring instead of delivering the final blow?\b――It's not worried about us at all...\p...\p\nAre we not even worth the effort to finish off!?\e
+
+//<000003ac> それとも、\p侵略や戦いの概念がないから、\pあくまで攻撃されなければ何もしませんって事なのかよ…\p…\pッ？！\e
+<000003ac> Or does its lack of strategic concepts mean it won't attack us as long as we don't attack it...\p...\p!?\e
+
+//<000003ad> 【冥夜】「――タケ…\p…\pルッ！！」\e
+<000003ad> 【Meiya】「――Take...\p...\pru!!」\e
+
+//<000003af> 【冥夜】「――そなたは…\p…\pッ…\p…\p制御系の復旧を…\p…\p急げ…\p…\pッ…\p…\p！！」\e
+<000003af> 【Meiya】「――You must...\p...\p! ...\p...\phurry...\p...\pand restore control...\p...\p...\p...\p!!」\e
+
+//<000003b0> 【武】「――冥夜ッ！？」\e
+<000003b0> 【Takeru】「――Meiya!?」\e
+
+//<00002577> 【冥夜】「――ラザフォード場が展開できればッ…\p…\pＳ－１１の爆発は防げよう…\p…\pッ！」\e
+<00002577> 【Meiya】「――If you can deploy the Rutherford Field...\p...\pyou can block the S-11 explosion...\p...\p!」\e
+
+//<000003b3> 【武】「――わかったから、\pおまえはこっちに来いッ！！　もう十分だッ！！」\e
+<000003b3> 【Takeru】「――Then why don't you get in here already!?\bYou've done enough!!」\e
+
+//<000003b4> 【冥夜】「――私にかまうでないと言ったであろうッ！！　――早く…\p…\pッ…\p…\p早くッ！！」\e
+<000003b4> 【Meiya】「――Did I not tell you not to worry about me!!?\b――Hurry...\p...\p...\p...\pjust hurry!!」\e
+
+//<000003b6> 【冥夜】「――よいな…\p…\pッ！？　こちらも何とかッ…\p…\pやってみる…\p…\pッ！！」\e
+<000003b6> 【Meiya】「――Understand...\p...\p!?\bI will also...\p...\ptry what little I can...\p...\p!!」\e
+
+//<000003b8> 【武】「――ッ！！」
+<000003b8> 【Takeru】「――!!」
+
+//<000027fb> \r
+<000027fb> \r
+
+//<000003b9> ――そうだ…\p…\p！　このままじゃ…\p…\p確実にあと数分で全滅だ…\p…\p。
+<000003b9> ――She's right...\p...\p! At this rate...\p...\pwe really will be dead in a few minutes...\p...\p
+
+//<000027fd> \r
+<000027fd> \r
+
+//<000003ba> 今のオレにできる唯一の事は――
+<000003ba> The only thing I can do right now is――
+
+//<000027ff> \r
+<000027ff> \r
+
+//<000003bc> 【武】「――純夏…\p…\p！」\e
+<000003bc> 【Takeru】「――Sumika...\p...\p!」\e
+
+//<00001dc8> 【武】「もしかしたら、\pおまえに話しかけるのも…\p…\pこれが最後になっちまうかもしれない…\p…\p！」\e
+<00001dc8> 【Takeru】「This might be...\p...\pthe last chance I ever get to talk to you...\p...\p!」\e
+
+//<000003c0> 【武】「もうすぐＳ－１１が爆発しちまうんだ。\nそしたら、\pオレもおまえも…\p…\p霞や冥夜もお終いだ」\e
+<000003c0> 【Takeru】「The S-11's gonna blow any minute now.\nWhen it does,\p you and I and Kasumi and Meiya...\p...\pwill be done for.」\e
+
+//<000003c3> 【武】「…\p…\pそして…\p…\p『この世界』の人類も…\p…\p」\e
+<000003c3> 【Takeru】「...\p...\palong with...\p...\pthis world's humanity...\p...\p」\e
+
+//<000003c4> 【武】「でも、\pもしこれでおまえが目を覚まさなかったとしても…\p…\pそれは仕方がない」\e
+<000003c4> 【Takeru】「But if even that isn't enough to make you wake up...\p...\pthere's nothing I can do about it.」\e
+
+//<000003c5> 【武】「別に諦めた訳じゃないんだ…\p…\p。\nそれに、\pもう一度やり直せばいいなんて…\p…\p絶対に思ってないよ」\e
+<000003c5> 【Takeru】「I haven't given up or anything...\p...\p\nAnd I'm definitely not okay...\p...\pwith doing all of this over again.」\e
+
+//<000003c6> 【武】「でも…\p…\pもしそうなっても、\pオレは…\p…\p立ち向かうよ」\e
+<000003c6> 【Takeru】「But...\p...\peven if I do have to...\p...\pI'll face it.」\e
+
+//<000003c8> 【武】「いきなり『因果導体』なんて、\p最悪な存在にされちまったけど…\p…\p」\e
+<000003c8> 【Takeru】「Something turned me into a causality conductor for no good reason, but...\p...\p」\e
+
+//<000003cb> 【武】「でも、\pそんなオレにしかできない事だから…\p…\pやるよ」\e
+<000003cb> 【Takeru】「But there are things only I can do because of it...\p...\pand I'll do them.」\e
+
+//<000003cc> 【武】「本当は…\p…\p凄く嫌だし、\p凄く辛いんだぜ…\p…\p？\nだけど…\p…\pオレは、\p絶対逃げないよ」\e
+<000003cc> 【Takeru】「The truth is...\p...\pI really don't want to,\p and it'd really hurt...\p...\p\nBut...\p...\pI won't run away from it.」\e
+
+//<000003cd> 【武】「自分だけが不幸だって面して泣きわめいても…\p…\p誰かのせいにしても…\p…\p何も変わらない」\e
+<000003cd> 【Takeru】「If I acted like I was the only one in pain...\p...\pand cried, and wailed, and blamed everyone else...\p...\pnothing would change.」\e
+
+//<000003ce> 【武】「自分だけが信じてる自分の正しさを、\pいくら人にアピールしたって…\p…\p何も変わらなかった」\e
+<000003ce> 【Takeru】「No matter how much I tried to convince others I was right...\p...\pnothing changed.」\e
+
+//<000003cf> 【武】「まず自分自身を変えて…\p…\p現実を受け入れた上で、\pそれを変える努力をしなきゃ…\p…\pいつまで経っても同じ事の繰り返しなんだ」\e
+<000003cf> 【Takeru】「I have to change myself...\p...\pI have to accept reality and work hard to change myself...\p...\pno matter how many times I repeat everything.」\e
+
+//<000003d1> 【武】「『因果導体』になって初めて、\p思い知らされた。\nそう考えると、\pこの運命に感謝しなきゃいけないのかもな」\e
+<000003d1> 【Takeru】「Becoming a causality conductor taught me that for the first time.\nIn that sense,\p maybe I should be thankful for it.」\e
+
+//<000003d4> 【武】「だから、\p今度は必ず…\p…\p誰にも辛い思いをさせない」\e
+<000003d4> 【Takeru】「So next time...\p...\pI won't hurt anyone.」\e
+
+//<000003d5> 【武】「…\p…\p誰も苦しめないで『次のこの世界』を守るんだ」\e
+<000003d5> 【Takeru】「...\p...\pI'll protect the next world without hurting anyone.」\e
+
+//<000003d6> 【武】「オレのこういう考え方は…\p…\p理想論なのかも知れない。\n…\p…\pそういうのは幼稚だって、\p自分でも思った時もあったよ」\e
+<000003d6> 【Takeru】「Maybe I'm just being idealistic...\p...\pthinking stuff like this.\n...\p...\peven I think it's childish of me.」\e
+
+//<000003d7> 【武】「だけど今は、\pそれでもいいって思えるんだ…\p…\p」\e
+<000003d7> 【Takeru】「But right now,\p I'm fine with it...\p...\p」\e
+
+//<000003d8> 【武】「だだ理想を口にするだけじゃなく…\p…\pそれに向かって努力して、\p精一杯行動すれば――」\e
+<000003d8> 【Takeru】「If I do more than just talk about ideals...\p...\pif I make the effort to achieve them,\p and put everything I have into action――」\e
+
+//<000003d9> 【武】「理想論も悪いもんじゃないって思うぜ…\p…\p」\e
+<000003d9> 【Takeru】「Then I don't think idealism is so bad...\p...\p」\e
+
+//<000003db> 【武】「…\p…\pオレ、\p『次のこの世界』の横浜基地に行ったら…\p…\p真っ先に地下１９階に行って、\pおまえに話しかけるよ」\e
+<000003db> 【Takeru】「...\p...\pwhen I get to the next world...\p...\pthe first thing I'll do is go to the 19th underground floor and talk to you.」\e
+
+//<000003dd> 【武】「そして１秒でも早く、\pおまえが苦しみから解き放たれるように全力を尽くす！」\e
+<000003dd> 【Takeru】「And I'll do everything I can to end your suffering as soon as possible!」\e
+
+//<000003df> 【武】「速攻、\pサンタウサギを作って…\p…\pシリンダーに下げて、\pオレを思い出してもらえるようにする！！」\e
+<000003df> 【Takeru】「I'll make that Santa rabbit right away...\p...\pand hang it from the cylinder in that room to help you remember me!!」\e
+
+//<000003e1> 【武】「『次のこの世界』では…\p…\pもう純夏を苦しめない。\n絶対だ…\p…\p約束する」\e
+<000003e1> 【Takeru】「In the next world...\p...\pI won't hurt Sumika at all.\nNo matter what...\p...\pI promise.」\e
+
+//<000003e3> 【武】「だけどさ、\pオレ…\p…\p『この世界』で残されたあと数分間でも…\p…\p出来る限りの事はしたいんだ」\e
+<000003e3> 【Takeru】「But I still want...\p...\pto do everything I can...\p...\pduring the last few minutes I have in this world.」\e
+
+//<000003e4> 【武】「『因果導体』になって学んだ大切な事が、\pもうひとつあるからな」
+<000003e4> 【Takeru】「Since there's one other important thing I learned from being a causality conductor.」
+
+//<00002847> \r
+<00002847> \r
+
+//<000003eb> 【武】「だから…\p…\p例え無駄になっても…\p…\p最後の最後まで、\p諦めないで全力を尽くす…\p…\p！」
+<000003eb> 【Takeru】「So...\p...\peven if it's all for nothing...\p...\pI'll do every last thing I can right up until the last second...\p...\p!」
+
+//<0000284a> \r
+<0000284a> \r
+
+//<000003ed> 【武】「『この世界』に生きる人達がそうしているように…\p…\p」
+<000003ed> 【Takeru】「Just like everyone in this world's been doing...\p...\p」
+
+//<0000289f> \r
+<0000289f> \r
+
+//<000003ef> 【武】「だから…\p…\p頼むよ、\p純夏」
+<000003ef> 【Takeru】「So...\p...\pplease,\p Sumika.」
+
+//<000028a0> \r
+<000028a0> \r
+
+//<000003f4> 【冥夜】「――ぐッ…\p…\pぐぉぉぉぉぉ…\p…\pッ！」
+<000003f4> 【Meiya】「――Uu...\p...\puoooooooooo...\p...\p!」
+
+//<000028a3> \r
+<000028a3> \r
+
+//<000003fa> 【冥夜】「――おッ…\p…\pおのれぇぇぇぇ…\p…\pッ」
+<000003fa> 【Meiya】「――Y-...\p...\pyouuuuuuuuu...\p...\p!」
+
+//<000028c1> \r
+<000028c1> \r
+
+//<000003fc> 【冥夜】「…\p…\pっ…\p…\pこの…\p…\p私がッ…\p…\p」
+<000003fc> 【Meiya】「...\p...\p! ...\p...\pI...\p...\pwill not...\p...\p」
+
+//<000028e3> \r
+<000028e3> \r
+
+//<000003ff> 【冥夜】「…\p…\p…\p…\p貴様の…\p…\p言いなりになるとッ…\p…\p思うでないぞ…\p…\pッ」
+<000003ff> 【Meiya】「...\p...\p...\p...\pbe defeated...\p...\pby you...\p...\pso easily...\p...\p!」
+
+//<000028df> \r
+<000028df> \r
+
+//<00000402> 【冥夜】「――ぅぐぅぅぅぅぅぅ…\p…\pッ！！」
+<00000402> 【Meiya】「――Uuuuuuuuuuuuuuuu...\p...\p!!」
+
+//<000028f5> \r
+<000028f5> \r
+
+//<00000405> 【冥夜】「――うぅぅぅぅうぅぅぅぅぅッ…\p…\p！」
+<00000405> 【Meiya】「――Uuuuuuuuuuuuuuuuuuuuuu...\p...\p!」
+
+//<000009c4> \r
+<000009c4> \r
+
+//<00000409> 【冥夜】「…\p…\p…\p…\p…\p…\p…\p…\p」
+<00000409> 【Meiya】「...\p...\p...\p...\p...\p...\p...\p...\p」
+
+//<00002908> \r
+<00002908> \r
+
+//<0000040c> 【冥夜】「…\p…\p…\p…\p…\p…\p人類をッ…\p…\p…\p…\pなめるな…\p…\pッ…\p…\p…\p」
+<0000040c> 【Meiya】「...\p...\p...\p...\p...\p...\pdo not underestimate...\p...\p\n...\p...\phumanity...\p...\p! ...\p...\p...\p」
+
+//<0000290d> \r
+<0000290d> \r
+
+//<00000411> 【冥夜】「――人間をなめるなあぁぁぁぁぁっ！！」
+<00000411> 【Meiya】「――Do not underestimate humanityyyyyyyyyyyyy!!」//oh my god this is the best scene in anything ever - kViN
+
+//<000009cc> \r
+<000009cc> \r
+
+//<00000415> 【冥夜】「――ッ！？」
+<00000415> 【Meiya】「――!?」
+
+//<00000a1a> \r
+<00000a1a> \r
+
+//<00000418> 【冥夜】「――ぐあああああああ～～～～ッ」
+<00000418> 【Meiya】「――Guwaaaaaaaaaaaaaaaaaaaaaaa!」\n
+
+//<0000041c> 【武】「――うッうわぁぁぁぁぁぁぁ～～～ッ！！」
+<0000041c> 【Takeru】「――Uuu! Uwaaaaaaaaaaaaaaaaaaaaa!!」
+
+//<0000292e> \r
+<0000292e> \r
+
+//<0000041e> 【武】「――冥夜ぁぁぁぁぁぁ～～ッ！？」
+<0000041e> 【Takeru】「――Meiyaaaaaaaaaaaaaaaaa!?」
+
+//<00002930> \r
+<00002930> \r
+
+//<00000422> 【武】「――なッ！！！？」\e
+<00000422> 【Takeru】「――Wha――!!!?」\e
+
+//<00000423> ――純夏ッ！？\e
+<00000423> ――Sumika!?\e
+
+//<00000426> 【武】「――ッ？！」\e
+<00000426> 【Takeru】「――!?」\e
+
+//<00000427> ――純夏は…\p…\pまだ目を覚ましてないのか…\p…\pッ？！\n――じゃあ何で機関が…\p…\pッ！？\e
+<00000427> ――Sumika...\p...\pstill hasn't woken up...\p...\p!?\n――Then why is the engine...\p...\p!?\e
+
+//<0000042a> ――機体制御不能ッ？！　――機関が臨界なのに…\p…\pどういう事だッ！？\e
+<0000042a> ――I can't control it!?\b――But the engine's at full power...\p...\phow is that possible!?\e
+
+//<0000042b> 【冥夜】「…\p…\pタ…\p…\pケル…\p…\p…\p…\p」\e
+<0000042b> 【Meiya】「...\p...\pTa...\p...\pkeru...\p...\p...\p...\p」\e
+
+//<0000042f> 【武】「――冥夜ッ――無事かッ！！」\e
+<0000042f> 【Takeru】「――Meiya! ――Are you okay!?」\e
+
+//<00000430> 【冥夜】「…\p…\pコクピットへの…\p…\p直撃ではなかった故…\p…\pな…\p…\p」\e
+<00000430> 【Meiya】「...\p...\pit was not...\p...\pa direct hit...\p...\pto the cockpit...\p...\p」\e
+
+//<00000432> ――ＢＥＴＡめ――腕を吹っ飛ばして長刀を抜けないようにしやがったんだなッ！\e
+<00000432> ――Fucking BETA――They just knocked her arms off so she can't use her sword anymore!\e
+
+//<00000433> 【武】「――こっちは機関制御が回復した！　――充填率が…\p…\p異常な速度で上がっている！！」\e
+<00000433> 【Takeru】「――We've restored engine functionality!\b――Main cannon power...\p...\precharging incredibly fast!!」\e
+
+//<00000434> 【武】「――だが機体制御が利かない以上…\p…\p凄乃皇は放棄せざるを得ない…\p…\p！！」\e
+<00000434> 【Takeru】「――But I still can't move the Susano'o at all...\p...\pso we'll have to abandon it...\p...\p!!」\e
+
+//<00000436> 【冥夜】「…\p…\pそう…\p…\pか…\p…\p」\e
+<00000436> 【Meiya】「...\p...\pI...\p...\psee...\p...\p」\e
+
+//<00000438> 【武】「――９０秒以内に発射可能になるッ！！　――早くこっちに乗り移れッ！」\e
+<00000438> 【Takeru】「――I'll be able to shoot in ninety seconds!!\b――Get in here now!」\e
+
+//<0000043a> 【武】「――ッ？！」\e
+<0000043a> 【Takeru】「――!?」\e
+
+//<0000043e> 【武】「――ッ！？」\e
+<0000043e> 【Takeru】「――!?」\e
+
+//<00000442> ――ラザフォード場も突破したあの触手を…\p…\p弾いた…\p…\pッ？！\e
+<00000442> ――Those tentacles broke through the Rutherford Field earlier...\p...\phow'd it deflect them...\p...\p!?\e
+
+//<00000443> 【冥夜】「…\p…\pタケル…\p…\p…\p…\pっ…\p…\p！」\e
+<00000443> 【Meiya】「...\p...\pTakeru...\p...\p...\p...\p...\p...\p!」\e
+
+//<00000445> 【武】「――ッ！？　――おまえッ――まだそこに…\p…\pッ！？」\e
+<00000445> 【Takeru】「――!? ――You! ――Why are you still...\p...\p!?」\e
+
+//<00000448> 【武】「――どうしたんだッ！　――負傷して動けないのか！？」\e
+<00000448> 【Takeru】「――What's wrong!?\b――Are you too injured to move!?」\e
+
+//<00000449> ――クソ…\p…\pバイタルモニターが死んじまってる…\p…\p！！\e
+<00000449> ――Dammit...\p...\pI can't see her vitals...\p...\p!!\e
+
+//<0000044d> 【武】「――ッ…\p…\p！　――今助けに行くから待ってろッ！！」\e
+<0000044d> 【Takeru】「――...\p...\p! ――Wait right there, I'm coming to help!!」\e
+
+//<0000044e> 【冥夜】「――ならんッ！　――ならんぞッ！！」\e
+<0000044e> 【Meiya】「――No! ――You cannot do that!!」\e
+
+//<00000451> 【武】「――ッ！！」\e
+<00000451> 【Takeru】「――!!」\e
+
+//<00000452> 【冥夜】「――タケル…\p…\p撃つのだッ…\p…\p！」
+<00000452> 【Meiya】「――Takeru...\p...\pshoot...\p...\p!」
+
+//<00002a6f> \r
+<00002a6f> \r
+
+//<00000456> 【武】「――おッ…\p…\pおまえ…\p…\p何言ってんだッ！！」
+<00000456> 【Takeru】「――Wh-...\p...\pwhat...\p...\pare you saying!!?」
+
+//<00002a74> \r
+<00002a74> \r
+
+//<00000457> 【冥夜】「――ばか者ッ！！　…\p…\p…\p…\pなにをしておる…\p…\pッ！？　――は、\p早く撃てっ！！」
+<00000457> 【Meiya】「――Fool!! ...\p...\p...\p...\pwhat are you doing...\p...\p!?\b――Sh-\pshoot now!!」
+
+//<00002580> \r
+<00002580> \r
+
+//<00000459> 【武】「――バカはおまえだッ！　――最後まで諦めるなッ！！」
+<00000459> 【Takeru】「――Are you stupid!?\b――Don't give up until you've tried everything!!」
+
+//<00002582> \r
+<00002582> \r
+
+//<0000045a> 【冥夜】「――奴らの対処能力を…\p…\p侮るなッ！！」
+<0000045a> 【Meiya】「――Do not underestimate...\p...\ptheir ability to adapt!!」
+
+//<00002585> \r
+<00002585> \r
+
+//<0000045b> 【武】「――ッ！！」
+<0000045b> 【Takeru】「――!!」
+
+//<00002588> \r
+<00002588> \r
+
+//<0000045c> 【冥夜】「――この勝機を…\p…\p逃すでない…\p…\pッ！！」
+<0000045c> 【Meiya】「――Do not...\p...\plet this chance slip away...\p...\p!!」
+
+//<0000258b> \r
+<0000258b> \r
+
+//<0000045e> 【武】「――うくッ…\p…\p！！」
+<0000045e> 【Takeru】「――Uuu...\p...\p!!」
+
+//<0000258e> \r
+<0000258e> \r
+
+//<00000461> 【武】「…\p…\p…\p…\pッ！！」
+<00000461> 【Takeru】「...\p...\p...\p...\p!!」
+
+//<00002591> \r
+<00002591> \r
+
+//<00000462> 【冥夜】「――愚か者…\p…\pッ！　――何を躊躇っておるのだ…\p…\pッ！！」
+<00000462> 【Meiya】「――Fool...\p...\p! ――Why do you still hesitate...\p...\p!?」
+
+//<00002594> \r
+<00002594> \r
+
+//<00000465> 【武】「――ッ！！」
+<00000465> 【Takeru】「――!!」
+
+//<00002597> \r
+<00002597> \r
+
+//<00000467> 【冥夜】「――そなたには…\p…\pそなたには、\p私達が背負っている者たちの姿が見えぬのか…\p…\pッ！」
+<00000467> 【Meiya】「――Can you not see...\p...\pall the men and women we carry on our backs...\p...\p!?」
+
+//<00002979> \r
+<00002979> \r
+
+//<0000046a> 【武】「──っ！」
+<0000046a> 【Takeru】「――!」
+
+//<0000259d> \r
+<0000259d> \r
+
+//<0000046b> 【冥夜】「――人類の勝利を信じ…\p…\p己が信念に従い戦った者達の想いが…\p…\p」
+<0000046b> 【Meiya】「――Or the feelings of those who fought for their beliefs...\p...\pand died believing in humanity's future...\p...\p」
+
+//<000025a0> \r
+<000025a0> \r
+
+//<0000046e> 【冥夜】「…\p…\p私達に未来を託し…\p…\p先に逝った者たちの願いが…\p…\p」
+<0000046e> 【Meiya】「...\p...\pthe wishes of those who passed away...\p...\pleaving the future to us...\p...\p」
+
+//<000025a3> \r
+<000025a3> \r
+
+//<00000471> 【冥夜】「我らを信じて…\p…\p道を開いた者たちの…\p…\p」
+<00000471> 【Meiya】「Those who opened the path...\p...\pbecause they believed in us...\p...\p」
+
+//<00002994> \r
+<00002994> \r
+
+//<000008f2> 【冥夜】「笑って命を差し出した者たちの想いが…\p…\p…\p…\p」
+<000008f2> 【Meiya】「Those who gladly sacrificed their lives...\p...\p...\p...\p」
+
+//<000025aa> \r
+<000025aa> \r
+
+//<00000476> 【冥夜】「――そなたには届かぬのかッ！？」
+<00000476> 【Meiya】「――Do none of their feelings reach you!?」//no end to possible alternates here, going with literal since it's not obvious to me what if anything beats it ~IX
+
+//<000025ae> \r
+<000025ae> \r
+
+//<00000479> …\p…\p同じだ…\p…\pッ！！
+<00000479> ...\p...\pthis is the same...\p...\p!!
+
+//<000025b2> \r
+<000025b2> \r
+
+//<0000047e> ――これは…\p…\p…\p…\pあの時と…\p…\p同じだ…\p…\pッ！！
+<0000047e> ――This is...\p...\p...\p...\pexactly the same...\p...\pas back then...\p...\p!!
+
+//<000025b5> \r
+<000025b5> \r
+
+//<0000047f> …\p…\pオレはあの時…\p…\p殿下にトリアゾラムを打てなかった…\p…\pッ！！
+<0000047f> ...\p...\pback when I couldn't...\p...\pgive Her Highness that triazolam...\p...\p!!
+
+//<000025b8> \r
+<000025b8> \r
+
+//<00000480> ――今オレは…\p…\p冥夜を撃つ事が…\p…\pできるのか…\p…\pッ！？
+<00000480> ――But now...\p...\pcan I...\p...\pshoot Meiya...\p...\p!?
+
+//<000025bb> \r
+<000025bb> \r
+
+//<00000481> 【冥夜】「――うッ――うああああぁぁぁぁっ！！！」
+<00000481> 【Meiya】「――Uu――Uwaaaaaaaaaaaaaaaaa!!!」
+
+//<000025be> \r
+<000025be> \r
+
+//<00000484> ――！？
+<00000484> ――!?
+
+//<000025c4> \r
+<000025c4> \r
+
+//<00000486> 【武】「――冥夜ッ…\p…\pどうしたんだ冥夜ッ！？」
+<00000486> 【Takeru】「――Meiya! ...\p...\pwhat's wrong, Meiya!?」
+
+//<000025c7> \r
+<000025c7> \r
+
+//<00000487> 【冥夜】「――なんのためにッ…\p…\p皆がそなたを…\p…\pここに…\p導いた…\p…\pッ！！」
+<00000487> 【Meiya】「――For what purpose...\p...\phas everyone...\p...\pguided you...\p...\phere...\p...\p!!?」
+
+//<000025ca> \r
+<000025ca> \r
+
+//<00000489> 【武】「――冥夜ッ！？」
+<00000489> 【Takeru】「――Meiya!?」
+
+//<000025cd> \r
+<000025cd> \r
+
+//<0000048a> 【冥夜】「――う…\p…\pっ…\p…\pはぁぅ！　…\p…\p…\pああッ！」
+<0000048a> 【Meiya】「――Uu...\p...\p! ...\p...\phaau! ...\p...\p...\paaah!」
+
+//<000025d0> \r
+<000025d0> \r
+
+//<00000490> 【冥夜】「…\p…\pはぁ…\pはぁ…\pはぁ…\p…\pはぁ…\p…\pはぁ…\p…\p」
+<00000490> 【Meiya】「...\p...\phaa...\phaa...\phaa...\p...\phaa...\p...\phaa...\p...\p」
+
+//<000025d3> \r
+<000025d3> \r
+
+//<00000492> 【武】「――おまえッ…\p…\pやっぱり負傷してるんだな…\p…\pッ！？」
+<00000492> 【Takeru】「――You're hurt...\p...\paren't you...\p...\p!?」
+
+//<000025d7> \r
+<000025d7> \r
+
+//<00000493> 【冥夜】「…\p…\p傷はさほどではない。\n…\p…\pだが…\p…\pどのみち長くは保たん…\p…\p」
+<00000493> 【Meiya】「...\p...\pit is not that serious.\n...\p...\pbut...\p...\pI will not last much longer...\p...\p」
+
+//<000025da> \r
+<000025da> \r
+
+//<00000495> 【武】「…\p…\pえッ！？　…\p…\pどういう…\p…\p事だ…\p…\p！？」
+<00000495> 【Takeru】「...\p...\peh!? ...\p...\pwhat...\p...\pdo you mean...\p...\p!?」
+
+//<000025de> \r
+<000025de> \r
+
+//<00000497> 【冥夜】「…\p…\p…\p情けない事に…\p…\p身体が思うように…\p…\pならん…\p…\pのだ…\p…\p」
+<00000497> 【Meiya】「...\p...\p...\pshamefully...\p...\pmy body...\p...\pwill not...\p...\pdo as I command...\p...\p」
+
+//<000025e2> \r
+<000025e2> \r
+
+//<00000499> 【武】「――――ッ！？」
+<00000499> 【Takeru】「――――!?」
+
+//<000025e5> \r
+<000025e5> \r
+
+//<0000049a> ――おまえ…\p…\pＢＥＴＡにッ…\p…\p浸蝕されていたのかッ…\p…\p！？
+<0000049a> ――You're being...\p...\pthe BETA are...\p...\pcontrolling you...\p...\p!?//infiltrating? eating? English is missing the perfect word for this ~IX
+
+//<000025e8> \r
+<000025e8> \r
+
+//<0000049c> 【冥夜】「…\p…\p頼む…\p…\p…\p…\p」
+<0000049c> 【Meiya】「...\p...\pI beg of you...\p...\p...\p...\p」
+
+//<000025eb> \r
+<000025eb> \r
+
+//<0000049d> 【武】「…\p…\p…\p…\pえ…\p…\p」
+<0000049d> 【Takeru】「...\p...\p...\p...\peh...\p...\p?」
+
+//<000025ef> \r
+<000025ef> \r
+
+//<0000049e> 【冥夜】「…\p…\p…\p…\p撃ってくれ…\p…\p…\p…\pタケル…\p…\p」
+<0000049e> 【Meiya】「...\p...\p...\p...\pshoot...\p...\p...\p...\pTakeru...\p...\p」
+
+//<000025f3> \r
+<000025f3> \r
+
+//<000004a1> 【武】「…\p…\p冥…\p…\p夜…\p…\pッ…\p…\p」
+<000004a1> 【Takeru】「...\p...\pMei...\p...\pya...\p...\p! ...\p...\p」
+
+//<000025f7> \r
+<000025f7> \r
+
+//<000004a3> 【冥夜】「…\p…\p影として…\p…\p…\p…\p」
+<000004a3> 【Meiya】「...\p...\pI was given life...\p...\p...\p...\p」
+
+//<000025fa> \r
+<000025fa> \r
+
+//<000004a5> 【武】「…\p…\p…\p…\pえ…\p…\p」
+<000004a5> 【Takeru】「...\p...\p...\p...\peh...\p...\p?」
+
+//<000025fd> \r
+<000025fd> \r
+
+//<000004a7> 【冥夜】「…\p…\p影としての生を受けた私が…\p…\p斯様な死に場所を得る事は…\p…\p身に過ぐる栄誉だ…\p…\p」
+<000004a7> 【Meiya】「...\p...\pI was given life to be a shadow...\p...\pa death such as this...\p...\pis far too great an honor for me...\p...\p」
+
+//<00002601> \r
+<00002601> \r
+
+//<000004a9> 【武】「――冥…\p…\p夜…\p…\p」
+<000004a9> 【Takeru】「――Mei...\p...\pya...\p...\p」
+
+//<00002605> \r
+<00002605> \r
+
+//<000004ab> 【冥夜】「…\p…\p今ここで果てるに…\p…\p何の迷いがあろう…\p…\p」
+<000004ab> 【Meiya】「...\p...\pwhy would I hesitate...\p...\pto lay my life down here...\p...\p?」
+
+//<00002608> \r
+<00002608> \r
+
+//<000004ac> 【武】「…\p…\p…\p…\p」
+<000004ac> 【Takeru】「...\p...\p...\p...\p」
+
+//<0000260c> \r
+<0000260c> \r
+
+//<000004ad> 【冥夜】「…\p…\pだが…\p…\pひとつだけ…\p…\pこの世に未練があるのだ…\p…\p」
+<000004ad> 【Meiya】「...\p...\pbut...\p...\pI do have...\p...\pone final regret in this world...\p...\p」
+
+//<00002610> \r
+<00002610> \r
+
+//<000004ae> 【武】「…\p…\p未練…\p…\p…\p…\p」
+<000004ae> 【Takeru】「...\p...\pregret...\p...\p...\p...\p?」
+
+//<00002614> \r
+<00002614> \r
+
+//<000004b0> 【冥夜】「…\p…\pお願いだ…\p…\pタケル…\p…\p」
+<000004b0> 【Meiya】「...\p...\pplease...\p...\pTakeru...\p...\p」
+
+//<00002618> \r
+<00002618> \r
+
+//<000004b2> 【武】「──え…\p…\p？！」
+<000004b2> 【Takeru】「――Eh...\p...\p!?」
+
+//<0000261c> \r
+<0000261c> \r
+
+//<000004b3> 【冥夜】「…\p…\p今わの際の我儘…\p…\pどうか…\p…\p聞き入れてくれ…\p…\p」
+<000004b3> 【Meiya】「...\p...\pplease find it in you...\p...\pto listen to...\p...\pmy last selfish wish...\p...\p」
+
+//<0000261f> \r
+<0000261f> \r
+
+//<000004b6> 【武】「…\p…\p…\p…\p冥夜…\p…\p…\p…\p」
+<000004b6> 【Takeru】「...\p...\p...\p...\pMeiya...\p...\p...\p...\p」
+
+//<00002622> \r
+<00002622> \r
+
+//<000004b8> 【冥夜】「…\p…\pせめて…\p…\pッ…\p…\pせめて…\p…\p最期は…\p…\pッ！」
+<000004b8> 【Meiya】「...\p...\pat the very least...\p...\p!\b...\p...\pat the very least...\p...\pI want...\p...\p!」
+
+//<00002625> \r
+<00002625> \r
+
+//<000004bb> 【冥夜】「…\p…\p…\p…\p愛する者の手で…\p…\p…\p」
+<000004bb> 【Meiya】「...\p...\p...\p...\pyou, the man I love...\p...\pto be the one...\p...\p」
+
+//<00002629> \r
+<00002629> \r
+
+//<000004bf> 【武】「────！？」
+<000004bf> 【Takeru】「――――!?」
+
+//<0000262d> \r
+<0000262d> \r
+
+//<000004c1> 【冥夜】「――そなたに撃たれて逝きたいのだ…\p…\pッ！！」
+<000004c1> 【Meiya】「――Who sends me to my grave...\p...\p!!」
+
+//<00002630> \r
+<00002630> \r
+
+//<000004c4> 【武】「…\p…\p…\p…\p冥…\p…\p夜…\p…\p」
+<000004c4> 【Takeru】「...\p...\p...\p...\pMei...\p...\pya...\p...\p」
+
+//<00002634> \r
+<00002634> \r
+
+//<000004c5> 【冥夜】「…\p…\p私の生涯が…\p…\p例え…\p…\p影としての生でしかなかったとしても…\p…\p」
+<000004c5> 【Meiya】「...\p...\peven if...\p...\pmy life...\p...\pwas nothing more than a shadow...\p...\p」
+
+//<00002638> \r
+<00002638> \r
+
+//<000004c6> 【冥夜】「…\p…\pそなたが…\p…\pそなたが生き続け…\p…\p」
+<000004c6> 【Meiya】「...\p...\pyou...\p...\pyou must live on...\p...\p」
+
+//<0000263b> \r
+<0000263b> \r
+
+//<000004c7> 【冥夜】「…\p…\p私という人間が存在した事を…\p…\p御剣冥夜がこの世に在った事を…\p…\p覚えていてくれさえすれば…\p…\p」
+<000004c7> 【Meiya】「...\p...\pif you would only remember...\p...\pthat I existed in this world...\p...\pthat Mitsurugi Meiya lived in this world...\p...\p」
+
+//<0000263e> \r
+<0000263e> \r
+
+//<000004ca> ――ッ！！
+<000004ca> ――!!
+
+//<00002641> \r
+<00002641> \r
+
+//<000004cc> 【冥夜】「…\p…\p…\p…\p私は…\p…\p幸せなのだ…\p…\p」
+<000004cc> 【Meiya】「...\p...\p...\p...\pthen I will be...\p...\phappy...\p...\p」
+
+//<00002644> \r
+<00002644> \r
+
+//<000004cf> 【武】「――ッ…\p…\p！！！」
+<000004cf> 【Takeru】「――...\p...\p!!!」
+
+//<00002647> \r
+<00002647> \r
+
+//<000004d1> 【冥夜】「…\p…\p…\p…\p墓まで持って逝く…\p…\pつもりだったのに…\p…\pッ…\p…\p」
+<000004d1> 【Meiya】「...\p...\p...\p...\pI had planned...\p...\pon carrying that to my grave...\p...\p! ...\p...\p...\p...\p」
+
+//<0000264a> \r
+<0000264a> \r
+
+//<000004d3> 【冥夜】「…\p…\p私の弱さを…\p…\p…\p…\pゆるせ…\p…\p鑑…\p…\p…\pッ…\p…\p」
+<000004d3> 【Meiya】「...\p...\pforgive...\p...\p...\p...\pmy weakness...\p...\pKagami...\p...\p...\p...\p...\p!」
+
+//<0000264e> \r
+<0000264e> \r
+
+//<000004d7> 【武】「…\p…\pッ…\p…\p…\p…\p！！」
+<000004d7> 【Takeru】「...\p...\p...\p...\p...\p...\p!!」
+
+//<00002651> \r
+<00002651> \r
+
+//<000004dc> 【悠陽】「悲しい事ですが…\p…\p全ての者達の望みを満たす道が、\p常にそなたの前に有るとは限りません」
+<000004dc> 【Yuuhi】「Although it is sad...\p...there may not always be a path which satisfies each and every one of their wishes...\p...\p」//PCP MLA_0032
+
+//<00002a66> \r
+<00002a66> \r
+
+//<000004dd> ――わかってるッ！　――わかってるよッ！！
+<000004dd> ――I know! ――I know that!!
+
+//<00002657> \r
+<00002657> \r
+
+//<000004e1> 【悠陽】「道を指し示そうとする者は、\p背負うべき責務の重さから…\p…\p目を背けてはならないのです」
+<000004e1> 【Yuuhi】「Those who show others the way...\p...must not avert their eyes from the weight of responsibility.」//PCP
+
+//<00002a67> \r
+<00002a67> \r
+
+//<000004e2> ――そんなことは――わかってるよッ！！
+<000004e2> ――I know that――I do!!
+
+//<0000265e> \r
+<0000265e> \r
+
+//<000004e6> 【悠陽】「そして…\p…\p自らの手を汚すことを、\p厭うてはならないのです」
+<000004e6> 【Yuuhi】「And...\p...\pyou must never hesitate to stain your own hands with blood.」//CP
+
+//<00002a68> \r
+<00002a68> \r
+
+//<000004e9> ――くそぉぉぉぉぉッ！！
+<000004e9> ――Damn iiiiiiiiiit!!
+
+//<00002665> \r
+<00002665> \r
+
+//<000004eb> 【冥夜】「――うあああぁぁぁぁぁぁぁっ！」
+<000004eb> 【Meiya】「――Uaaaaaaaaaaaaaaaaaaaa!」
+
+//<00002668> \r
+<00002668> \r
+
+//<000004ed> 【武】「――冥夜ッ…\p…\p！！？」
+<000004ed> 【Takeru】「――Meiya...\p...\p!!?」
+
+//<0000266c> \r
+<0000266c> \r
+
+//<000004ef> 【冥夜】「――あぁぁぁぁぁぁぁっ――撃ってくれタケルッ…\p…\p！！」
+<000004ef> 【Meiya】「――Aaaaaaaaaaaaaaaa! ――Please shoot, Takeru...\p...\p!!」
+
+//<00002670> \r
+<00002670> \r
+
+//<000004f0> 【冥夜】「…\p…\p私を…\p…\p奴らの慰みものにっ…\p…\pするでない…\p…\pッ！」
+<000004f0> 【Meiya】「...\p...\pdo not...\p...\plet me become...\p...\pits plaything...\p...\p!」
+
+//<00002673> \r
+<00002673> \r
+
+//<000004f2> 【武】「あ…\p…\pうぅ…\p…\pあ…\p…\p」
+<000004f2> 【Takeru】「Ah...\p...\puuu...\p...\pah...\p...\p」
+
+//<00002676> \r
+<00002676> \r
+
+//<000004f4> 【武】「…\p…\pうぅ…\p…\pうぅぅ…\p…\pッ…\p…\p」
+<000004f4> 【Takeru】「...\p...\puu...\p...\puuuuu...\p...\p! ...\p...\p...\p...\p」
+
+//<00000f42> \r
+<00000f42> \r
+
+//<000004f5> 【冥夜】「――うぅぁぁぁあああああああ～～～～～ッ！！」
+<000004f5> 【Meiya】「――Uuuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa!!」
+
+//<00002679> \r
+<00002679> \r
+
+//<00002b3a> 【冥夜】「――あぁぁぁッ…\p…\pお願い…\p…\pタ…\p…\p…\pケル…\p…\pも、\pもう…\p…\pうああああぁ～～～～ッ！！！」
+<00002b3a> 【Meiya】「――Aaaaaaaa! ...\p...\pplease...\p...\pTa...\p...\p...\pkeru...\p...\pd-\pdo not...\p...\puwaaaaaaaaaaaaaaaaaaa!!!」
+
+//<0000267c> \r
+<0000267c> \r
+
+//<000004fb> 【武】「――うわああああああああああぁぁぁ～～～～～ッ！！」
+<000004fb> 【Takeru】「――Uwaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa!!」
+
+//<0000267f> \r
+<0000267f> \r
+
+//<000004fd> 【武】「冥夜────────────ッ！！」
+<000004fd> 【Takeru】「MEIYAAAAAAAAAAAAAAAAAAAAAAAAA!!」//all caps justified? y/n ~IX//YES IT IS - Sheeta
+
+//<00002721> \r
+<00002721> \r
+
+//<00000501> 【冥夜】「…\p…\p…\p…\p…\p…\p」
+<00000501> 【Meiya】「...\p...\p...\p...\p...\p...\p」
+
+//<00002a49> \r
+<00002a49> \r
+
+//<00000505> 【冥夜】「…\p…\p姉…\p…\p上…\p…\p…\p…\p」
+<00000505> 【Meiya】「...\p...\psis...\p...\pter...\p...\p...\p...\p」
+
+//<00000a8b> \r
+<00000a8b> \r
+
+//<0000050a> 【武】「――ぐうぅぅぅぅぅぅぅぅッ！！！」
+<0000050a> 【Takeru】「――Uuuuuuuuuuuuuuuuuuuu!!!」
+
+//<00000d82> \r
+<00000d82> \r
+
+//<0000050e> 【武】「――くっそぉぉぉぉぉ～～～～ッ！！」
+<0000050e> 【Takeru】「――Damn iiiiiiiiiiiiiiiiiit!!」
+
+//<00002a54> \r
+<00002a54> \r
+

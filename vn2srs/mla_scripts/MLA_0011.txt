@@ -1,0 +1,820 @@
+// Title: 島をゆく 総合戦闘技術評価演習 3日目
+#FILENAME 21efeee2
+#TYPE 1
+
+//<00000810> 【武】「…\p…\p…\p…\p」\e
+<00000810> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000811> 今のところは完璧だ。\e
+<00000811> This is perfect.\e
+
+//<00000812> 前は４日目のギリギリの時間についたってのに…\p…\p今回は２日目の夜に到着だ。\e
+<00000812> It's night on day two...\p...\ptwo days earlier than last time.\e//couldn't think of a good way to retain 'day four' - Sheeta //since the number of days saved is what matters, doing this and letting the "barely on time" part become implied since you should've read MLU ~IX
+
+//<00000813> 【美琴】「千鶴さんと冥夜さんが来たよ」\e
+<00000813> 【Mikoto】「Chizuru-san and Meiya-san are here.」\e
+
+//<00000814> 【武】「お、\pついに来たか…\p…\p」\e
+<00000814> 【Takeru】「Oh,\p it's about time...\p...\p」\e
+
+//<00000815> 【冥夜】「タケル、\p少し灯が漏れているぞ…\p…\p３０ｍ先からでも丸見えだった」\e
+<00000815> 【Meiya】「Takeru,\p your light is a little exposed...\p...\pwe could clearly see it from thirty meters away.」\e
+
+//<00000816> 【武】「え？　ああ、\pやべえやべえ」\e
+<00000816> 【Takeru】「Eh? Aaah,\p whoops, better fix that.」\e//lit. "Aaah, crap, crap."
+
+//<00000817> 【冥夜】「しかし…\p…\pそなた達、\pさすがだな」\e
+<00000817> 【Meiya】「But still...\p...\ponly you two could do it so quickly.」\e
+
+//<00000818> 【千鶴】「ホント。ふたりはいつ着いたの？」\e
+<00000818> 【Chizuru】「Agreed. When did you arrive?」\e
+
+//<00000819> 【美琴】「ボクたちは昨日の夜に、\pここに着いたんだよ」\e
+<00000819> 【Mikoto】「We got here yesterday evening.」\e
+
+//<0000081a> 【千鶴】「…\p…\p！？」\e
+<0000081a> 【Chizuru】「...\p...\p!?」\e
+
+//<0000081b> 【冥夜】「それは本当なのか…\p…\p？」\e
+<0000081b> 【Meiya】「Is that true...\p...\p?」\e
+
+//<0000081d> 【壬姫】「あれ～、\pもしかして、\pすでに揃ってる？」\e
+<0000081d> 【Miki】「Huh～?\p Is everyone else here already?」\e
+
+//<0000081e> 【武】「おう。おまえ達が最後だ」\e
+<0000081e> 【Takeru】「Yeah, you're the last ones.」\e
+
+//<0000081f> 【慧】「…\p…\p何したの？」\e
+<0000081f> 【Kei】「...\p...\pwhat'd you do?」\e
+
+//<00000820> 【武】「…\p…\pなんで疑いの眼差しなんだ？」\e
+<00000820> 【Takeru】「...\p...\pwhy the suspicious glare?」\e//lit. "why the glare of suspicion" it's really weird when the line is almost identical in both languages
+
+//<00000821> 【慧】「…\p…\p違う違う」\e
+<00000821> 【Kei】「...\p...\pI'm not, I'm not.」\e
+
+//<00000822> 【千鶴】「全員揃ったところでさっそくだけど現状の把握をしましょう。\n珠瀬達からお願い」\e
+<00000822> 【Chizuru】「Now that everyone's here, let's figure out where we're at.\nTamase, you start.」\e
+
+//<00000823> 【壬姫】「私たちは、\p脱出ポイントの書かれた地図を見つけたよ」\e
+<00000823> 【Miki】「We found a map with the evac point on it.」\e
+
+//<00000824> 【千鶴】「…\p…\p端に脱出ポイントがあるのね」\e
+<00000824> 【Chizuru】「...\p...\pso it's all the way over there.」\e
+
+//<000004ff> 【冥夜】「時間的に、\p幾分余裕があると見て良いのであろうか…\p…\p？」\e
+<000004ff> 【Meiya】「We appear to have more than enough time...\p...\p」\e
+
+//<00000826> 【壬姫】「そこまではちょっとわからないけど…\p…\p。\nあ、\pついでに対物体狙撃銃を１挺手に入れたよ。\n弾は１発だけどね」\e
+<00000826> 【Miki】「Well, we don't know that for sure...\p...\p\nAh,\p we also found an anti-materiel sniper rifle.\p\nThough it only had one round in it.」\e//PCP MLU_0013 huh, the number jumped again. We must've skipped over a script of Takeru writhing in pain.
+
+//<00000827> 相変わらず…\p…\pでかいライフルだよな。\e
+<00000827> Just like last time...\p...\pthat thing is freaking huge.\e
+
+//<000004b1> ２分割出来るから、\p持ち運ぶ苦労は少ないだろうけど…\p…\pでかい。\e
+<000004b1> It can be split in half so carrying it isn't that bad...\p...\pbut still.\e
+
+//<000004b2> 【冥夜】「私達の方はラペリングロープを手に入れた」\e
+<000004b2> 【Meiya】「We found a rappelling rope.」\e
+
+//<0000082a> 【武】「オレたちはシートだけだ」\e
+<0000082a> 【Takeru】「All we found was a sheet.」\e
+
+//<0000082b> 前は毒蛇事件があったからこそ活躍したが、\p今回はまったくもって活躍の場なし…\p…\p。\e
+<0000082b> Last time we used it right away because of my snake bite,\p but it's gonna be completely useless this time...\p...\p\e
+
+//<0000082c> 【壬姫】「ルートは？」\e
+<0000082c> 【Miki】「Which way should we go?」\e
+
+//<0000082d> 【千鶴】「なるべく緩やかそうなところを選びましょう。\nこの状態じゃそれくらいしか判断基準ないから」\e
+<0000082d> 【Chizuru】「I'd like the easiest route possible,\p but there's no way to tell which that is.」\e
+
+//<00000454> 【壬姫】「そうだね」\e
+<00000454> 【Miki】「True.」\e
+
+//<000004b3> 【千鶴】「それと…\p…\pかなり時間の余裕があるけど、\pペースを落とす気はないから、\pみんなそのつもりで」\e
+<000004b3> 【Chizuru】「Also...\p...\pwe may have a lot of time,\p but we're not going to slow down,\p so prepare yourselves.」\e
+
+//<00000456> 【美琴】「そうだね。\nこの先何が起こるかわからないから、\p急いだ方がいいのは変わらないよ」\e
+<00000456> 【Mikoto】「You're right.\nWe have no idea what might happen,\p so we should still hurry.」\e
+
+//<00000831> さすが委員長。それとなく急ぐように言おうと思ったけど、\p余計な心配だったな。\e
+<00000831> Thanks, Class Rep. I thought about recommending we keep up this pace,\p but there was no need.\e
+
+//<000004b4> 【千鶴】「ここからは小隊での行動になるわ。\nチームワークの悪さが作戦の失敗に直結する…\p…\p気をつけてね」\e
+<000004b4> 【Chizuru】「From now on we'll be moving as a squad.\nBad teamwork will result in mission failure...\p...\pso take care.」\e
+
+//<00000833> 【武】「了解」\e
+<00000833> 【Takeru】「Understood.」\e
+
+//<00000834> 【壬姫】「わかったよ」\e
+<00000834> 【Miki】「Got it.」\e
+
+//<00000835> 【美琴】「オーケーだよ」\e
+<00000835> 【Mikoto】「Okay.」\e
+
+//<00000836> 【慧】「…\p…\p…\p…\p」\e
+<00000836> 【Kei】「...\p...\p...\p...\p」\e
+
+//<000004b5> 【千鶴】「…\p…\pＯＫ、\pじゃあ、\p班ごとにローテーションを組んで、\p交代で休憩と食事を取りましょう」\e
+<000004b5> 【Chizuru】「...\p...\pokay then.\p Let's set up some rotating shifts so everyone can eat and sleep.」\e
+
+//<00000838> 【武】「そうか、\p委員長達まだ食ってなかったのか」\e
+<00000838> 【Takeru】「Oh,\p so you guys haven't eaten yet?」\e
+
+//<00000839> 【冥夜】「合流地点が近かったのはわかっていたからな。\n早く到着したかったのだ」\e
+<00000839> 【Meiya】「The rendezvous point was quite close to us.\nWe wanted to arrive quickly.」\e
+
+//<00000668> 【壬姫】「わっ、\pこの実食べられるかな～」\e
+<00000668> 【Miki】「Wa!\p Maybe I can eat this fruit～」\e
+
+//<0000083b> 【美琴】「パンギノキには強い毒があるよ」\e
+<0000083b> 【Mikoto】「Pangium edule are highly poisonous.」\e
+
+//<0000083c> 【慧】「…\p…\pこれは？」\e
+<0000083c> 【Kei】「...\p...\pand this?」\e
+
+//<0000083d> 【美琴】「マチンは猛毒だね～」\e
+<0000083d> 【Mikoto】「Strychnine is even more deadly～」\e
+
+//<0000083e> 【慧】「…\p…\p…\p…\pなるほど」\e
+<0000083e> 【Kei】「...\p...\p...\p...\pI see.」\e
+
+//<0000083f> 【千鶴】「…\p…\p。\pなんで私を見るわけ？」\e
+<0000083f> 【Chizuru】「...\p...\pwhy are you looking at me?」\e
+
+//<00000840> 【慧】「…\p…\pえ？」\e
+<00000840> 【Kei】「...\p...\peh?」\e
+
+//<00000841> 【千鶴】「え？　じゃないわよ！」\e
+<00000841> 【Chizuru】「Don't go 'eh'!」\e
+
+//<00000842> 【慧】「…\p…\p見てない」\e
+<00000842> 【Kei】「...\p...\pI wasn't looking.」\e
+
+//<00000843> 【千鶴】「見たでしょうが！」\e
+<00000843> 【Chizuru】「Yes you were!」\e
+
+//<00000844> 【慧】「…\p…\pあげる」\e
+<00000844> 【Kei】「...\p...\pthis is for you.」\e
+
+//<00000845> 【千鶴】「いらないわよ！！」\e
+<00000845> 【Chizuru】「I don't want it!!」\e
+
+//<00000846> 【武】「おまえら…\p…\p」\e
+<00000846> 【Takeru】「You two...\p...\p」\e
+
+//<00000847> …\p…\p前倒しに集合しても、\pいい感じに不安が残るのはなぜだ？\e
+<00000847> ...\p...\pthe squad's back together a lot sooner now,\p so why do I still feel uneasy?\e
+
+//<00000848> …\p…\pおかしい。\e
+<00000848> ...\p...\pthis isn't right.\e
+
+//<000004b6> もうそろそろ、\p川に着いてもいい頃の筈だけど…\p…\p。\e
+<000004b6> We should've reached the river by now...\p...\p\e
+
+//<000004b7> オレの感覚が変わりすぎてるんで、\p前の経験がアテにならないってことか。\e
+<000004b7> So my senses really have changed too much for my memories to help out here.\e
+
+//<0000084c> 【美琴】「…\p…\p千鶴さん！」\e
+<0000084c> 【Mikoto】「...\p...\pChizuru-san!」\e
+
+//<0000084d> 【千鶴】「どうしたの？」\e
+<0000084d> 【Chizuru】「What is it?」\e
+
+//<0000084e> 【美琴】「前方に崖を発見したよ！　下に川が流れてる」\e
+<0000084e> 【Mikoto】「I see a cliff up ahead! There's a river below.」\e
+
+//<0000084f> 来た！\e
+<0000084f> That's more like it!\e//"there it is" doesn't work if he can't see it, alt. "there we go" ~IX
+
+//<00000850> 前の時は、\pちょうど渡ってる時に雨が降ってきたんだっけ。\e
+<00000850> It started raining right after we crossed it last time.\e
+
+//<00000851> あれはヤバかった。あいつのおかげでロープを回収するのにライフルがどうとか、\p散々もめたんだ。\e
+<00000851> It was really hard too. We had to choose between the rope and the rifle round,\p and got in quite the argument.\e
+
+//<00000852> 今回はサクッと渡って、\pロープも回収しちまおう。\e
+<00000852> This time let's just zip over and get the rope back before anything happens.\e
+
+//<00000608> 彩峰にもう１往復する手間をかけてもらえば、\p無駄なトラブルは回避できる。\e
+<00000608> If Ayamine can make two round trips,\p we won't have to make that decision.\e
+
+//<00000854> 【武】「一気に渡った方がいいぞ」\e
+<00000854> 【Takeru】「We should just cross this now.」\e
+
+//<00000855> 【千鶴】「もちろん。\n迂回は時間の無駄だしね」\e
+<00000855> 【Chizuru】「Of course.\nA detour would only waste time.」\e
+
+//<00000856> 【武】「ああ、\p急ごう」\e
+<00000856> 【Takeru】「Yeah,\p let's hurry.」\e
+
+//<00000857> 【千鶴】「…\p…\p彩峰、\p向こうにロープをかけてきて」\e
+<00000857> 【Chizuru】「...\p...\pAyamine,\p tie this rope to the other side.」\e
+
+//<00000858> 【慧】「…\p…\p…\p…\p了解」\e
+<00000858> 【Kei】「...\p...\punderstood.」\e
+
+//<00000859> 【武】「相変わらず素早いな」\e
+<00000859> 【Takeru】「She really is fast.」\e
+
+//<00000656> 【美琴】「慧さんは身体能力が高いから。\nロッククライミングとかラペリングが得意なんだよ」\e
+<00000656> 【Mikoto】「Kei-san's good at anything physical.\nEspecially rock climbing and rappelling.」\e
+
+//<000004b8> 今のオレは、\p基礎体力なら彩峰に負けない自信がある。\nけど、\pあのバランス感覚はマネ出来ない。\e
+<000004b8> As I am now,\p I think I could match Ayamine's strength.\nBut there's no way I could imitate her sense of balance.\e
+
+//<0000085c> やっぱ、\p天性の物なんだろ…\p…\p…\pん？\e
+<0000085c> Maybe it was born into her...\p...\p...\p...\phm?\e
+
+//<0000085d> 【武】「何だ…\p…\p？　雲行きが怪しくなってきたぞ？」\e
+<0000085d> 【Takeru】「What the...\p...\p? The clouds are starting to look bad.」\e
+
+//<0000085e> …\p…\p雨？\e
+<0000085e> ...\p...\prain?\e
+
+//<0000085f> 【千鶴】「雨！？」\e
+<0000085f> 【Chizuru】「Rain!?」\e
+
+//<00000860> 【武】「え！？　何でだ！？」\e
+<00000860> 【Takeru】「Eh!? Why!?」\e
+
+//<00000861> 【美琴】「え…\p…\p？」\e
+<00000861> 【Mikoto】「Eh...\p...\p?」\e
+
+//<00000862> 【武】「あ、\pいや…\p…\p…\p…\p」\e
+<00000862> 【Takeru】「Ah,\p nothing...\p...\p...\p...\p」\e
+
+//<00000863> あ！\e
+<00000863> Ah!\e
+
+//<000004b9> オレが蛇に噛まれて寝込んでたとき…\p…\pあの時も雨が降った！\e
+<000004b9> When I was sleeping, after being bitten...\p...\pit rained that day too!\e
+
+//<000004ba> そうか…\p…\pこれは、\pあの時の雨か…\p…\p。\e
+<000004ba> I see...\p...\pso this is the rain from then...\p...\p\e
+
+//<00000866> しまったなー…\p…\p。\e
+<00000866> Whoops...\p...\p\e//learn to spell 'whoops' already - Sheeta
+
+//<00000867> …\p…\pそういやスコールが来るんだったな。\e
+<00000867> ...\p...\pthis place gets a lot of squalls.\e
+
+//<00000869> 【千鶴】「…\p…\pよりによってこんな時に」\e
+<00000869> 【Chizuru】「...\p...\pand it had to be now of all times.」\e
+
+//<0000086a> 確かにタイミングは良くないな。\e
+<0000086a> She's got a point, it couldn't be much worse.\e
+
+//<0000086b> 【美琴】「…\p…\pあ、\p慧さんＯＫだって」\e
+<0000086b> 【Mikoto】「...\p...\pah,\p Kei-san says it's okay.」\e
+
+//<0000086c> 【千鶴】「わかったわ。\n川が増水しないうちにいきましょう」\e
+<0000086c> 【Chizuru】「Okay then.\nWe'll cross the river before it floods.」\e
+
+//<0000086d> 【冥夜】「…\p…\p…\p…\p」\e
+<0000086d> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<0000086e> 【武】「ん？　どうした、\p冥夜？」\e
+<0000086e> 【Takeru】「Hm? Meiya?\p What is it?」\e
+
+//<0000086f> 【冥夜】「いや…\p…\pそなたが不思議でな」\e
+<0000086f> 【Meiya】「Nothing...\p...\pyou were simply mysterious.」\e
+
+//<00000870> 【武】「え？」\e
+<00000870> 【Takeru】「Eh?」\e
+
+//<000004bb> 【冥夜】「落ち着きすぎていると言うか…\p…\p何か、\p自信のような物を感じるのだが…\p…\p？」\e
+<000004bb> 【Meiya】「Perhaps I mean to say you were too calm...\p...\pand I feel a sense of confidence from you...\p...\p」\e
+
+//<00000875> 【武】「気のせいだよ。\nじゃ、\p先に行かせてもらうぜ」\e
+<00000875> 【Takeru】「You're imagining things.\nAnyway,\p I'm going first.」\e
+
+//<00000876> 【千鶴】「雨が止まないわね…\p…\p増水もしてるし」\e
+<00000876> 【Chizuru】「The rain isn't stopping...\p...\pand now it's flooded.」\e
+
+//<00000877> 渡る前より更に川が増水してる。\n勢いも強い。\e
+<00000877> The water's even higher than when we crossed.\nAnd fiercer.\e
+
+//<00000878> 【美琴】「これじゃ、\p慧さんにロープ回収してもらうのは無理だね」\e
+<00000878> 【Mikoto】「Kei-san can't retrieve the rope like this.」\e
+
+//<00000879> 【壬姫】「雨が止むの待ってみる？」\e
+<00000879> 【Miki】「Should we wait for the rain to stop?」\e
+
+//<0000087a> 【冥夜】「スコールかと思ったが、\pいつやむかわからん。\n時間の浪費であろう」\e
+<0000087a> 【Meiya】「I thought it was a squall,\p but it simply will not end.\nWe are only wasting time.」\e
+
+//<0000087b> 【壬姫】「シートがあるって言っても、\pこのままじゃ雨に体力を持っていかれちゃうね…\p…\p」\e
+<0000087b> 【Miki】「Even with that sheet,\p the rain's going to sap all of our energy...\p...\p」\e
+
+//<000004bc> シートはあるけど、\p全員が雨を凌げるほどの大きさがあるわけじゃない。\e
+<000004bc> Not to mention it isn't big enough to shield us all from the rain.\e
+
+//<000004bd> このままだと、\pみんながずぶ濡れになるのも時間の問題だ。\e
+<000004bd> It's only a matter of time before everyone's soaking wet.\e
+
+//<0000087e> 【美琴】「…\p…\pそうだね。\nロープがいるならいるで早めに決断しないとまずいと思うよ」\e
+<0000087e> 【Mikoto】「...\p...\pyeah.\nWe need to decide whether to abandon the rope or not.」\e
+
+//<0000087f> 【千鶴】「私は…\p…\pロープは必要だと思う。\nここから先もこんな地形になってるかもしれないから」\e
+<0000087f> 【Chizuru】「I think...\p...\pwe need it.\nThere might be a similar crevasse farther ahead.」\e
+
+//<00000880> 【美琴】「じゃあ、\pどうするの？」\e
+<00000880> 【Mikoto】「So what should we do?」\e
+
+//<00000881> 【千鶴】「ロープの縛り目をライフルで狙撃してほしいの。\n珠瀬、\p出来るかしら？」\e
+<00000881> 【Chizuru】「Tamase,\p I'd like you to shoot the knot on the far side.\p Can you do that?」\e//CP_S MLU_0013
+
+//<00000882> 【壬姫】「私？」\e
+<00000882> 【Miki】「Me?」\e//CP_E
+
+//<000004bf> なるほど…\p…\p。威力からすれば木ごと吹っ飛ぶだろうが、\p万が一の事を考えて、\pたまに縛り目を狙わせるのか\e
+<000004bf> I get it...\p...\pthat round might just blow away the whole tree,\p so she wants to hit the knot instead and prevent any freak accidents.\e
+
+//<00000883> 【千鶴】「そうすれば、\pロープの回収は可能よ」\e
+<00000883> 【Chizuru】「Then it would be possible to retrieve the rope.」\e//CP_S
+
+//<00000884> 【冥夜】「だが、\p１発しかない弾薬を失うことになる」\e
+<00000884> 【Meiya】「But we would lose our only rifle round.」\e
+
+//<000004c0> 【千鶴】「それはそうだけど…\p…\p私はロープの確保を優先するわ。\n何か異存でもあるの？」\e
+<000004c0> 【Chizuru】「That's true, but...\p...\pI see the rope as more valuable.\p Are there other opinions?」\e
+
+//<00000886> 【冥夜】「…\p…\p私は、\pここでライフルを使うべきではないと思う」\e
+<00000886> 【Meiya】「...\p...\pI do not think we should use the rifle here.」\e
+
+//<00000887> 【千鶴】「理由は？」\e
+<00000887> 【Chizuru】「Your reasons?」\e//CP_E
+
+//<000004c1> 【冥夜】「後々何があるかわからん。\n強力な武器はもっと有効な局面で使うべきではないのか？」\e
+<000004c1> 【Meiya】「We do not know what lies ahead.\nShould we not use our strongest weapon on a more appropriate target?」\e
+
+//<00000889> 【千鶴】「それは確かにそうだけど」\e
+<00000889> 【Chizuru】「You've got a point, but...\p...\p」\e
+
+//<000004c2> 【冥夜】「ロープはツルなどで代用できるが、\pライフルの弾はそうはいかない」\e
+<000004c2> 【Meiya】「We can use vines in place of rope,\p\bbut that cannot be done for bullets.」\e//CP
+
+//<000004c3> 【千鶴】「でも、\pライフルよりロープの方が使い道が多いと思うわ。\nまた崖があるかもしれないし…\p…\p」\e
+<000004c3> 【Chizuru】「But a rope has more uses than a rifle.\nThere could be another ravine like this later...\p...\p」\e
+
+//<000004c4> 【美琴】「ボクも千鶴さんに賛成だな」\e
+<000004c4> 【Mikoto】「I agree with Chizuru-san.」\e//CP
+
+//<000004c5> …\p…\pまずいな。前の時と同じ展開になりつつある。\e
+<000004c5> ...\p...\pthis is bad. They're doing the same thing as before.\e
+
+//<0000088e> 【美琴】「ライフルよりもロープの方が使い勝手が良いからね。\nまた崖がないとも言い切れないし」\e
+<0000088e> 【Mikoto】「A rope has more uses than a rifle.\p\p\p\p\p\nWe have no way of knowing if there'll be another cliff.」\e//CP_S
+
+//<0000088f> 【壬姫】「私は、\pライフルをとっておきたいな」\e
+<0000088f> 【Miki】「I'd like to save the rifle.」\e//CP_E
+
+//<00000890> 【冥夜】「彩峰は？」\e
+<00000890> 【Meiya】「Ayamine?」\e
+
+//<00000891> 【慧】「…\p…\pん？」\e
+<00000891> 【Kei】「...\p...\phm?」\e//CP_S
+
+//<00000892> 【千鶴】「意見がなかったら、\p言わなくていいのよ？」\e
+<00000892> 【Chizuru】「If you have no opinion, then you don't have to say anything.」\e
+
+//<00000893> 【慧】「…\p…\pロープは諦める」\e
+<00000893> 【Kei】「...\p...\pleave the rope.」\e
+
+//<00000894> 【千鶴】「…\p…\pどうして？」\e
+<00000894> 【Chizuru】「...\p...\pwhy?」\e
+
+//<00000895> 【慧】「…\p…\p…\p…\p隊長の意見だから？」\e
+<00000895> 【Kei】「...\p...\pbecause our squad leader said the opposite?」\e
+
+//<00000896> 【千鶴】「あ…\p…\pあなたね～っ！！」\e
+<00000896> 【Chizuru】「Y-...\p...\pyou are just...\p...\p!!」\e//CP_E
+
+//<00000897> やっぱりな。\e
+<00000897> Saw that coming.\e
+
+//<00000898> 前も同じような事言っていた気がする…\p…\p。\e
+<00000898> I think they had this exact same fight before...\p...\p\e
+
+//<00000899> 【慧】「…\p…\pというのはウソ」\e
+<00000899> 【Kei】「...\p...\pthat was a lie.」\e//CP
+
+//<0000089a> 【武】「…\p…\pウソかよ」\e
+<0000089a> 【Takeru】「...\p...\pyou lied?」\e
+
+//<0000089b> 【慧】「…\p…\pホントはロープ嫌いだから」\e
+<0000089b> 【Kei】「...\p...\pthe truth is, I hate ropes.」\e//lol, great place to suddenly change it
+
+//<0000089c> 【武】「結局どっちでも良いんだな」\e
+<0000089c> 【Takeru】「So you don't really care either way.」\e
+
+//<0000089d> 【慧】「…\p…\pどちらを選ぶのが正しいとは言えない」\e
+<0000089d> 【Kei】「...\p...\pI can't say either option is better than the other.」\e
+
+//<0000089e> 【武】「…\p…\p」\e
+<0000089e> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000089f> のらりくらりも相変わらずか…\p…\p。\e
+<0000089f> She's always been one for lazy opinions...\p...\p\e
+
+//<000008a0> 【千鶴】「白銀は？」\e
+<000008a0> 【Chizuru】「And you, Shirogane?」\e
+
+//<000008a1> 【武】「うん…\p…\p考えてた」\e
+<000008a1> 【Takeru】「Yeah...\p...\pI've been thinking.」\e
+
+//<000004c6> …\p…\pあと３、\p４時間すれば、\pこの雨は止む。\e
+<000004c6> ...\p...\pthis rain should stop in three,\p maybe four hours.\e
+
+//<000004c7> それまで待てば、\pライフルを使わずにロープを回収できる…\p…\pそんな『未来』を知ってるのは、\pオレだけだ。\e
+<000004c7> If we wait until then,\p we can retrieve the rope without using the rifle...\p...\pI'm the only one who knows that "future."\e
+
+//<000004c8> 一刻も早くゴールしたいみんなが、\p焦る気持ちはよくわかる。\e
+<000004c8> I know everyone wants to get moving again as soon as possible.\e
+
+//<0000067a> 本当は…\p…\pロープもライフルも手元にあるのが一番なんだけどな…\p…\p。\e
+<0000067a> But the truth is...\p...\pit'd be best to bring both the rope and the rifle with us...\p...\p\e
+
+//<000008a6> 【千鶴】「白銀？」\e
+<000008a6> 【Chizuru】「Shirogane?」\e
+
+//<000008a7> 【武】「ああ…\p…\p」\e
+<000008a7> 【Takeru】「Aaah...\p...\p」\e
+
+// Selection: ロープを回収する
+// Selection: ライフルを温存する
+// Selection: 増水がおさまるのを待つ
+//<000004ca> 【武】「これから先、\pどんな地形が待ち受けているか分からないんだ。\nロープを持っていった方が安心だと思う」\e
+<000004ca> 【Takeru】「We don't know what the rest of the terrain is like.\bI'd feel safer taking the rope with us.」\e//CP BR_1.1
+
+//<000008af> もし万が一、\pオレの記憶通りにボートがあそこになかった場合、\pロープは重要だ。\e
+<000008af> If the boat isn't where I think it is for some strange reason,\p that rope's gonna be important.\e
+
+//<000008b0> ロープがあれば、\p離島のボロ橋を渡ることが出来る。\e
+<000008b0> We'll be able to cross the worn-out bridge to the final island with it.\e
+
+//<000004cb> 迂回して鉄橋を渡ることになったら、\p時間の無駄だ。\e
+<000004cb> The last thing we want is a detour to the other one.\e
+
+//<000008b2> 【千鶴】「白銀は私と同意見なのね」\e
+<000008b2> 【Chizuru】「So you agree with me.」\e
+
+//<000008b3> 【武】「ああ。で、\pどうするんだ、\p隊長？」\e
+<000008b3> 【Takeru】「Yeah. So,\p squad leader,\p what'll we do?」\e
+
+//<000008b4> 【千鶴】「ロープを回収するわ。\nいいわね」\e
+<000008b4> 【Chizuru】「We're retrieving the rope.\nUnderstood?」\e
+
+//<000008b5> 【冥夜】「わかった」\e
+<000008b5> 【Meiya】「Yes.」\e
+
+//<000008b6> 【壬姫】「いつまでもここで延々話し合ってるわけにもいかないしね～」\e
+<000008b6> 【Miki】「We can't spend all our time talking about this, after all.」\e//CP_S
+
+//<000008b7> 【慧】「…\p…\p時間、\pもったいない」\e
+<000008b7> 【Kei】「...\p...\pwe can't waste time.」\e//CP_E
+
+//<000004cc> 【武】「これから先、\pどんな地形が待ち受けているか分からないんだ。\nロープを持っていった方が安心だと思う」\e
+<000004cc> 【Takeru】「We don't know what the rest of the terrain is like.\bI'd feel safer taking the rope with us.」\e//BCP_S BR_1.2
+
+//<000008bb> ロープがあれば、\p離島のボロ橋を渡ることが出来るだろう。\e
+<000008bb> With the rope,\p we'll be able to cross the worn-out bridge to the final island with it.\e
+
+//<000004cd> 迂回して鉄橋を渡ることになったら、\p時間の無駄だ。\e
+<000004cd> The last thing we want is a detour to the other one.\e
+
+//<000008bd> 【千鶴】「白銀は私と同意見なのね」\e
+<000008bd> 【Chizuru】「So you agree with me.」\e
+
+//<000008be> 【武】「ああ。で、\pどうするんだ、\p隊長？」\e
+<000008be> 【Takeru】「Yeah. So,\p squad leader,\p what'll we do?」\e
+
+//<000008bf> 【千鶴】「ロープを回収するわ。\nいいわね」\e
+<000008bf> 【Chizuru】「We're retrieving the rope.\nUnderstood?」\e
+
+//<000008c0> 【冥夜】「わかった」\e
+<000008c0> 【Meiya】「Yes.」\e
+
+//<000008c1> 【壬姫】「いつまでもここで延々話し合ってるわけにもいかないしね～」\e
+<000008c1> 【Miki】「We can't spend all our time talking about this, after all.」\e
+
+//<000008c2> 【慧】「…\p…\p時間、\pもったいない」\e
+<000008c2> 【Kei】「...\p...\pwe can't waste time.」\e
+
+//<000008c3> 【壬姫】「じゃあ、\pさっそくライフルを使うよー」\e
+<000008c3> 【Miki】「Then I'll make the shot right now.」\e//BR_E for the .1 and .2 at least
+
+//<000008c4> ここで時間をロスしているわけにはいかない。\e
+<000008c4> We can't afford to lose any time here.\e
+
+//<000008c5> ロープを回収して、\p早く進まないと。\e
+<000008c5> Gotta get the rope back and move forward.\e
+
+//<000008c9> 【慧】「…\p…\p回収したよ」\e
+<000008c9> 【Kei】「...\p...\prope retrieved.」\e
+
+//<000008ca> 【壬姫】「ライフルはどうする？　置いてく？」\e
+<000008ca> 【Miki】「What about the rifle? Should we leave it here?」\e
+
+//<000004ce> 【冥夜】「弾薬が手に入る可能性も捨てきれないが…\p…\pその重さは行軍の邪魔になる。\n置いていこう」\e
+<000004ce> 【Meiya】「I cannot ignore the possibility of finding more ammunition later...\p...\pbut its weight will hinder the squad.\nWe ought to leave it here.」\e
+
+//<000004cf> 【武】「スコープだけは持っていこう。\n望遠鏡の代りになる」\e
+<000004cf> 【Takeru】「Let's take the scope though.\nIt'll serve as binoculars.」\e
+
+//<000004d0> 【美琴】「うん、\pそうだね。\nたいした重さじゃないし」\e
+<000004d0> 【Mikoto】「Yeah,\p let's do that.\nThat part doesn't weigh much anyway.」\e
+
+//<000008ce> 【武】「んじゃ、\p行きますか！」\e
+<000008ce> 【Takeru】「Okay now,\p let's get going!」\e
+
+//<000008cf> 現時点でもかなりの短縮が出来てるんだ。\e
+<000008cf> We ought to be much farther ahead that last time.\e
+
+//<000008d0> これなら、\p確実に早く着くぜ…\p…\p！\e
+<000008d0> We're sure to reach the end in record time...\p...\p!\e
+
+//<000004d1> 【武】「ロープは他の物で代用できる。\nそれに、\pいくら雨が降っているとは言え、\pここで発砲音を響かせるのは得策じゃない」\e
+<000004d1> 【Takeru】「Since we can find things to use in place of the rope,\p it seems like a waste to use the rifle here.」\e//CP BR_2.1
+
+//<000008d8> 【冥夜】「なるほど」\e
+<000008d8> 【Meiya】「I see.」\e
+
+//<000008d9> 【武】「ああ、\pたまにライフル持たせておけば、\pなんかあった時に役に立つからな」\e
+<000008d9> 【Takeru】「If we leave the rifle with Tama,\p it'll be useful in case something attacks us.」\e//CP
+
+//<000004d2> …\p…\pあの砲台を黙らせるには、\pこいつを使うしかないからな。\e
+<000004d2> ...\p...\pwe're gonna need it to silence that gun battery.\e
+
+//<000004d3> 【武】「ロープは他の物で代用できる。\nそれに、\pいくら雨が降っているとは言え、\pここで発砲音を響かせるのは得策じゃない」\e
+<000004d3> 【Takeru】「Since we can find things to use in place of the rope,\p it seems like a waste to use the rifle here.」\e//BCP BR_2.2
+
+//<000008de> 【冥夜】「なるほど」\e
+<000008de> 【Meiya】「I see.」\e
+
+//<000008df> 【武】「ああ、\pたまにライフル持たせておけば、\pなんかあった時に役に立つからな」\e
+<000008df> 【Takeru】「If we leave the rifle with Tama,\p it'll be useful in case something attacks us.」\e//CP
+
+//<000008e0> もしかしたら、\pこいつで砲台のレーダーを黙らせることが出来るかもしれないんだ。\e
+<000008e0> We might be able to take out that gun battery's radar using this thing.\e
+
+//<000004d4> そうすれば、\p攻撃される気遣いもなくなるんだ。\e
+<000004d4> Then we won't have to worry about getting shot.\e
+
+//<000004d5> 【千鶴】「わかったわ…\p…\pロープは放棄。\nいいわね」\e
+<000004d5> 【Chizuru】「Okay then...\p...\pwe'll leave the rope.\nUnderstood?」\e//BR_E subbranches again
+
+//<000008e3> 【武】「おいおい、\p言いだしたオレが言うのもなんだが…\p…\pそんなあっさりで良いのか？」\e
+<000008e3> 【Takeru】「Hey now,\p maybe it's weird for me to say this...\p...\pbut are you sure you're okay with changing your mind that quickly?」\e
+
+//<000004d6> 【千鶴】「迷っていても時間を浪費するだけ。\n即断即決よ」\e
+<000004d6> 【Chizuru】「If I hesitate, it'll just waste more time.\nSo I'm making my decision right now.」\e
+
+//<000004d7> 【千鶴】「みんな、\p異存はないわね？」\e
+<000004d7> 【Chizuru】「No one has any objections, I assume?」\e
+
+//<000008eb> 【冥夜】「うむ」\e
+<000008eb> 【Meiya】「None.」\e
+
+//<000008ec> 【壬姫】「私もないよー！」\e
+<000008ec> 【Miki】「Me neither!」\e
+
+//<000004d8> 【美琴】「時間の余裕は、\pあった方がいいしね」\e
+<000004d8> 【Mikoto】「It would be nice to have more time.」\e
+
+//<000004d9> 【武】「よし、\pそれじゃあライフルは…\p…\p」\e
+<000004d9> 【Takeru】「Okay,\p then let's take the rifle and...\p...\p」\e
+
+//<000004da> 【慧】「…\p…\p持つよ」\e
+<000004da> 【Kei】「...\p...\pI'll carry it.」\e
+
+//<000004db> 【千鶴】「…\p…\pそれじゃみんな、\p行軍再開よ」\e
+<000004db> 【Chizuru】「...\p...\pokay then. Everyone,\p forward march.」\e
+
+//<000008ee> そうだよな。\e
+<000008ee> That's right.\e
+
+//<000008ef> 今は、\p１分１秒だって惜しい。\e
+<000008ef> Every minute,\p every second counts here.\e
+
+//<000008f0> 急がなくちゃいけないんだ…\p…\p。\e
+<000008f0> We have to hurry...\p...\p\e
+
+//<000004dc> 【冥夜】「どうしたのだ、\pタケル？　急に厳しい顔をして…\p…\p？」\e
+<000004dc> 【Meiya】「What is it,\p Takeru? Your face seemed awfully stern...\p...\p」\e
+
+//<000008f2> 【武】「ん？　あ、\pいや…\p…\p」\e
+<000008f2> 【Takeru】「Hm? Ah,\p I just...\p...\p」\e
+
+//<000008f3> ここで深刻な顔しちゃいけないよな。\e
+<000008f3> Gotta stop making serious faces.\e
+
+//<000008f4> 今は集中しないと。\e
+<000008f4> I need to concentrate.\e
+
+//<000008f5> 【千鶴】「小隊前進！　絶対合格よ！！」\e
+<000008f5> 【Chizuru】「Squad, move out! We will pass!!」\e
+
+//<000008f6> 【全員】「おおっ！」\e
+<000008f6> 【Everyone】「Oooh!」\e
+
+//<000004de> 【武】「…\p…\p川の水が引くのを待とう」\e
+<000004de> 【Takeru】「...\p...\plet's wait for the water to recede.」\e//BR_3
+
+//<000004df> やっぱりロープとライフル、\p両方持っていた方がいい。\e
+<000004df> It really would be best to bring both the rope and the rifle.\e
+
+//<0000066a> ここで３、\p４時間ロスしても、\p結局はその方が、\pより時間を節約できるだろう。\e
+<0000066a> Even if we lose three or four hours here,\p\bwe'd make that up and more later on.\e
+
+//<000008fd> 【千鶴】「えっ…\p…\p！？」\e
+<000008fd> 【Chizuru】「Eh...\p...\p!?」\e
+
+//<000008fe> 【冥夜】「本気か！？」\e
+<000008fe> 【Meiya】「Are you mad!?」\e
+
+//<000008ff> 【壬姫】「雨がいつ上がるか、\p全然わからないんだよ？」\e
+<000008ff> 【Miki】「We have no way of knowing when it'll stop.」\e
+
+//<00000900> 【武】「…\p…\p」\e
+<00000900> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000901> 当然の反応だな。\e
+<00000901> Those are perfectly natural reactions.\e
+
+//<000004dd> 【武】「…\p…\pここで待つ時間を考慮に入れても、\pライフルとロープの両方があれば、\p最終的にかなり時間を短縮できると思う」\e
+<000004dd> 【Takeru】「...\p...\peven taking into account the time lost waiting here,\p I think having both the rifle and rope with us will let us save more time in the end.」\e
+
+//<00000903> 【千鶴】「それは…\p…\pそうだけど」\e
+<00000903> 【Chizuru】「That's...\p...\ptrue, but...\p...\p」\e
+
+//<00000904> 【冥夜】「…\p…\p私は賛成できない」\e
+<00000904> 【Meiya】「...\p...\pI cannot agree with that.」\e
+
+//<000004e1> 【美琴】「ボクも同じだよ。\nあまりのんびりしない方が…\p…\p」\e
+<000004e1> 【Mikoto】「Me neither.\nWe need to get moving again...\p...\p」\e
+
+//<000004e2> 【壬姫】「いつ止むかわからないのに…\p…\p待つのは、\p賢明じゃないと思う」\e
+<000004e2> 【Miki】「We don't know when it'll stop...\p...\p\bI don't think waiting would be very smart.」\e
+
+//<000004e3> 【武】「これはスコールだ。\nそれに、\pまだ時間の余裕はあるし…\p…\p」\e
+<000004e3> 【Takeru】「Remember, this is a squall.\nAnd we have a lot of extra time...\p...\p」\e
+
+//<000004e4> 【武】「早くクリアしたからといって、\p評価が高くなるわけじゃないんだろ？」\e
+<000004e4> 【Takeru】「I know you want to finish faster,\p but that doesn't mean charging forward is the best move.」\e
+
+//<00000909> 【千鶴】「確かにそうだけど…\p…\p」\e
+<00000909> 【Chizuru】「You might be right, but...\p...\p」\e
+
+//<0000090a> 【慧】「…\p…\pのんびりしたいなら、\pひとりでして」\e
+<0000090a> 【Kei】「...\p...\pif you wanna sit here,\p do it alone.」\e
+
+//<000004e5> 【武】「別にそういうわけじゃない。\n選択肢は少しでも多い方がいいって、\p言ってるだけだ」\e
+<000004e5> 【Takeru】「That's not what I mean.\nI'm just saying we should give ourselves another option.」\e
+
+//<0000090c> 【武】「先を急ぎすぎて、\p手詰まりになるのは避けたいし」\e
+<0000090c> 【Takeru】「I don't want us to hit a dead end later because we rushed here.」\e
+
+//<0000090d> 【慧】「…\p…\p…\p…\p」\e
+<0000090d> 【Kei】「...\p...\p...\p...\p」\e
+
+//<000004e6> 【武】「シートがあるっていっても、\pみんなが雨宿りできるだけの大きさもない。\nこのままだと雨に体力を持って行かれるのも分かってる…\p…\pでも、\p待ったほうが良いと思う」\e
+<000004e6> 【Takeru】「We may have that sheet,\p but it's not big enough to shield everyone from the rain.\p And I know standing here in it is going to weaken all of us...\p...\pbut I still want to leave here with both.」\e
+
+//<0000090f> 【冥夜】「…\p…\p…\p…\p」\e
+<0000090f> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<000004e7> オレだって時間は惜しい。\e
+<000004e7> I want to save time too, you know.\e
+
+//<000004e8> この中の誰よりも、\pその思いは強いと断言できる。\e
+<000004e8> In fact,\p I know I want it more than any of you.\e
+
+//<000004e9> だってオレは、\pこのままだと訪れてしまう悲劇的な未来を知っているから。\e
+<000004e9> Since I'm the only one here who knows the tragic end we're all heading toward.\e
+
+//<000004ea> …\p…\pと言ったところで、\p理解してもらえないだろうな。\e
+<000004ea> ...\p...\pnot that any of you would understand if I told you.\e
+
+//<00000913> ここは押しの一手でいくしかない。\e
+<00000913> I'm just gonna have to talk you into it.\e
+
+//<00000914> 【武】「よしわかった！　じゃあ、\pタイムリミットを決めよう」\e
+<00000914> 【Takeru】「Okay, I know! Let's set a time limit.」\e
+
+//<00000915> 【千鶴】「タイムリミット？」\e
+<00000915> 【Chizuru】「Time limit?」\e
+
+//<000004eb> 【武】「４時間だ。スコールが止んでも、\p川の増水が収まるまではタイムラグがある筈だ」\e
+<000004eb> 【Takeru】「Four hours. Even after the squall ends,\p it'll take a while for the water to fully recede.」\e
+
+//<00000917> 【冥夜】「…\p…\p４時間か」\e
+<00000917> 【Meiya】「...\p...\pfour hours...\p...\p」\e
+
+//<00000918> 【武】「その間にライフルかロープか決めておけばいいし」\e
+<00000918> 【Takeru】「In the meantime, we can decide whether to take the rifle or the rope.」\e
+
+//<00000919> 【美琴】「なるほど…\p…\p」\e
+<00000919> 【Mikoto】「That makes sense...\p...\p」\e
+
+//<000004ec> 【千鶴】「そういう考えもできるけど…\p…\pでも、\pそれって楽観的過ぎるんじゃない？」\e
+<000004ec> 【Chizuru】「I can understand that, but...\p...\paren't you being too optimistic?」\e
+
+//<0000091b> 【冥夜】「だが、\pライフルを使わずにロープを回収できるのは、\p悪いことではないのも確かだ」\e
+<0000091b> 【Meiya】「Nonetheless,\p retrieving the rope without using the rifle would certainly be ideal.」\e
+
+//<000004ed> 【美琴】「そうすれば両方とも使えるからね」\e
+<000004ed> 【Mikoto】「Then we could use both of them later.」\e
+
+//<0000091d> 【武】「さ、\p委員長どうする？」\e
+<0000091d> 【Takeru】「So,\p Class Rep, what should we do?」\e
+
+//<0000091e> 【千鶴】「そうね…\p…\p」\e
+<0000091e> 【Chizuru】「Good question...\p...\p」\e
+
+//<0000091f> ここでこの２つを温存できれば、\pこの後かなり有利なんだ。\e
+<0000091f> If we can preserve both of them now,\p\bthe rest of this evaluation will be easy.\e
+
+//<00000920> 頼むぜ、\p委員長…\p…\p。\e
+<00000920> Come on,\p Class Rep...\p...\p\e
+
+//<00000921> 【千鶴】「…\p…\p…\p…\p」\e
+<00000921> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00000922> …\p…\p…\p…\p。\e
+<00000922> ...\p...\p...\p...\p\e
+
+//<00000923> 【千鶴】「ここで４時間の休息を取る！」\e
+<00000923> 【Chizuru】「We'll rest here for four hours!」\e
+
+//<00000924> ――よっしゃ、\p委員長ナイス判断！\e
+<00000924> ――Yeaaah,\p nice one Class Rep!\e
+
+//<00000925> 【千鶴】「彩峰は川の増水が引き次第ロープ回収。\n歩哨は２０分交代で…\p…\p」\e
+<00000925> 【Chizuru】「Ayamine, retrieve the rope if the water level falls.\nWe'll post sentries on twenty minute shifts...\p...\p」\e//I know there's a better way to phase that ~IX
+
+//<00000927> 【壬姫】「あ…\p…\p！」\e
+<00000927> 【Miki】「Ah...\p...\p!」\e
+
+//<00000928> 【美琴】「雨、\pやんだよ！」\e
+<00000928> 【Mikoto】「The rain,\p it stopped!」\e
+
+//<00000929> …\p…\pよし！\e
+<00000929> ...\p...\pokay!\e
+
+//<0000092a> 【千鶴】「…\p…\p２時間」\e
+<0000092a> 【Chizuru】「...\p...\ptwo hours.」\e
+
+//<0000092b> 【冥夜】「この様子だと、\p１時間もすれば川の勢いも弱まるであろう」\e
+<0000092b> 【Meiya】「At this rate,\p the river will be calm after one more hour.」\e
+
+//<0000092c> 【美琴】「回収作業をして…\p…\pちょうど４時間だ！」\e
+<0000092c> 【Mikoto】「And then after Ayamine gets it back...\p...\pthat'll be four hours!」\e
+
+//<0000092d> 【壬姫】「たけるさん――すごい！」\e
+<0000092d> 【Miki】「Takeru-san――You're amazing!」\e
+
+//<0000092e> 【武】「違うよ、\p委員長の決断だ」\e
+<0000092e> 【Takeru】「No I'm not,\p that was Class Rep's decision.」\e
+
+//<0000092f> 【千鶴】「…\p…\p…\p…\p」\e
+<0000092f> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00000930> 【慧】「…\p…\p私の出番？」\e
+<00000930> 【Kei】「...\p...\pwhat about me?」\e
+
+//<000004ee> 【武】「ああ、\p悪いな彩峰。\n流れが弱くなったら頼むよ」\e
+<000004ee> 【Takeru】「Aaah,\p sorry Ayamine.\nWe're counting on you once the water's gone.」\e
+
+//<000004ef> 【冥夜】「天がそなたの味方をしたようだな」\e
+<000004ef> 【Meiya】「It seems the heavens are on your side.」\e
+
+//<00000933> 【武】「そんな大袈裟なもんじゃネエって」\e
+<00000933> 【Takeru】「It's not that big a deal, seriously.」\e
+
+//<00000934> これで、\p重要なアイテムは温存できた。\e
+<00000934> Now we've managed to keep both of our important items.\e
+
+//<00000935> 後半の展開はかなり楽になるはずだ。\e
+<00000935> That should make the rest of this a lot easier.\e
+
+//<00000936> それに、\p水なしで来たオレにとってこの雨はありがたい…\p…\p。\e
+<00000936> And this rain is really nice since I came here without water...\p...\p\e
+
+//<00000937> 木の枝や石ころをしゃぶらなくて済む。\e
+<00000937> I won't have to lick any more rocks or tree leaves.\e
+
+//<00000938> 【武】「…\p…\p」\e
+<00000938> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00000939> まてよ？\e
+<00000939> Wait...\p...\p\e
+
+//<0000093a> ――という事は、\pもう１回スコールが来るって事か！\e
+<0000093a> ――There's gonna be another squall later,\p isn't there!?\e
+
+//<0000093b> ありがてえーーー！\e
+<0000093b> I can't waiiiiiit!\e//lit. "I'm so graaaaaaateful!"
+

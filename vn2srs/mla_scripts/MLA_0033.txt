@@ -1,0 +1,1696 @@
+#FILENAME 55c43c48
+#TYPE 1
+
+//<00003601> 【月詠】「――沙霧大尉に告ぐ。\n私は帝国斯衛軍、\p第１９独立警備小隊の月詠中尉である」\e
+<00003601> 【Tsukuyomi】「――Capt. Sagiri.\nI am 1st Lt. Tsukuyomi of the Imperial Honor Guard 19th Independent Guard Unit.」\e
+
+//<00003603> …\p…\p始まった。\e
+<00003603> ...\p...\phere we go.\e
+
+//<00003604> 【月詠】「――応答せよ。\n私は帝国斯衛軍、\p第１９独立警備小隊の月詠中尉である」\e
+<00003604> 【Tsukuyomi】「――Respond.\nI am 1st Lt. Tsukuyomi of the Imperial Honor Guard 19th Independent Guard Unit.」\e
+
+//<00004df4> 【沙霧大尉】「私は帝国本土防衛軍帝都守備連隊、\p沙霧大尉である」\e
+<00004df4> 【Capt. Sagiri】「I am Capt. Sagiri of the Imperial Mainland Defense Army Capital Garrison Regiment.」\e
+
+//<00003608> 来た…\p…\p！\e
+<00003608> He responded...\p...\p!\e
+
+//<00004df6> 【沙霧大尉】「貴官等の熟慮の結果、\p聞かせて頂こう」\e
+<00004df6> 【Capt. Sagiri】「May I hear the results of your deliberations?」\e
+
+//<0000360f> 【月詠】「この通信は、\p貴官の要求に対する回答をするためではない」\e
+<0000360f> 【Tsukuyomi】「This transmission is not meant to answer the question you posed.」\e
+
+//<00004df8> 【沙霧大尉】「では何のための通信か」\e
+<00004df8> 【Capt. Sagiri】「Then what is it meant for?」\e
+
+//<00004912> 【月詠】「殿下が、\p直々に貴官と会って話されることを望まれている」\e
+<00004912> 【Tsukuyomi】「Her Highness wishes to speak with you in person.」\e
+
+//<00004dfa> 【沙霧大尉】「…\p…\pそれは事実か？」\e
+<00004dfa> 【Capt. Sagiri】「...\p...\pis that true?」\e
+
+//<00004915> 【月詠】「それは貴官が決めればよい。\n殿下のご要望、\p疑うも信ずるも貴官次第であろう」\e
+<00004915> 【Tsukuyomi】「It is up to you to decide whether Her Highness' request is worthy of suspicion.」\e
+
+//<00004dfc> 【沙霧大尉】「…\p…\p了解した。\n謁見の手筈を聞こう」\e
+<00004dfc> 【Capt. Sagiri】「...\p...\punderstood.\nHow are we to meet?」\e
+
+//<00004918> 【月詠】「殿下がお召しの国連軍機に、\p現部隊に在る全斯衛軍４機が随伴する」\e
+<00004918> 【Tsukuyomi】「All four TSFs in my Honor Guard unit will escort the UN Army TSF carrying Her Highness.」\e
+
+//<00003645> ――えッ！？\n――何勝手に増やしてるんだよ！？　作戦と違うじゃないか！？\e
+<00003645> ――Eh!?\n――Why're you adding more escorts!?\bThis wasn't in the plan!!\e//oh, I was wondering why I remembered more than one escort ~IX
+
+//<0000491a> 【月詠】「国連軍機には殿下の他に、\p衛士が搭乗している事を念のために断っておく」\e
+<0000491a> 【Tsukuyomi】「I should also mention that there will be an Eishi piloting the UN Army TSF.」\e
+
+//<00003647> 【月詠】「落ち合う場所は、\p天城高原ＩＣ跡から直線にして約４００ｍほど北西、\p伊豆スカイライン跡が河川および道路跡と交差する地点としたい。\n如何か」\e
+<00003647> 【Tsukuyomi】「Our desired meeting place is approximately 400 meters northwest of the Amagi-Kougen Interchange ruins,\p where the Izu Skyline ruins intersect the river and the highway ruins.\p Is this acceptable?」\e//not more road ruins ;_; ~IX
+
+//<00004dfe> 【沙霧大尉】「…\p…\p…\p…\p場所は確認した。\nそちらの手筈に従おう」\e
+<00004dfe> 【Capt. Sagiri】「...\p...\punderstood.\p I shall follow your plan.」\e
+
+//<00003649> 【月詠】「…\p…\p」\e
+<00003649> 【Tsukuyomi】「...\p...\p...\p...\p」\e
+
+//<00004e00> 【沙霧大尉】「だが…\p…\p接触後、\p殿下には、\pこちらで用意する機体にお召し替え頂く。\nそれが条件だ」\e
+<00004e00> 【Capt. Sagiri】「However...\p...\pafter making contact,\p Her Highness will enter a TSF we have prepared for her.\nThat is my only condition.」\e//oh come on ~IX//Sounds like something they'd already have thought out and got ready. Also that was what it sounded like it should have said anyway.-Spin//they can't prepare for something they didn't know would happen, but yes it happens to sound better that way ~IX
+
+//<0000364f> ――！？\e
+<0000364f> ――!?\e
+
+//<00003650> 【冥夜】「――！？」\e
+<00003650> 【Meiya】「――!?」\e
+
+//<00004e02> 【沙霧大尉】「貴官はさておいても、\p国連軍及び米軍の介入は、\p明らかに主権侵害である」\e
+<00004e02> 【Capt. Sagiri】「While your unit is fine,\p UN or American Army intervention is a clear violation of our sovereignty.」\e
+
+//<00004e04> 【沙霧大尉】「殿下のお言葉であれば、\pどのようなものでも賜る覚悟が我々にはある。\nだが、\pその場に国連軍及び米軍が立ち会う道理はない」\e
+<00004e04> 【Capt. Sagiri】「If Her Highness requested this,\p we are prepared to do whatever she wishes.\p However,\p there is no reason for the UN or American Armies to be present.」\e//well I guess he's got a point there ~IX
+
+//<00003653> 月詠さん…\p…\pどうするつもりなんだ？！\n後で取引材料にするために、\p直援機の数を多めに言ったんだろうけど…\p…\p逆に警戒させたんじゃないのか！？\e
+<00003653> Tsukuyomi-san...\p...\pwhat do we do now!?\nYou probably claimed we had extra escorts so you could retract them during this bargaining phase...\p...\pbut you just made him paranoid!!\e
+
+//<00003654> このままじゃ、\pいきなり交渉決裂ってことになっちまうぞ…\p…\p。\e
+<00003654> At this rate, the negotiations will be over before they even start...\p...\p\e//great example of translating actually adding something, lit was "the negotiations will fall apart suddenly"
+
+//<0000365a> 【月詠】「貴官の主張は理解した。\nだが、\pその条件は受け入れられない」\e
+<0000365a> 【Tsukuyomi】「I understand your condition.\nHowever,\p I cannot accept it.」\e
+
+//<00004922> 【月詠】「その条件は、\p当初の引き渡し要求を受諾するに等しい。\nその様な状況を殿下がお望みではないが故に、\p此度、\p謁見の運びとなったと知るがよい」\e
+<00004922> 【Tsukuyomi】「That would be little different from your original request of handing Her Highness over to you.\nAs that is not what she desires,\p she has instead requested an audience with you.」\e
+
+//<00004e06> 【沙霧大尉】「何故、\p我々は殿下の御尊来を仰げないと言うのだ。\nそれは殿下の御意志ではなく、\p貴官等の目論見ではないのか？」\e
+<00004e06> 【Capt. Sagiri】「Why should we not grant Her Highness' visit proper respect?\nIs that not simply part of your plan rather than Her Highness' will?」\e
+
+//<00003661> 【月詠】「先程も申したであろう。\nそれを決めるのは貴官だと」\e
+<00003661> 【Tsukuyomi】「As I said a moment ago,\p such things are for you to decide.」\e
+
+//<00004e08> 【沙霧大尉】「…\p…\p…\p…\p」\e
+<00004e08> 【Capt. Sagiri】「...\p...\p...\p...\p」\e
+
+//<00004928> 【月詠】「殿下は、\pこれ以上の争いを望んでおられない。\n混乱を鎮めるために介入した国連軍と米軍に対し、\p理解と感謝の念を示されている」\e
+<00004928> 【Tsukuyomi】「Her Highness does not desire any further conflict.\nShe has expressed thanks and sympathy toward the UN and American Armies for their efforts to bring an end to this affair.」\e//since saying "quell the rebellion" to the rebel leader's face seemed like a bad move ~IX
+
+//<0000492b> 【月詠】「それは、\p同族相食む無用な戦いをよしとされず、\pそれに巻き込まれ苦しむ国民を慮られた、\p殿下の御深慮に他ならない」\e
+<0000492b> 【Tsukuyomi】「That is not to say she approved of humans slaughtering their own brethren.\p Rather, Her Highness was thinking of the people who have been made to suffer in this incident.」\e
+
+//<0000492e> 【月詠】「殿下のご心痛…\p…\p貴官であれば手に取るようにわかるはず」\e
+<0000492e> 【Tsukuyomi】「You should have no difficulty...\p...\punderstanding Her Highness' pain.」\e
+
+//<00004931> 【月詠】「今ここで殿下の御意志を軽んじ、\p無益な戦いをこれ以上長引かせることが、\p貴官等の言う理に適うものかどうか…\p…\p再考されよ」\e
+<00004931> 【Tsukuyomi】「Think about whether slighting Her Highness' will here and now to prolong this fruitless battle...\p...\pis truly in your best interests.」\e
+
+//<00003686> さすが月詠さん。\e
+<00003686> Well done, Tsukuyomi-san.\e
+
+//<00003687> 心情的には沙霧大尉に近いだけあって、\pうまく追いつめた。\nこれで大尉は提案を受け入れざるを得なくなったはずだ。\e
+<00003687> Being able to relate to Capt. Sagiri's feelings really helped her corner him.\nHe has no choice but to accept it.\e
+
+//<00004e0a> 【沙霧大尉】「…\p…\p先の条件は撤回する。\n国連衛士の随伴も認めよう」\e
+<00004e0a> 【Capt. Sagiri】「...\p...\pI retract the condition...\p...\p\b...\p...\p...\p...\pand accept the UN Eishi's presence.」\e
+
+//<00003689> 【月詠】「了解。ではこちらも直援を私のみとさせて頂く」\e
+<00003689> 【Tsukuyomi】「Understood. Then I shall escort her alone.」\e
+
+//<0000368a> ――！？\e
+<0000368a> ――!?\e
+
+//<00004e0c> 【沙霧大尉】「――殿下の直援が１機だと？　貴官はそれでも斯衛の将校か！？」\e
+<00004e0c> 【Capt. Sagiri】「――You mean to escort Her Highness with only one TSF? And you call yourself an Honor Guard officer!?」\e
+
+//<00004937> そうか！\n直援の斯衛機の数を多く言ったのは、\pそういう理由だったのか！\e
+<00004937> I see!\nSo this is why she said there'd be more escorts before!\e
+
+//<00004939> 大尉は最初から、\pこの部隊にいる斯衛が全機直援に付くことを当たり前だと思っていたんだ！\e
+<00004939> The Captain assumed that using the whole unit to guard her was the only logical move!\e
+
+//<0000493b> 月詠さんは沙霧大尉の志を疑っていない…\p…\pだから、\p斯衛の直援が少なければ少ないで、\p大尉がそこを不審に思うと考えたのか…\p…\p。\e
+<0000493b> Tsukuyomi-san doesn't doubt Capt. Sagiri's will...\p...\pso she figured the Captain would find it odd to use fewer escorts...\p...\p\e
+
+//<0000493d> 【月詠】「これもまた殿下の思し召しである。\nそもそも殿下は、\p貴官等の謁見に警護は無用とまで仰せになっていたのだ」\e
+<0000493d> 【Tsukuyomi】「This is also Her Highness' request.\nOriginally she said no guard at all would be necessary for an audience with you.」\e
+
+//<00004e0e> 【沙霧大尉】「…\p…\p何と」\e
+<00004e0e> 【Capt. Sagiri】「...\p...\pthat is...\p...\p」\e//do whatever the hell you want with this bit ~IX
+
+//<00004940> 【月詠】「されど、\p先ず貴官の志の真偽を見定め、\pその上で、\pせめて１機は御供させて戴くよう、\p私が献策差し上げたまでのこと」\e
+<00004940> 【Tsukuyomi】「However,\p I urged her to take along at least one escort, if only to ascertain the truth of their will.」\e//changed the japanese to the translation suggested on IRC, but it still sounds quite DERP - kViN //yeah that's the literal but I have no idea what she's talking about ~IX
+
+//<00004e10> 【沙霧大尉】「殿下…\p…\p」\e
+<00004e10> 【Capt. Sagiri】「Her Highness...\p...\p」\e
+
+//<00004946> 【月詠】「貴官を瀬踏みしたことは詫びる。\nされど、\p直援が１機という由は、\p貴官を信ずる殿下の御心の証であると知るがよい」\e
+<00004946> 【Tsukuyomi】「I apologize for the deception.\nHowever,\p know that I come alone as proof of Her Highness' faith in you.」\e
+
+//<00004e12> 【沙霧大尉】「畏れ多い事だ…\p…\p」\e
+<00004e12> 【Capt. Sagiri】「I am unworthy of such...\p...\p」\e
+
+//<00004949> 【月詠】「ここは殿下のご厚情を賜るがよいであろう」\e
+<00004949> 【Tsukuyomi】「I would save those words for Her Highness.」\e
+
+//<0000494b> 月詠さん…\p…\p殿下のためとはいえ、\p大尉を騙すような事言うのは辛いだろうな…\p…\p。\e
+<0000494b> Tsukuyomi-san...\p...\peven for Her Highness,\p it must've hurt to lie to the Captain like that...\p...\p\e
+
+//<00004e14> 【沙霧大尉】「委細了解した。\nでは、\pこれより謁見の場に向かう」\e
+<00004e14> 【Capt. Sagiri】「I understand your proposal.\nI shall head there right away.」\e
+
+//<00004b18> 【月詠】「その場には先んじて殿下をお連れする。\n貴官は私の連絡をまて」\e
+<00004b18> 【Tsukuyomi】「I shall go there first with Her Highness following.\nYou will wait for me to make contact.」\e
+
+//<00004e16> 【沙霧大尉】「待て、\pそれでは礼に失する。\n私が先立ち、\p殿下をお迎えするべきだ」\e
+<00004e16> 【Capt. Sagiri】「No,\p that is unchivalrous.\nI shall arrive first to meet Her Highness.」\e//"impolite" seemed off, but...maybe "improper"? ~IX
+
+//<00004953> 【月詠】「貴官の情意は理解している。\nされどここは、\p殿下の保安を預かる私の差配に従って頂く」\e
+<00004953> 【Tsukuyomi】「I understand how you must feel.\nBut I must ask you to let me ensure Her Highness' safety.」\e
+
+//<00004e18> 【沙霧大尉】「…\p…\p成る程了解した。\n貴官が務めを果たす事に異存はない」\e
+<00004e18> 【Capt. Sagiri】「...\p...\pI see. Understood.\nI have no objections to letting you perform your duty.」\e
+
+//<000036b1> なんだよ…\p…\pこれじゃ、\pどっちが包囲している立場なのかわかりゃしない…\p…\p。\e
+<000036b1> What the hell...\p...\pit's like we're the ones who have you surrounded...\p...\p\e
+
+//<00004956> 殿下に関する事は、\p殆どこっちの言いなりじゃないか…\p…\p。\n普通に考えれば、\p首謀者である自分をおびき出すための罠だって疑うだろ？\e
+<00004956> Why's he letting us have our way with Her Highness...\p...\p?\nWouldn't it be natural for him, as the ringleader,\p to suspect a trap of some kind?\e
+
+//<000036b3> 国連軍や米軍を向こうに回して、\pここまで戦ってきた割には、\pあまりにも素直というか、\pあどけないというか…\p…\p。\e
+<000036b3> After making enemies out of America and the UN,\p and fighting this long and hard,\p he's almost too innocent...\p...\ptoo easy to manipulate...\p...\p\e
+
+//<00004e1a> 【沙霧大尉】「こちらは２機で出向く。\nでは、\p貴官からの通信を待つ。\n以上だ」\e
+<00004e1a> 【Capt. Sagiri】「We will meet you with two TSFs,\p and await your transmission.\nSagiri out.」\e
+
+//<00004958> …\p…\pそれだけ沙霧大尉の殿下に対する忠誠心が強いということだろう。\nだったらなぜ…\p…\p帝都で戦闘が起きた時、\p殿下の命令に従わなかったんだ…\p…\p？\e
+<00004958> ...\p...\pthat's how strong Capt. Sagiri's loyalty to Her Highness is.\p But then...\p...\pwhy didn't he obey Her Highness' order to stop fighting in the capital...\p...\p?\e
+
+//<000036b6> それでも月詠さんを信じたのは…\p…\pやっぱり…\p…\p沙霧大尉達が死に場所を求めているからなのか？\e
+<000036b6> For him to believe Tsukuyomi-san now...\p...\pmaybe Capt. Sagiri is...\p...\plooking for an honorable death.\e//for those of you who haven't noticed, I've been working around lit. "a place to die" for some time now ~IX
+
+//<0000495a> 殿下が今、\pすぐ目の前にいる事がわかっているから、\pここが直接話す最後のチャンスと思っているからなのか？\e
+<0000495a> Maybe he sees this as his last chance to talk to Her Highness in person?\e
+
+//<000036b9> 【冥夜】「…\p…\pタケル」\e
+<000036b9> 【Meiya】「...\p...\pTakeru.」\e
+
+//<000036ba> 【武】「ああ、\pいよいよだな…\p…\p」\e
+<000036ba> 【Takeru】「Yeah,\p it's finally time...\p...\p」\e
+
+//<000036be> 【月詠】「――１９０１より２０７０６。\n沙霧大尉機と随伴機の接近を確認」\e
+<000036be> 【Tsukuyomi】「――1901 to 20706.\nCapt. Sagiri and his escort have arrived.」\e
+
+//<0000495c> 【月詠】「――０６正面２０ｍにて停止、\p沙霧大尉が機外に出て『殿下』をお迎えする」\e
+<0000495c> 【Tsukuyomi】「――06, move forward twenty meters, stop,\p and only show "Her Highness" once Capt. Sagiri opens his hatch.」\e
+
+//<000036c0> 【武】「――２０７０６了解」\e
+<000036c0> 【Takeru】「――20706, copy that.」\e
+
+//<0000495e> 【武】「『殿下』、\p沙霧大尉が接近中です。\nご準備をお願いします」\e
+<0000495e> 【Takeru】「"Your Highness,"\p Capt. Sagiri has arrived.\nPlease prepare yourself to speak with him.」\e
+
+//<000036f2> 【冥夜】「聞こえていた…\p…\p…\p…\pイヤフォンの感度は良いようだ」\e
+<000036f2> 【Meiya】「I heard...\p...\p...\p...\pthese earphones have good reception.」\e
+
+//<00004960> 【武】「向こうも戦術機の集音マイクで『殿下』の音声を拾いますから、\p大声出さなくても大丈夫です」\e
+<00004960> 【Takeru】「The mic in his TSF should pick up your voice just as well,\p so you don't need to talk loudly.」\e
+
+//<000036f4> 【冥夜】「…\p…\pわかった」\e
+<000036f4> 【Meiya】「...\p...\punderstood.」\e
+
+//<00003712> …\p…\p…\p…\p何とも言いようのない緊張感が痛いほど伝わって来る。\e
+<00003712> ...\p...\p...\p...\pI can't even describe how nervous she must be.\e
+
+//<00004962> 自分の中に流れる将軍家の血と、\pそれに課せられた重い責務をいつも以上に意識しているんだろうな…\p…\p。\e
+<00004962> Between the Shogun family blood running through her veins,\p and the heavy duties she's been entrusted with, this situation is...\p...\p\e
+
+//<00003714> 【武】「…\p…\p…\p…\p」\e
+<00003714> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00004964> 作戦遂行上の事とはいえ、\p影の存在でありながら『殿下』と呼ばれる事が、\pおまえにとってどれ程重いことなのか…\p…\p。\nそれはオレの想像を遥かに超えたものなんだろうと思う。\e
+<00004964> Even if it is to complete the mission,\p being called "Her Highness" despite only being her shadow must weigh on you, Meiya...\p...\p\nProbably far more than I can imagine.\e
+
+//<00003717> だが、\pそれを沙霧大尉に気取られたら、\pまずいぞ…\p…\p。\e
+<00003717> But,\p we can't let Capt. Sagiri notice that...\p...\p\e
+
+//<0000377a> すげえ…\p…\p。噴射跳躍からのダイレクトランディングで誤差２１センチかよ…\p…\p！？\e
+<0000377a> Amazing...\p...\pa direct landing from a boost jump with only twenty-one centimeters of error...\p...\p!!\e
+
+//<00003780> さすが帝都を守る精鋭部隊だ…\p…\p操縦技能の練度が半端じゃない。\e
+<00003780> These really are elites from the capital garrison...\p...\ptheir piloting skills are insane.\e
+
+//<000037a6> もし…\p…\p戦闘になったら…\p…\p？！\n新ＯＳを搭載した吹雪が、\p特殊な機動性に優れているとは言え…\p…\pオレ達の技量で勝てる相手なのか…\p…\p！？\e
+<000037a6> So...\p...\pif a fight breaks out...\p...\pthen what!?\nThis Fubuki has incredible maneuverability thanks to the OS,\p but...\p...\pare we good enough to beat these guys...\p...\p!?\e
+
+//<000037af> 【月詠】「――１９０１より２０７０６。\n大尉の準備が完了した。\n『謁見』を開始する」\e
+<000037af> 【Tsukuyomi】「――1901 to 20706.\nThe Captain is ready.\nGrant him his audience.」\e
+
+//<000037b0> 【武】「――２０７０６了解」\e
+<000037b0> 【Takeru】「――20706, copy that.」\e
+
+//<000037b7> 行くぞ…\p…\p冥夜\e
+<000037b7> Here goes...\p...\pMeiya.\e
+
+//<00004966> 【武】「では『殿下』…\p…\p参ります」\e
+<00004966> 【Takeru】「Okay, "Your Highness"...\p...\pit's time.」\e
+
+//<000037b9> 【冥夜】「…\p…\pうん」\e
+<000037b9> 【Meiya】「...\p...\pyes.」\e
+
+//<000037c3> あれが…\p…\p沙霧大尉…\p…\p。\e
+<000037c3> So that's...\p...\pCapt. Sagiri...\p...\p\e
+
+//<000037c5> 【冥夜】「…\p…\pそなたが沙霧か？」\e
+<000037c5> 【Meiya】「...\p...\pare you Sagiri?」\e
+
+//<00004e1c> 【沙霧大尉】「は。拝謁の栄誉を賜り、\p真に恐悦至極にございます。\n私は、\p帝国本土防衛軍　帝都防衛第１師団・第１戦術機甲連隊所属、\p沙霧直哉大尉であります」\e
+<00004e1c> 【Capt. Sagiri】「Yes, ma'am. I am elated by the honor of receiving an audience with you.\nI am Captain Sagiri Naoya of the Imperial Mainland Defense Army 1st Division's 1st TSF Armored Regiment.」\e
+
+//<000037c8> 【冥夜】「面をあげるがよい」\e
+<000037c8> 【Meiya】「You may raise your head.」\e
+
+//<00004e1e> 【沙霧大尉】「は」\e
+<00004e1e> 【Capt. Sagiri】「Ma'am!」\e
+
+//<00004ea6> 【冥夜】「此度、\pこのような形でそなたと顔を合わせねばならぬ事、\p真に遺憾です」\e
+<00004ea6> 【Meiya】「It is most unfortunate that we should have to meet in this manner.」\e
+
+//<000037ce> 冥夜…\p…\pいいぞ。\nさっきまでの緊張が嘘のように堂々としている。\n物腰も自然だ。\e
+<000037ce> Meiya...\p...\pgood start.\nYou're capturing her grandeur without any of that tension from before.\nYour motions look natural too.\e
+
+//<00004e20> 【沙霧大尉】「殿下に多大なるご心労をおかけ致しました事、\p塗炭の苦しみでございます。\nされど…\p…\p」\e
+<00004e20> 【Capt. Sagiri】「I am deeply distressed by the great pain and worry I have caused Your Highness.\p However...\p...\p」\e
+
+//<00004e22> 【沙霧大尉】「帝国に巣喰った逆賊共を討ち、\pすべての膿を出し切るまで、\p今暫くの間、\pご容赦を賜りたく存じます」\e
+<00004e22> 【Capt. Sagiri】「I beg of you to let me continue until all the traitors nesting in the capital are vanquished,\p and all the corruption drained from our government.」\e//if you forgot, lit. "draining the pus" I actually like how using the literal verb works ~IX
+
+//<0000496b> 【冥夜】「…\p…\p私は、\pそなた達を斯様な立場に追い込んでしまった、\p自らの不甲斐なさが口惜しいのです」\e
+<0000496b> 【Meiya】「...\p...\pI regret forcing you all into such a position through my own incompetence.」\e
+
+//<00004e24> 【沙霧大尉】「殿下…\p…\p」\e
+<00004e24> 【Capt. Sagiri】「Your Highness...\p...\p」\e
+
+//<000037d5> 【冥夜】「そなたの声明にあったように、\p帝国議会や軍のあり方と私の意志との間に、\p浅くない溝が出来てしまっていたことは事実です」\e
+<000037d5> 【Meiya】「As you said in your broadcast,\p there is indeed a gap, and not a small one, between the state of the Imperial Diet and Army and how I wish them to be.」\e
+
+//<000037d6> 【冥夜】「されど、\p彼の者は彼の者なりに、\p国と民とそして世界を想い、\pそれを救うために力を尽くしてきたに違いありません」\e
+<000037d6> 【Meiya】「However,\p there is no doubt that those people have spent all of their strength in order to save our country,\p our people and our world.」\e
+
+//<00004fe9> 【冥夜】「その想いが純粋であるが故に、\p齟齬や対立が生まれるのは住々にして起こりうる事」\e
+<00004fe9> 【Meiya】「Because their feelings are pure,\p misunderstandings and conflicts are a frequent occurrence.」\e
+
+//<000037d8> 【冥夜】「そして、\pそれを御し切れぬ我が不徳こそが責められるべきなのです」\e
+<000037d8> 【Meiya】「And my inability to fully manage those conflicts is to blame for this.」\e
+
+//<00004e26> 【沙霧大尉】「畏れながら殿下！」\e
+<00004e26> 【Capt. Sagiri】「My apologies, Your Highness!」\e
+
+//<00004e28> 【沙霧大尉】「将軍の御尊名において行われるべき政が、\p殿下の御意志と違えているという現状こそが許されざる事なのです」\e
+<00004e28> 【Capt. Sagiri】「But the fact that the government actions carried out in Your Highness' name differ from what you desire will not allow me to remain silent.」\e
+
+//<00004e2a> 【沙霧大尉】「無論、\p人のなす事に絶対はございません。\nですが、\pそれを正そうとする心を持たぬ輩は、\p殿下のそのようなお言葉ですら、\p都合の良い隠れ蓑に利用しているのです」\e
+<00004e2a> 【Capt. Sagiri】「Of course,\p there are no absolutes when it comes to people.\nHowever,\p men and women who lack the will to resolve those misunderstandings are using Your Highness' words to shield themselves from responsibility.」\e
+
+//<00004e2c> 【沙霧大尉】「齟齬が生じたならば、\pそれを正すのは殿下ではなく、\p政府や軍でありましょう」\e
+<00004e2c> 【Capt. Sagiri】「When conflicts arise,\p it is not Your Highness who should correct them,\p but the government and military themselves.」\e
+
+//<00004e2e> 【沙霧大尉】「しかし残念ながら、\p今の彼らにそのような自浄作用はもはや望むべくもありません」\e
+<00004e2e> 【Capt. Sagiri】「But unfortunately,\p they no longer desire to perform such self-correction.」\e
+
+//<00004e30> 【沙霧大尉】「先の帝都での戦闘の際、\p仙台臨時政府から伝えられた殿下のお言葉は、\p『即時無条件武装解除』でした」\e
+<00004e30> 【Capt. Sagiri】「During the fighting in the capital,\p the Sendai Provisional Government told me Your Highness had ordered an "immediate and unconditional disarmament."」\e
+
+//<00004e32> 【沙霧大尉】「しかもその命を伝えられたのは、\p顧みるに、\p既に殿下が帝都城に居られないはずの時刻…\p…\p」\e
+<00004e32> 【Capt. Sagiri】「But looking back on it,\p by the time that order was given, Your Highness should no longer have been in the capital...\p...\p」\e
+
+//<000037e9> 【冥夜】「…\p…\p！」\e
+<000037e9> 【Meiya】「...\p...\p!」\e
+
+//<00004e34> 【沙霧大尉】「おおかた、\p彼の者達が握り潰そうとしていた折り、\p殿下のご不在を知り、\p急遽偽命を発したのでございましょう」\e
+<00004e34> 【Capt. Sagiri】「Perhaps their hopes were crushed when they learned of Your Highness' absence,\p and they created a false order.」\e
+
+//<000037ef> そうか…\p…\p。\e
+<000037ef> I see...\p...\p\e
+
+//<00004980> 【武】「なぜ…\p…\p殿下は全軍に戦闘をやめるように命令しなかったんですか？」\e
+<00004980> 【Takeru】「Why...\p...\pdidn't Her Highness simply order them to stop fighting?」\e//CP_S MLA_0029
+
+//<00003801> 【悠陽】「…\p…\p…\p…\p」\e
+<00003801> 【Yuuhi】「...\p...\p...\p...\p」\e
+
+//<00003802> 【鎧衣】「もちろんしたとも」\e
+<00003802> 【Yoroi】「But of course she did.」\e
+
+//<00003803> 【武】「えッ…\p…\pだったらなぜ…\p…\p」\e
+<00003803> 【Takeru】「Eh? ...\p...\pthen why...\p...\p?」\e
+
+//<00004982> …\p…\p将軍なんだろう？\e
+<00004982> ...\p...\paren't you the Shogun?\e
+
+//<0000380a> 【鎧衣】「悪い癖が直っていないな白銀武…\p…\pそういう現状を嘆いた連中が決起したんじゃないのかね？」\e
+<0000380a> 【Yoroi】「You still haven't learned, Shirogane Takeru...\p...\pdidn't they rebel because they couldn't stand politicians like that?」\e//CP_E
+
+//<00004984> 臨時政府から『殿下のお言葉』として呼びかけられる、\p武装解除や原隊復帰の命令は…\p…\pだから信じられなかったのか…\p…\p。\e
+<00004984> The surrender and retreat order came from the provisional government,\p so even though they said it was Her Highness' words...\p...\phe didn't believe it...\p...\p\e
+
+//<00004986> さっきの月詠さんの言葉は殿下の意志だと信じた…\p…\pだから従った。\nそういうことか。\e
+<00004986> But a moment ago he believed Tsukuyomi-san's words represented Her Highness' will...\p...\pso he obeyed her.\nThat makes sense.\e
+
+//<00003814> …\p…\pだがそれも、\pこの人達を騙しているには違いない。\n大尉達の心情に近い月詠さんが、\p大尉達が信じられるような言い方をしたに過ぎない…\p…\p。\e
+<00003814> ...\p...\pbut that's still a big lie on our part.\nTsukuyomi-san simply said it in such a way that the Captain would believe it...\p...\p\e
+
+//<00004e36> 【沙霧大尉】「幸い私共は、\p真のご下命の内容を、\pさる信頼できる筋の者から聞き及んでいましたので、\p彼の者の奸計に陥る事はございませんでした」\e
+<00004e36> 【Capt. Sagiri】「Thankfully,\p we had heard your true commands through a trustworthy source,\p and did not fall for their deception.」\e
+
+//<0000381a> 【冥夜】「…\p…\p…\p…\p」\e
+<0000381a> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00004feb> さる信頼できる筋の者…\p…\p？\nまさか…\p…\p鎧衣課長じゃないだろうな…\p…\p？\e
+<00004feb> A trustworthy source...\p...\p?\nThere's no way...\p...\phe means Section Chief Yoroi...\p...\pright?\e
+
+//<00004e38> 【沙霧大尉】「私が決起せし同志達に戦闘停止を命じたのは…\p…\p彼の者達が用意した偽命の遥か以前にございます」\e
+<00004e38> 【Capt. Sagiri】「You gave me and my comrades in rebellion the order to cease combat...\p...\plong before the false order they sent.」\e
+
+//<00004e3a> 【沙霧大尉】「されど、\p何故彼の者達は、\p殿下の命を私共に伝えなかったのか…\p…\p」\e
+<00004e3a> 【Capt. Sagiri】「However,\p for some reason,\p Your Highness' order was not conveyed to us...\p...\p」\e
+
+//<00003822> 【冥夜】「…\p…\p…\p…\p」\e
+<00003822> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00004e3c> 【沙霧大尉】「――畏れながら、\p彼の者達こそが逆賊。\n殿下がお心を痛める由は微塵もございません！」\e
+<00004e3c> 【Capt. Sagiri】「――I am afraid they are the true traitors.\nThere was not the slightest reason for them to leave Your Highness in pain!」\e
+
+//<00003836> 【まりも】「先程、\p帝都で戦闘が始まった」\e
+<00003836> 【Marimo】「Fighting has broken out in the capital.」\e//CP_S MLA_0028
+
+//<00003837> ――えッ！\e
+<00003837> ――Eh!?\e
+
+//<00003838> …\p…\p…\p…\pとうとうやりやがった！　バカ共が！！\e
+<00003838> ...\p...\p...\p...\pthose idiots really did it!!\e
+//I changed it in the past script and you kept it.-Spin
+
+//<0000498e> 【まりも】「未確認ではあるが、\p帝都城を包囲していた歩兵部隊の一部が、\p斯衛軍部隊に向け発砲したことが発端らしい」\e
+<0000498e> 【Marimo】「It's unconfirmed,\p but it seems a foot soldier fired at the Honor Guard in the Imperial Palace.」\e
+
+//<0000383a> 歩兵が発砲？　小銃かなんかで？\e
+<0000383a> A foot soldier? Small arms?\e
+
+//<0000383b> 【まりも】「それに対し、\p斯衛軍第２連隊が全力で応戦」\e
+<0000383b> 【Marimo】「The Honor Guard 2nd Battalion responded with full force.」\e
+
+//<0000383c> 【まりも】「沙霧大尉の戦闘停止声明も発表されたが、\p混乱は収拾できていない」\e
+<0000383c> 【Marimo】「Capt. Sagiri ordered a ceasefire,\p but could not get control of the situation.」\e
+
+//<0000383d> …\p…\pバカ野郎…\p…\p最悪だ！！\e
+<0000383d> ...\p...\pyou morons...\p...\pthis is terrible!!\e
+
+//<0000383e> なにやってんだ沙霧とかいうヤツは！　自分の部隊もコントロールできねえのか！\e
+<0000383e> What the hell are you doing, Sagiri!?\bYou can't even control your own units!?\e//CP_E
+
+//<00003847> オレはあの時、\p沙霧大尉の統率力を疑った。\nだけど、\p帝都での戦火の拡大は陰謀勢力の望みだったという事か…\p…\p？\e
+<00003847> At the time, I doubted Capt. Sagiri's leadership.\nBut,\p were the people plotting behind the scenes trying to worsen the fighting in the capital...\p...\p?\e
+
+//<00003848> それともそれは…\p…\p仙台の臨時政府が望んだことだったっていうのか…\p…\p？\e
+<00003848> Or...\p...\pwas the Sendai Provisional Government trying to...\p...\p?\e
+
+//<00003849> 【冥夜】「…\p…\p…\p…\p」\e
+<00003849> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<0000384a> 【武】「…\p…\p？」\e
+<0000384a> 【Takeru】「...\p...\p?」\e
+
+//<0000384b> …\p…\p…\p…\pえ？\e
+<0000384b> ...\p...\p...\p...\peh?\e
+
+//<00003850> 【冥夜】「…\p…\p…\p…\p」\e
+<00003850> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00003851> どうした冥夜…\p…\p？\n何でずっと黙ってるんだ…\p…\p！？\e
+<00003851> Meiya...\p...\p?\nWhy're you just staying quiet...\p...\p!?\e
+
+//<00003852> 【武】「…\p…\p…\p…\p」\e
+<00003852> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00003853> ――おいおい、\p怪しまれるかも知れないぞ！\n早く――\e
+<00003853> ――Hey now,\p he's gonna get suspicious!\nHurry up and――\e
+
+//<00004994> 【冥夜】「…\p…\p…\p…\p大尉、\pそなたの申すことはわかります。\nされど、\p今の帝国の有様…\p…\pこれが将軍である私の責任である由は何ら変わる所ではない」\e
+<00004994> 【Meiya】「...\p...\pCaptain,\p I understand what you say.\nHowever,\p the way the Empire is now...\p...\premains my responsibility as the Shogun.」\e
+
+//<00003855> ――よし…\p…\p脅かさないでくれ…\p…\p。\e
+<00003855> ――Okay...\p...\pdon't scare me like that...\p...\p\e
+
+//<00003856> 【冥夜】「米軍や国連軍の介入を許してしまっているのもまた然り…\p…\p」\e
+<00003856> 【Meiya】「As was allowing the American and UN Armies to intervene...\p...\p」\e
+
+//<00004e3e> 【沙霧大尉】「…\p…\p…\p…\p」\e
+<00004e3e> 【Capt. Sagiri】「...\p...\p...\p...\p」\e
+
+//<00003858> 【冥夜】「故に…\p…\pそなた達が、\p私のために血を流す必要はないのです」\e
+<00003858> 【Meiya】「Hence...\p...\pthere is no need for you to spill blood on my behalf.」\e
+
+//<00004e40> 【沙霧大尉】「殿下…\p…\p…\p…\p」\e
+<00004e40> 【Capt. Sagiri】「Your Highness...\p...\p...\p...\p」\e
+
+//<00004998> いいぞ…\p…\pこのまま押し切れれば…\p…\p少なくとも、\pこの人間同士の戦いは終わる。\n沙霧大尉は、\p殿下直々の言葉であれば従順なはずだ…\p…\pたたみかけるなら今だ。\e
+<00004998> That was good...\p...\pif you can just push him the rest of the way...\p...\pthen this human infighting will end.\nCapt. Sagiri should listen to something Her Highness tells him in person...\p...\pnow's the time to put on the pressure.\e
+
+//<00004e42> 【沙霧大尉】「…\p…\p畏れながら…\p…\p殿下の潔く崇高な御心に触れ、\p万感交々到り、\p心洗われる思いにございます」\e
+<00004e42> 【Capt. Sagiri】「...\p...\pI must thank you...\p...\ptouching upon Your Highness' noble and sublime heart is flooding me with emotions.\p I feel as though my heart is being cleansed.」\e
+
+//<00004e44> 【沙霧大尉】「しかしながら、\p米軍および国連軍の介入は重大な内政干渉であり、\p国家主権を脅かす蛮行である事実は、\p決して変わる事ではありません」\e
+<00004e44> 【Capt. Sagiri】「Still,\p that does not change the fact that the American and UN Armies' intervention into our internal affairs is a grave and barbaric threat to our sovereignty.」\e
+
+//<00004e46> 【沙霧大尉】「事ここに到り、\p漸く賜りました機会…\p…\p斯かる事態を招いた不面目を棚に上げてでも、\p殿下にお伝えせねばならない事がございます」\e
+<00004e46> 【Capt. Sagiri】「Now that it has come to this,\p and we at long last have the opportunity to speak...\p...\pthere is something I must tell Your Highness,\p even if it means putting aside my shame for having caused this situation.」\e
+
+//<00003862> 【冥夜】「申すがよい」\e
+<00003862> 【Meiya】「You may speak it.」\e
+
+//<00004e48> 【沙霧大尉】「此度の件は、\p米国の思惑を成就せんがための謀にございます」\e
+<00004e48> 【Capt. Sagiri】「This incident was plotted in order to fulfill American desires.」\e
+
+//<00003868> 【冥夜】「…\p…\p…\p…\p」\e
+<00003868> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00003869> …\p…\pおい…\p…\p何を言い始めるんだ？\e
+<00003869> ...\p...\phey...\p...\pwhy'd you bring that up?\e
+
+//<00004e4a> 【沙霧大尉】「帝都での戦闘は、\p帝都城警備の斯衛部隊に対して、\p我が同志部隊が先制攻撃を仕掛けた事が発端となったとされています」\e
+<00004e4a> 【Capt. Sagiri】「The fighting in the capital is said to have begun when one of my comrades made a preemptive strike upon the Honor Guard units defending the Imperial Palace.」\e
+
+//<00004e4c> 【沙霧大尉】「結果的にそれは事実であります…\p…\p」\e
+<00004e4c> 【Capt. Sagiri】「That was indeed the end result...\p...\p」\e
+
+//<00004e4e> 【沙霧大尉】「されど、\p部隊指揮官は発砲を命じておらず、\p一兵士が暴走し、\p上官に射殺されるまで発砲を続け、\p反撃に出た斯衛部隊に対し、\p撤退しながら応戦した、\pというのが事の顛末です」\e
+<00004e4e> 【Capt. Sagiri】「However,\p the unit commander never ordered them to fire.\p Rather,\p a single soldier started firing and would not stop until his commander shot him.\p The unit then retreated while defending themselves from the Honor Guard's counterattack.\p That is how the event truly transpired.」\e
+
+//<00004e50> 【沙霧大尉】「そして不思議なことに…\p…\p同じ時刻に、\p同様の事が、\p帝都城の周囲数カ所で発生致しておりました」\e
+<00004e50> 【Capt. Sagiri】「And, mysteriously enough...\p...\pthe same thing happened at the same time in a number of other places surrounding the Imperial Palace.」\e
+
+//<00004e52> 【沙霧大尉】「その中のとある部隊の将校が、\p命令を無視して発砲した兵士を射殺せずに逮捕し、\p連行してきたのです」\e
+<00004e52> 【Capt. Sagiri】「One of the officers of such a unit captured the offending soldier alive and brought him in.」\e
+
+//<00004e54> 【沙霧大尉】「精査の結果、\pその兵士は米国諜報機関の工作員であることが判明致しました」\e
+<00004e54> 【Capt. Sagiri】「After interrogation,\p it was clear that the soldier was an agent of an American intelligence agency.」\e
+
+//<00003897> 【冥夜】「――！？」\e
+<00003897> 【Meiya】「――!?」\e
+
+//<00003898> ――まずい…\p…\pまずいぞ…\p…\p！\n冥夜はこの手の裏情報を全く知らないはずだ…\p…\p！\e
+<00003898> ――Not good...\p...\pnot good...\p...\p!\nMeiya hasn't heard a thing about any of this...\p...\p!\e
+
+//<00003899> 何となく想像していたとしても、\p今ここでその情報を、\p沙霧大尉の口から聞くのはまずい…\p…\p！\e
+<00003899> I'd kinda figured it out myself,\p but having Capt. Sagiri reveal it aloud here and now isn't good...\p...\p!\e
+
+//<00004e56> 【沙霧大尉】「極東での復権を望む米国政府は、\p米軍派遣の口実を作るため、\p帝都での騒乱を望んだのです」\e
+<00004e56> 【Capt. Sagiri】「The American government wants greater authority in the Far East,\p so they started the fighting in the capital to give the American Army an excuse for deployment.」\e
+
+//<00004e58> 【沙霧大尉】「帝都の戦闘から、\p米軍が殿下を救出し保護し、\p日本の騒乱を平定する…\p…\pこれが米国の当初描いた筋書きです」\e
+<00004e58> 【Capt. Sagiri】「The American Army would then save Her Highness from the fighting in the capital and suppress the Japanese insurgency...\p...\paccording to the story the Americans wrote out.」\e
+
+//<00004e5a> 【沙霧大尉】「そしてまた、\p米軍をたやすく引き入れ、\p殿下の戦闘停止命令を握り潰した、\p仙台臨時政府の者達こそが、\p帝都を戦火に曝した張本人なのです」\e
+<00004e5a> 【Capt. Sagiri】「Also,\p this means the members of the Sendai Provisional Government who let the American Army intervene and hid Your Highness' order of surrender are the true culprits behind the fighting in the capital.」\e
+
+//<000038a1> 【冥夜】「…\p…\p…\p…\p」\e
+<000038a1> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00004e5c> 【沙霧大尉】「さりとて、\pそれを許した私の罪…\p…\p拭えるものでは無い事は重々承知しております…\p…\p」\e
+<00004e5c> 【Capt. Sagiri】「And yet,\p I bear the sin of allowing it to happen...\p...\pand understand full well that I cannot atone for it...\p...\p」\e
+
+//<000049aa> 殿下はある程度その辺の裏事情を知った上で、\p大尉達に死に場所を与えるためにここに来たんだ。\e
+<000049aa> Her Highness was planning to give the Captain and others an honorable death even though she knew quite a bit of this.\e
+
+//<000049ac> だけど冥夜は、\pあいつが知りうる情報と、\pさっきまでの状況とから殿下の決意を慮って、\p身代わりを名乗り出たはずだ。\n裏情報を知った上での事じゃない…\p…\p。\e
+<000049ac> But Meiya volunteered to take her place based on Her Highness' resolve,\p and what she happened to know herself.\nShe had no idea all this was behind it...\p...\p\e
+
+//<000038a9> 決起を下らないと思っていたオレですら、\pそうなった程なのに…\p…\pいきなりその話を聞いたら、\p真偽以前に…\p…\p冥夜は沙霧大尉達に対して、\pこれまで以上に気持ちが入ってしまうはずだ。\e
+<000038a9> Even I,\p who thought this rebellion was stupid, did the same thing...\p...\pbut hearing all this out of the blue...\p...\pit won't matter whether she believes it,\p Meiya's still going to feel even more strongly about Capt. Sagiri than she did before.\e
+
+//<000038aa> 【冥夜】「…\p…\p…\p…\p」\e
+<000038aa> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<000038af> …\p…\p…\p…\p？\e
+<000038af> ...\p...\p...\p...\p?\e
+
+//<000038b0> 【冥夜】「…\p…\p…\p…\p」\e
+<000038b0> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00004e5e> 【沙霧大尉】「…\p…\p殿…\p…\p下？」\e
+<00004e5e> 【Capt. Sagiri】「...\p...\pYour...\p...\pHighness?」\e
+
+//<000038b2> おい…\p…\pまさか…\p…\p泣いてる…\p…\pのか…\p…\p？\e
+<000038b2> Hey...\p...\pyou're not...\p...\pcrying...\p...\pare you...\p...\p?\e
+
+//<000038b4> 【冥夜】「…\p…\p…\p…\p」\e
+<000038b4> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<000038b5> ばっ…\p…\pばかやろう！\e
+<000038b5> Y-...\p...\pyou idiot!\e
+
+//<000049b0> ――おまえは殿下の影なんだろう？\nその宿命に殉じるんじゃないのかよ？！\e
+<000049b0> ――Aren't you Her Highness' shadow?\nWeren't you utterly devoted to that duty!?\e
+
+//<000038b7> 気持ちはわかるけど…\p…\pだけどここで流されたらダメだろ！\e
+<000038b7> I understand how you feel, but...\p...\pyou can't let him see you cry here!\e
+
+//<000049b2> 殿下なら…\p…\p殿下なら絶対に沙霧大尉の前では泣かないはずだ！殿下はひとりになった時にだけ――沙霧大尉や榊首相達のために、\p人知れず涙を流すはずだろ！？\e
+<000049b2> Her Highness...\p...\pshe'd never cry in front of Capt. Sagiri!\bShe'd wait until she was alone――Then and only then would she cry for Capt. Sagiri and Prime Minister Sakaki and everyone else!\p Where no one could see it!\e
+
+//<000038b9> 【冥夜】「…\p…\p…\p…\p」\e
+<000038b9> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<000049b4> それ以上の状況を知っていた殿下は…\p…\pもっと悩んでいたはずなんだ。\e
+<000049b4> Her Highness knew even more about the situation...\p...\pso she must've been even more worried.\e
+
+//<000038bb> どれだけ言葉を発しても届かない。\nそればかりか、\p勝手に物事が進んでいく。\e
+<000038bb> None of her words would reach them.\nNot only that,\p but events transpired without her getting a say in it.\e
+
+//<000038bc> それでも自分が何とかしなくちゃと思って、\p囮になってまで帝都での戦闘を終結させたんだ。\e
+<000038bc> And yet she still felt she had to do something,\p so she drew the fighting out of the capital by using herself as bait.\e
+
+//<000038bd> そして自分の手で…\p…\p心で泣きながら…\p…\p沙霧大尉達に死に場所を与えようとしたんだぞ！？\e
+<000038bd> And then...\p...\pshe tried to give Capt. Sagiri an honorable death...\p...\pwith her own hands, even as she cried on the inside!!\e
+
+//<000049b6> どうしてそこまでできる？　将軍だからか？　『勝手にしろ』って投げ出すわけにいかない立場だからか？\e
+<000049b6> How could she do all that?\bBecause she's the Shogun?\bBecause she can't afford to simply ignore all this?\e
+
+//<000038bf> 違う。\e
+<000038bf> No.\e
+
+//<000038c0> それでも国民を大切に想っていたからだ。\e
+<000038c0> Because she still cared about the people.\e
+
+//<000038c1> 日本の平和のために、\p来るべき未来で日本人が誇りを持って暮らしていけるように、\pそれを願っているからだ。\e
+<000038c1> She wished for it in order to bring peace to Japan,\p and allow the Japanese to be proud of themselves when humanity takes back its future.\e
+
+//<000038c2> そして、\p政府も軍もその目的のために動いていると信じているからだ。\e
+<000038c2> And...\p...\pbecause she believed that the government and military were acting toward the same objective.\e
+
+//<000038c3> だからこそ、\pオレ達の目からみれば最悪のものであっても、\p黙って今の状況を受け入れてるんじゃないか！\e
+<000038c3> Isn't that why,\p even if their actions look absolutely horrible to us,\p we're staying quiet and accepting them!?\e
+
+//<000038c4> だからこそ、\p各々の主義や立場で今の状況に憤りを感じる者達には、\p全て自分のせいだと言い続けているんじゃないか！\e
+<000038c4> Isn't that why everyone with their unique beliefs, positions and justified reactions to this situation keeps trying to blame it all on themselves!?\e
+
+//<000038c5> 【冥夜】「そこまで…\p…\p」\e
+<000038c5> 【Meiya】「If you...\p...\p」\e
+
+//<000038c6> ――！？\e
+<000038c6> ――!?\e
+
+//<000049b8> 【冥夜】「そこまで国を…\p…\p民を…\p…\pこの煌武院悠陽を想うのならば…\p…\p」\e
+<000049b8> 【Meiya】「If you feel that strongly...\p...\pfor the country...\p...\pthe people...\p...\pand for myself, Koubuin Yuuhi...\p...\p」\e
+
+//<000038ce> 冥夜――堪えてくれ！\e
+<000038ce> Meiya――Please, endure it!\e
+
+//<000038d5> 【冥夜】「――何故そなたは人を斬ったのですかッ！？」\e
+<000038d5> 【Meiya】「――Then why have you struck people down!?」\e
+
+//<000038d7> ――冥夜！！\e
+<000038d7> ――Meiya!!\e
+
+//<00004e60> 【沙霧大尉】「…\p…\p殿下」\e
+<00004e60> 【Capt. Sagiri】「...\p...\pYour Highness.」\e
+
+//<000038dd> 【冥夜】「血は血を呼び、\p争いは争いを生みます。\nそのような仕儀をもたらしたそなた達の此度の行い…\p…\pそれは私や民の心を汲んだものだと…\p…\p本当に言えるのでありましょうか？」\e
+<000038dd> 【Meiya】「Blood calls for more blood,\band war begets yet more war.\bWhat you have done to bring about such a state of affairs...\p...\pcan you truly say...\p...\pthat it was done out of concern for the people or for myself?」\e
+
+//<000038de> …\p…\p…\p…\p冥夜…\p…\pおまえ…\p…\p。\e
+<000038de> ...\p...\p...\p...\pMeiya...\p...\pyou...\p...\p\e
+
+//<000049bd> 【冥夜】「将軍の意志を民に正しく伝えることが、\pそなた達の本意であったとしても…\p…\pそれが伝わらぬ者、\pそれを阻む者を排除することが許される道理があろうか…\p…\p」\e
+<000049bd> 【Meiya】「Even if your true intention was to accurately convey my will, the Shogun's will to the people...\p...\pdoes that grant you the right to destroy those who do not convey it, or even those who obstruct it...\p...\p?」\e
+
+//<000038e4> 【冥夜】「それを許すのであれば、\p天元山の人々を力尽くで排除した政府を非難する資格…\p…\pそなたに在ろう筈がない」\e
+<000038e4> 【Meiya】「If you are allowed to do so,\p then by no means...\p...\pdo you have the right to blame the government for the effort it made to save the people at Mt. Tengen.」\e
+
+//<00004e62> 【沙霧大尉】「…\p…\p…\p…\p」\e
+<00004e62> 【Capt. Sagiri】「...\p...\p...\p...\p」\e
+
+//<000038e7> 【冥夜】「民の意志を語る資格が在ろう筈がない…\p…\p」\e
+<000038e7> 【Meiya】「By no means do you have the right to speak of the people's will...\p...\p」\e//gaaaaaah I feel sad just translating this ;____; ~IX
+
+//<000038e8> 【武】「…\p…\p…\p…\p」\e
+<000038e8> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<000038ee> 【冥夜】「国とは…\p…\p日本という国は…\p…\p民の心にあるもの…\p…\p」\e
+<000038ee> 【Meiya】「Our country...\p...\pthe country of Japan...\p...\plies within the people's hearts...\p...\p」\e
+
+//<000049bf> 【冥夜】「そして将軍とはそれを…\p…\p民の心にある日本を映す鏡のようなもの…\p…\p私はそう考えています」\e
+<000049bf> 【Meiya】「And the Shogun is but a mirror...\p...\pto reflect the Japan in their hearts...\p...\pthat is what I believe.」\e
+
+//<000038f0> 【冥夜】「もし、\p映すものがない鏡が在ったなら、\pそれは何と儚い存在であろうか…\p…\p」\e
+<000038f0> 【Meiya】「If such a mirror were to reflect nothing,\p what sort of meaningless existence would that be...\p...\p?」\e
+
+//<000038f1> …\p…\p冥夜。\e
+<000038f1> ...\p...\pMeiya.\e
+
+//<000038f2> 【冥夜】「日本を守るというのは即ち、\p民を守ると言う事…\p…\p民のない国など、\p有りはしないのです」\e
+<000038f2> 【Meiya】「Protecting Japan is no different from protecting its people...\p...\pthere is no such thing as a country without people.」\e
+
+//<000038f3> 【冥夜】「そなたがそれを一番わかっていながら…\p…\p道を誤ったのです…\p…\p」\e
+<000038f3> 【Meiya】「You understand that as well as any of us...\p...\pand you still strayed from the path...\p...\p」\e
+
+//<00004e64> 【沙霧大尉】「…\p…\p…\p…\p」\e
+<00004e64> 【Capt. Sagiri】「...\p...\p...\p...\p」\e
+
+//<000038f9> 【冥夜】「されど…\p…\p未だそなた達に残された正道があります。\nそなたの過ちを雪ぐ道が…\p…\p」\e
+<000038f9> 【Meiya】「However...\p...\pyou can still do the right thing.\nThere still exists a path to wipe away your mistake...\p...\p」\e//Seppuku. Do it.
+
+//<00004e66> 【沙霧大尉】「…\p…\p…\p…\p」\e
+<00004e66> 【Capt. Sagiri】「...\p...\p...\p...\p」\e
+
+//<000038ff> 【冥夜】「一刻も早くこの争いを終わらせ、\p民を不安から解放せねばなりません」\e
+<000038ff> 【Meiya】「You must end this battle as soon as possible,\p and grant the people relief.」\e
+
+//<00003900> 【冥夜】「そして、\pそなたの志に賛同する者達を、\pひとりでも多く救えるのはそなただけなのです」\e
+<00003900> 【Meiya】「You are the only one who can save the people who followed your call to arms.」\e
+
+//<00003901> 【冥夜】「今ここで、\p帝国軍や米軍、\p国連軍の将兵をひとりでも多く救えるのは、\pそなたしかいないのです」\e
+<00003901> 【Meiya】「Right now, you can save more Imperial, American and UN Army soldiers and officers than anyone else.」\e
+
+//<00004e68> 【沙霧大尉】「…\p…\p…\p…\p」\e
+<00004e68> 【Capt. Sagiri】「...\p...\p...\p...\p」\e
+
+//<00003903> 【冥夜】「日本の行く末を憂うそなたの想い…\p…\pそなたの志はこの私がしかと受け取りました」\e
+<00003903> 【Meiya】「You lament where Japan is headed...\p...\pI have grasped that feeling, that will of yours.」\e//しか is an alternate reading of 確, that makes so much sense ~IX
+
+//<00003904> 【冥夜】「これより後は、\p常に此度の件を戒めとし、\p民のため、\p日本のために尽瘁する所存です」\e
+<00003904> 【Meiya】「From now on,\p I shall give all I have for the sake of Japan,\p and its people,\p forever remembering the warnings of this incident.」\e
+
+//<000049c1> 【冥夜】「煌武院悠陽の名にかけて…\p…\pそなたに誓います」\e
+<000049c1> 【Meiya】「I swear that to you...\p...\pon the name Koubuin Yuuhi.」\e
+
+//<00004e6a> 【沙霧大尉】「殿下…\p…\p」\e
+<00004e6a> 【Capt. Sagiri】「Your Highness...\p...\p」\e
+
+//<00003907> …\p…\pオレは…\p…\p冥夜を見損なっていた。\e
+<00003907> ...\p...\pI...\p...\punderestimated her.\e
+
+//<000049c5> 殿下の事を、\pまるで自分のことのように心配してた冥夜…\p…\pそして、\p殿下も冥夜のことを大事に思ってた…\p…\p。\e
+<000049c5> Meiya was worrying about Her Highness' problems as if they were her own...\p...\pand Her Highness cared about Meiya as well...\p...\p\e
+
+//<0000390d> 一緒に過ごしたことがなくても、\p離れて暮らしていても…\p…\p２人の気持ちは、\p信じられないくらい通じ合っていた。\e
+<0000390d> They've never spent time together,\p always living far apart...\p...\pbut they understand each other unbelievably well.\e
+
+//<000049c7> 裏情報を知らなくても…\p…\p自ら沙霧大尉に死に場所を与えようとする、\p殿下の決意を察する事ができる程に…\p…\p。\e
+<000049c7> Even without knowledge of the underlying plot...\p...\pshe could sense Her Highness' resolve to grant Capt. Sagiri an honorable death...\p...\p\e
+
+//<000049c9> そして…\p…\p裏情報を知って衝撃を受けたとしても…\p…\pこうして殿下と同じ考えに行き着く程に…\p…\p。\e
+<000049c9> And...\p...\peven after being shocked by that plot...\p...\pshe's doing exactly what Her Highness would have done...\p...\p\e
+
+//<00003910> それをオレは、\p今また思い知った…\p…\p。\e
+<00003910> Once again,\p I'm amazed by it...\p...\p\e
+
+//<00003915> 【冥夜】「…\p…\p…\p…\p」\e
+<00003915> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00004e6c> 【沙霧大尉】「有り難きお言葉の数々、\p我が身には過ぎる栄誉にございます…\p…\p」\e
+<00004e6c> 【Capt. Sagiri】「I thank you for your words.\bIt is an honor far beyond my worth...\p...\p」\e
+
+//<0000391b> …\p…\p…\p…\p！？\e
+<0000391b> ...\p...\p...\p...\p!?\e
+
+//<00004e6e> 【沙霧大尉】「殿下…\p…\p我が同志の処遇…\p…\pくれぐれも宜しくお願い致します」\e
+<00004e6e> 【Capt. Sagiri】「Your Highness...\p...\pI leave my comrade's fates...\p...\pin your very capable hands.」\e
+
+//<00003921> これは…\p…\p。\e
+<00003921> Does this mean...\p...\p?\e
+
+//<00003922> 【冥夜】「沙霧大尉…\p…\p」\e
+<00003922> 【Meiya】「Capt. Sagiri...\p...\p?」\e
+
+//<00004e70> 【沙霧大尉】「――ッ！？」\n
+<00004e70> 【Capt. Sagiri】「――!?」\n
+
+//<00003931> 【月詠】「――！？」\n
+<00003931> 【Tsukuyomi】「――!?」\n
+
+//<00003932> 【冥夜・武】「な…\p…\pっ！？」\e
+<00003932> 【Meiya & Takeru】「Wha――...\p...\p!?」\e
+
+//<000049cd> 【月詠】「――白銀ッ、\p『殿下』をお守りしろッ！！　下がれッ！！」\e
+<000049cd> 【Tsukuyomi】「――Shirogane!\p Protect "Her Highness!!" Retreat!!」\e
+
+//<00003953> 何だ！？　何が起きたんだっっ！？\e
+<00003953> What!?\bWhat the hell happened!!!??\e
+
+//<00003981> 【武】「――あぶないっ！」\e
+<00003981> 【Takeru】「――Get down!」\e
+
+//<00003982> 【冥夜】「――あっ！！」\e
+<00003982> 【Meiya】「――Ah!!」\e
+
+//<000039b7> 【ウォーケン少佐】「――ハンター２ッ！？　なぜ撃った！？　ハンター２ッ！」\e
+<000039b7> 【Maj. Walken】「――Hunter 2!?\bWhy did you shoot!? Hunter 2!」\e
+
+//<000039ba> 【武】「――バカなっ！　あとひと息だったのに！！」\e
+<000039ba> 【Takeru】「――No way! You had him!! He was just about to――!!」\e
+
+//<000039bb> ――時間だってまだ残ってるじゃないか――！？\e
+<000039bb> ――There's still time left before Phase 2――!!\e
+
+//<000039c0> 【冥夜】「何故…\p…\p何故なんだ…\p…\p」\e
+<000039c0> 【Meiya】「Why...\p...\pwhy...\p...\p」\e
+
+//<000039c1> ――そうだっ…\p…\p沙霧大尉はっ！？\e
+<000039c1> ――Right! ...\p...\pwhat about Capt. Sagiri!?\e
+
+//<000039df> 【ウォーケン少佐】「――応答せよハンター２ッ！？　テスレフ少尉ッ！　攻撃を中止しろッ！」\e
+<000039df> 【Maj. Walken】「――Hunter 2, respond!!\b2nd Lt. Thesleff! Cease fire!」\e
+
+//<000039e6> 【冥夜】「――やめろっ！　やめてくれっっ！！」\e
+<000039e6> 【Meiya】「――Stop! Stop this!!」\e
+
+//<000039e7> 【武】「――危ない冥夜っ！」\e
+<000039e7> 【Takeru】「――It's too dangerous, Meiya!」\e
+
+//<00003a2c> 【冥夜】「タケルッ、\p行かせてくれ！」\e
+<00003a2c> 【Meiya】「Takeru!\p Let me go to him!」\e
+
+//<00003a32> 【武】「バカ言うな！　――ッッ！！」\e
+<00003a32> 【Takeru】「Don't be ridiculous! ――!!!」\e
+
+//<00003a3e> 【武】「――うわああああッ！！」\e
+<00003a3e> 【Takeru】「――Uwaaaaaaaaa!!」\e
+
+//<00003a40> 【月詠】「――何をしている白銀ッ、\p下がらんかッ！！」\e
+<00003a40> 【Tsukuyomi】「――What are you doing, Shirogane!?\bFall back now!!」\e
+
+//<00003a4c> 【冥夜】「――まだ…\p…\p今ならまだ間に合うかもしれないっ！」\e
+<00003a4c> 【Meiya】「――There is still time...\p...\pwe can still make it!」\e
+
+//<00003a4d> 【武】「――バカ野郎ッ！　早く簡易ジャケットを付けろッ！！」\e
+<00003a4d> 【Takeru】「――You idiot! Fasten your safety harness!!」\e
+
+//<00003a4e> 【冥夜】「だがッ…\p…\p！」\e
+<00003a4e> 【Meiya】「But...\p...\p!」\e
+
+//<000049cf> 【武】「――オレはおまえを死なせないんだッ！　生きて殿下に会わせるんだよッ！！」\e
+<000049cf> 【Takeru】「――I'm not letting you die!\bI'm bringing you back to Her Highness alive!!」\e
+
+//<00003a57> 【冥夜】「ぐッ…\p…\p！」\e
+<00003a57> 【Meiya】「Uu...\p...\p!」\e
+
+//<00003a5c> ――バカ野郎ォォォッ！！\nなんで…\p…\pなんでこんな事になっちまうんだよッ！？\e
+<00003a5c> ――You dumbaaaaaaass!!\nWhy...\p...\pwhy did you have to do this!?\e
+
+//<00003a61> もう少し…\p…\pもう少しだったじゃねえかよ…\p…\p！？\e
+<00003a61> We were so close...\p...\pso fucking close...\p...\p!!\e//justifed? y/n ~IX
+
+//<00003a66> ――チクショオォォッ！！\e
+<00003a66> ――God damn iiiiiit!!\e
+
+//<00003a6a> 【ウォーケン少佐】「――全機に告ぐ――作戦を第２シーケンスに移行ッ！　兵器使用自由！」\n
+<00003a6a> 【Maj. Walken】「――All units――We're moving to Phase 2 of the plan! You are cleared to engage!」\n
+
+//<00003a6b> 【月詠】「――白銀、\p来るぞ！」\e
+<00003a6b> 【Tsukuyomi】「――Shirogane,\p here they come!」\e
+
+//<00003a74> 【武】「――うおおおおおおっっ！！」\e
+<00003a74> 【Takeru】「――Uuoooooooooooo!!」\e
+
+//<00003b57> 【武】「――くそっ！　向こうはおまえを何としても連れて行くつもりらしいぞ！」\e
+<00003b57> 【Takeru】「――Damn it! Looks like they're intent on taking you with them no matter what!」\e
+
+//<00003b5a> 【冥夜】「――ッ！」\e
+<00003b5a> 【Meiya】「――!」\e
+
+//<000049d1> だけど――このまま勘違いしてオレを追いかけてくれれば、\p殿下が無事に逃げれるんだ！\e
+<000049d1> Still――If they mistakenly chase me,\p Her Highness will be able to escape!\e
+
+//<00004a5e> 【ウォーケン少佐】「――ハンター３、\pハンター４は２０７０６をカバーしろ！」\e
+<00004a5e> 【Maj. Walken】「――Hunters 3 and 4,\p give 20706 some covering fire!」\e
+
+//<00003b78> 【ハンター３】「――こちらハンター３！　敵機が多すぎますッ！！」\e
+<00003b78> 【Hunter 3】「――This is Hunter 3! There's too many of them!!」\e
+
+//<00004a5f> 【ウォーケン少佐】「――よし持ち堪えろ！　カバーは私が入るッ！！」\e
+<00004a5f> 【Maj. Walken】「――Fine, hold them off! I'll cover him!!」\e
+
+//<00003b7a> 【ハンター３】「――頼みますッ！！」\e
+<00003b7a> 【Hunter 3】「――Thank you!!」\e
+
+//<00003b7d> 【月詠】「――２時方向の２機は引き受ける！　０６は後退を続けろ」\e
+<00003b7d> 【Tsukuyomi】「――I'll take the two at two o'clock!\b06, continue retreating.」\e
+
+//<00003b7e> 【武】「――了解ッ！」\e
+<00003b7e> 【Takeru】「――Roger!」\e
+
+//<00004a60> 【ウォーケン少佐】「――２０７００！　２０７０６と１９０１との合流を目指しつつ敵を撃破しろ！」\e
+<00004a60> 【Maj. Walken】「――20700! Rendezvous with 20706 and 1901, destroy any enemies you encounter!」\e
+
+//<00003b8b> 【まりも】「――００了解！　０１、\p０４、\p遅れるなよッ！　訓練を思い出せ！」\e
+<00003b8b> 【Marimo】「――00, wilco!\b01,\p 04,\p don't fall behind! Remember your training!」\e
+
+//<00003b98> 【千鶴】「――りょ、\p了解ッ！」\n
+<00003b98> 【Chizuru】「――C-\pcopy that!」\n
+
+//<00003b99> 【慧】「――了解！」\e
+<00003b99> 【Kei】「――Copy that!」\e
+
+//<00003ba4> みんな…\p…\p死ぬなよッ！\n夕呼先生のＯＳなら、\p何とか逃げ切れるはずだ！\e
+<00003ba4> Don't die out there...\p...\pany of you.\nWith Yuuko-sensei's OS,\p you should all be able to make it out of this!\e
+
+//<00003ba5> 【冥夜】「――タケル、\p何がどうなってる！？」\e
+<00003ba5> 【Meiya】「――Takeru,\p what is going on!?」\e
+
+//<00003ba8> 【武】「――岩山方面に敵戦力が集中しているらしい！\nこのまま後退しつつ、\p囮になる！」\e
+<00003ba8> 【Takeru】「――The enemy's concentrating its forces at Mt. Iwa!\nWe're gonna keep retreating to draw them away from Her Highness!」\e
+
+//<00003ba9> ――さっきから沙霧大尉が引き離せない！\n不知火の動きもすげえが、\pやっぱり相当な腕だっ！\e
+<00003ba9> ――I still can't shake Capt. Sagiri!\nThat Type-94 Shiranui's pretty impressive,\p but he's also just as good as I thought!\e
+
+//<00003bda> 【ウォーケン少佐】「――よしッ！　プランＡ第３フェイズに移行ッ！」\e
+<00003bda> 【Maj. Walken】「――Now! Move Plan A to Phase 3!」\e
+
+//<00003bdb> 【武】「――！？」\e
+<00003bdb> 【Takeru】「――!?」\e
+
+//<00003bdc> 【冥夜】「…\p…\p」\e
+<00003bdc> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00003be3> 【まりも】「第３フェイズに移行した！　全機散開ッ！　平面機動挟撃ッ！！」\e
+<00003be3> 【Marimo】「We're moving to Phase 3!\bAll units, scatter! Execute a pincer movement!!」\e
+
+//<00003be5> 【慧】「――了解ッ！」\e
+<00003be5> 【Kei】「――Copy that!」\e
+
+//<00003c11> 【千鶴】「――今よ！」\e
+<00003c11> 【Chizuru】「――Now!」\e
+
+//<00003c33> 【慧】「…\p…\p…\p…\pっ！」\e
+<00003c33> 【Kei】「...\p...\p...\p...\p!」\e
+
+//<00003c38> 【千鶴】「――外したッ？！」\e
+<00003c38> 【Chizuru】「――You missed!?」\e
+
+//<00003c3e> 【慧】「――！？」\e
+<00003c3e> 【Kei】「――!?」\e
+
+//<00003c3f> 【千鶴】「――軍曹ッ？！」\e
+<00003c3f> 【Chizuru】「――Sergeant!?」\e
+
+//<00003c44> 【まりも】「――良くやったな。\nうまくおびき出してくれたおかげだ」\e
+<00003c44> 【Marimo】「――Well done.\nI got him thanks to you two drawing him out.」\e
+
+//<00003c45> 【慧】「…\p…\p…\p…\p」\e
+<00003c45> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00003c46> 【まりも】「おまえ達はまず、\p新ＯＳの特性を生かし、\pとにかく動き回って逃げることを考えろ」\e
+<00003c46> 【Marimo】「You two focus on making good use of that new OS for evasive maneuvers.」\e
+
+//<00003c57> 【千鶴】「――了解」\n
+<00003c57> 【Chizuru】「――Copy that.」\n
+
+//<00003c58> 【慧】「…\p…\p了解」\e
+<00003c58> 【Kei】「...\p...\pcopy that.」\e
+
+//<00003c60> 【まりも】「――次が来るッ！　気を抜くな！？」\e
+<00003c60> 【Marimo】「――The next one's coming! Don't let up now!!」\e
+
+//<00003ccf> 【ハンター４】「抜けたっ！　ハンター３、\p行ったぞ！！」\e
+<00003ccf> 【Hunter 4】「He slipped by me!\bHunter 3,\p he's headed for you!!」\e
+
+//<00003cde> 【ハンター３】「ようし――いただきだッ！」\e
+<00003cde> 【Hunter 3】「Okaaay――This one's mine!」\e
+
+//<00003d0e> 【ハンター３】「――ちくしょう！　かわされた！」\e
+<00003d0e> 【Hunter 3】「――Dammit! He dodged it!」\e
+
+//<00003d10> 【ハンター４】「――バカヤロウ！　そっちはルーキー共が…\p…\p！」\e
+<00003d10> 【Hunter 4】「――You idiot! That's the rookies'...\p...\p!」\e
+
+//<00003d19> 【壬姫】「――正面、\p来てます！　４機！？」\e
+<00003d19> 【Miki】「――They're coming from the front! Four of them!!」\e
+
+//<00003d21> 【美琴】「――やるしかないよっ！」\e
+<00003d21> 【Mikoto】「――We'll just have to beat them!」\e
+
+//<00003d88> 【美琴】「――凄いッ！」\e
+<00003d88> 【Mikoto】「――Amazing!」\e
+
+//<00003d89> 【壬姫】「…\p…\p…\p…\pッ！」\e
+<00003d89> 【Miki】「...\p...\p...\p...\p!」\e
+
+//<00003d8e> 【ハンター４】「――ひよっこ共、\p大丈夫かッ！」\e
+<00003d8e> 【Hunter 4】「――Hey newbies,\p you okay!?」\e
+//God damn, I'm really feeling proud to be American.-Spin
+
+//<00003d93> 【ハンター４】「これ以上下がるなっ！　上がって合流しろ」\e
+<00003d93> 【Hunter 4】「Don't fall back any further!\bPush forward to the rendezvous point!」\e
+
+//<00003d97> 【壬姫・美琴】「――りょ、\p了解！」\e
+<00003d97> 【Miki & Mikoto】「――R-\proger!」\e
+
+//<00003d9f> 【壬姫】「――あっ！」\e
+<00003d9f> 【Miki】「――Ah!」\e
+
+//<00003da0> 【美琴】「――壬姫さんっっ！！」\e
+<00003da0> 【Mikoto】「――Miki-san!!」\e
+
+//<00003db1> 【壬姫】「――うぅぅ…\p…\p？」\e
+<00003db1> 【Miki】「――Uuuu...\p...\p?」\e
+
+//<00003db2> 【イルマ】「戦場でボーっとしない！　目の前に敵が来たら撃つのよ！」\e
+<00003db2> 【Irma】「Don't space out on the battlefield!\bIf the enemy's in front of you, take the shot!」\e
+
+//<00003dbd> 【壬姫】「――イルマ少尉ッ！」\e
+<00003dbd> 【Miki】「――2nd Lt. Irma!」\e
+
+//<00003dc4> 【美琴】「――壬姫さん、\p早く！」\e
+<00003dc4> 【Mikoto】「――Miki-san,\p hurry up!」\e
+
+//<00003ddd> 【イルマ】「ここは私達が何とかするから、\pあなたは早く合流しなさい！」\e
+<00003ddd> 【Irma】「We'll do what we can here,\p you two rendezvous with the others!」\e
+
+//<00003de3> 【壬姫】「は、\pはい！　ありがとうございますっ！」\e
+<00003de3> 【Miki】「Y-\pyes! Thank you very much!」\e
+
+//<00003df7> 【美琴】「――壬姫さん、\p大丈夫！？　このまま２０７００に合流するよ？」\e
+<00003df7> 【Mikoto】「――Miki-san,\p are you okay!?\bWe need to get to 20700.」\e
+
+//<00003dfe> 【壬姫】「あ…\p…\pは、\pはいッ」\e
+<00003dfe> 【Miki】「Ah...\p...\py-\pyes!」\e
+
+//<00003e07> 【壬姫】「――えッ！？」\e
+<00003e07> 【Miki】「――Eh!?」\e
+
+//<00003e22> 【壬姫】「…\p…\pイルマ少尉のマーカーが…\p…\pき…\p…\p消え…\p…\pた…\p…\p？」\e
+<00003e22> 【Miki】「...\p...\p2nd Lt. Irma's marker...\p...\pdis...\p...\pappear...\p...\ped...\p...\p?」\e
+
+//<00003e23> 【美琴】「――壬姫さん！」\e
+<00003e23> 【Mikoto】「――Miki-san!」\e
+
+//<00003e24> 【壬姫】「あ…\p…\pあ…\p…\pイルマ少尉…\p…\p！？」\e
+<00003e24> 【Miki】「Ah...\p...\pah...\p...\p2nd Lt. Irma...\p...\p!?」\e
+
+//<00003e25> 【美琴】「――壬姫さん、\pしっかりしてッ！」\e
+<00003e25> 【Mikoto】「――Miki-san,\p get a hold of yourself!」\e
+
+//<00003e2c> 【壬姫】「――イルマ少尉ーーーっ！！」\e
+<00003e2c> 【Miki】「――Irmaaaaaaa!!」\e//decided leaving out the honorific here was the best move ~IX
+
+//<00003e58> 【武】「――くぅ！」\e
+<00003e58> 【Takeru】「――Uuu!」\e
+
+//<00003e5a> ――まずいっ！　このまま…\p…\pこのままじゃやられるっ！\e
+<00003e5a> ――Not good! They're gonna get us...\p...\pif this keeps up!\e
+
+//<00003e5b> あと少し…\p…\pあと少しもちこたえれば、\p何とか合流できるんだ！！\e
+<00003e5b> If we can hold out...\p...\pjust a little longer,\bwe should be able to meet up with them!!\e
+
+//<00003e62> ――！？\e
+<00003e62> ――!?\e
+
+//<00003e64> 【冥夜】「――被弾したのか！？」\e
+<00003e64> 【Meiya】「――Have we been hit!?」\e
+
+//<00003e66> 【武】「大丈夫だ、\p心配するな！」\e
+<00003e66> 【Takeru】「It's fine,\p don't worry!」\e
+
+//<00003e67> そうか…\p…\p冥夜は外の様子が見えないのか――って！\e
+<00003e67> That's right...\p...\pMeiya can't see what's happening outside――Gah!\e
+
+//<00003e98> 【冥夜】「ぐぅっ！」\e
+<00003e98> 【Meiya】「Uuu!」\e
+
+//<00003e9c> ――そういえば冥夜には強化装備がないんだ！\e
+<00003e9c> ――Come to think of it, Meiya isn't wearing an Armored Suit!\e
+
+//<00003e9d> 【冥夜】「――タケル…\p…\p集中しろっ！」\e
+<00003e9d> 【Meiya】「――Takeru...\p...\pconcentrate!」\e
+
+//<00003e9e> 【武】「――！？」\e
+<00003e9e> 【Takeru】「――!?」\e
+
+//<00003ebf> 【冥夜】「――私のことは気にするでないぞッ！」\e
+<00003ebf> 【Meiya】「――Do not concern yourself with me!」\e
+
+//<00003ec0> 【武】「――ああッ　わかってる！」\e
+<00003ec0> 【Takeru】「――Yeah! I know!」\e
+
+//<00003ecc> ――すまねぇ…\p…\p気にしてる余裕なんかないっ！\e
+<00003ecc> ――Sorry...\p...\pI don't have the time to!\e
+
+//<00003f21> 【武】「――少佐っ！？」\e
+<00003f21> 【Takeru】「――Major!?」\e
+
+//<00003f28> 【武】「――なにっ！？」\e
+<00003f28> 【Takeru】「――What!?」\e
+
+//<00003f29> あっ！\e
+<00003f29> Ah!\e
+
+//<00003f5c> 【武】「――おわあああっ！！」\n
+<00003f5c> 【Takeru】「――Owaaaaaaa!!」\n
+
+//<00003f5d> 【冥夜】「――ぐぅぅぅぅっ！」\e
+<00003f5d> 【Meiya】「――Guuuuuuuuu!」\e
+
+//<00003fcc> 【ウォーケン少佐】「――ハンター１より０６、\pこのまま逃げろ！」\e
+<00003fcc> 【Maj. Walken】「――Hunter 1 to 06,\p keep running!」\e
+
+//<00003fcd> 【武】「――少佐っ！」\e
+<00003fcd> 【Takeru】「――Major!」\e
+
+//<00003fce> 【ウォーケン少佐】「――訓練兵にしては良い動きだ。\nその調子で後退しろッ！」\e
+<00003fce> 【Maj. Walken】「――Those are good moves for a cadet.\nKeep up the retreat!」\e
+
+//<00003fcf> 【武】「――り、\p了解！」\e
+<00003fcf> 【Takeru】「――R-\proger!」\e
+//Seriously, "roger" beats "copy that" for most of the dramatic stuff. Most likely cause of the brevity of it.-Spin
+
+//<00003fd6> 【ウォーケン少佐】「――２０７００、\p０６に続け！」\e
+<00003fd6> 【Maj. Walken】「――20700,\p get to 06!」\e
+
+//<00003fd7> 【まりも】「――了解！　０１、\p０４、\pついてこい！　遅れるなっ！」\e
+<00003fd7> 【Marimo】「――Wilco! 01,\p 04,\p follow me! Don't fall behind!」\e
+//I'd like to think that Marimo uses that more since she's actually expreienced and would understand exactly what proper procedure is.-Spin
+
+//<00003fe9> \r\n
+<00003fe9> \r\n
+
+//<00203fea> 【千鶴・慧】「――了解！」\e
+<00203fea> 【Chizuru & Kei】「――Copy that!」\e
+
+//<00004e72> 【沙霧大尉】「傲慢なる米国人よ――これ以上邪魔をするなッ！」\e
+<00004e72> 【Capt. Sagiri】「Haughty American――You have gotten in my way for the last time!」\e
+
+//<00004e98> 【ウォーケン少佐】「――月詠中尉に言われた通り、\p私は貴様達を少々侮っていたようだ…\p…\pだが！」\e
+<00004e98> 【Maj. Walken】「――As 1st Lt. Tsukuyomi said,\p I do seem to have underestimated you...\p...\phowever!」\e
+
+//<00004e99> 【ウォーケン少佐】「――私も合衆国に忠誠を誓った軍人なのだッ！」\e
+<00004e99> 【Maj. Walken】「――I have sworn my loyalty to the United States of America!」\e
+
+//<00004e9a> 【ウォーケン少佐】「――祖国の誇りに懸けて…\p…\pここを抜かせる訳にはいかないのだッ！」\e
+<00004e9a> 【Maj. Walken】「――In the name of my proud country...\p...\p\bI cannot allow you to pass!」\e
+
+//<00004e74> 【沙霧大尉】「殿下が御座す限り国は変わる！　我が逝くは血塗られた外道…\p…\p引き返すこと叶わん！　なれば――！」\e
+<00004e74> 【Capt. Sagiri】「Our country will change so long as Her Highness exists! I have followed a path drenched with blood...\p...\pand I cannot retrace those steps! However――!」\e//Alt: Steep
+
+//<00004e9b> 【ウォーケン少佐】「――うおおおおおおッ！」\e
+<00004e9b> 【Maj. Walken】「――Uuoooooooooooo!!」\e
+
+//<00004e9c> 【ウォーケン少佐】「――なにぃっ！？　機動でこのＦ－２２Ａを上回るだと…\p…\p？」\e
+<00004e9c> 【Maj. Walken】「――Whaaat!? He's more maneuverable than my F-22A Raptor...\p...\p?」\e
+
+//<00004e9d> 【ウォーケン少佐】「――ばかなぁっ！？」\e
+<00004e9d> 【Maj. Walken】「――Impossible!!」\e
+
+//<00004e76> 【沙霧大尉】「――せめて、\p殿下の御心を蔑ろにする輩を取り除くのみっ！」\e
+<00004e76> 【Capt. Sagiri】「――If nothing else,\p I can eliminate those who dishonor Her Highness' wishes!」\e
+
+//<00004e78> 【沙霧大尉】「――すぐに参る…\p…\p先に逝くがいい」\e
+<00004e78> 【Capt. Sagiri】「――I shall follow soon enough...\p...\pyou go on ahead.」\e
+
+//<0000413b> 【武】「――しょッ――少佐ぁッ！？」\e
+<0000413b> 【Takeru】「――Ma――Majooor!!」\e
+
+//<0000413c> 【冥夜】「――タケル！　何だ、\p少佐がどうされたのだ！？」\e
+<0000413c> 【Meiya】「――Takeru! What is it?\p What happened to the Major!?」\e
+
+//<0000413d> 【武】「――少佐が…\p…\p沙霧大尉にやられた」\e
+<0000413d> 【Takeru】「――Capt. Sagiri...\p...\pgot him.」\e
+
+//<0000413e> 【冥夜】「な、\p何だと！」\e
+<0000413e> 【Meiya】「Wh-\pwhat!?」\e
+
+//<0000414e> ――Ｆ－２２Ａはこの戦いで撃墜比率７対１っていう…\p…\pそれだけの性能を持つ化け物戦術機なんだぞ！？\e
+<0000414e> ――The F-22A Raptors are such powerful TSFs, they even got a 7:1 kill ratio...\p...\pthey're absolute monsters!!\e
+
+//<0000414f> なのに何で…\p…\pなんでこんなにあっさりやられるんだよっ！\n化け物なのは…\p…\p大尉の方だっていうのか！？\e
+<0000414f> So how...\p...\pdid he get taken out so easily!?\nIs Capt. Sagiri...\p...\peven more powerful!?\e
+
+//<0000415c> ――来たッ！\e
+<0000415c> ――There he is!\e
+
+//<00004167> ――クッソォォォォォォッ！！\e
+<00004167> ――Damn iiiiiiiiiiiit!!\e
+
+//<0000416e> 【冥夜】「――タケルッ、\p落ち着けッ！！」\e
+<0000416e> 【Meiya】「――Takeru!\p Calm down!!」\e
+
+//<000041ab> ――当たらねェッ！？\e
+<000041ab> ――I can't hit him!?\e
+
+//<000041ac> ――クソックソックソッォォッ！！！\e
+<000041ac> ――Dammit! Dammit! Dammiiiiit!!!\e
+
+//<000041d8> ――ぜッ…\p…\p全然当たらねぇよッ…\p…\p！？\e
+<000041d8> ――I...\p...\pI can't hit him at all...\p...\p!!\e
+
+//<000041df> ――はっ…\p…\p速すぎるッ！\e
+<000041df> ――He's...\p...\phe's too fast!\e
+
+//<000041ea> ！\e
+<000041ea> !\e
+
+//<000041f0> ――ダメだッ！　こッ…\p…\p殺されるゥッ――！？\e
+<000041f0> ――No good! He's...\p...\pgonna kill meee――!!\e
+
+//<000041fa> 【武】「――ひッ！？」\e
+<000041fa> 【Takeru】「――Hiii!?」\e
+
+//<00004208> ――い、\p委員長ッ！？\e
+<00004208> ――C-\pClass Rep!?\e
+
+//<000004ed> 【千鶴】「――うおおおおおおぉぉぉっ！！」\e
+<000004ed> 【Chizuru】「――Uuoooooooooooooooooo!!!」\e
+
+//<0000422b> 【千鶴】「――きゃあああああぁぁッ！！」\e
+<0000422b> 【Chizuru】「――Kyaaaaaaaaaaaaaaa!!!」\e
+
+//<00004249> 【武】「――委員長ォッッ！？」\e
+<00004249> 【Takeru】「――Class Reeep!?」\e
+
+//<00004252> 【武】「――うわあああああああッ！！」\e
+<00004252> 【Takeru】「――Uwaaaaaaaaaaaaaaa!!!」\e
+
+//<0000425f> 【千鶴】「――っ！？」\e
+<0000425f> 【Chizuru】「――!?」\e
+
+//<00004268> 【慧】「――もうやめてっ！！」\e
+<00004268> 【Kei】「――Stop this!!」\e
+
+//<00004269> ――彩峰ッ！？\e
+<00004269> ――Ayamine!?\e
+
+//<000042c8> 【武】「大尉ッやめろォォォォォッ――――！！」\e
+<000042c8> 【Takeru】「Captain, stooooooooooop――――!!」\e
+
+//<000042cb> 【武】「――その機体には、\p彩峰が乗ってるんだぞっっっ！！！」\e
+<000042cb> 【Takeru】「――That's Ayamine's TSF!!!!」\e
+
+//<00004e7a> 【沙霧大尉】「――ッ！？」\e
+<00004e7a> 【Capt. Sagiri】「――!?」\e
+
+//<000042e8> 【月詠】「――２０７各機下がれっ！」\e
+<000042e8> 【Tsukuyomi】「――207th Platoon, all units retreat!」\e
+
+//<000042ef> 【武】「――月詠さんッ！」\e
+<000042ef> 【Takeru】「――Tsukuyomi-san!」\e
+
+//<000042f0> 【冥夜】「――月詠ッ！？」\e
+<000042f0> 【Meiya】「――Tsukuyomi!?」\e
+
+//<000042f1> 【月詠】「――貴様らの敵う相手ではないッ！　邪魔だッ！」\e
+<000042f1> 【Tsukuyomi】「――You cannot hope to defeat him!\bOut of my way!」\e
+
+//<000042ff> 【武】「――委員長ッ！　彩峰ッ！！　大丈夫かッ！？」\e
+<000042ff> 【Takeru】「――Class Rep! Ayamine!! You guys okay!?」\e
+
+//<00004300> 【千鶴】「だ…\p…\p大丈夫よ…\p…\p」\e
+<00004300> 【Chizuru】「I'm...\p...\pI'm fine...\p...\p」\e
+
+//<00004301> 【慧】「…\p…\p…\p…\pうぅ…\p…\p」\e
+<00004301> 【Kei】「...\p...\p...\p...\puuu...\p...\p」\e
+
+//<00004302> 【まりも】「――００より各機…\p…\p全機後退せよっ！　目標は――」\e
+<00004302> 【Marimo】「――00 to all units...\p...\peveryone fall back! The objective is――」\e
+
+//<00004321> 【月詠】「――はああッ！」\e
+<00004321> 【Tsukuyomi】「――Haaaaa!」\e
+
+//<00004e7c> 【沙霧大尉】「――くッ！！　月詠中尉か！？」\e
+<00004e7c> 【Capt. Sagiri】「――Uu!! 1st Lt. Tsukuyomi!?」\e
+
+//<00004342> 【月詠】「――沙霧大尉！」\e
+<00004342> 【Tsukuyomi】「――Capt. Sagiri!」\e
+
+//<00004e7d> 【沙霧大尉】「斯衛である貴様が――なぜ米国の片棒を担ぐような真似をする！？」\e
+<00004e7d> 【Capt. Sagiri】「You are from the Honor Guard――So why do you side with the Americans!?」\e
+
+//<00004393> 【月詠】「…\p…\p…\p…\p」\e
+<00004393> 【Tsukuyomi】「...\p...\p...\p...\p」\e
+
+//<00004e7e> 【沙霧大尉】「――貴様も他者に隷属する事を良しとする日和見主義者か！？」\e
+<00004e7e> 【Capt. Sagiri】「――Are you an opportunist who wouldn't mind being enslaved!?」\e
+
+//<000043e1> 【月詠】「…\p…\pっく！」\e
+<000043e1> 【Tsukuyomi】「...\p...\puu!」\e
+
+//<00004e80> 【沙霧大尉】「――どうした中尉ッ！？　答えろ！」\e
+<00004e80> 【Capt. Sagiri】「――Well, First Lieutenant, are you!?\bAnswer me!」\e
+
+//<000043ed> 【月詠】「…\p…\pっ！」\e
+<000043ed> 【Tsukuyomi】「...\p...\p!」\e
+
+//<00004e82> 【沙霧大尉】「――答えて見せろォォッ！」\e
+<00004e82> 【Capt. Sagiri】「――Answer meeeee!」\e
+
+//<00004e84> 【沙霧大尉】「日本は全人類への奉仕という大儀に酔い、\p潔癖や徳義を軽んじ、\p忘却していった…\p…\p」\e
+<00004e84> 【Capt. Sagiri】「Japan has become overconfident in fulfilling its duty toward humanity,\p weakening in discipline and virtue,\p and forgetting what it is...\p...\p」\e//edict says "fastidiousness", which is probably right but sounded like shit here so "discipline" ~IX
+
+//<0000442e> 【月詠】「…\p…\p…\p…\p」\e
+<0000442e> 【Tsukuyomi】「...\p...\p...\p...\p」\e
+
+//<00004e86> 【沙霧大尉】「我等の先達は――日本をこのような国にするために、\p死んでいったのではない！」\e
+<00004e86> 【Capt. Sagiri】「Our forerunners did not perish――In order to make Japan into the country it is now!」\e
+
+//<00004e88> 【沙霧大尉】「今目覚めずしていつ、\p日本は救われようか」\e
+<00004e88> 【Capt. Sagiri】「If we do not open our eyes now,\p when will Japan be saved?」\e
+
+//<00004477> 【月詠】「沙霧大尉…\p…\p」\e
+<00004477> 【Tsukuyomi】「Capt. Sagiri...\p...\p」\e
+
+//<00004e8a> 【沙霧大尉】「ほう…\p…\p何か言いたくなったか？」\e
+<00004e8a> 【Capt. Sagiri】「Oooh? ...\p...\pfeel like saying something?」\e
+
+//<000049dc> 【月詠】「貴官等は見事、\pその先導となったと信ずる」\e
+<000049dc> 【Tsukuyomi】「I trust that you all follow those teachings well.」\e
+
+//<00004e8c> 【沙霧大尉】「…\p…\p…\p…\p」\e
+<00004e8c> 【Capt. Sagiri】「...\p...\p...\p...\p」\e
+
+//<000049df> 【月詠】「貴官等の所行が、\p人々の心に潔癖や徳義を目覚めさせたと、\p私は信ずる…\p…\p」\e
+<000049df> 【Tsukuyomi】「I believe that your actions have awakened discipline and virtue in the hearts of the people...\p...\p」\e
+
+//<00004e8e> 【沙霧大尉】「…\p…\p…\p…\p」\e
+<00004e8e> 【Capt. Sagiri】「...\p...\p...\p...\p」\e
+
+//<0000449e> 【月詠】「されど…\p…\pその術は外道…\p…\p」\e
+<0000449e> 【Tsukuyomi】「However...\p...\pyour means are unjust...\p...\p」\e
+
+//<00004e90> 【沙霧大尉】「元より覚悟の上…\p…\p」\e
+<00004e90> 【Capt. Sagiri】「Which I was prepared for...\p...\p」\e
+
+//<000044a7> 【月詠】「外道に甘んじ、\pそれでも尚、\p命を懸けて国を正そうとしたそなた達を…\p…\p私は誇らしく思う」\e
+<000044a7> 【Tsukuyomi】「I am proud of you all...\p...\pfor risking your lives to fix this country even after such extreme acts.」\e//外道 gedou literally means "outside the teachings" ie "heresy" and whatnot, so "extreme" is one of countless options ~IX
+
+//<00004e92> 【沙霧大尉】「外道は外道…\p…\pそれ以上でも以下でもない…\p…\p」\e
+<00004e92> 【Capt. Sagiri】「Extremes are just extremes...\p...\p\b...\p...\pat times they are necessary to bring change about...\p...\p」\e//he's trying to say that using extreme/abnormal/unpopular means is not necessarily bad, not sure it's clear ~IX //totally changed the second line. was previously "No more, no less" - Sheeta//I liked it, but it felt slightly out of character and atmosphere.-Spin//tweaked yet again ~IX
+
+//<000044c5> 【月詠】「せめてもの手向け…\p…\p介錯つかまつる！」\e
+<000044c5> 【Tsukuyomi】「Then at least allow me...\p...\pto aid your suicide!」\e
+
+//<00004e94> 【沙霧大尉】「日本の新生に先がけ…\p…\p散るもまた宿命…\p…\p」\e
+<00004e94> 【Capt. Sagiri】「The first to fight for Japan's rebirth...\p...\pis destined to die for it...\p...\p」\e
+
+//<00004e96> 【沙霧大尉】「…\p…\p後は…\p…\p宜しく頼む…\p…\p」\e
+<00004e96> 【Capt. Sagiri】「...\p...\pI leave you...\p...\pwith what remains...\p...\p」\e//;_; - kViN
+//You know, they could try to make the TSFs, ionno, NOT explode. Just an idea here, but if your giant mech is being cut in half or just being shot at, doesn't mean you have to explode the whole thing.-Spin
+
+//<00004512> 【月詠】「…\p…\p…\p…\p」\e
+<00004512> 【Tsukuyomi】「...\p...\p...\p...\p」\e
+
+//<00005dd5> 【まりも】「本日１３時２３分、\p最後まで抵抗の意志を示していた、\p市ヶ谷駐屯地の反乱軍部隊が投降…\p…\pこれをもって仙台臨時政府は今回のクーデター事件の終息を宣言した」\e
+<00005dd5> 【Marimo】「At 13:23 hours,\p the last insurgent unit showing signs of resistance in the JGSDF Camp Ichigaya surrendered...\p...\pafter which the Sendai Provisional Government declared the coup d'etat over.」\e
+
+//<00002336> 【まりも】「そして先ほど、\p仙台臨時政府は帝都に出されていた戒厳令を解除。\n現在、\p緩やかにではあるが、\p関東周辺の都市機能は回復中である」\e
+<00002336> 【Marimo】「And just a moment ago,\p martial law in the capital was lifted.\nThe Kantou area is currently undergoing a slow process of recovery.」\e//You "lift" martial law.-Spin
+
+//<00002337> 【国連軍士官】「――気をつけぇぇっ！！」\e
+<00002337> 【UN Officer】「――Atten-tioooon!!」\e
+
+//<00002338> 【国連軍士官】「――捧げぇ…\p…\p筒ッ！！」\e
+<00002338> 【UN Officer】「――Preseeent...\p...\parms!!」\e
+
+//<00002339> 【武】「…\p…\p…\p…\p」\e
+<00002339> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000233a> やっと…\p…\p終わった…\p…\p。\nそしてオレは…\p…\pまだ生きている…\p…\p。\e
+<0000233a> It's finally...\p...\pover...\p...\p\nAnd I'm...\p...\pstill alive...\p...\p\e
+
+//<0000233b> これであと２、\p３日もすれば、\pこの事件が起きる前と変わらない『この世界』の日常が戻ってくるだろう…\p…\p。\e
+<0000233b> In another two or three days,\p this world should go back to the way it was before the incident...\p...\p\e
+
+//<0000233c> たとえそれが表向きだけであったとしても…\p…\p。\e
+<0000233c> Even if only on the surface...\p...\p\e
+
+//<0000233d> 【武】「…\p…\p…\p…\p」\e
+<0000233d> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000233e> この事件で失ったものは、\pあまりにも大きかった…\p…\p。\e
+<0000233e> So much was lost in this incident...\p...\p\e
+
+//<0000233f> 委員長の親父さん…\p…\p榊首相。\n…\p…\pウォーケン少佐。\n…\p…\p沙霧大尉。\e
+<0000233f> Class Rep's dad...\p...\pPrime Minister Sakaki.\n...\p...\pMajor Walken.\n...\p...\pCapt. Sagiri.\e
+
+//<00002340> …\p…\p逆賊として殺された閣僚達。\n…\p…\p帝都の市民。\n…\p…\p多くの兵士達。\e
+<00002340> ...\p...\pthe Cabinet members killed as traitors.\n...\p...\pthe people in the capital.\n...\p...\pEishi on all sides.\e//lit. "many soldiers"
+
+//<00002341> そして…\p…\p多くの戦術機。\e
+<00002341> And...\p...\pa lot of TSFs.\e
+
+//<00002342> 【武】「…\p…\p…\p…\p」\e
+<00002342> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00002343> 流された血が、\p全て無駄だった…\p…\pとは言えない。\e
+<00002343> I can't say...\p...\pthey all gave their lives in vain.\e
+
+//<00002344> そのおかげで得られたもの…\p…\pそのおかげで分かったこと。\e
+<00002344> I learned things because of them...\p...\pI gained things.\e
+
+//<00002345> オレは人類を救うために、\p自分で手を下す事を恐れずに、\pオレにしかできないことをやるんだ。\e
+<00002345> I'll do what only I can do to save humanity,\p and without being afraid of dirtying my own hands.\e
+
+//<00002346> ３つの世界を知っている唯一の『日本人』として。\e
+<00002346> As the only person from all three Japans.\e
+
+//<00002347> それがこの事件のおかげで見つかった…\p…\pオレの『立脚点』なんだ。\e
+<00002347> That's what I found in this incident...\p...\psomething to rely on.\e
+
+//<00002348> この事件がなかったら、\p見つけられなかっただろう…\p…\p。\e
+<00002348> If it wasn't for this,\p I'm not sure I would've been able to find it...\p...\p\e
+
+//<00002349> …\p…\p無理にそう考えることで、\p失われた命に価値を見いだそうとしているのかも知れない。\e
+<00002349> ...\p...\pI might just be forcing myself to think there was some value in losing all those lives.\e
+
+//<0000234a> でも…\p…\p『仕方なかった』とは、\p決して言いたくない。\n…\p…\pこれで…\p…\pいいんだ。\e
+<0000234a> But...\p...\pI definitely don't want to say it was all inevitable.\n...\p...\pthis is...\p...\pjust fine.\e
+
+//<0000234b> 【武】「…\p…\p…\p…\p」\e
+<0000234b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000234c> ただ…\p…\pひとつだけ、\pどうしても悔やまれる事がある。\e
+<0000234c> Although...\p...\pthere is one thing that still bothers me.\e
+
+//<0000234d> ウォーケン少佐や沙霧大尉達が…\p…\pあそこで命を落とす必要はなかったと思う。\e
+<0000234d> I don't think there was any need...\p...\pfor Maj. Walken and Capt. Sagiri to die there.\e
+
+//<0000234e> あの戦闘は、\p時間がまだ数分あったのに、\p米軍の衛士が狙撃し始めた事が原因だ。\e
+<0000234e> That battle only happened because an American Army Eishi started firing before the time limit.\e
+
+//<0000234f> 狙撃を始めた本人が戦死した今となっては、\pなぜそんなことになったのかは永久に謎のまま…\p…\p。\e
+<0000234f> Now that she's dead,\p we'll never know why she did that...\p...\p\e
+
+//<00002350> 帝都で戦闘が始まった状況と比較して、\pこれも陰謀勢力の仕業と見るのは考えすぎだろうか…\p…\p。\e
+<00002350> Considering how the fighting started in the capital,\p would it be fair to assume that was also part of the conspiracy...\p...\p?\e
+
+//<000049fa> そして、\pいくら沙霧大尉達が死に場所を求めていたとはいえ、\p殿下を始め、\pいろいろな因縁のある人たちの前で逝く必要はなかった。\e
+<000049fa> And even if Capt. Sagiri wanted to die,\p there was no need to do it in front of so many people connected to the incident,\p most of all Her Highness.\e
+
+//<00002352> 【武】「…\p…\p…\p…\p」\e
+<00002352> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00002353> 分かっている。\e
+<00002353> I know this.\e
+
+//<00002354> 誰の命も失われなければ、\pオレはそういうもんだと思って割り切っていたさ。\e
+<00002354> I thought I could accept it,\p since I know I can't achieve anything without sacrifices.\e
+
+//<00002355> けど…\p…\p…\p…\pやっぱり…\p…\p強烈で、\p忘れられるわけもない。\e
+<00002355> But...\p...\p...\p...\pI still...\p...\pcan't forget any of it.\e
+
+//<00002356> 【まりも】「――２０７訓練小隊――気をつけぇぇっ！！」\e
+<00002356> 【Marimo】「――Training Squad 207――Atten-tion!!」\e
+
+//<000049fc> 【まりも】「――日本帝国政威大将軍　煌武院悠陽殿下に対し――敬礼！」\e
+<000049fc> 【Marimo】「――Salute the Japanese Imperial Grand Shogun, Her Highness Koubuin Yuuhi!」\e//god dammit Japanese putting the verb at the end like that ~IX
+
+//<00002358> 【悠陽】「楽にしてください」\e
+<00002358> 【Yuuhi】「You may relax.」\e
+
+//<00002359> 【まりも】「――休めッ！」\e
+<00002359> 【Marimo】「――At ease!」\e
+
+//<0000235a> 【千鶴・冥夜・壬姫・慧・美琴】「…\p…\p…\p…\p」\n
+<0000235a> 【Chizuru & Meiya & Miki & Kei & Mikoto】「...\p...\p...\p...\p」\n
+
+//<0000235b> 【武】「…\p…\p…\p…\p」\e
+<0000235b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000235c> 【悠陽】「此度のそなた達の働きに、\pこの悠陽、\p感謝この上なく思います」\e
+<0000235c> 【Yuuhi】「I, Yuuhi,\p give you my greatest thanks for your efforts this day.」\e
+
+//<0000235d> 【千鶴・冥夜・壬姫・慧・美琴】「ありがとうございます！」\n
+<0000235d> 【Chizuru & Meiya & Miki & Kei & Mikoto】「Thank you, Your Highness!」\n
+
+//<0000235e> 【武】「ありがとうございます！」\e
+<0000235e> 【Takeru】「Thank you, Your Highness!」\e
+
+//<0000235f> 【悠陽】「此度の件は、\pこの国の、\pそして世界の多くの人々に、\p深い悲しみを刻み付けてしまった事でしょう」\e
+<0000235f> 【Yuuhi】「This incident has carved deep sadness into the hearts of our country,\p and of the world.」\e
+
+//<00002360> 【千鶴】「…\p…\p…\p…\p」\e
+<00002360> 【Chizuru】「...\p...\p...\p...\p」\e
+
+//<00002361> 【悠陽】「人と人は、\pこのような形で血を流さねば、\p前に進めないのでしょうか…\p…\p」\e
+<00002361> 【Yuuhi】「Is it truly impossible for people to progress without spilling blood in such a manner...\p...\p?」\e
+
+//<00002362> 【慧】「…\p…\p…\p…\p」\e
+<00002362> 【Kei】「...\p...\p...\p...\p」\e
+
+//<00002363> 【悠陽】「私はそうではないと信じています。\nそして、\pそなた達こそが、\p正にその希望なのです」\e
+<00002363> 【Yuuhi】「I do not believe that to be true.\nAnd you who stand here today are none other than my hope that it is possible.」\e
+
+//<00002364> 【武】「…\p…\p…\p…\p」\e
+<00002364> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00002365> 【悠陽】「多くの当事者を擁する２０７小隊が、\p共に力を合わせ、\p滅私の精神で事に当たり、\p斯かる困難を克服した由は、\p正に崇敬の念を禁じ得ません」\e
+<00002365> 【Yuuhi】「Your squad, with all its connections to this tragedy,\p came together and performed with selfless courage to overcome this hardship.\p Such wills are to be revered.」\e
+
+//<00002366> 【美琴】「…\p…\p…\p…\p」\e
+<00002366> 【Mikoto】「...\p...\p...\p...\p」\e
+
+//<000049fe> 【悠陽】「此度の件を戒めに…\p…\pそして、\pそなた達が示した規範を胸に、\p私は将軍としての責務を果たしてゆく所存です」\e
+<000049fe> 【Yuuhi】「I shall take this incident as a warning...\p...\pand keep the high standard you have shown close to my heart,\p as I continue to fulfill my duty as the Shogun.」\e
+
+//<00002368> 【冥夜】「…\p…\p…\p…\p」\e
+<00002368> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00002369> 【悠陽】「国連や帝国…\p…\pそして人それぞれ、\p重んじるものに違いはあれど、\pその目標とするもの…\p…\p根源的な願いは、\pひとつであると私は信じています」\e
+<00002369> 【Yuuhi】「The UN and the Empire...\p...\pand all individuals may value different things,\p but I believe their goals...\p...\ptheir fundamental wishes are one and the same.」\e
+
+//<0000236a> 【壬姫】「…\p…\p…\p…\p」\e
+<0000236a> 【Miki】「...\p...\p...\p...\p」\e
+
+//<0000236b> 【悠陽】「人類の未来を…\p…\p宜しくお願いします」\e
+<0000236b> 【Yuuhi】「I trust you all...\p...\pwith humanity's future.」\e
+
+//<0000236c> 【千鶴・冥夜・壬姫・慧・美琴】「はいっ！」\n
+<0000236c> 【Chizuru & Meiya & Miki & Kei & Mikoto】「Ma'am!」\n
+
+//<0000236d> 【武】「はいっ！」\e
+<0000236d> 【Takeru】「Ma'am!」\e
+
+//<0000236e> 【悠陽】「…\p…\p…\p…\p」\e
+<0000236e> 【Yuuhi】「...\p...\p...\p...\p」\e
+
+//<0000236f> 【冥夜】「…\p…\p…\p…\p」\e
+<0000236f> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00004a00> …\p…\p殿下。\e
+<00004a00> ...\p...\pYour Highness.\e
+
+//<00002371> ――そなたに心よりの感謝を\e
+<00002371> ――I give you my earnest thanks.\e
+
+//<00002372> え――っ？！\e
+<00002372> Eh――!?\e
+
+//<00002373> …\p…\p…\p…\p。\e
+<00002373> ...\p...\p...\p...\p\e
+
+//<00004a02> 【武】「殿下…\p…\p行っちまったな…\p…\p」\e
+<00004a02> 【Takeru】「Her Highness...\p...\pshe's gone...\p...\p」\e
+
+//<00007136> 【冥夜】「…\p…\p…\p…\p」\e
+<00007136> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<00002376> …\p…\p本当に…\p…\p個人的な事、\pひと言も会話しなかったな。\nおまえは本当に…\p…\p本当にそれで良かったのか？\e
+<00002376> ...\p...\pthey really didn't...\p...\psay a word to each other about themselves.\nAre you really...\p...\psure you're okay with that?\e
+
+//<00002377> …\p…\p…\p…\pん？\nＭＰが訓練部隊に何の用だ？\e
+<00002377> ...\p...\p...\p...\phm?\nWhat're the military police doing here?\e
+
+//<00002378> 【まりも】「…\p…\p鎧衣」\e
+<00002378> 【Marimo】「...\p...\pYoroi.」\e
+
+//<00002379> 【美琴】「はい」\e
+<00002379> 【Mikoto】「Ma'am.」\e
+
+//<0000237a> ――！？\nＭＰが美琴に…\p…\pって…\p…\pまさか…\p…\p？\e
+<0000237a> ――!?\nThe MP want Mikoto?\b...\p...\pwait...\p...\pit can't be...\p...\p\e
+
+//<0000237b> 【まりも】「第１１軍警務隊本部から貴様に出頭要請だ」\e
+<0000237b> 【Marimo】「The 11th Army Military Police Corps has subpoenaed you.」\e
+//Huh, just noticed too that "corps" is always plural(?) I guess.-Spin
+
+//<0000237c> 【美琴】「――え！？」\e
+<0000237c> 【Mikoto】「――Eh!?」\e
+
+//<0000237d> ――第１１軍警務隊本部だって？！\e
+<0000237d> ――The 11th Army Military Police!?\e
+
+//<00005e13> 【千鶴・冥夜・壬姫・慧】「――――！？」\e
+<00005e13> 【Chizuru & Meiya & Miki & Kei】「――――!?」\e
+
+//<0000237f> 【まりも】「彼らについてゆけ」\e
+<0000237f> 【Marimo】「Follow them.」\e
+
+//<00002380> 【美琴】「…\p…\p了解！」\e
+<00002380> 【Mikoto】「...\p...\punderstood!」\e
+
+//<00002381> …\p…\p…\p…\p美琴。\e
+<00002381> ...\p...\p...\p...\pMikoto.\e
+
+//<00005e15> 【千鶴・冥夜・壬姫・慧】「…\p…\p…\p…\p」\e
+<00005e15> 【Chizuru & Meiya & Miki & Kei】「...\p...\p...\p...\p」\e
+
+//<00002383> 【まりも】「心配するな…\p…\pまだ、\p何で呼ばれたかすらわからないだろう」\e
+<00002383> 【Marimo】「Don't worry...\p...\pwe don't even know what she's been called for yet.」\e
+
+//<00002384> …\p…\p鎧衣課長がらみの事に決まってる。\nまりもちゃんは箱根で鎧衣課長と会っているから察しが付いているはずだ。\e
+<00002384> ...\p...\pit's gotta have something to do with Section Chief Yoroi.\nMarimo-chan should be able to figure that out since she met him at Hakone.\e
+
+//<00002385> 【まりも】「だいたい、\p何かあったとしても、\p訓練兵風情がＭＰの世話になる事なんて、\pたかが知れている」\e
+<00002385> 【Marimo】「Besides,\p no matter what happened,\p what would the military police want with a mere cadet?」\e
+
+//<00005e16> 【千鶴・冥夜・壬姫・慧】「…\p…\p…\p…\p」\e
+<00005e16> 【Chizuru & Meiya & Miki & Kei】「...\p...\p...\p...\p」\e
+
+//<00002387> 鎧衣課長の安否は未だに不明らしい…\p…\p。\n課長が帝都に戻って何をしていたのか…\p…\p。\e
+<00002387> We still don't know if Section Chief Yoroi's safe...\p...\p\nOr even what he did back in the capital...\p...\p\e
+
+//<00002388> いずれにしろ、\p今回の事件との関連を調べられている事には間違いない。\e
+<00002388> Either way,\p there's no doubt they want to interrogate her about what happened.\e
+
+//<00002389> いや…\p…\pそもそも帝国軍の諜報部員がここに出入りしていることすら問題なんだろう。\e
+<00002389> Wait...\p...\pthe fact that an Imperial Army intelligence agent can walk in and out of our facilities is the bigger problem.\e
+
+//<0000238a> 夕呼先生は…\p…\p大丈夫なのか？\nいや、\pそもそも夕呼先生に辿り着けないから、\p美琴が引っ張られているんだろうけど…\p…\p。\e
+<0000238a> Yuuko-sensei...\p...\pwill she be okay?\nNo wait,\p they're going for Mikoto because they can't trace it back to her...\p...\p\e
+
+//<0000238b> 【武】「…\p…\p…\p…\p」\e
+<0000238b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000238c> 鎧衣課長…\p…\pこういうときに備えて。\n美琴には何も言ってなかったんだろうな。\e
+<0000238c> Section Chief Yoroi...\p...\phe didn't say anything to Mikoto because he knew this would happen.\e
+
+//<0000238d> …\p…\p聴取されたところで、\p美琴が知ってることは何もない。\e
+<0000238d> ...\p...\pthis way,\p they won't be able to get anything out of her.\e
+
+//<0000238e> だけど…\p…\p美琴は鎧衣課長の本当の仕事に気付いてしまうかも知れない。\e
+<0000238e> But...\p...\pMikoto might still learn what her dad's real job is.\e
+
+//<0000238f> 【武】「…\p…\p…\p…\p」\e
+<0000238f> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<00002390> そうなったら美琴は…\p…\p。\e
+<00002390> If that happens...\p...\p\e
+
+//<00002391> 【まりも】「――今日と明日は予定どおり基地内待機だ。\n後日、\p現場調査に駆り出される可能性があるので、\pそれまでに十分身体を休めておけ」\e
+<00002391> 【Marimo】「――Today and tomorrow you will remain on standby in the base as planned.\nYou may be interrogated about this,\p so get plenty of rest beforehand.」\e
+
+//<00005e17> 【千鶴・冥夜・壬姫・慧】「はい」\n
+<00005e17> 【Chizuru & Meiya & Miki & Kei】「Ma'am.」\n
+
+//<00002393> 【武】「はい」\e
+<00002393> 【Takeru】「Ma'am.」\e
+
+//<00002394> 【まりも】「――以上、\p解散」\e
+<00002394> 【Marimo】「――That is all,\p dismissed.」\e
+
+//<00002395> 【千鶴】「――敬礼！」\e
+<00002395> 【Chizuru】「――Salute!」\e
+
+//<00002396> 【まりも】「…\p…\p…\p…\p」\e
+<00002396> 【Marimo】「...\p...\p...\p...\p」\e
+
+//<00002397> 【壬姫】「行こう…\p…\pか」\e
+<00002397> 【Miki】「...\p...\p...\p...\pwe should...\p...\pget going.」\e
+
+//<00002398> 【慧】「…\p…\pうん」\e
+<00002398> 【Kei】「...\p...\pyeah.」\e
+
+//<00004a04> …\p…\p殿下。オレはやります。\n殿下の守ろうとしたものもひっくるめて守るために。\e
+<00004a04> ...\p...\pYour Highness, I will do it.\nI'll protect everything you were trying to protect.\e
+
+//<0000239a> それはオレだけにしか出来ないことですから。\n…\p…\pもう、\p恐れません。\e
+<0000239a> Because that's something only I can do.\n...\p...\pI won't be afraid of it anymore.\e
+
+//<0000239b> 【武】「…\p…\p…\p…\p」\e
+<0000239b> 【Takeru】「...\p...\p...\p...\p」\e
+
+//<0000239c> そうだ…\p…\p。これを…\p…\p。\e
+<0000239c> That's right...\p...\pthis is...\p...\p\e
+
+//<0000239d> 【武】「――冥夜」\e
+<0000239d> 【Takeru】「――Meiya.」\e
+
+//<0000239e> 【冥夜】「…\p…\pなんだ？」\e
+<0000239e> 【Meiya】「...\p...\pwhat?」\e
+
+//<0000239f> 【武】「…\p…\pおまえ、\p本当に…\p…\p良かったのか？」\e
+<0000239f> 【Takeru】「...\p...\pare you...\p...\psure...\p...\pyou're okay with this?」\e
+
+//<000023a0> 【冥夜】「…\p…\p…\p…\pその話、\p今はしたくない…\p…\p」\e
+<000023a0> 【Meiya】「...\p...\p...\p...\pI do not wish to discuss it now...\p...\p」\e
+
+//<000023a1> 【武】「…\p…\pそうか」\e
+<000023a1> 【Takeru】「...\p...\pI see.」\e
+
+//<000023a2> 【冥夜】「許すがよい…\p…\p」\e
+<000023a2> 【Meiya】「Forgive me...\p...\p」\e
+
+//<000023a3> 【武】「――ちょっとまった！」\e
+<000023a3> 【Takeru】「――Wait just a minute!」\e
+
+//<000023a4> 【冥夜】「…\p…\p何だ？」\e
+<000023a4> 【Meiya】「...\p...\pwhat is it?」\e
+
+//<000023a5> 【武】「おまえに渡すものがある」\e
+<000023a5> 【Takeru】「I have something for you.」\e
+
+//<000023a6> 【冥夜】「え…\p…\p？」\e
+<000023a6> 【Meiya】「Eh...\p...\p?」\e
+
+//<000023a7> 【武】「ある人から預かったんだ」\e
+<000023a7> 【Takeru】「Something she gave me.」\e
+
+//<000023a8> 【冥夜】「――こ、\pこれは…\p…\p」\e
+<000023a8> 【Meiya】「――Th-\pthis is...\p...\p」\e
+
+//<000023a9> 【武】「今回の騒ぎで持ち出せた唯一のもの…\p…\p」\e
+<000023a9> 【Takeru】「It's the only thing she brought with her when she left the capital...\p...\p」\e
+
+//<000023aa> 【冥夜】「…\p…\p…\p…\p」\e
+<000023aa> 【Meiya】「...\p...\p...\p...\p」\e
+
+//<000023ab> 【武】「たった数日でも、\p昔ふたりが一緒に過ごした証…\p…\pその人はそう言ってた」\e
+<000023ab> 【Takeru】「She said it was proof...\p...\pthat you two spent time together.」\e
+
+//<00004a06> そして…\p…\pたとえ離れていても…\p…\pたとえ、\p言葉を交わさなかったとしても…\p…\p双子の姉妹としていつも共にあるという殿下のメッセージなんだ。\e
+<00004a06> It's also Her Highness' way of saying...\p...\pthat even if you're apart...\p...\peven if you can't talk to each other...\p...\pyou're still with each other as twin sisters.\e
+
+//<000023ad> 【冥夜】「…\p…\pっ…\p…\p」\e
+<000023ad> 【Meiya】「...\p...\p...\p...\p!」\e
+
+//<00004a08> 将軍とその影ではなく、\p人間として…\p…\p姉と妹として共にあるというメッセージなんだ…\p…\p。\e
+<00004a08> Not as the Shogun's shadow,\p but as a human...\p...\pa message that you'll always exist together as sisters...\p...\p\e
+
+//<000023af> 【武】「…\p…\p…\p…\p先、\p戻ってるぞ」\e
+<000023af> 【Takeru】「...\p...\p...\p...\pI'll go on ahead.」\e
+
+//<000023b0> 【冥夜】「やはりそなたは…\p…\p知っていたのだな…\p…\p」\e
+<000023b0> 【Meiya】「So you did...\p...\pknow after all...\p...\p」\e
+
+//<000023b1> 【武】「何をだ？」\e
+<000023b1> 【Takeru】「Know what?」\e
+
+//<000023b2> 【冥夜】「いや…\p…\p何でもない…\p…\p…\p…\p…\p…\p」\e
+<000023b2> 【Meiya】「No...\p...\pit is nothing...\p...\p...\p...\p...\p...\p」\e
+
+//<000023b3> …\p…\p…\p…\p。\e
+<000023b3> ...\p...\p...\p...\p\e
+
+//<000023b4> 【冥夜】「う…\p…\pっく…\p…\p」\e
+<000023b4> 【Meiya】「Uu...\p...\puuu...\p...\p」\e
+
+//<00004f45> \r\n
+<00004f45> \r\n
+
+//<000034f0> \r\n
+<000034f0> \r\n
+
+//<0000351f> \r\n
+<0000351f> \r\n
+
+//<0000353e> \r\n
+<0000353e> \r\n
+
+//Yuuhi gives a length speech at this point, thereby ending the arc. I'll put my transcript and translation of it in a text file entitled "Coup d'etat Arc Ending Speech" ~IX
