@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
-#TODO:
-# * .dat file not created once
-# * eventually CreateCompatibleDC() starts constantly failing and script
-#   must be restarted
+#FIXME: .dat wasn't created once
 
 import cPickle as pickle
 import codecs
@@ -15,7 +12,7 @@ import win32ui, win32gui, win32con, win32api
 import sys, os, time
 
 class AudioRecorder:
-    def __init__( self, fileId, hwnd ):
+    def __init__( self, fileId ):
         self.pyaudio = p = pyaudio.PyAudio()
         self.waveFile = None
         self.stream = None
@@ -32,8 +29,7 @@ class AudioRecorder:
         self.format = pyaudio.paInt16
 
         # screenshots
-        self.gameHwnd = hwnd
-        print 'Using window with handle %d for screenshots' % hwnd
+        self.setupScreenshots()
 
         # file output
         self.fileId = fileId
@@ -42,6 +38,31 @@ class AudioRecorder:
             try:    os.makedirs( p )
             except: pass
         for p in [ 'media/txt','media/img','media/audio', 'media/misc' ]: mkdirp( p )
+
+    def setupScreenshots( self ):
+        # get window handle
+        print 'Please switch to the game window within 3 seconds in order to identify it for screenshot purposes'
+        time.sleep( 3 )
+        hwnd = win32gui.GetForegroundWindow()
+
+        # get dimensions
+        l, t, r, b = win32gui.GetWindowRect( hwnd )
+        self.screenWidth = w = r - l
+        self.screenHeight = h = b - t
+
+        # get dc handle and object
+        hwndDC = win32gui.GetWindowDC( hwnd ) # dc handle (int)
+        self.mfcDC = win32ui.CreateDCFromHandle( hwndDC ) # dc object
+        self.saveDC = self.mfcDC.CreateCompatibleDC() # dc object compatible with device
+
+        # get bitmap
+        self.bmp = win32ui.CreateBitmap()
+        self.bmp.CreateCompatibleBitmap( self.mfcDC, w, h )
+        self.saveDC.SelectObject( self.bmp )
+
+    def takeScreenshot( self, path ):
+        self.saveDC.BitBlt( (0,0), ( self.screenWidth, self.screenHeight ), self.mfcDC, (0,0), win32con.SRCCOPY )
+        self.bmp.SaveBitmapFile( self.saveDC, path )
 
     def saveAudio( self, path ):
         'Save all current self.frames to wave file then clear'
@@ -116,13 +137,13 @@ class AudioRecorder:
     def onDrawClipboard( self, *args ):
         t = time.time() - self.time0    # time since start of audio file
         win32clipboard.OpenClipboard()
-        rawtxt = win32clipboard.GetClipboardData( win32clipboard.CF_UNICODETEXT )
+        txt = win32clipboard.GetClipboardData( win32clipboard.CF_UNICODETEXT )
         txt = txt.split( u'\0' )[0] # ITH leaves in garbage from previous lines
         win32clipboard.CloseClipboard()
 
         # iteratives
         self.timeData[ self.count ] = ( t, txt )
-        takeScreenshot( 'media/img/{id}.{n}.bmp'.format( id=self.fileId, n=self.count ), self.gameHwnd )
+        self.takeScreenshot( 'media/img/{id}.{n}.bmp'.format( id=self.fileId, n=self.count ) )
         codecs.open( 'media/txt/{id}.{n}.txt'.format( id=self.fileId, n=self.count ), 'wb', encoding='utf-16' ).write( txt )
         # save audio for previous text
         if self.count > 0:
@@ -156,34 +177,10 @@ class AudioRecorder:
         except win32api.error, err:
             if err.args[0]: raise
 
-def takeScreenshot( path='screenshot.bmp', hwnd=None ):
-    try:
-        if hwnd is None:
-            time.sleep(3)
-            hwnd = win32gui.GetForegroundWindow()
-            return hwnd
-        l, t, r, b = win32gui.GetWindowRect( hwnd )
-        w = r - l
-        h = b - t
-
-        hwndDC = win32gui.GetWindowDC( hwnd )
-        mfcDC = win32ui.CreateDCFromHandle( hwndDC )
-        saveDC = mfcDC.CreateCompatibleDC()
-
-        bmp = win32ui.CreateBitmap()
-        bmp.CreateCompatibleBitmap( mfcDC, w, h )
-        saveDC.SelectObject( bmp )
-        saveDC.BitBlt( (0,0), (w,h), mfcDC, (0,0), win32con.SRCCOPY )
-        bmp.SaveBitmapFile( saveDC, path )
-    except KeyboardInterrupt: raise
-    except Exception:
-        print 'Failed to capture screen. Likely invalid CreateCompatibleDC result'
-
 def main():
     if len( sys.argv ) < 2:
         print 'Please specify an identifier to use in file names (for ordering/resuming)'
         return
-    print 'Please switch to the game window within 3 seconds in order to identify it for screenshot purposes'
-    ar = AudioRecorder( sys.argv[1], takeScreenshot() )
+    ar = AudioRecorder( sys.argv[1] )
     ar.loop()
 main()
