@@ -12,6 +12,7 @@ base_fields = ( 'Id', 'Show', 'Prefix', 'Index', 'Time', )
 context_fields = ( 'Sound', 'Image', 'Speaker', 'Expression', 'Meaning', )
 contexts = [-2,-1,+1,+2]
 transDbPath = 'muvluv_mla.db'
+method = 'dat' # whether to parse based on dat file or txt file index
 
 if len( sys.argv ) < 3:
     print 'Usage: ./mash show name pathToBaseMediaDirectory'
@@ -105,13 +106,17 @@ def parseFromTxt( show, prefix ): # this is a bit unreliable due to bleed from m
     d = {}
     for line in lines:
         if not line: continue
-        try: idx, time, txt = line.split( u' ', 2 )
+        try:
+            idx, time, txt = line.split( u' ', 2 )
         except ValueError: # assume is bleed from previous line due to invalid characters
             d[ int(idx)-1 ][ 'Expression' ] += line.strip( u'\r\n\0' )
         d[ int(idx) ] = parseLine( show, prefix, idx, time, txt )
     return d
 
-parse = parseFromDat
+if method == 'dat':
+    parse = parseFromDat
+else:
+    parse = parseFromTxt
 
 def parseLine( show, prefix, idx, time, txt ):
     # ITH leaves in garbage from previous lines, so strip everything after null term
@@ -163,7 +168,10 @@ def processPart( show, prefix ):
 
     return d, tsv
 
-def getAllPrefixes(): return [ os.path.basename( p )[7:-4] for p in glob.glob( u'%s/misc/timing.*.dat' % baseMediaDir ) ]
+if method == 'dat':
+    def getAllPrefixes(): return [ os.path.basename( p )[7:-4] for p in glob.glob( u'%s/misc/timing.*.dat' % baseMediaDir ) ]
+else:
+    def getAllPrefixes(): return [ os.path.basename( p )[7:-4] for p in glob.glob( u'%s/misc/timing.*.txt' % baseMediaDir ) ]
 
 def processShow( show ):
     tsvs = [ processPart( show, pre )[1] for pre in getAllPrefixes() ]
