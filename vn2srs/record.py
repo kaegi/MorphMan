@@ -98,21 +98,24 @@ class AudioRecorder:
     def stop( self ):
         self.running = False
 
-        # async audio input stream
-        while self.stream.is_active():
-            self.stream.stop_stream()
-        self.stream.close()
-
-        # wave file being written
-        self.waveFile.close()
-
         # timing data
         pickle.dump( self.timeData, open( 'media/misc/timing.%s.dat' % self.fileId, 'wb' ), -1 )
         self.timingFile.close()
 
+        # wave file being written
+        self.waveFile.close()
+
         # remove clipboard hooks
         win32clipboard.ChangeClipboardChain( self.window.GetSafeHwnd(), self.hPrev )
         self.window.DestroyWindow()
+
+        # async audio input stream
+        try:
+            while self.stream.is_active():
+                self.stream.stop_stream()
+            self.stream.close()
+        except IOError, e:
+            print 'Failed to close audio stream properly:', e
 
     def loop( self ):
         self.start()
@@ -148,12 +151,16 @@ class AudioRecorder:
         # save audio for previous text
         if self.count > 0:
             self.saveAudio( 'media/audio/{id}.{n}.wav'.format( id=self.fileId, n=self.count-1 ) )
-        self.count += 1
 
         # big time & txt log
         print '#%d @ %f' % ( self.count, t )
         line = u'{n} {t} {txt}\r\n'.format( n=self.count, t=t, txt=txt )
         self.timingFile.write( line )
+
+        # save timing .dat file
+        pickle.dump( self.timeData, open( 'media/misc/timing.%s.dat' % self.fileId, 'wb' ), -1 )
+
+        self.count += 1
 
         h = self.hPrev
         if h:   return win32api.SendMessage( h, *args[-1][1:4] )
