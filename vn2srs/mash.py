@@ -11,7 +11,7 @@ import sys
 base_fields = ( 'Id', 'Show', 'Prefix', 'Index', 'Time', )
 context_fields = ( 'Sound', 'Image', 'Speaker', 'Expression', 'Meaning', )
 contexts = [-2,-1,+1,+2]
-transDbPath = 'muvluv_mla.db'
+transDbPath = 'translation.db'
 method = 'dat' # whether to parse based on dat file or txt file index
 
 if len( sys.argv ) < 3:
