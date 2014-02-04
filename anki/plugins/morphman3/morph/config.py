@@ -20,6 +20,7 @@ default = {
         # reviewer mode keybindings
     'browse same focus key': 'l',
     'set known and skip key': 'k',
+    'auto skip alternatives': True,
     'print number of alternatives skipped': True,   # after answering or skipping a card in reviewer
 
     # database saving/loading. you can disable these for performance reasons but their semantics are uninitutive
