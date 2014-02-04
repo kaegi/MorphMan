@@ -85,7 +85,8 @@ sched.Scheduler._getNewCard = wrap( sched.Scheduler._getNewCard, my_getNewCard, 
 ########## 1 - after learning a new focus morph, don't learn new cards with the same focus
 def my_reviewer_answerCard( self, ease ): #1
     if self.mw.state != "review" or self.state != "answer" or self.mw.col.sched.answerButtons( self.card ) < ease: return
-    markFocusSeen( self, self.card.note() )
+    if CN(self.card.note(), 'auto skip alternatives'):
+        markFocusSeen( self, self.card.note() )
 
 reviewer.Reviewer._answerCard = wrap( reviewer.Reviewer._answerCard, my_reviewer_answerCard, "before" )
 
