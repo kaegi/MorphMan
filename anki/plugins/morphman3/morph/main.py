@@ -38,7 +38,10 @@ def mkAllDb( allDb=None ):
         if i % 500 == 0:    mw.progress.update( value=i )
         C = partial( cfg, mid, None )
         if not C('enabled'): continue
+        
         mats = [ ( 0.5 if ivl == 0 and ctype == 1 else ivl ) for ivl, ctype in db.execute( 'select ivl, type from cards where nid = :nid', nid=nid ) ]
+        if C('ignore maturity'):
+            mats = [ 0 for mat in mats ]
         ts, alreadyKnownTag = TAG.split( tags ), C('tag_alreadyKnown')
         if alreadyKnownTag in ts:
             mats += [ C('threshold_mature')+1 ]
@@ -175,6 +178,7 @@ def updateNotes( allDb ):
 
             # difference from optimal length (too little context vs long sentence)
         lenDiff = max( 0, min( 9, abs( C('optimal sentence length') - N ) -2 ) )
+        tooLong = N > C('optimal sentence length')
 
             # calculate mmi
         mmi = 10000*N_k + 1000*lenDiff + usefulness
@@ -184,7 +188,7 @@ def updateNotes( allDb ):
         # Fill in various fields/tags on the note based on cfg
         ts, fs = TAG.split( tags ), splitFields( flds )
             # determine card type
-        compTag, vocabTag, notReadyTag, alreadyKnownTag, priorityTag = tagNames = C('tag_comprehension'), C('tag_vocab'), C('tag_notReady'), C('tag_alreadyKnown'), C('tag_priority')
+        compTag, vocabTag, notReadyTag, alreadyKnownTag, priorityTag, badLengthTag, tooLongTag = tagNames = C('tag_comprehension'), C('tag_vocab'), C('tag_notReady'), C('tag_alreadyKnown'), C('tag_priority'), C('tag_badLength'), C('tag_tooLong')
         if N_m == 0:    # sentence comprehension card, m+0
             ts = [ compTag ] + [ t for t in ts if t not in [ vocabTag, notReadyTag ] ]
             setField( mid, fs, C('focusMorph'), u'' )
@@ -205,6 +209,12 @@ def updateNotes( allDb ):
             # other tags
         if priorityTag in ts:   ts.remove( priorityTag )
         if isPriority:          ts.append( priorityTag )
+
+        if badLengthTag in ts:  ts.remove( badLengthTag )
+        if lenDiff:             ts.append( badLengthTag )
+
+        if tooLongTag in ts:    ts.remove( tooLongTag )
+        if tooLong:             ts.append( tooLongTag )
 
             # update sql db
         tags_ = TAG.join( TAG.canonify( ts ) )

@@ -32,6 +32,7 @@ default = {
     # only these can have model overrides
     'enabled':False,    # whether to analyze notes of a given model, modify their fields, and manipulate due time by Morph Man Index
     'set due based on mmi':True,    # whether to modify card Due times based on MorphManIndex. does nothing if relevant notes aren't enabled
+    'ignore maturity':False,        # if True, pretends card maturity is always zero
         # field names to store various information
     'k+N':u'k+N',       # stores how many unknowns
     'm+N':u'm+N',       # stores how many unmatures
@@ -49,6 +50,8 @@ default = {
     'tag_notReady':u'notReady',             # set for k+2 and above cards
     'tag_alreadyKnown':u'alreadyKnown',     # you can add this tag to a note to make anki treat it as if mature
     'tag_priority':u'priority',             # set if note contains an unknown that exists in priority.db
+    'tag_badLength':u'badLength',           # set if sentence isn't within optimal sentence length range
+    'tag_tooLong':u'tooLong',               # set if sentence is above optimal sentence length
         # controls for morpheme analysis
     'morph_blacklist': [ u'記号', u'UNKNOWN'],      # you probably don't care about punctuation and things mecab couldn't parse
         # try playing fields in this order when using batch media player
@@ -59,7 +62,7 @@ default = {
     'verb bonus': 100,                      # -verb_bonus if at least one unknown is a verb
     'priority.db weight': 200,              # -priority_weight per unknown that exists in priority.db
         # lite update
-    'only update k+2 and below': True,     # this reduces how many notes are changed and thus sync burden by not updating notes that aren't as important
+    'only update k+2 and below': False,     # this reduces how many notes are changed and thus sync burden by not updating notes that aren't as important
 
     # only these can have deck overrides
     'next new card feature':True,   # skip cards with focusMorph that was already seen or aren't k+1
@@ -72,17 +75,20 @@ profile_overrides = {
 
 # Model overrides can only override the entries marked above. 2nd priority
 model_overrides = {
-    'subs2srs': { 'enabled':True },
-    'JtMW': { 'enabled':True },
-    'JSfEC': { 'enabled':True },
-    'Tae Kim Cloze': { 'enabled':True },
-    'Yotsubato': { 'enabled':True },
-    'Rikaisama': { 'enabled':True },
+    'subs2srs':     { 'enabled':True },
+    'vn2srs':       { 'enabled':True },
+    'JtMW':         { 'enabled':True, 'set due based on mmi': False, 'ignore maturity': True },
+    'JSPfEC':       { 'enabled':True, 'set due based on mmi': False },
+    'Tae Kim Cloze':{ 'enabled':True, 'set due based on mmi': False },
+    'Yotsubato':    { 'enabled':True, 'set due based on mmi': False },
+    'Rikaisama':    { 'enabled':True, 'set due based on mmi': False },
     #'Kore': { 'enabled':True, 'set due based on mmi': False, 'morph_fields':[u'SentenceExpression'] },
-    'Kore': { 'enabled':True, 'set due based on mmi': False },
+    'Kore':         { 'enabled':True, 'set due based on mmi': False },
 }
 
 # Deck overrides can only override 'new card merged fill' options. 1st priority
 deck_overrides = {
-    'subs2srs': { 'new card merged fill':True },
+    'Sentences':            { 'new card merged fill':True },
+    'Sentences::subs2srs':  { 'new card merged fill':True },
+    'Sentences::vn2srs':    { 'new card merged fill':True },
 }

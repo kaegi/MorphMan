@@ -63,18 +63,18 @@ def my_getNewCard( self, _old ):
             ( id, due ) = self._newQueue.pop( 0 )
             c = self.col.getCard( id )
 
-        if not c: return
-        try: fm = focus( c.note() )
-        except KeyError: return c
+        if not c: return			# no more cards
+        n = c.note()
+
+        try: fm = focus( n )		# fm is either the focusMorph or empty
+        except KeyError: return c	# card has no focusMorph field -> assume it's good
 
         # determine if good vocab word based on whether k+1
         # defaults to whether has focus morph if no k+N field or disabled
-        try:
-            n = c.note()
-            goodVocab = n[ cfg( n.mid, None, 'k+N' ) ] == '1'
+        try: goodVocab = n[ cfg( n.mid, None, 'k+N' ) ] == '1'
         except KeyError: goodVocab = fm
 
-        if not goodVocab or fm in seenMorphs:
+        if not goodVocab or fm in seenMorphs or n.hasTag( CN( n, 'tag_alreadyKnown' ) ):
             self.buryNote( c.note().id )
             continue
         break
