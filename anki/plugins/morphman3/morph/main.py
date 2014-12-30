@@ -242,6 +242,7 @@ def updateNotes( allDb ):
 
     printf( 'Updated notes in %f sec' % ( time.time() - t_0 ) )
     mw.progress.finish()
+    return knownDb
 
 def main():
     # load existing all.db
@@ -261,10 +262,11 @@ def main():
     mw.progress.finish()
 
     # update notes
-    updateNotes( allDb )
+    knownDb = updateNotes( allDb )
     
-    # update stats
+    # update stats and refresh display
     stats.updateStats( knownDb )
+    mw.toolbar.draw()
 
     # set global allDb
     util._allDb = allDb
