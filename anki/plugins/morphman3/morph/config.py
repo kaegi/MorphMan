@@ -12,6 +12,7 @@ default = {
     'path_known': os.path.join( mw.pm.profileFolder(), 'dbs', 'known.db' ),
     'path_seen': os.path.join( mw.pm.profileFolder(), 'dbs', 'seen.db' ),
     'path_log': os.path.join( mw.pm.profileFolder(), 'morphman.log' ),
+    'path_stats': os.path.join( mw.pm.profileFolder(), 'morphman.stats' ),
         # change the thresholds for various stages of maturity, in days
     'threshold_mature': 21,         # 21 days is what Anki uses
     'threshold_known': 10/86400.,   # recommend a few seconds if you want to count things in learning queue or ~3 days otherwise

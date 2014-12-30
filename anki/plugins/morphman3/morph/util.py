@@ -16,7 +16,7 @@ from util_external import memoize
 _allDb = None
 def allDb():
     global _allDb
-    if not _allDb:
+    if _allDb is None:
         from morphemes import MorphDb
         _allDb = MorphDb( cfg1('path_all'), ignoreErrors=True )
     return _allDb
@@ -31,6 +31,9 @@ def initCfg():
     import config
     cfgMod = config
     dbsPath = config.default['path_dbs']
+
+    # Redraw toolbar to update stats
+    mw.toolbar.draw()
 
 addHook( 'profileLoaded', initCfg )
 

@@ -6,6 +6,7 @@ def onMorphManRecalc():
     morph.main.main()
 
 def onMorphManManager():
+    mw.toolbar.draw()
     import morph.manager
     reload( morph.manager )
     morph.manager.main()
@@ -29,5 +30,6 @@ def main():
     import morph.extractMorphemes
     import morph.batchPlay
     import morph.newMorphHelper
+    import morph.stats
 
 main()
