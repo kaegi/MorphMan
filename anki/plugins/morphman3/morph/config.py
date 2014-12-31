@@ -81,7 +81,7 @@ model_overrides = {
     'JtMW':         { 'enabled':True, 'set due based on mmi': False, 'ignore maturity': True },
     'JSPfEC':       { 'enabled':True, 'set due based on mmi': False },
     'Tae Kim Cloze':{ 'enabled':True, 'set due based on mmi': False },
-    'Yotsubato':    { 'enabled':True, 'set due based on mmi': False },
+    'Yotsubato':    { 'enabled':True, 'set due based on mmi': True },
     'Rikaisama':    { 'enabled':True, 'set due based on mmi': False },
     #'Kore': { 'enabled':True, 'set due based on mmi': False, 'morph_fields':[u'SentenceExpression'] },
     'Kore':         { 'enabled':True, 'set due based on mmi': False },
@@ -92,4 +92,7 @@ deck_overrides = {
     'Sentences':            { 'new card merged fill':True },
     'Sentences::subs2srs':  { 'new card merged fill':True },
     'Sentences::vn2srs':    { 'new card merged fill':True },
+    'ExtraVocab':           { 'new card merged fill':True },
+    'ExtraVocab::_Yotsubato':   { 'new card merged fill':True },
+    'ExtraVocab::_Kore':        { 'new card merged fill':True },
 }

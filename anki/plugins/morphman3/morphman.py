@@ -31,5 +31,6 @@ def main():
     import morph.batchPlay
     import morph.newMorphHelper
     import morph.stats
+    import morph.massTagger
 
 main()

@@ -34,7 +34,7 @@ def updateStats( knownDb=None ):
 
     d['totalKnown'] = len( knownDb.db )
 
-    # Load Goal.*.db dbs, get total morphemes required, and compare vs known.db
+    # Load Goal.*.db dbs, get morphemes required, and compare vs known.db
     d['goals'] = {}
     goalDbPaths = glob.glob( os.path.join( cfg1('path_dbs'), 'Goal.*.db' ) )
 
@@ -42,12 +42,17 @@ def updateStats( knownDb=None ):
         name = os.path.basename( path )[5:][:-3]
         gdb = MorphDb( path )
 
-        required = set( gdb.db.keys() )
-        allKnown = set( knownDb.db.keys() )
-
-        numReq = len( required )
-        numKnown = len( required.intersection( allKnown ) )
-        d['goals'][ name ] = { 'total': numReq, 'known': numKnown }
+        # track total unique morphemes + when weighted by frequency
+        # NOTE: a morpheme may occur multiple times within the same sentence, but this frequency is wrt note fields
+        numUniqueReq, numUniqueKnown, numFreqReq, numFreqKnown = 0, 0, 0, 0
+        for m,locs in gdb.db.iteritems():
+            numUniqueReq += 1
+            numFreqReq   += len( locs )
+            if m in knownDb.db:
+                numUniqueKnown += 1
+                numFreqKnown   += len( locs )
+        
+        d['goals'][ name ] = { 'total':numUniqueReq, 'known':numUniqueKnown, 'freqTotal':numFreqReq, 'freqKnown':numFreqKnown }
 
     saveStats( d )
     mw.progress.finish()
@@ -61,7 +66,8 @@ def getStatsLink():
     lines = []
     for goalName, g in sorted( d['goals'].items() ):
         #lines.append( '%s %d/%d %d%%' % ( goalName, g['known'], g['total'], 100.*g['known']/g['total'] ) )
-        lines.append( '%s %d%%' % ( goalName, 100.*g['known']/g['total'] ) )
+        #lines.append( '%s %d%%' % ( goalName, 100.*g['known']/g['total'] ) )
+        lines.append( '%s %d%% %d%%' % ( goalName, 100.*g['known']/g['total'], 100.*g['freqKnown']/g['freqTotal'] ) )
     details = '\n'.join( lines )
     return ( name, details )
 
