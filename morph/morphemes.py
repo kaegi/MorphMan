@@ -38,8 +38,8 @@ class Morpheme:
         #return hash( (self.pos, self.subPos, self.read, self.base, self.inflected) )
         return hash( (self.pos, self.subPos, self.read, self.base) )
 
-    def show( self ): # Str
-        return u'\t'.join([ self.base, self.pos, self.subPos, self.read ])
+    def show( self ): # str
+        return u'\t'.join([ self.base, self.pos, self.subpos, self.read ])
 
 def ms2str( ms ): # [Morpheme] -> Str
     return u'\n'.join( m.show() for m in ms )

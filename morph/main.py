@@ -9,12 +9,23 @@ import util
 
 @memoize
 def getFieldIndex( fieldName, mid ):
+    """
+    Returns the index of a field in a model by its name.
+    For example: we have the modelId of the card "Basic".
+    The return value might be "1" for fieldName="Front" and
+    "2" for fieldName="Back".
+    """
     m = mw.col.models.get( mid )
     d = dict( ( f['name'], f['ord'] ) for f in m['flds'] )
     try: return d[ fieldName ]
     except KeyError: return None
 
-def getMecabField( fname, flds, mid ):
+def extractFieldData( fname, flds, mid ):
+    """
+    :type str fname: The field name (like u'Expression')
+    :type str flds: A string containing all field data for the model (created by anki.utils.joinFields())
+    :type int mid: the modelId depicing the model for the "flds" data
+    """
     idx = getFieldIndex( fname, mid )
     return stripHTML( splitFields( flds )[ idx ] )
 
@@ -23,6 +34,12 @@ def getSortFieldIndex( mid ):
     return mw.col.models.get( mid )[ 'sortf' ]
 
 def setField( mid, fs, k, v ): # nop if field DNE
+    """
+    :type int mid: modelId
+    :type [str] fs: a list of all field data
+    :type str k: name of field to modify (for example u'Expression')
+    :type str v: new value for field
+    """
     idx = getFieldIndex( k, mid )
     if idx: fs[ idx ] = v
 
@@ -40,7 +57,7 @@ def mkAllDb( allDb=None ):
         if i % 500 == 0:    mw.progress.update( value=i )
         C = partial( cfg, mid, None )
         if not C('enabled'): continue
-        
+
         mats = [ ( 0.5 if ivl == 0 and ctype == 1 else ivl ) for ivl, ctype in db.execute( 'select ivl, type from cards where nid = :nid', nid=nid ) ]
         if C('ignore maturity'):
             mats = [ 0 for mat in mats ]
@@ -51,7 +68,7 @@ def mkAllDb( allDb=None ):
         for fieldName in C('morph_fields'):
             try: # if doesn't have field, continue
                 #fieldValue = normalizeFieldValue( getField( fieldName, flds, mid ) )
-                fieldValue = getMecabField( fieldName, flds, mid )
+                fieldValue = extractFieldData( fieldName, flds, mid )
             except KeyError: continue
             except TypeError:
                 mname = mw.col.models.get( mid )[ 'name' ]
@@ -129,25 +146,25 @@ def updateNotes( allDb ):
         C = partial( cfg, mid, None )
         if not C('enabled'): continue
         # Get all morphemes for note
-        ms = set()
+        morphemes = set()
         for fieldName in C('morph_fields'):
             try:
                 loc = fidDb[ ( nid, guid, fieldName ) ]
-                ms.update( locDb[ loc ] )
+                morphemes.update( locDb[ loc ] )
             except KeyError: continue
-        ms = [ m for m in ms if m.pos not in C('morph_blacklist') ]
+        morphemes = [ morpheme for morpheme in morphemes if morpheme.pos not in C('morph_blacklist') ]
 
         # Determine un-seen/known/mature and i+N
         unseens, unknowns, unmatures, newKnowns = set(), set(), set(), set()
-        for m in ms:
-            if m not in seenDb.db:      unseens.add( m )
-            if m not in knownDb.db:     unknowns.add( m )
-            if m not in matureDb.db:    unmatures.add( m )
-            if m not in matureDb.db and m in knownDb.db:
-                newKnowns.add( m )
+        for morpheme in morphemes:
+            if morpheme not in seenDb.db:      unseens.add( morpheme )
+            if morpheme not in knownDb.db:     unknowns.add( morpheme )
+            if morpheme not in matureDb.db:    unmatures.add( morpheme )
+            if morpheme not in matureDb.db and morpheme in knownDb.db:
+                newKnowns.add( morpheme )
 
         # Determine MMI - Morph Man Index
-        N, N_s, N_k, N_m = len( ms ), len( unseens ), len( unknowns ), len( unmatures )
+        N, N_s, N_k, N_m = len( morphemes ), len( unseens ), len( unknowns ), len( unmatures )
 
         # Bail early for lite update
         if N_k > 2 and C('only update k+2 and below'): continue
@@ -167,13 +184,13 @@ def updateNotes( allDb ):
                 usefulness += C('priority.db weight')
 
             # add bonus for studying recent learned knowns (reinforce)
-        for m in newKnowns:
-            locs = allDb.db[ m ]
+        for morpheme in newKnowns:
+            locs = allDb.db[ morpheme ]
             if locs:
                 ivl = min( 1, max( loc.maturity for loc in locs ) )
                 usefulness += C('reinforce new vocab weight') / ivl #TODO: maybe average this so it doesnt favor long sentences
 
-        if any( m.pos == u'動詞' for m in unknowns ): #FIXME: this isn't working???
+        if any( morpheme.pos == u'動詞' for morpheme in unknowns ): #FIXME: this isn't working???
             usefulness += C('verb bonus')
 
         usefulness = 999 - min( 999, usefulness )
@@ -189,7 +206,8 @@ def updateNotes( allDb ):
 
         # Fill in various fields/tags on the note based on cfg
         ts, fs = TAG.split( tags ), splitFields( flds )
-            # determine card type
+
+        # determine card type
         compTag, vocabTag, notReadyTag, alreadyKnownTag, priorityTag, badLengthTag, tooLongTag = tagNames = C('tag_comprehension'), C('tag_vocab'), C('tag_notReady'), C('tag_alreadyKnown'), C('tag_priority'), C('tag_badLength'), C('tag_tooLong')
         if N_m == 0:    # sentence comprehension card, m+0
             ts = [ compTag ] + [ t for t in ts if t not in [ vocabTag, notReadyTag ] ]
@@ -233,6 +251,10 @@ def updateNotes( allDb ):
     # Now reorder new cards based on MMI
     mw.progress.update( value=i, label='Updating new card ordering...' )
     ds = []
+
+    # "type = 0": new cards
+    # "type = 1": learning cards [is supposed to be learning: in my case no learning card had this type]
+    # "type = 2": review cards
     for ( cid, nid, due ) in db.execute( 'select id, nid, due from cards where type = 0' ):
         if nid in nid2mmi: # owise it was disabled
             due_ = nid2mmi[ nid ]
@@ -264,7 +286,7 @@ def main():
 
     # update notes
     knownDb = updateNotes( allDb )
-    
+
     # update stats and refresh display
     stats.updateStats( knownDb )
     mw.toolbar.draw()
