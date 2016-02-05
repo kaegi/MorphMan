@@ -50,11 +50,16 @@ def runMecabCmd( args ): # [Str] -> IO MecabProc
         m = MecabController()
         m.setup()
         cmd = m.mecabCmd[:1] + m.mecabCmd[4:]
-    except ImportError:
+        s = subprocess.Popen( cmd + args, bufsize=-1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, startupinfo=si )
+    except (ImportError, OSError):
+        # this handles two cases:
+        #   - the japanese plugin is not installed -> try running the command directly as last instance (the user *might* have it installed)
+        #   - we are not using windows, so the japanese plugin binaries won't work -> for example the Arch User Repositories (AUR) have
+        #     a "mecab"-package available, which can be installed
         si = None
         cmd = ['mecab']
-    cmd = ['mecab']
-    s = subprocess.Popen( cmd + args, bufsize=-1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, startupinfo=si )
+        s = subprocess.Popen( cmd + args, bufsize=-1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, startupinfo=si )
+
     return s
 
 def getMecabEncoding(): # IO CharacterEncoding

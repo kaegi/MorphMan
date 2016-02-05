@@ -7,7 +7,6 @@ import stats
 from util import printf, mw, memoize, cfg, cfg1, partial, errorMsg, infoMsg
 import util
 
-
 @memoize
 def getFieldIndex( fieldName, mid ):
     m = mw.col.models.get( mid )
