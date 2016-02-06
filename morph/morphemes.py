@@ -19,7 +19,21 @@ MECAB_ENCODING = None
 
 class Morpheme:
     def __init__( self, base, inflected, pos, subPos, read ):
-        self.pos    = pos
+        """ Initialize morpheme class.
+
+        Example morpheme infos for the expression "歩いて":
+
+        :param str base: 歩く
+        :param str inflected: 歩い  [mecab cuts off all endings, so there is not て]
+        :param str pos: 動詞
+        :param str subPos: 自立
+        :param str read: アルイ
+
+        """
+        # values are created by "mecab" in the order of the parameters and then directly passed into this constructor
+        # example of mecab output:    "歩く     歩い    動詞    自立      アルイ"
+        # matches to:                 "base     infl    pos     subPos    read"
+        self.pos    = pos # type of morpheme detemined by mecab tool. for example: u'動詞' or u'助動詞', u'形容詞'
         self.subPos = subPos
         self.read   = read
         self.base   = base
@@ -67,6 +81,7 @@ def getMecabEncoding(): # IO CharacterEncoding
 
 @memoize
 def mecab(): # IO MecabProc
+    ''' Returns a running mecab instance. 'mecab' reads expressions from stdin at runtime, so only one instance is needed. Thats why this function is memoized. '''
     global MECAB_ENCODING
     if not MECAB_ENCODING: MECAB_ENCODING = getMecabEncoding()
     nodeFmt = '\t'.join( MECAB_NODE_PARTS )+'\r'
@@ -75,6 +90,7 @@ def mecab(): # IO MecabProc
 
 @memoize
 def interact( expr ): # Str -> IO Str
+    ''' "interacts" with 'mecab' command: writes expression to stdin of 'mecab' process and gets all the morpheme infos from its stdout. '''
     p = mecab()
     expr = expr.encode( MECAB_ENCODING, 'ignore' )
     p.stdin.write( expr + '\n' )
@@ -83,6 +99,10 @@ def interact( expr ): # Str -> IO Str
 
 @memoize
 def fixReading( m ): # Morpheme -> IO Morpheme
+    '''
+    'mecab' prints the reading of the kanji in inflected forms (and strangely in katakana). So 歩い[て] will
+    have アルイ as reading. This function sets the reading to the reading of the base form (in the example it will be 'アルク').
+    '''
     if m.pos in [u'動詞', u'助動詞', u'形容詞']: # verb, aux verb, i-adj
         n = interact( m.base ).split('\t')
         if len(n) == MECAB_NODE_LENGTH:
@@ -122,12 +142,14 @@ class TextFile( Location ):
         return '%s:%d@%d' % ( self.filePath, self.lineNo, self.maturity )
 
 class AnkiDeck( Location ):
+    """ This maps to/contains information for one note and one relevant field like u'Expression'. """
+
     def __init__( self, noteId, fieldName, fieldValue, guid, maturities ):
         self.noteId     = noteId
-        self.fieldName  = fieldName
-        self.fieldValue = fieldValue
+        self.fieldName  = fieldName # for example u'Expression'
+        self.fieldValue = fieldValue # for example u'それだけじゃない'
         self.guid       = guid
-        self.maturities = maturities
+        self.maturities = maturities # list of intergers, one for every card -> containg the intervals of every card for this note
         self.maturity   = max( maturities ) if maturities else 0
     def show( self ):
         return '%d[%s]@%d' % ( self.noteId, self.fieldName, self.maturity )
