@@ -51,13 +51,18 @@ def markFocusSeen( self, n ):
 
 def my_getNewCard( self, _old ):
     '''Continually call _getNewCard until we get one with a focusMorph we haven't
-    seen before. Also skip bad vocab cards'''
+    seen before. Also skip bad vocab cards.
+
+    :type self: anki.sched.Scheduler
+    :type _old: Callable
+    '''
     while True:
         C = partial( cfg, None, self.col.decks.active()[0] )
         if not C('next new card feature'):
             return _old( self )
         if not C('new card merged fill'):
             c = _old( self )
+            ''' :type c: anki.cards.Card '''
         else:   # pop from opposite direction and skip sibling spacing
             if not self._fillNew(): return
             ( id, due ) = self._newQueue.pop( 0 )
@@ -75,7 +80,8 @@ def my_getNewCard( self, _old ):
         except KeyError: goodVocab = fm
 
         if not goodVocab or fm in seenMorphs or n.hasTag( CN( n, 'tag_alreadyKnown' ) ):
-            self.buryNote( c.note().id )
+            self.buryCards( [ c.id ] )
+            #self.buryNote( c.note().id )
             continue
         break
     return c
