@@ -46,6 +46,7 @@ def setField( mid, fs, k, v ): # nop if field DNE
 def mkAllDb( allDb=None ):
     t_0, db, TAG = time.time(), mw.col.db, mw.col.tags
     N_notes = db.scalar( 'select count() from notes' )
+    N_enabled_notes = 0 # for providing an error message if there is no note that is used for processing
     mw.progress.start( label='Prep work for all.db creation', max=N_notes, immediate=True )
 
     if not allDb: allDb = MorphDb()
@@ -57,6 +58,8 @@ def mkAllDb( allDb=None ):
         if i % 500 == 0:    mw.progress.update( value=i )
         C = partial( cfg, mid, None )
         if not C('enabled'): continue
+
+        N_enabled_notes += 1
 
         mats = [ ( 0.5 if ivl == 0 and ctype == 1 else ivl ) for ivl, ctype in db.execute( 'select ivl, type from cards where nid = :nid', nid=nid ) ]
         if C('ignore maturity'):
@@ -95,6 +98,12 @@ def mkAllDb( allDb=None ):
                     ms = getMorphemes( fieldValue )
                     locDb.pop( loc )
                     locDb[ newLoc ] = ms
+
+    if N_enabled_notes == 0:
+        mw.progress.finish()
+        errorMsg(u'There is no note that can be processed. Please check your configuration in "Anki/addons/morph/config.py".')
+        return None
+
     printf( 'Processed all %d notes in %f sec' % ( N_notes, time.time() - t_0 ) )
     mw.progress.update( value=i, label='Creating all.db object' )
     allDb.clear()
@@ -277,6 +286,9 @@ def main():
 
     # update all.db
     allDb = mkAllDb( cur )
+    if not allDb: # there was an (non-critical-/non-"exception"-)error but error message was already displayed
+        mw.progress.finish()
+        return
 
     # merge in external.db
     mw.progress.start( label='Merging ext.db', immediate=True )
