@@ -4,6 +4,8 @@ from aqt.qt import *
 from anki import sched
 from util import addBrowserSelectionCmd, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
 
+import main
+
 #1 after answering -> skip all cards with same focus as one just answered
 #2 hotkey -> set card as already known, skip it, and all others with same focus
 #3 hotkey -> search for all cards with same focus (in browser)
@@ -56,6 +58,7 @@ def my_getNewCard( self, _old ):
     :type self: anki.sched.Scheduler
     :type _old: Callable
     '''
+
     while True:
         C = partial( cfg, None, self.col.decks.active()[0] )
         if not C('next new card feature'):
@@ -67,6 +70,7 @@ def my_getNewCard( self, _old ):
             if not self._fillNew(): return
             ( id, due ) = self._newQueue.pop( 0 )
             c = self.col.getCard( id )
+            self.newCount -= 1
 
         if not c: return			# no more cards
         n = c.note()
@@ -81,15 +85,17 @@ def my_getNewCard( self, _old ):
 
         if not goodVocab or fm in seenMorphs or n.hasTag( CN( n, 'tag_alreadyKnown' ) ):
             self.buryCards( [ c.id ] )
-            #self.buryNote( c.note().id )
+            self.newCount += 1 # the card was quaried from the "new queue" so we have to increase the "new counter" back to its original value
             continue
         break
+
     return c
 
 sched.Scheduler._getNewCard = wrap( sched.Scheduler._getNewCard, my_getNewCard, 'around' )
 
 ########## 1 - after learning a new focus morph, don't learn new cards with the same focus
 def my_reviewer_answerCard( self, ease ): #1
+    ''' :type self: aqt.reviewer.Reviewer '''
     if self.mw.state != "review" or self.state != "answer" or self.mw.col.sched.answerButtons( self.card ) < ease: return
     if CN(self.card.note(), 'auto skip alternatives'):
         markFocusSeen( self, self.card.note() )
@@ -99,7 +105,9 @@ reviewer.Reviewer._answerCard = wrap( reviewer.Reviewer._answerCard, my_reviewer
 ########## 2 - set current card's focus morph as already known and skip alternatives
 def setKnownAndSkip( self ): #2
     '''Set card as alreadyKnown and skip along with all other cards with same focusMorph.
-    Useful if you see a focusMorph you already know from external knowledge'''
+    Useful if you see a focusMorph you already know from external knowledge
+
+    :type self: aqt.reviewer.Reviewer '''
     self.mw.checkpoint( _("Set already known focus morph") )
     n = self.card.note()
     n.addTag( CN( n, 'tag_alreadyKnown' ) )
