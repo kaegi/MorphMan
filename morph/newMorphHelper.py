@@ -113,6 +113,12 @@ def setKnownAndSkip( self ): #2
     n.addTag( CN( n, 'tag_alreadyKnown' ) )
     n.flush()
     markFocusSeen( self, n )
+
+    # "new counter" might have been decreased (but "new card" was not answered
+    # so it shouldn't) -> this function recomputes "new counter"
+    self.mw.col.reset()
+
+    # skip card
     self.nextCard()
 
 ########## 3 - search in browser for cards with same focus
@@ -130,6 +136,7 @@ def browseSameFocus( self ): #3
 
 ########## set keybindings for 2-3
 def my_reviewer_keyHandler( self, evt ):
+    ''' :type self: aqt.reviewer.Reviewer '''
     key = unicode( evt.text() )
     key_browse, key_skip = cfg1('browse same focus key'), cfg1('set known and skip key')
     if   key == key_skip:   setKnownAndSkip( self )
