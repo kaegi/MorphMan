@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-from morphemes import getMorphemes2, getMorphemizerForNote, MorphDb
+from morphemes import getMorphemes, getMorphemizerForNote, MorphDb
 from util import addBrowserSelectionCmd, cfg, cfg1, infoMsg, QInputDialog, QFileDialog, QLineEdit
 import util
 
@@ -15,7 +15,7 @@ def per( st, n ): # :: State -> Note -> State
     #n.delTag( st['tags'] ) # clear tags if they already exist?
 
     for field in cfg( n.mid, None, 'morph_fields' ):
-        for m in getMorphemes2(getMorphemizerForNote(n), n[ field ], None, cfg1('morph_blacklist') ):
+        for m in getMorphemes(getMorphemizerForNote(n), n[ field ], None, cfg1('morph_blacklist') ):
             if m in st['db'].db:
                 n.addTag( st['tags'] )
                 break

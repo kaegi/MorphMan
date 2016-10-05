@@ -176,9 +176,9 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
         return u''.join( re.sub( sub, repl, s ) if not s.startswith('<span') else s for s in re.split( '(<span.*?</span>)', string ) )
 
     # find morphemizer; because no note/card information is exposed through arguments, we have to find morphemizer based on tags alone
-    from morphemes import getMorphemes2, getMorphemizerForTags
+    from morphemes import getMorphemes, getMorphemizerForTags
     morphemizer = getMorphemizerForTags(fieldDict['Tags'].split())
-    ms = getMorphemes2(morphemizer, txt )
+    ms = getMorphemes(morphemizer, txt )
 
     for m in sorted( ms, key=lambda x: len(x.inflected), reverse=True ): # largest subs first
         locs = allDb().db.get( m, set() )

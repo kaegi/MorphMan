@@ -1,5 +1,5 @@
 ﻿import codecs
-from morphemes import getMorphemes2, MorphDb
+from morphemes import getMorphemes, MorphDb
 from util import cfg1
 
 # utils
@@ -38,7 +38,7 @@ def run( duelingSubsPath, outputSubsPath, morphemizer, whitelist, blacklist, mat
         target, native, pre = getText( target ), getText( native ), getPreText( target )
 
         # get unknowns
-        ms = getMorphemes2(morphemizer, target, whitelist, blacklist )
+        ms = getMorphemes(morphemizer, target, whitelist, blacklist )
         unknowns, N_k = getNotInDb( ms, kdb.db )
         unmatures, N_m = getNotInDb( ms, mdb.db )
         d = { 'target':target, 'native':native, 'N_k':N_k, 'N_m':N_m, 'unknowns':unknowns, 'unmatures':unmatures }

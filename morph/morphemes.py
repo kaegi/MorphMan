@@ -109,17 +109,8 @@ def fixReading( m ): # Morpheme -> IO Morpheme
             m.read = n[ MECAB_NODE_READING_INDEX ].strip()
     return m
 
-@memoize
-def getMorphemes(e, ws=None, bs=None): # Str -> IO [Morpheme]
-    ms = [ tuple( m.split('\t') ) for m in interact( e ).split('\r') ] # morphemes
-    ms = [ Morpheme( *m ) for m in ms if len( m ) == MECAB_NODE_LENGTH ] # filter garbage
-    if ws: ms = [ m for m in ms if m.pos in ws ]
-    if bs: ms = [ m for m in ms if m.pos not in bs ]
-    ms = [ fixReading( m ) for m in ms ]
-    return ms
-
-def getMorphemes2(morphemizer, expression, whitelist = None, blacklist = None):
-    ms = morphemizer.getMorphemes(expression)
+def getMorphemes(morphemizer, expression, whitelist = None, blacklist = None):
+    ms = morphemizer.getMorphemesFromExpr(expression)
     if whitelist: ms = [ m for m in ms if m.pos in whitelist ]
     if blacklist: ms = [ m for m in ms if m.pos not in blacklist ]
     return ms
@@ -134,7 +125,7 @@ def getAllMorphemizers(): # -> [Morphemizer]
     return [SpaceMorphemizer(), MecabMorphemizer()]
 
 class Morphemizer:
-    def getMorphemes(self, expression): # Str -> [Morpeme]
+    def getMorphemesFromExpr(self, expression): # Str -> [Morpeme]
         '''
         The heart of this plugin: convert an expression to a list of its morphemes.
         '''
@@ -158,7 +149,7 @@ class MecabMorphemizer(Morphemizer):
     Because in japanese there are no spaces to differentiate between morphemes,
     a extra tool called 'mecab' has to be used.
     '''
-    def getMorphemes(self, e): # Str -> IO [Morpheme]
+    def getMorphemesFromExpr(self, e): # Str -> IO [Morpheme]
         return getMorphemesMecab(e)
 
     def getDescription(self):
@@ -170,7 +161,7 @@ class SpaceMorphemizer(Morphemizer):
     Morphemizer for languages that use spaces (English, German, Spanish, ...). Because it is
     a general-use-morphemizer, it can't generate the base form from inflection.
     '''
-    def getMorphemes(self, e): # Str -> [Morpheme]
+    def getMorphemesFromExpr(self, e): # Str -> [Morpheme]
         wordList = re.sub("[^\w-]", " ",  e).split()
         return [Morpheme(word, word, 'UNKNOWN', 'UNKNOWN', word) for word in wordList]
 
@@ -320,7 +311,7 @@ class MorphDb:
         f.close()
 
         for i,line in enumerate(inp):
-            ms = getMorphemes2( morphemizer, line.strip(), ws, bs )
+            ms = getMorphemes( morphemizer, line.strip(), ws, bs )
             self.addMLs( ( m, TextFile( path, i+1, maturity ) ) for m in ms )
 
     # Analysis

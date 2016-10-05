@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-from morphemes import getMorphemes2, getMorphemizerForNote, ms2str
+from morphemes import getMorphemes, getMorphemizerForNote, ms2str
 from util import addBrowserSelectionCmd, cfg, cfg1, infoMsg
 
 def pre( b ): return { 'txt':'', 'morphemizer': None }
@@ -11,7 +11,7 @@ def per( st, n ):
     return st
 
 def post( st ):
-    ms = getMorphemes2(st['morphemizer'], st['txt'], None, cfg1('morph_blacklist') )
+    ms = getMorphemes(st['morphemizer'], st['txt'], None, cfg1('morph_blacklist') )
     s = ms2str( ms )
     infoMsg( '----- All -----\n' + s )
 

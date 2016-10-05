@@ -2,7 +2,7 @@
 import time
 
 from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksum
-from morphemes import MorphDb, AnkiDeck, getMorphemes2, getMorphemizerForNote
+from morphemes import MorphDb, AnkiDeck, getMorphemes, getMorphemizerForNote
 import stats
 from util import printf, mw, memoize, cfg, cfg1, partial, errorMsg, infoMsg
 import util
@@ -88,7 +88,7 @@ def mkAllDb( allDb=None ):
             loc = fidDb.get( ( nid, guid, fieldName ), None )
             if not loc:
                 loc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
-                ms = getMorphemes2(morphemizer, fieldValue )
+                ms = getMorphemes(morphemizer, fieldValue )
                 if ms: #TODO: this needed? should we change below too then?
                     #printf( '    .loc for %d[%s]' % ( nid, fieldName ) )
                     locDb[ loc ] = ms
@@ -102,7 +102,7 @@ def mkAllDb( allDb=None ):
                 elif loc.fieldValue != fieldValue:
                     printf( '    .morphs for %d[%s]' % ( nid, fieldName ) )
                     newLoc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
-                    ms = getMorphemes2(morphemizer, fieldValue )
+                    ms = getMorphemes(morphemizer, fieldValue )
                     locDb.pop( loc )
                     locDb[ newLoc ] = ms
 
