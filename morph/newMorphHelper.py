@@ -4,6 +4,10 @@ from aqt.qt import *
 from anki import sched
 from util import addBrowserSelectionCmd, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
 
+# only for jedi-auto-completion
+import aqt.main
+assert isinstance(mw, aqt.main.AnkiQt)
+
 import main
 
 #1 after answering -> skip all cards with same focus as one just answered

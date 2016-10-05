@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import codecs, cPickle as pickle, gzip, os, subprocess
+import codecs, cPickle as pickle, gzip, os, subprocess, re
 
 # need some fallbacks if not running from anki and thus morph.util isn't available
 try:
@@ -110,13 +110,46 @@ def fixReading( m ): # Morpheme -> IO Morpheme
     return m
 
 @memoize
-def getMorphemes( e, ws=None, bs=None ): # Str -> PosWhiteList? -> PosBlackList? -> IO [Morpheme]
+def getMorphemes(e, ws=None, bs=None): # Str -> IO [Morpheme]
     ms = [ tuple( m.split('\t') ) for m in interact( e ).split('\r') ] # morphemes
     ms = [ Morpheme( *m ) for m in ms if len( m ) == MECAB_NODE_LENGTH ] # filter garbage
     if ws: ms = [ m for m in ms if m.pos in ws ]
     if bs: ms = [ m for m in ms if m.pos not in bs ]
     ms = [ fixReading( m ) for m in ms ]
     return ms
+
+class Morphmemizor:
+    '''
+    The heart of this plugin: convert an expression to a list of its morphemes.
+    '''
+    @memoize
+    def getMorphemes(e): # Str -> [Morpeme]
+        return []
+
+
+class MecabMorphemizor(Morphmemizor):
+    '''
+    Because in japanese there are no spaces to differentiate between morphemes,
+    a extra tool called 'mecab' has to be used.
+    '''
+    @memoize
+    def getMorphemes(e): # Str -> IO [Morpheme]
+        ms = [ tuple( m.split('\t') ) for m in interact( e ).split('\r') ] # morphemes
+        ms = [ Morpheme( *m ) for m in ms if len( m ) == MECAB_NODE_LENGTH ] # filter garbage
+        ms = [ fixReading( m ) for m in ms ]
+        return ms
+
+class SpacesMorphemizor(Morphmemizor):
+    '''
+    Morphemizor for languages that use spaces (English, German, Spanish, ...). Because it is
+    a general-use-morphemizor, it can't generate the base from from inflection.
+    '''
+    @memoize
+    def getMorphemes(e): # Str -> [Morpheme]
+        wordList = re.sub("[^\w-]", " ",  e).split()
+        return [Morpheme(word, word, 'UNKNOWN', 'UNKNOWN', word) for word in wordList]
+
+
 
 ################################################################################
 ## Morpheme db manipulation
