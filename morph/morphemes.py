@@ -225,10 +225,10 @@ class MorphDb:
         return a
 
     @staticmethod
-    def mkFromFile( path, maturity=0 ): # FilePath -> Maturity? -> IO Db
+    def mkFromFile( path, morphemizer, maturity=0 ): # FilePath -> Maturity? -> IO Db
         '''Returns None and shows error dialog if failed'''
         d = MorphDb()
-        try:    d.importFile( path, maturity=maturity )
+        try:    d.importFile( path, morphemizer, maturity=maturity )
         except (UnicodeDecodeError, IOError), e:
             return errorMsg( 'Unable to import file. Please verify it is a UTF-8 text file and you have permissions.\nFull error:\n%s' % e )
         return d
@@ -314,13 +314,13 @@ class MorphDb:
                 new += len( locs )
         return new
 
-    def importFile( self, path, ws=None, bs=[u'記号'], maturity=0 ): # FilePath -> PosWhitelist? -> PosBlacklist? -> Maturity? -> IO ()
+    def importFile( self, path, morphemizer, ws=None, bs=[u'記号'], maturity=0 ): # FilePath -> PosWhitelist? -> PosBlacklist? -> Maturity? -> IO ()
         f = codecs.open( path, 'r', 'utf-8' )
         inp = f.readlines()
         f.close()
 
         for i,line in enumerate(inp):
-            ms = getMorphemes( line.strip(), ws, bs )
+            ms = getMorphemes2( morphemizer, line.strip(), ws, bs )
             self.addMLs( ( m, TextFile( path, i+1, maturity ) ) for m in ms )
 
     # Analysis

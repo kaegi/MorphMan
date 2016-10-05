@@ -94,11 +94,20 @@ class MorphMan( QDialog ):
         self.unionBtn = mkBtn( 'Union', lambda x='union': self.onDiff(x), self, vbox )
 
         # Creation
+        ## language class/morphemizer
         self.db = None
+        self.morphemizerComboBox = QComboBox()
+        for morphemizer in getAllMorphemizers():
+            self.morphemizerComboBox.addItem(morphemizer.getDescription())
+
+        vbox.addSpacing(40)
+        vbox.addWidget(self.morphemizerComboBox)
         self.extractTxtFileBtn = mkBtn( 'Extract morphemes from file', self.onExtractTxtFile, self, vbox )
         self.saveResultsBtn = mkBtn( 'Save results to db', self.onSaveResults, self, vbox )
 
+
         # Display
+        vbox.addSpacing(40)
         self.col4Mode = QRadioButton( 'Results as 4col morpheme' )
         self.col4Mode.setChecked( True )
         self.col1Mode = QRadioButton( 'Results as 1col morpheme' )
@@ -171,7 +180,7 @@ class MorphMan( QDialog ):
         destPath = QFileDialog.getSaveFileName( caption='Save morpheme db to?', directory=dbsPath + os.sep + 'textFile.db' )
         if not destPath: return
         mat = cfg1('text file import maturity')
-        db = MorphDb.mkFromFile( str(srcPath), mat )
+        db = MorphDb.mkFromFile( str(srcPath), getAllMorphemizers()[self.morphemizerComboBox.currentIndex()], mat )
         if db:
             db.save( str(destPath) )
             infoMsg( 'Extracted successfully' )
