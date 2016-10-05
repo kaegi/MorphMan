@@ -94,7 +94,7 @@ class MorphMan( QDialog ):
         self.col4Mode = QRadioButton( 'Results as 4col morpheme' )
         self.col4Mode.setChecked( True )
         self.col1Mode = QRadioButton( 'Results as 1col morpheme' )
-        self.blacklist = QLineEdit( u'記号,助詞,UNKNOWN' )
+        self.blacklist = QLineEdit( u'' )
         self.whitelist = QLineEdit( u'' )
         vbox.addWidget( self.col4Mode )
         vbox.addWidget( self.col1Mode )

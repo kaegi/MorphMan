@@ -118,37 +118,58 @@ def getMorphemes(e, ws=None, bs=None): # Str -> IO [Morpheme]
     ms = [ fixReading( m ) for m in ms ]
     return ms
 
-class Morphmemizor:
-    '''
-    The heart of this plugin: convert an expression to a list of its morphemes.
-    '''
-    @memoize
-    def getMorphemes(e): # Str -> [Morpeme]
+def getMorphemes2(morphemizor, expression, whitelist = None, blacklist = None):
+    ms = morphemizor.getMorphemes(expression)
+    if whitelist: ms = [ m for m in ms if m.pos in whitelist ]
+    if blacklist: ms = [ m for m in ms if m.pos not in blacklist ]
+    return ms
+
+def getMorphemizorForNote(note):
+    return MecabMorphemizor()
+
+class Morphemizor:
+    def getMorphemes(self, expression): # Str -> [Morpeme]
+        '''
+        The heart of this plugin: convert an expression to a list of its morphemes.
+        '''
         return []
 
+    def getDescription(self):
+        '''
+        Returns a signle line, for which languages this Morphemizor is.
+        '''
+        return 'No information availiable'
 
-class MecabMorphemizor(Morphmemizor):
+@memoize
+def getMorphemesMecab(e):
+    ms = [ tuple( m.split('\t') ) for m in interact( e ).split('\r') ] # morphemes
+    ms = [ Morpheme( *m ) for m in ms if len( m ) == MECAB_NODE_LENGTH ] # filter garbage
+    ms = [ fixReading( m ) for m in ms ]
+    return ms
+
+class MecabMorphemizor(Morphemizor):
     '''
     Because in japanese there are no spaces to differentiate between morphemes,
     a extra tool called 'mecab' has to be used.
     '''
-    @memoize
-    def getMorphemes(e): # Str -> IO [Morpheme]
-        ms = [ tuple( m.split('\t') ) for m in interact( e ).split('\r') ] # morphemes
-        ms = [ Morpheme( *m ) for m in ms if len( m ) == MECAB_NODE_LENGTH ] # filter garbage
-        ms = [ fixReading( m ) for m in ms ]
-        return ms
+    def getMorphemes(self, e): # Str -> IO [Morpheme]
+        return getMorphemesMecab(e)
 
-class SpacesMorphemizor(Morphmemizor):
+    def getDescription(self):
+        return 'Japanese language'
+
+
+class SpaceMorphemizor(Morphemizor):
     '''
     Morphemizor for languages that use spaces (English, German, Spanish, ...). Because it is
-    a general-use-morphemizor, it can't generate the base from from inflection.
+    a general-use-morphemizor, it can't generate the base form from inflection.
     '''
-    @memoize
-    def getMorphemes(e): # Str -> [Morpheme]
+    def getMorphemes(self, e): # Str -> [Morpheme]
         wordList = re.sub("[^\w-]", " ",  e).split()
         return [Morpheme(word, word, 'UNKNOWN', 'UNKNOWN', word) for word in wordList]
 
+    def getDescription(self):
+        return 'Languages with spaces (English, German, Spansh, ...)'
 
 
 ################################################################################
