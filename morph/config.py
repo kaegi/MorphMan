@@ -56,6 +56,7 @@ default = {
 
         # controls for morpheme analysis (only for japanese/mecab morphemizer)
     'mecab_blacklist': [ u'記号', u'UNKNOWN'],      # you probably don't care about punctuation and things mecab couldn't parse
+    'japanese_tag': 'japanese',              # if a note has this tag, morphemes are be split with mecab, otherwise a space-based morphemizer is used
 
         # try playing fields in this order when using batch media player
     'batch media fields': [ u'Video', u'Sound' ],

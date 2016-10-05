@@ -118,7 +118,8 @@ def getMorphemizerForNote(note):
     return getMorphemizerForTags(note.stringTags().split())
 
 def getMorphemizerForTags(tags): # [Str] -> Morphemizer
-    return MecabMorphemizer()
+    if cfg1('japanese_tag') in tags: return MecabMorphemizer()
+    else: return SpaceMorphemizer()
 
 def getAllMorphemizers(): # -> [Morphemizer]
     return [SpaceMorphemizer(), MecabMorphemizer()]
