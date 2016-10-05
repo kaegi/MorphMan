@@ -1,7 +1,6 @@
 ﻿import codecs
-from morphemes import MorphDb, getMorphemes
+from morphemes import getMorphemes2, MorphDb
 from util import cfg1
-from morphemes import getMorphemes2
 
 # utils
 def getNotInDb( ms, db ):
