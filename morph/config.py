@@ -37,11 +37,11 @@ default = {
         # field names to store various information
     'k+N':u'k+N',       # stores how many unknowns
     'm+N':u'm+N',       # stores how many unmatures
-    'morphManIndex':u'morphManIndex',   # created an ordering to learn cards in. this is the value new card 'due' times are set to
-    'focusMorph':u'focusMorph',         # holds the unknown for k+0 sentences but goes away once m+0
-    'unknowns':u'unknowns',             # comma seperated list of morphemes that are unknown
-    'unmatures':u'unmatures',               # likewise for unmatures
-    'unknownFreq':u'unknownFreq',       # average of how many times the unknowns appear in your collection
+    'focusMorph':u'MorphMan_FocusMorph',         # holds the unknown for k+0 sentences but goes away once m+0
+    'morphManIndex':u'MorphMan_Index',   # created an ordering to learn cards in. this is the value new card 'due' times are set to
+    'unmatures':u'MorphMan_Unmatures',               # likewise for unmatures
+    'unknowns':u'MorphMan_Unknowns',             # comma seperated list of morphemes that are unknown
+    'unknownFreq':u'MorphMan_UnknownFreq',       # average of how many times the unknowns appear in your collection
         # analyze notes based on the morphemes in these fields
     'morph_fields': [u'ExpressionSeries'],
         # tag names for marking the state of notes
