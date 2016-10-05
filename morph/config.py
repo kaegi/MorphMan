@@ -76,15 +76,16 @@ profile_overrides = {
 
 # Model overrides can only override the entries marked above. 2nd priority
 model_overrides = {
-    'subs2srs':     { 'enabled':True },
-    'vn2srs':       { 'enabled':True },
-    'JtMW':         { 'enabled':True, 'set due based on mmi': False, 'ignore maturity': True },
-    'JSPfEC':       { 'enabled':True, 'set due based on mmi': False },
-    'Tae Kim Cloze':{ 'enabled':True, 'set due based on mmi': False },
-    'Yotsubato':    { 'enabled':True, 'set due based on mmi': True },
-    'Rikaisama':    { 'enabled':True, 'set due based on mmi': False },
-    #'Kore': { 'enabled':True, 'set due based on mmi': False, 'morph_fields':[u'SentenceExpression'] },
-    'Kore':         { 'enabled':True, 'set due based on mmi': False },
+    'subs2srs':         { 'enabled':True },
+    'SubtitleMemorize': { 'enabled':True },
+    'vn2srs':           { 'enabled':True },
+    'JtMW':             { 'enabled':True, 'set due based on mmi': False, 'ignore maturity': True },
+    'JSPfEC':           { 'enabled':True, 'set due based on mmi': False },
+    'Tae Kim Cloze':    { 'enabled':True, 'set due based on mmi': False },
+    'Yotsubato':        { 'enabled':True, 'set due based on mmi': True },
+    'Rikaisama':        { 'enabled':True, 'set due based on mmi': False },
+   #'Kore':             { 'enabled':True, 'set due based on mmi': False, 'morph_fields':[u'SentenceExpression'] },
+    'Kore':             { 'enabled':True, 'set due based on mmi': False },
 }
 
 # Deck overrides can only override 'new card merged fill' options. 1st priority
