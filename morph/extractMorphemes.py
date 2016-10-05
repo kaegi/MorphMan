@@ -13,7 +13,7 @@ def pre( b ):
 def per( st, n ):
     mats = mw.col.db.list( 'select ivl from cards where nid = :nid', nid=n.id )
     for f in cfg( n.mid, None, 'morph_fields' ):
-        ms = getMorphemes(getMorphemizerForNote(n), n[ f ], None, cfg1('mecab_blacklist') )
+        ms = getMorphemes(getMorphemizerForNote(n), n[ f ])
         loc = AnkiDeck( n.id, f, n[ f ], n.guid, mats )
         st['morphDb'].addMsL( ms, loc )
     return st

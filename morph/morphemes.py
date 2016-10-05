@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import codecs, cPickle as pickle, gzip, os, subprocess, re
+from util import cfg1
 
 # need some fallbacks if not running from anki and thus morph.util isn't available
 try:
@@ -109,10 +110,8 @@ def fixReading( m ): # Morpheme -> IO Morpheme
             m.read = n[ MECAB_NODE_READING_INDEX ].strip()
     return m
 
-def getMorphemes(morphemizer, expression, whitelist = None, blacklist = None):
+def getMorphemes(morphemizer, expression):
     ms = morphemizer.getMorphemesFromExpr(expression)
-    if whitelist: ms = [ m for m in ms if m.pos in whitelist ]
-    if blacklist: ms = [ m for m in ms if m.pos not in blacklist ]
     return ms
 
 def getMorphemizerForNote(note):
@@ -141,6 +140,9 @@ class Morphemizer:
 def getMorphemesMecab(e):
     ms = [ tuple( m.split('\t') ) for m in interact( e ).split('\r') ] # morphemes
     ms = [ Morpheme( *m ) for m in ms if len( m ) == MECAB_NODE_LENGTH ] # filter garbage
+    #if whitelist: ms = [ m for m in ms if m.pos in whitelist ]
+    blacklist = cfg1('mecab_blacklist')
+    if blacklist: ms = [ m for m in ms if m.pos not in blacklist ]
     ms = [ fixReading( m ) for m in ms ]
     return ms
 
@@ -305,13 +307,13 @@ class MorphDb:
                 new += len( locs )
         return new
 
-    def importFile( self, path, morphemizer, ws=None, bs=[u'記号'], maturity=0 ): # FilePath -> PosWhitelist? -> PosBlacklist? -> Maturity? -> IO ()
+    def importFile( self, path, morphemizer, maturity=0 ): # FilePath -> Morphemizer -> Maturity? -> IO ()
         f = codecs.open( path, 'r', 'utf-8' )
         inp = f.readlines()
         f.close()
 
         for i,line in enumerate(inp):
-            ms = getMorphemes( morphemizer, line.strip(), ws, bs )
+            ms = getMorphemes( morphemizer, line.strip())
             self.addMLs( ( m, TextFile( path, i+1, maturity ) ) for m in ms )
 
     # Analysis

@@ -11,7 +11,7 @@ def per( st, n ):
     return st
 
 def post( st ):
-    ms = getMorphemes(st['morphemizer'], st['txt'], None, cfg1('mecab_blacklist') )
+    ms = getMorphemes(st['morphemizer'], st['txt'])
     s = ms2str( ms )
     infoMsg( '----- All -----\n' + s )
 

@@ -21,7 +21,7 @@ def getPreText( line ):
     ps = line_.split(',', 10)
     return line[:10] + u','.join( ps[:9] ) + u','
 
-def run( duelingSubsPath, outputSubsPath, morphemizer, whitelist, blacklist, matureFmt, knownFmt, unknownFmt ):
+def run( duelingSubsPath, outputSubsPath, morphemizer, matureFmt, knownFmt, unknownFmt ):
     # Load files
     kdb = MorphDb( cfg1('path_known') )
     mdb = MorphDb( cfg1('path_mature') )
@@ -38,7 +38,7 @@ def run( duelingSubsPath, outputSubsPath, morphemizer, whitelist, blacklist, mat
         target, native, pre = getText( target ), getText( native ), getPreText( target )
 
         # get unknowns
-        ms = getMorphemes(morphemizer, target, whitelist, blacklist )
+        ms = getMorphemes(morphemizer, target)
         unknowns, N_k = getNotInDb( ms, kdb.db )
         unmatures, N_m = getNotInDb( ms, mdb.db )
         d = { 'target':target, 'native':native, 'N_k':N_k, 'N_m':N_m, 'unknowns':unknowns, 'unmatures':unmatures }

@@ -25,8 +25,6 @@ class AdaptiveSubWin( QDialog ):
         self.grid = grid = QGridLayout( self )
         self.vbox = vbox = QVBoxLayout()
 
-        self.blacklist  = QLineEdit( u'記号,UNKNOWN' )
-        self.whitelist  = QLineEdit( u'' )
         self.matureFmt  = QLineEdit( u'%(jpn)s' )
         self.knownFmt   = QLineEdit( u'%(jpn)s [%(eng)s]' )
         self.unknownFmt = QLineEdit( u'%(eng)s [%(N_k)s] [%(unknowns)s]' )
@@ -35,10 +33,6 @@ class AdaptiveSubWin( QDialog ):
         for morphemizer in getAllMorphemizers():
             self.morphemizer.addItem(morphemizer.getDescription())
 
-        self.vbox.addWidget( QLabel( 'POS Blacklist' ) )
-        self.vbox.addWidget( self.blacklist )
-        self.vbox.addWidget( QLabel( 'POS Whitelist' ) )
-        self.vbox.addWidget( self.whitelist )
         self.vbox.addWidget( QLabel( 'Mature Format' ) )
         self.vbox.addWidget( self.matureFmt )
         self.vbox.addWidget( QLabel( 'Known Format' ) )
@@ -53,8 +47,6 @@ class AdaptiveSubWin( QDialog ):
         grid.addLayout( vbox, 0, 0 )
 
     def onGo( self ):
-        ws = parseWhitelist( self.whitelist.text() )
-        bs = parseWhitelist( self.blacklist.text() )
         mFmt = unicode( self.matureFmt.text() )
         kFmt = unicode( self.knownFmt.text() )
         uFmt = unicode( self.unknownFmt.text() )
@@ -65,7 +57,7 @@ class AdaptiveSubWin( QDialog ):
         outFile = QFileDialog.getSaveFileName( caption='Save adaptive subs to', directory=dbsPath )
         if not outFile: return
 
-        adaptiveSubs.run( inFile, outFile, morphemizer, ws, bs, mFmt, kFmt, uFmt )
+        adaptiveSubs.run( inFile, outFile, morphemizer, mFmt, kFmt, uFmt )
         infoMsg( 'Completed successfully' )
 
 class MorphMan( QDialog ):
@@ -111,14 +103,8 @@ class MorphMan( QDialog ):
         self.col4Mode = QRadioButton( 'Results as 4col morpheme' )
         self.col4Mode.setChecked( True )
         self.col1Mode = QRadioButton( 'Results as 1col morpheme' )
-        self.blacklist = QLineEdit( u'' )
-        self.whitelist = QLineEdit( u'' )
         vbox.addWidget( self.col4Mode )
         vbox.addWidget( self.col1Mode )
-        vbox.addWidget( QLabel( 'POS Blacklist' ) )
-        vbox.addWidget( self.blacklist )
-        vbox.addWidget( QLabel( 'POS Whitelist' ) )
-        vbox.addWidget( self.whitelist )
         self.morphDisplay = QTextEdit()
         self.analysisDisplay = QTextEdit()
 
@@ -193,13 +179,6 @@ class MorphMan( QDialog ):
         infoMsg( 'Saved successfully' )
 
     def updateDisplay( self ):
-        bs = self.blacklist.text().split(',')
-        ws = self.whitelist.text().split(',') if self.whitelist.text() else []
-        for m in self.db.db.keys():
-            if m.pos in bs:
-                self.db.db.pop( m )
-            elif ws and m.pos not in ws:
-                self.db.db.pop( m )
         if self.col4Mode.isChecked():
             self.morphDisplay.setText( self.db.showMs() )
         else:
