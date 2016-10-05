@@ -130,6 +130,8 @@ def getMorphemizerForNote(note):
 def getMorphemizerForTags(tags): # [Str] -> Morphemizer
     return MecabMorphemizer()
 
+def getAllMorphemizers(): # -> [Morphemizer]
+    return [SpaceMorphemizer(), MecabMorphemizer()]
 
 class Morphemizer:
     def getMorphemes(self, expression): # Str -> [Morpeme]
@@ -160,7 +162,7 @@ class MecabMorphemizer(Morphemizer):
         return getMorphemesMecab(e)
 
     def getDescription(self):
-        return 'Japanese language'
+        return 'Japanese'
 
 
 class SpaceMorphemizer(Morphemizer):

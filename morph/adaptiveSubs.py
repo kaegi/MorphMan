@@ -1,6 +1,7 @@
 ﻿import codecs
 from morphemes import MorphDb, getMorphemes
 from util import cfg1
+from morphemes import getMorphemes2
 
 # utils
 def getNotInDb( ms, db ):
@@ -21,7 +22,7 @@ def getPreText( line ):
     ps = line_.split(',', 10)
     return line[:10] + u','.join( ps[:9] ) + u','
 
-def run( duelingSubsPath, outputSubsPath, whitelist, blacklist, matureFmt, knownFmt, unknownFmt ):
+def run( duelingSubsPath, outputSubsPath, morphemizer, whitelist, blacklist, matureFmt, knownFmt, unknownFmt ):
     # Load files
     kdb = MorphDb( cfg1('path_known') )
     mdb = MorphDb( cfg1('path_mature') )
@@ -34,14 +35,14 @@ def run( duelingSubsPath, outputSubsPath, whitelist, blacklist, matureFmt, known
 
     lines = []
     for i in xrange( 0, len( dialogueLines ), 2 ):
-        jpn, eng = dialogueLines[i:i+2]
-        jpn, eng, pre = getText( jpn ), getText( eng ), getPreText( jpn )
+        target, native = dialogueLines[i:i+2]
+        target, native, pre = getText( target ), getText( native ), getPreText( target )
 
         # get unknowns
-        ms = getMorphemes( jpn, whitelist, blacklist )
+        ms = getMorphemes2(morphemizer, target, whitelist, blacklist )
         unknowns, N_k = getNotInDb( ms, kdb.db )
         unmatures, N_m = getNotInDb( ms, mdb.db )
-        d = { 'jpn':jpn, 'eng':eng, 'N_k':N_k, 'N_m':N_m, 'unknowns':unknowns, 'unmatures':unmatures }
+        d = { 'target':target, 'native':native, 'N_k':N_k, 'N_m':N_m, 'unknowns':unknowns, 'unmatures':unmatures }
 
         if N_m == 0:
             lines.append( pre + matureFmt % d )

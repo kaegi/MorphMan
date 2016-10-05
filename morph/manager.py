@@ -6,6 +6,7 @@ import os
 import adaptiveSubs
 from morphemes import MorphDb
 from util import dbsPath, errorMsg, infoMsg, mw, parseWhitelist, cfg1
+from morphemes import getAllMorphemizers
 
 def getPath( le ): # LineEdit -> GUI ()
     path = QFileDialog.getOpenFileName( caption='Open db', directory=dbsPath )
@@ -29,6 +30,10 @@ class AdaptiveSubWin( QDialog ):
         self.matureFmt  = QLineEdit( u'%(jpn)s' )
         self.knownFmt   = QLineEdit( u'%(jpn)s [%(eng)s]' )
         self.unknownFmt = QLineEdit( u'%(eng)s [%(N_k)s] [%(unknowns)s]' )
+        self.morphemizer = QComboBox()
+
+        for morphemizer in getAllMorphemizers():
+            self.morphemizer.addItem(morphemizer.getDescription())
 
         self.vbox.addWidget( QLabel( 'POS Blacklist' ) )
         self.vbox.addWidget( self.blacklist )
@@ -40,6 +45,8 @@ class AdaptiveSubWin( QDialog ):
         self.vbox.addWidget( self.knownFmt )
         self.vbox.addWidget( QLabel( 'Unknown Format' ) )
         self.vbox.addWidget( self.unknownFmt )
+        self.vbox.addWidget( QLabel( 'Morpheme Engine (Morphemizer)' ) )
+        self.vbox.addWidget( self.morphemizer )
 
         self.goBtn = mkBtn( 'Convert subs', self.onGo, self, vbox )
 
@@ -51,13 +58,14 @@ class AdaptiveSubWin( QDialog ):
         mFmt = unicode( self.matureFmt.text() )
         kFmt = unicode( self.knownFmt.text() )
         uFmt = unicode( self.unknownFmt.text() )
+        morphemizer = getAllMorphemizers()[self.morphemizer.currentIndex()]
 
         inFile = QFileDialog.getOpenFileName( caption='Dueling subs to process', directory=dbsPath )
         if not inFile: return
         outFile = QFileDialog.getSaveFileName( caption='Save adaptive subs to', directory=dbsPath )
         if not outFile: return
 
-        adaptiveSubs.run( inFile, outFile, ws, bs, mFmt, kFmt, uFmt )
+        adaptiveSubs.run( inFile, outFile, morphemizer, ws, bs, mFmt, kFmt, uFmt )
         infoMsg( 'Completed successfully' )
 
 class MorphMan( QDialog ):
