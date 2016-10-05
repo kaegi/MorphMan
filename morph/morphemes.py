@@ -118,16 +118,20 @@ def getMorphemes(e, ws=None, bs=None): # Str -> IO [Morpheme]
     ms = [ fixReading( m ) for m in ms ]
     return ms
 
-def getMorphemes2(morphemizor, expression, whitelist = None, blacklist = None):
-    ms = morphemizor.getMorphemes(expression)
+def getMorphemes2(morphemizer, expression, whitelist = None, blacklist = None):
+    ms = morphemizer.getMorphemes(expression)
     if whitelist: ms = [ m for m in ms if m.pos in whitelist ]
     if blacklist: ms = [ m for m in ms if m.pos not in blacklist ]
     return ms
 
-def getMorphemizorForNote(note):
-    return MecabMorphemizor()
+def getMorphemizerForNote(note):
+    return getMorphemizerForTags(note.stringTags().split())
 
-class Morphemizor:
+def getMorphemizerForTags(tags): # [Str] -> Morphemizer
+    return MecabMorphemizer()
+
+
+class Morphemizer:
     def getMorphemes(self, expression): # Str -> [Morpeme]
         '''
         The heart of this plugin: convert an expression to a list of its morphemes.
@@ -136,7 +140,7 @@ class Morphemizor:
 
     def getDescription(self):
         '''
-        Returns a signle line, for which languages this Morphemizor is.
+        Returns a signle line, for which languages this Morphemizer is.
         '''
         return 'No information availiable'
 
@@ -147,7 +151,7 @@ def getMorphemesMecab(e):
     ms = [ fixReading( m ) for m in ms ]
     return ms
 
-class MecabMorphemizor(Morphemizor):
+class MecabMorphemizer(Morphemizer):
     '''
     Because in japanese there are no spaces to differentiate between morphemes,
     a extra tool called 'mecab' has to be used.
@@ -159,10 +163,10 @@ class MecabMorphemizor(Morphemizor):
         return 'Japanese language'
 
 
-class SpaceMorphemizor(Morphemizor):
+class SpaceMorphemizer(Morphemizer):
     '''
-    Morphemizor for languages that use spaces (English, German, Spanish, ...). Because it is
-    a general-use-morphemizor, it can't generate the base form from inflection.
+    Morphemizer for languages that use spaces (English, German, Spanish, ...). Because it is
+    a general-use-morphemizer, it can't generate the base form from inflection.
     '''
     def getMorphemes(self, e): # Str -> [Morpheme]
         wordList = re.sub("[^\w-]", " ",  e).split()
