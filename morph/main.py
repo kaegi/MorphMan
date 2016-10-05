@@ -168,7 +168,7 @@ def updateNotes( allDb ):
                 loc = fidDb[ ( nid, guid, fieldName ) ]
                 morphemes.update( locDb[ loc ] )
             except KeyError: continue
-        morphemes = [ morpheme for morpheme in morphemes if morpheme.pos not in C('morph_blacklist') ]
+        morphemes = [ morpheme for morpheme in morphemes if morpheme.pos not in C('mecab_blacklist') ]
 
         # Determine un-seen/known/mature and i+N
         unseens, unknowns, unmatures, newKnowns = set(), set(), set(), set()

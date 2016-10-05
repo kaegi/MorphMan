@@ -53,8 +53,10 @@ default = {
     'tag_priority':u'priority',             # set if note contains an unknown that exists in priority.db
     'tag_badLength':u'badLength',           # set if sentence isn't within optimal sentence length range
     'tag_tooLong':u'tooLong',               # set if sentence is above optimal sentence length
-        # controls for morpheme analysis
-    'morph_blacklist': [ u'記号', u'UNKNOWN'],      # you probably don't care about punctuation and things mecab couldn't parse
+
+        # controls for morpheme analysis (only for japanese/mecab morphemizer)
+    'mecab_blacklist': [ u'記号', u'UNKNOWN'],      # you probably don't care about punctuation and things mecab couldn't parse
+
         # try playing fields in this order when using batch media player
     'batch media fields': [ u'Video', u'Sound' ],
         # configure morph man index algorithm
