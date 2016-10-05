@@ -2,10 +2,14 @@
 import time
 
 from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksum
-from morphemes import MorphDb, AnkiDeck, getMorphemes
+from morphemes import MorphDb, AnkiDeck, getMorphemes2, getMorphemizerForNote
 import stats
 from util import printf, mw, memoize, cfg, cfg1, partial, errorMsg, infoMsg
 import util
+
+# only for jedi-auto-completion
+import aqt.main
+assert isinstance(mw, aqt.main.AnkiQt)
 
 @memoize
 def getFieldIndex( fieldName, mid ):
@@ -59,6 +63,9 @@ def mkAllDb( allDb=None ):
         C = partial( cfg, mid, None )
         if not C('enabled'): continue
 
+        note = mw.col.getNote(nid)
+        morphemizer = getMorphemizerForNote(note)
+
         N_enabled_notes += 1
 
         mats = [ ( 0.5 if ivl == 0 and ctype == 1 else ivl ) for ivl, ctype in db.execute( 'select ivl, type from cards where nid = :nid', nid=nid ) ]
@@ -81,7 +88,7 @@ def mkAllDb( allDb=None ):
             loc = fidDb.get( ( nid, guid, fieldName ), None )
             if not loc:
                 loc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
-                ms = getMorphemes( fieldValue )
+                ms = getMorphemes2(morphemizer, fieldValue )
                 if ms: #TODO: this needed? should we change below too then?
                     #printf( '    .loc for %d[%s]' % ( nid, fieldName ) )
                     locDb[ loc ] = ms
@@ -95,7 +102,7 @@ def mkAllDb( allDb=None ):
                 elif loc.fieldValue != fieldValue:
                     printf( '    .morphs for %d[%s]' % ( nid, fieldName ) )
                     newLoc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
-                    ms = getMorphemes( fieldValue )
+                    ms = getMorphemes2(morphemizer, fieldValue )
                     locDb.pop( loc )
                     locDb[ newLoc ] = ms
 
