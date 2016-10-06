@@ -87,7 +87,8 @@ def my_getNewCard( self, _old ):
         try: goodVocab = n[ cfg( n.mid, None, 'k+N' ) ] == '1'
         except KeyError: goodVocab = fm
 
-        if not goodVocab or fm in seenMorphs or n.hasTag( CN( n, 'tag_alreadyKnown' ) ):
+        # even if it is not a good vocabulary card, we have no choice when there are no other cards available
+        if (not goodVocab and not n.hasTag(CN(n, 'tag_notReady'))) or n.hasTag( CN( n, 'tag_alreadyKnown' ) ) or fm in seenMorphs:
             self.buryCards( [ c.id ] )
             self.newCount += 1 # the card was quaried from the "new queue" so we have to increase the "new counter" back to its original value
             continue

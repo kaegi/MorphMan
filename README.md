@@ -7,17 +7,17 @@ __greatly__ optimizes your learning queue as you only get sentences with exactly
 Cards generated with [SubtitleMemorize](https://github.com/ChangSpivey/SubtitleMemorize) will work out-of-the-box. No extra configuration needed.
 
 Anki shortcuts (these are important for effective studying):
-- `Ctrl-M`: regenerate morpheme database from your Anki cards and set due date for new cards; **you will have to do that after you import your language cards**
-- `K` when seeing a _new_ card: mark morphemes in currently shown card as _known_ and skip to the next card
+- `Ctrl-M`: regenerate morpheme database from your Anki cards and set due date for new cards. **You will have to do that after you import your language cards**. It is also advised to recalculate after reviewing your daily cards.
+- `K` when seeing a _new_ card: mark morphemes in currently shown card as _known_ and skip to the next card. You will have to recalculate afterwards to let the change affect the order of the following new cards.
 - `L` when seeing a _new_ or _reviewing_ a card: show cards that have the same focus morph (morpheme that you don't know well)
 
-MorphMan requires at least on card that has exactly one unknown morpheme. In case there are only ones with no unknown or more than one unknown morphemes it will skip all new cards, so you will get no new cards. You can then either select cards you want to learn manually or create new ones.
+For best studying results you should always have a card with exactly one unknown word. If you get new cards with two unknown words, you should generate new ones.
 
 See [MorphMan wiki](http://rtkwiki.koohii.com/wiki/Morph_Man) much more information.
 
 # Installation
 
-To install MorphMan download the .zip archive from the [here](https://github.com/ChangSpivey/MorphMan/releases)
+To install MorphMan download the latest .zip archive from the [here](https://github.com/ChangSpivey/MorphMan/releases)
 and extract all files except *README.md* and *LICENSE* to your *Documents/Anki/addons* folder.
 
 This plugin works for following languages:
