@@ -43,7 +43,7 @@ default = {
     'unknowns':u'MorphMan_Unknowns',             # comma seperated list of morphemes that are unknown
     'unknownFreq':u'MorphMan_UnknownFreq',       # average of how many times the unknowns appear in your collection
         # analyze notes based on the morphemes in these fields
-    'morph_fields': [u'ExpressionSeries'],
+    'morph_fields': [u'Expression'],
         # tag names for marking the state of notes
             # the following three are mutually exclusive and erase eachother upon promotion/demotion
     'tag_comprehension':u'comprehension',   # set once all morphs for note are mature
