@@ -108,7 +108,7 @@ def mkAllDb( allDb=None ):
 
     if N_enabled_notes == 0:
         mw.progress.finish()
-        errorMsg(u'There is no note that can be processed. Please check your configuration in "Anki/addons/morph/config.py".')
+        errorMsg(u'There is no card that can be analyzed or be moved. Add cards or check your configuration in "Anki/addons/morph/config.py" for mistakes.')
         return None
 
     printf( 'Processed all %d notes in %f sec' % ( N_notes, time.time() - t_0 ) )
