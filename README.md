@@ -22,7 +22,7 @@ and extract all files except *README.md* and *LICENSE* to your *Documents/Anki/a
 
 This plugin works for following languages:
 -   Every language that uses spaces to seperate its words (English, Russian, Spanish, etc.).
--   Japanese. In this case you need will additionally need to install the *[Japanese Support](https://ankiweb.net/shared/info/3918629684)* plugin in Anki.
+-   Japanese. In this case you will additionally need to install the *[Japanese Support](https://ankiweb.net/shared/info/3918629684)* plugin in Anki.
 -   More languages can be easily added if that is requested and morpheme-splitting-tools are available for it.
 
 ### Japanese cards on a 64-bit-only Linux distribution
