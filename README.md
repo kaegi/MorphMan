@@ -1,5 +1,5 @@
 # MorphMan
-MorphMan is an Anki plugin that reorders Japanese cards based on the words you known. This
+MorphMan is an Anki plugin that reorders language cards based on the words you known. This
 __greatly__ optimizes your learning queue as you only get sentences with exactly one unknown word (see
 [I+1 principle](http://rtkwiki.koohii.com/wiki/I%2B1) for a more detailed explanation).
 
