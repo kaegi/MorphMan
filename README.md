@@ -14,7 +14,7 @@ Anki shortcuts (these are important for effective studying):
 
 For best studying results you should always have a card with exactly one unknown word. Seeing new cards with two unknown words really is a sign that you should generate new ones.
 
-See [MorphMan wiki](http://rtkwiki.koohii.com/wiki/Morph_Man) much more information.
+See [MorphMan wiki](http://rtkwiki.koohii.com/wiki/Morph_Man) for much more information.
 
 # Installation
 
@@ -25,7 +25,7 @@ and extract all files to your _Documents/Anki/addons_. Your folder structure sho
 -   _Documents/Anki/addons/morph/*.py_
 
 This plugin works for following languages:
--   Every language that uses spaces to seperate its words (English, Russian, Spanish, etc.).
+-   Every language that uses spaces to separate its words (English, Russian, Spanish, etc.).
 -   Japanese. In this case you will additionally need to install the _[Japanese Support](https://ankiweb.net/shared/info/3918629684)_ plugin in Anki.
 -   More languages can be easily added if that is requested and morpheme-splitting-tools are available for it.
 
@@ -37,5 +37,5 @@ The Japanese Support plugin does not work on 64-bit-only Linux distributions. Yo
 Installation...
 
 -   ...on Arch Linux: [`mecab-ipadic`](https://aur.archlinux.org/packages/mecab-ipadic/) from AUR
--   ...on Ubuntu (unnecessary for current versions): see [here](https://gist.github.com/YoshihitoAso/9048005) (untested)
+-   ...on Ubuntu (probably unnecessary for current versions): see [here](https://gist.github.com/YoshihitoAso/9048005) (untested)
 -   ...from source (if your japanese is good): [`mecab source`](https://taku910.github.io/mecab/).
