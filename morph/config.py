@@ -43,7 +43,7 @@ default = {
     'unmatures':u'unmatures',               # likewise for unmatures
     'unknownFreq':u'unknownFreq',       # average of how many times the unknowns appear in your collection
         # analyze notes based on the morphemes in these fields
-    'morph_fields': [u'Expression'],
+    'morph_fields': [u'ExpressionSeries'],
         # tag names for marking the state of notes
             # the following three are mutually exclusive and erase eachother upon promotion/demotion
     'tag_comprehension':u'comprehension',   # set once all morphs for note are mature

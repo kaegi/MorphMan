@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import time
 
 from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksum
@@ -5,6 +6,7 @@ from morphemes import MorphDb, AnkiDeck, getMorphemes
 import stats
 from util import printf, mw, memoize, cfg, cfg1, partial, errorMsg, infoMsg
 import util
+
 
 @memoize
 def getFieldIndex( fieldName, mid ):

@@ -53,6 +53,7 @@ def runMecabCmd( args ): # [Str] -> IO MecabProc
     except ImportError:
         si = None
         cmd = ['mecab']
+    cmd = ['mecab']
     s = subprocess.Popen( cmd + args, bufsize=-1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, startupinfo=si )
     return s
 
