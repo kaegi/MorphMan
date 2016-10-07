@@ -1,2 +1,0 @@
-#!/bin/sh
-wget --load-cookies=koohii.cookies --save-cookies=koohii.cookies --keep-session-cookies http://kanji.koohii.com/study/export -O my_stories.csv

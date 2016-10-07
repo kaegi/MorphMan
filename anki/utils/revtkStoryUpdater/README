@@ -1,9 +1,0 @@
-1) Modify the first few lines of revtkStoryUpdater.py to fit your deck
-
-2) Run this initially and whenever your authentication expires:
-
-./getCookies user pass
-
-3) Then run this whenever you want to update your stories:
-
-./update

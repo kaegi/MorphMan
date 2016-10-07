@@ -1,2 +1,0 @@
-#!/bin/sh
-wget --post-data="username=${1}&password=${2}&referer=@homepage&rememberme=1" --save-cookies=koohii.cookies --keep-session-cookies http://kanji.koohii.com/login -O /dev/null
