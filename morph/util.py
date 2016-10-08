@@ -35,7 +35,20 @@ def initCfg():
     # Redraw toolbar to update stats
     mw.toolbar.draw()
 
+def initJcfg():
+    global jcfgMod, dbsPath
+    import json
+    try:
+        f = codecs.open( cfg1('path_json'), 'r', 'utf-8' )
+        jcfgMod = json.load(f.read())
+        f.close()
+    except IOError:
+        jcfgMod = jcfg_default()
+    print jcfgMod
+
+
 addHook( 'profileLoaded', initCfg )
+addHook( 'profileLoaded', initJcfg )
 
 def cfg1( key, mid=None, did=None ): return cfg( mid, did, key )
 def cfg( modelId, deckId, key ):
@@ -51,6 +64,41 @@ def cfg( modelId, deckId, key ):
         return cfgMod.profile_overrides[ profile ][ key ]
     else:
         return cfgMod.default[ key ]
+
+# --------------------
+# configuration from .json file
+jcfgMod = None
+def jcfg_default():
+    return {
+        'Field_FocusMorph':u'MorphMan_FocusMorph',         # holds the unknown for k+0 sentences but goes away once m+0
+        'Field_MorphManIndex':u'MorphMan_Index',   # created an ordering to learn cards in. this is the value new card 'due' times are set to
+        'Field_Unmatures':u'MorphMan_Unmatures',               # likewise for unmatures
+        'Field_UnmatureMorphCount':u'MorphMan_UnmatureMorphCount',       # stores how many unmatures
+        'Field_Unknowns':u'MorphMan_Unknowns',             # comma seperated list of morphemes that are unknown
+        'Field_UnknownFreq':u'MorphMan_UnknownFreq',       # average of how many times the unknowns appear in your collection
+        'Field_UnknownMorphCount':u'MorphMan_UnknownMorphCount',       # stores how many unknowns
+
+        # tag names for marking the state of notes
+        # the following three are mutually exclusive and erase eachother upon promotion/demotion
+        'Tag_Comprehension':u'mm_comprehension',   # set once all morphs for note are mature
+        'Tag_Vocab':u'mm_vocab',                   # set once all but 1 morph for note is known
+        'Tag_NotReady':u'mm_notReady',             # set for k+2 and above cards
+        'Tag_AlreadyKnown':u'mm_alreadyKnown',     # you can add this tag to a note to make anki treat it as if mature
+        'Tag_Priority':u'mm_priority',             # set if note contains an unknown that exists in priority.db
+        'Tag_BadLength':u'mm_badLength',           # set if sentence isn't within optimal sentence length range
+        'Tag_TooLong':u'mm_tooLong',               # set if sentence is above optimal sentence length
+
+        # filter for cards that should be analyzed, higher entries have higher priority
+        'Filter': [
+            # note type, list of tags, list of morph fields for this note type -> morphemizer, analyze only or modify?
+            {'Type': 'SubtitleMemorize', 'Tags': ['japanese'], 'Fields': ['Expression'], 'Morphemizer': 'MecabMorphemizer', 'Modify': True},
+            {'Type': 'SubtitleMemorize', 'Tags': [          ], 'Fields': ['Expression'], 'Morphemizer': 'SpaceMorphemizer', 'Modify': True},
+        ]
+    }
+
+def jcfg(name):
+    assert jcfgMod, 'Tried to use jcfgMods before profile loaded'
+    return jcfgMod
 
 ###############################################################################
 ## Parsing

@@ -11,6 +11,7 @@ default = {
     'path_mature': os.path.join( mw.pm.profileFolder(), 'dbs', 'mature.db' ),
     'path_known': os.path.join( mw.pm.profileFolder(), 'dbs', 'known.db' ),
     'path_seen': os.path.join( mw.pm.profileFolder(), 'dbs', 'seen.db' ),
+    'path_json': os.path.join( mw.pm.profileFolder(), 'dbs', 'morphman_config.json' ),
     'path_log': os.path.join( mw.pm.profileFolder(), 'morphman.log' ),
     'path_stats': os.path.join( mw.pm.profileFolder(), 'morphman.stats' ),
         # change the thresholds for various stages of maturity, in days
