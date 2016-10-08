@@ -11,6 +11,12 @@ def onMorphManManager():
     reload( morph.manager )
     morph.manager.main()
 
+def onMorphManPreferences():
+    import morph.preferencesDialog
+    reload( morph.preferencesDialog )
+    morph.preferencesDialog.main()
+
+
 def main():
     # Add recalculate menu button
     a = QAction( '&MorphMan Recalc', mw )
@@ -19,8 +25,15 @@ def main():
     mw.connect( a, SIGNAL('triggered()'), onMorphManRecalc )
     mw.form.menuTools.addAction( a )
 
+    # Add gui preferences menu button
+    a = QAction( 'MorphMan &Preferences', mw )
+    a.setStatusTip(_("Change inspected cards, fields and tags"))
+    a.setShortcut(_("Ctrl+O"))
+    mw.connect( a, SIGNAL('triggered()'), onMorphManPreferences )
+    mw.form.menuTools.addAction( a )
+
     # Add gui manager menu button
-    a = QAction( 'MorphMan Manager', mw )
+    a = QAction( 'MorphMan &Database Manager', mw )
     a.setStatusTip(_("Open gui manager to inspect, compare, and analyze MorphMan DBs"))
     mw.connect( a, SIGNAL('triggered()'), onMorphManManager )
     mw.form.menuTools.addAction( a )
