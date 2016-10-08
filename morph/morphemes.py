@@ -115,9 +115,10 @@ def getMorphemes(morphemizer, expression):
     return ms
 
 def getMorphemizerForNote(note):
-    return getMorphemizerForTags(note.stringTags().split())
+    ''' :type note: anki.notes.Note '''
+    return getMorphemizerForTagsAndType(note.model()['name'], note.stringTags().split())
 
-def getMorphemizerForTags(tags): # [Str] -> Morphemizer
+def getMorphemizerForTagsAndType(type, tags): # Str -> [Str] -> Morphemizer
     if cfg1('japanese_tag') in tags: return MecabMorphemizer()
     else: return SpaceMorphemizer()
 

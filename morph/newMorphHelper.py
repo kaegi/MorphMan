@@ -168,6 +168,21 @@ addBrowserSelectionCmd( 'Learn Now', pre, per, post, tooltip='Immediately review
 
 ########## 5 - highlight morphemes using morphHighlight
 import re
+
+def isNoteSame(note, fieldDict):
+    # compare fields
+    same_as_note = True
+    items = note.items()
+    for (key, value) in items:
+        if key not in fieldDict or value != fieldDict[key]:
+            return False
+
+    # compare tags
+    argTags = mw.col.tags.split(fieldDict['Tags'])
+    noteTags = note.tags
+    return set(argTags) == set(noteTags)
+
+
 def highlight( txt, extra, fieldDict, field, mod_field ):
     '''When a field is marked with the 'focusMorph' command, we format it by
     wrapping all the morphemes in <span>s with attributes set to its maturity'''
@@ -177,8 +192,15 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
         return u''.join( re.sub( sub, repl, s ) if not s.startswith('<span') else s for s in re.split( '(<span.*?</span>)', string ) )
 
     # find morphemizer; because no note/card information is exposed through arguments, we have to find morphemizer based on tags alone
-    from morphemes import getMorphemes, getMorphemizerForTags
-    morphemizer = getMorphemizerForTags(fieldDict['Tags'].split())
+    #from aqt.qt import debug; debug()
+    #
+    #if mw.reviewer.card is None: return txt
+    #note = mw.reviewer.card.note()
+    #if not isNoteSame(note, fieldDict): return txt
+    #from aqt.qt import debug; debug()
+
+    from morphemes import getMorphemes, getMorphemizerForTagsAndType
+    morphemizer = getMorphemizerForTagsAndType(fieldDict['Type'], fieldDict['Tags'].split())
     ms = getMorphemes(morphemizer, txt )
 
     for m in sorted( ms, key=lambda x: len(x.inflected), reverse=True ): # largest subs first
