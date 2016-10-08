@@ -26,4 +26,4 @@ def post( st ): # :: State -> State
     infoMsg( 'Tagged all notes containing morphemes in that db' )
     return st
 
-addBrowserSelectionCmd( 'Mass Tagger', pre, per, post, tooltip='Tag all cards that contain morphemes from db', shortcut=None )
+addBrowserSelectionCmd( 'MorphMan: Mass Tagger', pre, per, post, tooltip='Tag all cards that contain morphemes from db', shortcut=None )

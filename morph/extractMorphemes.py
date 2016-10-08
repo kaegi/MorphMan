@@ -22,4 +22,4 @@ def post( st ):
     st['morphDb'].save( st['dbpath'] )
     infoMsg( 'DB saved with extracted morphemes' )
 
-addBrowserSelectionCmd( 'Extract Morphemes', pre, per, post, tooltip='Extract morphemes in selected notes to a MorphMan db', shortcut=('Ctrl+Shift+E',) )
+addBrowserSelectionCmd( 'MorphMan: Extract Morphemes', pre, per, post, tooltip='Extract morphemes in selected notes to a MorphMan db', shortcut=('Ctrl+Shift+E',) )

@@ -164,7 +164,7 @@ def post( st ):
     st['__reset'] = False
     tooltip( _( 'Immediately reviewing %d cards' % i ) )
 
-addBrowserSelectionCmd( 'Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=('Ctrl+Shift+N',) )
+addBrowserSelectionCmd( 'MorphMan: Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=('Ctrl+Shift+N',) )
 
 ########## 5 - highlight morphemes using morphHighlight
 import re

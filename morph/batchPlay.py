@@ -23,4 +23,4 @@ def post( st ):
     st['__reset'] = False
     return st
 
-addBrowserSelectionCmd( 'Batch Play', pre, per, post, tooltip='Play all the videos for the selected cards', shortcut=('Ctrl+Alt+P',) )
+addBrowserSelectionCmd( 'MorphMan: Batch Play', pre, per, post, tooltip='Play all the videos for the selected cards', shortcut=('Ctrl+Alt+P',) )
