@@ -35,27 +35,11 @@ default = {
     'enabled':False,    # whether to analyze notes of a given model, modify their fields, and manipulate due time by Morph Man Index
     'set due based on mmi':True,    # whether to modify card Due times based on MorphManIndex. does nothing if relevant notes aren't enabled
     'ignore maturity':False,        # if True, pretends card maturity is always zero
-        # field names to store various information
-    'k+N':u'k+N',       # stores how many unknowns
-    'm+N':u'm+N',       # stores how many unmatures
-    'focusMorph':u'MorphMan_FocusMorph',         # holds the unknown for k+0 sentences but goes away once m+0
-    'morphManIndex':u'MorphMan_Index',   # created an ordering to learn cards in. this is the value new card 'due' times are set to
-    'unmatures':u'MorphMan_Unmatures',               # likewise for unmatures
-    'unknowns':u'MorphMan_Unknowns',             # comma seperated list of morphemes that are unknown
-    'unknownFreq':u'MorphMan_UnknownFreq',       # average of how many times the unknowns appear in your collection
-        # analyze notes based on the morphemes in these fields
-    'morph_fields': [u'Expression'],
-        # tag names for marking the state of notes
-            # the following three are mutually exclusive and erase eachother upon promotion/demotion
-    'tag_comprehension':u'comprehension',   # set once all morphs for note are mature
-    'tag_vocab':u'vocab',                   # set once all but 1 morph for note is known
-    'tag_notReady':u'notReady',             # set for k+2 and above cards
-    'tag_alreadyKnown':u'alreadyKnown',     # you can add this tag to a note to make anki treat it as if mature
-    'tag_priority':u'priority',             # set if note contains an unknown that exists in priority.db
-    'tag_badLength':u'badLength',           # set if sentence isn't within optimal sentence length range
-    'tag_tooLong':u'tooLong',               # set if sentence is above optimal sentence length
 
-        # controls for morpheme analysis (only for japanese/mecab morphemizer)
+    # analyze notes based on the morphemes in these fields
+    'morph_fields': [u'Expression'],
+
+    # controls for morpheme analysis (only for japanese/mecab morphemizer)
     'mecab_blacklist': [ u'記号', u'UNKNOWN'],      # you probably don't care about punctuation and things mecab couldn't parse
     'japanese_tag': 'japanese',              # if a note has this tag, morphemes are be split with mecab, otherwise a space-based morphemizer is used
 

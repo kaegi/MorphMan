@@ -2,7 +2,7 @@
 from aqt import reviewer, dialogs
 from aqt.qt import *
 from anki import sched
-from util import addBrowserSelectionCmd, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
+from util import addBrowserSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
 
 # only for jedi-auto-completion
 import aqt.main
@@ -19,8 +19,8 @@ import main
 
 # config aliases
 def CN( n, key ):   return    cfg( n.mid, None, key )
-def focusName( n ): return    cfg( n.mid, None, 'focusMorph' )
-def focus( n ):     return n[ cfg( n.mid, None, 'focusMorph' ) ]
+def focusName( n ): return    jcfg('Field_FocusMorph') # TODO remove argument n
+def focus( n ):     return n[ focusName(n) ]
 
 
 ########## 6 parent deck pulls new cards from all children instead of sequentially (ie. mostly first)
@@ -84,11 +84,11 @@ def my_getNewCard( self, _old ):
 
         # determine if good vocab word based on whether k+1
         # defaults to whether has focus morph if no k+N field or disabled
-        try: goodVocab = n[ cfg( n.mid, None, 'k+N' ) ] == '1'
+        try: goodVocab = n[ jcfg('Field_UnknownMorphCount') ] == '1'
         except KeyError: goodVocab = fm
 
         # even if it is not a good vocabulary card, we have no choice when there are no other cards available
-        if (not goodVocab and not n.hasTag(CN(n, 'tag_notReady'))) or n.hasTag( CN( n, 'tag_alreadyKnown' ) ) or fm in seenMorphs:
+        if (not goodVocab and not n.hasTag(jcfg('Tag_NotReady'))) or n.hasTag( jcfg('Tag_AlreadyKnown') ) or fm in seenMorphs:
             self.buryCards( [ c.id ] )
             self.newCount += 1 # the card was quaried from the "new queue" so we have to increase the "new counter" back to its original value
             continue
@@ -115,7 +115,7 @@ def setKnownAndSkip( self ): #2
     :type self: aqt.reviewer.Reviewer '''
     self.mw.checkpoint( _("Set already known focus morph") )
     n = self.card.note()
-    n.addTag( CN( n, 'tag_alreadyKnown' ) )
+    n.addTag(jcfg('Tag_AlreadyKnown'))
     n.flush()
     markFocusSeen( self, n )
 

@@ -4,7 +4,7 @@ import time
 from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksum
 from morphemes import MorphDb, AnkiDeck, getMorphemes, getMorphemizerForNote
 import stats
-from util import printf, mw, memoize, cfg, cfg1, partial, errorMsg, infoMsg
+from util import printf, mw, memoize, cfg, cfg1, partial, errorMsg, infoMsg, jcfg
 import util
 
 # only for jedi-auto-completion
@@ -70,7 +70,7 @@ def mkAllDb( allDb=None ):
         mats = [ ( 0.5 if ivl == 0 and ctype == 1 else ivl ) for ivl, ctype in db.execute( 'select ivl, type from cards where nid = :nid', nid=nid ) ]
         if C('ignore maturity'):
             mats = [ 0 for mat in mats ]
-        ts, alreadyKnownTag = TAG.split( tags ), C('tag_alreadyKnown')
+        ts, alreadyKnownTag = TAG.split( tags ), jcfg('Tag_AlreadyKnown')
         if alreadyKnownTag in ts:
             mats += [ C('threshold_mature')+1 ]
 
@@ -159,6 +159,7 @@ def updateNotes( allDb ):
     for i,( nid, mid, flds, guid, tags ) in enumerate( db.execute( 'select id, mid, flds, guid, tags from notes' ) ):
         if i % 500 == 0:    mw.progress.update( value=i )
         C = partial( cfg, mid, None )
+        JC = lambda s: jcfg(s)
         if not C('enabled'): continue
         # Get all morphemes for note
         morphemes = set()
@@ -222,23 +223,24 @@ def updateNotes( allDb ):
         ts, fs = TAG.split( tags ), splitFields( flds )
 
         # determine card type
-        compTag, vocabTag, notReadyTag, alreadyKnownTag, priorityTag, badLengthTag, tooLongTag = tagNames = C('tag_comprehension'), C('tag_vocab'), C('tag_notReady'), C('tag_alreadyKnown'), C('tag_priority'), C('tag_badLength'), C('tag_tooLong')
+        compTag, vocabTag, notReadyTag, alreadyKnownTag, priorityTag, badLengthTag, tooLongTag = tagNames = JC('Tag_Comprehension'), JC('Tag_Vocab'), JC('Tag_NotReady'), JC('Tag_AlreadyKnown'), JC('Tag_Priority'), JC('Tag_BadLength'), JC('Tag_TooLong')
         if N_m == 0:    # sentence comprehension card, m+0
             ts = [ compTag ] + [ t for t in ts if t not in [ vocabTag, notReadyTag ] ]
-            setField( mid, fs, C('focusMorph'), u'' )
+            setField( mid, fs, JC('Field_FocusMorph'), u'' )
         elif N_k == 1:  # new vocab card, k+1
             ts = [ vocabTag ] + [ t for t in ts if t not in [ compTag, notReadyTag ] ]
-            setField( mid, fs, C('focusMorph'), u'%s' % focusMorph.base )
+            setField( mid, fs, JC('Field_FocusMorph'), u'%s' % focusMorph.base )
         elif N_k > 1:   # M+1+ and K+2+
             ts = [ notReadyTag ] + [ t for t in ts if t not in [ compTag, vocabTag ] ]
+            setField( mid, fs, JC('Field_FocusMorph'), u'')
 
             # set type agnostic fields
-        setField( mid, fs, C('k+N'), u'%d' % N_k )
-        setField( mid, fs, C('m+N'), u'%d' % N_m )
-        setField( mid, fs, C('morphManIndex'), u'%d' % mmi )
-        setField( mid, fs, C('unknowns'), u', '.join( u.base for u in unknowns ) )
-        setField( mid, fs, C('unmatures'), u', '.join( u.base for u in unmatures ) )
-        setField( mid, fs, C('unknownFreq'), u'%d' % F_k_avg )
+        setField( mid, fs, JC('Field_UnknownMorphCount'), u'%d' % N_k )
+        setField( mid, fs, JC('Field_UnmatureMorphCount'), u'%d' % N_m )
+        setField( mid, fs, JC('Field_MorphManIndex'), u'%d' % mmi )
+        setField( mid, fs, JC('Field_Unknowns'), u', '.join( u.base for u in unknowns ) )
+        setField( mid, fs, JC('Field_Unmatures'), u', '.join( u.base for u in unmatures ) )
+        setField( mid, fs, JC('Field_UnknownFreq'), u'%d' % F_k_avg )
 
             # other tags
         if priorityTag in ts:   ts.remove( priorityTag )

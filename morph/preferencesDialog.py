@@ -32,7 +32,7 @@ class PreferencesDialog( QDialog ):
         self.tableModel.setHeaderData(3, Qt.Horizontal, "Morphemizer")
         self.tableModel.setHeaderData(4, Qt.Horizontal, "Modify?")
 
-        rowData = jcfg()['Filter']
+        rowData = jcfg('Filter')
         self.tableModel.setRowCount(len(rowData))
         self.rowGui = [None] * len(rowData)
         for i, row in enumerate(rowData):
@@ -71,7 +71,7 @@ class PreferencesDialog( QDialog ):
             ]
         self.fieldEntryList = []
         for i, (name, key) in enumerate(fieldsList):
-            entry = QLineEdit(jcfg()[key])
+            entry = QLineEdit(jcfg(key))
             self.fieldEntryList.append((key, entry))
 
             grid.addWidget(QLabel(name), i / numberOfColumns, (i % numberOfColumns) * 2 + 0)
@@ -98,7 +98,7 @@ class PreferencesDialog( QDialog ):
             ]
         self.tagEntryList = []
         for i, (name, key) in enumerate(tagList):
-            entry = QLineEdit(jcfg()[key])
+            entry = QLineEdit(jcfg(key))
             self.tagEntryList.append((key, entry))
 
             grid.addWidget(QLabel(name), i / numberOfColumns, (i % numberOfColumns) * 2 + 0)

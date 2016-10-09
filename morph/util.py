@@ -95,9 +95,12 @@ def jcfg_default():
         ]
     }
 
-def jcfg():
+def jcfg2():
     assert jcfgMod, 'Tried to use jcfgMods before profile loaded'
     return jcfgMod
+
+def jcfg(name):
+    return jcfg2()[name]
 
 def jcfgUpdate(jcfg):
     print jcfg
