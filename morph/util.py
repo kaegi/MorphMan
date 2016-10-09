@@ -93,7 +93,10 @@ def jcfg_default():
             # note type (None means all note types), list of tags, list of morph fields for this note type -> morphemizer, analyze only or modify?
             {'Type': 'SubtitleMemorize', 'Tags': ['japanese'], 'Fields': ['Expression'], 'Morphemizer': 'MecabMorphemizer', 'Modify': True},
             {'Type': 'SubtitleMemorize', 'Tags': [          ], 'Fields': ['Expression'], 'Morphemizer': 'SpaceMorphemizer', 'Modify': True},
-        ]
+        ],
+
+        # only set necessary tags or set all tags?
+        'Option_SetNotRequiredTags': True,
     }
 
 def jcfg2():
