@@ -14,13 +14,23 @@ class PreferencesDialog( QDialog ):
     def __init__( self, parent=None ):
         super( PreferencesDialog, self ).__init__( parent )
         self.rowGui = []
-        self.resize(1280, 800)
+        self.resize(950, 600)
 
         self.setWindowTitle( 'MorphMan Preferences' )
         self.vbox = vbox = QVBoxLayout(self)
+        self.tabWidget = QTabWidget(); self.vbox.addWidget(self.tabWidget)
 
-        self.frame1 = QGroupBox("Note Filter")
-        vbox = QVBoxLayout(); self.frame1.setLayout(vbox); vbox.setContentsMargins(0, 20, 0, 50)
+        self.createNoteFilterTab()
+        self.createExtraFieldsTab()
+        self.createTagsTab()
+        self.createButtons()
+
+        self.setLayout(self.vbox)
+
+    def createNoteFilterTab(self):
+        self.frame1 = QWidget()
+        self.tabWidget.addTab(self.frame1, "Note Filter")
+        vbox = QVBoxLayout(); self.frame1.setLayout(vbox); vbox.setContentsMargins(0, 20, 0, 0)
 
         self.tableModel = QStandardItemModel(0, 5)
         self.tableView = QTableView()
@@ -43,6 +53,7 @@ class PreferencesDialog( QDialog ):
         label = QLabel("Any card that has the given `Note type` and all of the given `Tags` will have its `Fields` analyzed with the specified `Morphemizer`. A morphemizer specifies how words are extraced from a sentence. `Fields` and `Tags` are both comma-separated lists. If `Tags` is empty, there are no tag restrictions. If `Modify` is deactivated, the note will only be analyzed.\n\nIf a note is matched multple times, the first line will take precedence.")
         label.setWordWrap(True)
         vbox.addWidget(label)
+        vbox.addSpacing(20)
         vbox.addWidget(self.tableView)
 
         hbox = QHBoxLayout(); vbox.addLayout(hbox)
@@ -52,17 +63,18 @@ class PreferencesDialog( QDialog ):
         self.up = mkBtn("Up", self.onUp, self, hbox)
         self.down = mkBtn("Down", self.onDown, self, hbox)
 
-        self.vbox.addWidget(self.frame1)
-
-        self.frame2 = QGroupBox("Extra Fields")
-        vbox = QVBoxLayout(); self.frame2.setLayout(vbox); vbox.setContentsMargins(0, 20, 0, 50)
+    def createExtraFieldsTab(self):
+        self.frame2 = QWidget()
+        self.tabWidget.addTab(self.frame2, "Extra Fields")
+        vbox = QVBoxLayout(); self.frame2.setLayout(vbox); vbox.setContentsMargins(0, 20, 0, 0)
 
         label = QLabel("This plugin will attempt to change the data in following fields. Every field that has a (*) is REQUIRED IN EVERY NOTE for MorphMan to work correctly. The other fields are optional. Hover your mouse over text entries to see tooltip info.")
         label.setWordWrap(True)
         vbox.addWidget(label)
+        vbox.addSpacing(50)
 
         grid = QGridLayout(); vbox.addLayout(grid)
-        numberOfColumns = 3
+        numberOfColumns = 2
         fieldsList = [
                 ("Focus morph (*):", "Field_FocusMorph", "Stores the unknown morpheme for sentences with one unmature word.\nGets cleared as soon as all works are mature."),
                 ("MorphMan Index:", "Field_MorphManIndex", "Difficulty of card. This will be set to `due` time of card."),
@@ -81,14 +93,18 @@ class PreferencesDialog( QDialog ):
             grid.addWidget(QLabel(name), i / numberOfColumns, (i % numberOfColumns) * 2 + 0)
             grid.addWidget(entry, i / numberOfColumns, (i % numberOfColumns) * 2 + 1)
 
-        self.vbox.addWidget(self.frame2)
+        vbox.addStretch()
 
+
+    def createTagsTab(self):
         self.frame3 = QGroupBox("Tags")
-        vbox = QVBoxLayout(); self.frame3.setLayout(vbox); vbox.setContentsMargins(0, 20, 0, 50)
+        self.tabWidget.addTab(self.frame3, "Tags")
+        vbox = QVBoxLayout(); self.frame3.setLayout(vbox); vbox.setContentsMargins(0, 20, 0, 0)
 
         label = QLabel("This plugin will add and delete following tags from your matched notes. Hover your mouse over text entries to see tooltip info.")
         label.setWordWrap(True)
         vbox.addWidget(label)
+        vbox.addSpacing(50)
 
         grid = QGridLayout(); vbox.addLayout(grid)
         tagList  = [
@@ -101,6 +117,7 @@ class PreferencesDialog( QDialog ):
                 ("Too Long", 'Tag_TooLong', 'Sentence is too long.'),
             ]
         self.tagEntryList = []
+        numberOfColumns = 2
         for i, (name, key, tooltipInfo) in enumerate(tagList):
             entry = QLineEdit(jcfg(key))
             entry.setToolTip(tooltipInfo)
@@ -108,9 +125,10 @@ class PreferencesDialog( QDialog ):
 
             grid.addWidget(QLabel(name), i / numberOfColumns, (i % numberOfColumns) * 2 + 0)
             grid.addWidget(entry, i / numberOfColumns, (i % numberOfColumns) * 2 + 1)
-        self.vbox.addWidget(self.frame3)
 
+        vbox.addStretch()
 
+    def createButtons(self):
         hbox = QHBoxLayout(); self.vbox.addLayout(hbox)
         buttonCancel = QPushButton("&Cancel"); hbox.addWidget(buttonCancel, 1, Qt.AlignRight)
         buttonCancel.setMaximumWidth(150)
@@ -120,8 +138,6 @@ class PreferencesDialog( QDialog ):
         buttonOkay.setMaximumWidth(150)
         self.connect( buttonOkay, SIGNAL('clicked()'), self.onOkay )
 
-
-        self.setLayout(self.vbox)
 
 
     # see util.jcfg_default()['Filter'] for type of data
