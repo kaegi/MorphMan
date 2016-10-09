@@ -2,9 +2,9 @@
 import time
 
 from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksum
-from morphemes import MorphDb, AnkiDeck, getMorphemes, getMorphemizerForNote
+from morphemes import MorphDb, AnkiDeck, getMorphemes, getMorphemizerForFilter
 import stats
-from util import printf, mw, memoize, cfg, cfg1, partial, errorMsg, infoMsg, jcfg
+from util import printf, mw, memoize, cfg, cfg1, partial, errorMsg, infoMsg, jcfg, getFilter
 import util
 
 # only for jedi-auto-completion
@@ -60,10 +60,12 @@ def mkAllDb( allDb=None ):
     for i,( nid, mid, flds, guid, tags ) in enumerate( db.execute( 'select id, mid, flds, guid, tags from notes' ) ):
         if i % 500 == 0:    mw.progress.update( value=i )
         C = partial( cfg, mid, None )
-        if not C('enabled'): continue
 
         note = mw.col.getNote(nid)
-        morphemizer = getMorphemizerForNote(note)
+        notecfg = getFilter(note)
+        if notecfg is None: continue
+        morphemizer = getMorphemizerForFilter(notecfg)
+
 
         N_enabled_notes += 1
 
@@ -74,7 +76,7 @@ def mkAllDb( allDb=None ):
         if alreadyKnownTag in ts:
             mats += [ C('threshold_mature')+1 ]
 
-        for fieldName in C('morph_fields'):
+        for fieldName in notecfg['Fields']:
             try: # if doesn't have field, continue
                 #fieldValue = normalizeFieldValue( getField( fieldName, flds, mid ) )
                 fieldValue = extractFieldData( fieldName, flds, mid )
@@ -159,11 +161,14 @@ def updateNotes( allDb ):
     for i,( nid, mid, flds, guid, tags ) in enumerate( db.execute( 'select id, mid, flds, guid, tags from notes' ) ):
         if i % 500 == 0:    mw.progress.update( value=i )
         C = partial( cfg, mid, None )
-        JC = lambda s: jcfg(s)
-        if not C('enabled'): continue
+
+        note = mw.col.getNote(nid)
+        notecfg = getFilter(note)
+        if notecfg is None or not notecfg['Modify']: continue
+
         # Get all morphemes for note
         morphemes = set()
-        for fieldName in C('morph_fields'):
+        for fieldName in notecfg['Fields']:
             try:
                 loc = fidDb[ ( nid, guid, fieldName ) ]
                 morphemes.update( locDb[ loc ] )
@@ -223,24 +228,24 @@ def updateNotes( allDb ):
         ts, fs = TAG.split( tags ), splitFields( flds )
 
         # determine card type
-        compTag, vocabTag, notReadyTag, alreadyKnownTag, priorityTag, badLengthTag, tooLongTag = tagNames = JC('Tag_Comprehension'), JC('Tag_Vocab'), JC('Tag_NotReady'), JC('Tag_AlreadyKnown'), JC('Tag_Priority'), JC('Tag_BadLength'), JC('Tag_TooLong')
+        compTag, vocabTag, notReadyTag, alreadyKnownTag, priorityTag, badLengthTag, tooLongTag = tagNames = jcfg('Tag_Comprehension'), jcfg('Tag_Vocab'), jcfg('Tag_NotReady'), jcfg('Tag_AlreadyKnown'), jcfg('Tag_Priority'), jcfg('Tag_BadLength'), jcfg('Tag_TooLong')
         if N_m == 0:    # sentence comprehension card, m+0
             ts = [ compTag ] + [ t for t in ts if t not in [ vocabTag, notReadyTag ] ]
-            setField( mid, fs, JC('Field_FocusMorph'), u'' )
+            setField( mid, fs, jcfg('Field_FocusMorph'), u'' )
         elif N_k == 1:  # new vocab card, k+1
             ts = [ vocabTag ] + [ t for t in ts if t not in [ compTag, notReadyTag ] ]
-            setField( mid, fs, JC('Field_FocusMorph'), u'%s' % focusMorph.base )
+            setField( mid, fs, jcfg('Field_FocusMorph'), u'%s' % focusMorph.base )
         elif N_k > 1:   # M+1+ and K+2+
             ts = [ notReadyTag ] + [ t for t in ts if t not in [ compTag, vocabTag ] ]
-            setField( mid, fs, JC('Field_FocusMorph'), u'')
+            setField( mid, fs, jcfg('Field_FocusMorph'), u'')
 
             # set type agnostic fields
-        setField( mid, fs, JC('Field_UnknownMorphCount'), u'%d' % N_k )
-        setField( mid, fs, JC('Field_UnmatureMorphCount'), u'%d' % N_m )
-        setField( mid, fs, JC('Field_MorphManIndex'), u'%d' % mmi )
-        setField( mid, fs, JC('Field_Unknowns'), u', '.join( u.base for u in unknowns ) )
-        setField( mid, fs, JC('Field_Unmatures'), u', '.join( u.base for u in unmatures ) )
-        setField( mid, fs, JC('Field_UnknownFreq'), u'%d' % F_k_avg )
+        setField( mid, fs, jcfg('Field_UnknownMorphCount'), u'%d' % N_k )
+        setField( mid, fs, jcfg('Field_UnmatureMorphCount'), u'%d' % N_m )
+        setField( mid, fs, jcfg('Field_MorphManIndex'), u'%d' % mmi )
+        setField( mid, fs, jcfg('Field_Unknowns'), u', '.join( u.base for u in unknowns ) )
+        setField( mid, fs, jcfg('Field_Unmatures'), u', '.join( u.base for u in unmatures ) )
+        setField( mid, fs, jcfg('Field_UnknownFreq'), u'%d' % F_k_avg )
 
             # other tags
         if priorityTag in ts:   ts.remove( priorityTag )

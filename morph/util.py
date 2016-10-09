@@ -40,7 +40,8 @@ def initJcfg():
     import json
     try:
         f = codecs.open( cfg1('path_json'), 'r', 'utf-8' )
-        jcfgMod = json.load(f.read())
+        jcfgMod = json.loads(f.read())
+        print jcfgMod
         f.close()
     except IOError:
         jcfgMod = jcfg_default()
@@ -107,6 +108,26 @@ def jcfgUpdate(jcfg):
     for key, value in jcfg.items():
         assert key in jcfgMod, "jcfgUpdate(): key is is not in jcfgMod"
         jcfgMod[key] = value
+    saveJcfg()
+
+def saveJcfg():
+    import json
+    exportStr = json.dumps(jcfg2(), sort_keys=True, indent=4, separators=(',', ': '))
+    f = codecs.open( cfg1('path_json'), 'w', 'utf-8')
+    f.write(exportStr)
+    f.close()
+
+
+def getFilter(note):
+    return getFilterByTagsAndType(note.model()['name'], note.tags)
+
+def getFilterByTagsAndType(type, tags):
+    for f in jcfg('Filter'):
+        if f['Type'] is not None and type != f['Type']: continue
+        if not set(f['Tags']) <= set(tags): continue # required tags have to be subset of actual tags
+        return f
+    return None
+
 
 
 ###############################################################################

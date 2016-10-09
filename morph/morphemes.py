@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import codecs, cPickle as pickle, gzip, os, subprocess, re
-from util import cfg1
+from util import cfg1, getFilterByTagsAndType
 
 # need some fallbacks if not running from anki and thus morph.util isn't available
 try:
@@ -119,8 +119,19 @@ def getMorphemizerForNote(note):
     return getMorphemizerForTagsAndType(note.model()['name'], note.stringTags().split())
 
 def getMorphemizerForTagsAndType(type, tags): # Str -> [Str] -> Morphemizer
-    if cfg1('japanese_tag') in tags: return MecabMorphemizer()
-    else: return SpaceMorphemizer()
+    filter = getFilterByTagsAndType(type, tags)
+    if filter is None: return none
+    return getMorphemizerForFilter(filter)
+
+def getMorphemizerForFilter(filter):
+    return getMorphemizerByName(filter['Morphemizer'])
+
+def getMorphemizerByName(name):
+    for m in getAllMorphemizers():
+        if m.__class__.__name__ == name:
+            return m
+    return None
+
 
 def getAllMorphemizers(): # -> [Morphemizer]
     return [SpaceMorphemizer(), MecabMorphemizer()]
