@@ -61,17 +61,18 @@ class PreferencesDialog( QDialog ):
         grid = QGridLayout(); vbox.addLayout(grid)
         numberOfColumns = 3
         fieldsList = [
-                ("Focus morph (*):", "Field_FocusMorph"),
-                ("MorphMan Index:", "Field_MorphManIndex"),
-                ("Unmatures", "Field_Unmatures"),
-                ("Unmatures count:", "Field_UnmatureMorphCount"),
-                ("Unknowns:", "Field_Unknowns"),
-                ("Unknown count:", "Field_UnknownMorphCount"),
-                ("Unknown frequency:", "Field_UnknownFreq")
+                ("Focus morph (*):", "Field_FocusMorph", "Stores the unknown morpheme for sentences with one unmature word.\nGets cleared as soon as all works are mature."),
+                ("MorphMan Index:", "Field_MorphManIndex", "Difficulty of card. This will be set to `due` time of card."),
+                ("Unmatures", "Field_Unmatures", "Comma-separated list of unmature words."),
+                ("Unmatures count:", "Field_UnmatureMorphCount", "Number of unmature words on this note."),
+                ("Unknowns:", "Field_Unknowns", "Comma-separated list of unknown morphemes."),
+                ("Unknown count:", "Field_UnknownMorphCount", "Number of unknown morphemes on this note."),
+                ("Unknown frequency:", "Field_UnknownFreq", "Average of how many times the unknowns appear in your collection.")
             ]
         self.fieldEntryList = []
-        for i, (name, key) in enumerate(fieldsList):
+        for i, (name, key, tooltipInfo) in enumerate(fieldsList):
             entry = QLineEdit(jcfg(key))
+            entry.setToolTip(tooltipInfo)
             self.fieldEntryList.append((key, entry))
 
             grid.addWidget(QLabel(name), i / numberOfColumns, (i % numberOfColumns) * 2 + 0)
@@ -88,17 +89,18 @@ class PreferencesDialog( QDialog ):
 
         grid = QGridLayout(); vbox.addLayout(grid)
         tagList  = [
-                ("Compehension note:", 'Tag_Comprehension'),
-                ("Vocab note:", 'Tag_Vocab'),
-                ("Not ready:", 'Tag_NotReady'),
-                ("Already known:", 'Tag_AlreadyKnown'),
-                ("Priority:", 'Tag_Priority'),
-                ("Bad Length:", 'Tag_BadLength'),
-                ("Too Long", 'Tag_TooLong'),
+                ("Vocab note:", 'Tag_Vocab', 'Note that is optimal to learn (one unknown word.)'),
+                ("Compehension note:", 'Tag_Comprehension', 'Note that has some unmature words but no unknown (optimal for sentence learning).'),
+                ("Not ready:", 'Tag_NotReady', 'Note that has two or more unknown words.'),
+                ("Already known:", 'Tag_AlreadyKnown', 'You can add this tag to a note.\nAfter a recalc of the database, all in this sentence words are marked as known.\nPress \'K\' while reviewing to tag current card.'),
+                ("Priority:", 'Tag_Priority', 'Morpheme is in priority.db.'),
+                ("Bad Length:", 'Tag_BadLength', 'Sentence is too long or too short.'),
+                ("Too Long", 'Tag_TooLong', 'Sentence is too long.'),
             ]
         self.tagEntryList = []
-        for i, (name, key) in enumerate(tagList):
+        for i, (name, key, tooltipInfo) in enumerate(tagList):
             entry = QLineEdit(jcfg(key))
+            entry.setToolTip(tooltipInfo)
             self.tagEntryList.append((key, entry))
 
             grid.addWidget(QLabel(name), i / numberOfColumns, (i % numberOfColumns) * 2 + 0)
