@@ -26,6 +26,8 @@ class PreferencesDialog( QDialog ):
         self.tableView = QTableView()
         self.tableView.setModel(self.tableModel)
         self.tableView.horizontalHeader().setResizeMode(QHeaderView.Stretch)
+        self.tableView.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.tableView.setSelectionMode(QAbstractItemView.SingleSelection)
         self.tableModel.setHeaderData(0, Qt.Horizontal, "Note type")
         self.tableModel.setHeaderData(1, Qt.Horizontal, "Tags")
         self.tableModel.setHeaderData(2, Qt.Horizontal, "Fields")
@@ -34,7 +36,7 @@ class PreferencesDialog( QDialog ):
 
         rowData = jcfg('Filter')
         self.tableModel.setRowCount(len(rowData))
-        self.rowGui = [None] * len(rowData)
+        self.rowGui = []
         for i, row in enumerate(rowData):
             self.setTableRow(i, row)
 
@@ -44,10 +46,11 @@ class PreferencesDialog( QDialog ):
         vbox.addWidget(self.tableView)
 
         hbox = QHBoxLayout(); vbox.addLayout(hbox)
-        self.clone = QPushButton("Clone"); hbox.addWidget(self.clone)
-        self.delete = QPushButton("Delete"); hbox.addWidget(self.delete)
-        self.up = QPushButton("Up"); hbox.addWidget(self.up)
-        self.down = QPushButton("Down"); hbox.addWidget(self.down)
+
+        self.clone = mkBtn("Clone", self.onClone, self, hbox)
+        self.delete = mkBtn("Delete", self.onDelete, self, hbox)
+        self.up = mkBtn("Up", self.onUp, self, hbox)
+        self.down = mkBtn("Down", self.onDown, self, hbox)
 
         self.vbox.addWidget(self.frame1)
 
@@ -123,6 +126,9 @@ class PreferencesDialog( QDialog ):
 
     # see util.jcfg_default()['Filter'] for type of data
     def setTableRow(self, rowIndex, data):
+        assert rowIndex >= 0, "Negative row numbers? Really?"
+        assert len(self.rowGui) >= rowIndex, "Row can't be appended because it would leave an empty row"
+
         rowGui = {}
 
         modelComboBox = QComboBox()
@@ -155,8 +161,14 @@ class PreferencesDialog( QDialog ):
         self.tableView.setIndexWidget(self.tableModel.index(rowIndex, 3), morphemizerComboBox)
         self.tableModel.setItem(rowIndex, 4, item)
 
-        self.rowGui[rowIndex] = rowGui
+        if len(self.rowGui) == rowIndex:
+            self.rowGui.append(rowGui)
+        else:
+            self.rowGui[rowIndex] = rowGui
 
+
+    def rowIndexToFilter(self, rowIdx):
+        return self.rowGuiToFilter(self.rowGui[rowIdx])
 
     def rowGuiToFilter(self, rowGui):
         filter = {}
@@ -195,7 +207,45 @@ class PreferencesDialog( QDialog ):
         self.close()
         tooltip( _( 'Please recalculate your database to avoid unexpected behaviour.') )
 
+    def getCurrentRow(self):
+        indexes = self.tableView.selectedIndexes()
+        if len(indexes) == 0: return 0
+        return indexes[0].row()
 
+    def appendRowData(self, data):
+        self.tableModel.setRowCount(len(self.rowGui) + 1)
+        self.setTableRow(len(self.rowGui), data)
+
+    def onClone(self):
+        row = self.getCurrentRow()
+        data = self.rowIndexToFilter(row)
+        self.appendRowData(data)
+
+    def onDelete(self):
+        # do not allow to delet last row
+        if len(self.rowGui) == 1:
+            return
+        rowToDelete = self.getCurrentRow()
+        self.tableModel.removeRow(rowToDelete)
+        self.rowGui.pop(rowToDelete)
+
+    def moveRowUp(self, row):
+        if not (row >= 0 and row < len(self.rowGui)): return # can't move first row up
+        data1 = self.rowIndexToFilter(row - 1)
+        data2 = self.rowIndexToFilter(row - 0)
+        self.setTableRow(row - 1, data2)
+        self.setTableRow(row - 0, data1)
+
+    def onUp(self):
+        row = self.getCurrentRow()
+        self.moveRowUp(row)
+        self.tableView.selectRow(row - 1)
+
+    def onDown(self):
+        # moving a row down means moving the next row up
+        row = self.getCurrentRow()
+        self.moveRowUp(row + 1)
+        self.tableView.selectRow(row + 1)
 
 def main():
     mw.mm = PreferencesDialog( mw )
