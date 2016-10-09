@@ -5,18 +5,13 @@ import os
 
 import adaptiveSubs
 from morphemes import MorphDb
-from util import dbsPath, errorMsg, infoMsg, mw, parseWhitelist, cfg1
+from util import dbsPath, errorMsg, infoMsg, mw, parseWhitelist, cfg1, mkBtn
 from morphemes import getAllMorphemizers
 
 def getPath( le ): # LineEdit -> GUI ()
     path = QFileDialog.getOpenFileName( caption='Open db', directory=dbsPath )
     le.setText( path )
 
-def mkBtn( txt, f, conn, parent ):
-    b = QPushButton( txt )
-    conn.connect( b, SIGNAL('clicked()'), f )
-    parent.addWidget( b )
-    return b
 
 class AdaptiveSubWin( QDialog ):
     def __init__( self, parent=None ):
