@@ -126,6 +126,12 @@ class PreferencesDialog( QDialog ):
             grid.addWidget(QLabel(name), i / numberOfColumns, (i % numberOfColumns) * 2 + 0)
             grid.addWidget(entry, i / numberOfColumns, (i % numberOfColumns) * 2 + 1)
 
+        vbox.addSpacing(50)
+
+        self.checkboxSetNotRequiredTags = QCheckBox("Add tags even if not required")
+        self.checkboxSetNotRequiredTags.setCheckState(Qt.Checked if jcfg('Option_SetNotRequiredTags') else Qt.Unchecked)
+        vbox.addWidget(self.checkboxSetNotRequiredTags)
+
         vbox.addStretch()
 
     def createButtons(self):
@@ -212,6 +218,8 @@ class PreferencesDialog( QDialog ):
         cfg['Filter'] = []
         for i, rowGui in enumerate(self.rowGui):
             cfg['Filter'].append(self.rowGuiToFilter(rowGui))
+
+        cfg['Option_SetNotRequiredTags'] = self.checkboxSetNotRequiredTags.checkState() != Qt.Unchecked
 
         return cfg
 
