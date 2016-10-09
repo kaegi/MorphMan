@@ -38,13 +38,13 @@ def initCfg():
 def initJcfg():
     global jcfgMod, dbsPath
     import json
+    jcfgMod = jcfg_default()
     try:
         f = codecs.open( cfg1('path_json'), 'r', 'utf-8' )
-        jcfgMod = json.loads(f.read())
-        print jcfgMod
+        jcfgUpdate(json.loads(f.read()))
         f.close()
     except IOError:
-        jcfgMod = jcfg_default()
+        pass # the first time when using this plugin, no config file is present
 
 
 addHook( 'profileLoaded', initCfg )
