@@ -257,6 +257,11 @@ def updateNotes( allDb ):
         if tooLongTag in ts:    ts.remove( tooLongTag )
         if tooLong:             ts.append( tooLongTag )
 
+        # remove unnecessary tags
+        if not jcfg('Option_SetNotRequiredTags'):
+            unnecessary = [compTag, vocabTag, priorityTag, badLengthTag, tooLongTag]
+            ts = [tag for tag in ts if tag not in unnecessary]
+
             # update sql db
         tags_ = TAG.join( TAG.canonify( ts ) )
         flds_ = joinFields( fs )
