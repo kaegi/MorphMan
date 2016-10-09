@@ -40,8 +40,7 @@ def getSortFieldIndex( mid ):
 def setField( mid, fs, k, v ): # nop if field DNE
     """
     :type int mid: modelId
-    :type [str] fs: a list of all field data
-    :type str k: name of field to modify (for example u'Expression')
+    :type [str] fs: a list of all field data :type str k: name of field to modify (for example u'Expression')
     :type str v: new value for field
     """
     idx = getFieldIndex( k, mid )

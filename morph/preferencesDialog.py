@@ -1,7 +1,9 @@
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 
-from util import errorMsg, infoMsg, mw, jcfg
+from aqt.utils import tooltip
+
+from util import errorMsg, infoMsg, mw, jcfg, jcfgUpdate, mkBtn
 from morphemes import getAllMorphemizers
 
 # only for jedi-auto-completion
@@ -11,6 +13,7 @@ assert isinstance(mw, aqt.main.AnkiQt)
 class PreferencesDialog( QDialog ):
     def __init__( self, parent=None ):
         super( PreferencesDialog, self ).__init__( parent )
+        self.rowGui = []
         self.resize(1280, 800)
 
         self.setWindowTitle( 'MorphMan Preferences' )
@@ -31,6 +34,7 @@ class PreferencesDialog( QDialog ):
 
         rowData = jcfg()['Filter']
         self.tableModel.setRowCount(len(rowData))
+        self.rowGui = [None] * len(rowData)
         for i, row in enumerate(rowData):
             self.setTableRow(i, row)
 
@@ -56,8 +60,7 @@ class PreferencesDialog( QDialog ):
 
         grid = QGridLayout(); vbox.addLayout(grid)
         numberOfColumns = 3
-        for i, (name, key) in enumerate(
-            [
+        fieldsList = [
                 ("Focus morph (*):", "Field_FocusMorph"),
                 ("MorphMan Index:", "Field_MorphManIndex"),
                 ("Unmatures", "Field_Unmatures"),
@@ -65,9 +68,14 @@ class PreferencesDialog( QDialog ):
                 ("Unknowns:", "Field_Unknowns"),
                 ("Unknown count:", "Field_UnknownMorphCount"),
                 ("Unknown frequency:", "Field_UnknownFreq")
-            ]):
+            ]
+        self.fieldEntryList = []
+        for i, (name, key) in enumerate(fieldsList):
+            entry = QLineEdit(jcfg()[key])
+            self.fieldEntryList.append((key, entry))
+
             grid.addWidget(QLabel(name), i / numberOfColumns, (i % numberOfColumns) * 2 + 0)
-            grid.addWidget(QLineEdit(jcfg()[key]), i / numberOfColumns, (i % numberOfColumns) * 2 + 1)
+            grid.addWidget(entry, i / numberOfColumns, (i % numberOfColumns) * 2 + 1)
 
         self.vbox.addWidget(self.frame2)
 
@@ -79,8 +87,7 @@ class PreferencesDialog( QDialog ):
         vbox.addWidget(label)
 
         grid = QGridLayout(); vbox.addLayout(grid)
-        for i, (name, key) in enumerate(
-            [
+        tagList  = [
                 ("Compehension note:", 'Tag_Comprehension'),
                 ("Vocab note:", 'Tag_Vocab'),
                 ("Not ready:", 'Tag_NotReady'),
@@ -88,17 +95,25 @@ class PreferencesDialog( QDialog ):
                 ("Priority:", 'Tag_Priority'),
                 ("Bad Length:", 'Tag_BadLength'),
                 ("Too Long", 'Tag_TooLong'),
-            ]):
+            ]
+        self.tagEntryList = []
+        for i, (name, key) in enumerate(tagList):
+            entry = QLineEdit(jcfg()[key])
+            self.tagEntryList.append((key, entry))
+
             grid.addWidget(QLabel(name), i / numberOfColumns, (i % numberOfColumns) * 2 + 0)
-            grid.addWidget(QLineEdit(jcfg()[key]), i / numberOfColumns, (i % numberOfColumns) * 2 + 1)
+            grid.addWidget(entry, i / numberOfColumns, (i % numberOfColumns) * 2 + 1)
         self.vbox.addWidget(self.frame3)
 
 
         hbox = QHBoxLayout(); self.vbox.addLayout(hbox)
-        buttonCancel = QPushButton("Cancel"); hbox.addWidget(buttonCancel, 1, Qt.AlignRight)
+        buttonCancel = QPushButton("&Cancel"); hbox.addWidget(buttonCancel, 1, Qt.AlignRight)
         buttonCancel.setMaximumWidth(150)
-        buttonOkay = QPushButton("Apply"); hbox.addWidget(buttonOkay, 0)
+        self.connect( buttonCancel, SIGNAL('clicked()'), self.onCancel )
+
+        buttonOkay = QPushButton("&Apply"); hbox.addWidget(buttonOkay, 0)
         buttonOkay.setMaximumWidth(150)
+        self.connect( buttonOkay, SIGNAL('clicked()'), self.onOkay )
 
 
         self.setLayout(self.vbox)
@@ -106,10 +121,11 @@ class PreferencesDialog( QDialog ):
 
     # see util.jcfg_default()['Filter'] for type of data
     def setTableRow(self, rowIndex, data):
+        rowGui = {}
 
         modelComboBox = QComboBox()
         active = 0
-        modelComboBox.addItem("All card types")
+        modelComboBox.addItem("All note types")
         for i, model in enumerate(mw.col.models.allNames()):
             if model == data['Type']: active = i
             modelComboBox.addItem(model)
@@ -118,7 +134,6 @@ class PreferencesDialog( QDialog ):
         active = 1
         morphemizerComboBox = QComboBox()
         for i, m in enumerate(getAllMorphemizers()):
-            print m.__class__.__name__, data['Morphemizer']
             if m.__class__.__name__ == data['Morphemizer']: active = i
             morphemizerComboBox.addItem(m.getDescription())
         morphemizerComboBox.setCurrentIndex(active)
@@ -127,11 +142,57 @@ class PreferencesDialog( QDialog ):
         item.setCheckable(True)
         item.setCheckState(Qt.Checked if data['Modify'] else Qt.Unchecked)
 
-        self.tableView.setIndexWidget(self.tableModel.index(rowIndex, 0), modelComboBox)
-        self.tableView.setIndexWidget(self.tableModel.index(rowIndex, 1), QLineEdit(', '.join(data['Tags'])))
-        self.tableView.setIndexWidget(self.tableModel.index(rowIndex, 2), QLineEdit(', '.join(data['Fields'])))
+        rowGui['modelComboBox'] = modelComboBox
+        rowGui['tagsEntry'] = QLineEdit(', '.join(data['Tags']))
+        rowGui['fieldsEntry'] = QLineEdit(', '.join(data['Fields']))
+        rowGui['morphemizerComboBox'] = morphemizerComboBox
+        rowGui['modifyCheckBox'] = item
+        self.tableView.setIndexWidget(self.tableModel.index(rowIndex, 0), rowGui['modelComboBox'])
+        self.tableView.setIndexWidget(self.tableModel.index(rowIndex, 1), rowGui['tagsEntry'])
+        self.tableView.setIndexWidget(self.tableModel.index(rowIndex, 2), rowGui['fieldsEntry'])
         self.tableView.setIndexWidget(self.tableModel.index(rowIndex, 3), morphemizerComboBox)
         self.tableModel.setItem(rowIndex, 4, item)
+
+        self.rowGui[rowIndex] = rowGui
+
+
+    def rowGuiToFilter(self, rowGui):
+        filter = {}
+
+        if rowGui['modelComboBox'].currentIndex() == 0: filter['Type'] = None # no filter "All note types"
+        else: filter['Type'] = rowGui['modelComboBox'].currentText()
+
+        filter['Tags'] = rowGui['tagsEntry'].text().replace(',', ' ').split()
+        filter['Fields'] = rowGui['fieldsEntry'].text().replace(',', ' ').split()
+
+        filter['Morphemizer'] = getAllMorphemizers()[rowGui['morphemizerComboBox'].currentIndex()].__class__.__name__
+        filter['Modify'] = rowGui['modifyCheckBox'].checkState() != Qt.Unchecked
+
+        return filter
+
+
+
+    def readConfigFromGui(self):
+        cfg = {}
+        for (key, entry) in self.fieldEntryList:
+            cfg[key] = entry.text()
+        for (key, entry) in self.tagEntryList:
+            cfg[key] = entry.text()
+
+        cfg['Filter'] = []
+        for i, rowGui in enumerate(self.rowGui):
+            cfg['Filter'].append(self.rowGuiToFilter(rowGui))
+
+        return cfg
+
+    def onCancel(self):
+        self.close()
+
+    def onOkay(self):
+        jcfgUpdate(self.readConfigFromGui())
+        self.close()
+        tooltip( _( 'Please recalculate your database to avoid unexpected behaviour.') )
+
 
 
 def main():

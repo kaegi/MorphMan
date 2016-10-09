@@ -44,7 +44,6 @@ def initJcfg():
         f.close()
     except IOError:
         jcfgMod = jcfg_default()
-    print jcfgMod
 
 
 addHook( 'profileLoaded', initCfg )
@@ -90,7 +89,7 @@ def jcfg_default():
 
         # filter for cards that should be analyzed, higher entries have higher priority
         'Filter': [
-            # note type, list of tags, list of morph fields for this note type -> morphemizer, analyze only or modify?
+            # note type (None means all note types), list of tags, list of morph fields for this note type -> morphemizer, analyze only or modify?
             {'Type': 'SubtitleMemorize', 'Tags': ['japanese'], 'Fields': ['Expression'], 'Morphemizer': 'MecabMorphemizer', 'Modify': True},
             {'Type': 'SubtitleMemorize', 'Tags': [          ], 'Fields': ['Expression'], 'Morphemizer': 'SpaceMorphemizer', 'Modify': True},
         ]
@@ -99,6 +98,13 @@ def jcfg_default():
 def jcfg():
     assert jcfgMod, 'Tried to use jcfgMods before profile loaded'
     return jcfgMod
+
+def jcfgUpdate(jcfg):
+    print jcfg
+    for key, value in jcfg.items():
+        assert key in jcfgMod, "jcfgUpdate(): key is is not in jcfgMod"
+        jcfgMod[key] = value
+
 
 ###############################################################################
 ## Parsing
