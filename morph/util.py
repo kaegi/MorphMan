@@ -115,7 +115,11 @@ def jcfgUpdate(jcfg, save=True):
 def saveJcfg():
     import json
     exportStr = json.dumps(jcfg2(), sort_keys=True, indent=4, separators=(',', ': '))
-    f = codecs.open( cfg1('path_json'), 'w', 'utf-8')
+    path = cfg1('path_json')
+    par = os.path.split( path )[0]
+    if not os.path.exists( par ):
+        os.makedirs( par )
+    f = codecs.open(path, 'w', 'utf-8')
     f.write(exportStr)
     f.close()
 
