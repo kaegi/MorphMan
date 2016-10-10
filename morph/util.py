@@ -41,7 +41,7 @@ def initJcfg():
     jcfgMod = jcfg_default()
     try:
         f = codecs.open( cfg1('path_json'), 'r', 'utf-8' )
-        jcfgUpdate(json.loads(f.read()))
+        jcfgUpdate(json.loads(f.read()), save=False)
         f.close()
     except IOError:
         pass # the first time when using this plugin, no config file is present
@@ -91,8 +91,8 @@ def jcfg_default():
         # filter for cards that should be analyzed, higher entries have higher priority
         'Filter': [
             # note type (None means all note types), list of tags, list of morph fields for this note type -> morphemizer, analyze only or modify?
-            {'Type': 'SubtitleMemorize', 'Tags': ['japanese'], 'Fields': ['Expression'], 'Morphemizer': 'MecabMorphemizer', 'Modify': True},
-            {'Type': 'SubtitleMemorize', 'Tags': [          ], 'Fields': ['Expression'], 'Morphemizer': 'SpaceMorphemizer', 'Modify': True},
+            {'Type': 'SubtitleMemorize', 'TypeId': None, 'Tags': ['japanese'], 'Fields': ['Expression'], 'Morphemizer': 'MecabMorphemizer', 'Modify': True},
+            {'Type': 'SubtitleMemorize', 'TypeId': None, 'Tags': [          ], 'Fields': ['Expression'], 'Morphemizer': 'SpaceMorphemizer', 'Modify': True},
         ],
 
         # only set necessary tags or set all tags?
@@ -106,12 +106,11 @@ def jcfg2():
 def jcfg(name):
     return jcfg2()[name]
 
-def jcfgUpdate(jcfg):
-    print jcfg
+def jcfgUpdate(jcfg, save=True):
     for key, value in jcfg.items():
         assert key in jcfgMod, "jcfgUpdate(): key is is not in jcfgMod"
         jcfgMod[key] = value
-    saveJcfg()
+    if save: saveJcfg()
 
 def saveJcfg():
     import json
