@@ -139,6 +139,9 @@ def updateNotes( allDb ):
     fidDb   = allDb.fidDb()
     locDb   = allDb.locDb( recalc=False ) # fidDb() already forces locDb recalc
 
+    # read tag names
+    compTag, vocabTag, notReadyTag, alreadyKnownTag, priorityTag, badLengthTag, tooLongTag = tagNames = jcfg('Tag_Comprehension'), jcfg('Tag_Vocab'), jcfg('Tag_NotReady'), jcfg('Tag_AlreadyKnown'), jcfg('Tag_Priority'), jcfg('Tag_BadLength'), jcfg('Tag_TooLong')
+
     # handle secondary databases
     mw.progress.update( label='Creating seen/known/mature from all.db' )
     seenDb      = filterDbByMat( allDb, cfg1('threshold_seen') )
@@ -228,7 +231,6 @@ def updateNotes( allDb ):
         ts, fs = TAG.split( tags ), splitFields( flds )
 
         # determine card type
-        compTag, vocabTag, notReadyTag, alreadyKnownTag, priorityTag, badLengthTag, tooLongTag = tagNames = jcfg('Tag_Comprehension'), jcfg('Tag_Vocab'), jcfg('Tag_NotReady'), jcfg('Tag_AlreadyKnown'), jcfg('Tag_Priority'), jcfg('Tag_BadLength'), jcfg('Tag_TooLong')
         if N_m == 0:    # sentence comprehension card, m+0
             ts = [ compTag ] + [ t for t in ts if t not in [ vocabTag, notReadyTag ] ]
             setField( mid, fs, jcfg('Field_FocusMorph'), u'' )
