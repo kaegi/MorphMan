@@ -141,6 +141,7 @@ def updateNotes( allDb ):
 
     # read tag names
     compTag, vocabTag, notReadyTag, alreadyKnownTag, priorityTag, badLengthTag, tooLongTag = tagNames = jcfg('Tag_Comprehension'), jcfg('Tag_Vocab'), jcfg('Tag_NotReady'), jcfg('Tag_AlreadyKnown'), jcfg('Tag_Priority'), jcfg('Tag_BadLength'), jcfg('Tag_TooLong')
+    TAG.register( tagNames )
 
     # handle secondary databases
     mw.progress.update( label='Creating seen/known/mature from all.db' )
@@ -274,7 +275,6 @@ def updateNotes( allDb ):
 
     mw.progress.update( value=i, label='Updating anki database...' )
     mw.col.db.executemany( 'update notes set tags=:tags, flds=:flds, sfld=:sfld, csum=:csum, mod=:now, usn=:usn where id=:nid', ds )
-    TAG.register( tagNames )
 
     # Now reorder new cards based on MMI
     mw.progress.update( value=i, label='Updating new card ordering...' )
