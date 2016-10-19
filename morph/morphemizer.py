@@ -150,7 +150,7 @@ class SpaceMorphemizer(Morphemizer):
         return [Morpheme(word, word, 'UNKNOWN', 'UNKNOWN', word) for word in wordList]
 
     def getDescription(self):
-        return 'Languages with spaces (English, German, Spansh, ...)'
+        return 'Language with spaces'
 
 ####################################################################################################
 # CJK Character Morphemizer
