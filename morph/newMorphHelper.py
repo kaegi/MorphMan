@@ -201,6 +201,7 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
 
     from morphemes import getMorphemes, getMorphemizerForTagsAndType
     morphemizer = getMorphemizerForTagsAndType(fieldDict['Type'], fieldDict['Tags'].split())
+    if morphemizer is None: return txt
     ms = getMorphemes(morphemizer, txt )
 
     for m in sorted( ms, key=lambda x: len(x.inflected), reverse=True ): # largest subs first
