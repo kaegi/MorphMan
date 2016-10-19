@@ -32,7 +32,7 @@ class Morphemizer:
 ####################################################################################################
 
 def getAllMorphemizers(): # -> [Morphemizer]
-    return [SpaceMorphemizer(), MecabMorphemizer()]
+    return [SpaceMorphemizer(), MecabMorphemizer(), CjkCharMorphemizer()]
 
 def getMorphemizerForNote(note):
     ''' :type note: anki.notes.Note '''
@@ -151,3 +151,18 @@ class SpaceMorphemizer(Morphemizer):
 
     def getDescription(self):
         return 'Languages with spaces (English, German, Spansh, ...)'
+
+####################################################################################################
+# CJK Character Morphemizer
+####################################################################################################
+
+class CjkCharMorphemizer(Morphemizer):
+    '''
+    Morphemizer that splits sentence into characters and filters for Chinese-Japanese-Korean logographic/idiographic characters.
+    '''
+    def getMorphemesFromExpr(self, e): # Str -> [Morpheme]
+        from deps.zhon.hanzi import characters
+        return [Morpheme(character, character, 'UNKNOWN', 'UNKNOWN', character) for character in re.findall('[%s]' % characters, e)]
+
+    def getDescription(self):
+        return 'CJK characters'
