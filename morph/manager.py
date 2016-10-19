@@ -5,8 +5,8 @@ import os
 
 import adaptiveSubs
 from morphemes import MorphDb
+from morphemizer import getAllMorphemizers
 from util import dbsPath, errorMsg, infoMsg, mw, parseWhitelist, cfg1, mkBtn
-from morphemes import getAllMorphemizers
 
 def getPath( le ): # LineEdit -> GUI ()
     path = QFileDialog.getOpenFileName( caption='Open db', directory=dbsPath )

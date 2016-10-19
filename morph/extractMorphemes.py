@@ -1,7 +1,8 @@
 #-*- coding: utf-8 -*-
 import os
 
-from morphemes import AnkiDeck, MorphDb, getMorphemes, getMorphemizerForNote, ms2str
+from morphemes import AnkiDeck, MorphDb, getMorphemes, ms2str
+from morphemizer import getMorphemizerForNote
 from util import addBrowserSelectionCmd, cfg, cfg1, mw, infoMsg, QFileDialog
 
 def pre( b ):

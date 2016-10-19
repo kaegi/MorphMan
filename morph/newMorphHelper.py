@@ -199,7 +199,8 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
     #if not isNoteSame(note, fieldDict): return txt
     #from aqt.qt import debug; debug()
 
-    from morphemes import getMorphemes, getMorphemizerForTagsAndType
+    from morphemes import getMorphemes
+    from morphemizer import getMorphemizerForTagsAndType
     morphemizer = getMorphemizerForTagsAndType(fieldDict['Type'], fieldDict['Tags'].split())
     if morphemizer is None: return txt
     ms = getMorphemes(morphemizer, txt )

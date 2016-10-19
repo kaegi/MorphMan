@@ -1,5 +1,6 @@
 #-*- coding: utf-8 -*-
-from morphemes import getMorphemes, getMorphemizerForNote, MorphDb
+from morphemes import getMorphemes, MorphDb
+from morphemizer import getMorphemizerForNote
 from util import addBrowserSelectionCmd, cfg, cfg1, infoMsg, QInputDialog, QFileDialog, QLineEdit
 import util
 

@@ -2,7 +2,8 @@
 import time
 
 from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksum
-from morphemes import MorphDb, AnkiDeck, getMorphemes, getMorphemizerForFilter
+from morphemes import MorphDb, AnkiDeck, getMorphemes
+from morphemizer import getMorphemizerForFilter
 import stats
 from util import printf, mw, memoize, cfg, cfg1, partial, errorMsg, infoMsg, jcfg, getFilter
 import util

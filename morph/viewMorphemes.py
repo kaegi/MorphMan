@@ -1,5 +1,6 @@
 #-*- coding: utf-8 -*-
-from morphemes import getMorphemes, getMorphemizerForNote, ms2str
+from morphemes import getMorphemes, ms2str
+from morphemizer import getMorphemizerForNote
 from util import addBrowserSelectionCmd, cfg, cfg1, infoMsg
 
 def pre( b ): return { 'txt':'', 'morphemizer': None }
