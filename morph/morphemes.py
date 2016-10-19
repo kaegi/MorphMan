@@ -120,7 +120,7 @@ def getMorphemizerForNote(note):
 
 def getMorphemizerForTagsAndType(type, tags): # Str -> [Str] -> Morphemizer
     filter = getFilterByTagsAndType(type, tags)
-    if filter is None: return none
+    if filter is None: return None
     return getMorphemizerForFilter(filter)
 
 def getMorphemizerForFilter(filter):
