@@ -157,9 +157,9 @@ class PreferencesDialog( QDialog ):
         active = 0
         modelComboBox.addItem("All note types")
         for i, model in enumerate(mw.col.models.allNames()):
-            if model == data['Type']: active = i
+            if model == data['Type']: active = i + 1
             modelComboBox.addItem(model)
-        modelComboBox.setCurrentIndex(active + 1)
+        modelComboBox.setCurrentIndex(active)
 
         active = 1
         morphemizerComboBox = QComboBox()
