@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import codecs, cPickle as pickle, gzip, os, subprocess, re
-from util import cfg1, getFilterByTagsAndType
+from util import cfg1, getFilter, getFilterByTagsAndType
 from morphemes import Morpheme
 
 # need some fallbacks if not running from anki and thus morph.util isn't available
@@ -36,7 +36,9 @@ def getAllMorphemizers(): # -> [Morphemizer]
 
 def getMorphemizerForNote(note):
     ''' :type note: anki.notes.Note '''
-    return getMorphemizerForTagsAndType(note.model()['name'], note.stringTags().split())
+    filter = getFilter(note)
+    if filter == None: return None
+    return getMorphemizerForFilter(filter)
 
 def getMorphemizerForTagsAndType(type, tags): # Str -> [Str] -> Morphemizer
     filter = getFilterByTagsAndType(type, tags)
