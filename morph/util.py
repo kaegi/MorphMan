@@ -187,7 +187,7 @@ def printf( msg ):
     f = codecs.open( cfg1('path_log'), 'a', 'utf-8' )
     f.write( txt+'\r\n' )
     f.close()
-    print txt
+    print txt.encode('utf-8')
 
 def clearLog():
     f = codecs.open( cfg1('path_log'), 'w', 'utf-8' )
