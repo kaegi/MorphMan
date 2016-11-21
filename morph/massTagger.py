@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 from morphemes import getMorphemes, MorphDb
-from morphemizer import getMorphemizerForNote
-from util import addBrowserSelectionCmd, cfg, cfg1, infoMsg, QInputDialog, QFileDialog, QLineEdit
+from morphemizer import getMorphemizerForFilter
+from util import addBrowserSelectionCmd, cfg, cfg1, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit
 import util
 
 def pre( b ): # :: Browser -> State
@@ -15,11 +15,15 @@ def pre( b ): # :: Browser -> State
 def per( st, n ): # :: State -> Note -> State
     #n.delTag( st['tags'] ) # clear tags if they already exist?
 
-    for field in cfg( n.mid, None, 'morph_fields' ):
-        for m in getMorphemes(getMorphemizerForNote(n), n[ field ]):
-            if m in st['db'].db:
-                n.addTag( st['tags'] )
-                break
+    notecfg = getFilter(n)
+    if notecfg is None: return st
+    morphemizer = getMorphemizerForFilter(notecfg)
+    if notecfg is None: return st
+    for m in getMorphemes(morphemizer, notecfg['Fields']):
+        if m in st['db'].db:
+            n.addTag(st['tags'])
+            break
+
     n.flush()
     return st
 
