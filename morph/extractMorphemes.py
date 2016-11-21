@@ -2,8 +2,8 @@
 import os
 
 from morphemes import AnkiDeck, MorphDb, getMorphemes, ms2str
-from morphemizer import getMorphemizerForNote
-from util import addBrowserSelectionCmd, cfg, cfg1, mw, infoMsg, QFileDialog
+from morphemizer import getMorphemizerForFilter
+from util import addBrowserSelectionCmd, cfg, cfg1, mw, getFilter, infoMsg, QFileDialog
 
 def pre( b ):
     from util import dbsPath # not defined until late, so don't import at top of module
@@ -13,10 +13,14 @@ def pre( b ):
 
 def per( st, n ):
     mats = mw.col.db.list( 'select ivl from cards where nid = :nid', nid=n.id )
-    for f in cfg( n.mid, None, 'morph_fields' ):
-        ms = getMorphemes(getMorphemizerForNote(n), n[ f ])
-        loc = AnkiDeck( n.id, f, n[ f ], n.guid, mats )
-        st['morphDb'].addMsL( ms, loc )
+    notecfg = getFilter(n)
+    if notecfg is None: return st
+    morphemizer = getMorphemizerForFilter(notecfg)
+    for f in notecfg['Fields']:
+        ms = getMorphemes(morphemizer, n[f])
+        loc = AnkiDeck(n.id, f, n[f], n.guid, mats)
+        st['morphDb'].addMsl(ms, loc)
+
     return st
 
 def post( st ):
