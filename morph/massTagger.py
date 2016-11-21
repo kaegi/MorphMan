@@ -18,11 +18,11 @@ def per( st, n ): # :: State -> Note -> State
     notecfg = getFilter(n)
     if notecfg is None: return st
     morphemizer = getMorphemizerForFilter(notecfg)
-    if notecfg is None: return st
-    for m in getMorphemes(morphemizer, notecfg['Fields']):
-        if m in st['db'].db:
-            n.addTag(st['tags'])
-            break
+    for field in notecfg['Fields']:
+        for m in getMorphemes(morphemizer, n[ field ]):
+            if m in st['db'].db:
+                n.addTag(st['tags'])
+                break
 
     n.flush()
     return st
