@@ -36,16 +36,9 @@ def initCfg():
     mw.toolbar.draw()
 
 def initJcfg():
-    global jcfgMod, dbsPath
-    import json
-    jcfgMod = jcfg_default()
-    try:
-        f = codecs.open( cfg1('path_json'), 'r', 'utf-8' )
-        jcfgUpdate(json.loads(f.read()), save=False)
-        f.close()
-    except IOError:
-        pass # the first time when using this plugin, no config file is present
-
+    mw.col.conf.setdefault(
+            'addons', {}).setdefault(
+                    'morphman', jcfg_default())
 
 addHook( 'profileLoaded', initCfg )
 addHook( 'profileLoaded', initJcfg )
@@ -65,9 +58,6 @@ def cfg( modelId, deckId, key ):
     else:
         return cfgMod.default[ key ]
 
-# --------------------
-# configuration from .json file
-jcfgMod = None
 def jcfg_default():
     return {
         'Field_FocusMorph':u'MorphMan_FocusMorph',         # holds the unknown for k+0 sentences but goes away once m+0
@@ -100,29 +90,15 @@ def jcfg_default():
     }
 
 def jcfg2():
-    assert jcfgMod, 'Tried to use jcfgMods before profile loaded'
-    return jcfgMod
+    conf = mw.col.conf['addons']['morphman']
+    assert conf, 'Tried to use jcfgMods before profile loaded'
+    return conf
 
 def jcfg(name):
     return jcfg2()[name]
 
-def jcfgUpdate(jcfg, save=True):
-    for key, value in jcfg.items():
-        assert key in jcfgMod, "jcfgUpdate(): key is is not in jcfgMod"
-        jcfgMod[key] = value
-    if save: saveJcfg()
-
-def saveJcfg():
-    import json
-    exportStr = json.dumps(jcfg2(), sort_keys=True, indent=4, separators=(',', ': '))
-    path = cfg1('path_json')
-    par = os.path.split( path )[0]
-    if not os.path.exists( par ):
-        os.makedirs( par )
-    f = codecs.open(path, 'w', 'utf-8')
-    f.write(exportStr)
-    f.close()
-
+def jcfgUpdate(jcfg):
+    mw.col.conf['addons']['morphman'].update(jcfg)
 
 def getFilter(note):
     return getFilterByTagsAndType(note.model()['name'], note.tags)
