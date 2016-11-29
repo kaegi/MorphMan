@@ -99,6 +99,7 @@ def jcfg(name):
 
 def jcfgUpdate(jcfg):
     mw.col.conf['addons']['morphman'].update(jcfg)
+    mw.col.setMod()
 
 def getFilter(note):
     return getFilterByTagsAndType(note.model()['name'], note.tags)
