@@ -254,7 +254,7 @@ class PreferencesDialog( QDialog ):
         self.rowGui.pop(rowToDelete)
 
     def moveRowUp(self, row):
-        if not (row >= 0 and row < len(self.rowGui)): return # can't move first row up
+        if not (row > 0 and row < len(self.rowGui)): return # can't move first row up
         data1 = self.rowIndexToFilter(row - 1)
         data2 = self.rowIndexToFilter(row - 0)
         self.setTableRow(row - 1, data2)
