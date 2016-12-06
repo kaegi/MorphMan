@@ -50,7 +50,7 @@ class PreferencesDialog( QDialog ):
         for i, row in enumerate(rowData):
             self.setTableRow(i, row)
 
-        label = QLabel("Any card that has the given `Note type` and all of the given `Tags` will have its `Fields` analyzed with the specified `Morphemizer`. A morphemizer specifies how words are extraced from a sentence. `Fields` and `Tags` are both comma-separated lists. If `Tags` is empty, there are no tag restrictions. If `Modify` is deactivated, the note will only be analyzed.\n\nIf a note is matched multple times, the first line will take precedence.")
+        label = QLabel("Any card that has the given `Note type` and all of the given `Tags` will have its `Fields` analyzed with the specified `Morphemizer`. A morphemizer specifies how words are extraced from a sentence. `Fields` and `Tags` are both comma-separated lists. If `Tags` is empty, there are no tag restrictions. If `Modify` is deactivated, the note will only be analyzed.\n\nIf a note is matched multple times, only the first filter in this list will be used.")
         label.setWordWrap(True)
         vbox.addWidget(label)
         vbox.addSpacing(20)
