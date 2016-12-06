@@ -17,6 +17,8 @@ class Morpheme:
     def __init__( self, base, inflected, pos, subPos, read ):
         """ Initialize morpheme class.
 
+        POS means part-of-speech.
+
         Example morpheme infos for the expression "歩いて":
 
         :param str base: 歩く
