@@ -164,7 +164,7 @@ class CjkCharMorphemizer(Morphemizer):
     '''
     def getMorphemesFromExpr(self, e): # Str -> [Morpheme]
         from deps.zhon.hanzi import characters
-        return [Morpheme(character, character, 'UNKNOWN', 'UNKNOWN', character) for character in re.findall('[%s]' % characters, e)]
+        return [Morpheme(character, character, 'CJK_CHAR', 'UNKNOWN', character) for character in re.findall('[%s]' % characters, e)]
 
     def getDescription(self):
         return 'CJK characters'
