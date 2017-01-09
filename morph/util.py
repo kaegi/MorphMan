@@ -40,6 +40,9 @@ def initJcfg():
             'addons', {}).setdefault(
                     'morphman', jcfg_default())
 
+    # this ensures forward compatibility, because it adds new options in configuration without any notice
+    jcfgAddMissing()
+
 addHook( 'profileLoaded', initCfg )
 addHook( 'profileLoaded', initJcfg )
 
@@ -98,8 +101,20 @@ def jcfg(name):
     return jcfg2()[name]
 
 def jcfgUpdate(jcfg):
+    original = mw.col.conf['addons']['morphman'].copy()
     mw.col.conf['addons']['morphman'].update(jcfg)
-    mw.col.setMod()
+    if not mw.col.conf['addons']['morphman'] == original:
+        mw.col.setMod()
+
+def jcfgAddMissing():
+    # this ensures forward compatibility, because it adds new options in configuration (introduced by update) without any notice with default value
+    current = jcfg2().copy()
+    default = jcfg_default()
+    for key, value in default.iteritems():
+        if not key in current:
+            current[key] = value
+    jcfgUpdate(current)
+
 
 def getFilter(note):
     return getFilterByTagsAndType(note.model()['name'], note.tags)
