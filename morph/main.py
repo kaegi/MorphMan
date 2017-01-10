@@ -273,7 +273,7 @@ def updateNotes( allDb ):
 
         # remove unnecessary tags
         if not jcfg('Option_SetNotRequiredTags'):
-            unnecessary = [compTag, vocabTag, freshTag, priorityTag, badLengthTag, tooLongTag]
+            unnecessary = [priorityTag, badLengthTag, tooLongTag]
             ts = [tag for tag in ts if tag not in unnecessary]
 
             # update sql db

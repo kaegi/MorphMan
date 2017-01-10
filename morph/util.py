@@ -90,7 +90,9 @@ def jcfg_default():
         ],
 
         # only set necessary tags or set all tags?
-        'Option_SetNotRequiredTags': True,
+        'Option_SetNotRequiredTags': True, # do not set tags/remove tags that are only there for user to read/filter with
+        'Option_SkipComprehensionCards': True, # bury/skip all new cards that have 'Tag_Comprehension'
+        'Option_SkipFreshVocabCards': True, # bury/skip all new cards that have 'Tag_Fresh'
     }
 
 def jcfg2():
