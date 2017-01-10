@@ -82,13 +82,13 @@ def my_getNewCard( self, _old ):
         try: fm = focus( n )		# fm is either the focusMorph or empty
         except KeyError: return c	# card has no focusMorph field -> assume it's good
 
-        # determine if good vocab word based on whether k+1
-        # defaults to whether has focus morph if no k+N field or disabled
-        try: goodVocab = n[ jcfg('Field_UnknownMorphCount') ] == '1'
-        except KeyError: goodVocab = fm
+        isVocabCard = n.hasTag(jcfg('Tag_Vocab'))
+        isNotReady = n.hasTag(jcfg('Tag_NotReady'))
 
-        # even if it is not a good vocabulary card, we have no choice when there are no other cards available
-        if (not goodVocab and not n.hasTag(jcfg('Tag_NotReady'))) or n.hasTag( jcfg('Tag_AlreadyKnown') ) or fm in seenMorphs:
+        skipCondition1 = not (isVocabCard or isNotReady) # even if it is not a good vocabulary card, we have no choice when there are no other cards available
+        skipCondition2 = n.hasTag( jcfg('Tag_AlreadyKnown') ) # the user requested that the vocabulary does not have to be shown
+        skipCondition3 = fm in seenMorphs # we already learned that/saw that today
+        if skipCondition1 or skipCondition2 or skipCondition3:
             self.buryCards( [ c.id ] )
             self.newCount += 1 # the card was quaried from the "new queue" so we have to increase the "new counter" back to its original value
             continue
