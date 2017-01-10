@@ -141,7 +141,7 @@ def updateNotes( allDb ):
     locDb   = allDb.locDb( recalc=False ) # fidDb() already forces locDb recalc
 
     # read tag names
-    compTag, vocabTag, notReadyTag, alreadyKnownTag, priorityTag, badLengthTag, tooLongTag = tagNames = jcfg('Tag_Comprehension'), jcfg('Tag_Vocab'), jcfg('Tag_NotReady'), jcfg('Tag_AlreadyKnown'), jcfg('Tag_Priority'), jcfg('Tag_BadLength'), jcfg('Tag_TooLong')
+    compTag, vocabTag, freshTag, notReadyTag, alreadyKnownTag, priorityTag, badLengthTag, tooLongTag = tagNames = jcfg('Tag_Comprehension'), jcfg('Tag_Vocab'), jcfg('Tag_Fresh'), jcfg('Tag_NotReady'), jcfg('Tag_AlreadyKnown'), jcfg('Tag_Priority'), jcfg('Tag_BadLength'), jcfg('Tag_TooLong')
     TAG.register( tagNames )
 
     # handle secondary databases
@@ -232,16 +232,26 @@ def updateNotes( allDb ):
         # Fill in various fields/tags on the note based on cfg
         ts, fs = TAG.split( tags ), splitFields( flds )
 
+        # clear any 'special' tags, the appropriate will be set in the next few lines
+        ts = [ t for t in ts if t not in [ notReadyTag, compTag, vocabTag, freshTag ] ]
+
         # determine card type
         if N_m == 0:    # sentence comprehension card, m+0
-            ts = [ compTag ] + [ t for t in ts if t not in [ vocabTag, notReadyTag ] ]
+            ts = ts + [ compTag ]
             setField( mid, fs, jcfg('Field_FocusMorph'), u'' )
         elif N_k == 1:  # new vocab card, k+1
-            ts = [ vocabTag ] + [ t for t in ts if t not in [ compTag, notReadyTag ] ]
+            ts = ts + [ vocabTag ]
             setField( mid, fs, jcfg('Field_FocusMorph'), u'%s' % focusMorph.base )
         elif N_k > 1:   # M+1+ and K+2+
-            ts = [ notReadyTag ] + [ t for t in ts if t not in [ compTag, vocabTag ] ]
+            ts = ts + [ notReadyTag ]
             setField( mid, fs, jcfg('Field_FocusMorph'), u'')
+        elif N_m == 1: # we have k+0, and m+1, so this card does not introduce a new vocabulary -> card for newly learned morpheme
+            ts = ts + [ freshTag ]
+            setField( mid, fs, jcfg('Field_FocusMorph'), u'%s' % list(unmatures)[0].base)
+        else: # only case left: we have k+0, but m+2 or higher, so this card does not introduce a new vocabulary -> card for newly learned morpheme
+            ts = ts + [ freshTag ]
+            setField( mid, fs, jcfg('Field_FocusMorph'), u'')
+
 
             # set type agnostic fields
         setField( mid, fs, jcfg('Field_UnknownMorphCount'), u'%d' % N_k )
@@ -263,7 +273,7 @@ def updateNotes( allDb ):
 
         # remove unnecessary tags
         if not jcfg('Option_SetNotRequiredTags'):
-            unnecessary = [compTag, vocabTag, priorityTag, badLengthTag, tooLongTag]
+            unnecessary = [compTag, vocabTag, freshTag, priorityTag, badLengthTag, tooLongTag]
             ts = [tag for tag in ts if tag not in unnecessary]
 
             # update sql db

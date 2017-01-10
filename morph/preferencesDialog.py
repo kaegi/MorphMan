@@ -110,6 +110,7 @@ class PreferencesDialog( QDialog ):
         tagList  = [
                 ("Vocab note:", 'Tag_Vocab', 'Note that is optimal to learn (one unknown word.)'),
                 ("Compehension note:", 'Tag_Comprehension', 'Note that has some unmature words but no unknown (optimal for sentence learning).'),
+                ("Fresh vocab note:", 'Tag_Fresh', 'Note that does not contain unknown words, but one or\nmore unmature (card with recently learned morphmes).'),
                 ("Not ready:", 'Tag_NotReady', 'Note that has two or more unknown words.'),
                 ("Already known:", 'Tag_AlreadyKnown', 'You can add this tag to a note.\nAfter a recalc of the database, all in this sentence words are marked as known.\nPress \'K\' while reviewing to tag current card.'),
                 ("Priority:", 'Tag_Priority', 'Morpheme is in priority.db.'),

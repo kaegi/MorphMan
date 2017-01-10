@@ -75,6 +75,7 @@ def jcfg_default():
         # the following three are mutually exclusive and erase eachother upon promotion/demotion
         'Tag_Comprehension':u'mm_comprehension',   # set once all morphs for note are mature
         'Tag_Vocab':u'mm_vocab',                   # set once all but 1 morph for note is known
+        'Tag_Fresh':u'mm_fresh',                    # we have no unkown words, but multiple unmature -> alternative card for vocab or original vocab card
         'Tag_NotReady':u'mm_notReady',             # set for k+2 and above cards
         'Tag_AlreadyKnown':u'mm_alreadyKnown',     # you can add this tag to a note to make anki treat it as if mature
         'Tag_Priority':u'mm_priority',             # set if note contains an unknown that exists in priority.db
