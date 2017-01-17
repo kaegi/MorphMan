@@ -86,6 +86,7 @@ def my_getNewCard( self, _old ):
         isNotReady = n.hasTag(jcfg('Tag_NotReady'))
         isComprehensionCard = n.hasTag(jcfg('Tag_Comprehension'))
         isFreshVocab = n.hasTag(jcfg('Tag_Fresh'))
+        isAlreadyKnown = n.hasTag( jcfg('Tag_AlreadyKnown') )
 
         skipComprehension = jcfg('Option_SkipComprehensionCards')
         skipFresh = jcfg('Option_SkipFreshVocabCards')
@@ -93,7 +94,7 @@ def my_getNewCard( self, _old ):
         skipCondition1 = not (isVocabCard or isNotReady) # even if it is not a good vocabulary card, we have no choice when there are no other cards available
         skipCondition2 = (isComprehensionCard and skipComprehension)
         skipCondition3 = (isFreshVocab and skipFresh)
-        skipCondition4 = n.hasTag( jcfg('Tag_AlreadyKnown') ) # the user requested that the vocabulary does not have to be shown
+        skipCondition4 = isAlreadyKnown # the user requested that the vocabulary does not have to be shown
         skipCondition5 = fm in seenMorphs # we already learned that/saw that today
         if skipCondition1 or skipCondition2 or skipCondition3 or skipCondition4 or skipCondition5:
             self.buryCards( [ c.id ] )
