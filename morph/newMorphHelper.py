@@ -104,14 +104,14 @@ def my_getNewCard( self, _old ):
         skipFresh = jcfg('Option_SkipFreshVocabCards')
         skipFocusMorphSeenToday = jcfg('Option_SkipFocusMorphSeenToday')
 
-        skipCondition1 = not (isVocabCard or isNotReady) # even if it is not a good vocabulary card, we have no choice when there are no other cards available
-        skipCondition2 = (isComprehensionCard and skipComprehension)
-        skipCondition3 = (isFreshVocab and skipFresh)
-        skipCondition4 = isAlreadyKnown # the user requested that the vocabulary does not have to be shown
-        skipCondition5 = (focusMorph in seenMorphs and skipFocusMorphSeenToday) # we already learned that/saw that today
+        skipCondition1 = (isComprehensionCard and skipComprehension)
+        skipCondition2 = (isFreshVocab and skipFresh)
+        skipCondition3 = isAlreadyKnown # the user requested that the vocabulary does not have to be shown
+        skipCondition4 = (focusMorph in seenMorphs and skipFocusMorphSeenToday) # we already learned that/saw that today
+        #skipCondition5 = not (isVocabCard or isNotReady) # even if it is not a good vocabulary card, we have no choice when there are no other cards available
 
         # skip/bury card if any skip condition is true
-        if skipCondition1 or skipCondition2 or skipCondition3 or skipCondition4 or skipCondition5:
+        if skipCondition1 or skipCondition2 or skipCondition3 or skipCondition4:
             self.buryCards( [ c.id ] )
             self.newCount += 1 # the card was quaried from the "new queue" so we have to increase the "new counter" back to its original value
             continue
