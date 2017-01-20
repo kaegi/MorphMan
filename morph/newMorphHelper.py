@@ -1,6 +1,7 @@
 #-*- coding: utf-8 -*-
 from aqt import reviewer, dialogs
 from aqt.qt import *
+from aqt.utils import tooltip
 from anki import sched
 from util import addBrowserSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
 
@@ -88,7 +89,9 @@ def my_getNewCard( self, _old ):
 
         # get the focus morph
         try: focusMorph = focus( n )		# field contains either the focusMorph or is empty
-        except KeyError: return c	# card has no focusMorph field -> assume it's good
+        except KeyError:
+            tooltip( _( 'Encountered card without the \'focus morph\' field configured in the preferences. Please check your MorphMan settings and note models.') )
+            return c	# card has no focusMorph field -> undefined behavior -> just proceed like normal
 
         # evaluate all conditions, on which this card might be skipped/buried
         isVocabCard = n.hasTag(jcfg('Tag_Vocab'))
