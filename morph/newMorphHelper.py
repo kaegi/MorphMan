@@ -87,7 +87,7 @@ def my_getNewCard( self, _old ):
         if not notefilter['Modify']: return c # the deck should not be modified -> the user probably doesn't want the 'skip mature' feature
 
         # get the focus morph
-        try: fm = focus( n )		# fm is either the focusMorph or empty
+        try: focusMorph = focus( n )		# field contains either the focusMorph or is empty
         except KeyError: return c	# card has no focusMorph field -> assume it's good
 
         # evaluate all conditions, on which this card might be skipped/buried
@@ -105,7 +105,7 @@ def my_getNewCard( self, _old ):
         skipCondition2 = (isComprehensionCard and skipComprehension)
         skipCondition3 = (isFreshVocab and skipFresh)
         skipCondition4 = isAlreadyKnown # the user requested that the vocabulary does not have to be shown
-        skipCondition5 = (fm in seenMorphs and skipFocusMorphSeenToday) # we already learned that/saw that today
+        skipCondition5 = (focusMorph in seenMorphs and skipFocusMorphSeenToday) # we already learned that/saw that today
 
         # skip/bury card if any skip condition is true
         if skipCondition1 or skipCondition2 or skipCondition3 or skipCondition4 or skipCondition5:
