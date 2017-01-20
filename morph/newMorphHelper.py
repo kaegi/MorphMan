@@ -99,12 +99,13 @@ def my_getNewCard( self, _old ):
 
         skipComprehension = jcfg('Option_SkipComprehensionCards')
         skipFresh = jcfg('Option_SkipFreshVocabCards')
+        skipFocusMorphSeenToday = jcfg('Option_SkipFocusMorphSeenToday')
 
         skipCondition1 = not (isVocabCard or isNotReady) # even if it is not a good vocabulary card, we have no choice when there are no other cards available
         skipCondition2 = (isComprehensionCard and skipComprehension)
         skipCondition3 = (isFreshVocab and skipFresh)
         skipCondition4 = isAlreadyKnown # the user requested that the vocabulary does not have to be shown
-        skipCondition5 = fm in seenMorphs # we already learned that/saw that today
+        skipCondition5 = (fm in seenMorphs and skipFocusMorphSeenToday) # we already learned that/saw that today
 
         # skip/bury card if any skip condition is true
         if skipCondition1 or skipCondition2 or skipCondition3 or skipCondition4 or skipCondition5:
