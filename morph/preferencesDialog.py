@@ -24,6 +24,7 @@ class PreferencesDialog( QDialog ):
         self.createExtraFieldsTab()
         self.createTagsTab()
         self.createButtons()
+        self.createGeneralTab()
 
         self.setLayout(self.vbox)
 
@@ -109,7 +110,7 @@ class PreferencesDialog( QDialog ):
         grid = QGridLayout(); vbox.addLayout(grid)
         tagList  = [
                 ("Vocab note:", 'Tag_Vocab', 'Note that is optimal to learn (one unknown word.)'),
-                ("Compehension note:", 'Tag_Comprehension', 'Note that has some unmature words but no unknown (optimal for sentence learning).'),
+                ("Compehension note:", 'Tag_Comprehension', 'Note that only has mature words (optimal for sentence learning).'),
                 ("Fresh vocab note:", 'Tag_Fresh', 'Note that does not contain unknown words, but one or\nmore unmature (card with recently learned morphmes).'),
                 ("Not ready:", 'Tag_NotReady', 'Note that has two or more unknown words.'),
                 ("Already known:", 'Tag_AlreadyKnown', 'You can add this tag to a note.\nAfter a recalc of the database, all in this sentence words are marked as known.\nPress \'K\' while reviewing to tag current card.'),
@@ -132,6 +133,34 @@ class PreferencesDialog( QDialog ):
         self.checkboxSetNotRequiredTags = QCheckBox("Add tags even if not required")
         self.checkboxSetNotRequiredTags.setCheckState(Qt.Checked if jcfg('Option_SetNotRequiredTags') else Qt.Unchecked)
         vbox.addWidget(self.checkboxSetNotRequiredTags)
+
+        vbox.addStretch()
+
+    def createGeneralTab(self):
+        self.frame4 = QGroupBox("General")
+        self.tabWidget.addTab(self.frame4, "General")
+        vbox = QVBoxLayout(); self.frame4.setLayout(vbox); vbox.setContentsMargins(0, 20, 0, 0)
+
+        label = QLabel("MorphMan will reorder the cards so that the easiest cards are at the front. To avoid getting new cards that are too easy, MorphMan will skip certain new cards. You can customize the skip behavior here:")
+        label.setWordWrap(True)
+        vbox.addWidget(label)
+        vbox.addSpacing(20)
+
+        grid = QVBoxLayout(); vbox.addLayout(grid); grid.setContentsMargins(20, 0, 0, 0)
+        optionList  = [
+                ("Skip comprehension cards", 'Option_SkipComprehensionCards', 'Note that only has mature words (optimal for sentence learning but not for acquiring new vocabulary).'),
+                ("Skip cards with fresh vocabulary", 'Option_SkipFreshVocabCards', 'Note that does not contain unknown words, but one or\nmore unmature (card with recently learned morphmes). Enable to\nskip to first card that has unknown vocabulary.'),
+                ("Skip card if focus morph was already seen today", 'Option_SkipFocusMorphSeenToday', 'This improves the \'new cards\'-queue without having to recalculate the databases.'),
+            ]
+        self.boolOptionList = []
+        for i, (name, key, tooltipInfo) in enumerate(optionList):
+            checkBox = QCheckBox(name)
+            checkBox.setCheckState(Qt.Checked if jcfg(key) else Qt.Unchecked)
+            checkBox.setToolTip(tooltipInfo)
+            self.boolOptionList.append((key, checkBox))
+
+            grid.addWidget(checkBox)
+            grid.addSpacing(15)
 
         vbox.addStretch()
 
@@ -215,6 +244,8 @@ class PreferencesDialog( QDialog ):
             cfg[key] = entry.text()
         for (key, entry) in self.tagEntryList:
             cfg[key] = entry.text()
+        for (key, checkBox) in self.boolOptionList:
+            cfg[key] = (checkBox.checkState() == Qt.Checked)
 
         cfg['Filter'] = []
         for i, rowGui in enumerate(self.rowGui):
