@@ -10,6 +10,10 @@ from aqt.utils import showCritical, showInfo, showWarning, tooltip
 from anki.hooks import addHook, wrap
 from util_external import memoize
 
+# only for jedi-auto-completion
+import aqt.main
+assert isinstance(mw, aqt.main.AnkiQt)
+
 ###############################################################################
 ## Global data
 ###############################################################################
