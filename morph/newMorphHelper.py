@@ -173,7 +173,9 @@ def my_reviewer_keyHandler( self, evt ):
 reviewer.Reviewer._keyHandler = wrap( reviewer.Reviewer._keyHandler, my_reviewer_keyHandler )
 
 ########## 4 - immediately review selected cards
-def pre( b ): return { 'notes':[], 'browser':b }
+def pre( b ):
+    ''' :type b: aqt.browser.Browser '''
+    return { 'notes':[], 'browser':b }
 def per( st, n ):
     st['notes'].append( n )
     return st
@@ -183,9 +185,12 @@ def post( st ):
         for c in n.cards():
             mw.reviewer.cardQueue.append( c )
             i += 1
+    # in special cases close() will already pop a new card from mw.reviewer.cardQueue
     st['browser'].close()
-    st['__reset'] = False
     tooltip( _( 'Immediately reviewing %d cards' % i ) )
+
+    # only reset and fetch a new card if it wasn't already done with close()
+    return {'__reset': len(mw.reviewer.cardQueue) == i}
 
 addBrowserSelectionCmd( 'MorphMan: Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=('Ctrl+Shift+N',) )
 
