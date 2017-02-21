@@ -48,6 +48,7 @@ def setField( mid, fs, k, v ): # nop if field DNE
     if idx: fs[ idx ] = v
 
 def mkAllDb( allDb=None ):
+    import config; reload(config)
     t_0, db, TAG = time.time(), mw.col.db, mw.col.tags
     N_notes = db.scalar( 'select count() from notes' )
     N_enabled_notes = 0 # for providing an error message if there is no note that is used for processing
