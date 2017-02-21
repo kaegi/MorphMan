@@ -220,9 +220,9 @@ def updateNotes( allDb ):
 
         usefulness = 999 - min( 999, usefulness )
 
-            # difference from optimal length (too little context vs long sentence)
-        lenDiff = max( 0, min( 9, abs( C('optimal sentence length') - N ) -2 ) )
-        tooLong = N > C('optimal sentence length')
+        # difference from optimal length range (too little context vs long sentence)
+        lenDiff = min(9, max(0, N - C('max good sentence length'), C('min good sentence length') - N))
+        tooLong = N > C('max good sentence length')
 
             # calculate mmi
         mmi = 10000*N_k + 1000*lenDiff + usefulness
