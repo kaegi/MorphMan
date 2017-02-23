@@ -199,7 +199,7 @@ def updateNotes( allDb ):
         F_k = 0
         for focusMorph in unknowns: # focusMorph used outside loop
             F_k += len( allDb.db[ focusMorph ] )
-        F_k_avg = F_k / N_k if N_k > 0 else F_k
+        F_k_avg = F_k // N_k if N_k > 0 else F_k
         usefulness = F_k_avg
 
             # add bonus for morphs in priority.db
@@ -214,7 +214,7 @@ def updateNotes( allDb ):
             locs = allDb.db[ morpheme ]
             if locs:
                 ivl = min( 1, max( loc.maturity for loc in locs ) )
-                usefulness += C('reinforce new vocab weight') / ivl #TODO: maybe average this so it doesnt favor long sentences
+                usefulness += C('reinforce new vocab weight') // ivl #TODO: maybe average this so it doesnt favor long sentences
 
         if any( morpheme.pos == u'動詞' for morpheme in unknowns ): #FIXME: this isn't working???
             usefulness += C('verb bonus')

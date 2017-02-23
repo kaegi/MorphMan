@@ -16,8 +16,8 @@ default = {
     'path_stats': os.path.join( mw.pm.profileFolder(), 'morphman.stats' ),
         # change the thresholds for various stages of maturity, in days
     'threshold_mature': 21,         # 21 days is what Anki uses
-    'threshold_known': 10/86400.,   # recommend a few seconds if you want to count things in learning queue or ~3 days otherwise
-    'threshold_seen': 1/86400.,     # this currently isn't used outside of create seen.db for your personal usage
+    'threshold_known': 10//86400.,   # recommend a few seconds if you want to count things in learning queue or ~3 days otherwise
+    'threshold_seen': 1//86400.,     # this currently isn't used outside of create seen.db for your personal usage
     'text file import maturity':22, # when you import a file via Extract Morphemes from file, they are all given this maturity
         # reviewer mode keybindings
     'browse same focus key': 'l',

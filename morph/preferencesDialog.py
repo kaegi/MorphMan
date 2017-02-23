@@ -91,8 +91,8 @@ class PreferencesDialog( QDialog ):
             entry.setToolTip(tooltipInfo)
             self.fieldEntryList.append((key, entry))
 
-            grid.addWidget(QLabel(name), i / numberOfColumns, (i % numberOfColumns) * 2 + 0)
-            grid.addWidget(entry, i / numberOfColumns, (i % numberOfColumns) * 2 + 1)
+            grid.addWidget(QLabel(name), i // numberOfColumns, (i % numberOfColumns) * 2 + 0)
+            grid.addWidget(entry, i // numberOfColumns, (i % numberOfColumns) * 2 + 1)
 
         vbox.addStretch()
 
@@ -125,8 +125,8 @@ class PreferencesDialog( QDialog ):
             entry.setToolTip(tooltipInfo)
             self.tagEntryList.append((key, entry))
 
-            grid.addWidget(QLabel(name), i / numberOfColumns, (i % numberOfColumns) * 2 + 0)
-            grid.addWidget(entry, i / numberOfColumns, (i % numberOfColumns) * 2 + 1)
+            grid.addWidget(QLabel(name), i // numberOfColumns, (i % numberOfColumns) * 2 + 0)
+            grid.addWidget(entry, i // numberOfColumns, (i % numberOfColumns) * 2 + 1)
 
         vbox.addSpacing(50)
 
