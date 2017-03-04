@@ -9,7 +9,7 @@ import os.path
 import signal
 import sys
 
-from morph.morphemes import MorphDb
+from morph.morphemes import MorphDb, Morpheme
 from morph.morphemizer import SpaceMorphemizer, MecabMorphemizer, CjkCharMorphemizer
 import morph
 
@@ -145,6 +145,32 @@ def cmd_next(args):
                 print (u'%s\t%s\t%s' % (freq, m_cite, cand)).encode('utf-8')
 
 
+def cmd_grep(args):
+    pattern_string = args.pattern
+    files = args.files
+    max_count = args.max_count
+    mizer = MIZERS[args.mizer]
+
+    pattern_fields = pattern_string.decode('utf-8').split('\t')
+    if len(pattern_fields) != 4:
+        die('bad search morpheme (should be 4 tab-separated fields, MorphMan-style): %s'
+            % (pattern_string,))
+    # Only 4 fields show up in equality, hash, or show, but the constructor
+    # takes an extra one.  That's the second argument; duplicate the first.
+    pattern = Morpheme(pattern_fields[0], *pattern_fields)
+
+    count = 0
+    for path in files:
+        with codecs.open(path, 'r', 'utf-8') as f:
+            for line in f:
+                ms = mizer.getMorphemesFromExpr(line)
+                if pattern in ms:
+                    sys.stdout.write(line.encode('utf-8'))
+                    count += 1
+                    if max_count is not None and count >= max_count:
+                        return
+
+
 def fix_sigpipe():
     '''Set this process to exit quietly on SIGPIPE, like a good shell-pipeline citizen.'''
     # For context, see e.g. https://stevereads.com/2015/09/25/python-sigpipe/.
@@ -185,6 +211,14 @@ def main():
     p_next.add_argument('prio', metavar='FREQS', help='file of morphemes to study, with frequencies')
     p_next.add_argument('notes', metavar='NOTES', help='file of newline-terminated notes, each tab-separated fields starting with the text')
     add_mizer(p_next)
+
+    p_grep = subparsers.add_parser('grep', help='find given morpheme in a corpus', description='\
+Search the given corpus for the given morpheme and print matches.')
+    p_grep.set_defaults(action=cmd_grep)
+    p_grep.add_argument('pattern', metavar='MORPHEME', help='morpheme, in MorphMan tab-separated form')
+    p_grep.add_argument('files', nargs='*', metavar='FILE', help='files of text to search')
+    p_grep.add_argument('-m', '--max-count', type=int, metavar='NUM', help='max matches to print')
+    add_mizer(p_grep)
 
     args = parser.parse_args()
     global CLI_PROFILE_PATH
