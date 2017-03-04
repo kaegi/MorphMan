@@ -98,12 +98,12 @@ def mkAllDb( allDb=None ):
             else:
                 # mats changed -> new loc (new mats), move morphs
                 if loc.fieldValue == fieldValue and loc.maturities != mats:
-                    printf( '    .mats for %d[%s]' % ( nid, fieldName ) )
+                    #printf( '    .mats for %d[%s]' % ( nid, fieldName ) )
                     newLoc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
                     locDb[ newLoc ] = locDb.pop( loc )
                 # field changed -> new loc, new morphs
                 elif loc.fieldValue != fieldValue:
-                    printf( '    .morphs for %d[%s]' % ( nid, fieldName ) )
+                    #printf( '    .morphs for %d[%s]' % ( nid, fieldName ) )
                     newLoc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
                     ms = getMorphemes(morphemizer, fieldValue )
                     locDb.pop( loc )
