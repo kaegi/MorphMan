@@ -2,8 +2,9 @@ from __future__ import absolute_import
 
 import argparse
 import codecs
-from collections import Counter
+from collections import Counter, defaultdict
 import glob
+import itertools
 import os.path
 import signal
 import sys
@@ -78,6 +79,13 @@ def db_path(db_name):
     return os.path.join(profile_path(), 'dbs', db_name + '.db')
 
 
+def load_db(db_name):
+    path = db_path(db_name)
+    if not os.access(path, os.R_OK):
+        die('can\'t read db file: %s' % (path,))
+    return MorphDb(path)
+
+
 MIZERS = {
     'space': SpaceMorphemizer(),
     'mecab': MecabMorphemizer(),
@@ -89,11 +97,7 @@ def cmd_dump(args):
     db_name = args.name
     inc_freq = bool(args.freq)
 
-    path = db_path(db_name)
-    if not os.access(path, os.R_OK):
-        die('can\'t read db file: %s' % (path,))
-    db = MorphDb(path)
-
+    db = load_db(db_name)
     for m in db.db.keys():
         m_formatted = m.show().encode('utf-8')
         if inc_freq:
@@ -114,6 +118,31 @@ def cmd_count(args):
 
     for m, c in freqs.most_common():
         print '%d\t%s' % (c, m.show().encode('utf-8'))
+
+
+def cmd_next(args):
+    notes_path = args.notes
+    prio_path = args.prio
+    mizer = MIZERS[args.mizer]
+
+    known = load_db('known')
+
+    candidates = defaultdict(list)
+    with codecs.open(notes_path, 'r', 'utf-8') as f:
+        for line in f.readlines():
+            note = line.strip()
+            text = note.split('\t', 1)[0]
+            unknowns = [m for m in mizer.getMorphemesFromExpr(text)
+                        if m not in known.db]
+            if len(unknowns) == 1:
+                candidates[unknowns[0].show()].append(note)
+
+    with codecs.open(prio_path, 'r', 'utf-8') as f:
+        for line in f.readlines():
+            freq, m = line.strip().split('\t', 1)
+            m_cite = m.split('\t', 1)[0]
+            for cand in candidates[m]:
+                print (u'%s\t%s\t%s' % (freq, m_cite, cand)).encode('utf-8')
 
 
 def fix_sigpipe():
@@ -139,14 +168,23 @@ def main():
     p_dump.add_argument('name', metavar='NAME', help='database to dump (all, known, ...)')
     p_dump.add_argument('--freq', action='store_true', help='include frequency as known to MorphMan')
 
+    def add_mizer(parser):
+        parser.add_argument('--mizer', default='mecab', choices=MIZERS.keys(),
+                            metavar='NAME',
+                            help='how to split morphemes (%s) (default %s)'
+                                 % (', '.join(MIZERS.keys()), 'mecab'))
+
     p_count = subparsers.add_parser('count', help='count morphemes in a corpus',
                         description='Count all morphemes in the given files and emit a frequency table.')
     p_count.set_defaults(action=cmd_count)
     p_count.add_argument('files', nargs='*', metavar='FILE', help='input files of text to morphemize')
-    p_count.add_argument('--mizer', default='mecab', choices=MIZERS.keys(),
-                         metavar='NAME',
-                         help='how to split morphemes (%s) (default %s)'
-                              % (', '.join(MIZERS.keys()), 'mecab'))
+    add_mizer(p_count)
+
+    p_next = subparsers.add_parser('next', help='find next notes to study from a corpus')
+    p_next.set_defaults(action=cmd_next)
+    p_next.add_argument('prio', metavar='FREQS', help='file of morphemes to study, with frequencies')
+    p_next.add_argument('notes', metavar='NOTES', help='file of newline-terminated notes, each tab-separated fields starting with the text')
+    add_mizer(p_next)
 
     args = parser.parse_args()
     global CLI_PROFILE_PATH
