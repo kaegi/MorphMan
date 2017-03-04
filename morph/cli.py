@@ -87,14 +87,19 @@ MIZERS = {
 
 def cmd_dump(args):
     db_name = args.name
+    inc_freq = bool(args.freq)
 
     path = db_path(db_name)
     if not os.access(path, os.R_OK):
         die('can\'t read db file: %s' % (path,))
     db = MorphDb(path)
 
-    for line in sorted(m.show() for m in db.db.keys()):
-        print line.encode('utf-8')
+    for m in db.db.keys():
+        m_formatted = m.show().encode('utf-8')
+        if inc_freq:
+            print '%d\t%s' % (db.frequency(m), m_formatted)
+        else:
+            print m_formatted
 
 
 def cmd_count(args):
@@ -132,6 +137,7 @@ def main():
                                    description='Dump a MorphMan database to stdout in a plain-text format.')
     p_dump.set_defaults(action=cmd_dump)
     p_dump.add_argument('name', metavar='NAME', help='database to dump (all, known, ...)')
+    p_dump.add_argument('--freq', action='store_true', help='include frequency as known to MorphMan')
 
     p_count = subparsers.add_parser('count', help='count morphemes in a corpus',
                         description='Count all morphemes in the given files and emit a frequency table.')
