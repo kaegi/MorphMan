@@ -76,14 +76,19 @@ def db_path(db_name):
 
 def cmd_dump(args):
     db_name = args.name
+    inc_freq = bool(args.freq)
 
     path = db_path(db_name)
     if not os.access(path, os.R_OK):
         die('can\'t read db file: %s' % (path,))
     db = MorphDb(path)
 
-    for line in sorted(m.show() for m in db.db.keys()):
-        print line.encode('utf-8')
+    for m in db.db.keys():
+        m_formatted = m.show().encode('utf-8')
+        if inc_freq:
+            print '%d\t%s' % (db.frequency(m), m_formatted)
+        else:
+            print m_formatted
 
 
 def fix_sigpipe():
@@ -107,6 +112,7 @@ def main():
                                    description='Dump a MorphMan database to stdout in a plain-text format.')
     p_dump.set_defaults(action=cmd_dump)
     p_dump.add_argument('name', metavar='NAME', help='database to dump (all, known, ...)')
+    p_dump.add_argument('--freq', action='store_true', help='include frequency as known to MorphMan')
 
     args = parser.parse_args()
     global CLI_PROFILE_PATH
