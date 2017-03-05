@@ -81,9 +81,14 @@ def jcfg_default():
         'Tag_Fresh':u'mm_fresh',                    # we have no unkown words, but multiple unmature -> alternative card for vocab or original vocab card
         'Tag_NotReady':u'mm_notReady',             # set for k+2 and above cards
         'Tag_AlreadyKnown':u'mm_alreadyKnown',     # you can add this tag to a note to make anki treat it as if mature
+
         'Tag_Priority':u'mm_priority',             # set if note contains an unknown that exists in priority.db
+        'Option_SetTag_Priority': True,            # set the Tag_Priority tag?
         'Tag_BadLength':u'mm_badLength',           # set if sentence isn't within optimal sentence length range
+        'Option_SetTag_BadLength': False,          # set the Tag_BadLength tag?
         'Tag_TooLong':u'mm_tooLong',               # set if sentence is above optimal sentence length
+        'Option_SetTag_TooLong': False,            # set the Tag_TooLong tag?
+
 
         # filter for cards that should be analyzed, higher entries have higher priority
         'Filter': [
@@ -93,7 +98,7 @@ def jcfg_default():
         ],
 
         # only set necessary tags or set all tags?
-        'Option_SetNotRequiredTags': True, # do not set tags/remove tags that are only there for user to read/filter with
+        # deprecated: 'Option_SetNotRequiredTags': True,
         'Option_SkipComprehensionCards': True, # bury/skip all new cards that have 'Tag_Comprehension'
         'Option_SkipFreshVocabCards': True, # bury/skip all new cards that have 'Tag_Fresh'
         'Option_SkipFocusMorphSeenToday': True, # bury/skip all new cards that have a focus morph that was reviewed today/marked as `already known`
@@ -107,20 +112,38 @@ def jcfg2():
 def jcfg(name):
     return jcfg2()[name]
 
-def jcfgUpdate(jcfg):
-    original = mw.col.conf['addons']['morphman'].copy()
-    mw.col.conf['addons']['morphman'].update(jcfg)
-    if not mw.col.conf['addons']['morphman'] == original:
-        mw.col.setMod()
+def jcfgReplace(cfg):
+    '''Set jcfg to the given complete value.'''
+    if cfg == mw.col.conf['addons']['morphman']:
+        return
+    mw.col.conf['addons']['morphman'] = cfg
+    mw.col.setMod()
 
-def jcfgAddMissing():
-    # this ensures forward compatibility, because it adds new options in configuration (introduced by update) without any notice with default value
+def jcfgUpdate(cfg_updates):
+    '''Update jcfg from the given dict, without touching any keys it doesn't have.'''
+    cfg = mw.col.conf['addons']['morphman'].copy()
+    cfg.update(cfg_updates)
+    jcfgReplace(cfg)
+
+def jcfgMigrate():
+    '''Update jcfg to reflect new and modified options since previous versions of MorphMan.'''
     current = jcfg2().copy()
+
+    # Add any new options, set to their default values.
     default = jcfg_default()
     for key, value in default.iteritems():
         if not key in current:
             current[key] = value
-    jcfgUpdate(current)
+
+    if 'Option_SetNotRequiredTags' in current:
+        # This option has been broken into three pieces.
+        for key in ['Option_SetTag_Priority',
+                    'Option_SetTag_BadLength',
+                    'Option_SetTag_TooLong']:
+            current[key] = current['Option_SetNotRequiredTags']
+        del current['Option_SetNotRequiredTags']
+
+    jcfgReplace(current)
 
 
 def getFilter(note):
