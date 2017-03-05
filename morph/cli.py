@@ -5,6 +5,7 @@ import codecs
 from collections import Counter, defaultdict
 import glob
 import itertools
+import math
 import os.path
 import signal
 import sys
@@ -175,15 +176,24 @@ def cmd_grep(args):
                         return
 
 
+def clear_locs(db, pred):
+    '''Remove from `db` locations that match `pred`, and morphemes left without locations.'''
+    empty_ms = []
+    for m, locs in db.db.iteritems():
+        locs.difference_update([loc for loc in locs if pred(loc)])
+        if not locs:
+            empty_ms.append(m)
+    for m in empty_ms:
+        del db.db[m]
+
+
 def cmd_sync_known(args):
     filenames = args.input or ['known.txt']
     should_merge = args.merge
 
     external_db = load_db('external', allow_missing=True)
     if not should_merge:
-        for m, locs in external_db.db.iteritems():
-            locs.difference_update([loc for loc in locs
-                                    if isinstance(loc, morph.morphemes.Nowhere)])
+        clear_locs(external_db, lambda loc: isinstance(loc, morph.morphemes.Nowhere))
 
     db_dir = os.path.join(profile_path(), 'dbs')
     loc = morph.morphemes.Nowhere(maturity=30)  # arbitrary but > maturity threshold
@@ -196,6 +206,31 @@ def cmd_sync_known(args):
                 m = parse_morpheme(line)
                 external_db.addMLs([(m, loc)])
 
+    external_db.save(db_path('external'))
+
+
+def cmd_sync_freq(args):
+    corpus_name = args.name
+    freq_path = args.freqfile
+    threshold = args.threshold
+    scale = args.weight
+
+    data = []
+    with codecs.open(freq_path, 'r', 'utf-8') as f:
+        for line in f:
+            ctext, mtext = line.strip().split('\t', 1)
+            c = int(ctext)
+            weight = int(math.ceil(scale * c))
+            if weight < threshold:
+                continue
+            m = parse_morpheme(mtext)
+            data.append((weight, m))
+
+    external_db = load_db('external', allow_missing=True)
+    clear_locs(external_db, lambda loc: (isinstance(loc, morph.morphemes.Corpus)
+                                         and loc.name == corpus_name))
+    external_db.addMLs([(m, morph.morphemes.Corpus(corpus_name, weight))
+                        for weight, m in data])
     external_db.save(db_path('external'))
 
 
@@ -263,6 +298,27 @@ to reflect the results in all.db, known.db, and card ordering.
                               metavar='FILE', help='input file, relative to `dbs` dir (default: known.txt)')
     p_sync_known.add_argument('--merge', action='store_true',
                               help='add to existing known morphemes rather than replacing them')
+
+    p_sync_freq = subparsers.add_parser('sync-freq', help='sync frequencies from a corpus into external.db',
+                                        description='''\
+Read a text file of morpheme frequencies and sync that information into external.db.
+
+The morphemes are recorded with the `Corpus` location type and the given
+corpus NAME.  Any existing `Corpus` locations with that corpus name are
+removed or updated.
+
+After running this command, run the "MorphMan Recalc" command inside Anki
+to reflect the results in all.db, known.db, and card ordering.
+''')
+    p_sync_freq.set_defaults(action=cmd_sync_freq)
+    p_sync_freq.add_argument('name', metavar='NAME',
+                             help='name to record the corpus under')
+    p_sync_freq.add_argument('freqfile', metavar='FILE',
+                             help='file of frequencies (in the format of `mm count` output)')
+    p_sync_freq.add_argument('--weight', type=float, default=1, metavar='NUM',
+                             help='scale factor to multiply given frequencies by')
+    p_sync_freq.add_argument('--threshold', type=int, default=10, metavar='N',
+                             help='minimum (weighted) frequency to include (default: 10)')
 
     args = parser.parse_args()
     global CLI_PROFILE_PATH
