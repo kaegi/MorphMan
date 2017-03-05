@@ -45,12 +45,13 @@ def updateStats( knownDb=None ):
         # track total unique morphemes + when weighted by frequency
         # NOTE: a morpheme may occur multiple times within the same sentence, but this frequency is wrt note fields
         numUniqueReq, numUniqueKnown, numFreqReq, numFreqKnown = 0, 0, 0, 0
-        for m,locs in gdb.db.iteritems():
+        for m in gdb.db.iterkeys():
+            freq = gdb.db.frequency(m)
             numUniqueReq += 1
-            numFreqReq   += len( locs )
+            numFreqReq   += freq
             if m in knownDb.db:
                 numUniqueKnown += 1
-                numFreqKnown   += len( locs )
+                numFreqKnown   += freq
         
         d['goals'][ name ] = { 'total':numUniqueReq, 'known':numUniqueKnown, 'freqTotal':numFreqReq, 'freqKnown':numFreqKnown }
 

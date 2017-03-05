@@ -70,30 +70,42 @@ class Location:
     pass
 
 class Nowhere( Location ):
-    def __init__( self, tag ):
+    def __init__( self, tag, weight=0 ):
         self.tag
         self.maturity = 0
+        self.weight   = weight
     def show( self ):
         return '%s@%d' % ( self.tag, self.maturity )
 
+class Corpus( Location ):
+    '''A corpus we want to use for priority, without storing more than morpheme frequencies.'''
+    def __init__( self, name, weight ):
+        self.name     = name
+        self.maturity = 0
+        self.weight   = weight
+    def show( self ):
+        return '%s*%s@%d' % ( self.name, self.weight, self.maturity )
+
 class TextFile( Location ):
-    def __init__( self, filePath, lineNo, maturity ):
+    def __init__( self, filePath, lineNo, maturity, weight=1 ):
         self.filePath   = filePath
         self.lineNo     = lineNo
         self.maturity   = maturity
+        self.weight     = weight
     def show( self ):
         return '%s:%d@%d' % ( self.filePath, self.lineNo, self.maturity )
 
 class AnkiDeck( Location ):
     """ This maps to/contains information for one note and one relevant field like u'Expression'. """
 
-    def __init__( self, noteId, fieldName, fieldValue, guid, maturities ):
+    def __init__( self, noteId, fieldName, fieldValue, guid, maturities, weight=1 ):
         self.noteId     = noteId
         self.fieldName  = fieldName # for example u'Expression'
         self.fieldValue = fieldValue # for example u'それだけじゃない'
         self.guid       = guid
         self.maturities = maturities # list of intergers, one for every card -> containg the intervals of every card for this note
         self.maturity   = max( maturities ) if maturities else 0
+        self.weight     = weight
     def show( self ):
         return '%d[%s]@%d' % ( self.noteId, self.fieldName, self.maturity )
 
@@ -206,7 +218,11 @@ class MorphDb:
             ms = getMorphemes( morphemizer, line.strip())
             self.addMLs( ( m, TextFile( path, i+1, maturity ) ) for m in ms )
 
-    # Analysis
+    # Analysis (local)
+    def frequency( self, m ): # Morpheme -> Int
+        return sum(getattr(loc, 'weight', 1) for loc in self.db[m])
+
+    # Analysis (global)
     def locDb( self, recalc=True ): # Maybe Bool -> m Map Location {Morpheme}
         if hasattr( self, '_locDb' ) and not recalc:
             return self._locDb
@@ -225,12 +241,6 @@ class MorphDb:
             try:
                 d[ ( loc.noteId, loc.guid, loc.fieldName ) ] = loc
             except AttributeError: pass # location isn't an anki fact
-        return d
-
-    def popDb( self ): # Map BaseForm Int
-        d = {}
-        for m,ls in self.db.iteritems():
-            d[ m.base ] = len( ls ) + d.get( m.base, 0 ) #TODO: is this 2nd part needed? untested either way
         return d
 
     def countByType( self ): # Map Pos Int
