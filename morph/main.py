@@ -159,10 +159,6 @@ def updateNotes( allDb ):
         knownDb.save( cfg1('path_known') )
         matureDb.save( cfg1('path_mature') )
 
-    mw.progress.update( label='Calculating frequency information' )
-    pops = [ len( locs ) for locs in allDb.db.values() ]
-    pops = [ n for n in pops if n > 1 ]
-
     mw.progress.update( label='Updating notes' )
     for i,( nid, mid, flds, guid, tags ) in enumerate( db.execute( 'select id, mid, flds, guid, tags from notes' ) ):
         if i % 500 == 0:    mw.progress.update( value=i )
@@ -198,7 +194,7 @@ def updateNotes( allDb ):
             # average frequency of unknowns (ie. how common the word is within your collection)
         F_k = 0
         for focusMorph in unknowns: # focusMorph used outside loop
-            F_k += len( allDb.db[ focusMorph ] )
+            F_k += allDb.frequency(focusMorph)
         F_k_avg = F_k // N_k if N_k > 0 else F_k
         usefulness = F_k_avg
 
