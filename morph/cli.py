@@ -79,11 +79,21 @@ def db_path(db_name):
     return os.path.join(profile_path(), 'dbs', db_name + '.db')
 
 
-def load_db(db_name):
+def load_db(db_name, allow_missing=False):
     path = db_path(db_name)
-    if not os.access(path, os.R_OK):
+    if not allow_missing and not os.access(path, os.R_OK):
         die('can\'t read db file: %s' % (path,))
-    return MorphDb(path)
+    return MorphDb(path, ignoreErrors=allow_missing)
+
+
+def parse_morpheme(morpheme_str):
+    fields = morpheme_str.split('\t')
+    if len(fields) != 4:
+        die('bad morpheme (should be 4 tab-separated fields, MorphMan-style): %s'
+            % (morpheme_str,))
+    # Only 4 fields show up in equality, hash, or show, but the constructor
+    # takes an extra one.  That's the second argument; duplicate the first.
+    return Morpheme(fields[0], *fields)
 
 
 MIZERS = {
@@ -151,13 +161,7 @@ def cmd_grep(args):
     max_count = args.max_count
     mizer = MIZERS[args.mizer]
 
-    pattern_fields = pattern_string.decode('utf-8').split('\t')
-    if len(pattern_fields) != 4:
-        die('bad search morpheme (should be 4 tab-separated fields, MorphMan-style): %s'
-            % (pattern_string,))
-    # Only 4 fields show up in equality, hash, or show, but the constructor
-    # takes an extra one.  That's the second argument; duplicate the first.
-    pattern = Morpheme(pattern_fields[0], *pattern_fields)
+    pattern = parse_morpheme(pattern_string.decode('utf-8'))
 
     count = 0
     for path in files:
@@ -169,6 +173,30 @@ def cmd_grep(args):
                     count += 1
                     if max_count is not None and count >= max_count:
                         return
+
+
+def cmd_sync_known(args):
+    filenames = args.input or ['known.txt']
+    should_merge = args.merge
+
+    external_db = load_db('external', allow_missing=True)
+    if not should_merge:
+        for m, locs in external_db.db.iteritems():
+            locs.difference_update([loc for loc in locs
+                                    if isinstance(loc, morph.morphemes.Nowhere)])
+
+    db_dir = os.path.join(profile_path(), 'dbs')
+    loc = morph.morphemes.Nowhere(maturity=30)  # arbitrary but > maturity threshold
+    for filename in filenames:
+        with codecs.open(os.path.join(db_dir, filename), 'r', 'utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith('#'):
+                    continue
+                m = parse_morpheme(line)
+                external_db.addMLs([(m, loc)])
+
+    external_db.save(db_path('external'))
 
 
 def fix_sigpipe():
@@ -219,6 +247,22 @@ Search the given corpus for the given morpheme and print matches.')
     p_grep.add_argument('files', nargs='*', metavar='FILE', help='files of text to search')
     p_grep.add_argument('-m', '--max-count', type=int, metavar='NUM', help='max matches to print')
     add_mizer(p_grep)
+
+    p_sync_known = subparsers.add_parser('sync-known', help='sync known-morphemes file to external.db',
+                                         description='''\
+Read a text file of known morphemes and sync that information to external.db.
+
+The morphemes are recorded with the `Nowhere` location type; by default
+any existing such morphemes not present in the given file are removed.
+
+After running this command, run the "MorphMan Recalc" command inside Anki
+to reflect the results in all.db, known.db, and card ordering.
+''')
+    p_sync_known.set_defaults(action=cmd_sync_known)
+    p_sync_known.add_argument('-f', '--input', action='append',
+                              metavar='FILE', help='input file, relative to `dbs` dir (default: known.txt)')
+    p_sync_known.add_argument('--merge', action='store_true',
+                              help='add to existing known morphemes rather than replacing them')
 
     args = parser.parse_args()
     global CLI_PROFILE_PATH

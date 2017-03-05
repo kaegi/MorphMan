@@ -70,12 +70,11 @@ class Location:
     pass
 
 class Nowhere( Location ):
-    def __init__( self, tag, weight=0 ):
-        self.tag
-        self.maturity = 0
+    def __init__( self, maturity=0, weight=0 ):
+        self.maturity = maturity
         self.weight   = weight
     def show( self ):
-        return '%s@%d' % ( self.tag, self.maturity )
+        return 'nowhere@%d' % ( self.maturity )
 
 class Corpus( Location ):
     '''A corpus we want to use for priority, without storing more than morpheme frequencies.'''
