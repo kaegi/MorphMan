@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 import os
@@ -6,7 +6,7 @@ import os
 import adaptiveSubs
 from morphemes import MorphDb
 from morphemizer import getAllMorphemizers
-from util import dbsPath, errorMsg, infoMsg, mw, parseWhitelist, cfg1, mkBtn
+from util import dbsPath, errorMsg, infoMsg, mw, cfg1, mkBtn
 
 def getPath( le ): # LineEdit -> GUI ()
     path = QFileDialog.getOpenFileName( caption='Open db', directory=dbsPath )
