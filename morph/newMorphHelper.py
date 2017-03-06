@@ -214,6 +214,7 @@ def isNoteSame(note, fieldDict):
 def highlight( txt, extra, fieldDict, field, mod_field ):
     '''When a field is marked with the 'focusMorph' command, we format it by
     wrapping all the morphemes in <span>s with attributes set to its maturity'''
+    from util import getFilterByTagsAndType
     from morphemizer import getMorphemizerByName
     from morphemes import getMorphemes
 

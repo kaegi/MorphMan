@@ -2,7 +2,6 @@
 import codecs, cPickle as pickle, gzip, os, subprocess, re
 
 from morph.morphemes import Morpheme
-from morph.util import cfg1
 from morph.util_external import memoize
 
 ####################################################################################################
@@ -54,14 +53,15 @@ MECAB_NODE_PARTS = ['%f[6]','%m','%f[0]','%f[1]','%f[7]']
 MECAB_NODE_READING_INDEX = 4
 MECAB_NODE_LENGTH = len( MECAB_NODE_PARTS )
 MECAB_ENCODING = None
+MECAB_POS_BLACKLIST = [
+    u'記号',     # "symbol", generally punctuation
+]
 
 @memoize
 def getMorphemesMecab(e):
     ms = [ tuple( m.split('\t') ) for m in interact( e ).split('\r') ] # morphemes
     ms = [ Morpheme( *m ) for m in ms if len( m ) == MECAB_NODE_LENGTH ] # filter garbage
-    #if whitelist: ms = [ m for m in ms if m.pos in whitelist ]
-    blacklist = cfg1('mecab_blacklist')
-    if blacklist: ms = [ m for m in ms if m.pos not in blacklist ]
+    ms = [ m for m in ms if m.pos not in MECAB_POS_BLACKLIST ]
     ms = [ fixReading( m ) for m in ms ]
     return ms
 
@@ -91,8 +91,8 @@ def mecab(): # IO MecabProc
     ''' Returns a running mecab instance. 'mecab' reads expressions from stdin at runtime, so only one instance is needed. Thats why this function is memoized. '''
     global MECAB_ENCODING
     if not MECAB_ENCODING: MECAB_ENCODING = getMecabEncoding()
-    nodeFmt = '\t'.join( MECAB_NODE_PARTS )+'\r'
-    args = [ '--node-format=%s' % nodeFmt, '--eos-format=\n', '--unk-format=%m\tUnknown\tUnknown\tUnknown\r' ]
+    args = ['--node-format=%s\r' % ('\t'.join(MECAB_NODE_PARTS),),
+            '--unk-format=', '--eos-format=\n']
     return runMecabCmd( args )
 
 @memoize
