@@ -42,9 +42,7 @@ def initJcfg():
     mw.col.conf.setdefault(
             'addons', {}).setdefault(
                     'morphman', jcfg_default())
-
-    # this ensures forward compatibility, because it adds new options in configuration without any notice
-    jcfgAddMissing()
+    jcfgMigrate()
 
 addHook( 'profileLoaded', initCfg )
 addHook( 'profileLoaded', initJcfg )
