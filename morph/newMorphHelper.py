@@ -82,7 +82,7 @@ def my_getNewCard( self, _old ):
 
         # find the right morphemizer for this note, so we can apply model-dependent options (modify off == disable skip feature)
         from morphemes import getMorphemes
-        from morphemizer import getFilter
+        from util import getFilter
         notefilter = getFilter(n)
         if notefilter is None: return c # this note is not configured in any filter -> proceed like normal without MorphMan-plugin
         if not notefilter['Modify']: return c # the deck should not be modified -> the user probably doesn't want the 'skip mature' feature
@@ -214,6 +214,9 @@ def isNoteSame(note, fieldDict):
 def highlight( txt, extra, fieldDict, field, mod_field ):
     '''When a field is marked with the 'focusMorph' command, we format it by
     wrapping all the morphemes in <span>s with attributes set to its maturity'''
+    from morphemizer import getMorphemizerByName
+    from morphemes import getMorphemes
+
     # must avoid formatting a smaller morph that is contained in a bigger morph
     # => do largest subs first and don't sub anything already in <span>
     def nonSpanSub( sub, repl, string ):
@@ -227,11 +230,13 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
     #if not isNoteSame(note, fieldDict): return txt
     #from aqt.qt import debug; debug()
 
-    from morphemes import getMorphemes
-    from morphemizer import getMorphemizerForTagsAndType
-    morphemizer = getMorphemizerForTagsAndType(fieldDict['Type'], fieldDict['Tags'].split())
-    if morphemizer is None: return txt
-    ms = getMorphemes(morphemizer, txt )
+    filter = getFilterByTagsAndType(fieldDict['Type'], fieldDict['Tags'].split())
+    if filter is None:
+        return txt
+    morphemizer = getMorphemizerByName(filter['Morphemizer'])
+    if morphemizer is None:
+        return txt
+    ms = getMorphemes(morphemizer, txt)
 
     for m in sorted( ms, key=lambda x: len(x.inflected), reverse=True ): # largest subs first
         locs = allDb().db.get( m, set() )

@@ -8,7 +8,6 @@ from aqt.qt import *
 from aqt import mw
 from aqt.utils import showCritical, showInfo, showWarning, tooltip
 from anki.hooks import addHook, wrap
-from util_external import memoize
 
 # only for jedi-auto-completion
 import aqt.main
@@ -134,14 +133,6 @@ def getFilterByTagsAndType(type, tags):
         return f
     return None
 
-
-
-###############################################################################
-## Parsing
-###############################################################################
-def parseWhitelist( wstr ):
-    ustr = unicode( wstr )
-    return ustr.split( u',' ) if ustr else []
 
 ###############################################################################
 ## Fact browser utils

@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
 from morphemes import getMorphemes, MorphDb
-from morphemizer import getMorphemizerForFilter
+from morphemizer import getMorphemizerByName
 from util import addBrowserSelectionCmd, cfg, cfg1, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit
 import util
 
@@ -17,7 +17,7 @@ def per( st, n ): # :: State -> Note -> State
 
     notecfg = getFilter(n)
     if notecfg is None: return st
-    morphemizer = getMorphemizerForFilter(notecfg)
+    morphemizer = getMorphemizerByName(notecfg['Morphemizer'])
     for field in notecfg['Fields']:
         for m in getMorphemes(morphemizer, n[ field ]):
             if m in st['db'].db:
