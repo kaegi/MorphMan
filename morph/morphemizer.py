@@ -65,35 +65,56 @@ def getMorphemesMecab(e):
     ms = [ fixReading( m ) for m in ms ]
     return ms
 
-def runMecabCmd( args ): # [Str] -> IO MecabProc
-    try:
-        from japanese.reading import si, MecabController
-        m = MecabController()
-        m.setup()
-        cmd = m.mecabCmd[:1] + m.mecabCmd[4:]
-        s = subprocess.Popen( cmd + args, bufsize=-1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, startupinfo=si )
-    except (ImportError, OSError):
-        # this handles two cases:
-        #   - the japanese plugin is not installed -> try running the command directly as last instance (the user *might* have it installed)
-        #   - we are not using windows, so the japanese plugin binaries won't work -> for example the Arch User Repositories (AUR) have
-        #     a "mecab"-package available, which can be installed
-        si = None
-        cmd = ['mecab']
-        s = subprocess.Popen( cmd + args, bufsize=-1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, startupinfo=si )
+def spawnCmd(cmd, startupinfo): # [Str] -> subprocess.STARTUPINFO -> IO subprocess.Popen
+    return subprocess.Popen(cmd, startupinfo=startupinfo,
+        bufsize=-1, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
-    return s
+def spawnMecab(base_cmd, startupinfo): # [Str] -> subprocess.STARTUPINFO -> IO MecabProc
+    '''Try to start a MeCab subprocess in the given way, or fail.
 
-def getMecabEncoding(): # IO CharacterEncoding
-    return runMecabCmd( [ '-D' ] ).stdout.readlines()[2].lstrip( 'charset:' ).lstrip()
+    Raises OSError if the given base_cmd and startupinfo don't work
+    for starting up MeCab, or the MeCab they produce has a dictionary
+    incompatible with our assumptions.
+    '''
+    global MECAB_ENCODING
+
+    mecab_config_dump = spawnCmd(base_cmd + ['-P'], startupinfo).stdout
+    mecab_params = dict(re.search('^(.*?): (.*)$', line).groups()
+                        for line in mecab_config_dump.readlines())
+    if mecab_params['bos-feature'] != 'BOS/EOS,*,*,*,*,*,*,*,*':
+        raise OSError('''\
+Unexpected MeCab dictionary format; ipadic required.
+
+Try using the MeCab bundled with the Japanese Support addon,
+or if using your system's `mecab` try installing a package
+like `mecab-ipadic`.
+''')
+    MECAB_ENCODING = mecab_params['config-charset']
+
+    args = ['--node-format=%s\r' % ('\t'.join(MECAB_NODE_PARTS),),
+            '--eos-format=\n',
+            '--unk-format=']
+    return spawnCmd(base_cmd + args, startupinfo)
 
 @memoize
 def mecab(): # IO MecabProc
-    ''' Returns a running mecab instance. 'mecab' reads expressions from stdin at runtime, so only one instance is needed. Thats why this function is memoized. '''
-    global MECAB_ENCODING
-    if not MECAB_ENCODING: MECAB_ENCODING = getMecabEncoding()
-    args = ['--node-format=%s\r' % ('\t'.join(MECAB_NODE_PARTS),),
-            '--unk-format=', '--eos-format=\n']
-    return runMecabCmd( args )
+    '''Start a MeCab subprocess and return it.
+
+    `mecab` reads expressions from stdin at runtime, so only one
+    instance is needed.  That's why this function is memoized.
+    '''
+    try:
+        # First, try `mecab` from the system.  See if that exists and
+        # is compatible with our assumptions.
+        return spawnMecab(['mecab'], None)
+    except OSError:
+        # If no luck, rummage inside the Japanese Support addon and borrow its way
+        # of running the mecab bundled inside it.
+        from japanese.reading import si, MecabController
+        m = MecabController()
+        m.setup()
+        # m.mecabCmd[1:4] are assumed to be the format arguments.
+        return spawnMecab(m.mecabCmd[:1] + m.mecabCmd[4:], si)
 
 @memoize
 def interact( expr ): # Str -> IO Str
