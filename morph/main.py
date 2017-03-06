@@ -5,8 +5,9 @@ from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksu
 from morphemes import MorphDb, AnkiDeck, getMorphemes
 from morphemizer import getMorphemizerForFilter
 import stats
-from util import printf, mw, memoize, cfg, cfg1, partial, errorMsg, infoMsg, jcfg, getFilter
+from util import printf, mw, cfg, cfg1, partial, errorMsg, infoMsg, jcfg, getFilter
 import util
+from util_external import memoize
 
 # only for jedi-auto-completion
 import aqt.main

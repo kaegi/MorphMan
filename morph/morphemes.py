@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 import codecs, cPickle as pickle, gzip, os, subprocess, re
-from util import cfg1, getFilterByTagsAndType
 
 # need some fallbacks if not running from anki and thus morph.util isn't available
 try:
-    from morph.util import memoize, errorMsg
+    from morph.util import errorMsg
 except ImportError:
-    from util_external import memoize
     def errorMsg( msg ): pass
 
 ################################################################################

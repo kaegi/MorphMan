@@ -82,7 +82,7 @@ def my_getNewCard( self, _old ):
 
         # find the right morphemizer for this note, so we can apply model-dependent options (modify off == disable skip feature)
         from morphemes import getMorphemes
-        from morphemizer import getFilter
+        from util import getFilter
         notefilter = getFilter(n)
         if notefilter is None: return c # this note is not configured in any filter -> proceed like normal without MorphMan-plugin
         if not notefilter['Modify']: return c # the deck should not be modified -> the user probably doesn't want the 'skip mature' feature
