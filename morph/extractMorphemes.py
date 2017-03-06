@@ -2,7 +2,7 @@
 import os
 
 from morphemes import AnkiDeck, MorphDb, getMorphemes, ms2str
-from morphemizer import getMorphemizerForFilter
+from morphemizer import getMorphemizerByName
 from util import addBrowserSelectionCmd, cfg, cfg1, mw, getFilter, infoMsg, QFileDialog
 
 def pre( b ):
@@ -15,7 +15,7 @@ def per( st, n ):
     mats = mw.col.db.list( 'select ivl from cards where nid = :nid', nid=n.id )
     notecfg = getFilter(n)
     if notecfg is None: return st
-    morphemizer = getMorphemizerForFilter(notecfg)
+    morphemizer = getMorphemizerByName(notecfg['Morphemizer'])
     for f in notecfg['Fields']:
         ms = getMorphemes(morphemizer, n[f])
         loc = AnkiDeck(n.id, f, n[f], n.guid, mats)
