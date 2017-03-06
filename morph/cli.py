@@ -1,12 +1,16 @@
 from __future__ import absolute_import
 
 import argparse
+import codecs
+from collections import Counter
 import glob
 import os.path
 import signal
 import sys
 
 from morph.morphemes import MorphDb
+from morph.morphemizer import SpaceMorphemizer, MecabMorphemizer, CjkCharMorphemizer
+import morph
 
 
 def die(msg):
@@ -74,6 +78,13 @@ def db_path(db_name):
     return os.path.join(profile_path(), 'dbs', db_name + '.db')
 
 
+MIZERS = {
+    'space': SpaceMorphemizer(),
+    'mecab': MecabMorphemizer(),
+    'cjkchar': CjkCharMorphemizer(),
+}
+
+
 def cmd_dump(args):
     db_name = args.name
 
@@ -84,6 +95,20 @@ def cmd_dump(args):
 
     for line in sorted(m.show() for m in db.db.keys()):
         print line.encode('utf-8')
+
+
+def cmd_count(args):
+    files = args.files
+    mizer = MIZERS[args.mizer]
+
+    freqs = Counter()
+    for path in files:
+        with codecs.open(path, 'r', 'utf-8') as f:
+            for line in f.readlines():
+                freqs.update(mizer.getMorphemesFromExpr(line.strip()))
+
+    for m, c in freqs.most_common():
+        print '%d\t%s' % (c, m.show().encode('utf-8'))
 
 
 def fix_sigpipe():
@@ -107,6 +132,15 @@ def main():
                                    description='Dump a MorphMan database to stdout in a plain-text format.')
     p_dump.set_defaults(action=cmd_dump)
     p_dump.add_argument('name', metavar='NAME', help='database to dump (all, known, ...)')
+
+    p_count = subparsers.add_parser('count', help='count morphemes in a corpus',
+                        description='Count all morphemes in the given files and emit a frequency table.')
+    p_count.set_defaults(action=cmd_count)
+    p_count.add_argument('files', nargs='*', metavar='FILE', help='input files of text to morphemize')
+    p_count.add_argument('--mizer', default='mecab', choices=MIZERS.keys(),
+                         metavar='NAME',
+                         help='how to split morphemes (%s) (default %s)'
+                              % (', '.join(MIZERS.keys()), 'mecab'))
 
     args = parser.parse_args()
     global CLI_PROFILE_PATH
