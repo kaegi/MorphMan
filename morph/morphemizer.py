@@ -2,7 +2,7 @@
 import codecs, cPickle as pickle, gzip, os, subprocess, re
 
 from morph.morphemes import Morpheme
-from morph.util import cfg1, getFilter, getFilterByTagsAndType
+from morph.util import cfg1
 from morph.util_external import memoize
 
 ####################################################################################################
@@ -28,20 +28,6 @@ class Morphemizer:
 
 def getAllMorphemizers(): # -> [Morphemizer]
     return [SpaceMorphemizer(), MecabMorphemizer(), CjkCharMorphemizer()]
-
-def getMorphemizerForNote(note):
-    ''' :type note: anki.notes.Note '''
-    filter = getFilter(note)
-    if filter == None: return None
-    return getMorphemizerForFilter(filter)
-
-def getMorphemizerForTagsAndType(type, tags): # Str -> [Str] -> Morphemizer
-    filter = getFilterByTagsAndType(type, tags)
-    if filter is None: return None
-    return getMorphemizerForFilter(filter)
-
-def getMorphemizerForFilter(filter):
-    return getMorphemizerByName(filter['Morphemizer'])
 
 def getMorphemizerByName(name):
     for m in getAllMorphemizers():

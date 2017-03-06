@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
 from morphemes import getMorphemes, ms2str
-from morphemizer import getMorphemizerForFilter
+from morphemizer import getMorphemizerByName
 from util import addBrowserSelectionCmd, cfg, cfg1, getFilter, infoMsg
 
 def pre( b ): return { 'txt':'', 'morphemizer': None }
@@ -8,7 +8,7 @@ def pre( b ): return { 'txt':'', 'morphemizer': None }
 def per( st, n ):
     notecfg = getFilter(n)
     if notecfg is None: return st
-    st['morphemizer'] = getMorphemizerForFilter(notecfg)
+    st['morphemizer'] = getMorphemizerByName(notecfg['Morphemizer'])
     for f in notecfg['Fields']:
         st['txt'] += n[ f ] + '  '
     return st

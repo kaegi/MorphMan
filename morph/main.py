@@ -3,7 +3,7 @@ import time
 
 from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksum
 from morphemes import MorphDb, AnkiDeck, getMorphemes
-from morphemizer import getMorphemizerForFilter
+from morphemizer import getMorphemizerByName
 import stats
 from util import printf, mw, cfg, cfg1, partial, errorMsg, infoMsg, jcfg, getFilter
 import util
@@ -67,8 +67,7 @@ def mkAllDb( allDb=None ):
         note = mw.col.getNote(nid)
         notecfg = getFilter(note)
         if notecfg is None: continue
-        morphemizer = getMorphemizerForFilter(notecfg)
-
+        morphemizer = getMorphemizerByName(notecfg['Morphemizer'])
 
         N_enabled_notes += 1
 
