@@ -260,18 +260,16 @@ def updateNotes( allDb ):
 
             # other tags
         if priorityTag in ts:   ts.remove( priorityTag )
-        if isPriority:          ts.append( priorityTag )
+        if isPriority and jcfg('Option_SetTag_Priority'):
+            ts.append( priorityTag )
 
         if badLengthTag in ts:  ts.remove( badLengthTag )
-        if lenDiff:             ts.append( badLengthTag )
+        if lenDiff and jcfg('Option_SetTag_BadLength'):
+            ts.append( badLengthTag )
 
         if tooLongTag in ts:    ts.remove( tooLongTag )
-        if tooLong:             ts.append( tooLongTag )
-
-        # remove unnecessary tags
-        if not jcfg('Option_SetNotRequiredTags'):
-            unnecessary = [priorityTag, badLengthTag, tooLongTag]
-            ts = [tag for tag in ts if tag not in unnecessary]
+        if tooLong and jcfg('Option_SetTag_TooLong'):
+            ts.append( tooLongTag )
 
             # update sql db
         tags_ = TAG.join( TAG.canonify( ts ) )

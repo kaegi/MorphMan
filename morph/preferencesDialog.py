@@ -20,6 +20,8 @@ class PreferencesDialog( QDialog ):
         self.vbox = vbox = QVBoxLayout(self)
         self.tabWidget = QTabWidget(); self.vbox.addWidget(self.tabWidget)
 
+        self.boolOptionList = []
+
         self.createNoteFilterTab()
         self.createExtraFieldsTab()
         self.createTagsTab()
@@ -101,38 +103,54 @@ class PreferencesDialog( QDialog ):
         self.frame3 = QGroupBox("Tags")
         self.tabWidget.addTab(self.frame3, "Tags")
         vbox = QVBoxLayout(); self.frame3.setLayout(vbox); vbox.setContentsMargins(0, 20, 0, 0)
+        self.tagEntryList = []
 
         label = QLabel("This plugin will add and delete following tags from your matched notes. Hover your mouse over text entries to see tooltip info.")
         label.setWordWrap(True)
         vbox.addWidget(label)
         vbox.addSpacing(50)
 
-        grid = QGridLayout(); vbox.addLayout(grid)
-        tagList  = [
+        label = QLabel("Required tags, used in MorphMan's internal logic:")
+        label.setWordWrap(True)
+        vbox.addWidget(label)
+        requiredTags = [
                 ("Vocab note:", 'Tag_Vocab', 'Note that is optimal to learn (one unknown word.)'),
                 ("Compehension note:", 'Tag_Comprehension', 'Note that only has mature words (optimal for sentence learning).'),
                 ("Fresh vocab note:", 'Tag_Fresh', 'Note that does not contain unknown words, but one or\nmore unmature (card with recently learned morphmes).'),
                 ("Not ready:", 'Tag_NotReady', 'Note that has two or more unknown words.'),
                 ("Already known:", 'Tag_AlreadyKnown', 'You can add this tag to a note.\nAfter a recalc of the database, all in this sentence words are marked as known.\nPress \'K\' while reviewing to tag current card.'),
+            ]
+        grid = QGridLayout(); vbox.addLayout(grid)
+        numberOfColumns = 2
+        for i, (name, key, tooltipInfo) in enumerate(requiredTags):
+            entry = QLineEdit(jcfg(key))
+            entry.setToolTip(tooltipInfo)
+            self.tagEntryList.append((key, entry))
+            grid.addWidget(QLabel(name), i // numberOfColumns, (i % numberOfColumns) * 2 + 0)
+            grid.addWidget(entry, i // numberOfColumns, (i % numberOfColumns) * 2 + 1)
+        vbox.addSpacing(50)
+
+        label = QLabel("Optional tags:")
+        label.setWordWrap(True)
+        vbox.addWidget(label)
+        optionalTags = [
                 ("Priority:", 'Tag_Priority', 'Morpheme is in priority.db.'),
                 ("Bad Length:", 'Tag_BadLength', 'Sentence is too long or too short.'),
                 ("Too Long", 'Tag_TooLong', 'Sentence is too long.'),
             ]
-        self.tagEntryList = []
-        numberOfColumns = 2
-        for i, (name, key, tooltipInfo) in enumerate(tagList):
+        grid = QGridLayout(); vbox.addLayout(grid)
+        for i, (name, key, tooltipInfo) in enumerate(optionalTags):
             entry = QLineEdit(jcfg(key))
             entry.setToolTip(tooltipInfo)
             self.tagEntryList.append((key, entry))
+            grid.addWidget(QLabel(name), i, 0)
+            grid.addWidget(entry, i, 1)
 
-            grid.addWidget(QLabel(name), i // numberOfColumns, (i % numberOfColumns) * 2 + 0)
-            grid.addWidget(entry, i // numberOfColumns, (i % numberOfColumns) * 2 + 1)
-
-        vbox.addSpacing(50)
-
-        self.checkboxSetNotRequiredTags = QCheckBox("Add tags even if not required")
-        self.checkboxSetNotRequiredTags.setCheckState(Qt.Checked if jcfg('Option_SetNotRequiredTags') else Qt.Unchecked)
-        vbox.addWidget(self.checkboxSetNotRequiredTags)
+            optionKey = 'Option_Set%s' % (key,)
+            checkbox = QCheckBox("Add tag")
+            checkbox.setCheckState(Qt.Checked if jcfg(optionKey) else Qt.Unchecked)
+            self.boolOptionList.append((optionKey, checkbox))
+            grid.addWidget(checkbox, i, 2)
 
         vbox.addStretch()
 
@@ -152,7 +170,6 @@ class PreferencesDialog( QDialog ):
                 ("Skip cards with fresh vocabulary", 'Option_SkipFreshVocabCards', 'Note that does not contain unknown words, but one or\nmore unmature (card with recently learned morphmes). Enable to\nskip to first card that has unknown vocabulary.'),
                 ("Skip card if focus morph was already seen today", 'Option_SkipFocusMorphSeenToday', 'This improves the \'new cards\'-queue without having to recalculate the databases.'),
             ]
-        self.boolOptionList = []
         for i, (name, key, tooltipInfo) in enumerate(optionList):
             checkBox = QCheckBox(name)
             checkBox.setCheckState(Qt.Checked if jcfg(key) else Qt.Unchecked)
@@ -250,8 +267,6 @@ class PreferencesDialog( QDialog ):
         cfg['Filter'] = []
         for i, rowGui in enumerate(self.rowGui):
             cfg['Filter'].append(self.rowGuiToFilter(rowGui))
-
-        cfg['Option_SetNotRequiredTags'] = self.checkboxSetNotRequiredTags.checkState() != Qt.Unchecked
 
         return cfg
 
