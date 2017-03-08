@@ -115,8 +115,8 @@ class PreferencesDialog( QDialog ):
                 ("Not ready:", 'Tag_NotReady', 'Note that has two or more unknown words.'),
                 ("Already known:", 'Tag_AlreadyKnown', 'You can add this tag to a note.\nAfter a recalc of the database, all in this sentence words are marked as known.\nPress \'K\' while reviewing to tag current card.'),
                 ("Priority:", 'Tag_Priority', 'Morpheme is in priority.db.'),
-                ("Bad Length:", 'Tag_BadLength', 'Sentence is too long or too short.'),
-                ("Too Long", 'Tag_TooLong', 'Sentence is too long.'),
+                ("Too Short:", 'Tag_TooShort', 'Sentence is too short.'),
+                ("Too Long:", 'Tag_TooLong', 'Sentence is too long.'),
             ]
         self.tagEntryList = []
         numberOfColumns = 2

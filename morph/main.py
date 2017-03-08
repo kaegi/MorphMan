@@ -5,7 +5,7 @@ from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksu
 from morphemes import MorphDb, AnkiDeck, getMorphemes
 from morphemizer import getMorphemizerByName
 import stats
-from util import printf, mw, cfg, cfg1, partial, errorMsg, infoMsg, jcfg, getFilter
+from util import printf, mw, cfg, cfg1, partial, errorMsg, infoMsg, jcfg, jcfg2, getFilter
 import util
 from util_external import memoize
 
@@ -142,8 +142,9 @@ def updateNotes( allDb ):
     locDb   = allDb.locDb( recalc=False ) # fidDb() already forces locDb recalc
 
     # read tag names
-    compTag, vocabTag, freshTag, notReadyTag, alreadyKnownTag, priorityTag, badLengthTag, tooLongTag = tagNames = jcfg('Tag_Comprehension'), jcfg('Tag_Vocab'), jcfg('Tag_Fresh'), jcfg('Tag_NotReady'), jcfg('Tag_AlreadyKnown'), jcfg('Tag_Priority'), jcfg('Tag_BadLength'), jcfg('Tag_TooLong')
+    compTag, vocabTag, freshTag, notReadyTag, alreadyKnownTag, priorityTag, tooShortTag, tooLongTag = tagNames = jcfg('Tag_Comprehension'), jcfg('Tag_Vocab'), jcfg('Tag_Fresh'), jcfg('Tag_NotReady'), jcfg('Tag_AlreadyKnown'), jcfg('Tag_Priority'), jcfg('Tag_TooShort'), jcfg('Tag_TooLong')
     TAG.register( tagNames )
+    badLengthTag = jcfg2().get('Tag_BadLength')
 
     # handle secondary databases
     mw.progress.update( label='Creating seen/known/mature from all.db' )
@@ -218,8 +219,9 @@ def updateNotes( allDb ):
         usefulness = 999 - min( 999, usefulness )
 
         # difference from optimal length range (too little context vs long sentence)
-        lenDiff = min(9, max(0, N - C('max good sentence length'), C('min good sentence length') - N))
-        tooLong = N > C('max good sentence length')
+        lenDiffRaw = min(N - C('min good sentence length'),
+                         max(0, N - C('max good sentence length')))
+        lenDiff = min(9, abs(lenDiffRaw))
 
             # calculate mmi
         mmi = 10000*N_k + 1000*lenDiff + usefulness
@@ -258,19 +260,23 @@ def updateNotes( allDb ):
         setField( mid, fs, jcfg('Field_Unmatures'), u', '.join( u.base for u in unmatures ) )
         setField( mid, fs, jcfg('Field_UnknownFreq'), u'%d' % F_k_avg )
 
+            # remove deprecated tag
+        if badLengthTag is not None and badLengthTag in ts:
+            ts.remove( badLengthTag )
+
             # other tags
         if priorityTag in ts:   ts.remove( priorityTag )
         if isPriority:          ts.append( priorityTag )
 
-        if badLengthTag in ts:  ts.remove( badLengthTag )
-        if lenDiff:             ts.append( badLengthTag )
+        if tooShortTag in ts:   ts.remove( tooShortTag )
+        if lenDiffRaw < 0:      ts.append( tooShortTag )
 
         if tooLongTag in ts:    ts.remove( tooLongTag )
-        if tooLong:             ts.append( tooLongTag )
+        if lenDiffRaw > 0:      ts.append( tooLongTag )
 
         # remove unnecessary tags
         if not jcfg('Option_SetNotRequiredTags'):
-            unnecessary = [priorityTag, badLengthTag, tooLongTag]
+            unnecessary = [priorityTag, tooShortTag, tooLongTag]
             ts = [tag for tag in ts if tag not in unnecessary]
 
             # update sql db
