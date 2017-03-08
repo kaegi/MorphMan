@@ -82,8 +82,8 @@ def jcfg_default():
         'Tag_NotReady':u'mm_notReady',             # set for k+2 and above cards
         'Tag_AlreadyKnown':u'mm_alreadyKnown',     # you can add this tag to a note to make anki treat it as if mature
         'Tag_Priority':u'mm_priority',             # set if note contains an unknown that exists in priority.db
-        'Tag_BadLength':u'mm_badLength',           # set if sentence isn't within optimal sentence length range
-        'Tag_TooLong':u'mm_tooLong',               # set if sentence is above optimal sentence length
+        'Tag_TooShort':u'mm_tooShort',             # set if sentence is below optimal length range
+        'Tag_TooLong':u'mm_tooLong',               # set if sentence is above optimal length range
 
         # filter for cards that should be analyzed, higher entries have higher priority
         'Filter': [
