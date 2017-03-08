@@ -78,10 +78,10 @@ def spawnMecab(base_cmd, startupinfo): # [Str] -> subprocess.STARTUPINFO -> IO M
     '''
     global MECAB_ENCODING
 
-    mecab_config_dump = spawnCmd(base_cmd + ['-P'], startupinfo).stdout
-    mecab_params = dict(re.search('^(.*?): (.*)$', line).groups()
-                        for line in mecab_config_dump.readlines())
-    if mecab_params['bos-feature'] != 'BOS/EOS,*,*,*,*,*,*,*,*':
+    config_dump = spawnCmd(base_cmd + ['-P'], startupinfo).stdout.read()
+    bos_feature_match = re.search('^bos-feature: (.*)$', config_dump, flags=re.M)
+    if (bos_feature_match is None
+          or bos_feature_match.group(1) != 'BOS/EOS,*,*,*,*,*,*,*,*'):
         raise OSError('''\
 Unexpected MeCab dictionary format; ipadic required.
 
@@ -89,7 +89,13 @@ Try using the MeCab bundled with the Japanese Support addon,
 or if using your system's `mecab` try installing a package
 like `mecab-ipadic`.
 ''')
-    MECAB_ENCODING = mecab_params['config-charset']
+
+    dicinfo_dump = spawnCmd(base_cmd + ['-D'], startupinfo).stdout.read()
+    charset_match = re.search('^charset:\t(.*)$', dicinfo_dump, flags=re.M)
+    if charset_match is None:
+        raise OSError('Can\'t find charset in MeCab dictionary info (`$MECAB -D`):\n\n'
+                      + dicinfo_dump)
+    MECAB_ENCODING = charset_match.group(1)
 
     args = ['--node-format=%s\r' % ('\t'.join(MECAB_NODE_PARTS),),
             '--eos-format=\n',
