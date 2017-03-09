@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 from morphemes import getMorphemes, ms2str
 from morphemizer import getMorphemizerByName
-from util import addBrowserSelectionCmd, cfg, cfg1, getFilter, infoMsg
+from util import addBrowserNoteSelectionCmd, cfg, cfg1, getFilter, infoMsg
 
 def pre( b ): return { 'txt':'', 'morphemizer': None }
 
@@ -21,4 +21,4 @@ def post( st ):
     s = ms2str( ms )
     infoMsg( '----- All -----\n' + s )
 
-addBrowserSelectionCmd( 'MorphMan: View Morphemes', pre, per, post, tooltip='View Morphemes for selected note', shortcut=('Ctrl+Shift+V',) )
+addBrowserNoteSelectionCmd( 'MorphMan: View Morphemes', pre, per, post, tooltip='View Morphemes for selected note', shortcut=('Ctrl+Shift+V',) )

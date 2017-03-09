@@ -3,7 +3,7 @@ from aqt import reviewer, dialogs
 from aqt.qt import *
 from aqt.utils import tooltip
 from anki import sched
-from util import addBrowserSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
+from util import addBrowserNoteSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
 
 # only for jedi-auto-completion
 import aqt.main
@@ -192,7 +192,7 @@ def post( st ):
     # only reset and fetch a new card if it wasn't already done with close()
     return {'__reset': len(mw.reviewer.cardQueue) == i}
 
-addBrowserSelectionCmd( 'MorphMan: Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=('Ctrl+Shift+N',) )
+addBrowserNoteSelectionCmd( 'MorphMan: Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=('Ctrl+Shift+N',) )
 
 ########## 5 - highlight morphemes using morphHighlight
 import re

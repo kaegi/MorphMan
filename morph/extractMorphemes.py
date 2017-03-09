@@ -3,7 +3,7 @@ import os
 
 from morphemes import AnkiDeck, MorphDb, getMorphemes, ms2str
 from morphemizer import getMorphemizerByName
-from util import addBrowserSelectionCmd, cfg, cfg1, mw, getFilter, infoMsg, QFileDialog
+from util import addBrowserNoteSelectionCmd, cfg, cfg1, mw, getFilter, infoMsg, QFileDialog
 
 def pre( b ):
     from util import dbsPath # not defined until late, so don't import at top of module
@@ -27,4 +27,4 @@ def post( st ):
     st['morphDb'].save( st['dbpath'] )
     infoMsg( 'DB saved with extracted morphemes' )
 
-addBrowserSelectionCmd( 'MorphMan: Extract Morphemes', pre, per, post, tooltip='Extract morphemes in selected notes to a MorphMan db', shortcut=('Ctrl+Shift+E',) )
+addBrowserNoteSelectionCmd( 'MorphMan: Extract Morphemes', pre, per, post, tooltip='Extract morphemes in selected notes to a MorphMan db', shortcut=('Ctrl+Shift+E',) )

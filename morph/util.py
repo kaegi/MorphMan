@@ -137,7 +137,7 @@ def getFilterByTagsAndType(type, tags):
 ###############################################################################
 ## Fact browser utils
 ###############################################################################
-def doOnSelection( b, preF, perF, postF, progLabel ):
+def doOnNoteSelection( b, preF, perF, postF, progLabel ):
     st = preF( b )
     if not st: return
 
@@ -154,14 +154,37 @@ def doOnSelection( b, preF, perF, postF, progLabel ):
     if not st or st.get( '__reset', True ):
         mw.reset()
 
-def addBrowserSelectionCmd( menuLabel, preF, perF, postF, tooltip=None, shortcut=None, progLabel='Working...' ):
+def doOnCardSelection( b, preF, perF, postF ):
+    st = preF( b )
+    if not st: return
+
+    cids = b.selectedCards()
+    for i,cid in enumerate( cids ):
+        card = mw.col.getCard( cid )
+        st = perF( st, card )
+
+    st = postF( st )
+    if not st or st.get( '__reset', True ):
+        mw.reset()
+
+def addBrowserItem( menuLabel, func_triggered, tooltip=None, shortcut=None):
     def setupMenu( b ):
         a = QAction( menuLabel, b )
         if tooltip:     a.setStatusTip( tooltip )
         if shortcut:    a.setShortcut( QKeySequence( *shortcut ) )
-        b.connect( a, SIGNAL('triggered()'), lambda b=b: doOnSelection( b, preF, perF, postF, progLabel ) )
+        b.connect( a, SIGNAL('triggered()'), lambda b=b: func_triggered(b) )
         b.form.menuEdit.addAction( a )
     addHook( 'browser.setupMenus', setupMenu )
+
+def addBrowserNoteSelectionCmd( menuLabel, preF, perF, postF, tooltip=None, shortcut=None, progLabel='Working...' ):
+    ''' This function sets up a menu item in the Anki browser. On being clicked, it will call one time `preF`, for
+    every selected note `perF` and after everything `postF`. '''
+    addBrowserItem(menuLabel, lambda b: doOnNoteSelection(b, preF, perF, postF, progLabel), tooltip, shortcut)
+
+def addBrowserCardSelectionCmd( menuLabel, preF, perF, postF, tooltip=None, shortcut=None, progLabel='Working...' ):
+    ''' This function sets up a menu item in the Anki browser. On being clicked, it will call one time `preF`, for
+    every selected card `perF` and after everything `postF`. '''
+    addBrowserItem(menuLabel, lambda b: doOnCardSelection(b, preF, perF, postF), tooltip, shortcut)
 
 ###############################################################################
 ## Logging and MsgBoxes
