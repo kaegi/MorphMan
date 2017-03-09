@@ -3,7 +3,7 @@ from aqt import reviewer, dialogs
 from aqt.qt import *
 from aqt.utils import tooltip
 from anki import sched
-from util import addBrowserNoteSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
+from util import addBrowserNoteSelectionCmd, addBrowserCardSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
 
 # only for jedi-auto-completion
 import aqt.main
@@ -175,16 +175,15 @@ reviewer.Reviewer._keyHandler = wrap( reviewer.Reviewer._keyHandler, my_reviewer
 ########## 4 - immediately review selected cards
 def pre( b ):
     ''' :type b: aqt.browser.Browser '''
-    return { 'notes':[], 'browser':b }
-def per( st, n ):
-    st['notes'].append( n )
+    return { 'cards':[], 'browser':b }
+def per( st, c ):
+    st['cards'].append( c )
     return st
 def post( st ):
-    i = 0
-    for n in st['notes']:
-        for c in n.cards():
-            mw.reviewer.cardQueue.append( c )
-            i += 1
+    i = len(st['cards'])
+    for c in st['cards']:
+        mw.reviewer.cardQueue.append( c )
+
     # in special cases close() will already pop a new card from mw.reviewer.cardQueue
     st['browser'].close()
     tooltip( _( 'Immediately reviewing %d cards' % i ) )
@@ -192,7 +191,7 @@ def post( st ):
     # only reset and fetch a new card if it wasn't already done with close()
     return {'__reset': len(mw.reviewer.cardQueue) == i}
 
-addBrowserNoteSelectionCmd( 'MorphMan: Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=('Ctrl+Shift+N',) )
+addBrowserCardSelectionCmd( 'MorphMan: Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=('Ctrl+Shift+N',) )
 
 ########## 5 - highlight morphemes using morphHighlight
 import re
