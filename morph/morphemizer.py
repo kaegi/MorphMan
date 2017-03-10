@@ -81,7 +81,7 @@ def spawnMecab(base_cmd, startupinfo): # [Str] -> subprocess.STARTUPINFO -> IO M
     config_dump = spawnCmd(base_cmd + ['-P'], startupinfo).stdout.read()
     bos_feature_match = re.search('^bos-feature: (.*)$', config_dump, flags=re.M)
     if (bos_feature_match is None
-          or bos_feature_match.group(1) != 'BOS/EOS,*,*,*,*,*,*,*,*'):
+          or bos_feature_match.group(1).strip() != 'BOS/EOS,*,*,*,*,*,*,*,*'):
         raise OSError('''\
 Unexpected MeCab dictionary format; ipadic required.
 
