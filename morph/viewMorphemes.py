@@ -3,22 +3,22 @@ from morphemes import getMorphemes, ms2str
 from morphemizer import getMorphemizerByName
 from util import addBrowserNoteSelectionCmd, cfg, cfg1, getFilter, infoMsg
 
-def pre( b ): return { 'txt':'', 'morphemizer': None }
+def pre( b ): return { 'morphemes': [] }
 
 def per( st, n ):
     notecfg = getFilter(n)
     if notecfg is None: return st
-    st['morphemizer'] = getMorphemizerByName(notecfg['Morphemizer'])
+    morphemizer = getMorphemizerByName(notecfg['Morphemizer'])
     for f in notecfg['Fields']:
-        st['txt'] += n[ f ] + '  '
+        ms = getMorphemes(morphemizer, n[f], n.tags)
+        st['morphemes'] += ms
     return st
 
 def post( st ):
-    if st['txt'] == '':
+    if len(st['morphemes']) == 0:
         infoMsg('----- No morphemes, check your filters -----')
         return
-    ms = getMorphemes(st['morphemizer'], st['txt'])
-    s = ms2str( ms )
+    s = ms2str( st['morphemes'] )
     infoMsg( '----- All -----\n' + s )
 
 addBrowserNoteSelectionCmd( 'MorphMan: View Morphemes', pre, per, post, tooltip='View Morphemes for selected note', shortcut=('Ctrl+Shift+V',) )

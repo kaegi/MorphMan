@@ -230,13 +230,14 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
     #if not isNoteSame(note, fieldDict): return txt
     #from aqt.qt import debug; debug()
 
-    filter = getFilterByTagsAndType(fieldDict['Type'], fieldDict['Tags'].split())
+    tags = fieldDict['Tags'].split()
+    filter = getFilterByTagsAndType(fieldDict['Type'], tags)
     if filter is None:
         return txt
     morphemizer = getMorphemizerByName(filter['Morphemizer'])
     if morphemizer is None:
         return txt
-    ms = getMorphemes(morphemizer, txt)
+    ms = getMorphemes(morphemizer, txt, tags)
 
     for m in sorted( ms, key=lambda x: len(x.inflected), reverse=True ): # largest subs first
         locs = allDb().db.get( m, set() )

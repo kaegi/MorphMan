@@ -3,9 +3,10 @@ import codecs, cPickle as pickle, gzip, os, subprocess, re
 
 # need some fallbacks if not running from anki and thus morph.util isn't available
 try:
-    from morph.util import errorMsg
+    from morph.util import errorMsg, jcfg
 except ImportError:
     def errorMsg( msg ): pass
+    def jcfg(s): return None
 
 ################################################################################
 ## Lexical analysis
@@ -55,7 +56,31 @@ def ms2str( ms ): # [Morpheme] -> Str
     return u'\n'.join( m.show() for m in ms )
 
 
-def getMorphemes(morphemizer, expression):
+def getMorphemes(morphemizer, expression, note_tags=None):
+    # go through all replacement rules and search if a rule (which dictates a string to morpheme conversion) can be applied
+    replace_rules = jcfg('ReplaceRules')
+    if not note_tags is None and not replace_rules is None:
+        note_tags_set = set(note_tags)
+        for (filter_tags, regex, morphemes) in replace_rules:
+            if not set(filter_tags) <= note_tags_set: continue
+
+            # find matches
+            splitted_expression = re.split(regex, expression, maxsplit=1, flags=re.UNICODE)
+
+            if len(splitted_expression) == 1: continue # no match
+            assert(len(splitted_expression) == 2)
+
+            # make sure this rule doesn't lead to endless recursion
+            if len(splitted_expression[0]) >= len(expression): continue
+            if len(splitted_expression[1]) >= len(expression): continue
+
+            a_morphs = getMorphemes(morphemizer, splitted_expression[0], note_tags)
+            b_morphs = [Morpheme(mstr, mstr, 'UNKNOWN', 'UNKNOWN', mstr) for mstr in morphemes]
+            c_morphs = getMorphemes(morphemizer, splitted_expression[1], note_tags)
+
+            return a_morphs + b_morphs + c_morphs
+
+
     ms = morphemizer.getMorphemesFromExpr(expression)
     return ms
 

@@ -92,6 +92,30 @@ def jcfg_default():
             {'Type': 'SubtitleMemorize', 'TypeId': None, 'Tags': [          ], 'Fields': ['Expression'], 'Morphemizer': 'SpaceMorphemizer', 'Modify': True},
         ],
 
+        # This field lets you dictate string-to-morpheme conversions. This is useful for cases
+        # where the morphemizer fails or you want to ignore specific parts of sentences (e.g. character
+        # annotations like "<<Thomas>> Hello Peter! <<Peter>> Hi!").
+        #
+        # Every entry in this list is a 3-tuple specifying a replace-rule.
+        #   - the first entry is a list of tags to restrict application of the rule. For example: ['Spanish', 'NewDrama']. This list can be empty to include all notes.
+        #   - the second entry is a python regex describing the string. For example '<<.*?>>' to match everything between << and >>. Capturing groups are not allowed.
+        #   - the third entry is a list of strings/morphemes which are returned for the matched string; the list can be empty
+        #
+        # So for example:
+        #   ([u'English', u'ThatSeriesTag'], u'<<.*?>>', [])  ignores character annotations in notes with the tags 'English' and 'ThatSeriesTag'
+        #   ([u'English'], u'a single expression', [u'a', u'single expression'])  will group 'single expression' in 'a single expression' into one "morpheme"
+        #
+        # The application of the rules works as following:
+        #   - find the first rule that matches the note expression field or if no rule applies, call the morphemizer
+        #   - find the first match in that field
+        #   - "replace" the string with the given morphems
+        #   - repeat this procedure with the text left from the match, then with the text right from the match
+        #
+        # One important property of the application algorithm is that if the match is in the middle of a sentence, the
+        # morphemizer will only see both parts of the rest-sentence separately. A morphemizer (e.g. a japanese word segmenter)
+        # that heavily relies on context and grammar might not produce the best results for "broken" sentences.
+        'ReplaceRules': [ ],
+
         # only set necessary tags or set all tags?
         'Option_SetNotRequiredTags': True, # do not set tags/remove tags that are only there for user to read/filter with
         'Option_SkipComprehensionCards': True, # bury/skip all new cards that have 'Tag_Comprehension'

@@ -17,7 +17,7 @@ def per( st, n ):
     if notecfg is None: return st
     morphemizer = getMorphemizerByName(notecfg['Morphemizer'])
     for f in notecfg['Fields']:
-        ms = getMorphemes(morphemizer, n[f])
+        ms = getMorphemes(morphemizer, n[f], n.tags)
         loc = AnkiDeck(n.id, f, n[f], n.guid, mats)
         st['morphDb'].addMsl(ms, loc)
 

@@ -91,7 +91,7 @@ def mkAllDb( allDb=None ):
             loc = fidDb.get( ( nid, guid, fieldName ), None )
             if not loc:
                 loc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
-                ms = getMorphemes(morphemizer, fieldValue )
+                ms = getMorphemes(morphemizer, fieldValue, ts)
                 if ms: #TODO: this needed? should we change below too then?
                     #printf( '    .loc for %d[%s]' % ( nid, fieldName ) )
                     locDb[ loc ] = ms
@@ -105,7 +105,7 @@ def mkAllDb( allDb=None ):
                 elif loc.fieldValue != fieldValue:
                     #printf( '    .morphs for %d[%s]' % ( nid, fieldName ) )
                     newLoc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
-                    ms = getMorphemes(morphemizer, fieldValue )
+                    ms = getMorphemes(morphemizer, fieldValue, ts)
                     locDb.pop( loc )
                     locDb[ newLoc ] = ms
 

@@ -19,7 +19,7 @@ def per( st, n ): # :: State -> Note -> State
     if notecfg is None: return st
     morphemizer = getMorphemizerByName(notecfg['Morphemizer'])
     for field in notecfg['Fields']:
-        for m in getMorphemes(morphemizer, n[ field ]):
+        for m in getMorphemes(morphemizer, n[ field ], n.tags):
             if m in st['db'].db:
                 n.addTag(st['tags'])
                 break
