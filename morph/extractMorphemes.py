@@ -1,12 +1,12 @@
 #-*- coding: utf-8 -*-
 import os
 
-from morphemes import AnkiDeck, MorphDb, getMorphemes, ms2str
-from morphemizer import getMorphemizerByName
-from util import addBrowserNoteSelectionCmd, cfg, cfg1, mw, getFilter, infoMsg, QFileDialog
+from .morphemes import AnkiDeck, MorphDb, getMorphemes, ms2str
+from .morphemizer import getMorphemizerByName
+from .util import addBrowserNoteSelectionCmd, cfg, cfg1, mw, getFilter, infoMsg, QFileDialog
 
 def pre( b ):
-    from util import dbsPath # not defined until late, so don't import at top of module
+    from .util import dbsPath # not defined until late, so don't import at top of module
     path = QFileDialog.getSaveFileName( caption='Save morpheme db to?', directory=dbsPath + os.sep + 'exportedMorphs.db' )
     if not path: return
     return { 'dbpath':str(path), 'morphDb':MorphDb() }

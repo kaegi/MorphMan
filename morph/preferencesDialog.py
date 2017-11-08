@@ -1,10 +1,11 @@
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtWidgets import *
+from PyQt5.QtGui import *
 
 from aqt.utils import tooltip
 
-from util import errorMsg, infoMsg, mw, jcfg, jcfgUpdate, mkBtn
-from morphemizer import getAllMorphemizers
+from .util import errorMsg, infoMsg, mw, jcfg, jcfgUpdate, mkBtn
+from .morphemizer import getAllMorphemizers
 
 # only for jedi-auto-completion
 import aqt.main
@@ -36,7 +37,7 @@ class PreferencesDialog( QDialog ):
         self.tableModel = QStandardItemModel(0, 5)
         self.tableView = QTableView()
         self.tableView.setModel(self.tableModel)
-        self.tableView.horizontalHeader().setResizeMode(QHeaderView.Stretch)
+        self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         self.tableView.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.tableView.setSelectionMode(QAbstractItemView.SingleSelection)
         self.tableModel.setHeaderData(0, Qt.Horizontal, "Note type")
@@ -168,11 +169,11 @@ class PreferencesDialog( QDialog ):
         hbox = QHBoxLayout(); self.vbox.addLayout(hbox)
         buttonCancel = QPushButton("&Cancel"); hbox.addWidget(buttonCancel, 1, Qt.AlignRight)
         buttonCancel.setMaximumWidth(150)
-        self.connect( buttonCancel, SIGNAL('clicked()'), self.onCancel )
+        buttonCancel.clicked.connect(self.onCancel)
 
         buttonOkay = QPushButton("&Apply"); hbox.addWidget(buttonOkay, 0)
         buttonOkay.setMaximumWidth(150)
-        self.connect( buttonOkay, SIGNAL('clicked()'), self.onOkay )
+        buttonOkay.clicked.connect(self.onOkay)
 
 
 

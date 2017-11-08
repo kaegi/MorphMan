@@ -3,13 +3,13 @@ from aqt import reviewer, dialogs
 from aqt.qt import *
 from aqt.utils import tooltip
 from anki import sched
-from util import addBrowserNoteSelectionCmd, addBrowserCardSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
+from .util import addBrowserNoteSelectionCmd, addBrowserCardSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
 
 # only for jedi-auto-completion
 import aqt.main
 assert isinstance(mw, aqt.main.AnkiQt)
 
-import main
+from . import main
 
 #1 after answering -> skip all cards with same focus as one just answered
 #2 hotkey -> set card as already known, skip it, and all others with same focus
@@ -49,7 +49,7 @@ def markFocusSeen( self, n ):
     global seenMorphs
     try:
         if not focus( n ): return
-        q = u'%s:%s' % ( focusName( n ), focus( n ) )
+        q = '%s:%s' % ( focusName( n ), focus( n ) )
     except KeyError: return
     seenMorphs.add( focus(n) )
     numSkipped = len( self.mw.col.findNotes( q ) ) -1
@@ -81,8 +81,8 @@ def my_getNewCard( self, _old ):
         n = c.note()
 
         # find the right morphemizer for this note, so we can apply model-dependent options (modify off == disable skip feature)
-        from morphemes import getMorphemes
-        from util import getFilter
+        from .morphemes import getMorphemes
+        from .util import getFilter
         notefilter = getFilter(n)
         if notefilter is None: return c # this note is not configured in any filter -> proceed like normal without MorphMan-plugin
         if not notefilter['Modify']: return c # the deck should not be modified -> the user probably doesn't want the 'skip mature' feature
@@ -156,42 +156,42 @@ def browseSameFocus( self ): #3
     try:
         n = self.card.note()
         if not focus( n ): return
-        q = u'%s:%s' % ( focusName( n ), focus( n ) )
+        q = '%s:%s' % ( focusName( n ), focus( n ) )
         b = dialogs.open( 'Browser', self.mw )
         b.form.searchEdit.lineEdit().setText( q )
         b.onSearch()
     except KeyError: pass
 
 ########## set keybindings for 2-3
-def my_reviewer_keyHandler( self, evt ):
-    ''' :type self: aqt.reviewer.Reviewer '''
-    key = unicode( evt.text() )
-    key_browse, key_skip = cfg1('browse same focus key'), cfg1('set known and skip key')
-    if   key == key_skip:   setKnownAndSkip( self )
-    elif key == key_browse: browseSameFocus( self )
+# def my_reviewer_keyHandler( self, evt ):
+#     ''' :type self: aqt.reviewer.Reviewer '''
+#     key = str( evt.text() )
+#     key_browse, key_skip = cfg1('browse same focus key'), cfg1('set known and skip key')
+#     if   key == key_skip:   setKnownAndSkip( self )
+#     elif key == key_browse: browseSameFocus( self )
 
-reviewer.Reviewer._keyHandler = wrap( reviewer.Reviewer._keyHandler, my_reviewer_keyHandler )
+# reviewer.Reviewer._keyHandler = wrap( reviewer.Reviewer._keyHandler, my_reviewer_keyHandler )
 
 ########## 4 - immediately review selected cards
-def pre( b ):
-    ''' :type b: aqt.browser.Browser '''
-    return { 'cards':[], 'browser':b }
-def per( st, c ):
-    st['cards'].append( c )
-    return st
-def post( st ):
-    i = len(st['cards'])
-    for c in st['cards']:
-        mw.reviewer.cardQueue.append( c )
+# def pre( b ):
+#     ''' :type b: aqt.browser.Browser '''
+#     return { 'cards':[], 'browser':b }
+# def per( st, c ):
+#     st['cards'].append( c )
+#     return st
+# def post( st ):
+#     i = len(st['cards'])
+#     for c in st['cards']:
+#         mw.reviewer.cardQueue.append( c )
 
-    # in special cases close() will already pop a new card from mw.reviewer.cardQueue
-    st['browser'].close()
-    tooltip( _( 'Immediately reviewing %d cards' % i ) )
+#     # in special cases close() will already pop a new card from mw.reviewer.cardQueue
+#     st['browser'].close()
+#     tooltip( _( 'Immediately reviewing %d cards' % i ) )
 
-    # only reset and fetch a new card if it wasn't already done with close()
-    return {'__reset': len(mw.reviewer.cardQueue) == i}
+#     # only reset and fetch a new card if it wasn't already done with close()
+#     return {'__reset': len(mw.reviewer.cardQueue) == i}
 
-addBrowserCardSelectionCmd( 'MorphMan: Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=('Ctrl+Shift+N',) )
+# addBrowserCardSelectionCmd( 'MorphMan: Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=('Ctrl+Shift+N',) )
 
 ########## 5 - highlight morphemes using morphHighlight
 import re
@@ -199,7 +199,7 @@ import re
 def isNoteSame(note, fieldDict):
     # compare fields
     same_as_note = True
-    items = note.items()
+    items = list(note.items())
     for (key, value) in items:
         if key not in fieldDict or value != fieldDict[key]:
             return False
@@ -213,14 +213,14 @@ def isNoteSame(note, fieldDict):
 def highlight( txt, extra, fieldDict, field, mod_field ):
     '''When a field is marked with the 'focusMorph' command, we format it by
     wrapping all the morphemes in <span>s with attributes set to its maturity'''
-    from util import getFilterByTagsAndType
-    from morphemizer import getMorphemizerByName
-    from morphemes import getMorphemes
+    from .util import getFilterByTagsAndType
+    from .morphemizer import getMorphemizerByName
+    from .morphemes import getMorphemes
 
     # must avoid formatting a smaller morph that is contained in a bigger morph
     # => do largest subs first and don't sub anything already in <span>
     def nonSpanSub( sub, repl, string ):
-        return u''.join( re.sub( sub, repl, s ) if not s.startswith('<span') else s for s in re.split( '(<span.*?</span>)', string ) )
+        return ''.join( re.sub( sub, repl, s ) if not s.startswith('<span') else s for s in re.split( '(<span.*?</span>)', string ) )
 
     # find morphemizer; because no note/card information is exposed through arguments, we have to find morphemizer based on tags alone
     #from aqt.qt import debug; debug()
@@ -247,7 +247,7 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
         elif mat >= cfg1( 'threshold_known' ):   mtype = 'known'
         elif mat >= cfg1( 'threshold_seen' ):    mtype = 'seen'
         else:                                    mtype = 'unknown'
-        repl = u'<span class="morphHighlight" mtype="{mtype}" mat="{mat}">{morph}</span>'.format(
+        repl = '<span class="morphHighlight" mtype="{mtype}" mat="{mat}">{morph}</span>'.format(
                 morph = m.inflected,
                 mtype = mtype,
                 mat = mat

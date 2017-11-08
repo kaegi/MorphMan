@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Tests for the zhon.pinyin module."""
 
-from __future__ import unicode_literals
+
 import random
 import re
 import unittest
@@ -116,7 +116,7 @@ def num_syl_to_acc(syllable):
         return syl.replace('e', _num_vowel_to_acc('e', tone))
     elif 'ou' in syl:
         return syl.replace('o', _num_vowel_to_acc('o', tone))
-    last_vowel = syl[max(map(syl.rfind, VOWELS))]  # Find last vowel index.
+    last_vowel = syl[max(list(map(syl.rfind, VOWELS)))]  # Find last vowel index.
     return syl.replace(last_vowel, _num_vowel_to_acc(last_vowel, tone))
 
 

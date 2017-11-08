@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
-from morphemes import getMorphemes, ms2str
-from morphemizer import getMorphemizerByName
-from util import addBrowserNoteSelectionCmd, cfg, cfg1, getFilter, infoMsg
+from .morphemes import getMorphemes, ms2str
+from .morphemizer import getMorphemizerByName
+from .util import addBrowserNoteSelectionCmd, cfg, cfg1, getFilter, infoMsg
 
 def pre( b ): return { 'morphemes': [] }
 

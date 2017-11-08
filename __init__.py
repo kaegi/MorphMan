@@ -1,20 +1,22 @@
-from morph.util import *
+from .morph.util import *
+from PyQt5.QtWidgets import *
+import importlib
 
 def onMorphManRecalc():
-    import morph.main
-    reload( morph.main )
-    morph.main.main()
+    from .morph import main
+    importlib.reload( main )
+    main.main()
 
 def onMorphManManager():
     mw.toolbar.draw()
-    import morph.manager
-    reload( morph.manager )
-    morph.manager.main()
+    from .morph import manager
+    importlib.reload( manager )
+    manager.main()
 
 def onMorphManPreferences():
-    import morph.preferencesDialog
-    reload( morph.preferencesDialog )
-    morph.preferencesDialog.main()
+    from .morph import preferencesDialog
+    importlib.reload( preferencesDialog )
+    preferencesDialog.main()
 
 
 def main():
@@ -22,28 +24,28 @@ def main():
     a = QAction( '&MorphMan Recalc', mw )
     a.setStatusTip(_("Recalculate all.db, note fields, and new card ordering"))
     a.setShortcut(_("Ctrl+M"))
-    mw.connect( a, SIGNAL('triggered()'), onMorphManRecalc )
+    a.triggered.connect(onMorphManRecalc)
     mw.form.menuTools.addAction( a )
 
     # Add gui preferences menu button
     a = QAction( 'MorphMan &Preferences', mw )
     a.setStatusTip(_("Change inspected cards, fields and tags"))
     a.setShortcut(_("Ctrl+O"))
-    mw.connect( a, SIGNAL('triggered()'), onMorphManPreferences )
+    a.triggered.connect(onMorphManPreferences)
     mw.form.menuTools.addAction( a )
 
     # Add gui manager menu button
     a = QAction( 'MorphMan &Database Manager', mw )
     a.setStatusTip(_("Open gui manager to inspect, compare, and analyze MorphMan DBs"))
-    mw.connect( a, SIGNAL('triggered()'), onMorphManManager )
+    a.triggered.connect(onMorphManManager)
     mw.form.menuTools.addAction( a )
 
 
-    import morph.viewMorphemes
-    import morph.extractMorphemes
-    import morph.batchPlay
-    import morph.newMorphHelper
-    import morph.stats
-    import morph.massTagger
+    from .morph import viewMorphemes
+    from .morph import extractMorphemes
+    from .morph import batchPlay
+    from .morph import newMorphHelper
+    from .morph import stats
+    from .morph import massTagger
 
 main()

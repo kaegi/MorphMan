@@ -1,6 +1,6 @@
 ﻿import codecs
-from morphemes import getMorphemes, MorphDb
-from util import cfg1
+from .morphemes import getMorphemes, MorphDb
+from .util import cfg1
 
 # utils
 def getNotInDb( ms, db ):
@@ -8,7 +8,7 @@ def getNotInDb( ms, db ):
     for m in ms:
         if m not in db:
             s.add( m )
-    mstr = u'  '.join( m.base for m in s )
+    mstr = '  '.join( m.base for m in s )
     return mstr, len(s)
 
 def getText( line ):
@@ -19,7 +19,7 @@ def getText( line ):
 def getPreText( line ):
     line_ = line[10:]
     ps = line_.split(',', 10)
-    return line[:10] + u','.join( ps[:9] ) + u','
+    return line[:10] + ','.join( ps[:9] ) + ','
 
 def run( duelingSubsPath, outputSubsPath, morphemizer, matureFmt, knownFmt, unknownFmt ):
     # Load files
@@ -28,12 +28,12 @@ def run( duelingSubsPath, outputSubsPath, morphemizer, matureFmt, knownFmt, unkn
     subFileLines = codecs.open( duelingSubsPath, 'r', 'utf-8' ).readlines()
 
     # Get dueling subs
-    dialogueLines = [ l for l in subFileLines if l.startswith( u'Dialogue' ) ]
+    dialogueLines = [ l for l in subFileLines if l.startswith( 'Dialogue' ) ]
     header = subFileLines[ : subFileLines.index( dialogueLines[0] ) ]
     assert len( dialogueLines ) % 2 == 0, 'Should be an even number of dialogue lines'
 
     lines = []
-    for i in xrange( 0, len( dialogueLines ), 2 ):
+    for i in range( 0, len( dialogueLines ), 2 ):
         target, native = dialogueLines[i:i+2]
         target, native, pre = getText( target ), getText( native ), getPreText( target )
 
@@ -51,6 +51,6 @@ def run( duelingSubsPath, outputSubsPath, morphemizer, matureFmt, knownFmt, unkn
             lines.append( pre + unknownFmt % d )
 
     outFile = codecs.open( outputSubsPath, 'w', 'utf-8' )
-    outFile.write( u''.join( header ) )
-    outFile.write( u'\n'.join( lines ) )
+    outFile.write( ''.join( header ) )
+    outFile.write( '\n'.join( lines ) )
     outFile.close()

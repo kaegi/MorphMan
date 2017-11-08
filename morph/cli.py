@@ -1,5 +1,3 @@
-from __future__ import absolute_import
-
 import argparse
 import codecs
 from collections import Counter
@@ -8,18 +6,18 @@ import os.path
 import signal
 import sys
 
-from morph.morphemes import MorphDb
-from morph.morphemizer import SpaceMorphemizer, MecabMorphemizer, CjkCharMorphemizer
+from .morphemes import MorphDb
+from .morphemizer import SpaceMorphemizer, MecabMorphemizer, CjkCharMorphemizer
 import morph
 
 
 def die(msg):
-    print >>sys.stderr, msg
+    print(msg, file=sys.stderr)
     sys.exit(1)
 
 
 def warn(msg):
-    print >>sys.stderr, msg
+    print(msg, file=sys.stderr)
 
 
 CLI_PROFILE_PATH = None
@@ -94,12 +92,12 @@ def cmd_dump(args):
         die('can\'t read db file: %s' % (path,))
     db = MorphDb(path)
 
-    for m in db.db.keys():
+    for m in list(db.db.keys()):
         m_formatted = m.show().encode('utf-8')
         if inc_freq:
-            print '%d\t%s' % (db.frequency(m), m_formatted)
+            print('%d\t%s' % (db.frequency(m), m_formatted))
         else:
-            print m_formatted
+            print(m_formatted)
 
 
 def cmd_count(args):
@@ -113,7 +111,7 @@ def cmd_count(args):
                 freqs.update(mizer.getMorphemesFromExpr(line.strip()))
 
     for m, c in freqs.most_common():
-        print '%d\t%s' % (c, m.show().encode('utf-8'))
+        print('%d\t%s' % (c, m.show().encode('utf-8')))
 
 
 def fix_sigpipe():
@@ -143,10 +141,10 @@ def main():
                         description='Count all morphemes in the given files and emit a frequency table.')
     p_count.set_defaults(action=cmd_count)
     p_count.add_argument('files', nargs='*', metavar='FILE', help='input files of text to morphemize')
-    p_count.add_argument('--mizer', default='mecab', choices=MIZERS.keys(),
+    p_count.add_argument('--mizer', default='mecab', choices=list(MIZERS.keys()),
                          metavar='NAME',
                          help='how to split morphemes (%s) (default %s)'
-                              % (', '.join(MIZERS.keys()), 'mecab'))
+                              % (', '.join(list(MIZERS.keys())), 'mecab'))
 
     args = parser.parse_args()
     global CLI_PROFILE_PATH

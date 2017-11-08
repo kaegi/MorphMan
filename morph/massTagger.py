@@ -1,8 +1,8 @@
 #-*- coding: utf-8 -*-
-from morphemes import getMorphemes, MorphDb
-from morphemizer import getMorphemizerByName
-from util import addBrowserNoteSelectionCmd, cfg, cfg1, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit
-import util
+from .morphemes import getMorphemes, MorphDb
+from .morphemizer import getMorphemizerByName
+from .util import addBrowserNoteSelectionCmd, cfg, cfg1, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit
+from . import util
 
 def pre( b ): # :: Browser -> State
     tags, ok = QInputDialog.getText( b, 'Enter tags', 'Tags', QLineEdit.Normal, 'hasMorph' )
@@ -10,7 +10,7 @@ def pre( b ): # :: Browser -> State
     path = QFileDialog.getOpenFileName( caption='Open db', directory=util.dbsPath )
     if not path: return
     db = MorphDb( path )
-    return { 'b':b, 'db':db, 'tags':unicode(tags) }
+    return { 'b':b, 'db':db, 'tags':str(tags) }
 
 def per( st, n ): # :: State -> Note -> State
     #n.delTag( st['tags'] ) # clear tags if they already exist?

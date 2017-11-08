@@ -37,13 +37,13 @@ default = {
     'ignore maturity':False,        # if True, pretends card maturity is always zero
 
     # analyze notes based on the morphemes in these fields
-    'morph_fields': [u'Expression'],
+    'morph_fields': ['Expression'],
 
     # controls for morpheme analysis (only for japanese/mecab morphemizer)
     'japanese_tag': 'japanese',              # if a note has this tag, morphemes are be split with mecab, otherwise a space-based morphemizer is used
 
         # try playing fields in this order when using batch media player
-    'batch media fields': [ u'Video', u'Sound' ],
+    'batch media fields': [ 'Video', 'Sound' ],
         # configure morph man index algorithm
     'min good sentence length': 2,
     'max good sentence length': 8,          # +1000 MMI per morpheme outside the "good" length range
