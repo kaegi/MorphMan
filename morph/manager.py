@@ -1,15 +1,17 @@
 # -*- coding: utf-8 -*-
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtWidgets import *
+from PyQt5.QtGui import *
 import os
+import sys
 
-import adaptiveSubs
-from morphemes import MorphDb
-from morphemizer import getAllMorphemizers
-from util import dbsPath, errorMsg, infoMsg, mw, cfg1, mkBtn
+from . import adaptiveSubs
+from .morphemes import MorphDb
+from .morphemizer import getAllMorphemizers
+from .util import dbsPath, errorMsg, infoMsg, mw, cfg1, mkBtn
 
 def getPath( le ): # LineEdit -> GUI ()
-    path = QFileDialog.getOpenFileName( caption='Open db', directory=dbsPath )
+    path = QFileDialog.getOpenFileName( caption='Open db', directory=dbsPath )[0]
     le.setText( path )
 
 
@@ -20,9 +22,9 @@ class AdaptiveSubWin( QDialog ):
         self.grid = grid = QGridLayout( self )
         self.vbox = vbox = QVBoxLayout()
 
-        self.matureFmt  = QLineEdit( u'%(jpn)s' )
-        self.knownFmt   = QLineEdit( u'%(jpn)s [%(eng)s]' )
-        self.unknownFmt = QLineEdit( u'%(eng)s [%(N_k)s] [%(unknowns)s]' )
+        self.matureFmt  = QLineEdit( '%(jpn)s' )
+        self.knownFmt   = QLineEdit( '%(jpn)s [%(eng)s]' )
+        self.unknownFmt = QLineEdit( '%(eng)s [%(N_k)s] [%(unknowns)s]' )
         self.morphemizer = QComboBox()
 
         for morphemizer in getAllMorphemizers():
@@ -42,14 +44,14 @@ class AdaptiveSubWin( QDialog ):
         grid.addLayout( vbox, 0, 0 )
 
     def onGo( self ):
-        mFmt = unicode( self.matureFmt.text() )
-        kFmt = unicode( self.knownFmt.text() )
-        uFmt = unicode( self.unknownFmt.text() )
+        mFmt = str( self.matureFmt.text() )
+        kFmt = str( self.knownFmt.text() )
+        uFmt = str( self.unknownFmt.text() )
         morphemizer = getAllMorphemizers()[self.morphemizer.currentIndex()]
 
-        inFile = QFileDialog.getOpenFileName( caption='Dueling subs to process', directory=dbsPath )
+        inFile = QFileDialog.getOpenFileName( caption='Dueling subs to process', directory=dbsPath )[0]
         if not inFile: return
-        outFile = QFileDialog.getSaveFileName( caption='Save adaptive subs to', directory=dbsPath )
+        outFile = QFileDialog.getSaveFileName( caption='Save adaptive subs to', directory=dbsPath )[0]
         if not outFile: return
 
         adaptiveSubs.run( inFile, outFile, morphemizer, mFmt, kFmt, uFmt )
@@ -66,19 +68,19 @@ class MorphMan( QDialog ):
         # DB Paths
         self.aPathLEdit = QLineEdit()
         vbox.addWidget( self.aPathLEdit )
-        self.aPathBtn = mkBtn( 'Browse for DB A', lambda le=self.aPathLEdit: getPath( le ), self, vbox )
+        self.aPathBtn = mkBtn( 'Browse for DB A', lambda le: getPath( self.aPathLEdit ), self, vbox )
 
         self.bPathLEdit = QLineEdit()
         vbox.addWidget( self.bPathLEdit )
-        self.bPathBtn = mkBtn( 'Browse for DB B', lambda le=self.bPathLEdit: getPath( le ), self, vbox )
+        self.bPathBtn = mkBtn( 'Browse for DB B', lambda le: getPath( self.bPathLEdit ), self, vbox )
 
         # Comparisons
         self.showABtn = mkBtn( 'A', self.onShowA, self, vbox )
-        self.AmBBtn = mkBtn( 'A-B', lambda x='A-B': self.onDiff(x), self, vbox )
-        self.BmABtn = mkBtn( 'B-A', lambda x='B-A': self.onDiff(x), self, vbox )
-        self.symBtn = mkBtn( 'Symmetric Difference', lambda x='sym': self.onDiff(x), self, vbox )
-        self.interBtn = mkBtn( 'Intersection', lambda x='inter': self.onDiff(x), self, vbox )
-        self.unionBtn = mkBtn( 'Union', lambda x='union': self.onDiff(x), self, vbox )
+        self.AmBBtn = mkBtn( 'A-B', lambda x: self.onDiff('A-B'), self, vbox )
+        self.BmABtn = mkBtn( 'B-A', lambda x: self.onDiff('B-A'), self, vbox )
+        self.symBtn = mkBtn( 'Symmetric Difference', lambda x: self.onDiff('sym'), self, vbox )
+        self.interBtn = mkBtn( 'Intersection', lambda x: self.onDiff('inter'), self, vbox )
+        self.unionBtn = mkBtn( 'Union', lambda x: self.onDiff('union'), self, vbox )
 
         # Creation
         ## language class/morphemizer
@@ -130,13 +132,13 @@ class MorphMan( QDialog ):
 
     def onShowA( self ):
         try: self.loadA()
-        except Exception, e: return errorMsg( 'Can\'t load db:\n%s' % e )
+        except Exception as e: return errorMsg( 'Can\'t load db:\n%s' % e )
         self.db = self.aDb
         self.updateDisplay()
 
     def onDiff( self, type='sym' ):
         try: self.loadAB()
-        except Exception, e: return errorMsg( 'Can\'t load dbs:\n%s' % e )
+        except Exception as e: return errorMsg( 'Can\'t load dbs:\n%s' % e )
 
         aSet = set( self.aDb.db.keys() )
         bSet = set( self.bDb.db.keys() )
@@ -156,9 +158,9 @@ class MorphMan( QDialog ):
         self.updateDisplay()
 
     def onExtractTxtFile( self ):
-        srcPath = QFileDialog.getOpenFileName( caption='Text file to extract from?', directory=dbsPath )
+        srcPath = QFileDialog.getOpenFileName( caption='Text file to extract from?', directory=dbsPath )[0]
         if not srcPath: return
-        destPath = QFileDialog.getSaveFileName( caption='Save morpheme db to?', directory=dbsPath + os.sep + 'textFile.db' )
+        destPath = QFileDialog.getSaveFileName( caption='Save morpheme db to?', directory=dbsPath + os.sep + 'textFile.db' )[0]
         if not destPath: return
         mat = cfg1('text file import maturity')
         db = MorphDb.mkFromFile( str(srcPath), getAllMorphemizers()[self.morphemizerComboBox.currentIndex()], mat )
@@ -167,7 +169,7 @@ class MorphMan( QDialog ):
             infoMsg( 'Extracted successfully' )
 
     def onSaveResults( self ):
-        destPath = QFileDialog.getSaveFileName( caption='Save results to?', directory=dbsPath + os.sep + 'results.db' )
+        destPath = QFileDialog.getSaveFileName( caption='Save results to?', directory=dbsPath + os.sep + 'results.db' )[0]
         if not destPath: return
         if not hasattr( self, 'db' ): return errorMsg( 'No results to save' )
         self.db.save( str(destPath) )
@@ -177,7 +179,7 @@ class MorphMan( QDialog ):
         if self.col4Mode.isChecked():
             self.morphDisplay.setText( self.db.showMs() )
         else:
-            self.morphDisplay.setText( u'\n'.join( [ m.base for m in self.db.db ] ) )
+            self.morphDisplay.setText( '\n'.join( [ m.base for m in self.db.db ] ) )
         self.analysisDisplay.setText( self.db.analyze2str() )
 
 def main():

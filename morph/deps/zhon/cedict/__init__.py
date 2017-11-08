@@ -1,6 +1,6 @@
 """Provides CC-CEDICT character constants."""
 
-from __future__ import unicode_literals
+
 
 from . import simplified
 from . import traditional

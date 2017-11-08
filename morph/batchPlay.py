@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-from util import addBrowserNoteSelectionCmd, cfg, cfg1
+from .util import addBrowserNoteSelectionCmd, cfg, cfg1
 import anki.sound
 import re
 
@@ -18,7 +18,7 @@ def per( st, n ):
 def post( st ):
     #TODO: queue all the files in a big list with `loadfile {filename} 1` so you can skip back and forth easily
     # when user chooses, use `get_file_name`
-    for vid, nid in st['vid2nid'].iteritems():
+    for vid, nid in st['vid2nid'].items():
         anki.sound.play( vid )
     st['__reset'] = False
     return st

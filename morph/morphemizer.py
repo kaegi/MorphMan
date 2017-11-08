@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
-import codecs, cPickle as pickle, gzip, os, subprocess, re
+import pickle, gzip, os, subprocess, re
+import importlib
 
-from morph.morphemes import Morpheme
-from morph.util_external import memoize
+from .morphemes import Morpheme
+from .util_external import memoize
 
 ####################################################################################################
 # Base Class
@@ -54,7 +55,7 @@ MECAB_NODE_READING_INDEX = 4
 MECAB_NODE_LENGTH = len( MECAB_NODE_PARTS )
 MECAB_ENCODING = None
 MECAB_POS_BLACKLIST = [
-    u'記号',     # "symbol", generally punctuation
+    '記号',     # "symbol", generally punctuation
 ]
 
 @memoize
@@ -79,7 +80,9 @@ def spawnMecab(base_cmd, startupinfo): # [Str] -> subprocess.STARTUPINFO -> IO M
     global MECAB_ENCODING
 
     config_dump = spawnCmd(base_cmd + ['-P'], startupinfo).stdout.read()
-    bos_feature_match = re.search('^bos-feature: (.*)$', config_dump, flags=re.M)
+    # sys.stderr.write(str(config_dump, 'utf-8') + '\n')
+    bos_feature_match = re.search('^bos-feature: (.*)$', str(config_dump, 'utf-8'), flags=re.M)
+    # sys.stderr.write(bos_feature_match.group(1).strip())
     if (bos_feature_match is None
           or bos_feature_match.group(1).strip() != 'BOS/EOS,*,*,*,*,*,*,*,*'):
         raise OSError('''\
@@ -91,7 +94,7 @@ like `mecab-ipadic`.
 ''')
 
     dicinfo_dump = spawnCmd(base_cmd + ['-D'], startupinfo).stdout.read()
-    charset_match = re.search('^charset:\t(.*)$', dicinfo_dump, flags=re.M)
+    charset_match = re.search('^charset:\t(.*)$', str(dicinfo_dump, 'utf-8'), flags=re.M)
     if charset_match is None:
         raise OSError('Can\'t find charset in MeCab dictionary info (`$MECAB -D`):\n\n'
                       + dicinfo_dump)
@@ -116,20 +119,26 @@ def mecab(): # IO MecabProc
     except OSError:
         # If no luck, rummage inside the Japanese Support addon and borrow its way
         # of running the mecab bundled inside it.
-        from japanese.reading import si, MecabController
-        m = MecabController()
+        reading = importlib.import_module('3918629684.reading')
+        # MecabController = importlib.import_module('3918629684.reading', 'MecabController')
+        # from 3918629684.reading import si, MecabController
+        m = reading.MecabController()
         m.setup()
         # m.mecabCmd[1:4] are assumed to be the format arguments.
-        return spawnMecab(m.mecabCmd[:1] + m.mecabCmd[4:], si)
+
+        # sys.stderr.write(str(m.mecabCmd[:1]))
+        # sys.stderr.write(str(m.mecabCmd[4:]))
+        # sys.stderr.write(str(reading.si))
+        return spawnMecab(m.mecabCmd[:1] + m.mecabCmd[4:], reading.si)
 
 @memoize
 def interact( expr ): # Str -> IO Str
     ''' "interacts" with 'mecab' command: writes expression to stdin of 'mecab' process and gets all the morpheme infos from its stdout. '''
     p = mecab()
     expr = expr.encode( MECAB_ENCODING, 'ignore' )
-    p.stdin.write( expr + '\n' )
+    p.stdin.write( expr + b'\n' )
     p.stdin.flush()
-    return u'\r'.join( [ unicode( p.stdout.readline().rstrip( '\r\n' ), MECAB_ENCODING ) for l in expr.split('\n') ] )
+    return '\r'.join( [ str( p.stdout.readline().rstrip( b'\r\n' ), MECAB_ENCODING ) for l in expr.split(b'\n') ] )
 
 @memoize
 def fixReading( m ): # Morpheme -> IO Morpheme
@@ -137,7 +146,7 @@ def fixReading( m ): # Morpheme -> IO Morpheme
     'mecab' prints the reading of the kanji in inflected forms (and strangely in katakana). So 歩い[て] will
     have アルイ as reading. This function sets the reading to the reading of the base form (in the example it will be 'アルク').
     '''
-    if m.pos in [u'動詞', u'助動詞', u'形容詞']: # verb, aux verb, i-adj
+    if m.pos in ['動詞', '助動詞', '形容詞']: # verb, aux verb, i-adj
         n = interact( m.base ).split('\t')
         if len(n) == MECAB_NODE_LENGTH:
             m.read = n[ MECAB_NODE_READING_INDEX ].strip()
@@ -171,7 +180,7 @@ class CjkCharMorphemizer(Morphemizer):
     Morphemizer that splits sentence into characters and filters for Chinese-Japanese-Korean logographic/idiographic characters.
     '''
     def getMorphemesFromExpr(self, e): # Str -> [Morpheme]
-        from deps.zhon.hanzi import characters
+        from .deps.zhon.hanzi import characters
         return [Morpheme(character, character, 'CJK_CHAR', 'UNKNOWN', character) for character in re.findall('[%s]' % characters, e)]
 
     def getDescription(self):

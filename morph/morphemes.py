@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-import codecs, cPickle as pickle, gzip, os, subprocess, re
+import codecs, pickle as pickle, gzip, os, subprocess, re
 
 # need some fallbacks if not running from anki and thus morph.util isn't available
 try:
-    from morph.util import errorMsg, jcfg
+    from .util import errorMsg, jcfg
 except ImportError:
     def errorMsg( msg ): pass
     def jcfg(s): return None
@@ -50,10 +50,10 @@ class Morpheme:
         return hash( (self.pos, self.subPos, self.read, self.base) )
 
     def show( self ): # str
-        return u'\t'.join([ self.base, self.pos, self.subPos, self.read ])
+        return '\t'.join([ self.base, self.pos, self.subPos, self.read ])
 
 def ms2str( ms ): # [Morpheme] -> Str
-    return u'\n'.join( m.show() for m in ms )
+    return '\n'.join( m.show() for m in ms )
 
 
 def getMorphemes(morphemizer, expression, note_tags=None):
@@ -149,7 +149,7 @@ class MorphDb:
         '''Returns None and shows error dialog if failed'''
         d = MorphDb()
         try:    d.importFile( path, morphemizer, maturity=maturity )
-        except (UnicodeDecodeError, IOError), e:
+        except (UnicodeDecodeError, IOError) as e:
             return errorMsg( 'Unable to import file. Please verify it is a UTF-8 text file and you have permissions.\nFull error:\n%s' % e )
         return d
 
@@ -163,23 +163,23 @@ class MorphDb:
 
     # Serialization
     def show( self ): # Str
-        s = u''
-        for m,ls in self.db.iteritems():
-            s += u'%s\n' % m.show()
+        s = ''
+        for m,ls in self.db.items():
+            s += '%s\n' % m.show()
             for l in ls:
-                s += u'  %s\n' % l.show()
+                s += '  %s\n' % l.show()
         return s
 
     def showLocDb( self ): # m Str
-        s = u''
-        for l,ms in self.locDb().iteritems():
-            s += u'%s\n' % l.show()
+        s = ''
+        for l,ms in self.locDb().items():
+            s += '%s\n' % l.show()
             for m in ms:
-                s += u'  %s\n' % m.show()
+                s += '  %s\n' % m.show()
         return s
 
     def showMs( self ): # Str
-        return ms2str( self.db.keys() )
+        return ms2str( list(self.db.keys()) )
 
     def save( self, path ): # FilePath -> IO ()
         par = os.path.split( path )[0]
@@ -215,7 +215,7 @@ class MorphDb:
         self.addMLs( (m,loc) for m in ms )
 
     def addFromLocDb( self, ldb ): # Map Location {Morpheme} -> m ()
-        for l,ms in ldb.iteritems():
+        for l,ms in ldb.items():
             for m in ms:
                 try:
                     self.db[ m ].add( l )
@@ -225,7 +225,7 @@ class MorphDb:
     # returns number of added entries
     def merge( self, md ): # Db -> m Int
         new = 0
-        for m,locs in md.db.iteritems():
+        for m,locs in md.db.items():
             try:
                 new += len( locs - self.db[m] )
                 self.db[m].update( locs )
@@ -252,7 +252,7 @@ class MorphDb:
         if hasattr( self, '_locDb' ) and not recalc:
             return self._locDb
         self._locDb = d = {}
-        for m,ls in self.db.iteritems():
+        for m,ls in self.db.items():
             for l in ls:
                 try: d[ l ].add( m )
                 except KeyError: d[ l ] = set([ m ])
@@ -281,5 +281,5 @@ class MorphDb:
 
     def analyze2str( self ): # m Str
         self.analyze()
-        posStr = u'\n'.join( '%d\t%d%%\t%s' % ( v, 100.*v/self.count, k ) for k,v in self.posBreakdown.iteritems() )
+        posStr = '\n'.join( '%d\t%d%%\t%s' % ( v, 100.*v/self.count, k ) for k,v in self.posBreakdown.items() )
         return 'Total morphemes: %d\nBy part of spech:\n%s' % ( self.count, posStr )

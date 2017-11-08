@@ -2,15 +2,16 @@
 import time
 
 from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksum
-from morphemes import MorphDb, AnkiDeck, getMorphemes
-from morphemizer import getMorphemizerByName
-import stats
-from util import printf, mw, cfg, cfg1, partial, errorMsg, infoMsg, jcfg, jcfg2, getFilter
-import util
-from util_external import memoize
+from .morphemes import MorphDb, AnkiDeck, getMorphemes
+from .morphemizer import getMorphemizerByName
+from . import stats
+from .util import printf, mw, cfg, cfg1, partial, errorMsg, infoMsg, jcfg, jcfg2, getFilter
+from . import util
+from .util_external import memoize
 
 # only for jedi-auto-completion
 import aqt.main
+import importlib
 assert isinstance(mw, aqt.main.AnkiQt)
 
 @memoize
@@ -49,7 +50,7 @@ def setField( mid, fs, k, v ): # nop if field DNE
     if idx: fs[ idx ] = v
 
 def mkAllDb( allDb=None ):
-    import config; reload(config)
+    from . import config; importlib.reload(config)
     t_0, db, TAG = time.time(), mw.col.db, mw.col.tags
     N_notes = db.scalar( 'select count() from notes' )
     N_enabled_notes = 0 # for providing an error message if there is no note that is used for processing
@@ -85,7 +86,7 @@ def mkAllDb( allDb=None ):
             except KeyError: continue
             except TypeError:
                 mname = mw.col.models.get( mid )[ 'name' ]
-                errorMsg( u'Failed to get field "{field}" from a note of model "{model}". Please fix your config.py file to match your collection appropriately and ignore the following error.'.format( model=mname, field=fieldName ) )
+                errorMsg( 'Failed to get field "{field}" from a note of model "{model}". Please fix your config.py file to match your collection appropriately and ignore the following error.'.format( model=mname, field=fieldName ) )
                 raise
 
             loc = fidDb.get( ( nid, guid, fieldName ), None )
@@ -111,7 +112,7 @@ def mkAllDb( allDb=None ):
 
     if N_enabled_notes == 0:
         mw.progress.finish()
-        errorMsg(u'There is no card that can be analyzed or be moved. Add cards or (re-)check your configuration under "Tools -> MorhpMan Preferences" or in "Anki/addons/morph/config.py" for mistakes.')
+        errorMsg('There is no card that can be analyzed or be moved. Add cards or (re-)check your configuration under "Tools -> MorhpMan Preferences" or in "Anki/addons/morph/config.py" for mistakes.')
         return None
 
     printf( 'Processed all %d notes in %f sec' % ( N_notes, time.time() - t_0 ) )
@@ -128,7 +129,7 @@ def mkAllDb( allDb=None ):
 def filterDbByMat( db, mat ):
     '''Assumes safe to use cached locDb'''
     newDb = MorphDb()
-    for loc, ms in db.locDb( recalc=False ).iteritems():
+    for loc, ms in db.locDb( recalc=False ).items():
         if loc.maturity > mat:
             newDb.addMsL( ms, loc )
     return newDb
@@ -213,7 +214,7 @@ def updateNotes( allDb ):
                 ivl = min( 1, max( loc.maturity for loc in locs ) )
                 usefulness += C('reinforce new vocab weight') // ivl #TODO: maybe average this so it doesnt favor long sentences
 
-        if any( morpheme.pos == u'動詞' for morpheme in unknowns ): #FIXME: this isn't working???
+        if any( morpheme.pos == '動詞' for morpheme in unknowns ): #FIXME: this isn't working???
             usefulness += C('verb bonus')
 
         usefulness = 999 - min( 999, usefulness )
@@ -237,28 +238,28 @@ def updateNotes( allDb ):
         # determine card type
         if N_m == 0:    # sentence comprehension card, m+0
             ts = ts + [ compTag ]
-            setField( mid, fs, jcfg('Field_FocusMorph'), u'' )
+            setField( mid, fs, jcfg('Field_FocusMorph'), '' )
         elif N_k == 1:  # new vocab card, k+1
             ts = ts + [ vocabTag ]
-            setField( mid, fs, jcfg('Field_FocusMorph'), u'%s' % focusMorph.base )
+            setField( mid, fs, jcfg('Field_FocusMorph'), '%s' % focusMorph.base )
         elif N_k > 1:   # M+1+ and K+2+
             ts = ts + [ notReadyTag ]
-            setField( mid, fs, jcfg('Field_FocusMorph'), u'')
+            setField( mid, fs, jcfg('Field_FocusMorph'), '')
         elif N_m == 1: # we have k+0, and m+1, so this card does not introduce a new vocabulary -> card for newly learned morpheme
             ts = ts + [ freshTag ]
-            setField( mid, fs, jcfg('Field_FocusMorph'), u'%s' % list(unmatures)[0].base)
+            setField( mid, fs, jcfg('Field_FocusMorph'), '%s' % list(unmatures)[0].base)
         else: # only case left: we have k+0, but m+2 or higher, so this card does not introduce a new vocabulary -> card for newly learned morpheme
             ts = ts + [ freshTag ]
-            setField( mid, fs, jcfg('Field_FocusMorph'), u'')
+            setField( mid, fs, jcfg('Field_FocusMorph'), '')
 
 
             # set type agnostic fields
-        setField( mid, fs, jcfg('Field_UnknownMorphCount'), u'%d' % N_k )
-        setField( mid, fs, jcfg('Field_UnmatureMorphCount'), u'%d' % N_m )
-        setField( mid, fs, jcfg('Field_MorphManIndex'), u'%d' % mmi )
-        setField( mid, fs, jcfg('Field_Unknowns'), u', '.join( u.base for u in unknowns ) )
-        setField( mid, fs, jcfg('Field_Unmatures'), u', '.join( u.base for u in unmatures ) )
-        setField( mid, fs, jcfg('Field_UnknownFreq'), u'%d' % F_k_avg )
+        setField( mid, fs, jcfg('Field_UnknownMorphCount'), '%d' % N_k )
+        setField( mid, fs, jcfg('Field_UnmatureMorphCount'), '%d' % N_m )
+        setField( mid, fs, jcfg('Field_MorphManIndex'), '%d' % mmi )
+        setField( mid, fs, jcfg('Field_Unknowns'), ', '.join( u.base for u in unknowns ) )
+        setField( mid, fs, jcfg('Field_Unmatures'), ', '.join( u.base for u in unmatures ) )
+        setField( mid, fs, jcfg('Field_UnknownFreq'), '%d' % F_k_avg )
 
             # remove deprecated tag
         if badLengthTag is not None and badLengthTag in ts:

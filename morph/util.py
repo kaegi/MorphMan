@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 import codecs, datetime
+from PyQt5.QtWidgets import *
 from functools import partial
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
 from aqt.qt import *
 
 from aqt import mw
@@ -20,7 +21,7 @@ _allDb = None
 def allDb():
     global _allDb
     if _allDb is None:
-        from morphemes import MorphDb
+        from .morphemes import MorphDb
         _allDb = MorphDb( cfg1('path_all'), ignoreErrors=True )
     return _allDb
 
@@ -31,7 +32,7 @@ cfgMod = None
 dbsPath = None
 def initCfg():
     global cfgMod, dbsPath
-    import config
+    from . import config
     cfgMod = config
     dbsPath = config.default['path_dbs']
 
@@ -66,24 +67,24 @@ def cfg( modelId, deckId, key ):
 
 def jcfg_default():
     return {
-        'Field_FocusMorph':u'MorphMan_FocusMorph',         # holds the unknown for k+0 sentences but goes away once m+0
-        'Field_MorphManIndex':u'MorphMan_Index',   # created an ordering to learn cards in. this is the value new card 'due' times are set to
-        'Field_Unmatures':u'MorphMan_Unmatures',               # likewise for unmatures
-        'Field_UnmatureMorphCount':u'MorphMan_UnmatureMorphCount',       # stores how many unmatures
-        'Field_Unknowns':u'MorphMan_Unknowns',             # comma seperated list of morphemes that are unknown
-        'Field_UnknownFreq':u'MorphMan_UnknownFreq',       # average of how many times the unknowns appear in your collection
-        'Field_UnknownMorphCount':u'MorphMan_UnknownMorphCount',       # stores how many unknowns
+        'Field_FocusMorph':'MorphMan_FocusMorph',         # holds the unknown for k+0 sentences but goes away once m+0
+        'Field_MorphManIndex':'MorphMan_Index',   # created an ordering to learn cards in. this is the value new card 'due' times are set to
+        'Field_Unmatures':'MorphMan_Unmatures',               # likewise for unmatures
+        'Field_UnmatureMorphCount':'MorphMan_UnmatureMorphCount',       # stores how many unmatures
+        'Field_Unknowns':'MorphMan_Unknowns',             # comma seperated list of morphemes that are unknown
+        'Field_UnknownFreq':'MorphMan_UnknownFreq',       # average of how many times the unknowns appear in your collection
+        'Field_UnknownMorphCount':'MorphMan_UnknownMorphCount',       # stores how many unknowns
 
         # tag names for marking the state of notes
         # the following three are mutually exclusive and erase eachother upon promotion/demotion
-        'Tag_Comprehension':u'mm_comprehension',   # set once all morphs for note are mature
-        'Tag_Vocab':u'mm_vocab',                   # set once all but 1 morph for note is known
-        'Tag_Fresh':u'mm_fresh',                    # we have no unkown words, but multiple unmature -> alternative card for vocab or original vocab card
-        'Tag_NotReady':u'mm_notReady',             # set for k+2 and above cards
-        'Tag_AlreadyKnown':u'mm_alreadyKnown',     # you can add this tag to a note to make anki treat it as if mature
-        'Tag_Priority':u'mm_priority',             # set if note contains an unknown that exists in priority.db
-        'Tag_TooShort':u'mm_tooShort',             # set if sentence is below optimal length range
-        'Tag_TooLong':u'mm_tooLong',               # set if sentence is above optimal length range
+        'Tag_Comprehension':'mm_comprehension',   # set once all morphs for note are mature
+        'Tag_Vocab':'mm_vocab',                   # set once all but 1 morph for note is known
+        'Tag_Fresh':'mm_fresh',                    # we have no unkown words, but multiple unmature -> alternative card for vocab or original vocab card
+        'Tag_NotReady':'mm_notReady',             # set for k+2 and above cards
+        'Tag_AlreadyKnown':'mm_alreadyKnown',     # you can add this tag to a note to make anki treat it as if mature
+        'Tag_Priority':'mm_priority',             # set if note contains an unknown that exists in priority.db
+        'Tag_TooShort':'mm_tooShort',             # set if sentence is below optimal length range
+        'Tag_TooLong':'mm_tooLong',               # set if sentence is above optimal length range
 
         # filter for cards that should be analyzed, higher entries have higher priority
         'Filter': [
@@ -141,7 +142,7 @@ def jcfgAddMissing():
     # this ensures forward compatibility, because it adds new options in configuration (introduced by update) without any notice with default value
     current = jcfg2().copy()
     default = jcfg_default()
-    for key, value in default.iteritems():
+    for key, value in default.items():
         if not key in current:
             current[key] = value
     jcfgUpdate(current)
@@ -196,7 +197,7 @@ def addBrowserItem( menuLabel, func_triggered, tooltip=None, shortcut=None):
         a = QAction( menuLabel, b )
         if tooltip:     a.setStatusTip( tooltip )
         if shortcut:    a.setShortcut( QKeySequence( *shortcut ) )
-        b.connect( a, SIGNAL('triggered()'), lambda b=b: func_triggered(b) )
+        a.triggered.connect(lambda l: func_triggered(b))
         b.form.menuEdit.addAction( a )
     addHook( 'browser.setupMenus', setupMenu )
 
@@ -225,7 +226,7 @@ def printf( msg ):
     f = codecs.open( cfg1('path_log'), 'a', 'utf-8' )
     f.write( txt+'\r\n' )
     f.close()
-    print txt.encode('utf-8')
+    print(txt.encode('utf-8'))
 
 def clearLog():
     f = codecs.open( cfg1('path_log'), 'w', 'utf-8' )
@@ -236,7 +237,7 @@ def clearLog():
 ###############################################################################
 def mkBtn( txt, f, conn, parent ):
     b = QPushButton( txt )
-    conn.connect( b, SIGNAL('clicked()'), f )
+    b.clicked.connect(f)
     parent.addWidget( b )
     return b
 

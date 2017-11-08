@@ -6,6 +6,6 @@ import sys
 THIS_DIR = os.path.dirname(os.path.realpath(__file__))
 PARENT_DIR = os.path.dirname(THIS_DIR)
 sys.path.insert(0, PARENT_DIR)
-import morph.cli
+from . import cli
 
-morph.cli.main()
+cli.main()

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Constants for processing Pinyin strings."""
 
-from __future__ import unicode_literals
+
 from string import whitespace
 
 
@@ -76,7 +76,7 @@ def _build_syl(vowels, tone_numbers=False):
         'a': _a, 'e': _e, 'i': _i, 'o': _o, 'u': _u, 'v': _v
     }
     _vowels = vowels.copy()
-    for v, s in _vowels.items():
+    for v, s in list(_vowels.items()):
         if len(s) > 1:
             _vowels[v] = '[%s]' % s
     return (
