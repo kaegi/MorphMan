@@ -52,7 +52,7 @@ def updateStats( knownDb=None ):
             if m in knownDb.db:
                 numUniqueKnown += 1
                 numFreqKnown   += freq
-        
+
         d['goals'][ name ] = { 'total':numUniqueReq, 'known':numUniqueKnown, 'freqTotal':numFreqReq, 'freqKnown':numFreqKnown }
 
     saveStats( d )
@@ -78,6 +78,8 @@ def my_centerLinks( self, _old ):
         ["decks", _("Decks"), _("Shortcut key: %s") % "D"],
         ["add", _("Add"), _("Shortcut key: %s") % "A"],
         ["browse", _("Browse"), _("Shortcut key: %s") % "B"],
+        ["stats", _("Stats"), _("Shortcut key: %s") % "S"],
+        ["sync", _("Sync"), _("Shortcut key: %s") % "Y"],
         ["morph", _(name), _(details)],
     ]
     return self._linkHTML( links )
