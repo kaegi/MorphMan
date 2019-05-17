@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import codecs, pickle as pickle, gzip, os, subprocess, re
+import re
 
 # need some fallbacks if not running from anki and thus morph.util isn't available
 try:
@@ -55,8 +56,12 @@ class Morpheme:
 def ms2str( ms ): # [Morpheme] -> Str
     return '\n'.join( m.show() for m in ms )
 
-
 def getMorphemes(morphemizer, expression, note_tags=None):
+    if jcfg('Option_IgnoreBracketContents'):
+        regex = r'\[[^\]]*\]'
+        if re.search(regex, expression):
+            expression = re.sub(regex, '', expression)
+
     # go through all replacement rules and search if a rule (which dictates a string to morpheme conversion) can be applied
     replace_rules = jcfg('ReplaceRules')
     if not note_tags is None and not replace_rules is None:
