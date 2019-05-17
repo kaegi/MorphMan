@@ -119,7 +119,11 @@ def mecab(): # IO MecabProc
     except OSError:
         # If no luck, rummage inside the Japanese Support addon and borrow its way
         # of running the mecab bundled inside it.
-        reading = importlib.import_module('3918629684.reading')
+        reading = None
+        try:
+            reading = importlib.import_module('3918629684.reading')
+        except ModuleNotFoundError:
+            reading = importlib.import_module('MIAJapaneseSupport.reading')
         # MecabController = importlib.import_module('3918629684.reading', 'MecabController')
         # from 3918629684.reading import si, MecabController
         m = reading.MecabController()
