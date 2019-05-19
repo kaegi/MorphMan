@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import codecs, pickle as pickle, gzip, os, subprocess, re
 import re
+import aqt
 
 # need some fallbacks if not running from anki and thus morph.util isn't available
 try:
@@ -196,7 +197,12 @@ class MorphDb:
 
     def load( self, path ): # FilePath -> m ()
         f = gzip.open( path, 'rb' )
-        self.db = pickle.load( f )
+        try:
+            self.db = pickle.load( f )
+        except ModuleNotFoundError as e:
+            msg = 'ModuleNotFoundError was thrown. That probably means that you\'re using database files generated in the older versions of MorphMan. To fix this issue, please refer to the written guide on database migration (copy-pasteable link will appear in the next window): https://gist.github.com/InfiniteRain/1d7ca9ad307c4203397a635b514f00c2'
+            aqt.utils.showInfo(msg)
+            raise ModuleNotFoundError('To fix this issue, refer to: https://gist.github.com/InfiniteRain/1d7ca9ad307c4203397a635b514f00c2')
         f.close()
 
     # Adding
