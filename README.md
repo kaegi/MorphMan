@@ -1,7 +1,7 @@
 # MorphMan
 MorphMan is an Anki plugin that reorders language cards based on the words you known. This
 __greatly__ optimizes your learning queue as you only get sentences with exactly one unknown word (see
-[I+1 principle](https://github.com/kaegi/MorphMan/wiki/I-plus-1) for a more detailed explanation).
+[i+1 principle](https://github.com/kaegi/MorphMan/wiki/I-plus-1) for a more detailed explanation).
 
 # Installation
 
