@@ -165,7 +165,7 @@ class SpaceMorphemizer(Morphemizer):
     a general-use-morphemizer, it can't generate the base form from inflection.
     '''
     def getMorphemesFromExpr(self, e): # Str -> [Morpheme]
-        wordList = re.findall(r"\w+", e, re.UNICODE)
+        wordList = [word.lower() for word in re.findall(r"\w+", e, re.UNICODE)]
         return [Morpheme(word, word, 'UNKNOWN', 'UNKNOWN', word) for word in wordList]
 
     def getDescription(self):
