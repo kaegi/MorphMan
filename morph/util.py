@@ -122,6 +122,7 @@ def jcfg_default():
         'Option_SkipComprehensionCards': True, # bury/skip all new cards that have 'Tag_Comprehension'
         'Option_SkipFreshVocabCards': True, # bury/skip all new cards that have 'Tag_Fresh'
         'Option_SkipFocusMorphSeenToday': True, # bury/skip all new cards that have a focus morph that was reviewed today/marked as `already known`
+        'Option_IgnoreBracketContents': True,
     }
 
 def jcfg2():

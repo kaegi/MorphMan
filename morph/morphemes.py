@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 import codecs, pickle as pickle, gzip, os, subprocess, re
+import re
+import aqt
 
 # need some fallbacks if not running from anki and thus morph.util isn't available
 try:
@@ -55,8 +57,12 @@ class Morpheme:
 def ms2str( ms ): # [Morpheme] -> Str
     return '\n'.join( m.show() for m in ms )
 
-
 def getMorphemes(morphemizer, expression, note_tags=None):
+    if jcfg('Option_IgnoreBracketContents'):
+        regex = r'\[[^\]]*\]'
+        if re.search(regex, expression):
+            expression = re.sub(regex, '', expression)
+
     # go through all replacement rules and search if a rule (which dictates a string to morpheme conversion) can be applied
     replace_rules = jcfg('ReplaceRules')
     if not note_tags is None and not replace_rules is None:
@@ -191,7 +197,12 @@ class MorphDb:
 
     def load( self, path ): # FilePath -> m ()
         f = gzip.open( path, 'rb' )
-        self.db = pickle.load( f )
+        try:
+            self.db = pickle.load( f )
+        except ModuleNotFoundError as e:
+            msg = 'ModuleNotFoundError was thrown. That probably means that you\'re using database files generated in the older versions of MorphMan. To fix this issue, please refer to the written guide on database migration (copy-pasteable link will appear in the next window): https://gist.github.com/InfiniteRain/1d7ca9ad307c4203397a635b514f00c2'
+            aqt.utils.showInfo(msg)
+            raise ModuleNotFoundError('To fix this issue, refer to: https://gist.github.com/InfiniteRain/1d7ca9ad307c4203397a635b514f00c2')
         f.close()
 
     # Adding

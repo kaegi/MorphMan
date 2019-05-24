@@ -159,18 +159,21 @@ def browseSameFocus( self ): #3
         q = '%s:%s' % ( focusName( n ), focus( n ) )
         b = dialogs.open( 'Browser', self.mw )
         b.form.searchEdit.lineEdit().setText( q )
-        b.onSearch()
+        b.onSearchActivated()
     except KeyError: pass
 
 ########## set keybindings for 2-3
-# def my_reviewer_keyHandler( self, evt ):
-#     ''' :type self: aqt.reviewer.Reviewer '''
-#     key = str( evt.text() )
-#     key_browse, key_skip = cfg1('browse same focus key'), cfg1('set known and skip key')
-#     if   key == key_skip:   setKnownAndSkip( self )
-#     elif key == key_browse: browseSameFocus( self )
+def my_reviewer_shortcutKeys( self ):
+    key_browse, key_skip = cfg1('browse same focus key'), cfg1('set known and skip key')
+    keys = original_shortcutKeys( self ) 
+    keys.extend([
+        (key_browse, lambda: browseSameFocus( self )),
+        (key_skip, lambda: setKnownAndSkip( self ))
+    ])
+    return keys
 
-# reviewer.Reviewer._keyHandler = wrap( reviewer.Reviewer._keyHandler, my_reviewer_keyHandler )
+original_shortcutKeys = reviewer.Reviewer._shortcutKeys
+reviewer.Reviewer._shortcutKeys = my_reviewer_shortcutKeys
 
 ########## 4 - immediately review selected cards
 # def pre( b ):
