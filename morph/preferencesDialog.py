@@ -230,8 +230,8 @@ class PreferencesDialog( QDialog ):
         if rowGui['modelComboBox'].currentIndex() == 0: filter['Type'] = None # no filter "All note types"
         else: filter['Type'] = rowGui['modelComboBox'].currentText()
 
-        filter['Tags'] = rowGui['tagsEntry'].text().replace(',', ' ').split()
-        filter['Fields'] = rowGui['fieldsEntry'].text().replace(',', ' ').split()
+        filter['Tags'] =  [x for x in rowGui['tagsEntry'].text().split(',') if x]
+        filter['Fields'] = [x for x in rowGui['fieldsEntry'].text().split(',') if x]
 
         filter['Morphemizer'] = getAllMorphemizers()[rowGui['morphemizerComboBox'].currentIndex()].__class__.__name__
         filter['Modify'] = rowGui['modifyCheckBox'].checkState() != Qt.Unchecked
