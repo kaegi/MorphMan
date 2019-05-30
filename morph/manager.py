@@ -22,9 +22,9 @@ class AdaptiveSubWin( QDialog ):
         self.grid = grid = QGridLayout( self )
         self.vbox = vbox = QVBoxLayout()
 
-        self.matureFmt  = QLineEdit( '%(jpn)s' )
-        self.knownFmt   = QLineEdit( '%(jpn)s [%(eng)s]' )
-        self.unknownFmt = QLineEdit( '%(eng)s [%(N_k)s] [%(unknowns)s]' )
+        self.matureFmt  = QLineEdit( '%(target)s' )
+        self.knownFmt   = QLineEdit( '%(target)s [%(native)s]' )
+        self.unknownFmt = QLineEdit( '%(native)s [%(N_k)s] [%(unknowns)s]' )
         self.morphemizer = QComboBox()
 
         for morphemizer in getAllMorphemizers():
@@ -49,9 +49,9 @@ class AdaptiveSubWin( QDialog ):
         uFmt = str( self.unknownFmt.text() )
         morphemizer = getAllMorphemizers()[self.morphemizer.currentIndex()]
 
-        inFile = QFileDialog.getOpenFileName( caption='Dueling subs to process', directory=dbsPath )[0]
+        inFile = QFileDialog.getOpenFileName( None, 'Dueling subs to process', '', 'Subs (*.ass)' )[0]
         if not inFile: return
-        outFile = QFileDialog.getSaveFileName( caption='Save adaptive subs to', directory=dbsPath )[0]
+        outFile = QFileDialog.getSaveFileName( None, 'Save adaptive subs to', '', 'Subs (*.ass)' )[0]
         if not outFile: return
 
         adaptiveSubs.run( inFile, outFile, morphemizer, mFmt, kFmt, uFmt )
