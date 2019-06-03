@@ -4,7 +4,7 @@ from PyQt5.QtGui import *
 
 from aqt.utils import tooltip
 
-from .util import errorMsg, infoMsg, mw, jcfg, jcfgUpdate, mkBtn
+from .util import mw, jcfg, jcfgUpdate, mkBtn
 from .morphemizer import getAllMorphemizers
 
 # only for jedi-auto-completion

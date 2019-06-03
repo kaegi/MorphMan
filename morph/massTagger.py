@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 from .morphemes import getMorphemes, MorphDb
 from .morphemizer import getMorphemizerByName
-from .util import addBrowserNoteSelectionCmd, cfg, cfg1, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit
+from .util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit
 from . import util
 
 def pre( b ): # :: Browser -> State

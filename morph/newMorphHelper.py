@@ -3,7 +3,7 @@ from aqt import reviewer, dialogs
 from aqt.qt import *
 from aqt.utils import tooltip
 from anki import sched
-from .util import addBrowserNoteSelectionCmd, addBrowserCardSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
+from .util import addBrowserCardSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
 
 # only for jedi-auto-completion
 import aqt.main
@@ -77,7 +77,7 @@ def my_getNewCard( self, _old ):
             c = self.col.getCard( id )
             self.newCount -= 1
 
-        if not c: return			# no more cards
+        if not c: return            # no more cards
         n = c.note()
 
         # find the right morphemizer for this note, so we can apply model-dependent options (modify off == disable skip feature)
@@ -88,10 +88,10 @@ def my_getNewCard( self, _old ):
         if not notefilter['Modify']: return c # the deck should not be modified -> the user probably doesn't want the 'skip mature' feature
 
         # get the focus morph
-        try: focusMorph = focus( n )		# field contains either the focusMorph or is empty
+        try: focusMorph = focus( n )        # field contains either the focusMorph or is empty
         except KeyError:
             tooltip( _( 'Encountered card without the \'focus morph\' field configured in the preferences. Please check your MorphMan settings and note models.') )
-            return c	# card has no focusMorph field -> undefined behavior -> just proceed like normal
+            return c    # card has no focusMorph field -> undefined behavior -> just proceed like normal
 
         # evaluate all conditions, on which this card might be skipped/buried
         isVocabCard = n.hasTag(jcfg('Tag_Vocab'))

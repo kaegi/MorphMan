@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 import glob, gzip, os, pickle as pickle
 
-from .util import addHook, cfg1, wrap, mw
+from .util import cfg1, wrap, mw
 from aqt import toolbar
 
 def getStatsPath(): return cfg1('path_stats')
