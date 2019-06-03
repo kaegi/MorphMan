@@ -5,7 +5,7 @@ from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksu
 from .morphemes import MorphDb, AnkiDeck, getMorphemes
 from .morphemizer import getMorphemizerByName
 from . import stats
-from .util import printf, mw, cfg, cfg1, partial, errorMsg, infoMsg, jcfg, jcfg2, getFilter
+from .util import printf, mw, cfg, cfg1, partial, errorMsg, jcfg, jcfg2, getFilter
 from . import util
 from .util_external import memoize
 
