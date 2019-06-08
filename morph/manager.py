@@ -100,6 +100,8 @@ class MorphMan( QDialog ):
         self.col4Mode = QRadioButton( 'Results as 4col morpheme' )
         self.col4Mode.setChecked( True )
         self.col1Mode = QRadioButton( 'Results as 1col morpheme' )
+        self.col4Mode.clicked.connect(self.colModeButtonListener)
+        self.col1Mode.clicked.connect(self.colModeButtonListener)
         vbox.addWidget( self.col4Mode )
         vbox.addWidget( self.col1Mode )
         self.morphDisplay = QTextEdit()
@@ -174,6 +176,14 @@ class MorphMan( QDialog ):
         if not hasattr( self, 'db' ): return errorMsg( 'No results to save' )
         self.db.save( str(destPath) )
         infoMsg( 'Saved successfully' )
+
+    def colModeButtonListener( self ):
+        colModeButton = self.sender()
+        if colModeButton.isChecked():
+            try:
+                self.updateDisplay()
+            except AttributeError:
+                return # User has not selected a db view yet
 
     def updateDisplay( self ):
         if self.col4Mode.isChecked():
