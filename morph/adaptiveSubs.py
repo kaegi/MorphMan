@@ -21,11 +21,11 @@ def getPreText( line ):
     ps = line_.split(',', 10)
     return line[:10] + ','.join( ps[:9] ) + ','
 
-def run( duelingSubsPath, outputSubsPath, morphemizer, matureFmt, knownFmt, unknownFmt ):
+def run( inputSubsPath, outputSubsPath, morphemizer, matureFmt, knownFmt, unknownFmt ):
     # Load files
     kdb = MorphDb( cfg1('path_known') )
     mdb = MorphDb( cfg1('path_mature') )
-    subFileLines = codecs.open( duelingSubsPath, 'r', 'utf-8' ).readlines()
+    subFileLines = codecs.open( inputSubsPath, 'r', 'utf-8' ).readlines()
 
     # Get dueling subs
     dialogueLines = [ l for l in subFileLines if l.startswith( 'Dialogue' ) ]
