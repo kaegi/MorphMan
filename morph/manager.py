@@ -5,6 +5,8 @@ from PyQt5.QtGui import *
 import os
 import sys
 
+from anki.utils import isMac
+
 from . import adaptiveSubs
 from .morphemes import MorphDb
 from .morphemizer import getAllMorphemizers
@@ -14,6 +16,21 @@ def getPath( le ): # LineEdit -> GUI ()
     path = QFileDialog.getOpenFileName( caption='Open db', directory=dbsPath )[0]
     le.setText( path )
 
+def getProgressWidget():
+    progressWidget = QWidget(None)
+    layout = QVBoxLayout()
+    progressWidget.setFixedSize(400, 70)
+    progressWidget.setWindowModality(Qt.ApplicationModal)
+    bar = QProgressBar(progressWidget)
+    if isMac:
+        bar.setFixedSize(380, 50)
+    else:
+        bar.setFixedSize(390, 50)
+    bar.move(10,10)
+    per = QLabel(bar)
+    per.setAlignment(Qt.AlignCenter)
+    progressWidget.show()
+    return progressWidget, bar;
 
 class AdaptiveSubWin( QDialog ):
     def __init__( self, parent=None ):
@@ -49,13 +66,26 @@ class AdaptiveSubWin( QDialog ):
         uFmt = str( self.unknownFmt.text() )
         morphemizer = getAllMorphemizers()[self.morphemizer.currentIndex()]
 
-        inFile = QFileDialog.getOpenFileName( None, 'Dueling subs to process', '', 'Subs (*.ass)' )[0]
-        if not inFile: return
-        outFile = QFileDialog.getSaveFileName( None, 'Save adaptive subs to', '', 'Subs (*.ass)' )[0]
-        if not outFile: return
+        inputPath = QFileDialog.getOpenFileNames( None, 'Dueling subs to process', '', 'Subs (*.ass)' )[0]
+        if not inputPath: return
+        outputPath = QFileDialog.getExistingDirectory( None, 'Save adaptive subs to')
+        if not outputPath: return
 
-        adaptiveSubs.run( inFile, outFile, morphemizer, mFmt, kFmt, uFmt )
-        infoMsg( 'Completed successfully' )
+        progWid, bar = getProgressWidget()   
+        bar.setMinimum(0)
+        bar.setMaximum(len(inputPath))
+        val = 0;  
+        for s in range(len(inputPath)):         
+            # MySubtitlesFolder/1 EpisodeSubtitles Episode 1.ass
+            outputSubsFileName = outputPath + "/" + str(s + 1) + " " + inputPath[s].split("/")[-1]
+            adaptiveSubs.run( inputPath[s], outputSubsFileName, morphemizer, mFmt, kFmt, uFmt )
+
+            val+=1;
+            bar.setValue(val)
+            mw.app.processEvents()
+        mw.progress.finish()
+        mw.reset()   
+        infoMsg( "Completed successfully" )
 
 class MorphMan( QDialog ):
     def __init__( self, parent=None ):
@@ -100,6 +130,8 @@ class MorphMan( QDialog ):
         self.col4Mode = QRadioButton( 'Results as 4col morpheme' )
         self.col4Mode.setChecked( True )
         self.col1Mode = QRadioButton( 'Results as 1col morpheme' )
+        self.col4Mode.clicked.connect(self.colModeButtonListener)
+        self.col1Mode.clicked.connect(self.colModeButtonListener)
         vbox.addWidget( self.col4Mode )
         vbox.addWidget( self.col1Mode )
         self.morphDisplay = QTextEdit()
@@ -174,6 +206,14 @@ class MorphMan( QDialog ):
         if not hasattr( self, 'db' ): return errorMsg( 'No results to save' )
         self.db.save( str(destPath) )
         infoMsg( 'Saved successfully' )
+
+    def colModeButtonListener( self ):
+        colModeButton = self.sender()
+        if colModeButton.isChecked():
+            try:
+                self.updateDisplay()
+            except AttributeError:
+                return # User has not selected a db view yet
 
     def updateDisplay( self ):
         if self.col4Mode.isChecked():
