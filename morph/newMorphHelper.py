@@ -225,14 +225,7 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
     def nonSpanSub( sub, repl, string ):
         return ''.join( re.sub( sub, repl, s ) if not s.startswith('<span') else s for s in re.split( '(<span.*?</span>)', string ) )
 
-    # find morphemizer; because no note/card information is exposed through arguments, we have to find morphemizer based on tags alone
-    #from aqt.qt import debug; debug()
-    #
-    #if mw.reviewer.card is None: return txt
-    #note = mw.reviewer.card.note()
-    #if not isNoteSame(note, fieldDict): return txt
-    #from aqt.qt import debug; debug()
-
+    priorityDb  = main.MorphDb( cfg1('path_priority'), ignoreErrors=True ).db
     tags = fieldDict['Tags'].split()
     filter = getFilterByTagsAndType(fieldDict['Type'], tags)
     if filter is None:
@@ -250,9 +243,15 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
         elif mat >= cfg1( 'threshold_known' ):   mtype = 'known'
         elif mat >= cfg1( 'threshold_seen' ):    mtype = 'seen'
         else:                                    mtype = 'unknown'
-        repl = '<span class="morphHighlight" mtype="{mtype}" mat="{mat}">{morph}</span>'.format(
+
+        if m in priorityDb:
+            priority = 'true'
+        else: priority = 'false'
+
+        repl = '<span class="morphHighlight" mtype="{mtype}" priority="{priority}" mat="{mat}">{morph}</span>'.format(
                 morph = m.inflected,
                 mtype = mtype,
+                priority = priority,
                 mat = mat
                 )
         txt = nonSpanSub( m.inflected, repl, txt )
