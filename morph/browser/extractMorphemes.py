@@ -1,9 +1,9 @@
 #-*- coding: utf-8 -*-
 import os
 
-from .morphemes import AnkiDeck, MorphDb, getMorphemes, ms2str
-from .morphemizer import getMorphemizerByName
-from .util import addBrowserNoteSelectionCmd, cfg, cfg1, mw, getFilter, infoMsg, QFileDialog
+from ..morphemes import AnkiDeck, MorphDb, getMorphemes, ms2str
+from ..morphemizer import getMorphemizerByName
+from ..util import addBrowserNoteSelectionCmd, mw, getFilter, infoMsg, QFileDialog
 
 def pre( b ):
     from .util import dbsPath # not defined until late, so don't import at top of module

@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-from .util import addBrowserNoteSelectionCmd, cfg, cfg1
+from ..util import addBrowserNoteSelectionCmd, cfg, cfg1
 import anki.sound
 import re
 

@@ -1,20 +1,25 @@
 #-*- coding: utf-8 -*-
-from .morphemes import getMorphemes, MorphDb
-from .morphemizer import getMorphemizerByName
-from .util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit
-from . import util
+from aqt.utils import tooltip
+from ..morphemes import getMorphemes, MorphDb
+from ..morphemizer import getMorphemizerByName
+from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit
+from .. import util
 
 def pre( b ): # :: Browser -> State
-    tags, ok = QInputDialog.getText( b, 'Enter tags', 'Tags', QLineEdit.Normal, 'hasMorph' )
+    tags, ok = QInputDialog.getText( b, 'Enter tags (e.x \"tag1 tag2\")', 'Tags', QLineEdit.Normal, 'hasMorph' )
     if not ok or not tags: return
-    path = QFileDialog.getOpenFileName( caption='Open db', directory=util.dbsPath )
-    if not path: return
+
+    path = QFileDialog.getOpenFileName( caption='Open db', directory=util.dbsPath )[0]
+    if path == '': return
+    if path.split('.')[-1] != "db":
+        infoMsg('The selected file was not a db file')
+        return # per() and post() will still execute, but nothing happens
+
+
     db = MorphDb( path )
     return { 'b':b, 'db':db, 'tags':str(tags) }
 
 def per( st, n ): # :: State -> Note -> State
-    #n.delTag( st['tags'] ) # clear tags if they already exist?
-
     notecfg = getFilter(n)
     if notecfg is None: return st
     morphemizer = getMorphemizerByName(notecfg['Morphemizer'])
@@ -28,7 +33,7 @@ def per( st, n ): # :: State -> Note -> State
     return st
 
 def post( st ): # :: State -> State
-    infoMsg( 'Tagged all notes containing morphemes in that db' )
+    infoMsg( 'Successfully tagged notes containing morphemes in the selected db' )
     return st
 
 addBrowserNoteSelectionCmd( 'MorphMan: Mass Tagger', pre, per, post, tooltip='Tag all cards that contain morphemes from db', shortcut=None )
