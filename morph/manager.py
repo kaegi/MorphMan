@@ -66,19 +66,19 @@ class AdaptiveSubWin( QDialog ):
         uFmt = str( self.unknownFmt.text() )
         morphemizer = getAllMorphemizers()[self.morphemizer.currentIndex()]
 
-        inputPath = QFileDialog.getOpenFileNames( None, 'Dueling subs to process', '', 'Subs (*.ass)' )[0]
-        if not inputPath: return
+        inputPaths = QFileDialog.getOpenFileNames( None, 'Dueling subs to process', '', 'Subs (*.ass)' )[0]
+        if not inputPaths: return
         outputPath = QFileDialog.getExistingDirectory( None, 'Save adaptive subs to')
         if not outputPath: return
 
         progWid, bar = getProgressWidget()   
         bar.setMinimum(0)
-        bar.setMaximum(len(inputPath))
+        bar.setMaximum(len(inputPaths))
         val = 0;  
-        for s in range(len(inputPath)):         
+        for fileNumber, subtitlePath in enumerate(inputPaths, start=1):         
             # MySubtitlesFolder/1 EpisodeSubtitles Episode 1.ass
-            outputSubsFileName = outputPath + "/" + str(s + 1) + " " + inputPath[s].split("/")[-1]
-            adaptiveSubs.run( inputPath[s], outputSubsFileName, morphemizer, mFmt, kFmt, uFmt )
+            outputSubsFileName = outputPath + "/" + str(fileNumber) + " " + subtitlePath.split("/")[-1]
+            adaptiveSubs.run( subtitlePath, outputSubsFileName, morphemizer, mFmt, kFmt, uFmt )
 
             val+=1;
             bar.setValue(val)
