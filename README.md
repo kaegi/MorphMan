@@ -3,6 +3,11 @@ MorphMan is an Anki addon that tracks what words you know, and utilizes that inf
 __greatly__ optimizes your learning queue, as you will only see sentences with exactly one unknown word (see
 [i+1 principle](https://massimmersionapproach.com/table-of-contents/anki/morphman/#glossary) for a more detailed explanation).
 
+# Installation (Anki 2.1)
+
+Install MorphMan via [AnkiWeb](https://ankiweb.net/shared/info/900801631)
+NOTE: The Anki Experimental V2 Scheduler is currently not recommended, as it causes issues with MorphMan's scheduling
+
 # Installation (Anki 2.0)
 
 To install MorphMan, download the latest .zip archive from [here](https://github.com/kaegi/MorphMan/releases)
@@ -14,11 +19,6 @@ Your folder structure should look like this:
 
 After restarting Anki, you should see an entry called _morphman_ under _Tools -> Add-ons_.
 You can find information and troubleshooting tips [here](https://github.com/kaegi/MorphMan/wiki/Installation).
-
-# Installation (Anki 2.1)
-
-Install MorphMan via [AnkiWeb](https://ankiweb.net/shared/info/900801631)
-NOTE: The Anki Experimental V2 Scheduler is currently not recommended, as it causes issues with MorphMan's scheduling
 
 # Usage
 
