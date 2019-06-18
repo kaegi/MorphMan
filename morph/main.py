@@ -81,7 +81,6 @@ def mkAllDb( allDb=None ):
 
         for fieldName in notecfg['Fields']:
             try: # if doesn't have field, continue
-                #fieldValue = normalizeFieldValue( getField( fieldName, flds, mid ) )
                 fieldValue = extractFieldData( fieldName, flds, mid )
             except KeyError: continue
             except TypeError:
@@ -94,17 +93,14 @@ def mkAllDb( allDb=None ):
                 loc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
                 ms = getMorphemes(morphemizer, fieldValue, ts)
                 if ms: #TODO: this needed? should we change below too then?
-                    #printf( '    .loc for %d[%s]' % ( nid, fieldName ) )
                     locDb[ loc ] = ms
             else:
                 # mats changed -> new loc (new mats), move morphs
                 if loc.fieldValue == fieldValue and loc.maturities != mats:
-                    #printf( '    .mats for %d[%s]' % ( nid, fieldName ) )
                     newLoc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
                     locDb[ newLoc ] = locDb.pop( loc )
                 # field changed -> new loc, new morphs
                 elif loc.fieldValue != fieldValue:
-                    #printf( '    .morphs for %d[%s]' % ( nid, fieldName ) )
                     newLoc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
                     ms = getMorphemes(morphemizer, fieldValue, ts)
                     locDb.pop( loc )
@@ -224,7 +220,7 @@ def updateNotes( allDb ):
                          max(0, N - C('max good sentence length')))
         lenDiff = min(9, abs(lenDiffRaw))
 
-            # calculate mmi
+        # calculate mmi
         mmi = 10000*N_k + 1000*lenDiff + usefulness
         if C('set due based on mmi'):
             nid2mmi[ nid ] = mmi
@@ -253,7 +249,7 @@ def updateNotes( allDb ):
             setField( mid, fs, jcfg('Field_FocusMorph'), '')
 
 
-            # set type agnostic fields
+        # set type agnostic fields
         setField( mid, fs, jcfg('Field_UnknownMorphCount'), '%d' % N_k )
         setField( mid, fs, jcfg('Field_UnmatureMorphCount'), '%d' % N_m )
         setField( mid, fs, jcfg('Field_MorphManIndex'), '%d' % mmi )
@@ -261,11 +257,11 @@ def updateNotes( allDb ):
         setField( mid, fs, jcfg('Field_Unmatures'), ', '.join( u.base for u in unmatures ) )
         setField( mid, fs, jcfg('Field_UnknownFreq'), '%d' % F_k_avg )
 
-            # remove deprecated tag
+        # remove deprecated tag
         if badLengthTag is not None and badLengthTag in ts:
             ts.remove( badLengthTag )
 
-            # other tags
+         # other tags
         if priorityTag in ts:   ts.remove( priorityTag )
         if isPriority:          ts.append( priorityTag )
 
@@ -280,7 +276,7 @@ def updateNotes( allDb ):
             unnecessary = [priorityTag, tooShortTag, tooLongTag]
             ts = [tag for tag in ts if tag not in unnecessary]
 
-            # update sql db
+        # update sql db
         tags_ = TAG.join( TAG.canonify( ts ) )
         flds_ = joinFields( fs )
         if flds != flds_ or tags != tags_:  # only update notes that have changed
