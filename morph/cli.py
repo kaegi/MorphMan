@@ -7,7 +7,7 @@ import signal
 import sys
 
 from .morphemes import MorphDb
-from .morphemizer import SpaceMorphemizer, MecabMorphemizer, CjkCharMorphemizer
+from .morphemizer import SpaceMorphemizer, MecabMorphemizer, CjkCharMorphemizer, JiebaMorphemizer
 import morph
 
 
@@ -80,6 +80,7 @@ MIZERS = {
     'space': SpaceMorphemizer(),
     'mecab': MecabMorphemizer(),
     'cjkchar': CjkCharMorphemizer(),
+    'jieba': JiebaMorphemizer(),
 }
 
 

@@ -53,8 +53,8 @@ class PreferencesDialog( QDialog ):
             self.setTableRow(i, row)
 
         label = QLabel(
-        	"Any card that has the given `Note type` and all of the given `Tags` will have its `Fields` analyzed with the specified `Morphemizer`. " +
-            "A morphemizer specifies how words are extraced from a sentence. `Fields` and `Tags` are both comma-separated lists (e.x: tag1,tag2,tag3). " +
+            "Any card that has the given `Note type` and all of the given `Tags` will have its `Fields` analyzed with the specified `Morphemizer`. " +
+            "A morphemizer specifies how words are extraced from a sentence. `Fields` and `Tags` are both comma-separated lists (e.x: \"tag1, tag2, tag3\"). " +
             "If `Tags` is empty, there are no tag restrictions. " + 
             "If `Modify` is deactivated, the note will only be analyzed.\n\nIf a note is matched multple times, only the first filter in this list will be used.")
         label.setWordWrap(True)
@@ -75,9 +75,9 @@ class PreferencesDialog( QDialog ):
         vbox = QVBoxLayout(); self.frame2.setLayout(vbox); vbox.setContentsMargins(0, 20, 0, 0)
 
         label = QLabel(
-        	"This addon will attempt to change the data in the following fields. " +
-        	"Every field that has a (*) is REQUIRED IN EVERY NOTE for MorphMan to work correctly. " +
-        	"The other fields are optional. Hover your mouse over text entries to see tooltip info.")
+            "This addon will attempt to change the data in the following fields. " +
+            "Every field that has a (*) is REQUIRED IN EVERY NOTE for MorphMan to work correctly. " +
+            "The other fields are optional. Hover your mouse over text entries to see tooltip info.")
         label.setWordWrap(True)
         vbox.addWidget(label)
         vbox.addSpacing(50)
@@ -110,7 +110,7 @@ class PreferencesDialog( QDialog ):
         self.tabWidget.addTab(self.frame3, "Tags")
         vbox = QVBoxLayout(); self.frame3.setLayout(vbox); vbox.setContentsMargins(0, 20, 0, 0)
 
-        label = QLabel("This addon will add and delete the following tags from your matched notes. Hover your mouse over text entries to see tooltip info.")
+        label = QLabel("This addon will add and delete following tags from your matched notes. Hover your mouse over text entries to see tooltip info.")
         label.setWordWrap(True)
         vbox.addWidget(label)
         vbox.addSpacing(50)
@@ -149,7 +149,7 @@ class PreferencesDialog( QDialog ):
         self.tabWidget.addTab(self.frame4, "General")
         vbox = QVBoxLayout(); self.frame4.setLayout(vbox); vbox.setContentsMargins(0, 20, 0, 0)
 
-        label = QLabel("MorphMan will reorder your cards so that the easiest cards are at the front. To avoid new cards that are too easy (comprehension cards), MorphMan will skip them. You can customize the skip behavior here:")
+        label = QLabel("MorphMan will reorder the cards so that the easiest cards are at the front. To avoid getting new cards that are too easy, MorphMan will skip certain new cards. You can customize the skip behavior here:")
         label.setWordWrap(True)
         vbox.addWidget(label)
         vbox.addSpacing(20)

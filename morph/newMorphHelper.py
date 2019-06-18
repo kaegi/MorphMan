@@ -3,7 +3,7 @@ from aqt import reviewer, dialogs
 from aqt.qt import *
 from aqt.utils import tooltip
 from anki import sched
-from .util import addBrowserCardSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
+from .util import addBrowserNoteSelectionCmd, addBrowserCardSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
 
 # only for jedi-auto-completion
 import aqt.main

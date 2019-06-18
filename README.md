@@ -24,6 +24,7 @@ NOTE: The Anki Experimental V2 Scheduler is currently not recommended, as it cau
 
 MorphMan supports the following languages:
 -   languages with spaces: __English__, __Russian__, __Spanish__, __Korean__, __etc.__
+-   __Chinese__
 -   __Japanese__: You must additionally install the _[Japanese Support](https://ankiweb.net/shared/info/3918629684)_ Anki addon
 -   more languages can be added on request if morpheme-splitting-tools are available for it
 
