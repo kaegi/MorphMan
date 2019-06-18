@@ -41,11 +41,12 @@ def main():
     mw.form.menuTools.addAction( a )
 
 
-    from .morph import viewMorphemes
-    from .morph import extractMorphemes
-    from .morph import batchPlay
+    from .morph.browser import viewMorphemes
+    from .morph.browser import extractMorphemes
+    from .morph.browser import batchPlay
+    from .morph.browser import massTagger
+    from .morph.browser import alreadyKnownTagger
     from .morph import newMorphHelper
     from .morph import stats
-    from .morph import massTagger
 
 main()

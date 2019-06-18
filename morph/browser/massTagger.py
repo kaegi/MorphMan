@@ -1,8 +1,9 @@
 #-*- coding: utf-8 -*-
-from .morphemes import getMorphemes, MorphDb
-from .morphemizer import getMorphemizerByName
-from .util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit
-from . import util
+from aqt.utils import tooltip
+from ..morphemes import getMorphemes, MorphDb
+from ..morphemizer import getMorphemizerByName
+from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit
+from .. import util
 
 def pre( b ): # :: Browser -> State
     tags, ok = QInputDialog.getText( b, 'Enter tags (e.x \"tag1 tag2\")', 'Tags', QLineEdit.Normal, 'hasMorph' )
