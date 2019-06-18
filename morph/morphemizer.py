@@ -27,7 +27,7 @@ class Morphemizer:
 ####################################################################################################
 
 def getAllMorphemizers(): # -> [Morphemizer]
-    return [SpaceMorphemizer(), JiebaMorphemizer(), MecabMorphemizer(), CjkCharMorphemizer()]
+    return [SpaceMorphemizer(), MecabMorphemizer(), JiebaMorphemizer(), CjkCharMorphemizer()]
 
 def getMorphemizerByName(name):
     for m in getAllMorphemizers():
@@ -172,7 +172,7 @@ class SpaceMorphemizer(Morphemizer):
         return [Morpheme(word, word, 'UNKNOWN', 'UNKNOWN', word) for word in wordList]
 
     def getDescription(self):
-        return 'Language with spaces'
+        return 'Language w/ Spaces'
 
 ####################################################################################################
 # CJK Character Morphemizer
@@ -187,7 +187,7 @@ class CjkCharMorphemizer(Morphemizer):
         return [Morpheme(character, character, 'CJK_CHAR', 'UNKNOWN', character) for character in re.findall('[%s]' % characters, e)]
 
     def getDescription(self):
-        return 'CJK characters'
+        return 'CJK Characters'
 
 ####################################################################################################
 # Jieba Morphemizer (Chinese)
