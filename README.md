@@ -5,8 +5,8 @@ __greatly__ optimizes your learning queue, as you will only see sentences with e
 
 # Installation (Anki 2.1)
 
-Install MorphMan via [AnkiWeb](https://ankiweb.net/shared/info/900801631)
-NOTE: The Anki Experimental V2 Scheduler is currently not recommended, as it causes issues with MorphMan's scheduling
+Install MorphMan via [AnkiWeb](https://ankiweb.net/shared/info/900801631)  (**NOTE: The Anki Experimental V2 Scheduler is currently not supported, 
+as it causes issues with MorphMan's scheduling**)  
 
 # Installation (Anki 2.0)
 
@@ -23,12 +23,13 @@ You can find information and troubleshooting tips [here](https://github.com/kaeg
 # Usage
 
 MorphMan supports the following languages:
--   languages with spaces: __English__, __Russian__, __Spanish__, __Korean__, __etc.__
+-   languages with spaces: __English__, __Russian__, __Spanish__, __Korean__, __Hindi__, __etc.__
 -   __Japanese__: You must additionally install the _[Japanese Support](https://ankiweb.net/shared/info/3918629684)_ Anki addon
--   __Chinese__
--   __CJK Characters__
-    -   Morphemizer that splits sentence into characters and filters for Chinese-Japanese-Korean logographic/idiographic characters.
+-   __Chinese__: For Anki 2.0, please use [Jieba-Morph](https://github.com/NinKenDo64/Jieba-Morph). Chinese is included in Morphman for Anki 2.1
+-   __CJK Characters__: Morphemizer that splits sentence into characters and filters for Chinese-Japanese-Korean logographic/idiographic characters.
 -   more languages can be added on request if morpheme-splitting-tools are available for it
 
-See Matt VS Japan's [video tutorial](https://www.youtube.com/watch?v=dVReg8_XnyA) and accompanying [blog post](https://massimmersionapproach.com/table-of-contents/anki/morphman).
+See Matt VS Japan's [video tutorial](https://www.youtube.com/watch?v=dVReg8_XnyA) 
+and accompanying [blog post](https://massimmersionapproach.com/table-of-contents/anki/morphman).  
+
 See the [MorphMan wiki](https://github.com/kaegi/MorphMan/wiki) for more information.
