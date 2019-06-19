@@ -20,8 +20,8 @@ from . import main
 
 # config aliases
 def CN( n, key ):   return    cfg( n.mid, None, key )
-def focusName( n ): return    jcfg('Field_FocusMorph') # TODO remove argument n
-def focus( n ):     return n[ focusName(n) ]
+def focusName(): return    jcfg('Field_FocusMorph')
+def focus( n ):     return n[ focusName() ]
 
 
 ########## 6 parent deck pulls new cards from all children instead of sequentially (ie. mostly first)
@@ -49,7 +49,7 @@ def markFocusSeen( self, n ):
     global seenMorphs
     try:
         if not focus( n ): return
-        q = '%s:%s' % ( focusName( n ), focus( n ) )
+        q = '%s:%s' % ( focusName(), focus( n ) )
     except KeyError: return
     seenMorphs.add( focus(n) )
     numSkipped = len( self.mw.col.findNotes( q ) ) -1
@@ -156,7 +156,7 @@ def browseSameFocus( self ): #3
     try:
         n = self.card.note()
         if not focus( n ): return
-        q = '%s:%s' % ( focusName( n ), focus( n ) )
+        q = '%s:%s' % ( focusName(), focus( n ) )
         b = dialogs.open( 'Browser', self.mw )
         b.form.searchEdit.lineEdit().setText( q )
         b.onSearchActivated()
