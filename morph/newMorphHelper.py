@@ -175,28 +175,7 @@ def my_reviewer_shortcutKeys( self ):
 original_shortcutKeys = reviewer.Reviewer._shortcutKeys
 reviewer.Reviewer._shortcutKeys = my_reviewer_shortcutKeys
 
-########## 4 - immediately review selected cards
-# def pre( b ):
-#     ''' :type b: aqt.browser.Browser '''
-#     return { 'cards':[], 'browser':b }
-# def per( st, c ):
-#     st['cards'].append( c )
-#     return st
-# def post( st ):
-#     i = len(st['cards'])
-#     for c in st['cards']:
-#         mw.reviewer.cardQueue.append( c )
-
-#     # in special cases close() will already pop a new card from mw.reviewer.cardQueue
-#     st['browser'].close()
-#     tooltip( _( 'Immediately reviewing %d cards' % i ) )
-
-#     # only reset and fetch a new card if it wasn't already done with close()
-#     return {'__reset': len(mw.reviewer.cardQueue) == i}
-
-# addBrowserCardSelectionCmd( 'MorphMan: Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=('Ctrl+Shift+N',) )
-
-########## 5 - highlight morphemes using morphHighlight
+########## 4 - highlight morphemes using morphHighlight
 import re
 
 def isNoteSame(note, fieldDict):

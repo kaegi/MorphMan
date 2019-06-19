@@ -45,6 +45,7 @@ def main():
     from .morph.browser import extractMorphemes
     from .morph.browser import batchPlay
     from .morph.browser import massTagger
+    from .morph.browser import reviewNow
     from .morph.browser import alreadyKnownTagger
     from .morph import newMorphHelper
     from .morph import stats

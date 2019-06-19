@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-from ..util import addBrowserNoteSelectionCmd, cfg, cfg1
+from ..util import addBrowserNoteSelectionCmd, cfg
 import anki.sound
 import re
 
@@ -23,4 +23,4 @@ def post( st ):
     st['__reset'] = False
     return st
 
-addBrowserNoteSelectionCmd( 'MorphMan: Batch Play', pre, per, post, tooltip='Play all the videos for the selected cards', shortcut=('Ctrl+Alt+P',) )
+addBrowserNoteSelectionCmd( 'MorphMan: Batch Play', pre, per, post, tooltip='Play all the videos for the selected cards', shortcut=None )

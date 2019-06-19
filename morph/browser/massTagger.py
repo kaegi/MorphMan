@@ -28,12 +28,11 @@ def per( st, n ): # :: State -> Note -> State
             if m in st['db'].db:
                 n.addTag(st['tags'])
                 break
-
     n.flush()
     return st
 
 def post( st ): # :: State -> State
-    infoMsg( 'Successfully tagged notes containing morphemes in the selected db' )
+    tooltip(_( 'Successfully tagged notes containing morphemes in the selected db with "%s" ' % st['tags'] ) )
     return st
 
 addBrowserNoteSelectionCmd( 'MorphMan: Mass Tagger', pre, per, post, tooltip='Tag all cards that contain morphemes from db', shortcut=None )
