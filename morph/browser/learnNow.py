@@ -3,8 +3,7 @@ from aqt.utils import tooltip
 from aqt import browser
 from ..util import addBrowserCardSelectionCmd, mw, infoMsg
 
-def pre( b ):
-    return { 'cards':[], 'browser':b }
+def pre( b ): return { 'cards':[], 'browser':b }
 
 def per( st, c ):
     st['cards'].append( c )
@@ -15,7 +14,7 @@ def post( st ):
         mw.reviewer.cardQueue.append( c )
     st['browser'].close()
     infoMsg("") # Prevents an AttributeError directly above
-    tooltip( _( 'Immediately reviewing %d cards' % len(st['cards']) ) )
+    tooltip( _( 'Immediately reviewing {} cards'.format(len(st['cards'])) ) )
     return st
 
 addBrowserCardSelectionCmd( 'MorphMan: Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=None )

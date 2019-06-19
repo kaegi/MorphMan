@@ -6,6 +6,7 @@ from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog,
 from .. import util
 
 def pre( b ): # :: Browser -> State
+    noteCount = len(b.selectedNotes())
     tags, ok = QInputDialog.getText( b, 'Enter tags (e.x \"tag1 tag2\")', 'Tags', QLineEdit.Normal, 'hasMorph' )
     if not ok or not tags: return
 
@@ -15,9 +16,8 @@ def pre( b ): # :: Browser -> State
         infoMsg('The selected file was not a db file')
         return # per() and post() will still execute, but nothing happens
 
-
     db = MorphDb( path )
-    return { 'b':b, 'db':db, 'tags':str(tags) }
+    return { 'b':b, 'db':db, 'tags':str(tags), 'noteCount':noteCount }
 
 def per( st, n ): # :: State -> Note -> State
     notecfg = getFilter(n)
@@ -32,7 +32,7 @@ def per( st, n ): # :: State -> Note -> State
     return st
 
 def post( st ): # :: State -> State
-    tooltip(_( 'Successfully tagged notes containing morphemes in the selected db with "%s" ' % st['tags'] ) )
+    tooltip(_( 'Tagged {} notes containing morphemes in the selected db with "{}" '.format(st['noteCount'], st['tags']) ) )
     return st
 
 addBrowserNoteSelectionCmd( 'MorphMan: Mass Tagger', pre, per, post, tooltip='Tag all cards that contain morphemes from db', shortcut=None )
