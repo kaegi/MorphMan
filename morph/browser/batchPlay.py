@@ -1,6 +1,7 @@
 #-*- coding: utf-8 -*-
-from ..util import addBrowserNoteSelectionCmd, cfg
 import anki.sound
+from anki.hooks import addHook
+from ..util import addBrowserNoteSelectionCmd, cfg, cfg1
 import re
 
 def pre( b ): return { 'vid2nid':{} }
@@ -23,4 +24,10 @@ def post( st ):
     st['__reset'] = False
     return st
 
-addBrowserNoteSelectionCmd( 'MorphMan: Batch Play', pre, per, post, tooltip='Play all the videos for the selected cards', shortcut=None )
+def runBatchPlay():
+    label = 'MorphMan: Batch Play'
+    tooltipMsg = 'Play all the videos for the selected cards'
+    shortcut = cfg1('set batch play key')
+    addBrowserNoteSelectionCmd( label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,) )
+
+addHook( 'profileLoaded', runBatchPlay )

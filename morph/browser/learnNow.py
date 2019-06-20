@@ -1,7 +1,8 @@
 #-*- coding: utf-8 -*-
 from aqt.utils import tooltip
+from anki.hooks import addHook
 from aqt import browser
-from ..util import addBrowserCardSelectionCmd, mw, infoMsg
+from ..util import addBrowserCardSelectionCmd, mw, infoMsg, cfg1
 
 def pre( b ): return { 'cards':[], 'browser':b }
 
@@ -17,4 +18,10 @@ def post( st ):
     tooltip( _( 'Immediately reviewing {} cards'.format(len(st['cards'])) ) )
     return st
 
-addBrowserCardSelectionCmd( 'MorphMan: Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=None )
+def runLearnNow():
+    label = 'MorphMan: Learn Now'
+    tooltipMsg = 'Immediately review the selected new cards'
+    shortcut = cfg1('set learn now key')
+    addBrowserCardSelectionCmd( label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,) )
+
+addHook( 'profileLoaded', runLearnNow )

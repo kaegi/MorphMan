@@ -1,6 +1,7 @@
 #-*- coding: utf-8 -*-
 from aqt.utils import tooltip
-from ..util import addBrowserNoteSelectionCmd, infoMsg, jcfg
+from anki.hooks import addHook
+from ..util import addBrowserNoteSelectionCmd, infoMsg, jcfg, cfg1
 from ..newMorphHelper import focus, focusName
 
 def pre( b ): return { 'focusMorph': [], 'b':b }
@@ -23,9 +24,15 @@ def post( st ):
             search += '{}:{} or '.format(focusField, f)
 
     if search != '':
-    	st['b'].form.searchEdit.lineEdit().setText(search)
-    	st['b'].onSearchActivated()
-    	tooltip( _( 'Browsing {} morphs'.format(len(st['focusMorph'])) ) )
+        st['b'].form.searchEdit.lineEdit().setText(search)
+        st['b'].onSearchActivated()
+        tooltip( _( 'Browsing {} morphs'.format(len(st['focusMorph'])) ) )
     return st
 
-addBrowserNoteSelectionCmd( 'MorphMan: Browse Morphs', pre, per, post, tooltip='Browse all notes containing the morphs from selected notes', shortcut=("L",) )
+def runBrowseMorph():
+    label = 'MorphMan: Browse Morphs'
+    tooltipMsg = 'Browse all notes containing the morphs from selected notes'
+    shortcut = cfg1('browse same focus key')
+    addBrowserNoteSelectionCmd( label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,) )
+
+addHook( 'profileLoaded', runBrowseMorph )
