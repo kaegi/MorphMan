@@ -22,6 +22,11 @@ default = {
         # reviewer mode keybindings
     'browse same focus key': 'l',
     'set known and skip key': 'k',
+    'set batch play key': 'Ctrl+Alt+P',
+    'set extract morphemes key': 'Ctrl+Alt+E',
+    'set learn now key': 'Ctrl+Alt+N',
+    'set mass tagger key': 'Ctrl+Alt+T',
+    'set view morphemes key': 'Ctrl+Alt+V',
     'auto skip alternatives': True,
     'print number of alternatives skipped': True,   # after answering or skipping a card in reviewer
 

@@ -1,6 +1,7 @@
 #-*- coding: utf-8 -*-
 from aqt.utils import tooltip
-from ..util import addBrowserNoteSelectionCmd, getFilter, jcfg
+from anki.hooks import addHook
+from ..util import addBrowserNoteSelectionCmd, getFilter, jcfg, cfg1
 from .. import util
 
 def pre( b ): # :: Browser -> State
@@ -18,4 +19,10 @@ def post( st ): # :: State -> State
     tooltip( _( '{} notes given the {} tag'.format(st['noteTotal'], st['tag']) ) )
     return st
 
-addBrowserNoteSelectionCmd( 'MorphMan: Already Known Tagger', pre, per, post, tooltip='Tag all selected cards as already known', shortcut=("K",) )
+def runAlreadyKnownTagger():
+    label = 'MorphMan: Already Known Tagger'
+    tooltipMsg = 'Tag all selected cards as already known'
+    shortcut = cfg1('set known and skip key')
+    addBrowserNoteSelectionCmd( label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,) )
+
+addHook( 'profileLoaded', runAlreadyKnownTagger )

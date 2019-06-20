@@ -1,8 +1,9 @@
 #-*- coding: utf-8 -*-
 from aqt.utils import tooltip
+from anki.hooks import addHook
 from ..morphemes import getMorphemes, MorphDb
 from ..morphemizer import getMorphemizerByName
-from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit
+from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit, cfg1
 from .. import util
 
 def pre( b ): # :: Browser -> State
@@ -35,4 +36,10 @@ def post( st ): # :: State -> State
     tooltip(_( 'Tagged {} notes containing morphemes in the selected db with "{}" '.format(st['noteCount'], st['tags']) ) )
     return st
 
-addBrowserNoteSelectionCmd( 'MorphMan: Mass Tagger', pre, per, post, tooltip='Tag all cards that contain morphemes from db', shortcut=None )
+def runBatchPlay():
+    label = 'MorphMan: Mass Tagger'
+    tooltipMsg = 'Tag all cards that contain morphemes from db'
+    shortcut = cfg1('set mass tagger key')
+    addBrowserNoteSelectionCmd( label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,) )
+
+addHook( 'profileLoaded', runBatchPlay )
