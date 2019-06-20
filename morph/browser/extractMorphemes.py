@@ -6,7 +6,7 @@ from ..morphemizer import getMorphemizerByName
 from ..util import addBrowserNoteSelectionCmd, mw, getFilter, infoMsg, QFileDialog
 
 def pre( b ):
-    from .util import dbsPath # not defined until late, so don't import at top of module
+    from ..util import dbsPath # not defined until late, so don't import at top of module
     path = QFileDialog.getSaveFileName( caption='Save morpheme db to?', directory=dbsPath + os.sep + 'exportedMorphs.db' )
     if not path: return
     return { 'dbpath':str(path), 'morphDb':MorphDb() }
@@ -27,4 +27,4 @@ def post( st ):
     st['morphDb'].save( st['dbpath'] )
     infoMsg( 'DB saved with extracted morphemes' )
 
-addBrowserNoteSelectionCmd( 'MorphMan: Extract Morphemes', pre, per, post, tooltip='Extract morphemes in selected notes to a MorphMan db', shortcut=('Ctrl+Shift+E',) )
+addBrowserNoteSelectionCmd( 'MorphMan: Extract Morphemes', pre, per, post, tooltip='Extract morphemes in selected notes to a MorphMan db', shortcut=None )

@@ -21,4 +21,4 @@ def post( st ):
     s = ms2str( st['morphemes'] )
     infoMsg( '----- All -----\n' + s )
 
-addBrowserNoteSelectionCmd( 'MorphMan: View Morphemes', pre, per, post, tooltip='View Morphemes for selected note', shortcut=('Ctrl+Shift+V',) )
+addBrowserNoteSelectionCmd( 'MorphMan: View Morphemes', pre, per, post, tooltip='View Morphemes for selected note', shortcut=None )

@@ -20,8 +20,8 @@ from . import main
 
 # config aliases
 def CN( n, key ):   return    cfg( n.mid, None, key )
-def focusName( n ): return    jcfg('Field_FocusMorph') # TODO remove argument n
-def focus( n ):     return n[ focusName(n) ]
+def focusName(): return    jcfg('Field_FocusMorph')
+def focus( n ):     return n[ focusName() ]
 
 
 ########## 6 parent deck pulls new cards from all children instead of sequentially (ie. mostly first)
@@ -49,7 +49,7 @@ def markFocusSeen( self, n ):
     global seenMorphs
     try:
         if not focus( n ): return
-        q = '%s:%s' % ( focusName( n ), focus( n ) )
+        q = '%s:%s' % ( focusName(), focus( n ) )
     except KeyError: return
     seenMorphs.add( focus(n) )
     numSkipped = len( self.mw.col.findNotes( q ) ) -1
@@ -156,7 +156,7 @@ def browseSameFocus( self ): #3
     try:
         n = self.card.note()
         if not focus( n ): return
-        q = '%s:%s' % ( focusName( n ), focus( n ) )
+        q = '%s:%s' % ( focusName(), focus( n ) )
         b = dialogs.open( 'Browser', self.mw )
         b.form.searchEdit.lineEdit().setText( q )
         b.onSearchActivated()
@@ -175,28 +175,7 @@ def my_reviewer_shortcutKeys( self ):
 original_shortcutKeys = reviewer.Reviewer._shortcutKeys
 reviewer.Reviewer._shortcutKeys = my_reviewer_shortcutKeys
 
-########## 4 - immediately review selected cards
-# def pre( b ):
-#     ''' :type b: aqt.browser.Browser '''
-#     return { 'cards':[], 'browser':b }
-# def per( st, c ):
-#     st['cards'].append( c )
-#     return st
-# def post( st ):
-#     i = len(st['cards'])
-#     for c in st['cards']:
-#         mw.reviewer.cardQueue.append( c )
-
-#     # in special cases close() will already pop a new card from mw.reviewer.cardQueue
-#     st['browser'].close()
-#     tooltip( _( 'Immediately reviewing %d cards' % i ) )
-
-#     # only reset and fetch a new card if it wasn't already done with close()
-#     return {'__reset': len(mw.reviewer.cardQueue) == i}
-
-# addBrowserCardSelectionCmd( 'MorphMan: Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=('Ctrl+Shift+N',) )
-
-########## 5 - highlight morphemes using morphHighlight
+########## 4 - highlight morphemes using morphHighlight
 import re
 
 def isNoteSame(note, fieldDict):
