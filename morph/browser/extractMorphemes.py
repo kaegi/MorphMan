@@ -7,7 +7,7 @@ from ..util import addBrowserNoteSelectionCmd, mw, getFilter, infoMsg, QFileDial
 
 def pre( b ):
     from ..util import dbsPath # not defined until late, so don't import at top of module
-    path = QFileDialog.getSaveFileName( caption='Save morpheme db to?', directory=dbsPath + os.sep + 'exportedMorphs.db' )
+    path = QFileDialog.getSaveFileName( caption='Save morpheme db to:', directory=dbsPath + os.sep + 'exportedMorphs.db' )[0]
     if not path: return
     return { 'dbpath':str(path), 'morphDb':MorphDb() }
 
@@ -19,7 +19,7 @@ def per( st, n ):
     for f in notecfg['Fields']:
         ms = getMorphemes(morphemizer, n[f], n.tags)
         loc = AnkiDeck(n.id, f, n[f], n.guid, mats)
-        st['morphDb'].addMsl(ms, loc)
+        st['morphDb'].addMsL(ms, loc)
 
     return st
 
