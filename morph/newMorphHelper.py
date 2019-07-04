@@ -3,6 +3,7 @@ from aqt import reviewer, dialogs
 from aqt.qt import *
 from aqt.utils import tooltip
 from anki import sched
+import codecs
 from .util import addBrowserNoteSelectionCmd, addBrowserCardSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
 
 # only for jedi-auto-completion
@@ -204,6 +205,13 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
     def nonSpanSub( sub, repl, string ):
         return ''.join( re.sub( sub, repl, s ) if not s.startswith('<span') else s for s in re.split( '(<span.*?</span>)', string ) )
 
+    frequencyListPath = cfg1('path_frequency')
+    try:
+        with codecs.open( frequencyListPath, 'r', 'utf-8' ) as f:
+            frequencyList = [line.strip() for line in f.readlines()]
+    except FileNotFoundError:
+        pass # User does not have a frequency.txt
+
     priorityDb  = main.MorphDb( cfg1('path_priority'), ignoreErrors=True ).db
     tags = fieldDict['Tags'].split()
     filter = getFilterByTagsAndType(fieldDict['Type'], tags)
@@ -227,10 +235,18 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
             priority = 'true'
         else: priority = 'false'
 
-        repl = '<span class="morphHighlight" mtype="{mtype}" priority="{priority}" mat="{mat}">{morph}</span>'.format(
+        focusMorphString = m.show().split()[0]
+        try:
+            focusMorphIndex = frequencyList.index(focusMorphString)
+            frequency = 'true'
+        except ValueError:
+            frequency = 'false'
+
+        repl = '<span class="morphHighlight" mtype="{mtype}" priority="{priority}" frequency="{frequency}" mat="{mat}">{morph}</span>'.format(
                 morph = m.inflected,
                 mtype = mtype,
                 priority = priority,
+                frequency = frequency,
                 mat = mat
                 )
         txt = nonSpanSub( m.inflected, repl, txt )
