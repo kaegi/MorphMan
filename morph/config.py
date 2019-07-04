@@ -7,6 +7,7 @@ default = {
     'path_dbs': os.path.join( mw.pm.profileFolder(), 'dbs' ),
     'path_priority': os.path.join( mw.pm.profileFolder(), 'dbs', 'priority.db' ),
     'path_ext': os.path.join( mw.pm.profileFolder(), 'dbs', 'external.db' ),
+    'path_frequency': os.path.join( mw.pm.profileFolder(), 'dbs', 'frequency.txt' ),
     'path_all': os.path.join( mw.pm.profileFolder(), 'dbs', 'all.db' ),
     'path_mature': os.path.join( mw.pm.profileFolder(), 'dbs', 'mature.db' ),
     'path_known': os.path.join( mw.pm.profileFolder(), 'dbs', 'known.db' ),
@@ -47,15 +48,25 @@ default = {
     # controls for morpheme analysis (only for japanese/mecab morphemizer)
     'japanese_tag': 'japanese',              # if a note has this tag, morphemes are be split with mecab, otherwise a space-based morphemizer is used
 
-        # try playing fields in this order when using batch media player
+    # try playing fields in this order when using batch media player
     'batch media fields': [ 'Video', 'Sound' ],
-        # configure morph man index algorithm
+
+    # configure morph man index algorithm
     'min good sentence length': 2,
     'max good sentence length': 8,          # +1000 MMI per morpheme outside the "good" length range
     'reinforce new vocab weight': 5.0,      # -reinforce_weight / maturity MMI per known that is not yet mature
     'verb bonus': 100,                      # -verb_bonus if at least one unknown is a verb
-    'priority.db weight': 200,              # -priority_weight per unknown that exists in priority.db
-        # lite update
+    
+    # -priority_weight per unknown that exists in priority.db
+    # Note: If priority.db weight > 999, it will only tag cards as "Priority" and have no effect on scheduling
+    'priority.db weight': 200,
+    
+    # Scale by which card "due" values decrease per unknown in frequency.txt
+    # Formula: weightScale * indexOfMorphemeOnFreqList / lengthOfFreqList (lower frequency -> higher due value -> card scheduled later)
+    # The lower the value from the above formula, the higher the "due" value
+    'frequency.txt weight scale': 700, 
+
+    # lite update
     'only update k+2 and below': False,     # this reduces how many notes are changed and thus sync burden by not updating notes that aren't as important
 
     # only these can have deck overrides

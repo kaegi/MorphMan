@@ -8,6 +8,7 @@ from . import stats
 from .util import printf, mw, cfg, cfg1, partial, errorMsg, infoMsg, jcfg, jcfg2, getFilter
 from . import util
 from .util_external import memoize
+import codecs
 
 # only for jedi-auto-completion
 import aqt.main
@@ -139,7 +140,7 @@ def updateNotes( allDb ):
     locDb   = allDb.locDb( recalc=False ) # fidDb() already forces locDb recalc
 
     # read tag names
-    compTag, vocabTag, freshTag, notReadyTag, alreadyKnownTag, priorityTag, tooShortTag, tooLongTag = tagNames = jcfg('Tag_Comprehension'), jcfg('Tag_Vocab'), jcfg('Tag_Fresh'), jcfg('Tag_NotReady'), jcfg('Tag_AlreadyKnown'), jcfg('Tag_Priority'), jcfg('Tag_TooShort'), jcfg('Tag_TooLong')
+    compTag, vocabTag, freshTag, notReadyTag, alreadyKnownTag, priorityTag, tooShortTag, tooLongTag, frequencyTag = tagNames = jcfg('Tag_Comprehension'), jcfg('Tag_Vocab'), jcfg('Tag_Fresh'), jcfg('Tag_NotReady'), jcfg('Tag_AlreadyKnown'), jcfg('Tag_Priority'), jcfg('Tag_TooShort'), jcfg('Tag_TooLong'), jcfg('Tag_Frequency')
     TAG.register( tagNames )
     badLengthTag = jcfg2().get('Tag_BadLength')
 
@@ -150,6 +151,15 @@ def updateNotes( allDb ):
     matureDb    = filterDbByMat( allDb, cfg1('threshold_mature') )
     mw.progress.update( label='Loading priority.db' )
     priorityDb  = MorphDb( cfg1('path_priority'), ignoreErrors=True ).db
+
+    mw.progress.update( label='Loading frequency.txt' )
+    frequencyListPath = cfg1('path_frequency')
+    try:
+	    with codecs.open( frequencyListPath, 'r', 'utf-8' ) as f:
+	        frequencyList = [line.strip() for line in f.readlines()]
+	        frequencyListLength = len(frequencyList)
+    except FileNotFoundError:
+        pass # User does not have a frequency.txt
 
     if cfg1('saveDbs'):
         mw.progress.update( label='Saving seen/known/mature dbs' )
@@ -196,14 +206,25 @@ def updateNotes( allDb ):
         F_k_avg = F_k // N_k if N_k > 0 else F_k
         usefulness = F_k_avg
 
-            # add bonus for morphs in priority.db
+        # add bonus for morphs in priority.db and frequency.txt
         isPriority = False
+        isFrequency = False
         for focusMorph in unknowns:
             if focusMorph in priorityDb:
                 isPriority = True
                 usefulness += C('priority.db weight')
+            focusMorphString = focusMorph.show().split()[0]
+            try:
+                focusMorphIndex = frequencyList.index(focusMorphString)
+                isFrequency = True
+                frequencyWeight = C('frequency.txt max weight')
+                usefulness += round(frequencyWeight * focusMorphIndex / frequencyListLength)
+            except:
+                pass
 
-            # add bonus for studying recent learned knowns (reinforce)
+
+
+        # add bonus for studying recent learned knowns (reinforce)
         for morpheme in newKnowns:
             locs = allDb.db[ morpheme ]
             if locs:
@@ -261,9 +282,12 @@ def updateNotes( allDb ):
         if badLengthTag is not None and badLengthTag in ts:
             ts.remove( badLengthTag )
 
-         # other tags
+        # other tags
         if priorityTag in ts:   ts.remove( priorityTag )
         if isPriority:          ts.append( priorityTag )
+
+        if frequencyTag in ts:   ts.remove( frequencyTag )
+        if isFrequency:          ts.append( frequencyTag )
 
         if tooShortTag in ts:   ts.remove( tooShortTag )
         if lenDiffRaw < 0:      ts.append( tooShortTag )

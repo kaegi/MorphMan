@@ -81,6 +81,7 @@ def jcfg_default():
         'Tag_Priority':'mm_priority',             # set if note contains an unknown that exists in priority.db
         'Tag_TooShort':'mm_tooShort',             # set if sentence is below optimal length range
         'Tag_TooLong':'mm_tooLong',               # set if sentence is above optimal length range
+        'Tag_Frequency': 'mm_frequency',          # set if sentence is above optimal length range
 
         # filter for cards that should be analyzed, higher entries have higher priority
         'Filter': [
