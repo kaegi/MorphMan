@@ -217,12 +217,10 @@ def updateNotes( allDb ):
             try:
                 focusMorphIndex = frequencyList.index(focusMorphString)
                 isFrequency = True
-                frequencyWeight = C('frequency.txt max weight')
+                frequencyWeight = C('frequency.txt weight scale')
                 usefulness += round(frequencyWeight * focusMorphIndex / frequencyListLength)
             except:
                 pass
-
-
 
         # add bonus for studying recent learned knowns (reinforce)
         for morpheme in newKnowns:
