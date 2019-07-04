@@ -125,6 +125,7 @@ class PreferencesDialog( QDialog ):
                 ("Priority:", 'Tag_Priority', 'Morpheme is in priority.db.'),
                 ("Too Short:", 'Tag_TooShort', 'Sentence is too short.'),
                 ("Too Long:", 'Tag_TooLong', 'Sentence is too long.'),
+                ("Frequency:", 'Tag_Frequency', 'Morpheme is in frequency.txt'),
             ]
         self.tagEntryList = []
         numberOfColumns = 2
