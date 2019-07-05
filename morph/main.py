@@ -199,7 +199,7 @@ def updateNotes( allDb ):
         # Bail early for lite update
         if N_k > 2 and C('only update k+2 and below'): continue
 
-            # average frequency of unknowns (ie. how common the word is within your collection)
+        # average frequency of unknowns (ie. how common the word is within your collection)
         F_k = 0
         for focusMorph in unknowns: # focusMorph used outside loop
             F_k += allDb.frequency(focusMorph)
@@ -218,7 +218,9 @@ def updateNotes( allDb ):
                 focusMorphIndex = frequencyList.index(focusMorphString)
                 isFrequency = True
                 frequencyWeight = C('frequency.txt weight scale')
-                usefulness += round(frequencyWeight * focusMorphIndex / frequencyListLength)
+                
+                # The bigger this number, the lower mmi becomes
+                usefulness += (frequencyListLength - focusMorphIndex) * frequencyWeight
             except:
                 pass
 
@@ -232,7 +234,7 @@ def updateNotes( allDb ):
         if any( morpheme.pos == '動詞' for morpheme in unknowns ): #FIXME: this isn't working???
             usefulness += C('verb bonus')
 
-        usefulness = 999 - min( 999, usefulness )
+        usefulness = 99999  - min( 99999 , usefulness )
 
         # difference from optimal length range (too little context vs long sentence)
         lenDiffRaw = min(N - C('min good sentence length'),
@@ -240,7 +242,7 @@ def updateNotes( allDb ):
         lenDiff = min(9, abs(lenDiffRaw))
 
         # calculate mmi
-        mmi = 10000*N_k + 1000*lenDiff + usefulness
+        mmi = 100000 * N_k + 1000 * lenDiff + usefulness
         if C('set due based on mmi'):
             nid2mmi[ nid ] = mmi
 
