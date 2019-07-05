@@ -52,8 +52,8 @@ default = {
     'batch media fields': [ 'Video', 'Sound' ],
 
     # configure morph man index algorithm
-    'min good sentence length': 2,
-    'max good sentence length': 8,          # +1000 MMI per morpheme outside the "good" length range
+    'min good sentence length': 8,
+    'max good sentence length': 20,          # +1000 MMI per morpheme outside the "good" length range
     'reinforce new vocab weight': 5.0,      # -reinforce_weight / maturity MMI per known that is not yet mature
     'verb bonus': 100,                      # -verb_bonus if at least one unknown is a verb
     
@@ -62,9 +62,9 @@ default = {
     'priority.db weight': 200,
     
     # Scale by which card "due" values decrease per unknown in frequency.txt
-    # Formula: weightScale * indexOfMorphemeOnFreqList / lengthOfFreqList (lower frequency -> higher due value -> card scheduled later)
-    # The lower the value from the above formula, the higher the "due" value
-    'frequency.txt weight scale': 700, 
+    # Lower the scale based on the size of frequency.txt
+    # Example: 10k frequency.txt scale: 2; 5k frequency.txt scale: 4
+    'frequency.txt weight scale': 10, 
 
     # lite update
     'only update k+2 and below': False,     # this reduces how many notes are changed and thus sync burden by not updating notes that aren't as important
