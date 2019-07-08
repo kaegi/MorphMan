@@ -209,7 +209,7 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
     try:
         with codecs.open( frequencyListPath, 'r', 'utf-8' ) as f:
             frequencyList = [line.strip() for line in f.readlines()]
-    except FileNotFoundError:
+    except:
         pass # User does not have a frequency.txt
 
     priorityDb  = main.MorphDb( cfg1('path_priority'), ignoreErrors=True ).db
@@ -239,7 +239,7 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
         try:
             focusMorphIndex = frequencyList.index(focusMorphString)
             frequency = 'true'
-        except ValueError:
+        except:
             frequency = 'false'
 
         repl = '<span class="morphHighlight" mtype="{mtype}" priority="{priority}" frequency="{frequency}" mat="{mat}">{morph}</span>'.format(
