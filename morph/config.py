@@ -15,12 +15,14 @@ default = {
     'path_json': os.path.join( mw.pm.profileFolder(), 'dbs', 'morphman_config.json' ),
     'path_log': os.path.join( mw.pm.profileFolder(), 'morphman.log' ),
     'path_stats': os.path.join( mw.pm.profileFolder(), 'morphman.stats' ),
-        # change the thresholds for various stages of maturity, in days
+
+    # change the thresholds for various stages of maturity, in days
     'threshold_mature': 21,         # 21 days is what Anki uses
     'threshold_known': 10/86400.,   # recommend a few seconds if you want to count things in learning queue or ~3 days otherwise
     'threshold_seen': 1/86400.,     # this currently isn't used outside of create seen.db for your personal usage
     'text file import maturity':22, # when you import a file via Extract Morphemes from file, they are all given this maturity
-        # reviewer mode keybindings
+
+    # reviewer mode keybindings
     'browse same focus key': 'l',
     'set known and skip key': 'k',
     'set batch play key': 'Ctrl+Alt+P',
@@ -52,13 +54,12 @@ default = {
     'batch media fields': [ 'Video', 'Sound' ],
 
     # configure morph man index algorithm
-    'min good sentence length': 8,
-    'max good sentence length': 20,          # +1000 MMI per morpheme outside the "good" length range
+    'min good sentence length': 2,
+    'max good sentence length': 8,          # +1000 MMI per morpheme outside the "good" length range
     'reinforce new vocab weight': 5.0,      # -reinforce_weight / maturity MMI per known that is not yet mature
     'verb bonus': 100,                      # -verb_bonus if at least one unknown is a verb
     
     # -priority_weight per unknown that exists in priority.db
-    # Note: If priority.db weight > 999, it will only tag cards as "Priority" and have no effect on scheduling
     'priority.db weight': 200,
     
     # Scale by which card "due" values decrease per unknown in frequency.txt
