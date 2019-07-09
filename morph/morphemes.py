@@ -57,7 +57,7 @@ class Morpheme:
 def ms2str( ms ): # [Morpheme] -> Str
     return '\n'.join( m.show() for m in ms )
 
-def getMorphemes(morphemizer, expression, note_tags=None):
+def getMorphemes(morphemizer, expression, note_tags=None, ignore_positions=False):
     if jcfg('Option_IgnoreBracketContents'):
         regex = r'\[[^\]]*\]'
         if re.search(regex, expression):
@@ -88,6 +88,14 @@ def getMorphemes(morphemizer, expression, note_tags=None):
 
 
     ms = morphemizer.getMorphemesFromExpr(expression)
+
+    if ignore_positions:
+        def removePositions(m):
+            m.pos = '---'
+            m.subPos = '---'
+            return m
+        ms = [ removePositions( m ) for m in ms ]
+
     return ms
 
 

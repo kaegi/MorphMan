@@ -22,6 +22,9 @@ default = {
     'threshold_seen': 1/86400.,     # this currently isn't used outside of create seen.db for your personal usage
     'text file import maturity':22, # when you import a file via Extract Morphemes from file, they are all given this maturity
 
+    # change morpheme parsing
+    'ignore grammar position': False, # if True, ignores morpheme grammar positions.  Delete your all.db if changing.
+
     # reviewer mode keybindings
     'browse same focus key': 'l',
     'set known and skip key': 'k',

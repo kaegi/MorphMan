@@ -11,7 +11,7 @@ def per( st, n ):
     if notecfg is None: return st
     morphemizer = getMorphemizerByName(notecfg['Morphemizer'])
     for f in notecfg['Fields']:
-        ms = getMorphemes(morphemizer, n[f], n.tags)
+        ms = getMorphemes(morphemizer, n[f], n.tags, cfg1('ignore grammar position'))
         st['morphemes'] += ms
     return st
 
