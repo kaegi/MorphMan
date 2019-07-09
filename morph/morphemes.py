@@ -32,30 +32,33 @@ class Morpheme:
         # values are created by "mecab" in the order of the parameters and then directly passed into this constructor
         # example of mecab output:    "歩く     歩い    動詞    自立      アルイ"
         # matches to:                 "base     infl    pos     subPos    read"
-        self.pos    = pos # type of morpheme detemined by mecab tool. for example: u'動詞' or u'助動詞', u'形容詞'
-        self.subPos = subPos
         self.read   = read
         self.base   = base
+        self.pos    = pos # type of morpheme detemined by mecab tool. for example: u'動詞' or u'助動詞', u'形容詞'
+        self.subPos = subPos
         self.inflected = inflected
 
     def __eq__( self, o ):
         if not isinstance( o, Morpheme ): return False
-        if self.pos != o.pos: return False
-        if self.subPos != o.subPos: return False
         if self.read != o.read: return False
         if self.base != o.base: return False
+        if self.pos != o.pos: return False
+        if self.subPos != o.subPos: return False
         #if self.inflected != o.inflected: return False
         return True
 
     def __hash__( self ):
         #return hash( (self.pos, self.subPos, self.read, self.base, self.inflected) )
-        return hash( (self.pos, self.subPos, self.read, self.base) )
+        return hash( (self.read, self.base, self.pos, self.subPos) )
 
     def show( self ): # str
         return '\t'.join([ self.base, self.pos, self.subPos, self.read ])
 
 def ms2str( ms ): # [Morpheme] -> Str
     return '\n'.join( m.show() for m in ms )
+
+def removePositions( m ):
+    return Morpheme(m.base, m.inflected, '', '', m.read)
 
 def getMorphemes(morphemizer, expression, note_tags=None, ignore_positions=False):
     if jcfg('Option_IgnoreBracketContents'):
@@ -90,10 +93,6 @@ def getMorphemes(morphemizer, expression, note_tags=None, ignore_positions=False
     ms = morphemizer.getMorphemesFromExpr(expression)
 
     if ignore_positions:
-        def removePositions(m):
-            m.pos = '---'
-            m.subPos = '---'
-            return m
         ms = [ removePositions( m ) for m in ms ]
 
     return ms
