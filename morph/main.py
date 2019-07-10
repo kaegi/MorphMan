@@ -61,6 +61,8 @@ def mkAllDb( allDb=None ):
     fidDb   = allDb.fidDb()
     locDb   = allDb.locDb( recalc=False )   # fidDb() already forces locDb recalc
 
+    ignore_grammar_pos = cfg1('ignore grammar position')
+
     mw.progress.update( label='Generating all.db data' )
     for i,( nid, mid, flds, guid, tags ) in enumerate( db.execute( 'select id, mid, flds, guid, tags from notes' ) ):
         if i % 500 == 0:    mw.progress.update( value=i )
@@ -92,7 +94,7 @@ def mkAllDb( allDb=None ):
             loc = fidDb.get( ( nid, guid, fieldName ), None )
             if not loc:
                 loc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
-                ms = getMorphemes(morphemizer, fieldValue, ts)
+                ms = getMorphemes(morphemizer, fieldValue, ts, ignore_grammar_pos)
                 if ms: #TODO: this needed? should we change below too then?
                     locDb[ loc ] = ms
             else:
@@ -103,7 +105,7 @@ def mkAllDb( allDb=None ):
                 # field changed -> new loc, new morphs
                 elif loc.fieldValue != fieldValue:
                     newLoc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
-                    ms = getMorphemes(morphemizer, fieldValue, ts)
+                    ms = getMorphemes(morphemizer, fieldValue, ts, ignore_grammar_pos)
                     locDb.pop( loc )
                     locDb[ newLoc ] = ms
 
