@@ -257,7 +257,6 @@ def updateNotes( allDb ):
         # determine card type
         if N_m == 0:    # sentence comprehension card, m+0
             ts = ts + [ compTag ]
-            setField( mid, fs, jcfg('Field_FocusMorph'), '' )
         elif N_k == 1:  # new vocab card, k+1
             ts = ts + [ vocabTag ]
             setField( mid, fs, jcfg('Field_FocusMorph'), '%s' % focusMorph.base )
