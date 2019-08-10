@@ -76,7 +76,7 @@ default = {
     # only these can have deck overrides
     'next new card feature':True,   # skip cards with focusMorph that was already seen or aren't k+1
     'new card merged fill':False,   # fill new card queue with cards from all child decks instead of sequentially. also enforce a minimum due value
-    'new card merged fill min due':10000,   # k+1 by default. this mostly is to boost performance of 'next new card feature'
+    'new card merged fill min due':100000,   # k+1 by default. this mostly is to boost performance of 'next new card feature'
 }
 # Can override anything. 3rd priority
 profile_overrides = {
