@@ -57,6 +57,9 @@ class Morpheme:
 def ms2str( ms ): # [Morpheme] -> Str
     return '\n'.join( m.show() for m in ms )
 
+def hasPositions( m ):
+    return (m.pos != '' or m.subPos != '')
+
 def removePositions( m ):
     return Morpheme(m.base, m.inflected, '', '', m.read)
 
@@ -206,6 +209,25 @@ class MorphDb:
         f = gzip.open( path, 'rb' )
         try:
             self.db = pickle.load( f )
+
+            # Fix up positions in older databases.
+            ignore_positions = cfg1('ignore grammar position')
+            if ignore_positions:
+                need_fix = False
+                for morph in self.db.keys():
+                    if hasPositions(morph):
+                        need_fix = True
+                        break
+                if need_fix:
+                    new_db = {}
+                    for morph, locs in self.db.items():
+                        m = removePositions(morph)
+                        if m in new_db:
+                            new_db[m].update(locs)
+                        else:
+                            new_db[m] = set(locs)
+                    self.db = new_db
+
         except ModuleNotFoundError as e:
             msg = 'ModuleNotFoundError was thrown. That probably means that you\'re using database files generated in the older versions of MorphMan. To fix this issue, please refer to the written guide on database migration (copy-pasteable link will appear in the next window): https://gist.github.com/InfiniteRain/1d7ca9ad307c4203397a635b514f00c2'
             aqt.utils.showInfo(msg)
