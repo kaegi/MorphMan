@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import pickle, gzip, os, subprocess, re
+import pickle, gzip, os, subprocess, re, sys
 import importlib
 
 from .morphemes import Morpheme
@@ -111,10 +111,21 @@ def mecab(): # IO MecabProc
     `mecab` reads expressions from stdin at runtime, so only one
     instance is needed.  That's why this function is memoized.
     '''
+
+    if sys.platform.startswith('win'):
+        si = subprocess.STARTUPINFO()
+        try:
+            si.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+        except:
+            # pylint: disable=no-member
+            si.dwFlags |= subprocess._subprocess.STARTF_USESHOWWINDOW
+    else:
+        si = None
+
     try:
         # First, try `mecab` from the system.  See if that exists and
         # is compatible with our assumptions.
-        return spawnMecab(['mecab'], None)
+        return spawnMecab(['mecab'], si)
     except OSError:
         # If no luck, rummage inside the Japanese Support addon and borrow its way
         # of running the mecab bundled inside it.
@@ -132,7 +143,7 @@ def mecab(): # IO MecabProc
         # sys.stderr.write(str(m.mecabCmd[:1]))
         # sys.stderr.write(str(m.mecabCmd[4:]))
         # sys.stderr.write(str(reading.si))
-        return spawnMecab(m.mecabCmd[:1] + m.mecabCmd[4:], reading.si)
+        return spawnMecab(m.mecabCmd[:1] + m.mecabCmd[4:], si)
 
 @memoize
 def interact( expr ): # Str -> IO Str
