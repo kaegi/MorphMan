@@ -5,10 +5,11 @@ import aqt
 
 # need some fallbacks if not running from anki and thus morph.util isn't available
 try:
-    from .util import errorMsg, jcfg
+    from .util import errorMsg, jcfg, cfg1
 except ImportError:
     def errorMsg( msg ): pass
     def jcfg(s): return None
+    def cfg1(s): return None
 
 ################################################################################
 ## Lexical analysis
@@ -279,8 +280,10 @@ class MorphDb:
         inp = f.readlines()
         f.close()
 
+        ignore_grammar_pos = cfg1('ignore grammar position')
+
         for i,line in enumerate(inp):
-            ms = getMorphemes( morphemizer, line.strip())
+            ms = getMorphemes( morphemizer, line.strip(), ignore_positions=ignore_grammar_pos)
             self.addMLs( ( m, TextFile( path, i+1, maturity ) ) for m in ms )
 
     # Analysis (local)
