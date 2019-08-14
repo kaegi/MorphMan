@@ -3,6 +3,7 @@ from aqt.utils import tooltip
 from anki.hooks import addHook
 from ..util import addBrowserNoteSelectionCmd, infoMsg, jcfg, cfg1
 from ..newMorphHelper import focus, focusName
+from anki.lang import _
 
 def pre( b ): return { 'focusMorph': [], 'b':b }
 

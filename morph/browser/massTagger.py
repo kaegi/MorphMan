@@ -5,6 +5,7 @@ from ..morphemes import getMorphemes, MorphDb
 from ..morphemizer import getMorphemizerByName
 from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit, cfg1
 from .. import util
+from anki.lang import _
 
 def pre( b ): # :: Browser -> State
     noteCount = len(b.selectedNotes())

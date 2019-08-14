@@ -1,6 +1,7 @@
 from .morph.util import *
 from PyQt5.QtWidgets import *
 import importlib
+from anki.lang import _
 
 def onMorphManRecalc():
     from .morph import main

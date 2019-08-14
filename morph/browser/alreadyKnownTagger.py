@@ -3,6 +3,7 @@ from aqt.utils import tooltip
 from anki.hooks import addHook
 from ..util import addBrowserNoteSelectionCmd, getFilter, jcfg, cfg1
 from .. import util
+from anki.lang import _
 
 def pre( b ): # :: Browser -> State
     noteTotal = len(b.selectedNotes())

@@ -4,6 +4,8 @@ import glob, gzip, os, pickle as pickle
 from .util import cfg1, wrap, mw
 from aqt import toolbar
 
+from anki.lang import _
+
 def getStatsPath(): return cfg1('path_stats')
 
 def loadStats():
