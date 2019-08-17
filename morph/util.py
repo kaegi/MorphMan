@@ -14,9 +14,9 @@ from anki.hooks import addHook, wrap
 ## Global data
 ###############################################################################
 _allDb = None
-def allDb():
+def allDb(reload=False):
     global _allDb
-    if _allDb is None:
+    if reload or (_allDb is None):
         from .morphemes import MorphDb
         _allDb = MorphDb( cfg1('path_all'), ignoreErrors=True )
     return _allDb
