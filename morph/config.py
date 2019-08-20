@@ -2,6 +2,8 @@
 import os
 from aqt import mw # this script isn't imported until profile is loaded
 
+user_path = os.path.expanduser("~")
+
 # 4th (lowest) priority
 default = {
     'path_dbs': os.path.join( mw.pm.profileFolder(), 'dbs' ),
@@ -15,6 +17,8 @@ default = {
     'path_json': os.path.join( mw.pm.profileFolder(), 'dbs', 'morphman_config.json' ),
     'path_log': os.path.join( mw.pm.profileFolder(), 'morphman.log' ),
     'path_stats': os.path.join( mw.pm.profileFolder(), 'morphman.stats' ),
+    'path_analysis_input': os.path.join(user_path, 'Downloads', 'Subtitles', 'FMA Brotherhood JP'),
+    'path_global_frequency_list': os.path.join(mw.pm.profileFolder(), 'dbs', 'netflix_unidic_word_freq_report.txt'),
 
     # change the thresholds for various stages of maturity, in days
     'threshold_mature': 21,         # 21 days is what Anki uses
@@ -24,6 +28,10 @@ default = {
 
     # change morpheme parsing
     'ignore grammar position': False, # if True, ignores morpheme grammar positions.  Delete your all.db if changing.
+
+    # Analyzer defaults
+    'default_study_target': 98.0,
+    'default_morphemizer': 'MecabMorphemizer', # Options: MecabMorphemizer, SpaceMorphemizer, CjkCharMorphemizer, JiebaMorphemizer
 
     # reviewer mode keybindings
     'browse same focus key': 'l',

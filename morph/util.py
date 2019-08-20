@@ -9,6 +9,7 @@ from aqt.qt import *
 from aqt import mw
 from aqt.utils import showCritical, showInfo, showWarning, tooltip
 from anki.hooks import addHook, wrap
+import importlib
 
 ###############################################################################
 ## Global data
@@ -29,6 +30,7 @@ dbsPath = None
 def initCfg():
     global cfgMod, dbsPath
     from . import config
+    importlib.reload( config )
     cfgMod = config
     dbsPath = config.default['path_dbs']
 

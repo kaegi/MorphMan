@@ -158,7 +158,7 @@ def updateNotes( allDb ):
     frequencyListPath = cfg1('path_frequency')
     try:
 	    with codecs.open( frequencyListPath, 'r', 'utf-8' ) as f:
-	        frequencyList = [line.strip() for line in f.readlines()]
+	        frequencyList = [line.strip().split('\t')[0] for line in f.readlines()]
 	        frequencyListLength = len(frequencyList)
     except FileNotFoundError:
         pass # User does not have a frequency.txt
@@ -220,7 +220,7 @@ def updateNotes( allDb ):
                 focusMorphIndex = frequencyList.index(focusMorphString)
                 isFrequency = True
                 frequencyWeight = C('frequency.txt weight scale')
-                
+
                 # The bigger this number, the lower mmi becomes
                 usefulness += (frequencyListLength - focusMorphIndex) * frequencyWeight
             except:

@@ -22,6 +22,9 @@ class Morphemizer:
         '''
         return 'No information availiable'
 
+    def getDictionary(self):
+        return ''
+
 ####################################################################################################
 # Morphemizer Helpers
 ####################################################################################################
@@ -49,6 +52,11 @@ class MecabMorphemizer(Morphemizer):
 
     def getDescription(self):
         return 'Japanese'
+
+    def getDictionary(self):
+        # Spawn mecab if necessary.
+        p, dict = mecab()
+        return dict
 
 MECAB_NODE_UNIDIC_BOS = 'BOS/EOS,*,*,*,*,*,*,*,*,*,*,*,*,*'
 MECAB_NODE_UNIDIC_PARTS = ['%f[7]','%m','%f[0]','%f[1]','%f[6]','%f[12]']
@@ -180,50 +188,54 @@ def mecab(): # IO MecabProc
     else:
         si = None
 
-    try:
-        # First, try `mecab` from the system.  See if that exists and
-        # is compatible with our assumptions.
-        return spawnMecab(['mecab'], si)
-    except OSError:
-        # If no luck, rummage inside the Japanese Support addon and borrow its way
-        # of running the mecab bundled inside it.
-        reading = None
+    # Search for mecab
+    reading = None
+
+    # 1st priority - MecabUnidic
+    if importlib.util.find_spec('13462835'):
+        try:
+            reading = importlib.import_module('13462835.reading')
+            mecab_source = 'MecabUnidic'
+        except ModuleNotFoundError:
+            pass
+
+    # 2nd priority - Japanese Support
+    if (not reading) and importlib.util.find_spec('3918629684'):
+        try:
+            reading = importlib.import_module('3918629684.reading')
+            mecab_source = 'Japanese Support'
+        except ModuleNotFoundError:
+            pass
+
+    # 3nd priority - MIAJapaneseSupport
+    if (not reading) and importlib.util.find_spec('MIAJapaneseSupport'):
+        try:
+            reading = importlib.import_module('MIAJapaneseSupport.reading')
+            mecab_source = 'MIAJapaneseSupport'
+        except ModuleNotFoundError:
+            pass
+
+    # 4th priority - system mecab
+    if (not reading):
+        try:
+            mecab_source = 'System'
+            return spawnMecab(['mecab'], si), 'System'
+        except:
+            raise OSError('No working dictionaries found.')
         
-        # MeCab UniDic
-        if importlib.util.find_spec('13462835'):
-            try:
-                reading = importlib.import_module('13462835.reading')
-            except ModuleNotFoundError:
-                pass
+    m = reading.MecabController()
+    m.setup()
+    # m.mecabCmd[1:4] are assumed to be the format arguments.
 
-        # Japanese Support
-        if (not reading) and importlib.util.find_spec('3918629684'):
-            try:
-                reading = importlib.import_module('3918629684.reading')
-            except ModuleNotFoundError:
-                pass
-
-        if (not reading) and importlib.util.find_spec('MIAJapaneseSupport'):
-            try:
-                reading = importlib.import_module('MIAJapaneseSupport.reading')
-            except ModuleNotFoundError:
-                pass
-        
-        # MecabController = importlib.import_module('3918629684.reading', 'MecabController')
-        # from 3918629684.reading import si, MecabController
-        m = reading.MecabController()
-        m.setup()
-        # m.mecabCmd[1:4] are assumed to be the format arguments.
-
-        # sys.stderr.write(str(m.mecabCmd[:1]))
-        # sys.stderr.write(str(m.mecabCmd[4:]))
-        # sys.stderr.write(str(reading.si))
-        return spawnMecab(m.mecabCmd[:1] + m.mecabCmd[4:], si)
+    # sys.stderr.write(str(m.mecabCmd[:1]))
+    # sys.stderr.write(str(m.mecabCmd[4:]))
+    # sys.stderr.write(str(reading.si))
+    return spawnMecab(m.mecabCmd[:1] + m.mecabCmd[4:], si), mecab_source
 
 @memoize
 def interact( expr ): # Str -> IO Str
     ''' "interacts" with 'mecab' command: writes expression to stdin of 'mecab' process and gets all the morpheme infos from its stdout. '''
-    p = mecab()
+    p, _ = mecab()
     expr = expr.encode( MECAB_ENCODING, 'ignore' )
     p.stdin.write( expr + b'\n' )
     p.stdin.flush()

@@ -14,6 +14,12 @@ def onMorphManManager():
     importlib.reload( manager )
     manager.main()
 
+def onMorphManReadability():
+    mw.toolbar.draw()
+    from .morph import readability
+    importlib.reload( readability )
+    readability.main()
+
 def onMorphManPreferences():
     from .morph import preferencesDialog
     importlib.reload( preferencesDialog )
@@ -38,7 +44,15 @@ def main():
     # Add gui manager menu button
     a = QAction( 'MorphMan &Database Manager', mw )
     a.setStatusTip(_("Open gui manager to inspect, compare, and analyze MorphMan DBs"))
+    a.setShortcut(_("Ctrl+D"))
     a.triggered.connect(onMorphManManager)
+    mw.form.menuTools.addAction( a )
+
+    # Add readability tool menu button
+    a = QAction( 'MorphMan Readability &Analyzer', mw )
+    a.setStatusTip(_("Check readability and build frequency lists"))
+    a.setShortcut(_("Ctrl+A"))
+    a.triggered.connect(onMorphManReadability)
     mw.form.menuTools.addAction( a )
 
 
