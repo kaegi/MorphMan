@@ -34,7 +34,8 @@ def updateStats( knownDb=None ):
     if knownDb is None:
         knownDb = MorphDb( cfg1('path_known'), ignoreErrors=True )
 
-    d['totalKnown'] = len( knownDb.db )
+    d['totalVariations'] = len( knownDb.db )
+    d['totalKnown'] = len( knownDb.groups )
 
     saveStats( d )
     mw.progress.finish()
@@ -44,7 +45,10 @@ def getStatsLink():
     d = loadStats()
     if not d: return ( 'K ???', '????' )
 
-    name = 'K %d' % d['totalKnown']
+    total_known = d.get('totalKnown', 0)
+    total_variations = d.get('totalVariations', total_known)
+
+    name = 'K %d V %d' % (total_known, total_variations)
     details = 'Total known morphs'
     return ( name, details )
 

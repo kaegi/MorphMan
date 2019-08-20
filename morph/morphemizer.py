@@ -59,12 +59,12 @@ class MecabMorphemizer(Morphemizer):
         return dict
 
 MECAB_NODE_UNIDIC_BOS = 'BOS/EOS,*,*,*,*,*,*,*,*,*,*,*,*,*'
-MECAB_NODE_UNIDIC_PARTS = ['%f[7]','%m','%f[0]','%f[1]','%f[6]','%f[12]']
+MECAB_NODE_UNIDIC_PARTS = ['%f[7]', '%f[12]','%m','%f[6]','%f[0]','%f[1]']
 MECAB_NODE_LENGTH_UNIDIC = len( MECAB_NODE_UNIDIC_PARTS )
 MECAB_NODE_IPADIC_BOS = 'BOS/EOS,*,*,*,*,*,*,*,*'
-MECAB_NODE_IPADIC_PARTS = ['%f[6]','%m','%f[0]','%f[1]','%f[7]']
+MECAB_NODE_IPADIC_PARTS = ['%f[6]','%m','%f[7]', '%f[0]','%f[1]']
 MECAB_NODE_LENGTH_IPADIC = len( MECAB_NODE_IPADIC_PARTS )
-MECAB_NODE_READING_INDEX = 4
+MECAB_NODE_READING_INDEX = 2
 
 MECAB_ENCODING = None
 MECAB_POS_BLACKLIST = [
@@ -91,37 +91,35 @@ def getMorpheme(parts):
         if len(parts) != MECAB_NODE_LENGTH_UNIDIC:
             return None
         
-        pos = parts[2]
-        subPos = parts[3]
+        pos = parts[4] if parts[4] != '' else '*'
+        subPos = parts[5] if parts[5] != '' else '*'
+        
         if (pos in MECAB_POS_BLACKLIST) or (subPos in MECAB_SUBPOS_BLACKLIST):
             return None
 
-        root = parts[0]
-        inflected = parts[1]
-        reading = parts[4]
-        base = parts[5]
-
-        # Avoid kanji changes and promotions e.g. 撃つ->打つ
-        root_kanji = extract_unicode_block(kanji, root)
-        base_kanji = extract_unicode_block(kanji, base)
-        if root_kanji != base_kanji:
-            root = base
-        return Morpheme(root, inflected, pos, subPos, reading)
+        norm = parts[0]
+        base = parts[1]
+        inflected = parts[2]
+        reading = parts[3]
+        
+        return Morpheme(norm, base, inflected, reading, pos, subPos)
     else:
         if len(parts) != MECAB_NODE_LENGTH_IPADIC:
             return None
 
-        pos = parts[2]
-        subPos = parts[3]
+        pos = parts[3] if parts[3] != '' else '*'
+        subPos = parts[4] if parts[4] != '' else '*'
+
         if (pos in MECAB_POS_BLACKLIST) or (subPos in MECAB_SUBPOS_BLACKLIST):
             return None
-        
+
+        norm = parts[0]
         base = parts[0]
         inflected = parts[1]
-        reading = parts[4]
+        reading = parts[2]
 
-        return fixReading(Morpheme(base, inflected, pos, subPos, reading))
-
+        m = fixReading(Morpheme(norm, base, inflected, reading, pos, subPos))
+        return m
 
 @memoize
 def getMorphemesMecab(e):
@@ -239,6 +237,7 @@ def interact( expr ): # Str -> IO Str
     expr = expr.encode( MECAB_ENCODING, 'ignore' )
     p.stdin.write( expr + b'\n' )
     p.stdin.flush()
+
     return '\r'.join( [ str( p.stdout.readline().rstrip( b'\r\n' ), MECAB_ENCODING ) for l in expr.split(b'\n') ] )
 
 @memoize

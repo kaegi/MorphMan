@@ -9,10 +9,9 @@ def pre( b ): return { 'morphemes': [] }
 def per( st, n ):
     notecfg = getFilter(n)
     if notecfg is None: return st
-    ignore_grammar_pos = cfg1('ignore grammar position')
     morphemizer = getMorphemizerByName(notecfg['Morphemizer'])
     for f in notecfg['Fields']:
-        ms = getMorphemes(morphemizer, n[f], n.tags, ignore_grammar_pos)
+        ms = getMorphemes(morphemizer, n[f], n.tags)
         st['morphemes'] += ms
     return st
 

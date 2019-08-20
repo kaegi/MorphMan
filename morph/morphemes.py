@@ -16,53 +16,77 @@ except ImportError:
 ################################################################################
 
 class Morpheme:
-    def __init__( self, base, inflected, pos, subPos, read ):
+    def __init__( self, norm, base, inflected, read, pos, subPos ):
         """ Initialize morpheme class.
 
         POS means part-of-speech.
 
         Example morpheme infos for the expression "歩いて":
 
+        :param str norm: 歩く [normalized base form]
         :param str base: 歩く
         :param str inflected: 歩い  [mecab cuts off all endings, so there is not て]
+        :param str read: アルイ
         :param str pos: 動詞
         :param str subPos: 自立
-        :param str read: アルイ
 
         """
         # values are created by "mecab" in the order of the parameters and then directly passed into this constructor
         # example of mecab output:    "歩く     歩い    動詞    自立      アルイ"
         # matches to:                 "base     infl    pos     subPos    read"
-        self.read   = read
+        self.norm = norm if norm is not None else base
         self.base   = base
+        self.inflected = inflected
+        self.read   = read
         self.pos    = pos # type of morpheme detemined by mecab tool. for example: u'動詞' or u'助動詞', u'形容詞'
         self.subPos = subPos
-        self.inflected = inflected
+
+    def __setstate__(self, d):
+        """ Override default pickle __setstate__ to initialize missing defaults in old databases
+        """
+        self.norm = d.get('norm', None)
+        self.base = d['base']
+        self.inflected = d['inflected']
+        self.read = d['read']
+        self.pos = d['pos']
+        self.subPos = d['subPos']
 
     def __eq__( self, o ):
         if not isinstance( o, Morpheme ): return False
-        if self.read != o.read: return False
+        if self.norm != o.norm: return False
         if self.base != o.base: return False
+        if self.inflected != o.inflected: return False
+        if self.read != o.read: return False
         if self.pos != o.pos: return False
         if self.subPos != o.subPos: return False
-        #if self.inflected != o.inflected: return False
         return True
 
     def __hash__( self ):
-        #return hash( (self.pos, self.subPos, self.read, self.base, self.inflected) )
-        return hash( (self.read, self.base, self.pos, self.subPos) )
+        return hash( ( self.norm, self.base, self.inflected, self.read, self.pos, self.subPos ) )
+
+    def getGroupKey( self ):
+        if cfg1('ignore grammar position'):
+            return '%s\t%s' % (self.norm, self.read)
+        else:
+            return '%s\t%s\t%s\t' % (self.norm, self.read, self.pos)
 
     def show( self ): # str
-        return '\t'.join([ self.base, self.pos, self.subPos, self.read ])
+        return '\t'.join([ self.norm, self.base, self.inflected, self.read, self.pos, self.subPos ])
 
-def ms2str( ms ): # [Morpheme] -> Str
-    return '\n'.join( m.show() for m in ms )
+def ms2str( ms ): # [(Morpheme, locs)] -> Str
+    return '\n'.join( ['%d\t%s' % (len(m[1]), m[0].show()) for m in ms] )
 
-def hasPositions( m ):
-    return (m.pos != '' or m.subPos != '')
+class MorphDBUnpickler(pickle.Unpickler):
+    class MorphDBUnpickler(pickle.Unpickler):
+        def __init__(self, file):
+            super(MorphDBUnpickler, self).__init__(file) 
 
-def removePositions( m ):
-    return Morpheme(m.base, m.inflected, '', '', m.read)
+    def find_class(self, cmodule, cname):
+        # Override default class lookup for this module to allow loading databases generated with older
+        # versions of the MorphMan add-on.
+        if cmodule.endswith('.morph.morphemes'):
+            return globals()[cname]
+        return pickle.Unpickler.find_class(self, cmodule, cname)
 
 def getMorphemes(morphemizer, expression, note_tags=None, ignore_positions=False):
     if jcfg('Option_IgnoreBracketContents'):
@@ -96,9 +120,6 @@ def getMorphemes(morphemizer, expression, note_tags=None, ignore_positions=False
 
     ms = morphemizer.getMorphemesFromExpr(expression)
 
-    if ignore_positions:
-        ms = [ removePositions( m ) for m in ms ]
-
     return ms
 
 
@@ -113,7 +134,7 @@ class Location:
 
 class Nowhere( Location ):
     def __init__( self, tag, weight=0 ):
-        self.tag
+        self.tag = tag
         self.maturity = 0
         self.weight   = weight
     def show( self ):
@@ -151,6 +172,24 @@ class AnkiDeck( Location ):
     def show( self ):
         return '%d[%s]@%d' % ( self.noteId, self.fieldName, self.maturity )
 
+kanji = r'[㐀-䶵一-鿋豈-頻]'
+def extract_unicode_block(unicode_block, string):
+    ''' extracts and returns all texts from a unicode block from string argument.
+        Note that you must use the unicode blocks defined above, or patterns of similar form '''
+    return re.findall( unicode_block, string)
+
+def fuzzyMatchMorpheme( m, alt ):
+    if m.norm != alt.norm:
+        return False
+    if m.base == alt.base:
+        return True
+    m_kanji = extract_unicode_block(kanji, m.base)
+    alt_kanji = extract_unicode_block(kanji, alt.base)
+    for c in m_kanji:
+        if c not in alt_kanji:
+            return False
+    return True
+
 ### Morpheme DB
 class MorphDb:
     @staticmethod
@@ -172,6 +211,7 @@ class MorphDb:
 
     def __init__( self, path=None, ignoreErrors=False ): # Maybe Filepath -> m ()
         self.db     = {} # Map Morpheme {Location}
+        self.groups = {} # Map NormMorpheme {Set(Morpheme)}
         if path:
             try: self.load( path )
             except IOError:
@@ -195,84 +235,105 @@ class MorphDb:
                 s += '  %s\n' % m.show()
         return s
 
-    def showMs( self ): # Str
-        return ms2str( list(self.db.keys()) )
+    def showMs( self ): # Str       
+        return ms2str( sorted(self.db.items(), key=lambda it: it[0].show()) )
 
     def save( self, path ): # FilePath -> IO ()
         par = os.path.split( path )[0]
         if not os.path.exists( par ):
             os.makedirs( par )
         f = gzip.open( path, 'wb' )
-        pickle.dump( self.db, f, -1 )
+        db = {}
+        db['version'] = 2.0
+        db['db'] = self.db
+        pickle.dump( db, f, -1 )
         f.close()
 
     def load( self, path ): # FilePath -> m ()
         f = gzip.open( path, 'rb' )
         try:
-            self.db = pickle.load( f )
-
-            # Fix up positions in older databases.
-            ignore_positions = cfg1('ignore grammar position')
-            if ignore_positions:
-                need_fix = False
-                for morph in self.db.keys():
-                    if hasPositions(morph):
-                        need_fix = True
-                        break
-                if need_fix:
-                    new_db = {}
-                    for morph, locs in self.db.items():
-                        m = removePositions(morph)
-                        if m in new_db:
-                            new_db[m].update(locs)
-                        else:
-                            new_db[m] = set(locs)
-                    self.db = new_db
-
+            db = MorphDBUnpickler(f).load()
+            for m,locs in db.items():
+                self.addMLs1(m, locs)
         except ModuleNotFoundError as e:
             msg = 'ModuleNotFoundError was thrown. That probably means that you\'re using database files generated in the older versions of MorphMan. To fix this issue, please refer to the written guide on database migration (copy-pasteable link will appear in the next window): https://gist.github.com/InfiniteRain/1d7ca9ad307c4203397a635b514f00c2'
             aqt.utils.showInfo(msg)
-            raise ModuleNotFoundError('To fix this issue, refer to: https://gist.github.com/InfiniteRain/1d7ca9ad307c4203397a635b514f00c2')
+            raise e
         f.close()
+
+    # Returns True if DB has variations that can match 'm'.
+    def matches( self, m ): # Morpheme
+        gk = m.getGroupKey()
+        ms = self.groups.get(gk, None)
+        if ms is None:
+            return False
+
+        # Fuzzy match to variations
+        for alt in ms:
+            if fuzzyMatchMorpheme(m, alt):
+                return True
+        
+        return False
+
+    def getMatchingLocs( self, m ): # Morpheme
+        locs = set()
+        gk = m.getGroupKey()
+        ms = self.groups.get(gk, None)
+        if ms is None:
+            return locs
+
+        # Fuzzy match to variations
+        for variation in ms:
+            if fuzzyMatchMorpheme(m, variation):
+                locs.update(self.db[variation])
+        return locs
 
     # Adding
     def clear( self ): # m ()
         self.db = {}
+        self.groups = {}
 
     def addMLs( self, mls ): # [ (Morpheme,Location) ] -> m ()
         for m,loc in mls:
-            try:
+            if m in self.db:
                 self.db[m].add( loc )
-            except KeyError:
+            else:
                 self.db[m] = set([ loc ])
+                gk = m.getGroupKey()
+                if gk not in self.groups:
+                    self.groups[gk] = set([m])
+                else:
+                    self.groups[gk].add(m)
 
     def addMLs1( self, m, locs ): # Morpheme -> {Location} -> m ()
-        if m not in self.db:
-            self.db[m] = locs
-        else:
+        if m in self.db:
             self.db[m].update( locs )
+        else:
+            self.db[m] = set( locs )
+            gk = m.getGroupKey()
+            if gk not in self.groups:
+                self.groups[gk] = set([m])
+            else:
+                self.groups[gk].add(m)
 
     def addMsL( self, ms, loc ): # [Morpheme] -> Location -> m ()
         self.addMLs( (m,loc) for m in ms )
 
     def addFromLocDb( self, ldb ): # Map Location {Morpheme} -> m ()
         for l,ms in ldb.items():
-            for m in ms:
-                try:
-                    self.db[ m ].add( l )
-                except KeyError:
-                    self.db[ m ] = set([ l ])
+            self.addMLs([(m,l) for m in ms])
 
     # returns number of added entries
     def merge( self, md ): # Db -> m Int
         new = 0
         for m,locs in md.db.items():
-            try:
+            if m in self.db:
                 new += len( locs - self.db[m] )
                 self.db[m].update( locs )
-            except KeyError:
-                self.db[m] = locs
+            else:
                 new += len( locs )
+                self.addMLs1( m, locs )
+
         return new
 
     def importFile( self, path, morphemizer, maturity=0 ): # FilePath -> Morphemizer -> Maturity? -> IO ()
@@ -280,10 +341,8 @@ class MorphDb:
         inp = f.readlines()
         f.close()
 
-        ignore_grammar_pos = cfg1('ignore grammar position')
-
         for i,line in enumerate(inp):
-            ms = getMorphemes( morphemizer, line.strip(), ignore_positions=ignore_grammar_pos)
+            ms = getMorphemes( morphemizer, line.strip())
             self.addMLs( ( m, TextFile( path, i+1, maturity ) ) for m in ms )
 
     # Analysis (local)
@@ -297,8 +356,10 @@ class MorphDb:
         self._locDb = d = {}
         for m,ls in self.db.items():
             for l in ls:
-                try: d[ l ].add( m )
-                except KeyError: d[ l ] = set([ m ])
+                if l in d:
+                    d[ l ].add( m )
+                else:
+                    d[ l ] = set([ m ])
         return d
 
     def fidDb( self, recalc=True ): # Maybe Bool -> m Map FactId Location
@@ -313,16 +374,16 @@ class MorphDb:
 
     def countByType( self ): # Map Pos Int
         d = {}
-        for m in self.db:
-            try: d[ m.pos ] += 1
-            except KeyError: d[ m.pos ] = 1
+        for m in self.db.keys():
+            d[ m.pos ] = d.get(m.pos, 0) + 1
         return d
 
     def analyze( self ): # m ()
         self.posBreakdown = self.countByType()
-        self.count = len( self.db )
+        self.kCount = len( self.groups )
+        self.vCount = len( self.db )
 
     def analyze2str( self ): # m Str
         self.analyze()
-        posStr = '\n'.join( '%d\t%d%%\t%s' % ( v, 100.*v/self.count, k ) for k,v in self.posBreakdown.items() )
-        return 'Total morphemes: %d\nBy part of spech:\n%s' % ( self.count, posStr )
+        posStr = '\n'.join( '%d\t%d%%\t%s' % ( v, 100.*v/self.vCount, k ) for k,v in self.posBreakdown.items() )
+        return 'Total normalized morphemes: %d\nTotal variations: %d\nBy part of speech:\n%s' % ( self.kCount, self.vCount, posStr )

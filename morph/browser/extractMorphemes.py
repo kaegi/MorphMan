@@ -15,10 +15,9 @@ def per( st, n ):
     mats = mw.col.db.list( 'select ivl from cards where nid = :nid', nid=n.id )
     notecfg = getFilter(n)
     if notecfg is None: return st
-    ignore_grammar_pos = cfg1('ignore grammar position')
     morphemizer = getMorphemizerByName(notecfg['Morphemizer'])
     for f in notecfg['Fields']:
-        ms = getMorphemes(morphemizer, n[f], n.tags, ignore_grammar_pos)
+        ms = getMorphemes(morphemizer, n[f], n.tags)
         loc = AnkiDeck(n.id, f, n[f], n.guid, mats)
         st['morphDb'].addMsL(ms, loc)
 
