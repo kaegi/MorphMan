@@ -31,7 +31,7 @@ def natural_keys(text):
     '''
     return [ atoi(c) for c in re.split(r'(\d+)', text) ]
    
-class Show:
+class Source:
     def __init__(self, name, morphs):
         self.name = os.path.basename(name)
         self.morphs = morphs
@@ -74,7 +74,7 @@ class MorphMan(QDialog):
         # Default settings
         self.ui.inputPathEdit.setText(cfg1('path_analysis_input'))
         self.ui.inputPathButton.clicked.connect(lambda le: getPath( self.ui.inputPathEdit, "Select Input Directory", True ))
-        self.ui.masterFreqEdit.setText(cfg1('path_global_frequency_list'))
+        self.ui.masterFreqEdit.setText(cfg1('path_master_frequency_list'))
         self.ui.masterFreqButton.clicked.connect(lambda le: getPath( self.ui.masterFreqEdit, "Select Master Frequency List" ))
         self.ui.knownMorphsEdit.setText(cfg1('path_known'))
         self.ui.knownMorphsButton.clicked.connect(lambda le: getPath( self.ui.knownMorphsEdit, "Select Known Morphs DB" ))
@@ -161,7 +161,7 @@ class MorphMan(QDialog):
                     master_current_score += master_frequency.get(m.base, 0)
 
         ignore_grammar_pos = cfg1('ignore grammar position')
-        shows = []
+        sources = []
 
         def measure_readability(file_name, is_ass, is_srt):
             i_count = 0
@@ -221,13 +221,13 @@ class MorphMan(QDialog):
                 with open(file_name.strip(), 'rt', encoding='utf-8') as f:
                     input = '\n'.join([l.strip().replace(u'\ufeff', '') for l in f.readlines()])
                     proc_lines(input, is_ass, is_srt)
-                    show = Show(file_name, seen_morphs)
+                    source = Source(file_name, seen_morphs)
                     readability = 0.0 if i_count == 0 else 100.0 * known_count / i_count
                     known_percent = 0.0 if len(seen_morphs.keys()) == 0 else 100.0 * len(known_morphs) / len(seen_morphs.keys())
-                    self.writeOutput('%s\t%d\t%d\t%0.2f\t%d\t%d\t%0.2f\n' % (show.name, len(seen_morphs), len(known_morphs), known_percent, i_count, known_count, readability))
+                    self.writeOutput('%s\t%d\t%d\t%0.2f\t%d\t%d\t%0.2f\n' % (source.name, len(seen_morphs), len(known_morphs), known_percent, i_count, known_count, readability))
                     
                     if save_study_plan:
-                        shows.append(show)
+                        sources.append(source)
             except:
                 self.writeOutput("Failed to process '%s'\n" % file_name)
                 raise
@@ -247,7 +247,6 @@ class MorphMan(QDialog):
             list_of_files += [os.path.join(dirpath, filename) for filename in filenames if accepted_filetype(filename)]
 
         if len(list_of_files) > 0:
-            self.writeOutput("\n[Current Readability]\n")
             self.writeOutput('%s\t%s\t%s\t%s\t%s\t%s\t%s\n' % ("Input", "Total Morphs", "Known Morphs", "% Known Morphs", "Total Instances", "Known Instances", "% Readability"))
 
             mw.progress.start( label='Updating data', max=len(list_of_files), immediate=True )
@@ -260,6 +259,7 @@ class MorphMan(QDialog):
             mw.progress.finish()
         else:
             self.writeOutput('\nNo files found to process.\n')
+            return
 
         if save_word_report:
             self.writeOutput("\n[Saving word report to '%s'...]\n" %  word_report_path)
@@ -281,17 +281,15 @@ class MorphMan(QDialog):
                     part1 = '*' if m[0].subPos == '' else m[0].subPos
                     print('%d\t%s\t%d\t%d\t%0.8f\t%0.8f\t%s' % (m[1], m[0].base, group_idx, morph_idx, morph_delta, morph_total, part0 + ',' + part1 + ',*,*'), file=f)
 
-        
-
         learned_tot = 0
         learned_morphs = []
 
         all_missing_morphs = []
 
         if save_study_plan:
-            self.writeOutput("\n[Saving Sutudy Plan to '%s'...]\n" %  study_plan_path)
+            self.writeOutput("\n[Saving Study Plan to '%s'...]\n" %  study_plan_path)
             with open(study_plan_path, 'wt', encoding='utf-8') as f:
-                for n, s in enumerate(shows):
+                for n, s in enumerate(sources):
                     known_i = 0
                     seen_i = 0
                     learned_m = 0
@@ -315,7 +313,7 @@ class MorphMan(QDialog):
                         readability = 100.0
                     readability_0 = readability
 
-                    learned_this_show = []
+                    learned_this_source = []
 
                     for m in sorted(missing_morphs, key=operator.itemgetter(4), reverse = True):
                         if readability >= readability_target:
@@ -323,17 +321,17 @@ class MorphMan(QDialog):
                         
                         known_words.add(m[0])
                         learned_morphs.append(m[0])
-                        learned_this_show.append(m)
+                        learned_this_source.append(m)
                         known_i += m[1]
                         learned_m += 1
                         readability = known_i * 100.0 / seen_i
 
                     learned_tot += learned_m
-                    show_str = "Show '%s' to learn: (%3d/%4d) readability: %0.2f -> %0.2f\n" % (s.name, learned_m, learned_tot, readability_0, readability)
-                    self.writeOutput(show_str)
-                    f.write(show_str)
+                    source_str = "'%s' study goal: (%3d/%4d) readability: %0.2f -> %0.2f\n" % (s.name, learned_m, learned_tot, readability_0, readability)
+                    self.writeOutput(source_str)
+                    f.write(source_str)
 
-                    for idx, m in enumerate(learned_this_show):
+                    for idx, m in enumerate(learned_this_source):
                         f.write('\t' + m[0].show() + '\t[ep_freq %s all_freq %s master_freq %d]\n' % (m[1], m[2], m[3]))
 
                 if save_frequency_list:

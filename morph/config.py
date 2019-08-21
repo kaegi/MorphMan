@@ -17,8 +17,8 @@ default = {
     'path_json': os.path.join( mw.pm.profileFolder(), 'dbs', 'morphman_config.json' ),
     'path_log': os.path.join( mw.pm.profileFolder(), 'morphman.log' ),
     'path_stats': os.path.join( mw.pm.profileFolder(), 'morphman.stats' ),
-    'path_analysis_input': os.path.join(user_path, 'Downloads', 'Subtitles', 'FMA Brotherhood JP'),
-    'path_global_frequency_list': os.path.join(mw.pm.profileFolder(), 'dbs', 'netflix_unidic_word_freq_report.txt'),
+    'path_analysis_input': '',         # Default path to Input directory in Readability Analyzer.
+    'path_master_frequency_list': '',  # Default path to Master Frequency List in Readability Analyzer.
 
     # change the thresholds for various stages of maturity, in days
     'threshold_mature': 21,         # 21 days is what Anki uses

@@ -89,7 +89,7 @@ class Ui_ReadabilityDialog(object):
         self.masterFreqButton.setGeometry(QtCore.QRect(10, 40, 41, 23))
         self.masterFreqButton.setObjectName("masterFreqButton")
         self.masterFreqLabel = QtWidgets.QLabel(self.generalSettingsGroupBox)
-        self.masterFreqLabel.setGeometry(QtCore.QRect(60, 21, 106, 16))
+        self.masterFreqLabel.setGeometry(QtCore.QRect(60, 21, 181, 16))
         self.masterFreqLabel.setAlignment(QtCore.Qt.AlignBottom|QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft)
         self.masterFreqLabel.setObjectName("masterFreqLabel")
         self.masterFreqEdit = QtWidgets.QLineEdit(self.generalSettingsGroupBox)
