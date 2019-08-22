@@ -19,7 +19,7 @@ def post( st ):
     if len(st['morphemes']) == 0:
         infoMsg('----- No morphemes, check your filters -----')
         return
-    s = ms2str( st['morphemes'] )
+    s = ms2str( [(m, []) for m in st['morphemes']] )
     infoMsg( '----- All -----\n' + s )
 
 def runViewMorphemes():
