@@ -44,7 +44,7 @@ class Morpheme:
     def __setstate__(self, d):
         """ Override default pickle __setstate__ to initialize missing defaults in old databases
         """
-        self.norm = d.get('norm', None)
+        self.norm = d['norm'] if 'norm' in d else d['base']
         self.base = d['base']
         self.inflected = d['inflected']
         self.read = d['read']
