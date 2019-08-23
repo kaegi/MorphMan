@@ -203,7 +203,7 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
     # must avoid formatting a smaller morph that is contained in a bigger morph
     # => do largest subs first and don't sub anything already in <span>
     def nonSpanSub( sub, repl, string ):
-        return ''.join( re.sub( sub, repl, s ) if not s.startswith('<span') else s for s in re.split( '(<span.*?</span>)', string ) )
+        return ''.join( re.sub( sub, repl, s, flags=re.IGNORECASE ) if not s.startswith('<span') else s for s in re.split( '(<span.*?</span>)', string ) )
 
     frequencyListPath = cfg1('path_frequency')
     try:
@@ -242,13 +242,12 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
         except:
             frequency = 'false'
 
-        repl = '<span class="morphHighlight" mtype="{mtype}" priority="{priority}" frequency="{frequency}" mat="{mat}">{morph}</span>'.format(
-                morph = m.inflected,
+        repl = '<span class="morphHighlight" mtype="{mtype}" priority="{priority}" frequency="{frequency}" mat="{mat}">\\1</span>'.format(
                 mtype = mtype,
                 priority = priority,
                 frequency = frequency,
                 mat = mat
                 )
-        txt = nonSpanSub( m.inflected, repl, txt )
+        txt = nonSpanSub( '(%s)' % m.inflected, repl, txt )
     return txt
 addHook( 'fmod_morphHighlight', highlight )
