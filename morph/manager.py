@@ -127,13 +127,13 @@ class MorphMan( QDialog ):
 
         # Display
         vbox.addSpacing(40)
-        self.col4Mode = QRadioButton( 'Results as 4col morpheme' )
-        self.col4Mode.setChecked( True )
-        self.col1Mode = QRadioButton( 'Results as 1col morpheme' )
-        self.col4Mode.clicked.connect(self.colModeButtonListener)
-        self.col1Mode.clicked.connect(self.colModeButtonListener)
-        vbox.addWidget( self.col4Mode )
-        vbox.addWidget( self.col1Mode )
+        self.col_all_Mode = QRadioButton( 'All result columns' )
+        self.col_all_Mode.setChecked( True )
+        self.col_one_Mode = QRadioButton( 'One result column' )
+        self.col_all_Mode.clicked.connect(self.colModeButtonListener)
+        self.col_one_Mode.clicked.connect(self.colModeButtonListener)
+        vbox.addWidget( self.col_all_Mode )
+        vbox.addWidget( self.col_one_Mode )
         self.morphDisplay = QTextEdit()
         self.analysisDisplay = QTextEdit()
 
@@ -180,7 +180,7 @@ class MorphMan( QDialog ):
         elif type == 'inter':   ms = aSet.intersection( bSet )
         elif type == 'union':   ms = aSet.union( bSet )
 
-        self.db.db = {}
+        self.db.clear()
         for m in ms:
             locs = set()
             if m in self.aDb.db: locs.update( self.aDb.db[m] )
@@ -216,10 +216,10 @@ class MorphMan( QDialog ):
                 return # User has not selected a db view yet
 
     def updateDisplay( self ):
-        if self.col4Mode.isChecked():
+        if self.col_all_Mode.isChecked():
             self.morphDisplay.setText( self.db.showMs() )
         else:
-            self.morphDisplay.setText( '\n'.join( [ m.base for m in self.db.db ] ) )
+            self.morphDisplay.setText( '\n'.join( sorted(list(set([ m.norm for m in self.db.db ]))) ) )
         self.analysisDisplay.setText( self.db.analyze2str() )
 
 def main():

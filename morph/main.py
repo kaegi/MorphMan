@@ -61,8 +61,6 @@ def mkAllDb( allDb=None ):
     fidDb   = allDb.fidDb()
     locDb   = allDb.locDb( recalc=False )   # fidDb() already forces locDb recalc
 
-    ignore_grammar_pos = cfg1('ignore grammar position')
-
     mw.progress.update( label='Generating all.db data' )
     for i,( nid, mid, flds, guid, tags ) in enumerate( db.execute( 'select id, mid, flds, guid, tags from notes' ) ):
         if i % 500 == 0:    mw.progress.update( value=i )
@@ -94,7 +92,7 @@ def mkAllDb( allDb=None ):
             loc = fidDb.get( ( nid, guid, fieldName ), None )
             if not loc:
                 loc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
-                ms = getMorphemes(morphemizer, fieldValue, ts, ignore_grammar_pos)
+                ms = getMorphemes(morphemizer, fieldValue, ts)
                 if ms: #TODO: this needed? should we change below too then?
                     locDb[ loc ] = ms
             else:
@@ -105,7 +103,7 @@ def mkAllDb( allDb=None ):
                 # field changed -> new loc, new morphs
                 elif loc.fieldValue != fieldValue:
                     newLoc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
-                    ms = getMorphemes(morphemizer, fieldValue, ts, ignore_grammar_pos)
+                    ms = getMorphemes(morphemizer, fieldValue, ts)
                     locDb.pop( loc )
                     locDb[ newLoc ] = ms
 
@@ -189,10 +187,10 @@ def updateNotes( allDb ):
         # Determine un-seen/known/mature and i+N
         unseens, unknowns, unmatures, newKnowns = set(), set(), set(), set()
         for morpheme in morphemes:
-            if morpheme not in seenDb.db:      unseens.add( morpheme )
-            if morpheme not in knownDb.db:     unknowns.add( morpheme )
-            if morpheme not in matureDb.db:    unmatures.add( morpheme )
-            if morpheme not in matureDb.db and morpheme in knownDb.db:
+            if not seenDb.matches(morpheme):   unseens.add( morpheme )
+            if not knownDb.matches(morpheme):   unknowns.add( morpheme )
+            if not matureDb.matches(morpheme):   unmatures.add( morpheme )
+            if not matureDb.matches(morpheme) and knownDb.matches(morpheme):
                 newKnowns.add( morpheme )
 
         # Determine MMI - Morph Man Index
@@ -215,7 +213,7 @@ def updateNotes( allDb ):
             if focusMorph in priorityDb:
                 isPriority = True
                 usefulness += C('priority.db weight')
-            focusMorphString = focusMorph.show().split()[0]
+            focusMorphString = focusMorph.base
             try:
                 focusMorphIndex = frequencyList.index(focusMorphString)
                 isFrequency = True
@@ -228,7 +226,7 @@ def updateNotes( allDb ):
 
         # add bonus for studying recent learned knowns (reinforce)
         for morpheme in newKnowns:
-            locs = allDb.db[ morpheme ]
+            locs = knownDb.getMatchingLocs( morpheme )
             if locs:
                 ivl = min( 1, max( loc.maturity for loc in locs ) )
                 usefulness += C('reinforce new vocab weight') // ivl #TODO: maybe average this so it doesnt favor long sentences

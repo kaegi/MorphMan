@@ -2,7 +2,7 @@
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
-from .morphemes import MorphDb, getMorphemes
+from .morphemes import Morpheme, MorphDb, getMorphemes, fuzzyMatchMorpheme
 from .morphemizer import getMorphemizerByName
 from . import readability_ui
 import csv
@@ -32,9 +32,10 @@ def natural_keys(text):
     return [ atoi(c) for c in re.split(r'(\d+)', text) ]
    
 class Source:
-    def __init__(self, name, morphs):
+    def __init__(self, name, morphs, unknown_db):
         self.name = os.path.basename(name)
         self.morphs = morphs
+        self.unknown_db = unknown_db
 
 def getPath( le, caption, open_directory=False ): # LineEdit -> GUI ()
     start_path = os.path.dirname(le.text())
@@ -51,6 +52,39 @@ def getPath( le, caption, open_directory=False ): # LineEdit -> GUI ()
 
     if path:
         le.setText( path )
+
+# Todo: Use a normal DB with file locations.
+class CountingMorphDB:
+    def __init__(self):
+        self.db = {}
+
+    def addMorph(self, m, count):
+        gk = m.getGroupKey()
+        if gk not in self.db:
+            self.db[gk] = {}
+        ms = self.db[gk]
+        if m not in ms:
+            ms[m] = [0, False]
+        ms[m][0] += count
+
+    def getTotalNormMorphs(self):
+        return len(self.db)
+
+    def getTotalVariationMorphs(self):
+        return sum([len(ms) for ms in self.db.values()])
+
+    def getFuzzyCount(self, m):
+        gk = m.getGroupKey()
+        if gk not in self.db:
+            return 0
+        count = 0
+        ms = self.db[gk]
+        for alt,c in ms.items():
+            if c[1]: # Skip marked morphs
+                continue
+            if fuzzyMatchMorpheme(alt, m):
+                count += c[0]
+        return count
 
 class MorphMan(QDialog):
     def __init__(self, parent=None):
@@ -122,10 +156,14 @@ class MorphMan(QDialog):
         word_report_path = os.path.normpath(output_path + '/word_freq_report.txt')
         study_plan_path = os.path.normpath(output_path + '/study_plan.txt')
 
-        known_words = set()
+        master_db = CountingMorphDB()
+        unknown_db = CountingMorphDB()
+
         master_frequency = {}
         master_total_instances = 0
         master_current_score = 0
+        master_weight = 1.0
+        
         all_morphs = {}
 
         if os.path.isfile(master_freq_path):
@@ -134,31 +172,34 @@ class MorphMan(QDialog):
                 for row in csvreader:
                     try:
                         instances = int(row[0])
-                        morph = row[1]
-                        master_frequency[morph] = master_frequency.get(morph, 0) + instances
+                        m = Morpheme(row[1], row[2], row[2], row[3], row[4], row[5])
+
+                        master_db.addMorph(m, instances)
                         master_total_instances += instances
                     except:
                         pass
-            self.writeOutput("Frequency entries loaded: %d\n" % len(master_frequency))
+            self.writeOutput("Master morphs loaded: K %d V %d\n" % (master_db.getTotalNormMorphs(), master_db.getTotalVariationMorphs()))
         else:
             print("Master frequency file '%s' not found" % master_freq_path)
 
         
         if os.path.isfile(known_words_path):
             known_db = MorphDb( known_words_path, ignoreErrors=True )
-            for morph in known_db.db:
-                known_words.add(morph)
-            self.writeOutput("Known morphs loaded: %d\n" % len(known_words))
+
+            total_k = len( known_db.db )
+            total_v = sum( [len( ms ) for ms in known_db.db.values()] )
+            self.writeOutput("Known morphs loaded: K %d V %d\n" % (total_k, total_v))
         else:
             self.writeOutput("Known words DB '%s' not found\n" % known_words_path)
 
         if master_total_instances > 0:
             master_current_score = 0
-            seen_bases = set()
-            for m in known_words:
-                if m.base not in seen_bases:
-                    seen_bases.add(m.base)
-                    master_current_score += master_frequency.get(m.base, 0)
+            for ms in master_db.db.values():
+                for m,c in ms.items():
+                    if known_db.matches(m):
+                        master_current_score += c[0]
+                        c[1] = True # mark matched
+            self.writeOutput("\n[Current master frequency readability] %0.02f\n" % ( master_current_score * 100.0 / master_total_instances))
 
         ignore_grammar_pos = cfg1('ignore grammar position')
         sources = []
@@ -168,6 +209,7 @@ class MorphMan(QDialog):
             known_count = 0
             seen_morphs = {}
             known_morphs = {}
+            source_unknown_db = CountingMorphDB()
 
             def proc_lines(text, is_ass, is_srt):
                 text_index = -1
@@ -184,9 +226,12 @@ class MorphMan(QDialog):
                         
                         seen_morphs[m] = seen_morphs.get(m, 0) + 1
                         i_count += 1
-                        if m in known_words:
+                        if known_db.matches(m):
                             known_morphs[m] = known_morphs.get(m, 0) + 1
                             known_count += 1
+                        else:
+                            unknown_db.addMorph(m, 1)
+                            source_unknown_db.addMorph(m, 1)
 
                 filtered_text = ''
                 for t in text.split('\n'):
@@ -221,7 +266,7 @@ class MorphMan(QDialog):
                 with open(file_name.strip(), 'rt', encoding='utf-8') as f:
                     input = '\n'.join([l.strip().replace(u'\ufeff', '') for l in f.readlines()])
                     proc_lines(input, is_ass, is_srt)
-                    source = Source(file_name, seen_morphs)
+                    source = Source(file_name, seen_morphs, source_unknown_db)
                     readability = 0.0 if i_count == 0 else 100.0 * known_count / i_count
                     known_percent = 0.0 if len(seen_morphs.keys()) == 0 else 100.0 * len(known_morphs) / len(seen_morphs.keys())
                     self.writeOutput('%s\t%d\t%d\t%0.2f\t%d\t%d\t%0.2f\n' % (source.name, len(seen_morphs), len(known_morphs), known_percent, i_count, known_count, readability))
@@ -277,9 +322,7 @@ class MorphMan(QDialog):
                     morph_idx += 1
                     morph_delta = 100.0 * m[1] / all_morphs_count
                     morph_total += morph_delta
-                    part0 = '*' if m[0].pos == '' else m[0].pos
-                    part1 = '*' if m[0].subPos == '' else m[0].subPos
-                    print('%d\t%s\t%d\t%d\t%0.8f\t%0.8f\t%s' % (m[1], m[0].base, group_idx, morph_idx, morph_delta, morph_total, part0 + ',' + part1 + ',*,*'), file=f)
+                    print('%d\t%s\t%s\t%s\t%s\t%s\t%d\t%d\t%0.8f\t%0.8f' % (m[1], m[0].norm, m[0].base, m[0].read, m[0].pos, m[0].subPos, group_idx, morph_idx, morph_delta, morph_total), file=f)
 
         learned_tot = 0
         learned_morphs = []
@@ -298,11 +341,15 @@ class MorphMan(QDialog):
                     for m in s.morphs.items():
                         seen_i += m[1]
                         morph = m[0]
-                        if morph in known_words:
+                        if known_db.matches(morph):
                             known_i += m[1]
                         else:
-                            score = m[1] * 600 + all_morphs[morph] * 600 + master_frequency.get(morph.base, 0)
-                            missing_morphs.append((m[0], m[1], all_morphs[morph], master_frequency.get(morph.base, 0), score))
+                            source_unknown_count = s.unknown_db.getFuzzyCount(morph)
+                            unknown_count = unknown_db.getFuzzyCount(morph)
+                            master_count = master_db.getFuzzyCount(morph)
+                            
+                            score = source_unknown_count * 600 + unknown_count * 600 + master_count * master_weight
+                            missing_morphs.append((m[0], source_unknown_count, unknown_count, master_count, score))
 
 
                     all_missing_morphs += missing_morphs
@@ -319,7 +366,7 @@ class MorphMan(QDialog):
                         if readability >= readability_target:
                             break
                         
-                        known_words.add(m[0])
+                        known_db.addMLs1(m[0], set())
                         learned_morphs.append(m[0])
                         learned_this_source.append(m)
                         known_i += m[1]
@@ -354,11 +401,11 @@ class MorphMan(QDialog):
                 
                 if master_total_instances > 0:
                     master_score = 0
-                    seen_bases = set()
-                    for m in known_words:
-                        if m.base not in seen_bases:
-                            seen_bases.add(m.base)
-                            master_score += master_frequency.get(m.base, 0)
+                    for ms in master_db.db.values():
+                        for m,c in ms.items():
+                            if known_db.matches(m):
+                                master_score += c[0]
+                                c[1] = True # mark matched
                     self.writeOutput("\n[New master frequency readability] %0.02f -> %0.02f\n" % ( master_current_score * 100.0 / master_total_instances, master_score * 100.0 / master_total_instances))
 
 
