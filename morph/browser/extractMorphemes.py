@@ -1,6 +1,7 @@
 #-*- coding: utf-8 -*-
 import os
 from anki.hooks import addHook
+from anki.utils import stripHTML
 from ..morphemes import AnkiDeck, MorphDb, getMorphemes, ms2str
 from ..morphemizer import getMorphemizerByName
 from ..util import addBrowserNoteSelectionCmd, mw, getFilter, infoMsg, QFileDialog, cfg1
@@ -17,7 +18,7 @@ def per( st, n ):
     if notecfg is None: return st
     morphemizer = getMorphemizerByName(notecfg['Morphemizer'])
     for f in notecfg['Fields']:
-        ms = getMorphemes(morphemizer, n[f], n.tags)
+        ms = getMorphemes(morphemizer, stripHTML(n[f]), n.tags)
         loc = AnkiDeck(n.id, f, n[f], n.guid, mats)
         st['morphDb'].addMsL(ms, loc)
 
