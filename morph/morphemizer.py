@@ -266,7 +266,7 @@ class SpaceMorphemizer(Morphemizer):
     '''
     def getMorphemesFromExpr(self, e): # Str -> [Morpheme]
         wordList = [word.lower() for word in re.findall(r"\w+", e, re.UNICODE)]
-        return [Morpheme(word, word, 'UNKNOWN', 'UNKNOWN', word) for word in wordList]
+        return [Morpheme(word, word, word, word, 'UNKNOWN', 'UNKNOWN') for word in wordList]
 
     def getDescription(self):
         return 'Language w/ Spaces'
@@ -281,7 +281,7 @@ class CjkCharMorphemizer(Morphemizer):
     '''
     def getMorphemesFromExpr(self, e): # Str -> [Morpheme]
         from .deps.zhon.hanzi import characters
-        return [Morpheme(character, character, 'CJK_CHAR', 'UNKNOWN', character) for character in re.findall('[%s]' % characters, e)]
+        return [Morpheme(character, character, character, character, 'CJK_CHAR', 'UNKNOWN') for character in re.findall('[%s]' % characters, e)]
 
     def getDescription(self):
         return 'CJK Characters'
@@ -295,7 +295,7 @@ class JiebaMorphemizer(Morphemizer):
         from .deps.jieba import posseg
         from .deps.zhon.hanzi import characters
         e = u''.join(re.findall('[%s]' % characters, e)) # remove all punctuation
-        return [ Morpheme( m.word, m.word, m.flag, u'UNKNOWN', m.word) for m in posseg.cut(e) ] # find morphemes using jieba's POS segmenter
+        return [ Morpheme( m.word, m.word,  m.word,  m.word, m.flag, u'UNKNOWN') for m in posseg.cut(e) ] # find morphemes using jieba's POS segmenter
 
     def getDescription(self):
         return 'Chinese'

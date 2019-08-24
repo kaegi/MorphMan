@@ -112,7 +112,7 @@ def getMorphemes(morphemizer, expression, note_tags=None, ignore_positions=False
             if len(splitted_expression[1]) >= len(expression): continue
 
             a_morphs = getMorphemes(morphemizer, splitted_expression[0], note_tags)
-            b_morphs = [Morpheme(mstr, mstr, 'UNKNOWN', 'UNKNOWN', mstr) for mstr in morphemes]
+            b_morphs = [Morpheme(mstr, mstr, mstr, mstr, 'UNKNOWN', 'UNKNOWN') for mstr in morphemes]
             c_morphs = getMorphemes(morphemizer, splitted_expression[1], note_tags)
 
             return a_morphs + b_morphs + c_morphs
