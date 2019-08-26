@@ -178,7 +178,7 @@ def extract_unicode_block(unicode_block, string):
         Note that you must use the unicode blocks defined above, or patterns of similar form '''
     return re.findall( unicode_block, string)
 
-def fuzzyMatchMorpheme( m, alt ):
+def altIncludesMorpheme( m, alt ):
     if m.norm != alt.norm:
         return False
     if m.base == alt.base:
@@ -267,11 +267,12 @@ class MorphDb:
 
         # Fuzzy match to variations
         for alt in ms:
-            if fuzzyMatchMorpheme(m, alt):
+            if altIncludesMorpheme(m, alt):
                 return True
         
         return False
 
+    # Returns set of morph locations that can match 'm'
     def getMatchingLocs( self, m ): # Morpheme
         locs = set()
         gk = m.getGroupKey()
@@ -281,7 +282,21 @@ class MorphDb:
 
         # Fuzzy match to variations
         for variation in ms:
-            if fuzzyMatchMorpheme(m, variation):
+            if altIncludesMorpheme(m, variation):
+                locs.update(self.db[variation])
+        return locs
+
+    # Returns set of morph locations that 'm' can match
+    def getMatchedLocs( self, m ): # Morpheme
+        locs = set()
+        gk = m.getGroupKey()
+        ms = self.groups.get(gk, None)
+        if ms is None:
+            return locs
+
+        # Fuzzy match to variations
+        for variation in ms:
+            if altIncludesMorpheme(variation, m):
                 locs.update(self.db[variation])
         return locs
 
@@ -344,7 +359,7 @@ class MorphDb:
 
     # Analysis (local)
     def frequency( self, m ): # Morpheme -> Int
-        return sum(getattr(loc, 'weight', 1) for loc in self.db[m])
+        return sum(getattr(loc, 'weight', 1) for loc in self.getMatchedLocs(m))
 
     # Analysis (global)
     def locDb( self, recalc=True ): # Maybe Bool -> m Map Location {Morpheme}

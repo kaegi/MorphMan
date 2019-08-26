@@ -2,7 +2,7 @@
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
-from .morphemes import Morpheme, MorphDb, getMorphemes, fuzzyMatchMorpheme
+from .morphemes import Morpheme, MorphDb, getMorphemes, altIncludesMorpheme
 from .morphemizer import getMorphemizerByName
 from . import readability_ui
 import csv
@@ -82,7 +82,7 @@ class CountingMorphDB:
         for alt,c in ms.items():
             if c[1]: # Skip marked morphs
                 continue
-            if fuzzyMatchMorpheme(alt, m):
+            if altIncludesMorpheme(alt, m):
                 count += c[0]
         return count
 
@@ -186,8 +186,8 @@ class MorphMan(QDialog):
         if os.path.isfile(known_words_path):
             known_db = MorphDb( known_words_path, ignoreErrors=True )
 
-            total_k = len( known_db.db )
-            total_v = sum( [len( ms ) for ms in known_db.db.values()] )
+            total_k = len( known_db.groups )
+            total_v = len( known_db.db )
             self.writeOutput("Known morphs loaded: K %d V %d\n" % (total_k, total_v))
         else:
             self.writeOutput("Known words DB '%s' not found\n" % known_words_path)
@@ -367,7 +367,7 @@ class MorphMan(QDialog):
                             break
                         
                         known_db.addMLs1(m[0], set())
-                        learned_morphs.append(m[0])
+                        learned_morphs.append(m)
                         learned_this_source.append(m)
                         known_i += m[1]
                         learned_m += 1
@@ -387,17 +387,17 @@ class MorphMan(QDialog):
                         unique_set = set()
                         # First output morphs according to the plan.
                         for m in learned_morphs:
-                            if m.base in unique_set:
+                            if m[0].base in unique_set:
                                 continue
-                            unique_set.add(m.base)
-                            print(m.base, file=f)
+                            unique_set.add(m[0].base)
+                            print(m[0].base + '\t[ep_freq %s all_freq %s master_freq %d]' % (m[1], m[2], m[3]), file=f)
                         
                         # Followed by all remaining morphs sorted by score.
                         for m in sorted(all_missing_morphs, key=operator.itemgetter(4), reverse = True):
                             if m[0].base in unique_set:
                                 continue
                             unique_set.add(m[0].base)
-                            print(m[0].base, file=f)
+                            print(m[0].base + '\t[ep_freq %s all_freq %s master_freq %d]' % (m[1], m[2], m[3]), file=f)
                 
                 if master_total_instances > 0:
                     master_score = 0
