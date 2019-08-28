@@ -201,6 +201,7 @@ class MorphMan(QDialog):
             self.writeOutput("Known morphs loaded: K %d V %d\n" % (total_k, total_v))
         else:
             self.writeOutput("Known words DB '%s' not found\n" % known_words_path)
+            known_db = MorphDb()
 
         if master_total_instances > 0:
             master_current_score = 0
@@ -358,8 +359,10 @@ class MorphMan(QDialog):
                             source_unknown_count = s.unknown_db.getFuzzyCount(morph)
                             unknown_count = unknown_db.getFuzzyCount(morph)
                             master_count = master_db.getFuzzyCount(morph)
+                            
+                            source_count = source_unknown_count + unknown_count
 
-                            score = source_unknown_count * 600 + unknown_count * 600 + master_count * master_weight
+                            score = pow(source_count, 2) * 60 + master_count * master_weight
                             missing_morphs.append((m[0], source_unknown_count, unknown_count, master_count, score))
 
                     all_missing_morphs += missing_morphs
@@ -375,7 +378,9 @@ class MorphMan(QDialog):
                     for m in sorted(missing_morphs, key=operator.itemgetter(4), reverse=True):
                         if readability >= readability_target:
                             break
-
+                        if known_db.matches(m[0]):
+                            continue
+                        
                         known_db.addMLs1(m[0], set())
                         learned_morphs.append(m)
                         learned_this_source.append(m)
@@ -389,8 +394,8 @@ class MorphMan(QDialog):
                     self.writeOutput(source_str)
                     f.write(source_str)
 
-                    for idx, m in enumerate(learned_this_source):
-                        f.write('\t' + m[0].show() + '\t[ep_freq %s all_freq %s master_freq %d]\n' % (m[1], m[2], m[3]))
+                    for m in learned_this_source:
+                        f.write('\t' + m[0].show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]\n' % (m[4], m[1], m[2], m[3]))
 
                 if save_frequency_list:
                     self.writeOutput("\n[Saving frequency list to '%s'...]\n" % frequency_list_path)
@@ -401,15 +406,15 @@ class MorphMan(QDialog):
                             if m[0].base in unique_set:
                                 continue
                             unique_set.add(m[0].base)
-                            print(m[0].base + '\t[ep_freq %s all_freq %s master_freq %d]' % (m[1], m[2], m[3]), file=f)
-
+                            print(m[0].base + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (m[4], m[1], m[2], m[3]), file=f)
+                        
                         # Followed by all remaining morphs sorted by score.
                         for m in sorted(all_missing_morphs, key=operator.itemgetter(4), reverse=True):
                             if m[0].base in unique_set:
                                 continue
                             unique_set.add(m[0].base)
-                            print(m[0].base + '\t[ep_freq %s all_freq %s master_freq %d]' % (m[1], m[2], m[3]), file=f)
-
+                            print(m[0].base + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (m[4], m[1], m[2], m[3]), file=f)
+                
                 if master_total_instances > 0:
                     master_score = 0
                     for ms in master_db.db.values():
