@@ -208,7 +208,7 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
     frequencyListPath = cfg1('path_frequency')
     try:
         with codecs.open( frequencyListPath, 'r', 'utf-8' ) as f:
-            frequencyList = [line.strip() for line in f.readlines()]
+            frequencyList = [line.strip().split('\t')[0] for line in f.readlines()]
     except:
         pass # User does not have a frequency.txt
 
@@ -223,7 +223,7 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
     ms = getMorphemes(morphemizer, txt, tags)
 
     for m in sorted( ms, key=lambda x: len(x.inflected), reverse=True ): # largest subs first
-        locs = allDb().db.get( m, set() )
+        locs = allDb().getMatchingLocs( m )
         mat = max( loc.maturity for loc in locs ) if locs else 0
 
         if   mat >= cfg1( 'threshold_mature' ):  mtype = 'mature'
