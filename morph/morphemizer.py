@@ -212,8 +212,15 @@ def mecab(): # IO MecabProc
             mecab_source = 'MIAJapaneseSupport'
         except ModuleNotFoundError:
             pass
+    # 4nd priority - MIAJapaneseSupport via Anki code (278530045)
+    if (not reading) and importlib.util.find_spec('278530045'):
+        try:
+            reading = importlib.import_module('278530045.reading')
+            mecab_source = '278530045'
+        except ModuleNotFoundError:
+            pass
 
-    # 4th priority - system mecab
+    # 5th priority - system mecab
     if (not reading):
         try:
             mecab_source = 'System'
