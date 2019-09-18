@@ -1,8 +1,10 @@
 #-*- coding: utf-8 -*-
 import glob, gzip, os, pickle as pickle
 
-from .util import addHook, cfg1, wrap, mw
+from .util import cfg1, wrap, mw
 from aqt import toolbar
+
+from anki.lang import _
 
 def getStatsPath(): return cfg1('path_stats')
 
@@ -32,28 +34,8 @@ def updateStats( knownDb=None ):
     if knownDb is None:
         knownDb = MorphDb( cfg1('path_known'), ignoreErrors=True )
 
-    d['totalKnown'] = len( knownDb.db )
-
-    # Load Goal.*.db dbs, get morphemes required, and compare vs known.db
-    d['goals'] = {}
-    goalDbPaths = glob.glob( os.path.join( cfg1('path_dbs'), 'Goal.*.db' ) )
-
-    for path in goalDbPaths:
-        name = os.path.basename( path )[5:][:-3]
-        gdb = MorphDb( path )
-
-        # track total unique morphemes + when weighted by frequency
-        # NOTE: a morpheme may occur multiple times within the same sentence, but this frequency is wrt note fields
-        numUniqueReq, numUniqueKnown, numFreqReq, numFreqKnown = 0, 0, 0, 0
-        for m in gdb.db.keys():
-            freq = gdb.db.frequency(m)
-            numUniqueReq += 1
-            numFreqReq   += freq
-            if m in knownDb.db:
-                numUniqueKnown += 1
-                numFreqKnown   += freq
-
-        d['goals'][ name ] = { 'total':numUniqueReq, 'known':numUniqueKnown, 'freqTotal':numFreqReq, 'freqKnown':numFreqKnown }
+    d['totalVariations'] = len( knownDb.db )
+    d['totalKnown'] = len( knownDb.groups )
 
     saveStats( d )
     mw.progress.finish()
@@ -63,13 +45,11 @@ def getStatsLink():
     d = loadStats()
     if not d: return ( 'K ???', '????' )
 
-    name = 'K %d' % d['totalKnown']
-    lines = []
-    for goalName, g in sorted( d['goals'].items() ):
-        #lines.append( '%s %d/%d %d%%' % ( goalName, g['known'], g['total'], 100.*g['known']/g['total'] ) )
-        #lines.append( '%s %d%%' % ( goalName, 100.*g['known']/g['total'] ) )
-        lines.append( '%s %d%% %d%%' % ( goalName, 100.*g['known']/g['total'], 100.*g['freqKnown']/g['freqTotal'] ) )
-    details = '\n'.join( lines )
+    total_known = d.get('totalKnown', 0)
+    total_variations = d.get('totalVariations', total_known)
+
+    name = 'K %d V %d' % (total_known, total_variations)
+    details = 'Total known morphs'
     return ( name, details )
 
 def my_centerLinks( self, _old ):

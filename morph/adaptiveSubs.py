@@ -21,16 +21,16 @@ def getPreText( line ):
     ps = line_.split(',', 10)
     return line[:10] + ','.join( ps[:9] ) + ','
 
-def run( duelingSubsPath, outputSubsPath, morphemizer, matureFmt, knownFmt, unknownFmt ):
+def run( inputSubsPath, outputSubsPath, morphemizer, matureFmt, knownFmt, unknownFmt ):
     # Load files
     kdb = MorphDb( cfg1('path_known') )
     mdb = MorphDb( cfg1('path_mature') )
-    subFileLines = codecs.open( duelingSubsPath, 'r', 'utf-8' ).readlines()
-
-    # Get dueling subs
-    dialogueLines = [ l for l in subFileLines if l.startswith( 'Dialogue' ) ]
-    header = subFileLines[ : subFileLines.index( dialogueLines[0] ) ]
-    assert len( dialogueLines ) % 2 == 0, 'Should be an even number of dialogue lines'
+    with codecs.open( inputSubsPath, 'r', 'utf-8' ) as subFile:
+	    subFileLines = subFile.readlines()
+	    # Get dueling subs
+	    dialogueLines = [ l for l in subFileLines if l.startswith( 'Dialogue' ) ]
+	    header = subFileLines[ : subFileLines.index( dialogueLines[0] ) ]
+	    assert len( dialogueLines ) % 2 == 0, 'Should be an even number of dialogue lines. Are you using duel subtitles?'
 
     lines = []
     for i in range( 0, len( dialogueLines ), 2 ):
@@ -50,7 +50,6 @@ def run( duelingSubsPath, outputSubsPath, morphemizer, matureFmt, knownFmt, unkn
         else:
             lines.append( pre + unknownFmt % d )
 
-    outFile = codecs.open( outputSubsPath, 'w', 'utf-8' )
-    outFile.write( ''.join( header ) )
-    outFile.write( '\n'.join( lines ) )
-    outFile.close()
+    with codecs.open( outputSubsPath, 'w', 'utf-8' ) as outFile:
+	    outFile.write( ''.join( header ) )
+	    outFile.write( '\n'.join( lines ) )

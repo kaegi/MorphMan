@@ -3,6 +3,7 @@ from aqt import reviewer, dialogs
 from aqt.qt import *
 from aqt.utils import tooltip
 from anki import sched
+import codecs
 from .util import addBrowserNoteSelectionCmd, addBrowserCardSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
 
 # only for jedi-auto-completion
@@ -20,8 +21,8 @@ from . import main
 
 # config aliases
 def CN( n, key ):   return    cfg( n.mid, None, key )
-def focusName( n ): return    jcfg('Field_FocusMorph') # TODO remove argument n
-def focus( n ):     return n[ focusName(n) ]
+def focusName(): return    jcfg('Field_FocusMorph')
+def focus( n ):     return n[ focusName() ]
 
 
 ########## 6 parent deck pulls new cards from all children instead of sequentially (ie. mostly first)
@@ -49,7 +50,7 @@ def markFocusSeen( self, n ):
     global seenMorphs
     try:
         if not focus( n ): return
-        q = '%s:%s' % ( focusName( n ), focus( n ) )
+        q = '%s:%s' % ( focusName(), focus( n ) )
     except KeyError: return
     seenMorphs.add( focus(n) )
     numSkipped = len( self.mw.col.findNotes( q ) ) -1
@@ -77,7 +78,7 @@ def my_getNewCard( self, _old ):
             c = self.col.getCard( id )
             self.newCount -= 1
 
-        if not c: return			# no more cards
+        if not c: return            # no more cards
         n = c.note()
 
         # find the right morphemizer for this note, so we can apply model-dependent options (modify off == disable skip feature)
@@ -88,10 +89,10 @@ def my_getNewCard( self, _old ):
         if not notefilter['Modify']: return c # the deck should not be modified -> the user probably doesn't want the 'skip mature' feature
 
         # get the focus morph
-        try: focusMorph = focus( n )		# field contains either the focusMorph or is empty
+        try: focusMorph = focus( n )        # field contains either the focusMorph or is empty
         except KeyError:
             tooltip( _( 'Encountered card without the \'focus morph\' field configured in the preferences. Please check your MorphMan settings and note models.') )
-            return c	# card has no focusMorph field -> undefined behavior -> just proceed like normal
+            return c    # card has no focusMorph field -> undefined behavior -> just proceed like normal
 
         # evaluate all conditions, on which this card might be skipped/buried
         isVocabCard = n.hasTag(jcfg('Tag_Vocab'))
@@ -156,44 +157,26 @@ def browseSameFocus( self ): #3
     try:
         n = self.card.note()
         if not focus( n ): return
-        q = '%s:%s' % ( focusName( n ), focus( n ) )
+        q = '%s:%s' % ( focusName(), focus( n ) )
         b = dialogs.open( 'Browser', self.mw )
         b.form.searchEdit.lineEdit().setText( q )
-        b.onSearch()
+        b.onSearchActivated()
     except KeyError: pass
 
 ########## set keybindings for 2-3
-# def my_reviewer_keyHandler( self, evt ):
-#     ''' :type self: aqt.reviewer.Reviewer '''
-#     key = str( evt.text() )
-#     key_browse, key_skip = cfg1('browse same focus key'), cfg1('set known and skip key')
-#     if   key == key_skip:   setKnownAndSkip( self )
-#     elif key == key_browse: browseSameFocus( self )
+def my_reviewer_shortcutKeys( self ):
+    key_browse, key_skip = cfg1('browse same focus key'), cfg1('set known and skip key')
+    keys = original_shortcutKeys( self ) 
+    keys.extend([
+        (key_browse, lambda: browseSameFocus( self )),
+        (key_skip, lambda: setKnownAndSkip( self ))
+    ])
+    return keys
 
-# reviewer.Reviewer._keyHandler = wrap( reviewer.Reviewer._keyHandler, my_reviewer_keyHandler )
+original_shortcutKeys = reviewer.Reviewer._shortcutKeys
+reviewer.Reviewer._shortcutKeys = my_reviewer_shortcutKeys
 
-########## 4 - immediately review selected cards
-# def pre( b ):
-#     ''' :type b: aqt.browser.Browser '''
-#     return { 'cards':[], 'browser':b }
-# def per( st, c ):
-#     st['cards'].append( c )
-#     return st
-# def post( st ):
-#     i = len(st['cards'])
-#     for c in st['cards']:
-#         mw.reviewer.cardQueue.append( c )
-
-#     # in special cases close() will already pop a new card from mw.reviewer.cardQueue
-#     st['browser'].close()
-#     tooltip( _( 'Immediately reviewing %d cards' % i ) )
-
-#     # only reset and fetch a new card if it wasn't already done with close()
-#     return {'__reset': len(mw.reviewer.cardQueue) == i}
-
-# addBrowserCardSelectionCmd( 'MorphMan: Learn Now', pre, per, post, tooltip='Immediately review the selected new cards', shortcut=('Ctrl+Shift+N',) )
-
-########## 5 - highlight morphemes using morphHighlight
+########## 4 - highlight morphemes using morphHighlight
 import re
 
 def isNoteSame(note, fieldDict):
@@ -220,16 +203,16 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
     # must avoid formatting a smaller morph that is contained in a bigger morph
     # => do largest subs first and don't sub anything already in <span>
     def nonSpanSub( sub, repl, string ):
-        return ''.join( re.sub( sub, repl, s ) if not s.startswith('<span') else s for s in re.split( '(<span.*?</span>)', string ) )
+        return ''.join( re.sub( sub, repl, s, flags=re.IGNORECASE ) if not s.startswith('<span') else s for s in re.split( '(<span.*?</span>)', string ) )
 
-    # find morphemizer; because no note/card information is exposed through arguments, we have to find morphemizer based on tags alone
-    #from aqt.qt import debug; debug()
-    #
-    #if mw.reviewer.card is None: return txt
-    #note = mw.reviewer.card.note()
-    #if not isNoteSame(note, fieldDict): return txt
-    #from aqt.qt import debug; debug()
+    frequencyListPath = cfg1('path_frequency')
+    try:
+        with codecs.open( frequencyListPath, 'r', 'utf-8' ) as f:
+            frequencyList = [line.strip().split('\t')[0] for line in f.readlines()]
+    except:
+        pass # User does not have a frequency.txt
 
+    priorityDb  = main.MorphDb( cfg1('path_priority'), ignoreErrors=True ).db
     tags = fieldDict['Tags'].split()
     filter = getFilterByTagsAndType(fieldDict['Type'], tags)
     if filter is None:
@@ -240,18 +223,31 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
     ms = getMorphemes(morphemizer, txt, tags)
 
     for m in sorted( ms, key=lambda x: len(x.inflected), reverse=True ): # largest subs first
-        locs = allDb().db.get( m, set() )
+        locs = allDb().getMatchingLocs( m )
         mat = max( loc.maturity for loc in locs ) if locs else 0
 
         if   mat >= cfg1( 'threshold_mature' ):  mtype = 'mature'
         elif mat >= cfg1( 'threshold_known' ):   mtype = 'known'
         elif mat >= cfg1( 'threshold_seen' ):    mtype = 'seen'
         else:                                    mtype = 'unknown'
-        repl = '<span class="morphHighlight" mtype="{mtype}" mat="{mat}">{morph}</span>'.format(
-                morph = m.inflected,
+
+        if m in priorityDb:
+            priority = 'true'
+        else: priority = 'false'
+
+        focusMorphString = m.show().split()[0]
+        try:
+            focusMorphIndex = frequencyList.index(focusMorphString)
+            frequency = 'true'
+        except:
+            frequency = 'false'
+
+        repl = '<span class="morphHighlight" mtype="{mtype}" priority="{priority}" frequency="{frequency}" mat="{mat}">\\1</span>'.format(
                 mtype = mtype,
+                priority = priority,
+                frequency = frequency,
                 mat = mat
                 )
-        txt = nonSpanSub( m.inflected, repl, txt )
+        txt = nonSpanSub( '(%s)' % m.inflected, repl, txt )
     return txt
 addHook( 'fmod_morphHighlight', highlight )

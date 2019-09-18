@@ -5,6 +5,8 @@ from PyQt5.QtGui import *
 import os
 import sys
 
+from anki.utils import isMac
+
 from . import adaptiveSubs
 from .morphemes import MorphDb
 from .morphemizer import getAllMorphemizers
@@ -14,6 +16,21 @@ def getPath( le ): # LineEdit -> GUI ()
     path = QFileDialog.getOpenFileName( caption='Open db', directory=dbsPath )[0]
     le.setText( path )
 
+def getProgressWidget():
+    progressWidget = QWidget(None)
+    layout = QVBoxLayout()
+    progressWidget.setFixedSize(400, 70)
+    progressWidget.setWindowModality(Qt.ApplicationModal)
+    bar = QProgressBar(progressWidget)
+    if isMac:
+        bar.setFixedSize(380, 50)
+    else:
+        bar.setFixedSize(390, 50)
+    bar.move(10,10)
+    per = QLabel(bar)
+    per.setAlignment(Qt.AlignCenter)
+    progressWidget.show()
+    return progressWidget, bar;
 
 class AdaptiveSubWin( QDialog ):
     def __init__( self, parent=None ):
@@ -22,9 +39,9 @@ class AdaptiveSubWin( QDialog ):
         self.grid = grid = QGridLayout( self )
         self.vbox = vbox = QVBoxLayout()
 
-        self.matureFmt  = QLineEdit( '%(jpn)s' )
-        self.knownFmt   = QLineEdit( '%(jpn)s [%(eng)s]' )
-        self.unknownFmt = QLineEdit( '%(eng)s [%(N_k)s] [%(unknowns)s]' )
+        self.matureFmt  = QLineEdit( '%(target)s' )
+        self.knownFmt   = QLineEdit( '%(target)s [%(native)s]' )
+        self.unknownFmt = QLineEdit( '%(native)s [%(N_k)s] [%(unknowns)s]' )
         self.morphemizer = QComboBox()
 
         for morphemizer in getAllMorphemizers():
@@ -49,13 +66,26 @@ class AdaptiveSubWin( QDialog ):
         uFmt = str( self.unknownFmt.text() )
         morphemizer = getAllMorphemizers()[self.morphemizer.currentIndex()]
 
-        inFile = QFileDialog.getOpenFileName( caption='Dueling subs to process', directory=dbsPath )[0]
-        if not inFile: return
-        outFile = QFileDialog.getSaveFileName( caption='Save adaptive subs to', directory=dbsPath )[0]
-        if not outFile: return
+        inputPaths = QFileDialog.getOpenFileNames( None, 'Dueling subs to process', '', 'Subs (*.ass)' )[0]
+        if not inputPaths: return
+        outputPath = QFileDialog.getExistingDirectory( None, 'Save adaptive subs to')
+        if not outputPath: return
 
-        adaptiveSubs.run( inFile, outFile, morphemizer, mFmt, kFmt, uFmt )
-        infoMsg( 'Completed successfully' )
+        progWid, bar = getProgressWidget()   
+        bar.setMinimum(0)
+        bar.setMaximum(len(inputPaths))
+        val = 0;  
+        for fileNumber, subtitlePath in enumerate(inputPaths, start=1):         
+            # MySubtitlesFolder/1 EpisodeSubtitles Episode 1.ass
+            outputSubsFileName = outputPath + "/" + str(fileNumber) + " " + subtitlePath.split("/")[-1]
+            adaptiveSubs.run( subtitlePath, outputSubsFileName, morphemizer, mFmt, kFmt, uFmt )
+
+            val+=1;
+            bar.setValue(val)
+            mw.app.processEvents()
+        mw.progress.finish()
+        mw.reset()   
+        infoMsg( "Completed successfully" )
 
 class MorphMan( QDialog ):
     def __init__( self, parent=None ):
@@ -97,11 +127,13 @@ class MorphMan( QDialog ):
 
         # Display
         vbox.addSpacing(40)
-        self.col4Mode = QRadioButton( 'Results as 4col morpheme' )
-        self.col4Mode.setChecked( True )
-        self.col1Mode = QRadioButton( 'Results as 1col morpheme' )
-        vbox.addWidget( self.col4Mode )
-        vbox.addWidget( self.col1Mode )
+        self.col_all_Mode = QRadioButton( 'All result columns' )
+        self.col_all_Mode.setChecked( True )
+        self.col_one_Mode = QRadioButton( 'One result column' )
+        self.col_all_Mode.clicked.connect(self.colModeButtonListener)
+        self.col_one_Mode.clicked.connect(self.colModeButtonListener)
+        vbox.addWidget( self.col_all_Mode )
+        vbox.addWidget( self.col_one_Mode )
         self.morphDisplay = QTextEdit()
         self.analysisDisplay = QTextEdit()
 
@@ -148,7 +180,7 @@ class MorphMan( QDialog ):
         elif type == 'inter':   ms = aSet.intersection( bSet )
         elif type == 'union':   ms = aSet.union( bSet )
 
-        self.db.db = {}
+        self.db.clear()
         for m in ms:
             locs = set()
             if m in self.aDb.db: locs.update( self.aDb.db[m] )
@@ -175,11 +207,19 @@ class MorphMan( QDialog ):
         self.db.save( str(destPath) )
         infoMsg( 'Saved successfully' )
 
+    def colModeButtonListener( self ):
+        colModeButton = self.sender()
+        if colModeButton.isChecked():
+            try:
+                self.updateDisplay()
+            except AttributeError:
+                return # User has not selected a db view yet
+
     def updateDisplay( self ):
-        if self.col4Mode.isChecked():
+        if self.col_all_Mode.isChecked():
             self.morphDisplay.setText( self.db.showMs() )
         else:
-            self.morphDisplay.setText( '\n'.join( [ m.base for m in self.db.db ] ) )
+            self.morphDisplay.setText( '\n'.join( sorted(list(set([ m.norm for m in self.db.db ]))) ) )
         self.analysisDisplay.setText( self.db.analyze2str() )
 
 def main():

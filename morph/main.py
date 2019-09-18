@@ -8,6 +8,7 @@ from . import stats
 from .util import printf, mw, cfg, cfg1, partial, errorMsg, infoMsg, jcfg, jcfg2, getFilter
 from . import util
 from .util_external import memoize
+import codecs
 
 # only for jedi-auto-completion
 import aqt.main
@@ -81,7 +82,6 @@ def mkAllDb( allDb=None ):
 
         for fieldName in notecfg['Fields']:
             try: # if doesn't have field, continue
-                #fieldValue = normalizeFieldValue( getField( fieldName, flds, mid ) )
                 fieldValue = extractFieldData( fieldName, flds, mid )
             except KeyError: continue
             except TypeError:
@@ -94,17 +94,14 @@ def mkAllDb( allDb=None ):
                 loc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
                 ms = getMorphemes(morphemizer, fieldValue, ts)
                 if ms: #TODO: this needed? should we change below too then?
-                    #printf( '    .loc for %d[%s]' % ( nid, fieldName ) )
                     locDb[ loc ] = ms
             else:
                 # mats changed -> new loc (new mats), move morphs
                 if loc.fieldValue == fieldValue and loc.maturities != mats:
-                    #printf( '    .mats for %d[%s]' % ( nid, fieldName ) )
                     newLoc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
                     locDb[ newLoc ] = locDb.pop( loc )
                 # field changed -> new loc, new morphs
                 elif loc.fieldValue != fieldValue:
-                    #printf( '    .morphs for %d[%s]' % ( nid, fieldName ) )
                     newLoc = AnkiDeck( nid, fieldName, fieldValue, guid, mats )
                     ms = getMorphemes(morphemizer, fieldValue, ts)
                     locDb.pop( loc )
@@ -143,7 +140,7 @@ def updateNotes( allDb ):
     locDb   = allDb.locDb( recalc=False ) # fidDb() already forces locDb recalc
 
     # read tag names
-    compTag, vocabTag, freshTag, notReadyTag, alreadyKnownTag, priorityTag, tooShortTag, tooLongTag = tagNames = jcfg('Tag_Comprehension'), jcfg('Tag_Vocab'), jcfg('Tag_Fresh'), jcfg('Tag_NotReady'), jcfg('Tag_AlreadyKnown'), jcfg('Tag_Priority'), jcfg('Tag_TooShort'), jcfg('Tag_TooLong')
+    compTag, vocabTag, freshTag, notReadyTag, alreadyKnownTag, priorityTag, tooShortTag, tooLongTag, frequencyTag = tagNames = jcfg('Tag_Comprehension'), jcfg('Tag_Vocab'), jcfg('Tag_Fresh'), jcfg('Tag_NotReady'), jcfg('Tag_AlreadyKnown'), jcfg('Tag_Priority'), jcfg('Tag_TooShort'), jcfg('Tag_TooLong'), jcfg('Tag_Frequency')
     TAG.register( tagNames )
     badLengthTag = jcfg2().get('Tag_BadLength')
 
@@ -154,6 +151,15 @@ def updateNotes( allDb ):
     matureDb    = filterDbByMat( allDb, cfg1('threshold_mature') )
     mw.progress.update( label='Loading priority.db' )
     priorityDb  = MorphDb( cfg1('path_priority'), ignoreErrors=True ).db
+
+    mw.progress.update( label='Loading frequency.txt' )
+    frequencyListPath = cfg1('path_frequency')
+    try:
+	    with codecs.open( frequencyListPath, 'r', 'utf-8' ) as f:
+	        frequencyList = [line.strip().split('\t')[0] for line in f.readlines()]
+	        frequencyListLength = len(frequencyList)
+    except FileNotFoundError:
+        pass # User does not have a frequency.txt
 
     if cfg1('saveDbs'):
         mw.progress.update( label='Saving seen/known/mature dbs' )
@@ -181,10 +187,10 @@ def updateNotes( allDb ):
         # Determine un-seen/known/mature and i+N
         unseens, unknowns, unmatures, newKnowns = set(), set(), set(), set()
         for morpheme in morphemes:
-            if morpheme not in seenDb.db:      unseens.add( morpheme )
-            if morpheme not in knownDb.db:     unknowns.add( morpheme )
-            if morpheme not in matureDb.db:    unmatures.add( morpheme )
-            if morpheme not in matureDb.db and morpheme in knownDb.db:
+            if not seenDb.matches(morpheme):   unseens.add( morpheme )
+            if not knownDb.matches(morpheme):   unknowns.add( morpheme )
+            if not matureDb.matches(morpheme):   unmatures.add( morpheme )
+            if not matureDb.matches(morpheme) and knownDb.matches(morpheme):
                 newKnowns.add( morpheme )
 
         # Determine MMI - Morph Man Index
@@ -193,23 +199,34 @@ def updateNotes( allDb ):
         # Bail early for lite update
         if N_k > 2 and C('only update k+2 and below'): continue
 
-            # average frequency of unknowns (ie. how common the word is within your collection)
+        # average frequency of unknowns (ie. how common the word is within your collection)
         F_k = 0
         for focusMorph in unknowns: # focusMorph used outside loop
             F_k += allDb.frequency(focusMorph)
         F_k_avg = F_k // N_k if N_k > 0 else F_k
         usefulness = F_k_avg
 
-            # add bonus for morphs in priority.db
+        # add bonus for morphs in priority.db and frequency.txt
         isPriority = False
+        isFrequency = False
         for focusMorph in unknowns:
             if focusMorph in priorityDb:
                 isPriority = True
                 usefulness += C('priority.db weight')
+            focusMorphString = focusMorph.base
+            try:
+                focusMorphIndex = frequencyList.index(focusMorphString)
+                isFrequency = True
+                frequencyWeight = C('frequency.txt weight scale')
 
-            # add bonus for studying recent learned knowns (reinforce)
+                # The bigger this number, the lower mmi becomes
+                usefulness += (frequencyListLength - focusMorphIndex) * frequencyWeight
+            except:
+                pass
+
+        # add bonus for studying recent learned knowns (reinforce)
         for morpheme in newKnowns:
-            locs = allDb.db[ morpheme ]
+            locs = knownDb.getMatchingLocs( morpheme )
             if locs:
                 ivl = min( 1, max( loc.maturity for loc in locs ) )
                 usefulness += C('reinforce new vocab weight') // ivl #TODO: maybe average this so it doesnt favor long sentences
@@ -217,15 +234,15 @@ def updateNotes( allDb ):
         if any( morpheme.pos == '動詞' for morpheme in unknowns ): #FIXME: this isn't working???
             usefulness += C('verb bonus')
 
-        usefulness = 999 - min( 999, usefulness )
+        usefulness = 99999  - min( 99999 , usefulness )
 
         # difference from optimal length range (too little context vs long sentence)
         lenDiffRaw = min(N - C('min good sentence length'),
                          max(0, N - C('max good sentence length')))
         lenDiff = min(9, abs(lenDiffRaw))
 
-            # calculate mmi
-        mmi = 10000*N_k + 1000*lenDiff + usefulness
+        # calculate mmi
+        mmi = 100000 * N_k + 1000 * lenDiff + usefulness
         if C('set due based on mmi'):
             nid2mmi[ nid ] = mmi
 
@@ -238,7 +255,6 @@ def updateNotes( allDb ):
         # determine card type
         if N_m == 0:    # sentence comprehension card, m+0
             ts = ts + [ compTag ]
-            setField( mid, fs, jcfg('Field_FocusMorph'), '' )
         elif N_k == 1:  # new vocab card, k+1
             ts = ts + [ vocabTag ]
             setField( mid, fs, jcfg('Field_FocusMorph'), '%s' % focusMorph.base )
@@ -253,7 +269,7 @@ def updateNotes( allDb ):
             setField( mid, fs, jcfg('Field_FocusMorph'), '')
 
 
-            # set type agnostic fields
+        # set type agnostic fields
         setField( mid, fs, jcfg('Field_UnknownMorphCount'), '%d' % N_k )
         setField( mid, fs, jcfg('Field_UnmatureMorphCount'), '%d' % N_m )
         setField( mid, fs, jcfg('Field_MorphManIndex'), '%d' % mmi )
@@ -261,13 +277,16 @@ def updateNotes( allDb ):
         setField( mid, fs, jcfg('Field_Unmatures'), ', '.join( u.base for u in unmatures ) )
         setField( mid, fs, jcfg('Field_UnknownFreq'), '%d' % F_k_avg )
 
-            # remove deprecated tag
+        # remove deprecated tag
         if badLengthTag is not None and badLengthTag in ts:
             ts.remove( badLengthTag )
 
-            # other tags
+        # other tags
         if priorityTag in ts:   ts.remove( priorityTag )
         if isPriority:          ts.append( priorityTag )
+
+        if frequencyTag in ts:   ts.remove( frequencyTag )
+        if isFrequency:          ts.append( frequencyTag )
 
         if tooShortTag in ts:   ts.remove( tooShortTag )
         if lenDiffRaw < 0:      ts.append( tooShortTag )
@@ -280,7 +299,7 @@ def updateNotes( allDb ):
             unnecessary = [priorityTag, tooShortTag, tooLongTag]
             ts = [tag for tag in ts if tag not in unnecessary]
 
-            # update sql db
+        # update sql db
         tags_ = TAG.join( TAG.canonify( ts ) )
         flds_ = joinFields( fs )
         if flds != flds_ or tags != tags_:  # only update notes that have changed
@@ -314,7 +333,7 @@ def main():
     # load existing all.db
     mw.progress.start( label='Loading existing all.db', immediate=True )
     t_0 = time.time()
-    cur = util.allDb() if cfg1('loadAllDb') else None
+    cur = util.allDb(reload=True) if cfg1('loadAllDb') else None
     printf( 'Loaded all.db in %f sec' % ( time.time() - t_0 ) )
     mw.progress.finish()
 

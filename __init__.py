@@ -1,6 +1,7 @@
 from .morph.util import *
 from PyQt5.QtWidgets import *
 import importlib
+from anki.lang import _
 
 def onMorphManRecalc():
     from .morph import main
@@ -12,6 +13,12 @@ def onMorphManManager():
     from .morph import manager
     importlib.reload( manager )
     manager.main()
+
+def onMorphManReadability():
+    mw.toolbar.draw()
+    from .morph import readability
+    importlib.reload( readability )
+    readability.main()
 
 def onMorphManPreferences():
     from .morph import preferencesDialog
@@ -37,15 +44,26 @@ def main():
     # Add gui manager menu button
     a = QAction( 'MorphMan &Database Manager', mw )
     a.setStatusTip(_("Open gui manager to inspect, compare, and analyze MorphMan DBs"))
+    a.setShortcut(_("Ctrl+D"))
     a.triggered.connect(onMorphManManager)
     mw.form.menuTools.addAction( a )
 
+    # Add readability tool menu button
+    a = QAction( 'MorphMan Readability &Analyzer', mw )
+    a.setStatusTip(_("Check readability and build frequency lists"))
+    a.setShortcut(_("Ctrl+A"))
+    a.triggered.connect(onMorphManReadability)
+    mw.form.menuTools.addAction( a )
 
-    from .morph import viewMorphemes
-    from .morph import extractMorphemes
-    from .morph import batchPlay
+
+    from .morph.browser import viewMorphemes
+    from .morph.browser import extractMorphemes
+    from .morph.browser import batchPlay
+    from .morph.browser import massTagger
+    from .morph.browser import learnNow
+    from .morph.browser import browseMorph
+    from .morph.browser import alreadyKnownTagger
     from .morph import newMorphHelper
     from .morph import stats
-    from .morph import massTagger
 
 main()

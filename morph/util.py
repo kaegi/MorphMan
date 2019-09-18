@@ -9,18 +9,15 @@ from aqt.qt import *
 from aqt import mw
 from aqt.utils import showCritical, showInfo, showWarning, tooltip
 from anki.hooks import addHook, wrap
-
-# only for jedi-auto-completion
-import aqt.main
-assert isinstance(mw, aqt.main.AnkiQt)
+import importlib
 
 ###############################################################################
 ## Global data
 ###############################################################################
 _allDb = None
-def allDb():
+def allDb(reload=False):
     global _allDb
-    if _allDb is None:
+    if reload or (_allDb is None):
         from .morphemes import MorphDb
         _allDb = MorphDb( cfg1('path_all'), ignoreErrors=True )
     return _allDb
@@ -33,6 +30,7 @@ dbsPath = None
 def initCfg():
     global cfgMod, dbsPath
     from . import config
+    importlib.reload( config )
     cfgMod = config
     dbsPath = config.default['path_dbs']
 
@@ -85,6 +83,7 @@ def jcfg_default():
         'Tag_Priority':'mm_priority',             # set if note contains an unknown that exists in priority.db
         'Tag_TooShort':'mm_tooShort',             # set if sentence is below optimal length range
         'Tag_TooLong':'mm_tooLong',               # set if sentence is above optimal length range
+        'Tag_Frequency': 'mm_frequency',          # set if sentence is above optimal length range
 
         # filter for cards that should be analyzed, higher entries have higher priority
         'Filter': [
@@ -122,6 +121,7 @@ def jcfg_default():
         'Option_SkipComprehensionCards': True, # bury/skip all new cards that have 'Tag_Comprehension'
         'Option_SkipFreshVocabCards': True, # bury/skip all new cards that have 'Tag_Fresh'
         'Option_SkipFocusMorphSeenToday': True, # bury/skip all new cards that have a focus morph that was reviewed today/marked as `already known`
+        'Option_IgnoreBracketContents': False,
     }
 
 def jcfg2():
