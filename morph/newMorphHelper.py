@@ -2,7 +2,7 @@
 from aqt import reviewer, dialogs
 from aqt.qt import *
 from aqt.utils import tooltip
-from anki import sched
+from anki import sched, schedv2
 import codecs
 from .util import addBrowserNoteSelectionCmd, addBrowserCardSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
 
@@ -40,6 +40,7 @@ def my_fillNew( self, _old ):
     if self._newQueue:      return True
 
 sched.Scheduler._fillNew = wrap( sched.Scheduler._fillNew, my_fillNew, 'around' )
+schedv2.Scheduler._fillNew = wrap( schedv2.Scheduler._fillNew, my_fillNew, 'around' )
 
 ########## handle skipping for 1-2
 seenMorphs = set()
@@ -61,7 +62,7 @@ def my_getNewCard( self, _old ):
     '''Continually call _getNewCard until we get one with a focusMorph we haven't
     seen before. Also skip bad vocab cards.
 
-    :type self: anki.sched.Scheduler
+    :type self: anki.sched.Scheduler | anki.schedv2.Scheduler
     :type _old: Callable
     '''
 
@@ -105,14 +106,16 @@ def my_getNewCard( self, _old ):
         skipFresh = jcfg('Option_SkipFreshVocabCards')
         skipFocusMorphSeenToday = jcfg('Option_SkipFocusMorphSeenToday')
 
-        skipCondition1 = (isComprehensionCard and skipComprehension)
-        skipCondition2 = (isFreshVocab and skipFresh)
-        skipCondition3 = isAlreadyKnown # the user requested that the vocabulary does not have to be shown
-        skipCondition4 = (focusMorph in seenMorphs and skipFocusMorphSeenToday) # we already learned that/saw that today
-        #skipCondition5 = not (isVocabCard or isNotReady) # even if it is not a good vocabulary card, we have no choice when there are no other cards available
+        skipConditions = [
+            isComprehensionCard and skipComprehension,
+            isFreshVocab and skipFresh,
+            isAlreadyKnown, # the user requested that the vocabulary does not have to be shown
+            focusMorph in seenMorphs and skipFocusMorphSeenToday, # we already learned that/saw that today
+            # not (isVocabCard or isNotReady) # even if it is not a good vocabulary card, we have no choice when there are no other cards available
+        ]
 
         # skip/bury card if any skip condition is true
-        if skipCondition1 or skipCondition2 or skipCondition3 or skipCondition4:
+        if any(skipConditions):
             self.buryCards( [ c.id ] )
             self.newCount += 1 # the card was quaried from the "new queue" so we have to increase the "new counter" back to its original value
             continue
@@ -121,6 +124,7 @@ def my_getNewCard( self, _old ):
     return c
 
 sched.Scheduler._getNewCard = wrap( sched.Scheduler._getNewCard, my_getNewCard, 'around' )
+schedv2.Scheduler._getNewCard = wrap( schedv2.Scheduler._getNewCard, my_getNewCard, 'around' )
 
 ########## 1 - after learning a new focus morph, don't learn new cards with the same focus
 def my_reviewer_answerCard( self, ease ): #1
