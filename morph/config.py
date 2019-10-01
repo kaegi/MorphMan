@@ -2,8 +2,6 @@
 import os
 from aqt import mw # this script isn't imported until profile is loaded
 
-user_path = os.path.expanduser("~")
-
 # 4th (lowest) priority
 default = {
     'path_dbs': os.path.join( mw.pm.profileFolder(), 'dbs' ),
@@ -14,7 +12,6 @@ default = {
     'path_mature': os.path.join( mw.pm.profileFolder(), 'dbs', 'mature.db' ),
     'path_known': os.path.join( mw.pm.profileFolder(), 'dbs', 'known.db' ),
     'path_seen': os.path.join( mw.pm.profileFolder(), 'dbs', 'seen.db' ),
-    'path_json': os.path.join( mw.pm.profileFolder(), 'dbs', 'morphman_config.json' ),
     'path_log': os.path.join( mw.pm.profileFolder(), 'morphman.log' ),
     'path_stats': os.path.join( mw.pm.profileFolder(), 'morphman.stats' ),
     'path_analysis_input': '',         # Default path to Input directory in Readability Analyzer.
@@ -51,12 +48,8 @@ default = {
     'saveDbs':True,     # whether to save all.db, known.db, mature.db, and seen.db
 
     # only these can have model overrides
-    'enabled':False,    # whether to analyze notes of a given model, modify their fields, and manipulate due time by Morph Man Index
     'set due based on mmi':True,    # whether to modify card Due times based on MorphManIndex. does nothing if relevant notes aren't enabled
     'ignore maturity':False,        # if True, pretends card maturity is always zero
-
-    # analyze notes based on the morphemes in these fields
-    'morph_fields': ['Expression'],
 
     # controls for morpheme analysis (only for japanese/mecab morphemizer)
     'japanese_tag': 'japanese',              # if a note has this tag, morphemes are be split with mecab, otherwise a space-based morphemizer is used
@@ -78,9 +71,6 @@ default = {
     # Example: 10k frequency.txt scale: 2; 5k frequency.txt scale: 4
     'frequency.txt weight scale': 10, 
 
-    # lite update
-    'only update k+2 and below': False,     # this reduces how many notes are changed and thus sync burden by not updating notes that aren't as important
-
     # only these can have deck overrides
     'next new card feature':True,   # skip cards with focusMorph that was already seen or aren't k+1
     'new card merged fill':False,   # fill new card queue with cards from all child decks instead of sequentially. also enforce a minimum due value
@@ -92,16 +82,13 @@ profile_overrides = {
 
 # Model overrides can only override the entries marked above. 2nd priority
 model_overrides = {
-    'subs2srs':         { 'enabled':True },
-    'SubtitleMemorize': { 'enabled':True },
-    'vn2srs':           { 'enabled':True },
-    'JtMW':             { 'enabled':True, 'set due based on mmi': False, 'ignore maturity': True },
-    'JSPfEC':           { 'enabled':True, 'set due based on mmi': False },
-    'Tae Kim Cloze':    { 'enabled':True, 'set due based on mmi': False },
-    'Yotsubato':        { 'enabled':True, 'set due based on mmi': True },
-    'Rikaisama':        { 'enabled':True, 'set due based on mmi': False },
-   #'Kore':             { 'enabled':True, 'set due based on mmi': False, 'morph_fields':[u'SentenceExpression'] },
-    'Kore':             { 'enabled':True, 'set due based on mmi': False },
+    'JtMW':             { 'set due based on mmi': False, 'ignore maturity': True },
+    'JSPfEC':           { 'set due based on mmi': False },
+    'Tae Kim Cloze':    { 'set due based on mmi': False },
+    'Yotsubato':        { 'set due based on mmi': True },
+    'Rikaisama':        { 'set due based on mmi': False },
+   #'Kore':             { 'set due based on mmi': False, 'morph_fields':[u'SentenceExpression'] },
+    'Kore':             { 'set due based on mmi': False },
 }
 
 # Deck overrides can only override 'new card merged fill' options. 1st priority
