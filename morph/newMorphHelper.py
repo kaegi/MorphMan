@@ -1,17 +1,18 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from anki.hooks import wrap
+from anki.lang import _
 from aqt import reviewer, dialogs
-from aqt.qt import *
 from aqt.utils import tooltip
 from anki import sched, schedv2
 import codecs
-from .util import addBrowserNoteSelectionCmd, addBrowserCardSelectionCmd, jcfg, mw, addHook, allDb, acfg, acfg_path
+from .util import jcfg, mw, addHook, allDb, acfg, acfg_path
+
+from . import main
 
 # only for jedi-auto-completion
 import aqt.main
 assert isinstance(mw, aqt.main.AnkiQt)
 
-from . import main
 
 #1 after answering -> skip all cards with same focus as one just answered
 #2 hotkey -> set card as already known, skip it, and all others with same focus
