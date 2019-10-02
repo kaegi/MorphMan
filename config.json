@@ -1,0 +1,140 @@
+{
+  "default": {
+    "goodSentenceLength": {
+      "minimum": 2,
+      "maximum": 8
+    },
+    "analyzer": {
+      "defaultStudyTarget": 98,
+      "defaultMorphemizer": "MecabMorphemizer"
+    },
+    "dbs": {
+      "loadAllDb": true,
+      "saveDbs": true
+    },
+    "newCards": {
+      "skipNon1T": true,
+      "mergedFill": false,
+      "mergedFillMinDue": 100000
+    },
+    "shortcuts": {
+      "browseSameFocus": "l",
+      "markKnownAndSkip": "k",
+      "batchPlay": "Ctrl+Alt+P",
+      "extractMorphemes": "Ctrl+Alt+E",
+      "learnNow": "Ctrl+Alt+N",
+      "massTagger": "Ctrl+Alt+T",
+      "viewMorphemes": "Ctrl+Alt+V"
+    },
+    "weights": {
+      "reinforceNewVolcab": 5,
+      "verbBonus": 100,
+      "priorityDb": 200,
+      "frequencyTxtScale": 10
+    },
+    "paths": {
+      "dbs": null,
+      "priority": null,
+      "external": null,
+      "frequency": null,
+      "all": null,
+      "mature": null,
+      "known": null,
+      "seen": null,
+      "log": null,
+      "stats": null,
+      "analysisInput": "",
+      "masterFrequencyList": ""
+    },
+    "parser": {
+      "ignoreGrammarPosition": false
+    },
+    "media": {
+      "batchPlayerFields": [
+        "Video",
+        "Sound"
+      ]
+    },
+    "alternatives": {
+      "autoSkip": true,
+      "printNumberSkipped": true
+    },
+    "thresholds": {
+      "mature": 1814400,
+      "known": 10,
+      "seen": 1,
+      "textFileImportMaturity": 1900800
+    },
+    "updates": {
+      "only2TAndBelowCards": false,
+      "setDueBasedOnMMI": true,
+      "ignoreMaturity": false
+    }
+  },
+  "profileOverrides": [],
+  "modelOverrides": [
+    {
+      "name": "Kore",
+      "updates": {
+        "setDueBasedOnMMI": false
+      }
+    },
+    {
+      "name": "JSPfEC",
+      "updates": {
+        "setDueBasedOnMMI": false
+      }
+    },
+    {
+      "name": "Rikaisama",
+      "updates": {
+        "setDueBasedOnMMI": false
+      }
+    },
+    {
+      "name": "Tae Kim Cloze",
+      "updates": {
+        "setDueBasedOnMMI": false
+      }
+    },
+    {
+      "name": "JtMW",
+      "updates": {
+        "setDueBasedOnMMI": false,
+        "ignoreMaturity": true
+      }
+    }
+  ],
+  "deckOverrides": [
+    {
+      "name": "Sentences",
+      "newCards": {
+        "mergedFill": true
+      }
+    },
+    {
+      "name": "ExtraVocab",
+      "newCards": {
+        "mergedFill": true
+      }
+    },
+    {
+      "name": "Sentences::vn2srs",
+      "newCards": {
+        "mergedFill": true
+      }
+    },
+    {
+      "name": "Sentences::subs2srs",
+      "newCards": {
+        "mergedFill": true
+      }
+    },
+    {
+      "name": "ExtraVocab::_Yotsubato",
+      "newCards": {
+        "mergedFill": true
+      }
+    }
+  ]
+}

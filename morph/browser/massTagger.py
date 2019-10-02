@@ -4,7 +4,7 @@ from anki.hooks import addHook
 from anki.utils import stripHTML
 from ..morphemes import getMorphemes, MorphDb
 from ..morphemizer import getMorphemizerByName
-from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit, cfg1
+from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit, acfg
 from .. import util
 from anki.lang import _
 
@@ -41,7 +41,7 @@ def post( st ): # :: State -> State
 def runBatchPlay():
     label = 'MorphMan: Mass Tagger'
     tooltipMsg = 'Tag all cards that contain morphemes from db'
-    shortcut = cfg1('set mass tagger key')
+    shortcut = acfg('shortcuts', 'massTagger')
     addBrowserNoteSelectionCmd( label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,) )
 
 addHook( 'profileLoaded', runBatchPlay )

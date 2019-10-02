@@ -16,7 +16,7 @@ import sys
 
 from anki.utils import isMac
 
-from .util import dbsPath, errorMsg, infoMsg, mw, cfg1, initCfg
+from .util import dbsPath, errorMsg, infoMsg, mw, init_acfg, acfg, acfg_path
 
 importlib.reload( readability_ui )
 
@@ -94,8 +94,9 @@ class MorphMan(QDialog):
         self.ui.setupUi(self)
 
         # Init morphemizer
-        initCfg()
-        self.morphemizer = getMorphemizerByName(cfg1('default_morphemizer'))
+
+        init_acfg()
+        self.morphemizer = getMorphemizerByName(acfg('analyzer', 'defaultMorphemizer'))
 
         # Status bar
         self.ui.statusBar = QStatusBar(self)
@@ -106,15 +107,15 @@ class MorphMan(QDialog):
         self.ui.statusBar.addWidget(self.ui.morphemizerLabel, 0);
         
         # Default settings
-        self.ui.inputPathEdit.setText(cfg1('path_analysis_input'))
+        self.ui.inputPathEdit.setText(acfg('path', 'analysisInput'))
         self.ui.inputPathButton.clicked.connect(lambda le: getPath( self.ui.inputPathEdit, "Select Input Directory", True ))
-        self.ui.masterFreqEdit.setText(cfg1('path_master_frequency_list'))
+        self.ui.masterFreqEdit.setText(acfg('path', 'masterFrequencyList'))
         self.ui.masterFreqButton.clicked.connect(lambda le: getPath( self.ui.masterFreqEdit, "Select Master Frequency List" ))
-        self.ui.knownMorphsEdit.setText(cfg1('path_known'))
+        self.ui.knownMorphsEdit.setText(acfg_path('known'))
         self.ui.knownMorphsButton.clicked.connect(lambda le: getPath( self.ui.knownMorphsEdit, "Select Known Morphs DB" ))
-        self.ui.outputFrequencyEdit.setText(cfg1('path_dbs'))
+        self.ui.outputFrequencyEdit.setText(dbsPath)
         self.ui.outputFrequencyButton.clicked.connect(lambda le: getPath( self.ui.outputFrequencyEdit, "Select Output Directory", True ))
-        self.ui.targetSpinBox.setProperty("value", cfg1('default_study_target'))
+        self.ui.targetSpinBox.setProperty("value", acfg('analyzer', 'defaultStudyTarget'))
 
         # Connect buttons
         self.ui.analyzeButton.clicked.connect(lambda le: self.onAnalyze())
@@ -149,6 +150,7 @@ class MorphMan(QDialog):
             try:
                 os.makedirs(output_path)
             except OSError as e:
+                import errno
                 if e.errno != errno.EEXIST:
                     raise
 
@@ -201,7 +203,7 @@ class MorphMan(QDialog):
                         c[1] = True # mark matched
             self.writeOutput("\n[Current master frequency readability] %0.02f\n" % ( master_current_score * 100.0 / master_total_instances))
 
-        ignore_grammar_pos = cfg1('ignore grammar position')
+        ignore_grammar_pos = acfg('parser', 'ignoreGrammarPosition')
         sources = []
 
         def measure_readability(file_name, is_ass, is_srt):

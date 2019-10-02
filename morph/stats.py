@@ -1,12 +1,15 @@
-#-*- coding: utf-8 -*-
-import glob, gzip, os, pickle as pickle
+# -*- coding: utf-8 -*-
+import gzip, pickle as pickle
 
-from .util import cfg1, wrap, mw
+from anki.hooks import wrap
+
+from .util import mw, acfg_path
 from aqt import toolbar
-
 from anki.lang import _
 
-def getStatsPath(): return cfg1('path_stats')
+
+def getStatsPath(): return acfg_path('stats')
+
 
 def loadStats():
     try:
@@ -32,7 +35,7 @@ def updateStats( knownDb=None ):
 
     # Load known.db and get total morphemes known
     if knownDb is None:
-        knownDb = MorphDb( cfg1('path_known'), ignoreErrors=True )
+        knownDb = MorphDb( acfg_path('known'), ignoreErrors=True )
 
     d['totalVariations'] = len( knownDb.db )
     d['totalKnown'] = len( knownDb.groups )

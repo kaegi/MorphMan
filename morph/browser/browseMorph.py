@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 from aqt.utils import tooltip
 from anki.hooks import addHook
-from ..util import addBrowserNoteSelectionCmd, infoMsg, jcfg, cfg1
+from ..util import addBrowserNoteSelectionCmd, infoMsg, jcfg, acfg
 from ..newMorphHelper import focus, focusName
 from anki.lang import _
 
@@ -33,7 +33,7 @@ def post( st ):
 def runBrowseMorph():
     label = 'MorphMan: Browse Morphs'
     tooltipMsg = 'Browse all notes containing the morphs from selected notes'
-    shortcut = cfg1('browse same focus key')
+    shortcut = acfg('shortcuts', 'browseSameFocus')
     addBrowserNoteSelectionCmd( label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,) )
 
 addHook( 'profileLoaded', runBrowseMorph )

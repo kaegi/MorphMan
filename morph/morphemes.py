@@ -5,11 +5,11 @@ import aqt
 
 # need some fallbacks if not running from anki and thus morph.util isn't available
 try:
-    from .util import errorMsg, jcfg, cfg1
+    from .util import errorMsg, jcfg, acfg
 except ImportError:
     def errorMsg( msg ): pass
     def jcfg(s): return None
-    def cfg1(s): return None
+    def acfg(g, k): return None
 
 ################################################################################
 ## Lexical analysis
@@ -65,7 +65,7 @@ class Morpheme:
         return hash( ( self.norm, self.base, self.inflected, self.read, self.pos, self.subPos ) )
 
     def getGroupKey( self ):
-        if cfg1('ignore grammar position'):
+        if acfg('parser', 'ignoreGrammarPosition'):
             return '%s\t%s' % (self.norm, self.read)
         else:
             return '%s\t%s\t%s\t' % (self.norm, self.read, self.pos)

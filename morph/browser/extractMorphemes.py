@@ -4,7 +4,7 @@ from anki.hooks import addHook
 from anki.utils import stripHTML
 from ..morphemes import AnkiDeck, MorphDb, getMorphemes, ms2str
 from ..morphemizer import getMorphemizerByName
-from ..util import addBrowserNoteSelectionCmd, mw, getFilter, infoMsg, QFileDialog, cfg1
+from ..util import addBrowserNoteSelectionCmd, mw, getFilter, infoMsg, QFileDialog, acfg
 
 def pre( b ):
     from ..util import dbsPath # not defined until late, so don't import at top of module
@@ -31,7 +31,7 @@ def post( st ):
 def runExtractMorphemes():
     label = 'MorphMan: Extract Morphemes'
     tooltipMsg = 'Extract morphemes in selected notes to a MorphMan db'
-    shortcut = cfg1('set extract morphemes key')
+    shortcut = acfg('shortcuts', 'extractMorphemes')
     addBrowserNoteSelectionCmd( label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,) )
 
 addHook( 'profileLoaded', runExtractMorphemes )

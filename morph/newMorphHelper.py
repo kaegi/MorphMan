@@ -1,10 +1,11 @@
 #-*- coding: utf-8 -*-
+from anki.hooks import wrap
 from aqt import reviewer, dialogs
 from aqt.qt import *
 from aqt.utils import tooltip
 from anki import sched, schedv2
 import codecs
-from .util import addBrowserNoteSelectionCmd, addBrowserCardSelectionCmd, jcfg, cfg, cfg1, wrap, tooltip, mw, addHook, allDb, partial
+from .util import addBrowserNoteSelectionCmd, addBrowserCardSelectionCmd, jcfg, mw, addHook, allDb, acfg, acfg_path
 
 # only for jedi-auto-completion
 import aqt.main
@@ -20,23 +21,21 @@ from . import main
 #6 on fill -> pull new cards from all child decks at once instead of sequentially
 
 # config aliases
-def CN( n, key ):   return    cfg( n.mid, None, key )
 def focusName(): return    jcfg('Field_FocusMorph')
 def focus( n ):     return n[ focusName() ]
 
 
 ########## 6 parent deck pulls new cards from all children instead of sequentially (ie. mostly first)
 def my_fillNew( self, _old ):
-    '''If 'new card merged fill' is enabled for the current deck, when we refill we
+    '''If 'mergedFill' is enabled for the current deck, when we refill we
     pull from all child decks, sort combined pool of cards, then limit.
     If disabled, do the standard sequential fill method'''
-    C = partial( cfg, None, self.col.decks.active()[0] )
-    if not C('new card merged fill'): return _old( self )
+    if not acfg('newCards', 'mergedFill', None, self.col.decks.active()[0]): return _old( self )
 
     if self._newQueue:      return True
     if not self.newCount:   return False
 
-    self._newQueue = self.col.db.all('''select id, due from cards where did in %s and queue = 0 and due >= ? order by due limit ?''' % self._deckLimit(), C('new card merged fill min due'), self.queueLimit )
+    self._newQueue = self.col.db.all('''select id, due from cards where did in %s and queue = 0 and due >= ? order by due limit ?''' % self._deckLimit(), acfg('newCards', 'mergedFillMinDue', None, self.col.decks.active()[0]), self.queueLimit )
     if self._newQueue:      return True
 
 sched.Scheduler._fillNew = wrap( sched.Scheduler._fillNew, my_fillNew, 'around' )
@@ -55,7 +54,7 @@ def markFocusSeen( self, n ):
     except KeyError: return
     seenMorphs.add( focus(n) )
     numSkipped = len( self.mw.col.findNotes( q ) ) -1
-    if numSkipped and cfg1('print number of alternatives skipped'):
+    if numSkipped and acfg('alternatives', 'printNumberSkipped'):
         tooltip( _( '%d alternatives will be skipped' % numSkipped ) )
 
 def my_getNewCard( self, _old ):
@@ -67,10 +66,9 @@ def my_getNewCard( self, _old ):
     '''
 
     while True:
-        C = partial( cfg, None, self.col.decks.active()[0] )
-        if not C('next new card feature'):
+        if not acfg('newCards', 'skipNon1T', None, self.col.decks.active()[0]):
             return _old( self )
-        if not C('new card merged fill'):
+        if not acfg('newCards', 'mergedFill', None, self.col.decks.active()[0]):
             c = _old( self )
             ''' :type c: anki.cards.Card '''
         else:   # pop from opposite direction and skip sibling spacing
@@ -129,11 +127,11 @@ schedv2.Scheduler._getNewCard = wrap( schedv2.Scheduler._getNewCard, my_getNewCa
 ########## 1 - after learning a new focus morph, don't learn new cards with the same focus
 def my_reviewer_answerCard( self, ease ): #1
     ''' :type self: aqt.reviewer.Reviewer '''
-    if self.mw.state != "review" or self.state != "answer" or self.mw.col.sched.answerButtons( self.card ) < ease: return
-    if CN(self.card.note(), 'auto skip alternatives'):
-        markFocusSeen( self, self.card.note() )
+    if self.mw.state != "review" or self.state != "answer" or self.mw.col.sched.answerButtons(self.card) < ease: return
+    if acfg('alternatives', 'autoSkip', self.card.note().mid):
+        markFocusSeen(self, self.card.note())
 
-reviewer.Reviewer._answerCard = wrap( reviewer.Reviewer._answerCard, my_reviewer_answerCard, "before" )
+reviewer.Reviewer._answerCard = wrap(reviewer.Reviewer._answerCard, my_reviewer_answerCard, "before")
 
 ########## 2 - set current card's focus morph as already known and skip alternatives
 def setKnownAndSkip( self ): #2
@@ -169,7 +167,7 @@ def browseSameFocus( self ): #3
 
 ########## set keybindings for 2-3
 def my_reviewer_shortcutKeys( self ):
-    key_browse, key_skip = cfg1('browse same focus key'), cfg1('set known and skip key')
+    key_browse, key_skip = acfg('shortcuts', 'browseSameFocus'), acfg('shortcuts', 'markKnownAndSkip')
     keys = original_shortcutKeys( self ) 
     keys.extend([
         (key_browse, lambda: browseSameFocus( self )),
@@ -209,14 +207,14 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
     def nonSpanSub( sub, repl, string ):
         return ''.join( re.sub( sub, repl, s, flags=re.IGNORECASE ) if not s.startswith('<span') else s for s in re.split( '(<span.*?</span>)', string ) )
 
-    frequencyListPath = cfg1('path_frequency')
+    frequencyListPath = acfg_path('frequency')
     try:
         with codecs.open( frequencyListPath, 'r', 'utf-8' ) as f:
             frequencyList = [line.strip().split('\t')[0] for line in f.readlines()]
     except:
         pass # User does not have a frequency.txt
 
-    priorityDb  = main.MorphDb( cfg1('path_priority'), ignoreErrors=True ).db
+    priorityDb  = main.MorphDb(acfg_path('priority'), ignoreErrors=True).db
     tags = fieldDict['Tags'].split()
     filter = getFilterByTagsAndType(fieldDict['Type'], tags)
     if filter is None:
@@ -230,9 +228,9 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
         locs = allDb().getMatchingLocs( m )
         mat = max( loc.maturity for loc in locs ) if locs else 0
 
-        if   mat >= cfg1( 'threshold_mature' ):  mtype = 'mature'
-        elif mat >= cfg1( 'threshold_known' ):   mtype = 'known'
-        elif mat >= cfg1( 'threshold_seen' ):    mtype = 'seen'
+        if   mat >= acfg('threshold', 'mature'): mtype = 'mature'
+        elif mat >= acfg('threshold', 'known'):  mtype = 'known'
+        elif mat >= acfg('threshold', 'seen'):   mtype = 'seen'
         else:                                    mtype = 'unknown'
 
         if m in priorityDb:

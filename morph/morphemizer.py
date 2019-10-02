@@ -10,7 +10,7 @@ from .util_external import memoize
 ####################################################################################################
 
 class Morphemizer:
-    def getMorphemesFromExpr(self, expression): # Str -> [Morpeme]
+    def getMorphemesFromExpr(self, expression): # Str -> [Morpheme]
         '''
         The heart of this plugin: convert an expression to a list of its morphemes.
         '''
@@ -18,9 +18,9 @@ class Morphemizer:
 
     def getDescription(self):
         '''
-        Returns a signle line, for which languages this Morphemizer is.
+        Returns a single line, for which languages this Morphemizer is.
         '''
-        return 'No information availiable'
+        return 'No information available'
 
     def getDictionary(self):
         return ''

@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
-import codecs, datetime
-from PyQt5.QtWidgets import *
-from functools import partial
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
+import codecs
+import datetime
+
 from aqt.qt import *
 
 from aqt import mw
-from aqt.utils import showCritical, showInfo, showWarning, tooltip
-from anki.hooks import addHook, wrap
-import importlib
+from aqt.utils import showCritical, showInfo
+from anki.hooks import addHook
+
+
+def first(f, iterator):
+    return next(filter(f, iterator), None)
 
 ###############################################################################
 ## Global data
@@ -19,49 +20,82 @@ def allDb(reload=False):
     global _allDb
     if reload or (_allDb is None):
         from .morphemes import MorphDb
-        _allDb = MorphDb( cfg1('path_all'), ignoreErrors=True )
+        _allDb = MorphDb(acfg_path('all'), ignoreErrors=True)
     return _allDb
 
 ###############################################################################
 ## Config
 ###############################################################################
-cfgMod = None
 dbsPath = None
-def initCfg():
-    global cfgMod, dbsPath
-    from . import config
-    importlib.reload( config )
-    cfgMod = config
-    dbsPath = config.default['path_dbs']
 
-    # Redraw toolbar to update stats
+
+def init_acfg():
+    global dbsPath
+    dbsPath = acfg_path('dbs', True)
     mw.toolbar.draw()
 
+
 def initJcfg():
-    mw.col.conf.setdefault(
-            'addons', {}).setdefault(
-                    'morphman', jcfg_default())
+    mw.col.conf.setdefault('addons', {}).setdefault('morphman', jcfg_default())
 
     # this ensures forward compatibility, because it adds new options in configuration without any notice
     jcfgAddMissing()
 
-addHook( 'profileLoaded', initCfg )
-addHook( 'profileLoaded', initJcfg )
 
-def cfg1( key, mid=None, did=None ): return cfg( mid, did, key )
-def cfg( modelId, deckId, key ):
-    assert cfgMod, 'Tried to use cfgMods before profile loaded'
-    profile = mw.pm.name
-    model = mw.col.models.get( modelId )[ 'name' ] if modelId else None
-    deck = mw.col.decks.get( deckId )[ 'name' ] if deckId else None
-    if key in cfgMod.deck_overrides.get( deck, [] ):
-        return cfgMod.deck_overrides[ deck ][ key ]
-    elif key in cfgMod.model_overrides.get( model, [] ):
-        return cfgMod.model_overrides[ model ][ key ]
-    elif key in cfgMod.profile_overrides.get( profile, [] ):
-        return cfgMod.profile_overrides[ profile ][ key ]
-    else:
-        return cfgMod.default[ key ]
+addHook('profileLoaded', init_acfg)
+addHook('profileLoaded', initJcfg)
+
+
+def acfg_path(key, skip_profile=False):
+    base = acfg('paths', key, None, None, skip_profile)
+
+    if base is not None:
+        return base if os.path.isabs(base) else os.path.join(mw.pm.profileFolder(), base)
+
+    paths = {
+        'dbs': os.path.join(mw.pm.profileFolder(), 'dbs'),
+        'priority': os.path.join(mw.pm.profileFolder(), 'dbs', 'priority.db'),
+        'external': os.path.join(mw.pm.profileFolder(), 'dbs', 'external.db'),
+        'frequency': os.path.join(mw.pm.profileFolder(), 'dbs', 'frequency.txt'),
+        'all': os.path.join(mw.pm.profileFolder(), 'dbs', 'all.db'),
+        'mature': os.path.join(mw.pm.profileFolder(), 'dbs', 'mature.db'),
+        'known': os.path.join(mw.pm.profileFolder(), 'dbs', 'known.db'),
+        'seen': os.path.join(mw.pm.profileFolder(), 'dbs', 'seen.db'),
+        'log': os.path.join(mw.pm.profileFolder(), 'morphman.log'),
+        'stats': os.path.join(mw.pm.profileFolder(), 'morphman.stats'),
+    }
+
+    return paths[key]
+
+
+def acfg(group, key, model_id=None, deck_id=None, skip_profile=False):
+    cfg = mw.addonManager.getConfig(__name__)
+
+    deck = mw.col.decks.get(deck_id)['name'] if deck_id else None
+    model = mw.col.models.get(model_id)['name'] if model_id else None
+
+    overrides = []
+    if model:
+        overrides.append(first(lambda override: override["name"] == model, cfg["deckOverrides"]))
+
+    if deck:
+        overrides.append(first(lambda override: override["name"] == deck, cfg["modelOverrides"]))
+
+    if not skip_profile:
+        overrides.append(first(lambda override: override["name"] == mw.pm.name, cfg["profileOverrides"]))
+
+    for override in overrides:
+        # Use a try-except-pass here because we don't really care if it succeeds or not.
+        try:
+            return override[group][key]
+        except TypeError:
+            continue
+        except KeyError:
+            continue
+
+    # But even if those all fail, we still have to return, so...
+    return cfg["default"][group][key]
+
 
 def jcfg_default():
     return {
@@ -222,14 +256,14 @@ def infoMsg( msg ):
     printf( msg )
 
 def printf( msg ):
-    txt = '%s: %s' % ( datetime.datetime.now(), msg )
-    f = codecs.open( cfg1('path_log'), 'a', 'utf-8' )
-    f.write( txt+'\r\n' )
+    txt = '%s: %s' % (datetime.datetime.now(), msg)
+    f = codecs.open(acfg_path('log'), 'a', 'utf-8')
+    f.write(txt+'\r\n')
     f.close()
     print(txt.encode('utf-8'))
 
 def clearLog():
-    f = codecs.open( cfg1('path_log'), 'w', 'utf-8' )
+    f = codecs.open(acfg_path('log'), 'w', 'utf-8')
     f.close()
 
 ###############################################################################

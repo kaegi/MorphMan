@@ -5,14 +5,13 @@ from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksu
 from .morphemes import MorphDb, AnkiDeck, getMorphemes
 from .morphemizer import getMorphemizerByName
 from . import stats
-from .util import printf, mw, cfg, cfg1, partial, errorMsg, infoMsg, jcfg, jcfg2, getFilter
+from .util import printf, mw, errorMsg, jcfg, jcfg2, getFilter, acfg, acfg_path
 from . import util
 from .util_external import memoize
 import codecs
 
 # only for jedi-auto-completion
 import aqt.main
-import importlib
 assert isinstance(mw, aqt.main.AnkiQt)
 
 @memoize
@@ -51,7 +50,6 @@ def setField( mid, fs, k, v ): # nop if field DNE
     if idx: fs[ idx ] = v
 
 def mkAllDb( allDb=None ):
-    from . import config; importlib.reload(config)
     t_0, db, TAG = time.time(), mw.col.db, mw.col.tags
     N_notes = db.scalar( 'select count() from notes' )
     N_enabled_notes = 0 # for providing an error message if there is no note that is used for processing
@@ -64,7 +62,6 @@ def mkAllDb( allDb=None ):
     mw.progress.update( label='Generating all.db data' )
     for i,( nid, mid, flds, guid, tags ) in enumerate( db.execute( 'select id, mid, flds, guid, tags from notes' ) ):
         if i % 500 == 0:    mw.progress.update( value=i )
-        C = partial( cfg, mid, None )
 
         note = mw.col.getNote(nid)
         notecfg = getFilter(note)
@@ -74,11 +71,11 @@ def mkAllDb( allDb=None ):
         N_enabled_notes += 1
 
         mats = [ ( 0.5 if ivl == 0 and ctype == 1 else ivl ) for ivl, ctype in db.execute( 'select ivl, type from cards where nid = :nid', nid=nid ) ]
-        if C('ignore maturity'):
+        if acfg('updates', 'ignoreMaturity', mid):
             mats = [ 0 for mat in mats ]
         ts, alreadyKnownTag = TAG.split( tags ), jcfg('Tag_AlreadyKnown')
         if alreadyKnownTag in ts:
-            mats += [ C('threshold_mature')+1 ]
+            mats += [ acfg('thresholds', 'mature')+1 ]
 
         for fieldName in notecfg['Fields']:
             try: # if doesn't have field, continue
@@ -116,9 +113,9 @@ def mkAllDb( allDb=None ):
     mw.progress.update( value=i, label='Creating all.db object' )
     allDb.clear()
     allDb.addFromLocDb( locDb )
-    if cfg1('saveDbs'):
+    if acfg('dbs', 'saveDbs'):
         mw.progress.update( value=i, label='Saving all.db to disk' )
-        allDb.save( cfg1('path_all') )
+        allDb.save(acfg_path('path_all'))
         printf( 'Processed all %d notes + saved all.db in %f sec' % ( N_notes, time.time() - t_0 ) )
     mw.progress.finish()
     return allDb
@@ -146,14 +143,14 @@ def updateNotes( allDb ):
 
     # handle secondary databases
     mw.progress.update( label='Creating seen/known/mature from all.db' )
-    seenDb      = filterDbByMat( allDb, cfg1('threshold_seen') )
-    knownDb     = filterDbByMat( allDb, cfg1('threshold_known') )
-    matureDb    = filterDbByMat( allDb, cfg1('threshold_mature') )
+    seenDb      = filterDbByMat(allDb, acfg('threshold', 'seen'))
+    knownDb     = filterDbByMat(allDb, acfg('threshold', 'known'))
+    matureDb    = filterDbByMat(allDb, acfg('threshold', 'mature'))
     mw.progress.update( label='Loading priority.db' )
-    priorityDb  = MorphDb( cfg1('path_priority'), ignoreErrors=True ).db
+    priorityDb  = MorphDb( acfg_path('priority'), ignoreErrors=True ).db
 
-    mw.progress.update( label='Loading frequency.txt' )
-    frequencyListPath = cfg1('path_frequency')
+    mw.progress.update(label='Loading frequency.txt')
+    frequencyListPath = acfg_path('frequency')
     try:
 	    with codecs.open( frequencyListPath, 'r', 'utf-8' ) as f:
 	        frequencyList = [line.strip().split('\t')[0] for line in f.readlines()]
@@ -161,16 +158,15 @@ def updateNotes( allDb ):
     except FileNotFoundError:
         pass # User does not have a frequency.txt
 
-    if cfg1('saveDbs'):
-        mw.progress.update( label='Saving seen/known/mature dbs' )
-        seenDb.save( cfg1('path_seen') )
-        knownDb.save( cfg1('path_known') )
-        matureDb.save( cfg1('path_mature') )
+    if acfg('dbs', 'saveDbs'):
+        mw.progress.update(label='Saving seen/known/mature dbs')
+        seenDb.save(acfg_path('seen'))
+        knownDb.save(acfg_path('known'))
+        matureDb.save(acfg_path('mature'))
 
     mw.progress.update( label='Updating notes' )
     for i,( nid, mid, flds, guid, tags ) in enumerate( db.execute( 'select id, mid, flds, guid, tags from notes' ) ):
         if i % 500 == 0:    mw.progress.update( value=i )
-        C = partial( cfg, mid, None )
 
         note = mw.col.getNote(nid)
         notecfg = getFilter(note)
@@ -197,7 +193,7 @@ def updateNotes( allDb ):
         N, N_s, N_k, N_m = len( morphemes ), len( unseens ), len( unknowns ), len( unmatures )
 
         # Bail early for lite update
-        if N_k > 2 and C('only update k+2 and below'): continue
+        if N_k > 2 and acfg('updates', 'only2TAndBelowCards', mid): continue
 
         # average frequency of unknowns (ie. how common the word is within your collection)
         F_k = 0
@@ -212,12 +208,12 @@ def updateNotes( allDb ):
         for focusMorph in unknowns:
             if focusMorph in priorityDb:
                 isPriority = True
-                usefulness += C('priority.db weight')
+                usefulness += acfg('weights', 'priorityDb', mid)
             focusMorphString = focusMorph.base
             try:
                 focusMorphIndex = frequencyList.index(focusMorphString)
                 isFrequency = True
-                frequencyWeight = C('frequency.txt weight scale')
+                frequencyWeight = acfg('weights', 'frequencyTxtScale')
 
                 # The bigger this number, the lower mmi becomes
                 usefulness += (frequencyListLength - focusMorphIndex) * frequencyWeight
@@ -229,21 +225,20 @@ def updateNotes( allDb ):
             locs = knownDb.getMatchingLocs( morpheme )
             if locs:
                 ivl = min( 1, max( loc.maturity for loc in locs ) )
-                usefulness += C('reinforce new vocab weight') // ivl #TODO: maybe average this so it doesnt favor long sentences
+                usefulness += acfg('weights', 'reinforceNewVolcab', mid) // ivl #TODO: maybe average this so it doesnt favor long sentences
 
         if any( morpheme.pos == '動詞' for morpheme in unknowns ): #FIXME: this isn't working???
-            usefulness += C('verb bonus')
-
+            usefulness += acfg('weights', 'verbBonus', mid)
         usefulness = 99999  - min( 99999 , usefulness )
 
         # difference from optimal length range (too little context vs long sentence)
-        lenDiffRaw = min(N - C('min good sentence length'),
-                         max(0, N - C('max good sentence length')))
+        lenDiffRaw = min(N - acfg('goodSentenceLength', 'minimum'),
+                         max(0, N - acfg('goodSentenceLength', 'maximum')))
         lenDiff = min(9, abs(lenDiffRaw))
 
         # calculate mmi
         mmi = 100000 * N_k + 1000 * lenDiff + usefulness
-        if C('set due based on mmi'):
+        if acfg('updates', 'setDueBasedOnMMI', mid):
             nid2mmi[ nid ] = mmi
 
         # Fill in various fields/tags on the note based on cfg
@@ -333,7 +328,7 @@ def main():
     # load existing all.db
     mw.progress.start( label='Loading existing all.db', immediate=True )
     t_0 = time.time()
-    cur = util.allDb(reload=True) if cfg1('loadAllDb') else None
+    cur = util.allDb(reload=True) if acfg('dbs', 'loadAllDb') else None
     printf( 'Loaded all.db in %f sec' % ( time.time() - t_0 ) )
     mw.progress.finish()
 
@@ -345,7 +340,7 @@ def main():
 
     # merge in external.db
     mw.progress.start( label='Merging ext.db', immediate=True )
-    ext = MorphDb( cfg1('path_ext'), ignoreErrors=True )
+    ext = MorphDb( acfg_path('ext'), ignoreErrors=True )
     allDb.merge( ext )
     mw.progress.finish()
 

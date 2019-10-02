@@ -3,7 +3,7 @@ from anki.hooks import addHook
 from anki.utils import stripHTML
 from ..morphemes import getMorphemes, ms2str
 from ..morphemizer import getMorphemizerByName
-from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, cfg1
+from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, acfg
 
 def pre( b ): return { 'morphemes': [] }
 
@@ -26,7 +26,7 @@ def post( st ):
 def runViewMorphemes():
     label = 'MorphMan: View Morphemes'
     tooltipMsg = 'View Morphemes for selected note'
-    shortcut = cfg1('set view morphemes key')
+    shortcut = acfg('shortcuts', 'viewMorphemes')
     addBrowserNoteSelectionCmd( label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,) )
 
 addHook( 'profileLoaded', runViewMorphemes )

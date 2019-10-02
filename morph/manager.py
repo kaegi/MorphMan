@@ -10,7 +10,7 @@ from anki.utils import isMac
 from . import adaptiveSubs
 from .morphemes import MorphDb
 from .morphemizer import getAllMorphemizers
-from .util import dbsPath, errorMsg, infoMsg, mw, cfg1, mkBtn
+from .util import dbsPath, errorMsg, infoMsg, mw, mkBtn, acfg
 
 def getPath( le ): # LineEdit -> GUI ()
     path = QFileDialog.getOpenFileName( caption='Open db', directory=dbsPath )[0]
@@ -194,11 +194,11 @@ class MorphMan( QDialog ):
         if not srcPath: return
         destPath = QFileDialog.getSaveFileName( caption='Save morpheme db to?', directory=dbsPath + os.sep + 'textFile.db' )[0]
         if not destPath: return
-        mat = cfg1('text file import maturity')
-        db = MorphDb.mkFromFile( str(srcPath), getAllMorphemizers()[self.morphemizerComboBox.currentIndex()], mat )
+        mat = acfg('threshold', 'textFileImportMaturity')
+        db = MorphDb.mkFromFile(str(srcPath), getAllMorphemizers()[self.morphemizerComboBox.currentIndex()], mat)
         if db:
-            db.save( str(destPath) )
-            infoMsg( 'Extracted successfully' )
+            db.save(str(destPath))
+            infoMsg('Extracted successfully')
 
     def onSaveResults( self ):
         destPath = QFileDialog.getSaveFileName( caption='Save results to?', directory=dbsPath + os.sep + 'results.db' )[0]
