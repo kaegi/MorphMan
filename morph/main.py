@@ -143,9 +143,9 @@ def updateNotes( allDb ):
 
     # handle secondary databases
     mw.progress.update( label='Creating seen/known/mature from all.db' )
-    seenDb      = filterDbByMat(allDb, acfg('threshold', 'seen'))
-    knownDb     = filterDbByMat(allDb, acfg('threshold', 'known'))
-    matureDb    = filterDbByMat(allDb, acfg('threshold', 'mature'))
+    seenDb      = filterDbByMat(allDb, acfg('thresholds', 'seen'))
+    knownDb     = filterDbByMat(allDb, acfg('thresholds', 'known'))
+    matureDb    = filterDbByMat(allDb, acfg('thresholds', 'mature'))
     mw.progress.update( label='Loading priority.db' )
     priorityDb  = MorphDb( acfg_path('priority'), ignoreErrors=True ).db
 
@@ -340,7 +340,7 @@ def main():
 
     # merge in external.db
     mw.progress.start( label='Merging ext.db', immediate=True )
-    ext = MorphDb( acfg_path('ext'), ignoreErrors=True )
+    ext = MorphDb( acfg_path('external'), ignoreErrors=True )
     allDb.merge( ext )
     mw.progress.finish()
 

@@ -229,10 +229,10 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
         locs = allDb().getMatchingLocs( m )
         mat = max( loc.maturity for loc in locs ) if locs else 0
 
-        if   mat >= acfg('threshold', 'mature'): mtype = 'mature'
-        elif mat >= acfg('threshold', 'known'):  mtype = 'known'
-        elif mat >= acfg('threshold', 'seen'):   mtype = 'seen'
-        else:                                    mtype = 'unknown'
+        if   mat >= acfg('thresholds', 'mature'): mtype = 'mature'
+        elif mat >= acfg('thresholds', 'known'):  mtype = 'known'
+        elif mat >= acfg('thresholds', 'seen'):   mtype = 'seen'
+        else:                                     mtype = 'unknown'
 
         if m in priorityDb:
             priority = 'true'
