@@ -115,7 +115,7 @@ def mkAllDb( allDb=None ):
     allDb.addFromLocDb( locDb )
     if acfg('dbs', 'saveDbs'):
         mw.progress.update( value=i, label='Saving all.db to disk' )
-        allDb.save(acfg_path('path_all'))
+        allDb.save(acfg_path('all'))
         printf( 'Processed all %d notes + saved all.db in %f sec' % ( N_notes, time.time() - t_0 ) )
     mw.progress.finish()
     return allDb
