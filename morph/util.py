@@ -34,8 +34,9 @@ acfg_cache = None
 
 
 def init_acfg():
-    global dbsPath
+    global dbsPath, acfg_cache
     dbsPath = acfg_path('dbs', True)
+    acfg_cache = None
     mw.toolbar.draw()
 
 

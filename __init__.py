@@ -1,3 +1,6 @@
+from anki.hooks import wrap, runHook
+from aqt.addons import AddonManager
+
 from .morph.util import *
 from PyQt5.QtWidgets import *
 import importlib
@@ -26,7 +29,13 @@ def onMorphManPreferences():
     preferencesDialog.main()
 
 
+def write_config_hook(self, module, conf):
+    runHook('writeAddonConfig')
+
+
 def main():
+    AddonManager.writeConfig = wrap(AddonManager.writeConfig, write_config_hook)
+
     # Add recalculate menu button
     a = QAction( '&MorphMan Recalc', mw )
     a.setStatusTip(_("Recalculate all.db, note fields, and new card ordering"))

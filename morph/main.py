@@ -2,8 +2,6 @@
 import time
 
 from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksum
-from anki.hooks import wrap, runHook
-from aqt.addons import AddonManager
 
 from .morphemes import MorphDb, AnkiDeck, getMorphemes
 from .morphemizer import getMorphemizerByName
@@ -335,14 +333,7 @@ def updateNotes( allDb ):
     return knownDb
 
 
-def write_config_hook(self, module, conf):
-    runHook('writeAddonConfig')
-
-
 def main():
-
-    AddonManager.writeConfig = wrap(AddonManager.writeConfig, write_config_hook)
-
     # load existing all.db
     mw.progress.start( label='Loading existing all.db', immediate=True )
     t_0 = time.time()
