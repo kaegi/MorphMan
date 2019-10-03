@@ -6,7 +6,7 @@ from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksu
 from .morphemes import MorphDb, AnkiDeck, getMorphemes
 from .morphemizer import getMorphemizerByName
 from . import stats
-from .util import printf, mw, errorMsg, jcfg, jcfg2, getFilter, acfg, acfg_path
+from .util import printf, mw, errorMsg, jcfg, jcfg2, getFilter, acfg, acfg_path, seconds_in_a_day
 from . import util
 from .util_external import memoize
 import codecs
@@ -76,7 +76,7 @@ def mkAllDb( allDb=None ):
             mats = [ 0 for mat in mats ]
         ts, alreadyKnownTag = TAG.split( tags ), jcfg('Tag_AlreadyKnown')
         if alreadyKnownTag in ts:
-            mats += [ acfg('thresholds', 'mature')+1 ]
+            mats += [(acfg('thresholds', 'mature') / seconds_in_a_day) + 1]
 
         for fieldName in notecfg['Fields']:
             try: # if doesn't have field, continue
@@ -144,9 +144,9 @@ def updateNotes( allDb ):
 
     # handle secondary databases
     mw.progress.update( label='Creating seen/known/mature from all.db' )
-    seenDb      = filterDbByMat(allDb, acfg('thresholds', 'seen'))
-    knownDb     = filterDbByMat(allDb, acfg('thresholds', 'known'))
-    matureDb    = filterDbByMat(allDb, acfg('thresholds', 'mature'))
+    seenDb      = filterDbByMat(allDb, acfg('thresholds', 'seen') / seconds_in_a_day)
+    knownDb     = filterDbByMat(allDb, acfg('thresholds', 'known') / seconds_in_a_day)
+    matureDb    = filterDbByMat(allDb, acfg('thresholds', 'mature') / seconds_in_a_day)
     mw.progress.update( label='Loading priority.db' )
     priorityDb  = MorphDb( acfg_path('priority'), ignoreErrors=True ).db
 

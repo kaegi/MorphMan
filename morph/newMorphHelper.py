@@ -5,7 +5,7 @@ from aqt import reviewer, dialogs
 from aqt.utils import tooltip
 from anki import sched, schedv2
 import codecs
-from .util import jcfg, mw, addHook, allDb, acfg, acfg_path
+from .util import jcfg, mw, addHook, allDb, acfg, acfg_path, seconds_in_a_day
 
 from . import main
 
@@ -225,9 +225,9 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
         return txt
     ms = getMorphemes(morphemizer, txt, tags)
 
-    mature_threshold = acfg('thresholds', 'mature')
-    known_threshold = acfg('thresholds', 'known')
-    seen_threshold = acfg('thresholds', 'seen')
+    mature_threshold = acfg('thresholds', 'mature') / seconds_in_a_day
+    known_threshold = acfg('thresholds', 'known') / seconds_in_a_day
+    seen_threshold = acfg('thresholds', 'seen') / seconds_in_a_day
 
     for m in sorted( ms, key=lambda x: len(x.inflected), reverse=True ): # largest subs first
         locs = allDb().getMatchingLocs( m )

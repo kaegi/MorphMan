@@ -8,6 +8,7 @@ from aqt import mw
 from aqt.utils import showCritical, showInfo
 from anki.hooks import addHook
 
+seconds_in_a_day = 24 * 60 * 60
 
 def first(f, iterator):
     return next(filter(f, iterator), None)
