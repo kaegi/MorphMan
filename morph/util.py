@@ -23,16 +23,25 @@ def allDb(reload=False):
         _allDb = MorphDb(acfg_path('all'), ignoreErrors=True)
     return _allDb
 
+
 ###############################################################################
 ## Config
 ###############################################################################
+
+
 dbsPath = None
+acfg_cache = None
 
 
 def init_acfg():
     global dbsPath
     dbsPath = acfg_path('dbs', True)
     mw.toolbar.draw()
+
+
+def clear_acfg_cache():
+    global acfg_cache
+    acfg_cache = None
 
 
 def initJcfg():
@@ -44,6 +53,7 @@ def initJcfg():
 
 addHook('profileLoaded', init_acfg)
 addHook('profileLoaded', initJcfg)
+addHook('writeAddonConfig', clear_acfg_cache)
 
 
 def acfg_path(key, skip_profile=False):
@@ -69,7 +79,11 @@ def acfg_path(key, skip_profile=False):
 
 
 def acfg(group, key, model_id=None, deck_id=None, skip_profile=False):
-    cfg = mw.addonManager.getConfig(__name__)
+    global acfg_cache
+    if acfg_cache is None:
+        acfg_cache = mw.addonManager.getConfig(__name__)
+
+    cfg = acfg_cache
 
     deck = mw.col.decks.get(deck_id)['name'] if deck_id else None
     model = mw.col.models.get(model_id)['name'] if model_id else None

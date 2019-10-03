@@ -225,18 +225,20 @@ def highlight( txt, extra, fieldDict, field, mod_field ):
         return txt
     ms = getMorphemes(morphemizer, txt, tags)
 
+    mature_threshold = acfg('thresholds', 'mature')
+    known_threshold = acfg('thresholds', 'known')
+    seen_threshold = acfg('thresholds', 'seen')
+
     for m in sorted( ms, key=lambda x: len(x.inflected), reverse=True ): # largest subs first
         locs = allDb().getMatchingLocs( m )
         mat = max( loc.maturity for loc in locs ) if locs else 0
 
-        if   mat >= acfg('thresholds', 'mature'): mtype = 'mature'
-        elif mat >= acfg('thresholds', 'known'):  mtype = 'known'
-        elif mat >= acfg('thresholds', 'seen'):   mtype = 'seen'
-        else:                                     mtype = 'unknown'
+        if   mat >= mature_threshold: mtype = 'mature'
+        elif mat >= known_threshold:  mtype = 'known'
+        elif mat >= seen_threshold:   mtype = 'seen'
+        else:                         mtype = 'unknown'
 
-        if m in priorityDb:
-            priority = 'true'
-        else: priority = 'false'
+        priority = 'true' if m in priorityDb else 'false'
 
         focusMorphString = m.show().split()[0]
         try:
