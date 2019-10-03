@@ -205,34 +205,41 @@ def updateNotes( allDb ):
         F_k_avg = F_k // N_k if N_k > 0 else F_k
         usefulness = F_k_avg
 
+        priority_db_weight = acfg('weights', 'priorityDb', mid)
+        frequency_text_scale = acfg('weights', 'frequencyTxtScale')
+
         # add bonus for morphs in priority.db and frequency.txt
         isPriority = False
         isFrequency = False
         for focusMorph in unknowns:
             if focusMorph in priorityDb:
                 isPriority = True
-                usefulness += acfg('weights', 'priorityDb', mid)
+                usefulness += priority_db_weight
             focusMorphString = focusMorph.base
             try:
                 focusMorphIndex = frequencyList.index(focusMorphString)
                 isFrequency = True
-                frequencyWeight = acfg('weights', 'frequencyTxtScale')
 
                 # The bigger this number, the lower mmi becomes
-                usefulness += (frequencyListLength - focusMorphIndex) * frequencyWeight
+                usefulness += (frequencyListLength - focusMorphIndex) * frequency_text_scale
             except:
                 pass
 
+        reinforce_new_volcab_weight = acfg('weights', 'reinforceNewVolcab', mid)
+
         # add bonus for studying recent learned knowns (reinforce)
         for morpheme in newKnowns:
-            locs = knownDb.getMatchingLocs( morpheme )
+            locs = knownDb.getMatchingLocs(morpheme)
             if locs:
-                ivl = min( 1, max( loc.maturity for loc in locs ) )
-                usefulness += acfg('weights', 'reinforceNewVolcab', mid) // ivl #TODO: maybe average this so it doesnt favor long sentences
+                ivl = min(1, max(loc.maturity for loc in locs))
+                usefulness += reinforce_new_volcab_weight // ivl #TODO: maybe average this so it doesnt favor long sentences
 
-        if any( morpheme.pos == '動詞' for morpheme in unknowns ): #FIXME: this isn't working???
-            usefulness += acfg('weights', 'verbBonus', mid)
-        usefulness = 99999  - min( 99999 , usefulness )
+        verb_bonus = acfg('weights', 'verbBonus', mid)
+
+        if any(morpheme.pos == '動詞' for morpheme in unknowns): #FIXME: this isn't working???
+            usefulness += verb_bonus
+
+        usefulness = 99999 - min(99999, usefulness)
 
         # difference from optimal length range (too little context vs long sentence)
         lenDiffRaw = min(N - acfg('goodSentenceLength', 'minimum'),

@@ -353,7 +353,6 @@ class MorphMan(QDialog):
                             score = source_unknown_count * 600 + unknown_count * 600 + master_count * master_weight
                             missing_morphs.append((m[0], source_unknown_count, unknown_count, master_count, score))
 
-
                     all_missing_morphs += missing_morphs
                     
                     if seen_i > 0:
