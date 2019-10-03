@@ -107,9 +107,9 @@ class MorphMan(QDialog):
         self.ui.statusBar.addWidget(self.ui.morphemizerLabel, 0);
         
         # Default settings
-        self.ui.inputPathEdit.setText(acfg('path', 'analysisInput'))
+        self.ui.inputPathEdit.setText(acfg('paths', 'analysisInput'))
         self.ui.inputPathButton.clicked.connect(lambda le: getPath( self.ui.inputPathEdit, "Select Input Directory", True ))
-        self.ui.masterFreqEdit.setText(acfg('path', 'masterFrequencyList'))
+        self.ui.masterFreqEdit.setText(acfg('paths', 'masterFrequencyList'))
         self.ui.masterFreqButton.clicked.connect(lambda le: getPath( self.ui.masterFreqEdit, "Select Master Frequency List" ))
         self.ui.knownMorphsEdit.setText(acfg_path('known'))
         self.ui.knownMorphsButton.clicked.connect(lambda le: getPath( self.ui.knownMorphsEdit, "Select Known Morphs DB" ))
