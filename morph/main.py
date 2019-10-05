@@ -155,9 +155,9 @@ def updateNotes( allDb ):
     mw.progress.update( label='Loading frequency.txt' )
     frequencyListPath = cfg1('path_frequency')
     try:
-	    with codecs.open( frequencyListPath, 'r', 'utf-8' ) as f:
-	        frequencyList = [line.strip().split('\t')[0] for line in f.readlines()]
-	        frequencyListLength = len(frequencyList)
+        with codecs.open( frequencyListPath, 'r', 'utf-8' ) as f:
+        frequencyList = [line.strip().split('\t')[0] for line in f.readlines()]
+        frequencyListLength = len(frequencyList)
     except FileNotFoundError:
         pass # User does not have a frequency.txt
 
