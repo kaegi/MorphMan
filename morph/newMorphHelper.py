@@ -76,10 +76,11 @@ def markFocusSeen(self, n):
         q = '%s:%s' % (focusName(), focus(n))
     except KeyError:
         return
+
     seenMorphs.add(focus(n))
-    numSkipped = len(self.mw.col.findNotes(q)) - 1
-    if numSkipped and cfg1('print number of alternatives skipped'):
-        tooltip(_('%d alternatives will be skipped' % numSkipped))
+    num_skipped = len(self.mw.col.findNotes(q)) - 1
+    if num_skipped and cfg1('print number of alternatives skipped'):
+        tooltip(_('%d alternatives will be skipped' % num_skipped))
 
 
 def my_getNewCard(self, _old):
@@ -95,61 +96,62 @@ def my_getNewCard(self, _old):
         if not C('next new card feature'):
             return _old(self)
         if not C('new card merged fill'):
-            c = _old(self)
+            card = _old(self)
             ''' :type c: anki.cards.Card '''
         else:  # pop from opposite direction and skip sibling spacing
             if not self._fillNew():
                 return
-            (id, due) = self._newQueue.pop(0)
-            c = self.col.getCard(id)
+            (card_id, due) = self._newQueue.pop(0)
+            card = self.col.getCard(card_id)
             self.newCount -= 1
 
-        if not c:
+        if not card:
             return  # no more cards
-        n = c.note()
+        note = card.note()
 
         # find the right morphemizer for this note, so we can apply model-dependent options (modify off == disable
         # skip feature)
         from .util import getFilter
-        note_filter = getFilter(n)
+        note_filter = getFilter(note)
 
         # this note is not configured in any filter -> proceed like normal without MorphMan-plugin
         # the deck should not be modified -> the user probably doesn't want the 'skip mature' feature
         if note_filter is None or not note_filter['Modify']:
-            return c
+            return card
 
         # get the focus morph
         try:
-            focusMorph = focus(n)  # field contains either the focusMorph or is empty
+            focus_morph = focus(note)  # field contains either the focusMorph or is empty
         except KeyError:
             tooltip(_('Encountered card without the \'focus morph\' field configured in the preferences. Please check '
                       'your MorphMan settings and note models.'))
-            return c  # card has no focusMorph field -> undefined behavior -> just proceed like normal
+            return card  # card has no focusMorph field -> undefined behavior -> just proceed like normal
 
         # evaluate all conditions, on which this card might be skipped/buried
-        isComprehensionCard = n.hasTag(jcfg('Tag_Comprehension'))
-        isFreshVocab = n.hasTag(jcfg('Tag_Fresh'))
-        isAlreadyKnown = n.hasTag(jcfg('Tag_AlreadyKnown'))
+        is_comprehension_card = note.hasTag(jcfg('Tag_Comprehension'))
+        is_fresh_vocab = note.hasTag(jcfg('Tag_Fresh'))
+        is_already_known = note.hasTag(jcfg('Tag_AlreadyKnown'))
 
-        skipComprehension = jcfg('Option_SkipComprehensionCards')
-        skipFresh = jcfg('Option_SkipFreshVocabCards')
-        skipFocusMorphSeenToday = jcfg('Option_SkipFocusMorphSeenToday')
+        skip_comprehension = jcfg('Option_SkipComprehensionCards')
+        skip_fresh = jcfg('Option_SkipFreshVocabCards')
+        skip_focus_morph_seen_today = jcfg('Option_SkipFocusMorphSeenToday')
 
-        skipConditions = [
-            isComprehensionCard and skipComprehension,
-            isFreshVocab and skipFresh,
-            isAlreadyKnown,  # the user requested that the vocabulary does not have to be shown
-            focusMorph in seenMorphs and skipFocusMorphSeenToday,  # we already learned that/saw that today
+        skip_conditions = [
+            is_comprehension_card and skip_comprehension,
+            is_fresh_vocab and skip_fresh,
+            is_already_known,  # the user requested that the vocabulary does not have to be shown
+            focus_morph in seenMorphs and skip_focus_morph_seen_today,  # we already learned that/saw that today
         ]
 
-        # skip/bury card if any skip condition is true
-        if any(skipConditions):
-            self.buryCards([c.id])
-            self.newCount += 1  # the card was quaried from the "new queue" so we have to increase the "new counter" back to its original value
-            continue
-        break
+        if not any(skip_conditions):
+            break
 
-    return c
+        # skip/bury card if any skip condition is true
+        self.buryCards([card.id])
+
+        # the card was quarried from the "new queue" so we have to increase the "new counter" back to its original value
+        self.newCount += 1
+    return card
 
 
 sched.Scheduler._getNewCard = wrap(sched.Scheduler._getNewCard, my_getNewCard, 'around')
@@ -222,19 +224,6 @@ reviewer.Reviewer._shortcutKeys = my_reviewer_shortcutKeys
 
 
 ########## 4 - highlight morphemes using morphHighlight
-def isNoteSame(note, fieldDict):
-    # compare fields
-    items = list(note.items())
-    for (key, value) in items:
-        if key not in fieldDict or value != fieldDict[key]:
-            return False
-
-    # compare tags
-    argTags = mw.col.tags.split(fieldDict['Tags'])
-    noteTags = note.tags
-    return set(argTags) == set(noteTags)
-
-
 def highlight(txt, extra, fieldDict, field, mod_field):
     """When a field is marked with the 'focusMorph' command, we format it by
     wrapping all the morphemes in <span>s with attributes set to its maturity"""
@@ -248,21 +237,23 @@ def highlight(txt, extra, fieldDict, field, mod_field):
         return ''.join(re.sub(sub, repl, s, flags=re.IGNORECASE) if not s.startswith('<span') else s for s in
                        re.split('(<span.*?</span>)', string))
 
-    frequencyListPath = cfg1('path_frequency')
+    frequency_list_path = cfg1('path_frequency')
     try:
-        with codecs.open(frequencyListPath, encoding='utf-8') as f:
-            frequencyList = [line.strip().split('\t')[0] for line in f.readlines()]
+        with codecs.open(frequency_list_path, encoding='utf-8') as f:
+            frequency_list = [line.strip().split('\t')[0] for line in f.readlines()]
     except:
         pass  # User does not have a frequency.txt
 
-    priorityDb = main.MorphDb(cfg1('path_priority'), ignoreErrors=True).db
+    priority_db = main.MorphDb(cfg1('path_priority'), ignoreErrors=True).db
     tags = fieldDict['Tags'].split()
+
     filter = getFilterByTagsAndType(fieldDict['Type'], tags)
     if filter is None:
         return txt
     morphemizer = getMorphemizerByName(filter['Morphemizer'])
     if morphemizer is None:
         return txt
+
     ms = getMorphemes(morphemizer, txt, tags)
 
     for m in sorted(ms, key=lambda x: len(x.inflected), reverse=True):  # largest subs first
@@ -278,11 +269,11 @@ def highlight(txt, extra, fieldDict, field, mod_field):
         else:
             mtype = 'unknown'
 
-        priority = 'true' if m in priorityDb else 'false'
+        priority = 'true' if m in priority_db else 'false'
 
         focus_morph_string = m.show().split()[0]
 
-        frequency = 'true' if focus_morph_string in frequencyList else 'false'
+        frequency = 'true' if focus_morph_string in frequency_list else 'false'
 
         repl = '<span class="morphHighlight" mtype="{mtype}" priority="{priority}" frequency="{frequency}" mat="{mat}">\\1</span>'.format(
             mtype=mtype,
@@ -294,4 +285,6 @@ def highlight(txt, extra, fieldDict, field, mod_field):
     return txt
 
 
+# note: fmod stands for "field modifier" which look like this: {{field:modifier}}, when a card with a given modifier
+# is shown, a hook corresponding to the modifier will be run.
 addHook('fmod_morphHighlight', highlight)
