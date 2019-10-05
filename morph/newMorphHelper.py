@@ -127,8 +127,6 @@ def my_getNewCard(self, _old):
             return c  # card has no focusMorph field -> undefined behavior -> just proceed like normal
 
         # evaluate all conditions, on which this card might be skipped/buried
-        isVocabCard = n.hasTag(jcfg('Tag_Vocab'))
-        isNotReady = n.hasTag(jcfg('Tag_NotReady'))
         isComprehensionCard = n.hasTag(jcfg('Tag_Comprehension'))
         isFreshVocab = n.hasTag(jcfg('Tag_Fresh'))
         isAlreadyKnown = n.hasTag(jcfg('Tag_AlreadyKnown'))
@@ -142,7 +140,6 @@ def my_getNewCard(self, _old):
             isFreshVocab and skipFresh,
             isAlreadyKnown,  # the user requested that the vocabulary does not have to be shown
             focusMorph in seenMorphs and skipFocusMorphSeenToday,  # we already learned that/saw that today
-            # not (isVocabCard or isNotReady) # even if it is not a good vocabulary card, we have no choice when there are no other cards available
         ]
 
         # skip/bury card if any skip condition is true
