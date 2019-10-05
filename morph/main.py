@@ -12,7 +12,7 @@ from . import stats
 from . import util
 from .morphemes import MorphDb, AnkiDeck, getMorphemes
 from .morphemizer import getMorphemizerByName
-from .util import printf, mw, cfg, cfg1, errorMsg, jcfg, jcfg2, getFilter
+from .util import printf, mw, cfg, cfg1, errorMsg, jcfg, jcfg2, getFilter, getFilterByMidAndTags
 from .util_external import memoize
 
 # only for jedi-auto-completion
@@ -183,10 +183,12 @@ def updateNotes(allDb):
     frequencyListPath = cfg1('path_frequency')
     try:
         with codecs.open(frequencyListPath, encoding='utf-8') as f:
-            frequencyList = [line.strip().split('\t')[0] for line in f.readlines()]
-        frequencyListLength = len(frequencyList)
+            frequency_list = [line.strip().split('\t')[0] for line in f.readlines()]
     except FileNotFoundError:
+        frequency_list = []
         pass  # User does not have a frequency.txt
+
+    frequencyListLength = len(frequency_list)
 
     if cfg1('saveDbs'):
         mw.progress.update(label='Saving seen/known/mature dbs')
@@ -195,13 +197,23 @@ def updateNotes(allDb):
         matureDb.save(cfg1('path_mature'))
 
     mw.progress.update(label='Updating notes')
+
+    # prefetch jcfg for fields
+    field_focus_morph = jcfg('Field_FocusMorph')
+    field_unknown_count = jcfg('Field_UnknownMorphCount')
+    field_unmature_count = jcfg('Field_UnmatureMorphCount')
+    field_morph_man_index = jcfg('Field_MorphManIndex')
+    field_unknowns = jcfg('Field_Unknowns')
+    field_unmatures = jcfg('Field_Unmatures')
+    field_unknown_freq = jcfg('Field_UnknownFreq')
+
     for i, (nid, mid, flds, guid, tags) in enumerate(db.execute('select id, mid, flds, guid, tags from notes')):
+        ts = TAG.split(tags)
         if i % 500 == 0:
             mw.progress.update(value=i)
         C = partial(cfg, mid, None)
 
-        note = mw.col.getNote(nid)
-        notecfg = getFilter(note)
+        notecfg = getFilterByMidAndTags(mid, ts)
         if notecfg is None or not notecfg['Modify']:
             continue
 
@@ -249,13 +261,13 @@ def updateNotes(allDb):
                 usefulness += C('priority.db weight')
             focusMorphString = focusMorph.base
             try:
-                focusMorphIndex = frequencyList.index(focusMorphString)
+                focusMorphIndex = frequency_list.index(focusMorphString)
                 isFrequency = True
                 frequencyWeight = C('frequency.txt weight scale')
 
                 # The bigger this number, the lower mmi becomes
                 usefulness += (frequencyListLength - focusMorphIndex) * frequencyWeight
-            except:
+            except ValueError:
                 pass
 
         # add bonus for studying recent learned knowns (reinforce)
@@ -263,8 +275,8 @@ def updateNotes(allDb):
             locs = knownDb.getMatchingLocs(morpheme)
             if locs:
                 ivl = min(1, max(loc.maturity for loc in locs))
-                usefulness += C(
-                    'reinforce new vocab weight') // ivl  # TODO: maybe average this so it doesnt favor long sentences
+                # TODO: maybe average this so it doesnt favor long sentences
+                usefulness += C('reinforce new vocab weight') // ivl
 
         if any(morpheme.pos == '動詞' for morpheme in unknowns):  # FIXME: this isn't working???
             usefulness += C('verb bonus')
@@ -292,24 +304,24 @@ def updateNotes(allDb):
             ts.append(compTag)
         elif N_k == 1:  # new vocab card, k+1
             ts.append(vocabTag)
-            setField(mid, fs, jcfg('Field_FocusMorph'), '%s' % focusMorph.base)
+            setField(mid, fs, field_focus_morph, '%s' % focusMorph.base)
         elif N_k > 1:  # M+1+ and K+2+
             ts.append(notReadyTag)
-            setField(mid, fs, jcfg('Field_FocusMorph'), '')
+            setField(mid, fs, field_focus_morph, '')
         elif N_m == 1:  # we have k+0, and m+1, so this card does not introduce a new vocabulary -> card for newly learned morpheme
             ts.append(freshTag)
-            setField(mid, fs, jcfg('Field_FocusMorph'), '%s' % list(unmatures)[0].base)
+            setField(mid, fs, field_focus_morph, '%s' % list(unmatures)[0].base)
         else:  # only case left: we have k+0, but m+2 or higher, so this card does not introduce a new vocabulary -> card for newly learned morpheme
             ts.append(freshTag)
-            setField(mid, fs, jcfg('Field_FocusMorph'), '')
+            setField(mid, fs, field_focus_morph, '')
 
         # set type agnostic fields
-        setField(mid, fs, jcfg('Field_UnknownMorphCount'), '%d' % N_k)
-        setField(mid, fs, jcfg('Field_UnmatureMorphCount'), '%d' % N_m)
-        setField(mid, fs, jcfg('Field_MorphManIndex'), '%d' % mmi)
-        setField(mid, fs, jcfg('Field_Unknowns'), ', '.join(u.base for u in unknowns))
-        setField(mid, fs, jcfg('Field_Unmatures'), ', '.join(u.base for u in unmatures))
-        setField(mid, fs, jcfg('Field_UnknownFreq'), '%d' % F_k_avg)
+        setField(mid, fs, field_unknown_count, '%d' % N_k)
+        setField(mid, fs, field_unmature_count, '%d' % N_m)
+        setField(mid, fs, field_morph_man_index, '%d' % mmi)
+        setField(mid, fs, field_unknowns, ', '.join(u.base for u in unknowns))
+        setField(mid, fs, field_unmatures, ', '.join(u.base for u in unmatures))
+        setField(mid, fs, field_unknown_freq, '%d' % F_k_avg)
 
         # remove deprecated tag
         if badLengthTag is not None and badLengthTag in ts:
@@ -366,6 +378,7 @@ def updateNotes(allDb):
             due_ = nid2mmi[nid]
             if due != due_:  # only update cards that have changed
                 ds.append({'now': now, 'due': due_, 'usn': mw.col.usn(), 'cid': cid})
+
     mw.col.db.executemany('update cards set due=:due, mod=:now, usn=:usn where id=:cid', ds)
     mw.reset()
 

@@ -171,6 +171,9 @@ def getFilter(note):
     return getFilterByTagsAndType(note.model()['name'], note.tags)
 
 
+def getFilterByMidAndTags(mid, tags):
+    return getFilterByTagsAndType(mw.col.models.get(mid)['name'], tags)
+
 def getFilterByTagsAndType(type, tags):
     for f in jcfg('Filter'):
         if f['Type'] is None or type != f['Type']:
