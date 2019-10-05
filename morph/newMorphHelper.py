@@ -1,4 +1,5 @@
 #-*- coding: utf-8 -*-
+from anki.lang import _
 from aqt import reviewer, dialogs
 from aqt.qt import *
 from aqt.utils import tooltip

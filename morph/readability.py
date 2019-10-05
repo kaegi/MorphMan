@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import errno
+
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
