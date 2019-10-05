@@ -24,7 +24,7 @@ CLI_PROFILE_PATH = None
 
 
 def profile_base_path():
-    '''Dies if we can't find it.'''
+    """Dies if we can't find it."""
     if CLI_PROFILE_PATH is not None:
         return os.path.dirname(CLI_PROFILE_PATH)
 
@@ -107,7 +107,7 @@ def cmd_count(args):
 
     freqs = Counter()
     for path in files:
-        with codecs.open(path, 'r', 'utf-8') as f:
+        with codecs.open(path, encoding='utf-8') as f:
             for line in f.readlines():
                 freqs.update(mizer.getMorphemesFromExpr(line.strip()))
 
@@ -139,7 +139,7 @@ def main():
     p_dump.add_argument('--freq', action='store_true', help='include frequency as known to MorphMan')
 
     p_count = subparsers.add_parser('count', help='count morphemes in a corpus',
-                        description='Count all morphemes in the given files and emit a frequency table.')
+                                    description='Count all morphemes in the given files and emit a frequency table.')
     p_count.set_defaults(action=cmd_count)
     p_count.add_argument('files', nargs='*', metavar='FILE', help='input files of text to morphemize')
     p_count.add_argument('--mizer', default='mecab', choices=list(MIZERS.keys()),
