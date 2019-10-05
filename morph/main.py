@@ -64,7 +64,7 @@ def setField(mid, fs, k, v):  # nop if field DNE
         fs[idx] = v
 
 
-def mkAllDb(allDb=None):
+def mkAllDb(all_db=None):
     from . import config
     importlib.reload(config)
     t_0, db, TAG = time.time(), mw.col.db, mw.col.tags
@@ -72,10 +72,10 @@ def mkAllDb(allDb=None):
     N_enabled_notes = 0  # for providing an error message if there is no note that is used for processing
     mw.progress.start(label='Prep work for all.db creation', max=N_notes, immediate=True)
 
-    if not allDb:
-        allDb = MorphDb()
-    fidDb = allDb.fidDb()
-    locDb = allDb.locDb(recalc=False)  # fidDb() already forces locDb recalc
+    if not all_db:
+        all_db = MorphDb()
+    fidDb = all_db.fidDb()
+    locDb = all_db.locDb(recalc=False)  # fidDb() already forces locDb recalc
 
     mw.progress.update(label='Generating all.db data')
     for i, (nid, mid, flds, guid, tags) in enumerate(db.execute('select id, mid, flds, guid, tags from notes')):
@@ -84,10 +84,10 @@ def mkAllDb(allDb=None):
         C = partial(cfg, mid, None)
 
         note = mw.col.getNote(nid)
-        notecfg = getFilter(note)
-        if notecfg is None:
+        note_cfg = getFilter(note)
+        if note_cfg is None:
             continue
-        morphemizer = getMorphemizerByName(notecfg['Morphemizer'])
+        morphemizer = getMorphemizerByName(note_cfg['Morphemizer'])
 
         N_enabled_notes += 1
 
@@ -99,7 +99,7 @@ def mkAllDb(allDb=None):
         if alreadyKnownTag in ts:
             mats += [C('threshold_mature') + 1]
 
-        for fieldName in notecfg['Fields']:
+        for fieldName in note_cfg['Fields']:
             try:  # if doesn't have field, continue
                 fieldValue = extractFieldData(fieldName, flds, mid)
             except KeyError:
@@ -137,14 +137,14 @@ def mkAllDb(allDb=None):
 
     printf('Processed all %d notes in %f sec' % (N_notes, time.time() - t_0))
     mw.progress.update(value=i, label='Creating all.db object')
-    allDb.clear()
-    allDb.addFromLocDb(locDb)
+    all_db.clear()
+    all_db.addFromLocDb(locDb)
     if cfg1('saveDbs'):
         mw.progress.update(value=i, label='Saving all.db to disk')
-        allDb.save(cfg1('path_all'))
+        all_db.save(cfg1('path_all'))
         printf('Processed all %d notes + saved all.db in %f sec' % (N_notes, time.time() - t_0))
     mw.progress.finish()
-    return allDb
+    return all_db
 
 
 def filterDbByMat(db, mat):

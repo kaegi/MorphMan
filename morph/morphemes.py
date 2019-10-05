@@ -23,6 +23,14 @@ except ImportError:
         return None
 
 
+def char_set(start, end):
+    # type: (str, str) -> set
+    return set(chr(c) for c in range(ord(start), ord(end) + 1))
+
+
+kanji_chars = char_set('㐀', '䶵') | char_set('一', '鿋') | char_set('豈', '頻')
+
+
 ################################################################################
 # Lexical analysis
 ################################################################################
@@ -71,6 +79,11 @@ class Morpheme:
     def __hash__(self):
         return hash((self.norm, self.base, self.inflected, self.read, self.pos, self.subPos))
 
+    def base_kanji(self):
+        # type: () -> set
+        # todo: profile and maybe cache
+        return set(self.base) & kanji_chars
+
     def getGroupKey(self):
         # type: () -> str
 
@@ -100,11 +113,13 @@ class MorphDBUnpickler(pickle.Unpickler):
         return pickle.Unpickler.find_class(self, cmodule, cname)
 
 
-def getMorphemes(morphemizer, expression, note_tags=None, ignore_positions=False):
+get_morphemes_regex = re.compile(r'\[[^\]]*\]')
+
+
+def getMorphemes(morphemizer, expression, note_tags=None):
     if jcfg('Option_IgnoreBracketContents'):
-        regex = r'\[[^\]]*\]'
-        if re.search(regex, expression):
-            expression = re.sub(regex, '', expression)
+        if get_morphemes_regex.search(expression):
+            expression = get_morphemes_regex.sub('', expression)
 
     # go through all replacement rules and search if a rule (which dictates a string to morpheme conversion) can be
     # applied
@@ -112,21 +127,23 @@ def getMorphemes(morphemizer, expression, note_tags=None, ignore_positions=False
     if note_tags is not None and replace_rules is not None:
         note_tags_set = set(note_tags)
         for (filter_tags, regex, morphemes) in replace_rules:
-            if not set(filter_tags) <= note_tags_set: continue
+            if not set(filter_tags) <= note_tags_set:
+                continue
 
             # find matches
-            splitted_expression = re.split(regex, expression, maxsplit=1, flags=re.UNICODE)
+            split_expression = re.split(regex, expression, maxsplit=1, flags=re.UNICODE)
 
-            if len(splitted_expression) == 1: continue  # no match
-            assert (len(splitted_expression) == 2)
+            if len(split_expression) == 1:
+                continue  # no match
+            assert (len(split_expression) == 2)
 
             # make sure this rule doesn't lead to endless recursion
-            if len(splitted_expression[0]) >= len(expression): continue
-            if len(splitted_expression[1]) >= len(expression): continue
+            if len(split_expression[0]) >= len(expression) or len(split_expression[1]) >= len(expression):
+                continue
 
-            a_morphs = getMorphemes(morphemizer, splitted_expression[0], note_tags)
+            a_morphs = getMorphemes(morphemizer, split_expression[0], note_tags)
             b_morphs = [Morpheme(mstr, mstr, mstr, mstr, 'UNKNOWN', 'UNKNOWN') for mstr in morphemes]
-            c_morphs = getMorphemes(morphemizer, splitted_expression[1], note_tags)
+            c_morphs = getMorphemes(morphemizer, split_expression[1], note_tags)
 
             return a_morphs + b_morphs + c_morphs
 
@@ -136,7 +153,7 @@ def getMorphemes(morphemizer, expression, note_tags=None, ignore_positions=False
 
 
 ################################################################################
-## Morpheme db manipulation
+# Morpheme db manipulation
 ################################################################################
 
 ### Locations
@@ -193,29 +210,12 @@ class AnkiDeck(Location):
         return '%d[%s]@%d' % (self.noteId, self.fieldName, self.maturity)
 
 
-kanji = r'[㐀-䶵一-鿋豈-頻]'
-
-
-def extract_unicode_block(unicode_block, string):
-    """ extracts and returns all texts from a unicode block from string argument.
-        Note that you must use the unicode blocks defined above, or patterns of similar form """
-    return re.findall(unicode_block, string)
-
-
 def altIncludesMorpheme(m, alt):
-    if m.norm != alt.norm:
-        return False
-    if m.base == alt.base:
-        return True
-    m_kanji = extract_unicode_block(kanji, m.base)
-    alt_kanji = extract_unicode_block(kanji, alt.base)
-    for c in m_kanji:
-        if c not in alt_kanji:
-            return False
-    return True
+    # type: (Morpheme, Morpheme) -> bool
+
+    return m.norm == alt.norm and (m.base == alt.base or m.base_kanji() <= alt.base_kanji())
 
 
-### Morpheme DB
 class MorphDb:
     @staticmethod
     def mergeFiles(aPath, bPath, destPath=None,
@@ -292,20 +292,18 @@ class MorphDb:
 
     # Returns True if DB has variations that can match 'm'.
     def matches(self, m):  # Morpheme
+        # type: (Morpheme) -> bool
         gk = m.getGroupKey()
         ms = self.groups.get(gk, None)
         if ms is None:
             return False
 
         # Fuzzy match to variations
-        for alt in ms:
-            if altIncludesMorpheme(m, alt):
-                return True
-
-        return False
+        return any(altIncludesMorpheme(m, alt) for alt in ms)
 
     # Returns set of morph locations that can match 'm'
     def getMatchingLocs(self, m):  # Morpheme
+        # type: (Morpheme) -> set
         locs = set()
         gk = m.getGroupKey()
         ms = self.groups.get(gk, None)
@@ -315,20 +313,6 @@ class MorphDb:
         # Fuzzy match to variations
         for variation in ms:
             if altIncludesMorpheme(m, variation):
-                locs.update(self.db[variation])
-        return locs
-
-    # Returns set of morph locations that 'm' can match
-    def getMatchedLocs(self, m):  # Morpheme
-        locs = set()
-        gk = m.getGroupKey()
-        ms = self.groups.get(gk, None)
-        if ms is None:
-            return locs
-
-        # Fuzzy match to variations
-        for variation in ms:
-            if altIncludesMorpheme(variation, m):
                 locs.update(self.db[variation])
         return locs
 
@@ -342,10 +326,10 @@ class MorphDb:
             if m in self.db:
                 self.db[m].add(loc)
             else:
-                self.db[m] = set([loc])
+                self.db[m] = {loc}
                 gk = m.getGroupKey()
                 if gk not in self.groups:
-                    self.groups[gk] = set([m])
+                    self.groups[gk] = {m}
                 else:
                     self.groups[gk].add(m)
 
@@ -356,7 +340,7 @@ class MorphDb:
             self.db[m] = set(locs)
             gk = m.getGroupKey()
             if gk not in self.groups:
-                self.groups[gk] = set([m])
+                self.groups[gk] = {m}
             else:
                 self.groups[gk].add(m)
 
@@ -391,7 +375,7 @@ class MorphDb:
 
     # Analysis (local)
     def frequency(self, m):  # Morpheme -> Int
-        return sum(getattr(loc, 'weight', 1) for loc in self.getMatchedLocs(m))
+        return sum(getattr(loc, 'weight', 1) for loc in self.getMatchingLocs(m))
 
     # Analysis (global)
     def locDb(self, recalc=True):  # Maybe Bool -> m Map Location {Morpheme}

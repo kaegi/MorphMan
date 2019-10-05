@@ -210,7 +210,6 @@ class MorphMan(QDialog):
             self.writeOutput("\n[Current master frequency readability] %0.02f\n" % (
                     master_current_score * 100.0 / master_total_instances))
 
-        ignore_grammar_pos = cfg1('ignore grammar position')
         sources = []
 
         def measure_readability(file_name, is_ass, is_srt):
@@ -228,7 +227,7 @@ class MorphMan(QDialog):
                 def parse_text(text):
                     nonlocal i_count, known_count, seen_morphs, known_morphs, all_morphs
 
-                    parsed_morphs = getMorphemes(self.morphemizer, filtered_text, ignore_positions=ignore_grammar_pos)
+                    parsed_morphs = getMorphemes(self.morphemizer, text)
                     for m in parsed_morphs:
                         # Count morph for word report
                         all_morphs[m] = all_morphs.get(m, 0) + 1

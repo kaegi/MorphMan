@@ -1,14 +1,13 @@
 import argparse
 import codecs
-from collections import Counter
 import glob
 import os.path
 import signal
 import sys
+from collections import Counter
 
 from .morphemes import MorphDb
 from .morphemizer import SpaceMorphemizer, MecabMorphemizer, CjkCharMorphemizer, JiebaMorphemizer
-import morph
 
 
 def die(msg):
@@ -50,7 +49,7 @@ Try passing the profile folder explicitly with `--profile`.
 
 
 def profile_path():
-    '''Look for the Anki profile.  Dies unless it finds exactly one.'''
+    """Look for the Anki profile.  Dies unless it finds exactly one."""
     if CLI_PROFILE_PATH is not None:
         path = CLI_PROFILE_PATH
         if not os.path.isdir(path):
@@ -116,16 +115,16 @@ def cmd_count(args):
 
 
 def fix_sigpipe():
-    '''Set this process to exit quietly on SIGPIPE, like a good shell-pipeline citizen.'''
+    """Set this process to exit quietly on SIGPIPE, like a good shell-pipeline citizen."""
     # For context, see e.g. https://stevereads.com/2015/09/25/python-sigpipe/.
     signal.signal(signal.SIGPIPE, signal.SIG_DFL)
 
 
 def main():
-    '''Usage: `mm --help`.
+    """Usage: `mm --help`.
 
     This function is meant to be invoked via the tiny wrapper script `mm`.
-    '''
+    """
     fix_sigpipe()
 
     parser = argparse.ArgumentParser()

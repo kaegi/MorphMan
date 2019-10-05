@@ -176,26 +176,26 @@ class MorphMan(QDialog):
         self.db = self.aDb
         self.updateDisplay()
 
-    def onDiff(self, type='sym'):
+    def onDiff(self, kind):
         try:
             self.loadAB()
         except Exception as e:
             return errorMsg('Can\'t load dbs:\n%s' % e)
 
-        aSet = set(self.aDb.db.keys())
-        bSet = set(self.bDb.db.keys())
-        if type == 'sym':
-            ms = aSet.symmetric_difference(bSet)
-        elif type == 'A-B':
-            ms = aSet.difference(bSet)
-        elif type == 'B-A':
-            ms = bSet.difference(aSet)
-        elif type == 'inter':
-            ms = aSet.intersection(bSet)
-        elif type == 'union':
-            ms = aSet.union(bSet)
+        a_set = set(self.aDb.db.keys())
+        b_set = set(self.bDb.db.keys())
+        if kind == 'sym':
+            ms = a_set.symmetric_difference(b_set)
+        elif kind == 'A-B':
+            ms = a_set.difference(b_set)
+        elif kind == 'B-A':
+            ms = b_set.difference(a_set)
+        elif kind == 'inter':
+            ms = a_set.intersection(b_set)
+        elif kind == 'union':
+            ms = a_set.union(b_set)
         else:
-            raise ValueError("'type' must be one of [sym, A-B, B-A, inter, union], it was actually '%s'" % type)
+            raise ValueError("'kind' must be one of [sym, A-B, B-A, inter, union], it was actually '%s'" % kind)
 
         self.db.clear()
         for m in ms:
