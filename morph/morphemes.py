@@ -3,9 +3,19 @@ import codecs
 import gzip
 import os
 import pickle as pickle
+from abc import ABC, abstractmethod
+
 import re
 
 import aqt
+
+# hack: typing is compile time anyway, so, nothing bad happens if it fails, the try is to support anki < 2.1.16
+try:
+    from aqt.pinnedmodules import typing
+    from typing import Any, Dict, Set
+except ImportError:
+    pass
+
 
 # need some fallbacks if not running from anki and thus morph.util isn't available
 try:
@@ -157,15 +167,20 @@ def getMorphemes(morphemizer, expression, note_tags=None):
 ################################################################################
 
 ### Locations
-class Location:
-    pass
+class Location(ABC):
+    def __init__(self, weight):
+        self.weight = weight
+        self.maturity = 0
+
+    @abstractmethod
+    def show(self):
+        pass
 
 
 class Nowhere(Location):
     def __init__(self, tag, weight=0):
+        super(Nowhere, self).__init__(weight)
         self.tag = tag
-        self.maturity = 0
-        self.weight = weight
 
     def show(self):
         return '%s@%d' % (self.tag, self.maturity)
@@ -175,9 +190,8 @@ class Corpus(Location):
     """A corpus we want to use for priority, without storing more than morpheme frequencies."""
 
     def __init__(self, name, weight):
+        super(Corpus, self).__init__(weight)
         self.name = name
-        self.maturity = 0
-        self.weight = weight
 
     def show(self):
         return '%s*%s@%d' % (self.name, self.weight, self.maturity)
@@ -185,10 +199,10 @@ class Corpus(Location):
 
 class TextFile(Location):
     def __init__(self, filePath, lineNo, maturity, weight=1):
+        super(TextFile, self).__init__(weight)
         self.filePath = filePath
         self.lineNo = lineNo
         self.maturity = maturity
-        self.weight = weight
 
     def show(self):
         return '%s:%d@%d' % (self.filePath, self.lineNo, self.maturity)
@@ -198,6 +212,7 @@ class AnkiDeck(Location):
     """ This maps to/contains information for one note and one relevant field like u'Expression'. """
 
     def __init__(self, noteId, fieldName, fieldValue, guid, maturities, weight=1):
+        super(AnkiDeck, self).__init__(weight)
         self.noteId = noteId
         self.fieldName = fieldName  # for example u'Expression'
         self.fieldValue = fieldValue  # for example u'それだけじゃない'
@@ -238,7 +253,7 @@ class MorphDb:
         return d
 
     def __init__(self, path=None, ignoreErrors=False):  # Maybe Filepath -> m ()
-        self.db = {}  # Map Morpheme {Location}
+        self.db = {}  # type: Dict[Morpheme, Set[Location]]
         self.groups = {}  # Map NormMorpheme {Set(Morpheme)}
         if path:
             try:
@@ -303,7 +318,7 @@ class MorphDb:
 
     # Returns set of morph locations that can match 'm'
     def getMatchingLocs(self, m):  # Morpheme
-        # type: (Morpheme) -> set
+        # type: (Morpheme) -> Set[Location]
         locs = set()
         gk = m.getGroupKey()
         ms = self.groups.get(gk, None)
@@ -379,15 +394,16 @@ class MorphDb:
 
     # Analysis (global)
     def locDb(self, recalc=True):  # Maybe Bool -> m Map Location {Morpheme}
+        # type: (bool) ->  Dict[Location, Set[Morpheme]]
         if hasattr(self, '_locDb') and not recalc:
             return self._locDb
-        self._locDb = d = {}
+        self._locDb = d = {}  # type: Dict[Location, Set[Morpheme]]
         for m, ls in self.db.items():
             for l in ls:
                 if l in d:
                     d[l].add(m)
                 else:
-                    d[l] = set([m])
+                    d[l] = {m}
         return d
 
     def fidDb(self, recalc=True):  # Maybe Bool -> m Map FactId Location

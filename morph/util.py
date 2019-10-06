@@ -8,6 +8,14 @@ from aqt import mw
 from aqt.qt import *
 from aqt.utils import showCritical, showInfo
 
+
+try:
+    from aqt.pinnedmodules import typing
+    from typing import Any, Dict, Set, List, Optional
+except ImportError:
+    pass
+
+
 ###############################################################################
 # Global data
 ###############################################################################
@@ -172,9 +180,12 @@ def getFilter(note):
 
 
 def getFilterByMidAndTags(mid, tags):
+    # type: (Any, List[str]) -> Optional[Dict[...]]
     return getFilterByTagsAndType(mw.col.models.get(mid)['name'], tags)
 
+
 def getFilterByTagsAndType(type, tags):
+    # type: (str, List[str]) -> Optional[Dict[...]]
     for f in jcfg('Filter'):
         if f['Type'] is None or type != f['Type']:
             continue

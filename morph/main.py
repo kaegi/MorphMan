@@ -2,18 +2,27 @@
 import codecs
 import importlib
 import time
+from anki.tags import TagManager
 
 from functools import partial
 
 import aqt.main
 from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksum
 
+from .morphemes import Location, Morpheme
 from . import stats
 from . import util
 from .morphemes import MorphDb, AnkiDeck, getMorphemes
 from .morphemizer import getMorphemizerByName
 from .util import printf, mw, cfg, cfg1, errorMsg, jcfg, jcfg2, getFilter, getFilterByMidAndTags
 from .util_external import memoize
+
+# hack: typing is compile time anyway, so, nothing bad happens if it fails, the try is to support anki < 2.1.16
+try:
+    from aqt.pinnedmodules import typing
+    from typing import Any, Dict, Set
+except ImportError:
+    pass
 
 # only for jedi-auto-completion
 assert isinstance(mw, aqt.main.AnkiQt)
@@ -28,11 +37,7 @@ def getFieldIndex(fieldName, mid):
     "2" for fieldName="Back".
     """
     m = mw.col.models.get(mid)
-    d = dict((f['name'], f['ord']) for f in m['flds'])
-    try:
-        return d[fieldName]
-    except KeyError:
-        return None
+    return next((f['ord'] for f in m['flds'] if f['name'] == fieldName), None)
 
 
 def extractFieldData(field_name, fields, mid):
@@ -157,12 +162,14 @@ def filterDbByMat(db, mat):
 
 
 def updateNotes(allDb):
-    t_0, now, db, TAG = time.time(), intTime(), mw.col.db, mw.col.tags
+    t_0, now, db = time.time(), intTime(), mw.col.db
+
+    TAG = mw.col.tags  # type: TagManager
     ds, nid2mmi = [], {}
     N_notes = db.scalar('select count() from notes')
     mw.progress.start(label='Updating data', max=N_notes, immediate=True)
-    fidDb = allDb.fidDb()
-    locDb = allDb.locDb(recalc=False)  # fidDb() already forces locDb recalc
+    fidDb = allDb.fidDb(recalc=True)
+    loc_db = allDb.locDb(recalc=False)  # type: Dict[Location, Set[Morpheme]]
 
     # read tag names
     compTag, vocabTag, freshTag, notReadyTag, alreadyKnownTag, priorityTag, tooShortTag, tooLongTag, frequencyTag = tagNames = jcfg(
@@ -222,12 +229,12 @@ def updateNotes(allDb):
         for fieldName in notecfg['Fields']:
             try:
                 loc = fidDb[(nid, guid, fieldName)]
-                morphemes.update(locDb[loc])
+                morphemes.update(loc_db[loc])
             except KeyError:
                 continue
 
         # Determine un-seen/known/mature and i+N
-        unseens, unknowns, unmatures, newKnowns = set(), set(), set(), set()
+        unseens, unknowns, unmatures, new_knowns = set(), set(), set(), set()
         for morpheme in morphemes:
             if not seenDb.matches(morpheme):
                 unseens.add(morpheme)
@@ -235,8 +242,8 @@ def updateNotes(allDb):
                 unknowns.add(morpheme)
             if not matureDb.matches(morpheme):
                 unmatures.add(morpheme)
-            if not matureDb.matches(morpheme) and knownDb.matches(morpheme):
-                newKnowns.add(morpheme)
+                if knownDb.matches(morpheme):
+                    new_knowns.add(morpheme)
 
         # Determine MMI - Morph Man Index
         N, N_s, N_k, N_m = len(morphemes), len(unseens), len(unknowns), len(unmatures)
@@ -245,17 +252,16 @@ def updateNotes(allDb):
         if N_k > 2 and C('only update k+2 and below'):
             continue
 
-        # average frequency of unknowns (ie. how common the word is within your collection)
-        F_k = 0
-        for focusMorph in unknowns:  # focusMorph used outside loop
-            F_k += allDb.frequency(focusMorph)
-        F_k_avg = F_k // N_k if N_k > 0 else F_k
-        usefulness = F_k_avg
-
         # add bonus for morphs in priority.db and frequency.txt
         isPriority = False
         isFrequency = False
+
+        focusMorph = None
+
+        F_k = 0
+        usefulness = 0
         for focusMorph in unknowns:
+            F_k += allDb.frequency(focusMorph)
             if focusMorph in priorityDb:
                 isPriority = True
                 usefulness += C('priority.db weight')
@@ -270,8 +276,12 @@ def updateNotes(allDb):
             except ValueError:
                 pass
 
+        # average frequency of unknowns (ie. how common the word is within your collection)
+        F_k_avg = F_k // N_k if N_k > 0 else F_k
+        usefulness += F_k_avg
+
         # add bonus for studying recent learned knowns (reinforce)
-        for morpheme in newKnowns:
+        for morpheme in new_knowns:
             locs = knownDb.getMatchingLocs(morpheme)
             if locs:
                 ivl = min(1, max(loc.maturity for loc in locs))
@@ -294,23 +304,23 @@ def updateNotes(allDb):
             nid2mmi[nid] = mmi
 
         # Fill in various fields/tags on the note based on cfg
-        ts, fs = TAG.split(tags), splitFields(flds)
+        fs = splitFields(flds)
 
         # clear any 'special' tags, the appropriate will be set in the next few lines
-        ts = [t for t in ts if t not in [notReadyTag, compTag, vocabTag, freshTag]]
+        ts = [t for t in ts if t not in (notReadyTag, compTag, vocabTag, freshTag)]
 
         # determine card type
         if N_m == 0:  # sentence comprehension card, m+0
             ts.append(compTag)
         elif N_k == 1:  # new vocab card, k+1
             ts.append(vocabTag)
-            setField(mid, fs, field_focus_morph, '%s' % focusMorph.base)
+            setField(mid, fs, field_focus_morph, focusMorph.base)
         elif N_k > 1:  # M+1+ and K+2+
             ts.append(notReadyTag)
             setField(mid, fs, field_focus_morph, '')
         elif N_m == 1:  # we have k+0, and m+1, so this card does not introduce a new vocabulary -> card for newly learned morpheme
             ts.append(freshTag)
-            setField(mid, fs, field_focus_morph, '%s' % list(unmatures)[0].base)
+            setField(mid, fs, field_focus_morph, next(iter(unmatures)).base)
         else:  # only case left: we have k+0, but m+2 or higher, so this card does not introduce a new vocabulary -> card for newly learned morpheme
             ts.append(freshTag)
             setField(mid, fs, field_focus_morph, '')
