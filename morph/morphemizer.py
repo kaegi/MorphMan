@@ -63,8 +63,8 @@ class MecabMorphemizer(Morphemizer):
 
     def getDictionary(self):
         # Spawn mecab if necessary.
-        p, dict = mecab()
-        return dict
+        p, dictionary = mecab()
+        return dictionary
 
 
 MECAB_NODE_UNIDIC_BOS = 'BOS/EOS,*,*,*,*,*,*,*,*,*,*,*,*,*'

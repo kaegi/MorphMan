@@ -286,7 +286,7 @@ def clearLog():
 ###############################################################################
 # Qt helper functions
 ###############################################################################
-def mkBtn(txt, f, conn, parent):
+def mkBtn(txt, f, parent):
     b = QPushButton(txt)
     b.clicked.connect(f)
     parent.addWidget(b)

@@ -99,7 +99,7 @@ def mkAllDb(all_db=None):
         mats = [(0.5 if ivl == 0 and ctype == 1 else ivl) for ivl, ctype in
                 db.execute('select ivl, type from cards where nid = :nid', nid=nid)]
         if C('ignore maturity'):
-            mats = [0 for mat in mats]
+            mats = [0] * len(mats)
         ts, alreadyKnownTag = TAG.split(tags), jcfg('Tag_AlreadyKnown')
         if alreadyKnownTag in ts:
             mats += [C('threshold_mature') + 1]

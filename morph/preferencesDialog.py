@@ -21,7 +21,7 @@ class PreferencesDialog(QDialog):
         self.resize(950, 600)
 
         self.setWindowTitle('MorphMan Preferences')
-        self.vbox = vbox = QVBoxLayout(self)
+        self.vbox = QVBoxLayout(self)
         self.tabWidget = QTabWidget()
         self.vbox.addWidget(self.tabWidget)
 
@@ -71,10 +71,10 @@ class PreferencesDialog(QDialog):
         hbox = QHBoxLayout()
         vbox.addLayout(hbox)
 
-        self.clone = mkBtn("Clone", self.onClone, self, hbox)
-        self.delete = mkBtn("Delete", self.onDelete, self, hbox)
-        self.up = mkBtn("Up", self.onUp, self, hbox)
-        self.down = mkBtn("Down", self.onDown, self, hbox)
+        self.clone = mkBtn("Clone", self.onClone, hbox)
+        self.delete = mkBtn("Delete", self.onDelete, hbox)
+        self.up = mkBtn("Up", self.onUp, hbox)
+        self.down = mkBtn("Down", self.onDown, hbox)
 
     def createExtraFieldsTab(self):
         self.frame2 = QWidget()

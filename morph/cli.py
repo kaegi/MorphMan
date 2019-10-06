@@ -10,6 +10,14 @@ from .morphemes import MorphDb
 from .morphemizer import SpaceMorphemizer, MecabMorphemizer, CjkCharMorphemizer, JiebaMorphemizer
 
 
+# hack: typing is compile time anyway, so, nothing bad happens if it fails, the try is to support anki < 2.1.16
+try:
+    from aqt.pinnedmodules import typing
+    from typing import Union, Optional
+except ImportError:
+    pass
+
+
 def die(msg):
     print(msg, file=sys.stderr)
     sys.exit(1)
@@ -19,7 +27,7 @@ def warn(msg):
     print(msg, file=sys.stderr)
 
 
-CLI_PROFILE_PATH = None
+CLI_PROFILE_PATH = None  # type: Optional[Union[bytes, str]]
 
 
 def profile_base_path():

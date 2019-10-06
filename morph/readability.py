@@ -167,7 +167,6 @@ class MorphMan(QDialog):
         master_db = CountingMorphDB()
         unknown_db = CountingMorphDB()
 
-        master_frequency = {}
         master_total_instances = 0
         master_current_score = 0
         master_weight = 1.0

@@ -19,7 +19,6 @@ def getPath(le):  # LineEdit -> GUI ()
 
 def getProgressWidget():
     progressWidget = QWidget()
-    layout = QVBoxLayout()
     progressWidget.setFixedSize(400, 70)
     progressWidget.setWindowModality(Qt.ApplicationModal)
     bar = QProgressBar(progressWidget)
@@ -58,7 +57,7 @@ class AdaptiveSubWin(QDialog):
         self.vbox.addWidget(QLabel('Morpheme Engine (Morphemizer)'))
         self.vbox.addWidget(self.morphemizer)
 
-        self.goBtn = mkBtn('Convert subs', self.onGo, self, vbox)
+        self.goBtn = mkBtn('Convert subs', self.onGo, vbox)
 
         grid.addLayout(vbox, 0, 0)
 
@@ -103,19 +102,19 @@ class MorphMan(QDialog):
         # DB Paths
         self.aPathLEdit = QLineEdit()
         vbox.addWidget(self.aPathLEdit)
-        self.aPathBtn = mkBtn('Browse for DB A', lambda le: getPath(self.aPathLEdit), self, vbox)
+        self.aPathBtn = mkBtn('Browse for DB A', lambda le: getPath(self.aPathLEdit), vbox)
 
         self.bPathLEdit = QLineEdit()
         vbox.addWidget(self.bPathLEdit)
-        self.bPathBtn = mkBtn('Browse for DB B', lambda le: getPath(self.bPathLEdit), self, vbox)
+        self.bPathBtn = mkBtn('Browse for DB B', lambda le: getPath(self.bPathLEdit), vbox)
 
         # Comparisons
-        self.showABtn = mkBtn('A', self.onShowA, self, vbox)
-        self.AmBBtn = mkBtn('A-B', lambda x: self.onDiff('A-B'), self, vbox)
-        self.BmABtn = mkBtn('B-A', lambda x: self.onDiff('B-A'), self, vbox)
-        self.symBtn = mkBtn('Symmetric Difference', lambda x: self.onDiff('sym'), self, vbox)
-        self.interBtn = mkBtn('Intersection', lambda x: self.onDiff('inter'), self, vbox)
-        self.unionBtn = mkBtn('Union', lambda x: self.onDiff('union'), self, vbox)
+        self.showABtn = mkBtn('A', self.onShowA, vbox)
+        self.AmBBtn = mkBtn('A-B', lambda x: self.onDiff('A-B'), vbox)
+        self.BmABtn = mkBtn('B-A', lambda x: self.onDiff('B-A'), vbox)
+        self.symBtn = mkBtn('Symmetric Difference', lambda x: self.onDiff('sym'), vbox)
+        self.interBtn = mkBtn('Intersection', lambda x: self.onDiff('inter'), vbox)
+        self.unionBtn = mkBtn('Union', lambda x: self.onDiff('union'), vbox)
 
         # Creation
         # language class/morphemizer
@@ -126,8 +125,8 @@ class MorphMan(QDialog):
 
         vbox.addSpacing(40)
         vbox.addWidget(self.morphemizerComboBox)
-        self.extractTxtFileBtn = mkBtn('Extract morphemes from file', self.onExtractTxtFile, self, vbox)
-        self.saveResultsBtn = mkBtn('Save results to db', self.onSaveResults, self, vbox)
+        self.extractTxtFileBtn = mkBtn('Extract morphemes from file', self.onExtractTxtFile, vbox)
+        self.saveResultsBtn = mkBtn('Save results to db', self.onSaveResults, vbox)
 
         # Display
         vbox.addSpacing(40)
@@ -142,7 +141,7 @@ class MorphMan(QDialog):
         self.analysisDisplay = QTextEdit()
 
         # Exporting
-        self.adaptiveSubs = mkBtn('Adaptive Subs', self.adaptiveSubs, self, vbox)
+        self.adaptiveSubs = mkBtn('Adaptive Subs', self.adaptiveSubs, vbox)
 
         # layout
         grid.addLayout(vbox, 0, 0)

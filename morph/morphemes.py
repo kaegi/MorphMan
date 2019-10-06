@@ -111,9 +111,8 @@ def ms2str(ms):  # [(Morpheme, locs)] -> Str
 
 
 class MorphDBUnpickler(pickle.Unpickler):
-    class MorphDBUnpickler(pickle.Unpickler):
-        def __init__(self, file):
-            super(MorphDBUnpickler, self).__init__(file)
+    def __init__(self, file):
+        super(MorphDBUnpickler, self).__init__(file)
 
     def find_class(self, cmodule, cname):
         # Override default class lookup for this module to allow loading databases generated with older
@@ -166,7 +165,6 @@ def getMorphemes(morphemizer, expression, note_tags=None):
 # Morpheme db manipulation
 ################################################################################
 
-### Locations
 class Location(ABC):
     def __init__(self, weight):
         self.weight = weight
@@ -259,7 +257,8 @@ class MorphDb:
             try:
                 self.load(path)
             except IOError:
-                if not ignoreErrors: raise
+                if not ignoreErrors:
+                    raise
         self.analyze()
 
     # Serialization
