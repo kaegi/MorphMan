@@ -4,17 +4,21 @@ import datetime
 import importlib
 
 from anki.hooks import addHook
+from anki.notes import Note
 from aqt import mw
+from aqt.browser import Browser
 from aqt.qt import *
 from aqt.utils import showCritical, showInfo
 
 
 try:
     from aqt.pinnedmodules import typing
-    from typing import Any, Dict, Set, List, Optional
+    from typing import Any, Dict, Set, List, Optional, Callable, TypeVar, Tuple
+
+    T = TypeVar('T')
+
 except ImportError:
     pass
-
 
 ###############################################################################
 # Global data
@@ -176,6 +180,7 @@ def jcfgAddMissing():
 
 
 def getFilter(note):
+    # type: (Note) -> Optional[dict]
     return getFilterByTagsAndType(note.model()['name'], note.tags)
 
 
@@ -199,6 +204,7 @@ def getFilterByTagsAndType(type, tags):
 # Fact browser utils
 ###############################################################################
 def doOnNoteSelection(b, preF, perF, postF, progLabel):
+    # type: (Browser, Callable[[Browser], T], Callable[[T, Note], T], Callable[[T], T], str) -> None
     st = preF(b)
     if not st:
         return
@@ -246,6 +252,7 @@ def addBrowserItem(menuLabel, func_triggered, tooltip=None, shortcut=None):
 
 
 def addBrowserNoteSelectionCmd(menuLabel, preF, perF, postF, tooltip=None, shortcut=None, progLabel='Working...'):
+    # type: (str, Callable[[Browser], T], Callable[[T, Note], T], Callable[[T], T], Optional[str], Optional[Any], str) -> None
     """ This function sets up a menu item in the Anki browser. On being clicked, it will call one time `preF`, for
     every selected note `perF` and after everything `postF`. """
     addBrowserItem(menuLabel, lambda b: doOnNoteSelection(b, preF, perF, postF, progLabel), tooltip, shortcut)
