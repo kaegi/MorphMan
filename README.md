@@ -7,8 +7,7 @@ __greatly__ optimizes your learning queue, as you will only see sentences with e
 
 # Installation (Anki 2.1)
 
-Install MorphMan via [AnkiWeb](https://ankiweb.net/shared/info/900801631)  (**NOTE: The Anki Experimental V2 Scheduler is currently not supported, 
-as it causes issues with MorphMan's scheduling**)  
+Install MorphMan via [AnkiWeb](https://ankiweb.net/shared/info/900801631)  
 
 # Installation (Anki 2.0)
 
