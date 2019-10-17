@@ -1,14 +1,21 @@
 import argparse
 import codecs
-from collections import Counter
 import glob
 import os.path
 import signal
 import sys
+from collections import Counter
 
 from .morphemes import MorphDb
 from .morphemizer import SpaceMorphemizer, MecabMorphemizer, CjkCharMorphemizer, JiebaMorphemizer
-import morph
+
+
+# hack: typing is compile time anyway, so, nothing bad happens if it fails, the try is to support anki < 2.1.16
+try:
+    from aqt.pinnedmodules import typing
+    from typing import Union, Optional
+except ImportError:
+    pass
 
 
 def die(msg):
@@ -20,11 +27,11 @@ def warn(msg):
     print(msg, file=sys.stderr)
 
 
-CLI_PROFILE_PATH = None
+CLI_PROFILE_PATH = None  # type: Optional[Union[bytes, str]]
 
 
 def profile_base_path():
-    '''Dies if we can't find it.'''
+    """Dies if we can't find it."""
     if CLI_PROFILE_PATH is not None:
         return os.path.dirname(CLI_PROFILE_PATH)
 
@@ -50,7 +57,7 @@ Try passing the profile folder explicitly with `--profile`.
 
 
 def profile_path():
-    '''Look for the Anki profile.  Dies unless it finds exactly one.'''
+    """Look for the Anki profile.  Dies unless it finds exactly one."""
     if CLI_PROFILE_PATH is not None:
         path = CLI_PROFILE_PATH
         if not os.path.isdir(path):
@@ -107,7 +114,7 @@ def cmd_count(args):
 
     freqs = Counter()
     for path in files:
-        with codecs.open(path, 'r', 'utf-8') as f:
+        with codecs.open(path, encoding='utf-8') as f:
             for line in f.readlines():
                 freqs.update(mizer.getMorphemesFromExpr(line.strip()))
 
@@ -116,16 +123,16 @@ def cmd_count(args):
 
 
 def fix_sigpipe():
-    '''Set this process to exit quietly on SIGPIPE, like a good shell-pipeline citizen.'''
+    """Set this process to exit quietly on SIGPIPE, like a good shell-pipeline citizen."""
     # For context, see e.g. https://stevereads.com/2015/09/25/python-sigpipe/.
     signal.signal(signal.SIGPIPE, signal.SIG_DFL)
 
 
 def main():
-    '''Usage: `mm --help`.
+    """Usage: `mm --help`.
 
     This function is meant to be invoked via the tiny wrapper script `mm`.
-    '''
+    """
     fix_sigpipe()
 
     parser = argparse.ArgumentParser()
@@ -139,7 +146,7 @@ def main():
     p_dump.add_argument('--freq', action='store_true', help='include frequency as known to MorphMan')
 
     p_count = subparsers.add_parser('count', help='count morphemes in a corpus',
-                        description='Count all morphemes in the given files and emit a frequency table.')
+                                    description='Count all morphemes in the given files and emit a frequency table.')
     p_count.set_defaults(action=cmd_count)
     p_count.add_argument('files', nargs='*', metavar='FILE', help='input files of text to morphemize')
     p_count.add_argument('--mizer', default='mecab', choices=list(MIZERS.keys()),

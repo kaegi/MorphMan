@@ -15,6 +15,7 @@ except NameError:
 
 __all__ = ["glob", "iglob"]
 
+
 def glob(pathname):
     """Return a list of paths matching a pathname pattern.
 
@@ -25,6 +26,7 @@ def glob(pathname):
 
     """
     return list(iglob(pathname))
+
 
 def iglob(pathname):
     """Return an iterator which yields the paths matching a pathname pattern.
@@ -64,6 +66,7 @@ def iglob(pathname):
         for name in glob_in_dir(dirname, basename):
             yield os.path.join(dirname, name)
 
+
 # These 2 helper functions non-recursively glob inside a literal directory.
 # They return a list of basenames. `glob1` accepts a pattern while `glob0`
 # takes a literal basename (so it only has to check for its existence).
@@ -73,7 +76,7 @@ def glob1(dirname, pattern):
         dirname = os.curdir
     if isinstance(pattern, _unicode) and not isinstance(dirname, str):
         dirname = str(dirname, sys.getfilesystemencoding() or
-                                   sys.getdefaultencoding())
+                      sys.getdefaultencoding())
     try:
         names = os.listdir(dirname)
     except os.error:
@@ -81,6 +84,7 @@ def glob1(dirname, pattern):
     if pattern[0] != '.':
         names = [x for x in names if x[0] != '.']
     return fnmatch.filter(names, pattern)
+
 
 def glob0(dirname, basename):
     if basename == '':
@@ -95,6 +99,7 @@ def glob0(dirname, basename):
 
 
 magic_check = re.compile('[*?[]')
+
 
 def has_magic(s):
     return magic_check.search(s) is not None

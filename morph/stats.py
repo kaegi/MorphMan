@@ -1,58 +1,65 @@
-#-*- coding: utf-8 -*-
-import glob, gzip, os, pickle as pickle
+# -*- coding: utf-8 -*-
+import gzip
+import pickle as pickle
 
-from .util import cfg1, wrap, mw
+from anki.hooks import wrap
+from anki.lang import _
 from aqt import toolbar
 
-from anki.lang import _
+from .util import cfg1, mw
+
 
 def getStatsPath(): return cfg1('path_stats')
 
+
 def loadStats():
     try:
-        f = gzip.open( getStatsPath(), 'rb' )
-        d = pickle.load( f )
+        f = gzip.open(getStatsPath())
+        d = pickle.load(f)
         f.close()
         return d
-    except IOError:         # file DNE => create it
+    except IOError:  # file DNE => create it
         return updateStats()
     except AssertionError:  # profile not loaded yet, can't do anything but wait
         return None
 
-def saveStats( d ):
-    f = gzip.open( getStatsPath(), 'wb' )
-    pickle.dump( d, f, -1 )
+
+def saveStats(d):
+    f = gzip.open(getStatsPath(), 'wb')
+    pickle.dump(d, f, -1)
     f.close()
 
-def updateStats( knownDb=None ):
-    mw.progress.start( label='Updating stats', immediate=True )
+
+def updateStats(known_db=None):
+    mw.progress.start(label='Updating stats', immediate=True)
 
     from .morphemes import MorphDb
-    d = {}
 
     # Load known.db and get total morphemes known
-    if knownDb is None:
-        knownDb = MorphDb( cfg1('path_known'), ignoreErrors=True )
+    if known_db is None:
+        known_db = MorphDb(cfg1('path_known'), ignoreErrors=True)
 
-    d['totalVariations'] = len( knownDb.db )
-    d['totalKnown'] = len( knownDb.groups )
+    d = {'totalVariations': len(known_db.db), 'totalKnown': len(known_db.groups)}
 
-    saveStats( d )
+    saveStats(d)
     mw.progress.finish()
     return d
 
+
 def getStatsLink():
     d = loadStats()
-    if not d: return ( 'K ???', '????' )
+    if not d:
+        return 'K ???', '????'
 
     total_known = d.get('totalKnown', 0)
     total_variations = d.get('totalVariations', total_known)
 
     name = 'K %d V %d' % (total_known, total_variations)
     details = 'Total known morphs'
-    return ( name, details )
+    return name, details
 
-def my_centerLinks( self, _old ):
+
+def my_centerLinks(self, _old):
     name, details = getStatsLink()
     links = [
         ["decks", _("Decks"), _("Shortcut key: %s") % "D"],
@@ -62,6 +69,7 @@ def my_centerLinks( self, _old ):
         ["sync", _("Sync"), _("Shortcut key: %s") % "Y"],
         ["morph", _(name), _(details)],
     ]
-    return self._linkHTML( links )
+    return self._linkHTML(links)
 
-toolbar.Toolbar._centerLinks = wrap( toolbar.Toolbar._centerLinks, my_centerLinks, 'around' )
+
+toolbar.Toolbar._centerLinks = wrap(toolbar.Toolbar._centerLinks, my_centerLinks, 'around')
