@@ -299,7 +299,7 @@ def updateNotes(allDb):
         lenDiff = min(9, abs(lenDiffRaw))
 
         # calculate mmi
-        mmi = 100000 * N_k + 1000 * lenDiff + usefulness
+        mmi = 100000 * N_k + 1000 * lenDiff + int(round(usefulness))
         if C('set due based on mmi'):
             nid2mmi[nid] = mmi
 
