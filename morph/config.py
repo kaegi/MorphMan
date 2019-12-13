@@ -80,10 +80,15 @@ default = {
     # -priority_weight per unknown that exists in priority.db
     'priority.db weight': 200,
 
-    # Scale by which card "due" values decrease per unknown in frequency.txt
-    # Lower the scale based on the size of frequency.txt
-    # Example: 10k frequency.txt scale: 2; 5k frequency.txt scale: 4
-    'frequency.txt weight scale': 10,
+    # NOTICE: this code has changed. Now the mm index is already factored by 10000 / frequency length
+    # If you came here to update this value to match your length of frequency.txt, then there is
+    # nothing to do, the MorphMan code does it automatically for you.
+    #'frequency.txt weight scale': 10,
+
+    # Maximum bonus a card can get by its position in frequency.txt.
+    # A card with an unknown morph that matches the first word in frequency.txt will get all this bonus.
+    # A card with an unknown morph that matches some of the last words in frequency.txt will get almost no bonus.
+    'frequency.txt bonus': 10000,
 
     # lite update
     # this reduces how many notes are changed and thus sync burden by not updating notes that aren't as important

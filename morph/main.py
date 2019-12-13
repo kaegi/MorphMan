@@ -275,11 +275,11 @@ def updateNotes(allDb):
             try:
                 focusMorphIndex = frequency_list.index(focusMorphString)
                 isFrequency = True
-                frequencyWeight = C('frequency.txt weight scale')
+                frequencyBonus = C('frequency.txt bonus')
 
                 # The bigger this number, the lower mmi becomes
-                usefulness += (frequencyListLength -
-                               focusMorphIndex) * frequencyWeight
+                usefulness += int(round( frequencyBonus * (1 - focusMorphIndex / frequencyListLength) ))
+
             except ValueError:
                 pass
 
@@ -306,7 +306,7 @@ def updateNotes(allDb):
         lenDiff = min(9, abs(lenDiffRaw))
 
         # calculate mmi
-        mmi = 100000 * N_k + 1000 * lenDiff + int(round(usefulness))
+        mmi = 100000 * N_k + 1000 * lenDiff + usefulness
         if C('set due based on mmi'):
             nid2mmi[nid] = mmi
 
