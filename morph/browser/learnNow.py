@@ -3,7 +3,8 @@ from anki.hooks import addHook
 from anki.lang import _
 from aqt.utils import tooltip
 
-from ..util import addBrowserCardSelectionCmd, mw, infoMsg, cfg1
+from ..util import addBrowserCardSelectionCmd, mw, infoMsg
+from ..preferences import cfg1
 
 
 def pre(b): return {'cards': [], 'browser': b}

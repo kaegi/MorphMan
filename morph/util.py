@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import codecs
 import datetime
-import importlib
+
 
 from anki.hooks import addHook
 from anki.notes import Note
@@ -9,7 +9,7 @@ from aqt import mw
 from aqt.browser import Browser
 from aqt.qt import *
 from aqt.utils import showCritical, showInfo
-
+from .preferences import cfg1, initCfg
 
 try:
     from aqt.pinnedmodules import typing
@@ -37,19 +37,6 @@ def allDb(reload=False):
 ###############################################################################
 # Preferences
 ###############################################################################
-cfgMod = None
-dbsPath = None
-
-
-def initCfg():
-    global cfgMod, dbsPath
-    from . import config
-    importlib.reload(config)
-    cfgMod = config
-    dbsPath = config.default['path_dbs']
-
-    # Redraw toolbar to update stats
-    mw.toolbar.draw()
 
 
 def initJcfg():
@@ -64,21 +51,6 @@ def initJcfg():
 addHook('profileLoaded', initCfg)
 addHook('profileLoaded', initJcfg)
 # ToDo: - move hooks to ../__init__ and unify to one single hook
-
-
-def cfg1(key, modelId=None, deckId=None):
-    assert cfgMod, 'Tried to use cfgMods before profile loaded'
-    profile = mw.pm.name
-    model = mw.col.models.get(modelId)['name'] if modelId else None
-    deck = mw.col.decks.get(deckId)['name'] if deckId else None
-    if key in cfgMod.deck_overrides.get(deck, []):
-        return cfgMod.deck_overrides[deck][key]
-    elif key in cfgMod.model_overrides.get(model, []):
-        return cfgMod.model_overrides[model][key]
-    elif key in cfgMod.profile_overrides.get(profile, []):
-        return cfgMod.profile_overrides[profile][key]
-    else:
-        return cfgMod.default[key]
 
 
 def jcfg_default():

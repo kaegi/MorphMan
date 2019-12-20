@@ -16,7 +16,7 @@ from aqt.utils import tooltip
 
 from . import main
 from .util import mw, addHook, allDb
-from .util import jcfg, cfg1
+from .preferences import jcfg, cfg1
 
 assert isinstance(mw, aqt.main.AnkiQt)
 

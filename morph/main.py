@@ -15,7 +15,7 @@ from . import util
 from .morphemes import MorphDb, AnkiDeck, getMorphemes
 from .morphemizer import getMorphemizerByName
 from .util import printf, mw, errorMsg, getFilter, getFilterByMidAndTags
-from .util import cfg1, jcfg, jcfg2
+from .preferences import cfg1, jcfg, jcfg2
 from .util_external import memoize
 
 # hack: typing is compile time anyway, so, nothing bad happens if it fails, the try is to support anki < 2.1.16

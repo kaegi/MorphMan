@@ -2,7 +2,7 @@
 import anki.sound
 from anki.hooks import addHook
 from ..util import addBrowserNoteSelectionCmd
-from ..util import cfg1
+from ..preferences import cfg1
 import re
 
 

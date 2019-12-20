@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from aqt.utils import tooltip
 from anki.hooks import addHook
-from ..util import addBrowserNoteSelectionCmd, getFilter, jcfg, cfg1
+from ..util import addBrowserNoteSelectionCmd, getFilter
+from ..preferences import jcfg, cfg1
 from anki.lang import _
 
 

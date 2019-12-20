@@ -4,11 +4,12 @@ from anki.hooks import addHook
 from anki.utils import stripHTML
 from ..morphemes import AnkiDeck, MorphDb, getMorphemes, ms2str
 from ..morphemizer import getMorphemizerByName
-from ..util import addBrowserNoteSelectionCmd, mw, getFilter, infoMsg, QFileDialog, cfg1
+from ..util import addBrowserNoteSelectionCmd, mw, getFilter, infoMsg, QFileDialog
+from ..preferences import cfg1
 
 
 def pre(b):
-    from ..util import dbsPath  # not defined until late, so don't import at top of module
+    from ..preferences import dbsPath  # not defined until late, so don't import at top of module
     path = \
     QFileDialog.getSaveFileName(caption='Save morpheme db to:', directory=dbsPath + os.sep + 'exportedMorphs.db')[0]
 
