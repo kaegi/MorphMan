@@ -5,7 +5,7 @@ from anki.lang import _
 
 from aqt.utils import tooltip
 
-from .util import mkBtn, mw
+from .util import mw, mkBtn
 from .preferences import jcfg, jcfgUpdate
 from .morphemizer import getAllMorphemizers
 

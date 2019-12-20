@@ -40,7 +40,7 @@ def allDb(reload=False):
 
 
 addHook('profileLoaded', initPreferences)
-# ToDo: - move hooks to ../__init__
+# ToDo: - move this hook to better home
 
 
 
