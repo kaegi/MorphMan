@@ -35,7 +35,7 @@ def allDb(reload=False):
 
 
 ###############################################################################
-# Config
+# Preferences
 ###############################################################################
 cfgMod = None
 dbsPath = None
@@ -63,12 +63,10 @@ def initJcfg():
 
 addHook('profileLoaded', initCfg)
 addHook('profileLoaded', initJcfg)
+# ToDo: - move hooks to ../__init__ and unify to one single hook
 
 
-def cfg1(key, mid=None, did=None): return cfg(mid, did, key)
-
-
-def cfg(modelId, deckId, key):
+def cfg1(key, modelId=None, deckId=None):
     assert cfgMod, 'Tried to use cfgMods before profile loaded'
     profile = mw.pm.name
     model = mw.col.models.get(modelId)['name'] if modelId else None

@@ -14,7 +14,8 @@ from . import stats
 from . import util
 from .morphemes import MorphDb, AnkiDeck, getMorphemes
 from .morphemizer import getMorphemizerByName
-from .util import printf, mw, cfg, cfg1, errorMsg, jcfg, jcfg2, getFilter, getFilterByMidAndTags
+from .util import printf, mw, errorMsg, getFilter, getFilterByMidAndTags
+from .util import cfg1, jcfg, jcfg2
 from .util_external import memoize
 
 # hack: typing is compile time anyway, so, nothing bad happens if it fails, the try is to support anki < 2.1.16
@@ -86,7 +87,7 @@ def mkAllDb(all_db=None):
     for i, (nid, mid, flds, guid, tags) in enumerate(db.execute('select id, mid, flds, guid, tags from notes')):
         if i % 500 == 0:
             mw.progress.update(value=i)
-        C = partial(cfg, mid, None)
+        def C(key): return cfg1(key, mid)
 
         note = mw.col.getNote(nid)
         note_cfg = getFilter(note)
@@ -218,7 +219,7 @@ def updateNotes(allDb):
         ts = TAG.split(tags)
         if i % 500 == 0:
             mw.progress.update(value=i)
-        C = partial(cfg, mid, None)
+        def C(key): return cfg1(key, mid)
 
         notecfg = getFilterByMidAndTags(mid, ts)
         if notecfg is None or not notecfg['Modify']:
