@@ -15,7 +15,7 @@ from . import util
 from .morphemes import MorphDb, AnkiDeck, getMorphemes
 from .morphemizer import getMorphemizerByName
 from .util import printf, mw, errorMsg, getFilter, getFilterByMidAndTags
-from .preferences import cfg1, jcfg, jcfg2
+from .preferences import cfg1, jcfg
 from .util_external import memoize
 
 # hack: typing is compile time anyway, so, nothing bad happens if it fails, the try is to support anki < 2.1.16
@@ -177,7 +177,7 @@ def updateNotes(allDb):
         'Tag_Comprehension'), jcfg('Tag_Vocab'), jcfg('Tag_Fresh'), jcfg('Tag_NotReady'), jcfg(
         'Tag_AlreadyKnown'), jcfg('Tag_Priority'), jcfg('Tag_TooShort'), jcfg('Tag_TooLong'), jcfg('Tag_Frequency')
     TAG.register(tagNames)
-    badLengthTag = jcfg2().get('Tag_BadLength')
+    badLengthTag = jcfg('Tag_BadLength')
 
     # handle secondary databases
     mw.progress.update(label='Creating seen/known/mature from all.db')
