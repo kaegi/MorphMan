@@ -74,8 +74,10 @@ def mkAllDb(all_db=None):
     importlib.reload(config)
     t_0, db, TAG = time.time(), mw.col.db, mw.col.tags
     N_notes = db.scalar('select count() from notes')
-    N_enabled_notes = 0  # for providing an error message if there is no note that is used for processing
-    mw.progress.start(label='Prep work for all.db creation', max=N_notes, immediate=True)
+    # for providing an error message if there is no note that is used for processing
+    N_enabled_notes = 0
+    mw.progress.start(label='Prep work for all.db creation',
+                      max=N_notes, immediate=True)
 
     if not all_db:
         all_db = MorphDb()
@@ -113,7 +115,7 @@ def mkAllDb(all_db=None):
                 mname = mw.col.models.get(mid)['name']
                 errorMsg('Failed to get field "{field}" from a note of model "{model}". Please fix your config.py '
                          'file to match your collection appropriately and ignore the following error.'.format(
-                          model=mname, field=fieldName))
+                             model=mname, field=fieldName))
                 raise
 
             loc = fidDb.get((nid, guid, fieldName), None)
@@ -147,7 +149,8 @@ def mkAllDb(all_db=None):
     if cfg1('saveDbs'):
         mw.progress.update(value=i, label='Saving all.db to disk')
         all_db.save(cfg1('path_all'))
-        printf('Processed all %d notes + saved all.db in %f sec' % (N_notes, time.time() - t_0))
+        printf('Processed all %d notes + saved all.db in %f sec' %
+               (N_notes, time.time() - t_0))
     mw.progress.finish()
     return all_db
 
@@ -190,7 +193,8 @@ def updateNotes(allDb):
     frequencyListPath = cfg1('path_frequency')
     try:
         with codecs.open(frequencyListPath, encoding='utf-8') as f:
-            frequency_list = [line.strip().split('\t')[0] for line in f.readlines()]
+            frequency_list = [line.strip().split('\t')[0]
+                              for line in f.readlines()]
     except FileNotFoundError:
         frequency_list = []
         pass  # User does not have a frequency.txt
@@ -247,7 +251,8 @@ def updateNotes(allDb):
                     new_knowns.add(morpheme)
 
         # Determine MMI - Morph Man Index
-        N, N_s, N_k, N_m = len(morphemes), len(unseens), len(unknowns), len(unmatures)
+        N, N_s, N_k, N_m = len(morphemes), len(
+            unseens), len(unknowns), len(unmatures)
 
         # Bail early for lite update
         if N_k > 2 and C('only update k+2 and below'):
@@ -273,7 +278,8 @@ def updateNotes(allDb):
                 frequencyWeight = C('frequency.txt weight scale')
 
                 # The bigger this number, the lower mmi becomes
-                usefulness += (frequencyListLength - focusMorphIndex) * frequencyWeight
+                usefulness += (frequencyListLength -
+                               focusMorphIndex) * frequencyWeight
             except ValueError:
                 pass
 
@@ -308,7 +314,8 @@ def updateNotes(allDb):
         fs = splitFields(flds)
 
         # clear any 'special' tags, the appropriate will be set in the next few lines
-        ts = [t for t in ts if t not in (notReadyTag, compTag, vocabTag, freshTag)]
+        ts = [t for t in ts if t not in (
+            notReadyTag, compTag, vocabTag, freshTag)]
 
         # determine card type
         if N_m == 0:  # sentence comprehension card, m+0
@@ -319,7 +326,6 @@ def updateNotes(allDb):
             setField(mid, fs, field_focus_morph_pos, focusMorph.pos)
         elif N_k > 1:  # M+1+ and K+2+
             ts.append(notReadyTag)
-            setField(mid, fs, field_focus_morph, '')
         elif N_m == 1:  # we have k+0, and m+1, so this card does not introduce a new vocabulary -> card for newly learned morpheme
             ts.append(freshTag)
             focusMorph = next(iter(unmatures))
@@ -328,14 +334,14 @@ def updateNotes(allDb):
 
         else:  # only case left: we have k+0, but m+2 or higher, so this card does not introduce a new vocabulary -> card for newly learned morpheme
             ts.append(freshTag)
-            setField(mid, fs, field_focus_morph, '')
 
         # set type agnostic fields
         setField(mid, fs, field_unknown_count, '%d' % N_k)
         setField(mid, fs, field_unmature_count, '%d' % N_m)
         setField(mid, fs, field_morph_man_index, '%d' % mmi)
         setField(mid, fs, field_unknowns, ', '.join(u.base for u in unknowns))
-        setField(mid, fs, field_unmatures, ', '.join(u.base for u in unmatures))
+        setField(mid, fs, field_unmatures,
+                 ', '.join(u.base for u in unmatures))
         setField(mid, fs, field_unknown_freq, '%d' % F_k_avg)
 
         # remove deprecated tag
@@ -392,9 +398,11 @@ def updateNotes(allDb):
         if nid in nid2mmi:  # owise it was disabled
             due_ = nid2mmi[nid]
             if due != due_:  # only update cards that have changed
-                ds.append({'now': now, 'due': due_, 'usn': mw.col.usn(), 'cid': cid})
+                ds.append({'now': now, 'due': due_,
+                           'usn': mw.col.usn(), 'cid': cid})
 
-    mw.col.db.executemany('update cards set due=:due, mod=:now, usn=:usn where id=:cid', ds)
+    mw.col.db.executemany(
+        'update cards set due=:due, mod=:now, usn=:usn where id=:cid', ds)
     mw.reset()
 
     printf('Updated notes in %f sec' % (time.time() - t_0))
@@ -412,7 +420,8 @@ def main():
 
     # update all.db
     allDb = mkAllDb(cur)
-    if not allDb:  # there was an (non-critical-/non-"exception"-)error but error message was already displayed
+    # there was an (non-critical-/non-"exception"-)error but error message was already displayed
+    if not allDb:
         mw.progress.finish()
         return
 
