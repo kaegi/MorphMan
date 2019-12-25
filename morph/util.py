@@ -85,24 +85,32 @@ def cfg(modelId, deckId, key):
 
 def jcfg_default():
     return {
-        'Field_FocusMorph': 'MorphMan_FocusMorph',  # holds the unknown for k+0 sentences but goes away once m+0
+        # holds the unknown for k+0 sentences but goes away once m+0
+        'Field_FocusMorph': 'MorphMan_FocusMorph',
         'Field_MorphManIndex': 'MorphMan_Index',
         # created an ordering to learn cards in. this is the value new card 'due' times are set to
         'Field_Unmatures': 'MorphMan_Unmatures',  # likewise for unmatures
-        'Field_UnmatureMorphCount': 'MorphMan_UnmatureMorphCount',  # stores how many unmatures
-        'Field_Unknowns': 'MorphMan_Unknowns',  # comma seperated list of morphemes that are unknown
-        'Field_UnknownFreq': 'MorphMan_UnknownFreq',  # average of how many times the unknowns appear in your collection
+        # stores how many unmatures
+        'Field_UnmatureMorphCount': 'MorphMan_UnmatureMorphCount',
+        # comma seperated list of morphemes that are unknown
+        'Field_Unknowns': 'MorphMan_Unknowns',
+        # average of how many times the unknowns appear in your collection
+        'Field_UnknownFreq': 'MorphMan_UnknownFreq',
         'Field_UnknownMorphCount': 'MorphMan_UnknownMorphCount',  # stores how many unknowns
+        'Field_FocusMorphPos': 'MorphMan_FocusMorphPos',  # stores how many unknowns
 
         # tag names for marking the state of notes
         # the following three are mutually exclusive and erase eachother upon promotion/demotion
-        'Tag_Comprehension': 'mm_comprehension',  # set once all morphs for note are mature
+        # set once all morphs for note are mature
+        'Tag_Comprehension': 'mm_comprehension',
         'Tag_Vocab': 'mm_vocab',  # set once all but 1 morph for note is known
         'Tag_Fresh': 'mm_fresh',
         # we have no unkown words, but multiple unmature -> alternative card for vocab or original vocab card
         'Tag_NotReady': 'mm_notReady',  # set for k+2 and above cards
-        'Tag_AlreadyKnown': 'mm_alreadyKnown',  # you can add this tag to a note to make anki treat it as if mature
-        'Tag_Priority': 'mm_priority',  # set if note contains an unknown that exists in priority.db
+        # you can add this tag to a note to make anki treat it as if mature
+        'Tag_AlreadyKnown': 'mm_alreadyKnown',
+        # set if note contains an unknown that exists in priority.db
+        'Tag_Priority': 'mm_priority',
         'Tag_TooShort': 'mm_tooShort',  # set if sentence is below optimal length range
         'Tag_TooLong': 'mm_tooLong',  # set if sentence is above optimal length range
         'Tag_Frequency': 'mm_frequency',  # set if sentence is above optimal length range
@@ -143,8 +151,10 @@ def jcfg_default():
         # only set necessary tags or set all tags?
         'Option_SetNotRequiredTags': True,
         # do not set tags/remove tags that are only there for user to read/filter with
-        'Option_SkipComprehensionCards': True,  # bury/skip all new cards that have 'Tag_Comprehension'
-        'Option_SkipFreshVocabCards': True,  # bury/skip all new cards that have 'Tag_Fresh'
+        # bury/skip all new cards that have 'Tag_Comprehension'
+        'Option_SkipComprehensionCards': True,
+        # bury/skip all new cards that have 'Tag_Fresh'
+        'Option_SkipFreshVocabCards': True,
         'Option_SkipFocusMorphSeenToday': True,
         # bury/skip all new cards that have a focus morph that was reviewed today/marked as `already known`
         'Option_IgnoreBracketContents': False,
@@ -255,13 +265,15 @@ def addBrowserNoteSelectionCmd(menuLabel, preF, perF, postF, tooltip=None, short
     # type: (str, Callable[[Browser], T], Callable[[T, Note], T], Callable[[T], T], Optional[str], Optional[Any], str) -> None
     """ This function sets up a menu item in the Anki browser. On being clicked, it will call one time `preF`, for
     every selected note `perF` and after everything `postF`. """
-    addBrowserItem(menuLabel, lambda b: doOnNoteSelection(b, preF, perF, postF, progLabel), tooltip, shortcut)
+    addBrowserItem(menuLabel, lambda b: doOnNoteSelection(
+        b, preF, perF, postF, progLabel), tooltip, shortcut)
 
 
 def addBrowserCardSelectionCmd(menuLabel, preF, perF, postF, tooltip=None, shortcut=None):
     """ This function sets up a menu item in the Anki browser. On being clicked, it will call one time `preF`, for
     every selected card `perF` and after everything `postF`. """
-    addBrowserItem(menuLabel, lambda b: doOnCardSelection(b, preF, perF, postF), tooltip, shortcut)
+    addBrowserItem(menuLabel, lambda b: doOnCardSelection(
+        b, preF, perF, postF), tooltip, shortcut)
 
 
 ###############################################################################
