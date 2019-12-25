@@ -97,13 +97,20 @@ class PreferencesDialog(QDialog):
         fieldsList = [
             ("Focus morph (*):", "Field_FocusMorph",
              "Stores the unknown morpheme for sentences with one unmature word.\nGets cleared as soon as all works are mature."),
-            ("MorphMan Index:", "Field_MorphManIndex", "Difficulty of card. This will be set to `due` time of card."),
-            ("Unmatures", "Field_Unmatures", "Comma-separated list of unmature words."),
-            ("Unmatures count:", "Field_UnmatureMorphCount", "Number of unmature words on this note."),
-            ("Unknowns:", "Field_Unknowns", "Comma-separated list of unknown morphemes."),
-            ("Unknown count:", "Field_UnknownMorphCount", "Number of unknown morphemes on this note."),
+            ("MorphMan Index:", "Field_MorphManIndex",
+             "Difficulty of card. This will be set to `due` time of card."),
+            ("Unmatures", "Field_Unmatures",
+             "Comma-separated list of unmature words."),
+            ("Unmatures count:", "Field_UnmatureMorphCount",
+             "Number of unmature words on this note."),
+            ("Unknowns:", "Field_Unknowns",
+             "Comma-separated list of unknown morphemes."),
+            ("Unknown count:", "Field_UnknownMorphCount",
+             "Number of unknown morphemes on this note."),
             ("Unknown frequency:", "Field_UnknownFreq",
-             "Average of how many times the unknowns appear in your collection.")
+             "Average of how many times the unknowns appear in your collection."),
+            ("Focus morph POS:", "Field_FocusMorphPos",
+             "The part of speech of the focus morph")
         ]
         self.fieldEntryList = []
         for i, (name, key, tooltipInfo) in enumerate(fieldsList):
@@ -111,8 +118,10 @@ class PreferencesDialog(QDialog):
             entry.setToolTip(tooltipInfo)
             self.fieldEntryList.append((key, entry))
 
-            grid.addWidget(QLabel(name), i // numberOfColumns, (i % numberOfColumns) * 2 + 0)
-            grid.addWidget(entry, i // numberOfColumns, (i % numberOfColumns) * 2 + 1)
+            grid.addWidget(QLabel(name), i // numberOfColumns,
+                           (i % numberOfColumns) * 2 + 0)
+            grid.addWidget(entry, i // numberOfColumns,
+                           (i % numberOfColumns) * 2 + 1)
 
         vbox.addStretch()
 
@@ -132,12 +141,14 @@ class PreferencesDialog(QDialog):
         grid = QGridLayout()
         vbox.addLayout(grid)
         tagList = [
-            ("Vocab note:", 'Tag_Vocab', 'Note that is optimal to learn (one unknown word.)'),
+            ("Vocab note:", 'Tag_Vocab',
+             'Note that is optimal to learn (one unknown word.)'),
             ("Compehension note:", 'Tag_Comprehension',
              'Note that only has mature words (optimal for sentence learning).'),
             ("Fresh vocab note:", 'Tag_Fresh',
              'Note that does not contain unknown words, but one or\nmore unmature (card with recently learned morphmes).'),
-            ("Not ready:", 'Tag_NotReady', 'Note that has two or more unknown words.'),
+            ("Not ready:", 'Tag_NotReady',
+             'Note that has two or more unknown words.'),
             ("Already known:", 'Tag_AlreadyKnown',
              'You can add this tag to a note.\nAfter a recalc of the database, all in this sentence words are marked as known.\nPress \'K\' while reviewing to tag current card.'),
             ("Priority:", 'Tag_Priority', 'Morpheme is in priority.db.'),
@@ -152,13 +163,17 @@ class PreferencesDialog(QDialog):
             entry.setToolTip(tooltipInfo)
             self.tagEntryList.append((key, entry))
 
-            grid.addWidget(QLabel(name), i // numberOfColumns, (i % numberOfColumns) * 2 + 0)
-            grid.addWidget(entry, i // numberOfColumns, (i % numberOfColumns) * 2 + 1)
+            grid.addWidget(QLabel(name), i // numberOfColumns,
+                           (i % numberOfColumns) * 2 + 0)
+            grid.addWidget(entry, i // numberOfColumns,
+                           (i % numberOfColumns) * 2 + 1)
 
         vbox.addSpacing(50)
 
-        self.checkboxSetNotRequiredTags = QCheckBox("Add tags even if not required")
-        self.checkboxSetNotRequiredTags.setCheckState(Qt.Checked if jcfg('Option_SetNotRequiredTags') else Qt.Unchecked)
+        self.checkboxSetNotRequiredTags = QCheckBox(
+            "Add tags even if not required")
+        self.checkboxSetNotRequiredTags.setCheckState(
+            Qt.Checked if jcfg('Option_SetNotRequiredTags') else Qt.Unchecked)
         vbox.addWidget(self.checkboxSetNotRequiredTags)
 
         vbox.addStretch()
@@ -218,7 +233,8 @@ class PreferencesDialog(QDialog):
     # see util.jcfg_default()['Filter'] for type of data
     def setTableRow(self, rowIndex, data):
         assert rowIndex >= 0, "Negative row numbers? Really?"
-        assert len(self.rowGui) >= rowIndex, "Row can't be appended because it would leave an empty row"
+        assert len(
+            self.rowGui) >= rowIndex, "Row can't be appended because it would leave an empty row"
 
         rowGui = {}
 
@@ -248,10 +264,14 @@ class PreferencesDialog(QDialog):
         rowGui['fieldsEntry'] = QLineEdit(', '.join(data['Fields']))
         rowGui['morphemizerComboBox'] = morphemizerComboBox
         rowGui['modifyCheckBox'] = item
-        self.tableView.setIndexWidget(self.tableModel.index(rowIndex, 0), rowGui['modelComboBox'])
-        self.tableView.setIndexWidget(self.tableModel.index(rowIndex, 1), rowGui['tagsEntry'])
-        self.tableView.setIndexWidget(self.tableModel.index(rowIndex, 2), rowGui['fieldsEntry'])
-        self.tableView.setIndexWidget(self.tableModel.index(rowIndex, 3), morphemizerComboBox)
+        self.tableView.setIndexWidget(self.tableModel.index(
+            rowIndex, 0), rowGui['modelComboBox'])
+        self.tableView.setIndexWidget(
+            self.tableModel.index(rowIndex, 1), rowGui['tagsEntry'])
+        self.tableView.setIndexWidget(
+            self.tableModel.index(rowIndex, 2), rowGui['fieldsEntry'])
+        self.tableView.setIndexWidget(
+            self.tableModel.index(rowIndex, 3), morphemizerComboBox)
         self.tableModel.setItem(rowIndex, 4, item)
 
         if len(self.rowGui) == rowIndex:
@@ -272,9 +292,11 @@ class PreferencesDialog(QDialog):
             filter['Type'] = row_gui['modelComboBox'].currentText()
 
         filter['Tags'] = [x for x in row_gui['tagsEntry'].text().split(', ') if x]
-        filter['Fields'] = [x for x in row_gui['fieldsEntry'].text().split(', ') if x]
+        filter['Fields'] = [
+            x for x in row_gui['fieldsEntry'].text().split(', ') if x]
 
-        filter['Morphemizer'] = getAllMorphemizers()[row_gui['morphemizerComboBox'].currentIndex()].__class__.__name__
+        filter['Morphemizer'] = getAllMorphemizers(
+        )[row_gui['morphemizerComboBox'].currentIndex()].__class__.__name__
         filter['Modify'] = row_gui['modifyCheckBox'].checkState() != Qt.Unchecked
 
         return filter
@@ -292,7 +314,8 @@ class PreferencesDialog(QDialog):
         for i, rowGui in enumerate(self.rowGui):
             cfg['Filter'].append(self.rowGuiToFilter(rowGui))
 
-        cfg['Option_SetNotRequiredTags'] = self.checkboxSetNotRequiredTags.checkState() != Qt.Unchecked
+        cfg['Option_SetNotRequiredTags'] = self.checkboxSetNotRequiredTags.checkState(
+        ) != Qt.Unchecked
 
         return cfg
 

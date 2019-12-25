@@ -213,6 +213,7 @@ def updateNotes(allDb):
     field_unknowns = jcfg('Field_Unknowns')
     field_unmatures = jcfg('Field_Unmatures')
     field_unknown_freq = jcfg('Field_UnknownFreq')
+    field_focus_morph_pos = jcfg("Field_FocusMorphPos")
 
     for i, (nid, mid, flds, guid, tags) in enumerate(db.execute('select id, mid, flds, guid, tags from notes')):
         ts = TAG.split(tags)
@@ -315,12 +316,16 @@ def updateNotes(allDb):
         elif N_k == 1:  # new vocab card, k+1
             ts.append(vocabTag)
             setField(mid, fs, field_focus_morph, focusMorph.base)
+            setField(mid, fs, field_focus_morph_pos, focusMorph.pos)
         elif N_k > 1:  # M+1+ and K+2+
             ts.append(notReadyTag)
             setField(mid, fs, field_focus_morph, '')
         elif N_m == 1:  # we have k+0, and m+1, so this card does not introduce a new vocabulary -> card for newly learned morpheme
             ts.append(freshTag)
-            setField(mid, fs, field_focus_morph, next(iter(unmatures)).base)
+            focusMorph = next(iter(unmatures))
+            setField(mid, fs, field_focus_morph, focusMorph.base)
+            setField(mid, fs, field_focus_morph_pos, focusMorph.pos)
+
         else:  # only case left: we have k+0, but m+2 or higher, so this card does not introduce a new vocabulary -> card for newly learned morpheme
             ts.append(freshTag)
             setField(mid, fs, field_focus_morph, '')
