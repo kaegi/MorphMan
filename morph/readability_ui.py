@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'morph/readability.ui'
+# Form implementation generated from reading ui file 'readability.ui'
 #
-# Created by: PyQt5 UI code generator 5.14.0
+# Created by: PyQt5 UI code generator 5.13.0
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_ReadabilityDialog(object):
     def setupUi(self, ReadabilityDialog):
         ReadabilityDialog.setObjectName("ReadabilityDialog")
-        ReadabilityDialog.resize(956, 722)
+        ReadabilityDialog.resize(898, 781)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -59,6 +59,13 @@ class Ui_ReadabilityDialog(object):
         self.horizontalLayout_4.addWidget(self.morphemizerComboBox)
         spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_4.addItem(spacerItem)
+        self.minFrequencyLabel = QtWidgets.QLabel(self.frame)
+        self.minFrequencyLabel.setObjectName("minFrequencyLabel")
+        self.horizontalLayout_4.addWidget(self.minFrequencyLabel)
+        self.minFrequencySpinBox = QtWidgets.QSpinBox(self.frame)
+        self.minFrequencySpinBox.setMaximum(200000)
+        self.minFrequencySpinBox.setObjectName("minFrequencySpinBox")
+        self.horizontalLayout_4.addWidget(self.minFrequencySpinBox)
         self.targetLabel = QtWidgets.QLabel(self.frame)
         self.targetLabel.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.targetLabel.setObjectName("targetLabel")
@@ -175,13 +182,50 @@ class Ui_ReadabilityDialog(object):
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_3.setContentsMargins(6, -1, 6, -1)
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        self.outputText = QtWidgets.QPlainTextEdit(ReadabilityDialog)
+        self.tabWidget = QtWidgets.QTabWidget(ReadabilityDialog)
+        self.tabWidget.setObjectName("tabWidget")
+        self.tabOutputLog = QtWidgets.QWidget()
+        self.tabOutputLog.setObjectName("tabOutputLog")
+        self.verticalLayout_21 = QtWidgets.QVBoxLayout(self.tabOutputLog)
+        self.verticalLayout_21.setObjectName("verticalLayout_21")
+        self.outputText = QtWidgets.QPlainTextEdit(self.tabOutputLog)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.outputText.sizePolicy().hasHeightForWidth())
+        self.outputText.setSizePolicy(sizePolicy)
         self.outputText.setReadOnly(True)
         self.outputText.setObjectName("outputText")
-        self.horizontalLayout_3.addWidget(self.outputText)
+        self.verticalLayout_21.addWidget(self.outputText)
+        self.tabWidget.addTab(self.tabOutputLog, "")
+        self.tabReadabilityReport = QtWidgets.QWidget()
+        self.tabReadabilityReport.setObjectName("tabReadabilityReport")
+        self.verticalLayout_31 = QtWidgets.QVBoxLayout(self.tabReadabilityReport)
+        self.verticalLayout_31.setObjectName("verticalLayout_31")
+        self.readabilityTable = CustomTableWidget(self.tabReadabilityReport)
+        self.readabilityTable.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+        self.readabilityTable.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectItems)
+        self.readabilityTable.setRowCount(0)
+        self.readabilityTable.setColumnCount(0)
+        self.readabilityTable.setObjectName("readabilityTable")
+        self.verticalLayout_31.addWidget(self.readabilityTable)
+        self.tabWidget.addTab(self.tabReadabilityReport, "")
+        self.tabStudyPlan = QtWidgets.QWidget()
+        self.tabStudyPlan.setObjectName("tabStudyPlan")
+        self.verticalLayout_41 = QtWidgets.QVBoxLayout(self.tabStudyPlan)
+        self.verticalLayout_41.setObjectName("verticalLayout_41")
+        self.studyPlanTable = CustomTableWidget(self.tabStudyPlan)
+        self.studyPlanTable.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+        self.studyPlanTable.setObjectName("studyPlanTable")
+        self.studyPlanTable.setColumnCount(0)
+        self.studyPlanTable.setRowCount(0)
+        self.verticalLayout_41.addWidget(self.studyPlanTable)
+        self.tabWidget.addTab(self.tabStudyPlan, "")
+        self.horizontalLayout_3.addWidget(self.tabWidget)
         self.verticalLayout.addLayout(self.horizontalLayout_3)
 
         self.retranslateUi(ReadabilityDialog)
+        self.tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(ReadabilityDialog)
 
     def retranslateUi(self, ReadabilityDialog):
@@ -190,6 +234,7 @@ class Ui_ReadabilityDialog(object):
         self.inputDirectoryLabel.setText(_translate("ReadabilityDialog", "Input Directory"))
         self.inputPathButton.setText(_translate("ReadabilityDialog", "..."))
         self.dictionaryLabel.setText(_translate("ReadabilityDialog", "Morphemizer:"))
+        self.minFrequencyLabel.setText(_translate("ReadabilityDialog", "Minimum Master Frequency"))
         self.targetLabel.setText(_translate("ReadabilityDialog", "Target %"))
         self.analyzeButton.setText(_translate("ReadabilityDialog", "Analyze!"))
         self.closeButton.setText(_translate("ReadabilityDialog", "Close"))
@@ -205,4 +250,8 @@ class Ui_ReadabilityDialog(object):
         self.wordReportCheckBox.setText(_translate("ReadabilityDialog", "Word Report"))
         self.studyPlanCheckBox.setText(_translate("ReadabilityDialog", "Target Study Plan"))
         self.frequencyListCheckBox.setText(_translate("ReadabilityDialog", "Frequency List"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabOutputLog), _translate("ReadabilityDialog", "Output Log"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabReadabilityReport), _translate("ReadabilityDialog", "Readability Report"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabStudyPlan), _translate("ReadabilityDialog", "Study Plan"))
 from .UI import MorphemizerComboBox
+from .customTableWidget import CustomTableWidget
