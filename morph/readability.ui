@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>956</width>
-    <height>722</height>
+    <width>898</width>
+    <height>781</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -115,6 +115,20 @@
              </size>
             </property>
            </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="minFrequencyLabel">
+            <property name="text">
+             <string>Minimum Master Frequency</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="minFrequencySpinBox">
+            <property name="maximum">
+             <number>200000</number>
+            </property>
+           </widget>
           </item>
           <item>
            <widget class="QLabel" name="targetLabel">
@@ -379,10 +393,67 @@
       <number>6</number>
      </property>
      <item>
-      <widget class="QPlainTextEdit" name="outputText">
-       <property name="readOnly">
-        <bool>true</bool>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>1</number>
        </property>
+       <widget class="QWidget" name="tabOutputLog">
+        <attribute name="title">
+         <string>Output Log</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QPlainTextEdit" name="outputText">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tabReadabilityReport">
+        <attribute name="title">
+         <string>Readability Report</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="CustomTableWidget" name="readabilityTable">
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectItems</enum>
+           </property>
+           <property name="rowCount">
+            <number>0</number>
+           </property>
+           <property name="columnCount">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tabStudyPlan">
+        <attribute name="title">
+         <string>Study Plan</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="CustomTableWidget" name="studyPlanTable">
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
       </widget>
      </item>
     </layout>
@@ -393,7 +464,12 @@
   <customwidget>
    <class>MorphemizerComboBox</class>
    <extends>QComboBox</extends>
-   <header>__relpath__/UI/</header>
+   <header>.UI</header>
+  </customwidget>
+  <customwidget>
+   <class>CustomTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>.customTableWidget.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

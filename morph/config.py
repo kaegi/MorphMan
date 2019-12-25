@@ -33,7 +33,8 @@ default = {
     'ignore grammar position': False,
 
     # Analyzer defaults
-    'default_study_target': 98.0,
+    'default_minimum_master_frequency': 0,   # if not 0, only morphemes with this minimum master frequency are added to study plan.
+    'default_study_target': 98.0,            # morph readability target % for study plan
 
     # reviewer mode keybindings
     'browse same focus key': 'l',
