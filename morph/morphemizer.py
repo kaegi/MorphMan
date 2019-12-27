@@ -301,7 +301,7 @@ class SpaceMorphemizer(Morphemizer):
     def getMorphemesFromExpr(self, e):
         # type: (str) -> [Morpheme]
         word_list = [word.lower()
-                     for word in re.findall(r"\w+", e, re.UNICODE)]
+                     for word in re.findall(r"\b[^\s\d]+\b", e, re.UNICODE)]
         return [Morpheme(word, word, word, word, 'UNKNOWN', 'UNKNOWN') for word in word_list]
 
     def getDescription(self):
