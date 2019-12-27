@@ -1,7 +1,11 @@
 from .morph.util import *
 from PyQt5.QtWidgets import *
 import importlib
-from anki.lang import _
+
+try:
+    from anki.lang import _
+except:
+    pass
 
 
 def onMorphManRecalc():
@@ -51,7 +55,8 @@ def main():
 
     # Add gui manager menu button
     a = QAction('&Database Manager', mw)
-    a.setStatusTip(_("Open gui manager to inspect, compare, and analyze MorphMan DBs"))
+    a.setStatusTip(
+        _("Open gui manager to inspect, compare, and analyze MorphMan DBs"))
     a.setShortcut(_("Ctrl+D"))
     a.triggered.connect(onMorphManManager)
     morphmanSubMenu.addAction(a)
