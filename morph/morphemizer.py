@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import importlib
+import importlib.util
 import re
 import subprocess
 import sys
@@ -141,12 +142,14 @@ def getMorphemesMecab(e):
     return ms
 
 
-def spawnCmd(cmd, startupinfo):  # [Str] -> subprocess.STARTUPINFO -> IO subprocess.Popen
+# [Str] -> subprocess.STARTUPINFO -> IO subprocess.Popen
+def spawnCmd(cmd, startupinfo):
     return subprocess.Popen(cmd, startupinfo=startupinfo, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
                             stderr=subprocess.STDOUT)
 
 
-def spawnMecab(base_cmd, startupinfo):  # [Str] -> subprocess.STARTUPINFO -> IO MecabProc
+# [Str] -> subprocess.STARTUPINFO -> IO MecabProc
+def spawnMecab(base_cmd, startupinfo):
     """Try to start a MeCab subprocess in the given way, or fail.
 
     Raises OSError if the given base_cmd and startupinfo don't work
@@ -157,7 +160,8 @@ def spawnMecab(base_cmd, startupinfo):  # [Str] -> subprocess.STARTUPINFO -> IO 
     global is_unidic
 
     config_dump = spawnCmd(base_cmd + ['-P'], startupinfo).stdout.read()
-    bos_feature_match = re.search('^bos-feature: (.*)$', str(config_dump, 'utf-8'), flags=re.M)
+    bos_feature_match = re.search(
+        '^bos-feature: (.*)$', str(config_dump, 'utf-8'), flags=re.M)
 
     if bos_feature_match is not None and bos_feature_match.group(1).strip() == MECAB_NODE_UNIDIC_BOS:
         node_parts = MECAB_NODE_UNIDIC_PARTS
@@ -173,7 +177,8 @@ def spawnMecab(base_cmd, startupinfo):  # [Str] -> subprocess.STARTUPINFO -> IO 
             "like `mecab-ipadic`\n")
 
     dicinfo_dump = spawnCmd(base_cmd + ['-D'], startupinfo).stdout.read()
-    charset_match = re.search('^charset:\t(.*)$', str(dicinfo_dump, 'utf-8'), flags=re.M)
+    charset_match = re.search(
+        '^charset:\t(.*)$', str(dicinfo_dump, 'utf-8'), flags=re.M)
     if charset_match is None:
         raise OSError('Can\'t find charset in MeCab dictionary info (`$MECAB -D`):\n\n'
                       + dicinfo_dump)
@@ -236,7 +241,15 @@ def mecab():  # IO MecabProc
         except ModuleNotFoundError:
             pass
 
-    # 5th priority - system mecab
+    # 5th priority - From Morphman
+    if importlib.util.find_spec('morph.deps.mecab.reading'):
+        try:
+            reading = importlib.import_module('morph.deps.mecab.reading')
+            mecab_source = 'MorphMan'
+        except ModuleNotFoundError:
+            pass
+
+    # 6th priority - system mecab
     if not reading:
         try:
             return spawnMecab(['mecab'], si), 'System'
@@ -287,7 +300,8 @@ class SpaceMorphemizer(Morphemizer):
 
     def getMorphemesFromExpr(self, e):
         # type: (str) -> [Morpheme]
-        word_list = [word.lower() for word in re.findall(r"\w+", e, re.UNICODE)]
+        word_list = [word.lower()
+                     for word in re.findall(r"\b[^\s\d]+\b", e, re.UNICODE)]
         return [Morpheme(word, word, word, word, 'UNKNOWN', 'UNKNOWN') for word in word_list]
 
     def getDescription(self):
@@ -321,7 +335,8 @@ class JiebaMorphemizer(Morphemizer):
     def getMorphemesFromExpr(self, e):  # Str -> [Morpheme]
         from .deps.jieba import posseg
         from .deps.zhon.hanzi import characters
-        e = u''.join(re.findall('[%s]' % characters, e))  # remove all punctuation
+        # remove all punctuation
+        e = u''.join(re.findall('[%s]' % characters, e))
         return [Morpheme(m.word, m.word, m.word, m.word, m.flag, u'UNKNOWN') for m in
                 posseg.cut(e)]  # find morphemes using jieba's POS segmenter
 

@@ -244,6 +244,7 @@ def highlight(txt, extra, fieldDict, field, mod_field):
         with codecs.open(frequency_list_path, encoding='utf-8') as f:
             frequency_list = [line.strip().split('\t')[0] for line in f.readlines()]
     except:
+        frequency_list = []
         pass  # User does not have a frequency.txt
 
     priority_db = main.MorphDb(cfg1('path_priority'), ignoreErrors=True).db

@@ -43,7 +43,6 @@ addHook('profileLoaded', initPreferences)
 # ToDo: - move this hook to better home
 
 
-
 def getFilter(note):
     # type: (Note) -> Optional[dict]
     return getFilterByTagsAndType(note.model()['name'], note.tags)
@@ -120,13 +119,15 @@ def addBrowserNoteSelectionCmd(menuLabel, preF, perF, postF, tooltip=None, short
     # type: (str, Callable[[Browser], T], Callable[[T, Note], T], Callable[[T], T], Optional[str], Optional[Any], str) -> None
     """ This function sets up a menu item in the Anki browser. On being clicked, it will call one time `preF`, for
     every selected note `perF` and after everything `postF`. """
-    addBrowserItem(menuLabel, lambda b: doOnNoteSelection(b, preF, perF, postF, progLabel), tooltip, shortcut)
+    addBrowserItem(menuLabel, lambda b: doOnNoteSelection(
+        b, preF, perF, postF, progLabel), tooltip, shortcut)
 
 
 def addBrowserCardSelectionCmd(menuLabel, preF, perF, postF, tooltip=None, shortcut=None):
     """ This function sets up a menu item in the Anki browser. On being clicked, it will call one time `preF`, for
     every selected card `perF` and after everything `postF`. """
-    addBrowserItem(menuLabel, lambda b: doOnCardSelection(b, preF, perF, postF), tooltip, shortcut)
+    addBrowserItem(menuLabel, lambda b: doOnCardSelection(
+        b, preF, perF, postF), tooltip, shortcut)
 
 
 ###############################################################################

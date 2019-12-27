@@ -7,7 +7,10 @@ from abc import ABC, abstractmethod
 
 import re
 
-import aqt
+try:
+    import aqt
+except:
+    pass
 
 # hack: typing is compile time anyway, so, nothing bad happens if it fails, the try is to support anki < 2.1.16
 try:
@@ -25,10 +28,8 @@ except ImportError:
     def errorMsg(msg):
         pass
 
-
     def jcfg(s):
         return None
-
 
     def cfg1(s):
         return None
@@ -141,7 +142,8 @@ def getMorphemes(morphemizer, expression, note_tags=None):
                 continue
 
             # find matches
-            split_expression = re.split(regex, expression, maxsplit=1, flags=re.UNICODE)
+            split_expression = re.split(
+                regex, expression, maxsplit=1, flags=re.UNICODE)
 
             if len(split_expression) == 1:
                 continue  # no match
@@ -151,9 +153,12 @@ def getMorphemes(morphemizer, expression, note_tags=None):
             if len(split_expression[0]) >= len(expression) or len(split_expression[1]) >= len(expression):
                 continue
 
-            a_morphs = getMorphemes(morphemizer, split_expression[0], note_tags)
-            b_morphs = [Morpheme(mstr, mstr, mstr, mstr, 'UNKNOWN', 'UNKNOWN') for mstr in morphemes]
-            c_morphs = getMorphemes(morphemizer, split_expression[1], note_tags)
+            a_morphs = getMorphemes(
+                morphemizer, split_expression[0], note_tags)
+            b_morphs = [Morpheme(mstr, mstr, mstr, mstr,
+                                 'UNKNOWN', 'UNKNOWN') for mstr in morphemes]
+            c_morphs = getMorphemes(
+                morphemizer, split_expression[1], note_tags)
 
             return a_morphs + b_morphs + c_morphs
 
@@ -216,7 +221,8 @@ class AnkiDeck(Location):
         self.fieldName = fieldName  # for example u'Expression'
         self.fieldValue = fieldValue  # for example u'それだけじゃない'
         self.guid = guid
-        self.maturities = maturities  # list of intergers, one for every card -> containg the intervals of every card for this note
+        # list of intergers, one for every card -> containg the intervals of every card for this note
+        self.maturities = maturities
         self.maturity = max(maturities) if maturities else 0
         self.weight = weight
 
@@ -379,7 +385,8 @@ class MorphDb:
 
         return new
 
-    def importFile(self, path, morphemizer, maturity=0):  # FilePath -> Morphemizer -> Maturity? -> IO ()
+    # FilePath -> Morphemizer -> Maturity? -> IO ()
+    def importFile(self, path, morphemizer, maturity=0):
         f = codecs.open(path, encoding='utf-8')
         inp = f.readlines()
         f.close()
@@ -430,6 +437,7 @@ class MorphDb:
 
     def analyze2str(self):  # m Str
         self.analyze()
-        posStr = '\n'.join('%d\t%d%%\t%s' % (v, 100. * v / self.vCount, k) for k, v in self.posBreakdown.items())
+        posStr = '\n'.join('%d\t%d%%\t%s' % (v, 100. * v / self.vCount, k)
+                           for k, v in self.posBreakdown.items())
         return 'Total normalized morphemes: %d\nTotal variations: %d\nBy part of speech:\n%s' % (
             self.kCount, self.vCount, posStr)
