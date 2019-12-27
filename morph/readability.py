@@ -13,7 +13,8 @@ from PyQt5.QtWidgets import *
 from . import readability_ui
 from .morphemes import Morpheme, MorphDb, getMorphemes, altIncludesMorpheme
 from .morphemizer import getMorphemizerByName
-from .util import dbsPath, mw, cfg1, initCfg
+from .util import mw
+from .preferences import dbsPath, cfg1, initCfg
 
 importlib.reload(readability_ui)
 

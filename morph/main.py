@@ -14,7 +14,8 @@ from . import stats
 from . import util
 from .morphemes import MorphDb, AnkiDeck, getMorphemes
 from .morphemizer import getMorphemizerByName
-from .util import printf, mw, cfg, cfg1, errorMsg, jcfg, jcfg2, getFilter, getFilterByMidAndTags
+from .util import printf, mw, errorMsg, getFilter, getFilterByMidAndTags
+from .preferences import cfg1, jcfg
 from .util_external import memoize
 
 # hack: typing is compile time anyway, so, nothing bad happens if it fails, the try is to support anki < 2.1.16
@@ -88,7 +89,7 @@ def mkAllDb(all_db=None):
     for i, (nid, mid, flds, guid, tags) in enumerate(db.execute('select id, mid, flds, guid, tags from notes')):
         if i % 500 == 0:
             mw.progress.update(value=i)
-        C = partial(cfg, mid, None)
+        def C(key): return cfg1(key, mid)
 
         note = mw.col.getNote(nid)
         note_cfg = getFilter(note)
@@ -179,7 +180,7 @@ def updateNotes(allDb):
         'Tag_Comprehension'), jcfg('Tag_Vocab'), jcfg('Tag_Fresh'), jcfg('Tag_NotReady'), jcfg(
         'Tag_AlreadyKnown'), jcfg('Tag_Priority'), jcfg('Tag_TooShort'), jcfg('Tag_TooLong'), jcfg('Tag_Frequency')
     TAG.register(tagNames)
-    badLengthTag = jcfg2().get('Tag_BadLength')
+    badLengthTag = jcfg('Tag_BadLength')
 
     # handle secondary databases
     mw.progress.update(label='Creating seen/known/mature from all.db')
@@ -223,7 +224,7 @@ def updateNotes(allDb):
         ts = TAG.split(tags)
         if i % 500 == 0:
             mw.progress.update(value=i)
-        C = partial(cfg, mid, None)
+        def C(key): return cfg1(key, mid)
 
         notecfg = getFilterByMidAndTags(mid, ts)
         if notecfg is None or not notecfg['Modify']:

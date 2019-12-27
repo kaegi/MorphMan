@@ -5,7 +5,8 @@ from anki.lang import _
 
 from aqt.utils import tooltip
 
-from .util import mw, jcfg, jcfgUpdate, mkBtn
+from .util import mw, mkBtn
+from .preferences import jcfg, jcfgUpdate
 from .morphemizer import getAllMorphemizers
 
 # only for jedi-auto-completion

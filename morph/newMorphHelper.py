@@ -15,7 +15,8 @@ import re
 from aqt.utils import tooltip
 
 from . import main
-from .util import jcfg, cfg, cfg1, mw, addHook, allDb
+from .util import mw, addHook, allDb
+from .preferences import jcfg, cfg1
 
 assert isinstance(mw, aqt.main.AnkiQt)
 
@@ -28,7 +29,7 @@ assert isinstance(mw, aqt.main.AnkiQt)
 # 6 on fill -> pull new cards from all child decks at once instead of sequentially
 
 # config aliases
-def CN(n, key): return cfg(n.mid, None, key)
+def CN(note, key): return cfg1(key, note.mid)
 
 
 def focusName(): return jcfg('Field_FocusMorph')
@@ -42,7 +43,8 @@ def my_fillNew(self, _old):
     """If 'new card merged fill' is enabled for the current deck, when we refill we
     pull from all child decks, sort combined pool of cards, then limit.
     If disabled, do the standard sequential fill method"""
-    C = partial(cfg, None, self.col.decks.active()[0])
+    def C(key): return cfg1(key, None, self.col.decks.active()[0])
+
     if not C('new card merged fill'):
         return _old(self)
 
@@ -92,7 +94,7 @@ def my_getNewCard(self, _old):
     """
 
     while True:
-        C = partial(cfg, None, self.col.decks.active()[0])
+        def C(key): return cfg1(key, None, self.col.decks.active()[0])
         if not C('next new card feature'):
             return _old(self)
         if not C('new card merged fill'):

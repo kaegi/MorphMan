@@ -1,6 +1,6 @@
 ﻿import codecs
 from .morphemes import getMorphemes, MorphDb
-from .util import cfg1
+from .preferences import cfg1
 
 
 # utils

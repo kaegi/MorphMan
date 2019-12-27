@@ -4,7 +4,8 @@ from anki.hooks import addHook
 from anki.utils import stripHTML
 from ..morphemes import getMorphemes, MorphDb
 from ..morphemizer import getMorphemizerByName
-from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit, cfg1
+from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit
+from ..preferences import cfg1
 from .. import util
 from anki.lang import _
 

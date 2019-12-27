@@ -6,7 +6,8 @@ from anki.hooks import wrap
 from anki.lang import _
 from aqt import toolbar
 
-from .util import cfg1, mw
+from .util import mw
+from .preferences import cfg1
 
 
 def getStatsPath(): return cfg1('path_stats')

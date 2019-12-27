@@ -4,7 +4,8 @@ from anki.lang import _
 from aqt.utils import tooltip
 
 from ..newMorphHelper import focus, focusName
-from ..util import addBrowserNoteSelectionCmd, cfg1
+from ..util import addBrowserNoteSelectionCmd
+from ..preferences import cfg1
 
 
 def pre(b): return {'focusMorph': [], 'b': b}

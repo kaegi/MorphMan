@@ -22,7 +22,8 @@ except ImportError:
 
 # need some fallbacks if not running from anki and thus morph.util isn't available
 try:
-    from .util import errorMsg, jcfg, cfg1
+    from .util import errorMsg
+    from .preferences import jcfg, cfg1
 except ImportError:
     def errorMsg(msg):
         pass

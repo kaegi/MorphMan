@@ -9,7 +9,8 @@ from anki.utils import isMac
 from . import adaptiveSubs
 from .morphemes import MorphDb
 from .morphemizer import getAllMorphemizers
-from .util import dbsPath, errorMsg, infoMsg, mw, cfg1, mkBtn
+from .util import errorMsg, infoMsg, mw, mkBtn
+from .preferences import dbsPath, cfg1
 
 
 def getPath(le):  # LineEdit -> GUI ()

@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 import anki.sound
 from anki.hooks import addHook
-from ..util import addBrowserNoteSelectionCmd, cfg, cfg1
+from ..util import addBrowserNoteSelectionCmd
+from ..preferences import cfg1
 import re
 
 
@@ -9,7 +10,7 @@ def pre(b): return {'vid2nid': {}}
 
 
 def per(st, n):
-    for f in cfg(n.mid, None, 'batch media fields'):
+    for f in cfg1('batch media fields', n.mid):
         try:
             r = re.search(anki.sound._soundReg, n[f])
             if r:

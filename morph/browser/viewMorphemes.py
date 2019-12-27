@@ -3,7 +3,8 @@ from anki.hooks import addHook
 from anki.utils import stripHTML
 from ..morphemes import getMorphemes, ms2str
 from ..morphemizer import getMorphemizerByName
-from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, cfg1
+from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg
+from ..preferences import cfg1
 
 
 def pre(b): return {'morphemes': []}
