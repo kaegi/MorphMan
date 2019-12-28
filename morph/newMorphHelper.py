@@ -16,7 +16,7 @@ from aqt.utils import tooltip
 
 from . import main
 from .util import mw, addHook, allDb
-from .preferences import jcfg, cfg1
+from .preferences import get_preference as cfg
 
 assert isinstance(mw, aqt.main.AnkiQt)
 
@@ -29,10 +29,10 @@ assert isinstance(mw, aqt.main.AnkiQt)
 # 6 on fill -> pull new cards from all child decks at once instead of sequentially
 
 # config aliases
-def CN(note, key): return cfg1(key, note.mid)
+def CN(note, key): return cfg(key, note.mid)
 
 
-def focusName(): return jcfg('Field_FocusMorph')
+def focusName(): return cfg('Field_FocusMorph')
 
 
 def focus(n): return n[focusName()]
@@ -43,7 +43,7 @@ def my_fillNew(self, _old):
     """If 'new card merged fill' is enabled for the current deck, when we refill we
     pull from all child decks, sort combined pool of cards, then limit.
     If disabled, do the standard sequential fill method"""
-    def C(key): return cfg1(key, None, self.col.decks.active()[0])
+    def C(key): return cfg(key, None, self.col.decks.active()[0])
 
     if not C('new card merged fill'):
         return _old(self)
@@ -81,7 +81,7 @@ def markFocusSeen(self, n):
 
     seenMorphs.add(focus(n))
     num_skipped = len(self.mw.col.findNotes(q)) - 1
-    if num_skipped and cfg1('print number of alternatives skipped'):
+    if num_skipped and cfg('print number of alternatives skipped'):
         tooltip(_('%d alternatives will be skipped' % num_skipped))
 
 
@@ -94,7 +94,7 @@ def my_getNewCard(self, _old):
     """
 
     while True:
-        def C(key): return cfg1(key, None, self.col.decks.active()[0])
+        def C(key): return cfg(key, None, self.col.decks.active()[0])
         if not C('next new card feature'):
             return _old(self)
         if not C('new card merged fill'):
@@ -130,13 +130,13 @@ def my_getNewCard(self, _old):
             return card  # card has no focusMorph field -> undefined behavior -> just proceed like normal
 
         # evaluate all conditions, on which this card might be skipped/buried
-        is_comprehension_card = note.hasTag(jcfg('Tag_Comprehension'))
-        is_fresh_vocab = note.hasTag(jcfg('Tag_Fresh'))
-        is_already_known = note.hasTag(jcfg('Tag_AlreadyKnown'))
+        is_comprehension_card = note.hasTag(cfg('Tag_Comprehension'))
+        is_fresh_vocab = note.hasTag(cfg('Tag_Fresh'))
+        is_already_known = note.hasTag(cfg('Tag_AlreadyKnown'))
 
-        skip_comprehension = jcfg('Option_SkipComprehensionCards')
-        skip_fresh = jcfg('Option_SkipFreshVocabCards')
-        skip_focus_morph_seen_today = jcfg('Option_SkipFocusMorphSeenToday')
+        skip_comprehension = cfg('Option_SkipComprehensionCards')
+        skip_fresh = cfg('Option_SkipFreshVocabCards')
+        skip_focus_morph_seen_today = cfg('Option_SkipFocusMorphSeenToday')
 
         skip_conditions = [
             is_comprehension_card and skip_comprehension,
@@ -182,7 +182,7 @@ def setKnownAndSkip(self):  # 2
 
     self.mw.checkpoint(_("Set already known focus morph"))
     n = self.card.note()
-    n.addTag(jcfg('Tag_AlreadyKnown'))
+    n.addTag(cfg('Tag_AlreadyKnown'))
     n.flush()
     markFocusSeen(self, n)
 
@@ -212,7 +212,7 @@ def browseSameFocus(self):  # 3
 
 ########## set keybindings for 2-3
 def my_reviewer_shortcutKeys(self):
-    key_browse, key_skip = cfg1('browse same focus key'), cfg1('set known and skip key')
+    key_browse, key_skip = cfg('browse same focus key'), cfg('set known and skip key')
     keys = original_shortcutKeys(self)
     keys.extend([
         (key_browse, lambda: browseSameFocus(self)),
@@ -239,7 +239,7 @@ def highlight(txt, extra, fieldDict, field, mod_field):
         return ''.join(re.sub(sub, repl, s, flags=re.IGNORECASE) if not s.startswith('<span') else s for s in
                        re.split('(<span.*?</span>)', string))
 
-    frequency_list_path = cfg1('path_frequency')
+    frequency_list_path = cfg('path_frequency')
     try:
         with codecs.open(frequency_list_path, encoding='utf-8') as f:
             frequency_list = [line.strip().split('\t')[0] for line in f.readlines()]
@@ -247,7 +247,7 @@ def highlight(txt, extra, fieldDict, field, mod_field):
         frequency_list = []
         pass  # User does not have a frequency.txt
 
-    priority_db = main.MorphDb(cfg1('path_priority'), ignoreErrors=True).db
+    priority_db = main.MorphDb(cfg('path_priority'), ignoreErrors=True).db
     tags = fieldDict['Tags'].split()
 
     filter = getFilterByTagsAndType(fieldDict['Type'], tags)
@@ -263,11 +263,11 @@ def highlight(txt, extra, fieldDict, field, mod_field):
         locs = allDb().getMatchingLocs(m)
         mat = max(loc.maturity for loc in locs) if locs else 0
 
-        if mat >= cfg1('threshold_mature'):
+        if mat >= cfg('threshold_mature'):
             mtype = 'mature'
-        elif mat >= cfg1('threshold_known'):
+        elif mat >= cfg('threshold_known'):
             mtype = 'known'
-        elif mat >= cfg1('threshold_seen'):
+        elif mat >= cfg('threshold_seen'):
             mtype = 'seen'
         else:
             mtype = 'unknown'
