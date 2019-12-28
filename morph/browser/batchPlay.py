@@ -2,7 +2,7 @@
 import anki.sound
 from anki.hooks import addHook
 from ..util import addBrowserNoteSelectionCmd
-from ..preferences import cfg1
+from ..preferences import get_preference as cfg
 import re
 
 
@@ -10,7 +10,7 @@ def pre(b): return {'vid2nid': {}}
 
 
 def per(st, n):
-    for f in cfg1('batch media fields', n.mid):
+    for f in cfg('batch media fields', n.mid):
         try:
             r = re.search(anki.sound._soundReg, n[f])
             if r:
@@ -33,7 +33,7 @@ def post(st):
 def runBatchPlay():
     label = 'MorphMan: Batch Play'
     tooltipMsg = 'Play all the videos for the selected cards'
-    shortcut = cfg1('set batch play key')
+    shortcut = cfg('set batch play key')
     addBrowserNoteSelectionCmd(label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,))
 
 

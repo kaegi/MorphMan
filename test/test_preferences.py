@@ -1,17 +1,20 @@
-from unittest.mock import MagicMock
+import unittest
 import sys
+from unittest.mock import MagicMock
+
+# Mock Anki functions used by Preferences
 aqt = MagicMock()
 aqt.mw.pm.profileFolder = MagicMock(return_value='somewhere')
 aqt.mw.col.conf = {}
 sys.modules['aqt'] = aqt
 
-from morph.preferences import initPreferences, get_preference
-import unittest
+
+from morph.preferences import init_preferences, get_preference
 
 
 class TestPreferences(unittest.TestCase):
     def setUp(self):
-        initPreferences()
+        init_preferences()
 
     def test_get_preference_in_config_py(self):
         self.assertEqual(get_preference('threshold_mature'), 21)
@@ -24,8 +27,6 @@ class TestPreferences(unittest.TestCase):
 
     def test_dbsPath(self):
         self.assertEqual(get_preference('path_dbs'), 'somewhere/dbs')
-        from morph.preferences import dbsPath
-        self.assertEqual(dbsPath, 'somewhere/dbs')
 
 
 if __name__ == '__main__':

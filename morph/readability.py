@@ -14,7 +14,7 @@ from . import readability_ui
 from .morphemes import Morpheme, MorphDb, getMorphemes, altIncludesMorpheme
 from .morphemizer import getMorphemizerByName
 from .util import mw
-from .preferences import dbsPath, cfg1, initCfg
+from .preferences import get_preference as cfg
 
 importlib.reload(readability_ui)
 
@@ -42,7 +42,7 @@ class Source:
 def getPath(le, caption, open_directory=False):  # LineEdit -> GUI ()
     start_path = os.path.dirname(le.text())
     if start_path == '':
-        start_path = dbsPath
+        start_path = cfg('path_dbs')
 
     try:
         if open_directory:
@@ -99,8 +99,7 @@ class MorphMan(QDialog):
         self.ui.setupUi(self)
 
         # Init morphemizer
-        initCfg()
-        self.morphemizer = getMorphemizerByName(cfg1('default_morphemizer'))
+        self.morphemizer = getMorphemizerByName(cfg('default_morphemizer'))
 
         # Status bar
         self.ui.statusBar = QStatusBar(self)
@@ -112,18 +111,18 @@ class MorphMan(QDialog):
         self.ui.statusBar.addWidget(self.ui.morphemizerLabel)
 
         # Default settings
-        self.ui.inputPathEdit.setText(cfg1('path_analysis_input'))
+        self.ui.inputPathEdit.setText(cfg('path_analysis_input'))
         self.ui.inputPathButton.clicked.connect(
             lambda le: getPath(self.ui.inputPathEdit, "Select Input Directory", True))
-        self.ui.masterFreqEdit.setText(cfg1('path_master_frequency_list'))
+        self.ui.masterFreqEdit.setText(cfg('path_master_frequency_list'))
         self.ui.masterFreqButton.clicked.connect(
             lambda le: getPath(self.ui.masterFreqEdit, "Select Master Frequency List"))
-        self.ui.knownMorphsEdit.setText(cfg1('path_known'))
+        self.ui.knownMorphsEdit.setText(cfg('path_known'))
         self.ui.knownMorphsButton.clicked.connect(lambda le: getPath(self.ui.knownMorphsEdit, "Select Known Morphs DB"))
-        self.ui.outputFrequencyEdit.setText(cfg1('path_dbs'))
+        self.ui.outputFrequencyEdit.setText(cfg('path_dbs'))
         self.ui.outputFrequencyButton.clicked.connect(
             lambda le: getPath(self.ui.outputFrequencyEdit, "Select Output Directory", True))
-        self.ui.targetSpinBox.setProperty("value", cfg1('default_study_target'))
+        self.ui.targetSpinBox.setProperty("value", cfg('default_study_target'))
 
         # Connect buttons
         self.ui.analyzeButton.clicked.connect(lambda le: self.onAnalyze())

@@ -9,7 +9,7 @@ from aqt import mw
 from aqt.browser import Browser
 from aqt.qt import *
 from aqt.utils import showCritical, showInfo
-from .preferences import get_preference, initPreferences
+from .preferences import get_preference, init_preferences
 
 try:
     from aqt.pinnedmodules import typing
@@ -39,7 +39,7 @@ def allDb(reload=False):
 ###############################################################################
 
 
-addHook('profileLoaded', initPreferences)
+addHook('profileLoaded', init_preferences)
 # ToDo: - move this hook to better home
 
 
