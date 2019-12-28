@@ -9,6 +9,13 @@ def initPreferences():
     initJcfg()
 
 
+def get_preference(key, model_id=None, deck_id=None):
+    try:
+        return cfg1(key, model_id, deck_id)
+    except KeyError:
+        return jcfg(key)
+
+
 cfgMod = None
 dbsPath = None
 
@@ -45,7 +52,7 @@ def initJcfg():
         'morphman', jcfg_default())
 
     # this ensures forward compatibility, because it adds new options in configuration without any notice
-    jcfgAddMissing()
+    _add_missing_json_config()
 
 
 def jcfg_default():
@@ -116,14 +123,14 @@ def jcfg_default():
     }
 
 
-def _jcfg2():
+def _jsonConfig():
     conf = mw.col.conf['addons']['morphman']
     assert conf, 'Tried to use jcfgMods before profile loaded'
     return conf
 
 
-def jcfg(name):
-    return _jcfg2().get(name)
+def jcfg(key):
+    return _jsonConfig().get(key)
 
 
 def jcfgUpdate(jcfg):
@@ -133,10 +140,10 @@ def jcfgUpdate(jcfg):
         mw.col.setMod()
 
 
-def jcfgAddMissing():
+def _add_missing_json_config():
     # this ensures forward compatibility, because it adds new options in configuration (introduced by update) without
     # any notice with default value
-    current = _jcfg2().copy()
+    current = _jsonConfig().copy()
     default = jcfg_default()
     for key, value in default.items():
         if key not in current:
