@@ -133,7 +133,7 @@ def jcfg(key):
     return _jsonConfig().get(key)
 
 
-def jcfgUpdate(jcfg):
+def update_preferences(jcfg):
     original = mw.col.conf['addons']['morphman'].copy()
     mw.col.conf['addons']['morphman'].update(jcfg)
     if not mw.col.conf['addons']['morphman'] == original:
@@ -148,4 +148,4 @@ def _add_missing_json_config():
     for key, value in default.items():
         if key not in current:
             current[key] = value
-    jcfgUpdate(current)
+    update_preferences(current)
