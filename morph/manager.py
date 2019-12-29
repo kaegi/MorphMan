@@ -10,11 +10,11 @@ from . import adaptiveSubs
 from .morphemes import MorphDb
 from .morphemizer import getAllMorphemizers
 from .util import errorMsg, infoMsg, mw, mkBtn
-from .preferences import dbsPath, cfg1
+from .preferences import get_preference as cfg
 
 
 def getPath(le):  # LineEdit -> GUI ()
-    path = QFileDialog.getOpenFileName(caption='Open db', directory=dbsPath)[0]
+    path = QFileDialog.getOpenFileName(caption='Open db', directory=cfg('path_dbs'))[0]
     le.setText(path)
 
 
@@ -209,23 +209,24 @@ class MorphMan(QDialog):
         self.updateDisplay()
 
     def onExtractTxtFile(self):
-        srcPath = QFileDialog.getOpenFileName(caption='Text file to extract from?', directory=dbsPath)[0]
+        srcPath = QFileDialog.getOpenFileName(caption='Text file to extract from?', directory=cfg('path_dbs'))[0]
         if not srcPath:
             return
 
         destPath = QFileDialog.getSaveFileName(
-                   caption='Save morpheme db to?', directory=dbsPath + os.sep + 'textFile.db')[0]
+                   caption='Save morpheme db to?', directory=cfg('path_dbs') + os.sep + 'textFile.db')[0]
         if not destPath:
             return
 
-        mat = cfg1('text file import maturity')
+        mat = cfg('text file import maturity')
         db = MorphDb.mkFromFile(str(srcPath), getAllMorphemizers()[self.morphemizerComboBox.currentIndex()], mat)
         if db:
             db.save(str(destPath))
             infoMsg('Extracted successfully')
 
     def onSaveResults(self):
-        destPath = QFileDialog.getSaveFileName(caption='Save results to?', directory=dbsPath + os.sep + 'results.db')[0]
+        dir_path = cfg('path_dbs') + os.sep + 'results.db'
+        destPath = QFileDialog.getSaveFileName(caption='Save results to?', directory=dir_path)[0]
         if not destPath:
             return
         if not hasattr(self, 'db'):

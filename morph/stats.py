@@ -7,10 +7,10 @@ from anki.lang import _
 from aqt import toolbar
 
 from .util import mw
-from .preferences import cfg1
+from .preferences import get_preference as cfg
 
 
-def getStatsPath(): return cfg1('path_stats')
+def getStatsPath(): return cfg('path_stats')
 
 
 def loadStats():
@@ -38,7 +38,7 @@ def updateStats(known_db=None):
 
     # Load known.db and get total morphemes known
     if known_db is None:
-        known_db = MorphDb(cfg1('path_known'), ignoreErrors=True)
+        known_db = MorphDb(cfg('path_known'), ignoreErrors=True)
 
     d = {'totalVariations': len(known_db.db), 'totalKnown': len(known_db.groups)}
 

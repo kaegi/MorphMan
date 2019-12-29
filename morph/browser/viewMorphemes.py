@@ -4,7 +4,7 @@ from anki.utils import stripHTML
 from ..morphemes import getMorphemes, ms2str
 from ..morphemizer import getMorphemizerByName
 from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg
-from ..preferences import cfg1
+from ..preferences import get_preference as cfg
 
 
 def pre(b): return {'morphemes': []}
@@ -33,7 +33,7 @@ def post(st):
 def runViewMorphemes():
     label = 'MorphMan: View Morphemes'
     tooltipMsg = 'View Morphemes for selected note'
-    shortcut = cfg1('set view morphemes key')
+    shortcut = cfg('set view morphemes key')
     addBrowserNoteSelectionCmd(label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,))
 
 

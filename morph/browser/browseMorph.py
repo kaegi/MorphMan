@@ -5,7 +5,7 @@ from aqt.utils import tooltip
 
 from ..newMorphHelper import focus, focusName
 from ..util import addBrowserNoteSelectionCmd
-from ..preferences import cfg1
+from ..preferences import get_preference as cfg
 
 
 def pre(b): return {'focusMorph': [], 'b': b}
@@ -41,7 +41,7 @@ def post(st):
 def runBrowseMorph():
     label = 'MorphMan: Browse Morphs'
     tooltipMsg = 'Browse all notes containing the morphs from selected notes'
-    shortcut = cfg1('browse same focus key')
+    shortcut = cfg('browse same focus key')
     addBrowserNoteSelectionCmd(label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,))
 
 
