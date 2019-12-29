@@ -6,7 +6,6 @@ from ..morphemes import getMorphemes, MorphDb
 from ..morphemizer import getMorphemizerByName
 from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit
 from ..preferences import get_preference as cfg
-from .. import util
 from anki.lang import _
 
 
@@ -16,7 +15,7 @@ def pre(b):  # :: Browser -> State
     if not ok or not tags:
         return
 
-    path = QFileDialog.getOpenFileName(caption='Open db', directory=util.dbsPath)[0]
+    path = QFileDialog.getOpenFileName(caption='Open db', directory=cfg('path_dbs'))[0]
     if not path:
         return
     if path.split('.')[-1] != "db":
