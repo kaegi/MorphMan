@@ -2,8 +2,6 @@
 import os
 from aqt import mw  # this script isn't imported until profile is loaded
 
-user_path = os.path.expanduser("~")
-
 # 4th (lowest) priority
 default = {
     'path_dbs': os.path.join(mw.pm.profileFolder(), 'dbs'),
@@ -14,7 +12,6 @@ default = {
     'path_mature': os.path.join(mw.pm.profileFolder(), 'dbs', 'mature.db'),
     'path_known': os.path.join(mw.pm.profileFolder(), 'dbs', 'known.db'),
     'path_seen': os.path.join(mw.pm.profileFolder(), 'dbs', 'seen.db'),
-    'path_json': os.path.join(mw.pm.profileFolder(), 'dbs', 'morphman_config.json'),
     'path_log': os.path.join(mw.pm.profileFolder(), 'morphman.log'),
     'path_stats': os.path.join(mw.pm.profileFolder(), 'morphman.stats'),
     # Default path to Input directory in Readability Analyzer.
@@ -60,7 +57,6 @@ default = {
     'saveDbs': True,     # whether to save all.db, known.db, mature.db, and seen.db
 
     # only these can have model overrides
-    'enabled': False,    # whether to analyze notes of a given model, modify their fields, and manipulate due time by Morph Man Index
     # whether to modify card Due times based on MorphManIndex. does nothing if relevant notes aren't enabled
     'set due based on mmi': True,
     'ignore maturity': False,        # if True, pretends card maturity is always zero
@@ -108,23 +104,20 @@ profile_overrides = {
 
 # Model overrides can only override the entries marked above. 2nd priority
 model_overrides = {
-    'subs2srs':         {'enabled': True},
-    'SubtitleMemorize': {'enabled': True},
-    'vn2srs':           {'enabled': True},
-    'JtMW':             {'enabled': True, 'set due based on mmi': False, 'ignore maturity':  True},
-    'JSPfEC':           {'enabled': True, 'set due based on mmi': False},
-    'Tae Kim Cloze':    {'enabled': True, 'set due based on mmi': False},
-    'Yotsubato':        {'enabled': True, 'set due based on mmi': True},
-    'Rikaisama':        {'enabled': True, 'set due based on mmi': False},
-    'Kore':             {'enabled': True, 'set due based on mmi': False},
+    'JtMW':             {'set due based on mmi': False, 'ignore maturity':  True},
+    'JSPfEC':           {'set due based on mmi': False},
+    'Tae Kim Cloze':    {'set due based on mmi': False},
+    'Yotsubato':        {'set due based on mmi': True},
+    'Rikaisama':        {'set due based on mmi': False},
+    'Kore':             {'set due based on mmi': False},
 }
 
 # Deck overrides can only override 'new card merged fill' options. 1st priority
 deck_overrides = {
-    'Sentences':            {'new card merged fill': True},
-    'Sentences::subs2srs':  {'new card merged fill': True},
-    'Sentences::vn2srs':    {'new card merged fill': True},
-    'ExtraVocab':           {'new card merged fill': True},
+    'Sentences':                {'new card merged fill': True},
+    'Sentences::subs2srs':      {'new card merged fill': True},
+    'Sentences::vn2srs':        {'new card merged fill': True},
+    'ExtraVocab':               {'new card merged fill': True},
     'ExtraVocab::_Yotsubato':   {'new card merged fill': True},
     'ExtraVocab::_Kore':        {'new card merged fill': True},
 }
