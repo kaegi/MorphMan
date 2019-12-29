@@ -9,7 +9,7 @@ from aqt import mw
 from aqt.browser import Browser
 from aqt.qt import *
 from aqt.utils import showCritical, showInfo
-from .preferences import cfg1, jcfg, initPreferences
+from .preferences import get_preference, init_preferences
 
 try:
     from aqt.pinnedmodules import typing
@@ -30,7 +30,7 @@ def allDb(reload=False):
     global _allDb
     if reload or (_allDb is None):
         from .morphemes import MorphDb
-        _allDb = MorphDb(cfg1('path_all'), ignoreErrors=True)
+        _allDb = MorphDb(get_preference('path_all'), ignoreErrors=True)
     return _allDb
 
 
@@ -39,7 +39,7 @@ def allDb(reload=False):
 ###############################################################################
 
 
-addHook('profileLoaded', initPreferences)
+addHook('profileLoaded', init_preferences)
 # ToDo: - move this hook to better home
 
 
@@ -55,7 +55,7 @@ def getFilterByMidAndTags(mid, tags):
 
 def getFilterByTagsAndType(type, tags):
     # type: (str, List[str]) -> Optional[Dict[...]]
-    for f in jcfg('Filter'):
+    for f in get_preference('Filter'):
         if f['Type'] is None or type != f['Type']:
             continue
         if not set(f['Tags']) <= set(tags):
@@ -145,14 +145,14 @@ def infoMsg(msg):
 
 def printf(msg):
     txt = '%s: %s' % (datetime.datetime.now(), msg)
-    f = codecs.open(cfg1('path_log'), 'a', 'utf-8')
+    f = codecs.open(get_preference('path_log'), 'a', 'utf-8')
     f.write(txt + '\r\n')
     f.close()
     print(txt.encode('utf-8'))
 
 
 def clearLog():
-    f = codecs.open(cfg1('path_log'), 'w', 'utf-8')
+    f = codecs.open(get_preference('path_log'), 'w', 'utf-8')
     f.close()
 
 

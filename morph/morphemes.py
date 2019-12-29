@@ -23,15 +23,12 @@ except ImportError:
 # need some fallbacks if not running from anki and thus morph.util isn't available
 try:
     from .util import errorMsg
-    from .preferences import jcfg, cfg1
+    from .preferences import get_preference as cfg
 except ImportError:
     def errorMsg(msg):
         pass
 
-    def jcfg(s):
-        return None
-
-    def cfg1(s):
+    def cfg(s):
         return None
 
 
@@ -99,7 +96,7 @@ class Morpheme:
     def getGroupKey(self):
         # type: () -> str
 
-        if cfg1('ignore grammar position'):
+        if cfg('ignore grammar position'):
             return '%s\t%s' % (self.norm, self.read)
         else:
             return '%s\t%s\t%s\t' % (self.norm, self.read, self.pos)
@@ -128,13 +125,13 @@ get_morphemes_regex = re.compile(r'\[[^\]]*\]')
 
 
 def getMorphemes(morphemizer, expression, note_tags=None):
-    if jcfg('Option_IgnoreBracketContents'):
+    if cfg('Option_IgnoreBracketContents'):
         if get_morphemes_regex.search(expression):
             expression = get_morphemes_regex.sub('', expression)
 
     # go through all replacement rules and search if a rule (which dictates a string to morpheme conversion) can be
     # applied
-    replace_rules = jcfg('ReplaceRules')
+    replace_rules = cfg('ReplaceRules')
     if note_tags is not None and replace_rules is not None:
         note_tags_set = set(note_tags)
         for (filter_tags, regex, morphemes) in replace_rules:

@@ -1,6 +1,6 @@
 ﻿import codecs
 from .morphemes import getMorphemes, MorphDb
-from .preferences import cfg1
+from .preferences import get_preference as cfg
 
 
 # utils
@@ -27,8 +27,8 @@ def getPreText(line):
 
 def run(inputSubsPath, outputSubsPath, morphemizer, matureFmt, knownFmt, unknownFmt):
     # Load files
-    kdb = MorphDb(cfg1('path_known'))
-    mdb = MorphDb(cfg1('path_mature'))
+    kdb = MorphDb(cfg('path_known'))
+    mdb = MorphDb(cfg('path_mature'))
     with codecs.open(inputSubsPath, encoding='utf-8') as subFile:
         subFileLines = subFile.readlines()
         # Get dueling subs

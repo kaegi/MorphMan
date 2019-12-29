@@ -6,7 +6,7 @@ from anki.lang import _
 from aqt.utils import tooltip
 
 from .util import mw, mkBtn
-from .preferences import jcfg, jcfgUpdate
+from .preferences import get_preference, update_preferences
 from .morphemizer import getAllMorphemizers
 
 # only for jedi-auto-completion
@@ -53,7 +53,7 @@ class PreferencesDialog(QDialog):
         self.tableModel.setHeaderData(3, Qt.Horizontal, "Morphemizer")
         self.tableModel.setHeaderData(4, Qt.Horizontal, "Modify?")
 
-        rowData = jcfg('Filter')
+        rowData = get_preference('Filter')
         self.tableModel.setRowCount(len(rowData))
         self.rowGui = []
         for i, row in enumerate(rowData):
@@ -115,7 +115,7 @@ class PreferencesDialog(QDialog):
         ]
         self.fieldEntryList = []
         for i, (name, key, tooltipInfo) in enumerate(fieldsList):
-            entry = QLineEdit(jcfg(key))
+            entry = QLineEdit(get_preference(key))
             entry.setToolTip(tooltipInfo)
             self.fieldEntryList.append((key, entry))
 
@@ -160,7 +160,7 @@ class PreferencesDialog(QDialog):
         self.tagEntryList = []
         numberOfColumns = 2
         for i, (name, key, tooltipInfo) in enumerate(tagList):
-            entry = QLineEdit(jcfg(key))
+            entry = QLineEdit(get_preference(key))
             entry.setToolTip(tooltipInfo)
             self.tagEntryList.append((key, entry))
 
@@ -174,7 +174,7 @@ class PreferencesDialog(QDialog):
         self.checkboxSetNotRequiredTags = QCheckBox(
             "Add tags even if not required")
         self.checkboxSetNotRequiredTags.setCheckState(
-            Qt.Checked if jcfg('Option_SetNotRequiredTags') else Qt.Unchecked)
+            Qt.Checked if get_preference('Option_SetNotRequiredTags') else Qt.Unchecked)
         vbox.addWidget(self.checkboxSetNotRequiredTags)
 
         vbox.addStretch()
@@ -209,7 +209,7 @@ class PreferencesDialog(QDialog):
         self.boolOptionList = []
         for i, (name, key, tooltipInfo) in enumerate(optionList):
             checkBox = QCheckBox(name)
-            checkBox.setCheckState(Qt.Checked if jcfg(key) else Qt.Unchecked)
+            checkBox.setCheckState(Qt.Checked if get_preference(key) else Qt.Unchecked)
             checkBox.setToolTip(tooltipInfo)
             self.boolOptionList.append((key, checkBox))
 
@@ -231,7 +231,7 @@ class PreferencesDialog(QDialog):
         buttonOkay.setMaximumWidth(150)
         buttonOkay.clicked.connect(self.onOkay)
 
-    # see util.jcfg_default()['Filter'] for type of data
+    # see preferences.jcfg_default()['Filter'] for type of data
     def setTableRow(self, rowIndex, data):
         assert rowIndex >= 0, "Negative row numbers? Really?"
         assert len(
@@ -324,7 +324,7 @@ class PreferencesDialog(QDialog):
         self.close()
 
     def onOkay(self):
-        jcfgUpdate(self.readConfigFromGui())
+        update_preferences(self.readConfigFromGui())
         self.close()
         tooltip(_('Please recalculate your database to avoid unexpected behaviour.'))
 

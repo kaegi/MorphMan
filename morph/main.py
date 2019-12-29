@@ -15,7 +15,7 @@ from . import util
 from .morphemes import MorphDb, AnkiDeck, getMorphemes
 from .morphemizer import getMorphemizerByName
 from .util import printf, mw, errorMsg, getFilter, getFilterByMidAndTags
-from .preferences import cfg1, jcfg
+from .preferences import get_preference as cfg
 from .util_external import memoize
 
 # hack: typing is compile time anyway, so, nothing bad happens if it fails, the try is to support anki < 2.1.16
@@ -89,7 +89,7 @@ def mkAllDb(all_db=None):
     for i, (nid, mid, flds, guid, tags) in enumerate(db.execute('select id, mid, flds, guid, tags from notes')):
         if i % 500 == 0:
             mw.progress.update(value=i)
-        def C(key): return cfg1(key, mid)
+        def C(key): return cfg(key, mid)
 
         note = mw.col.getNote(nid)
         note_cfg = getFilter(note)
@@ -103,7 +103,7 @@ def mkAllDb(all_db=None):
                 db.execute('select ivl, type from cards where nid = :nid', nid=nid)]
         if C('ignore maturity'):
             mats = [0] * len(mats)
-        ts, alreadyKnownTag = TAG.split(tags), jcfg('Tag_AlreadyKnown')
+        ts, alreadyKnownTag = TAG.split(tags), cfg('Tag_AlreadyKnown')
         if alreadyKnownTag in ts:
             mats += [C('threshold_mature') + 1]
 
@@ -147,9 +147,9 @@ def mkAllDb(all_db=None):
     mw.progress.update(value=i, label='Creating all.db object')
     all_db.clear()
     all_db.addFromLocDb(locDb)
-    if cfg1('saveDbs'):
+    if cfg('saveDbs'):
         mw.progress.update(value=i, label='Saving all.db to disk')
-        all_db.save(cfg1('path_all'))
+        all_db.save(cfg('path_all'))
         printf('Processed all %d notes + saved all.db in %f sec' %
                (N_notes, time.time() - t_0))
     mw.progress.finish()
@@ -176,22 +176,22 @@ def updateNotes(allDb):
     loc_db = allDb.locDb(recalc=False)  # type: Dict[Location, Set[Morpheme]]
 
     # read tag names
-    compTag, vocabTag, freshTag, notReadyTag, alreadyKnownTag, priorityTag, tooShortTag, tooLongTag, frequencyTag = tagNames = jcfg(
-        'Tag_Comprehension'), jcfg('Tag_Vocab'), jcfg('Tag_Fresh'), jcfg('Tag_NotReady'), jcfg(
-        'Tag_AlreadyKnown'), jcfg('Tag_Priority'), jcfg('Tag_TooShort'), jcfg('Tag_TooLong'), jcfg('Tag_Frequency')
+    compTag, vocabTag, freshTag, notReadyTag, alreadyKnownTag, priorityTag, tooShortTag, tooLongTag, frequencyTag = tagNames = cfg(
+        'Tag_Comprehension'), cfg('Tag_Vocab'), cfg('Tag_Fresh'), cfg('Tag_NotReady'), cfg(
+        'Tag_AlreadyKnown'), cfg('Tag_Priority'), cfg('Tag_TooShort'), cfg('Tag_TooLong'), cfg('Tag_Frequency')
     TAG.register(tagNames)
-    badLengthTag = jcfg('Tag_BadLength')
+    badLengthTag = cfg('Tag_BadLength')
 
     # handle secondary databases
     mw.progress.update(label='Creating seen/known/mature from all.db')
-    seenDb = filterDbByMat(allDb, cfg1('threshold_seen'))
-    knownDb = filterDbByMat(allDb, cfg1('threshold_known'))
-    matureDb = filterDbByMat(allDb, cfg1('threshold_mature'))
+    seenDb = filterDbByMat(allDb, cfg('threshold_seen'))
+    knownDb = filterDbByMat(allDb, cfg('threshold_known'))
+    matureDb = filterDbByMat(allDb, cfg('threshold_mature'))
     mw.progress.update(label='Loading priority.db')
-    priorityDb = MorphDb(cfg1('path_priority'), ignoreErrors=True).db
+    priorityDb = MorphDb(cfg('path_priority'), ignoreErrors=True).db
 
     mw.progress.update(label='Loading frequency.txt')
-    frequencyListPath = cfg1('path_frequency')
+    frequencyListPath = cfg('path_frequency')
     try:
         with codecs.open(frequencyListPath, encoding='utf-8') as f:
             frequency_list = [line.strip().split('\t')[0]
@@ -202,29 +202,29 @@ def updateNotes(allDb):
 
     frequencyListLength = len(frequency_list)
 
-    if cfg1('saveDbs'):
+    if cfg('saveDbs'):
         mw.progress.update(label='Saving seen/known/mature dbs')
-        seenDb.save(cfg1('path_seen'))
-        knownDb.save(cfg1('path_known'))
-        matureDb.save(cfg1('path_mature'))
+        seenDb.save(cfg('path_seen'))
+        knownDb.save(cfg('path_known'))
+        matureDb.save(cfg('path_mature'))
 
     mw.progress.update(label='Updating notes')
 
-    # prefetch jcfg for fields
-    field_focus_morph = jcfg('Field_FocusMorph')
-    field_unknown_count = jcfg('Field_UnknownMorphCount')
-    field_unmature_count = jcfg('Field_UnmatureMorphCount')
-    field_morph_man_index = jcfg('Field_MorphManIndex')
-    field_unknowns = jcfg('Field_Unknowns')
-    field_unmatures = jcfg('Field_Unmatures')
-    field_unknown_freq = jcfg('Field_UnknownFreq')
-    field_focus_morph_pos = jcfg("Field_FocusMorphPos")
+    # prefetch cfg for fields
+    field_focus_morph = cfg('Field_FocusMorph')
+    field_unknown_count = cfg('Field_UnknownMorphCount')
+    field_unmature_count = cfg('Field_UnmatureMorphCount')
+    field_morph_man_index = cfg('Field_MorphManIndex')
+    field_unknowns = cfg('Field_Unknowns')
+    field_unmatures = cfg('Field_Unmatures')
+    field_unknown_freq = cfg('Field_UnknownFreq')
+    field_focus_morph_pos = cfg("Field_FocusMorphPos")
 
     for i, (nid, mid, flds, guid, tags) in enumerate(db.execute('select id, mid, flds, guid, tags from notes')):
         ts = TAG.split(tags)
         if i % 500 == 0:
             mw.progress.update(value=i)
-        def C(key): return cfg1(key, mid)
+        def C(key): return cfg(key, mid)
 
         notecfg = getFilterByMidAndTags(mid, ts)
         if notecfg is None or not notecfg['Modify']:
@@ -371,7 +371,7 @@ def updateNotes(allDb):
             ts.append(tooLongTag)
 
         # remove unnecessary tags
-        if not jcfg('Option_SetNotRequiredTags'):
+        if not cfg('Option_SetNotRequiredTags'):
             unnecessary = [priorityTag, tooShortTag, tooLongTag]
             ts = [tag for tag in ts if tag not in unnecessary]
 
@@ -415,7 +415,7 @@ def main():
     # load existing all.db
     mw.progress.start(label='Loading existing all.db', immediate=True)
     t_0 = time.time()
-    cur = util.allDb(reload=True) if cfg1('loadAllDb') else None
+    cur = util.allDb(reload=True) if cfg('loadAllDb') else None
     printf('Loaded all.db in %f sec' % (time.time() - t_0))
     mw.progress.finish()
 
@@ -428,7 +428,7 @@ def main():
 
     # merge in external.db
     mw.progress.start(label='Merging ext.db', immediate=True)
-    ext = MorphDb(cfg1('path_ext'), ignoreErrors=True)
+    ext = MorphDb(cfg('path_ext'), ignoreErrors=True)
     allDb.merge(ext)
     mw.progress.finish()
 

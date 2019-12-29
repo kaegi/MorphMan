@@ -4,7 +4,7 @@ from anki.lang import _
 from aqt.utils import tooltip
 
 from ..util import addBrowserCardSelectionCmd, mw, infoMsg
-from ..preferences import cfg1
+from ..preferences import get_preference as cfg
 
 
 def pre(b): return {'cards': [], 'browser': b}
@@ -27,7 +27,7 @@ def post(st):
 def runLearnNow():
     label = 'MorphMan: Learn Now'
     tooltip_msg = 'Immediately review the selected new cards'
-    shortcut = cfg1('set learn now key')
+    shortcut = cfg('set learn now key')
     addBrowserCardSelectionCmd(label, pre, per, post, tooltip=tooltip_msg, shortcut=(shortcut,))
 
 

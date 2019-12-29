@@ -5,13 +5,12 @@ from anki.utils import stripHTML
 from ..morphemes import AnkiDeck, MorphDb, getMorphemes, ms2str
 from ..morphemizer import getMorphemizerByName
 from ..util import addBrowserNoteSelectionCmd, mw, getFilter, infoMsg, QFileDialog
-from ..preferences import cfg1
+from ..preferences import get_preference as cfg
 
 
 def pre(b):
-    from ..preferences import dbsPath  # not defined until late, so don't import at top of module
-    path = \
-    QFileDialog.getSaveFileName(caption='Save morpheme db to:', directory=dbsPath + os.sep + 'exportedMorphs.db')[0]
+    dir_path = cfg('path_dbs') + os.sep + 'exportedMorphs.db'
+    path = QFileDialog.getSaveFileName(caption='Save morpheme db to:', directory=dir_path)[0]
 
     return {'dbpath': str(path), 'morphDb': MorphDb()} if path else None
 
@@ -39,7 +38,7 @@ def post(st):
 def runExtractMorphemes():
     label = 'MorphMan: Extract Morphemes'
     tooltip_msg = 'Extract morphemes in selected notes to a MorphMan db'
-    shortcut = cfg1('set extract morphemes key')
+    shortcut = cfg('set extract morphemes key')
     addBrowserNoteSelectionCmd(label, pre, per, post, tooltip=tooltip_msg, shortcut=(shortcut,))
 
 
