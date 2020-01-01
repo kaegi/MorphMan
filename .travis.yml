@@ -1,0 +1,14 @@
+language: python
+python:
+  - "3.6"
+  - "3.7"
+  - "3.8"
+install:
+  - pip install pylint
+  - pip install PyQt5
+  - wget https://github.com/dae/anki/archive/2.1.16.tar.gz
+  - tar -xzvf 2.1.16.tar.gz
+  - export PYTHONPATH=./anki-2.1.16
+script:
+  - python test.py
+  - pylint . morph test
