@@ -11,9 +11,10 @@ from aqt.qt import *
 from aqt.utils import showCritical, showInfo
 from .preferences import get_preference, init_preferences
 
+# hack: typing is compile time anyway, so, nothing bad happens if it fails, the try is to support anki < 2.1.16
 try:
-    from aqt.pinnedmodules import typing
-    from typing import Any, Dict, Set, List, Optional, Callable, TypeVar, Tuple
+    from aqt.pinnedmodules import typing  # pylint: disable=W0611 # See above hack comment
+    from typing import Any, Dict, List, Optional, Callable, TypeVar
 
     T = TypeVar('T')
 

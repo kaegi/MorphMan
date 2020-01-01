@@ -14,8 +14,8 @@ except:
 
 # hack: typing is compile time anyway, so, nothing bad happens if it fails, the try is to support anki < 2.1.16
 try:
-    from aqt.pinnedmodules import typing
-    from typing import Any, Dict, Set
+    from aqt.pinnedmodules import typing  # pylint: disable=W0611 # See above hack comment
+    from typing import Dict, Set
 except ImportError:
     pass
 
@@ -110,8 +110,6 @@ def ms2str(ms):  # [(Morpheme, locs)] -> Str
 
 
 class MorphDBUnpickler(pickle.Unpickler):
-    def __init__(self, file):
-        super(MorphDBUnpickler, self).__init__(file)
 
     def find_class(self, cmodule, cname):
         # Override default class lookup for this module to allow loading databases generated with older
@@ -400,7 +398,7 @@ class MorphDb:
     def locDb(self, recalc=True):  # Maybe Bool -> m Map Location {Morpheme}
         # type: (bool) ->  Dict[Location, Set[Morpheme]]
         if hasattr(self, '_locDb') and not recalc:
-            return self._locDb
+            return self._locDb  # pylint: disable=E0203 # pylint is wrong
         self._locDb = d = {}  # type: Dict[Location, Set[Morpheme]]
         for m, ls in self.db.items():
             for l in ls:
@@ -412,7 +410,7 @@ class MorphDb:
 
     def fidDb(self, recalc=True):  # Maybe Bool -> m Map FactId Location
         if hasattr(self, '_fidDb') and not recalc:
-            return self._fidDb
+            return self._fidDb  # pylint: disable=E0203 # pylint is wrong
         self._fidDb = d = {}
         for loc in self.locDb():
             try:

@@ -68,6 +68,10 @@ def main():
     a.triggered.connect(onMorphManReadability)
     morphmanSubMenu.addAction(a)
 
+    # ToDo: remove this pylint disable. These imports are here because they have Anki
+    #   addHooks to initialize the UI. It would be better to initialize all Anki UI
+    #   in one single place with explicit call to reveal true intention.
+    # pylint: disable=W0611
     from .morph.browser import viewMorphemes
     from .morph.browser import extractMorphemes
     from .morph.browser import batchPlay

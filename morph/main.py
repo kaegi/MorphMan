@@ -20,8 +20,8 @@ from .util_external import memoize
 
 # hack: typing is compile time anyway, so, nothing bad happens if it fails, the try is to support anki < 2.1.16
 try:
-    from aqt.pinnedmodules import typing
-    from typing import Any, Dict, Set
+    from aqt.pinnedmodules import typing  # pylint: disable=W0611 # See above hack comment
+    from typing import Dict, Set
 except ImportError:
     pass
 
@@ -89,7 +89,8 @@ def mkAllDb(all_db=None):
     for i, (nid, mid, flds, guid, tags) in enumerate(db.execute('select id, mid, flds, guid, tags from notes')):
         if i % 500 == 0:
             mw.progress.update(value=i)
-        def C(key): return cfg(key, mid)
+
+        C = partial(cfg, model_id=mid)
 
         note = mw.col.getNote(nid)
         note_cfg = getFilter(note)
@@ -136,6 +137,8 @@ def mkAllDb(all_db=None):
                     ms = getMorphemes(morphemizer, fieldValue, ts)
                     locDb.pop(loc)
                     locDb[newLoc] = ms
+        if i % 100 == 0:
+            mw.progress.update(value=i, label='Creating all.db objects')
 
     if N_enabled_notes == 0:
         mw.progress.finish()
@@ -144,11 +147,11 @@ def mkAllDb(all_db=None):
         return None
 
     printf('Processed all %d notes in %f sec' % (N_notes, time.time() - t_0))
-    mw.progress.update(value=i, label='Creating all.db object')
+
     all_db.clear()
     all_db.addFromLocDb(locDb)
     if cfg('saveDbs'):
-        mw.progress.update(value=i, label='Saving all.db to disk')
+        mw.progress.update(label='Saving all.db to disk')
         all_db.save(cfg('path_all'))
         printf('Processed all %d notes + saved all.db in %f sec' %
                (N_notes, time.time() - t_0))
@@ -198,7 +201,6 @@ def updateNotes(allDb):
                               for line in f.readlines()]
     except FileNotFoundError:
         frequency_list = []
-        pass  # User does not have a frequency.txt
 
     frequencyListLength = len(frequency_list)
 
@@ -224,7 +226,8 @@ def updateNotes(allDb):
         ts = TAG.split(tags)
         if i % 500 == 0:
             mw.progress.update(value=i)
-        def C(key): return cfg(key, mid)
+
+        C = partial(cfg, model_id=mid)
 
         notecfg = getFilterByMidAndTags(mid, ts)
         if notecfg is None or not notecfg['Modify']:
@@ -384,12 +387,12 @@ def updateNotes(allDb):
             ds.append(
                 {'now': now, 'tags': tags_, 'flds': flds_, 'sfld': sfld, 'csum': csum, 'usn': mw.col.usn(), 'nid': nid})
 
-    mw.progress.update(value=i, label='Updating anki database...')
+    mw.progress.update(label='Updating anki database...')
     mw.col.db.executemany(
         'update notes set tags=:tags, flds=:flds, sfld=:sfld, csum=:csum, mod=:now, usn=:usn where id=:nid', ds)
 
     # Now reorder new cards based on MMI
-    mw.progress.update(value=i, label='Updating new card ordering...')
+    mw.progress.update(label='Updating new card ordering...')
     ds = []
 
     # "type = 0": new cards
