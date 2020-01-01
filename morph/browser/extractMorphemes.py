@@ -2,7 +2,7 @@
 import os
 from anki.hooks import addHook
 from anki.utils import stripHTML
-from ..morphemes import AnkiDeck, MorphDb, getMorphemes, ms2str
+from ..morphemes import AnkiDeck, MorphDb, getMorphemes
 from ..morphemizer import getMorphemizerByName
 from ..util import addBrowserNoteSelectionCmd, mw, getFilter, infoMsg, QFileDialog
 from ..preferences import get_preference as cfg

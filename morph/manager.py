@@ -142,14 +142,14 @@ class MorphMan(QDialog):
         self.analysisDisplay = QTextEdit()
 
         # Exporting
-        self.adaptiveSubs = mkBtn('Adaptive Subs', self.adaptiveSubs, vbox)
+        self.adaptiveSubs = mkBtn('Adaptive Subs', self.adaptiveSubsMethod, vbox)
 
         # layout
         grid.addLayout(vbox, 0, 0)
         grid.addWidget(self.morphDisplay, 0, 1)
         grid.addWidget(self.analysisDisplay, 0, 2)
 
-    def adaptiveSubs(self):
+    def adaptiveSubsMethod(self):
         self.hide()
         asw = AdaptiveSubWin(self.mw)
         asw.show()

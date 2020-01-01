@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 import codecs
 
-# only for jedi-auto-completion
-from functools import partial
-
 import aqt.main
 
 from anki import sched, schedv2
@@ -98,8 +95,7 @@ def my_getNewCard(self, _old):
         if not C('next new card feature'):
             return _old(self)
         if not C('new card merged fill'):
-            card = _old(self)
-            ''' :type c: anki.cards.Card '''
+            card = _old(self)  # type: anki.cards.Card
         else:  # pop from opposite direction and skip sibling spacing
             if not self._fillNew():
                 return
@@ -245,7 +241,6 @@ def highlight(txt, extra, fieldDict, field, mod_field):
             frequency_list = [line.strip().split('\t')[0] for line in f.readlines()]
     except:
         frequency_list = []
-        pass  # User does not have a frequency.txt
 
     priority_db = main.MorphDb(cfg('path_priority'), ignoreErrors=True).db
     tags = fieldDict['Tags'].split()

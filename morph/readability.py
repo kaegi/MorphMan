@@ -86,7 +86,7 @@ class CountingMorphDB:
         for alt, c in ms.items():
             if c[1]:  # Skip marked morphs
                 continue
-            if altIncludesMorpheme(alt, m):
+            if altIncludesMorpheme(alt, m):  # pylint: disable=W1114 #ToDo: verify if pylint is right
                 count += c[0]
         return count
 
