@@ -12,7 +12,7 @@ from PyQt5.QtWidgets import *
 
 from . import readability_ui
 from .morphemes import Morpheme, MorphDb, getMorphemes, altIncludesMorpheme
-from .morphemizer import getMorphemizerByName
+from .morphemizer import getAllMorphemizers
 from .util import mw
 from .preferences import get_preference as cfg
 
@@ -99,16 +99,10 @@ class MorphMan(QDialog):
         self.ui.setupUi(self)
 
         # Init morphemizer
-        self.morphemizer = getMorphemizerByName(cfg('default_morphemizer'))
-
-        # Status bar
-        self.ui.statusBar = QStatusBar(self)
-        self.ui.verticalLayout.addWidget(self.ui.statusBar)
-        self.ui.morphemizerLabel = QLabel(self)
-        self.ui.morphemizerLabel.setText(
-            'Dictionary: %s %s' % (self.morphemizer.getDescription(), self.morphemizer.getDictionary()))
-        self.ui.morphemizerLabel.setMargin(6)
-        self.ui.statusBar.addWidget(self.ui.morphemizerLabel)
+        self.all_morphemizers = {}
+        for i, morphemizer in enumerate(getAllMorphemizers()):
+            self.all_morphemizers[i] = morphemizer
+            self.ui.morphemizerComboBox.addItem(morphemizer.getDescription())
 
         # Default settings
         self.ui.inputPathEdit.setText(cfg('path_analysis_input'))
@@ -134,6 +128,10 @@ class MorphMan(QDialog):
         font.setFamily("Courier New")
         doc.setDefaultFont(font)
 
+    def morphemizer(self):
+        i = self.ui.morphemizerComboBox.currentIndex()
+        return self.all_morphemizers[i]
+
     def clearOutput(self):
         self.ui.outputText.clear()
 
@@ -143,6 +141,9 @@ class MorphMan(QDialog):
 
     def onAnalyze(self):
         self.clearOutput()
+
+        morphemizer = self.morphemizer()
+        self.writeOutput('Using morphemizer: %s \n' % morphemizer.getDescription())
 
         input_path = self.ui.inputPathEdit.text()
         readability_target = float(self.ui.targetSpinBox.value())
@@ -188,7 +189,7 @@ class MorphMan(QDialog):
             self.writeOutput("Master morphs loaded: K %d V %d\n" % (
                 master_db.getTotalNormMorphs(), master_db.getTotalVariationMorphs()))
         else:
-            print("Master frequency file '%s' not found" % master_freq_path)
+            self.writeOutput("Master frequency file '%s' not found.\n" % master_freq_path)
 
         if os.path.isfile(known_words_path):
             known_db = MorphDb(known_words_path, ignoreErrors=True)
@@ -226,7 +227,7 @@ class MorphMan(QDialog):
                 def parse_text(text):
                     nonlocal i_count, known_count, seen_morphs, known_morphs, all_morphs
 
-                    parsed_morphs = getMorphemes(self.morphemizer, text)
+                    parsed_morphs = getMorphemes(morphemizer, text)
                     for m in parsed_morphs:
                         # Count morph for word report
                         all_morphs[m] = all_morphs.get(m, 0) + 1

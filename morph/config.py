@@ -34,8 +34,6 @@ default = {
 
     # Analyzer defaults
     'default_study_target': 98.0,
-    # Options: MecabMorphemizer, SpaceMorphemizer, CjkCharMorphemizer, JiebaMorphemizer
-    'default_morphemizer': 'MecabMorphemizer',
 
     # reviewer mode keybindings
     'browse same focus key': 'l',
