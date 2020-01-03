@@ -26,6 +26,9 @@ class Morphemizer:
         """
         return 'No information available'
 
+    def getName(self):
+        return self.__class__.__name__
+
     def getDictionary(self):
         return ''
 
@@ -41,7 +44,7 @@ def getAllMorphemizers():  # -> [Morphemizer]
 
 def getMorphemizerByName(name):
     for m in getAllMorphemizers():
-        if m.__class__.__name__ == name:
+        if m.getName() == name:
             return m
     return None
 

@@ -251,7 +251,7 @@ class PreferencesDialog(QDialog):
         active = 1
         morphemizerComboBox = QComboBox()
         for i, m in enumerate(getAllMorphemizers()):
-            if m.__class__.__name__ == data['Morphemizer']:
+            if m.getName() == data['Morphemizer']:
                 active = i
             morphemizerComboBox.addItem(m.getDescription())
         morphemizerComboBox.setCurrentIndex(active)
@@ -296,8 +296,8 @@ class PreferencesDialog(QDialog):
         filter['Fields'] = [
             x for x in row_gui['fieldsEntry'].text().split(', ') if x]
 
-        filter['Morphemizer'] = getAllMorphemizers(
-        )[row_gui['morphemizerComboBox'].currentIndex()].__class__.__name__
+        current_index = row_gui['morphemizerComboBox'].currentIndex()
+        filter['Morphemizer'] = getAllMorphemizers()[current_index].getName()
         filter['Modify'] = row_gui['modifyCheckBox'].checkState() != Qt.Unchecked
 
         return filter
