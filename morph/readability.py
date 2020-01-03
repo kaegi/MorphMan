@@ -14,7 +14,7 @@ from . import readability_ui
 from .morphemes import Morpheme, MorphDb, getMorphemes, altIncludesMorpheme
 from .morphemizer import getAllMorphemizers
 from .util import mw
-from .preferences import get_preference as cfg
+from .preferences import get_preference as cfg, update_preferences
 
 importlib.reload(readability_ui)
 
@@ -100,9 +100,15 @@ class MorphMan(QDialog):
 
         # Init morphemizer
         self.all_morphemizers = {}
+        active = 0
         for i, morphemizer in enumerate(getAllMorphemizers()):
             self.all_morphemizers[i] = morphemizer
             self.ui.morphemizerComboBox.addItem(morphemizer.getDescription())
+            if morphemizer.getName() == cfg('DefaultMorphemizer'):
+                active = i
+
+        self.ui.morphemizerComboBox.setCurrentIndex(active)
+        self.ui.morphemizerComboBox.currentIndexChanged.connect(lambda idx: self.save_morphemizer())
 
         # Default settings
         self.ui.inputPathEdit.setText(cfg('path_analysis_input'))
@@ -131,6 +137,10 @@ class MorphMan(QDialog):
     def morphemizer(self):
         i = self.ui.morphemizerComboBox.currentIndex()
         return self.all_morphemizers[i]
+
+    def save_morphemizer(self):
+        morphemizer_name = self.morphemizer().getName()
+        update_preferences({'DefaultMorphemizer': morphemizer_name})
 
     def clearOutput(self):
         self.ui.outputText.clear()
