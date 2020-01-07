@@ -101,7 +101,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="morphemizerComboBox"/>
+           <widget class="MorphemizerComboBox" name="morphemizerComboBox"/>
           </item>
           <item>
            <spacer name="horizontalSpacer">
@@ -389,6 +389,13 @@
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MorphemizerComboBox</class>
+   <extends>QComboBox</extends>
+   <header>__relpath__/UI/</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
