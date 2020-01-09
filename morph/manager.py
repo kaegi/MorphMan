@@ -5,6 +5,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from anki.utils import isMac
+from .UI import MorphemizerComboBox
 
 from . import adaptiveSubs
 from .morphemes import MorphDb
@@ -44,10 +45,8 @@ class AdaptiveSubWin(QDialog):
         self.matureFmt = QLineEdit('%(target)s')
         self.knownFmt = QLineEdit('%(target)s [%(native)s]')
         self.unknownFmt = QLineEdit('%(native)s [%(N_k)s] [%(unknowns)s]')
-        self.morphemizer = QComboBox()
-
-        for morphemizer in getAllMorphemizers():
-            self.morphemizer.addItem(morphemizer.getDescription())
+        self.morphemizerComboBox = MorphemizerComboBox()
+        self.morphemizerComboBox.setMorphemizers(morphemizers=getAllMorphemizers())
 
         self.vbox.addWidget(QLabel('Mature Format'))
         self.vbox.addWidget(self.matureFmt)
@@ -56,7 +55,7 @@ class AdaptiveSubWin(QDialog):
         self.vbox.addWidget(QLabel('Unknown Format'))
         self.vbox.addWidget(self.unknownFmt)
         self.vbox.addWidget(QLabel('Morpheme Engine (Morphemizer)'))
-        self.vbox.addWidget(self.morphemizer)
+        self.vbox.addWidget(self.morphemizerComboBox)
 
         self.goBtn = mkBtn('Convert subs', self.onGo, vbox)
 
@@ -66,7 +65,7 @@ class AdaptiveSubWin(QDialog):
         mFmt = str(self.matureFmt.text())
         kFmt = str(self.knownFmt.text())
         uFmt = str(self.unknownFmt.text())
-        morphemizer = getAllMorphemizers()[self.morphemizer.currentIndex()]
+        morphemizer = self.morphemizerComboBox.getCurrent()
 
         inputPaths = QFileDialog.getOpenFileNames(caption='Dueling subs to process', filter='Subs (*.ass)')[0]
         if not inputPaths:
@@ -120,9 +119,8 @@ class MorphMan(QDialog):
         # Creation
         # language class/morphemizer
         self.db = None
-        self.morphemizerComboBox = QComboBox()
-        for morphemizer in getAllMorphemizers():
-            self.morphemizerComboBox.addItem(morphemizer.getDescription())
+        self.morphemizerComboBox = MorphemizerComboBox()
+        self.morphemizerComboBox.setMorphemizers(getAllMorphemizers())
 
         vbox.addSpacing(40)
         vbox.addWidget(self.morphemizerComboBox)
@@ -219,7 +217,7 @@ class MorphMan(QDialog):
             return
 
         mat = cfg('text file import maturity')
-        db = MorphDb.mkFromFile(str(srcPath), getAllMorphemizers()[self.morphemizerComboBox.currentIndex()], mat)
+        db = MorphDb.mkFromFile(str(srcPath), self.morphemizerComboBox.getCurrent(), mat)
         if db:
             db.save(str(destPath))
             infoMsg('Extracted successfully')

@@ -54,7 +54,7 @@ class Ui_ReadabilityDialog(object):
         self.dictionaryLabel = QtWidgets.QLabel(self.frame)
         self.dictionaryLabel.setObjectName("dictionaryLabel")
         self.horizontalLayout_4.addWidget(self.dictionaryLabel)
-        self.morphemizerComboBox = QtWidgets.QComboBox(self.frame)
+        self.morphemizerComboBox = MorphemizerComboBox(self.frame)
         self.morphemizerComboBox.setObjectName("morphemizerComboBox")
         self.horizontalLayout_4.addWidget(self.morphemizerComboBox)
         spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
@@ -205,3 +205,4 @@ class Ui_ReadabilityDialog(object):
         self.wordReportCheckBox.setText(_translate("ReadabilityDialog", "Word Report"))
         self.studyPlanCheckBox.setText(_translate("ReadabilityDialog", "Target Study Plan"))
         self.frequencyListCheckBox.setText(_translate("ReadabilityDialog", "Frequency List"))
+from .UI import MorphemizerComboBox

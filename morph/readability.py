@@ -99,15 +99,8 @@ class MorphMan(QDialog):
         self.ui.setupUi(self)
 
         # Init morphemizer
-        self.all_morphemizers = {}
-        active = 0
-        for i, morphemizer in enumerate(getAllMorphemizers()):
-            self.all_morphemizers[i] = morphemizer
-            self.ui.morphemizerComboBox.addItem(morphemizer.getDescription())
-            if morphemizer.getName() == cfg('DefaultMorphemizer'):
-                active = i
-
-        self.ui.morphemizerComboBox.setCurrentIndex(active)
+        self.ui.morphemizerComboBox.setMorphemizers(getAllMorphemizers())
+        self.ui.morphemizerComboBox.setCurrentByName(cfg('DefaultMorphemizer'))
         self.ui.morphemizerComboBox.currentIndexChanged.connect(lambda idx: self.save_morphemizer())
 
         # Default settings
@@ -135,8 +128,7 @@ class MorphMan(QDialog):
         doc.setDefaultFont(font)
 
     def morphemizer(self):
-        i = self.ui.morphemizerComboBox.currentIndex()
-        return self.all_morphemizers[i]
+        return self.ui.morphemizerComboBox.getCurrent()
 
     def save_morphemizer(self):
         morphemizer_name = self.morphemizer().getName()

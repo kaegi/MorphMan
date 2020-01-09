@@ -8,6 +8,7 @@ from aqt.utils import tooltip
 from .util import mw, mkBtn
 from .preferences import get_preference, update_preferences
 from .morphemizer import getAllMorphemizers
+from .UI import MorphemizerComboBox
 
 # only for jedi-auto-completion
 import aqt.main
@@ -248,13 +249,9 @@ class PreferencesDialog(QDialog):
             modelComboBox.addItem(model)
         modelComboBox.setCurrentIndex(active)
 
-        active = 1
-        morphemizerComboBox = QComboBox()
-        for i, m in enumerate(getAllMorphemizers()):
-            if m.getName() == data['Morphemizer']:
-                active = i
-            morphemizerComboBox.addItem(m.getDescription())
-        morphemizerComboBox.setCurrentIndex(active)
+        morphemizerComboBox = MorphemizerComboBox()
+        morphemizerComboBox.setMorphemizers(getAllMorphemizers())
+        morphemizerComboBox.setCurrentByName(data['Morphemizer'])
 
         item = QStandardItem()
         item.setCheckable(True)
@@ -265,14 +262,14 @@ class PreferencesDialog(QDialog):
         rowGui['fieldsEntry'] = QLineEdit(', '.join(data['Fields']))
         rowGui['morphemizerComboBox'] = morphemizerComboBox
         rowGui['modifyCheckBox'] = item
-        self.tableView.setIndexWidget(self.tableModel.index(
-            rowIndex, 0), rowGui['modelComboBox'])
-        self.tableView.setIndexWidget(
-            self.tableModel.index(rowIndex, 1), rowGui['tagsEntry'])
-        self.tableView.setIndexWidget(
-            self.tableModel.index(rowIndex, 2), rowGui['fieldsEntry'])
-        self.tableView.setIndexWidget(
-            self.tableModel.index(rowIndex, 3), morphemizerComboBox)
+
+        def setColumn(col, widget):
+            self.tableView.setIndexWidget(self.tableModel.index(rowIndex, col), widget)
+
+        setColumn(0, rowGui['modelComboBox'])
+        setColumn(1, rowGui['tagsEntry'])
+        setColumn(2, rowGui['fieldsEntry'])
+        setColumn(3, rowGui['morphemizerComboBox'])
         self.tableModel.setItem(rowIndex, 4, item)
 
         if len(self.rowGui) == rowIndex:
@@ -296,8 +293,7 @@ class PreferencesDialog(QDialog):
         filter['Fields'] = [
             x for x in row_gui['fieldsEntry'].text().split(', ') if x]
 
-        current_index = row_gui['morphemizerComboBox'].currentIndex()
-        filter['Morphemizer'] = getAllMorphemizers()[current_index].getName()
+        filter['Morphemizer'] = row_gui['morphemizerComboBox'].getCurrent().getName()
         filter['Modify'] = row_gui['modifyCheckBox'].checkState() != Qt.Unchecked
 
         return filter
