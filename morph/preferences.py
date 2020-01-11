@@ -128,7 +128,13 @@ def jcfg_default():
         'Option_ProperNounsAlreadyKnown': False,
         
         # Readability Analyzer options
+        'Option_AnalysisInputPath': '',
+        'Option_MasterFrequencyListPath': '',
+        'Option_DefaultMinimumMasterFrequency': 0,
+        'Option_DefaultStudyTarget': 98.0,
         'Option_FillAllMorphsInStudyPlan': False,
+        'Option_SourceScorePower': 2.0,            # Morpheme score formula parameter.
+        'Option_SourceScoreMultiplier': 60.0,      # Morpheme score formula parameter.
     }
 
 

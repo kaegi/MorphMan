@@ -14,10 +14,6 @@ default = {
     'path_seen': os.path.join(mw.pm.profileFolder(), 'dbs', 'seen.db'),
     'path_log': os.path.join(mw.pm.profileFolder(), 'morphman.log'),
     'path_stats': os.path.join(mw.pm.profileFolder(), 'morphman.stats'),
-    # Default path to Input directory in Readability Analyzer.
-    'path_analysis_input': '',
-    # Default path to Master Frequency List in Readability Analyzer.
-    'path_master_frequency_list': '',
 
     # change the thresholds for various stages of maturity, in days
     'threshold_mature': 21,         # 21 days is what Anki uses
@@ -28,13 +24,15 @@ default = {
     # when you import a file via Extract Morphemes from file, they are all given this maturity
     'text file import maturity': 22,
 
-    # change morpheme parsing
-    # if True, ignores morpheme grammar positions.  Delete your all.db if changing.
-    'ignore grammar position': False,
+    # NOTICE: This option is now set in the Morphman Preferences, and can no longer be set here.
+    #'ignore grammar position': False,
 
-    # Analyzer defaults
-    'default_minimum_master_frequency': 0,   # if not 0, only morphemes with this minimum master frequency are added to study plan.
-    'default_study_target': 98.0,            # morph readability target % for study plan
+    # NOTICE: The following five options are now set via the Readability UI, and can no longer be set here.
+    #'default_minimum_master_frequency': 0,
+    #'default_study_target': 98.0,
+    #'path_master_frequency_list': '',
+    #'path_analysis_input': '',
+    #'ignore grammar position': False,
 
     # reviewer mode keybindings
     'browse same focus key': 'l',

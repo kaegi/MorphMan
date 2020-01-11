@@ -119,10 +119,10 @@ class MorphMan(QDialog):
         self.ui.morphemizerComboBox.currentIndexChanged.connect(lambda idx: self.save_morphemizer())
 
         # Default settings
-        self.ui.inputPathEdit.setText(cfg('path_analysis_input'))
+        self.ui.inputPathEdit.setText(cfg('Option_AnalysisInputPath'))
         self.ui.inputPathButton.clicked.connect(
             lambda le: getPath(self.ui.inputPathEdit, "Select Input Directory", True))
-        self.ui.masterFreqEdit.setText(cfg('path_master_frequency_list'))
+        self.ui.masterFreqEdit.setText(cfg('Option_MasterFrequencyListPath'))
         self.ui.masterFreqButton.clicked.connect(
             lambda le: getPath(self.ui.masterFreqEdit, "Select Master Frequency List"))
         self.ui.knownMorphsEdit.setText(cfg('path_known'))
@@ -130,8 +130,8 @@ class MorphMan(QDialog):
         self.ui.outputFrequencyEdit.setText(cfg('path_dbs'))
         self.ui.outputFrequencyButton.clicked.connect(
             lambda le: getPath(self.ui.outputFrequencyEdit, "Select Output Directory", True))
-        self.ui.minFrequencySpinBox.setProperty("value", cfg('default_minimum_master_frequency'))
-        self.ui.targetSpinBox.setProperty("value", cfg('default_study_target'))
+        self.ui.minFrequencySpinBox.setProperty("value", cfg('Option_DefaultMinimumMasterFrequency'))
+        self.ui.targetSpinBox.setProperty("value", cfg('Option_DefaultStudyTarget'))
 
         # Connect buttons
         self.ui.analyzeButton.clicked.connect(lambda le: self.onAnalyze())
@@ -174,8 +174,16 @@ class MorphMan(QDialog):
         save_word_report = self.ui.wordReportCheckBox.isChecked()
         save_study_plan = self.ui.studyPlanCheckBox.isChecked()
 
-        source_score_power = 2.0
-        source_score_multiplier = 60.0
+        # Save updated preferences
+        pref = {}
+        pref['Option_AnalysisInputPath'] = input_path
+        pref['Option_MasterFrequencyListPath'] = master_freq_path
+        pref['Option_DefaultMinimumMasterFrequency'] = minimum_master_frequency
+        pref['Option_DefaultStudyTarget'] = readability_target
+        update_preferences(pref)
+
+        source_score_power = cfg('Option_SourceScorePower')
+        source_score_multiplier = cfg('Option_SourceScoreMultiplier')
 
         proper_nouns_known = cfg('Option_ProperNounsAlreadyKnown')
         fill_all_morphs_in_plan = cfg('Option_FillAllMorphsInStudyPlan')
