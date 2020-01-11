@@ -300,7 +300,8 @@ class MorphMan(QDialog):
                     line_morphs.append(line_missing_morphs)
 
                 filtered_text = ''
-                for t in text.split('\n'):
+                for t in text.splitlines():
+                    should_flush = True
                     if is_ass:
                         if 'Format:' in t:
                             formats = [x.strip() for x in t[8:].split(',')]
@@ -312,7 +313,7 @@ class MorphMan(QDialog):
                             continue
                         elif ('Dialogue:' not in t) or (text_index < 0):
                             continue
-                        t = t[9:].split(',', num_fields)
+                        t = t[9:].split(',', num_fields - 1)
                         t = t[text_index]
                     elif is_srt:
                         srt_count += 1
@@ -320,11 +321,16 @@ class MorphMan(QDialog):
                             continue
                         elif t == '':
                             srt_count = 0
-                            continue
-                    filtered_text += t + '\n'
+                        else:
+                            should_flush = False
+                    
+                    if t != '':
+                        filtered_text += t + '\n'
+                    
                     # Todo: This will flush every line so we can compute per-line readability, which is slower than batching lines.
                     #       Figure out how to get per-line analysis with batched lines.
-                    if True:
+                    if should_flush:
+                    #if len(filtered_text) >= 2048:
                         parse_text(filtered_text)
                         filtered_text = ''
 
