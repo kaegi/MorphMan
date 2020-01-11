@@ -204,6 +204,8 @@ class PreferencesDialog(QDialog):
              'Note that does not contain unknown words, but one or\nmore unmature (card with recently learned morphmes). Enable to\nskip to first card that has unknown vocabulary.'),
             ("Skip card if focus morph was already seen today", 'Option_SkipFocusMorphSeenToday',
              'This improves the \'new cards\'-queue without having to recalculate the databases.'),
+            ("Ignore grammar position", 'Option_IgnoreGrammarPosition',
+             'Use this option to ignore morpheme grammar types (noun, verb, helper, etc.).'),
             ("Ignore everything contained within [ ] brackets", 'Option_IgnoreBracketContents',
              'Use this option to ignore content such as furigana readings and pitch.'),
             ("Ignore everything contained within （ ） brackets", 'Option_IgnoreRoundBracketContents',

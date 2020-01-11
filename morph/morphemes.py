@@ -96,7 +96,7 @@ class Morpheme:
     def getGroupKey(self):
         # type: () -> str
 
-        if cfg('ignore grammar position'):
+        if cfg('Option_IgnoreGrammarPosition'):
             return '%s\t%s' % (self.norm, self.read)
         else:
             return '%s\t%s\t%s\t' % (self.norm, self.read, self.pos)
