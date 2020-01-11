@@ -242,9 +242,13 @@ def updateNotes(allDb):
             except KeyError:
                 continue
 
+        proper_nouns_known = cfg('Option_ProperNounsAlreadyKnown')
+
         # Determine un-seen/known/mature and i+N
         unseens, unknowns, unmatures, new_knowns = set(), set(), set(), set()
         for morpheme in morphemes:
+            if proper_nouns_known and morpheme.isProperNoun():
+                continue
             if not seenDb.matches(morpheme):
                 unseens.add(morpheme)
             if not knownDb.matches(morpheme):
@@ -263,6 +267,7 @@ def updateNotes(allDb):
             continue
 
         # add bonus for morphs in priority.db and frequency.txt
+        frequencyBonus = C('frequency.txt bonus')
         isPriority = False
         isFrequency = False
 
@@ -279,7 +284,6 @@ def updateNotes(allDb):
             try:
                 focusMorphIndex = frequency_list.index(focusMorphString)
                 isFrequency = True
-                frequencyBonus = C('frequency.txt bonus')
 
                 # The bigger this number, the lower mmi becomes
                 usefulness += int(round( frequencyBonus * (1 - focusMorphIndex / frequencyListLength) ))
@@ -310,7 +314,7 @@ def updateNotes(allDb):
         lenDiff = min(9, abs(lenDiffRaw))
 
         # calculate mmi
-        mmi = 100000 * N_k + 1000 * lenDiff + usefulness
+        mmi = 100000 * N_k + 1000 * lenDiff + int(round(usefulness))
         if C('set due based on mmi'):
             nid2mmi[nid] = mmi
 

@@ -254,11 +254,15 @@ def highlight(txt, extra, fieldDict, field, mod_field):
 
     ms = getMorphemes(morphemizer, txt, tags)
 
+    proper_nouns_known = cfg('Option_ProperNounsAlreadyKnown')
+
     for m in sorted(ms, key=lambda x: len(x.inflected), reverse=True):  # largest subs first
         locs = allDb().getMatchingLocs(m)
         mat = max(loc.maturity for loc in locs) if locs else 0
 
-        if mat >= cfg('threshold_mature'):
+        if proper_nouns_known and m.isProperNoun():
+            mtype = 'mature'
+        elif mat >= cfg('threshold_mature'):
             mtype = 'mature'
         elif mat >= cfg('threshold_known'):
             mtype = 'known'
@@ -270,7 +274,6 @@ def highlight(txt, extra, fieldDict, field, mod_field):
         priority = 'true' if m in priority_db else 'false'
 
         focus_morph_string = m.show().split()[0]
-
         frequency = 'true' if focus_morph_string in frequency_list else 'false'
 
         repl = '<span class="morphHighlight" mtype="{mtype}" priority="{priority}" frequency="{frequency}" mat="{mat}">\\1</span>'.format(

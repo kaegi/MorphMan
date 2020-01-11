@@ -177,6 +177,8 @@ class MorphMan(QDialog):
         source_score_power = 2.0
         source_score_multiplier = 60.0
 
+        proper_nouns_known = cfg('Option_ProperNounsAlreadyKnown')
+
         if not os.path.exists(output_path):
             try:
                 os.makedirs(output_path)
@@ -187,6 +189,9 @@ class MorphMan(QDialog):
         frequency_list_path = os.path.normpath(output_path + '/frequency.txt')
         word_report_path = os.path.normpath(output_path + '/word_freq_report.txt')
         study_plan_path = os.path.normpath(output_path + '/study_plan.txt')
+        readability_log_path = os.path.normpath(output_path + '/readability_log.txt')
+
+        log_fp = open(readability_log_path, 'wt', encoding='utf-8')
 
         master_db = CountingMorphDB()
         unknown_db = CountingMorphDB()
@@ -237,6 +242,9 @@ class MorphMan(QDialog):
         sources = []
 
         def measure_readability(file_name, is_ass, is_srt):
+            log_fp.write('measure_readability %s\n' % file_name)
+
+            proper_noun_count = 0
             i_count = 0
             line_count = 0
             line_morphs = []
@@ -254,7 +262,9 @@ class MorphMan(QDialog):
 
                 def parse_text(text):
                     nonlocal i_count, known_count, seen_morphs, known_morphs, all_morphs
-                    nonlocal line_count, known_line_count, iplus1_line_count, line_morphs
+                    nonlocal proper_noun_count, line_count, known_line_count, iplus1_line_count, line_morphs
+
+                    log_fp.write('=== parse_text ===\n' + text + '\n')
 
                     parsed_morphs = getMorphemes(morphemizer, stripHTML(text))
                     if len(parsed_morphs) == 0:
@@ -266,8 +276,15 @@ class MorphMan(QDialog):
                         # Count morph for word report
                         all_morphs[m] = all_morphs.get(m, 0) + 1
                         seen_morphs[m] = seen_morphs.get(m, 0) + 1
+
+                        if m.isProperNoun():
+                            proper_noun_count += 1
+                            is_proper_noun = True
+                        else:
+                            is_proper_noun = False
+
                         i_count += 1
-                        if known_db.matches(m):
+                        if known_db.matches(m) or is_proper_noun: # Proper nouns are easy to learn, so assume they're known.:
                             known_morphs[m] = known_morphs.get(m, 0) + 1
                             known_count += 1
                         else:
@@ -315,16 +332,20 @@ class MorphMan(QDialog):
 
             try:
                 with open(file_name.strip(), 'rt', encoding='utf-8') as f:
-                    input = '\n'.join([l.strip().replace(u'\ufeff', '') for l in f.readlines()])
+                    input = f.read()
+                    input = input.replace(u'\ufeff', '')
+                    #input = [l.replace(u'\ufeff', '') for l in f.read()]
                     proc_lines(input, is_ass, is_srt)
                     source = Source(file_name, seen_morphs, line_morphs, source_unknown_db)
-                    readability = 0.0 if i_count == 0 else 100.0 * known_count / i_count
                     known_percent = 0.0 if len(seen_morphs.keys()) == 0 else 100.0 * len(known_morphs) / len(seen_morphs.keys())
-                    line_percent = 0.0 if known_line_count == 0 else 100.0 * known_line_count / line_count
-                    iplus1_percent = 0.0 if known_line_count == 0 else 100.0 * iplus1_line_count / line_count
-                    self.writeOutput('%s\t%d\t%d\t%0.2f\t%d\t%d\t%0.2f\t%0.2f\n' % (
+                    readability = 0.0 if i_count == 0 else 100.0 * known_count / i_count
+                    proper_noun_percent = 0.0 if line_count == 0 else 100.0 * proper_noun_count / i_count
+                    line_percent = 0.0 if line_count == 0 else 100.0 * known_line_count / line_count
+                    iplus1_percent = 0.0 if line_count == 0 else 100.0 * iplus1_line_count / line_count
+
+                    self.writeOutput('%s\t%d\t%d\t%0.2f\t%d\t%d\t%0.2f\t%0.2f\t%0.2f\t%0.2f\n' % (
                         source.name, len(seen_morphs), len(known_morphs), known_percent, i_count, known_count,
-                        readability, line_percent))
+                        readability, proper_noun_percent, line_percent, iplus1_percent))
                     row = self.ui.readabilityTable.rowCount()
                     self.ui.readabilityTable.insertRow(row)
                     self.ui.readabilityTable.setItem(row, 0, QTableWidgetItem(source.name))
@@ -334,8 +355,9 @@ class MorphMan(QDialog):
                     self.ui.readabilityTable.setItem(row, 4, TableInteger(i_count))
                     self.ui.readabilityTable.setItem(row, 5, TableInteger(known_count))
                     self.ui.readabilityTable.setItem(row, 6, TablePercent(readability))
-                    self.ui.readabilityTable.setItem(row, 7, TablePercent(line_percent))
-                    self.ui.readabilityTable.setItem(row, 8, TablePercent(iplus1_percent))
+                    self.ui.readabilityTable.setItem(row, 7, TablePercent(proper_noun_percent))
+                    self.ui.readabilityTable.setItem(row, 8, TablePercent(line_percent))
+                    self.ui.readabilityTable.setItem(row, 9, TablePercent(iplus1_percent))
 
                     if save_study_plan:
                         sources.append(source)
@@ -352,15 +374,15 @@ class MorphMan(QDialog):
 
         self.ui.readabilityTable.clear()
         self.ui.readabilityTable.setRowCount(0)
-        self.ui.readabilityTable.setColumnCount(9)
+        self.ui.readabilityTable.setColumnCount(10)
         self.ui.readabilityTable.setHorizontalHeaderLabels([
             "Input", "Total\nMorphs", "Known\nMorphs", "Known\nMorphs %", "Total\nInstances", "Known\nInstances",
-            "Morph\nReadability %", "Line\nReadability %", "i+1\nLines %"])
+            "Morph\nReadability %", "Proper\nNoun %", "Line\nReadability %", "i+1\nLines %"])
 
         if len(list_of_files) > 0:
-            self.writeOutput('%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' % (
-                "Input", "Total Morphs", "Known Morphs","% Known Morphs", "Total Instances", "Known Instances",
-                "% Readability", "% Known Lines"))
+            self.writeOutput('%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' % (
+                "Input", "Total Morphs", "Known Morphs", "% Known Morphs", "Total Instances", "Known Instances",
+                "% Readability", "% Proper Nouns", "% Known Lines", "% i+1 Lines"))
 
             mw.progress.start( label='Measuring readability', max=len(list_of_files), immediate=True )
             for n, file_path in enumerate(sorted(list_of_files, key=natural_keys)):
@@ -441,7 +463,7 @@ class MorphMan(QDialog):
                     for m in s.morphs.items():
                         seen_i += m[1]
                         morph = m[0]
-                        if known_db.matches(morph):
+                        if known_db.matches(morph) or (proper_nouns_known and morph.isProperNoun()):
                             known_i += m[1]
                         else:
                             source_unknown_count = s.unknown_db.getFuzzyCount(morph, known_db)
