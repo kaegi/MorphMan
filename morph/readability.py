@@ -178,6 +178,7 @@ class MorphMan(QDialog):
         source_score_multiplier = 60.0
 
         proper_nouns_known = cfg('Option_ProperNounsAlreadyKnown')
+        fill_all_morphs_in_plan = cfg('Option_FillAllMorphsInStudyPlan')
 
         if not os.path.exists(output_path):
             try:
@@ -544,13 +545,14 @@ class MorphMan(QDialog):
                             print(m[0].base + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (m[5], m[2], m[3], m[4]), file=f)
                         
                         # Followed by all remaining morphs sorted by score.
-                        for m in sorted(all_missing_morphs, key=operator.itemgetter(5), reverse=True):
-                            if (m[0].base in unique_set):
-                                continue
-                            if m[4] < minimum_master_frequency:
-                                continue
-                            unique_set.add(m[0].base)
-                            print(m[0].base + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (m[5], m[2], m[3], m[4]), file=f)
+                        if fill_all_morphs_in_plan:
+                            for m in sorted(all_missing_morphs, key=operator.itemgetter(5), reverse=True):
+                                if (m[0].base in unique_set):
+                                    continue
+                                if m[4] < minimum_master_frequency:
+                                    continue
+                                unique_set.add(m[0].base)
+                                print(m[0].base + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (m[5], m[2], m[3], m[4]), file=f)
                 
                 if master_total_instances > 0:
                     master_score = 0
