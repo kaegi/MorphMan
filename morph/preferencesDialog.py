@@ -205,7 +205,9 @@ class PreferencesDialog(QDialog):
             ("Skip card if focus morph was already seen today", 'Option_SkipFocusMorphSeenToday',
              'This improves the \'new cards\'-queue without having to recalculate the databases.'),
             ("Ignore everything contained within [ ] brackets", 'Option_IgnoreBracketContents',
-             'Use this option to ignore content such as furigana readings and pitch.')
+             'Use this option to ignore content such as furigana readings and pitch.'),
+            ("Treat proper nouns as known", 'Option_ProperNounsAlreadyKnown',
+             'Treat proper nouns as already known when scoring cards (currently only works for Japanese).')
         ]
         self.boolOptionList = []
         for i, (name, key, tooltipInfo) in enumerate(optionList):
