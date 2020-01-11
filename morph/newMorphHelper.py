@@ -50,11 +50,11 @@ def my_fillNew(self, _old):
     if not self.newCount:
         return False
 
-    self._newQueue = self.col.db.all(
-        '''select id, due from cards where did in %s and queue = 0 and due >= ? order by due limit ?''' % self._deckLimit(),
-        C('new card merged fill min due'), self.queueLimit)
-
+    self._newQueue = self.col.db.list(
+        '''select id from cards where did in %s and queue = 0 and due >= ? order by due limit ?''' % self._deckLimit(),
+        C('new card merged fill min due'), self.queueLimit )
     if self._newQueue:
+        self._newQueue.reverse()
         return True
 
 
@@ -96,10 +96,10 @@ def my_getNewCard(self, _old):
             return _old(self)
         if not C('new card merged fill'):
             card = _old(self)  # type: anki.cards.Card
-        else:  # pop from opposite direction and skip sibling spacing
+        else:
             if not self._fillNew():
                 return
-            (card_id, due) = self._newQueue.pop(0)
+            card_id = self._newQueue.pop()
             card = self.col.getCard(card_id)
             self.newCount -= 1
 
