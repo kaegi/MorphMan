@@ -1,5 +1,6 @@
-import unittest
+import os
 import sys
+import unittest
 from unittest.mock import MagicMock
 
 # Mock Anki functions used by Preferences
@@ -32,7 +33,7 @@ class TestPreferences(unittest.TestCase):
         self.assertPreference('test non existing preference', None)
 
     def test_dbsPath(self):
-        self.assertPreference('path_dbs', 'somewhere/dbs')
+        self.assertPreference('path_dbs', os.path.normpath('somewhere/dbs'))
 
     def test_update_preferences(self):
         self.assertPreference('newly_inserted', None)  # This preference does not exist yet, good
