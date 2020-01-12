@@ -99,12 +99,12 @@ class CountingMorphDB:
 class TableInteger(QTableWidgetItem):
     def __init__(self, value):
         super(TableInteger, self).__init__(str(int(value)))
-        self.setTextAlignment( Qt.AlignHCenter | Qt.AlignVCenter );
+        self.setTextAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
 
 class TablePercent(QTableWidgetItem):
     def __init__(self, value):
         super(TablePercent, self).__init__('%0.02f' % value)
-        self.setTextAlignment( Qt.AlignHCenter | Qt.AlignVCenter );
+        self.setTextAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
 
 class MorphMan(QDialog):
     def __init__(self, parent=None):
