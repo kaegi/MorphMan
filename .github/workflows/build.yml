@@ -1,0 +1,42 @@
+name: Lint and Test
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        python_version: ['3.6', '3.7', '3.8']
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+        anki: ['2.1.16']
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version:  ${{ matrix.python_version }}
+    - name: Install wget
+      run: choco install wget
+      if: runner.os == 'Windows'
+    - name: Install dependencies
+      shell: bash
+      run: |
+        python -m pip install --upgrade pip
+        pip install pylint
+        pip install PyQt5
+        wget --quiet https://github.com/ankitects/anki/archive/${{ matrix.anki }}.zip
+        unzip ${{ matrix.anki }}.zip
+    - name: Lint
+      shell: bash
+      run: |
+        export PYTHONPATH=./anki-${{ matrix.anki }}
+        pylint . morph test
+    - name: Test
+      shell: bash
+      run: |
+        export QT_QPA_PLATFORM=minimal
+        export PYTHONPATH=./anki-${{ matrix.anki }}
+        python test.py
+
