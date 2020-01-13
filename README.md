@@ -47,3 +47,5 @@ See the [MorphMan wiki](https://github.com/kaegi/MorphMan/wiki) for more informa
       - export PYTHONPATH=./anki-2.1.16
 - Run tests: `python test.py`
 - Build Qt Developer UI with `python scripts/build_ui.py`
+- Install git commit hook to run tests and pylint
+  ` scripts/setup_dev.sh`
