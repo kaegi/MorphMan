@@ -52,6 +52,8 @@ def getMorphemizerByName(name):
 # Mecab Morphemizer
 ####################################################################################################
 
+space_char_regex = re.compile(' ')
+
 class MecabMorphemizer(Morphemizer):
     """
     Because in japanese there are no spaces to differentiate between morphemes,
@@ -59,6 +61,10 @@ class MecabMorphemizer(Morphemizer):
     """
 
     def getMorphemesFromExpr(self, expression):
+        # Remove simple spaces that could be added by other add-ons and break the parsing.
+        if space_char_regex.search(expression):
+            expression = space_char_regex.sub('', expression)
+
         return getMorphemesMecab(expression)
 
     def getDescription(self):
