@@ -77,6 +77,7 @@ def main():
     from .morph.browser import batchPlay
     from .morph.browser import massTagger
     from .morph.browser import learnNow
+    from .morph.browser import boldUnknowns
     from .morph.browser import browseMorph
     from .morph.browser import alreadyKnownTagger
     from .morph import newMorphHelper
