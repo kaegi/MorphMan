@@ -17,6 +17,8 @@ from .util_external import memoize
 MECAB_NODE_UNIDIC_BOS = 'BOS/EOS,*,*,*,*,*,*,*,*,*,*,*,*,*'
 MECAB_NODE_UNIDIC_PARTS = ['%f[7]', '%f[12]', '%m', '%f[6]', '%f[0]', '%f[1]']
 MECAB_NODE_LENGTH_UNIDIC = len(MECAB_NODE_UNIDIC_PARTS)
+MECAB_NODE_UNIDIC_22_BOS = 'BOS/EOS,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*'
+MECAB_NODE_UNIDIC_22_PARTS = ['%f[7]', '%f[10]', '%m', '%f[6]', '%f[0]', '%f[1]']
 MECAB_NODE_IPADIC_BOS = 'BOS/EOS,*,*,*,*,*,*,*,*'
 MECAB_NODE_IPADIC_PARTS = ['%f[6]', '%m', '%f[7]', '%f[0]', '%f[1]']
 MECAB_NODE_LENGTH_IPADIC = len(MECAB_NODE_IPADIC_PARTS)
@@ -111,6 +113,9 @@ def spawnMecab(base_cmd, startupinfo):
     if bos_feature_match is not None and bos_feature_match.group(1).strip() == MECAB_NODE_UNIDIC_BOS:
         node_parts = MECAB_NODE_UNIDIC_PARTS
         is_unidic = True
+    elif bos_feature_match is not None and bos_feature_match.group(1).strip() == MECAB_NODE_UNIDIC_22_BOS:
+        node_parts = MECAB_NODE_UNIDIC_22_PARTS
+        is_unidic = True
     elif bos_feature_match is not None and bos_feature_match.group(1).strip() == MECAB_NODE_IPADIC_BOS:
         node_parts = MECAB_NODE_IPADIC_PARTS
         is_unidic = False
@@ -156,6 +161,13 @@ def mecab():  # IO MecabProc
     reading = None
 
     # 1st priority - MecabUnidic
+    if importlib.util.find_spec('MecabUnidic'):
+        try:
+            reading = importlib.import_module('MecabUnidic.reading')
+            mecab_source = 'MecabUnidic'
+        except ModuleNotFoundError:
+            pass
+    
     if importlib.util.find_spec('13462835'):
         try:
             reading = importlib.import_module('13462835.reading')
