@@ -2,6 +2,8 @@
 import codecs
 import importlib
 import time
+import itertools
+
 from anki.tags import TagManager
 
 from functools import partial
@@ -197,8 +199,10 @@ def updateNotes(allDb):
     frequencyListPath = cfg('path_frequency')
     try:
         with codecs.open(frequencyListPath, encoding='utf-8') as f:
-            frequency_list = [line.strip().split('\t')[0]
-                              for line in f.readlines()]
+            # create a dictionary. key is word, value is its position in the file
+            frequency_list = dict(zip(
+                [line.strip().split('\t')[0] for line in f.readlines()],
+                itertools.count(0)))
     except FileNotFoundError:
         frequency_list = []
 
@@ -282,13 +286,13 @@ def updateNotes(allDb):
                 usefulness += C('priority.db weight')
             focusMorphString = focusMorph.base
             try:
-                focusMorphIndex = frequency_list.index(focusMorphString)
+                focusMorphIndex = frequency_list[focusMorphString]
                 isFrequency = True
 
                 # The bigger this number, the lower mmi becomes
                 usefulness += int(round( frequencyBonus * (1 - focusMorphIndex / frequencyListLength) ))
 
-            except ValueError:
+            except KeyError:
                 pass
 
         # average frequency of unknowns (ie. how common the word is within your collection)
