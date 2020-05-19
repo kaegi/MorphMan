@@ -204,7 +204,7 @@ def updateNotes(allDb):
                 [line.strip().split('\t')[0] for line in f.readlines()],
                 itertools.count(0)))
     except FileNotFoundError:
-        frequency_list = []
+        frequency_list = dict()
 
     frequencyListLength = len(frequency_list)
 
