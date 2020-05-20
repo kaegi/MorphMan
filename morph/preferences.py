@@ -16,9 +16,10 @@ def get_preference(key, model_id=None, deck_id=None):
 
 
 def update_preferences(jcfg):
-    original = mw.col.conf['addons']['morphman'].copy()
-    mw.col.conf['addons']['morphman'].update(jcfg)
-    if not mw.col.conf['addons']['morphman'] == original:
+    pref_copy = mw.col.conf['addons']['morphman'].copy()
+    pref_copy.update(jcfg)
+    if not mw.col.conf['addons']['morphman'] == pref_copy:
+        mw.col.conf['addons']['morphman'] = pref_copy
         mw.col.setMod()
 
 
