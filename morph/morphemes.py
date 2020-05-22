@@ -122,7 +122,7 @@ class MorphDBUnpickler(pickle.Unpickler):
         return pickle.Unpickler.find_class(self, cmodule, cname)
 
 square_brackets_regex = re.compile(r'\[[^\]]*\]')
-round_brackets_regex = re.compile(r'（[^）]+）')
+round_brackets_regex = re.compile(r'\([^)]*\)')
 
 def getMorphemes(morphemizer, expression, note_tags=None):
     if cfg('Option_IgnoreBracketContents'):
