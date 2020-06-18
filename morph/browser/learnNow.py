@@ -18,8 +18,10 @@ def per(st, c):
 def post(st):
     for c in st['cards']:
         mw.reviewer.cardQueue.append(c)
-    st['browser'].close()
-    infoMsg("")  # Prevents an AttributeError directly above
+
+    browser = st['browser']
+    mw.progress.timer(100, lambda: browser.close(), False)
+
     tooltip(_('Immediately reviewing {} cards'.format(len(st['cards']))))
     return st
 
