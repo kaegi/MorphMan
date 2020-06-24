@@ -311,19 +311,23 @@ def interactKo(expr):  # Str -> IO Str
     idx = 0
     while p.stdout.readable():
         morphs.append(p.stdout.readline().rstrip(b'\r\n').decode('utf-8').replace("'", "*").replace("\"", "*"))
+        # print(morphs)
+        # print(idx)
         if morphs[idx] == "EOS":
             break
-        if len(morphs[idx]) < 7:
-            morphs.remove(morphs[idx])
-        if morphs[idx][1] == "EP" or morphs[idx][1] == "EC":
-            add = morphs[idx - 1].replace('\t', ',').split(',')
-            add[4] = add[4] + morphs[idx][0]
-            morphs[idx - 1] = '\t'.join(add)
-            morphs.remove(morphs[idx])
-            idx = idx - 1
-        if morphs[idx][1] == "SY" or morphs[idx][1] == "SF":
-            morphs.remove(morphs[idx])
-            idx = idx - 1
+        if morphs[idx].replace('\t', ',').split(',')[1].__contains__("EP") or morphs[idx].replace('\t', ',').split(',')[
+            1].__contains__("EC") or morphs[idx].replace('\t', ',').split(',')[1].__contains__("EF"):
+            if morphs[idx].replace('\t', ',').split(',')[5] != "Inflect":
+                add = morphs[idx - 1].replace('\t', ',').split(',')
+                add[4] = add[4] + morphs[idx].replace('\t', ',').split(',')[0]
+                morphs[idx - 1] = '\t'.join(add)
+                morphs.remove(morphs[idx])
+                idx = idx - 1
+        else:
+            if morphs[idx].replace('\t', ',').split(',')[1] == "SY" or morphs[idx].replace('\t', ',').split(',')[
+                1] == "SF":
+                morphs.remove(morphs[idx])
+                idx = idx - 1
         idx = idx + 1
     return morphs[:len(morphs) - 1]
 
