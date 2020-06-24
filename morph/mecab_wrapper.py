@@ -310,13 +310,18 @@ def interactKo(expr):  # Str -> IO Str
     morphs = []
     idx = 0
     while p.stdout.readable():
-        morphs.append(p.stdout.readline().rstrip(b'\r\n').decode('utf-8'))
+        morphs.append(p.stdout.readline().rstrip(b'\r\n').decode('utf-8').replace("'", "*").replace("\"", "*"))
         if morphs[idx] == "EOS":
             break
-        if morphs[idx].__contains__("EP"):
+        if len(morphs[idx]) < 7:
+            morphs.remove(morphs[idx])
+        if morphs[idx][1] == "EP" or morphs[idx][1] == "EC":
             add = morphs[idx - 1].replace('\t', ',').split(',')
             add[4] = add[4] + morphs[idx][0]
             morphs[idx - 1] = '\t'.join(add)
+            morphs.remove(morphs[idx])
+            idx = idx - 1
+        if morphs[idx][1] == "SY" or morphs[idx][1] == "SF":
             morphs.remove(morphs[idx])
             idx = idx - 1
         idx = idx + 1
