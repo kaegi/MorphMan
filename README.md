@@ -14,8 +14,8 @@ This fork has added Korean integration. All credit goes to them. See the github 
 To install MorphMan with Korean, download this repository extract the files to your Anki2/addons\_ (To find your Anki folder on Windows, enter "%appdata%" in the file explorer).
 Your folder structure should look like this:
 
-- _Anki2/addons/MorphMan-Folder
-- _Anki2/addons/MorphMan-Folder/morph/\*allFilesAndDirectories\*_
+- _Anki2/addons21/MorphMan-Folder
+- _Anki2/addons21/MorphMan-Folder/morph/\*allFilesAndDirectories\*_
 
 After restarting Anki, you should see an entry called _morphman_ under _Tools -> Add-ons_.
 You can find information and troubleshooting tips [here](https://github.com/kaegi/MorphMan/wiki/Installation).
@@ -27,7 +27,7 @@ MorphMan supports the following languages:
 - **Japanese**: You must additionally install the _[Japanese Support](https://ankiweb.net/shared/info/3918629684)_ Anki addon
 - **Chinese**: For Anki 2.0, please use [Jieba-Morph](https://github.com/NinKenDo64/Jieba-Morph). Chinese is included in Morphman for Anki 2.1
 - **CJK Characters**: Morphemizer that splits sentence into characters and filters for Chinese-Japanese-Korean logographic/idiographic characters.
-- **Korean**: You must additionally download the Korean dictionary [here](https://github.com/Pusnow/mecab-ko-dic-msvc), rename it "mecab-ko-dic" and put it in Anki2/addons/Morphman/morph/deps/mecab. 
+- **Korean**: You must additionally download the Korean dictionary [here](https://github.com/Pusnow/mecab-ko-dic-msvc), rename it "mecab-ko-dic" and put it in Anki2/addons21/Morphman/morph/deps/mecab. 
 - more languages can be added on request if morpheme-splitting-tools are available for it
 
 See Matt VS Japan's [video tutorial](https://www.youtube.com/watch?v=dVReg8_XnyA)
