@@ -8,7 +8,6 @@ import sys
 from .morphemes import Morpheme
 from .util_external import memoize
 
-
 ####################################################################################################
 # Mecab Morphemizer
 ####################################################################################################
@@ -237,3 +236,141 @@ def fixReading(m):  # Morpheme -> IO Morpheme
             m.read = n[MECAB_NODE_READING_INDEX].strip()
     return m
 
+
+#########################################################
+#               Korean Mecab Processing                 #
+#########################################################
+
+"""
+This can be done a lot better. Making direct changes to the functions above
+would remove any unnecessary functions I have replicated below. Not as clean
+and short as could be.
+"""
+
+POS_TAG_VERBS = ["VV", "VA", "VX"]
+TAG_TYPES = ["Inflect", "Compound"]
+
+
+@memoize
+def getMorphemesKoMecab(expression):
+    """
+    Gets morphemes from Mecab program using Korean dictionary
+
+    :param expression: Phrase/Sentence from Anki card
+    :return: List of Morphemes (class)
+    """
+    mecab_r = interactKo(expression)
+    # print(mecab_r)
+    morphemes = []
+    for m in mecab_r[:len(mecab_r)]:
+        morphemes.append(getMorphemeKo(m))
+    return morphemes
+
+
+def getMorphemeKo(m):
+    """
+    Formats the mecab output into Morphman understandable Morpheme
+
+    :param m: Morpheme string from mecab output after interactKo function
+    :return: a single instance of Morpheme class
+    """
+    morpheme_parts = parse(m)
+    # print(morpheme_parts)
+    if morpheme_parts[5] in TAG_TYPES:
+        if morpheme_parts[5] == TAG_TYPES[0]:
+            index_split = morpheme_parts[8].split("/")
+            morpheme_parts[0] = index_split[0]
+            morpheme_parts[1] = index_split[1]
+            morpheme_parts[8] = "*"
+            morpheme_parts[5] = "*"
+        else:
+            morpheme_parts[8] = "*"
+            morpheme_parts[5] = "*"
+
+    if morpheme_parts[1] in POS_TAG_VERBS:
+        morpheme_parts[0] = morpheme_parts[0] + "다"
+
+    morpheme = Morpheme(morpheme_parts[0], morpheme_parts[0], morpheme_parts[4], morpheme_parts[0], morpheme_parts[1],
+                        morpheme_parts[7])
+    return morpheme
+
+
+@memoize
+def interactKo(expr):  # Str -> IO Str
+    """ "interacts" with 'mecab' command: writes expression to stdin of 'mecab' process and gets all the morpheme
+    info from its stdout.
+
+    :param expr: Phrase or sentence to input into Mecab
+    :return: List of morphemes
+    """
+    p = mecabKo()
+    expr = expr.encode('utf-8', 'ignore')
+    p.stdin.write(expr + b'\n')
+    p.stdin.flush()
+    morphs = []
+    idx = 0
+    while p.stdout.readable():
+        morphs.append(p.stdout.readline().rstrip(b'\r\n').decode('utf-8'))
+        if morphs[idx] == "EOS":
+            break
+        if morphs[idx].__contains__("EP"):
+            add = morphs[idx - 1].replace('\t', ',').split(',')
+            add[4] = add[4] + morphs[idx][0]
+            morphs[idx - 1] = '\t'.join(add)
+            morphs.remove(morphs[idx])
+            idx = idx - 1
+        idx = idx + 1
+    return morphs[:len(morphs) - 1]
+
+
+@memoize
+def mecabKo():  # IO MecabProc
+    """Start a MeCab subprocess and return it.
+    `mecab` reads expressions from stdin at runtime, so only one
+    instance is needed.  That's why this function is memoized.
+    """
+    if sys.platform.startswith('win'):
+        si = subprocess.STARTUPINFO()
+        try:
+            si.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+        except:
+            # pylint: disable=no-member
+            si.dwFlags |= subprocess._subprocess.STARTF_USESHOWWINDOW
+    else:
+        si = None
+
+    # Search for mecab
+    # reading = None
+
+    from .deps.mecab import reading
+    m = reading.MecabController()
+    m.setup()
+
+    return spawnCmdKo(m.mecabKoCmd[:1] + m.mecabKoCmd[1:], si)
+
+
+def parse(expression):
+    """
+    Parses the mecab output into something easier to format.
+
+    :param expression: mecab output
+    :return: list of strings of unformatted mecab output.
+    Each string being a morpheme with its tags.
+    """
+    tags = []
+    for tag in expression.replace('\t', ",").split(','):
+        if tag.endswith("'"):
+            break
+        tags.append(tag)
+    return tags
+
+
+def spawnCmdKo(cmd, startupinfo):
+    """
+    Creates a new instance of mecab as a subprocess.
+
+    :param cmd: ["/dir/to/mecab", "-d", "dir/to/korean/dic"]
+    :return: returns an open mecab subprocess.
+    """
+    return subprocess.Popen(cmd, startupinfo=startupinfo, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                            stderr=subprocess.STDOUT)

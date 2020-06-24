@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 import re
 
+
 from .morphemes import Morpheme
 from .deps.zhon.hanzi import characters
-from .mecab_wrapper import getMorphemesMecab
+from .mecab_wrapper import getMorphemesMecab, getMorphemesKoMecab
 from .deps.jieba import posseg
 
 
@@ -37,7 +38,8 @@ class Morphemizer:
 
 def getAllMorphemizers():
     # type: () -> [Morphemizer]
-    return [SpaceMorphemizer(), MecabMorphemizer(), JiebaMorphemizer(), CjkCharMorphemizer()]
+    return [SpaceMorphemizer(), MecabMorphemizer(), JiebaMorphemizer(), CjkCharMorphemizer(),
+            KoreanMorphemizer()]
 
 
 def getMorphemizerByName(name):
@@ -53,6 +55,7 @@ def getMorphemizerByName(name):
 ####################################################################################################
 
 space_char_regex = re.compile(' ')
+
 
 class MecabMorphemizer(Morphemizer):
     """
@@ -126,3 +129,19 @@ class JiebaMorphemizer(Morphemizer):
 
     def getDescription(self):
         return 'Chinese'
+
+
+####################################################################################################
+# Korean Morphemizer
+####################################################################################################
+
+class KoreanMorphemizer(Morphemizer):
+    """
+    Morphemizer for Korean using the Mecab Morphemizer with Korean Dictionary.
+    """
+
+    def getMorphemesFromExpr(self, expression):
+        return getMorphemesKoMecab(expression)
+
+    def getDescription(self):
+        return 'Korean'

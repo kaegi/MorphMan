@@ -79,6 +79,10 @@ class MecabController(object):
             "-r", os.path.join(supportDir, "mecabrc"),
             "-d", supportDir
         ])
+        self.mecabKoCmd = mungeForPlatform(
+            [os.path.join(supportDir, "mecab")] + [
+                '-d', os.path.join(supportDir, "mecab-ko-dic")])
+
         os.environ['DYLD_LIBRARY_PATH'] = supportDir
         os.environ['LD_LIBRARY_PATH'] = supportDir
         if not isWin:
