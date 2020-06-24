@@ -29,7 +29,7 @@ MorphMan supports the following languages:
 - **Japanese**: You must additionally install the _[Japanese Support](https://ankiweb.net/shared/info/3918629684)_ Anki addon
 - **Chinese**: For Anki 2.0, please use [Jieba-Morph](https://github.com/NinKenDo64/Jieba-Morph). Chinese is included in Morphman for Anki 2.1
 - **CJK Characters**: Morphemizer that splits sentence into characters and filters for Chinese-Japanese-Korean logographic/idiographic characters.
-- **Korean**: You must additionally download the Korean dictionary _[here](https://mega.nz/folder/P8xG1SLC#zhn4-HwEt3ks9mcBW-_n5w)_ and put it in morph/deps/mecab. 
+- **Korean**: You must additionally download the Korean dictionary [here](https://mega.nz/folder/P8xG1SLC#zhn4-HwEt3ks9mcBW-_n5w) and put it in morph/deps/mecab. 
 - more languages can be added on request if morpheme-splitting-tools are available for it
 
 See Matt VS Japan's [video tutorial](https://www.youtube.com/watch?v=dVReg8_XnyA)
