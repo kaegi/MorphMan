@@ -293,7 +293,7 @@ class MorphDb:
         if not os.path.exists(par):
             os.makedirs(par)
         f = gzip.open(path, 'wb')
-        pickle.dump(self.db, f, -1)
+        pickle.dump(self.db, f, 4)
         f.close()
 
     def load(self, path):  # FilePath -> m ()
