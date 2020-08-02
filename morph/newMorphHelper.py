@@ -137,7 +137,7 @@ def my_getNewCard(self, _old):
         skip_focus_morph_seen_today = cfg('Option_SkipFocusMorphSeenToday')
 
         skip_conditions = [
-            is_comprehension_card and skip_comprehension,
+            is_comprehension_card and skip_comprehension and no_cards_learned_yet,
             is_fresh_vocab and skip_fresh and no_cards_learned_yet,
             is_already_known,  # the user requested that the vocabulary does not have to be shown
             focus_morph in seenMorphs and skip_focus_morph_seen_today,  # we already learned that/saw that today
