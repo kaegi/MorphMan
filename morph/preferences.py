@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
+import copy
 import importlib
+
 from aqt import mw
 
 config_py = None
@@ -22,10 +24,13 @@ def get_preference(key, model_id=None, deck_id=None):
 
 
 def update_preferences(jcfg):
-    original = mw.col.conf['addons']['morphman'].copy()
-    mw.col.conf['addons']['morphman'].update(jcfg)
-    if mw.col.conf['addons']['morphman'] != original:
+    original_prefs = copy.deepcopy(mw.col.conf['addons']['morphman'])
+    new_prefs = copy.deepcopy(original_prefs)
+    new_prefs.update(jcfg)
+    if new_prefs != original_prefs:
+        mw.col.conf['addons']['morphman'] = new_prefs
         mw.col.setMod()
+
         global preferences_cache
         preferences_cache = mw.col.conf['addons']['morphman']
 
