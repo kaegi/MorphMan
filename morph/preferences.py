@@ -2,27 +2,32 @@
 import importlib
 from aqt import mw
 
+config_py = None
+
+preferences_cache = None
 
 def init_preferences():
     _init_config_py()
     _init_anki_json_config()
+
+    global preferences_cache
+    preferences_cache = _jsonConfig()
 
 
 def get_preference(key, model_id=None, deck_id=None):
     try:
         return _get_config_py_preference(key, model_id, deck_id)
     except KeyError:
-        return _get_anki_json_config(key)
+        return preferences_cache.get(key)
 
 
 def update_preferences(jcfg):
     original = mw.col.conf['addons']['morphman'].copy()
     mw.col.conf['addons']['morphman'].update(jcfg)
-    if not mw.col.conf['addons']['morphman'] == original:
+    if mw.col.conf['addons']['morphman'] != original:
         mw.col.setMod()
-
-
-config_py = None
+        global preferences_cache
+        preferences_cache = mw.col.conf['addons']['morphman']
 
 
 def _init_config_py():
@@ -145,7 +150,7 @@ def _jsonConfig():
 
 
 def _get_anki_json_config(key):
-    return _jsonConfig().get(key)
+    return preferences_cache.get(key)
 
 
 def _add_missing_json_config():
