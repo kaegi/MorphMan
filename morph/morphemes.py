@@ -3,6 +3,8 @@ import codecs
 import gzip
 import os
 import pickle as pickle
+import sqlite3
+
 from abc import ABC, abstractmethod
 
 import re
@@ -242,7 +244,7 @@ def altIncludesMorpheme(m, alt):
 
     return m.norm == alt.norm and (m.base == alt.base or m.base_kanji() <= alt.base_kanji())
 
-
+    
 class MorphDb:
     @staticmethod
     def mergeFiles(aPath, bPath, destPath=None,
@@ -302,6 +304,8 @@ class MorphDb:
         f = gzip.open(path, 'wb')
         pickle.dump(self.db, f, -1)
         f.close()
+        if cfg('saveSQLite'):
+            save_db(self.db, path)
 
     def load(self, path):  # FilePath -> m ()
         f = gzip.open(path)
@@ -448,3 +452,134 @@ class MorphDb:
                            for k, v in self.posBreakdown.items())
         return 'Total normalized morphemes: %d\nTotal variations: %d\nBy part of speech:\n%s' % (
             self.kCount, self.vCount, posStr)
+
+
+# sqlite code
+
+def connect_db(path):
+    conn = sqlite3.connect(path)
+    return conn
+
+def drop_table(cur, name):
+    sql = "drop table if exists %s;"%(name);
+    cur.execute(sql)
+
+def create_table(cur, name, fields, extra = ""):
+    sql = "create table %s (%s%s);"%(name,fields, extra)
+    cur.execute(sql)
+
+# helper functions to convert morphman objectsi into sql tuples
+def transcode_item(item):
+    return (item.norm, item.base, item.inflected, item.read, item.pos, item.subPos)
+
+def transcode_location(loc):
+    return (loc.noteId, loc.fieldName, loc.fieldValue, loc.maturity, loc.guid, loc.weight)
+    
+def save_db_all_morphs(cur, db, tname):
+
+    # we cannot use the name 'all' for a table
+    # since it is a reserved word in sql
+    if tname == 'all':
+        # used 'morphs' instead
+        tname = 'morphs'
+
+    # fields  of table to be created
+    fields = "morphid, norm, base, inflected, read, pos, subpos"
+
+    drop_table(cur, tname);
+
+    create_table(cur, tname,fields, ", primary key (morphid)");
+
+    def transcode_item_pair(el):
+        # el is a pair: <the morphid (an int), morph object>
+        # this is a helper function for the map below
+        item = el[1]
+        return (el[0],)+ transcode_item(item)
+
+    # convert the info in the db into list of tuples
+    tuples = map(transcode_item_pair, enumerate(db.keys()))
+
+    # insert them all at once
+    cur.executemany("INSERT INTO %s (%s) VALUES(?,?,?,?,?,?,?);"%(tname,fields), tuples)
+
+def read_db_all_morphs(cur):
+    # read the morphs as a dictionary, where the key is the morph tuple and
+    # the value is the morphid
+    # see save_db_all_morphs for the schema of the morphs relation
+    
+    cur.execute("SELECT * FROM morphs;")
+    rows = cur.fetchall()
+    forDict = map(lambda x: (x[1:], x[0]), rows)
+    return dict(forDict)
+    
+def save_db_locations(cur, db, tname='locations'):
+    # save a morphman db as a table in database
+    # it is usually faster to drop the table than delete/update the tuples
+    # in it
+    drop_table(cur, tname);
+
+    # fields for the table
+    fields = "morphid, noteid, field, fieldvalue, maturity, guid, weight"
+    create_table(cur, tname,fields,
+       ", primary key (morphid, noteid, field), foreign key (morphid) references morphs");
+
+    # we need to know the morphid of each morph
+    # so we can properly reference them in the table locations
+    # (see foreign key constraint in the table create above)
+    # in theory we have this info, but this mades the code
+    # simpler and less error prone and it the time penalty
+    # seems to be minimal
+    
+    # morphs is a dictionary that maps
+    #  transcode_item(morph) to its morphid (int)
+    morphs = read_db_all_morphs(cur)
+
+    # we need to convert the db of morphs into a list of tuples
+    # where the first value is the morphid (stored in the table
+    # we just created)
+    
+    # a morph might have multiple locations
+    # map each morph in db into a list [morphidlist, location info]
+    locationsLists =map(lambda x: # this is a pair of morph and list of locations
+               list(map(lambda y: (morphs[transcode_item(x[0])],)+transcode_location(y),x[1])),
+               db.items())
+
+    # flatten the list... because we have a list of lists (one list per morph)
+    tuples = [val for sublist in locationsLists for val in sublist]
+
+    cur.executemany("INSERT INTO %s (%s) VALUES(?,?,?,?,?,?,?);"%(tname,fields), tuples)
+        
+
+def save_db(db, path):
+    # assume that the directory is already created...
+    # exceptions will handle the errors
+
+    # we need to wedge this code in here, while we refactor the code...
+    # morphman stores info in a bunch of files.
+    #
+    # database with each "file" as a table
+    # so let use the basefilename of the relation as
+    tname = os.path.basename(path)
+    dirName = os.path.dirname(path)
+    # it ends with .db so cut it
+    assert (len(tname)> 3 and tname[-3:] == '.db'), "extension is no longer .db?"
+
+    # name of the morphs to save (all, known, etc.)
+    tname = tname[:-3]
+    dbName = dirName + '/morphman.sqlite'
+
+    conn = connect_db(dbName)
+    with conn:
+        cur = conn.cursor()
+        # it looks like we only need to save the "all" data
+        # the others seem to be subsets of it (based on the
+        # maturity field)
+        if (tname == 'all'):
+            # save morphs
+            save_db_all_morphs(cur, db, tname)
+            # then we need to save the locations
+            # every morph in location is guaranteed in db at this point
+            save_db_locations(cur, db)
+        conn.commit()
+
+    print("Saved to sqlite Tname [%s] dbname [%s]"%(tname, dbName))
