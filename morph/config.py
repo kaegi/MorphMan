@@ -52,7 +52,7 @@ default = {
     # whether to load existing all.db when recalculating or create one from scratch
     'loadAllDb': True,
     'saveDbs': True,     # whether to save all.db, known.db, mature.db, and seen.db
-
+    'saveSQLite': True,  # save the data also in an sqlite database
     # only these can have model overrides
     # whether to modify card Due times based on MorphManIndex. does nothing if relevant notes aren't enabled
     'set due based on mmi': True,
