@@ -12,6 +12,10 @@ sys.path.insert(1, morphDir)
 
 from morphemes import Morpheme, MorphDb
 
+def show_location(loc):
+    return "\t%s;%s;%s;%s;%s"%(loc.noteId, loc.fieldName, loc.maturity, loc.guid, loc.weight)
+
+
 class Dumpster():
     def __init__(self, path=None, parent=None):
         self.db = MorphDb(path)
@@ -20,7 +24,8 @@ class Dumpster():
         print('\t'.join(['norm', 'base', 'inflected', 'reading', 'pos', 'subpos']))
         for m, ls in self.db.db.items():
             print (m.show())
-
+            for l in ls:
+                print("\t",show_location(l))
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:

@@ -1,0 +1,53 @@
+#+STARTUP: showall
+#+STARTUP: lognotestate
+#+TAGS: research(r) uvic(u) today(y) todo(t) cooking(c)
+#+SEQ_TODO: TODO(t) STARTED(s) DEFERRED(r) CANCELLED(c) | WAITING(w) DELEGATED(d) APPT(a) DONE(d)
+#+DRAWERS: HIDDEN STATE
+#+ARCHIVE: %s_done::
+#+TITLE: Improving morphman
+#+CATEGORY: 
+#+OPTIONS: ^:nil
+
+
+This is my attemp to add some features that I would like to see in morphman:
+
+* Sqlite support (Completed)
+
+I want to be able to access morphman data using sqlite. I have created an option called 'saveSQLite'. If True, a sqlite database called morphman.sqlite is created.
+The default of this option is True
+
+The schema of this database is straighforward:
+
+** morphs
+
+this is the table that contains the morphs. The "inflected" field is the actual word.
+
+#+begin_src sql
+CREATE TABLE morphs (morphid, norm, base, inflected, read, pos, subpos, primary key (morphid));
+#+end_src
+
+** location
+
+This are the notes where a given morph is located, and some information about it (some is redundant, such as the actual value of the field, which can be extracted from
+anki's database, but morphan saves it, so it is saved). 
+
+Most fields are self-explanatory. maturity is days to next review (0 for non-reviewed)... mmm, maybe i am missing some words if the review is in less than 1 day... then... what if it is the first day or reviews...
+guid (I don't know), and weight ... mmmm, it is 1 in all cases. I guess it is not used
+
+#+begin_src sql
+CREATE TABLE locations (morphid, noteid, field, fieldvalue, maturity, guid, weight, primary key (morphid, noteid, field), foreign key (morphid) references morphs);
+#+end_src
+
+
+* dump_db (Completed)
+
+Dump the morphman pickled database in a readable format. See scripts/dump_db.py
+
+* Display the name of the mecab dictionary currently in use
+
+This is one of the main challenges of configuring a different mecab: it is hard to know which one is Morphman actually using
+
+* Do not consider leech suspended cards in the counts
+
+I would like morphman to ignore cards that are leeches and are suspended. In other words, if the card is a leech and got suspended, then it should not count towards the morphs I know.
+
