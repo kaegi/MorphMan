@@ -94,6 +94,12 @@ default = {
     'new card merged fill': False,
     # k+1 by default. this mostly is to boost performance of 'next new card feature'
     'new card merged fill min due': 100000,
+
+    # round brackets
+    #Option_IgnoreSlimRoundBracketContents : False,
+    #Option_IgnoreRoundBracketContents : False,
+    #Option_IgnoreBracketContents : False,
+
 }
 # Can override anything. 3rd priority
 profile_overrides = {
