@@ -29,6 +29,15 @@ try:
 except ImportError:
     pass
 
+# not all anki verions have profiling features
+doProfile = False
+try:
+    import cProfile, pstats, io
+    from pstats import SortKey
+except:
+    pass
+
+
 # only for jedi-auto-completion
 assert isinstance(mw, aqt.main.AnkiQt)
 
@@ -105,7 +114,8 @@ def mkAllDb(all_db=None):
         N_enabled_notes += 1
 
         mats = [(0.5 if ivl == 0 and ctype == 1 else ivl) for ivl, ctype in
-                db.execute('select ivl, type from cards where nid = :nid', nid=nid)]
+#                db.execute('select ivl, type from cards where nid = :nid', nid=nid)]
+                db.execute('select ivl, type from cards where nid = ?', nid)]
         if C('ignore maturity'):
             mats = [0] * len(mats)
         ts, alreadyKnownTag = TAG.split(tags), cfg('Tag_AlreadyKnown')
@@ -410,6 +420,8 @@ def updateNotes(allDb):
 
     mw.progress.update(label='Updating anki database...')
     mw.col.db.executemany(
+        # replaced this form with the tuples I create to avoid any unexpected error due to order of
+        # attributes in ds changing
         'update notes set tags=?, flds=?, sfld=?, csum=?, mod=?, usn=? where id=?', ds)
 
     # Now reorder new cards based on MMI
@@ -423,11 +435,11 @@ def updateNotes(allDb):
         if nid in nid2mmi:  # owise it was disabled
             due_ = nid2mmi[nid]
             if due != due_:  # only update cards that have changed
-                ds.append((due_, now,
-                           mw.col.usn(), cid))
+                ds.append((due_, now, mw.col.usn(), cid))
 
     mw.col.db.executemany(
         'update cards set due=?, mod=?, usn=? where id=?', ds)
+
     mw.reset()
 
     printf('Updated notes in %f sec' % (time.time() - t_0))
@@ -436,6 +448,12 @@ def updateNotes(allDb):
 
 
 def main():
+    # begin-------------------
+    global doProfile
+    if doProfile:
+        pr = cProfile.Profile()
+        pr.enable()
+
     # load existing all.db
     mw.progress.start(label='Loading existing all.db', immediate=True)
     t_0 = time.time()
@@ -465,3 +483,12 @@ def main():
 
     # set global allDb
     util._allDb = allDb
+
+    # finish-------------------
+    if doProfile:
+        pr.disable()
+        s = io.StringIO()
+        sortby = SortKey.CUMULATIVE
+        ps = pstats.Stats(pr, stream=s).sort_stats(sortby)
+        ps.print_stats()
+        print(s.getvalue())
