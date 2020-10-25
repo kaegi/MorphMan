@@ -14,11 +14,10 @@ def get_preference(key, model_id=None, deck_id=None):
     except KeyError:
         return _get_anki_json_config(key)
 
-
 def update_preferences(jcfg):
-    original = mw.col.conf['addons']['morphman'].copy()
-    mw.col.conf['addons']['morphman'].update(jcfg)
-    if not mw.col.conf['addons']['morphman'] == original:
+    original = _jsonConfig().copy()
+    _jsonConfig().update(jcfg)
+    if not _jsonConfig() == original:
         mw.col.setMod()
 
 
@@ -138,11 +137,16 @@ def jcfg_default():
     }
 
 
-def _jsonConfig():
-    conf = mw.col.conf['addons']['morphman']
-    assert conf, 'Tried to use jcfgMods before profile loaded'
-    return conf
+# retrieving the configuration using get_config is very expensive operation
+# instead, save it 
+configData = None
 
+def _jsonConfig():
+    global configData 
+    if (configData == None):
+        configData = mw.col.get_config('addons')['morphman']
+        assert configData, 'Tried to use jcfgMods before profile loaded'
+    return configData
 
 def _get_anki_json_config(key):
     return _jsonConfig().get(key)
