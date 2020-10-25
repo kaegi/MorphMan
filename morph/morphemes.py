@@ -125,8 +125,12 @@ class MorphDBUnpickler(pickle.Unpickler):
             return globals()[cname]
         return pickle.Unpickler.find_class(self, cmodule, cname)
 
+# regex to remove brackets
 square_brackets_regex = re.compile(r'\[[^\]]*\]')
-round_brackets_regex = re.compile(r'（[^）]+）')
+# regex to remove wide (UNICODE) parentheses
+round_brackets_regex       = re.compile(r'（[^）]*）') 
+# regex to remove slim () parentheses
+slim_round_brackets_regexp = re.compile(r'\([^\)]*\)')
 
 def getMorphemes(morphemizer, expression, note_tags=None):
     if cfg('Option_IgnoreBracketContents'):
@@ -135,6 +139,9 @@ def getMorphemes(morphemizer, expression, note_tags=None):
     if cfg('Option_IgnoreRoundBracketContents'):
         if round_brackets_regex.search(expression):
             expression = round_brackets_regex.sub('', expression)
+    if cfg('Option_IgnoreSlimRoundBracketContents'):
+        if slim_round_brackets_regex.search(expression):
+            expression = slim_round_brackets_regex.sub('', expression)
 
     # go through all replacement rules and search if a rule (which dictates a string to morpheme conversion) can be
     # applied
