@@ -461,7 +461,7 @@ def connect_db(path):
     return conn
 
 def drop_table(cur, name):
-    sql = "drop table if exists %s;"%(name);
+    sql = "drop table if exists %s;"%(name)
     cur.execute(sql)
 
 def create_table(cur, name, fields, extra = ""):
@@ -486,9 +486,9 @@ def save_db_all_morphs(cur, db, tname):
     # fields  of table to be created
     fields = "morphid, norm, base, inflected, read, pos, subpos"
 
-    drop_table(cur, tname);
+    drop_table(cur, tname)
 
-    create_table(cur, tname,fields, ", primary key (morphid)");
+    create_table(cur, tname,fields, ", primary key (morphid)")
 
     def transcode_item_pair(el):
         # el is a pair: <the morphid (an int), morph object>
@@ -516,12 +516,12 @@ def save_db_locations(cur, db, tname='locations'):
     # save a morphman db as a table in database
     # it is usually faster to drop the table than delete/update the tuples
     # in it
-    drop_table(cur, tname);
+    drop_table(cur, tname)
 
     # fields for the table
     fields = "morphid, noteid, field, fieldvalue, maturity, guid, weight"
     create_table(cur, tname,fields,
-       ", primary key (morphid, noteid, field), foreign key (morphid) references morphs");
+       ", primary key (morphid, noteid, field), foreign key (morphid) references morphs")
 
     # we need to know the morphid of each morph
     # so we can properly reference them in the table locations
