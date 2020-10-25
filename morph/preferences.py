@@ -124,6 +124,7 @@ def jcfg_default():
         # bury/skip all new cards that have a focus morph that was reviewed today/marked as `already known`
         'Option_IgnoreBracketContents': False,
         'Option_IgnoreRoundBracketContents': False,
+        'Option_IgnoreSlimRoundBracketContents': False,
         'Option_ProperNounsAlreadyKnown': False,
         
         # Readability Analyzer options

@@ -212,8 +212,10 @@ class PreferencesDialog(QDialog):
              'Use this option to ignore morpheme grammar types (noun, verb, helper, etc.).'),
             ("Ignore everything contained within [ ] brackets", 'Option_IgnoreBracketContents',
              'Use this option to ignore content such as furigana readings and pitch.'),
-            ("Ignore everything contained within （ ） brackets", 'Option_IgnoreRoundBracketContents',
+            ("Ignore everything contained within ( ) brackets", 'Option_IgnoreSlimRoundBracketContents',
              'Use this option to ignore content such as character names and readings in scripts.'),
+            ("Ignore everything contained within （ ） brackets", 'Option_IgnoreRoundBracketContents',
+             'Use this option to ignore content such as character names and readings in Japanese scripts.'),
             ("Treat proper nouns as known", 'Option_ProperNounsAlreadyKnown',
              'Treat proper nouns as already known when scoring cards (currently only works for Japanese).')
         ]

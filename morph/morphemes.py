@@ -128,6 +128,8 @@ def getMorphemes(morphemizer, expression, note_tags=None):
         expression = replaceBracketContents(expression)
     if cfg('Option_IgnoreRoundBracketContents'):
         expression = replaceRoundBracketContents(expression)
+    if cfg('Option_IgnoreSlimRoundBracketContents'):
+        expression = replaceSlimRoundBracketContents(expression)
 
     # go through all replacement rules and search if a rule (which dictates a string to morpheme conversion) can be
     # applied
@@ -165,6 +167,7 @@ def getMorphemes(morphemizer, expression, note_tags=None):
 
 square_brackets_regex = re.compile(r'\[[^\]]*\]')
 round_brackets_regex = re.compile(r'[（\(][^）\)]+[）\)]')
+slim_round_brackets_regexp = re.compile(r'\([^\)]*\)')
 
 def replaceBracketContents(expression):
     if square_brackets_regex.search(expression):
@@ -174,6 +177,11 @@ def replaceBracketContents(expression):
 def replaceRoundBracketContents(expression):
     if round_brackets_regex.search(expression):
         expression = round_brackets_regex.sub('', expression)
+    return expression
+
+def replaceSlimRoundBracketContents(expression):
+    if slim_round_brackets_regexp.search(expression):
+        expression = slim_round_brackets_regexp.sub('', expression)
     return expression
 
 ################################################################################
