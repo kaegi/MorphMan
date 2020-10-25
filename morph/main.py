@@ -29,6 +29,15 @@ try:
 except ImportError:
     pass
 
+# not all anki verions have profiling features
+doProfile = False
+try:
+    import cProfile, pstats, io
+    from pstats import SortKey
+except:
+    pass
+
+
 # only for jedi-auto-completion
 assert isinstance(mw, aqt.main.AnkiQt)
 
@@ -428,6 +437,7 @@ def updateNotes(allDb):
 
     mw.col.db.executemany(
         'update cards set due=?, mod=?, usn=? where id=?', ds)
+
     mw.reset()
 
     printf('Updated notes in %f sec' % (time.time() - t_0))
@@ -436,6 +446,12 @@ def updateNotes(allDb):
 
 
 def main():
+    # begin-------------------
+    global doProfile
+    if doProfile:
+        pr = cProfile.Profile()
+        pr.enable()
+
     # load existing all.db
     mw.progress.start(label='Loading existing all.db', immediate=True)
     t_0 = time.time()
@@ -465,3 +481,12 @@ def main():
 
     # set global allDb
     util._allDb = allDb
+
+    # finish-------------------
+    if doProfile:
+        pr.disable()
+        s = io.StringIO()
+        sortby = SortKey.CUMULATIVE
+        ps = pstats.Stats(pr, stream=s).sort_stats(sortby)
+        ps.print_stats()
+        print(s.getvalue())
