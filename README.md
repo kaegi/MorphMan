@@ -42,9 +42,9 @@ See the [MorphMan wiki](https://github.com/kaegi/MorphMan/wiki) for more informa
   - pip install pylint
   - pip install PyQt5
   - install Anki source code, for example:
-      - wget https://github.com/dae/anki/archive/2.1.16.tar.gz
-      - tar -xzvf 2.1.16.tar.gz
-      - export PYTHONPATH=./anki-2.1.16
+      - wget https://github.com/dae/anki/archive/2.1.26.tar.gz
+      - tar -xzvf 2.1.26.tar.gz
+      - export PYTHONPATH=./anki-2.1.26/pylib:./anki-2.1.26/qt:./
 - Run tests: `python test.py`
 - Build Qt Developer UI with `python scripts/build_ui.py`
 - Install git commit hook to run tests and pylint
