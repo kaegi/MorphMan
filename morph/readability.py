@@ -585,23 +585,25 @@ class MorphMan(QDialog):
                 if save_frequency_list:
                     self.writeOutput("\n[Saving frequency list to '%s'...]\n" % frequency_list_path)
                     with open(frequency_list_path, 'wt', encoding='utf-8') as f:
+                        f.write("#study_plan_frequency\t1.0\n")
+
                         unique_set = set()
                         # First output morphs according to the plan.
                         for m in learned_morphs:
-                            if m[0].base in unique_set:
+                            if m[0] in unique_set:
                                 continue
-                            unique_set.add(m[0].base)
-                            print(m[0].base + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (m[5], m[2], m[3], m[4]), file=f)
+                            unique_set.add(m[0])
+                            print(m[0].show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (m[5], m[2], m[3], m[4]), file=f)
                         
                         # Followed by all remaining morphs sorted by score.
                         if fill_all_morphs_in_plan:
                             for m in sorted(all_missing_morphs, key=operator.itemgetter(5), reverse=True):
-                                if (m[0].base in unique_set):
+                                if (m[0] in unique_set):
                                     continue
                                 if m[4] < minimum_master_frequency:
                                     continue
-                                unique_set.add(m[0].base)
-                                print(m[0].base + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (m[5], m[2], m[3], m[4]), file=f)
+                                unique_set.add(m[0])
+                                print(m[0].show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (m[5], m[2], m[3], m[4]), file=f)
                 
                 if master_total_instances > 0:
                     master_score = 0

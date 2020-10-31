@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import codecs
+import csv
 import importlib
+import io
 import time
 import itertools
 
@@ -197,16 +199,26 @@ def updateNotes(allDb):
 
     mw.progress.update(label='Loading frequency.txt')
     frequencyListPath = cfg('path_frequency')
-    try:
-        with codecs.open(frequencyListPath, encoding='utf-8') as f:
-            # create a dictionary. key is word, value is its position in the file
-            frequency_list = dict(zip(
-                [line.strip().split('\t')[0] for line in f.readlines()],
-                itertools.count(0)))
-    except FileNotFoundError:
-        frequency_list = []
+    frequency_map = {}
+    frequency_has_morphemes = False
 
-    frequencyListLength = len(frequency_list)
+    try:
+        with io.open(frequencyListPath, encoding='utf-8-sig') as csvfile:
+            csvreader = csv.reader(csvfile, delimiter="\t")
+            rows = [row for row in csvreader]
+
+            if rows[0][0] == "#study_plan_frequency":
+                frequency_has_morphemes = True
+                frequency_map = dict(
+                    zip([Morpheme(row[0], row[1], row[2], row[3], row[4], row[5]) for row in rows[1:]],
+                        itertools.count(0)))
+            else:
+                frequency_map = dict(zip([row[0] for row in rows], itertools.count(0)))
+
+    except FileNotFoundError:
+        pass
+
+    frequencyListLength = len(frequency_map)
 
     if cfg('saveDbs'):
         mw.progress.update(label='Saving seen/known/mature dbs')
@@ -284,16 +296,17 @@ def updateNotes(allDb):
             if focusMorph in priorityDb:
                 isPriority = True
                 usefulness += C('priority.db weight')
-            focusMorphString = focusMorph.base
-            try:
-                focusMorphIndex = frequency_list[focusMorphString]
+            
+            if frequency_has_morphemes:
+                focusMorphIndex = frequency_map.get(focusMorph, -1)
+            else:
+                focusMorphIndex = frequency_map.get(focusMorph.base)
+
+            if focusMorphIndex >= 0:
                 isFrequency = True
 
                 # The bigger this number, the lower mmi becomes
                 usefulness += int(round( frequencyBonus * (1 - focusMorphIndex / frequencyListLength) ))
-
-            except KeyError:
-                pass
 
         # average frequency of unknowns (ie. how common the word is within your collection)
         F_k_avg = F_k // N_k if N_k > 0 else F_k
