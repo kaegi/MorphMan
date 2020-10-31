@@ -88,9 +88,9 @@ class CountingMorphDB:
         count = 0
         ms = self.db[gk]
         for alt, c in ms.items():
-            if c[1]:  # Skip marked morphs
+            if exclude_db != None and c[1]:  # Skip marked morphs
                 continue
-            if exclude_db.matches(alt): # Skip excluded morphs
+            if exclude_db != None and exclude_db.matches(alt): # Skip excluded morphs
                 continue
             if altIncludesMorpheme(alt, m):  # pylint: disable=W1114 #ToDo: verify if pylint is right
                 count += c[0]
@@ -199,6 +199,7 @@ class MorphMan(QDialog):
         word_report_path = os.path.normpath(output_path + '/word_freq_report.txt')
         study_plan_path = os.path.normpath(output_path + '/study_plan.txt')
         readability_log_path = os.path.normpath(output_path + '/readability_log.txt')
+        missing_master_path = os.path.normpath(output_path + '/missing_master_word_report.txt')
 
         log_fp = open(readability_log_path, 'wt', encoding='utf-8')
 
@@ -272,8 +273,6 @@ class MorphMan(QDialog):
                 def parse_text(text):
                     nonlocal i_count, known_count, seen_morphs, known_morphs, all_morphs
                     nonlocal proper_noun_count, line_count, known_line_count, iplus1_line_count, line_morphs
-
-                    log_fp.write('=== parse_text ===\n' + text + '\n')
 
                     parsed_morphs = getMorphemes(morphemizer, stripHTML(text))
                     if len(parsed_morphs) == 0:
@@ -354,13 +353,15 @@ class MorphMan(QDialog):
                     source = Source(file_name, seen_morphs, line_morphs, source_unknown_db)
                     known_percent = 0.0 if len(seen_morphs.keys()) == 0 else 100.0 * len(known_morphs) / len(seen_morphs.keys())
                     readability = 0.0 if i_count == 0 else 100.0 * known_count / i_count
-                    proper_noun_percent = 0.0 if line_count == 0 else 100.0 * proper_noun_count / i_count
+                    proper_noun_percent = 0.0 if i_count == 0 else 100.0 * proper_noun_count / i_count
                     line_percent = 0.0 if line_count == 0 else 100.0 * known_line_count / line_count
                     iplus1_percent = 0.0 if line_count == 0 else 100.0 * iplus1_line_count / line_count
 
-                    self.writeOutput('%s\t%d\t%d\t%0.2f\t%d\t%d\t%0.2f\t%0.2f\t%0.2f\t%0.2f\n' % (
-                        source.name, len(seen_morphs), len(known_morphs), known_percent, i_count, known_count,
-                        readability, proper_noun_percent, line_percent, iplus1_percent))
+                    log_text = '%s\t%d\t%d\t%0.2f\t%d\t%d\t%0.2f\t%0.2f\t%0.2f\t%0.2f\n' % (
+                                source.name, len(seen_morphs), len(known_morphs), known_percent, i_count, known_count,
+                                readability, proper_noun_percent, line_percent, iplus1_percent)
+                    log_fp.write(log_text)
+                    self.writeOutput(log_text)
                     row = self.ui.readabilityTable.rowCount()
                     self.ui.readabilityTable.insertRow(row)
                     self.ui.readabilityTable.setItem(row, 0, QTableWidgetItem(source.name))
@@ -416,19 +417,59 @@ class MorphMan(QDialog):
 
         if save_word_report:
             self.writeOutput("\n[Saving word report to '%s'...]\n" % word_report_path)
+
+            # De-duplicate all morphs.
+            all_db = CountingMorphDB()
+            for m,c in all_morphs.items():
+                all_db.addMorph(Morpheme(m.norm, m.base, m.base, m.read, m.pos, m.subPos), c)
+            
+            master_morphs = {}
+            for ms in all_db.db.values():
+                for m, c in ms.items():
+                    master_morphs[m] = c[0]
+
             with open(word_report_path, 'wt', encoding='utf-8') as f:
                 last_count = 0
                 morph_idx = 0
                 group_idx = 0
                 morph_total = 0.0
-                all_morphs_count = sum(n for n in all_morphs.values())
+                master_morphs_count = sum(n for n in master_morphs.values())
 
-                for m in sorted(all_morphs.items(), key=operator.itemgetter(1), reverse=True):
+                for m in sorted(master_morphs.items(), key=operator.itemgetter(1), reverse=True):
                     if m[1] != last_count:
                         last_count = m[1]
                         group_idx += 1
                     morph_idx += 1
-                    morph_delta = 100.0 * m[1] / all_morphs_count
+                    morph_delta = 100.0 * m[1] / master_morphs_count
+                    morph_total += morph_delta
+                    print('%d\t%s\t%s\t%s\t%s\t%s\t%d\t%d\t%0.8f\t%0.8f matches %d' % (
+                        m[1], m[0].norm, m[0].base, m[0].read, m[0].pos, m[0].subPos, group_idx, morph_idx, morph_delta,
+                        morph_total, known_db.matches(m[0])), file=f)
+
+        if True:
+            self.writeOutput("\n[Saving missing word report to '%s'...]\n" % missing_master_path)
+           
+            master_morphs = {}
+            for ms in master_db.db.values():
+                for m, c in ms.items():
+                    master_morphs[m] = c[0]
+
+            with open(missing_master_path, 'wt', encoding='utf-8') as f:
+                last_count = 0
+                morph_idx = 0
+                group_idx = 0
+                morph_total = 0.0
+                master_morphs_count = sum(n for n in master_morphs.values())
+
+                for m in sorted(master_morphs.items(), key=operator.itemgetter(1), reverse=True):
+                    if known_db.matches(m[0]):
+                        continue
+
+                    if m[1] != last_count:
+                        last_count = m[1]
+                        group_idx += 1
+                    morph_idx += 1
+                    morph_delta = 100.0 * m[1] / master_morphs_count
                     morph_total += morph_delta
                     print('%d\t%s\t%s\t%s\t%s\t%s\t%d\t%d\t%0.8f\t%0.8f matches %d' % (
                         m[1], m[0].norm, m[0].base, m[0].read, m[0].pos, m[0].subPos, group_idx, morph_idx, morph_delta,
