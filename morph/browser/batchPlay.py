@@ -25,6 +25,7 @@ def per(st, n):
 def post(st):
     # TODO: queue all the files in a big list with `loadfile {filename} 1` so you can skip back and forth easily
     # when user chooses, use `get_file_name`
+    av_player.clear_queue_and_maybe_interrupt()
     for vid, nid in st['vid2nid'].items():
         av_player.insert_file(vid)
     st['__reset'] = False
