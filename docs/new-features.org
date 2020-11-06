@@ -9,11 +9,9 @@
 #+OPTIONS: ^:nil
 
 
-This is my attemp to add some features that I would like to see in morphman:
+* Sqlite support
 
-* Sqlite support (Completed)
-
-I want to be able to access morphman data using sqlite. I have created an option called 'saveSQLite'. If True, a sqlite database called morphman.sqlite is created.
+A new option called saveSQLite has been added.. If True, a sqlite database called morphman.sqlite is created.
 The default of this option is True
 
 The schema of this database is straighforward:
