@@ -3,7 +3,7 @@ import re
 
 from .morphemes import Morpheme
 from .deps.zhon.hanzi import characters
-from .mecab_wrapper import getMorphemesMecab
+from .mecab_wrapper import getMorphemesMecab, getMecabIdentity
 from .deps.jieba import posseg
 
 
@@ -68,7 +68,7 @@ class MecabMorphemizer(Morphemizer):
         return getMorphemesMecab(expression)
 
     def getDescription(self):
-        return 'Japanese'
+        return 'Japanese ' + getMecabIdentity()
 
 
 ####################################################################################################

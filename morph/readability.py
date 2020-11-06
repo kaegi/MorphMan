@@ -408,6 +408,8 @@ class MorphMan(QDialog):
                     is_ass = os.path.splitext(file_path)[1].lower() == '.ass'
                     is_srt = os.path.splitext(file_path)[1].lower() == '.srt'
                     measure_readability(file_path, is_ass, is_srt)
+
+            self.writeOutput('\nUsed morphemizer: %s\n' % morphemizer.getDescription())
             mw.progress.finish()
         else:
             self.writeOutput('\nNo files found to process.\n')
