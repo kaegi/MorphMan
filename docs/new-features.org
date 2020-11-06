@@ -9,10 +9,12 @@
 #+OPTIONS: ^:nil
 
 
+There are several new features in morphman, which are documented below:
+
 * Sqlite support
 
-A new option called saveSQLite has been added.. If True, a sqlite database called morphman.sqlite is created.
-The default of this option is True
+A new option called saveSQLite has been added. If True, a sqlite database called morphman.sqlite is created.  The
+default of this option is True
 
 The schema of this database is straighforward:
 
@@ -49,26 +51,70 @@ CREATE TABLE locations (
 #+end_src
 
 
-* dump_db (Completed)
+* dump_db.py
 
-Dump the morphman pickled database in a readable format. See scripts/dump_db.py
+the script scripts/dump_db.py can be used to dump the pickled databases (.db) 
+from the command line. Simply run 
+
+#+begin_src bash
+python3 scripts/dump_db.py <picked-database-file>
+#+end_src
+
+The output is straighforward:
+
+For every moprh, it prints its information and the noteid, fieldname, fieldvalue, maturity (in days), guid and the weight.
+See the documentation of Location (under sqlite3) above
+
+#+begin_example
+norm	base	inflected	reading	pos	subpos
+が	が	が	ガ	助詞	格助詞
+	 	1536650898064;sentenceJPnuke;45;DJgfwS>YL^;1
+	 	1536651281457;sentenceJp;22;o!aP/}@6+5;1
+	 	1536650897940;sentenceJp;259;d>&JX6S_Bd;1
+	 	1487630686913;Expression;277;v-,8t@ro!L;1
+	 	1487630686856;Expression;168;mX1IuArU9S;1
+	 	1489462758391;Expression;103;fd[asSdN3~;1
+	 	1487630687241;Expression;320;gTy?mxI5y];1
+	 	1536651300085;sentenceJp;22;C.!^yST7m8;1
+	 	1536651299859;sentenceJp;200;CcH+l<Y_td;1
+	 	1487630686818;Expression;138;q^h7dzq%1n;1
+	 	1489462776809;Expression;114;g@A7}LZ#;&;1
+	 	1536651300164;sentenceJp;22;fnM.#k3}En;1
+	 	1536650897908;sentenceJp;147;i[{pI;:U>|;1
+	 	1536650898337;sentenceJp;23;ez^L$2ON)M;1
+	 	1489462758327;Expression;198;lQ@.k1)U[8;1
+	 	1487630687083;Expression;288;nD){h(39!I;1
+	 	1489462791313;Expression;54;IR)(c(9dd6;1
+	 	1487630686948;Expression;193;kux^L#r]R4;1
+#+end_example
 
 
+* Display the name of the mecab dictionary currently in use 
 
-* Display the name of the mecab dictionary currently in use
+The readability report will include a line describing the name of the Mecab being used.
 
-This is one of the main challenges of configuring a different mecab: it is hard to know which one is Morphman actually using
+For example, this is an excerpt from the Output Log of the readability analyzer:
 
-* Do not consider leech suspended cards in the counts
+#+begin_example
+...
+Million Yen Women-S1_E12-Emotions_ja.srt	561	487	86.81	1851	1775	95.89	2.97	82.12	11.92
+
+Used morphemizer: Japanese MecabUnidic
+
+[Saving word report to '/Users/dmg/Library/Application Support/Anki2/User 1/dbs/word_freq_report.txt'...]
+...
+#+end_example
+
+
+* Support to ignore narrow parentheses
+
+There is a new option called Option_IgnoreSlimRoundBracketContents, defaults to False
+
+If enabled, text between narrow parentheses () will be ignored. There is a different option for wide (UNICODE)
+parentheses （）called Option_IgnoreRoundBracketContents
+
+
+* Do not consider leech suspended cards in the counts (todo)
 
 I would like morphman to ignore cards that are leeches and are suspended. In other words, if the card is a leech and got suspended, then it should not count towards the morphs I know.
 
-
-* Update to new API
-
-- updated sqlite calls to remove named parameters via a dictionary
-- updated access to new preferences API
-
-* Other minor changes
-
-- added support to ignore also narrow () (in addition to wide parentheses)
