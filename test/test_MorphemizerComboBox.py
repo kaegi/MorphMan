@@ -14,10 +14,10 @@ class TestMorphemizerComboBox(unittest.TestCase):
         combobox = MorphemizerComboBox()
         combobox.setMorphemizers(getAllMorphemizers())
         combobox.setCurrentByName('MecabMorphemizer')
-        self.assertEqual(combobox.currentText(), 'Japanese')
+        self.assertEqual(combobox.currentText(), 'Japanese MorphMan')
 
         current = combobox.getCurrent()
-        self.assertEqual(current.getDescription(), 'Japanese')
+        self.assertEqual(current.getDescription(), 'Japanese MorphMan')
 
     def test_empty_morphemizer_list(self):
         combobox = MorphemizerComboBox()

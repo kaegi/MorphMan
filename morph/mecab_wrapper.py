@@ -38,12 +38,17 @@ is_unidic = True
 
 kanji = r'[㐀-䶵一-鿋豈-頻]'
 
+mecab_source = ""
 
 def extract_unicode_block(unicode_block, string):
     """ extracts and returns all texts from a unicode block from string argument.
         Note that you must use the unicode blocks defined above, or patterns of similar form """
     return re.findall(unicode_block, string)
 
+
+def getMecabIdentity():
+    # identify the mecab being used
+    return mecab_source
 
 def getMorpheme(parts):
     global is_unidic
@@ -147,6 +152,8 @@ def mecab():  # IO MecabProc
     instance is needed.  That's why this function is memoized.
     """
 
+    global mecab_source # make it global so we can query it later
+
     if sys.platform.startswith('win'):
         si = subprocess.STARTUPINFO()
         try:
@@ -164,14 +171,14 @@ def mecab():  # IO MecabProc
     if importlib.util.find_spec('MecabUnidic'):
         try:
             reading = importlib.import_module('MecabUnidic.reading')
-            mecab_source = 'MecabUnidic'
+            mecab_source = 'MecabUnidic from addon MecabUnidic'
         except ModuleNotFoundError:
             pass
     
     if importlib.util.find_spec('13462835'):
         try:
             reading = importlib.import_module('13462835.reading')
-            mecab_source = 'MecabUnidic'
+            mecab_source = 'MecabUnidic from addon 13462835'
         except ModuleNotFoundError:
             pass
 
@@ -179,7 +186,7 @@ def mecab():  # IO MecabProc
     if (not reading) and importlib.util.find_spec('3918629684'):
         try:
             reading = importlib.import_module('3918629684.reading')
-            mecab_source = 'Japanese Support'
+            mecab_source = 'Japanese Support from addon 3918629684'
         except ModuleNotFoundError:
             pass
 
@@ -187,14 +194,14 @@ def mecab():  # IO MecabProc
     if (not reading) and importlib.util.find_spec('MIAJapaneseSupport'):
         try:
             reading = importlib.import_module('MIAJapaneseSupport.reading')
-            mecab_source = 'MIAJapaneseSupport'
+            mecab_source = 'MIAJapaneseSupport from addon MIAJapaneseSupport'
         except ModuleNotFoundError:
             pass
-    # 4nd priority - MIAJapaneseSupport via Anki code (278530045)
+    # 4nd priority - MigakuJapaneseSupport via Anki code (278530045)
     if (not reading) and importlib.util.find_spec('278530045'):
         try:
             reading = importlib.import_module('278530045.reading')
-            mecab_source = '278530045'
+            mecab_source = 'Migaku Japanese support from addon 278530045'
         except ModuleNotFoundError:
             pass
 
@@ -221,6 +228,7 @@ def mecab():  # IO MecabProc
     m = reading.MecabController()
     m.setup()
     # m.mecabCmd[1:4] are assumed to be the format arguments.
+    print('Using morphman: [%s] with command line [%s]' % (mecab_source, m.mecabCmd))
 
     return spawnMecab(m.mecabCmd[:1] + m.mecabCmd[4:], si), mecab_source
 
