@@ -23,7 +23,15 @@ The schema of this database is straighforward:
 this is the table that contains the morphs. The "inflected" field is the actual word.
 
 #+begin_src sql
-CREATE TABLE morphs (morphid, norm, base, inflected, read, pos, subpos, primary key (morphid));
+CREATE TABLE morphs (
+      morphid, 
+      norm, 
+      base, 
+      inflected, 
+      read, 
+      pos, 
+      subpos, 
+      primary key (morphid));
 #+end_src
 
 ** location
@@ -35,13 +43,19 @@ Most fields are self-explanatory. maturity is days to next review (0 for non-rev
 guid (I don't know), and weight ... mmmm, it is 1 in all cases. I guess it is not used
 
 #+begin_src sql
-CREATE TABLE locations (morphid, noteid, field, fieldvalue, maturity, guid, weight, primary key (morphid, noteid, field), foreign key (morphid) references morphs);
+CREATE TABLE locations (
+    morphid, noteid, field, fieldvalue, maturity, guid, weight, 
+    primary key (morphid, noteid, field), 
+    foreign key (morphid) references morphs
+);
 #+end_src
 
 
 * dump_db (Completed)
 
 Dump the morphman pickled database in a readable format. See scripts/dump_db.py
+
+
 
 * Display the name of the mecab dictionary currently in use
 
@@ -51,3 +65,12 @@ This is one of the main challenges of configuring a different mecab: it is hard 
 
 I would like morphman to ignore cards that are leeches and are suspended. In other words, if the card is a leech and got suspended, then it should not count towards the morphs I know.
 
+
+* Update to new API
+
+- updated sqlite calls to remove named parameters via a dictionary
+- updated access to new preferences API
+
+* Other minor changes
+
+- added support to ignore also narrow () (in addition to wide parentheses)
