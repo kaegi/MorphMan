@@ -20,9 +20,7 @@ def update_preferences(jcfg):
     if not _jsonConfig() == original:
         mw.col.setMod()
 
-
 config_py = None
-
 
 def _init_config_py():
     global config_py
