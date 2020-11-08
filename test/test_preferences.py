@@ -1,14 +1,5 @@
 import os
-import sys
 import unittest
-from unittest.mock import MagicMock
-
-# Mock Anki functions used by Preferences
-aqt = MagicMock()
-aqt.mw.pm.profileFolder = MagicMock(return_value='somewhere')
-aqt.mw.col.conf = {'addons': {'morphman': {'already_in_profile': 'yep'}}}
-sys.modules['aqt'] = aqt
-
 
 from morph.preferences import init_preferences, get_preference, update_preferences
 

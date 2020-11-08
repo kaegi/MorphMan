@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import codecs
 import csv
 import importlib
 import io
