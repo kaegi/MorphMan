@@ -13,7 +13,7 @@ import re
 from aqt.utils import tooltip
 
 from . import main
-from .util import mw, addHook, allDb
+from .util import mw, allDb
 from .preferences import get_preference as cfg
 
 assert isinstance(mw, aqt.main.AnkiQt)
@@ -223,6 +223,7 @@ reviewer.Reviewer._shortcutKeys = my_reviewer_shortcutKeys
 
 
 ########## 4 - highlight morphemes using morphHighlight
+
 def highlight(txt: str, field, filter: str, ctx) -> str:
     """When a field is marked with the 'focusMorph' command, we format it by
     wrapping all the morphemes in <span>s with attributes set to its maturity"""
@@ -251,6 +252,7 @@ def highlight(txt: str, field, filter: str, ctx) -> str:
     priority_db = main.MorphDb(cfg('path_priority'), ignoreErrors=True).db
 
     note = ctx.note()
+    tags = note.stringTags()
     filter = getFilter(note)
     if filter is None:
         return txt

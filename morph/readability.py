@@ -173,6 +173,7 @@ class MorphMan(QDialog):
         save_frequency_list = self.ui.frequencyListCheckBox.isChecked()
         save_word_report = self.ui.wordReportCheckBox.isChecked()
         save_study_plan = self.ui.studyPlanCheckBox.isChecked()
+        save_missing_word_report = True
 
         # Save updated preferences
         pref = {}
@@ -446,7 +447,7 @@ class MorphMan(QDialog):
                         m[1], m[0].norm, m[0].base, m[0].read, m[0].pos, m[0].subPos, group_idx, morph_idx, morph_delta,
                         morph_total, known_db.matches(m[0])), file=f)
 
-        if True:
+        if save_missing_word_report:
             self.writeOutput("\n[Saving missing word report to '%s'...]\n" % missing_master_path)
            
             master_morphs = {}

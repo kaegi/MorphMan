@@ -16,9 +16,9 @@ def get_preference(key, model_id=None, deck_id=None):
 
 
 def update_preferences(jcfg):
-    original = mw.col.conf['addons']['morphman'].copy()
-    mw.col.conf['addons']['morphman'].update(jcfg)
-    if not mw.col.conf['addons']['morphman'] == original:
+    original = mw.col.get_config('addons')['morphman'].copy()
+    mw.col.get_config('addons')['morphman'].update(jcfg)
+    if not mw.col.get_config('addons')['morphman'] == original:
         mw.col.setMod()
 
 
@@ -51,9 +51,9 @@ def _get_config_py_preference(key, modelId=None, deckId=None):
 
 
 def _init_anki_json_config():
-    mw.col.conf.setdefault(
-        'addons', {}).setdefault(
-        'morphman', jcfg_default())
+    #mw.col.conf.setdefault(
+    #    'addons', {}).setdefault(
+    #    'morphman', jcfg_default())
 
     # this ensures forward compatibility, because it adds new options in configuration without any notice
     _add_missing_json_config()
@@ -139,7 +139,7 @@ def jcfg_default():
 
 
 def _jsonConfig():
-    conf = mw.col.conf['addons']['morphman']
+    conf = mw.col.get_config('addons')['morphman']
     assert conf, 'Tried to use jcfgMods before profile loaded'
     return conf
 

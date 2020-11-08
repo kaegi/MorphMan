@@ -210,13 +210,13 @@ def mecab():  # IO MecabProc
     if not reading:
         try:
             return spawnMecab(['mecab'], si), 'System'
-        except:
+        except Exception as e:
             raise OSError('''
             Mecab Japanese analyzer could not be found.
             Please install one of the following Anki add-ons:
                  https://ankiweb.net/shared/info/3918629684
                  https://ankiweb.net/shared/info/13462835
-                 https://ankiweb.net/shared/info/278530045''')
+                 https://ankiweb.net/shared/info/278530045''') from e
 
     m = reading.MecabController()
     m.setup()
