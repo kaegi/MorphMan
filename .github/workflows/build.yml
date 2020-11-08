@@ -10,7 +10,7 @@ jobs:
       matrix:
         python_version: ['3.6', '3.7', '3.8']
         os: [ubuntu-latest, macOS-latest, windows-latest]
-        anki: ['2.1.16']
+        anki: ['2.1.26']
     steps:
     - uses: actions/checkout@v1
     - name: Set up Python
@@ -31,12 +31,12 @@ jobs:
     - name: Lint
       shell: bash
       run: |
-        export PYTHONPATH=./anki-${{ matrix.anki }}
+        export PYTHONPATH=./anki-${{ matrix.anki }}/pylib:./anki-${{ matrix.anki }}/qt:./
         pylint . morph test
     - name: Test
       shell: bash
       run: |
         export QT_QPA_PLATFORM=minimal
-        export PYTHONPATH=./anki-${{ matrix.anki }}
+        export PYTHONPATH=./anki-${{ matrix.anki }}/pylib:./anki-${{ matrix.anki }}/qt:./
         python test.py
 
