@@ -57,7 +57,7 @@ def getFilterByMidAndTags(mid, tags):
 def getFilterByTagsAndType(type, tags):
     # type: (str, List[str]) -> Optional[Dict[...]]
     for f in get_preference('Filter'):
-        if f['Type'] is None or type != f['Type']:
+        if type != f['Type'] and f['Type'] is not None: # None means all note types are ok
             continue
         if not set(f['Tags']) <= set(tags):
             continue  # required tags have to be subset of actual tags
