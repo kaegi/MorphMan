@@ -4,6 +4,7 @@ import codecs
 import aqt.main
 
 from anki import sched, schedv2
+from anki import hooks
 from anki.hooks import wrap
 from anki.lang import _
 from aqt import reviewer, dialogs
@@ -222,10 +223,15 @@ reviewer.Reviewer._shortcutKeys = my_reviewer_shortcutKeys
 
 
 ########## 4 - highlight morphemes using morphHighlight
-def highlight(txt, extra, fieldDict, field, mod_field):
+def highlight(txt: str, field, filter: str, ctx) -> str:
     """When a field is marked with the 'focusMorph' command, we format it by
     wrapping all the morphemes in <span>s with attributes set to its maturity"""
-    from .util import getFilterByTagsAndType
+
+    print("morphHighlight filter %s" % filter)
+    if filter != "morphHighlight":
+        return txt
+
+    from .util import getFilter
     from .morphemizer import getMorphemizerByName
     from .morphemes import getMorphemes
 
@@ -243,9 +249,9 @@ def highlight(txt, extra, fieldDict, field, mod_field):
         frequency_list = []
 
     priority_db = main.MorphDb(cfg('path_priority'), ignoreErrors=True).db
-    tags = fieldDict['Tags'].split()
 
-    filter = getFilterByTagsAndType(fieldDict['Type'], tags)
+    note = ctx.note()
+    filter = getFilter(note)
     if filter is None:
         return txt
     morphemizer = getMorphemizerByName(filter['Morphemizer'])
@@ -285,7 +291,4 @@ def highlight(txt, extra, fieldDict, field, mod_field):
         txt = nonSpanSub('(%s)' % m.inflected, repl, txt)
     return txt
 
-
-# note: fmod stands for "field modifier" which look like this: {{field:modifier}}, when a card with a given modifier
-# is shown, a hook corresponding to the modifier will be run.
-addHook('fmod_morphHighlight', highlight)
+hooks.field_filter.append(highlight)
