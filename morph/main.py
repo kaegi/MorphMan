@@ -300,7 +300,7 @@ def updateNotes(allDb):
             if frequency_has_morphemes:
                 focusMorphIndex = frequency_map.get(focusMorph, -1)
             else:
-                focusMorphIndex = frequency_map.get(focusMorph.base)
+                focusMorphIndex = frequency_map.get(focusMorph.base, -1)
 
             if focusMorphIndex >= 0:
                 isFrequency = True
