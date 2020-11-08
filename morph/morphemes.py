@@ -121,16 +121,11 @@ class MorphDBUnpickler(pickle.Unpickler):
             return globals()[cname]
         return pickle.Unpickler.find_class(self, cmodule, cname)
 
-square_brackets_regex = re.compile(r'\[[^\]]*\]')
-round_brackets_regex = re.compile(r'（[^）]+）')
-
 def getMorphemes(morphemizer, expression, note_tags=None):
     if cfg('Option_IgnoreBracketContents'):
-        if square_brackets_regex.search(expression):
-            expression = square_brackets_regex.sub('', expression)
+        expression = replaceBracketContents(expression)
     if cfg('Option_IgnoreRoundBracketContents'):
-        if round_brackets_regex.search(expression):
-            expression = round_brackets_regex.sub('', expression)
+        expression = replaceRoundBracketContents(expression)
 
     # go through all replacement rules and search if a rule (which dictates a string to morpheme conversion) can be
     # applied
@@ -166,6 +161,18 @@ def getMorphemes(morphemizer, expression, note_tags=None):
 
     return ms
 
+square_brackets_regex = re.compile(r'\[[^\]]*\]')
+round_brackets_regex = re.compile(r'[（\(][^）\)]+[）\)]')
+
+def replaceBracketContents(expression):
+    if square_brackets_regex.search(expression):
+        expression = square_brackets_regex.sub('', expression)
+    return expression
+
+def replaceRoundBracketContents(expression):
+    if round_brackets_regex.search(expression):
+        expression = round_brackets_regex.sub('', expression)
+    return expression
 
 ################################################################################
 # Morpheme db manipulation
