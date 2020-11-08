@@ -104,7 +104,7 @@ def mkAllDb(all_db=None):
         N_enabled_notes += 1
 
         mats = [(0.5 if ivl == 0 and ctype == 1 else ivl) for ivl, ctype in
-                db.execute('select ivl, type from cards where nid = :nid', nid=nid)]
+                db.execute('select ivl, type from cards where nid = ?', nid)]
         if C('ignore maturity'):
             mats = [0] * len(mats)
         ts, alreadyKnownTag = TAG.split(tags), cfg('Tag_AlreadyKnown')
