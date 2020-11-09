@@ -40,14 +40,16 @@ def get_preferences():
 
 
 def update_preferences(jcfg):
-    original = _jsonConfig().copy()
-    _jsonConfig().update(jcfg)
-    new_config = _jsonConfig()
-    if not new_config == original:
+    curr_config = _jsonConfig()
+    old_config = curr_config.copy()
+
+    curr_config.update(jcfg)
+    
+    if not curr_config == old_config:
         addons_config = mw.col.get_config('addons')
         if addons_config is None:
             addons_config = {}
-        addons_config['morphman'] = new_config
+        addons_config['morphman'] = curr_config.copy()
         mw.col.set_config('addons', addons_config)
 
 

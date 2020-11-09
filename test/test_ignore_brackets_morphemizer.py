@@ -1,11 +1,13 @@
+import unittest
+
+from test import fake_aqt
 from morph.morphemes import replaceBracketContents
 from morph.preferences import init_preferences, get_preference, update_preferences
-
-import unittest
 
 class TestIgnoreBracketsMorphemizer(unittest.TestCase):
 
     def setUp(self):
+        fake_aqt.init_collection()
         init_preferences()
 
     def test_ignore_square_brackets(self):
@@ -40,3 +42,4 @@ class TestIgnoreBracketsMorphemizer(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
