@@ -2,8 +2,21 @@
 import importlib
 from aqt import mw
 
+# retrieving the configuration using get_config is very expensive operation
+# instead, save it 
+config_data = None
+config_py = None
 
 def init_preferences():
+    '''Called when new profiles are loaded'''
+
+    # Reset the cached configs.
+    global config_data, config_py
+
+    config_data = None
+    config_py = None
+
+    # Init
     _init_config_py()
     _init_anki_json_config()
 
@@ -14,14 +27,28 @@ def get_preference(key, model_id=None, deck_id=None):
     except KeyError:
         return _get_anki_json_config(key)
 
+
+def get_preferences():
+    assert mw.col, 'Tried to use preferences with no collection loaded'
+    addons_config = mw.col.get_config('addons')
+    if addons_config == None or 'morphman' not in addons_config:
+        # No config yet in the the collection.
+        prefs = {}
+    else:
+        prefs = addons_config['morphman']
+    return prefs
+
+
 def update_preferences(jcfg):
     original = _jsonConfig().copy()
     _jsonConfig().update(jcfg)
-    if not _jsonConfig() == original:
-        mw.col.setMod()
-
-
-config_py = None
+    new_config = _jsonConfig()
+    if not new_config == original:
+        addons_config = mw.col.get_config('addons')
+        if addons_config is None:
+            addons_config = {}
+        addons_config['morphman'] = new_config
+        mw.col.set_config('addons', addons_config)
 
 
 def _init_config_py():
@@ -50,10 +77,6 @@ def _get_config_py_preference(key, modelId=None, deckId=None):
 
 
 def _init_anki_json_config():
-    #mw.col.conf.setdefault(
-    #    'addons', {}).setdefault(
-    #    'morphman', jcfg_default())
-
     # this ensures forward compatibility, because it adds new options in configuration without any notice
     _add_missing_json_config()
 
@@ -137,16 +160,11 @@ def jcfg_default():
         'Option_SourceScoreMultiplier': 60.0,      # Morpheme score formula parameter.
     }
 
-# retrieving the configuration using get_config is very expensive operation
-# instead, save it 
-configData = None
-
 def _jsonConfig():
-    global configData 
-    if (configData == None):
-        configData = mw.col.get_config('addons')['morphman']
-        assert configData, 'Tried to use jcfgMods before profile loaded'
-    return configData
+    global config_data 
+    if config_data is None:
+        config_data = get_preferences()
+    return config_data
 
 def _get_anki_json_config(key):
     return _jsonConfig().get(key)
