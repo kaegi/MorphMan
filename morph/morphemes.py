@@ -25,14 +25,15 @@ except ImportError:
 # need some fallbacks if not running from anki and thus morph.util isn't available
 try:
     from .util import errorMsg
-    from .preferences import get_preference as cfg
 except ImportError:
     def errorMsg(msg):
         pass
 
+try:
+    from .preferences import get_preference as cfg
+except:
     def cfg(s):
         return None
-
 
 def char_set(start, end):
     # type: (str, str) -> set
@@ -124,12 +125,7 @@ class MorphDBUnpickler(pickle.Unpickler):
         return pickle.Unpickler.find_class(self, cmodule, cname)
 
 def getMorphemes(morphemizer, expression, note_tags=None):
-    if cfg('Option_IgnoreBracketContents'):
-        expression = replaceBracketContents(expression)
-    if cfg('Option_IgnoreRoundBracketContents'):
-        expression = replaceRoundBracketContents(expression)
-    if cfg('Option_IgnoreSlimRoundBracketContents'):
-        expression = replaceSlimRoundBracketContents(expression)
+    expression = replaceBracketContents(expression)
 
     # go through all replacement rules and search if a rule (which dictates a string to morpheme conversion) can be
     # applied
@@ -170,18 +166,18 @@ round_brackets_regex = re.compile(r'（[^）]*）')
 slim_round_brackets_regexp = re.compile(r'\([^\)]*\)')
 
 def replaceBracketContents(expression):
-    if square_brackets_regex.search(expression):
-        expression = square_brackets_regex.sub('', expression)
-    return expression
+    if cfg('Option_IgnoreBracketContents'):
+        if square_brackets_regex.search(expression):
+            expression = square_brackets_regex.sub('', expression)
 
-def replaceRoundBracketContents(expression):
-    if round_brackets_regex.search(expression):
-        expression = round_brackets_regex.sub('', expression)
-    return expression
+    if cfg('Option_IgnoreRoundBracketContents'):
+        if round_brackets_regex.search(expression):
+            expression = round_brackets_regex.sub('', expression)
 
-def replaceSlimRoundBracketContents(expression):
-    if slim_round_brackets_regexp.search(expression):
-        expression = slim_round_brackets_regexp.sub('', expression)
+    if cfg('Option_IgnoreSlimRoundBracketContents'):
+        if slim_round_brackets_regexp.search(expression):
+            expression = slim_round_brackets_regexp.sub('', expression)
+
     return expression
 
 ################################################################################
