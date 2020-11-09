@@ -1,5 +1,6 @@
 from morph.morphemes import replaceBracketContents
 from morph.morphemes import replaceRoundBracketContents
+from morph.morphemes import replaceSlimRoundBracketContents
 import unittest
 
 class TestIgnoreBracketsMorphemizer(unittest.TestCase):
@@ -12,7 +13,7 @@ class TestIgnoreBracketsMorphemizer(unittest.TestCase):
     def test_ignore_round_brackets(self):
         sentence_1 = "(こんにちは)私の名前は(シャン)です。"
         case_1 = "私の名前はです。"
-        self.assertEqual(replaceRoundBracketContents(sentence_1), case_1)
+        self.assertEqual(replaceSlimRoundBracketContents(sentence_1), case_1)
 
     def test_ignore_round_brackets_japanese(self):
         sentence_1 = "（こんにちは）私の名前は（シャン）です。"

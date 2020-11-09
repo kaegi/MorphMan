@@ -166,7 +166,7 @@ def getMorphemes(morphemizer, expression, note_tags=None):
     return ms
 
 square_brackets_regex = re.compile(r'\[[^\]]*\]')
-round_brackets_regex = re.compile(r'[（\(][^）\)]+[）\)]')
+round_brackets_regex = re.compile(r'（[^）]*）')
 slim_round_brackets_regexp = re.compile(r'\([^\)]*\)')
 
 def replaceBracketContents(expression):
