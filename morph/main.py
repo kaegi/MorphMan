@@ -127,10 +127,10 @@ def mkAllDb(all_db=None):
                 continue
             except TypeError:
                 mname = mw.col.models.get(mid)['name']
-                errorMsg('Failed to get field "{field}" from a note of model "{model}". Please fix your config.py '
-                         'file to match your collection appropriately and ignore the following error.'.format(
+                errorMsg('Failed to get field "{field}" from a note of model "{model}". Please fix your Note Filters '
+                         'under MorphMan > Preferences to match your collection appropriately.'.format(
                              model=mname, field=fieldName))
-                raise
+                return
 
             loc = fidDb.get((nid, guid, fieldName), None)
             if not loc:
