@@ -47,6 +47,9 @@ def extract_unicode_block(unicode_block, string):
 
 
 def getMecabIdentity():
+    # Initialize mecab before we get the identity
+    m = mecab()
+
     # identify the mecab being used
     return mecab_source
 
