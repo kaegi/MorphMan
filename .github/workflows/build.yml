@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         python_version: ['3.7']
-        os: [ubuntu-latest, macOS-latest]
+        os: [ubuntu-latest, macOS-latest, windows-latest]
         anki: ['2.1.35']
     steps:
     - uses: actions/checkout@v1
@@ -17,27 +17,36 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version:  ${{ matrix.python_version }}
-    - name: Install wget
-      run: choco install wget
-      if: runner.os == 'Windows'
     - name: Install dependencies
       shell: bash
       run: |
         python -m pip install --upgrade pip
         python -m pip install virtualenv
         python -m virtualenv pyenv
-        source pyenv/bin/activate
+        if [ "${{ runner.os }}" = "Windows" ]; then
+          source pyenv/Scripts/activate
+        else
+          source pyenv/bin/activate
+        fi
         python -m pip install aqt==${{ matrix.anki }} anki==${{ matrix.anki }} pyqtwebengine pylint
     - name: Lint
       shell: bash
       run: |
-        source pyenv/bin/activate
+        if [ "${{ runner.os }}" = "Windows" ]; then
+          source pyenv/Scripts/activate
+        else
+          source pyenv/bin/activate
+        fi
         export PYTHONPATH=./
         python -m pylint . morph test
     - name: Test
       shell: bash
       run: |
-        source pyenv/bin/activate
+        if [ "${{ runner.os }}" = "Windows" ]; then
+          source pyenv/Scripts/activate
+        else
+          source pyenv/bin/activate
+        fi
         export QT_QPA_PLATFORM=minimal
         export PYTHONPATH=./
         python test.py
