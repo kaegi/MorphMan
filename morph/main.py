@@ -162,11 +162,25 @@ group by n.id, mid, flds, guid, tags
 
         C = partial(cfg, model_id=mid)
 
-        note = mw.col.getNote(nid)
-        note_cfg = getFilter(note)
-        if note_cfg is None:
+
+        mid_cfg = getFilterByMidAndTags(mid, tags)
+        if mid_cfg is None:
             continue
-        morphemizer = getMorphemizerByName(note_cfg['Morphemizer'])
+
+# this is the old code. Very ineficient becuase it retrieves each note
+# but we do not need the note. What we need is to inspect the model
+# which we already have from the query above
+#
+# uncomment the code below to test
+#
+#        note = mw.col.getNote(nid)
+#        note_cfg = getFilter(note)
+#        if note_cfg is None:
+#            continue
+#        oldName = note_cfg['Morphemizer']
+        mName = mid_cfg['Morphemizer']
+#        assert(mName == oldName)
+        morphemizer = getMorphemizerByName(mName)
 
         N_enabled_notes += 1
 
@@ -183,7 +197,7 @@ group by n.id, mid, flds, guid, tags
         if alreadyKnownTag in ts:
             maxmat = max[maxmat, [C('threshold_mature') + 1]]
 
-        for fieldName in note_cfg['Fields']:
+        for fieldName in mid_cfg['Fields']:
             try:  # if doesn't have field, continue
                 fieldValue = extractFieldData(fieldName, flds, mid)
             except KeyError:
