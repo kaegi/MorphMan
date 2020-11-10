@@ -4,6 +4,7 @@ import importlib
 import io
 import time
 import itertools
+import operator
 
 from anki.tags import TagManager
 
@@ -82,6 +83,7 @@ def setField(mid, fs, k, v):  # nop if field DNE
         fs[idx] = v
 
 
+
 def mkAllDb(all_db=None):
     from . import config
     importlib.reload(config)
@@ -111,8 +113,20 @@ def mkAllDb(all_db=None):
     included_types, include_all = getReadEnabledModels()
     included_mids = [m['id'] for m in mw.col.models.all() if include_all or m['name'] in included_types]
 
-    query = 'select id, mid, flds, guid, tags from notes WHERE mod > %d AND mid IN (%s)' % (last_updated, ','.join([str(m) for m in included_mids]))
-    query_results = db.execute(query)
+# in the query below I use coalesce to make sure that the max is always not null
+# but I think there is always at least one card of each note
+# so perhaps the left join is not needed
+#    in that case the coalesce is also unnecessary. i guess it does not harm
+# to include it
+    query = '''
+select n.id, mid, flds, guid, tags, 
+coalesce(max(case when ivl=0 and c.type=1 then 0.5 else ivl end),0) as maxmat 
+from notes n left join cards c on (n.id = c.nid)
+WHERE mod > ? AND mid IN (?)'
+group by n.id, mid, flds, guid, tags
+'''
+#    query = 'select id, mid, flds, guid, tags from notes WHERE mod > %d AND mid IN (%s)' % (last_updated, ','.join([str(m) for m in included_mids]))
+    query_results = db.execute(query, last_updated, ','.join([str(m) for m in included_mids)
     N_notes = len(query_results)
 
     mw.progress.finish()
@@ -120,7 +134,29 @@ def mkAllDb(all_db=None):
                       max=N_notes,
                       immediate=True)
 
-    for i, (nid, mid, flds, guid, tags) in enumerate(query_results):
+#    def noteAccumulate(l):
+#        # do a group by of the list of tuples (returned by sqlite)
+#        # using the first 5 attributes,
+#        #    concatenating into a list the 6th attribute 
+#        it = itertools.groupby(l, operator.itemgetter(0,1,2,3,4))
+#        for key, subiter in it:
+#            yield key, [] + list( item[5] for item in subiter)
+#
+#    # do one single query to retrieve the info of each note, and the mats for all its cards
+#    # this avoids having to issue a query per note to compute its mats
+#    # to avoid major changes to the loop below, do a group-by  in python (see noteAccumulate)
+#
+#    allNotes  = db.execute('''
+#select n.id, mid, flds, guid, tags, 
+#case when ivl=0 and c.type=1 then 0.5 else ivl end  
+#from notes n left join cards c on (n.id = c.nid)
+#''')
+#    
+#    for i, (noteData, mats) in enumerate(noteAccumulate(allNotes)):
+#       (nid, mid, flds, guid, tags) = noteData
+
+    for i, (nid, mid, flds, guid, tags, maxmat) in enumerate(query_results):
+                                                             
         if i % 500 == 0:
             mw.progress.update(value=i)
 
@@ -134,13 +170,18 @@ def mkAllDb(all_db=None):
 
         N_enabled_notes += 1
 
-        mats = [(0.5 if ivl == 0 and ctype == 1 else ivl) for ivl, ctype in
-                db.execute('select ivl, type from cards where nid = ?', nid)]
+# uncomment the code below to verify that the new processing works
+#        oldMats = [(0.5 if ivl == 0 and ctype == 1 else ivl) for ivl, ctype in
+#                db.execute('select ivl, type from cards where nid = ?', nid)]
+#        oldMats.sort()
+#        mats.sort()
+#        assert(mats == oldMats)
+          
         if C('ignore maturity'):
-            mats = [0] * len(mats)
+            maxmat = 0
         ts, alreadyKnownTag = TAG.split(tags), cfg('Tag_AlreadyKnown')
         if alreadyKnownTag in ts:
-            mats += [C('threshold_mature') + 1]
+            maxmat = max[maxmat, [C('threshold_mature') + 1]]
 
         for fieldName in note_cfg['Fields']:
             try:  # if doesn't have field, continue
@@ -153,8 +194,8 @@ def mkAllDb(all_db=None):
                          'under MorphMan > Preferences to match your collection appropriately.'.format(
                              model=mname, field=fieldName))
                 return
-
-            maturity = max(mats) if mats else 0
+            assert(maxmat, "Maxmat should not be None")
+            maturity = maxmat
             loc = fidDb.get((nid, guid, fieldName), None)
             if not loc:
                 loc = AnkiDeck(nid, fieldName, fieldValue, guid, maturity)
