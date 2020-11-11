@@ -52,7 +52,8 @@ class PreferencesDialog(QDialog):
         self.tableModel.setHeaderData(1, Qt.Horizontal, "Tags")
         self.tableModel.setHeaderData(2, Qt.Horizontal, "Fields")
         self.tableModel.setHeaderData(3, Qt.Horizontal, "Morphemizer")
-        self.tableModel.setHeaderData(4, Qt.Horizontal, "Modify?")
+        self.tableModel.setHeaderData(4, Qt.Horizontal, "Read?")
+        self.tableModel.setHeaderData(5, Qt.Horizontal, "Modify?")
 
         rowData = get_preference('Filter')
         self.tableModel.setRowCount(len(rowData))
@@ -198,6 +199,10 @@ class PreferencesDialog(QDialog):
         vbox.addLayout(grid)
         grid.setContentsMargins(20, 0, 0, 0)
         optionList = [
+            ("Recompute my database (all.db) when MorphMan's preferences are changed", 'Option_RecomputeAllDbOnChange',
+             "Changnig parsing options such as ignoring grammar, ignoring brackets, or using different dictionaries\n"
+             "require re-building your database to fully take effect.  Enable this to have that done automatically\n"
+             "when settings change."),
             ("Skip comprehension cards", 'Option_SkipComprehensionCards',
              'Note that only has mature words (optimal for sentence learning but not for acquiring new vocabulary).'),
             ("Skip cards with fresh vocabulary", 'Option_SkipFreshVocabCards',
@@ -265,15 +270,20 @@ class PreferencesDialog(QDialog):
         morphemizerComboBox.setMorphemizers(getAllMorphemizers())
         morphemizerComboBox.setCurrentByName(data['Morphemizer'])
 
-        item = QStandardItem()
-        item.setCheckable(True)
-        item.setCheckState(Qt.Checked if data['Modify'] else Qt.Unchecked)
+        readItem = QStandardItem()
+        readItem.setCheckable(True)
+        readItem.setCheckState(Qt.Checked if data.get('Read', True) else Qt.Unchecked)
+
+        modifyItem = QStandardItem()
+        modifyItem.setCheckable(True)
+        modifyItem.setCheckState(Qt.Checked if data.get('Modify', True) else Qt.Unchecked)
 
         rowGui['modelComboBox'] = modelComboBox
         rowGui['tagsEntry'] = QLineEdit(', '.join(data['Tags']))
         rowGui['fieldsEntry'] = QLineEdit(', '.join(data['Fields']))
         rowGui['morphemizerComboBox'] = morphemizerComboBox
-        rowGui['modifyCheckBox'] = item
+        rowGui['readCheckBox'] = readItem
+        rowGui['modifyCheckBox'] = modifyItem
 
         def setColumn(col, widget):
             self.tableView.setIndexWidget(self.tableModel.index(rowIndex, col), widget)
@@ -282,7 +292,8 @@ class PreferencesDialog(QDialog):
         setColumn(1, rowGui['tagsEntry'])
         setColumn(2, rowGui['fieldsEntry'])
         setColumn(3, rowGui['morphemizerComboBox'])
-        self.tableModel.setItem(rowIndex, 4, item)
+        self.tableModel.setItem(rowIndex, 4, readItem)
+        self.tableModel.setItem(rowIndex, 5, modifyItem)
 
         if len(self.rowGui) == rowIndex:
             self.rowGui.append(rowGui)
@@ -306,6 +317,7 @@ class PreferencesDialog(QDialog):
             x for x in row_gui['fieldsEntry'].text().split(', ') if x]
 
         filter['Morphemizer'] = row_gui['morphemizerComboBox'].getCurrent().getName()
+        filter['Read'] = row_gui['readCheckBox'].checkState() != Qt.Unchecked
         filter['Modify'] = row_gui['modifyCheckBox'].checkState() != Qt.Unchecked
 
         return filter

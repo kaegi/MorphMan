@@ -17,8 +17,8 @@ from . import stats
 from . import util
 from .morphemes import MorphDb, AnkiDeck, getMorphemes
 from .morphemizer import getMorphemizerByName
-from .util import printf, mw, errorMsg, getFilter, getFilterByMidAndTags
-from .preferences import get_preference as cfg
+from .util import printf, mw, errorMsg, getFilter, getFilterByMidAndTags, getReadEnabledModels, getModifyEnabledModels
+from .preferences import get_preference as cfg, get_preferences
 from .util_external import memoize
 
 # hack: typing is compile time anyway, so, nothing bad happens if it fails, the try is to support anki < 2.1.16
@@ -86,19 +86,44 @@ def mkAllDb(all_db=None):
     from . import config
     importlib.reload(config)
     t_0, db, TAG = time.time(), mw.col.db, mw.col.tags
-    N_notes = db.scalar('select count() from notes')
+    mw.progress.start(label='Prep work for all.db creation',
+                      immediate=True)
     # for providing an error message if there is no note that is used for processing
     N_enabled_notes = 0
-    mw.progress.start(label='Prep work for all.db creation',
-                      max=N_notes, immediate=True)
+
 
     if not all_db:
         all_db = MorphDb()
+
+    last_updated = all_db.meta.get('last_updated', 0)
+    last_preferences = all_db.meta.get('last_preferences', {})
+
+    # Recompute everything if preferences changed.
+    if not last_preferences == get_preferences():
+        print("Preferences changed.  Recomputing all_db...")
+        last_updated = 0
+        if cfg('Option_RecomputeAllDbOnChange'):
+            # discard old all_db
+            print("Discarding old all.db...")
+            all_db = MorphDb()
+            last_preferences = {}
+
     fidDb = all_db.fidDb()
     locDb = all_db.locDb(recalc=False)  # fidDb() already forces locDb recalc
 
     mw.progress.update(label='Generating all.db data')
-    for i, (nid, mid, flds, guid, tags) in enumerate(db.execute('select id, mid, flds, guid, tags from notes')):
+
+    included_types, include_all = getReadEnabledModels()
+    included_mids = [m['id'] for m in mw.col.models.all() if include_all or m['name'] in included_types]
+
+    query = 'select id, mid, flds, guid, tags from notes WHERE mod > %d AND mid IN (%s)' % (last_updated, ','.join([str(m) for m in included_mids]))
+    query_results = db.execute(query)
+
+    N_notes = len(query_results)
+    mw.progress.update(label='Generating all.db data',
+                      max=N_notes)
+
+    for i, (nid, mid, flds, guid, tags) in enumerate(query_results):
         if i % 500 == 0:
             mw.progress.update(value=i)
 
@@ -132,40 +157,36 @@ def mkAllDb(all_db=None):
                              model=mname, field=fieldName))
                 return
 
+            maturity = max(mats) if mats else 0
             loc = fidDb.get((nid, guid, fieldName), None)
             if not loc:
-                loc = AnkiDeck(nid, fieldName, fieldValue, guid, mats)
+                loc = AnkiDeck(nid, fieldName, fieldValue, guid, maturity)
                 ms = getMorphemes(morphemizer, fieldValue, ts)
                 if ms:  # TODO: this needed? should we change below too then?
                     locDb[loc] = ms
             else:
                 # mats changed -> new loc (new mats), move morphs
-                if loc.fieldValue == fieldValue and loc.maturities != mats:
-                    newLoc = AnkiDeck(nid, fieldName, fieldValue, guid, mats)
+                if loc.fieldValue == fieldValue and loc.maturity != maturity:
+                    newLoc = AnkiDeck(nid, fieldName, fieldValue, guid, maturity)
                     locDb[newLoc] = locDb.pop(loc)
                 # field changed -> new loc, new morphs
                 elif loc.fieldValue != fieldValue:
-                    newLoc = AnkiDeck(nid, fieldName, fieldValue, guid, mats)
+                    newLoc = AnkiDeck(nid, fieldName, fieldValue, guid, maturity)
                     ms = getMorphemes(morphemizer, fieldValue, ts)
                     locDb.pop(loc)
                     locDb[newLoc] = ms
-        if i % 100 == 0:
-            mw.progress.update(value=i, label='Creating all.db objects')
 
-    if N_enabled_notes == 0:
-        mw.progress.finish()
-        errorMsg('There is no card that can be analyzed or be moved. Add cards or (re-)check your configuration under '
-                 '"Tools -> MorhpMan Preferences" or in "Anki/addons/morph/config.py" for mistakes.')
-        return None
+    printf('Processed %d notes in %f sec' % (N_notes, time.time() - t_0))
 
-    printf('Processed all %d notes in %f sec' % (N_notes, time.time() - t_0))
-
+    mw.progress.update(label='Creating all.db objects')
     all_db.clear()
     all_db.addFromLocDb(locDb)
+    all_db.meta['last_updated'] = int(time.time())
+    all_db.meta['last_preferences'] = get_preferences()
     if cfg('saveDbs'):
         mw.progress.update(label='Saving all.db to disk')
         all_db.save(cfg('path_all'))
-        printf('Processed all %d notes + saved all.db in %f sec' %
+        printf('Processed %d notes + saved all.db in %f sec' %
                (N_notes, time.time() - t_0))
     mw.progress.finish()
     return all_db
@@ -185,8 +206,7 @@ def updateNotes(allDb):
 
     TAG = mw.col.tags  # type: TagManager
     ds, nid2mmi = [], {}
-    N_notes = db.scalar('select count() from notes')
-    mw.progress.start(label='Updating data', max=N_notes, immediate=True)
+    mw.progress.start(label='Updating data', immediate=True)
     fidDb = allDb.fidDb(recalc=True)
     loc_db = allDb.locDb(recalc=False)  # type: Dict[Location, Set[Morpheme]]
 
@@ -234,8 +254,6 @@ def updateNotes(allDb):
         knownDb.save(cfg('path_known'))
         matureDb.save(cfg('path_mature'))
 
-    mw.progress.update(label='Updating notes')
-
     # prefetch cfg for fields
     field_focus_morph = cfg('Field_FocusMorph')
     field_unknown_count = cfg('Field_UnknownMorphCount')
@@ -246,7 +264,17 @@ def updateNotes(allDb):
     field_unknown_freq = cfg('Field_UnknownFreq')
     field_focus_morph_pos = cfg("Field_FocusMorphPos")
 
-    for i, (nid, mid, flds, guid, tags) in enumerate(db.execute('select id, mid, flds, guid, tags from notes')):
+    included_types, include_all = getModifyEnabledModels()
+    included_mids = [m['id'] for m in mw.col.models.all() if include_all or m['name'] in included_types]
+
+    query = 'select id, mid, flds, guid, tags from notes WHERE mid IN (%s)' % (','.join([str(m) for m in included_mids]))
+    query_results = db.execute(query)
+
+    N_notes = len(query_results)
+    mw.progress.update(label='Updating notes',
+                       max=N_notes)
+
+    for i, (nid, mid, flds, guid, tags) in enumerate(query_results):
         ts = TAG.split(tags)
         if i % 500 == 0:
             mw.progress.update(value=i)
