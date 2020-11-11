@@ -64,6 +64,29 @@ def getFilterByTagsAndType(type, tags):
         return f
     return None
 
+def getReadEnabledModels():
+    included_types = set()
+    include_all = False
+    for f in get_preference('Filter'):
+        if f.get('Read', True):
+            if f['Type'] is not None:
+                included_types.add(f['Type'])
+            else:
+                include_all = True
+                break
+    return included_types, include_all
+
+def getModifyEnabledModels():
+    included_types = set()
+    include_all = False
+    for f in get_preference('Filter'):
+        if f.get('Modify', True):
+            if f['Type'] is not None:
+                included_types.add(f['Type'])
+            else:
+                include_all = True
+                break
+    return included_types, include_all
 
 ###############################################################################
 # Fact browser utils

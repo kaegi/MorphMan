@@ -228,15 +228,15 @@ class TextFile(Location):
 class AnkiDeck(Location):
     """ This maps to/contains information for one note and one relevant field like u'Expression'. """
 
-    def __init__(self, noteId, fieldName, fieldValue, guid, maturities, weight=1):
+    def __init__(self, noteId, fieldName, fieldValue, guid, maturity, weight=1):
         super(AnkiDeck, self).__init__(weight)
         self.noteId = noteId
         self.fieldName = fieldName  # for example u'Expression'
         self.fieldValue = fieldValue  # for example u'それだけじゃない'
         self.guid = guid
         # list of intergers, one for every card -> containg the intervals of every card for this note
-        self.maturities = maturities
-        self.maturity = max(maturities) if maturities else 0
+        self.maturities = None
+        self.maturity = maturity
         self.weight = weight
 
     def show(self):
@@ -273,6 +273,7 @@ class MorphDb:
     def __init__(self, path=None, ignoreErrors=False):  # Maybe Filepath -> m ()
         self.db = {}  # type: Dict[Morpheme, Set[Location]]
         self.groups = {}  # Map NormMorpheme {Set(Morpheme)}
+        self.meta = {}
         if path:
             try:
                 self.load(path)
@@ -306,7 +307,11 @@ class MorphDb:
         if not os.path.exists(par):
             os.makedirs(par)
         f = gzip.open(path, 'wb')
-        pickle.dump(self.db, f, -1)
+
+        data = {'db': self.db,
+                'meta': self.meta
+                }
+        pickle.dump(data, f, -1)
         f.close()
         if cfg('saveSQLite'):
             save_db(self.db, path)
@@ -314,7 +319,12 @@ class MorphDb:
     def load(self, path):  # FilePath -> m ()
         f = gzip.open(path)
         try:
-            db = MorphDBUnpickler(f).load()
+            data = MorphDBUnpickler(f).load()
+            if 'meta' in data:
+                self.meta = data['meta']
+                db = data['db']
+            else:
+                db = data
             for m, locs in db.items():
                 self.addMLs1(m, locs)
         except ModuleNotFoundError as e:
@@ -356,6 +366,7 @@ class MorphDb:
     def clear(self):  # m ()
         self.db = {}
         self.groups = {}
+        self.meta = {}
 
     def addMLs(self, mls):  # [ (Morpheme,Location) ] -> m ()
         for m, loc in mls:

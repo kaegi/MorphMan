@@ -111,9 +111,9 @@ def jcfg_default():
         'Filter': [
             # note type (None means all note types), list of tags, list of morph fields for this note type -> morphemizer, analyze only or modify?
             {'Type': 'SubtitleMemorize', 'TypeId': None, 'Tags': ['japanese'], 'Fields': ['Expression'],
-             'Morphemizer': 'MecabMorphemizer', 'Modify': True},
+             'Morphemizer': 'MecabMorphemizer', 'Read': True, 'Modify': True},
             {'Type': 'SubtitleMemorize', 'TypeId': None, 'Tags': [], 'Fields': ['Expression'],
-             'Morphemizer': 'SpaceMorphemizer', 'Modify': True},
+             'Morphemizer': 'SpaceMorphemizer', 'Read': True, 'Modify': True},
         ],
 
         # This field lets you dictate string-to-morpheme conversions. This is useful for cases
@@ -139,6 +139,8 @@ def jcfg_default():
         # morphemizer will only see both parts of the rest-sentence separately. A morphemizer (e.g. a japanese word segmenter)
         # that heavily relies on context and grammar might not produce the best results for "broken" sentences.
         'ReplaceRules': [],
+
+        'Option_RecomputeAllDbOnChange': False, # recompute all.db when options changed?
 
         # only set necessary tags or set all tags?
         'Option_SetNotRequiredTags': True,
