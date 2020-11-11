@@ -42,7 +42,7 @@ class PreferencesDialog(QDialog):
         self.frame1.setLayout(vbox)
         vbox.setContentsMargins(0, 20, 0, 0)
 
-        self.tableModel = QStandardItemModel(0, 5)
+        self.tableModel = QStandardItemModel(0, 6)
         self.tableView = QTableView()
         self.tableView.setModel(self.tableModel)
         self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
