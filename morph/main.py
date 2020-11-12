@@ -482,7 +482,7 @@ def main():
     # load existing all.db
     mw.progress.start(label='Loading existing all.db', immediate=True)
     t_0 = time.time()
-    cur = util.allDb(reload=True) if cfg('loadAllDb') else None
+    cur = util.allDb() if cfg('loadAllDb') else None
     printf('Loaded all.db in %f sec' % (time.time() - t_0))
     mw.progress.finish()
 
