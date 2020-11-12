@@ -199,10 +199,6 @@ class PreferencesDialog(QDialog):
         vbox.addLayout(grid)
         grid.setContentsMargins(20, 0, 0, 0)
         optionList = [
-            ("Recompute my database (all.db) when MorphMan's preferences are changed", 'Option_RecomputeAllDbOnChange',
-             "Changnig parsing options such as ignoring grammar, ignoring brackets, or using different dictionaries\n"
-             "require re-building your database to fully take effect.  Enable this to have that done automatically\n"
-             "when settings change."),
             ("Skip comprehension cards", 'Option_SkipComprehensionCards',
              'Note that only has mature words (optimal for sentence learning but not for acquiring new vocabulary).'),
             ("Skip cards with fresh vocabulary", 'Option_SkipFreshVocabCards',
