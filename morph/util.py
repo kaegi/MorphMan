@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import codecs
 import datetime
-
+from os import path
 
 from anki.hooks import addHook
 from anki.notes import Note
@@ -27,11 +27,16 @@ except ImportError:
 _allDb = None
 
 
-def allDb(reload=False):
+def allDb():
     global _allDb
+
+    # Force reload if all.db got deleted
+    all_db_path = get_preference('path_all')
+    reload = not path.isfile(all_db_path)
+
     if reload or (_allDb is None):
         from .morphemes import MorphDb
-        _allDb = MorphDb(get_preference('path_all'), ignoreErrors=True)
+        _allDb = MorphDb(all_db_path, ignoreErrors=True)
     return _allDb
 
 
