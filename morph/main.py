@@ -95,33 +95,30 @@ def mkAllDb(all_db=None):
     if not all_db:
         all_db = MorphDb()
 
-    last_updated = all_db.meta.get('last_updated', 0)
-    last_preferences = all_db.meta.get('last_preferences', {})
-
     # Recompute everything if preferences changed.
+    last_preferences = all_db.meta.get('last_preferences', {})
     if not last_preferences == get_preferences():
         print("Preferences changed.  Recomputing all_db...")
         last_updated = 0
-        if cfg('Option_RecomputeAllDbOnChange'):
-            # discard old all_db
-            print("Discarding old all.db...")
-            all_db = MorphDb()
-            last_preferences = {}
+        should_rebuild_ms = True
+    else:
+        last_updated = all_db.meta.get('last_updated', 0)
+        should_rebuild_ms = False
 
     fidDb = all_db.fidDb()
     locDb = all_db.locDb(recalc=False)  # fidDb() already forces locDb recalc
-
-    mw.progress.update(label='Generating all.db data')
 
     included_types, include_all = getReadEnabledModels()
     included_mids = [m['id'] for m in mw.col.models.all() if include_all or m['name'] in included_types]
 
     query = 'select id, mid, flds, guid, tags from notes WHERE mod > %d AND mid IN (%s)' % (last_updated, ','.join([str(m) for m in included_mids]))
     query_results = db.execute(query)
-
     N_notes = len(query_results)
-    mw.progress.update(label='Generating all.db data',
-                      max=N_notes)
+
+    mw.progress.finish()
+    mw.progress.start(label='Generating all.db data',
+                      max=N_notes,
+                      immediate=True)
 
     for i, (nid, mid, flds, guid, tags) in enumerate(query_results):
         if i % 500 == 0:
@@ -166,11 +163,11 @@ def mkAllDb(all_db=None):
                     locDb[loc] = ms
             else:
                 # mats changed -> new loc (new mats), move morphs
-                if loc.fieldValue == fieldValue and loc.maturity != maturity:
+                if loc.fieldValue == fieldValue and loc.maturity != maturity and not should_rebuild_ms:
                     newLoc = AnkiDeck(nid, fieldName, fieldValue, guid, maturity)
                     locDb[newLoc] = locDb.pop(loc)
                 # field changed -> new loc, new morphs
-                elif loc.fieldValue != fieldValue:
+                elif loc.fieldValue != fieldValue or should_rebuild_ms:
                     newLoc = AnkiDeck(nid, fieldName, fieldValue, guid, maturity)
                     ms = getMorphemes(morphemizer, fieldValue, ts)
                     locDb.pop(loc)
@@ -181,13 +178,8 @@ def mkAllDb(all_db=None):
     mw.progress.update(label='Creating all.db objects')
     all_db.clear()
     all_db.addFromLocDb(locDb)
-    all_db.meta['last_updated'] = int(time.time())
+    all_db.meta['last_updated'] = int(time.time() + 0.5)
     all_db.meta['last_preferences'] = get_preferences()
-    if cfg('saveDbs'):
-        mw.progress.update(label='Saving all.db to disk')
-        all_db.save(cfg('path_all'))
-        printf('Processed %d notes + saved all.db in %f sec' %
-               (N_notes, time.time() - t_0))
     mw.progress.finish()
     return all_db
 
@@ -248,12 +240,6 @@ def updateNotes(allDb):
 
     frequencyListLength = len(frequency_map)
 
-    if cfg('saveDbs'):
-        mw.progress.update(label='Saving seen/known/mature dbs')
-        seenDb.save(cfg('path_seen'))
-        knownDb.save(cfg('path_known'))
-        matureDb.save(cfg('path_mature'))
-
     # prefetch cfg for fields
     field_focus_morph = cfg('Field_FocusMorph')
     field_unknown_count = cfg('Field_UnknownMorphCount')
@@ -263,7 +249,7 @@ def updateNotes(allDb):
     field_unmatures = cfg('Field_Unmatures')
     field_unknown_freq = cfg('Field_UnknownFreq')
     field_focus_morph_pos = cfg("Field_FocusMorphPos")
-
+    
     included_types, include_all = getModifyEnabledModels()
     included_mids = [m['id'] for m in mw.col.models.all() if include_all or m['name'] in included_types]
 
@@ -271,8 +257,10 @@ def updateNotes(allDb):
     query_results = db.execute(query)
 
     N_notes = len(query_results)
-    mw.progress.update(label='Updating notes',
-                       max=N_notes)
+    mw.progress.finish()
+    mw.progress.start(label='Updating notes',
+                      max=N_notes,
+                      immediate=True)
 
     for i, (nid, mid, flds, guid, tags) in enumerate(query_results):
         ts = TAG.split(tags)
@@ -468,6 +456,16 @@ def updateNotes(allDb):
     mw.reset()
 
     printf('Updated notes in %f sec' % (time.time() - t_0))
+
+    if cfg('saveDbs'):
+        mw.progress.update(label='Saving all/seen/known/mature dbs')
+        allDb.meta['last_updated'] = int(time.time() + 0.5)
+        allDb.save(cfg('path_all'))
+        seenDb.save(cfg('path_seen'))
+        knownDb.save(cfg('path_known'))
+        matureDb.save(cfg('path_mature'))
+        printf('Updated notes + saved dbs in %f sec' % (time.time() - t_0))
+
     mw.progress.finish()
     return knownDb
 

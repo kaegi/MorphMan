@@ -140,8 +140,6 @@ def jcfg_default():
         # that heavily relies on context and grammar might not produce the best results for "broken" sentences.
         'ReplaceRules': [],
 
-        'Option_RecomputeAllDbOnChange': False, # recompute all.db when options changed?
-
         # only set necessary tags or set all tags?
         'Option_SetNotRequiredTags': True,
         # do not set tags/remove tags that are only there for user to read/filter with
