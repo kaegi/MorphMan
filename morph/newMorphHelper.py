@@ -37,14 +37,14 @@ def focus(n): return n[focusName()]
 
 
 ########## 6 parent deck pulls new cards from all children instead of sequentially (ie. mostly first)
-def my_fillNew(self, _old):
+def my_fillNew(self, recursing=False, _old=None):
     """If 'new card merged fill' is enabled for the current deck, when we refill we
     pull from all child decks, sort combined pool of cards, then limit.
     If disabled, do the standard sequential fill method"""
     def C(key): return cfg(key, None, self.col.decks.active()[0])
 
     if not C('new card merged fill'):
-        return _old(self)
+        return _old(self, recursing)
 
     if self._newQueue:
         return True
