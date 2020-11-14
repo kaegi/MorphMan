@@ -17,7 +17,7 @@ from . import stats
 from . import util
 from .morphemes import MorphDb, AnkiDeck, getMorphemes
 from .morphemizer import getMorphemizerByName
-from .util import printf, mw, errorMsg, getFilter, getFilterByMidAndTags, getReadEnabledModels, getModifyEnabledModels
+from .util import printf, mw, errorMsg, getFilterByMidAndTags, getReadEnabledModels, getModifyEnabledModels
 from .preferences import get_preference as cfg, get_preferences
 from .util_external import memoize
 
@@ -82,6 +82,7 @@ def setField(mid, fs, k, v):  # nop if field DNE
         fs[idx] = v
 
 
+
 def mkAllDb(all_db=None):
     from . import config
     importlib.reload(config)
@@ -111,7 +112,20 @@ def mkAllDb(all_db=None):
     included_types, include_all = getReadEnabledModels()
     included_mids = [m['id'] for m in mw.col.models.all() if include_all or m['name'] in included_types]
 
-    query = 'select id, mid, flds, guid, tags from notes WHERE mod > %d AND mid IN (%s)' % (last_updated, ','.join([str(m) for m in included_mids]))
+# 
+# First find the cards to analyze
+#   then find the max maturity of those cards
+    query = '''
+WITH notesToUpdate as (
+   SELECT distinct n.id AS nid, mid, flds, guid, tags 
+     FROM notes n JOIN cards c ON (n.id = c.nid)
+     WHERE mid IN (%s) and (n.mod > %s or c.mod > %s ))
+SELECT nid, mid, flds, guid, tags, 
+       max(case when ivl=0 and c.type=1 then 0.5 else ivl end) AS maxmat 
+FROM notesToUpdate join cards c USING (nid)
+GROUP by nid, mid, flds, guid, tags;
+'''%(','.join([str(m) for m in included_mids]), last_updated, last_updated)
+
     query_results = db.execute(query)
     N_notes = len(query_results)
 
@@ -120,29 +134,31 @@ def mkAllDb(all_db=None):
                       max=N_notes,
                       immediate=True)
 
-    for i, (nid, mid, flds, guid, tags) in enumerate(query_results):
+    for i, (nid, mid, flds, guid, tags, maxmat) in enumerate(query_results):
+
         if i % 500 == 0:
             mw.progress.update(value=i)
 
         C = partial(cfg, model_id=mid)
 
-        note = mw.col.getNote(nid)
-        note_cfg = getFilter(note)
-        if note_cfg is None:
+
+        mid_cfg = getFilterByMidAndTags(mid, tags)
+        if mid_cfg is None:
             continue
-        morphemizer = getMorphemizerByName(note_cfg['Morphemizer'])
+
+        mName = mid_cfg['Morphemizer']
+
+        morphemizer = getMorphemizerByName(mName)
 
         N_enabled_notes += 1
 
-        mats = [(0.5 if ivl == 0 and ctype == 1 else ivl) for ivl, ctype in
-                db.execute('select ivl, type from cards where nid = ?', nid)]
         if C('ignore maturity'):
-            mats = [0] * len(mats)
+            maxmat = 0
         ts, alreadyKnownTag = TAG.split(tags), cfg('Tag_AlreadyKnown')
         if alreadyKnownTag in ts:
-            mats += [C('threshold_mature') + 1]
+            maxmat = max(maxmat, C('threshold_mature') + 1)
 
-        for fieldName in note_cfg['Fields']:
+        for fieldName in mid_cfg['Fields']:
             try:  # if doesn't have field, continue
                 fieldValue = extractFieldData(fieldName, flds, mid)
             except KeyError:
@@ -153,22 +169,22 @@ def mkAllDb(all_db=None):
                          'under MorphMan > Preferences to match your collection appropriately.'.format(
                              model=mname, field=fieldName))
                 return
+            assert maxmat!=None, "Maxmat should not be None"
 
-            maturity = max(mats) if mats else 0
             loc = fidDb.get((nid, guid, fieldName), None)
             if not loc:
-                loc = AnkiDeck(nid, fieldName, fieldValue, guid, maturity)
+                loc = AnkiDeck(nid, fieldName, fieldValue, guid, maxmat)
                 ms = getMorphemes(morphemizer, fieldValue, ts)
                 if ms:  # TODO: this needed? should we change below too then?
                     locDb[loc] = ms
             else:
                 # mats changed -> new loc (new mats), move morphs
-                if loc.fieldValue == fieldValue and loc.maturity != maturity and not should_rebuild_ms:
-                    newLoc = AnkiDeck(nid, fieldName, fieldValue, guid, maturity)
+                if loc.fieldValue == fieldValue and loc.maturity != maxmat and not should_rebuild_ms:
+                    newLoc = AnkiDeck(nid, fieldName, fieldValue, guid, maxmat)
                     locDb[newLoc] = locDb.pop(loc)
                 # field changed -> new loc, new morphs
                 elif loc.fieldValue != fieldValue or should_rebuild_ms:
-                    newLoc = AnkiDeck(nid, fieldName, fieldValue, guid, maturity)
+                    newLoc = AnkiDeck(nid, fieldName, fieldValue, guid, maxmat)
                     ms = getMorphemes(morphemizer, fieldValue, ts)
                     locDb.pop(loc)
                     locDb[newLoc] = ms
