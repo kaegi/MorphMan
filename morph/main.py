@@ -271,22 +271,6 @@ def updateNotes(allDb):
     new_maturities = {}
     refresh_notes = set()
 
-    for m, locs in allDb.db.items():
-        maturity_bits = 0
-        if seenDb.matches(m):
-            maturity_bits |= 1
-        if knownDb.matches(m):
-            maturity_bits |= 2
-        if matureDb.matches(m):
-            maturity_bits |= 4
-
-        new_maturities[m] = maturity_bits
-
-        if last_maturities.get(m, -1) != maturity_bits:
-            for loc in locs:
-                if isinstance(loc, AnkiDeck):
-                    refresh_notes.add(loc.noteId)
-
     # Recompute everything if preferences changed.
     last_preferences = allDb.meta.get('last_preferences', {})
     if not last_preferences == get_preferences():
@@ -295,9 +279,26 @@ def updateNotes(allDb):
     else:
         last_updated = allDb.meta.get('last_updated', 0)
 
+    # Todo: Remove this forced 0 once we add checks for other changes like new frequency.txt files.
+    last_updated = 0
+
     # If we're updating everything anyway, clear the notes set.
-    if last_updated == 0:
-        refresh_notes = set()
+    if last_updated > 0:
+        for m, locs in allDb.db.items():
+            maturity_bits = 0
+            if seenDb.matches(m):
+                maturity_bits |= 1
+            if knownDb.matches(m):
+                maturity_bits |= 2
+            if matureDb.matches(m):
+                maturity_bits |= 4
+
+            new_maturities[m] = maturity_bits
+
+            if last_maturities.get(m, -1) != maturity_bits:
+                for loc in locs:
+                    if isinstance(loc, AnkiDeck):
+                        refresh_notes.add(loc.noteId)
 
     included_types, include_all = getModifyEnabledModels()
     included_mids = [m['id'] for m in mw.col.models.all() if include_all or m['name'] in included_types]
