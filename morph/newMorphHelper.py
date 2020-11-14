@@ -226,7 +226,6 @@ def highlight(txt, extra, fieldDict, field, mod_field):
     """When a field is marked with the 'focusMorph' command, we format it by
     wrapping all the morphemes in <span>s with attributes set to its maturity"""
     from .util import getFilterByTagsAndType
-    from .morphemizer import getMorphemizerByName
     from .morphemes import getMorphemes
 
     # must avoid formatting a smaller morph that is contained in a bigger morph
@@ -248,7 +247,7 @@ def highlight(txt, extra, fieldDict, field, mod_field):
     filter = getFilterByTagsAndType(fieldDict['Type'], tags)
     if filter is None:
         return txt
-    morphemizer = getMorphemizerByName(filter['Morphemizer'])
+    morphemizer = mw.morphemizerManager.getMorphemizer(filter['Morphemizer'])
     if morphemizer is None:
         return txt
 

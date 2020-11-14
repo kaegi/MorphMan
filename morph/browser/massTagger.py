@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
+from aqt import mw
 from aqt.utils import tooltip
 from anki.hooks import addHook
 from anki.utils import stripHTML
 from ..morphemes import getMorphemes, MorphDb
-from ..morphemizer import getMorphemizerByName
 from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit
 from ..preferences import get_preference as cfg
 from anki.lang import _
@@ -31,7 +31,7 @@ def per(st, n):  # :: State -> Note -> State
     note_cfg = getFilter(n)
     if note_cfg is None:
         return st
-    morphemizer = getMorphemizerByName(note_cfg['Morphemizer'])
+    morphemizer = mw.morphemizerManager.getMorphemizer(note_cfg['Morphemizer'])
     for field in note_cfg['Fields']:
         for m in getMorphemes(morphemizer, stripHTML(n[field]), n.tags):
             if m in st['db'].db:

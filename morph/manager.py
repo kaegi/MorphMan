@@ -9,7 +9,6 @@ from .UI import MorphemizerComboBox
 
 from . import adaptiveSubs
 from .morphemes import MorphDb
-from .morphemizer import getAllMorphemizers
 from .util import errorMsg, infoMsg, mw, mkBtn
 from .preferences import get_preference as cfg
 
@@ -36,7 +35,7 @@ def getProgressWidget():
 
 
 class AdaptiveSubWin(QDialog):
-    def __init__(self, parent=None):
+    def __init__(self, morphemizerManager, parent=None):
         super(AdaptiveSubWin, self).__init__(parent)
         self.setWindowTitle('Adaptive Subs')
         self.grid = grid = QGridLayout(self)
@@ -45,8 +44,7 @@ class AdaptiveSubWin(QDialog):
         self.matureFmt = QLineEdit('%(target)s')
         self.knownFmt = QLineEdit('%(target)s [%(native)s]')
         self.unknownFmt = QLineEdit('%(native)s [%(N_k)s] [%(unknowns)s]')
-        self.morphemizerComboBox = MorphemizerComboBox()
-        self.morphemizerComboBox.setMorphemizers(morphemizers=getAllMorphemizers())
+        self.morphemizerComboBox = MorphemizerComboBox(morphemizerManager)
 
         self.vbox.addWidget(QLabel('Mature Format'))
         self.vbox.addWidget(self.matureFmt)
@@ -92,7 +90,7 @@ class AdaptiveSubWin(QDialog):
 
 
 class MorphMan(QDialog):
-    def __init__(self, parent=None):
+    def __init__(self, morphemizerManager, parent=None):
         super(MorphMan, self).__init__(parent)
         self.mw = parent
         self.setWindowTitle('Morph Man 3 Manager')
@@ -119,8 +117,7 @@ class MorphMan(QDialog):
         # Creation
         # language class/morphemizer
         self.db = None
-        self.morphemizerComboBox = MorphemizerComboBox()
-        self.morphemizerComboBox.setMorphemizers(getAllMorphemizers())
+        self.morphemizerComboBox = MorphemizerComboBox(morphemizerManager)
 
         vbox.addSpacing(40)
         vbox.addWidget(self.morphemizerComboBox)
@@ -140,16 +137,19 @@ class MorphMan(QDialog):
         self.analysisDisplay = QTextEdit()
 
         # Exporting
-        self.adaptiveSubs = mkBtn('Adaptive Subs', self.adaptiveSubsMethod, vbox)
+        self.adaptiveSubs = mkBtn(
+          'Adaptive Subs',
+          lambda: self.adaptiveSubsMethod(morphemizerManager),
+          vbox)
 
         # layout
         grid.addLayout(vbox, 0, 0)
         grid.addWidget(self.morphDisplay, 0, 1)
         grid.addWidget(self.analysisDisplay, 0, 2)
 
-    def adaptiveSubsMethod(self):
+    def adaptiveSubsMethod(self, morphemizerManager):
         self.hide()
-        asw = AdaptiveSubWin(self.mw)
+        asw = AdaptiveSubWin(morphemizerManager, self.mw)
         asw.show()
 
     def loadA(self):
@@ -249,5 +249,5 @@ class MorphMan(QDialog):
 
 
 def main():
-    mw.mm = MorphMan(mw)
+    mw.mm = MorphMan(mw.morphemizerManager, mw)
     mw.mm.show()

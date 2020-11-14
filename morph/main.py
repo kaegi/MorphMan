@@ -15,7 +15,6 @@ from .morphemes import Location, Morpheme
 from . import stats
 from . import util
 from .morphemes import MorphDb, AnkiDeck, getMorphemes
-from .morphemizer import getMorphemizerByName
 from .util import printf, mw, errorMsg, getFilter, getFilterByMidAndTags
 from .preferences import get_preference as cfg
 from .util_external import memoize
@@ -98,7 +97,7 @@ def mkAllDb(all_db=None):
         note_cfg = getFilter(note)
         if note_cfg is None:
             continue
-        morphemizer = getMorphemizerByName(note_cfg['Morphemizer'])
+        morphemizer = mw.morphemizerManager.getMorphemizer(note_cfg['Morphemizer'])
 
         N_enabled_notes += 1
 

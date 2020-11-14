@@ -54,8 +54,10 @@ class Ui_ReadabilityDialog(object):
         self.dictionaryLabel = QtWidgets.QLabel(self.frame)
         self.dictionaryLabel.setObjectName("dictionaryLabel")
         self.horizontalLayout_4.addWidget(self.dictionaryLabel)
-        self.morphemizerComboBox = MorphemizerComboBox(self.frame)
+        self.morphemizerComboBox = MorphemizerComboBox(parent=self.frame)
         self.morphemizerComboBox.setObjectName("morphemizerComboBox")
+        # TODO connect combo box to registry
+
         self.horizontalLayout_4.addWidget(self.morphemizerComboBox)
         spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_4.addItem(spacerItem)

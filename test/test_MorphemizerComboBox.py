@@ -2,31 +2,37 @@ import unittest
 
 from PyQt5.QtWidgets import QApplication
 from morph.UI import MorphemizerComboBox
-from morph.morphemizer import getAllMorphemizers
+from morph.morphemizer_registry import MorphemizerManager
+from morph.morphemizer import SpaceMorphemizer, MecabMorphemizer, JiebaMorphemizer, \
+  CjkCharMorphemizer
 
 
 class TestMorphemizerComboBox(unittest.TestCase):
 
-    def setUp(self):
-        self.app = QApplication([])
+  def setUp(self):
+    self.app = QApplication([])
+    self.morphemizerManager = MorphemizerManager()
 
-    def test_set_and_get_current(self):
-        combobox = MorphemizerComboBox()
-        combobox.setMorphemizers(getAllMorphemizers())
-        combobox.setCurrentByName('MecabMorphemizer')
-        self.assertEqual(combobox.currentText(), 'Japanese')
+  def test_set_and_get_current(self):
+    self.morphemizerManager.addMorphemizer(SpaceMorphemizer())
+    self.morphemizerManager.addMorphemizer(MecabMorphemizer())
+    self.morphemizerManager.addMorphemizer(JiebaMorphemizer())
+    self.morphemizerManager.addMorphemizer(CjkCharMorphemizer())
 
-        current = combobox.getCurrent()
-        self.assertEqual(current.getDescription(), 'Japanese')
+    combobox = MorphemizerComboBox(self.morphemizerManager)
+    combobox.setCurrentByName('MecabMorphemizer')
+    self.assertEqual(combobox.currentText(), 'Japanese')
 
-    def test_empty_morphemizer_list(self):
-        combobox = MorphemizerComboBox()
-        combobox.setMorphemizers([])
-        combobox.setCurrentByName('AnyBecauseNothingExists')
+    current = combobox.getCurrent()
+    self.assertEqual(current.getDescription(), 'Japanese')
 
-        current = combobox.getCurrent()
-        self.assertIsNone(current)
+  def test_empty_morphemizer_list(self):
+    combobox = MorphemizerComboBox()
+    combobox.setCurrentByName('AnyBecauseNothingExists')
+
+    current = combobox.getCurrent()
+    self.assertIsNone(current)
 
 
 if __name__ == '__main__':
-    unittest.main()
+  unittest.main()

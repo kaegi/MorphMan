@@ -14,7 +14,6 @@ from PyQt5.QtWidgets import *
 from . import customTableWidget
 from . import readability_ui
 from .morphemes import Morpheme, MorphDb, getMorphemes, altIncludesMorpheme
-from .morphemizer import getAllMorphemizers
 from .preferences import get_preference as cfg, update_preferences
 from .util import mw
 from anki.utils import stripHTML
@@ -107,14 +106,14 @@ class TablePercent(QTableWidgetItem):
         self.setTextAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
 
 class MorphMan(QDialog):
-    def __init__(self, parent=None):
+    def __init__(self, morphemizerManager, parent=None):
         super(MorphMan, self).__init__(parent)
         self.mw = parent
         self.ui = readability_ui.Ui_ReadabilityDialog()
         self.ui.setupUi(self)
 
         # Init morphemizer
-        self.ui.morphemizerComboBox.setMorphemizers(getAllMorphemizers())
+        self.ui.morphemizerComboBox.setMorphemizerManager(morphemizerManager)
         self.ui.morphemizerComboBox.setCurrentByName(cfg('DefaultMorphemizer'))
         self.ui.morphemizerComboBox.currentIndexChanged.connect(lambda idx: self.save_morphemizer())
 
@@ -575,5 +574,5 @@ class MorphMan(QDialog):
 
 
 def main():
-    mw.mm = MorphMan(mw)
+    mw.mm = MorphMan(mw.morphemizerManager, mw)
     mw.mm.show()

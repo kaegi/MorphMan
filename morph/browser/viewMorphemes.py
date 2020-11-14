@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 from anki.hooks import addHook
 from anki.utils import stripHTML
+from aqt import mw
+
 from ..morphemes import getMorphemes, ms2str
-from ..morphemizer import getMorphemizerByName
 from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg
 from ..preferences import get_preference as cfg
 
@@ -15,7 +16,7 @@ def per(st, n):
     if notecfg is None:
         return st
 
-    morphemizer = getMorphemizerByName(notecfg['Morphemizer'])
+    morphemizer = mw.morphemizerManager.getMorphemizer(notecfg['Morphemizer'])
     for f in notecfg['Fields']:
         ms = getMorphemes(morphemizer, stripHTML(n[f]), n.tags)
         st['morphemes'] += ms

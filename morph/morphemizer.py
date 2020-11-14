@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 import re
 
-from .morphemes import Morpheme
+from .deps.jieba import posseg
 from .deps.zhon.hanzi import characters
 from .mecab_wrapper import getMorphemesMecab
-from .deps.jieba import posseg
-
+from .morphemes import Morpheme
 
 ####################################################################################################
 # Base Class
@@ -30,29 +29,12 @@ class Morphemizer:
         # type: () -> str
         return self.__class__.__name__
 
-
-####################################################################################################
-# Morphemizer Helpers
-####################################################################################################
-
-def getAllMorphemizers():
-    # type: () -> [Morphemizer]
-    return [SpaceMorphemizer(), MecabMorphemizer(), JiebaMorphemizer(), CjkCharMorphemizer()]
-
-
-def getMorphemizerByName(name):
-    # type: (str) -> Optional(Morphemizer)
-    for m in getAllMorphemizers():
-        if m.getName() == name:
-            return m
-    return None
-
-
 ####################################################################################################
 # Mecab Morphemizer
 ####################################################################################################
 
 space_char_regex = re.compile(' ')
+
 
 class MecabMorphemizer(Morphemizer):
     """
