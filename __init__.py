@@ -1,3 +1,7 @@
+from .morph.morphemizer import SpaceMorphemizer, MecabMorphemizer, JiebaMorphemizer, \
+    CjkCharMorphemizer
+from .morph.morphemizer_registry import MorphemizerManager
+from .morph.deps.spacy import init_spacy
 from .morph.util import *
 from PyQt5.QtWidgets import *
 import anki.stats
@@ -9,7 +13,6 @@ try:
     from anki.lang import _
 except:
     pass
-
 
 def onMorphManRecalc():
     from .morph import main
@@ -41,8 +44,20 @@ def morphGraphsWrapper(*args, **kwargs):
     importlib.reload(graphs)
     return graphs.morphGraphs(args, kwargs)
 
+def initializeMorphemizerManager() -> MorphemizerManager:
+    morphemizerRegisty = MorphemizerManager()
+    morphemizerRegisty.addMorphemizer(SpaceMorphemizer())
+    morphemizerRegisty.addMorphemizer(MecabMorphemizer())
+    morphemizerRegisty.addMorphemizer(JiebaMorphemizer())
+    morphemizerRegisty.addMorphemizer(CjkCharMorphemizer())
+
+    init_spacy(morphemizerRegisty)
+
+    return morphemizerRegisty
 
 def main():
+    mw.morphemizerManager = initializeMorphemizerManager()
+
     # Add MorphMan submenu
     morphmanSubMenu = QMenu("MorphMan", mw)
     mw.form.menuTools.addMenu(morphmanSubMenu)

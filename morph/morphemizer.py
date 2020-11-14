@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 import re
 
-from .morphemes import Morpheme
-from .deps.zhon.hanzi import characters
-from .mecab_wrapper import getMorphemesMecab, getMecabIdentity
 from .deps.jieba import posseg
+from .deps.zhon.hanzi import characters
+from .mecab_wrapper import getMecabIdentity
+from .mecab_wrapper import getMorphemesMecab
+from .morphemes import Morpheme
+
 
 class LRUCache:
     def __init__(self, capacity):
@@ -31,6 +33,7 @@ class LRUCache:
         self.tm += 1
 
 
+
 ####################################################################################################
 # Base Class
 ####################################################################################################
@@ -38,18 +41,18 @@ class LRUCache:
 class Morphemizer:
     def __init__(self):
         self.lru = LRUCache(1000000)
-        
+
     def getMorphemesFromExpr(self, expression):
         # type: (str) -> [Morpheme]
 
         morphs = self.lru.get(expression)
         if morphs:
             return morphs
-        
+
         morphs = self._getMorphemesFromExpr(expression)
         self.lru.set(expression, morphs)
         return morphs
-    
+
     def _getMorphemesFromExpr(self, expression):
         # type: (str) -> [Morpheme]
         """
@@ -68,36 +71,12 @@ class Morphemizer:
         # type: () -> str
         return self.__class__.__name__
 
-
-####################################################################################################
-# Morphemizer Helpers
-####################################################################################################
-
-morphemizers = None
-morphemizers_by_name = {}
-
-def getAllMorphemizers():
-    # type: () -> [Morphemizer]
-    global morphemizers, morphemizers_by_name
-    if morphemizers is None:
-        morphemizers = [SpaceMorphemizer(), MecabMorphemizer(), JiebaMorphemizer(), CjkCharMorphemizer()]
-
-        for m in morphemizers:
-            morphemizers_by_name[m.getName()] = m
-
-    return morphemizers
-
-def getMorphemizerByName(name):
-    # type: (str) -> Optional(Morphemizer)
-    getAllMorphemizers()
-    return morphemizers_by_name.get(name, None)
-
-
 ####################################################################################################
 # Mecab Morphemizer
 ####################################################################################################
 
 space_char_regex = re.compile(' ')
+
 
 class MecabMorphemizer(Morphemizer):
     """

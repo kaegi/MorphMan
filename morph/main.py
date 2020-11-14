@@ -16,7 +16,6 @@ from .morphemes import Location, Morpheme
 from . import stats
 from . import util
 from .morphemes import MorphDb, AnkiDeck, getMorphemes
-from .morphemizer import getMorphemizerByName
 from .util import printf, mw, errorMsg, getFilterByMidAndTags, getReadEnabledModels, getModifyEnabledModels
 from .preferences import get_preference as cfg, get_preferences
 from .util_external import memoize
@@ -85,7 +84,7 @@ def notesToUpdate(last_updated, included_mids):
     # returns list of (nid, mid, flds, guid, tags, maxmat) of
     # cards to analyze
     # ignoring cards that are leeches
-    # 
+    #
     # leeches are cards have tag "Leech". Anki guarantees a space before and after
     #
     # the logic of the query is:
@@ -167,7 +166,7 @@ def mkAllDb(all_db=None):
         N_enabled_notes += 1
 
         mName = mid_cfg['Morphemizer']
-        morphemizer = getMorphemizerByName(mName)
+        morphemizer = mw.morphemizerManager.getMorphemizer(mName)
 
         C = partial(cfg, model_id=mid)
 
@@ -286,7 +285,7 @@ def updateNotes(allDb):
 
     skip_comprehension_cards = cfg('Option_SkipComprehensionCards')
     skip_fresh_cards = cfg('Option_SkipFreshVocabCards')
-    
+
     # Find all morphs that changed maturity and the notes that refer to them.
     last_maturities = allDb.meta.get('last_maturities', {})
     new_maturities = {}
@@ -397,7 +396,7 @@ def updateNotes(allDb):
                 usefulness += C('priority.db weight')
 
             deinfFocusMorph = focusMorph.deinflected()
-            
+
             if frequency_has_morphemes:
                 focusMorphIndex = frequency_map.get(deinfFocusMorph, -1)
             else:
@@ -466,7 +465,7 @@ def updateNotes(allDb):
         mmi = 100000 * N_k + 1000 * lenDiff + int(round(usefulness))
         if C('set due based on mmi'):
             nid2mmi[nid] = mmi
-            
+
         # set type agnostic fields
         setField(mid, fs, field_unknown_count, '%d' % N_k)
         setField(mid, fs, field_unmature_count, '%d' % N_m)

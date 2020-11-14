@@ -233,7 +233,6 @@ def highlight(txt: str, field, filter: str, ctx) -> str:
         return txt
 
     from .util import getFilter
-    from .morphemizer import getMorphemizerByName
     from .morphemes import getMorphemes
 
     # must avoid formatting a smaller morph that is contained in a bigger morph
@@ -256,7 +255,7 @@ def highlight(txt: str, field, filter: str, ctx) -> str:
     filter = getFilter(note)
     if filter is None:
         return txt
-    morphemizer = getMorphemizerByName(filter['Morphemizer'])
+    morphemizer = mw.morphemizerManager.getMorphemizer(filter['Morphemizer'])
     if morphemizer is None:
         return txt
 

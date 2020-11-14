@@ -1,10 +1,10 @@
-from morph.morphemizer import getMorphemizerByName
+from morph.morphemizer import SpaceMorphemizer
 import unittest
 
 
 class TestSpaceMorphemizer(unittest.TestCase):
     def setUp(self):
-        self.morphemizer = getMorphemizerByName("SpaceMorphemizer")
+        self.morphemizer = SpaceMorphemizer()
 
     def test_morpheme_generation(self):
         sentence_1 = "Tu es quelqu'un de bien."

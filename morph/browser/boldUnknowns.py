@@ -3,8 +3,9 @@ import re
 
 from anki.hooks import addHook
 from anki.utils import stripHTML
+from aqt import mw
+
 from ..morphemes import getMorphemes
-from ..morphemizer import getMorphemizerByName
 from ..util import addBrowserNoteSelectionCmd, getFilter, allDb
 from ..preferences import get_preference as cfg
 
@@ -23,7 +24,7 @@ def per(st, n):
     changed = False
     proper_nouns_known = cfg('Option_ProperNounsAlreadyKnown')
 
-    morphemizer = getMorphemizerByName(notecfg['Morphemizer'])
+    morphemizer = mw.morphemizerManager.getMorphemizer(notecfg['Morphemizer'])
     for f in notecfg['Fields']:
         ms = getMorphemes(morphemizer, stripHTML(n[f]), n.tags)
 
