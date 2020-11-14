@@ -112,19 +112,19 @@ def mkAllDb(all_db=None):
     included_types, include_all = getReadEnabledModels()
     included_mids = [m['id'] for m in mw.col.models.all() if include_all or m['name'] in included_types]
 
-# 
-# First find the cards to analyze
-#   then find the max maturity of those cards
+    #
+    # First find the cards to analyze
+    #   then find the max maturity of those cards
     query = '''
-WITH notesToUpdate as (
-   SELECT distinct n.id AS nid, mid, flds, guid, tags 
-     FROM notes n JOIN cards c ON (n.id = c.nid)
-     WHERE mid IN (%s) and (n.mod > %s or c.mod > %s ))
-SELECT nid, mid, flds, guid, tags, 
-       max(case when ivl=0 and c.type=1 then 0.5 else ivl end) AS maxmat 
-FROM notesToUpdate join cards c USING (nid)
-GROUP by nid, mid, flds, guid, tags;
-'''%(','.join([str(m) for m in included_mids]), last_updated, last_updated)
+        WITH notesToUpdate as (
+        SELECT distinct n.id AS nid, mid, flds, guid, tags
+            FROM notes n JOIN cards c ON (n.id = c.nid)
+            WHERE mid IN ({0}) and (n.mod > {1} or c.mod > {1}))
+        SELECT nid, mid, flds, guid, tags,
+            max(case when ivl=0 and c.type=1 then 0.5 else ivl end) AS maxmat
+        FROM notesToUpdate join cards c USING (nid)
+        GROUP by nid, mid, flds, guid, tags;
+        '''.format(','.join([str(m) for m in included_mids]), last_updated)
 
     query_results = db.execute(query)
     N_notes = len(query_results)
@@ -192,10 +192,10 @@ GROUP by nid, mid, flds, guid, tags;
     printf('Processed %d notes in %f sec' % (N_notes, time.time() - t_0))
 
     mw.progress.update(label='Creating all.db objects')
+    old_meta = all_db.meta
     all_db.clear()
     all_db.addFromLocDb(locDb)
-    all_db.meta['last_updated'] = int(time.time() + 0.5)
-    all_db.meta['last_preferences'] = get_preferences()
+    all_db.meta = old_meta
     mw.progress.finish()
     return all_db
 
@@ -266,10 +266,46 @@ def updateNotes(allDb):
     field_unknown_freq = cfg('Field_UnknownFreq')
     field_focus_morph_pos = cfg("Field_FocusMorphPos")
     
+    # Find all morphs that changed maturity and the notes that refer to them.
+    last_maturities = allDb.meta.get('last_maturities', {})
+    new_maturities = {}
+    refresh_notes = set()
+
+    for m, locs in allDb.db.items():
+        maturity_bits = 0
+        if seenDb.matches(m):
+            maturity_bits |= 1
+        if knownDb.matches(m):
+            maturity_bits |= 2
+        if matureDb.matches(m):
+            maturity_bits |= 4
+
+        new_maturities[m] = maturity_bits
+
+        if last_maturities.get(m, -1) != maturity_bits:
+            for loc in locs:
+                if isinstance(loc, AnkiDeck):
+                    refresh_notes.add(loc.noteId)
+
+    # Recompute everything if preferences changed.
+    last_preferences = allDb.meta.get('last_preferences', {})
+    if not last_preferences == get_preferences():
+        print("Preferences changed.  Updating all notes...")
+        last_updated = 0
+    else:
+        last_updated = allDb.meta.get('last_updated', 0)
+
+    # If we're updating everything anyway, clear the notes set.
+    if last_updated == 0:
+        refresh_notes = set()
+
     included_types, include_all = getModifyEnabledModels()
     included_mids = [m['id'] for m in mw.col.models.all() if include_all or m['name'] in included_types]
 
-    query = 'select id, mid, flds, guid, tags from notes WHERE mid IN (%s)' % (','.join([str(m) for m in included_mids]))
+    query = '''
+        select id, mid, flds, guid, tags from notes
+        WHERE mid IN ({0}) and ( mod > {2} or id in ({1}) )
+        '''.format(','.join([str(m) for m in included_mids]), ','.join([str(id) for id in refresh_notes]), last_updated)
     query_results = db.execute(query)
 
     N_notes = len(query_results)
@@ -471,16 +507,19 @@ def updateNotes(allDb):
 
     mw.reset()
 
-    printf('Updated notes in %f sec' % (time.time() - t_0))
+    allDb.meta['last_preferences'] = get_preferences()
+    allDb.meta['last_maturities'] = new_maturities
+    allDb.meta['last_updated'] = int(time.time() + 0.5)
+
+    printf('Updated %d notes in %f sec' % (N_notes, time.time() - t_0))
 
     if cfg('saveDbs'):
         mw.progress.update(label='Saving all/seen/known/mature dbs')
-        allDb.meta['last_updated'] = int(time.time() + 0.5)
         allDb.save(cfg('path_all'))
         seenDb.save(cfg('path_seen'))
         knownDb.save(cfg('path_known'))
         matureDb.save(cfg('path_mature'))
-        printf('Updated notes + saved dbs in %f sec' % (time.time() - t_0))
+        printf('Updated %d notes + saved dbs in %f sec' % (N_notes, time.time() - t_0))
 
     mw.progress.finish()
     return knownDb
