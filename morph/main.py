@@ -265,6 +265,9 @@ def updateNotes(allDb):
     field_unmatures = cfg('Field_Unmatures')
     field_unknown_freq = cfg('Field_UnknownFreq')
     field_focus_morph_pos = cfg("Field_FocusMorphPos")
+
+    skip_comprehension_cards = cfg('Option_SkipComprehensionCards')
+    skip_fresh_cards = cfg('Option_SkipFreshVocabCards')
     
     # Find all morphs that changed maturity and the notes that refer to them.
     last_maturities = allDb.meta.get('last_maturities', {})
@@ -407,11 +410,6 @@ def updateNotes(allDb):
                          max(0, N - C('max good sentence length')))
         lenDiff = min(9, abs(lenDiffRaw))
 
-        # calculate mmi
-        mmi = 100000 * N_k + 1000 * lenDiff + int(round(usefulness))
-        if C('set due based on mmi'):
-            nid2mmi[nid] = mmi
-
         # Fill in various fields/tags on the note based on cfg
         fs = splitFields(flds)
 
@@ -422,6 +420,8 @@ def updateNotes(allDb):
         # determine card type
         if N_m == 0:  # sentence comprehension card, m+0
             ts.append(compTag)
+            if skip_comprehension_cards:
+                usefulness += 1000000 # Add a penalty to put these cards at the end of the queue
         elif N_k == 1:  # new vocab card, k+1
             ts.append(vocabTag)
             setField(mid, fs, field_focus_morph, focusMorph.base)
@@ -430,13 +430,22 @@ def updateNotes(allDb):
             ts.append(notReadyTag)
         elif N_m == 1:  # we have k+0, and m+1, so this card does not introduce a new vocabulary -> card for newly learned morpheme
             ts.append(freshTag)
+            if skip_fresh_cards:
+                usefulness += 1000000 # Add a penalty to put these cards at the end of the queue
             focusMorph = next(iter(unmatures))
             setField(mid, fs, field_focus_morph, focusMorph.base)
             setField(mid, fs, field_focus_morph_pos, focusMorph.pos)
 
         else:  # only case left: we have k+0, but m+2 or higher, so this card does not introduce a new vocabulary -> card for newly learned morpheme
             ts.append(freshTag)
+            if skip_fresh_cards:
+                usefulness += 1000000 # Add a penalty to put these cards at the end of the queue
 
+        # calculate mmi
+        mmi = 100000 * N_k + 1000 * lenDiff + int(round(usefulness))
+        if C('set due based on mmi'):
+            nid2mmi[nid] = mmi
+            
         # set type agnostic fields
         setField(mid, fs, field_unknown_count, '%d' % N_k)
         setField(mid, fs, field_unmature_count, '%d' % N_m)
