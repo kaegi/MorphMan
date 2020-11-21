@@ -340,32 +340,12 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_5">
         <item>
-         <widget class="QCheckBox" name="readabilityReportCheckBox">
-          <property name="text">
-           <string>Readability Report</string>
-          </property>
-          <property name="checked">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QCheckBox" name="wordReportCheckBox">
-          <property name="text">
-           <string>Word Report</string>
-          </property>
-          <property name="checked">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
          <widget class="QCheckBox" name="studyPlanCheckBox">
           <property name="text">
            <string>Target Study Plan</string>
           </property>
           <property name="checked">
-           <bool>true</bool>
+           <bool>false</bool>
           </property>
          </widget>
         </item>
@@ -375,7 +355,37 @@
            <string>Frequency List</string>
           </property>
           <property name="checked">
-           <bool>true</bool>
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="wordReportCheckBox">
+          <property name="text">
+           <string>Word Report</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="readabilityDBCheckBox">
+          <property name="text">
+           <string>Readability DB</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="processLinesCheckBox">
+          <property name="text">
+           <string>Line Stats (slower)</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
           </property>
          </widget>
         </item>
