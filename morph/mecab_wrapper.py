@@ -37,6 +37,7 @@ MECAB_SUBPOS_BLACKLIST = [
 is_unidic = True
 
 kanji = r'[㐀-䶵一-鿋豈-頻]'
+wide_alpha_num_rx = re.compile(r'[０-９Ａ-Ｚａ-ｚ]')
 
 mecab_source = ""
 
@@ -63,7 +64,12 @@ def getMorpheme(parts):
         pos = parts[4] if parts[4] != '' else '*'
         subPos = parts[5] if parts[5] != '' else '*'
 
+        # Drop blacklisted parts of speech
         if (pos in MECAB_POS_BLACKLIST) or (subPos in MECAB_SUBPOS_BLACKLIST):
+            return None
+
+        # Drop wide alpha-numeric morphemes
+        if wide_alpha_num_rx.search(parts[1]):
             return None
 
         norm = parts[0]
