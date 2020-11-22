@@ -196,7 +196,7 @@ class LocationCorpusDB:
             other_db = data['db']
 
             for loc, loc_corpus in other_db.ordered_locs:
-                new_corpus = LocationCorpus(self, save_lines)
+                new_corpus = LocationCorpus(self, save_lines and loc_corpus.has_line_data)
 
                 if loc_corpus.has_line_data:
                     for line in loc_corpus.line_data:
