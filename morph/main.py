@@ -100,11 +100,10 @@ def mkAllDb(all_db=None):
     last_preferences = all_db.meta.get('last_preferences', {})
     if not last_preferences == get_preferences():
         print("Preferences changed.  Recomputing all_db...")
+        all_db = MorphDb() # Clear all db
         last_updated = 0
-        should_rebuild_ms = True
     else:
         last_updated = all_db.meta.get('last_updated', 0)
-        should_rebuild_ms = False
 
     fidDb = all_db.fidDb()
     locDb = all_db.locDb(recalc=False)  # fidDb() already forces locDb recalc
@@ -139,18 +138,17 @@ def mkAllDb(all_db=None):
         if i % 500 == 0:
             mw.progress.update(value=i)
 
-        C = partial(cfg, model_id=mid)
-
-
-        mid_cfg = getFilterByMidAndTags(mid, tags)
+        ts = TAG.split(tags)
+        mid_cfg = getFilterByMidAndTags(mid, ts)
         if mid_cfg is None:
             continue
 
-        mName = mid_cfg['Morphemizer']
+        N_enabled_notes += 1
 
+        mName = mid_cfg['Morphemizer']
         morphemizer = getMorphemizerByName(mName)
 
-        N_enabled_notes += 1
+        C = partial(cfg, model_id=mid)
 
         if C('ignore maturity'):
             maxmat = 0
@@ -179,11 +177,11 @@ def mkAllDb(all_db=None):
                     locDb[loc] = ms
             else:
                 # mats changed -> new loc (new mats), move morphs
-                if loc.fieldValue == fieldValue and loc.maturity != maxmat and not should_rebuild_ms:
+                if loc.fieldValue == fieldValue and loc.maturity != maxmat:
                     newLoc = AnkiDeck(nid, fieldName, fieldValue, guid, maxmat)
                     locDb[newLoc] = locDb.pop(loc)
                 # field changed -> new loc, new morphs
-                elif loc.fieldValue != fieldValue or should_rebuild_ms:
+                elif loc.fieldValue != fieldValue:
                     newLoc = AnkiDeck(nid, fieldName, fieldValue, guid, maxmat)
                     ms = getMorphemes(morphemizer, fieldValue, ts)
                     locDb.pop(loc)
