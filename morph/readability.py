@@ -422,7 +422,7 @@ class MorphMan(QDialog):
             master_current_score = 0
             for ms in master_db.db.values():
                 for m, c in ms.items():
-                    if known_db.matches(m):
+                    if known_db.matches(m) or (proper_nouns_known and m.isProperNoun()):
                         master_current_score += c[0]
                         c[1] = True  # mark matched
             self.writeOutput("\n[Current master frequency readability] %0.02f\n" % (
@@ -518,9 +518,9 @@ class MorphMan(QDialog):
                                 else:
                                     is_proper_noun = False
 
-                                if known_db.matches(m) or is_proper_noun:
+                                if known_db.matches(m) or (proper_nouns_known and is_proper_noun):
                                     morph_state |= 2
-                                if mature_db.matches(m) or is_proper_noun:
+                                if mature_db.matches(m) or (proper_nouns_known and is_proper_noun):
                                     morph_state |= 4
 
                                 morph_state_cache[m] = morph_state
@@ -698,7 +698,7 @@ class MorphMan(QDialog):
             for line_morphs in show.line_morphs:
                 has_unknowns = False
                 for m in line_morphs:
-                    if known_db.matches(m):
+                    if known_db.matches(m) or (proper_nouns_known and m.isProperNoun()):
                         continue
                     has_unknowns = True
                 if not has_unknowns:
@@ -824,7 +824,7 @@ class MorphMan(QDialog):
                     master_score = 0
                     for ms in master_db.db.values():
                         for m, c in ms.items():
-                            if known_db.matches(m):
+                            if known_db.matches(m) or (proper_nouns_known and m.isProperNoun()):
                                 master_score += c[0]
                                 c[1] = True  # mark matched
                     self.writeOutput("\n[New master frequency readability] %0.02f -> %0.02f\n" % (
