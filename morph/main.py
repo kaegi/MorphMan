@@ -81,6 +81,43 @@ def setField(mid, fs, k, v):  # nop if field DNE
     if idx:
         fs[idx] = v
 
+def notesToUpdate(last_updated, included_mids):
+    # returns list of (nid, mid, flds, guid, tags, maxmat) of
+    # cards to analyze
+    # ignoring cards that are leeches
+    # 
+    # leeches are cards have tag "Leech". Anki guarantees a space before and after
+    #
+    # the logic of the query is:
+    #   include cards in the result that are
+    #     non-suspended
+    #      or
+    #     are suspended and are not Leeches
+    #
+    # we build a predicate that we append to the where clause
+    if cfg('ignore suspended leeches'):
+        filterSuspLeeches = "(c.queue <> -1 or (c.queue = -1 and not instr(tags, ' leech ')))"
+    else:
+        filterSuspLeeches = "TRUE"
+
+    #
+    # First find the cards to analyze
+    #   then find the max maturity of those cards
+    query = '''
+        WITH notesToUpdate as (
+            SELECT distinct n.id AS nid, mid, flds, guid, tags
+            FROM notes n JOIN cards c ON (n.id = c.nid)
+            WHERE mid IN ({0}) and (n.mod > {1} or c.mod > {1})
+               and {2}) -- ignoring suspended leeches
+        SELECT nid, mid, flds, guid, tags,
+            max(case when ivl=0 and c.type=1 then 0.5 else ivl end) AS maxmat
+        FROM notesToUpdate join cards c USING (nid)
+        WHERE {2} -- ignoring suspended leeches
+        GROUP by nid, mid, flds, guid, tags;
+        '''.format(','.join([str(m) for m in included_mids]), last_updated, filterSuspLeeches)
+
+    return mw.col.db.execute(query)
+
 def mkAllDb(all_db=None):
     from . import config
     importlib.reload(config)
@@ -180,43 +217,6 @@ def mkAllDb(all_db=None):
     all_db.meta = old_meta
     mw.progress.finish()
     return all_db
-
-def notesToUpdate(last_updated, included_mids):
-    # returns list of (nid, mid, flds, guid, tags, maxmat) of
-    # cards to analyze
-    # ignoring cards that are leeches
-    # 
-    # leeches are cards have tag "Leech". Anki guarantees a space before and after
-    #
-    # the logic of the query is:
-    #   include cards in the result that are
-    #     non-suspended
-    #      or
-    #     are suspended and are not Leeches
-    #
-    # we build a predicate that we append to the where clause
-    if cfg('ignore suspended leeches'):
-        filterSuspLeeches = "(c.queue <> -1 or (c.queue = -1 and not instr(tags, ' leech ')))"
-    else:
-        filterSuspLeeches = "TRUE"
-
-    #
-    # First find the cards to analyze
-    #   then find the max maturity of those cards
-    query = '''
-        WITH notesToUpdate as (
-            SELECT distinct n.id AS nid, mid, flds, guid, tags
-            FROM notes n JOIN cards c ON (n.id = c.nid)
-            WHERE mid IN ({0}) and (n.mod > {1} or c.mod > {1})
-               and {2}) -- ignoring suspended leeches
-        SELECT nid, mid, flds, guid, tags,
-            max(case when ivl=0 and c.type=1 then 0.5 else ivl end) AS maxmat
-        FROM notesToUpdate join cards c USING (nid)
-        WHERE {2} -- ignoring suspended leeches
-        GROUP by nid, mid, flds, guid, tags;
-        '''.format(','.join([str(m) for m in included_mids]), last_updated, filterSuspLeeches)
-
-    return mw.col.db.execute(query)
 
 def filterDbByMat(db, mat):
     """Assumes safe to use cached locDb"""
