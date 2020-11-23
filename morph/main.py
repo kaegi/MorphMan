@@ -95,7 +95,7 @@ def notesToUpdate(last_updated, included_mids):
     #     are suspended and are not Leeches
     #
     # we build a predicate that we append to the where clause
-    if cfg('ignore suspended leeches'):
+    if cfg('Option_IgnoreSuspendedLeeches'):
         filterSuspLeeches = "(c.queue <> -1 or (c.queue = -1 and not instr(tags, ' leech ')))"
     else:
         filterSuspLeeches = "TRUE"

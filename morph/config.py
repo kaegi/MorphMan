@@ -57,7 +57,6 @@ default = {
     # whether to modify card Due times based on MorphManIndex. does nothing if relevant notes aren't enabled
     'set due based on mmi': True,
     'ignore maturity': False,        # if True, pretends card maturity is always zero
-    'ignore suspended leeches': False, # if True, ignore suspended leeches
     # try playing fields in this order when using batch media player
     'batch media fields': ['Video', 'Sound'],
 

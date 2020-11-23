@@ -150,6 +150,7 @@ def jcfg_default():
         'Option_IgnoreBracketContents': False,
         'Option_IgnoreRoundBracketContents': False,
         'Option_IgnoreSlimRoundBracketContents': False,
+        'Option_IgnoreSuspendedLeeches': False,
         'Option_ProperNounsAlreadyKnown': False,
         
         # Readability Analyzer options
