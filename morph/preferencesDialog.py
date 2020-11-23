@@ -218,7 +218,9 @@ class PreferencesDialog(QDialog):
             ("Ignore everything contained within （ ） brackets", 'Option_IgnoreRoundBracketContents',
              'Use this option to ignore content such as character names and readings in Japanese scripts.'),
             ("Treat proper nouns as known", 'Option_ProperNounsAlreadyKnown',
-             'Treat proper nouns as already known when scoring cards (currently only works for Japanese).')
+             'Treat proper nouns as already known when scoring cards (currently only works for Japanese).'),
+            ('Ignore suspended leeches', 'Option_IgnoreSuspendedLeeches',
+             'Ignore cards that are suspended and have the tag \'leech\'.')
         ]
         self.boolOptionList = []
         for i, (name, key, tooltipInfo) in enumerate(optionList):
