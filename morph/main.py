@@ -229,7 +229,7 @@ def updateNotes(allDb):
     knownDb = filterDbByMat(allDb, cfg('threshold_known'))
     matureDb = filterDbByMat(allDb, cfg('threshold_mature'))
     mw.progress.update(label='Loading priority.db')
-    priorityDb = MorphDb(cfg('path_priority'), ignoreErrors=True).db
+    priorityDb = MorphDb(cfg('path_priority'), ignoreErrors=True)
 
     mw.progress.update(label='Loading frequency.txt')
     frequencyListPath = cfg('path_frequency')
@@ -371,14 +371,17 @@ def updateNotes(allDb):
         usefulness = 0
         for focusMorph in unknowns:
             F_k += allDb.frequency(focusMorph)
-            if focusMorph in priorityDb:
+
+            if priorityDb.frequency(focusMorph) > 0:
                 isPriority = True
                 usefulness += C('priority.db weight')
+
+            deinfFocusMorph = focusMorph.deinflected()
             
             if frequency_has_morphemes:
-                focusMorphIndex = frequency_map.get(focusMorph, -1)
+                focusMorphIndex = frequency_map.get(deinfFocusMorph, -1)
             else:
-                focusMorphIndex = frequency_map.get(focusMorph.base, -1)
+                focusMorphIndex = frequency_map.get(deinfFocusMorph.base, -1)
 
             if focusMorphIndex >= 0:
                 isFrequency = True
