@@ -161,6 +161,7 @@ def jcfg_default():
         'Option_SaveReadabilityDB': False,
         'Option_SaveStudyPlan': False,
         'Option_SaveFrequencyList': False,
+        'Option_GroupByDir': False,
         'Option_ProcessLines': False,
         'Option_FillAllMorphsInStudyPlan': True,
         'Option_SourceScorePower': 2.0,            # Morpheme score formula parameter.

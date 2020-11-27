@@ -110,6 +110,12 @@ class Morpheme:
     def show(self):  # str
         return '\t'.join([self.norm, self.base, self.inflected, self.read, self.pos, self.subPos])
 
+    def deinflected(self):
+        if self.inflected == self.base:
+            return self
+        else:
+            return Morpheme(self.norm, self.base, self.base, self.read, self.pos, self.subPos)
+
 
 def ms2str(ms):  # [(Morpheme, locs)] -> Str
     return '\n'.join(['%d\t%s' % (len(m[1]), m[0].show()) for m in ms])

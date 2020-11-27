@@ -380,6 +380,16 @@
          </widget>
         </item>
         <item>
+         <widget class="QCheckBox" name="groupByDirCheckBox">
+          <property name="text">
+           <string>Group By Directory</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QCheckBox" name="processLinesCheckBox">
           <property name="text">
            <string>Line Stats (slower)</string>
