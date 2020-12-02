@@ -5,6 +5,7 @@ from .morphemes import Morpheme
 from .deps.zhon.hanzi import characters
 from .mecab_wrapper import getMorphemesMecab, getMecabIdentity
 from .deps.jieba import posseg
+import importlib.util
 
 
 ####################################################################################################
@@ -30,6 +31,10 @@ class Morphemizer:
         # type: () -> str
         return self.__class__.__name__
 
+    def exists(self):
+        # type: () -> Boolean
+        return True
+
 
 ####################################################################################################
 # Morphemizer Helpers
@@ -37,7 +42,12 @@ class Morphemizer:
 
 def getAllMorphemizers():
     # type: () -> [Morphemizer]
-    return [SpaceMorphemizer(), MecabMorphemizer(), JiebaMorphemizer(), CjkCharMorphemizer()]
+    morphemizers = [SpaceMorphemizer(), MecabMorphemizer(), JiebaMorphemizer(), VietnameseMorphemizer(), CjkCharMorphemizer()]
+    for m in morphemizers:
+        if not m.exists():
+            morphemizers.remove(m)
+
+    return morphemizers
 
 
 def getMorphemizerByName(name):
@@ -88,6 +98,35 @@ class SpaceMorphemizer(Morphemizer):
 
     def getDescription(self):
         return 'Language w/ Spaces'
+
+
+####################################################################################################
+# Vietnamese Morphemizer
+####################################################################################################
+
+class VietnameseMorphemizer(Morphemizer):
+    """
+    Vietnamese contains many compound words where the polysyllabic morphemes
+    are divided by spaces, so an extra tool - pyvi - is used instead.
+    """
+    def exists(self):
+        """
+        pyvi has large dependencies. To avoid bundling it or forcing users to
+        install it as a dependency, the Vietnamese morphizer only appears if
+        pyvi is importable.
+        """
+        return (importlib.util.find_spec('pyvi') is not None)
+
+    def getMorphemesFromExpr(self, expression):
+        from pyvi import ViTokenizer
+        tokens = SpaceMorphemizer.getMorphemesFromExpr(self, ViTokenizer.tokenize(expression))
+        for word in tokens:
+            word.base = word.base.replace('_', ' ')
+
+        return tokens
+
+    def getDescription(self):
+        return 'Vietnamese'
 
 
 ####################################################################################################

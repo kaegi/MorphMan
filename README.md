@@ -30,6 +30,17 @@ MorphMan supports the following languages:
 - **Japanese**: You must additionally install the _[Japanese Support](https://ankiweb.net/shared/info/3918629684)_ Anki addon
 - **Chinese**: For Anki 2.0, please use [Jieba-Morph](https://github.com/NinKenDo64/Jieba-Morph). Chinese is included in Morphman for Anki 2.1
 - **CJK Characters**: Morphemizer that splits sentence into characters and filters for Chinese-Japanese-Korean logographic/idiographic characters.
+- **Vietnamese**: You must run Anki from source and install [pyvi](https://github.com/trungtv/pyvi) into its virtualenv:
+    - `git clone https://github.com/ankitects/anki.git`
+    - `cd anki`
+    - `make develop`
+        - Make sure you have the dependencies listed in anki/README.development
+    - `source pyenv/bin/activate`
+    - pip install pyvi
+
+    Then run Anki
+    - `./run`
+
 - more languages can be added on request if morpheme-splitting-tools are available for it
 
 See Matt VS Japan's [video tutorial](https://www.youtube.com/watch?v=dVReg8_XnyA)
