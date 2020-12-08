@@ -1,10 +1,14 @@
 # -*- coding: utf-8 -*-
+import json
 import re
+import os
+import subprocess
 
 from .morphemes import Morpheme
 from .deps.zhon.hanzi import characters
 from .mecab_wrapper import getMorphemesMecab, getMecabIdentity
 from .deps.jieba import posseg
+from .util_external import memoize
 
 
 ####################################################################################################
@@ -35,9 +39,25 @@ class Morphemizer:
 # Morphemizer Helpers
 ####################################################################################################
 
+@memoize
 def getAllMorphemizers():
     # type: () -> [Morphemizer]
-    return [SpaceMorphemizer(), MecabMorphemizer(), JiebaMorphemizer(), CjkCharMorphemizer()]
+
+    morphemizers = [SpaceMorphemizer(), MecabMorphemizer(), JiebaMorphemizer(), CjkCharMorphemizer()]
+
+    try:
+        my_dir = os.path.dirname(__file__)
+        helper_path = os.path.join(my_dir, 'deps', 'python', 'parser_helper.py')
+        output = subprocess.check_output(['python', helper_path, 'parsers'])
+        parsers = json.loads(output.decode('utf-8'))
+        print('found parsers:', parsers)
+        for parser in parsers:
+            morphemizers.append(PythonMorphemizer(parser[0], parser[1]))
+        
+    except:
+        pass
+
+    return morphemizers
 
 
 def getMorphemizerByName(name):
@@ -69,6 +89,60 @@ class MecabMorphemizer(Morphemizer):
 
     def getDescription(self):
         return 'Japanese ' + getMecabIdentity()
+
+####################################################################################################
+# Python Morphemizer
+####################################################################################################
+
+POS_BLACKLIST = [
+    '記号',  # "symbol", generally punctuation
+    '補助記号',  # "symbol", generally punctuation
+    '空白',  # Empty space
+    'SPACE',
+    'PUNCT',
+    'NUM'
+]
+SUBPOS_BLACKLIST = [
+    '数詞',  # Numbers
+]
+
+class PythonMorphemizer(Morphemizer):
+    """
+    Uses morphemizers in the current Python installation, including: SpaCy.
+    """
+
+    def __init__(self, parser_name, description):
+        self.parser_name = parser_name
+        self.description = description
+        self.proc = None
+
+    @memoize
+    def getMorphemesFromExpr(self, expression):
+        if not self.proc:
+            my_dir = os.path.dirname(__file__)
+            helper_path = os.path.join(my_dir, 'deps', 'python', 'parser_helper.py')
+            cmd = ['python', helper_path, 'interact', self.parser_name]
+            self.proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                        stderr=subprocess.STDOUT)
+
+        expr = expression.encode('utf-8', 'ignore')
+        #print("expr", expr)
+        self.proc.stdin.write(expr + b'\n')
+        self.proc.stdin.flush()
+        
+        res = []
+        for l in expr.split(b'\n'):
+            morphs = json.loads(self.proc.stdout.readline())
+            res.extend([Morpheme(m[0], m[1], m[2], m[3], m[4], m[5]) \
+                for m in morphs if (m[4] not in POS_BLACKLIST) and (m[5] not in SUBPOS_BLACKLIST)])
+        #print("res", res)
+        return res
+
+    def getName(self):
+        return self.parser_name
+
+    def getDescription(self):
+        return self.description
 
 
 ####################################################################################################
