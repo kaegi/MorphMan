@@ -269,7 +269,7 @@ def updateNotes(allDb):
             else:
                 frequency_map = dict(zip([row[0] for row in rows], itertools.count(0)))
 
-    except FileNotFoundError:
+    except (FileNotFoundError, IndexError) as e:
         pass
 
     frequencyListLength = len(frequency_map)
