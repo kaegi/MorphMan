@@ -39,8 +39,10 @@ class ProgressStats:
 
     def __init__(self):
         self.learned_cards = 0
+        self.marked_known = 0
         self.learned = MorphStats()
         self.matured = MorphStats()
+        self.marked = MorphStats()
 
 # all the stats for a particular length of time (e.g. day, week, etc.)
 BucketStats = namedtuple('BucketStats', ['bucket_index', 'stats'])
@@ -200,41 +202,53 @@ def get_stats(self, db_table, bucket_size_days, day_cutoff_seconds, num_buckets=
 
     print('nid_to_morphs', len(nid_to_morphs))
 
+    all_deck_stats = defaultdict(ProgressStats)
+
     known_v_morph_times = defaultdict(int)
     known_k_morph_times = defaultdict(int)
-    mature_v_morph_times = defaultdict(int)
-    mature_k_morph_times = defaultdict(int)
-    
+
     # Get and count nids marked already known
     known_tag = ' ' + cfg('Tag_AlreadyKnown') + ' '
     query = """\
-      SELECT id
+      SELECT notes.id, cards.did, notes.mod
       FROM notes
+      INNER JOIN cards ON notes.id = cards.nid
       WHERE tags LIKE "%s";
       """ % (known_tag)
 
+    if num_buckets is not None:
+        cutoff_mod = (day_cutoff_seconds - (bucket_size_days * num_buckets * 86400))
+    else:
+        cutoff_mod = 0
+
+    in_range_known_cards = 0
     
     result = list(db_table.all(query))
-    for nid, in result:
+    for nid, did, mod, in result:
+        deck_stats = all_deck_stats[did]
+        if mod >= cutoff_mod:
+            deck_stats.marked_known += 1
+            in_range_known_cards += 1
+
         for m in nid_to_morphs[nid]:
             gk = m.getGroupKey()
-            known_v_morph_times[m] += 1000000
-            known_k_morph_times[gk] += 1000000
-            mature_v_morph_times[m] += 1000000
-            mature_k_morph_times[gk] += 1000000
+            if m not in known_v_morph_times:
+                known_v_morph_times[m] = 1000000
+                if mod >= cutoff_mod:
+                    deck_stats.marked.v_morphs += 1
+            if gk not in known_k_morph_times:
+                known_k_morph_times[gk] = 1000000
+                if mod >= cutoff_mod:
+                    deck_stats.marked.k_morphs += 1
 
-    k_morphs_marked_known = len(known_k_morph_times)
-    v_morphs_marked_known = len(known_v_morph_times)
-    k_morphs_marked_mature = len(mature_k_morph_times)
-    v_morphs_marked_mature = len(mature_v_morph_times)
-    print('k_morphs_marked_known', k_morphs_marked_known)
-    print('v_morphs_marked_known', v_morphs_marked_known)
-    print('k_morphs_marked_mature', k_morphs_marked_mature)
-    print('v_morphs_marked_mature', v_morphs_marked_mature)
+    print('k_morphs_marked_known', len(known_k_morph_times))
+    print('v_morphs_marked_known', len(known_v_morph_times))
 
-    stats_by_name['marked_known_notes'] = len(result)
-    stats_by_name['marked_known_morphs_k'] = k_morphs_marked_mature
-    stats_by_name['marked_known_morphs_v'] = v_morphs_marked_mature
+    #stats_by_name['marked_known_cards'] = in_range_known_cards
+    #print('marked_known_cards', stats_by_name['marked_known_cards'])
+
+    mature_v_morph_times = known_v_morph_times.copy()
+    mature_k_morph_times = known_k_morph_times.copy()
 
     threshold_learned = 1 # 1 day
     threshold_known = cfg('threshold_known')
@@ -271,8 +285,6 @@ def get_stats(self, db_table, bucket_size_days, day_cutoff_seconds, num_buckets=
         active_decks = set(self.col.decks.active())
 
     stats_by_bucket = {}
-    
-    all_deck_stats = defaultdict(ProgressStats)
 
     # sort by bucket
     for key in sorted(all_reviews_for_bucket, key=lambda k: k[0]):
@@ -336,7 +348,8 @@ def get_stats(self, db_table, bucket_size_days, day_cutoff_seconds, num_buckets=
     stats_by_name['all_deck_stats'] = {}
     for did, deck_stats in all_deck_stats.items():
         if deck_stats.learned.v_morphs or deck_stats.learned.k_morphs or \
-           deck_stats.matured.v_morphs or deck_stats.matured.k_morphs:
+           deck_stats.matured.v_morphs or deck_stats.matured.k_morphs or \
+           deck_stats.marked.v_morphs or deck_stats.marked.k_morphs:
             dname = mw.col.decks.nameOrNone(did)
             stats_by_name['all_deck_stats'][dname] = deck_stats
 
@@ -405,16 +418,16 @@ def morphGraphs(args, kwargs):
 
     result += _plot(self,
                     stats["learned_k_morphs"],
-                    "Learned Morph Bases",
-                    "Number of morpheme bases (K) that were learned in cards",
+                    "Morph Bases (K)",
+                    "Number of known morpheme bases (K) learned from cards",
                     bucket_size_days,
                     include_cumulative=True,
                     color=colK)
     
     result += _plot(self,
                     stats["learned_v_morphs"],
-                    "Learned Morph Variations",
-                    "Number of morpheme variations (V) that were learned in cards",
+                    "Morph Variations (V)",
+                    "Number of known morpheme variations (V) learned from cards",
                     bucket_size_days,
                     include_cumulative=True,
                     color=colV)
@@ -434,14 +447,16 @@ def morphGraphs(args, kwargs):
             <tr>
                 <td class="morph_trl" rowspan=2><b>Deck</b></td>
                 <td class="morph_trc" rowspan=2><span class="morph_c"><b>Cards<br />Learned</b></span></td>
-                <td class="morph_trc" colspan=2><span class="morph_k"><b>Morph Bases (K)</b></span></td>
-                <td class="morph_trc" colspan=2><span class="morph_m"><b>Morph Variations (V)</b></span></td>
+                <td class="morph_trc" colspan=3><span class="morph_k"><b>Morph Bases (K)</b></span></td>
+                <td class="morph_trc" colspan=3><span class="morph_m"><b>Morph Variations (V)</b></span></td>
             </tr>
             <tr>
                 <td class="morph_trc"><span class="morph_k"><b>Known</b></span></td>
                 <td class="morph_trc"><span class="morph_k"><b>Matured</b></span></td>
+                <td class="morph_trc"><span class="morph_k"><b>Marked</b></span></td>
                 <td class="morph_trc"><span class="morph_m"><b>Known</b></span></td>
                 <td class="morph_trc"><span class="morph_m"><b>Matured</b></span></td>
+                <td class="morph_trc"><span class="morph_m"><b>Marked</b></span></td>
             </tr>
             """
     total = ProgressStats()
@@ -453,41 +468,31 @@ def morphGraphs(args, kwargs):
                  <td class="morph_trc"><span class="morph_c">""" + str(deck_stats.learned_cards) + """</span></td>
                  <td class="morph_trc"><span class="morph_k">""" + str(deck_stats.learned.k_morphs) + """</span></td>
                  <td class="morph_trc"><span class="morph_k">""" + str(deck_stats.matured.k_morphs) + """</span></td>
+                 <td class="morph_trc"><span class="morph_k">""" + str(deck_stats.marked.k_morphs) + """</span></td>
                  <td class="morph_trc"><span class="morph_m">""" + str(deck_stats.learned.v_morphs) + """</span></td>
                  <td class="morph_trc"><span class="morph_m">""" + str(deck_stats.matured.v_morphs) + """</span></td>
+                 <td class="morph_trc"><span class="morph_m">""" + str(deck_stats.marked.v_morphs) + """</span></td>
             </tr>"""
         total.learned_cards += deck_stats.learned_cards
+        total.marked_known += deck_stats.marked_known
         total.learned.k_morphs += deck_stats.learned.k_morphs
         total.learned.v_morphs += deck_stats.learned.v_morphs
         total.matured.k_morphs += deck_stats.matured.k_morphs
         total.matured.v_morphs += deck_stats.matured.v_morphs
+        total.marked.k_morphs += deck_stats.marked.k_morphs
+        total.marked.v_morphs += deck_stats.marked.v_morphs
     result += """
             <tr>
                  <td class="morph_trl"><b>Total</b></td>
                  <td class="morph_trc"><b><span class="morph_c">""" + str(total.learned_cards) + """</span></b></td>
                  <td class="morph_trc"><b><span class="morph_k">""" + str(total.learned.k_morphs) + """</span></b></td>
                  <td class="morph_trc"><b><span class="morph_k">""" + str(total.matured.k_morphs) + """</span></b></td>
+                 <td class="morph_trc"><b><span class="morph_k">""" + str(total.marked.k_morphs) + """</span></b></td>
                  <td class="morph_trc"><b><span class="morph_m">""" + str(total.learned.v_morphs) + """</span></b></td>
                  <td class="morph_trc"><b><span class="morph_m">""" + str(total.matured.v_morphs) + """</span></b></td>
+                 <td class="morph_trc"><b><span class="morph_m">""" + str(total.marked.v_morphs) + """</span></b></td>
             </tr>"""
-    result += "</table><br>"
-
-    text_lines = []
-
-    self._line(
-        text_lines,
-        "Marked Known Notes",
-        "%d notes" % stats['marked_known_notes'])
-    self._line(
-        text_lines,
-        "Marked Known Morph Bases (K)",
-        "%d morphemes" % stats['marked_known_morphs_k'])
-    self._line(
-        text_lines,
-        "Marked Known Morph Variations (V)",
-        "%d morphemes" % stats['marked_known_morphs_v'])
-
-    result += self._lineTbl(text_lines)
+    result += "</table>"
 
     return result
 
