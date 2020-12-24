@@ -26,6 +26,10 @@ from anki.utils import stripHTML
 importlib.reload(customTableWidget)
 importlib.reload(readability_ui)
 
+PROFILE_PARSING = False
+if PROFILE_PARSING:
+    import cProfile
+
 def atoi(text):
     return int(text) if text.isdigit() else text
 
@@ -156,6 +160,16 @@ class LocationCorpus:
         else:
             yield self.morph_count_iter()
 
+class CorpusDBUnpickler(pickle.Unpickler):
+
+    def find_class(self, cmodule, cname):
+        # Override default class lookup for this module to allow loading databases generated with older
+        # versions of the MorphMan add-on.
+        curr_module_name = __name__.split('.')[0] + '.'
+        cmodule = cmodule.replace('MorphMan.', curr_module_name)
+        cmodule = cmodule.replace('900801631.', curr_module_name)
+        return pickle.Unpickler.find_class(self, cmodule, cname)
+
 class LocationCorpusDB:
     def __init__(self):
         self.version = 1.0
@@ -198,7 +212,7 @@ class LocationCorpusDB:
 
     def load(self, path, save_lines=False):
         with gzip.open(path) as f:
-            data = pickle.load(f)
+            data = CorpusDBUnpickler(f).load()
             other_db = data['db']
 
             for loc, loc_corpus in other_db.ordered_locs:
@@ -280,6 +294,16 @@ class MorphMan(QDialog):
     def writeOutput(self, m):
         self.ui.outputText.moveCursor(QTextCursor.End)
         self.ui.outputText.insertPlainText(m)
+
+    def write(self, txt):
+        self.ui.outputText.moveCursor(QTextCursor.End)
+        self.ui.outputText.insertPlainText(txt)
+
+    def flush(self):
+        pass
+
+    def isatty(self):
+        return False
 
     def saveWordReport(self, known_db, morphs, path):
         all_db = CountingMorphDB()
@@ -638,6 +662,10 @@ class MorphMan(QDialog):
             "Young\nInstances %", "Mature\nInstances %", "Known\nInstances %", "Proper\nNoun %", "Line\nReadability %", "i+1\nLines %"])
 
         if len(list_of_files) > 0:
+            if PROFILE_PARSING:
+                pr = cProfile.Profile()
+                pr.enable()
+            
             self.writeOutput('%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' % (
                 "Input", "Total Morphs", "Known Morphs", "% Known Morphs", "Total Instances", "Known Instances",
                 "% Young", "% Mature", "% Known", "% Proper Nouns", "% Known Lines", "% i+1 Lines"))
@@ -679,6 +707,10 @@ class MorphMan(QDialog):
 
             self.writeOutput('\nUsed morphemizer: %s\n' % morphemizer.getDescription())
             mw.progress.finish()
+
+            if PROFILE_PARSING:
+                pr.disable()
+                pr.dump_stats('c:/dev/exec.cprofile')
         else:
             self.writeOutput('\nNo files found to process.\n')
             return

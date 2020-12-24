@@ -72,10 +72,10 @@ def getMorpheme(parts):
         if wide_alpha_num_rx.search(parts[1]):
             return None
 
-        norm = parts[0]
-        base = parts[1]
-        inflected = parts[2]
-        reading = parts[3]
+        norm = parts[0].strip()
+        base = parts[1].strip()
+        inflected = parts[2].strip()
+        reading = parts[3].strip()
 
         return Morpheme(norm, base, inflected, reading, pos, subPos)
     else:
@@ -88,17 +88,21 @@ def getMorpheme(parts):
         if (pos in MECAB_POS_BLACKLIST) or (subPos in MECAB_SUBPOS_BLACKLIST):
             return None
 
-        norm = parts[0]
-        base = parts[0]
-        inflected = parts[1]
-        reading = parts[2]
+        norm = parts[0].strip()
+        base = norm
+        inflected = parts[1].strip()
+        reading = parts[2].strip()
 
         m = fixReading(Morpheme(norm, base, inflected, reading, pos, subPos))
         return m
 
 
+control_chars_re = re.compile('[\x00-\x1f\x7f-\x9f]')
+
 @memoize
 def getMorphemesMecab(e):
+    # Remove Unicode control codes before sending to MeCab.
+    e = control_chars_re.sub('', e)
     ms = [getMorpheme(m.split('\t')) for m in interact(e).split('\r')]
     ms = [m for m in ms if m is not None]
     return ms

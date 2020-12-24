@@ -34,9 +34,6 @@ class memoize(object):
         self.cache = {}
 
     def __call__(self, *args):
-        # Don't memoize large args
-        if get_size(args) > 512:
-            return self.func(*args)
         try:
             return self.cache[args]
         except KeyError:
