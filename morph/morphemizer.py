@@ -113,7 +113,11 @@ class MecabMorphemizer(Morphemizer):
         return getMorphemesMecab(expression)
 
     def getDescription(self):
-        return 'Japanese ' + getMecabIdentity()
+        try:
+            identity = getMecabIdentity()
+        except:
+            identity = 'UNAVAILABLE'
+        return 'Japanese ' + identity
 
 
 ####################################################################################################
