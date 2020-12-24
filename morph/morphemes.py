@@ -105,7 +105,7 @@ class Morpheme:
             return '%s\t%s\t%s\t' % (self.norm, self.read, self.pos)
 
     def isProperNoun(self):
-        return (self.subPos == '固有名詞')
+        return (self.subPos == '固有名詞' or self.pos == 'PROPN')
 
     def show(self):  # str
         return '\t'.join([self.norm, self.base, self.inflected, self.read, self.pos, self.subPos])

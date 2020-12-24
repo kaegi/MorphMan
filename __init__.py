@@ -1,5 +1,8 @@
 from .morph.util import *
 from PyQt5.QtWidgets import *
+import anki.stats
+from anki.hooks import wrap
+
 import importlib
 
 try:
@@ -32,6 +35,11 @@ def onMorphManPreferences():
     from .morph import preferencesDialog
     importlib.reload(preferencesDialog)
     preferencesDialog.main()
+
+def morphGraphsWrapper(*args, **kwargs):
+    from .morph import graphs
+    importlib.reload(graphs)
+    return graphs.morphGraphs(args, kwargs)
 
 
 def main():
@@ -82,6 +90,10 @@ def main():
     from .morph.browser import alreadyKnownTagger
     from .morph import newMorphHelper
     from .morph import stats
+
+
+    anki.stats.CollectionStats.easeGraph = \
+        wrap(anki.stats.CollectionStats.easeGraph, morphGraphsWrapper, pos="")
 
 
 main()

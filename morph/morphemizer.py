@@ -6,13 +6,51 @@ from .deps.zhon.hanzi import characters
 from .mecab_wrapper import getMorphemesMecab, getMecabIdentity
 from .deps.jieba import posseg
 
+class LRUCache:
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.tm = 0
+        self.cache = {}
+        self.lru = {}
+
+    def get(self, key):
+        if key in self.cache:
+            self.lru[key] = self.tm
+            self.tm += 1
+            return self.cache[key]
+        return None
+
+    def set(self, key, value):
+        if len(self.cache) >= self.capacity:
+            # find the LRU entry
+            old_key = min(self.lru.keys(), key=lambda k:self.lru[k])
+            self.cache.pop(old_key)
+            self.lru.pop(old_key)
+        self.cache[key] = value
+        self.lru[key] = self.tm
+        self.tm += 1
+
 
 ####################################################################################################
 # Base Class
 ####################################################################################################
 
 class Morphemizer:
+    def __init__(self):
+        self.lru = LRUCache(1000000)
+        
     def getMorphemesFromExpr(self, expression):
+        # type: (str) -> [Morpheme]
+
+        morphs = self.lru.get(expression)
+        if morphs:
+            return morphs
+        
+        morphs = self._getMorphemesFromExpr(expression)
+        self.lru.set(expression, morphs)
+        return morphs
+    
+    def _getMorphemesFromExpr(self, expression):
         # type: (str) -> [Morpheme]
         """
         The heart of this plugin: convert an expression to a list of its morphemes.
@@ -35,17 +73,24 @@ class Morphemizer:
 # Morphemizer Helpers
 ####################################################################################################
 
+morphemizers = None
+morphemizers_by_name = {}
+
 def getAllMorphemizers():
     # type: () -> [Morphemizer]
-    return [SpaceMorphemizer(), MecabMorphemizer(), JiebaMorphemizer(), CjkCharMorphemizer()]
+    global morphemizers, morphemizers_by_name
+    if morphemizers is None:
+        morphemizers = [SpaceMorphemizer(), MecabMorphemizer(), JiebaMorphemizer(), CjkCharMorphemizer()]
 
+        for m in morphemizers:
+            morphemizers_by_name[m.getName()] = m
+
+    return morphemizers
 
 def getMorphemizerByName(name):
     # type: (str) -> Optional(Morphemizer)
-    for m in getAllMorphemizers():
-        if m.getName() == name:
-            return m
-    return None
+    getAllMorphemizers()
+    return morphemizers_by_name.get(name, None)
 
 
 ####################################################################################################
@@ -60,7 +105,7 @@ class MecabMorphemizer(Morphemizer):
     a extra tool called 'mecab' has to be used.
     """
 
-    def getMorphemesFromExpr(self, expression):
+    def _getMorphemesFromExpr(self, expression):
         # Remove simple spaces that could be added by other add-ons and break the parsing.
         if space_char_regex.search(expression):
             expression = space_char_regex.sub('', expression)
@@ -81,7 +126,7 @@ class SpaceMorphemizer(Morphemizer):
     a general-use-morphemizer, it can't generate the base form from inflection.
     """
 
-    def getMorphemesFromExpr(self, e):
+    def _getMorphemesFromExpr(self, e):
         word_list = [word.lower()
                      for word in re.findall(r"\b[^\s\d]+\b", e, re.UNICODE)]
         return [Morpheme(word, word, word, word, 'UNKNOWN', 'UNKNOWN') for word in word_list]
@@ -100,7 +145,7 @@ class CjkCharMorphemizer(Morphemizer):
     characters.
     """
 
-    def getMorphemesFromExpr(self, e):
+    def _getMorphemesFromExpr(self, e):
         return [Morpheme(character, character, character, character, 'CJK_CHAR', 'UNKNOWN') for character in
                 re.findall('[%s]' % characters, e)]
 
@@ -118,7 +163,7 @@ class JiebaMorphemizer(Morphemizer):
     https://github.com/fxsjy/jieba
     """
 
-    def getMorphemesFromExpr(self, e):
+    def _getMorphemesFromExpr(self, e):
         # remove all punctuation
         e = u''.join(re.findall('[%s]' % characters, e))
         return [Morpheme(m.word, m.word, m.word, m.word, m.flag, u'UNKNOWN') for m in
