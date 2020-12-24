@@ -47,31 +47,48 @@ class ProgressStats:
 # all the stats for a particular length of time (e.g. day, week, etc.)
 BucketStats = namedtuple('BucketStats', ['bucket_index', 'stats'])
 
-def _get_mat(ivl, type):
-    return 0.5 if ivl == 0 and type == 1 else ivl
+def _fix_ivl(ivl):
+    if ivl < 0:
+        return 0.5
+    return ivl
 
-def _has_lost_learned(card_reviews, last_ivl, threshold):
+def _has_lost_learned(card_reviews, last_ivl):
     "Check if the card has lost maturity for the current length of time."
-    first_review = card_reviews.reviews[0]
+
     last_review = card_reviews.reviews[-1]
+    new_ivl = last_review.ivl
 
-    # Prefer last_ivl if available because lastIvl isn't always correct (Anki bug?).
-    if last_ivl is None:
-        last_ivl = first_review.lastIvl
+    return last_ivl > 0 and new_ivl <= 0
 
-    return last_ivl >= threshold and last_review.ivl < threshold
-
-def _has_learned(card_reviews, last_ivl, threshold):
+def _has_learned(card_reviews, last_ivl):
     "Check if the card was learned at some point during the length of time."
 
-    first_review = card_reviews.reviews[0]
     last_review = card_reviews.reviews[-1]
+    new_ivl = last_review.ivl
 
-    # Prefer last_ivl if available because lastIvl isn't always correct (Anki bug?).
-    if last_ivl is None:
-        last_ivl = first_review.lastIvl
+    return last_ivl <= 0 and new_ivl > 0
 
-    return last_ivl < threshold and last_review.ivl >= threshold
+def _has_lost_matured(card_reviews, last_ivl, threshold):
+    "Check if the card has lost maturity for the current length of time."
+
+    last_review = card_reviews.reviews[-1]
+    new_ivl = last_review.ivl
+
+    last_ivl = _fix_ivl(last_ivl)
+    new_ivl = _fix_ivl(new_ivl)
+
+    return last_ivl >= threshold and new_ivl < threshold
+
+def _has_matured(card_reviews, last_ivl, threshold):
+    "Check if the card was learned at some point during the length of time."
+
+    last_review = card_reviews.reviews[-1]
+    new_ivl = last_review.ivl
+
+    last_ivl = _fix_ivl(last_ivl)
+    new_ivl = _fix_ivl(new_ivl)
+
+    return last_ivl < threshold and new_ivl >= threshold
 
 
 def _new_bucket_stats(bucket_index):
@@ -107,6 +124,10 @@ def _get_reviews(db_table, bucket_size_days, day_cutoff_seconds, num_buckets=Non
     id_cutoff = None
 
     filters = []
+
+    # Exclude cards that are currently in new state.
+    filters.append('(cards.ivl != 0 or cards.type=1)')
+
     if num_buckets:
         id_cutoff = (day_cutoff_seconds - (bucket_size_days * num_buckets * 86400)) * 1000
         # Get all recent reviews and any earlier reviews where the card was learned.  We need to query
@@ -254,7 +275,7 @@ def get_stats(self, db_table, bucket_size_days, day_cutoff_seconds, num_buckets=
     threshold_known = cfg('threshold_known')
     threshold_mature = cfg('threshold_mature')
 
-    last_ivl_by_cid = {}
+    last_ivl_by_cid = defaultdict(int)
     
     # Get morphs from cards learned prior to the cutoff
     for card, ivl in prior_learned_cards_ivl.items():
@@ -268,7 +289,7 @@ def get_stats(self, db_table, bucket_size_days, day_cutoff_seconds, num_buckets=
                 mature_v_morph_times[m] += 1
                 mature_k_morph_times[gk] += 1
 
-            last_ivl_by_cid[card.cid] = ivl
+        last_ivl_by_cid[card.cid] = ivl
 
     k_already_known_morphs = len(known_k_morph_times)
     v_already_known_morphs = len(known_v_morph_times)
@@ -292,7 +313,7 @@ def get_stats(self, db_table, bucket_size_days, day_cutoff_seconds, num_buckets=
         
         bucket_index, cid, nid, did = key
 
-        last_ivl = last_ivl_by_cid.get(cid, None)
+        last_ivl = last_ivl_by_cid[cid]
 
         if bucket_index < min_bucket_index:
             min_bucket_index = bucket_index
@@ -325,21 +346,21 @@ def get_stats(self, db_table, bucket_size_days, day_cutoff_seconds, num_buckets=
                 v_morph_times[m] += delta
                 k_morph_times[gk] += delta
 
-        if _has_learned(card_reviews, last_ivl, threshold_learned):
+        if _has_learned(card_reviews, last_ivl):
             if (active_decks is None or (did in active_decks)):
                 deck_stats.learned_cards += 1
-        if _has_lost_learned(card_reviews, last_ivl, threshold_learned):
+        if _has_lost_learned(card_reviews, last_ivl):
             if (active_decks is None or (did in active_decks)):
                 deck_stats.learned_cards -= 1
         
-        if _has_learned(card_reviews, last_ivl, threshold_known):
+        if _has_matured(card_reviews, last_ivl, threshold_known):
             update_morph_stats(did, known_v_morph_times, known_k_morph_times, bucket_stats.stats.learned, deck_stats.learned, 1)
-        if _has_lost_learned(card_reviews, last_ivl, threshold_known):
+        if _has_lost_matured(card_reviews, last_ivl, threshold_known):
             update_morph_stats(did, known_v_morph_times, known_k_morph_times, bucket_stats.stats.learned, deck_stats.learned, -1)
         
-        if _has_learned(card_reviews, last_ivl, threshold_mature):
+        if _has_matured(card_reviews, last_ivl, threshold_mature):
             update_morph_stats(did, mature_v_morph_times, mature_k_morph_times, bucket_stats.stats.matured, deck_stats.matured, 1)
-        if _has_lost_learned(card_reviews, last_ivl, threshold_mature):
+        if _has_lost_matured(card_reviews, last_ivl, threshold_mature):
             update_morph_stats(did, mature_v_morph_times, mature_k_morph_times, bucket_stats.stats.matured, deck_stats.matured, -1)
 
         last_ivl_by_cid[cid] = card_reviews.reviews[-1].ivl
