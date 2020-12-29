@@ -16,14 +16,14 @@ class SpacyMorphemizer(Morphemizer):
         self.model_path = model_path
         self.nlp = None
 
-    def getMorphemesFromExpr(self, e):
+    def _getMorphemesFromExpr(self, e):
         if not self.nlp:
             self.nlp = spacy.load(self.model_path)
 
         doc = self.nlp(e)
-        return list(map(lambda t: self.createMorpheme(t, doc), filter(self.filter_tokens, doc)))
+        return list(map(lambda t: self._createMorpheme(t, doc), filter(self.filter_tokens, doc)))
 
-    def createMorpheme(self, token, doc):
+    def _createMorpheme(self, token, doc):
         reading = token.lemma_
 
         if "reading_forms" in doc.user_data:

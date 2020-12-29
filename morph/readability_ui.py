@@ -112,11 +112,9 @@ class Ui_ReadabilityDialog(object):
 
         self.horizontalLayout_4.addWidget(self.dictionaryLabel)
 
-        # TODO connect combo box to registry
         self.morphemizerComboBox = MorphemizerComboBox(self.frame)
 
         self.morphemizerComboBox.setObjectName("morphemizerComboBox")
-
 
         self.horizontalLayout_4.addWidget(self.morphemizerComboBox)
 

@@ -17,8 +17,7 @@ class TestMorphemizerManager(unittest.TestCase):
         self.registry.addMorphemizer(morphemizer)
 
 class TestMorphemizer(Morphemizer):
-    def __init__(self):
-        super(TestMorphemizer, self).__init__()
+    pass
 
 
 if __name__ == '__main__':

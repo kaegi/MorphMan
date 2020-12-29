@@ -9,30 +9,30 @@ from morph.morphemizer import SpaceMorphemizer, MecabMorphemizer, JiebaMorphemiz
 
 class TestMorphemizerComboBox(unittest.TestCase):
 
-  def setUp(self):
-    self.app = QApplication([])
-    self.morphemizerManager = MorphemizerManager()
+    def setUp(self):
+        self.app = QApplication([])
+        self.morphemizerManager = MorphemizerManager()
 
-  def test_set_and_get_current(self):
-    self.morphemizerManager.addMorphemizer(SpaceMorphemizer())
-    self.morphemizerManager.addMorphemizer(MecabMorphemizer())
-    self.morphemizerManager.addMorphemizer(JiebaMorphemizer())
-    self.morphemizerManager.addMorphemizer(CjkCharMorphemizer())
+    def test_set_and_get_current(self):
+        self.morphemizerManager.addMorphemizer(SpaceMorphemizer())
+        self.morphemizerManager.addMorphemizer(MecabMorphemizer())
+        self.morphemizerManager.addMorphemizer(JiebaMorphemizer())
+        self.morphemizerManager.addMorphemizer(CjkCharMorphemizer())
 
-    combobox = MorphemizerComboBox(self.morphemizerManager)
-    combobox.setCurrentByName('MecabMorphemizer')
-    self.assertEqual(combobox.currentText(), 'Japanese MorphMan')
+        combobox = MorphemizerComboBox(self.morphemizerManager)
+        combobox.setCurrentByName('MecabMorphemizer')
+        self.assertEqual(combobox.currentText(), 'Japanese MorphMan')
 
-    current = combobox.getCurrent()
-    self.assertEqual(current.getDescription(), 'Japanese MorphMan')
+        current = combobox.getCurrent()
+        self.assertEqual(current.getDescription(), 'Japanese MorphMan')
 
-  def test_empty_morphemizer_list(self):
-    combobox = MorphemizerComboBox()
-    combobox.setCurrentByName('AnyBecauseNothingExists')
+    def test_empty_morphemizer_list(self):
+        combobox = MorphemizerComboBox()
+        combobox.setCurrentByName('AnyBecauseNothingExists')
 
-    current = combobox.getCurrent()
-    self.assertIsNone(current)
+        current = combobox.getCurrent()
+        self.assertIsNone(current)
 
 
 if __name__ == '__main__':
-  unittest.main()
+    unittest.main()
