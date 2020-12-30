@@ -227,49 +227,14 @@ def get_stats(self, db_table, bucket_size_days, day_cutoff_seconds, num_buckets=
 
     known_v_morph_times = defaultdict(int)
     known_k_morph_times = defaultdict(int)
-
-    # Get and count nids marked already known
-    known_tag = ' ' + cfg('Tag_AlreadyKnown') + ' '
-    query = """\
-      SELECT notes.id, cards.did, notes.mod
-      FROM notes
-      INNER JOIN cards ON notes.id = cards.nid
-      WHERE tags LIKE "%s";
-      """ % (known_tag)
-
-    if num_buckets is not None:
-        cutoff_mod = (day_cutoff_seconds - (bucket_size_days * num_buckets * 86400))
-    else:
-        cutoff_mod = 0
-
-    in_range_known_cards = 0
-    
-    result = list(db_table.all(query))
-    for nid, did, mod, in result:
-        deck_stats = all_deck_stats[did]
-        if mod >= cutoff_mod:
-            deck_stats.marked_known += 1
-            in_range_known_cards += 1
-
-        for m in nid_to_morphs[nid]:
-            gk = m.getGroupKey()
-            if m not in known_v_morph_times:
-                known_v_morph_times[m] = 1000000
-                if mod >= cutoff_mod:
-                    deck_stats.marked.v_morphs += 1
-            if gk not in known_k_morph_times:
-                known_k_morph_times[gk] = 1000000
-                if mod >= cutoff_mod:
-                    deck_stats.marked.k_morphs += 1
-
-    print('k_morphs_marked_known', len(known_k_morph_times))
-    print('v_morphs_marked_known', len(known_v_morph_times))
+    mature_v_morph_times = defaultdict(int)
+    mature_k_morph_times = defaultdict(int)
 
     #stats_by_name['marked_known_cards'] = in_range_known_cards
     #print('marked_known_cards', stats_by_name['marked_known_cards'])
 
-    mature_v_morph_times = known_v_morph_times.copy()
-    mature_k_morph_times = known_k_morph_times.copy()
+    #mature_v_morph_times = known_v_morph_times.copy()
+    #mature_k_morph_times = known_k_morph_times.copy()
 
     threshold_learned = 1 # 1 day
     threshold_known = cfg('threshold_known')
@@ -328,7 +293,7 @@ def get_stats(self, db_table, bucket_size_days, day_cutoff_seconds, num_buckets=
             bucket_stats = _new_bucket_stats(bucket_index)
             stats_by_bucket[bucket_index] = bucket_stats
 
-        def update_morph_stats(did, v_morph_times, k_morph_times, bucket_morph_stats, deck_morph_stats, delta):
+        def update_morph_stats(nid, did, v_morph_times, k_morph_times, bucket_morph_stats, deck_morph_stats, delta):
             for m in nid_to_morphs[nid]:
                 gk = m.getGroupKey()
 
@@ -354,16 +319,56 @@ def get_stats(self, db_table, bucket_size_days, day_cutoff_seconds, num_buckets=
                 deck_stats.learned_cards -= 1
         
         if _has_matured(card_reviews, last_ivl, threshold_known):
-            update_morph_stats(did, known_v_morph_times, known_k_morph_times, bucket_stats.stats.learned, deck_stats.learned, 1)
+            update_morph_stats(nid, did, known_v_morph_times, known_k_morph_times, bucket_stats.stats.learned, deck_stats.learned, 1)
         if _has_lost_matured(card_reviews, last_ivl, threshold_known):
-            update_morph_stats(did, known_v_morph_times, known_k_morph_times, bucket_stats.stats.learned, deck_stats.learned, -1)
+            update_morph_stats(nid, did, known_v_morph_times, known_k_morph_times, bucket_stats.stats.learned, deck_stats.learned, -1)
         
         if _has_matured(card_reviews, last_ivl, threshold_mature):
-            update_morph_stats(did, mature_v_morph_times, mature_k_morph_times, bucket_stats.stats.matured, deck_stats.matured, 1)
+            update_morph_stats(nid, did, mature_v_morph_times, mature_k_morph_times, bucket_stats.stats.matured, deck_stats.matured, 1)
         if _has_lost_matured(card_reviews, last_ivl, threshold_mature):
-            update_morph_stats(did, mature_v_morph_times, mature_k_morph_times, bucket_stats.stats.matured, deck_stats.matured, -1)
+            update_morph_stats(nid, did, mature_v_morph_times, mature_k_morph_times, bucket_stats.stats.matured, deck_stats.matured, -1)
 
         last_ivl_by_cid[cid] = card_reviews.reviews[-1].ivl
+
+    # Get and count nids marked already known
+    known_tag = ' ' + cfg('Tag_AlreadyKnown') + ' '
+    query = """\
+      SELECT notes.id, cards.did, notes.mod
+      FROM notes
+      INNER JOIN cards ON notes.id = cards.nid
+      WHERE tags LIKE "%s";
+      """ % (known_tag)
+
+    if num_buckets is not None:
+        cutoff_mod = (day_cutoff_seconds - (bucket_size_days * num_buckets * 86400))
+    else:
+        cutoff_mod = 0
+
+    in_range_known_cards = 0
+    
+    result = list(db_table.all(query))
+    for nid, did, mod, in result:
+        deck_stats = all_deck_stats[did]
+        if mod >= cutoff_mod:
+            deck_stats.marked_known += 1
+            in_range_known_cards += 1
+
+        for m in nid_to_morphs[nid]:
+            gk = m.getGroupKey()
+            if m not in known_v_morph_times:
+                if mod >= cutoff_mod:
+                    deck_stats.marked.v_morphs += 1
+            known_v_morph_times[m] = 1000000
+            mature_v_morph_times[m] = 1000000
+
+            if gk not in known_k_morph_times:
+                if mod >= cutoff_mod:
+                    deck_stats.marked.k_morphs += 1
+            known_k_morph_times[gk] = 1000000
+            mature_k_morph_times[gk] = 1000000
+
+    print('k_morphs_marked_known', len(known_k_morph_times))
+    print('v_morphs_marked_known', len(known_v_morph_times))
 
     # Return deck stats for decks with learned morphs
     stats_by_name['all_deck_stats'] = {}
