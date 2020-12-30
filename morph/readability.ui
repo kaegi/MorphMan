@@ -360,6 +360,16 @@
          </widget>
         </item>
         <item>
+         <widget class="QCheckBox" name="migakuDictionaryCheckBox">
+          <property name="text">
+           <string>Migaku Dictionary Tags</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QCheckBox" name="wordReportCheckBox">
           <property name="text">
            <string>Word Report</string>

@@ -220,7 +220,9 @@ class PreferencesDialog(QDialog):
             ("Treat proper nouns as known", 'Option_ProperNounsAlreadyKnown',
              'Treat proper nouns as already known when scoring cards (currently only works for Japanese).'),
             ('Ignore suspended leeches', 'Option_IgnoreSuspendedLeeches',
-             'Ignore cards that are suspended and have the tag \'leech\'.')
+             'Ignore cards that are suspended and have the tag \'leech\'.'),
+            ('Enable Web Service (beta)', 'Option_EnableWebService',
+             'Enable WebSocket Service, allowing external apps to use MorphMan services.'),
         ]
         self.boolOptionList = []
         for i, (name, key, tooltipInfo) in enumerate(optionList):

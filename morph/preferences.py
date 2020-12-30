@@ -162,11 +162,15 @@ def jcfg_default():
         'Option_SaveReadabilityDB': False,
         'Option_SaveStudyPlan': False,
         'Option_SaveFrequencyList': False,
+        'Option_MigakuDictionaryFreq': False,
         'Option_GroupByDir': False,
         'Option_ProcessLines': False,
         'Option_FillAllMorphsInStudyPlan': True,
         'Option_SourceScorePower': 2.0,            # Morpheme score formula parameter.
         'Option_SourceScoreMultiplier': 60.0,      # Morpheme score formula parameter.
+
+        # Experimental web service options
+        'Option_EnableWebService': False,
     }
 
 def _jsonConfig():
