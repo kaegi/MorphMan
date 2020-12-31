@@ -158,16 +158,18 @@ def _get_reviews(db_table, bucket_size_days, day_cutoff_seconds, num_buckets=Non
     # We add 0.5 and round in order to round up.
 
     query = """\
-      SELECT rl.id,
+      SELECT cards.id,
              cards.nid,
              cards.did,
+             cards.type,
+             rl.id,
              CAST(round(( (rl.id/1000.0 - %d) / 86400.0 / %d ) + 0.5) as int)
                as bucket_index,
-             rl.cid, rl.ease, rl.ivl, rl.lastIvl, rl.type
+             rl.ease, rl.ivl, rl.lastIvl, cards.ivl, rl.type
       FROM revlog rl
       INNER JOIN cards ON rl.cid = cards.id
       %s
-      ORDER BY rl.id ASC;
+      ORDER BY rl.cid ASC, rl.id ASC;
       """ % (day_cutoff_seconds, bucket_size_days, where_clause)
 
     result = db_table.all(query)
@@ -175,15 +177,21 @@ def _get_reviews(db_table, bucket_size_days, day_cutoff_seconds, num_buckets=Non
     prior_learned_cards_ivl = {}
 
     all_reviews_for_bucket = {}
-    for _id, nid, did, bucket_index, cid, ease, ivl, lastIvl, _type in result:
+    last_review_for_card = {}
+
+    for i, (cid, nid, did, card_type, rl_id, bucket_index, ease, ivl, lastIvl, card_ivl, _type) in enumerate(result):
+        # For the last review for a card, use the last card interval unless card is in the learning queue.
+        if (i + 1 == len(result) or result[i+1][0] != cid) and card_type != 1:
+            ivl = card_ivl
+
         # Any ids earlier than the cutoff will not be graphed.  We only queried them to determine the
         # first time each card was learned.
-        if id_cutoff and _id < id_cutoff:
+        if id_cutoff and rl_id < id_cutoff:
             prior_learned_cards_ivl[CardIdNoteId(cid=cid, nid=nid)] = ivl
             continue
 
         key = (bucket_index, cid, nid, did)
-        review = CardReview(id=_id, nid=nid, did=did,
+        review = CardReview(id=rl_id, nid=nid, did=did,
                             bucket_index=bucket_index, cid=cid, ease=ease, ivl=ivl,
                             lastIvl=lastIvl, type=_type)
         card_reviews = all_reviews_for_bucket.get(key)
