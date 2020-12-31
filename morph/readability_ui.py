@@ -112,7 +112,7 @@ class Ui_ReadabilityDialog(object):
 
         self.horizontalLayout_4.addWidget(self.dictionaryLabel)
 
-        self.morphemizerComboBox = MorphemizerComboBox(self.frame)
+        self.morphemizerComboBox = MorphemizerComboBox(parent=self.frame)
 
         self.morphemizerComboBox.setObjectName("morphemizerComboBox")
 
