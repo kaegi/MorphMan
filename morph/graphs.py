@@ -339,7 +339,7 @@ def get_stats(self, db_table, bucket_size_days, day_cutoff_seconds, num_buckets=
         last_ivl_by_cid[cid] = card_reviews.reviews[-1].ivl
 
     # Get and count nids marked already known
-    known_tag = ' ' + cfg('Tag_AlreadyKnown') + ' '
+    known_tag = '% ' + cfg('Tag_AlreadyKnown') + ' %'
     query = """\
       SELECT notes.id, cards.did, notes.mod
       FROM notes
