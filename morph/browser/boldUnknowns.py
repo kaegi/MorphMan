@@ -5,7 +5,7 @@ from anki.hooks import addHook
 from anki.utils import stripHTML
 from ..morphemes import getMorphemes
 from ..morphemizer import getMorphemizerByName
-from ..util import addBrowserNoteSelectionCmd, getFilter, allDb
+from ..util import addBrowserNoteSelectionCmd, getFilter, allDb, runOnce
 from ..preferences import get_preference as cfg
 
 def nonSpanSub(sub, repl, string):
@@ -45,10 +45,12 @@ def per(st, n):
 def post(st):
     pass
 
+@runOnce
 def runBoldUnknowns():
     label = 'MorphMan: Bold Unnown Morphemes'
-    tooltipMsg = 'Bold Unnown Morpheme on selected note'
-    addBrowserNoteSelectionCmd(label, pre, per, post, tooltip=tooltipMsg)
+    tooltipMsg = 'Bold Unnown Morpheme on selected notes'
+    shortcut = cfg('set bold unknowns key')
+    addBrowserNoteSelectionCmd(label, pre, per, post, tooltip=tooltipMsg, shortcut=(shortcut,))
 
 
 addHook('profileLoaded', runBoldUnknowns)

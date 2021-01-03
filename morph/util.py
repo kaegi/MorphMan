@@ -198,3 +198,12 @@ def mkBtn(txt, f, parent):
 # Mplayer settings
 ###############################################################################
 # sound.mplayerCmd += [ '-fs' ]
+
+# Decorator to ensure a function only runs one time.
+def runOnce(f):
+    def wrapper(*args, **kwargs):
+        if not wrapper.has_run:
+            wrapper.has_run = True
+            return f(*args, **kwargs)
+    wrapper.has_run = False
+    return wrapper
