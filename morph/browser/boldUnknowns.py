@@ -1,41 +1,28 @@
 # -*- coding: utf-8 -*-
-import re
 
 from anki.hooks import addHook
-from anki.utils import stripHTML
-from ..morphemes import getMorphemes
-from ..morphemizer import getMorphemizerByName
-from ..util import addBrowserNoteSelectionCmd, getFilter, allDb, runOnce
+from ..text_utils import bold_unknowns
+from ..util import addBrowserNoteSelectionCmd, getFilterByMidAndTags, runOnce
 from ..preferences import get_preference as cfg
-
-def nonSpanSub(sub, repl, string):
-    return ''.join(re.sub(sub, repl, s, flags=re.IGNORECASE) if not s.startswith('<span') else s for s in
-                    re.split('(<span.*?</span>)', string))
 
 def pre(b): return {'morphemes': []}
 
 
 def per(st, n):
-    notecfg = getFilter(n)
+    mid = n.model()['id']
+    tags = n.tags
+
+    notecfg = getFilterByMidAndTags(mid, tags)
     if notecfg is None:
         return
 
     changed = False
-    proper_nouns_known = cfg('Option_ProperNounsAlreadyKnown')
 
-    morphemizer = getMorphemizerByName(notecfg['Morphemizer'])
     for f in notecfg['Fields']:
-        ms = getMorphemes(morphemizer, stripHTML(n[f]), n.tags)
+        before = n[f]
+        n[f] = bold_unknowns(mid, before, tags)
+        changed = changed or (before != n[f])
 
-        for m in sorted(ms, key=lambda x: len(x.inflected), reverse=True):  # largest subs first
-            locs = allDb().getMatchingLocs(m)
-            mat = max(loc.maturity for loc in locs) if locs else 0
-
-            if (proper_nouns_known and m.isProperNoun()) or (mat >= cfg('threshold_known')):
-                continue
-            
-            n[f] = nonSpanSub('(%s)' % m.inflected, '<b>\\1</b>', n[f])
-            changed = True
     if changed:
         n.flush()
 
