@@ -30,7 +30,7 @@ class Ui_ReadabilityDialog(object):
 
         ReadabilityDialog.setObjectName("ReadabilityDialog")
 
-        ReadabilityDialog.resize(898, 781)
+        ReadabilityDialog.resize(901, 730)
 
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
 
@@ -342,14 +342,6 @@ class Ui_ReadabilityDialog(object):
 
         self.verticalLayout_5.addWidget(self.frequencyListCheckBox)
 
-        self.migakuDictionaryCheckBox = QtWidgets.QCheckBox(self.OutputsGroupBox)
-
-        self.migakuDictionaryCheckBox.setChecked(False)
-
-        self.migakuDictionaryCheckBox.setObjectName("migakuDictionaryCheckBox")
-
-        self.verticalLayout_5.addWidget(self.migakuDictionaryCheckBox)
-
         self.wordReportCheckBox = QtWidgets.QCheckBox(self.OutputsGroupBox)
 
         self.wordReportCheckBox.setChecked(False)
@@ -357,14 +349,6 @@ class Ui_ReadabilityDialog(object):
         self.wordReportCheckBox.setObjectName("wordReportCheckBox")
 
         self.verticalLayout_5.addWidget(self.wordReportCheckBox)
-
-        self.readabilityDBCheckBox = QtWidgets.QCheckBox(self.OutputsGroupBox)
-
-        self.readabilityDBCheckBox.setChecked(False)
-
-        self.readabilityDBCheckBox.setObjectName("readabilityDBCheckBox")
-
-        self.verticalLayout_5.addWidget(self.readabilityDBCheckBox)
 
         self.groupByDirCheckBox = QtWidgets.QCheckBox(self.OutputsGroupBox)
 
@@ -381,6 +365,22 @@ class Ui_ReadabilityDialog(object):
         self.processLinesCheckBox.setObjectName("processLinesCheckBox")
 
         self.verticalLayout_5.addWidget(self.processLinesCheckBox)
+
+        self.advancedSettingsButton = QtWidgets.QPushButton(self.OutputsGroupBox)
+
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+
+        sizePolicy.setHorizontalStretch(0)
+
+        sizePolicy.setVerticalStretch(0)
+
+        sizePolicy.setHeightForWidth(self.advancedSettingsButton.sizePolicy().hasHeightForWidth())
+
+        self.advancedSettingsButton.setSizePolicy(sizePolicy)
+
+        self.advancedSettingsButton.setObjectName("advancedSettingsButton")
+
+        self.verticalLayout_5.addWidget(self.advancedSettingsButton)
 
         self.horizontalLayout.addWidget(self.OutputsGroupBox, 0, QtCore.Qt.AlignTop)
 
@@ -494,11 +494,23 @@ class Ui_ReadabilityDialog(object):
 
         self.inputPathButton.setText(_translate("ReadabilityDialog", "..."))
 
+        self.inputPathEdit.setToolTip(_translate("ReadabilityDialog", "Set the Input Directory path to be analyzed."))
+
         self.dictionaryLabel.setText(_translate("ReadabilityDialog", "Morphemizer:"))
 
-        self.minFrequencyLabel.setText(_translate("ReadabilityDialog", "Minimum Master Frequency"))
+        self.morphemizerComboBox.setToolTip(_translate("ReadabilityDialog", "Select the Morphemizer to use for parsing the inputs."))
+
+        self.minFrequencyLabel.setText(_translate("ReadabilityDialog", "Minimum Frequency"))
+
+        self.minFrequencySpinBox.setToolTip(_translate("ReadabilityDialog", "The \'Minimum Frequency\' words to include, corresponding to the \'Master Frequency List\' in the Study Plan.\n"
+
+"Morphemes meeting the \'Minimum Frequency\' will be added to the plan until the \'Target %\' is reached."))
 
         self.targetLabel.setText(_translate("ReadabilityDialog", "Target %"))
+
+        self.targetSpinBox.setToolTip(_translate("ReadabilityDialog", "The target \'Readability %\' for the study plan.\n"
+
+"Morphemes meeting the \'Minimum Frequency\' will be added to the plan until the \'Target %\' is reached."))
 
         self.analyzeButton.setText(_translate("ReadabilityDialog", "Analyze!"))
 
@@ -510,29 +522,71 @@ class Ui_ReadabilityDialog(object):
 
         self.masterFreqButton.setText(_translate("ReadabilityDialog", "..."))
 
+        self.masterFreqEdit.setToolTip(_translate("ReadabilityDialog", "Specity a Master Frequency List\n"
+
+"The expected format is that of a instance_freq_report.txt file."))
+
         self.knownMorphsLabel.setText(_translate("ReadabilityDialog", "Known Morphs DB"))
 
         self.knownMorphsButton.setText(_translate("ReadabilityDialog", "..."))
+
+        self.knownMorphsEdit.setToolTip(_translate("ReadabilityDialog", "Path to use as your \'Known\' morphs database."))
 
         self.outputFreqLabel.setText(_translate("ReadabilityDialog", "Output Directory"))
 
         self.outputFrequencyButton.setText(_translate("ReadabilityDialog", "..."))
 
+        self.outputFrequencyEdit.setToolTip(_translate("ReadabilityDialog", "Path where all outputs are written."))
+
         self.OutputsGroupBox.setTitle(_translate("ReadabilityDialog", "Outputs"))
 
-        self.studyPlanCheckBox.setText(_translate("ReadabilityDialog", "Target Study Plan"))
+        self.studyPlanCheckBox.setToolTip(_translate("ReadabilityDialog", "Generates a Study Plan for the Input Directory based on your \'Minimum Frequency\' and \'Target %\' settings.\n"
 
-        self.frequencyListCheckBox.setText(_translate("ReadabilityDialog", "Frequency List"))
+"\n"
 
-        self.migakuDictionaryCheckBox.setText(_translate("ReadabilityDialog", "Migaku Dictionary Tags"))
+"Outputs:\n"
 
-        self.wordReportCheckBox.setText(_translate("ReadabilityDialog", "Word Report"))
+" - study_plan.txt"))
 
-        self.readabilityDBCheckBox.setText(_translate("ReadabilityDialog", "Readability DB"))
+        self.studyPlanCheckBox.setText(_translate("ReadabilityDialog", "Build Study Plan"))
+
+        self.frequencyListCheckBox.setToolTip(_translate("ReadabilityDialog", "Set MorphMan\'s frequency list based on the study plan & Master Frequency List.\n"
+
+"\n"
+
+"Outputs:\n"
+
+" - frequency.txt\n"
+
+"\n"
+
+"The frequency list takes effect when you Recalc morphemes (Ctrl+M)"))
+
+        self.frequencyListCheckBox.setText(_translate("ReadabilityDialog", "Set Frequency List"))
+
+        self.wordReportCheckBox.setToolTip(_translate("ReadabilityDialog", "Generate frequency reports for the Input files.\n"
+
+"\n"
+
+"Outputs:\n"
+
+" - instance_freq_report.txt\n"
+
+" - morph_freq_report.txt"))
+
+        self.wordReportCheckBox.setText(_translate("ReadabilityDialog", "Write Word Report"))
+
+        self.groupByDirCheckBox.setToolTip(_translate("ReadabilityDialog", "Group the \'Readability Report\' and \'Study Plan\' by directory instead of by file."))
 
         self.groupByDirCheckBox.setText(_translate("ReadabilityDialog", "Group By Directory"))
 
+        self.processLinesCheckBox.setToolTip(_translate("ReadabilityDialog", "Calculate line-by-line readability statistics."))
+
         self.processLinesCheckBox.setText(_translate("ReadabilityDialog", "Line Stats (slower)"))
+
+        self.advancedSettingsButton.setToolTip(_translate("ReadabilityDialog", "Advanced Settings"))
+
+        self.advancedSettingsButton.setText(_translate("ReadabilityDialog", "Advanced Settings"))
 
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabOutputLog), _translate("ReadabilityDialog", "Output Log"))
 

@@ -19,16 +19,19 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from PyQt5 import QtWebSockets,  QtNetwork
 
-from . import customTableWidget
-from . import readability_ui
 from .morphemes import Morpheme, MorphDb, getMorphemes, altIncludesMorpheme
 from .morphemizer import getAllMorphemizers
 from .preferences import get_preference as cfg, update_preferences
 from .util import mw
 from anki.utils import stripHTML
 
+from . import customTableWidget
+from . import readability_ui
+from . import readability_settings_ui
+
 importlib.reload(customTableWidget)
 importlib.reload(readability_ui)
+importlib.reload(readability_settings_ui)
 
 def kaner(to_translate, hiraganer = False):
     hiragana = u"がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ" \
@@ -258,32 +261,96 @@ class TableInteger(QTableWidgetItem):
         super(TableInteger, self).__init__(str(int(value)))
         self.setTextAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
 
+    def __lt__(self, other):
+        lvalue = self.text()
+        rvalue = other.text()
+        return natural_keys(lvalue) < natural_keys(rvalue)
+
 class TablePercent(QTableWidgetItem):
     def __init__(self, value):
         super(TablePercent, self).__init__('%0.02f' % value)
         self.setTextAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
 
-old_getFrequencyList = None
+    def __lt__(self, other):
+        lvalue = self.text()
+        rvalue = other.text()
+        return natural_keys(lvalue) < natural_keys(rvalue)
 
-class MorphMan(QDialog):
+def migakuDictDbPath():
+    if importlib.util.find_spec('Migaku Dictionary'):
+        try:
+            migaku_dict = importlib.import_module('Migaku Dictionary')
+            migaku_dict_path = os.path.dirname(migaku_dict.__file__)
+            return os.path.join(migaku_dict_path, 'user_files', 'db', 'dictionaries.sqlite')
+        except:
+            return None
+    return None
+
+class SettingsDialog(QDialog):
     def __init__(self, parent=None):
-        super(MorphMan, self).__init__(parent)
+        super(SettingsDialog, self).__init__(parent)
 
-        global old_getFrequencyList
+        self.mw = parent
+        self.ui = readability_settings_ui.Ui_ReadabilitySettingsDialog()
+        self.ui.setupUi(self)
+
+        # Study Plan Settings
+        self.ui.alwaysAddMinimumFreqCheckBox.setChecked(cfg('Option_AlwaysAddMinFreqMorphs'))
+        self.ui.alwaysMeetReadTargettCheckBox.setChecked(cfg('Option_AlwaysMeetReadabilityTarget'))
+
+        # Frequency List Settings
+        self.ui.fillAllMorphsCheckBox.setChecked(cfg('Option_FillAllMorphsInStudyPlan'))
+
+        # Word Report Settings
+        self.ui.saveMissingWordsCheckBox.setChecked(cfg('Option_SaveMissingWordReport'))
+        self.ui.saveReadabilityDBCheckBox.setChecked(cfg('Option_SaveReadabilityDB'))
+
+        # Extras
+        self.migaku_dict_db_path = migakuDictDbPath()
+
+        if self.migaku_dict_db_path:
+            self.ui.migakuDictionaryTagsCheckBox.setChecked(cfg('Option_MigakuDictionaryFreq'))
+            self.ui.migakuDictionaryTagsCheckBox.setEnabled(True)
+        else:
+            self.ui.migakuDictionaryTagsCheckBox.setChecked(False)
+            self.ui.migakuDictionaryTagsCheckBox.setEnabled(False)
+
+        self.ui.webServiceCheckBox.setChecked(cfg('Option_EnableWebService'))
+
+        self.ui.buttonBox.accepted.connect(self.onAccept)
+        self.ui.buttonBox.rejected.connect(self.onReject)
+
+    def onAccept(self):
+        pref = {}
+
+        # Study Plan Settings
+        pref['Option_AlwaysAddMinFreqMorphs'] = self.ui.alwaysAddMinimumFreqCheckBox.isChecked()
+        pref['Option_AlwaysMeetReadabilityTarget'] = self.ui.alwaysMeetReadTargettCheckBox.isChecked()
+
+        # Frequency List Settings
+        pref['Option_FillAllMorphsInStudyPlan'] = self.ui.fillAllMorphsCheckBox.isChecked()
+
+        # Word Report Settings
+        pref['Option_SaveMissingWordReport'] = self.ui.saveMissingWordsCheckBox.isChecked()
+        pref['Option_SaveReadabilityDB'] = self.ui.saveReadabilityDBCheckBox.isChecked()
+
+        # Extras
+        if self.migaku_dict_db_path:
+            pref['Option_MigakuDictionaryFreq'] = self.ui.migakuDictionaryTagsCheckBox.isChecked()
+        pref['Option_EnableWebService'] = self.ui.webServiceCheckBox.isChecked()
+
+        update_preferences(pref)
+
+    def onReject(self):
+        pass
+
+class AnalyzerDialog(QDialog):
+    def __init__(self, parent=None):
+        super(AnalyzerDialog, self).__init__(parent)
 
         self.mw = parent
         self.ui = readability_ui.Ui_ReadabilityDialog()
         self.ui.setupUi(self)
-
-        self.migaku_dict_db_path = None
-        if importlib.util.find_spec('Migaku Dictionary'):
-            try:
-                migaku_dict = importlib.import_module('Migaku Dictionary')
-                migaku_dict_path = os.path.dirname(migaku_dict.__file__)
-                self.migaku_dict_db_path = os.path.join(migaku_dict_path, 'user_files', 'db', 'dictionaries.sqlite')
-            except:
-                self.migaku_dict_db_path = None
-
 
         # Init morphemizer
         self.ui.morphemizerComboBox.setMorphemizers(getAllMorphemizers())
@@ -306,16 +373,9 @@ class MorphMan(QDialog):
         self.ui.targetSpinBox.setProperty("value", cfg('Option_DefaultStudyTarget'))
         self.ui.studyPlanCheckBox.setChecked(cfg('Option_SaveStudyPlan'))
         self.ui.frequencyListCheckBox.setChecked(cfg('Option_SaveFrequencyList'))
-        
-        if self.migaku_dict_db_path:
-            self.ui.migakuDictionaryCheckBox.setChecked(cfg('Option_MigakuDictionaryFreq'))
-            self.ui.migakuDictionaryCheckBox.setEnabled(True)
-        else:
-            self.ui.migakuDictionaryCheckBox.setChecked(False)
-            self.ui.migakuDictionaryCheckBox.setEnabled(False)
-        
+        self.ui.advancedSettingsButton.clicked.connect(lambda le: SettingsDialog(self).show())
+              
         self.ui.wordReportCheckBox.setChecked(cfg('Option_SaveWordReport'))
-        self.ui.readabilityDBCheckBox.setChecked(cfg('Option_SaveReadabilityDB'))
         self.ui.groupByDirCheckBox.setChecked(cfg('Option_GroupByDir'))
         self.ui.processLinesCheckBox.setChecked(cfg('Option_ProcessLines'))
 
@@ -323,16 +383,18 @@ class MorphMan(QDialog):
         self.ui.analyzeButton.clicked.connect(lambda le: self.onAnalyze())
         self.ui.closeButton.clicked.connect(lambda le: self.close())
 
-        # Analysis stuff (todo - move to a different dialog)
-        self.freq_set = None
-        self.freq_db = None
-        self.orig_known_db = None
-
         # Output text font
         doc = self.ui.outputText.document()
         font = doc.defaultFont()
         font.setFamily("Courier New")
         doc.setDefaultFont(font)
+
+        self.migaku_dict_db_path = migakuDictDbPath()
+
+        # Analysis server stuff (todo - move to a different dialog maybe?)
+        self.freq_set = None
+        self.freq_db = None
+        self.orig_known_db = None
 
         self.server = None
         self.clients = set()
@@ -513,14 +575,11 @@ class MorphMan(QDialog):
         mature_words_path = os.path.normpath(os.path.dirname(known_words_path) + '/mature.db')
         output_path = self.ui.outputFrequencyEdit.text()
         save_word_report = self.ui.wordReportCheckBox.isChecked()
-        save_readability_db = self.ui.readabilityDBCheckBox.isChecked()
         save_study_plan = self.ui.studyPlanCheckBox.isChecked()
         save_frequency_list = self.ui.frequencyListCheckBox.isChecked()
-        update_migaku_dictionary_freq = self.ui.migakuDictionaryCheckBox.isChecked()
         group_by_dir = self.ui.groupByDirCheckBox.isChecked()
         process_lines = self.ui.processLinesCheckBox.isChecked()
-        save_missing_word_report = True
-
+        
         # Save updated preferences
         pref = {}
         pref['Option_AnalysisInputPath'] = input_path
@@ -528,10 +587,8 @@ class MorphMan(QDialog):
         pref['Option_DefaultMinimumMasterFrequency'] = minimum_master_frequency
         pref['Option_DefaultStudyTarget'] = readability_target
         pref['Option_SaveWordReport'] = save_word_report
-        pref['Option_SaveReadabilityDB'] = save_readability_db
         pref['Option_SaveStudyPlan'] = save_study_plan
         pref['Option_SaveFrequencyList'] = save_frequency_list
-        pref['Option_MigakuDictionaryFreq'] = update_migaku_dictionary_freq
         pref['Option_GroupByDir'] = group_by_dir
         pref['Option_ProcessLines'] = process_lines
         update_preferences(pref)
@@ -541,6 +598,12 @@ class MorphMan(QDialog):
 
         proper_nouns_known = cfg('Option_ProperNounsAlreadyKnown')
         fill_all_morphs_in_plan = cfg('Option_FillAllMorphsInStudyPlan')
+        take_all_minimum_frequency_morphs = (minimum_master_frequency > 0) and cfg('Option_FillAllMinFreqMorphs')
+        always_meet_readability_target = (minimum_master_frequency > 0) and cfg('Option_AlwaysMeetReadabilityTarget')
+        save_missing_word_report = cfg('Option_SaveMissingWordReport')
+        save_readability_db = cfg('Option_SaveReadabilityDB')
+
+        update_migaku_dictionary_freq = cfg('Option_MigakuDictionaryFreq')
 
         if not os.path.exists(output_path):
             try:
@@ -555,15 +618,15 @@ class MorphMan(QDialog):
         study_plan_path = os.path.normpath(output_path + '/study_plan.txt')
         readability_log_path = os.path.normpath(output_path + '/readability_log.txt')
         missing_master_path = os.path.normpath(output_path + '/missing_master_word_report.txt')
-        word_reports_path = os.path.normpath(output_path + '/word_reports')
+        #word_reports_path = os.path.normpath(output_path + '/word_reports')
         corpus_db_path = os.path.normpath(output_path + '/word_corpus.corpusdb')
 
         log_fp = open(readability_log_path, 'wt', encoding='utf-8')
 
-        try:
-            os.mkdir(word_reports_path)
-        except:
-            pass
+        #try:
+        #    os.mkdir(word_reports_path)
+        #except:
+        #    pass
 
         master_db = CountingMorphDB()
         unknown_db = CountingMorphDB()
@@ -992,25 +1055,31 @@ class MorphMan(QDialog):
 
                     learned_this_source = []
 
-                    for m in sorted(missing_morphs, key=operator.itemgetter(5), reverse=True):
-                        if readability >= readability_target:
-                            if debug_output: f.write('  readability target reached\n')
-                            break
+                    if always_meet_readability_target:
+                        iterations = 2
+                    else:
+                        iterations = 1
 
-                        if known_db.matches(m[0]):
-                            if debug_output: f.write('  known: %s\n' % m[0].show())
-                            continue
+                    for iteration in range(0, iterations):
+                        for m in sorted(missing_morphs, key=operator.itemgetter(5), reverse=True):
+                            if readability >= readability_target and not (iteration == 0 and take_all_minimum_frequency_morphs):
+                                if debug_output: f.write('  readability target reached\n')
+                                break
 
-                        if m[4] < minimum_master_frequency:
-                            if debug_output: f.write('  low score: %s [score %d ep_freq %d all_freq %d master_freq %d]\n' % (m[0].show(), m[5], m[2], m[3], m[4]))
-                            continue
-                        
-                        learned_morphs.append(m)
-                        learned_this_source.append(m)
-                        known_i += s.unknown_db.getFuzzyCount(m[0], known_db)
-                        learned_m += 1
-                        readability = 100.0 if seen_i == 0 else known_i * 100.0 / seen_i
-                        known_db.addMLs1(m[0], set())
+                            if known_db.matches(m[0]):
+                                if debug_output: f.write('  known: %s\n' % m[0].show())
+                                continue
+
+                            if (iteration == 0) and (m[4] < minimum_master_frequency):
+                                if debug_output: f.write('  low score: %s [score %d ep_freq %d all_freq %d master_freq %d]\n' % (m[0].show(), m[5], m[2], m[3], m[4]))
+                                continue
+                            
+                            learned_morphs.append(m)
+                            learned_this_source.append(m)
+                            known_i += s.unknown_db.getFuzzyCount(m[0], known_db)
+                            learned_m += 1
+                            readability = 100.0 if seen_i == 0 else known_i * 100.0 / seen_i
+                            known_db.addMLs1(m[0], set())
 
                     new_line_readability = get_line_readability(s, known_db)
 
@@ -1169,6 +1238,6 @@ class MorphMan(QDialog):
                         mw.progress.finish()
 
 def main():
-    mw.mm = MorphMan(mw)
+    mw.mm = AnalyzerDialog(mw)
     mw.mm.show()
 

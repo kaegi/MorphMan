@@ -19,6 +19,8 @@ assert isinstance(mw, aqt.main.AnkiQt)
 class PreferencesDialog(QDialog):
     def __init__(self, parent=None):
         super(PreferencesDialog, self).__init__(parent)
+        
+        self.setModal(True)
         self.rowGui = []
         self.resize(950, 600)
 
@@ -182,58 +184,64 @@ class PreferencesDialog(QDialog):
         vbox.addStretch()
 
     def createGeneralTab(self):
-        self.frame4 = QGroupBox("General")
+        self.frame4 = QGroupBox()
         self.tabWidget.addTab(self.frame4, "General")
         vbox = QVBoxLayout()
         self.frame4.setLayout(vbox)
-        vbox.setContentsMargins(0, 20, 0, 0)
+        vbox.setContentsMargins(10, 10, 10, 10)
+
+        hbox = QHBoxLayout()
+        vbox.addLayout(hbox)
+
+        reviews_group = QGroupBox("Review Preferences")
+        hbox.addWidget(reviews_group)
+        reviews_grid = QVBoxLayout()
+        reviews_group.setLayout(reviews_grid)
+
+        parsing_group = QGroupBox("Parsing Preferences")
+        hbox.addWidget(parsing_group)
+        parsing_grid = QVBoxLayout()
+        parsing_group.setLayout(parsing_grid)
 
         label = QLabel("MorphMan will reorder the cards so that the easiest cards are at the front. To avoid getting "
-                       "new cards that are too easy, MorphMan will skip certain new cards. You can customize the skip "
-                       "behavior here:")
+                "new cards that are too easy, MorphMan will skip certain new cards. You can customize the skip "
+                "behavior here:")
         label.setWordWrap(True)
-        vbox.addWidget(label)
-        vbox.addSpacing(20)
+        reviews_grid.addWidget(label)
 
-        grid = QVBoxLayout()
-        vbox.addLayout(grid)
-        grid.setContentsMargins(20, 0, 0, 0)
         optionList = [
-            ("Skip comprehension cards", 'Option_SkipComprehensionCards',
+            (reviews_grid, "Skip comprehension cards", 'Option_SkipComprehensionCards',
              'Note that only has mature words (optimal for sentence learning but not for acquiring new vocabulary).'),
-            ("Skip cards with fresh vocabulary", 'Option_SkipFreshVocabCards',
+            (reviews_grid, "Skip cards with fresh vocabulary", 'Option_SkipFreshVocabCards',
              "Note that does not contain unknown words, but one or more unmature (card with recently learned morphmes).\n"
              "Enable to skip to first card that has unknown vocabulary."),
-            ("Skip card if focus morph was already seen today", 'Option_SkipFocusMorphSeenToday',
+            (reviews_grid, "Skip card if focus morph was already seen today", 'Option_SkipFocusMorphSeenToday',
              "This improves the 'new cards'-queue without having to recalculate the databases."),
-            ("Include all missing morphemes in my 'frequency list'", 'Option_FillAllMorphsInStudyPlan',
-             "When generating a study plan, by default only those morphemes that are in the plan are added to your 'frequency.txt'\n"
-             "This option includes all other morphemes at the end of the plan, so that you can study ahead."),
-            ("Ignore grammar position", 'Option_IgnoreGrammarPosition',
-             'Use this option to ignore morpheme grammar types (noun, verb, helper, etc.).'),
-            ("Ignore everything contained within [ ] brackets", 'Option_IgnoreBracketContents',
-             'Use this option to ignore content such as furigana readings and pitch.'),
-            ("Ignore everything contained within ( ) brackets", 'Option_IgnoreSlimRoundBracketContents',
-             'Use this option to ignore content such as character names and readings in scripts.'),
-            ("Ignore everything contained within （ ） brackets", 'Option_IgnoreRoundBracketContents',
-             'Use this option to ignore content such as character names and readings in Japanese scripts.'),
-            ("Treat proper nouns as known", 'Option_ProperNounsAlreadyKnown',
+            (parsing_grid, "Treat proper nouns as known", 'Option_ProperNounsAlreadyKnown',
              'Treat proper nouns as already known when scoring cards (currently only works for Japanese).'),
-            ('Ignore suspended leeches', 'Option_IgnoreSuspendedLeeches',
+            (parsing_grid, "Ignore grammar position", 'Option_IgnoreGrammarPosition',
+             'Use this option to ignore morpheme grammar types (noun, verb, helper, etc.).'),
+            (parsing_grid, 'Ignore suspended leeches', 'Option_IgnoreSuspendedLeeches',
              'Ignore cards that are suspended and have the tag \'leech\'.'),
-            ('Enable Web Service (beta)', 'Option_EnableWebService',
-             'Enable WebSocket Service, allowing external apps to use MorphMan services.'),
+            (parsing_grid, "Ignore everything contained within [ ] brackets", 'Option_IgnoreBracketContents',
+             'Use this option to ignore content such as furigana readings and pitch.'),
+            (parsing_grid, "Ignore everything contained within ( ) brackets", 'Option_IgnoreSlimRoundBracketContents',
+             'Use this option to ignore content such as character names and readings in scripts.'),
+            (parsing_grid, "Ignore everything contained within Japanese wide （ ） brackets", 'Option_IgnoreRoundBracketContents',
+             'Use this option to ignore content such as character names and readings in Japanese scripts.'),
         ]
+
         self.boolOptionList = []
-        for i, (name, key, tooltipInfo) in enumerate(optionList):
+        for i, (layout, name, key, tooltipInfo) in enumerate(optionList):
             checkBox = QCheckBox(name)
             checkBox.setCheckState(Qt.Checked if get_preference(key) else Qt.Unchecked)
             checkBox.setToolTip(tooltipInfo)
+            checkBox.setMinimumSize(0, 30)
             self.boolOptionList.append((key, checkBox))
+            layout.addWidget(checkBox)
 
-            grid.addWidget(checkBox)
-            grid.addSpacing(15)
-
+        reviews_grid.addStretch()
+        parsing_grid.addStretch()
         vbox.addStretch()
 
     def createButtons(self):

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>898</width>
-    <height>781</height>
+    <width>901</width>
+    <height>730</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -87,7 +87,11 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="inputPathEdit"/>
+           <widget class="QLineEdit" name="inputPathEdit">
+            <property name="toolTip">
+             <string>Set the Input Directory path to be analyzed.</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -101,7 +105,11 @@
            </widget>
           </item>
           <item>
-           <widget class="MorphemizerComboBox" name="morphemizerComboBox"/>
+           <widget class="MorphemizerComboBox" name="morphemizerComboBox">
+            <property name="toolTip">
+             <string>Select the Morphemizer to use for parsing the inputs.</string>
+            </property>
+           </widget>
           </item>
           <item>
            <spacer name="horizontalSpacer">
@@ -119,12 +127,16 @@
           <item>
            <widget class="QLabel" name="minFrequencyLabel">
             <property name="text">
-             <string>Minimum Master Frequency</string>
+             <string>Minimum Frequency</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QSpinBox" name="minFrequencySpinBox">
+            <property name="toolTip">
+             <string>The 'Minimum Frequency' words to include, corresponding to the 'Master Frequency List' in the Study Plan.
+Morphemes meeting the 'Minimum Frequency' will be added to the plan until the 'Target %' is reached.</string>
+            </property>
             <property name="maximum">
              <number>200000</number>
             </property>
@@ -147,6 +159,10 @@
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>The target 'Readability %' for the study plan.
+Morphemes meeting the 'Minimum Frequency' will be added to the plan until the 'Target %' is reached.</string>
             </property>
             <property name="layoutDirection">
              <enum>Qt::LeftToRight</enum>
@@ -269,7 +285,12 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="masterFreqEdit"/>
+           <widget class="QLineEdit" name="masterFreqEdit">
+            <property name="toolTip">
+             <string>Specity a Master Frequency List
+The expected format is that of a instance_freq_report.txt file.</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -293,7 +314,11 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="knownMorphsEdit"/>
+           <widget class="QLineEdit" name="knownMorphsEdit">
+            <property name="toolTip">
+             <string>Path to use as your 'Known' morphs database.</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -314,7 +339,11 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="outputFrequencyEdit"/>
+           <widget class="QLineEdit" name="outputFrequencyEdit">
+            <property name="toolTip">
+             <string>Path where all outputs are written.</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -341,8 +370,14 @@
        <layout class="QVBoxLayout" name="verticalLayout_5">
         <item>
          <widget class="QCheckBox" name="studyPlanCheckBox">
+          <property name="toolTip">
+           <string>Generates a Study Plan for the Input Directory based on your 'Minimum Frequency' and 'Target %' settings.
+
+Outputs:
+ - study_plan.txt</string>
+          </property>
           <property name="text">
-           <string>Target Study Plan</string>
+           <string>Build Study Plan</string>
           </property>
           <property name="checked">
            <bool>false</bool>
@@ -351,18 +386,16 @@
         </item>
         <item>
          <widget class="QCheckBox" name="frequencyListCheckBox">
-          <property name="text">
-           <string>Frequency List</string>
+          <property name="toolTip">
+           <string>Set MorphMan's frequency list based on the study plan &amp; Master Frequency List.
+
+Outputs:
+ - frequency.txt
+
+The frequency list takes effect when you Recalc morphemes (Ctrl+M)</string>
           </property>
-          <property name="checked">
-           <bool>false</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QCheckBox" name="migakuDictionaryCheckBox">
           <property name="text">
-           <string>Migaku Dictionary Tags</string>
+           <string>Set Frequency List</string>
           </property>
           <property name="checked">
            <bool>false</bool>
@@ -371,18 +404,15 @@
         </item>
         <item>
          <widget class="QCheckBox" name="wordReportCheckBox">
-          <property name="text">
-           <string>Word Report</string>
+          <property name="toolTip">
+           <string>Generate frequency reports for the Input files.
+
+Outputs:
+ - instance_freq_report.txt
+ - morph_freq_report.txt</string>
           </property>
-          <property name="checked">
-           <bool>false</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QCheckBox" name="readabilityDBCheckBox">
           <property name="text">
-           <string>Readability DB</string>
+           <string>Write Word Report</string>
           </property>
           <property name="checked">
            <bool>false</bool>
@@ -391,6 +421,9 @@
         </item>
         <item>
          <widget class="QCheckBox" name="groupByDirCheckBox">
+          <property name="toolTip">
+           <string>Group the 'Readability Report' and 'Study Plan' by directory instead of by file.</string>
+          </property>
           <property name="text">
            <string>Group By Directory</string>
           </property>
@@ -401,11 +434,30 @@
         </item>
         <item>
          <widget class="QCheckBox" name="processLinesCheckBox">
+          <property name="toolTip">
+           <string>Calculate line-by-line readability statistics.</string>
+          </property>
           <property name="text">
            <string>Line Stats (slower)</string>
           </property>
           <property name="checked">
            <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="advancedSettingsButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>Advanced Settings</string>
+          </property>
+          <property name="text">
+           <string>Advanced Settings</string>
           </property>
          </widget>
         </item>
