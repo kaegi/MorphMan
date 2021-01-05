@@ -158,15 +158,22 @@ def jcfg_default():
         'Option_MasterFrequencyListPath': '',
         'Option_DefaultMinimumMasterFrequency': 0,
         'Option_DefaultStudyTarget': 98.0,
+        'Option_SourceScorePower': 2.0,            # Morpheme score formula parameter.
+        'Option_SourceScoreMultiplier': 60.0,      # Morpheme score formula parameter.
         'Option_SaveWordReport': False,
+        'Option_SaveMissingWordReport': False,
         'Option_SaveReadabilityDB': False,
         'Option_SaveStudyPlan': False,
         'Option_SaveFrequencyList': False,
+        'Option_MigakuDictionaryFreq': False,
         'Option_GroupByDir': False,
         'Option_ProcessLines': False,
         'Option_FillAllMorphsInStudyPlan': True,
-        'Option_SourceScorePower': 2.0,            # Morpheme score formula parameter.
-        'Option_SourceScoreMultiplier': 60.0,      # Morpheme score formula parameter.
+        'Option_AlwaysAddMinFreqMorphs': False,
+        'Option_AlwaysMeetReadabilityTarget': False,
+
+        'Option_OutputReadabilityDb': False,
+        'Option_EnableWebService': False,          # Experimental web service
     }
 
 def _jsonConfig():

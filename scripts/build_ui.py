@@ -11,3 +11,4 @@ def build_ui(in_file, out_file):
 
 
 build_ui("morph/readability.ui", "morph/readability_ui.py")
+build_ui("morph/readability_settings.ui", "morph/readability_settings_ui.py")
