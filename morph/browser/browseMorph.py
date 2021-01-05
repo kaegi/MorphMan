@@ -4,7 +4,7 @@ from anki.lang import _
 from aqt.utils import tooltip
 
 from ..newMorphHelper import focus, focusName
-from ..util import addBrowserNoteSelectionCmd
+from ..util import addBrowserNoteSelectionCmd, runOnce
 from ..preferences import get_preference as cfg
 
 
@@ -38,6 +38,7 @@ def post(st):
     return st
 
 
+@runOnce
 def runBrowseMorph():
     label = 'MorphMan: Browse Morphs'
     tooltipMsg = 'Browse all notes containing the morphs from selected notes'

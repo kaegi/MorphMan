@@ -42,6 +42,7 @@ default = {
     'set learn now key': 'Ctrl+Alt+N',
     'set mass tagger key': 'Ctrl+Alt+T',
     'set view morphemes key': 'Ctrl+Alt+V',
+    'set bold unknowns key': 'Ctrl+Alt+B',
     'auto skip alternatives': True,
     # after answering or skipping a card in reviewer
     'print number of alternatives skipped': True,

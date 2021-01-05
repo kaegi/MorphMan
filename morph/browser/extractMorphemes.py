@@ -4,7 +4,7 @@ from anki.hooks import addHook
 from anki.utils import stripHTML
 from ..morphemes import AnkiDeck, MorphDb, getMorphemes
 from ..morphemizer import getMorphemizerByName
-from ..util import addBrowserNoteSelectionCmd, mw, getFilter, infoMsg, QFileDialog
+from ..util import addBrowserNoteSelectionCmd, mw, getFilter, infoMsg, QFileDialog, runOnce
 from ..preferences import get_preference as cfg
 
 
@@ -35,6 +35,7 @@ def post(st):
     infoMsg('DB saved with extracted morphemes')
 
 
+@runOnce
 def runExtractMorphemes():
     label = 'MorphMan: Extract Morphemes'
     tooltip_msg = 'Extract morphemes in selected notes to a MorphMan db'

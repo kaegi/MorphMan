@@ -3,7 +3,7 @@ from anki.hooks import addHook
 from anki.lang import _
 from aqt.utils import tooltip
 
-from ..util import addBrowserCardSelectionCmd, mw, infoMsg
+from ..util import addBrowserCardSelectionCmd, mw, infoMsg, runOnce
 from ..preferences import get_preference as cfg
 
 
@@ -24,6 +24,7 @@ def post(st):
     return st
 
 
+@runOnce
 def runLearnNow():
     label = 'MorphMan: Learn Now'
     tooltip_msg = 'Immediately review the selected new cards'

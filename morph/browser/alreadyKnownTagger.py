@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from aqt.utils import tooltip
 from anki.hooks import addHook
-from ..util import addBrowserNoteSelectionCmd, getFilter
+from ..util import addBrowserNoteSelectionCmd, getFilter, runOnce
 from ..preferences import get_preference
 from anki.lang import _
 
@@ -25,6 +25,7 @@ def post(st):  # :: State -> State
     return st
 
 
+@runOnce
 def runAlreadyKnownTagger():
     label = 'MorphMan: Already Known Tagger'
     tooltipMsg = 'Tag all selected cards as already known'

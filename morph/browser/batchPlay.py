@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from anki.hooks import addHook
 from aqt.sound import av_player
-from ..util import addBrowserNoteSelectionCmd
+from ..util import addBrowserNoteSelectionCmd, runOnce
 from ..preferences import get_preference as cfg
 import re
 
@@ -32,6 +32,7 @@ def post(st):
     return st
 
 
+@runOnce
 def runBatchPlay():
     label = 'MorphMan: Batch Play'
     tooltipMsg = 'Play all the videos for the selected cards'

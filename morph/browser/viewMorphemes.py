@@ -3,7 +3,7 @@ from anki.hooks import addHook
 from anki.utils import stripHTML
 from ..morphemes import getMorphemes, ms2str
 from ..morphemizer import getMorphemizerByName
-from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg
+from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, runOnce
 from ..preferences import get_preference as cfg
 
 
@@ -30,6 +30,7 @@ def post(st):
     infoMsg('----- All -----\n' + s)
 
 
+@runOnce
 def runViewMorphemes():
     label = 'MorphMan: View Morphemes'
     tooltipMsg = 'View Morphemes for selected note'
