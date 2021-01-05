@@ -10,10 +10,10 @@ from .preferences import get_preference as cfg
 from .util import mw
 
 colYoung = "#7c7"
-colCard = "#070"
-colK = "#005"
-colV = "#500"
-defaultColor = "#0F0"
+colCard = "#282"
+colK = "#4a4"
+colV = "#7c7"
+defaultColor = "#2F2"
 
 _num_graphs = 0
 
@@ -472,9 +472,9 @@ def morphGraphs(args, kwargs):
             td.morph_trl { border: 1px solid; text-align: left }
             td.morph_trr { border: 1px solid; text-align: right }
             td.morph_trc { border: 1px solid; text-align: center }
-            span.morph_c { color: #070 }
-            span.morph_k { color: #005 }
-            span.morph_m { color: #500 }
+            span.morph_c { color: %(c_color)s }
+            span.morph_k { color: %(k_color)s }
+            span.morph_v { color: %(v_color)s }
         </style>
         <br /><br />
         <table style="border-collapse: collapse;" cellspacing="0" cellpadding="2">
@@ -482,17 +482,17 @@ def morphGraphs(args, kwargs):
                 <td class="morph_trl" rowspan=2><b>Deck</b></td>
                 <td class="morph_trc" rowspan=2><span class="morph_c"><b>Cards<br />Learned</b></span></td>
                 <td class="morph_trc" colspan=3><span class="morph_k"><b>Morph Bases (K)</b></span></td>
-                <td class="morph_trc" colspan=3><span class="morph_m"><b>Morph Variations (V)</b></span></td>
+                <td class="morph_trc" colspan=3><span class="morph_v"><b>Morph Variations (V)</b></span></td>
             </tr>
             <tr>
                 <td class="morph_trc"><span class="morph_k"><b>Known</b></span></td>
                 <td class="morph_trc"><span class="morph_k"><b>Matured</b></span></td>
                 <td class="morph_trc"><span class="morph_k"><b>Marked</b></span></td>
-                <td class="morph_trc"><span class="morph_m"><b>Known</b></span></td>
-                <td class="morph_trc"><span class="morph_m"><b>Matured</b></span></td>
-                <td class="morph_trc"><span class="morph_m"><b>Marked</b></span></td>
+                <td class="morph_trc"><span class="morph_v"><b>Known</b></span></td>
+                <td class="morph_trc"><span class="morph_v"><b>Matured</b></span></td>
+                <td class="morph_trc"><span class="morph_v"><b>Marked</b></span></td>
             </tr>
-            """
+            """ % {'c_color': colCard, 'k_color': colK, 'v_color': colV }
     total = ProgressStats()
     for deck in sorted(stats['all_deck_stats'].keys()):
         deck_stats = stats['all_deck_stats'][deck]
@@ -503,9 +503,9 @@ def morphGraphs(args, kwargs):
                  <td class="morph_trc"><span class="morph_k">""" + str(deck_stats.learned.k_morphs) + """</span></td>
                  <td class="morph_trc"><span class="morph_k">""" + str(deck_stats.matured.k_morphs) + """</span></td>
                  <td class="morph_trc"><span class="morph_k">""" + str(deck_stats.marked.k_morphs) + """</span></td>
-                 <td class="morph_trc"><span class="morph_m">""" + str(deck_stats.learned.v_morphs) + """</span></td>
-                 <td class="morph_trc"><span class="morph_m">""" + str(deck_stats.matured.v_morphs) + """</span></td>
-                 <td class="morph_trc"><span class="morph_m">""" + str(deck_stats.marked.v_morphs) + """</span></td>
+                 <td class="morph_trc"><span class="morph_v">""" + str(deck_stats.learned.v_morphs) + """</span></td>
+                 <td class="morph_trc"><span class="morph_v">""" + str(deck_stats.matured.v_morphs) + """</span></td>
+                 <td class="morph_trc"><span class="morph_v">""" + str(deck_stats.marked.v_morphs) + """</span></td>
             </tr>"""
         total.learned_cards += deck_stats.learned_cards
         total.marked_known += deck_stats.marked_known
@@ -522,9 +522,9 @@ def morphGraphs(args, kwargs):
                  <td class="morph_trc"><b><span class="morph_k">""" + str(total.learned.k_morphs) + """</span></b></td>
                  <td class="morph_trc"><b><span class="morph_k">""" + str(total.matured.k_morphs) + """</span></b></td>
                  <td class="morph_trc"><b><span class="morph_k">""" + str(total.marked.k_morphs) + """</span></b></td>
-                 <td class="morph_trc"><b><span class="morph_m">""" + str(total.learned.v_morphs) + """</span></b></td>
-                 <td class="morph_trc"><b><span class="morph_m">""" + str(total.matured.v_morphs) + """</span></b></td>
-                 <td class="morph_trc"><b><span class="morph_m">""" + str(total.marked.v_morphs) + """</span></b></td>
+                 <td class="morph_trc"><b><span class="morph_v">""" + str(total.learned.v_morphs) + """</span></b></td>
+                 <td class="morph_trc"><b><span class="morph_v">""" + str(total.matured.v_morphs) + """</span></b></td>
+                 <td class="morph_trc"><b><span class="morph_v">""" + str(total.marked.v_morphs) + """</span></b></td>
             </tr>"""
     result += "</table>"
 
