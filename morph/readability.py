@@ -598,7 +598,7 @@ class AnalyzerDialog(QDialog):
 
         proper_nouns_known = cfg('Option_ProperNounsAlreadyKnown')
         fill_all_morphs_in_plan = cfg('Option_FillAllMorphsInStudyPlan')
-        take_all_minimum_frequency_morphs = (minimum_master_frequency > 0) and cfg('Option_FillAllMinFreqMorphs')
+        take_all_minimum_frequency_morphs = (minimum_master_frequency > 0) and cfg('Option_AlwaysAddMinFreqMorphs')
         always_meet_readability_target = (minimum_master_frequency > 0) and cfg('Option_AlwaysMeetReadabilityTarget')
         save_missing_word_report = cfg('Option_SaveMissingWordReport')
         save_readability_db = cfg('Option_SaveReadabilityDB')
