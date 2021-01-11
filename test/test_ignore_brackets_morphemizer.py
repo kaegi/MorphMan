@@ -1,6 +1,7 @@
 import unittest
 
 from test import fake_aqt
+
 from morph.morphemes import replaceBracketContents
 from morph.preferences import init_preferences, get_preference, update_preferences
 
