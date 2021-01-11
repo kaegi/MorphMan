@@ -3,7 +3,6 @@ import os
 from anki.hooks import addHook
 from anki.utils import stripHTML
 from ..morphemes import AnkiDeck, MorphDb, getMorphemes
-from ..morphemizer import getMorphemizerByName
 from ..util import addBrowserNoteSelectionCmd, mw, getFilter, infoMsg, QFileDialog, runOnce
 from ..preferences import get_preference as cfg
 
@@ -21,7 +20,7 @@ def per(st, n):
     if note_cfg is None:
         return st
 
-    morphemizer = getMorphemizerByName(note_cfg['Morphemizer'])
+    morphemizer = mw.morphemizerRegistry.getMorphemizer(note_cfg['Morphemizer'])
     for f in note_cfg['Fields']:
         ms = getMorphemes(morphemizer, stripHTML(n[f]), n.tags)
         loc = AnkiDeck(n.id, f, n[f], n.guid, mats)

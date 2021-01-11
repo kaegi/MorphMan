@@ -1,10 +1,10 @@
-from morph.morphemizer import getMorphemizerByName
+from morph.morphemizer import MecabMorphemizer
 import unittest
 
 
 class TestMecabMorphemizer(unittest.TestCase):
     def setUp(self):
-        self.morphemizer = getMorphemizerByName("MecabMorphemizer")
+        self.morphemizer = MecabMorphemizer()
 
     def test_morpheme_generation(self):
         sentence_1 = "こんにちは。私の名前はシャンです。"

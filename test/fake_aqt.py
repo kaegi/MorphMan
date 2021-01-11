@@ -1,4 +1,19 @@
+import sys
 from unittest.mock import MagicMock
+
+aqt = MagicMock()
+aqt.mw = MagicMock()
+aqt.mw.pm.profileFolder = None
+aqt.mw.col = None
+aqt.mw.toolbar.draw = lambda: None
+
+aqt.browser = MagicMock()
+
+sys.modules['aqt'] = aqt
+sys.modules['aqt.browser'] = aqt.browser
+sys.modules['aqt.qt'] = MagicMock()
+sys.modules['aqt.utils'] = MagicMock()
+
 
 class FakeCollection:
     def __init__(self, config):
@@ -10,13 +25,7 @@ class FakeCollection:
     def set_config(self, key, value):
         self.config[key] = value
 
-browser = MagicMock()
-mw = MagicMock()
-mw.pm.profileFolder = None
-mw.col = None
-mw.toolbar.draw = lambda: None
-
 
 def init_collection(profile_folder='somewhere', config=None):
-    mw.pm.profileFolder = MagicMock(return_value=profile_folder)
-    mw.col = FakeCollection(config)
+    aqt.mw.pm.profileFolder = MagicMock(return_value=profile_folder)
+    aqt.mw.col = FakeCollection(config)
