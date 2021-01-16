@@ -325,8 +325,10 @@ def updateNotes(allDb):
     included_mids = [m['id'] for m in mw.col.models.all() if include_all or m['name'] in included_types]
 
     query = '''
-        select id, mid, flds, guid, tags from notes
-        WHERE mid IN ({0}) and ( mod > {2} or id in ({1}) )
+        SELECT n.id as nid, mid, flds, guid, tags, max(c.type) AS maxtype
+        FROM notes n JOIN cards c ON (n.id = c.nid)
+        WHERE mid IN ({0}) and ( n.mod > {2} or n.id in ({1}) )
+        GROUP by nid, mid, flds, guid, tags;
         '''.format(','.join([str(m) for m in included_mids]), ','.join([str(id) for id in refresh_notes]), last_updated)
     query_results = db.execute(query)
 
@@ -336,7 +338,7 @@ def updateNotes(allDb):
                       max=N_notes,
                       immediate=True)
 
-    for i, (nid, mid, flds, guid, tags) in enumerate(query_results):
+    for i, (nid, mid, flds, guid, tags, maxtype) in enumerate(query_results):
         ts = TAG.split(tags)
         if i % 500 == 0:
             mw.progress.update(value=i)
@@ -445,22 +447,21 @@ def updateNotes(allDb):
                 usefulness += 1000000 # Add a penalty to put these cards at the end of the queue
         elif N_k == 1:  # new vocab card, k+1
             ts.append(vocabTag)
-            setField(mid, fs, field_focus_morph, focusMorph.base)
-            setField(mid, fs, field_focus_morph_pos, focusMorph.pos)
+            if maxtype == 0: # Only update focus fields on 'new' card types.
+                setField(mid, fs, field_focus_morph, focusMorph.base)
+                setField(mid, fs, field_focus_morph_pos, focusMorph.pos)
         elif N_k > 1:  # M+1+ and K+2+
             ts.append(notReadyTag)
-        elif N_m == 1:  # we have k+0, and m+1, so this card does not introduce a new vocabulary -> card for newly learned morpheme
+            if maxtype == 0: # Only update focus fields on 'new' card types.
+                setField(mid, fs, field_focus_morph, ', '.join([u.base for u in unknowns]))
+                setField(mid, fs, field_focus_morph_pos, ', '.join([u.pos for u in unknowns]))
+        else:  # only case left: we have k+0, but m+1 or higher, so this card does not introduce a new vocabulary -> card for newly learned morpheme
             ts.append(freshTag)
             if skip_fresh_cards:
                 usefulness += 1000000 # Add a penalty to put these cards at the end of the queue
-            focusMorph = next(iter(unmatures))
-            setField(mid, fs, field_focus_morph, focusMorph.base)
-            setField(mid, fs, field_focus_morph_pos, focusMorph.pos)
-
-        else:  # only case left: we have k+0, but m+2 or higher, so this card does not introduce a new vocabulary -> card for newly learned morpheme
-            ts.append(freshTag)
-            if skip_fresh_cards:
-                usefulness += 1000000 # Add a penalty to put these cards at the end of the queue
+            if maxtype == 0: # Only update focus fields on 'new' card types.
+                setField(mid, fs, field_focus_morph, ', '.join([u.base for u in unmatures]))
+                setField(mid, fs, field_focus_morph_pos, ', '.join([u.pos for u in unmatures]))
 
         # calculate mmi
         mmi = 100000 * N_k + 1000 * lenDiff + int(round(usefulness))
