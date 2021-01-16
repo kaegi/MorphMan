@@ -33,7 +33,14 @@ def CN(note, key): return cfg(key, note.mid)
 def focusName(): return cfg('Field_FocusMorph')
 
 
-def focus(n): return n[focusName()]
+def focus(n): return [f.strip() for f in n[focusName()].split(',')]
+
+
+def focusQuery(fieldName, focusMorphs):
+    q = ' or '.join([r'"%s:re:(^|,|\s)%s($|,|\s)"' % (fieldName, f) for f in focusMorphs])
+    if len(focusMorphs) > 0:
+        q = '(%s)' % q
+    return q
 
 
 ########## 6 parent deck pulls new cards from all children instead of sequentially (ie. mostly first)
@@ -71,13 +78,15 @@ def markFocusSeen(self, n):
     will be skipped. Also prints number of cards to be skipped if enabled"""
     global seenMorphs
     try:
-        if not focus(n):
-            return
-        q = '%s:%s' % (focusName(), focus(n))
+        focusMorphs = focus(n)
     except KeyError:
         return
 
-    seenMorphs.add(focus(n))
+    if len(focusMorphs) == 0:
+        return
+
+    seenMorphs.update(focusMorphs)
+    q = focusQuery(focusName(), focusMorphs)
     num_skipped = len(self.mw.col.findNotes(q)) - 1
     if num_skipped and cfg('print number of alternatives skipped'):
         tooltip(_('%d alternatives will be skipped' % num_skipped))
@@ -120,7 +129,7 @@ def my_getNewCard(self, _old):
 
         # get the focus morph
         try:
-            focus_morph = focus(note)  # field contains either the focusMorph or is empty
+            focus_morphs = focus(note)  # field contains either the focusMorph or is empty
         except KeyError:
             tooltip(_('Encountered card without the \'focus morph\' field configured in the preferences. Please check '
                       'your MorphMan settings and note models.'))
@@ -139,7 +148,7 @@ def my_getNewCard(self, _old):
             is_comprehension_card and skip_comprehension,
             is_fresh_vocab and skip_fresh,
             is_already_known,  # the user requested that the vocabulary does not have to be shown
-            focus_morph in seenMorphs and skip_focus_morph_seen_today,  # we already learned that/saw that today
+            skip_focus_morph_seen_today and any([focus in seenMorphs for focus in focus_morphs]) ,  # we already learned that/saw that today
         ]
 
         if not any(skip_conditions):
@@ -197,9 +206,11 @@ def browseSameFocus(self):  # 3
     Useful to quickly find alternative notes to learn focus from"""
     try:
         n = self.card.note()
-        if not focus(n):
+        focusMorphs = focus(n)
+        if len(focusMorphs) == 0:
             return
-        q = '%s:%s' % (focusName(), focus(n))
+
+        q = focusQuery(focusName(), focusMorphs)
         b = dialogs.open('Browser', self.mw)
         b.form.searchEdit.lineEdit().setText(q)
         b.onSearchActivated()
