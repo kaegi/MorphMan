@@ -365,6 +365,7 @@ def updateNotes(allDb):
         for morpheme in morphemes:
             if proper_nouns_known and morpheme.isProperNoun():
                 continue
+            morpheme = morpheme.deinflected()
             if not seenDb.matches(morpheme):
                 unseens.add(morpheme)
             if not knownDb.matches(morpheme):
@@ -397,13 +398,11 @@ def updateNotes(allDb):
             if priorityDb.frequency(focusMorph) > 0:
                 isPriority = True
                 usefulness += C('priority.db weight')
-
-            deinfFocusMorph = focusMorph.deinflected()
             
             if frequency_has_morphemes:
-                focusMorphIndex = frequency_map.get(deinfFocusMorph, -1)
+                focusMorphIndex = frequency_map.get(focusMorph, -1)
             else:
-                focusMorphIndex = frequency_map.get(deinfFocusMorph.base, -1)
+                focusMorphIndex = frequency_map.get(focusMorph.base, -1)
 
             if focusMorphIndex >= 0:
                 isFrequency = True
