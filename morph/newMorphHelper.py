@@ -33,7 +33,11 @@ def CN(note, key): return cfg(key, note.mid)
 def focusName(): return cfg('Field_FocusMorph')
 
 
-def focus(n): return [f.strip() for f in n[focusName()].split(',')]
+def focus(n):
+    focusValue = n[focusName()].strip()
+    if focusValue == '':
+        return []
+    return [f.strip() for f in focusValue.split(',')]
 
 
 def focusQuery(fieldName, focusMorphs):
