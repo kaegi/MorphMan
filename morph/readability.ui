@@ -145,7 +145,7 @@ Morphemes meeting the 'Minimum Frequency' will be added to the plan until the 'T
           <item>
            <widget class="QLabel" name="targetLabel">
             <property name="text">
-             <string>Target %</string>
+             <string>Target</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -169,6 +169,9 @@ Morphemes meeting the 'Minimum Frequency' will be added to the plan until the 'T
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="suffix">
+             <string>%</string>
             </property>
             <property name="decimals">
              <number>1</number>

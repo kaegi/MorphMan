@@ -404,6 +404,14 @@ class MorphDb:
         for l, ms in ldb.items():
             self.addMLs([(m, l) for m in ms])
 
+    def removeMorphs(self, iter):
+        for m in iter:
+            if m in self.db:
+                self.db.pop(m)
+                gk = m.getGroupKey()
+                if gk in self.groups:
+                    self.groups[gk].remove(m)
+
     # returns number of added entries
     def merge(self, md):  # Db -> m Int
         new = 0
