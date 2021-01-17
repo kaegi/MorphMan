@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import array
+import copy
 import csv
 import errno
 import importlib
@@ -12,6 +13,7 @@ from pathlib import Path
 import pickle as pickle
 import re
 import sqlite3
+from collections import namedtuple
 from contextlib import redirect_stdout, redirect_stderr
 
 from PyQt5.QtCore import *
@@ -82,6 +84,12 @@ class Source:
         self.morphs = morphs
         self.line_morphs = line_morphs
         self.unknown_db = unknown_db
+
+        # Get filled when generating a study plan
+        self.missing_morphs = None 
+        self.seen_i = 0
+        self.known_i = 0
+
 
 
 def getPath(le, caption, open_directory=False):  # LineEdit -> GUI ()
@@ -266,6 +274,16 @@ class TableInteger(QTableWidgetItem):
         rvalue = other.text()
         return natural_keys(lvalue) < natural_keys(rvalue)
 
+class TableFloat(QTableWidgetItem):
+    def __init__(self, value):
+        super(TableFloat, self).__init__('%0.03f' % value)
+        self.setTextAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
+
+    def __lt__(self, other):
+        lvalue = self.text()
+        rvalue = other.text()
+        return natural_keys(lvalue) < natural_keys(rvalue)
+
 class TablePercent(QTableWidgetItem):
     def __init__(self, value):
         super(TablePercent, self).__init__('%0.02f' % value)
@@ -286,6 +304,9 @@ def migakuDictDbPath():
             return None
     return None
 
+SourceStudyResult = namedtuple('SourceStudyResult', ['old_readability', 'new_readability', 'learned_m', 'total_freq', 'avg_freq', 'avg_rate'])
+SchedulingMorph = namedtuple('SchedulingMorph', ['score', 'master_count', 'unknown_count', 'source_unknown_count', 'count', 'morph'])
+
 class SettingsDialog(QDialog):
     def __init__(self, parent=None):
         super(SettingsDialog, self).__init__(parent)
@@ -297,12 +318,15 @@ class SettingsDialog(QDialog):
         # Study Plan Settings
         self.ui.alwaysAddMinimumFreqCheckBox.setChecked(cfg('Option_AlwaysAddMinFreqMorphs'))
         self.ui.alwaysMeetReadTargettCheckBox.setChecked(cfg('Option_AlwaysMeetReadabilityTarget'))
+        self.ui.resetLearnedAfterEachInputCheckBox.setChecked(cfg('Option_ResetLearnedAfterEachInput'))
+        self.ui.optimalMasterTargetSpinBox.setProperty("value", cfg('Option_OptimalMasterTarget'))
 
         # Frequency List Settings
         self.ui.fillAllMorphsCheckBox.setChecked(cfg('Option_FillAllMorphsInStudyPlan'))
 
         # Word Report Settings
         self.ui.saveMissingWordsCheckBox.setChecked(cfg('Option_SaveMissingWordReport'))
+        self.ui.saveSeparateWordReportsCheckBox.setChecked(cfg('Option_SaveSeparateWordReports'))
         self.ui.saveReadabilityDBCheckBox.setChecked(cfg('Option_SaveReadabilityDB'))
 
         # Extras
@@ -326,12 +350,15 @@ class SettingsDialog(QDialog):
         # Study Plan Settings
         pref['Option_AlwaysAddMinFreqMorphs'] = self.ui.alwaysAddMinimumFreqCheckBox.isChecked()
         pref['Option_AlwaysMeetReadabilityTarget'] = self.ui.alwaysMeetReadTargettCheckBox.isChecked()
+        pref['Option_ResetLearnedAfterEachInput'] = self.ui.resetLearnedAfterEachInputCheckBox.isChecked()
+        pref['Option_OptimalMasterTarget'] = float(self.ui.optimalMasterTargetSpinBox.value())
 
         # Frequency List Settings
         pref['Option_FillAllMorphsInStudyPlan'] = self.ui.fillAllMorphsCheckBox.isChecked()
 
         # Word Report Settings
         pref['Option_SaveMissingWordReport'] = self.ui.saveMissingWordsCheckBox.isChecked()
+        pref['Option_SaveSeparateWordReports'] = self.ui.saveSeparateWordReportsCheckBox.isChecked()
         pref['Option_SaveReadabilityDB'] = self.ui.saveReadabilityDBCheckBox.isChecked()
 
         # Extras
@@ -382,6 +409,8 @@ class AnalyzerDialog(QDialog):
         # Connect buttons
         self.ui.analyzeButton.clicked.connect(lambda le: self.onAnalyze())
         self.ui.closeButton.clicked.connect(lambda le: self.close())
+
+        self.ui.studyPlanTable.horizontalHeader().sortIndicatorChanged.connect(self.onStudyPlanSortIndicatorChanged)
 
         # Output text font
         doc = self.ui.outputText.document()
@@ -507,6 +536,23 @@ class AnalyzerDialog(QDialog):
             self.server.close()
             self.server = None
 
+    def buildTotalStudyCount(self):
+        # Recompute total count based on new sort order
+        self.ui.studyPlanTable.setSortingEnabled(False)
+        rows = self.ui.studyPlanTable.rowCount()
+        total_count = 0
+        for row in range(0, rows):
+            count = int(self.ui.studyPlanTable.item(row, 1).text())
+            total_count += count
+            self.ui.studyPlanTable.setItem(row, 2, TableInteger(total_count))
+        self.ui.studyPlanTable.setSortingEnabled(True)
+
+    def onStudyPlanSortIndicatorChanged(self, index, order):
+        # Apply the sort
+        self.ui.studyPlanTable.sortItems(index, order)       
+        self.buildTotalStudyCount()
+        
+
     def morphemizer(self):
         return self.ui.morphemizerComboBox.getCurrent()
 
@@ -559,17 +605,111 @@ class AnalyzerDialog(QDialog):
                     m[1], m[0].norm, m[0].base, m[0].read, m[0].pos, m[0].subPos, group_idx, morph_idx, morph_delta,
                     morph_total, known_db.matches(m[0])), file=f)
 
+    def get_line_readability(self, show, known_db):
+        known_lines = 0
+        for line_morphs in show.line_morphs:
+            has_unknowns = False
+            for m in line_morphs:
+                if known_db.matches(m) or (self.proper_nouns_known and m.isProperNoun()):
+                    continue
+                has_unknowns = True
+            if not has_unknowns:
+                known_lines += 1
+        line_readability = 0.0 if known_lines == 0 else 100.0 * known_lines / len(show.line_morphs)
+        return line_readability
+
+    def get_master_freq(self):
+        return self.master_score * 100.0 / self.master_total_instances
+
+    def sourceStudyPlan(self, f, source, known_db, unknown_db):
+        missing_morphs = []
+
+        if source.missing_morphs is None:
+            # First time to process this source
+            source.seen_i = 0
+            source.known_i = 0
+
+            for m in source.morphs.items():
+                source.seen_i += m[1]
+                morph = m[0]
+                if known_db.matches(morph) or (self.proper_nouns_known and morph.isProperNoun()):
+                    source.known_i += m[1]
+                else:
+                    missing_morphs.append(m)
+        else:
+            # Only re-process missing morphs
+            for m in source.missing_morphs:
+                morph = m[0]
+                if known_db.matches(morph) or (self.proper_nouns_known and morph.isProperNoun()):
+                    source.known_i += m[1]
+                else:
+                    missing_morphs.append(m)
+
+        source.missing_morphs = missing_morphs
+        to_learn_morphs = []
+
+        for morph, count in source.missing_morphs:
+            source_unknown_count = source.unknown_db.getFuzzyCount(morph, known_db)
+            unknown_count = unknown_db.getFuzzyCount(morph, known_db)
+            master_count = self.master_db.getFuzzyCount(morph, known_db)
+            source_count = source_unknown_count + unknown_count
+
+            score = pow(source_count, self.source_score_power) * self.source_score_multiplier + master_count
+            to_learn_morphs.append(SchedulingMorph(morph=morph, count=count, source_unknown_count=source_unknown_count, unknown_count=unknown_count, master_count=master_count, score=score))
+
+            if self.debug_output: f.write('  missing: ' + m[0].show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]\n' % (score, source_unknown_count, unknown_count, master_count))
+
+
+        known_i = source.known_i
+        learned_this_source = []
+        learned_morphs = []
+        total_freq = 0
+        readability = 100.0 if source.seen_i == 0 else known_i * 100.0 / source.seen_i
+        old_readability = readability
+
+        if self.always_meet_readability_target:
+            iterations = 2
+        else:
+            iterations = 1
+
+        for iteration in range(0, iterations):
+            for m in sorted(to_learn_morphs, key=lambda x: x.score, reverse=True):
+                if readability >= self.readability_target and not (iteration == 0 and self.take_all_minimum_frequency_morphs):
+                    if self.debug_output: f.write('  readability target reached\n')
+                    break
+
+                if known_db.matches(m.morph):
+                    if self.debug_output: f.write('  known: %s\n' % m.morph.show())
+                    continue
+
+                if (iteration == 0) and (m.master_count < self.minimum_master_frequency):
+                    if self.debug_output: f.write('  low score: %s [score %d ep_freq %d all_freq %d master_freq %d]\n' % (m.morph.show(), m.score, m.source_unknown_count, m.unknown_count, m.master_count))
+                    continue
+
+                learned_morphs.append(m)
+                learned_this_source.append(m)
+                known_i += source.unknown_db.getFuzzyCount(m.morph, known_db)
+                total_freq += self.master_db.getFuzzyCount(m.morph, known_db)
+                readability = 100.0 if source.seen_i == 0 else known_i * 100.0 / source.seen_i
+                known_db.addMLs1(m.morph, set())
+
+        learned_m = len(learned_morphs)
+        avg_freq = float(total_freq) / learned_m if learned_m > 0 else 0
+        avg_rate = float(learned_m) / source.i_count if source.i_count > 0 else 0
+
+        return learned_this_source, SourceStudyResult(old_readability=old_readability, new_readability=readability, learned_m=learned_m, total_freq=total_freq, avg_freq=avg_freq, avg_rate=avg_rate)
+
 
     def onAnalyze(self):
         self.clearOutput()
 
         morphemizer = self.morphemizer()
         self.writeOutput('Using morphemizer: %s \n' % morphemizer.getDescription())
-        debug_output = False
+        self.debug_output = False
 
         input_path = self.ui.inputPathEdit.text()
-        minimum_master_frequency = int(self.ui.minFrequencySpinBox.value())
-        readability_target = float(self.ui.targetSpinBox.value())
+        self.minimum_master_frequency = int(self.ui.minFrequencySpinBox.value())
+        self.readability_target = float(self.ui.targetSpinBox.value())
         master_freq_path = self.ui.masterFreqEdit.text()
         known_words_path = self.ui.knownMorphsEdit.text()
         mature_words_path = os.path.normpath(os.path.dirname(known_words_path) + '/mature.db')
@@ -584,8 +724,8 @@ class AnalyzerDialog(QDialog):
         pref = {}
         pref['Option_AnalysisInputPath'] = input_path
         pref['Option_MasterFrequencyListPath'] = master_freq_path
-        pref['Option_DefaultMinimumMasterFrequency'] = minimum_master_frequency
-        pref['Option_DefaultStudyTarget'] = readability_target
+        pref['Option_DefaultMinimumMasterFrequency'] = self.minimum_master_frequency
+        pref['Option_DefaultStudyTarget'] = self.readability_target
         pref['Option_SaveWordReport'] = save_word_report
         pref['Option_SaveStudyPlan'] = save_study_plan
         pref['Option_SaveFrequencyList'] = save_frequency_list
@@ -593,17 +733,23 @@ class AnalyzerDialog(QDialog):
         pref['Option_ProcessLines'] = process_lines
         update_preferences(pref)
 
-        source_score_power = cfg('Option_SourceScorePower')
-        source_score_multiplier = cfg('Option_SourceScoreMultiplier')
+        self.source_score_power = cfg('Option_SourceScorePower')
+        self.source_score_multiplier = cfg('Option_SourceScoreMultiplier')
+        self.proper_nouns_known = cfg('Option_ProperNounsAlreadyKnown')
 
-        proper_nouns_known = cfg('Option_ProperNounsAlreadyKnown')
-        fill_all_morphs_in_plan = cfg('Option_FillAllMorphsInStudyPlan')
-        take_all_minimum_frequency_morphs = (minimum_master_frequency > 0) and cfg('Option_AlwaysAddMinFreqMorphs')
-        always_meet_readability_target = (minimum_master_frequency > 0) and cfg('Option_AlwaysMeetReadabilityTarget')
-        save_missing_word_report = cfg('Option_SaveMissingWordReport')
-        save_readability_db = cfg('Option_SaveReadabilityDB')
+        # Study plan settings
+        self.take_all_minimum_frequency_morphs = (self.minimum_master_frequency > 0) and cfg('Option_AlwaysAddMinFreqMorphs')
+        self.always_meet_readability_target = (self.minimum_master_frequency > 0) and cfg('Option_AlwaysMeetReadabilityTarget')
+        self.reset_known_for_each_show = cfg('Option_ResetLearnedAfterEachInput')
+        self.optimal_master_target = cfg('Option_OptimalMasterTarget')
 
-        update_migaku_dictionary_freq = cfg('Option_MigakuDictionaryFreq')
+        # Frequency list settings
+        self.fill_all_morphs_in_plan = cfg('Option_FillAllMorphsInStudyPlan')
+
+        # Word report settings
+        self.save_missing_word_report = cfg('Option_SaveMissingWordReport')
+        self.save_readability_db = cfg('Option_SaveReadabilityDB')
+        self.save_separate_word_reports = cfg('Option_SaveSeparateWordReports')
 
         if not os.path.exists(output_path):
             try:
@@ -612,33 +758,33 @@ class AnalyzerDialog(QDialog):
                 if e.errno != errno.EEXIST:
                     raise
 
-        frequency_list_path = os.path.normpath(output_path + '/frequency.txt')
-        instance_freq_report_path = os.path.normpath(output_path + '/instance_freq_report.txt')
-        morph_freq_report_path = os.path.normpath(output_path + '/morph_freq_report.txt')
-        study_plan_path = os.path.normpath(output_path + '/study_plan.txt')
-        readability_log_path = os.path.normpath(output_path + '/readability_log.txt')
-        missing_master_path = os.path.normpath(output_path + '/missing_master_word_report.txt')
-        #word_reports_path = os.path.normpath(output_path + '/word_reports')
-        corpus_db_path = os.path.normpath(output_path + '/word_corpus.corpusdb')
+        self.frequency_list_path = os.path.normpath(output_path + '/frequency.txt')
+        self.instance_freq_report_path = os.path.normpath(output_path + '/instance_freq_report.txt')
+        self.morph_freq_report_path = os.path.normpath(output_path + '/morph_freq_report.txt')
+        self.study_plan_path = os.path.normpath(output_path + '/study_plan.txt')
+        self.readability_log_path = os.path.normpath(output_path + '/readability_log.txt')
+        self.missing_master_path = os.path.normpath(output_path + '/missing_master_word_report.txt')
+        self.word_reports_path = os.path.normpath(output_path + '/word_reports')
+        self.corpus_db_path = os.path.normpath(output_path + '/word_corpus.corpusdb')
+        self.future_known_db_path = os.path.normpath(output_path + '/future_known.db')
 
-        log_fp = open(readability_log_path, 'wt', encoding='utf-8')
+        log_fp = open(self.readability_log_path, 'wt', encoding='utf-8')
 
-        #try:
-        #    os.mkdir(word_reports_path)
-        #except:
-        #    pass
+        if self.save_separate_word_reports:
+            try:
+                os.mkdir(self.word_reports_path)
+            except:
+                pass
 
-        master_db = CountingMorphDB()
+        self.master_db = CountingMorphDB()
         unknown_db = CountingMorphDB()
         corpus_db = LocationCorpusDB()
-
-        self.master_db = master_db
 
         # Map from Morpheme -> morph state bitfield
         morph_state_cache = {}
 
-        master_total_instances = 0
-        master_current_score = 0
+        self.master_total_instances = 0
+        self.master_score = 0
 
         # Map from Morpheme -> count of times Morpheme was parsed
         all_morph_instances = {}
@@ -654,15 +800,15 @@ class AnalyzerDialog(QDialog):
                         instances = int(row[0])
                         m = Morpheme(row[1], row[2], row[2], row[3], row[4], row[5])
 
-                        master_db.addMorph(m, instances)
-                        master_total_instances += instances
+                        self.master_db.addMorph(m, instances)
+                        self.master_total_instances += instances
                     except:
                         pass
             self.writeOutput("Master morphs loaded: K %d V %d\n" % (
-                master_db.getTotalNormMorphs(), master_db.getTotalVariationMorphs()))
+                self.master_db.getTotalNormMorphs(), self.master_db.getTotalVariationMorphs()))
         else:
             self.writeOutput("Master frequency file '%s' not found.\n" % master_freq_path)
-            minimum_master_frequency = 0
+            self.minimum_master_frequency = 0
 
         if os.path.isfile(known_words_path):
             known_db = MorphDb(known_words_path, ignoreErrors=True)
@@ -674,6 +820,8 @@ class AnalyzerDialog(QDialog):
             self.writeOutput("Known words DB '%s' not found\n" % known_words_path)
             known_db = MorphDb()
 
+        self.orig_known_db = copy.deepcopy(known_db)
+
         if os.path.isfile(mature_words_path):
             mature_db = MorphDb(mature_words_path, ignoreErrors=True)
 
@@ -684,16 +832,19 @@ class AnalyzerDialog(QDialog):
             self.writeOutput("Mature words DB '%s' not found\n" % mature_words_path)
             mature_db = MorphDb()
 
-        if master_total_instances > 0:
-            master_current_score = 0
-            for ms in master_db.db.values():
+        if self.master_total_instances > 0:
+            self.master_score = 0
+            for ms in self.master_db.db.values():
                 for m, c in ms.items():
-                    if known_db.matches(m) or (proper_nouns_known and m.isProperNoun()):
-                        master_current_score += c[0]
+                    if known_db.matches(m) or (self.proper_nouns_known and m.isProperNoun()):
+                        self.master_score += c[0]
                         c[1] = True  # mark matched
             self.writeOutput("\n[Current master frequency readability] %0.02f\n" % (
-                    master_current_score * 100.0 / master_total_instances))
+                    self.master_score * 100.0 / self.master_total_instances))
 
+        master_current_score = self.master_score
+
+        self.ui.tabWidget.setCurrentIndex(1)
         sources = []
 
         def proc_file_result(full_name, corpuses):
@@ -733,9 +884,9 @@ class AnalyzerDialog(QDialog):
                             else:
                                 is_proper_noun = False
 
-                            if known_db.matches(m) or (proper_nouns_known and is_proper_noun):
+                            if known_db.matches(m) or (self.proper_nouns_known and is_proper_noun):
                                 morph_state |= 2
-                            if mature_db.matches(m) or (proper_nouns_known and is_proper_noun):
+                            if mature_db.matches(m) or (self.proper_nouns_known and is_proper_noun):
                                 morph_state |= 4
 
                             morph_state_cache[m] = morph_state
@@ -792,12 +943,14 @@ class AnalyzerDialog(QDialog):
             self.ui.readabilityTable.setItem(row, 11, TablePercent(iplus1_percent))
 
             # save a local word report
-            #tmp_name = os.path.normpath(word_reports_path + '/' + source.name.replace('/', '_') + '.words')
-            #self.writeOutput("save report to '%s'\n" % tmp_name)
-            #self.saveWordReport(known_db, seen_morphs, tmp_name)
+            if self.save_separate_word_reports:
+                tmp_name = os.path.normpath(self.word_reports_path + '/' + re.sub(r'[\\/:]', '-', full_name) + '.words')
+                self.writeOutput("save report to '%s'\n" % tmp_name)
+                self.saveWordReport(known_db, seen_morphs, tmp_name)
 
             if save_study_plan:
                 source = Source(full_name, seen_morphs, line_morphs, source_unknown_db)
+                source.i_count = i_count # TODO: Move to class
                 sources.append(source)
 
         def measure_readability(file_path, corp_name):
@@ -950,23 +1103,23 @@ class AnalyzerDialog(QDialog):
         self.ui.readabilityTable.resizeColumnsToContents()       
 
         if save_word_report:
-            self.writeOutput("\n[Saving word instance report to '%s'...]\n" % instance_freq_report_path)
-            self.saveWordReport(known_db, all_morph_instances, instance_freq_report_path)
+            self.writeOutput("\n[Saving word instance report to '%s'...]\n" % self.instance_freq_report_path)
+            self.saveWordReport(known_db, all_morph_instances, self.instance_freq_report_path)
 
-            self.writeOutput("\n[Saving unique morph word report to '%s'...]\n" % morph_freq_report_path)
-            self.saveWordReport(known_db, all_morphs, morph_freq_report_path)
+            self.writeOutput("\n[Saving unique morph word report to '%s'...]\n" % self.morph_freq_report_path)
+            self.saveWordReport(known_db, all_morphs, self.morph_freq_report_path)
 
-        if save_missing_word_report:
-            self.writeOutput("\n[Saving missing word report to '%s'...]\n" % missing_master_path)
+        if self.save_missing_word_report:
+            self.writeOutput("\n[Saving missing word report to '%s'...]\n" % self.missing_master_path)
         
             master_morphs = {}
-            for ms in master_db.db.values():
+            for ms in self.master_db.db.values():
                 for m, c in ms.items():
-                    if known_db.matches(m) or (proper_nouns_known and m.isProperNoun()):
+                    if known_db.matches(m) or (self.proper_nouns_known and m.isProperNoun()):
                         continue
                     master_morphs[m] = c[0]
 
-            with open(missing_master_path, 'wt', encoding='utf-8') as f:
+            with open(self.missing_master_path, 'wt', encoding='utf-8') as f:
                 last_count = 0
                 morph_idx = 0
                 group_idx = 0
@@ -984,9 +1137,9 @@ class AnalyzerDialog(QDialog):
                         m[1], m[0].norm, m[0].base, m[0].read, m[0].pos, m[0].subPos, group_idx, morph_idx, morph_delta,
                         morph_total, known_db.matches(m[0])), file=f)
 
-        if save_readability_db:
-            self.writeOutput("\n[Saving corpus database to '%s'...]\n" % corpus_db_path)
-            corpus_db.save(corpus_db_path)
+        if self.save_readability_db:
+            self.writeOutput("\n[Saving corpus database to '%s'...]\n" % self.corpus_db_path)
+            corpus_db.save(self.corpus_db_path)
 
         learned_tot = 0
         learned_morphs = []
@@ -998,7 +1151,7 @@ class AnalyzerDialog(QDialog):
             for line_morphs in show.line_morphs:
                 has_unknowns = False
                 for m in line_morphs:
-                    if known_db.matches(m) or (proper_nouns_known and m.isProperNoun()):
+                    if known_db.matches(m) or (self.proper_nouns_known and m.isProperNoun()):
                         continue
                     has_unknowns = True
                 if not has_unknowns:
@@ -1010,140 +1163,146 @@ class AnalyzerDialog(QDialog):
         self.freq_db = CountingMorphDB()
 
         if save_study_plan:
-            self.writeOutput("\n[Saving Study Plan to '%s'...]\n" % study_plan_path)
-            with open(study_plan_path, 'wt', encoding='utf-8') as f:
+            self.ui.tabWidget.setCurrentIndex(2)
+            self.writeOutput("\n[Saving Study Plan to '%s'...]\n" % self.study_plan_path)
+            with open(self.study_plan_path, 'wt', encoding='utf-8') as f:
                 self.ui.studyPlanTable.clear()
                 self.ui.studyPlanTable.setRowCount(0)
                 self.ui.studyPlanTable.setSortingEnabled(False)
-                self.ui.studyPlanTable.setColumnCount(7)
+                self.ui.studyPlanTable.setColumnCount(10)
                 self.ui.studyPlanTable.setHorizontalHeaderLabels([
                     "Input", "To Study\nMorphs ", "Cummulative\nMorphs", "Old Morph\nReadability %", "New Morph\nReadability %",
-                    "Old Line\nReadability %", "New Line\nReadability %"])
+                    "Old Line\nReadability %", "New Line\nReadability %", "Avg Study\nFreq", "Avg Study\nPer Instance", "New Master\nFreq %"])
 
                 mw.progress.start( label='Building study plan', max=len(sources), immediate=True )
 
-                for n, s in enumerate(sources):
-                    mw.progress.update( value=n, label='Processing (%d/%d) %s' % (n+1, len(sources), s.name) )
-                    if debug_output: f.write('Processing %s\n' % s.name)
+                def output_study_result(source, study_result, old_line_readability, new_line_readability, new_master_freq):
+                    nonlocal learned_tot
 
-                    known_i = 0
-                    seen_i = 0
-                    learned_m = 0
-                    missing_morphs = []
-
-                    old_line_readability = get_line_readability(s, known_db)
-
-                    for m in s.morphs.items():
-                        seen_i += m[1]
-                        morph = m[0]
-                        if known_db.matches(morph) or (proper_nouns_known and morph.isProperNoun()):
-                            known_i += m[1]
-                        else:
-                            source_unknown_count = s.unknown_db.getFuzzyCount(morph, known_db)
-                            unknown_count = unknown_db.getFuzzyCount(morph, known_db)
-                            master_count = master_db.getFuzzyCount(morph, known_db)
-                            source_count = source_unknown_count + unknown_count
-
-                            score = pow(source_count, source_score_power) * source_score_multiplier + master_count
-                            missing_morphs.append((m[0], m[1], source_unknown_count, unknown_count, master_count, score))
-
-                            if debug_output: f.write('  missing: ' + m[0].show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]\n' % (score, source_unknown_count, unknown_count, master_count))
-
-                    all_missing_morphs += missing_morphs
-                    readability = 100.0 if seen_i == 0 else known_i * 100.0 / seen_i
-                    old_readability = readability
-
-                    learned_this_source = []
-
-                    if always_meet_readability_target:
-                        iterations = 2
-                    else:
-                        iterations = 1
-
-                    for iteration in range(0, iterations):
-                        for m in sorted(missing_morphs, key=operator.itemgetter(5), reverse=True):
-                            if readability >= readability_target and not (iteration == 0 and take_all_minimum_frequency_morphs):
-                                if debug_output: f.write('  readability target reached\n')
-                                break
-
-                            if known_db.matches(m[0]):
-                                if debug_output: f.write('  known: %s\n' % m[0].show())
-                                continue
-
-                            if (iteration == 0) and (m[4] < minimum_master_frequency):
-                                if debug_output: f.write('  low score: %s [score %d ep_freq %d all_freq %d master_freq %d]\n' % (m[0].show(), m[5], m[2], m[3], m[4]))
-                                continue
-                            
-                            learned_morphs.append(m)
-                            learned_this_source.append(m)
-                            known_i += s.unknown_db.getFuzzyCount(m[0], known_db)
-                            learned_m += 1
-                            readability = 100.0 if seen_i == 0 else known_i * 100.0 / seen_i
-                            known_db.addMLs1(m[0], set())
-
-                    new_line_readability = get_line_readability(s, known_db)
-
-                    learned_tot += learned_m
+                    learned_tot += study_result.learned_m
                     source_str = "'%s' study goal: (%3d/%4d) morph readability: %0.2f -> %0.2f line readabiltiy: %0.2f -> %0.2f\n" % (
-                        s.name, learned_m, learned_tot, old_readability, readability, old_line_readability, new_line_readability)
+                        source.name, study_result.learned_m, learned_tot, study_result.old_readability, study_result.new_readability, old_line_readability, new_line_readability)
                     self.writeOutput(source_str)
                     f.write(source_str)
 
                     row = self.ui.studyPlanTable.rowCount()
                     self.ui.studyPlanTable.insertRow(row)
-                    self.ui.studyPlanTable.setItem(row, 0, NaturalKeysTableWidgetItem(s.name))
-                    self.ui.studyPlanTable.setItem(row, 1, TableInteger(learned_m))
+                    self.ui.studyPlanTable.setItem(row, 0, NaturalKeysTableWidgetItem(source.name))
+                    self.ui.studyPlanTable.setItem(row, 1, TableInteger(study_result.learned_m))
                     self.ui.studyPlanTable.setItem(row, 2, TableInteger(learned_tot))
-                    self.ui.studyPlanTable.setItem(row, 3, TablePercent(old_readability))
-                    self.ui.studyPlanTable.setItem(row, 4, TablePercent(readability))
+                    self.ui.studyPlanTable.setItem(row, 3, TablePercent(study_result.old_readability))
+                    self.ui.studyPlanTable.setItem(row, 4, TablePercent(study_result.new_readability))
                     self.ui.studyPlanTable.setItem(row, 5, TablePercent(old_line_readability))
                     self.ui.studyPlanTable.setItem(row, 6, TablePercent(new_line_readability))
+                    self.ui.studyPlanTable.setItem(row, 7, TableFloat(study_result.avg_freq))
+                    self.ui.studyPlanTable.setItem(row, 8, TableFloat(study_result.avg_rate))
+                    self.ui.studyPlanTable.setItem(row, 9, TablePercent(new_master_freq))
 
                     for m in learned_this_source:
-                        f.write('\t' + m[0].show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]\n' % (m[5], m[2], m[3], m[4]))
+                        f.write('\t' + m.morph.show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]\n' % (m.score, m.source_unknown_count, m.unknown_count, m.master_count))
+
+                matched_sources = set()
+
+                optmize_master_freq = self.optimal_master_target > 0
+
+                cumulative_master_freq = self.get_master_freq()
+
+                while len(matched_sources) < len(sources):
+                    find_optimal_source = (optmize_master_freq and cumulative_master_freq < self.optimal_master_target)
+                    source_results = []
+
+                    if optmize_master_freq and not find_optimal_source:
+                        break # Stop searching here
+
+                    for n, source in enumerate(sources):
+                        mw.progress.update( value=n, label='Processing (%d/%d) %s' % (n+1, len(sources), source.name) )
+
+                        if source in matched_sources:
+                            continue
+
+                        old_line_readability = self.get_line_readability(source, known_db)
+                        learned_this_source, study_result = self.sourceStudyPlan(f, source, known_db, unknown_db)
+
+                        if find_optimal_source:
+                            # Save results and undo the learned morphs
+                            source_results.append((source, learned_this_source, study_result))
+                            known_db.removeMorphs([m.morph for m in learned_this_source])
+                            continue
+                        else:
+                            matched_sources.add(source)
+                            
+                            new_line_readability = self.get_line_readability(source, known_db)
+                            self.master_score += study_result.total_freq
+                            cumulative_master_freq = self.get_master_freq()
+
+                            output_study_result(source, study_result, old_line_readability, new_line_readability, cumulative_master_freq)
+
+                            if self.reset_known_for_each_show:
+                                known_db.removeMorphs([m.morph for m in learned_this_source])
+                                self.master_score -= study_result.total_freq
+                            else:
+                                learned_morphs.extend(learned_this_source)
+
+                    if find_optimal_source:
+                        # Pick the best result as a match and output it
+                        source, learned_this_source, study_result = sorted(source_results, key=lambda x: x[2].avg_freq, reverse=True)[0]
+                        self.write('Picked source %s avg_freq %0.2f\n' % (source.name, study_result.avg_freq))
+                        matched_sources.add(source)
+                        old_line_readability = self.get_line_readability(source, known_db)
+                        for m in learned_this_source:
+                            known_db.addMLs1(m.morph, set())
+                        new_line_readability = self.get_line_readability(source, known_db)
+                        self.master_score += study_result.total_freq
+                        cumulative_master_freq = self.get_master_freq()
+                        output_study_result(source, study_result, old_line_readability, new_line_readability, cumulative_master_freq)
+
+                        if self.reset_known_for_each_show:
+                            known_db.removeMorphs([m.morph for m in learned_this_source])
+                            self.master_score -= study_result.total_freq
+                        else:
+                            learned_morphs.extend(learned_this_source)
 
                 self.ui.studyPlanTable.setSortingEnabled(True)
                 self.ui.studyPlanTable.resizeColumnsToContents()
+                self.buildTotalStudyCount()
+                known_db.save(self.future_known_db_path)
                 mw.progress.finish()
 
         if save_frequency_list:
-            self.writeOutput("\n[Saving frequency list to '%s'...]\n" % frequency_list_path)
-            
-            
-
-            with open(frequency_list_path, 'wt', encoding='utf-8') as f:
+            self.writeOutput("\n[Saving frequency list to '%s'...]\n" % self.frequency_list_path)
+            with open(self.frequency_list_path, 'wt', encoding='utf-8') as f:
                 f.write("#study_plan_frequency\t1.0\n")
                 unique_set = set()
 
                 if save_study_plan:
                     # First output morphs according to the plan.
                     for m in learned_morphs:
-                        if m[0] in unique_set:
+                        if m.morph in unique_set:
                             continue
-                        unique_set.add(m[0])
-                        self.freq_set.add((m[0].base, m[0].read))
-                        self.freq_db.addMorph(m[0], 1)
-                        print(m[0].show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (m[5], m[2], m[3], m[4]), file=f)
+                        unique_set.add(m.morph)
+                        self.freq_set.add((m.morph.base, m.morph.read))
+                        self.freq_db.addMorph(m.morph, 1)
+                        print(m.morph.show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (m.score, m.source_unknown_count, m.unknown_count, m.master_count), file=f)
                     
                     # Followed by all remaining morphs sorted by score.
-                    if fill_all_morphs_in_plan:
+                    if self.fill_all_morphs_in_plan:
                         for m in sorted(all_missing_morphs, key=operator.itemgetter(5), reverse=True):
-                            if (m[0] in unique_set):
+                            if (m.morph in unique_set):
                                 continue
-                            if m[4] < minimum_master_frequency:
+                            if m.master_count < self.minimum_master_frequency:
                                 continue
-                            unique_set.add(m[0])
-                            self.freq_set.add((m[0].base, m[0].read))
-                            self.freq_db.addMorph(m[0], 1)
-                            print(m[0].show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (m[5], m[2], m[3], m[4]), file=f)
-                elif master_total_instances > 0:
+                            unique_set.add(m.morph)
+                            self.freq_set.add((m.morph.base, m.morph.read))
+                            self.freq_db.addMorph(m.morph, 1)
+                            print(m.morph.show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (m.score, m.source_unknown_count, m.unknown_count, m.master_count), file=f)
+                elif self.master_total_instances > 0:
                     master_morphs = []
-                    for ms in master_db.db.values():
+                    for ms in self.master_db.db.values():
                         for m, c in ms.items():
-                            if known_db.matches(m) or (proper_nouns_known and m.isProperNoun()):
+                            if known_db.matches(m) or (self.proper_nouns_known and m.isProperNoun()):
                                 continue
-                            master_freq = master_db.getFuzzyCount(m.deinflected(), known_db)
-                            if master_freq < minimum_master_frequency:
+                            master_freq = self.master_db.getFuzzyCount(m.deinflected(), known_db)
+                            if master_freq < self.minimum_master_frequency:
                                 continue
                             master_morphs.append((m, c[0], master_freq))
 
@@ -1152,24 +1311,19 @@ class AnalyzerDialog(QDialog):
                         self.freq_set.add((m[0].base, m[0].read))
                         self.freq_db.addMorph(m[0], 1)
                 
-        if master_total_instances > 0:
+        if self.master_total_instances > 0:
             master_score = 0
-            for ms in master_db.db.values():
+            for ms in self.master_db.db.values():
                 for m, c in ms.items():
-                    if known_db.matches(m) or (proper_nouns_known and m.isProperNoun()):
+                    if known_db.matches(m) or (self.proper_nouns_known and m.isProperNoun()):
                         master_score += c[0]
                         c[1] = True  # mark matched
             self.writeOutput("\n[New master frequency readability] %0.02f -> %0.02f\n" % (
-                master_current_score * 100.0 / master_total_instances,
-                master_score * 100.0 / master_total_instances))
+                master_current_score * 100.0 / self.master_total_instances,
+                master_score * 100.0 / self.master_total_instances))
 
-        if os.path.isfile(known_words_path):
-            self.orig_known_db = MorphDb(known_words_path, ignoreErrors=True)
-        else:
-            self.orig_known_db = MorphDb()
-
-        #open(frequency_list_path+'.migaku.txt', 'wt', encoding='utf-8') as migaku_f
-        if update_migaku_dictionary_freq and self.migaku_dict_db_path:
+        #open(self.frequency_list_path+'.migaku.txt', 'wt', encoding='utf-8') as migaku_f
+        if cfg('Option_MigakuDictionaryFreq') and self.migaku_dict_db_path:
             with redirect_stdout(self), redirect_stderr(self):
                 print("Updating Migaku DB Frequency!")
 

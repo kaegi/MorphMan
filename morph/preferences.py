@@ -158,6 +158,7 @@ def jcfg_default():
         'Option_MasterFrequencyListPath': '',
         'Option_DefaultMinimumMasterFrequency': 0,
         'Option_DefaultStudyTarget': 98.0,
+        'Option_OptimalMasterTarget': 0.0,
         'Option_SourceScorePower': 2.0,            # Morpheme score formula parameter.
         'Option_SourceScoreMultiplier': 60.0,      # Morpheme score formula parameter.
         'Option_SaveWordReport': False,
@@ -171,6 +172,8 @@ def jcfg_default():
         'Option_FillAllMorphsInStudyPlan': True,
         'Option_AlwaysAddMinFreqMorphs': False,
         'Option_AlwaysMeetReadabilityTarget': False,
+        'Option_ResetLearnedAfterEachInput': False,
+        'Option_SaveSeparateWordReports': False,
 
         'Option_OutputReadabilityDb': False,
         'Option_EnableWebService': False,          # Experimental web service
