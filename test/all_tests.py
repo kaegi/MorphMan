@@ -1,9 +1,7 @@
 import glob
-import sys
 import unittest
 
 from test import fake_aqt
-sys.modules['aqt'] = fake_aqt
 
 def create_test_suite():
     test_file_strings = glob.glob('test/test_*.py')

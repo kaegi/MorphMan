@@ -1,8 +1,8 @@
 import re
 
+from aqt import mw
 from anki.utils import stripHTML
 from .morphemes import getMorphemes
-from .morphemizer import getMorphemizerByName
 from .preferences import get_preference as cfg
 from .util import getFilterByMidAndTags, allDb
 
@@ -22,7 +22,7 @@ def bold_unknowns(mid, text, tags=None):
         return text
 
     mName = mid_cfg['Morphemizer']
-    morphemizer = getMorphemizerByName(mName)
+    morphemizer = mw.morphemizerRegistry.getMorphemizer(mName)
     ms = getMorphemes(morphemizer, stripHTML(text))
 
     # Merge helper verbs with their verb's inflections

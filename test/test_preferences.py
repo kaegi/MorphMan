@@ -2,6 +2,7 @@ import os
 import unittest
 
 from test import fake_aqt
+
 from morph.preferences import init_preferences, get_preference, update_preferences
 
 class TestPreferences(unittest.TestCase):

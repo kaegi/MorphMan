@@ -14,6 +14,7 @@ default = {
     'path_seen': os.path.join(mw.pm.profileFolder(), 'dbs', 'seen.db'),
     'path_log': os.path.join(mw.pm.profileFolder(), 'morphman.log'),
     'path_stats': os.path.join(mw.pm.profileFolder(), 'morphman.stats'),
+    'path_python': None,
 
     # change the thresholds for various stages of maturity, in days
     'threshold_mature': 21,         # 21 days is what Anki uses

@@ -90,6 +90,7 @@ def main():
     from .morph.browser import alreadyKnownTagger
     from .morph import newMorphHelper
     from .morph import stats
+    from .morph import morphemizer_registry
 
 
     anki.stats.CollectionStats.easeGraph = \

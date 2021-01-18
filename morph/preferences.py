@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import importlib
+
 from aqt import mw
 
 # retrieving the configuration using get_config is very expensive operation
@@ -9,7 +10,6 @@ config_py = None
 
 def init_preferences():
     '''Called when new profiles are loaded'''
-
     # Reset the cached configs.
     global config_data, config_py
 

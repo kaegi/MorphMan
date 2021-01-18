@@ -1,25 +1,23 @@
-from PyQt5.QtCore import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from anki.lang import _
-
-from aqt.utils import tooltip
-
-from .util import mw, mkBtn
-from .preferences import get_preference, update_preferences
-from .morphemizer import getAllMorphemizers
-from .UI import MorphemizerComboBox
-
 # only for jedi-auto-completion
 import aqt.main
+from anki.lang import _
+from aqt.utils import tooltip
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
+
+from .preferences import get_preference, update_preferences
+from .UI import MorphemizerComboBox
+from .util import mkBtn, mw
 
 assert isinstance(mw, aqt.main.AnkiQt)
 
 
 class PreferencesDialog(QDialog):
-    def __init__(self, parent=None):
+    def __init__(self, morphemizerRegistry, parent=None):
         super(PreferencesDialog, self).__init__(parent)
-        
+        self.morphemizerRegistry = morphemizerRegistry
+
         self.setModal(True)
         self.rowGui = []
         self.resize(950, 600)
@@ -274,8 +272,7 @@ class PreferencesDialog(QDialog):
             modelComboBox.addItem(model)
         modelComboBox.setCurrentIndex(active)
 
-        morphemizerComboBox = MorphemizerComboBox()
-        morphemizerComboBox.setMorphemizers(getAllMorphemizers())
+        morphemizerComboBox = MorphemizerComboBox(self.morphemizerRegistry)
         morphemizerComboBox.setCurrentByName(data['Morphemizer'])
 
         readItem = QStandardItem()
@@ -400,5 +397,5 @@ class PreferencesDialog(QDialog):
 
 
 def main():
-    mw.mm = PreferencesDialog(mw)
+    mw.mm = PreferencesDialog(mw.morphemizerRegistry, mw)
     mw.mm.show()
