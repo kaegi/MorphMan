@@ -385,6 +385,9 @@ def updateNotes(allDb):
 
         # add bonus for morphs in priority.db and frequency.txt
         frequencyBonus = C('frequency.txt bonus')
+        noPriorityPenalty = C('no priority penalty')
+        reinforceNewVocabWeight = C('reinforce new vocab weight')
+        priorityDbWeight = C('priority.db weight')
         isPriority = False
         isFrequency = False
 
@@ -397,7 +400,7 @@ def updateNotes(allDb):
 
             if priorityDb.frequency(focusMorph) > 0:
                 isPriority = True
-                usefulness += C('priority.db weight')
+                usefulness += priorityDbWeight
             
             if frequency_has_morphemes:
                 focusMorphIndex = frequency_map.get(focusMorph, -1)
@@ -420,7 +423,7 @@ def updateNotes(allDb):
             if locs:
                 ivl = min(1, max(loc.maturity for loc in locs))
                 # TODO: maybe average this so it doesnt favor long sentences
-                usefulness += C('reinforce new vocab weight') // ivl
+                usefulness += reinforceNewVocabWeight // ivl
 
         if any(morpheme.pos == '動詞' for morpheme in unknowns):  # FIXME: this isn't working???
             usefulness += C('verb bonus')
@@ -438,6 +441,10 @@ def updateNotes(allDb):
         # clear any 'special' tags, the appropriate will be set in the next few lines
         ts = [t for t in ts if t not in (
             notReadyTag, compTag, vocabTag, freshTag)]
+
+        # apply penalty for cards that aren't prioritized for learning
+        if not (isPriority or isFrequency):
+            usefulness += noPriorityPenalty
 
         # determine card type
         if N_m == 0:  # sentence comprehension card, m+0
