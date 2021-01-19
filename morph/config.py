@@ -83,6 +83,10 @@ default = {
     # A card with an unknown morph that matches some of the last words in frequency.txt will get almost no bonus.
     'frequency.txt bonus': 100000,
 
+    # Cards with unknown morphemes outside of frequency.txt or priority.db will get this penalty.  This will make
+    # i+2 or i+n cards with morphemes that are in frequency.txt or prioritydb get a higher priority.
+    'no priority penalty': 1000000,
+
     # lite update
     # this reduces how many notes are changed and thus sync burden by not updating notes that aren't as important
     'only update k+2 and below': False,
@@ -90,6 +94,7 @@ default = {
     # only these can have deck overrides
     # skip cards with focusMorph that was already seen or aren't k+1
     'next new card feature': True,
+    
     # fill new card queue with cards from all child decks instead of sequentially. also enforce a minimum due value
     'new card merged fill': False,
     # k+1 by default. this mostly is to boost performance of 'next new card feature'

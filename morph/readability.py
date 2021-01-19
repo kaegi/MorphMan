@@ -619,7 +619,9 @@ class AnalyzerDialog(QDialog):
         return line_readability
 
     def get_master_freq(self):
-        return self.master_score * 100.0 / self.master_total_instances
+        if self.master_total_instances > 0:
+            return self.master_score * 100.0 / self.master_total_instances
+        return 0
 
     def sourceStudyPlan(self, f, source, known_db, unknown_db):
         missing_morphs = []
@@ -1203,12 +1205,12 @@ class AnalyzerDialog(QDialog):
 
                 matched_sources = set()
 
-                optmize_master_freq = self.optimal_master_target > 0
-
+                optmize_master_freq = (self.optimal_master_target > 0 and self.master_total_instances > 0)
                 cumulative_master_freq = self.get_master_freq()
 
                 while len(matched_sources) < len(sources):
                     find_optimal_source = (optmize_master_freq and cumulative_master_freq < self.optimal_master_target)
+                    self.writeOutput("{} {} {} {}\n".format(find_optimal_source, optmize_master_freq, cumulative_master_freq, self.optimal_master_target))
                     source_results = []
 
                     if optmize_master_freq and not find_optimal_source:
