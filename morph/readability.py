@@ -1182,7 +1182,7 @@ class AnalyzerDialog(QDialog):
                     nonlocal learned_tot
 
                     learned_tot += study_result.learned_m
-                    source_str = "'%s' study goal: (%3d/%4d) morph readability: %0.2f -> %0.2f line readabiltiy: %0.2f -> %0.2f\n" % (
+                    source_str = "'%s' study goal: (%3d/%4d) morph readability: %0.2f -> %0.2f line readability: %0.2f -> %0.2f\n" % (
                         source.name, study_result.learned_m, learned_tot, study_result.old_readability, study_result.new_readability, old_line_readability, new_line_readability)
                     self.writeOutput(source_str)
                     f.write(source_str)
