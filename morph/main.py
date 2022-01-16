@@ -385,7 +385,10 @@ def updateNotes(allDb):
 
         # add bonus for morphs in priority.db and frequency.txt
         frequencyBonus = C('frequency.txt bonus')
-        noPriorityPenalty = C('no priority penalty')
+        if C('Option_AlwaysPrioritizeFrequencyMorphs'):
+            noPriorityPenalty = C('no priority penalty')
+        else:
+            noPriorityPenalty = 0
         reinforceNewVocabWeight = C('reinforce new vocab weight')
         priorityDbWeight = C('priority.db weight')
         isPriority = False

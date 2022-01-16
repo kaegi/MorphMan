@@ -217,6 +217,8 @@ class PreferencesDialog(QDialog):
              "Enable to skip to first card that has unknown vocabulary."),
             (reviews_grid, "Skip card if focus morph was already seen today", 'Option_SkipFocusMorphSeenToday',
              "This improves the 'new cards'-queue without having to recalculate the databases."),
+            (reviews_grid, "Always prioritize cards with morphs in the frequency list", 'Option_AlwaysPrioritizeFrequencyMorphs',
+             "This setting makes cards with morphemes in your frequency.txt or priority.db show first, even if they're not i+1."),
             (parsing_grid, "Treat proper nouns as known", 'Option_ProperNounsAlreadyKnown',
              'Treat proper nouns as already known when scoring cards (currently only works for Japanese).'),
             (parsing_grid, "Ignore grammar position", 'Option_IgnoreGrammarPosition',
