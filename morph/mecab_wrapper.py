@@ -99,7 +99,6 @@ def getMorpheme(parts):
 
 control_chars_re = re.compile('[\x00-\x1f\x7f-\x9f]')
 
-@memoize
 def getMorphemesMecab(e):
     # Remove Unicode control codes before sending to MeCab.
     e = control_chars_re.sub('', e)
@@ -246,7 +245,6 @@ def mecab():  # IO MecabProc
     return spawnMecab(m.mecabCmd[:1] + m.mecabCmd[4:], si), mecab_source
 
 
-@memoize
 def interact(expr):  # Str -> IO Str
     """ "interacts" with 'mecab' command: writes expression to stdin of 'mecab' process and gets all the morpheme
     info from its stdout. """
@@ -258,7 +256,6 @@ def interact(expr):  # Str -> IO Str
     return '\r'.join([str(p.stdout.readline().rstrip(b'\r\n'), MECAB_ENCODING) for l in expr.split(b'\n')])
 
 
-@memoize
 def fixReading(m):  # Morpheme -> IO Morpheme
     """
     'mecab' prints the reading of the kanji in inflected forms (and strangely in katakana). So 歩い[て] will have アルイ as
