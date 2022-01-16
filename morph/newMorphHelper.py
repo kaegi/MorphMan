@@ -41,7 +41,7 @@ def focus(n):
 
 
 def focusQuery(fieldName, focusMorphs):
-    q = ' or '.join([r'"%s:re:(^|,|\s)%s($|,|\s)"' % (fieldName, f) for f in focusMorphs])
+    q = ' or '.join([r'"%s:re:(^|,|\s)%s($|,|\s)"' % (fieldName, re.escape(f)) for f in focusMorphs])
     if len(focusMorphs) > 0:
         q = '(%s)' % q
     return q
