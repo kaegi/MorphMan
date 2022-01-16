@@ -36,14 +36,14 @@ importlib.reload(readability_ui)
 importlib.reload(readability_settings_ui)
 
 def kaner(to_translate, hiraganer = False):
-    hiragana = u"がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ" \
-                u"あいうえおかきくけこさしすせそたちつてと" \
-                u"なにぬねのはひふへほまみむめもやゆよらりるれろ" \
-                u"わをんぁぃぅぇぉゃゅょっゐゑ"
-    katakana = u"ガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポ" \
-                u"アイウエオカキクケコサシスセソタチツテト" \
-                u"ナニヌネノハヒフヘホマミムメモヤユヨラリルレロ" \
-                u"ワヲンァィゥェォャュョッヰヱ"
+    hiragana = "がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ" \
+               "あいうえおかきくけこさしすせそたちつてと" \
+               "なにぬねのはひふへほまみむめもやゆよらりるれろ" \
+               "わをんぁぃぅぇぉゃゅょっゐゑ"
+    katakana = "ガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポ" \
+               "アイウエオカキクケコサシスセソタチツテト" \
+               "ナニヌネノハヒフヘホマミムメモヤユヨラリルレロ" \
+               "ワヲンァィゥェォャュョッヰヱ"
     if hiraganer:
         katakana = [ord(char) for char in katakana]
         translate_table = dict(zip(katakana, hiragana))
@@ -1036,7 +1036,7 @@ class AnalyzerDialog(QDialog):
 
                     with open(file_path, 'rt', encoding='utf-8') as f:
                         input = f.read()
-                        input = input.replace(u'\ufeff', '')
+                        input = input.replace('\ufeff', '')
                         proc_lines(loc_corpus, input, is_ass, is_srt)
 
             except:

@@ -565,7 +565,6 @@ def updateNotes(allDb):
 
 def main():
     # begin-------------------
-    global doProfile
     if doProfile:
         pr = cProfile.Profile()
         pr.enable()

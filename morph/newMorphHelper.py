@@ -80,7 +80,6 @@ seenMorphs = set()
 def markFocusSeen(self, n):
     """Mark a focusMorph as already seen so future new cards with the same focus
     will be skipped. Also prints number of cards to be skipped if enabled"""
-    global seenMorphs
     try:
         focusMorphs = focus(n)
     except KeyError:

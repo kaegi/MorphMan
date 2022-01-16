@@ -55,8 +55,6 @@ def getMecabIdentity():
     return mecab_source
 
 def getMorpheme(parts):
-    global is_unidic
-
     if is_unidic:
         if len(parts) != MECAB_NODE_LENGTH_UNIDIC:
             return None
