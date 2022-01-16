@@ -794,6 +794,9 @@ class AnalyzerDialog(QDialog):
         # Map from Morpheme -> count of locations the morpheme was found in
         all_morphs = {}
 
+        # Map from Morpheme -> example sentence
+        all_morph_sample = {}
+
         if os.path.isfile(master_freq_path):
             with io.open(master_freq_path, encoding='utf-8-sig') as csvfile:
                 csvreader = csv.reader(csvfile, delimiter="\t")
@@ -962,11 +965,19 @@ class AnalyzerDialog(QDialog):
                 srt_count = 0
 
                 def parse_text(loc_corpus, text):
-                    parsed_morphs = getMorphemes(morphemizer, stripHTML(text))
+                    text = stripHTML(text)
+                    parsed_morphs = getMorphemes(morphemizer, text)
                     if len(parsed_morphs) == 0:
                         return
 
-                    loc_corpus.add_line_morphs([m.deinflected() for m in parsed_morphs])
+                    deinflected_morphs = [m.deinflected() for m in parsed_morphs]
+                    loc_corpus.add_line_morphs(deinflected_morphs)
+
+                    for m in deinflected_morphs:
+                        text.replace('\n', ' ')
+                        prev_sample = all_morph_sample.get(m, None)
+                        if prev_sample is None or len(prev_sample) > len(text):
+                            all_morph_sample[m] = text
 
                 filtered_text = ''
                 for id, t in enumerate(text.splitlines()):
@@ -1135,9 +1146,10 @@ class AnalyzerDialog(QDialog):
                     morph_idx += 1
                     morph_delta = 100.0 * m[1] / master_morphs_count
                     morph_total += morph_delta
-                    print('%d\t%s\t%s\t%s\t%s\t%s\t%d\t%d\t%0.8f\t%0.8f matches %d' % (
+                    morph_sample = all_morph_sample.get(m[0], '-').replace('\n', ' ')
+                    print('%d\t%s\t%s\t%s\t%s\t%s\t%d\t%d\t%0.8f\t%0.8f\t%s' % (
                         m[1], m[0].norm, m[0].base, m[0].read, m[0].pos, m[0].subPos, group_idx, morph_idx, morph_delta,
-                        morph_total, known_db.matches(m[0])), file=f)
+                        morph_total, morph_sample), file=f)
 
         if self.save_readability_db:
             self.writeOutput("\n[Saving corpus database to '%s'...]\n" % self.corpus_db_path)
