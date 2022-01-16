@@ -19,7 +19,11 @@ from contextlib import redirect_stdout, redirect_stderr
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-from PyQt5 import QtWebSockets,  QtNetwork
+
+try:
+    from PyQt5 import QtWebSockets,  QtNetwork
+except:
+    pass
 
 from .morphemes import Morpheme, MorphDb, getMorphemes, altIncludesMorpheme
 from .morphemizer import getAllMorphemizers
