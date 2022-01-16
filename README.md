@@ -42,7 +42,7 @@ See the [MorphMan wiki](https://github.com/kaegi/MorphMan/wiki) for more informa
     ```
     python -m virtualenv pyenv
     source pyenv/bin/activate
-    python -m pip install aqt==2.1.39 anki==2.1.39 pyqtwebengine pylint
+    python -m pip install aqt==2.1.49 anki==2.1.49 pyqtwebengine pylint
     export PYTHONPATH=./
     ```
 - Run tests: `python test.py`

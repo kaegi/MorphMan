@@ -1,9 +1,19 @@
 # -*- coding: utf-8 -*-
 import codecs
+import importlib
 
 import aqt.main
 
-from anki import sched, schedv2
+if importlib.util.find_spec('anki.scheduler.v1'):
+    from anki.scheduler import v1 as sched
+else:
+    from anki import sched
+
+if importlib.util.find_spec('anki.scheduler.v2'):
+    from anki.scheduler import v2 as schedv2
+else:
+    from anki import schedv2
+
 from anki import hooks
 from anki.hooks import wrap
 from anki.lang import _
