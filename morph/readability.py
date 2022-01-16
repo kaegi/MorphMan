@@ -1320,10 +1320,11 @@ class AnalyzerDialog(QDialog):
                                 continue
                             master_morphs.append((m, c[0], master_freq))
 
-                    for m in sorted(master_morphs, key=operator.itemgetter(1), reverse=True):
+                    for m in sorted(master_morphs, key=operator.itemgetter(2), reverse=True):
                         print(m[0].show() + '\t[morph_freq %d, master_freq %d]' % (m[1], m[2]), file=f)
                         self.freq_set.add((m[0].base, m[0].read))
                         self.freq_db.addMorph(m[0], 1)
+                        known_db.addMLs1(m[0], set())
                 
         if self.master_total_instances > 0:
             master_score = 0
