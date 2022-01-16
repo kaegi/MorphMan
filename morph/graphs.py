@@ -467,7 +467,7 @@ def morphGraphs(args, kwargs):
                     color=colV)
 
     result += self._title("Net Learned Cards & Morphs", "Summary of net learned cards and morphemes by deck")
-    result += u"""
+    result += """
         <style>
             td.morph_trl { border: 1px solid; text-align: left }
             td.morph_trr { border: 1px solid; text-align: right }

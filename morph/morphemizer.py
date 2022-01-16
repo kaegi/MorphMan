@@ -50,7 +50,7 @@ morphemizers_by_name = {}
 
 def getAllMorphemizers():
     # type: () -> [Morphemizer]
-    global morphemizers, morphemizers_by_name
+    global morphemizers
     if morphemizers is None:
         morphemizers = [SpaceMorphemizer(), MecabMorphemizer(), JiebaMorphemizer(), CjkCharMorphemizer()]
 
@@ -102,9 +102,9 @@ class SpaceMorphemizer(Morphemizer):
     a general-use-morphemizer, it can't generate the base form from inflection.
     """
 
-    def _getMorphemesFromExpr(self, e):
+    def _getMorphemesFromExpr(self, expression):
         word_list = [word.lower()
-                     for word in re.findall(r"\b[^\s\d]+\b", e, re.UNICODE)]
+                     for word in re.findall(r"\b[^\s\d]+\b", expression, re.UNICODE)]
         return [Morpheme(word, word, word, word, 'UNKNOWN', 'UNKNOWN') for word in word_list]
 
     def getDescription(self):
@@ -121,9 +121,9 @@ class CjkCharMorphemizer(Morphemizer):
     characters.
     """
 
-    def _getMorphemesFromExpr(self, e):
+    def _getMorphemesFromExpr(self, expression):
         return [Morpheme(character, character, character, character, 'CJK_CHAR', 'UNKNOWN') for character in
-                re.findall('[%s]' % characters, e)]
+                re.findall('[%s]' % characters, expression)]
 
     def getDescription(self):
         return 'CJK Characters'
@@ -139,11 +139,11 @@ class JiebaMorphemizer(Morphemizer):
     https://github.com/fxsjy/jieba
     """
 
-    def _getMorphemesFromExpr(self, e):
+    def _getMorphemesFromExpr(self, expression):
         # remove all punctuation
-        e = u''.join(re.findall('[%s]' % characters, e))
-        return [Morpheme(m.word, m.word, m.word, m.word, m.flag, u'UNKNOWN') for m in
-                posseg.cut(e)]  # find morphemes using jieba's POS segmenter
+        expression = ''.join(re.findall('[%s]' % characters, expression))
+        return [Morpheme(m.word, m.word, m.word, m.word, m.flag, 'UNKNOWN') for m in
+                posseg.cut(expression)]  # find morphemes using jieba's POS segmenter
 
     def getDescription(self):
         return 'Chinese'
