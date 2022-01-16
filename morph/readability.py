@@ -1041,7 +1041,6 @@ class AnalyzerDialog(QDialog):
 
             except:
                 self.writeOutput("Failed to process '%s'\n" % file_path)
-                raise
 
         def accepted_filetype(filename):
             return filename.lower().endswith(('.srt', '.ass', '.txt', '.corpusdb'))
