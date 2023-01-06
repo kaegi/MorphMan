@@ -29,7 +29,7 @@ from .morphemes import Morpheme, MorphDb, getMorphemes, altIncludesMorpheme
 from .morphemizer import getAllMorphemizers
 from .preferences import get_preference as cfg, update_preferences
 from .util import mw
-from anki.utils import stripHTML
+from anki.utils import strip_html
 
 from . import customTableWidget
 from . import readability_ui
@@ -510,7 +510,7 @@ class AnalyzerDialog(QDialog):
                 result['result'] = 'success'
             elif msg['type'] == "is-target-sentence":
                 morphemizer = self.morphemizer()
-                morphs = getMorphemes(morphemizer, stripHTML(msg['sentence']))
+                morphs = getMorphemes(morphemizer, strip_html(msg['sentence']))
                 is_target = False
 
                 for m in morphs:
@@ -969,7 +969,7 @@ class AnalyzerDialog(QDialog):
                 srt_count = 0
 
                 def parse_text(loc_corpus, text):
-                    text = stripHTML(text)
+                    text = strip_html(text)
                     parsed_morphs = getMorphemes(morphemizer, text)
                     if len(parsed_morphs) == 0:
                         return

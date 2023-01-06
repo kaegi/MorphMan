@@ -10,7 +10,7 @@ from anki.tags import TagManager
 from functools import partial
 
 import aqt.main
-from anki.utils import splitFields, joinFields, stripHTML, intTime, fieldChecksum
+from anki.utils import split_fields, join_fields, strip_html, int_time, field_checksum
 
 from .morphemes import Location, Morpheme
 from . import stats
@@ -57,11 +57,11 @@ def extractFieldData(field_name, fields, mid):
     # type: (str, str, str) -> str
     """
     :type field_name: The field name (like u'Expression')
-    :type fields: A string containing all field data for the model (created by anki.utils.joinFields())
+    :type fields: A string containing all field data for the model (created by anki.utils.join_fields())
     :type mid: the modelId depicting the model for the "fields" data
     """
     idx = getFieldIndex(field_name, mid)
-    return stripHTML(splitFields(fields)[idx])
+    return strip_html(split_fields(fields)[idx])
 
 
 @memoize
@@ -228,7 +228,7 @@ def filterDbByMat(db, mat):
 
 
 def updateNotes(allDb):
-    t_0, now, db = time.time(), intTime(), mw.col.db
+    t_0, now, db = time.time(), int_time(), mw.col.db
 
     TAG = mw.col.tags  # type: TagManager
     ds, nid2mmi = [], {}
@@ -439,7 +439,7 @@ def updateNotes(allDb):
         lenDiff = min(9, abs(lenDiffRaw))
 
         # Fill in various fields/tags on the note based on cfg
-        fs = splitFields(flds)
+        fs = split_fields(flds)
 
         # clear any 'special' tags, the appropriate will be set in the next few lines
         ts = [t for t in ts if t not in (
@@ -518,10 +518,10 @@ def updateNotes(allDb):
 
         # update sql db
         tags_ = TAG.join(TAG.canonify(ts))
-        flds_ = joinFields(fs)
+        flds_ = join_fields(fs)
         if flds != flds_ or tags != tags_:  # only update notes that have changed
-            csum = fieldChecksum(fs[0])
-            sfld = stripHTML(fs[getSortFieldIndex(mid)])
+            csum = field_checksum(fs[0])
+            sfld = strip_html(fs[getSortFieldIndex(mid)])
             ds.append(
                 (tags_, flds_, sfld, csum, now, mw.col.usn(), nid))
 

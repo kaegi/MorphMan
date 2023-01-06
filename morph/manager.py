@@ -4,7 +4,7 @@ import os
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-from anki.utils import isMac
+from anki.utils import is_mac
 from .UI import MorphemizerComboBox
 
 from . import adaptiveSubs
@@ -24,7 +24,7 @@ def getProgressWidget():
     progressWidget.setFixedSize(400, 70)
     progressWidget.setWindowModality(Qt.ApplicationModal)
     bar = QProgressBar(progressWidget)
-    if isMac:
+    if is_mac:
         bar.setFixedSize(380, 50)
     else:
         bar.setFixedSize(390, 50)
