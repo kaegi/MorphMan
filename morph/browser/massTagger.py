@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from aqt.utils import tooltip
 from anki.hooks import addHook
-from anki.utils import stripHTML
+from anki.utils import strip_html
 from ..morphemes import getMorphemes, MorphDb
 from ..morphemizer import getMorphemizerByName
 from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit, runOnce
@@ -33,7 +33,7 @@ def per(st, n):  # :: State -> Note -> State
         return st
     morphemizer = getMorphemizerByName(note_cfg['Morphemizer'])
     for field in note_cfg['Fields']:
-        for m in getMorphemes(morphemizer, stripHTML(n[field]), n.tags):
+        for m in getMorphemes(morphemizer, strip_html(n[field]), n.tags):
             if m in st['db'].db:
                 n.addTag(st['tags'])
                 break

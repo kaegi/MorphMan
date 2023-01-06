@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 from anki.hooks import addHook
-from anki.utils import stripHTML
+from anki.utils import strip_html
 from ..morphemes import AnkiDeck, MorphDb, getMorphemes
 from ..morphemizer import getMorphemizerByName
 from ..util import addBrowserNoteSelectionCmd, mw, getFilter, infoMsg, QFileDialog, runOnce
@@ -23,7 +23,7 @@ def per(st, n):
 
     morphemizer = getMorphemizerByName(note_cfg['Morphemizer'])
     for f in note_cfg['Fields']:
-        ms = getMorphemes(morphemizer, stripHTML(n[f]), n.tags)
+        ms = getMorphemes(morphemizer, strip_html(n[f]), n.tags)
         loc = AnkiDeck(n.id, f, n[f], n.guid, mats)
         st['morphDb'].addMsL(ms, loc)
 
