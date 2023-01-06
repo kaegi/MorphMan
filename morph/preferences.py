@@ -2,6 +2,8 @@
 import importlib
 from aqt import mw
 
+from .errors.profileNotYetLoadedException import ProfileNotYetLoadedException
+
 # retrieving the configuration using get_config is very expensive operation
 # instead, save it 
 config_data = None
@@ -64,7 +66,8 @@ def _init_config_py():
 
 
 def _get_config_py_preference(key, modelId=None, deckId=None):
-    assert config_py, 'Tried to use cfgMods before profile loaded'
+    if config_py == None:
+        raise ProfileNotYetLoadedException("Tried to use cfgMods before profile loaded")
     profile = mw.pm.name
     model = mw.col.models.get(modelId)['name'] if modelId else None
     deck = mw.col.decks.get(deckId)['name'] if deckId else None

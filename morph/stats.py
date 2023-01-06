@@ -10,6 +10,7 @@ from aqt.utils import tooltip
 from .util import mw
 from .preferences import get_preference as cfg
 
+from .errors.profileNotYetLoadedException import ProfileNotYetLoadedException
 
 def getStatsPath(): return cfg('path_stats')
 
@@ -22,7 +23,7 @@ def loadStats():
         return d
     except IOError:  # file DNE => create it
         return updateStats()
-    except AssertionError:  # profile not loaded yet, can't do anything but wait
+    except ProfileNotYetLoadedException:  # profile not loaded yet, can't do anything but wait
         return None
 
 
