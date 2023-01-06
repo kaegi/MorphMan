@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import os
 
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
+from PyQt6.QtCore import *
+from PyQt6.QtGui import *
+from PyQt6.QtWidgets import *
 from anki.utils import is_mac
 from .UI import MorphemizerComboBox
 
@@ -22,7 +22,7 @@ def getPath(le):  # LineEdit -> GUI ()
 def getProgressWidget():
     progressWidget = QWidget()
     progressWidget.setFixedSize(400, 70)
-    progressWidget.setWindowModality(Qt.ApplicationModal)
+    progressWidget.setWindowModality(Qt.WindowModality.ApplicationModal)
     bar = QProgressBar(progressWidget)
     if is_mac:
         bar.setFixedSize(380, 50)
@@ -30,7 +30,7 @@ def getProgressWidget():
         bar.setFixedSize(390, 50)
     bar.move(10, 10)
     per = QLabel(bar)
-    per.setAlignment(Qt.AlignCenter)
+    per.setAlignment(Qt.AlignmentFlag.AlignCenter)
     progressWidget.show()
     return progressWidget, bar
 

@@ -1,0 +1,2 @@
+import aqt
+aqt.run()

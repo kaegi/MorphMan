@@ -16,12 +16,12 @@ import sqlite3
 from collections import namedtuple
 from contextlib import redirect_stdout, redirect_stderr
 
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
+from PyQt6.QtCore import *
+from PyQt6.QtGui import *
+from PyQt6.QtWidgets import *
 
 try:
-    from PyQt5 import QtWebSockets,  QtNetwork
+    from PyQt6 import QtWebSockets,  QtNetwork
 except:
     pass
 
@@ -104,7 +104,7 @@ def getPath(le, caption, open_directory=False):  # LineEdit -> GUI ()
     try:
         if open_directory:
             path = QFileDialog.getExistingDirectory(caption=caption, directory=start_path,
-                                                    options=QFileDialog.ShowDirsOnly)
+                                                    options=QFileDialog.Option.ShowDirsOnly)
         else:
             path = QFileDialog.getOpenFileName(caption=caption, directory=start_path)[0]
     except:
@@ -271,7 +271,7 @@ class LocationCorpusDB:
 class TableInteger(QTableWidgetItem):
     def __init__(self, value):
         super(TableInteger, self).__init__(str(int(value)))
-        self.setTextAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
+        self.setTextAlignment(Qt.AlignmentFlag.AlignHCenter | Qt.AlignmentFlag.AlignVCenter)
 
     def __lt__(self, other):
         lvalue = self.text()
@@ -281,7 +281,7 @@ class TableInteger(QTableWidgetItem):
 class TableFloat(QTableWidgetItem):
     def __init__(self, value):
         super(TableFloat, self).__init__('%0.03f' % value)
-        self.setTextAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
+        self.setTextAlignment(Qt.AlignmentFlag.AlignHCenter | Qt.AlignmentFlag.AlignVCenter)
 
     def __lt__(self, other):
         lvalue = self.text()
@@ -291,7 +291,7 @@ class TableFloat(QTableWidgetItem):
 class TablePercent(QTableWidgetItem):
     def __init__(self, value):
         super(TablePercent, self).__init__('%0.02f' % value)
-        self.setTextAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
+        self.setTextAlignment(Qt.AlignmentFlag.AlignHCenter | Qt.AlignmentFlag.AlignVCenter)
 
     def __lt__(self, other):
         lvalue = self.text()
@@ -433,8 +433,8 @@ class AnalyzerDialog(QDialog):
         self.clients = set()
 
         if cfg('Option_EnableWebService'):
-            self.server = QtWebSockets.QWebSocketServer('MorphMan Service', QtWebSockets.QWebSocketServer.NonSecureMode)
-            if self.server.listen(QtNetwork.QHostAddress.LocalHost, 9779):
+            self.server = QtWebSockets.QWebSocketServer('MorphMan Service', QtWebSockets.QWebSocketServer.SslMode.NonSecureMode)
+            if self.server.listen(QtNetwork.QHostAddress.SpecialAddress.LocalHost, 9779):
                 self.write('Web Service Created: '+self.server.serverName()+' : '+self.server.serverAddress().toString()+':'+str(self.server.serverPort()) + '\n')
             else:
                 self.write("Could't create Web Service\n")
@@ -568,11 +568,11 @@ class AnalyzerDialog(QDialog):
         self.ui.outputText.clear()
 
     def writeOutput(self, m):
-        self.ui.outputText.moveCursor(QTextCursor.End)
+        self.ui.outputText.moveCursor(QTextCursor.MoveOperation.End)
         self.ui.outputText.insertPlainText(m)
 
     def write(self, txt):
-        self.ui.outputText.moveCursor(QTextCursor.End)
+        self.ui.outputText.moveCursor(QTextCursor.MoveOperation.End)
         self.ui.outputText.insertPlainText(txt)
 
     def flush(self):

@@ -2,7 +2,7 @@ import subprocess
 
 
 def build_ui(in_file, out_file):
-    stdout = subprocess.run(["pyuic5", in_file], stdout=subprocess.PIPE).stdout
+    stdout = subprocess.run(["pyuic6", in_file], stdout=subprocess.PIPE).stdout
 
     lines = stdout.decode("utf-8").replace("__relpath__", "")
 

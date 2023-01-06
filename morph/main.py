@@ -183,6 +183,9 @@ def mkAllDb(all_db=None):
             except KeyError:
                 continue
             except TypeError:
+                # We need to finish the progress bar before presenting an error window or the UI will hang waiting on progress updates.
+                # The proper solution here is probably to not block the main thread at all by doing the recalc in the background.
+                mw.progress.finish()
                 mname = mw.col.models.get(mid)['name']
                 errorMsg('Failed to get field "{field}" from a note of model "{model}". Please fix your Note Filters '
                          'under MorphMan > Preferences to match your collection appropriately.'.format(

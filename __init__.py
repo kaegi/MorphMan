@@ -1,5 +1,5 @@
 from .morph.util import *
-from PyQt5.QtWidgets import *
+from PyQt6.QtWidgets import *
 import anki.stats
 from anki.hooks import wrap
 
