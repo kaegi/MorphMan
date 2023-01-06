@@ -1,5 +1,6 @@
 *.pyc
 .vscode
+.venv
 .DS_Store
 meta.json
 .idea
