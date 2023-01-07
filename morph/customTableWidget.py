@@ -1,10 +1,10 @@
-from PyQt5.QtWidgets import QApplication, QTableWidget
-from PyQt5.QtGui import QKeySequence
+from PyQt6.QtWidgets import QApplication, QTableWidget
+from PyQt6.QtGui import QKeySequence
 
 class CustomTableWidget(QTableWidget):
 
     def keyPressEvent(self, event):
-        if event.matches(QKeySequence.Copy):
+        if event.matches(QKeySequence.StandardKey.Copy):
             text = ''
             sel_range = self.selectionModel().selection().first()
 

@@ -1,6 +1,6 @@
-from PyQt5.QtCore import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
+from PyQt6.QtCore import *
+from PyQt6.QtWidgets import *
+from PyQt6.QtGui import *
 from anki.lang import _
 
 from aqt.utils import tooltip
@@ -47,15 +47,15 @@ class PreferencesDialog(QDialog):
         self.tableModel = QStandardItemModel(0, 6)
         self.tableView = QTableView()
         self.tableView.setModel(self.tableModel)
-        self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
-        self.tableView.setSelectionBehavior(QAbstractItemView.SelectRows)
-        self.tableView.setSelectionMode(QAbstractItemView.SingleSelection)
-        self.tableModel.setHeaderData(0, Qt.Horizontal, "Note type")
-        self.tableModel.setHeaderData(1, Qt.Horizontal, "Tags")
-        self.tableModel.setHeaderData(2, Qt.Horizontal, "Fields")
-        self.tableModel.setHeaderData(3, Qt.Horizontal, "Morphemizer")
-        self.tableModel.setHeaderData(4, Qt.Horizontal, "Read?")
-        self.tableModel.setHeaderData(5, Qt.Horizontal, "Modify?")
+        self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
+        self.tableView.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
+        self.tableView.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
+        self.tableModel.setHeaderData(0, Qt.Orientation.Horizontal, "Note type")
+        self.tableModel.setHeaderData(1, Qt.Orientation.Horizontal, "Tags")
+        self.tableModel.setHeaderData(2, Qt.Orientation.Horizontal, "Fields")
+        self.tableModel.setHeaderData(3, Qt.Orientation.Horizontal, "Morphemizer")
+        self.tableModel.setHeaderData(4, Qt.Orientation.Horizontal, "Read?")
+        self.tableModel.setHeaderData(5, Qt.Orientation.Horizontal, "Modify?")
 
         rowData = get_preference('Filter')
         self.tableModel.setRowCount(len(rowData))
@@ -178,7 +178,7 @@ class PreferencesDialog(QDialog):
         self.checkboxSetNotRequiredTags = QCheckBox(
             "Add tags even if not required")
         self.checkboxSetNotRequiredTags.setCheckState(
-            Qt.Checked if get_preference('Option_SetNotRequiredTags') else Qt.Unchecked)
+            Qt.CheckState.Checked if get_preference('Option_SetNotRequiredTags') else Qt.CheckState.Unchecked)
         vbox.addWidget(self.checkboxSetNotRequiredTags)
 
         vbox.addStretch()
@@ -236,7 +236,7 @@ class PreferencesDialog(QDialog):
         self.boolOptionList = []
         for i, (layout, name, key, tooltipInfo) in enumerate(optionList):
             checkBox = QCheckBox(name)
-            checkBox.setCheckState(Qt.Checked if get_preference(key) else Qt.Unchecked)
+            checkBox.setCheckState(Qt.CheckState.Checked if get_preference(key) else Qt.CheckState.Unchecked)
             checkBox.setToolTip(tooltipInfo)
             checkBox.setMinimumSize(0, 30)
             self.boolOptionList.append((key, checkBox))
@@ -250,7 +250,7 @@ class PreferencesDialog(QDialog):
         hbox = QHBoxLayout()
         self.vbox.addLayout(hbox)
         buttonCancel = QPushButton("&Cancel")
-        hbox.addWidget(buttonCancel, 1, Qt.AlignRight)
+        hbox.addWidget(buttonCancel, 1, Qt.AlignmentFlag.AlignRight)
         buttonCancel.setMaximumWidth(150)
         buttonCancel.clicked.connect(self.onCancel)
 
@@ -282,11 +282,11 @@ class PreferencesDialog(QDialog):
 
         readItem = QStandardItem()
         readItem.setCheckable(True)
-        readItem.setCheckState(Qt.Checked if data.get('Read', True) else Qt.Unchecked)
+        readItem.setCheckState(Qt.CheckState.Checked if data.get('Read', True) else Qt.CheckState.Unchecked)
 
         modifyItem = QStandardItem()
         modifyItem.setCheckable(True)
-        modifyItem.setCheckState(Qt.Checked if data.get('Modify', True) else Qt.Unchecked)
+        modifyItem.setCheckState(Qt.CheckState.Checked if data.get('Modify', True) else Qt.CheckState.Unchecked)
 
         rowGui['modelComboBox'] = modelComboBox
         rowGui['tagsEntry'] = QLineEdit(', '.join(data['Tags']))
@@ -327,8 +327,8 @@ class PreferencesDialog(QDialog):
             x for x in row_gui['fieldsEntry'].text().split(', ') if x]
 
         filter['Morphemizer'] = row_gui['morphemizerComboBox'].getCurrent().getName()
-        filter['Read'] = row_gui['readCheckBox'].checkState() != Qt.Unchecked
-        filter['Modify'] = row_gui['modifyCheckBox'].checkState() != Qt.Unchecked
+        filter['Read'] = row_gui['readCheckBox'].checkState() != Qt.CheckState.Unchecked
+        filter['Modify'] = row_gui['modifyCheckBox'].checkState() != Qt.CheckState.Unchecked
 
         return filter
 
@@ -339,14 +339,14 @@ class PreferencesDialog(QDialog):
         for (key, entry) in self.tagEntryList:
             cfg[key] = entry.text()
         for (key, checkBox) in self.boolOptionList:
-            cfg[key] = (checkBox.checkState() == Qt.Checked)
+            cfg[key] = (checkBox.checkState() == Qt.CheckState.Checked)
 
         cfg['Filter'] = []
         for i, rowGui in enumerate(self.rowGui):
             cfg['Filter'].append(self.rowGuiToFilter(rowGui))
 
         cfg['Option_SetNotRequiredTags'] = self.checkboxSetNotRequiredTags.checkState(
-        ) != Qt.Unchecked
+        ) != Qt.CheckState.Unchecked
 
         return cfg
 

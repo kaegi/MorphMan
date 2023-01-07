@@ -11,7 +11,7 @@ from anki.lang import _
 
 def pre(b):  # :: Browser -> State
     note_count = len(b.selectedNotes())
-    tags, ok = QInputDialog.getText(b, 'Enter tags (e.x \"tag1 tag2\")', 'Tags', QLineEdit.Normal, 'hasMorph')
+    tags, ok = QInputDialog.getText(b, 'Enter tags (e.x \"tag1 tag2\")', 'Tags', QLineEdit.EchoMode.Normal, 'hasMorph')
     if not ok or not tags:
         return
 
