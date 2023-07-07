@@ -1,4 +1,5 @@
 from unittest.mock import MagicMock
+from aqt import *
 
 class FakeCollection:
     def __init__(self, config):

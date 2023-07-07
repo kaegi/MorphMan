@@ -16,12 +16,12 @@ import sqlite3
 from collections import namedtuple
 from contextlib import redirect_stdout, redirect_stderr
 
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
+from aqt.qt import *
 
+isSupportingWebSockets = False
 try:
-    from PyQt5 import QtWebSockets,  QtNetwork
+    from PyQt5 import QtWebSockets, QtNetwork
+    isSupportingWebSockets = True
 except:
     pass
 
@@ -55,7 +55,7 @@ def kaner(to_translate, hiraganer = False):
     else:
         hiragana = [ord(char) for char in hiragana]
         translate_table = dict(zip(hiragana, katakana))
-        return to_translate.translate(translate_table) 
+        return to_translate.translate(translate_table)
 
 def adjustReading(reading):
     return kaner(reading)
@@ -343,7 +343,10 @@ class SettingsDialog(QDialog):
             self.ui.migakuDictionaryTagsCheckBox.setChecked(False)
             self.ui.migakuDictionaryTagsCheckBox.setEnabled(False)
 
-        self.ui.webServiceCheckBox.setChecked(cfg('Option_EnableWebService'))
+        if isSupportingWebSockets:
+            self.ui.webServiceCheckBox.setChecked(cfg('Option_EnableWebService'))
+        else:
+            self.ui.webServiceCheckBox.setEnabled(False)
 
         self.ui.buttonBox.accepted.connect(self.onAccept)
         self.ui.buttonBox.rejected.connect(self.onReject)
@@ -433,7 +436,7 @@ class AnalyzerDialog(QDialog):
         self.clients = set()
 
         if cfg('Option_EnableWebService'):
-            self.server = QtWebSockets.QWebSocketServer('MorphMan Service', QtWebSockets.QWebSocketServer.NonSecureMode)
+            self.server = QtWebSockets.QWebSocketServer('MorphMan Service', QtWebSockets.QWebSocketServer.SslMode.NonSecureMode)
             if self.server.listen(QtNetwork.QHostAddress.LocalHost, 9779):
                 self.write('Web Service Created: '+self.server.serverName()+' : '+self.server.serverAddress().toString()+':'+str(self.server.serverPort()) + '\n')
             else:
