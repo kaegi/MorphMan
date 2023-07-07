@@ -26,6 +26,11 @@ jobs:
         if [ "${{ runner.os }}" = "Windows" ]; then
           source pyenv/Scripts/activate
         else
+          # Qt6 complains because Ubuntu is missing libEGL.so.1
+          if [ "${{ runner.os }}" = "Linux" ]; then
+            sudo apt-get update -y -qq
+            sudo apt-get install -y -qq libegl1
+          fi
           source pyenv/bin/activate
         fi
         python -m pip install aqt[qt5]==${{ matrix.anki }} aqt[qt6]==${{ matrix.anki }} anki==${{ matrix.anki }} PyQt6-WebEngine pylint
