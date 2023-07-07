@@ -28,7 +28,7 @@ jobs:
         else
           source pyenv/bin/activate
         fi
-        python -m pip install aqt==${{ matrix.anki }} anki==${{ matrix.anki }} PyQt6-WebEngine pylint
+        python -m pip install aqt[qt5]==${{ matrix.anki }} aqt[qt6]==${{ matrix.anki }} anki==${{ matrix.anki }} PyQt6-WebEngine pylint
     - name: Lint
       shell: bash
       run: |
