@@ -436,6 +436,7 @@ class AnalyzerDialog(QDialog):
         self.clients = set()
 
         if cfg('Option_EnableWebService'):
+            # pylint: disable=no-member
             self.server = QtWebSockets.QWebSocketServer('MorphMan Service', QtWebSockets.QWebSocketServer.SslMode.NonSecureMode)
             if self.server.listen(QtNetwork.QHostAddress.LocalHost, 9779):
                 self.write('Web Service Created: '+self.server.serverName()+' : '+self.server.serverAddress().toString()+':'+str(self.server.serverPort()) + '\n')
