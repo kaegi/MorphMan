@@ -1,6 +1,6 @@
 [MASTER]
 ignore=deps
-extension-pkg-whitelist=PyQt5
+extension-pkg-whitelist=PyQt5,PyQt6
 
 [MESSAGES CONTROL]
 disable=C,R,
