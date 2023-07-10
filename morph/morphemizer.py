@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import re
+import unicodedata
 from functools import lru_cache
 
 from .morphemes import Morpheme
@@ -52,7 +53,7 @@ def getAllMorphemizers():
     # type: () -> [Morphemizer]
     global morphemizers
     if morphemizers is None:
-        morphemizers = [SpaceMorphemizer(), MecabMorphemizer(), JiebaMorphemizer(), CjkCharMorphemizer()]
+        morphemizers = [SpaceMorphemizer(), MecabMorphemizer(), JiebaMorphemizer(), CjkCharMorphemizer(), DeaccentMorphemizer()]
 
         for m in morphemizers:
             morphemizers_by_name[m.getName()] = m
@@ -109,6 +110,50 @@ class SpaceMorphemizer(Morphemizer):
 
     def getDescription(self):
         return 'Language w/ Spaces'
+
+
+
+####################################################################################################
+# Morphemizer that removes accents. This can be useful especially for learning russian language. 
+# Some of the learning material might use words with accent marks (малако́) for emphasis when usually they 
+# are omitted in literature and subtitles (молоко). 
+# When using the default SpaceMorphemizer these two words would be regarded as different words so you might
+# end up wasting a lot of time.
+# With DeaccentMorphimizer all accents are removed, avoiding this annoyance. 
+#
+# WARNING! There are some words which DO have identical writing but different emphasis (for example
+# замо́к = lock and за́мок = castle) but this is a bit rare situtation. If all of your cards have accent
+# markings, it's better to use SpaceMorphemizer so you will be forced to learn both meanings for these words:)
+####################################################################################################
+
+ACCENT_MAPPING = {
+    'а́': 'а',
+    'е́': 'е',
+    'и́': 'и',
+    'о́': 'о',
+    'у́': 'у',
+    'ы́': 'ы',
+    'э́': 'э',
+    'ю́': 'ю',
+    'я́': 'я',
+}
+ACCENT_MAPPING = {unicodedata.normalize('NFKC', i): j for i, j in ACCENT_MAPPING.items()}
+
+def deaccentify(s):
+    source = unicodedata.normalize('NFKC', s)
+    for old, new in ACCENT_MAPPING.items():
+        source = source.replace(old, new)
+    return source
+
+class DeaccentMorphemizer(Morphemizer):
+
+    def _getMorphemesFromExpr(self, expression):
+        word_list = [deaccentify(word.lower())
+                     for word in re.findall(r"\b[^\s\d]+\b", expression, re.UNICODE)]
+        return [Morpheme(word, word, word, word, 'UNKNOWN', 'UNKNOWN') for word in word_list]
+
+    def getDescription(self):
+        return 'Deaccented words w/ spaces'
 
 
 ####################################################################################################
