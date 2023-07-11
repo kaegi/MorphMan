@@ -35,6 +35,8 @@ from . import customTableWidget
 from . import readability_ui
 from . import readability_settings_ui
 
+from .language import loadFrequencyList, FrequencyList
+
 importlib.reload(customTableWidget)
 importlib.reload(readability_ui)
 importlib.reload(readability_settings_ui)
@@ -395,8 +397,10 @@ class AnalyzerDialog(QDialog):
         self.ui.masterFreqEdit.setText(cfg('Option_MasterFrequencyListPath'))
         self.ui.masterFreqButton.clicked.connect(
             lambda le: getPath(self.ui.masterFreqEdit, "Select Master Frequency List"))
-        self.ui.knownMorphsEdit.setText(cfg('path_known'))
+        self.ui.knownMorphsEdit.setText(cfg('Option_KnownMorphListPath'))
         self.ui.knownMorphsButton.clicked.connect(lambda le: getPath(self.ui.knownMorphsEdit, "Select Known Morphs DB"))
+        self.ui.matureMorphsEdit.setText(cfg('Option_MatureMorphListPath'))
+        self.ui.matureMorphsButton.clicked.connect(lambda le: getPath(self.ui.matureMorphsEdit, "Select Mature Morphs DB"))
         self.ui.outputFrequencyEdit.setText(cfg('path_dbs'))
         self.ui.outputFrequencyButton.clicked.connect(
             lambda le: getPath(self.ui.outputFrequencyEdit, "Select Output Directory", True))
@@ -597,6 +601,7 @@ class AnalyzerDialog(QDialog):
             group_idx = 0
             morph_total = 0.0
             master_morphs_count = sum(n for n in master_morphs.values())
+            f.write("#frequency_report\t1.0\n")
 
             for m in sorted(master_morphs.items(), key=operator.itemgetter(1), reverse=True):
                 if m[1] != last_count:
@@ -718,7 +723,7 @@ class AnalyzerDialog(QDialog):
         self.readability_target = float(self.ui.targetSpinBox.value())
         master_freq_path = self.ui.masterFreqEdit.text()
         known_words_path = self.ui.knownMorphsEdit.text()
-        mature_words_path = os.path.normpath(os.path.dirname(known_words_path) + '/mature.db')
+        mature_words_path = self.ui.matureMorphsEdit.text()
         output_path = self.ui.outputFrequencyEdit.text()
         save_word_report = self.ui.wordReportCheckBox.isChecked()
         save_study_plan = self.ui.studyPlanCheckBox.isChecked()
@@ -730,6 +735,8 @@ class AnalyzerDialog(QDialog):
         pref = {}
         pref['Option_AnalysisInputPath'] = input_path
         pref['Option_MasterFrequencyListPath'] = master_freq_path
+        pref['Option_KnownMorphListPath'] = known_words_path
+        pref['Option_MatureMorphListPath'] = mature_words_path
         pref['Option_DefaultMinimumMasterFrequency'] = self.minimum_master_frequency
         pref['Option_DefaultStudyTarget'] = self.readability_target
         pref['Option_SaveWordReport'] = save_word_report
@@ -802,19 +809,18 @@ class AnalyzerDialog(QDialog):
         all_morph_sample = {}
 
         if os.path.isfile(master_freq_path):
-            with io.open(master_freq_path, encoding='utf-8-sig') as csvfile:
-                csvreader = csv.reader(csvfile, delimiter="\t")
-                for row in csvreader:
-                    try:
-                        instances = int(row[0])
-                        m = Morpheme(row[1], row[2], row[2], row[3], row[4], row[5])
 
-                        self.master_db.addMorph(m, instances)
-                        self.master_total_instances += instances
-                    except:
-                        pass
-            self.writeOutput("Master morphs loaded: K %d V %d\n" % (
-                self.master_db.getTotalNormMorphs(), self.master_db.getTotalVariationMorphs()))
+            frequency_list = loadFrequencyList(master_freq_path, force_morphemes=True)
+            if frequency_list.has_frequency_count:
+
+                for m, instances in frequency_list.map.items():
+                    self.master_db.addMorph(m, instances)
+                    self.master_total_instances += instances
+                self.writeOutput("Master morphs loaded: K %d V %d\n" % (
+                    self.master_db.getTotalNormMorphs(), self.master_db.getTotalVariationMorphs()))
+            else:
+                self.writeOutput("Master frequency file '%s' has no frequency data or wrong format!\n" % master_freq_path)
+                self.minimum_master_frequency = 0
         else:
             self.writeOutput("Master frequency file '%s' not found.\n" % master_freq_path)
             self.minimum_master_frequency = 0

@@ -20,6 +20,7 @@ from .morphemizer import getMorphemizerByName
 from .util import printf, mw, errorMsg, getFilterByMidAndTags, getReadEnabledModels, getModifyEnabledModels
 from .preferences import get_preference as cfg, get_preferences
 from .util_external import memoize
+from .language import *
 
 # hack: typing is compile time anyway, so, nothing bad happens if it fails, the try is to support anki < 2.1.16
 try:
@@ -118,7 +119,7 @@ def notesToUpdate(last_updated, included_mids):
 
     return mw.col.db.execute(query)
 
-def mkAllDb(all_db=None):
+def mkAllDb(all_db, language):
     from . import config
     importlib.reload(config)
     t_0, db, TAG = time.time(), mw.col.db, mw.col.tags
@@ -126,7 +127,6 @@ def mkAllDb(all_db=None):
                       immediate=True)
     # for providing an error message if there is no note that is used for processing
     N_enabled_notes = 0
-
 
     if not all_db:
         all_db = MorphDb()
@@ -162,6 +162,9 @@ def mkAllDb(all_db=None):
         ts = TAG.split(tags)
         mid_cfg = getFilterByMidAndTags(mid, ts)
         if mid_cfg is None:
+            continue
+
+        if (mid_cfg['Language'] != language):
             continue
 
         N_enabled_notes += 1
@@ -230,7 +233,7 @@ def filterDbByMat(db, mat):
     return newDb
 
 
-def updateNotes(allDb):
+def updateNotes(allDb, language):
     t_0, now, db = time.time(), int_time(), mw.col.db
 
     TAG = mw.col.tags  # type: TagManager
@@ -252,30 +255,10 @@ def updateNotes(allDb):
     knownDb = filterDbByMat(allDb, cfg('threshold_known'))
     matureDb = filterDbByMat(allDb, cfg('threshold_mature'))
     mw.progress.update(label='Loading priority.db')
-    priorityDb = MorphDb(cfg('path_priority'), ignoreErrors=True)
+    priorityDb = MorphDb(getPathByLanguage(cfg('path_priority'),language), ignoreErrors=True)
 
-    mw.progress.update(label='Loading frequency.txt')
-    frequencyListPath = cfg('path_frequency')
-    frequency_map = {}
-    frequency_has_morphemes = False
-
-    try:
-        with io.open(frequencyListPath, encoding='utf-8-sig') as csvfile:
-            csvreader = csv.reader(csvfile, delimiter="\t")
-            rows = [row for row in csvreader]
-
-            if rows[0][0] == "#study_plan_frequency":
-                frequency_has_morphemes = True
-                frequency_map = dict(
-                    zip([Morpheme(row[0], row[1], row[2], row[3], row[4], row[5]) for row in rows[1:]],
-                        itertools.count(0)))
-            else:
-                frequency_map = dict(zip([row[0] for row in rows], itertools.count(0)))
-
-    except (FileNotFoundError, IndexError) as e:
-        pass
-
-    frequencyListLength = len(frequency_map)
+    mw.progress.update(label='Loading frequency list')
+    frequency_list = loadFrequencyListByLanguage(language)
 
     # prefetch cfg for fields
     field_focus_morph = cfg('Field_FocusMorph')
@@ -352,6 +335,9 @@ def updateNotes(allDb):
         if notecfg is None or not notecfg['Modify']:
             continue
 
+        if (notecfg['Language'] != language):
+            continue
+
         # Get all morphemes for note
         morphemes = set()
         for fieldName in notecfg['Fields']:
@@ -408,16 +394,16 @@ def updateNotes(allDb):
                 isPriority = True
                 usefulness += priorityDbWeight
             
-            if frequency_has_morphemes:
-                focusMorphIndex = frequency_map.get(focusMorph, -1)
+            if frequency_list.has_morphemes:
+                focusMorphIndex = frequency_list.map.get(focusMorph, -1)
             else:
-                focusMorphIndex = frequency_map.get(focusMorph.base, -1)
+                focusMorphIndex = frequency_list.map.get(focusMorph.base, -1)
 
             if focusMorphIndex >= 0:
                 isFrequency = True
 
                 # The bigger this number, the lower mmi becomes
-                usefulness += int(round( frequencyBonus * (1 - focusMorphIndex / frequencyListLength) ))
+                usefulness += int(round( frequencyBonus * (1 - focusMorphIndex / frequency_list.len) ))
 
         # average frequency of unknowns (ie. how common the word is within your collection)
         F_k_avg = F_k // N_k if N_k > 0 else F_k
@@ -559,10 +545,10 @@ def updateNotes(allDb):
 
     if cfg('saveDbs'):
         mw.progress.update(label='Saving all/seen/known/mature dbs')
-        allDb.save(cfg('path_all'))
-        seenDb.save(cfg('path_seen'))
-        knownDb.save(cfg('path_known'))
-        matureDb.save(cfg('path_mature'))
+        allDb.save(getPathByLanguage(cfg('path_all'),language))
+        seenDb.save(getPathByLanguage(cfg('path_seen'),language))
+        knownDb.save(getPathByLanguage(cfg('path_known'),language))
+        matureDb.save(getPathByLanguage(cfg('path_mature'),language))
         printf('Updated %d notes + saved dbs in %f sec' % (N_notes, time.time() - t_0))
 
     mw.progress.finish()
@@ -575,35 +561,36 @@ def main():
         pr = cProfile.Profile()
         pr.enable()
 
-    # load existing all.db
-    mw.progress.start(label='Loading existing all.db', immediate=True)
-    t_0 = time.time()
-    cur = util.allDb() if cfg('loadAllDb') else None
-    printf('Loaded all.db in %f sec' % (time.time() - t_0))
-    mw.progress.finish()
-
-    # update all.db
-    allDb = mkAllDb(cur)
-    # there was an (non-critical-/non-"exception"-)error but error message was already displayed
-    if not allDb:
+    # load existing all.db for each language (all.db for default language, all_Japanese.db for Japanese etc..)
+    languages = getLanguageList()
+    for language in languages:
+        fname = getPathByLanguage('all%s.db', language)
+        mw.progress.start(label='Loading existing %s' % fname, immediate=True)
+        t_0 = time.time()
+        cur = getAllDb(language) if cfg('loadAllDb') else None
+        printf('Loaded %s in %f sec' % (fname, time.time() - t_0))
         mw.progress.finish()
-        return
 
-    # merge in external.db
-    mw.progress.start(label='Merging ext.db', immediate=True)
-    ext = MorphDb(cfg('path_ext'), ignoreErrors=True)
-    allDb.merge(ext)
-    mw.progress.finish()
+        # update all.db
+        allDb = mkAllDb(cur, language)
+        # there was an (non-critical-/non-"exception"-)error but error message was already displayed
+        if not allDb:
+            mw.progress.finish()
+        else:
+ 
+            # merge in external.db (or external_Japanese.db, external_French.db etc)
+            mw.progress.start(label='Merging ext.db', immediate=True)
+            ext = MorphDb(getPathByLanguage(cfg('path_ext'),language), ignoreErrors=True)
+            allDb.merge(ext)
+            mw.progress.finish()
 
-    # update notes
-    knownDb = updateNotes(allDb)
+            # update notes
+            knownDb = updateNotes(allDb, language)
 
-    # update stats and refresh display
-    stats.updateStats(knownDb)
-    mw.toolbar.draw()
+            # update stats and refresh display
+            stats.updateStats(knownDb)
+            mw.toolbar.draw()
 
-    # set global allDb
-    util._allDb = allDb
 
     # finish-------------------
     if doProfile:

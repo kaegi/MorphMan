@@ -9,6 +9,7 @@ from .util import mw, mkBtn
 from .preferences import get_preference, update_preferences
 from .morphemizer import getAllMorphemizers
 from .UI import MorphemizerComboBox
+from .UI import LanguageComboBox
 
 # only for jedi-auto-completion
 import aqt.main
@@ -44,7 +45,7 @@ class PreferencesDialog(QDialog):
         self.frame1.setLayout(vbox)
         vbox.setContentsMargins(0, 20, 0, 0)
 
-        self.tableModel = QStandardItemModel(0, 6)
+        self.tableModel = QStandardItemModel(0, 7)
         self.tableView = QTableView()
         self.tableView.setModel(self.tableModel)
         self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
@@ -53,9 +54,10 @@ class PreferencesDialog(QDialog):
         self.tableModel.setHeaderData(0, Qt.Orientation.Horizontal, "Note type")
         self.tableModel.setHeaderData(1, Qt.Orientation.Horizontal, "Tags")
         self.tableModel.setHeaderData(2, Qt.Orientation.Horizontal, "Fields")
-        self.tableModel.setHeaderData(3, Qt.Orientation.Horizontal, "Morphemizer")
-        self.tableModel.setHeaderData(4, Qt.Orientation.Horizontal, "Read?")
-        self.tableModel.setHeaderData(5, Qt.Orientation.Horizontal, "Modify?")
+        self.tableModel.setHeaderData(3, Qt.Orientation.Horizontal, "Language")
+        self.tableModel.setHeaderData(4, Qt.Orientation.Horizontal, "Morphemizer")
+        self.tableModel.setHeaderData(5, Qt.Orientation.Horizontal, "Read?")
+        self.tableModel.setHeaderData(6, Qt.Orientation.Horizontal, "Modify?")
 
         rowData = get_preference('Filter')
         self.tableModel.setRowCount(len(rowData))
@@ -280,6 +282,13 @@ class PreferencesDialog(QDialog):
         morphemizerComboBox.setMorphemizers(getAllMorphemizers())
         morphemizerComboBox.setCurrentByName(data['Morphemizer'])
 
+        languageComboBox = LanguageComboBox()
+        languageComboBox.setLanguages(get_preference('Languages'))
+        try:
+            languageComboBox.setCurrentByName(data['Language'])
+        except:
+            pass
+
         readItem = QStandardItem()
         readItem.setCheckable(True)
         readItem.setCheckState(Qt.CheckState.Checked if data.get('Read', True) else Qt.CheckState.Unchecked)
@@ -292,6 +301,7 @@ class PreferencesDialog(QDialog):
         rowGui['tagsEntry'] = QLineEdit(', '.join(data['Tags']))
         rowGui['fieldsEntry'] = QLineEdit(', '.join(data['Fields']))
         rowGui['morphemizerComboBox'] = morphemizerComboBox
+        rowGui['languageComboBox'] = languageComboBox
         rowGui['readCheckBox'] = readItem
         rowGui['modifyCheckBox'] = modifyItem
 
@@ -301,9 +311,10 @@ class PreferencesDialog(QDialog):
         setColumn(0, rowGui['modelComboBox'])
         setColumn(1, rowGui['tagsEntry'])
         setColumn(2, rowGui['fieldsEntry'])
-        setColumn(3, rowGui['morphemizerComboBox'])
-        self.tableModel.setItem(rowIndex, 4, readItem)
-        self.tableModel.setItem(rowIndex, 5, modifyItem)
+        setColumn(3, rowGui['languageComboBox'])
+        setColumn(4, rowGui['morphemizerComboBox'])
+        self.tableModel.setItem(rowIndex, 5, readItem)
+        self.tableModel.setItem(rowIndex, 6, modifyItem)
 
         if len(self.rowGui) == rowIndex:
             self.rowGui.append(rowGui)
@@ -326,6 +337,7 @@ class PreferencesDialog(QDialog):
         filter['Fields'] = [
             x for x in row_gui['fieldsEntry'].text().split(', ') if x]
 
+        filter['Language'] = row_gui['languageComboBox'].getCurrent()
         filter['Morphemizer'] = row_gui['morphemizerComboBox'].getCurrent().getName()
         filter['Read'] = row_gui['readCheckBox'].checkState() != Qt.CheckState.Unchecked
         filter['Modify'] = row_gui['modifyCheckBox'].checkState() != Qt.CheckState.Unchecked

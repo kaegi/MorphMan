@@ -8,6 +8,7 @@ from . import util
 from .morphemes import AnkiDeck
 from .preferences import get_preference as cfg
 from .util import mw
+from .language import getAllDb
 
 colYoung = "#7c7"
 colCard = "#282"
@@ -221,7 +222,8 @@ def get_stats(self, db_table, bucket_size_days, day_cutoff_seconds, num_buckets=
     if not all_reviews_for_bucket:
         return stats_by_name
 
-    all_db = util.allDb()
+    # TODO! Process all.db for each language
+    all_db = getAllDb("Default")
     nid_to_morphs = defaultdict(set)
 
     for m, ls in all_db.db.items():
