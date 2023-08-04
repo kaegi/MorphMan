@@ -11,6 +11,7 @@ from .util import mw
 from .preferences import get_preference as cfg
 
 from .errors.profileNotYetLoadedException import ProfileNotYetLoadedException
+from .language import getTotalKnownSet
 
 def getStatsPath(): return cfg('path_stats')
 
@@ -36,14 +37,7 @@ def saveStats(d):
 def updateStats(known_db=None):
     mw.progress.start(label='Updating stats', immediate=True)
 
-    from .morphemes import MorphDb
-
-    # Load known.db and get total morphemes known
-    if known_db is None:
-        known_db = MorphDb(cfg('path_known'), ignoreErrors=True)
-
-    d = {'totalVariations': len(known_db.db), 'totalKnown': len(known_db.groups)}
-
+    d = getTotalKnownSet()
     saveStats(d)
     mw.progress.finish()
     return d

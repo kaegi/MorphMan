@@ -5,13 +5,13 @@ from aqt import mw  # this script isn't imported until profile is loaded
 # 4th (lowest) priority
 default = {
     'path_dbs': os.path.join(mw.pm.profileFolder(), 'dbs'),
-    'path_priority': os.path.join(mw.pm.profileFolder(), 'dbs', 'priority.db'),
-    'path_ext': os.path.join(mw.pm.profileFolder(), 'dbs', 'external.db'),
-    'path_frequency': os.path.join(mw.pm.profileFolder(), 'dbs', 'frequency.txt'),
-    'path_all': os.path.join(mw.pm.profileFolder(), 'dbs', 'all.db'),
-    'path_mature': os.path.join(mw.pm.profileFolder(), 'dbs', 'mature.db'),
-    'path_known': os.path.join(mw.pm.profileFolder(), 'dbs', 'known.db'),
-    'path_seen': os.path.join(mw.pm.profileFolder(), 'dbs', 'seen.db'),
+    'path_priority': os.path.join(mw.pm.profileFolder(), 'dbs', 'priority%s.db'),
+    'path_ext': os.path.join(mw.pm.profileFolder(), 'dbs', 'external%s.db'),
+    'path_frequency': os.path.join(mw.pm.profileFolder(), 'dbs','frequency%s.txt'),
+    'path_all': os.path.join(mw.pm.profileFolder(), 'dbs', 'all%s.db'),
+    'path_mature': os.path.join(mw.pm.profileFolder(), 'dbs', 'mature%s.db'),
+    'path_known': os.path.join(mw.pm.profileFolder(), 'dbs', 'known%s.db'),
+    'path_seen': os.path.join(mw.pm.profileFolder(), 'dbs', 'seen%s.db'),
     'path_log': os.path.join(mw.pm.profileFolder(), 'morphman.log'),
     'path_stats': os.path.join(mw.pm.profileFolder(), 'morphman.stats'),
 

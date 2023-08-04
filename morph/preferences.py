@@ -110,13 +110,16 @@ def jcfg_default():
         'Tag_TooLong': 'mm_tooLong',  # set if sentence is above optimal length range
         'Tag_Frequency': 'mm_frequency',  # set if sentence is above optimal length range
 
+        # Language list
+        'Languages' : ['Default','Japanese','Chinese','Korean','German','French','Russian','Other'],
+
         # filter for cards that should be analyzed, higher entries have higher priority
         'Filter': [
             # note type (None means all note types), list of tags, list of morph fields for this note type -> morphemizer, analyze only or modify?
             {'Type': 'SubtitleMemorize', 'TypeId': None, 'Tags': ['japanese'], 'Fields': ['Expression'],
-             'Morphemizer': 'MecabMorphemizer', 'Read': True, 'Modify': True},
+             'Language': 'Default', 'Morphemizer': 'MecabMorphemizer', 'Read': True, 'Modify': True},
             {'Type': 'SubtitleMemorize', 'TypeId': None, 'Tags': [], 'Fields': ['Expression'],
-             'Morphemizer': 'SpaceMorphemizer', 'Read': True, 'Modify': True},
+             'Language': 'Default', 'Morphemizer': 'SpaceMorphemizer', 'Read': True, 'Modify': True},
         ],
 
         # This field lets you dictate string-to-morpheme conversions. This is useful for cases
@@ -160,6 +163,8 @@ def jcfg_default():
         # Readability Analyzer options
         'Option_AnalysisInputPath': '',
         'Option_MasterFrequencyListPath': '',
+        'Option_KnownMorphListPath': '',
+        'Option_MatureMorphListPath': '',
         'Option_DefaultMinimumMasterFrequency': 0,
         'Option_DefaultStudyTarget': 98.0,
         'Option_OptimalMasterTarget': 0.0,

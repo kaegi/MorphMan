@@ -23,8 +23,9 @@ import re
 from aqt.utils import tooltip
 
 from . import main
-from .util import mw, allDb
+from .util import mw
 from .preferences import get_preference as cfg
+from .language import getAllDb, getPathByLanguage, loadFrequencyListByLanguage
 
 assert isinstance(mw, aqt.main.AnkiQt)
 
@@ -266,14 +267,6 @@ def highlight(txt: str, field, filter: str, ctx) -> str:
         return ''.join(re.sub(sub, repl, s, flags=re.IGNORECASE) if not s.startswith('<span') else s for s in
                        re.split('(<span.*?</span>)', string))
 
-    frequency_list_path = cfg('path_frequency')
-    try:
-        with codecs.open(frequency_list_path, encoding='utf-8') as f:
-            frequency_list = [line.strip().split('\t')[0] for line in f.readlines()]
-    except:
-        frequency_list = []
-
-    priority_db = main.MorphDb(cfg('path_priority'), ignoreErrors=True).db
 
     note = ctx.note()
     tags = note.stringTags()
@@ -284,12 +277,18 @@ def highlight(txt: str, field, filter: str, ctx) -> str:
     if morphemizer is None:
         return txt
 
+    language = filter['Language']
+    allDb = getAllDb(language)
+
+    frequency_list = loadFrequencyListByLanguage(language).keys()
+    priority_db = main.MorphDb(getPathByLanguage(cfg('path_priority'),language), ignoreErrors=True).db
+
     ms = getMorphemes(morphemizer, txt, tags)
 
     proper_nouns_known = cfg('Option_ProperNounsAlreadyKnown')
 
     for m in sorted(ms, key=lambda x: len(x.inflected), reverse=True):  # largest subs first
-        locs = allDb().getMatchingLocs(m)
+        locs = allDb.getMatchingLocs(m)
         mat = max(loc.maturity for loc in locs) if locs else 0
 
         if proper_nouns_known and m.isProperNoun():
