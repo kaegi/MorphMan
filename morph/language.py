@@ -20,8 +20,12 @@ class FrequencyList:
 def getLanguageList():
 	languages = set()
 	rowData = cfg('Filter')
-	for row in rowData:
-		languages.add(row['Language'])
+	try:
+		for row in rowData:
+			languages.add(row['Language'])
+	except:
+		# language per filter not yet configured
+		pass
 	if len(languages) == 0:
 		languages.add('Default')
 	return list(languages)

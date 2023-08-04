@@ -164,8 +164,9 @@ def mkAllDb(all_db, language):
         if mid_cfg is None:
             continue
 
-        if (mid_cfg['Language'] != language):
-            continue
+        if 'Language' in mid_cfg:
+            if (mid_cfg['Language'] != language):
+                continue
 
         N_enabled_notes += 1
 
@@ -335,8 +336,9 @@ def updateNotes(allDb, language):
         if notecfg is None or not notecfg['Modify']:
             continue
 
-        if (notecfg['Language'] != language):
-            continue
+        if 'Language' in notecfg:
+            if (notecfg['Language'] != language):
+                continue
 
         # Get all morphemes for note
         morphemes = set()
