@@ -221,7 +221,7 @@ def get_stats(self, db_table, bucket_size_days, day_cutoff_seconds, num_buckets=
     if not all_reviews_for_bucket:
         return stats_by_name
 
-    all_db = util.allDb()
+    all_db = util.get_all_db()
     nid_to_morphs = defaultdict(set)
 
     for m, ls in all_db.db.items():

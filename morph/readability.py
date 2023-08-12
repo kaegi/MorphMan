@@ -15,6 +15,7 @@ import re
 import sqlite3
 from collections import namedtuple
 from contextlib import redirect_stdout, redirect_stderr
+from functools import partial
 
 from PyQt6.QtCore import *
 from PyQt6.QtGui import *
@@ -39,7 +40,8 @@ importlib.reload(customTableWidget)
 importlib.reload(readability_ui)
 importlib.reload(readability_settings_ui)
 
-def kaner(to_translate, hiraganer = False):
+
+def kaner(to_translate, hiraganer=False):
     hiragana = "がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ" \
                "あいうえおかきくけこさしすせそたちつてと" \
                "なにぬねのはひふへほまみむめもやゆよらりるれろ" \
@@ -55,14 +57,17 @@ def kaner(to_translate, hiraganer = False):
     else:
         hiragana = [ord(char) for char in hiragana]
         translate_table = dict(zip(hiragana, katakana))
-        return to_translate.translate(translate_table) 
+        return to_translate.translate(translate_table)
+
 
 def adjustReading(reading):
     return kaner(reading)
 
+
 PROFILE_PARSING = False
 if PROFILE_PARSING:
     import cProfile
+
 
 def atoi(text):
     return int(text) if text.isdigit() else text
@@ -76,11 +81,13 @@ def natural_keys(text):
     """
     return [atoi(c) for c in re.split(r'(\d+)', text)]
 
+
 class NaturalKeysTableWidgetItem(QTableWidgetItem):
     def __lt__(self, other):
         lvalue = self.text()
         rvalue = other.text()
         return natural_keys(lvalue) < natural_keys(rvalue)
+
 
 class Source:
     def __init__(self, name, morphs, line_morphs, unknown_db):
@@ -90,10 +97,9 @@ class Source:
         self.unknown_db = unknown_db
 
         # Get filled when generating a study plan
-        self.missing_morphs = None 
+        self.missing_morphs = None
         self.seen_i = 0
         self.known_i = 0
-
 
 
 def getPath(le, caption, open_directory=False):  # LineEdit -> GUI ()
@@ -143,11 +149,12 @@ class CountingMorphDB:
         for alt, c in ms.items():
             if exclude_db != None and c[1]:  # Skip marked morphs
                 continue
-            if exclude_db != None and exclude_db.matches(alt): # Skip excluded morphs
+            if exclude_db != None and exclude_db.matches(alt):  # Skip excluded morphs
                 continue
             if altIncludesMorpheme(alt, m):  # pylint: disable=W1114 #ToDo: verify if pylint is right
                 count += c[0]
         return count
+
 
 class LocationCorpus:
     def __init__(self, db, save_lines=False):
@@ -200,6 +207,7 @@ class LocationCorpus:
         else:
             yield self.morph_count_iter()
 
+
 class CorpusDBUnpickler(pickle.Unpickler):
 
     def find_class(self, cmodule, cname):
@@ -209,6 +217,7 @@ class CorpusDBUnpickler(pickle.Unpickler):
         cmodule = cmodule.replace('MorphMan.', curr_module_name)
         cmodule = cmodule.replace('900801631.', curr_module_name)
         return pickle.Unpickler.find_class(self, cmodule, cname)
+
 
 class LocationCorpusDB:
     def __init__(self):
@@ -268,6 +277,7 @@ class LocationCorpusDB:
 
             del other_db
 
+
 class TableInteger(QTableWidgetItem):
     def __init__(self, value):
         super(TableInteger, self).__init__(str(int(value)))
@@ -277,6 +287,7 @@ class TableInteger(QTableWidgetItem):
         lvalue = self.text()
         rvalue = other.text()
         return natural_keys(lvalue) < natural_keys(rvalue)
+
 
 class TableFloat(QTableWidgetItem):
     def __init__(self, value):
@@ -288,6 +299,7 @@ class TableFloat(QTableWidgetItem):
         rvalue = other.text()
         return natural_keys(lvalue) < natural_keys(rvalue)
 
+
 class TablePercent(QTableWidgetItem):
     def __init__(self, value):
         super(TablePercent, self).__init__('%0.02f' % value)
@@ -297,6 +309,7 @@ class TablePercent(QTableWidgetItem):
         lvalue = self.text()
         rvalue = other.text()
         return natural_keys(lvalue) < natural_keys(rvalue)
+
 
 def migakuDictDbPath():
     if importlib.util.find_spec('Migaku Dictionary'):
@@ -308,8 +321,13 @@ def migakuDictDbPath():
             return None
     return None
 
-SourceStudyResult = namedtuple('SourceStudyResult', ['old_readability', 'new_readability', 'learned_m', 'total_freq', 'avg_freq', 'avg_rate'])
-SchedulingMorph = namedtuple('SchedulingMorph', ['score', 'master_count', 'unknown_count', 'source_unknown_count', 'count', 'morph'])
+
+SourceStudyResult = namedtuple('SourceStudyResult',
+                               ['old_readability', 'new_readability', 'learned_m', 'total_freq', 'avg_freq',
+                                'avg_rate'])
+SchedulingMorph = namedtuple('SchedulingMorph',
+                             ['score', 'master_count', 'unknown_count', 'source_unknown_count', 'count', 'morph'])
+
 
 class SettingsDialog(QDialog):
     def __init__(self, parent=None):
@@ -375,6 +393,7 @@ class SettingsDialog(QDialog):
     def onReject(self):
         pass
 
+
 class AnalyzerDialog(QDialog):
     def __init__(self, parent=None):
         super(AnalyzerDialog, self).__init__(parent)
@@ -405,7 +424,7 @@ class AnalyzerDialog(QDialog):
         self.ui.studyPlanCheckBox.setChecked(cfg('Option_SaveStudyPlan'))
         self.ui.frequencyListCheckBox.setChecked(cfg('Option_SaveFrequencyList'))
         self.ui.advancedSettingsButton.clicked.connect(lambda le: SettingsDialog(self).show())
-              
+
         self.ui.wordReportCheckBox.setChecked(cfg('Option_SaveWordReport'))
         self.ui.groupByDirCheckBox.setChecked(cfg('Option_GroupByDir'))
         self.ui.processLinesCheckBox.setChecked(cfg('Option_ProcessLines'))
@@ -438,23 +457,23 @@ class AnalyzerDialog(QDialog):
                 self.write('Web Service Created: '+self.server.serverName()+' : '+self.server.serverAddress().toString()+':'+str(self.server.serverPort()) + '\n')
             else:
                 self.write("Could't create Web Service\n")
-            
+
             self.server.newConnection.connect(self.onNewConnection)
             self.write('Web Service Listening: ' + str(self.server.isListening()) + '\n')
 
     def onNewConnection(self):
         print(self.sender())
-        
+
         client = self.server.nextPendingConnection()
         self.write('Client %s Connected\n' % str(client))
         self.clients.add(client)
         client.textMessageReceived.connect(self.processTextMessage)
         client.disconnected.connect(self.clientDisconnected)
 
-    def processTextMessage(self,  message):
+    def processTextMessage(self, message):
         client = self.sender()
 
-        #self.write('websocket message: %s\n' % message)
+        # self.write('websocket message: %s\n' % message)
 
         if self.orig_known_db is None:
             self.write("Analysis isn't ready\n")
@@ -463,13 +482,13 @@ class AnalyzerDialog(QDialog):
         ###########
         msg = json.loads(message)
         result = {'idx': msg['idx']}
-        
+
         try:
             if msg['type'] == "get-word-tags":
                 parts = msg['word'].split('◴')
                 term, pronunciation = tuple(parts)
 
-                #self.write(" input %s %s\n" % (term, pronunciation))
+                # self.write(" input %s %s\n" % (term, pronunciation))
 
                 pron = adjustReading(pronunciation)
                 is_freq = False
@@ -478,7 +497,7 @@ class AnalyzerDialog(QDialog):
                 morphemizer = self.morphemizer()
                 morphs = getMorphemes(morphemizer, term)
 
-                #if len(morphs) == 1 and morphs[0].read != pron:
+                # if len(morphs) == 1 and morphs[0].read != pron:
                 #    m = morphs[0]
                 #    morphs = [Morpheme(m.norm, m.base, m.inflected, pron, m.pos, m.subPos)]
 
@@ -525,13 +544,13 @@ class AnalyzerDialog(QDialog):
         except Exception as e:
             self.write('exception: %s\n' % str(e))
             result['result'] = 'failed'
-        
+
         client.sendTextMessage(json.dumps(result))
-    
+
     def clientDisconnected(self):
         client = self.sender()
         self.write('Client %s Disconnected\n' % str(client))
-        #self.clients.remove(client)
+        # self.clients.remove(client)
 
     def closeEvent(self, *args, **kwargs):
         print('closing analyzer')
@@ -553,9 +572,8 @@ class AnalyzerDialog(QDialog):
 
     def onStudyPlanSortIndicatorChanged(self, index, order):
         # Apply the sort
-        self.ui.studyPlanTable.sortItems(index, order)       
+        self.ui.studyPlanTable.sortItems(index, order)
         self.buildTotalStudyCount()
-        
 
     def morphemizer(self):
         return self.ui.morphemizerComboBox.getCurrent()
@@ -583,7 +601,7 @@ class AnalyzerDialog(QDialog):
 
     def saveWordReport(self, known_db, morphs, path):
         all_db = CountingMorphDB()
-        for m,c in morphs.items():
+        for m, c in morphs.items():
             all_db.addMorph(Morpheme(m.norm, m.base, m.base, m.read, m.pos, m.subPos), c)
 
         master_morphs = {}
@@ -661,10 +679,12 @@ class AnalyzerDialog(QDialog):
             source_count = source_unknown_count + unknown_count
 
             score = pow(source_count, self.source_score_power) * self.source_score_multiplier + master_count
-            to_learn_morphs.append(SchedulingMorph(morph=morph, count=count, source_unknown_count=source_unknown_count, unknown_count=unknown_count, master_count=master_count, score=score))
+            to_learn_morphs.append(SchedulingMorph(morph=morph, count=count, source_unknown_count=source_unknown_count,
+                                                   unknown_count=unknown_count, master_count=master_count, score=score))
 
-            if self.debug_output: f.write('  missing: ' + m[0].show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]\n' % (score, source_unknown_count, unknown_count, master_count))
-
+            if self.debug_output: f.write(
+                '  missing: ' + m[0].show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]\n' % (
+                score, source_unknown_count, unknown_count, master_count))
 
         known_i = source.known_i
         learned_this_source = []
@@ -680,7 +700,8 @@ class AnalyzerDialog(QDialog):
 
         for iteration in range(0, iterations):
             for m in sorted(to_learn_morphs, key=lambda x: x.score, reverse=True):
-                if readability >= self.readability_target and not (iteration == 0 and self.take_all_minimum_frequency_morphs):
+                if readability >= self.readability_target and not (
+                        iteration == 0 and self.take_all_minimum_frequency_morphs):
                     if self.debug_output: f.write('  readability target reached\n')
                     break
 
@@ -689,7 +710,9 @@ class AnalyzerDialog(QDialog):
                     continue
 
                 if (iteration == 0) and (m.master_count < self.minimum_master_frequency):
-                    if self.debug_output: f.write('  low score: %s [score %d ep_freq %d all_freq %d master_freq %d]\n' % (m.morph.show(), m.score, m.source_unknown_count, m.unknown_count, m.master_count))
+                    if self.debug_output: f.write(
+                        '  low score: %s [score %d ep_freq %d all_freq %d master_freq %d]\n' % (
+                        m.morph.show(), m.score, m.source_unknown_count, m.unknown_count, m.master_count))
                     continue
 
                 learned_morphs.append(m)
@@ -703,8 +726,9 @@ class AnalyzerDialog(QDialog):
         avg_freq = float(total_freq) / learned_m if learned_m > 0 else 0
         avg_rate = float(learned_m) / source.i_count if source.i_count > 0 else 0
 
-        return learned_this_source, SourceStudyResult(old_readability=old_readability, new_readability=readability, learned_m=learned_m, total_freq=total_freq, avg_freq=avg_freq, avg_rate=avg_rate)
-
+        return learned_this_source, SourceStudyResult(old_readability=old_readability, new_readability=readability,
+                                                      learned_m=learned_m, total_freq=total_freq, avg_freq=avg_freq,
+                                                      avg_rate=avg_rate)
 
     def onAnalyze(self):
         self.clearOutput()
@@ -725,7 +749,7 @@ class AnalyzerDialog(QDialog):
         save_frequency_list = self.ui.frequencyListCheckBox.isChecked()
         group_by_dir = self.ui.groupByDirCheckBox.isChecked()
         process_lines = self.ui.processLinesCheckBox.isChecked()
-        
+
         # Save updated preferences
         pref = {}
         pref['Option_AnalysisInputPath'] = input_path
@@ -744,8 +768,10 @@ class AnalyzerDialog(QDialog):
         self.proper_nouns_known = cfg('Option_ProperNounsAlreadyKnown')
 
         # Study plan settings
-        self.take_all_minimum_frequency_morphs = (self.minimum_master_frequency > 0) and cfg('Option_AlwaysAddMinFreqMorphs')
-        self.always_meet_readability_target = (self.minimum_master_frequency > 0) and cfg('Option_AlwaysMeetReadabilityTarget')
+        self.take_all_minimum_frequency_morphs = (self.minimum_master_frequency > 0) and cfg(
+            'Option_AlwaysAddMinFreqMorphs')
+        self.always_meet_readability_target = (self.minimum_master_frequency > 0) and cfg(
+            'Option_AlwaysMeetReadabilityTarget')
         self.reset_known_for_each_show = cfg('Option_ResetLearnedAfterEachInput')
         self.optimal_master_target = cfg('Option_OptimalMasterTarget')
 
@@ -888,7 +914,7 @@ class AnalyzerDialog(QDialog):
                         if morph_state is None:
                             morph_state = 0
                             if m.isProperNoun():
-                                morph_state |= 1 # Proper noun bit
+                                morph_state |= 1  # Proper noun bit
                                 is_proper_noun = True
                             else:
                                 is_proper_noun = False
@@ -914,7 +940,7 @@ class AnalyzerDialog(QDialog):
 
                         if morph_state & 4:
                             mature_count += count
-                    
+
                     if process_lines:
                         line_morphs.append(line_morphs_set)
                         line_count += 1
@@ -932,8 +958,8 @@ class AnalyzerDialog(QDialog):
             iplus1_percent = 0.0 if line_count == 0 else 100.0 * iplus1_line_count / line_count
 
             log_text = '%s\t%d\t%d\t%0.2f\t%d\t%d\t%0.2f\t%0.2f\t%0.2f\t%0.2f\t%0.2f\t%0.2f\n' % (
-                        full_name, len(seen_morphs), len(known_morphs), known_percent, i_count, known_count,
-                        learning_percent, mature_percent, readability, proper_noun_percent, line_percent, iplus1_percent)
+                full_name, len(seen_morphs), len(known_morphs), known_percent, i_count, known_count,
+                learning_percent, mature_percent, readability, proper_noun_percent, line_percent, iplus1_percent)
             log_fp.write(log_text)
             self.writeOutput(log_text)
             row = self.ui.readabilityTable.rowCount()
@@ -959,7 +985,7 @@ class AnalyzerDialog(QDialog):
 
             if save_study_plan:
                 source = Source(full_name, seen_morphs, line_morphs, source_unknown_db)
-                source.i_count = i_count # TODO: Move to class
+                source.i_count = i_count  # TODO: Move to class
                 sources.append(source)
 
         def measure_readability(file_path, corp_name):
@@ -1007,14 +1033,14 @@ class AnalyzerDialog(QDialog):
                             srt_count = 0
                         else:
                             should_flush = False
-                    
+
                     if t != '':
                         filtered_text += t + '\n'
-                    
+
                     # Todo: This will flush every line so we can compute per-line readability, which is slower than batching lines.
                     #       Figure out how to get per-line analysis with batched lines.
                     if should_flush or len(filtered_text) >= 2048:
-                    #if len(filtered_text) >= 2048:
+                        # if len(filtered_text) >= 2048:
                         parse_text(loc_corpus, filtered_text)
                         filtered_text = ''
 
@@ -1059,21 +1085,23 @@ class AnalyzerDialog(QDialog):
         self.ui.readabilityTable.setColumnCount(12)
         self.ui.readabilityTable.setHorizontalHeaderLabels([
             "Input", "Total\nMorphs", "Known\nMorphs", "Known\nMorphs %", "Total\nInstances", "Known\nInstances",
-            "Young\nInstances %", "Mature\nInstances %", "Known\nInstances %", "Proper\nNoun %", "Line\nReadability %", "i+1\nLines %"])
+            "Young\nInstances %", "Mature\nInstances %", "Known\nInstances %", "Proper\nNoun %", "Line\nReadability %",
+            "i+1\nLines %"])
 
         if len(list_of_files) > 0:
             if PROFILE_PARSING:
                 pr = cProfile.Profile()
                 pr.enable()
-            
+
             self.writeOutput('%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' % (
                 "Input", "Total Morphs", "Known Morphs", "% Known Morphs", "Total Instances", "Known Instances",
                 "% Young", "% Mature", "% Known", "% Proper Nouns", "% Known Lines", "% i+1 Lines"))
 
-            mw.progress.start( label='Measuring readability', max=len(list_of_files), immediate=True )
+            mw.taskman.run_on_main(
+                lambda: mw.progress.start(label='Measuring readability', max=len(list_of_files), immediate=True))
             for n, file_path in enumerate(sorted(list_of_files, key=natural_keys)):
-                mw.progress.update(value=n, label='Parsing (%d/%d) %s' % (
-                    n + 1, len(list_of_files), os.path.basename(file_path)))
+                mw.taskman.run_on_main(partial(mw.progress.update, value=n, label='Parsing (%d/%d) %s' % (
+                    n + 1, len(list_of_files), os.path.basename(file_path))))
                 if os.path.isfile(file_path):
                     corp_name = os.path.relpath(file_path, Path(input_path).parent)
                     measure_readability(file_path, corp_name)
@@ -1087,9 +1115,9 @@ class AnalyzerDialog(QDialog):
                 i_loc_str = get_loc_str(corpus_db.ordered_locs[i][0])
                 j = i + 1
 
-                mw.progress.update(value=i, label='Updating (%d/%d) %s' % (
-                    i + 1, total_locs, i_loc_str))
-                
+                mw.taskman.run_on_main(partial(mw.progress.update, value=i, label='Updating (%d/%d) %s' % (
+                    i + 1, total_locs, i_loc_str)))
+
                 while j < total_locs:
                     j_loc = corpus_db.ordered_locs[j]
                     if i_loc_str != get_loc_str(corpus_db.ordered_locs[j][0]):
@@ -1098,15 +1126,15 @@ class AnalyzerDialog(QDialog):
 
                 proc_file_result(i_loc_str, [x[1] for x in corpus_db.ordered_locs[i:j]])
                 i = j
-            
-            #total_locs = len(corpus_db.ordered_locs)
-            #for i, (loc, loc_corpus) in enumerate(corpus_db.ordered_locs):
+
+            # total_locs = len(corpus_db.ordered_locs)
+            # for i, (loc, loc_corpus) in enumerate(corpus_db.ordered_locs):
             #    mw.progress.update(value=n, label='Updating (%d/%d) %s' % (
             #        i + 1, total_locs, str(loc[0])))
             #    proc_file_result(loc, loc_corpus)
 
             self.writeOutput('\nUsed morphemizer: %s\n' % morphemizer.getDescription())
-            mw.progress.finish()
+            mw.taskman.run_on_main(mw.progress.finish)
 
             if PROFILE_PARSING:
                 pr.disable()
@@ -1116,7 +1144,7 @@ class AnalyzerDialog(QDialog):
             return
 
         self.ui.readabilityTable.setSortingEnabled(True)
-        self.ui.readabilityTable.resizeColumnsToContents()       
+        self.ui.readabilityTable.resizeColumnsToContents()
 
         if save_word_report:
             self.writeOutput("\n[Saving word instance report to '%s'...]\n" % self.instance_freq_report_path)
@@ -1127,7 +1155,7 @@ class AnalyzerDialog(QDialog):
 
         if self.save_missing_word_report:
             self.writeOutput("\n[Saving missing word report to '%s'...]\n" % self.missing_master_path)
-        
+
             master_morphs = {}
             for ms in self.master_db.db.values():
                 for m, c in ms.items():
@@ -1188,17 +1216,22 @@ class AnalyzerDialog(QDialog):
                 self.ui.studyPlanTable.setSortingEnabled(False)
                 self.ui.studyPlanTable.setColumnCount(10)
                 self.ui.studyPlanTable.setHorizontalHeaderLabels([
-                    "Input", "To Study\nMorphs ", "Cummulative\nMorphs", "Old Morph\nReadability %", "New Morph\nReadability %",
-                    "Old Line\nReadability %", "New Line\nReadability %", "Avg Study\nFreq", "Avg Study\nPer Instance", "New Master\nFreq %"])
+                    "Input", "To Study\nMorphs ", "Cummulative\nMorphs", "Old Morph\nReadability %",
+                    "New Morph\nReadability %",
+                    "Old Line\nReadability %", "New Line\nReadability %", "Avg Study\nFreq", "Avg Study\nPer Instance",
+                    "New Master\nFreq %"])
 
-                mw.progress.start( label='Building study plan', max=len(sources), immediate=True )
+                mw.taskman.run_on_main(
+                    lambda: mw.progress.start(label='Building study plan', max=len(sources), immediate=True))
 
-                def output_study_result(source, study_result, old_line_readability, new_line_readability, new_master_freq):
+                def output_study_result(source, study_result, old_line_readability, new_line_readability,
+                                        new_master_freq):
                     nonlocal learned_tot
 
                     learned_tot += study_result.learned_m
                     source_str = "'%s' study goal: (%3d/%4d) morph readability: %0.2f -> %0.2f line readability: %0.2f -> %0.2f\n" % (
-                        source.name, study_result.learned_m, learned_tot, study_result.old_readability, study_result.new_readability, old_line_readability, new_line_readability)
+                        source.name, study_result.learned_m, learned_tot, study_result.old_readability,
+                        study_result.new_readability, old_line_readability, new_line_readability)
                     self.writeOutput(source_str)
                     f.write(source_str)
 
@@ -1216,7 +1249,8 @@ class AnalyzerDialog(QDialog):
                     self.ui.studyPlanTable.setItem(row, 9, TablePercent(new_master_freq))
 
                     for m in learned_this_source:
-                        f.write('\t' + m.morph.show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]\n' % (m.score, m.source_unknown_count, m.unknown_count, m.master_count))
+                        f.write('\t' + m.morph.show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]\n' % (
+                        m.score, m.source_unknown_count, m.unknown_count, m.master_count))
 
                 matched_sources = set()
 
@@ -1225,14 +1259,16 @@ class AnalyzerDialog(QDialog):
 
                 while len(matched_sources) < len(sources):
                     find_optimal_source = (optmize_master_freq and cumulative_master_freq < self.optimal_master_target)
-                    self.writeOutput("{} {} {} {}\n".format(find_optimal_source, optmize_master_freq, cumulative_master_freq, self.optimal_master_target))
+                    self.writeOutput(
+                        "{} {} {} {}\n".format(find_optimal_source, optmize_master_freq, cumulative_master_freq,
+                                               self.optimal_master_target))
                     source_results = []
 
                     if optmize_master_freq and not find_optimal_source:
-                        break # Stop searching here
+                        break  # Stop searching here
 
                     for n, source in enumerate(sources):
-                        mw.progress.update( value=n, label='Processing (%d/%d) %s' % (n+1, len(sources), source.name) )
+                        mw.taskman.run_on_main(partial(mw.progress.update, value=n, label='Processing (%d/%d) %s' % (n + 1, len(sources), source.name)))
 
                         if source in matched_sources:
                             continue
@@ -1247,12 +1283,13 @@ class AnalyzerDialog(QDialog):
                             continue
                         else:
                             matched_sources.add(source)
-                            
+
                             new_line_readability = self.get_line_readability(source, known_db)
                             self.master_score += study_result.total_freq
                             cumulative_master_freq = self.get_master_freq()
 
-                            output_study_result(source, study_result, old_line_readability, new_line_readability, cumulative_master_freq)
+                            output_study_result(source, study_result, old_line_readability, new_line_readability,
+                                                cumulative_master_freq)
 
                             if self.reset_known_for_each_show:
                                 known_db.removeMorphs([m.morph for m in learned_this_source])
@@ -1262,7 +1299,8 @@ class AnalyzerDialog(QDialog):
 
                     if find_optimal_source:
                         # Pick the best result as a match and output it
-                        source, learned_this_source, study_result = sorted(source_results, key=lambda x: x[2].avg_freq, reverse=True)[0]
+                        source, learned_this_source, study_result = \
+                        sorted(source_results, key=lambda x: x[2].avg_freq, reverse=True)[0]
                         self.write('Picked source %s avg_freq %0.2f\n' % (source.name, study_result.avg_freq))
                         matched_sources.add(source)
                         old_line_readability = self.get_line_readability(source, known_db)
@@ -1271,7 +1309,8 @@ class AnalyzerDialog(QDialog):
                         new_line_readability = self.get_line_readability(source, known_db)
                         self.master_score += study_result.total_freq
                         cumulative_master_freq = self.get_master_freq()
-                        output_study_result(source, study_result, old_line_readability, new_line_readability, cumulative_master_freq)
+                        output_study_result(source, study_result, old_line_readability, new_line_readability,
+                                            cumulative_master_freq)
 
                         if self.reset_known_for_each_show:
                             known_db.removeMorphs([m.morph for m in learned_this_source])
@@ -1283,7 +1322,7 @@ class AnalyzerDialog(QDialog):
                 self.ui.studyPlanTable.resizeColumnsToContents()
                 self.buildTotalStudyCount()
                 known_db.save(self.future_known_db_path)
-                mw.progress.finish()
+                mw.taskman.run_on_main(mw.progress.finish)
 
         if save_frequency_list:
             self.writeOutput("\n[Saving frequency list to '%s'...]\n" % self.frequency_list_path)
@@ -1299,8 +1338,9 @@ class AnalyzerDialog(QDialog):
                         unique_set.add(m.morph)
                         self.freq_set.add((m.morph.base, m.morph.read))
                         self.freq_db.addMorph(m.morph, 1)
-                        print(m.morph.show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (m.score, m.source_unknown_count, m.unknown_count, m.master_count), file=f)
-                    
+                        print(m.morph.show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (
+                        m.score, m.source_unknown_count, m.unknown_count, m.master_count), file=f)
+
                     # Followed by all remaining morphs sorted by score.
                     if self.fill_all_morphs_in_plan:
                         for m in sorted(all_missing_morphs, key=operator.itemgetter(5), reverse=True):
@@ -1311,7 +1351,8 @@ class AnalyzerDialog(QDialog):
                             unique_set.add(m.morph)
                             self.freq_set.add((m.morph.base, m.morph.read))
                             self.freq_db.addMorph(m.morph, 1)
-                            print(m.morph.show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (m.score, m.source_unknown_count, m.unknown_count, m.master_count), file=f)
+                            print(m.morph.show() + '\t[score %d ep_freq %d all_freq %d master_freq %d]' % (
+                            m.score, m.source_unknown_count, m.unknown_count, m.master_count), file=f)
                 elif self.master_total_instances > 0:
                     master_morphs = []
                     for ms in self.master_db.db.values():
@@ -1328,7 +1369,7 @@ class AnalyzerDialog(QDialog):
                         self.freq_set.add((m[0].base, m[0].read))
                         self.freq_db.addMorph(m[0], 1)
                         known_db.addMLs1(m[0], set())
-                
+
         if self.master_total_instances > 0:
             master_score = 0
             for ms in self.master_db.db.values():
@@ -1340,12 +1381,10 @@ class AnalyzerDialog(QDialog):
                 master_current_score * 100.0 / self.master_total_instances,
                 master_score * 100.0 / self.master_total_instances))
 
-        #open(self.frequency_list_path+'.migaku.txt', 'wt', encoding='utf-8') as migaku_f
+        # open(self.frequency_list_path+'.migaku.txt', 'wt', encoding='utf-8') as migaku_f
         if cfg('Option_MigakuDictionaryFreq') and self.migaku_dict_db_path:
             with redirect_stdout(self), redirect_stderr(self):
                 print("Updating Migaku DB Frequency!")
-
-                
 
                 conn = sqlite3.connect(self.migaku_dict_db_path)
                 with conn:
@@ -1354,17 +1393,20 @@ class AnalyzerDialog(QDialog):
                     dicts = cur.fetchall()
                     for dictname, lid in dicts:
                         dict_table = 'l' + str(lid) + 'name' + dictname
-                        #print(' migaku db table', dict_table)
-                        cur.execute("SELECT term, altterm, pronunciation, pos, definition, examples, audio, frequency, starCount FROM {0};".format(dict_table))
+                        # print(' migaku db table', dict_table)
+                        cur.execute(
+                            "SELECT term, altterm, pronunciation, pos, definition, examples, audio, frequency, starCount FROM {0};".format(
+                                dict_table))
                         items = cur.fetchall()
-                        #print("  db has %d items" % len(items))
+                        # print("  db has %d items" % len(items))
 
-                        mw.progress.start( label='Updating DB ' + dictname, max=len(items), immediate=True )
+                        mw.taskman.run_on_main(partial(mw.progress.start, label='Updating DB ' + dictname, max=len(items), immediate=True))
 
                         ds = []
-                        for i, (term, altterm, pronunciation, pos, definition, examples, audio, frequency, starCount) in enumerate(items):
+                        for i, (term, altterm, pronunciation, pos, definition, examples, audio, frequency,
+                                starCount) in enumerate(items):
                             if i % 1000 == 0:
-                                mw.progress.update( value=n, label='(%d/%d) Migaku Dict %s' % (i, len(items), dictname) )
+                                mw.taskman.run_on_main(partial(mw.progress.update, value=n, label='(%d/%d) Migaku Dict %s' % (i, len(items), dictname)))
 
                             pron = adjustReading(pronunciation)
 
@@ -1401,15 +1443,18 @@ class AnalyzerDialog(QDialog):
                                 newStarCount += ' compound'
 
                             if newStarCount != starCount:
-                                #print('updating', term, 'stars to', newStarCount, file=migaku_f)
-                                ds.append((newStarCount, term, altterm, pronunciation, pos, definition, examples, audio))
-                        
-                        if len(ds) > 0:
-                            cur.executemany('update {0} set starCount=? where term=? AND altterm=? AND pronunciation=? AND pos=? AND definition=? AND examples=? AND audio=?'.format(dict_table), ds)
+                                # print('updating', term, 'stars to', newStarCount, file=migaku_f)
+                                ds.append(
+                                    (newStarCount, term, altterm, pronunciation, pos, definition, examples, audio))
 
-                        mw.progress.finish()
+                        if len(ds) > 0:
+                            cur.executemany(
+                                'update {0} set starCount=? where term=? AND altterm=? AND pronunciation=? AND pos=? AND definition=? AND examples=? AND audio=?'.format(
+                                    dict_table), ds)
+
+                        mw.taskman.run_on_main(mw.progress.finish)
+
 
 def main():
     mw.mm = AnalyzerDialog(mw)
     mw.mm.show()
-

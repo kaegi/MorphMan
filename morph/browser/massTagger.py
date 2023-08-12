@@ -4,7 +4,7 @@ from anki.hooks import addHook
 from anki.utils import strip_html
 from ..morphemes import getMorphemes, MorphDb
 from ..morphemizer import getMorphemizerByName
-from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, QInputDialog, QFileDialog, QLineEdit, runOnce
+from ..util import addBrowserNoteSelectionCmd, get_filter, infoMsg, QInputDialog, QFileDialog, QLineEdit, runOnce
 from ..preferences import get_preference as cfg
 from anki.lang import _
 
@@ -28,7 +28,7 @@ def pre(b):  # :: Browser -> State
 
 def per(st, n):  # :: State -> Note -> State
 
-    note_cfg = getFilter(n)
+    note_cfg = get_filter(n)
     if note_cfg is None:
         return st
     morphemizer = getMorphemizerByName(note_cfg['Morphemizer'])

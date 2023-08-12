@@ -86,7 +86,7 @@ class AdaptiveSubWin(QDialog):
             val += 1
             bar.setValue(val)
             mw.app.processEvents()
-        mw.progress.finish()
+        mw.taskman.run_on_main(mw.progress.finish)
         mw.reset()
         infoMsg("Completed successfully")
 

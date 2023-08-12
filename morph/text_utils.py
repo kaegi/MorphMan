@@ -4,7 +4,7 @@ from anki.utils import strip_html
 from .morphemes import getMorphemes
 from .morphemizer import getMorphemizerByName
 from .preferences import get_preference as cfg
-from .util import getFilterByMidAndTags, allDb
+from .util import getFilterByMidAndTags, get_all_db
 
 def nonSpanSub(sub, repl, string):
     return ''.join(re.sub(sub, repl, s, flags=re.IGNORECASE) if not s.startswith('<span') else s for s in
@@ -36,7 +36,7 @@ def bold_unknowns(mid, text, tags=None):
     proper_nouns_known = cfg('Option_ProperNounsAlreadyKnown')
 
     for m, inflected in sorted(morphs, key=lambda x: len(x[1]), reverse=True):  # largest subs first
-        locs = allDb().getMatchingLocs(m)
+        locs = get_all_db().getMatchingLocs(m)
         mat = max(loc.maturity for loc in locs) if locs else 0
 
         if (proper_nouns_known and m.isProperNoun()) or (mat >= cfg('threshold_known')):

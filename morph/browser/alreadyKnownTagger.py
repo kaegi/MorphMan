@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from aqt.utils import tooltip
 from anki.hooks import addHook
-from ..util import addBrowserNoteSelectionCmd, getFilter, runOnce
+from ..util import addBrowserNoteSelectionCmd, get_filter, runOnce
 from ..preferences import get_preference
 from anki.lang import _
 
@@ -12,7 +12,7 @@ def pre(b):  # :: Browser -> State
 
 
 def per(st, n):  # :: State -> Note -> State
-    if getFilter(n) is None:
+    if get_filter(n) is None:
         return st
 
     n.addTag(st['tag'])

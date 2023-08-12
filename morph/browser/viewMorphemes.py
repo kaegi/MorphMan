@@ -3,7 +3,7 @@ from anki.hooks import addHook
 from anki.utils import strip_html
 from ..morphemes import getMorphemes, ms2str
 from ..morphemizer import getMorphemizerByName
-from ..util import addBrowserNoteSelectionCmd, getFilter, infoMsg, runOnce
+from ..util import addBrowserNoteSelectionCmd, get_filter, infoMsg, runOnce
 from ..preferences import get_preference as cfg
 
 
@@ -11,7 +11,7 @@ def pre(b): return {'morphemes': []}
 
 
 def per(st, n):
-    notecfg = getFilter(n)
+    notecfg = get_filter(n)
     if notecfg is None:
         return st
 
