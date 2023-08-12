@@ -37,15 +37,29 @@ and accompanying [blog post](https://massimmersionapproach.com/table-of-contents
 See the [MorphMan wiki](https://github.com/kaegi/MorphMan/wiki) for more information.
 
 # Development
+## Linux
 - Set up local environment:
-  - The best is to use a Python virtual environment and install prebuilt Anki wheels:
     ```
-    python -m virtualenv pyenv
-    source pyenv/bin/activate
-    python -m pip install aqt==2.1.54 anki==2.1.54 pyqt6-webengine pylint
-    export PYTHONPATH=./
+    python -m virtualenv venv
+    source venv/bin/activate
+    python -m pip install aqt[qt6] anki pylint mypy types-setuptools
     ```
-- Run tests: `python test.py`
-- Build Qt Developer UI with `python scripts/build_ui.py`
 - Install git commit hook to run tests and pylint
   ` scripts/setup_dev.sh`
+- Run tests: `python test.py`
+- If ui files have been changed:
+    - Build Qt Developer UI with `python scripts/build_ui.py`
+
+## Windows:
+- Set up local environment:
+    ```
+    python -m virtualenv venv
+    .\venv\Scripts\activate
+    python -m pip install aqt[qt6] anki pylint mypy types-setuptools
+    ```
+- Run type checking: mypy filename.py
+- Run lint checking: pylint filename.py
+- Run tests: `python test.py`
+- If ui files have been changed:
+    - Build Qt Developer UI with `python scripts/build_ui.py`
+
