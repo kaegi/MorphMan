@@ -33,7 +33,7 @@ MorphMan supports the following languages:
 - more languages can be added on request if morpheme-splitting-tools are available for it
 
 See Matt VS Japan's [video tutorial](https://www.youtube.com/watch?v=dVReg8_XnyA)
-and accompanying [blog post](https://massimmersionapproach.com/table-of-contents/anki/morphman).
+and accompanying [blog post](https://web.archive.org/web/20201220134610/https://massimmersionapproach.com/table-of-contents/anki/morphman/).
 See the [MorphMan wiki](https://github.com/kaegi/MorphMan/wiki) for more information.
 
 # Development
