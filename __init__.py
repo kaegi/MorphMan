@@ -1,4 +1,3 @@
-from PyQt6.QtWidgets import *
 from aqt.reviewer import Reviewer
 from aqt.utils import tooltip
 from aqt import gui_hooks

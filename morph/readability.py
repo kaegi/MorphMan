@@ -17,14 +17,18 @@ from collections import namedtuple
 from contextlib import redirect_stdout, redirect_stderr
 from functools import partial
 
-from PyQt6.QtCore import *
-from PyQt6.QtGui import *
-from PyQt6.QtWidgets import *
+from aqt.qt import *
 
+isSupportingWebSockets = False
 try:
-    from PyQt6 import QtWebSockets,  QtNetwork
+    from PyQt6 import QtWebSockets, QtNetwork
+    isSupportingWebSockets = True
 except:
-    pass
+    try:
+        from PyQt5 import QtWebSockets, QtNetwork
+        isSupportingWebSockets = True
+    except:
+        pass
 
 from .morphemes import Morpheme, MorphDb, getMorphemes, altIncludesMorpheme
 from .morphemizer import getAllMorphemizers
@@ -361,7 +365,11 @@ class SettingsDialog(QDialog):
             self.ui.migakuDictionaryTagsCheckBox.setChecked(False)
             self.ui.migakuDictionaryTagsCheckBox.setEnabled(False)
 
-        self.ui.webServiceCheckBox.setChecked(cfg('Option_EnableWebService'))
+        if isSupportingWebSockets:
+            self.ui.webServiceCheckBox.setChecked(cfg('Option_EnableWebService'))
+        else:
+            self.ui.webServiceCheckBox.setChecked(False)
+            self.ui.webServiceCheckBox.setEnabled(False)
 
         self.ui.buttonBox.accepted.connect(self.onAccept)
         self.ui.buttonBox.rejected.connect(self.onReject)
@@ -451,7 +459,7 @@ class AnalyzerDialog(QDialog):
         self.server = None
         self.clients = set()
 
-        if cfg('Option_EnableWebService'):
+        if cfg('Option_EnableWebService') and isSupportingWebSockets:
             self.server = QtWebSockets.QWebSocketServer('MorphMan Service', QtWebSockets.QWebSocketServer.SslMode.NonSecureMode)
             if self.server.listen(QtNetwork.QHostAddress.SpecialAddress.LocalHost, 9779):
                 self.write('Web Service Created: '+self.server.serverName()+' : '+self.server.serverAddress().toString()+':'+str(self.server.serverPort()) + '\n')
