@@ -4,7 +4,7 @@ from anki.hooks import addHook
 from anki.utils import strip_html
 from ..morphemes import AnkiDeck, MorphDb, getMorphemes
 from ..morphemizer import getMorphemizerByName
-from ..util import addBrowserNoteSelectionCmd, mw, getFilter, infoMsg, QFileDialog, runOnce
+from ..util import addBrowserNoteSelectionCmd, mw, get_filter, infoMsg, QFileDialog, runOnce
 from ..preferences import get_preference as cfg
 
 
@@ -17,7 +17,7 @@ def pre(b):
 
 def per(st, n):
     mats = mw.col.db.list('select ivl from cards where nid = :nid', nid=n.id)
-    note_cfg = getFilter(n)
+    note_cfg = get_filter(n)
     if note_cfg is None:
         return st
 

@@ -4,8 +4,8 @@ from aqt import mw
 
 from .errors.profileNotYetLoadedException import ProfileNotYetLoadedException
 
-# retrieving the configuration using get_config is very expensive operation
-# instead, save it 
+# retrieving the configuration using get_config is very expensive operation instead, save it
+#  TODO: These aren't actually used properly? edit get_preferences?
 config_data = None
 config_py = None
 

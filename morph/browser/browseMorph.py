@@ -3,7 +3,7 @@ from anki.hooks import addHook
 from anki.lang import _
 from aqt.utils import tooltip
 
-from ..newMorphHelper import focus, focusName, focusQuery
+from ..reviewing_utils import try_to_get_focus_morphs, focus_query
 from ..util import addBrowserNoteSelectionCmd, runOnce
 from ..preferences import get_preference as cfg
 
@@ -15,17 +15,17 @@ def per(st, n):
     if n is None:
         return st
 
-    for focusMorph in focus(n):
+    for focusMorph in try_to_get_focus_morphs(n):  # TODO: is this safe??
         st['focusMorphs'].add(focusMorph)
     return st
 
 
 def post(st):
     search = ''
-    focusField = focusName()
+    focusField = cfg('Field_FocusMorph')
     focusMorphs = st['focusMorphs']
     
-    q = focusQuery(focusField, focusMorphs)
+    q = focus_query(focusField, focusMorphs)
     if q != '':
         st['b'].form.searchEdit.lineEdit().setText(q)
         st['b'].onSearchActivated()
