@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 
-from PyQt6.QtCore import *
-from PyQt6.QtGui import *
-from PyQt6.QtWidgets import *
+from aqt.qt import *
 from anki.utils import is_mac
 from .UI import MorphemizerComboBox
 

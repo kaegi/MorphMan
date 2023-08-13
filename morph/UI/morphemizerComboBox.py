@@ -1,6 +1,4 @@
-
-from PyQt6.QtWidgets import QComboBox
-
+from aqt.qt import QComboBox
 
 class MorphemizerComboBox(QComboBox):
 

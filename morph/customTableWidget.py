@@ -1,5 +1,4 @@
-from PyQt6.QtWidgets import QApplication, QTableWidget
-from PyQt6.QtGui import QKeySequence
+from aqt.qt import QApplication, QTableWidget, QKeySequence
 
 class CustomTableWidget(QTableWidget):
 

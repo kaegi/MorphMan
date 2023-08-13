@@ -1,6 +1,6 @@
 import unittest
 
-from PyQt6.QtWidgets import QApplication
+from aqt.qt import QApplication
 from morph.UI import MorphemizerComboBox
 from morph.morphemizer import getAllMorphemizers
 
