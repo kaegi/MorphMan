@@ -153,13 +153,15 @@ def my_getNewCard(self, _old):
         is_fresh_vocab = note.hasTag(cfg('Tag_Fresh'))
         is_already_known = note.hasTag(cfg('Tag_AlreadyKnown'))
 
+        no_cards_learned_yet = mw.col.db.scalar('select count() from cards where nid = :nid and queue > 0', nid=note.id) == 0
+
         skip_comprehension = cfg('Option_SkipComprehensionCards')
         skip_fresh = cfg('Option_SkipFreshVocabCards')
         skip_focus_morph_seen_today = cfg('Option_SkipFocusMorphSeenToday')
 
         skip_conditions = [
-            is_comprehension_card and skip_comprehension,
-            is_fresh_vocab and skip_fresh,
+            is_comprehension_card and skip_comprehension and no_cards_learned_yet,
+            is_fresh_vocab and skip_fresh and no_cards_learned_yet,
             is_already_known,  # the user requested that the vocabulary does not have to be shown
             skip_focus_morph_seen_today and any([focus in seenMorphs for focus in focus_morphs]) ,  # we already learned that/saw that today
         ]
