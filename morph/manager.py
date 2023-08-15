@@ -210,7 +210,7 @@ class MorphMan(QDialog):
             return
 
         destPath = QFileDialog.getSaveFileName(
-                   caption='Save morpheme db to?', directory=cfg('path_dbs') + os.sep + 'textFile.db')[0]
+                   caption='Save morpheme db to?', directory=cfg('path_dbs') + os.sep + 'textFile.db', filter='Databases (*.db)')[0]
         if not destPath:
             return
 
