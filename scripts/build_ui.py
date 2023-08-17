@@ -11,6 +11,8 @@ def build_ui(in_file, out_file):
     from PyQt6 import {imports}
 except:
     from PyQt5 import {imports}
+    QtCore.Qt.AlignmentFlag.AlignLeading = QtCore.Qt.AlignLeading
+    QtCore.Qt.AlignmentFlag.AlignTrailing = QtCore.Qt.AlignTrailing
 """)
             else:
                 sources.write(line)

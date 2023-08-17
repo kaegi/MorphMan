@@ -10,6 +10,8 @@ try:
     from PyQt6 import QtCore, QtGui, QtWidgets
 except:
     from PyQt5 import QtCore, QtGui, QtWidgets
+    QtCore.Qt.AlignmentFlag.AlignLeading = QtCore.Qt.AlignLeading
+    QtCore.Qt.AlignmentFlag.AlignTrailing = QtCore.Qt.AlignTrailing
 
 
 class Ui_ReadabilitySettingsDialog(object):
