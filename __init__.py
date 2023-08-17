@@ -45,15 +45,15 @@ def main():
 
     gui_hooks.profile_did_open.append(replace_reviewer_functions)
 
+    # See more detailed morph stats by holding 'Shift'-key while pressing 'Stats' in toolbar
+    # TODO: maybe move it somewhere less hidden if possible? E.g.a separate toolbar button
+    gui_hooks.profile_did_open.append(add_morph_stats_to_ease_graph)
+
     # This stores the focus morphs seen today, necessary for the respective skipping option to work
     gui_hooks.reviewer_did_answer_card.append(mark_morph_seen)
 
     # Adds the 'K: V:' to the toolbar
     gui_hooks.top_toolbar_did_init_links.append(add_morph_stats_to_toolbar)
-
-    # See more detailed morph stats by holding 'Shift'-key while pressing 'Stats' in toolbar
-    # TODO: maybe move it somewhere less hidden if possible? E.g.a separate toolbar button
-    gui_hooks.stats_dialog_will_show(add_morph_stats_to_ease_graph)
 
     gui_hooks.profile_will_close.append(tear_down_actions_and_submenu)
 
