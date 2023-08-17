@@ -7,7 +7,6 @@ import importlib
 
 import anki.stats
 from anki import hooks
-from anki.collection import Collection
 from anki.lang import _  # TODO: deprecated?
 
 from .morph.util import *  # TODO: replace this star
@@ -44,7 +43,7 @@ def main():
     from .morph.browser import browseMorph
     from .morph.browser import alreadyKnownTagger
 
-    gui_hooks.collection_did_load.append(replace_reviewer_functions)
+    gui_hooks.profile_did_open.append(replace_reviewer_functions)
 
     # This stores the focus morphs seen today, necessary for the respective skipping option to work
     gui_hooks.reviewer_did_answer_card.append(mark_morph_seen)
@@ -82,7 +81,7 @@ def mark_morph_seen(reviewer: Reviewer, card, ease):
     reviewing_utils.mark_morph_seen(card.note())
 
 
-def replace_reviewer_functions(collection: Collection) -> None:
+def replace_reviewer_functions() -> None:
     # This skips the cards the user specified in preferences GUI
     Reviewer.nextCard = hooks.wrap(Reviewer.nextCard, reviewing_utils.my_next_card, "around")
 

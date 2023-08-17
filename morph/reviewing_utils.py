@@ -55,29 +55,30 @@ def mark_morph_seen(note: Note) -> None:
 def my_next_card(self: Reviewer, _old) -> None:
     skipped_cards = SkippedCards()
 
-    self.previous_card = self.card
-    self.card = None
-    self._v3 = None
-
     # NB! If the deck you are studying has sub-decks then new cards will by default only be gathered from the first
     # sub-deck until it is empty before looking for new cards in the next sub-deck. If you instead want to get
     # new i+1 cards from all sub-decks do the following:
     # 1. Activate the v3 scheduler in: Tools -> Review -> Scheduler -> V3 scheduler
     # 2. Deck that has sub-decks: Deck options -> Display Order -> New card gather order -> Ascending position
 
-    if self.mw.col.sched.version < 3:
-        self._get_next_v1_v2_card()
-    else:
-        self._get_next_v3_card()
-
-    self._previous_card_info.set_card(self.previous_card)
-    self._card_info.set_card(self.card)
-
-    if not self.card:
-        self.mw.moveToState("overview")
-        return
-
     while True:
+        self.previous_card = self.card
+        self.card = None
+        self._v3 = None
+
+        if self.mw.col.sched.version < 3:
+            self.mw.col.reset()  # rebuilds the queue
+            self._get_next_v1_v2_card()
+        else:
+            self._get_next_v3_card()
+
+        self._previous_card_info.set_card(self.previous_card)
+        self._card_info.set_card(self.card)
+
+        if not self.card:
+            self.mw.moveToState("overview")
+            return
+
         if self.card.type != CARD_TYPE_NEW:
             break  # ignore non-new cards
 
@@ -104,11 +105,6 @@ def my_next_card(self: Reviewer, _old) -> None:
             break  # card did not meet any skip criteria
 
         self.mw.col.sched.buryCards([self.card.id], manual=False)
-
-        if self.mw.col.sched.version < 3:
-            self._get_next_v1_v2_card()
-        else:
-            self._get_next_v3_card()
 
     if self._reps is None:
         self._initWeb()
@@ -180,7 +176,6 @@ def highlight(txt: str, field, filter: str, ctx) -> str:
     """When a field is marked with the 'focusMorph' command, we format it by
     wrapping all the morphemes in <span>s with attributes set to its maturity"""
 
-    print("morphHighlight filter %s" % filter)
     if filter != "morphHighlight":
         return txt
 
